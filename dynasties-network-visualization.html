@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dynasty Map – OpenPinas</title>
-  <meta name="description" content="Interactive network map of 59 Philippine political dynasties. See alliances, rivalries, and corruption connections." />
+  <meta name="description" content="Interactive network map of 71 Philippine political dynasties. See alliances, rivalries, and corruption connections." />
   <link rel="icon" type="image/svg+xml" href="favicon.svg" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -334,7 +334,7 @@
   <header>
     <div class="header-nav"><a href="index.html">← OpenPinas</a></div>
     <h1>Dynasty Map</h1>
-    <p class="header-intro">59 dynasties. This is how they connect—alliances, rivalries, marriages, and corruption networks. Click any node to see who's in power, who's in trouble, and how the families overlap.</p>
+    <p class="header-intro">71 dynasties. This is how they connect—alliances, rivalries, marriages, and corruption networks. Click any node to see who's in power, who's in trouble, and how the families overlap.</p>
     <p>Click a node. Drag to pan. Scroll to zoom.</p>
   </header>
 
@@ -663,6 +663,9 @@
       nodes = new vis.DataSet(filteredNodes);
       edges = new vis.DataSet(filteredEdges);
 
+      // Update stats with filtered counts
+      updateStats(filteredNodes, filteredEdges);
+
       const data = { nodes: nodes, edges: edges };
       const options = {
         nodes: {
@@ -921,11 +924,14 @@
     // Also listen for hash changes while on the page
     window.addEventListener('hashchange', handleHashNavigation);
 
-    function updateStats() {
+    function updateStats(filteredNodes = null, filteredEdges = null) {
+      const dynastyCount = filteredNodes ? filteredNodes.length : dynastiesData.nodes.dynasties.length;
+      const relationshipCount = filteredEdges ? filteredEdges.length : dynastiesData.edges.relationships.length;
+      
       document.getElementById('dynastyCount').textContent = 
-        `Dynasties: ${dynastiesData.nodes.dynasties.length}`;
+        `Dynasties: ${dynastyCount}`;
       document.getElementById('relationshipCount').textContent = 
-        `Relationships: ${dynastiesData.edges.relationships.length}`;
+        `Relationships: ${relationshipCount}`;
     }
 
     // Event listeners

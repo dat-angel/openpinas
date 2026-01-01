@@ -3,7 +3,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](LICENSE-DATA)
 
-Tracking 50+ political dynasties, their relationships, and major events for the Filipino diaspora. Interactive visualizations showing how political families maintain control across 71 provinces.
+Tracking major political dynasties, their relationships, and major events for the Filipino diaspora. Currently tracking 71 dynasties (national and major regional), with ongoing expansion. Interactive visualizations showing how political families maintain control across 71 provinces.
 
 **Live Demo**: [dat-angel.github.io/openpinas](https://dat-angel.github.io/openpinas/)
 
@@ -12,7 +12,7 @@ Tracking 50+ political dynasties, their relationships, and major events for the 
 - 📰 **Weekly News Digests** - Significant events organized by category
 - 🗺️ **Interactive Network Map** - Dynasty relationships and geographic control
 - 📅 **Timeline** - Chronological view of major events with dynasty connections
-- 📊 **Datasets** - 50+ dynasties, 450+ members, 71 provinces tracked
+- 📊 **Datasets** - 71 dynasties, 85+ key members, 71 provinces tracked
 - ⚖️ **Corruption Case Tracker** - POGO-related cases, corruption tracking, and accountability
 
 ## Quick Start
@@ -46,11 +46,20 @@ Then open http://localhost:8000/ in your browser
 
 ## Key Stats (2025)
 
-- 50+ dynasties tracked
-- 450+ members tracked
+**Current Dataset Scope:**
+- 71 major dynasties tracked (curated subset of ~250 total political families)
+- Focus: National power dynasties and high-profile regional dynasties
+- Coverage includes: Negros Occidental, Pangasinan, Bicol, Zamboanga, Metro Manila cities, Iloilo, Bohol, Bulacan, Pampanga, Tarlac, Cotabato, and more
+- 85+ key members tracked
+- 25+ provinces/regions with detailed geographic mapping
+
+**Philippine Political Reality:**
 - 71 of 82 provinces (86.6%) controlled by dynasties
 - 67% of congressional seats held by dynastic families
+- ~250 political families across all levels of government
 - Longest-running: Ortega family (157 years, La Union)
+
+*Note: This dataset prioritizes dynasties with national reach, 2025 events, corruption connections, or significant media coverage. Many regional and local dynasties are not yet included.*
 
 ## Features
 
@@ -61,7 +70,7 @@ Then open http://localhost:8000/ in your browser
 - Click any dynasty for detailed info (members, control, alliances, timeline events)
 
 **Timeline Visualization:**
-- Chronological view of 54 major 2025 events
+- Chronological view of 49 major 2025 events
 - Filter by category (Political, Cultural, Natural Disasters, etc.)
 - Each event shows involved dynasties with links to network map
 

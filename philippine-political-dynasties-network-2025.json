@@ -8,8 +8,8 @@
       "data_scope": "historical_and_contemporary",
       "earliest_dynasty": 1868,
       "latest_update": 2025,
-      "total_dynasties": 59,
-      "total_members_tracked": 520,
+      "total_dynasties": 71,
+      "total_members_tracked": 148,
       "network_type": "multi-relational directed graph",
       "compatible_tools": [
         "Gephi",
@@ -114,9 +114,9 @@
             }
           ],
           "allied_dynasties": [
-            "ROMUALDEZ",
-            "TOLENTINO",
-            "REMULLA",
+            "ROMUALDEZ_FAMILY",
+            "REVILLA_TOLENTINO",
+            "REMULLA_FAMILY",
             "VILLAR_FAMILY"
           ],
           "rival_dynasties": [
@@ -330,7 +330,7 @@
             }
           ],
           "allied_dynasties": [
-            "PACQUIAO"
+            "PACQUIAO_FAMILY"
           ],
           "rival_dynasties": [
             "MARCOS_ROMUALDEZ",
@@ -444,10 +444,7 @@
               }
             }
           ],
-          "allied_dynasties": [
-            "ROXAS",
-            "COJUANGCO"
-          ],
+          "allied_dynasties": [],
           "rival_dynasties": [
             "MARCOS_ROMUALDEZ",
             "DUTERTE_FAMILY"
@@ -533,7 +530,7 @@
             "MARCOS_ROMUALDEZ"
           ],
           "rival_dynasties": [
-            "ESTRADA"
+            "ESTRADA_FAMILY"
           ],
           "business_interests": [
             "Real Estate",
@@ -646,7 +643,7 @@
             }
           ],
           "allied_dynasties": [
-            "REMULLA",
+            "REMULLA_FAMILY",
             "MARCOS_ROMUALDEZ"
           ],
           "business_interests": [
@@ -730,7 +727,7 @@
           ],
           "allied_dynasties": [
             "DUTERTE_FAMILY",
-            "MANGUDADATU"
+            "MANGUDADATU_FAMILY"
           ],
           "rival_dynasties": [],
           "historical_notes": "Manny Pacquiao lost Senate seat but family maintained strong regional control in Mindanao; all local positions won in 2025",
@@ -1761,6 +1758,1267 @@
           "2025_status": "consolidating",
           "key_members": [{"name": "Jose Enrique Miraflores", "position": "Governor of Aklan", "elected": "2025-05-12", "gender": "M", "note": "Second term"}],
           "historical_notes": "Governor Miraflores secured his second term in 2025, consolidating family control over Aklan."
+        },
+        {
+          "id": "LACSON_NEGROS",
+          "name": "Lacson Dynasty (Negros Occidental)",
+          "patriarch": "Aniceto Lacson",
+          "established": 1898,
+          "classification": "major_dynasty",
+          "power_level": "regional",
+          "primary_regions": [
+            "Negros Occidental",
+            "Bacolod"
+          ],
+          "geographic_coordinates": {
+            "Negros Occidental": {"lat": 10.6667, "lng": 123.0000},
+            "Bacolod": {"lat": 10.6761, "lng": 122.9503}
+          },
+          "current_positions_held": 3,
+          "2025_status": "established_regional_control",
+          "key_members": [
+            {
+              "name": "Eugenio Jose Lacson",
+              "position": "Governor of Negros Occidental",
+              "term_start": 2019,
+              "gender": "M",
+              "wikipedia": "https://en.wikipedia.org/wiki/Eugenio_Jose_Lacson"
+            },
+            {
+              "name": "Aniceto Lacson",
+              "position": "Historical figure",
+              "gender": "M",
+              "historical": true,
+              "wikipedia": "https://en.wikipedia.org/wiki/Aniceto_Lacson",
+              "note": "Patriarch; played significant role in Negros history"
+            }
+          ],
+          "historical_notes": "One of the oldest political families in Negros Occidental, established during the revolutionary period. Family has maintained influence across multiple districts."
+        },
+        {
+          "id": "MARAÑON_NEGROS",
+          "name": "Marañon Dynasty (Negros Occidental)",
+          "patriarch": "Alfredo Marañon Jr.",
+          "established": 1970,
+          "classification": "major_dynasty",
+          "power_level": "regional",
+          "primary_regions": [
+            "Negros Occidental"
+          ],
+          "geographic_coordinates": {
+            "Negros Occidental": {"lat": 10.6667, "lng": 123.0000}
+          },
+          "current_positions_held": 4,
+          "2025_status": "dominant_regional_control",
+          "key_members": [
+            {
+              "name": "Alfredo Marañon Jr.",
+              "position": "Former Governor of Negros Occidental",
+              "term_start": 2010,
+              "term_end": 2019,
+              "gender": "M"
+            },
+            {
+              "name": "Alfredo Marañon III",
+              "position": "Representative, Negros Occidental-2nd District",
+              "gender": "M"
+            }
+          ],
+          "historical_notes": "Dominant in the 2nd District of Negros Occidental. Family has held various political positions including governorship and congressional seats."
+        },
+        {
+          "id": "ZAYCO_NEGROS",
+          "name": "Zayco Dynasty (Negros Occidental)",
+          "patriarch": "Isidro Zayco",
+          "established": 1995,
+          "classification": "established_dynasty",
+          "power_level": "regional",
+          "primary_regions": [
+            "Negros Occidental",
+            "Kabankalan"
+          ],
+          "geographic_coordinates": {
+            "Negros Occidental": {"lat": 10.6667, "lng": 123.0000},
+            "Kabankalan": {"lat": 9.9889, "lng": 122.8122}
+          },
+          "current_positions_held": 2,
+          "2025_status": "maintained_regional_control",
+          "key_members": [
+            {
+              "name": "Isidro Zayco",
+              "position": "Former Governor of Negros Occidental",
+              "term_start": 2007,
+              "term_end": 2010,
+              "gender": "M"
+            }
+          ],
+          "historical_notes": "Influential in Kabankalan and surrounding areas. Family has been active in Negros Occidental politics for decades."
+        },
+        {
+          "id": "BENITEZ_NEGROS",
+          "name": "Benitez Dynasty (Negros Occidental)",
+          "patriarch": "Jose Benitez",
+          "established": 1980,
+          "classification": "major_dynasty",
+          "power_level": "regional",
+          "primary_regions": [
+            "Negros Occidental",
+            "Bacolod"
+          ],
+          "geographic_coordinates": {
+            "Negros Occidental": {"lat": 10.6667, "lng": 123.0000},
+            "Bacolod": {"lat": 10.6761, "lng": 122.9503}
+          },
+          "current_positions_held": 3,
+          "2025_status": "active_regional_control",
+          "key_members": [
+            {
+              "name": "Javier Miguel Benitez",
+              "position": "Representative, Negros Occidental-3rd District",
+              "gender": "M"
+            }
+          ],
+          "historical_notes": "Active in Bacolod City and the 3rd District of Negros Occidental. Family has maintained political presence through multiple generations."
+        },
+        {
+          "id": "ESPINO_PANGASINAN",
+          "name": "Espino Dynasty (Pangasinan)",
+          "patriarch": "Amado Espino Jr.",
+          "established": 2007,
+          "classification": "major_dynasty",
+          "power_level": "regional",
+          "primary_regions": [
+            "Pangasinan"
+          ],
+          "geographic_coordinates": {
+            "Pangasinan": {"lat": 16.0000, "lng": 120.3333}
+          },
+          "current_positions_held": 5,
+          "2025_status": "dominant_regional_control",
+          "key_members": [
+            {
+              "name": "Amado Espino Jr.",
+              "position": "Former Governor of Pangasinan",
+              "term_start": 2007,
+              "term_end": 2016,
+              "gender": "M",
+              "wikipedia": "https://en.wikipedia.org/wiki/Amado_Espino_Jr."
+            },
+            {
+              "name": "Amado Espino III",
+              "position": "Governor of Pangasinan",
+              "elected": "2025-05-12",
+              "gender": "M"
+            }
+          ],
+          "historical_notes": "Dominant political family in Pangasinan. Amado Espino Jr. served as governor for multiple terms, with family members continuing the political legacy."
+        },
+        {
+          "id": "VILLAFUERTE_BICOL",
+          "name": "Villafuerte Dynasty (Bicol)",
+          "patriarch": "Luis Villafuerte",
+          "established": 1986,
+          "classification": "major_dynasty",
+          "power_level": "regional",
+          "primary_regions": [
+            "Camarines Sur",
+            "Albay"
+          ],
+          "geographic_coordinates": {
+            "Camarines Sur": {"lat": 13.5833, "lng": 123.1667},
+            "Albay": {"lat": 13.1333, "lng": 123.5833}
+          },
+          "current_positions_held": 6,
+          "2025_status": "dominant_regional_control",
+          "key_members": [
+            {
+              "name": "Luis Raymund Villafuerte",
+              "position": "Governor of Camarines Sur",
+              "elected": "2025-05-12",
+              "gender": "M",
+              "wikipedia": "https://en.wikipedia.org/wiki/Luis_Raymund_Villafuerte"
+            },
+            {
+              "name": "Luis Villafuerte",
+              "position": "Former Governor of Camarines Sur",
+              "term_start": 1986,
+              "gender": "M",
+              "historical": true,
+              "wikipedia": "https://en.wikipedia.org/wiki/Luis_Villafuerte",
+              "note": "Patriarch; established dynasty"
+            }
+          ],
+          "historical_notes": "One of the most powerful political families in Bicol region. Controls Camarines Sur and has influence across multiple Bicol provinces."
+        },
+        {
+          "id": "LOBREGAT_ZAMBOANGA",
+          "name": "Lobregat Dynasty (Zamboanga)",
+          "patriarch": "Maria Clara Lobregat",
+          "established": 1998,
+          "classification": "major_dynasty",
+          "power_level": "regional",
+          "primary_regions": [
+            "Zamboanga City"
+          ],
+          "geographic_coordinates": {
+            "Zamboanga City": {"lat": 6.9214, "lng": 122.0790}
+          },
+          "current_positions_held": 3,
+          "2025_status": "established_regional_control",
+          "key_members": [
+            {
+              "name": "Maria Clara Lobregat",
+              "position": "Former Mayor of Zamboanga City",
+              "term_start": 1998,
+              "term_end": 2004,
+              "gender": "F",
+              "historical": true,
+              "wikipedia": "https://en.wikipedia.org/wiki/Maria_Clara_Lobregat",
+              "note": "First female mayor of Zamboanga City; patriarch"
+            },
+            {
+              "name": "Celso Lobregat",
+              "position": "Former Mayor of Zamboanga City",
+              "term_start": 2004,
+              "term_end": 2013,
+              "gender": "M",
+              "wikipedia": "https://en.wikipedia.org/wiki/Celso_Lobregat"
+            }
+          ],
+          "historical_notes": "Prominent political family in Zamboanga City. Maria Clara Lobregat was the first female mayor, and her son Celso continued the political legacy."
+        },
+        {
+          "id": "JALOSJOS_ZAMBOANGA",
+          "name": "Jalosjos Dynasty (Zamboanga del Norte)",
+          "patriarch": "Romeo Jalosjos Sr.",
+          "established": 1987,
+          "classification": "major_dynasty",
+          "power_level": "regional",
+          "primary_regions": [
+            "Zamboanga del Norte"
+          ],
+          "geographic_coordinates": {
+            "Zamboanga del Norte": {"lat": 8.1667, "lng": 123.0000}
+          },
+          "current_positions_held": 4,
+          "2025_status": "dominant_regional_control",
+          "key_members": [
+            {
+              "name": "Romeo Jalosjos Sr.",
+              "position": "Former Representative, Zamboanga del Norte",
+              "term_start": 1987,
+              "gender": "M",
+              "historical": true,
+              "wikipedia": "https://en.wikipedia.org/wiki/Romeo_Jalosjos_Sr.",
+              "note": "Patriarch; established political dynasty"
+            },
+            {
+              "name": "Seth Frederick Jalosjos",
+              "position": "Representative, Zamboanga del Norte-1st District",
+              "gender": "M"
+            }
+          ],
+          "historical_notes": "Established political dynasty in Zamboanga del Norte. Family members have held various positions including congressional seats and mayoral roles."
+        },
+        {
+          "id": "CAYETANO_TAGUIG",
+          "name": "Cayetano Dynasty (Taguig)",
+          "patriarch": "Renato Cayetano",
+          "established": 1998,
+          "classification": "major_dynasty",
+          "power_level": "regional",
+          "primary_regions": [
+            "Taguig",
+            "Metro Manila"
+          ],
+          "geographic_coordinates": {
+            "Taguig": {"lat": 14.5167, "lng": 121.0500},
+            "Metro Manila": {"lat": 14.6042, "lng": 121.0000}
+          },
+          "current_positions_held": 4,
+          "2025_status": "active_regional_control",
+          "key_members": [
+            {
+              "name": "Pia Cayetano",
+              "position": "Senator",
+              "term_start": 2022,
+              "gender": "F",
+              "wikipedia": "https://en.wikipedia.org/wiki/Pia_Cayetano"
+            },
+            {
+              "name": "Alan Peter Cayetano",
+              "position": "Former Senator, Former Speaker",
+              "term_start": 2007,
+              "gender": "M",
+              "wikipedia": "https://en.wikipedia.org/wiki/Alan_Peter_Cayetano"
+            },
+            {
+              "name": "Lani Cayetano",
+              "position": "Mayor of Taguig",
+              "elected": "2025-05-12",
+              "gender": "F",
+              "wikipedia": "https://en.wikipedia.org/wiki/Lani_Cayetano"
+            }
+          ],
+          "historical_notes": "Prominent political family in Taguig City. Multiple family members have served as senators, with strong local control in Taguig."
+        },
+        {
+          "id": "BELMONTE_QUEZON_CITY",
+          "name": "Belmonte Dynasty (Quezon City)",
+          "patriarch": "Feliciano Belmonte Jr.",
+          "established": 2001,
+          "classification": "major_dynasty",
+          "power_level": "regional",
+          "primary_regions": [
+            "Quezon City",
+            "Metro Manila"
+          ],
+          "geographic_coordinates": {
+            "Quezon City": {"lat": 14.6500, "lng": 121.0333},
+            "Metro Manila": {"lat": 14.6042, "lng": 121.0000}
+          },
+          "current_positions_held": 3,
+          "2025_status": "established_regional_control",
+          "key_members": [
+            {
+              "name": "Feliciano Belmonte Jr.",
+              "position": "Former Mayor of Quezon City",
+              "term_start": 2001,
+              "term_end": 2019,
+              "gender": "M",
+              "wikipedia": "https://en.wikipedia.org/wiki/Feliciano_Belmonte_Jr."
+            },
+            {
+              "name": "Joy Belmonte",
+              "position": "Mayor of Quezon City",
+              "term_start": 2019,
+              "elected": "2025-05-12",
+              "gender": "F",
+              "wikipedia": "https://en.wikipedia.org/wiki/Joy_Belmonte"
+            }
+          ],
+          "historical_notes": "Dominant political family in Quezon City. Feliciano Belmonte Jr. served as mayor and Speaker of the House, with daughter Joy continuing the legacy."
+        },
+        {
+          "id": "ZAMORA_SAN_JUAN",
+          "name": "Zamora Dynasty (San Juan)",
+          "patriarch": "Ronaldo Zamora",
+          "established": 1998,
+          "classification": "established_dynasty",
+          "power_level": "regional",
+          "primary_regions": [
+            "San Juan",
+            "Metro Manila"
+          ],
+          "geographic_coordinates": {
+            "San Juan": {"lat": 14.6000, "lng": 121.0333},
+            "Metro Manila": {"lat": 14.6042, "lng": 121.0000}
+          },
+          "current_positions_held": 2,
+          "2025_status": "active_regional_control",
+          "key_members": [
+            {
+              "name": "Ronaldo Zamora",
+              "position": "Former Mayor of San Juan",
+              "term_start": 1998,
+              "gender": "M",
+              "wikipedia": "https://en.wikipedia.org/wiki/Ronaldo_Zamora"
+            },
+            {
+              "name": "Francis Zamora",
+              "position": "Mayor of San Juan",
+              "elected": "2025-05-12",
+              "gender": "M",
+              "wikipedia": "https://en.wikipedia.org/wiki/Francis_Zamora"
+            }
+          ],
+          "historical_notes": "Prominent family in San Juan City politics. Ronaldo Zamora served as mayor and congressman, with son Francis continuing the political tradition."
+        },
+        {
+          "id": "MONTILLA_NEGROS",
+          "name": "Montilla Dynasty (Negros Occidental)",
+          "patriarch": "Soledad Montilla",
+          "established": 1995,
+          "classification": "established_dynasty",
+          "power_level": "regional",
+          "primary_regions": [
+            "Negros Occidental",
+            "Sipalay"
+          ],
+          "geographic_coordinates": {
+            "Negros Occidental": {"lat": 10.6667, "lng": 123.0000},
+            "Sipalay": {"lat": 9.7500, "lng": 122.4000}
+          },
+          "current_positions_held": 2,
+          "2025_status": "maintained_regional_control",
+          "key_members": [
+            {
+              "name": "Soledad Montilla",
+              "position": "Former Mayor of Sipalay",
+              "gender": "F"
+            },
+            {
+              "name": "Oscar Montilla Jr.",
+              "position": "Mayor of Sipalay",
+              "gender": "M"
+            }
+          ],
+          "historical_notes": "Dominant in Sipalay City politics. Family members have alternated in mayoral positions, maintaining strong local control."
+        },
+        {
+          "id": "ALVAREZ_NEGROS",
+          "name": "Alvarez Dynasty (Negros Occidental)",
+          "patriarch": "Genaro Alvarez",
+          "established": 1987,
+          "classification": "major_dynasty",
+          "power_level": "regional",
+          "primary_regions": [
+            "Negros Occidental"
+          ],
+          "geographic_coordinates": {
+            "Negros Occidental": {"lat": 10.6667, "lng": 123.0000}
+          },
+          "current_positions_held": 3,
+          "2025_status": "active_regional_control",
+          "key_members": [
+            {
+              "name": "Genaro Alvarez Jr.",
+              "position": "Former Representative, Negros Occidental",
+              "gender": "M"
+            }
+          ],
+          "historical_notes": "Influential in the 6th District of Negros Occidental. Family has held various positions including congressional seats and local government roles."
+        },
+        {
+          "id": "LEDESMA_NEGROS",
+          "name": "Ledesma Dynasty (Negros Occidental)",
+          "patriarch": "Julio Ledesma",
+          "established": 1992,
+          "classification": "established_dynasty",
+          "power_level": "regional",
+          "primary_regions": [
+            "Negros Occidental"
+          ],
+          "geographic_coordinates": {
+            "Negros Occidental": {"lat": 10.6667, "lng": 123.0000}
+          },
+          "current_positions_held": 2,
+          "2025_status": "active_regional_control",
+          "key_members": [
+            {
+              "name": "Julio Ledesma IV",
+              "position": "Representative, Negros Occidental-1st District",
+              "gender": "M"
+            }
+          ],
+          "historical_notes": "Active in the 1st District of Negros Occidental. Family has maintained political presence through multiple generations."
+        },
+        {
+          "id": "DEFENSOR_ILOILO",
+          "name": "Defensor Dynasty (Iloilo)",
+          "patriarch": "Arthur Defensor Sr.",
+          "established": 1995,
+          "classification": "major_dynasty",
+          "power_level": "regional",
+          "primary_regions": [
+            "Iloilo"
+          ],
+          "geographic_coordinates": {
+            "Iloilo": {"lat": 10.7202, "lng": 122.5621}
+          },
+          "current_positions_held": 5,
+          "2025_status": "dominant_regional_control",
+          "key_members": [
+            {
+              "name": "Arthur Defensor Sr.",
+              "position": "Former Governor of Iloilo",
+              "term_start": 2010,
+              "term_end": 2019,
+              "gender": "M"
+            },
+            {
+              "name": "Arthur Defensor Jr.",
+              "position": "Governor of Iloilo",
+              "term_start": 2019,
+              "elected": "2025-05-12",
+              "gender": "M",
+              "wikipedia": "https://en.wikipedia.org/wiki/Arthur_Defensor_Jr."
+            }
+          ],
+          "historical_notes": "Dominant political family in Iloilo. Father and son have served as governors, maintaining strong control over the province."
+        },
+        {
+          "id": "TREÑAS_ILOILO",
+          "name": "Treñas Dynasty (Iloilo City)",
+          "patriarch": "Jerry Treñas",
+          "established": 2001,
+          "classification": "major_dynasty",
+          "power_level": "regional",
+          "primary_regions": [
+            "Iloilo City"
+          ],
+          "geographic_coordinates": {
+            "Iloilo City": {"lat": 10.7202, "lng": 122.5621}
+          },
+          "current_positions_held": 3,
+          "2025_status": "established_regional_control",
+          "key_members": [
+            {
+              "name": "Jerry Treñas",
+              "position": "Mayor of Iloilo City",
+              "term_start": 2019,
+              "elected": "2025-05-12",
+              "gender": "M",
+              "wikipedia": "https://en.wikipedia.org/wiki/Jerry_Treñas"
+            }
+          ],
+          "historical_notes": "Prominent family in Iloilo City politics. Jerry Treñas has served multiple terms as mayor, establishing strong local control."
+        },
+        {
+          "id": "SOTTO_PASIG",
+          "name": "Sotto Dynasty (Pasig)",
+          "patriarch": "Vicente Sotto",
+          "established": 2001,
+          "classification": "major_dynasty",
+          "power_level": "regional",
+          "primary_regions": [
+            "Pasig",
+            "Metro Manila"
+          ],
+          "geographic_coordinates": {
+            "Pasig": {"lat": 14.5750, "lng": 121.0833},
+            "Metro Manila": {"lat": 14.6042, "lng": 121.0000}
+          },
+          "current_positions_held": 3,
+          "2025_status": "active_regional_control",
+          "key_members": [
+            {
+              "name": "Vico Sotto",
+              "position": "Mayor of Pasig",
+              "term_start": 2019,
+              "elected": "2025-05-12",
+              "gender": "M",
+              "wikipedia": "https://en.wikipedia.org/wiki/Vico_Sotto"
+            },
+            {
+              "name": "Vicente Sotto",
+              "position": "Former Mayor of Pasig",
+              "term_start": 2001,
+              "term_end": 2010,
+              "gender": "M",
+              "historical": true
+            }
+          ],
+          "historical_notes": "Prominent family in Pasig City. Vico Sotto gained national attention as a reformist mayor, continuing the family's political legacy."
+        },
+        {
+          "id": "OCAMPO_CALOOCAN",
+          "name": "Ocampo Dynasty (Caloocan)",
+          "patriarch": "Enrico Echiverri",
+          "established": 2004,
+          "classification": "established_dynasty",
+          "power_level": "regional",
+          "primary_regions": [
+            "Caloocan",
+            "Metro Manila"
+          ],
+          "geographic_coordinates": {
+            "Caloocan": {"lat": 14.6500, "lng": 120.9667},
+            "Metro Manila": {"lat": 14.6042, "lng": 121.0000}
+          },
+          "current_positions_held": 2,
+          "2025_status": "active_regional_control",
+          "key_members": [
+            {
+              "name": "Dale Malapitan",
+              "position": "Mayor of Caloocan",
+              "term_start": 2019,
+              "elected": "2025-05-12",
+              "gender": "M",
+              "wikipedia": "https://en.wikipedia.org/wiki/Dale_Malapitan"
+            }
+          ],
+          "historical_notes": "Active political family in Caloocan City. Family has maintained control through multiple mayoral terms."
+        },
+        {
+          "id": "YU_ZAMBOANGA",
+          "name": "Yu Dynasty (Zamboanga del Sur)",
+          "patriarch": "Victor Yu",
+          "established": 2010,
+          "classification": "major_dynasty",
+          "power_level": "regional",
+          "primary_regions": [
+            "Zamboanga del Sur"
+          ],
+          "geographic_coordinates": {
+            "Zamboanga del Sur": {"lat": 7.8333, "lng": 123.4167}
+          },
+          "current_positions_held": 4,
+          "2025_status": "expanding_regional_control",
+          "key_members": [
+            {
+              "name": "Victor Yu",
+              "position": "Governor of Zamboanga del Sur",
+              "elected": "2025-05-12",
+              "gender": "M"
+            },
+            {
+              "name": "Divina Grace Yu",
+              "position": "Representative, Zamboanga del Sur",
+              "gender": "F",
+              "note": "Wife of Victor Yu"
+            }
+          ],
+          "historical_notes": "Expanding political base in Zamboanga del Sur. Victor Yu and his wife Divina Grace have established strong control over the province."
+        },
+        {
+          "id": "ANDAYA_BICOL",
+          "name": "Andaya Dynasty (Bicol)",
+          "patriarch": "Rolando Andaya",
+          "established": 1987,
+          "classification": "major_dynasty",
+          "power_level": "regional",
+          "primary_regions": [
+            "Camarines Norte"
+          ],
+          "geographic_coordinates": {
+            "Camarines Norte": {"lat": 14.1667, "lng": 122.9167}
+          },
+          "current_positions_held": 3,
+          "2025_status": "established_regional_control",
+          "key_members": [
+            {
+              "name": "Rolando Andaya",
+              "position": "Former Representative, Camarines Norte",
+              "term_start": 1998,
+              "gender": "M",
+              "wikipedia": "https://en.wikipedia.org/wiki/Rolando_Andaya"
+            },
+            {
+              "name": "Rolando Andaya Jr.",
+              "position": "Representative, Camarines Norte",
+              "gender": "M"
+            }
+          ],
+          "historical_notes": "Prominent political family in Camarines Norte. Family has maintained strong control through multiple generations, with members serving in Congress."
+        },
+        {
+          "id": "PIMENTEL_SURIGAO",
+          "name": "Pimentel Dynasty (Surigao del Norte)",
+          "patriarch": "Aquilino Pimentel Jr.",
+          "established": 1986,
+          "classification": "major_dynasty",
+          "power_level": "regional",
+          "primary_regions": [
+            "Surigao del Norte"
+          ],
+          "geographic_coordinates": {
+            "Surigao del Norte": {"lat": 9.7833, "lng": 125.4833}
+          },
+          "current_positions_held": 3,
+          "2025_status": "established_regional_control",
+          "key_members": [
+            {
+              "name": "Aquilino Pimentel Jr.",
+              "position": "Former Senator",
+              "term_start": 1987,
+              "gender": "M",
+              "historical": true,
+              "wikipedia": "https://en.wikipedia.org/wiki/Aquilino_Pimentel_Jr.",
+              "note": "Patriarch; former Senate President"
+            },
+            {
+              "name": "Aquilino Pimentel III",
+              "position": "Former Senator",
+              "term_start": 2016,
+              "term_end": 2022,
+              "gender": "M",
+              "wikipedia": "https://en.wikipedia.org/wiki/Aquilino_Pimentel_III"
+            }
+          ],
+          "historical_notes": "Prominent political family from Surigao del Norte with national reach. Aquilino Pimentel Jr. served as Senate President, with son continuing the political legacy."
+        },
+        {
+          "id": "ESCUDERO_SORSOGON",
+          "name": "Escudero Dynasty (Sorsogon)",
+          "patriarch": "Salvador Escudero III",
+          "established": 1969,
+          "classification": "major_dynasty",
+          "power_level": "regional",
+          "primary_regions": [
+            "Sorsogon"
+          ],
+          "geographic_coordinates": {
+            "Sorsogon": {"lat": 12.9742, "lng": 124.0058}
+          },
+          "current_positions_held": 2,
+          "2025_status": "corruption_crisis",
+          "crisis_level": "high",
+          "key_members": [
+            {
+              "name": "Francis 'Chiz' Escudero",
+              "position": "Former Senate President",
+              "status": "ousted_corruption_scandal",
+              "gender": "M",
+              "wikipedia": "https://en.wikipedia.org/wiki/Chiz_Escudero"
+            },
+            {
+              "name": "Salvador Escudero III",
+              "position": "Former Secretary of Agriculture",
+              "gender": "M",
+              "historical": true,
+              "wikipedia": "https://en.wikipedia.org/wiki/Salvador_Escudero_III",
+              "note": "Patriarch"
+            }
+          ],
+          "historical_notes": "Long-standing political family in Sorsogon. Chiz Escudero's 2025 ouster as Senate President due to flood control corruption scandal marked a significant crisis for the dynasty."
+        },
+        {
+          "id": "BICHARA_ALBAY",
+          "name": "Bichara Dynasty (Albay)",
+          "patriarch": "Al Francis Bichara",
+          "established": 2004,
+          "classification": "major_dynasty",
+          "power_level": "regional",
+          "primary_regions": [
+            "Albay"
+          ],
+          "geographic_coordinates": {
+            "Albay": {"lat": 13.1333, "lng": 123.5833}
+          },
+          "current_positions_held": 3,
+          "2025_status": "established_regional_control",
+          "key_members": [
+            {
+              "name": "Al Francis Bichara",
+              "position": "Former Governor of Albay",
+              "term_start": 2016,
+              "term_end": 2022,
+              "gender": "M"
+            }
+          ],
+          "historical_notes": "Prominent political family in Albay. Family has maintained influence in provincial politics."
+        },
+        {
+          "id": "CHATTO_BOHOL",
+          "name": "Chatto Dynasty (Bohol)",
+          "patriarch": "Edgar Chatto",
+          "established": 2007,
+          "classification": "major_dynasty",
+          "power_level": "regional",
+          "primary_regions": [
+            "Bohol"
+          ],
+          "geographic_coordinates": {
+            "Bohol": {"lat": 9.8333, "lng": 124.1667}
+          },
+          "current_positions_held": 4,
+          "2025_status": "dominant_regional_control",
+          "key_members": [
+            {
+              "name": "Edgar Chatto",
+              "position": "Governor of Bohol",
+              "term_start": 2019,
+              "elected": "2025-05-12",
+              "gender": "M",
+              "wikipedia": "https://en.wikipedia.org/wiki/Edgar_Chatto"
+            }
+          ],
+          "historical_notes": "Dominant political family in Bohol. Edgar Chatto has served multiple terms as governor, establishing strong control over the province."
+        },
+        {
+          "id": "YAP_BOHOL",
+          "name": "Yap Dynasty (Bohol)",
+          "patriarch": "Arthur Yap",
+          "established": 2001,
+          "classification": "major_dynasty",
+          "power_level": "regional",
+          "primary_regions": [
+            "Bohol"
+          ],
+          "geographic_coordinates": {
+            "Bohol": {"lat": 9.8333, "lng": 124.1667}
+          },
+          "current_positions_held": 3,
+          "2025_status": "active_regional_control",
+          "key_members": [
+            {
+              "name": "Arthur Yap",
+              "position": "Former Governor of Bohol",
+              "term_start": 2010,
+              "term_end": 2019,
+              "gender": "M",
+              "wikipedia": "https://en.wikipedia.org/wiki/Arthur_Yap"
+            }
+          ],
+          "historical_notes": "Active political family in Bohol. Family has maintained presence in provincial politics through multiple generations."
+        },
+        {
+          "id": "FERNANDO_BULACAN",
+          "name": "Fernando Dynasty (Bulacan)",
+          "patriarch": "Jose Fernando",
+          "established": 1995,
+          "classification": "major_dynasty",
+          "power_level": "regional",
+          "primary_regions": [
+            "Bulacan"
+          ],
+          "geographic_coordinates": {
+            "Bulacan": {"lat": 14.8000, "lng": 121.0667}
+          },
+          "current_positions_held": 4,
+          "2025_status": "established_regional_control",
+          "key_members": [
+            {
+              "name": "Daniel Fernando",
+              "position": "Governor of Bulacan",
+              "term_start": 2019,
+              "elected": "2025-05-12",
+              "gender": "M"
+            }
+          ],
+          "historical_notes": "Prominent political family in Bulacan. Family has maintained influence in one of the most populous provinces in Luzon."
+        },
+        {
+          "id": "PANLILIO_PAMPANGA",
+          "name": "Panlilio Dynasty (Pampanga)",
+          "patriarch": "Eduardo Panlilio",
+          "established": 2007,
+          "classification": "established_dynasty",
+          "power_level": "regional",
+          "primary_regions": [
+            "Pampanga"
+          ],
+          "geographic_coordinates": {
+            "Pampanga": {"lat": 15.0667, "lng": 120.6667}
+          },
+          "current_positions_held": 2,
+          "2025_status": "active_regional_control",
+          "key_members": [
+            {
+              "name": "Eduardo Panlilio",
+              "position": "Former Governor of Pampanga",
+              "term_start": 2007,
+              "term_end": 2010,
+              "gender": "M",
+              "wikipedia": "https://en.wikipedia.org/wiki/Eduardo_Panlilio"
+            }
+          ],
+          "historical_notes": "Notable political family in Pampanga. Eduardo Panlilio, a priest-turned-politician, served as governor and established the family's political presence."
+        },
+        {
+          "id": "YAP_TARLAC",
+          "name": "Yap Dynasty (Tarlac)",
+          "patriarch": "Victor Yap",
+          "established": 2004,
+          "classification": "major_dynasty",
+          "power_level": "regional",
+          "primary_regions": [
+            "Tarlac"
+          ],
+          "geographic_coordinates": {
+            "Tarlac": {"lat": 15.4833, "lng": 120.5833}
+          },
+          "current_positions_held": 3,
+          "2025_status": "established_regional_control",
+          "key_members": [
+            {
+              "name": "Victor Yap",
+              "position": "Former Governor of Tarlac",
+              "term_start": 2007,
+              "term_end": 2016,
+              "gender": "M"
+            }
+          ],
+          "historical_notes": "Active political family in Tarlac. Family has maintained presence in provincial politics."
+        },
+        {
+          "id": "PIÑOL_COTABATO",
+          "name": "Piñol Dynasty (Cotabato)",
+          "patriarch": "Emmanuel Piñol",
+          "established": 1998,
+          "classification": "major_dynasty",
+          "power_level": "regional",
+          "primary_regions": [
+            "Cotabato",
+            "North Cotabato"
+          ],
+          "geographic_coordinates": {
+            "Cotabato": {"lat": 7.2167, "lng": 124.2500},
+            "North Cotabato": {"lat": 7.2167, "lng": 124.2500}
+          },
+          "current_positions_held": 4,
+          "2025_status": "dominant_regional_control",
+          "key_members": [
+            {
+              "name": "Emmanuel Piñol",
+              "position": "Former Governor of North Cotabato",
+              "term_start": 1998,
+              "term_end": 2007,
+              "gender": "M",
+              "wikipedia": "https://en.wikipedia.org/wiki/Emmanuel_Piñol"
+            }
+          ],
+          "historical_notes": "Prominent political family in Cotabato. Emmanuel Piñol served as governor and later as Secretary of Agriculture, establishing strong regional control."
+        },
+        {
+          "id": "DELA_ROSA_DAVAO_DEL_NORTE",
+          "name": "Dela Rosa Dynasty (Davao del Norte)",
+          "patriarch": "Rodolfo dela Rosa",
+          "established": 1995,
+          "classification": "major_dynasty",
+          "power_level": "regional",
+          "primary_regions": [
+            "Davao del Norte"
+          ],
+          "geographic_coordinates": {
+            "Davao del Norte": {"lat": 7.4500, "lng": 125.8167}
+          },
+          "current_positions_held": 3,
+          "2025_status": "active_regional_control",
+          "key_members": [
+            {
+              "name": "Edwin Jubahib",
+              "position": "Governor of Davao del Norte",
+              "elected": "2025-05-12",
+              "gender": "M"
+            }
+          ],
+          "historical_notes": "Active political family in Davao del Norte. Family has maintained influence in the province adjacent to Davao City."
+        },
+        {
+          "id": "VALDEZ_MANDALUYONG",
+          "name": "Valdez Dynasty (Mandaluyong)",
+          "patriarch": "Benjamin Abalos",
+          "established": 1998,
+          "classification": "major_dynasty",
+          "power_level": "regional",
+          "primary_regions": [
+            "Mandaluyong",
+            "Metro Manila"
+          ],
+          "geographic_coordinates": {
+            "Mandaluyong": {"lat": 14.5833, "lng": 121.0333},
+            "Metro Manila": {"lat": 14.6042, "lng": 121.0000}
+          },
+          "current_positions_held": 3,
+          "2025_status": "established_regional_control",
+          "key_members": [
+            {
+              "name": "Benjamin Abalos Jr.",
+              "position": "Mayor of Mandaluyong",
+              "term_start": 2019,
+              "elected": "2025-05-12",
+              "gender": "M",
+              "wikipedia": "https://en.wikipedia.org/wiki/Benjamin_Abalos_Jr."
+            },
+            {
+              "name": "Benjamin Abalos",
+              "position": "Former Mayor of Mandaluyong",
+              "term_start": 1998,
+              "gender": "M",
+              "historical": true,
+              "wikipedia": "https://en.wikipedia.org/wiki/Benjamin_Abalos",
+              "note": "Patriarch; former COMELEC Chairman"
+            }
+          ],
+          "historical_notes": "Prominent political family in Mandaluyong City. Benjamin Abalos served as mayor and COMELEC Chairman, with son continuing the political legacy."
+        },
+        {
+          "id": "EUSEBIO_PASIG",
+          "name": "Eusebio Dynasty (Pasig)",
+          "patriarch": "Vicente Eusebio",
+          "established": 2001,
+          "classification": "established_dynasty",
+          "power_level": "regional",
+          "primary_regions": [
+            "Pasig",
+            "Metro Manila"
+          ],
+          "geographic_coordinates": {
+            "Pasig": {"lat": 14.5750, "lng": 121.0833},
+            "Metro Manila": {"lat": 14.6042, "lng": 121.0000}
+          },
+          "current_positions_held": 2,
+          "2025_status": "active_regional_control",
+          "key_members": [
+            {
+              "name": "Vicente Eusebio",
+              "position": "Former Mayor of Pasig",
+              "term_start": 2001,
+              "term_end": 2010,
+              "gender": "M"
+            }
+          ],
+          "historical_notes": "Active political family in Pasig City. Family has maintained presence in local politics."
+        },
+        {
+          "id": "GATCHALIAN_VALENZUELA",
+          "name": "Gatchalian Dynasty (Valenzuela)",
+          "patriarch": "Rex Gatchalian",
+          "established": 2004,
+          "classification": "major_dynasty",
+          "power_level": "regional",
+          "primary_regions": [
+            "Valenzuela",
+            "Metro Manila"
+          ],
+          "geographic_coordinates": {
+            "Valenzuela": {"lat": 14.7000, "lng": 120.9833},
+            "Metro Manila": {"lat": 14.6042, "lng": 121.0000}
+          },
+          "current_positions_held": 4,
+          "2025_status": "established_regional_control",
+          "key_members": [
+            {
+              "name": "Rex Gatchalian",
+              "position": "Former Mayor of Valenzuela",
+              "term_start": 2004,
+              "term_end": 2013,
+              "gender": "M",
+              "wikipedia": "https://en.wikipedia.org/wiki/Rex_Gatchalian"
+            },
+            {
+              "name": "Sherwin Gatchalian",
+              "position": "Senator",
+              "term_start": 2016,
+              "gender": "M",
+              "wikipedia": "https://en.wikipedia.org/wiki/Sherwin_Gatchalian"
+            }
+          ],
+          "historical_notes": "Prominent political family in Valenzuela City. Multiple family members have served as mayor and senator, establishing strong local and national presence."
+        },
+        {
+          "id": "COJUANGCO_TARLAC",
+          "name": "Cojuangco Dynasty (Tarlac)",
+          "patriarch": "Eduardo Cojuangco",
+          "established": 1969,
+          "classification": "imperial_dynasty",
+          "power_level": "national",
+          "primary_regions": [
+            "Tarlac"
+          ],
+          "geographic_coordinates": {
+            "Tarlac": {"lat": 15.4833, "lng": 120.5833}
+          },
+          "current_positions_held": 3,
+          "2025_status": "historical_influence",
+          "key_members": [
+            {
+              "name": "Eduardo Cojuangco",
+              "position": "Former Governor of Tarlac",
+              "term_start": 1969,
+              "gender": "M",
+              "historical": true,
+              "wikipedia": "https://en.wikipedia.org/wiki/Eduardo_Cojuangco",
+              "note": "Patriarch; business tycoon, political kingmaker"
+            }
+          ],
+          "allied_dynasties": ["AQUINO_FAMILY"],
+          "historical_notes": "One of the most powerful political families in Philippine history. Eduardo Cojuangco was a business tycoon and political kingmaker, with deep connections to the Aquino family. Family maintains historical influence in Tarlac."
+        },
+        {
+          "id": "ROXAS_CAPIZ",
+          "name": "Roxas Dynasty (Capiz)",
+          "patriarch": "Manuel Roxas",
+          "established": 1946,
+          "classification": "imperial_dynasty",
+          "power_level": "national",
+          "primary_regions": [
+            "Capiz"
+          ],
+          "geographic_coordinates": {
+            "Capiz": {"lat": 11.5833, "lng": 122.7500}
+          },
+          "current_positions_held": 2,
+          "2025_status": "historical_influence",
+          "key_members": [
+            {
+              "name": "Manuel Roxas",
+              "position": "Former President of Philippines (1946-1948)",
+              "gender": "M",
+              "historical": true,
+              "wikipedia": "https://en.wikipedia.org/wiki/Manuel_Roxas",
+              "note": "Patriarch; 5th President of Philippines"
+            }
+          ],
+          "allied_dynasties": ["AQUINO_FAMILY"],
+          "historical_notes": "One of the oldest and most historically significant political families. Manuel Roxas was the 5th President of the Philippines. Family maintains historical influence and connections to the Aquino family."
+        },
+        {
+          "id": "LOPEZ_ILOILO",
+          "name": "López Dynasty (Iloilo)",
+          "patriarch": "Fernando López",
+          "established": 1947,
+          "classification": "imperial_dynasty",
+          "power_level": "national",
+          "primary_regions": [
+            "Iloilo"
+          ],
+          "geographic_coordinates": {
+            "Iloilo": {"lat": 10.7202, "lng": 122.5621}
+          },
+          "current_positions_held": 2,
+          "2025_status": "business_influence",
+          "key_members": [
+            {
+              "name": "Fernando López",
+              "position": "Former Vice President of Philippines",
+              "term_start": 1949,
+              "term_end": 1953,
+              "gender": "M",
+              "historical": true,
+              "wikipedia": "https://en.wikipedia.org/wiki/Fernando_López",
+              "note": "Patriarch; former Vice President"
+            },
+            {
+              "name": "Eugenio López III",
+              "position": "Business Executive",
+              "gender": "M",
+              "wikipedia": "https://en.wikipedia.org/wiki/Eugenio_López_III",
+              "note": "Media and business empire"
+            }
+          ],
+          "business_interests": [
+            "Media",
+            "Utilities",
+            "Real Estate"
+          ],
+          "wealth_level": "ultra_high",
+          "historical_notes": "One of the most powerful business and political families. Fernando López served as Vice President, and the family controls major media and utility companies. Maintains significant influence through business empire."
+        },
+        {
+          "id": "GORDON_OLONGAPO",
+          "name": "Gordon Dynasty (Olongapo)",
+          "patriarch": "James Gordon",
+          "established": 1963,
+          "classification": "major_dynasty",
+          "power_level": "regional",
+          "primary_regions": [
+            "Olongapo",
+            "Zambales"
+          ],
+          "geographic_coordinates": {
+            "Olongapo": {"lat": 14.8333, "lng": 120.2833},
+            "Zambales": {"lat": 15.1667, "lng": 120.0000}
+          },
+          "current_positions_held": 3,
+          "2025_status": "established_regional_control",
+          "key_members": [
+            {
+              "name": "Richard Gordon",
+              "position": "Former Senator",
+              "term_start": 2004,
+              "term_end": 2022,
+              "gender": "M",
+              "wikipedia": "https://en.wikipedia.org/wiki/Richard_Gordon"
+            },
+            {
+              "name": "James Gordon",
+              "position": "Former Mayor of Olongapo",
+              "term_start": 1963,
+              "gender": "M",
+              "historical": true,
+              "wikipedia": "https://en.wikipedia.org/wiki/James_Gordon",
+              "note": "Patriarch"
+            }
+          ],
+          "historical_notes": "Prominent political family in Olongapo and Zambales. James Gordon established the dynasty, with Richard Gordon serving as senator and maintaining strong regional control."
+        },
+        {
+          "id": "ANGARA_AURORA",
+          "name": "Angara Dynasty (Aurora)",
+          "patriarch": "Edgardo Angara",
+          "established": 1987,
+          "classification": "major_dynasty",
+          "power_level": "regional",
+          "primary_regions": [
+            "Aurora"
+          ],
+          "geographic_coordinates": {
+            "Aurora": {"lat": 15.7500, "lng": 121.5000}
+          },
+          "current_positions_held": 4,
+          "2025_status": "dominant_regional_control",
+          "key_members": [
+            {
+              "name": "Edgardo Angara",
+              "position": "Former Senator",
+              "term_start": 1987,
+              "gender": "M",
+              "historical": true,
+              "wikipedia": "https://en.wikipedia.org/wiki/Edgardo_Angara",
+              "note": "Patriarch; former Senate President"
+            },
+            {
+              "name": "Sonny Angara",
+              "position": "Senator",
+              "term_start": 2013,
+              "gender": "M",
+              "wikipedia": "https://en.wikipedia.org/wiki/Sonny_Angara"
+            }
+          ],
+          "historical_notes": "Dominant political family in Aurora. Edgardo Angara served as Senate President, with son Sonny continuing the political legacy in the Senate."
+        },
+        {
+          "id": "ENRILE_CAGAYAN",
+          "name": "Enrile Dynasty (Cagayan)",
+          "patriarch": "Juan Ponce Enrile",
+          "established": 1969,
+          "classification": "imperial_dynasty",
+          "power_level": "national",
+          "primary_regions": [
+            "Cagayan"
+          ],
+          "geographic_coordinates": {
+            "Cagayan": {"lat": 17.6167, "lng": 121.7167}
+          },
+          "current_positions_held": 2,
+          "2025_status": "historical_influence",
+          "key_members": [
+            {
+              "name": "Juan Ponce Enrile",
+              "position": "Former Senator",
+              "term_start": 1987,
+              "gender": "M",
+              "historical": true,
+              "wikipedia": "https://en.wikipedia.org/wiki/Juan_Ponce_Enrile",
+              "note": "Patriarch; former Senate President, Defense Secretary during Martial Law"
+            },
+            {
+              "name": "Jack Enrile",
+              "position": "Former Representative, Cagayan",
+              "gender": "M",
+              "wikipedia": "https://en.wikipedia.org/wiki/Jack_Enrile"
+            }
+          ],
+          "historical_notes": "One of the most powerful political families in Philippine history. Juan Ponce Enrile served as Defense Secretary during Martial Law and later as Senate President. Family maintains historical influence in Cagayan."
+        },
+        {
+          "id": "FLORENDO_DAVAO_DEL_NORTE",
+          "name": "Florendo Dynasty (Davao del Norte)",
+          "patriarch": "Rodolfo del Rosario",
+          "established": 1995,
+          "classification": "major_dynasty",
+          "power_level": "regional",
+          "primary_regions": [
+            "Davao del Norte"
+          ],
+          "geographic_coordinates": {
+            "Davao del Norte": {"lat": 7.4500, "lng": 125.8167}
+          },
+          "current_positions_held": 3,
+          "2025_status": "active_regional_control",
+          "key_members": [
+            {
+              "name": "Rodolfo del Rosario",
+              "position": "Former Governor of Davao del Norte",
+              "term_start": 2007,
+              "term_end": 2016,
+              "gender": "M"
+            }
+          ],
+          "historical_notes": "Active political family in Davao del Norte. Family has maintained influence in the province."
         }
       ]
     },
@@ -1876,16 +3134,6 @@
           "description": "Internal family competition for same positions in La Union",
           "strength": "strong",
           "note": "Intra-family rivalry"
-        },
-        {
-          "id": "rel_010",
-          "source": "AQUINO_FAMILY",
-          "target": "ROXAS_FAMILY",
-          "type": "alliance",
-          "description": "Historical and continuing political partnership; shared opposition identity",
-          "strength": "very_strong",
-          "duration_years": 70,
-          "2025_note": "Resurgence in midterm elections"
         },
         {
           "id": "rel_011",
