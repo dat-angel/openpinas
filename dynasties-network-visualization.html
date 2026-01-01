@@ -3,7 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Philippine Political Dynasties Network Map 2025</title>
+  <title>Dynasty Map – OpenPinas</title>
+  <meta name="description" content="Interactive network map of 59 Philippine political dynasties. See alliances, rivalries, and corruption connections." />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Spectral:wght@400;600;700&display=swap" rel="stylesheet" />
@@ -11,14 +13,6 @@
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
   <style>
-    :root {
-      --ink: #1a1a1a;
-      --muted: #5e5e5e;
-      --paper: #f8f5f0;
-      --accent: #124559;
-      --accent-2: #c44900;
-    }
-
     * {
       box-sizing: border-box;
       margin: 0;
@@ -26,27 +20,25 @@
     }
 
     body {
-      font-family: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, sans-serif;
-      background: var(--paper);
-      color: var(--ink);
+      font-family: "IBM Plex Sans", -apple-system, sans-serif;
+      background: #fdfcfb;
+      color: #222;
     }
 
     header {
-      background: radial-gradient(ellipse at 80% 0%, #f0e7d7 0%, transparent 50%),
-        radial-gradient(ellipse at 10% 100%, #e6efe7 0%, transparent 40%),
-        var(--paper);
-      color: var(--ink);
-      padding: 20px 24px 16px;
-      border-bottom: 1px solid #d6cbbd;
+      background: #fff;
+      color: #222;
+      padding: 1rem 1.5rem;
+      border-bottom: 1px solid #e5e5e5;
     }
 
     .header-nav {
-      font-size: 13px;
-      margin-bottom: 12px;
+      font-size: 0.8125rem;
+      margin-bottom: 0.75rem;
     }
 
     .header-nav a {
-      color: var(--accent);
+      color: #666;
       text-decoration: none;
     }
 
@@ -56,36 +48,36 @@
 
     h1 {
       font-family: "Spectral", Georgia, serif;
-      font-size: 28px;
-      font-weight: 700;
-      margin-bottom: 8px;
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin-bottom: 0.375rem;
     }
 
     .header-intro {
       font-family: "Spectral", Georgia, serif;
-      font-size: 15px;
-      color: var(--muted);
+      font-size: 0.9375rem;
+      color: #666;
       max-width: 600px;
       line-height: 1.5;
-      margin-bottom: 8px;
+      margin-bottom: 0.375rem;
     }
 
     header p {
-      font-size: 13px;
-      color: var(--muted);
+      font-size: 0.75rem;
+      color: #888;
     }
 
     header p a {
-      color: var(--accent);
+      color: #666;
       text-decoration: none;
     }
 
     .controls {
-      background: white;
-      padding: 16px 24px;
-      border-bottom: 1px solid #e0e0e0;
+      background: #fff;
+      padding: 0.75rem 1.5rem;
+      border-bottom: 1px solid #e5e5e5;
       display: flex;
-      gap: 16px;
+      gap: 1rem;
       flex-wrap: wrap;
       align-items: center;
     }
@@ -93,41 +85,45 @@
     .controls label {
       display: flex;
       align-items: center;
-      gap: 8px;
-      font-size: 14px;
+      gap: 0.5rem;
+      font-size: 0.8125rem;
+      color: #444;
     }
 
     .controls select {
-      padding: 6px 12px;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      font-size: 14px;
+      padding: 0.375rem 0.75rem;
+      border: 1px solid #ddd;
+      font-size: 0.8125rem;
+      background: #fff;
+    }
+
+    .controls select:focus {
+      outline: none;
+      border-color: #222;
     }
 
     .controls button {
-      padding: 6px 16px;
-      background: #1a1a1a;
-      color: white;
-      border: none;
-      border-radius: 4px;
+      padding: 0.375rem 0.75rem;
+      background: #fff;
+      color: #222;
+      border: 1px solid #ddd;
       cursor: pointer;
-      font-size: 14px;
+      font-size: 0.8125rem;
     }
 
     .controls button:hover {
-      background: #2d2d2d;
+      border-color: #222;
     }
 
     .info-panel {
       position: fixed;
-      top: 200px;
-      right: 24px;
-      width: 320px;
-      max-height: calc(100vh - 220px);
-      background: white;
-      border-radius: 8px;
-      box-shadow: 0 4px 16px rgba(0,0,0,0.15);
-      padding: 20px;
+      top: 160px;
+      right: 1rem;
+      width: 300px;
+      max-height: calc(100vh - 180px);
+      background: #fff;
+      border: 1px solid #e5e5e5;
+      padding: 1rem;
       overflow-y: auto;
       z-index: 1000;
       display: none;
@@ -139,14 +135,13 @@
 
     .glossary-panel {
       position: fixed;
-      top: 200px;
-      left: 24px;
-      width: 320px;
-      max-height: calc(100vh - 220px);
-      background: white;
-      border-radius: 8px;
-      box-shadow: 0 4px 16px rgba(0,0,0,0.15);
-      padding: 20px;
+      top: 160px;
+      left: 1rem;
+      width: 280px;
+      max-height: calc(100vh - 180px);
+      background: #fff;
+      border: 1px solid #e5e5e5;
+      padding: 1rem;
       overflow-y: auto;
       z-index: 1000;
       display: none;
@@ -157,17 +152,20 @@
     }
 
     .glossary-panel h3 {
-      margin-bottom: 16px;
-      color: #1a1a1a;
-      font-size: 18px;
-      border-bottom: 2px solid #0038A8;
-      padding-bottom: 8px;
+      margin-bottom: 1rem;
+      color: #222;
+      font-size: 0.875rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      border-bottom: 1px solid #e5e5e5;
+      padding-bottom: 0.5rem;
     }
 
     .glossary-panel .term {
-      margin-bottom: 16px;
-      padding-bottom: 12px;
-      border-bottom: 1px solid #e0e0e0;
+      margin-bottom: 0.75rem;
+      padding-bottom: 0.75rem;
+      border-bottom: 1px solid #f0f0f0;
     }
 
     .glossary-panel .term:last-child {
@@ -176,135 +174,142 @@
 
     .glossary-panel .term-name {
       font-weight: 600;
-      color: #0038A8;
-      font-size: 14px;
-      margin-bottom: 4px;
+      color: #222;
+      font-size: 0.8125rem;
+      margin-bottom: 0.125rem;
     }
 
     .glossary-panel .term-def {
-      font-size: 12px;
+      font-size: 0.75rem;
       color: #666;
-      line-height: 1.5;
+      line-height: 1.4;
     }
 
     .info-panel h3 {
-      margin-bottom: 12px;
-      color: #1a1a1a;
-      font-size: 18px;
+      margin-bottom: 0.75rem;
+      color: #222;
+      font-size: 1rem;
+      font-weight: 600;
     }
 
     .info-panel .close {
       float: right;
       background: none;
       border: none;
-      font-size: 20px;
+      font-size: 1.25rem;
       cursor: pointer;
-      color: #666;
+      color: #888;
+      line-height: 1;
     }
 
     .info-panel .close:hover {
-      color: #1a1a1a;
+      color: #222;
     }
 
     .info-panel p {
-      margin: 8px 0;
-      font-size: 14px;
+      margin: 0.5rem 0;
+      font-size: 0.8125rem;
       line-height: 1.5;
     }
 
     .info-panel .label {
       font-weight: 600;
-      color: #666;
-      font-size: 12px;
+      color: #888;
+      font-size: 0.6875rem;
       text-transform: uppercase;
-      letter-spacing: 0.5px;
-      margin-top: 12px;
+      letter-spacing: 0.05em;
+      margin-top: 0.75rem;
     }
 
     .info-panel .value {
-      margin-bottom: 8px;
+      margin-bottom: 0.5rem;
     }
 
     .info-panel ul {
-      margin: 8px 0 8px 20px;
-      font-size: 14px;
+      margin: 0.5rem 0 0.5rem 1.25rem;
+      font-size: 0.8125rem;
     }
 
     #network-container {
       width: 100%;
-      height: calc(100vh - 180px);
-      background: white;
-      border: 1px solid #e0e0e0;
+      height: calc(100vh - 140px);
+      background: #fff;
+      border-bottom: 1px solid #e5e5e5;
     }
 
     .legend {
       position: fixed;
-      bottom: 24px;
-      left: 24px;
-      background: white;
-      padding: 16px;
-      border-radius: 8px;
-      box-shadow: 0 4px 16px rgba(0,0,0,0.15);
-      font-size: 12px;
+      bottom: 1rem;
+      left: 1rem;
+      background: #fff;
+      padding: 0.75rem 1rem;
+      border: 1px solid #e5e5e5;
+      font-size: 0.75rem;
       z-index: 1000;
     }
 
     .legend h4 {
-      margin-bottom: 12px;
-      font-size: 14px;
+      margin-bottom: 0.5rem;
+      font-size: 0.6875rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: #888;
     }
 
     .legend-item {
       display: flex;
       align-items: center;
-      gap: 8px;
-      margin: 6px 0;
+      gap: 0.5rem;
+      margin: 0.25rem 0;
+      color: #444;
     }
 
     .legend-color {
-      width: 16px;
-      height: 16px;
+      width: 12px;
+      height: 12px;
       border-radius: 50%;
-      border: 1px solid #ccc;
+      border: 1px solid #ddd;
     }
 
     .legend-line {
-      width: 24px;
+      width: 20px;
       height: 2px;
       background: #ccc;
     }
 
     .legend-line.dashed {
-      background: repeating-linear-gradient(to right, #666 0, #666 4px, transparent 4px, transparent 8px);
+      background: repeating-linear-gradient(to right, #666 0, #666 3px, transparent 3px, transparent 6px);
     }
 
     .stats {
       position: fixed;
-      top: 180px;
-      left: 24px;
-      background: white;
-      padding: 16px;
-      border-radius: 8px;
-      box-shadow: 0 4px 16px rgba(0,0,0,0.15);
-      font-size: 12px;
+      top: 160px;
+      left: 1rem;
+      background: #fff;
+      padding: 0.75rem 1rem;
+      border: 1px solid #e5e5e5;
+      font-size: 0.75rem;
       z-index: 1000;
     }
 
     .stats h4 {
-      margin-bottom: 8px;
-      font-size: 14px;
+      margin-bottom: 0.5rem;
+      font-size: 0.6875rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: #888;
     }
 
     .stats p {
-      margin: 4px 0;
-      font-size: 12px;
+      margin: 0.25rem 0;
+      font-size: 0.75rem;
+      color: #444;
     }
 
     .map-legend {
-      background: white;
-      padding: 12px;
-      border-radius: 8px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+      background: #fff;
+      padding: 0.75rem;
+      border: 1px solid #e5e5e5;
     }
 
     .province-marker {
@@ -316,11 +321,11 @@
       .info-panel, .legend, .stats {
         position: relative;
         width: 100%;
-        margin: 16px;
+        margin: 1rem;
       }
 
       #network-container, #map-container {
-        height: 600px;
+        height: 500px;
       }
     }
   </style>

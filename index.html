@@ -4,181 +4,163 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>OpenPinas – Philippine Political Dynasties</title>
+    <meta name="description" content="Track 59 political dynasties, corruption cases, and 2025 events in the Philippines. Open data for the diaspora." />
+    <meta property="og:title" content="OpenPinas – Philippine Political Dynasties" />
+    <meta property="og:description" content="Track 59 political dynasties, corruption cases, and 2025 events in the Philippines. Open data for the diaspora." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://dat-angel.github.io/openpinas/" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="OpenPinas" />
+    <meta name="twitter:description" content="Track Philippine political dynasties, corruption cases, and 2025 events." />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Spectral:wght@400;600;700&display=swap" rel="stylesheet" />
     <style>
-      :root {
-        --ink: #1a1a1a;
-        --muted: #5e5e5e;
-        --paper: #f8f5f0;
-        --accent: #124559;
-        --accent-2: #c44900;
-        --card: #ffffff;
-        --line: #d6cbbd;
-        --shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
-      }
-
       * { box-sizing: border-box; margin: 0; padding: 0; }
 
       body {
         font-family: "Spectral", Georgia, serif;
-        color: var(--ink);
-        background: radial-gradient(1200px 600px at 80% -10%, #f0e7d7 0%, transparent 60%),
-          radial-gradient(800px 500px at 10% 10%, #e6efe7 0%, transparent 55%),
-          var(--paper);
+        color: #222;
+        background: #fdfcfb;
         line-height: 1.6;
         min-height: 100vh;
       }
 
       header {
-        padding: 2.5rem 1.5rem 1.5rem;
-        max-width: 720px;
+        padding: 3rem 1.5rem 1.5rem;
+        max-width: 640px;
         margin: 0 auto;
       }
 
       h1 {
-        font-size: clamp(1.75rem, 4vw, 2.5rem);
-        font-weight: 700;
-        margin-bottom: 0.75rem;
-        letter-spacing: 0.3px;
+        font-size: 2rem;
+        font-weight: 600;
+        margin-bottom: 0.5rem;
       }
 
       .intro {
-        color: var(--muted);
+        color: #444;
         font-size: 1.125rem;
         margin-bottom: 1.5rem;
-        max-width: 60ch;
       }
 
-      .intro strong { color: var(--ink); }
+      .intro strong { color: #222; }
 
       .context {
         font-size: 0.9375rem;
-        color: var(--muted);
-        padding: 1.25rem;
-        background: rgba(255, 255, 255, 0.75);
-        border-radius: 12px;
-        border-left: 4px solid var(--accent);
-        box-shadow: var(--shadow);
+        color: #555;
+        padding: 1rem 1.25rem;
+        background: #fff;
+        border: 1px solid #e5e5e5;
         line-height: 1.7;
       }
 
       main {
-        max-width: 720px;
+        max-width: 640px;
         margin: 0 auto;
         padding: 0 1.5rem 4rem;
       }
 
       .links {
-        margin: 2.5rem 0;
+        margin: 2rem 0;
+        border-top: 1px solid #e5e5e5;
       }
 
       .links a {
         display: block;
-        padding: 1.25rem 1.25rem;
-        margin-bottom: 1rem;
-        background: var(--card);
-        border-radius: 12px;
-        border-left: 4px solid var(--accent);
+        padding: 1rem 0;
+        border-bottom: 1px solid #e5e5e5;
         text-decoration: none;
         color: inherit;
-        box-shadow: var(--shadow);
-        transition: transform 0.15s, box-shadow 0.15s;
       }
 
-      .links a:hover {
-        transform: translateY(-2px);
-        box-shadow: 0 16px 40px rgba(0, 0, 0, 0.12);
+      .links a:hover .title {
+        text-decoration: underline;
       }
 
       .links .title {
-        font-family: "IBM Plex Sans", Arial, sans-serif;
+        font-family: "IBM Plex Sans", -apple-system, sans-serif;
         font-weight: 600;
         font-size: 1rem;
-        color: var(--accent);
-        margin-bottom: 0.375rem;
+        color: #222;
+        margin-bottom: 0.25rem;
       }
 
       .links .desc {
-        font-size: 0.9375rem;
-        color: var(--muted);
+        font-size: 0.875rem;
+        color: #666;
         line-height: 1.5;
       }
 
-      .featured {
-        border-left-color: var(--accent-2);
-      }
-
-      .featured .title {
-        color: var(--accent-2);
-      }
-
       .numbers {
-        font-family: "IBM Plex Sans", Arial, sans-serif;
-        font-size: 0.875rem;
-        color: var(--muted);
-        margin: 2rem 0;
-        line-height: 1.8;
+        font-family: "IBM Plex Sans", -apple-system, sans-serif;
+        font-size: 0.8125rem;
+        color: #888;
+        margin: 1.5rem 0 2.5rem;
       }
 
       .numbers span {
         display: inline-block;
-        margin-right: 1.5rem;
+        margin-right: 1.25rem;
       }
 
       .numbers strong {
-        color: var(--ink);
-        font-weight: 600;
+        color: #222;
       }
 
       section.about {
-        margin-top: 3rem;
+        margin-top: 2rem;
         padding-top: 2rem;
-        border-top: 1px solid var(--line);
+        border-top: 1px solid #e5e5e5;
       }
 
       section.about h2 {
-        font-size: 1.125rem;
+        font-family: "IBM Plex Sans", -apple-system, sans-serif;
+        font-size: 0.75rem;
         font-weight: 600;
-        margin-bottom: 0.75rem;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        color: #888;
+        margin-bottom: 1rem;
       }
 
       section.about p {
         font-size: 0.9375rem;
-        color: var(--muted);
+        color: #444;
         margin-bottom: 1rem;
         line-height: 1.7;
       }
 
       section.about a {
-        color: var(--accent);
-        text-decoration: none;
+        color: #222;
+        text-decoration: underline;
+        text-underline-offset: 2px;
       }
 
       section.about a:hover {
-        text-decoration: underline;
+        color: #000;
       }
 
       footer {
-        max-width: 720px;
+        max-width: 640px;
         margin: 0 auto;
         padding: 2rem 1.5rem;
-        font-family: "IBM Plex Sans", Arial, sans-serif;
-        font-size: 0.8125rem;
-        color: var(--muted);
-        border-top: 1px solid var(--line);
+        font-family: "IBM Plex Sans", -apple-system, sans-serif;
+        font-size: 0.75rem;
+        color: #888;
+        border-top: 1px solid #e5e5e5;
       }
 
       footer a {
-        color: var(--accent);
+        color: #666;
         text-decoration: none;
       }
 
       footer a:hover { text-decoration: underline; }
 
-      @media (max-width: 720px) {
-        header, main {
+      @media (max-width: 640px) {
+        header, main, footer {
           padding-left: 1.25rem;
           padding-right: 1.25rem;
         }
@@ -200,7 +182,7 @@
 
     <main>
       <div class="links">
-        <a href="dynasties-network-visualization.html" class="featured">
+        <a href="dynasties-network-visualization.html">
           <div class="title">Dynasty Network Map</div>
           <div class="desc">The Marcoses married into the Romualdezes. The Dutertes broke with both.
           Who's allied with whom? Who's under investigation? It's all here.</div>

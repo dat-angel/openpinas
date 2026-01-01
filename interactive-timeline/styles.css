@@ -1,44 +1,29 @@
-:root {
-  --ink: #1a1a1a;
-  --muted: #5e5e5e;
-  --paper: #f8f5f0;
-  --accent: #124559;
-  --accent-2: #c44900;
-  --weather: #0b6e4f;
-  --politics: #3a0ca3;
-  --culture: #b23a48;
-  --card: #ffffff;
-  --line: #d6cbbd;
-  --shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
-}
-
 * {
   box-sizing: border-box;
 }
 
 body {
   margin: 0;
-  font-family: "Spectral", "Source Serif 4", Georgia, serif;
-  color: var(--ink);
-  background: radial-gradient(1200px 600px at 80% -10%, #f0e7d7 0%, transparent 60%),
-    radial-gradient(800px 500px at 10% 10%, #e6efe7 0%, transparent 55%),
-    var(--paper);
+  font-family: "Spectral", Georgia, serif;
+  color: #222;
+  background: #fdfcfb;
+  line-height: 1.6;
 }
 
 header {
-  padding: 24px 24px 12px;
-  max-width: 1100px;
+  padding: 2rem 1.5rem 1rem;
+  max-width: 800px;
   margin: 0 auto;
 }
 
 .header-nav {
-  font-size: 13px;
-  font-family: "IBM Plex Sans", Arial, sans-serif;
-  margin-bottom: 16px;
+  font-size: 0.8125rem;
+  font-family: "IBM Plex Sans", -apple-system, sans-serif;
+  margin-bottom: 1.5rem;
 }
 
 .header-nav a {
-  color: var(--accent);
+  color: #666;
   text-decoration: none;
 }
 
@@ -47,229 +32,241 @@ header {
 }
 
 h1 {
-  font-size: clamp(28px, 4vw, 44px);
-  margin: 0 0 8px;
-  letter-spacing: 0.3px;
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin: 0 0 0.5rem;
 }
 
 header p {
   margin: 0;
-  color: var(--muted);
-  max-width: 70ch;
+  color: #666;
+  font-size: 0.9375rem;
 }
 
 .controls {
-  margin: 20px 0 0;
-  padding: 12px 16px;
-  background: rgba(255, 255, 255, 0.75);
-  border: 1px solid #eadfce;
-  border-radius: 14px;
+  margin: 1.25rem 0 0;
+  padding: 0.75rem 1rem;
+  background: #fff;
+  border: 1px solid #e5e5e5;
   display: flex;
-  gap: 12px;
+  gap: 1rem;
   flex-wrap: wrap;
   align-items: center;
-  box-shadow: var(--shadow);
+  font-family: "IBM Plex Sans", -apple-system, sans-serif;
 }
 
 .controls label {
   display: flex;
-  gap: 8px;
+  gap: 0.5rem;
   align-items: center;
-  font-size: 14px;
-  color: var(--ink);
+  font-size: 0.8125rem;
+  color: #444;
 }
 
 .controls input[type="search"] {
-  flex: 1 1 240px;
-  border: 1px solid #d7c7b4;
-  border-radius: 10px;
-  padding: 10px 12px;
-  font-size: 14px;
-  font-family: "IBM Plex Sans", "Source Sans 3", Arial, sans-serif;
+  flex: 1 1 200px;
+  border: 1px solid #ddd;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.8125rem;
+  font-family: inherit;
+}
+
+.controls input[type="search"]:focus {
+  outline: none;
+  border-color: #222;
 }
 
 .controls button {
-  border: 1px solid #d7c7b4;
-  background: #fffaf2;
-  border-radius: 10px;
-  padding: 10px 12px;
+  border: 1px solid #ddd;
+  background: #fff;
+  padding: 0.5rem 0.75rem;
   cursor: pointer;
-  font-family: "IBM Plex Sans", "Source Sans 3", Arial, sans-serif;
+  font-family: inherit;
+  font-size: 0.8125rem;
+}
+
+.controls button:hover {
+  border-color: #222;
 }
 
 main {
-  max-width: 1100px;
-  margin: 16px auto 60px;
-  padding: 0 24px;
+  max-width: 800px;
+  margin: 1rem auto 4rem;
+  padding: 0 1.5rem;
 }
 
 .timeline {
   position: relative;
-  padding-left: 32px;
-}
-
-.timeline::before {
-  content: "";
-  position: absolute;
-  left: 8px;
-  top: 0;
-  bottom: 0;
-  width: 2px;
-  background: var(--line);
+  padding-left: 1.5rem;
+  border-left: 1px solid #e5e5e5;
+  margin-left: 0.5rem;
 }
 
 .month-marker {
-  font-size: 14px;
-  color: var(--muted);
-  margin: 26px 0 12px 0;
+  font-family: "IBM Plex Sans", -apple-system, sans-serif;
+  font-size: 0.75rem;
   font-weight: 600;
-  letter-spacing: 0.6px;
   text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #888;
+  margin: 2rem 0 1rem -1.5rem;
+  padding-left: 1.5rem;
 }
 
 .card {
   position: relative;
-  background: var(--card);
-  border-radius: 16px;
-  padding: 16px 18px 14px;
-  margin-bottom: 18px;
-  box-shadow: var(--shadow);
-  border-left: 4px solid var(--accent);
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  padding: 1rem 1.25rem;
+  margin-bottom: 1rem;
 }
 
 .card::before {
   content: "";
   position: absolute;
-  left: -24px;
-  top: 22px;
-  width: 12px;
-  height: 12px;
+  left: -1.5rem;
+  top: 1.25rem;
+  width: 7px;
+  height: 7px;
   border-radius: 50%;
-  background: var(--accent);
-  border: 2px solid var(--paper);
+  background: #ddd;
+  margin-left: -4px;
 }
 
 .card h3 {
-  margin: 0 0 6px;
-  font-size: 18px;
+  margin: 0 0 0.5rem;
+  font-size: 1rem;
+  font-weight: 600;
 }
 
 .card .description {
-  font-size: 14px;
-  color: var(--ink);
-  margin: 8px 0;
-  line-height: 1.5;
+  font-size: 0.875rem;
+  color: #444;
+  margin: 0.5rem 0;
+  line-height: 1.6;
 }
 
 .card .diaspora-impact {
-  font-size: 13px;
-  color: var(--muted);
-  margin: 8px 0;
-  padding: 8px;
-  background: rgba(18, 69, 89, 0.05);
-  border-left: 2px solid var(--accent);
+  font-size: 0.8125rem;
+  color: #666;
+  margin: 0.75rem 0;
+  padding: 0.75rem;
+  background: #f9f9f9;
+  border-left: 2px solid #ddd;
   line-height: 1.5;
 }
 
 .card .meta {
-  font-size: 13px;
-  color: var(--muted);
+  font-size: 0.75rem;
+  color: #888;
   display: flex;
-  gap: 12px;
+  gap: 0.75rem;
   flex-wrap: wrap;
   align-items: center;
-  font-family: "IBM Plex Sans", "Source Sans 3", Arial, sans-serif;
-  margin-top: 8px;
+  font-family: "IBM Plex Sans", -apple-system, sans-serif;
+  margin-top: 0.75rem;
 }
 
 .tag {
-  padding: 4px 8px;
-  border-radius: 999px;
-  font-size: 11px;
+  padding: 0.125rem 0.5rem;
+  font-size: 0.625rem;
   text-transform: uppercase;
-  letter-spacing: 0.6px;
-  color: #fff;
+  letter-spacing: 0.05em;
+  font-weight: 600;
+  border: 1px solid;
 }
 
 .tag.weather {
-  background: var(--weather);
+  color: #0b6e4f;
+  border-color: #0b6e4f;
+  background: transparent;
 }
 
 .tag.politics {
-  background: var(--politics);
+  color: #3a0ca3;
+  border-color: #3a0ca3;
+  background: transparent;
 }
 
 .tag.culture {
-  background: var(--culture);
+  color: #b23a48;
+  border-color: #b23a48;
+  background: transparent;
 }
 
 .tag.economic {
-  background: var(--politics);
+  color: #3a0ca3;
+  border-color: #3a0ca3;
+  background: transparent;
 }
 
 .tag.legal {
-  background: var(--politics);
+  color: #3a0ca3;
+  border-color: #3a0ca3;
+  background: transparent;
 }
 
 .card a {
-  color: var(--accent-2);
-  text-decoration: none;
+  color: #222;
+  text-decoration: underline;
+  text-underline-offset: 2px;
 }
 
 .card a:hover {
-  text-decoration: underline;
+  color: #000;
 }
 
 .card .dynasties {
-  margin-top: 12px;
-  padding: 10px;
-  background: rgba(58, 12, 163, 0.05);
-  border-left: 2px solid var(--politics);
-  border-radius: 6px;
-  font-size: 13px;
+  margin-top: 0.75rem;
+  padding: 0.75rem;
+  background: #f9f9f9;
+  border-left: 2px solid #3a0ca3;
+  font-size: 0.8125rem;
 }
 
 .card .dynasties .dynasty-link {
-  color: var(--politics);
+  color: #3a0ca3;
   font-weight: 500;
 }
 
 .card .description,
 .card .significance,
 .card .diaspora {
-  font-size: 14px;
-  color: var(--ink);
-  margin: 8px 0;
+  font-size: 0.875rem;
+  color: #444;
+  margin: 0.5rem 0;
   line-height: 1.6;
 }
 
 .empty {
-  padding: 22px;
-  border: 1px dashed #cdbfac;
-  border-radius: 14px;
-  background: rgba(255, 255, 255, 0.6);
-  color: var(--muted);
+  padding: 2rem;
+  border: 1px dashed #ddd;
+  background: #fff;
+  color: #888;
+  text-align: center;
 }
 
-@media (max-width: 720px) {
+@media (max-width: 640px) {
   header {
-    padding: 24px 18px 10px;
+    padding: 1.5rem 1.25rem 0.75rem;
   }
 
   main {
-    padding: 0 18px;
+    padding: 0 1.25rem;
   }
 
   .timeline {
     padding-left: 0;
+    border-left: none;
+    margin-left: 0;
   }
 
-  .timeline::before,
-  .card::before {
+  .timeline .card::before {
     display: none;
   }
 
-  .card {
-    border-left: 6px solid var(--accent);
+  .month-marker {
+    margin-left: 0;
+    padding-left: 0;
   }
 }

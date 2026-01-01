@@ -14,60 +14,63 @@
     <style>
       .timeline {
         position: relative;
-        padding-left: 32px;
-      }
-
-      .timeline::before {
-        content: "";
-        position: absolute;
-        left: 8px;
-        top: 0;
-        bottom: 0;
-        width: 2px;
-        background: var(--line, #d6cbbd);
+        padding-left: 1.5rem;
+        border-left: 1px solid #e5e5e5;
+        margin-left: 0.5rem;
       }
 
       .month-marker {
-        font-size: 14px;
-        color: var(--muted);
-        margin: 26px 0 12px 0;
+        font-family: "IBM Plex Sans", -apple-system, sans-serif;
+        font-size: 0.75rem;
         font-weight: 600;
-        letter-spacing: 0.6px;
         text-transform: uppercase;
+        letter-spacing: 0.05em;
+        color: #888;
+        margin: 1.5rem 0 0.75rem -1.5rem;
+        padding-left: 1.5rem;
       }
 
       .timeline-event {
         position: relative;
-        margin-bottom: 18px;
+        background: #fff;
+        border: 1px solid #e5e5e5;
+        padding: 1rem;
+        margin-bottom: 1rem;
       }
 
       .timeline-event::before {
         content: "";
         position: absolute;
-        left: -24px;
-        top: 22px;
-        width: 12px;
-        height: 12px;
+        left: -1.5rem;
+        top: 1.25rem;
+        width: 7px;
+        height: 7px;
         border-radius: 50%;
-        background: var(--accent);
-        border: 2px solid var(--paper);
+        background: #ddd;
+        margin-left: -4px;
       }
 
       .sources {
-        margin-top: 12px;
-        padding-top: 12px;
-        border-top: 1px solid rgba(0, 0, 0, 0.1);
-        font-size: 13px;
+        margin-top: 0.75rem;
+        padding-top: 0.75rem;
+        border-top: 1px solid #e5e5e5;
+        font-size: 0.8125rem;
       }
 
-      @media (max-width: 720px) {
+      @media (max-width: 640px) {
         .timeline {
           padding-left: 0;
+          border-left: none;
+          margin-left: 0;
         }
 
-        .timeline::before,
         .timeline-event::before {
           display: none;
+        }
+
+        .month-marker {
+          margin-left: 0;
+          padding-left: 0;
         }
       }
     </style>
