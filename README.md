@@ -3,18 +3,16 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](LICENSE-DATA)
 
-I've been tracking Philippine political dynasties and major events for the Filipino diaspora. This project started as a curiosity about how political families maintain control across generations, and it's grown into a resource that tracks 50+ dynasties, their relationships, and major events.
+Tracking 50+ political dynasties, their relationships, and major events for the Filipino diaspora. Interactive visualizations showing how political families maintain control across 71 provinces.
 
-For the 10+ million Filipinos living abroad, understanding these power structures matters. Our remittances directly impact families affected by governance quality. When corruption scandals break or natural disasters expose infrastructure failures, we need to understand who's responsible and how power networks operate.
-
-**Live Site**: [dat-angel.github.io/openpinas](https://dat-angel.github.io/openpinas/)
+**Live Demo**: [dat-angel.github.io/openpinas](https://dat-angel.github.io/openpinas/)
 
 ## What's Here
 
-- **Weekly News Digests** - I summarize significant events each week, organized by category
-- **Interactive Network Map** - Shows how dynasties connect, their relationships, and geographic control
-- **Timeline** - Chronological view of major events with dynasty connections
-- **Datasets** - 50+ dynasties, 450+ members, 71 provinces tracked
+- 📰 **Weekly News Digests** - Significant events organized by category
+- 🗺️ **Interactive Network Map** - Dynasty relationships and geographic control
+- 📅 **Timeline** - Chronological view of major events with dynasty connections
+- 📊 **Datasets** - 50+ dynasties, 450+ members, 71 provinces tracked
 
 ## Quick Start
 
@@ -47,15 +45,41 @@ Then open http://localhost:8000/ in your browser
 - 67% of congressional seats held by dynastic families
 - Longest-running: Ortega family (157 years, La Union)
 
+## Features
+
+**Network Visualization:**
+- Interactive force-directed graph showing dynasty connections
+- Filter by power level, crisis status, or region
+- Switch between network and map views
+- Click any dynasty for detailed info (members, control, alliances, timeline events)
+
+**Timeline Visualization:**
+- Chronological view of 54 major 2025 events
+- Filter by category (Political, Cultural, Natural Disasters, etc.)
+- Each event shows involved dynasties with links to network map
+
+**Weekly Reviews:**
+- Summaries of significant weekly events
+- Statistics dashboard and dynasty highlights
+- Links to full timeline and dynasty profiles
+
 ## Why This Matters
 
-Political dynasties have been a defining feature of Philippine politics since independence. Despite a constitutional mandate against political dynasties, no Anti-Political Dynasty Law has been passed in over 35 years of attempts.
+Political dynasties have been a defining feature of Philippine politics since independence. Despite a constitutional mandate against political dynasties, no Anti-Political Dynasty Law has been passed in over 35 years.
 
-For the diaspora, understanding these power structures helps us:
+For the 10+ million Filipinos living abroad, understanding these power structures helps us:
 - Make sense of news from back home
 - Understand how governance affects our families
 - See connections between corruption scandals and political families
 - Track which regions have stable leadership vs. ongoing crises
+
+## Data Structure
+
+The timeline and dynasty datasets are **complementary but standalone**:
+
+- **Timeline → Dynasties**: Each event includes `mentioned_dynasties` array
+- **Dynasties → Timeline**: Each dynasty includes `timeline_events` array
+- Both JSON files work independently (cross-references are optional)
 
 ## Data Sources
 
@@ -69,7 +93,7 @@ For the diaspora, understanding these power structures helps us:
 
 ## Contributing
 
-I'd love your help keeping this current. Found a new event or dynasty connection? Update the JSON files, validate the syntax, and open a Pull Request.
+Found a new event or dynasty connection? Update the JSON files, validate the syntax, and open a Pull Request.
 
 For major changes, open an issue first so we can discuss the approach.
 
