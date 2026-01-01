@@ -30,10 +30,26 @@ body {
 }
 
 header {
-  padding: 48px 24px 32px;
+  padding: 24px 24px 32px;
   max-width: 900px;
   margin: 0 auto;
   text-align: center;
+}
+
+.header-nav {
+  text-align: left;
+  font-size: 13px;
+  font-family: "IBM Plex Sans", Arial, sans-serif;
+  margin-bottom: 24px;
+}
+
+.header-nav a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.header-nav a:hover {
+  text-decoration: underline;
 }
 
 h1 {
