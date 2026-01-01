@@ -170,8 +170,8 @@
   </head>
   <body>
     <header>
-      <h1>Philippine News Weekly Reviews</h1>
-      <p class="subtitle">2026 Archive</p>
+      <h1>Weekly Reviews</h1>
+      <p class="subtitle">2026</p>
       <nav class="nav-links">
         <a href="../interactive-timeline/">📅 Full Timeline</a>
         <a href="../dynasties-network-visualization.html">🗺️ Dynasty Map</a>
@@ -181,10 +181,7 @@
     <main>
       <section class="reviews-list" id="reviews-container">
         <div class="empty-state">
-          <p>Weekly reviews will appear here as they are published.</p>
-          <p style="margin-top: 12px; font-size: 14px;">
-            Use the template file to generate new weekly reviews.
-          </p>
+          <p>No reviews yet. Check back later.</p>
         </div>
       </section>
     </main>
@@ -221,10 +218,7 @@
         if (reviews.length === 0) {
           container.innerHTML = `
             <div class="empty-state">
-              <p>Weekly reviews will appear here as they are published.</p>
-              <p style="margin-top: 12px; font-size: 14px;">
-                Use the template file to generate new weekly reviews.
-              </p>
+              <p>No reviews yet. Check back later.</p>
             </div>
           `;
           return;

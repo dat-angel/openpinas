@@ -117,8 +117,8 @@ function renderStatistics(stats) {
   const totalAmount = stats.total_amount_php || 0;
   
   let html = `
-    <div class="section">
-      <h2>Statistics Dashboard</h2>
+      <div class="section">
+      <h2>By the Numbers</h2>
       
       <div class="stats" style="margin: 24px 0;">
         <div class="stat">
@@ -140,7 +140,7 @@ function renderStatistics(stats) {
       </div>
       
       <div style="margin-top: 32px;">
-        <h3 style="color: var(--accent); margin-bottom: 16px;">Cases by Status</h3>
+        <h3 style="color: var(--accent); margin-bottom: 16px;">By Status</h3>
         <div style="display: grid; gap: 12px;">
           ${Object.entries(byStatus).map(([status, count]) => `
             <div style="display: flex; justify-content: space-between; align-items: center; padding: 12px; background: rgba(18, 69, 89, 0.05); border-radius: 8px;">
@@ -152,7 +152,7 @@ function renderStatistics(stats) {
       </div>
       
       <div style="margin-top: 32px;">
-        <h3 style="color: var(--accent); margin-bottom: 16px;">Cases by Category</h3>
+        <h3 style="color: var(--accent); margin-bottom: 16px;">By Type</h3>
         <div style="display: grid; gap: 12px;">
           ${Object.entries(byCategory).map(([category, count]) => `
             <div style="display: flex; justify-content: space-between; align-items: center; padding: 12px; background: rgba(18, 69, 89, 0.05); border-radius: 8px;">
@@ -165,7 +165,7 @@ function renderStatistics(stats) {
       
       ${totalAmount > 0 ? `
         <div style="margin-top: 32px; padding: 20px; background: rgba(196, 73, 0, 0.1); border-left: 4px solid var(--accent-2); border-radius: 8px;">
-          <h3 style="color: var(--accent-2); margin: 0 0 8px;">Total Amount Involved</h3>
+          <h3 style="color: var(--accent-2); margin: 0 0 8px;">Money Involved</h3>
           <p style="font-size: 24px; font-weight: 700; margin: 0; color: var(--accent-2);">
             ${formatAmount(totalAmount)}
           </p>
