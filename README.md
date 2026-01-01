@@ -13,6 +13,7 @@ Tracking 50+ political dynasties, their relationships, and major events for the 
 - 🗺️ **Interactive Network Map** - Dynasty relationships and geographic control
 - 📅 **Timeline** - Chronological view of major events with dynasty connections
 - 📊 **Datasets** - 50+ dynasties, 450+ members, 71 provinces tracked
+- ⚖️ **Corruption Case Tracker** - POGO-related cases, corruption tracking, and accountability
 
 ## Quick Start
 
@@ -36,6 +37,12 @@ Then open http://localhost:8000/ in your browser
 - `dynasties-network-visualization.html` - Interactive network and map
 - `interactive-timeline/` - Timeline visualization
 - `weekly-reviews/` - Weekly review template and archive
+
+**Projects:**
+- `corruption-tracker/` - Corruption & POGO case tracker (MVP complete)
+  - Case list with filtering and search
+  - Detailed case pages with timelines
+  - Statistics dashboard
 
 ## Key Stats (2025)
 

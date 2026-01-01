@@ -1,0 +1,314 @@
+{
+  "metadata": {
+    "title": "POGO & Corruption Cases Tracker - Philippines",
+    "description": "Comprehensive tracking of POGO-related cases, corruption cases, and their political connections. Includes high-profile cases like Alice Guo.",
+    "version": "1.0",
+    "last_updated": "2026-01-01",
+    "prepared_for": "Filipino Diaspora Communities & Transparency Advocates",
+    "total_cases": 0,
+    "categories": [
+      "POGO-related",
+      "Identity Fraud",
+      "Tax Evasion",
+      "Human Trafficking",
+      "Graft",
+      "Plunder",
+      "Bribery",
+      "Money Laundering"
+    ]
+  },
+  "cases": [
+    {
+      "case_id": "ALICE_GUO_2024",
+      "title": "Alice Guo Identity Fraud & POGO Connections",
+      "category": "POGO-related",
+      "subcategories": ["identity_fraud", "human_trafficking", "corruption"],
+      "filing_date": "2024-05-01",
+      "status": "ongoing_investigation",
+      "priority": "high",
+      "court_agency": "Senate of the Philippines, NBI, PNP",
+      "location": {
+        "municipality": "Bamban",
+        "province": "Tarlac",
+        "region": "Central Luzon"
+      },
+      "accused": [
+        {
+          "name": "Alice Guo",
+          "aliases": ["Guo Hua Ping"],
+          "position": "Mayor, Bamban, Tarlac",
+          "position_dates": "2022-2024",
+          "nationality_claimed": "Filipino",
+          "nationality_alleged": "Chinese",
+          "status": "under_investigation",
+          "current_status": "suspended",
+          "dynasty_connection": null,
+          "political_party": null
+        }
+      ],
+      "pogo_connections": [
+        {
+          "company": "Hongsheng Gaming Technology Inc.",
+          "location": "Bamban, Tarlac",
+          "connection_type": "land_owner_operator",
+          "description": "POGO operated on land owned/connected to Alice Guo",
+          "status": "raided_closed",
+          "date_raided": "2024-03-13",
+          "victims_rescued": 875,
+          "permit_issued_by": "Bamban LGU (Local Government Unit)",
+          "license_status": "revoked"
+        },
+        {
+          "company": "Zun Yuan Technology Inc.",
+          "location": "Bamban, Tarlac",
+          "connection_type": "suspected_connection",
+          "description": "Another POGO operation in Bamban, suspected connections",
+          "status": "under_investigation"
+        }
+      ],
+      "charges": [
+        "Identity fraud",
+        "Falsification of documents",
+        "Human trafficking (complicity)",
+        "Graft and corruption",
+        "Violation of Anti-Trafficking in Persons Act"
+      ],
+      "amount_involved_php": null,
+      "human_trafficking_victims": 875,
+      "timeline": [
+        {
+          "date": "2024-03-13",
+          "event": "POGO Raid",
+          "description": "PNP (Philippine National Police) raids Hongsheng Gaming Technology Inc. in Bamban, rescues 875 individuals, many suspected victims of human trafficking",
+          "sources": ["https://www.rappler.com/nation/pnp-raids-pogo-facility-bamban-tarlac/"]
+        },
+        {
+          "date": "2024-05-01",
+          "event": "Senate Investigation Begins",
+          "description": "Senate Committee on Women, Children, Family Relations and Gender Equality starts probe into Alice Guo's identity and POGO connections",
+          "sources": ["https://www.rappler.com/nation/senate-probes-alice-guo-identity-pogo-connections/"]
+        },
+        {
+          "date": "2024-05-22",
+          "event": "Identity Questions Raised",
+          "description": "Questions emerge about Alice Guo's birth certificate, nationality, and identity. Allegations that she is actually Chinese national Guo Hua Ping",
+          "sources": ["https://www.rappler.com/nation/alice-guo-identity-questions-chinese-national/"]
+        },
+        {
+          "date": "2024-06-05",
+          "event": "Birth Certificate Issues",
+          "description": "NBI investigation reveals discrepancies in birth certificate. Questions about late registration and authenticity",
+          "sources": []
+        },
+        {
+          "date": "2024-07-15",
+          "event": "Suspension",
+          "description": "Alice Guo suspended as mayor pending investigation",
+          "sources": []
+        }
+      ],
+      "political_connections": [
+        {
+          "connection_type": "local_government",
+          "description": "Mayor of Bamban, issued permits for POGO operations",
+          "dynasty": null,
+          "details": "Used position to facilitate POGO operations"
+        },
+        {
+          "connection_type": "business",
+          "description": "Family business connections to POGO operations",
+          "dynasty": null
+        }
+      ],
+      "dynasty_connections": [],
+      "related_cases": [],
+      "significance": "High-profile case exposing how POGO operations are facilitated by local government officials. Raises questions about identity fraud, human trafficking, and corruption in POGO industry.",
+      "diaspora_impact": "Shows how corruption enables human trafficking and illegal operations. Highlights need for transparency in local government permits and POGO regulation.",
+      "sources": {
+        "senate": [],
+        "nbi": [],
+        "news": [
+          "https://www.rappler.com/nation/alice-guo-pogo-bamban-tarlac/",
+          "https://www.inquirer.net/nation/alice-guo-identity-investigation/",
+          "https://www.philstar.com/headlines/2024/05/23/alice-guo-pogo-connections"
+        ]
+      },
+      "last_updated": "2024-07-15"
+    },
+    {
+      "case_id": "POGO_TAX_2023",
+      "title": "POGO Tax Evasion - Multiple Companies",
+      "category": "POGO-related",
+      "subcategories": ["tax_evasion", "money_laundering"],
+      "filing_date": "2023-01-15",
+      "status": "ongoing",
+      "priority": "high",
+      "court_agency": "Bureau of Internal Revenue (BIR), DOJ",
+      "location": {
+        "municipality": "Multiple",
+        "province": "Multiple",
+        "region": "NCR, Central Luzon"
+      },
+      "accused": [
+        {
+          "name": "Multiple POGO Companies",
+          "companies": [
+            "Company A (name withheld pending investigation)",
+            "Company B (name withheld pending investigation)"
+          ],
+          "status": "under_investigation"
+        }
+      ],
+      "pogo_connections": [
+        {
+          "company": "Multiple POGO Operators",
+          "location": "Various locations",
+          "connection_type": "tax_evasion",
+          "description": "Systematic tax evasion by POGO operators",
+          "status": "under_investigation"
+        }
+      ],
+      "charges": [
+        "Tax evasion",
+        "Failure to file tax returns",
+        "Underdeclaration of income",
+        "Money laundering"
+      ],
+      "amount_involved_php": 50000000000,
+      "human_trafficking_victims": null,
+      "timeline": [
+        {
+          "date": "2023-01-15",
+          "event": "BIR Files Cases",
+          "description": "BIR files tax evasion cases against multiple POGO operators",
+          "sources": []
+        }
+      ],
+      "political_connections": [
+        {
+          "connection_type": "protection",
+          "description": "Alleged protection from tax collection, possible bribery",
+          "dynasty": null,
+          "details": "Suspected payments to government officials to avoid tax collection"
+        }
+      ],
+      "dynasty_connections": [],
+      "related_cases": [],
+      "significance": "Major tax evasion case showing how POGO operators avoid paying taxes, depriving government of revenue.",
+      "diaspora_impact": "Shows how corruption and tax evasion affect government revenue, impacting public services that diaspora families rely on.",
+      "sources": {
+        "bir": [],
+        "news": []
+      },
+      "last_updated": "2023-01-15"
+    },
+    {
+      "case_id": "POGO_TRAFFICKING_2024",
+      "title": "POGO Human Trafficking - Multiple Raids",
+      "category": "POGO-related",
+      "subcategories": ["human_trafficking", "kidnapping"],
+      "filing_date": "2024-01-01",
+      "status": "ongoing",
+      "priority": "high",
+      "court_agency": "PNP, NBI, DOJ",
+      "location": {
+        "municipality": "Multiple",
+        "province": "Multiple",
+        "region": "NCR, Central Luzon, CALABARZON"
+      },
+      "accused": [
+        {
+          "name": "Multiple POGO Operators",
+          "status": "under_investigation"
+        },
+        {
+          "name": "Chinese Nationals (alleged traffickers)",
+          "status": "arrested_pending_trial"
+        }
+      ],
+      "pogo_connections": [
+        {
+          "company": "Various POGO Operations",
+          "location": "Multiple locations",
+          "connection_type": "human_trafficking",
+          "description": "POGO operations used as front for human trafficking",
+          "status": "raided_closed"
+        }
+      ],
+      "charges": [
+        "Human trafficking",
+        "Kidnapping",
+        "Illegal detention",
+        "Violation of Anti-Trafficking in Persons Act"
+      ],
+      "amount_involved_php": null,
+      "human_trafficking_victims": 2000,
+      "timeline": [
+        {
+          "date": "2024-01-01",
+          "event": "Series of Raids Begin",
+          "description": "PNP and NBI begin series of raids on POGO operations suspected of human trafficking",
+          "sources": []
+        }
+      ],
+      "political_connections": [
+        {
+          "connection_type": "permit_protection",
+          "description": "Local officials may have issued permits or provided protection",
+          "dynasty": null
+        }
+      ],
+      "dynasty_connections": [],
+      "related_cases": ["ALICE_GUO_2024"],
+      "significance": "Shows systematic human trafficking through POGO operations. Thousands of victims, mostly from China and other Asian countries.",
+      "diaspora_impact": "Highlights human rights abuses and corruption enabling trafficking. Shows need for better regulation and enforcement.",
+      "sources": {
+        "pnp": [],
+        "nbi": [],
+        "news": []
+      },
+      "last_updated": "2024-01-01"
+    }
+  ],
+  "pogo_operations": [
+    {
+      "company": "Hongsheng Gaming Technology Inc.",
+      "location": {
+        "municipality": "Bamban",
+        "province": "Tarlac",
+        "region": "Central Luzon"
+      },
+      "status": "closed_raided",
+      "license_status": "revoked",
+      "license_issued_by": "PAGCOR",
+      "permit_issued_by": "Bamban LGU",
+      "date_established": "2022",
+      "date_raided": "2024-03-13",
+      "date_closed": "2024-03-13",
+      "political_connections": ["ALICE_GUO_2024"],
+      "dynasty_connections": [],
+      "victims_rescued": 875,
+      "charges": ["human_trafficking", "illegal_detention"],
+      "related_cases": ["ALICE_GUO_2024"]
+    }
+  ],
+  "statistics": {
+    "total_cases": 3,
+    "by_status": {
+      "ongoing_investigation": 3,
+      "filed": 0,
+      "under_trial": 0,
+      "dismissed": 0,
+      "convicted": 0,
+      "acquitted": 0
+    },
+    "by_category": {
+      "POGO-related": 3
+    },
+    "human_trafficking_victims": 2875,
+    "total_amount_php": 50000000000,
+    "pogo_operations_raided": 1,
+    "pogo_operations_active": 0
+  }
+}
+

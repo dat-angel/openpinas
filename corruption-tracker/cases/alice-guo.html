@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Alice Guo Case - Corruption Case Tracker</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Spectral:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <style>
+      .timeline {
+        position: relative;
+        padding-left: 32px;
+      }
+
+      .timeline::before {
+        content: "";
+        position: absolute;
+        left: 8px;
+        top: 0;
+        bottom: 0;
+        width: 2px;
+        background: var(--line, #d6cbbd);
+      }
+
+      .month-marker {
+        font-size: 14px;
+        color: var(--muted);
+        margin: 26px 0 12px 0;
+        font-weight: 600;
+        letter-spacing: 0.6px;
+        text-transform: uppercase;
+      }
+
+      .timeline-event {
+        position: relative;
+        margin-bottom: 18px;
+      }
+
+      .timeline-event::before {
+        content: "";
+        position: absolute;
+        left: -24px;
+        top: 22px;
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background: var(--accent);
+        border: 2px solid var(--paper);
+      }
+
+      .sources {
+        margin-top: 12px;
+        padding-top: 12px;
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+        font-size: 13px;
+      }
+
+      @media (max-width: 720px) {
+        .timeline {
+          padding-left: 0;
+        }
+
+        .timeline::before,
+        .timeline-event::before {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1 id="caseTitle">Loading...</h1>
+      <p class="subtitle" id="caseSubtitle"></p>
+    </header>
+
+    <main>
+      <div class="case-header">
+        <div id="caseHeaderContent"></div>
+      </div>
+
+      <div class="key-facts" id="keyFacts"></div>
+
+      <div class="section">
+        <h2>Case Timeline</h2>
+        <div id="caseTimeline"></div>
+      </div>
+
+      <div class="section" id="accusedSection">
+        <h2>Accused Parties</h2>
+        <div id="accusedContent"></div>
+      </div>
+
+      <div class="section" id="pogoSection">
+        <h2>POGO Connections</h2>
+        <div id="pogoContent"></div>
+      </div>
+
+      <div class="section" id="chargesSection">
+        <h2>Charges</h2>
+        <div id="chargesContent"></div>
+      </div>
+
+      <div class="section" id="politicalSection">
+        <h2>Political Connections</h2>
+        <div id="politicalContent"></div>
+      </div>
+
+      <div class="section" id="significanceSection">
+        <h2>Significance & Impact</h2>
+        <div id="significanceContent"></div>
+      </div>
+
+      <div class="section" id="sourcesSection">
+        <h2>Sources</h2>
+        <div id="sourcesContent"></div>
+      </div>
+    </main>
+
+    <footer>
+      <p>
+        <a href="../">← Back to Home</a> | 
+        <a href="index.html">← Back to Case List</a>
+      </p>
+      <p>
+        <a href="https://github.com/dat-angel/openpinas">GitHub</a> |
+        <a href="../../Openpinas/">OpenPinas</a>
+      </p>
+    </footer>
+
+    <script src="../js/timeline.js"></script>
+    <script src="../js/case-detail.js"></script>
+  </body>
+</html>
+

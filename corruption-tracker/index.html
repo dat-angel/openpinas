@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Philippine Corruption & POGO Case Tracker</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Spectral:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Philippine Corruption & POGO Case Tracker</h1>
+      <p class="subtitle">
+        Tracking corruption cases, POGO-related crimes, and their political connections for transparency and accountability
+      </p>
+    </header>
+
+    <main>
+      <div class="cards">
+        <a href="cases/" class="card">
+          <h2>📋 Case List</h2>
+          <p>
+            Browse all corruption and POGO-related cases. Filter by category, status, year, or search for specific cases. Track ongoing investigations, convictions, and dismissals.
+          </p>
+        </a>
+
+        <a href="cases/alice-guo.html" class="card">
+          <h2>🔍 Alice Guo Case</h2>
+          <p>
+            Detailed timeline and analysis of the Alice Guo identity fraud and POGO connections case. Includes timeline visualization, accused parties, and political connections.
+          </p>
+        </a>
+
+        <a href="cases/#statistics" class="card">
+          <h2>📊 Statistics Dashboard</h2>
+          <p>
+            View comprehensive statistics on corruption cases: total cases, status breakdown, category distribution, human trafficking victims, and amounts involved.
+          </p>
+        </a>
+      </div>
+
+      <div class="stats" id="stats">
+        <div class="stat">
+          <p class="number" id="totalCases">-</p>
+          <p class="label">Total Cases</p>
+        </div>
+        <div class="stat">
+          <p class="number" id="ongoingCases">-</p>
+          <p class="label">Ongoing</p>
+        </div>
+        <div class="stat">
+          <p class="number" id="traffickingVictims">-</p>
+          <p class="label">Trafficking Victims</p>
+        </div>
+        <div class="stat">
+          <p class="number" id="totalAmount">-</p>
+          <p class="label">Amount Involved</p>
+        </div>
+      </div>
+
+      <div class="info-section">
+        <h2>About This Project</h2>
+        <p>
+          This tracker documents corruption cases and POGO-related crimes in the Philippines, with a focus on transparency and accountability. Cases are tracked from filing through resolution, including political connections and impacts on Filipino communities.
+        </p>
+        <p>
+          <strong>Current Focus:</strong> POGO-related cases including identity fraud, human trafficking, tax evasion, and corruption. The tracker includes high-profile cases like the Alice Guo investigation.
+        </p>
+      </div>
+    </main>
+
+    <footer>
+      <p>
+        Part of the
+        <a href="../Openpinas/">Philippine Transparency Projects</a>
+      </p>
+      <p>
+        <a href="https://github.com/dat-angel/openpinas">GitHub</a> |
+        <a href="../Openpinas/">OpenPinas</a>
+      </p>
+    </footer>
+
+    <script src="js/stats.js"></script>
+  </body>
+</html>
+

@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Corruption Cases - Case List</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Spectral:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Corruption & POGO Cases</h1>
+      <p class="subtitle">
+        Browse and filter all tracked corruption and POGO-related cases
+      </p>
+    </header>
+
+    <main>
+      <div class="controls">
+        <input type="search" id="search" placeholder="Search cases, accused, charges, location..." />
+        <select id="categoryFilter">
+          <option value="all">All Categories</option>
+          <option value="POGO-related">POGO-related</option>
+          <option value="Identity Fraud">Identity Fraud</option>
+          <option value="Tax Evasion">Tax Evasion</option>
+          <option value="Human Trafficking">Human Trafficking</option>
+          <option value="Graft">Graft</option>
+          <option value="Plunder">Plunder</option>
+        </select>
+        <select id="statusFilter">
+          <option value="all">All Status</option>
+          <option value="ongoing">Ongoing</option>
+          <option value="filed">Filed</option>
+          <option value="trial">Under Trial</option>
+          <option value="convicted">Convicted</option>
+          <option value="dismissed">Dismissed</option>
+        </select>
+        <select id="yearFilter">
+          <option value="all">All Years</option>
+        </select>
+      </div>
+
+      <div class="case-list"></div>
+
+      <div id="statistics"></div>
+    </main>
+
+    <footer>
+      <p>
+        <a href="../">← Back to Home</a>
+      </p>
+      <p>
+        <a href="https://github.com/dat-angel/openpinas">GitHub</a> |
+        <a href="../Openpinas/">OpenPinas</a>
+      </p>
+    </footer>
+
+    <script src="../js/cases.js"></script>
+  </body>
+</html>
+
