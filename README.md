@@ -7,8 +7,6 @@ I've been tracking Philippine political dynasties and major events for the Filip
 
 For the 10+ million Filipinos living abroad, understanding these power structures matters. Our remittances directly impact families affected by governance quality. When corruption scandals break or natural disasters expose infrastructure failures, we need to understand who's responsible and how power networks operate.
 
-**Live Demo**: [beatriz.page/philippine-politics](https://beatriz.page/philippine-politics)
-
 ## What's Here
 
 - **Weekly News Digests** - I summarize significant events each week, organized by category
@@ -26,10 +24,7 @@ cd philippine-political-dynasties
 python3 -m http.server 8000
 ```
 
-Then open:
-- Weekly Reviews: http://localhost:8000/weekly-reviews/
-- Network Map: http://localhost:8000/dynasties-network-visualization.html
-- Timeline: http://localhost:8000/interactive-timeline/
+Then open http://localhost:8000/ in your browser
 
 ## Files
 
