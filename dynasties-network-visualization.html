@@ -482,9 +482,10 @@
         }
         
         dynastiesData = data.philippine_political_dynasties_network;
-        
+
         buildNetwork();
         updateStats();
+        handleHashNavigation();
       } catch (error) {
         console.error('Error loading dynasties data:', error);
         const errorMsg = error.message || 'Unknown error';
@@ -831,17 +832,17 @@
         html += `<div class="label">2025 Timeline Events</div>`;
         html += `<ul style="list-style: none; padding-left: 0; margin-top: 8px;">`;
         dynasty.timeline_events.forEach(event => {
-          const roleBadge = event.role === 'primary_actor' ? 
-            `<span style="background: #CE1126; color: #fff; padding: 2px 6px; border-radius: 3px; font-size: 10px; margin-left: 4px;">Primary</span>` :
+          const roleBadge = event.role === 'primary_actor' ?
+            `<span style="background: #CE1126; color: #fff; padding: 2px 6px; font-size: 10px; margin-left: 4px;">Primary</span>` :
             event.role === 'participant' ?
-            `<span style="background: #0038A8; color: #fff; padding: 2px 6px; border-radius: 3px; font-size: 10px; margin-left: 4px;">Participant</span>` :
-            `<span style="background: #666; color: #fff; padding: 2px 6px; border-radius: 3px; font-size: 10px; margin-left: 4px;">Mentioned</span>`;
-          html += `<li style="margin-bottom: 8px; padding-bottom: 8px; border-bottom: 1px solid #e0e0e0;">`;
-          html += `<strong>${event.date}</strong> - ${event.title}${roleBadge}`;
+            `<span style="background: #0038A8; color: #fff; padding: 2px 6px; font-size: 10px; margin-left: 4px;">Participant</span>` :
+            `<span style="background: #666; color: #fff; padding: 2px 6px; font-size: 10px; margin-left: 4px;">Mentioned</span>`;
+          const timelineUrl = `interactive-timeline/?search=${encodeURIComponent(event.title)}`;
+          html += `<li style="margin-bottom: 8px; padding-bottom: 8px; border-bottom: 1px solid #e5e5e5;">`;
+          html += `<a href="${timelineUrl}" style="color: #222; text-decoration: underline; text-underline-offset: 2px;"><strong>${event.date}</strong> - ${event.title}</a>${roleBadge}`;
           html += `</li>`;
         });
         html += `</ul>`;
-        html += `<p style="font-size: 11px; color: #999; margin-top: 8px;">View full timeline: <a href="../interactive-timeline/" target="_blank" style="color: #0038A8;">Interactive Timeline</a></p>`;
       }
       
       if (dynasty['2025_rumors_headlines'] && dynasty['2025_rumors_headlines'].length > 0) {
@@ -880,6 +881,45 @@
       const panel = document.getElementById('glossaryPanel');
       panel.classList.add('visible');
     }
+
+    // Handle hash navigation from other pages (e.g., timeline linking to #Marcos)
+    function handleHashNavigation() {
+      const hash = window.location.hash.substring(1); // Remove the #
+      if (!hash || !network) return;
+
+      // Find the dynasty node that matches the hash
+      const dynastyId = hash.replace(/_/g, ' '); // Convert underscores back to spaces
+      const matchingNode = allNodes.find(node => {
+        const nodeLabel = node.label.toLowerCase();
+        const searchId = dynastyId.toLowerCase();
+        return nodeLabel === searchId ||
+               nodeLabel.includes(searchId) ||
+               node.id.toLowerCase() === searchId;
+      });
+
+      if (matchingNode) {
+        // Focus on the node and show its info panel
+        network.focus(matchingNode.id, {
+          scale: 1.5,
+          animation: {
+            duration: 500,
+            easingFunction: 'easeInOutQuad'
+          }
+        });
+
+        // Find and show dynasty info
+        const dynasty = dynastiesData.nodes.dynasties.find(d =>
+          d.name === matchingNode.label ||
+          d.name.toLowerCase() === dynastyId.toLowerCase()
+        );
+        if (dynasty) {
+          setTimeout(() => showInfoPanel(dynasty), 600);
+        }
+      }
+    }
+
+    // Also listen for hash changes while on the page
+    window.addEventListener('hashchange', handleHashNavigation);
 
     function updateStats() {
       document.getElementById('dynastyCount').textContent = 

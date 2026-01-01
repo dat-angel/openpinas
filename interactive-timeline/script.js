@@ -176,5 +176,15 @@ sortButton.addEventListener("click", () => {
 checkboxes.forEach((box) => box.addEventListener("change", applyFilters));
 searchInput.addEventListener("input", applyFilters);
 
+// Check for URL parameters (for linking from other pages)
+function handleUrlParams() {
+  const params = new URLSearchParams(window.location.search);
+  const searchQuery = params.get("search");
+  if (searchQuery) {
+    searchInput.value = searchQuery;
+  }
+}
+
 // Initialize on load
+handleUrlParams();
 loadTimelineData();

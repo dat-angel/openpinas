@@ -37,7 +37,8 @@ function renderCaseDetail() {
   // Case header with status badge
   const statusClass = getStatusClass(caseData.status);
   const statusLabel = formatStatus(caseData.status);
-  
+  const timelineSearchUrl = `../../interactive-timeline/?search=${encodeURIComponent(caseData.title)}`;
+
   document.getElementById('caseHeaderContent').innerHTML = `
     <div style="display: flex; gap: 16px; flex-wrap: wrap; align-items: center; margin-bottom: 16px;">
       <span class="status-badge ${statusClass}">${statusLabel}</span>
@@ -49,6 +50,9 @@ function renderCaseDetail() {
       <span><strong>Court/Agency:</strong> ${escapeHtml(caseData.court_agency || 'N/A')}</span>
       ${caseData.location ? `<span><strong>Location:</strong> ${escapeHtml(caseData.location.municipality || '')}, ${escapeHtml(caseData.location.province || '')}</span>` : ''}
       ${caseData.last_updated ? `<span><strong>Last Updated:</strong> ${formatDate(caseData.last_updated)}</span>` : ''}
+    </div>
+    <div style="margin-top: 16px; font-size: 14px;">
+      <a href="${timelineSearchUrl}" style="color: #0038A8; text-decoration: underline; text-underline-offset: 2px;">View related events in 2025 Timeline →</a>
     </div>
   `;
   
@@ -139,14 +143,21 @@ function renderCaseDetail() {
   
   // Political connections
   if (caseData.political_connections && caseData.political_connections.length > 0) {
-    document.getElementById('politicalContent').innerHTML = caseData.political_connections.map(conn => `
-      <div style="margin-bottom: 16px; padding: 12px; background: rgba(18, 69, 89, 0.05); border-radius: 8px;">
-        <p style="margin: 4px 0;"><strong>Type:</strong> ${escapeHtml(conn.connection_type || 'N/A')}</p>
-        <p style="margin: 4px 0;">${escapeHtml(conn.description || '')}</p>
-        ${conn.details ? `<p style="margin: 4px 0; color: var(--muted); font-size: 14px;">${escapeHtml(conn.details)}</p>` : ''}
-        ${conn.dynasty ? `<p style="margin: 4px 0; color: var(--muted); font-size: 14px;"><strong>Dynasty:</strong> ${escapeHtml(conn.dynasty)}</p>` : ''}
-      </div>
-    `).join('');
+    document.getElementById('politicalContent').innerHTML = caseData.political_connections.map(conn => {
+      // Create dynasty link if dynasty is mentioned
+      const dynastyLink = conn.dynasty
+        ? `<p style="margin: 4px 0; color: var(--muted); font-size: 14px;"><strong>Dynasty:</strong> <a href="../../dynasties-network-visualization.html#${encodeURIComponent(conn.dynasty.replace(/ /g, '_'))}" style="color: #0038A8; text-decoration: underline;">${escapeHtml(conn.dynasty)}</a></p>`
+        : '';
+
+      return `
+        <div style="margin-bottom: 16px; padding: 12px; background: rgba(18, 69, 89, 0.05); border-radius: 8px;">
+          <p style="margin: 4px 0;"><strong>Type:</strong> ${escapeHtml(conn.connection_type || 'N/A')}</p>
+          <p style="margin: 4px 0;">${escapeHtml(conn.description || '')}</p>
+          ${conn.details ? `<p style="margin: 4px 0; color: var(--muted); font-size: 14px;">${escapeHtml(conn.details)}</p>` : ''}
+          ${dynastyLink}
+        </div>
+      `;
+    }).join('');
   } else {
     document.getElementById('politicalSection').style.display = 'none';
   }
