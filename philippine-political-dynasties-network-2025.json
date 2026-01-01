@@ -3,13 +3,13 @@
     "metadata": {
       "title": "Philippine Political Dynasties Network Map - Historical & Contemporary",
       "description": "Comprehensive network visualization of Philippine political dynasties throughout history, their relationships, alliances, territorial control, and geographic distribution. Includes historical data from establishment dates through 2025, with detailed geographic mapping of regional control.",
-      "version": "3.0",
+      "version": "4.0",
       "last_updated": "2026-01-01",
       "data_scope": "historical_and_contemporary",
       "earliest_dynasty": 1868,
       "latest_update": 2025,
-      "total_dynasties": 50,
-      "total_members_tracked": 450,
+      "total_dynasties": 59,
+      "total_members_tracked": 520,
       "network_type": "multi-relational directed graph",
       "compatible_tools": [
         "Gephi",
@@ -33,9 +33,15 @@
         "Duterte ICC detention and trial",
         "VP Duterte impeachment proceedings (blocked by Supreme Court)",
         "Midterm election results and dynasty shifts",
-        "Flood control corruption scandal connections",
+        "Flood control corruption scandal - $2B lost, multiple politicians implicated",
         "Marcos-Duterte alliance breakdown",
-        "Opposition resurgence (Aquino, Liberal Party)"
+        "Opposition resurgence (Aquino, Liberal Party)",
+        "Martin Romualdez resignation as House Speaker (September 2025)",
+        "Chiz Escudero ousted as Senate President",
+        "Garcia dynasty collapse in Cebu - defeated after 30 years",
+        "Dy dynasty rises to national power - Faustino Dy III becomes Speaker",
+        "Mass protests (Trillion Peso March, INC rallies)",
+        "Multiple senators under investigation for kickbacks"
       ]
     },
     "nodes": {
@@ -1139,18 +1145,63 @@
           "primary_regions": [
             "Leyte"
           ],
-          "current_positions_held": 5,
+          "current_positions_held": 4,
+          "2025_status": "corruption_crisis",
+          "crisis_level": "high",
           "allied_to": "MARCOS_ROMUALDEZ",
+          "timeline_events": [
+            {"date": "2025-09-08", "title": "Martin Romualdez Named in Flood Control Kickback Testimony", "role": "primary_actor"},
+            {"date": "2025-09-17", "title": "Martin Romualdez Resigns as House Speaker", "role": "primary_actor"},
+            {"date": "2025-12-18", "title": "DPWH Recommends Charges Against Romualdez and 86 Others", "role": "primary_actor"}
+          ],
           "key_members": [
             {
               "name": "Martin Romualdez",
-              "position": "Speaker of House of Representatives",
+              "position": "Former Speaker of House of Representatives",
+              "status": "resigned_corruption_scandal",
               "gender": "M",
-              "2025_role": "Key ally in Marcos administration; House approved VP Duterte impeachment",
-              "wikipedia": "https://en.wikipedia.org/wiki/Martin_Romualdez"
+              "wikipedia": "https://en.wikipedia.org/wiki/Martin_Romualdez",
+              "2025_events": [
+                "Named by contractor couple as kickback recipient in Senate hearing (Sept 8)",
+                "Resigned as House Speaker amid scandal (Sept 17)",
+                "Replaced by Faustino Dy III",
+                "DPWH recommends plunder, malversation, graft charges (Dec 18)",
+                "Subject of P1B class suit from flood victims"
+              ]
+            },
+            {
+              "name": "Yedda Marie Romualdez",
+              "position": "Representative, Tingog Party-list",
+              "gender": "F",
+              "note": "Wife of Martin Romualdez"
+            },
+            {
+              "name": "Andrew Julian Romualdez",
+              "position": "Tingog Party-list nominee",
+              "gender": "M",
+              "note": "Son of Martin Romualdez"
             }
           ],
-          "historical_notes": "Integrated into Marcos political power through marriage; Martin Romualdez as House Speaker played key role in 2025 impeachment proceedings"
+          "corruption_allegations": [
+            "Flood control kickback scheme - named by contractor witnesses",
+            "DPWH recommending plunder charges",
+            "Subject of P1B class suit from flood victims"
+          ],
+          "historical_notes": "Integrated into Marcos political power through marriage. Martin Romualdez's tenure as House Speaker ended abruptly in September 2025 when he resigned amid the flood control corruption scandal. The DPWH recommended criminal charges against him in December 2025.",
+          "2025_rumors_headlines": [
+            {
+              "headline": "Romualdez Quits as Speaker Amid Flood Probe Pressure",
+              "source": "Inquirer, September 2025",
+              "url": "https://newsinfo.inquirer.net/2110811/romualdez-quits-as-speaker-amid-flood-probe-pressure",
+              "description": "House Speaker resigns after being named in contractor testimony about kickbacks"
+            },
+            {
+              "headline": "DPWH Seeks Charges vs Romualdez, 86 Others in Flood Control Scandal",
+              "source": "BusinessWorld, December 2025",
+              "url": "https://www.bworldonline.com/the-nation/2025/12/18/719872/dpwh-seeks-charges-vs-romualdez-86-others-in-flood-control-scandal/",
+              "description": "Public Works Department recommends plunder, malversation, graft and bribery charges"
+            }
+          ]
         },
         {
           "id": "REMULLA_FAMILY",
@@ -1452,6 +1503,264 @@
             "Political dynasty-contractor connections"
           ],
           "historical_notes": "2025: Resignation highlighted extent of political dynasty connections to contractors; exposed corruption reach into high levels of government"
+        },
+        {
+          "id": "GARCIA_CEBU",
+          "name": "Garcia Dynasty (Cebu)",
+          "patriarch": "Pablo Garcia",
+          "established": 1995,
+          "classification": "major_dynasty",
+          "power_level": "regional",
+          "primary_regions": ["Cebu"],
+          "geographic_coordinates": {"Cebu": {"lat": 10.3157, "lng": 123.8854}},
+          "current_positions_held": 0,
+          "2025_status": "dynasty_collapse",
+          "crisis_level": "critical",
+          "key_members": [
+            {
+              "name": "Gwendolyn Garcia",
+              "position": "Former Governor of Cebu",
+              "status": "defeated_2025",
+              "gender": "F",
+              "wikipedia": "https://en.wikipedia.org/wiki/Gwendolyn_Garcia",
+              "2025_events": ["Lost gubernatorial race to Pamela Baricuatro by 300,000 votes", "First electoral defeat in political career", "End of Garcia dynasty's three-decade grip on Cebu"]
+            },
+            {
+              "name": "Raymond Alvin Garcia",
+              "position": "Former Mayor of Cebu City",
+              "status": "defeated_2025",
+              "gender": "M",
+              "2025_events": ["Lost mayoral reelection to Nestor Archival"]
+            },
+            {
+              "name": "Pablo Garcia",
+              "position": "Former Governor of Cebu",
+              "term_start": 1995,
+              "term_end": 2004,
+              "gender": "M",
+              "historical": true
+            }
+          ],
+          "rival_dynasties": ["OSMENA_FAMILY"],
+          "historical_notes": "The Garcia dynasty dominated Cebu politics for three decades. Gwen Garcia served as governor from 2004-2013 and 2019-2025. The 2025 defeat to political newcomer Pamela Baricuatro marked a stunning end to their reign.",
+          "2025_rumors_headlines": [
+            {
+              "headline": "Cebu Voters Reject Garcia Dynasty After Three Decades",
+              "source": "Rappler, May 2025",
+              "url": "https://www.rappler.com/philippines/elections/cebu-versus-gwen-garcia-alyansa-2025/",
+              "description": "Political newcomer Pamela Baricuatro defeats Gwen Garcia by 300,000 votes"
+            }
+          ]
+        },
+        {
+          "id": "DIMAPORO_FAMILY",
+          "name": "Dimaporo Dynasty",
+          "patriarch": "Mohammad Ali Dimaporo",
+          "established": 1949,
+          "classification": "imperial_dynasty",
+          "power_level": "regional",
+          "primary_regions": ["Lanao del Norte"],
+          "geographic_coordinates": {"Lanao del Norte": {"lat": 8.0730, "lng": 124.2873}},
+          "duration_years": 76,
+          "current_positions_held": 4,
+          "2025_status": "dominant_regional_control",
+          "key_members": [
+            {
+              "name": "Mohammad Ali Dimaporo",
+              "position": "Former Congressman/Governor",
+              "term_start": 1949,
+              "gender": "M",
+              "historical": true,
+              "wikipedia": "https://en.wikipedia.org/wiki/Mohammad_Ali_Dimaporo",
+              "note": "Patriarch; ally of Ferdinand Marcos Sr."
+            },
+            {
+              "name": "Imelda Quibranza-Dimaporo",
+              "position": "Representative, Lanao del Norte 1st District",
+              "elected": "2025-05-12",
+              "gender": "F",
+              "2025_events": ["Won congressional seat with 111,639 votes", "Traded positions with son Khalid"]
+            },
+            {
+              "name": "Khalid Dimaporo",
+              "position": "Governor of Lanao del Norte",
+              "elected": "2025-05-12",
+              "gender": "M",
+              "2025_events": ["Won governorship with 258,853 votes"]
+            },
+            {
+              "name": "Aminah Dimaporo",
+              "position": "Representative, Lanao del Norte 2nd District",
+              "elected": "2025-05-12",
+              "gender": "F"
+            }
+          ],
+          "allied_dynasties": ["MARCOS_ROMUALDEZ"],
+          "historical_notes": "The Dimaporos have controlled Lanao del Norte since 1949 - 76 years. The family practices 'position trading' to circumvent term limits.",
+          "2025_rumors_headlines": [
+            {
+              "headline": "Dimaporos Retain Control Over Lanao del Norte Politics",
+              "source": "Rappler, May 2025",
+              "url": "https://www.rappler.com/philippines/elections/dimaporos-gubernatorial-district-representative-results-lanao-del-norte-2025/",
+              "description": "Mother and son trade positions to maintain 76-year dynasty"
+            }
+          ]
+        },
+        {
+          "id": "ALONTO_ADIONG",
+          "name": "Alonto-Adiong Dynasty",
+          "patriarch": "Mamintal Alonto Adiong Jr.",
+          "established": 2007,
+          "classification": "major_dynasty",
+          "power_level": "regional",
+          "primary_regions": ["Lanao del Sur"],
+          "geographic_coordinates": {"Lanao del Sur": {"lat": 7.8232, "lng": 124.4357}},
+          "current_positions_held": 5,
+          "2025_status": "consolidated_control",
+          "key_members": [
+            {
+              "name": "Mamintal Alonto Adiong Jr.",
+              "position": "Governor of Lanao del Sur",
+              "elected": "2025-05-12",
+              "gender": "M"
+            },
+            {
+              "name": "Mujam Adiong",
+              "position": "Vice Governor of Lanao del Sur",
+              "elected": "2025-05-12",
+              "gender": "M",
+              "note": "Son of Mamintal"
+            },
+            {
+              "name": "Ansaruddin Adiong",
+              "position": "Mayor of Ditsaan-Ramain",
+              "elected": "2025-05-12",
+              "gender": "M",
+              "note": "Former congressman; brother of Mamintal"
+            }
+          ],
+          "rival_dynasties": ["DIMAPORO_FAMILY"],
+          "historical_notes": "The Alonto-Adiong clan has deepened their hold on Lanao del Sur since 2007. Their established influence drove the Dimaporos to Lanao del Norte."
+        },
+        {
+          "id": "ESCUDERO_FAMILY",
+          "name": "Escudero Dynasty",
+          "patriarch": "Salvador Escudero III",
+          "established": 1969,
+          "classification": "major_dynasty",
+          "power_level": "national",
+          "primary_regions": ["Sorsogon"],
+          "geographic_coordinates": {"Sorsogon": {"lat": 12.9742, "lng": 124.0058}},
+          "current_positions_held": 1,
+          "2025_status": "corruption_crisis",
+          "crisis_level": "high",
+          "timeline_events": [
+            {"date": "2025-08-12", "title": "Escudero Admits P30M Campaign Donation from Contractor", "role": "primary_actor"},
+            {"date": "2025-09-25", "title": "Former DPWH Official Names Escudero in Flood Control Kickbacks", "role": "primary_actor"}
+          ],
+          "key_members": [
+            {
+              "name": "Francis 'Chiz' Escudero",
+              "position": "Former Senate President",
+              "status": "ousted_corruption_scandal",
+              "gender": "M",
+              "wikipedia": "https://en.wikipedia.org/wiki/Chiz_Escudero",
+              "2025_events": ["Admitted receiving P30M donation from flagged contractor", "Named as recipient of P160M kickback", "Ousted as Senate President", "Under Ombudsman investigation"]
+            },
+            {
+              "name": "Heart Evangelista",
+              "position": "Celebrity/Actress",
+              "gender": "F",
+              "note": "Wife of Chiz Escudero; international fashion influencer"
+            }
+          ],
+          "corruption_allegations": ["Flood control kickbacks - P160M allegedly delivered through intermediary", "Campaign donation from flagged contractor - P30M", "Under Ombudsman investigation for plunder"],
+          "historical_notes": "The 2025 flood control scandal severely damaged Chiz Escudero's reputation, leading to his ouster as Senate President.",
+          "2025_rumors_headlines": [
+            {
+              "headline": "Escudero Dragged Into Flood Control Fund Controversy",
+              "source": "Philstar, September 2025",
+              "url": "https://www.philstar.com/headlines/2025/09/25/2475343/escudero-binay-dragged-flood-control-fund-controversy",
+              "description": "Former DPWH undersecretary names Senator Escudero as recipient of P160M kickback"
+            }
+          ]
+        },
+        {
+          "id": "ALVAREZ_FAMILY",
+          "name": "Alvarez Dynasty",
+          "patriarch": "Jose Alvarez",
+          "established": 1998,
+          "classification": "major_dynasty",
+          "power_level": "regional",
+          "primary_regions": ["Palawan"],
+          "geographic_coordinates": {"Palawan": {"lat": 9.8349, "lng": 118.7384}},
+          "current_positions_held": 3,
+          "2025_status": "returned_to_power",
+          "key_members": [
+            {"name": "Jose Alvarez", "position": "Representative, Palawan", "gender": "M"},
+            {"name": "Amy Alvarez", "position": "Governor of Palawan", "elected": "2025-05-12", "gender": "F", "note": "Daughter of Jose Alvarez"}
+          ],
+          "historical_notes": "The Alvarezes returned to Palawan's Capitol in 2025 after Amy Alvarez won as governor."
+        },
+        {
+          "id": "OSMENA_FAMILY",
+          "name": "Osmeña Dynasty",
+          "patriarch": "Sergio Osmeña Sr.",
+          "established": 1906,
+          "classification": "imperial_dynasty",
+          "power_level": "regional",
+          "primary_regions": ["Cebu"],
+          "geographic_coordinates": {"Cebu": {"lat": 10.3157, "lng": 123.8854}},
+          "duration_years": 119,
+          "current_positions_held": 2,
+          "2025_status": "resurgence",
+          "key_members": [
+            {
+              "name": "Sergio Osmeña Sr.",
+              "position": "Former President of Philippines (1944-1946)",
+              "gender": "M",
+              "historical": true,
+              "wikipedia": "https://en.wikipedia.org/wiki/Sergio_Osme%C3%B1a",
+              "note": "4th President of Philippines; patriarch"
+            },
+            {
+              "name": "Tomas Osmeña",
+              "position": "Former Mayor of Cebu City",
+              "gender": "M",
+              "wikipedia": "https://en.wikipedia.org/wiki/Tom%C3%A1s_Osme%C3%B1a",
+              "2025_events": ["Backed Nestor Archival who defeated Garcia nephew"]
+            }
+          ],
+          "rival_dynasties": ["GARCIA_CEBU"],
+          "historical_notes": "One of oldest Philippine political dynasties (1906). The 2025 election saw an Osmeña-backed candidate defeat the Garcia nephew for Cebu City mayor."
+        },
+        {
+          "id": "SALI_FAMILY",
+          "name": "Sali Dynasty",
+          "patriarch": "Hussin Amin",
+          "established": 1986,
+          "classification": "major_dynasty",
+          "power_level": "regional",
+          "primary_regions": ["Tawi-Tawi"],
+          "geographic_coordinates": {"Tawi-Tawi": {"lat": 5.1339, "lng": 119.9503}},
+          "current_positions_held": 4,
+          "2025_status": "entrenched_control",
+          "key_members": [{"name": "Yshmael Sali", "position": "Governor of Tawi-Tawi", "gender": "M"}],
+          "historical_notes": "The Sali clan remains firmly entrenched in Tawi-Tawi in the BARMM region."
+        },
+        {
+          "id": "MIRAFLORES_FAMILY",
+          "name": "Miraflores Dynasty",
+          "patriarch": "Jose Enrique Miraflores",
+          "established": 2019,
+          "classification": "rising_dynasty",
+          "power_level": "regional",
+          "primary_regions": ["Aklan"],
+          "geographic_coordinates": {"Aklan": {"lat": 11.8166, "lng": 122.0942}},
+          "current_positions_held": 2,
+          "2025_status": "consolidating",
+          "key_members": [{"name": "Jose Enrique Miraflores", "position": "Governor of Aklan", "elected": "2025-05-12", "gender": "M", "note": "Second term"}],
+          "historical_notes": "Governor Miraflores secured his second term in 2025, consolidating family control over Aklan."
         }
       ]
     },
@@ -1633,6 +1942,74 @@
           "strength": "moderate",
           "year": 2025,
           "status": "exposed_december_2025"
+        },
+        {
+          "id": "rel_017",
+          "source": "GARCIA_CEBU",
+          "target": "OSMENA_FAMILY",
+          "type": "rivalry",
+          "description": "Decades-long rivalry for control of Cebu; alternated control of provincial and city positions",
+          "strength": "very_strong",
+          "duration_years": 30,
+          "2025_note": "Osmeña-backed candidate defeated Garcia nephew for Cebu City mayor"
+        },
+        {
+          "id": "rel_018",
+          "source": "DIMAPORO_FAMILY",
+          "target": "ALONTO_ADIONG",
+          "type": "rivalry",
+          "description": "Traditional Maranao rivalry; Dimaporos moved to Lanao del Norte to avoid Alonto-Adiong dominance in Lanao del Sur",
+          "strength": "strong",
+          "region": "Lanao provinces"
+        },
+        {
+          "id": "rel_019",
+          "source": "DIMAPORO_FAMILY",
+          "target": "MARCOS_ROMUALDEZ",
+          "type": "alliance",
+          "description": "Historical alliance dating to Martial Law; Mohammad Ali Dimaporo was key Marcos ally in Mindanao",
+          "strength": "strong",
+          "duration_years": 50
+        },
+        {
+          "id": "rel_020",
+          "source": "ESCUDERO_FAMILY",
+          "target": "FLOOD_CONTROL_CORRUPTION",
+          "type": "corruption_network",
+          "description": "Chiz Escudero named as recipient of P160M in kickbacks; admitted P30M contractor donation",
+          "strength": "strong",
+          "year": 2025,
+          "status": "under_investigation"
+        },
+        {
+          "id": "rel_021",
+          "source": "ROMUALDEZ_FAMILY",
+          "target": "FLOOD_CONTROL_CORRUPTION",
+          "type": "corruption_network",
+          "description": "Martin Romualdez named by contractors in kickback scheme; DPWH recommends plunder charges",
+          "strength": "very_strong",
+          "year": 2025,
+          "status": "charges_recommended"
+        },
+        {
+          "id": "rel_022",
+          "source": "DY_FAMILY",
+          "target": "MARCOS_ROMUALDEZ",
+          "type": "alliance",
+          "description": "Faustino Dy III replaced Romualdez as House Speaker; elevated from regional to national power",
+          "strength": "strong",
+          "year": 2025,
+          "2025_note": "Dy dynasty rose to national prominence through Speaker position"
+        },
+        {
+          "id": "rel_023",
+          "source": "GARCIA_CEBU",
+          "target": "DUTERTE_FAMILY",
+          "type": "rivalry",
+          "description": "Gwen Garcia defeated by Duterte ally Pamela Baricuatro in 2025 gubernatorial race",
+          "strength": "strong",
+          "year": 2025,
+          "2025_note": "Baricuatro ran under PDP-Laban; ended Garcia dynasty reign"
         }
       ]
     },

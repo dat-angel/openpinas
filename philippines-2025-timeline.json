@@ -5,7 +5,7 @@
   "metadata": {
     "purpose": "Comprehensive timeline of major Philippine events in 2025 to help overseas Filipinos understand developments affecting families, remittances, investments, and homeland governance",
     "last_updated": "January 1, 2026",
-    "total_events": 54,
+    "total_events": 60,
     "categories": ["Political", "Cultural", "Natural Disasters", "Economic", "International Relations", "Legal", "Religious"]
   },
   "timeline": [
@@ -360,6 +360,45 @@
       }
     },
     {
+      "date": "2025-09-08",
+      "title": "Contractors Name Martin Romualdez in Flood Control Kickbacks",
+      "category": "Political",
+      "description": "During a Senate hearing, contractor couple Pacifico 'Curlee' Discaya II and Cezarah 'Sarah' Discaya named House Speaker Martin Romualdez and other lawmakers as alleged recipients of kickbacks from flood control projects. This testimony marked the first time a sitting House Speaker was publicly implicated in the corruption scandal.",
+      "significance": "House Speaker directly implicated in corruption scandal",
+      "diaspora_impact": "Shocking revelation about top legislative leader; questions about extent of political corruption",
+      "mentioned_dynasties": ["ROMUALDEZ_FAMILY"],
+      "sources": {
+        "international": [],
+        "local": ["https://www.rappler.com/nation/politics/"]
+      }
+    },
+    {
+      "date": "2025-09-17",
+      "title": "House Speaker Martin Romualdez Resigns Amid Corruption Scandal",
+      "category": "Political",
+      "description": "Leyte Rep. Martin Romualdez formally resigned as Speaker of the House of Representatives to 'stanch the chamber's bleeding credibility' following allegations linking him to kickbacks from flood control projects. He was replaced by Isabela Rep. Faustino 'Bojie' Dy III, who was elected unopposed with 253 votes and 28 abstentions. This marked the first time a sitting House Speaker resigned due to corruption allegations.",
+      "significance": "Historic resignation of House Speaker; major political upheaval",
+      "diaspora_impact": "Leadership change signals accountability; political instability in Congress",
+      "mentioned_dynasties": ["ROMUALDEZ_FAMILY", "DY_FAMILY"],
+      "sources": {
+        "international": ["https://www.asiasentinel.com/p/fall-martin-romualdez"],
+        "local": ["https://newsinfo.inquirer.net/2110811/romualdez-quits-as-speaker-amid-flood-probe-pressure", "https://www.philstar.com/headlines/2025/09/17/2473471/romualdez-resigns-house-speaker-amid-alleged-corruption-budget-woes"]
+      }
+    },
+    {
+      "date": "2025-09-25",
+      "title": "Former DPWH Official Names Senators in Flood Control Kickbacks",
+      "category": "Political",
+      "description": "Former DPWH undersecretary Roberto Bernardo named Senator Chiz Escudero, former senators Bong Revilla and Nancy Binay as recipients of alleged kickbacks from questionable flood control projects. Bernardo alleged he personally delivered P160 million – 20% of P800 million worth of projects – to an intermediary reportedly on Escudero's behalf. Escudero admitted receiving a P30 million campaign donation from a flagged contractor but denied receiving kickbacks.",
+      "significance": "Multiple senators implicated in corruption scandal",
+      "diaspora_impact": "Trust in Senate leadership eroded; concerns about systemic corruption",
+      "mentioned_dynasties": ["ESCUDERO_FAMILY", "REVILLA_TOLENTINO", "BINAY_FAMILY"],
+      "sources": {
+        "international": ["https://gulfnews.com/world/asia/philippines/philippine-senators-in-kickbacks-scandal-escudero-binay-revilla-named-top-auditor-education-official-called-out-in-flood-control-scam-1.500282639"],
+        "local": ["https://www.philstar.com/headlines/2025/09/25/2475343/escudero-binay-dragged-flood-control-fund-controversy", "https://www.rappler.com/philippines/former-dpwh-official-bernardo-names-escudero-binay-revilla-alleged-flood-control-kickbacks/"]
+      }
+    },
+    {
       "date": "2025-09-30",
       "title": "6.9 Magnitude Earthquake Strikes Cebu - Deadliest Since 2013",
       "category": "Natural Disasters",
@@ -579,6 +618,43 @@
           "https://www.rappler.com/nation/politics/",
           "https://bilyonaryo.com/"
         ]
+      }
+    },
+    {
+      "date": "2025-12-02",
+      "title": "Nine DPWH Officials Plead Not Guilty to Malversation",
+      "category": "Legal",
+      "description": "Nine Department of Public Works and Highways officials pleaded not guilty to malversation charges before the Sandiganbayan Sixth Division, while additional graft charges were filed before the Fifth Division. This marked the first formal court proceedings against government officials in the flood control corruption scandal.",
+      "significance": "First court proceedings in flood control scandal",
+      "diaspora_impact": "Justice system begins processing corruption cases",
+      "sources": {
+        "international": [],
+        "local": ["https://newsinfo.inquirer.net/2157224/yearend-2025-record-flood-control-corruption-unravels"]
+      }
+    },
+    {
+      "date": "2025-12-18",
+      "title": "DPWH Recommends Charges Against Romualdez and 86 Others",
+      "category": "Political",
+      "description": "The Department of Public Works and Highways, together with the Independent Commission for Infrastructure and Department of Justice, recommended the filing of criminal charges against 87 people over irregularities in flood control projects. Those named included former House Speaker Martin Romualdez and resigned Party-list Rep. Elizaldy 'Zaldy' Co. Recommended charges include plunder, malversation, graft and bribery.",
+      "significance": "Former House Speaker recommended for criminal prosecution",
+      "diaspora_impact": "High-profile accountability action; signals serious anti-corruption effort",
+      "mentioned_dynasties": ["ROMUALDEZ_FAMILY"],
+      "sources": {
+        "international": [],
+        "local": ["https://www.bworldonline.com/the-nation/2025/12/18/719872/dpwh-seeks-charges-vs-romualdez-86-others-in-flood-control-scandal/"]
+      }
+    },
+    {
+      "date": "2025-12-18",
+      "title": "Contractor Sarah Discaya Arrested; DPWH Official Found Dead",
+      "category": "Political",
+      "description": "Sarah Discaya was arrested over a P96-million ghost flood control project in Davao Occidental and detained in Lapu-Lapu City Jail. Her husband Curlee Discaya remained detained at Senate premises after being cited in contempt for inconsistent testimony. In a tragic development, former DPWH official Cabral was found dead at Bued River in Benguet following investigations into flood control projects she was connected to.",
+      "significance": "Key witness arrested; suspicious death of DPWH official",
+      "diaspora_impact": "Concerns about safety of those involved in investigations",
+      "sources": {
+        "international": [],
+        "local": ["https://newsinfo.inquirer.net/2157224/yearend-2025-record-flood-control-corruption-unravels"]
       }
     },
     {
