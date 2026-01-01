@@ -14,8 +14,8 @@ Due to browser security restrictions (CORS), you cannot open the HTML files dire
 ### Option 1: Python (Recommended)
 
 ```bash
-git clone https://github.com/dat-angel/philippine-political-dynasties.git
-cd philippine-political-dynasties
+git clone https://github.com/dat-angel/openpinas.git
+cd openpinas
 python3 -m http.server 8000
 ```
 
@@ -27,8 +27,8 @@ Then open in browser:
 ### Option 2: Node.js (if you have it)
 
 ```bash
-git clone https://github.com/dat-angel/philippine-political-dynasties.git
-cd philippine-political-dynasties
+git clone https://github.com/dat-angel/openpinas.git
+cd openpinas
 npx serve
 ```
 

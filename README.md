@@ -7,7 +7,7 @@ I've been tracking Philippine political dynasties and major events for the Filip
 
 For the 10+ million Filipinos living abroad, understanding these power structures matters. Our remittances directly impact families affected by governance quality. When corruption scandals break or natural disasters expose infrastructure failures, we need to understand who's responsible and how power networks operate.
 
-**Live Site**: [dat-angel.github.io/philippine-political-dynasties](https://dat-angel.github.io/philippine-political-dynasties/)
+**Live Site**: [dat-angel.github.io/openpinas](https://dat-angel.github.io/openpinas/)
 
 ## What's Here
 
@@ -21,8 +21,8 @@ For the 10+ million Filipinos living abroad, understanding these power structure
 You need a local web server to run the visualizations (browser security restrictions):
 
 ```bash
-git clone https://github.com/dat-angel/philippine-political-dynasties.git
-cd philippine-political-dynasties
+git clone https://github.com/dat-angel/openpinas.git
+cd openpinas
 python3 -m http.server 8000
 ```
 
