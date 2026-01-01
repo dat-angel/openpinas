@@ -12,7 +12,8 @@ Tracking major political dynasties, their relationships, and major events for th
 - 📰 **Weekly News Digests** - Significant events organized by category
 - 🗺️ **Interactive Network Map** - Dynasty relationships and geographic control
 - 📅 **Timeline** - Chronological view of major events with dynasty connections
-- 📊 **Datasets** - 71 dynasties, 85+ key members, 71 provinces tracked
+- 📊 **Regional Analysis** - Dynasties and corruption cases by province across Luzon, Visayas, and Mindanao
+- 📊 **Datasets** - 71 dynasties, 148+ key members, 71 provinces tracked
 - ⚖️ **Corruption Case Tracker** - POGO-related cases, corruption tracking, and accountability
 
 ## Quick Start
@@ -36,6 +37,7 @@ Then open http://localhost:8000/ in your browser
 **Visualizations:**
 - `dynasties-network-visualization.html` - Interactive network and map
 - `interactive-timeline/` - Timeline visualization
+- `regional-visualization.html` - Regional analysis by province (Luzon, Visayas, Mindanao)
 - `weekly-reviews/` - Weekly review template and archive
 
 **Projects:**
@@ -50,8 +52,9 @@ Then open http://localhost:8000/ in your browser
 - 71 major dynasties tracked (curated subset of ~250 total political families)
 - Focus: National power dynasties and high-profile regional dynasties
 - Coverage includes: Negros Occidental, Pangasinan, Bicol, Zamboanga, Metro Manila cities, Iloilo, Bohol, Bulacan, Pampanga, Tarlac, Cotabato, and more
-- 85+ key members tracked
-- 25+ provinces/regions with detailed geographic mapping
+- 148+ key members tracked
+- 45+ provinces/regions with detailed geographic mapping
+- Regional breakdown: 37 dynasties in Luzon, 17 in Visayas, 18 in Mindanao
 
 **Philippine Political Reality:**
 - 71 of 82 provinces (86.6%) controlled by dynasties
@@ -73,6 +76,12 @@ Then open http://localhost:8000/ in your browser
 - Chronological view of 49 major 2025 events
 - Filter by category (Political, Cultural, Natural Disasters, etc.)
 - Each event shows involved dynasties with links to network map
+
+**Regional Analysis:**
+- Interactive charts showing dynasties and corruption cases by province
+- Filter by region (Luzon, Visayas, Mindanao)
+- Sortable table with province-level statistics
+- Visual breakdown of political power concentration across regions
 
 **Weekly Reviews:**
 - Summaries of significant weekly events
