@@ -284,45 +284,44 @@
 </head>
 <body>
   <header>
-    <h1>Dynasty Network Map</h1>
-    <p>How Philippine political families connect. Click any node to see details. <a href="index.html" style="color:#fff;opacity:0.7;">← Back</a></p>
+    <h1>Dynasty Map</h1>
+    <p>Click a node. Drag to pan. Scroll to zoom. <a href="index.html" style="color:#fff;opacity:0.7;">← back</a></p>
   </header>
 
   <div class="controls">
     <label>
-      <input type="checkbox" id="showAlliances" checked> Show Alliances
+      <input type="checkbox" id="showAlliances" checked> Alliances
     </label>
     <label>
-      <input type="checkbox" id="showRivalries" checked> Show Rivalries
+      <input type="checkbox" id="showRivalries" checked> Rivalries
     </label>
     <label>
-      <input type="checkbox" id="showCorruption" checked> Show Corruption Networks
+      <input type="checkbox" id="showCorruption" checked> Corruption
     </label>
     <select id="filterPower">
-      <option value="all">All Power Levels</option>
-      <option value="national">National</option>
-      <option value="regional">Regional</option>
+      <option value="all">All</option>
+      <option value="national">National only</option>
+      <option value="regional">Regional only</option>
     </select>
     <select id="filterCrisis">
-      <option value="all">All Status</option>
-      <option value="crisis">Crisis Status</option>
+      <option value="all">All</option>
+      <option value="crisis">In trouble</option>
       <option value="stable">Stable</option>
     </select>
     <select id="filterRegion">
-      <option value="all">All Regions</option>
+      <option value="all">All regions</option>
       <option value="luzon">Luzon</option>
       <option value="visayas">Visayas</option>
       <option value="mindanao">Mindanao</option>
     </select>
-    <button id="resetView">Reset View</button>
-    <button id="showGlossary">Glossary</button>
-    <button id="toggleView">Show Map View</button>
+    <button id="resetView">Reset</button>
+    <button id="showGlossary">?</button>
+    <button id="toggleView">Map</button>
   </div>
 
   <div class="stats" id="stats">
-    <h4>Network Statistics</h4>
     <p id="dynastyCount">Loading...</p>
-    <p id="relationshipCount">Loading...</p>
+    <p id="relationshipCount"></p>
   </div>
 
   <div class="info-panel" id="infoPanel">
@@ -332,35 +331,23 @@
 
   <div class="glossary-panel" id="glossaryPanel">
     <button class="close" onclick="closeGlossaryPanel()" style="float: right; background: none; border: none; font-size: 20px; cursor: pointer; color: #666;">×</button>
-    <h3>Quick Reference</h3>
+    <h3>How to read this</h3>
     <div id="glossaryContent">
       <div class="term">
-        <div class="term-name">Node Size</div>
-        <div class="term-def">Bigger = more positions held by the family</div>
+        <div class="term-name">Big nodes</div>
+        <div class="term-def">More positions held</div>
       </div>
       <div class="term">
-        <div class="term-name">Red Border</div>
-        <div class="term-def">Currently in crisis (investigation, scandal, or legal trouble)</div>
+        <div class="term-name">Red border</div>
+        <div class="term-def">In trouble (scandal, investigation)</div>
       </div>
       <div class="term">
-        <div class="term-name">Blue Lines</div>
-        <div class="term-def">Alliances (marriage, political partnership)</div>
+        <div class="term-name">Gold lines</div>
+        <div class="term-def">Corruption link</div>
       </div>
       <div class="term">
-        <div class="term-name">Red Dashed Lines</div>
-        <div class="term-def">Rivalries</div>
-      </div>
-      <div class="term">
-        <div class="term-name">Gold Lines</div>
-        <div class="term-def">Corruption connections (kickbacks, contracts)</div>
-      </div>
-      <div class="term">
-        <div class="term-name">DPWH</div>
-        <div class="term-def">Dept of Public Works—center of the 2025 flood control scandal</div>
-      </div>
-      <div class="term">
-        <div class="term-name">ICC</div>
-        <div class="term-def">International Criminal Court (Duterte case)</div>
+        <div class="term-name">Dashed red</div>
+        <div class="term-def">Rivals</div>
       </div>
     </div>
   </div>
@@ -369,24 +356,17 @@
   <div id="map-container" style="display: none; width: 100%; height: calc(100vh - 180px); position: relative;"></div>
 
   <div class="legend">
-    <h4>Colors</h4>
     <div class="legend-item">
       <div class="legend-color" style="background: #0038A8;"></div>
-      <span>Top-tier (Marcos, Duterte)</span>
+      <span>National</span>
     </div>
     <div class="legend-item">
       <div class="legend-color" style="background: #CE1126;"></div>
-      <span>Major regional power</span>
+      <span>Regional</span>
     </div>
     <div class="legend-item">
       <div class="legend-color" style="background: #FFD700;"></div>
-      <span>Rising / new</span>
-    </div>
-    <div style="margin-top:12px; padding-top:8px; border-top:1px solid #ddd;">
-      <div class="legend-item">
-        <div class="legend-line" style="background: #FFD700; height: 4px;"></div>
-        <span>Corruption link</span>
-      </div>
+      <span>New/rising</span>
     </div>
   </div>
 
