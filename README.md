@@ -7,6 +7,8 @@ I've been tracking Philippine political dynasties and major events for the Filip
 
 For the 10+ million Filipinos living abroad, understanding these power structures matters. Our remittances directly impact families affected by governance quality. When corruption scandals break or natural disasters expose infrastructure failures, we need to understand who's responsible and how power networks operate.
 
+**Live Site**: [dat-angel.github.io/philippine-political-dynasties](https://dat-angel.github.io/philippine-political-dynasties/)
+
 ## What's Here
 
 - **Weekly News Digests** - I summarize significant events each week, organized by category
