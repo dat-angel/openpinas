@@ -32,7 +32,7 @@
       "description": "Senator Loren Legarda called on Filipinos to embrace and honor the country's artistic and cultural heritage during the National Arts Month celebration.",
       "significance": "Annual cultural celebration",
       "diaspora_impact": "Cultural events strengthen Filipino identity and pride among diaspora communities",
-      "mentioned_dynasties": ["LEGARDA_FAMILY"],
+      "mentioned_dynasties": [],
       "sources": {
         "international": [],
         "local": [
@@ -181,7 +181,7 @@
       "description": "Highest midterm election turnout in Philippine history at 82.2%. Elections determined 12 of 24 Senate seats and all 317 House of Representatives seats. Results: Marcos administration won 6 of 12 open Senate seats (Erwin Tulfo, Ping Lacson); Duterte camp won 4 seats (Christopher 'Bong' Go, Ronald 'Bato' dela Rosa); Liberal opposition unexpectedly won 2 seats (Bam Aquino, Kiko Pangilinan). Most remarkably, former President Rodrigo Duterte was elected Mayor of Davao City despite being confined in custody at ICC facility.",
       "significance": "Record voter participation; fractured Senate with no single bloc dominant; Duterte camp demonstrated resilience despite patriarch's detention",
       "diaspora_impact": "Election results shape political landscape affecting governance affecting families; fractured Senate creates legislative uncertainty; diaspora communities closely monitored outcomes affecting remittance-dependent family members and labor migration policies",
-      "mentioned_dynasties": ["MARCOS_ROMUALDEZ", "DUTERTE_FAMILY", "AQUINO_FAMILY", "TULFO_FAMILY", "LACSON_FAMILY", "GO_FAMILY", "DELA_ROSA_FAMILY"],
+      "mentioned_dynasties": ["MARCOS_ROMUALDEZ", "DUTERTE_FAMILY", "AQUINO_FAMILY", "TULFO_FAMILY", "LACSON_FAMILY"],
       "sources": {
         "international": [
           "https://en.wikipedia.org/wiki/2025_Philippine_general_election",
