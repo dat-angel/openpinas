@@ -8,6 +8,10 @@ async function loadCases() {
     const data = await response.json();
     allCases = data.cases || [];
     filteredCases = [...allCases];
+    
+    // Load filters from URL parameters
+    loadFiltersFromURL();
+    
     renderCaseList();
     renderStatistics(data.statistics);
   } catch (error) {
@@ -15,6 +19,47 @@ async function loadCases() {
     document.querySelector('.case-list').innerHTML = 
       '<div class="empty">Error loading case data. Please check the console for details.</div>';
   }
+}
+
+function loadFiltersFromURL() {
+  const params = new URLSearchParams(window.location.search);
+  const search = params.get('search');
+  const category = params.get('category');
+  const status = params.get('status');
+  const year = params.get('year');
+  
+  if (search) {
+    const searchInput = document.getElementById('search');
+    if (searchInput) searchInput.value = search;
+  }
+  if (category) {
+    const categoryFilter = document.getElementById('categoryFilter');
+    if (categoryFilter) categoryFilter.value = category;
+  }
+  if (status) {
+    const statusFilter = document.getElementById('statusFilter');
+    if (statusFilter) statusFilter.value = status;
+  }
+  if (year) {
+    const yearFilter = document.getElementById('yearFilter');
+    if (yearFilter) yearFilter.value = year;
+  }
+}
+
+function updateURL() {
+  const { searchQuery, categoryFilter, statusFilter, yearFilter } = getFilters();
+  const params = new URLSearchParams();
+  
+  if (searchQuery) params.set('search', searchQuery);
+  if (categoryFilter !== 'all') params.set('category', categoryFilter);
+  if (statusFilter !== 'all') params.set('status', statusFilter);
+  if (yearFilter !== 'all') params.set('year', yearFilter);
+  
+  const newURL = params.toString() 
+    ? `${window.location.pathname}?${params.toString()}`
+    : window.location.pathname;
+  
+  window.history.replaceState({}, '', newURL);
 }
 
 function getFilters() {
@@ -72,14 +117,21 @@ function applyFilters() {
   });
   
   renderCaseList();
+  updateURL(); // Update URL with current filters
 }
 
 function renderCaseList() {
   const container = document.querySelector('.case-list');
   if (!container) return;
   
+  // Show result count
+  const resultCount = document.getElementById('resultCount');
+  if (resultCount) {
+    resultCount.textContent = `${filteredCases.length} ${filteredCases.length === 1 ? 'case' : 'cases'}`;
+  }
+  
   if (filteredCases.length === 0) {
-    container.innerHTML = '<div class="empty">No cases match your filters.</div>';
+    container.innerHTML = '<div class="empty">No cases match your filters. Try adjusting your search or filters.</div>';
     return;
   }
   
@@ -89,16 +141,35 @@ function renderCaseList() {
     const filingDate = formatDate(caseItem.filing_date);
     const caseUrl = getCaseUrl(caseItem.case_id);
     
+    // Quick insights
+    const insights = [];
+    if (caseItem.human_trafficking_victims) {
+      insights.push(`<span class="insight-badge">${caseItem.human_trafficking_victims.toLocaleString()} victims</span>`);
+    }
+    if (caseItem.amount_involved_php) {
+      insights.push(`<span class="insight-badge">${formatAmount(caseItem.amount_involved_php)}</span>`);
+    }
+    if (caseItem.accused && caseItem.accused.length > 0) {
+      insights.push(`<span class="insight-badge">${caseItem.accused.length} accused</span>`);
+    }
+    if (caseItem.pogo_connections && caseItem.pogo_connections.length > 0) {
+      insights.push(`<span class="insight-badge">${caseItem.pogo_connections.length} POGO ops</span>`);
+    }
+    
     return `
       <a href="${caseUrl}" class="case-card">
-        <h3>${escapeHtml(caseItem.title)}</h3>
+        <div class="case-card-header">
+          <h3>${escapeHtml(caseItem.title)}</h3>
+          ${caseItem.priority === 'high' ? '<span class="priority-badge">High Priority</span>' : ''}
+        </div>
         <div class="case-meta">
           <span class="status-badge ${statusClass}">${statusLabel}</span>
           <span class="category-tag">${escapeHtml(caseItem.category)}</span>
-          <span>Filed: ${filingDate}</span>
+          <span>${filingDate}</span>
           ${caseItem.location ? `<span>📍 ${escapeHtml(caseItem.location.municipality || caseItem.location.province || '')}</span>` : ''}
         </div>
-        ${caseItem.significance ? `<p style="margin-top: 12px; color: var(--muted); font-size: 14px;">${escapeHtml(caseItem.significance.substring(0, 150))}${caseItem.significance.length > 150 ? '...' : ''}</p>` : ''}
+        ${insights.length > 0 ? `<div class="case-insights">${insights.join('')}</div>` : ''}
+        ${caseItem.significance ? `<p class="case-summary">${escapeHtml(caseItem.significance.substring(0, 120))}${caseItem.significance.length > 120 ? '...' : ''}</p>` : ''}
       </a>
     `;
   }).join('');
@@ -223,6 +294,49 @@ function escapeHtml(text) {
 }
 
 // Initialize filters
+function updateFilterCounts() {
+  // Update filter dropdowns with counts
+  const categoryFilter = document.getElementById('categoryFilter');
+  const statusFilter = document.getElementById('statusFilter');
+  
+  if (categoryFilter && allCases.length > 0) {
+    const categories = {};
+    allCases.forEach(c => {
+      categories[c.category] = (categories[c.category] || 0) + 1;
+    });
+    
+    Array.from(categoryFilter.options).forEach(option => {
+      if (option.value !== 'all' && categories[option.value]) {
+        const count = categories[option.value];
+        option.text = `${option.text.split(' (')[0]} (${count})`;
+      }
+    });
+  }
+  
+  if (statusFilter && allCases.length > 0) {
+    const statuses = {};
+    allCases.forEach(c => {
+      const normalized = c.status.toLowerCase().replace(/_/g, '');
+      if (normalized.includes('ongoing') || normalized.includes('investigation')) {
+        statuses['ongoing'] = (statuses['ongoing'] || 0) + 1;
+      } else if (normalized.includes('convicted')) {
+        statuses['convicted'] = (statuses['convicted'] || 0) + 1;
+      } else if (normalized.includes('dismissed') || normalized.includes('acquitted')) {
+        statuses['dismissed'] = (statuses['dismissed'] || 0) + 1;
+      } else if (normalized.includes('filed') || normalized.includes('trial')) {
+        statuses['trial'] = (statuses['trial'] || 0) + 1;
+      }
+    });
+    
+    Array.from(statusFilter.options).forEach(option => {
+      if (option.value !== 'all' && statuses[option.value]) {
+        const count = statuses[option.value];
+        option.text = `${option.text.split(' (')[0]} (${count})`;
+      }
+    });
+  }
+}
+
 function initializeFilters() {
   const searchInput = document.getElementById('search');
   const categoryFilter = document.getElementById('categoryFilter');
@@ -231,6 +345,14 @@ function initializeFilters() {
   
   if (searchInput) {
     searchInput.addEventListener('input', applyFilters);
+    // Clear search on Escape
+    searchInput.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        searchInput.value = '';
+        applyFilters();
+        searchInput.blur();
+      }
+    });
   }
   if (categoryFilter) {
     categoryFilter.addEventListener('change', applyFilters);
@@ -246,8 +368,14 @@ function initializeFilters() {
   if (yearFilter && allCases.length > 0) {
     const years = [...new Set(allCases.map(c => new Date(c.filing_date).getFullYear()))].sort((a, b) => b - a);
     yearFilter.innerHTML = '<option value="all">All Years</option>' + 
-      years.map(year => `<option value="${year}">${year}</option>`).join('');
+      years.map(year => {
+        const count = allCases.filter(c => new Date(c.filing_date).getFullYear() === year).length;
+        return `<option value="${year}">${year} (${count})</option>`;
+      }).join('');
   }
+  
+  // Update filter counts
+  updateFilterCounts();
 }
 
 // Load cases when page loads

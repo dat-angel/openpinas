@@ -22,8 +22,8 @@
 
     <main>
       <div class="controls">
-        <input type="search" id="search" placeholder="Search cases, accused, charges, location..." />
-        <select id="categoryFilter">
+        <input type="search" id="search" placeholder="Search cases, accused, charges, location..." aria-label="Search cases" />
+        <select id="categoryFilter" aria-label="Filter by category">
           <option value="all">All Categories</option>
           <option value="POGO-related">POGO-related</option>
           <option value="Identity Fraud">Identity Fraud</option>
@@ -32,7 +32,7 @@
           <option value="Graft">Graft</option>
           <option value="Plunder">Plunder</option>
         </select>
-        <select id="statusFilter">
+        <select id="statusFilter" aria-label="Filter by status">
           <option value="all">All Status</option>
           <option value="ongoing">Ongoing</option>
           <option value="filed">Filed</option>
@@ -40,9 +40,13 @@
           <option value="convicted">Convicted</option>
           <option value="dismissed">Dismissed</option>
         </select>
-        <select id="yearFilter">
+        <select id="yearFilter" aria-label="Filter by year">
           <option value="all">All Years</option>
         </select>
+      </div>
+
+      <div style="margin: 16px 0; color: var(--muted); font-size: 14px;">
+        <span id="resultCount">Loading...</span>
       </div>
 
       <div class="case-list"></div>

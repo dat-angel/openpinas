@@ -165,11 +165,39 @@ function renderCaseDetail() {
     document.getElementById('significanceSection').style.display = 'none';
   }
   
+  // Related cases
+  if (caseData.related_cases && caseData.related_cases.length > 0) {
+    // This would need to load all cases to find related ones
+    // For now, show the related case IDs
+    const relatedSection = document.createElement('div');
+    relatedSection.className = 'section';
+    relatedSection.id = 'relatedSection';
+    relatedSection.innerHTML = `
+      <h2>Related Cases</h2>
+      <div style="display: grid; gap: 12px;">
+        ${caseData.related_cases.map(caseId => {
+          const relatedCase = allCases.find(c => c.case_id === caseId);
+          if (relatedCase) {
+            const url = getCaseUrl(relatedCase.case_id);
+            return `
+              <a href="${url}" style="display: block; padding: 12px; background: rgba(18, 69, 89, 0.05); border-radius: 8px; border-left: 3px solid var(--accent); text-decoration: none; color: inherit;">
+                <strong style="color: var(--accent);">${escapeHtml(relatedCase.title)}</strong>
+                <p style="margin: 4px 0 0; font-size: 13px; color: var(--muted);">${escapeHtml(relatedCase.category)} • ${formatStatus(relatedCase.status)}</p>
+              </a>
+            `;
+          }
+          return '';
+        }).filter(h => h).join('')}
+      </div>
+    `;
+    document.getElementById('significanceSection').insertAdjacentElement('afterend', relatedSection);
+  }
+  
   // Sources
   if (caseData.sources) {
     let sourcesHtml = '';
     if (caseData.sources.news && caseData.sources.news.length > 0) {
-      sourcesHtml += '<h3 style="margin-top: 0;">News Sources</h3><ul>';
+      sourcesHtml += '<h3 style="margin-top: 0;">News</h3><ul>';
       caseData.sources.news.forEach(source => {
         if (source && source.startsWith('http')) {
           sourcesHtml += `<li><a href="${source}" target="_blank" rel="noopener" class="source-link">${source}</a></li>`;
@@ -180,14 +208,14 @@ function renderCaseDetail() {
       sourcesHtml += '</ul>';
     }
     if (caseData.sources.senate && caseData.sources.senate.length > 0) {
-      sourcesHtml += '<h3>Senate Sources</h3><ul>';
+      sourcesHtml += '<h3>Senate</h3><ul>';
       caseData.sources.senate.forEach(source => {
         sourcesHtml += `<li>${escapeHtml(source)}</li>`;
       });
       sourcesHtml += '</ul>';
     }
     if (caseData.sources.nbi && caseData.sources.nbi.length > 0) {
-      sourcesHtml += '<h3>NBI Sources</h3><ul>';
+      sourcesHtml += '<h3>NBI</h3><ul>';
       caseData.sources.nbi.forEach(source => {
         sourcesHtml += `<li>${escapeHtml(source)}</li>`;
       });
@@ -197,6 +225,25 @@ function renderCaseDetail() {
   } else {
     document.getElementById('sourcesSection').style.display = 'none';
   }
+}
+
+// Load all cases for related cases lookup
+let allCases = [];
+async function loadAllCases() {
+  try {
+    const response = await fetch('../data/pogo-corruption-cases-2025.json');
+    const data = await response.json();
+    allCases = data.cases || [];
+  } catch (error) {
+    console.error('Error loading all cases:', error);
+  }
+}
+
+function getCaseUrl(caseId) {
+  if (caseId === 'ALICE_GUO_2024') {
+    return 'alice-guo.html';
+  }
+  return `case-${caseId.toLowerCase().replace(/_/g, '-')}.html`;
 }
 
 function getStatusClass(status) {
@@ -238,8 +285,33 @@ function escapeHtml(text) {
 
 // Load case detail when page loads
 if (document.readyState === 'loading') {
-  document.addEventListener('DOMContentLoaded', loadCaseDetail);
+  document.addEventListener('DOMContentLoaded', async () => {
+    await loadAllCases();
+    loadCaseDetail();
+  });
 } else {
-  loadCaseDetail();
+  (async () => {
+    await loadAllCases();
+    loadCaseDetail();
+  })();
 }
+
+// Keyboard navigation
+document.addEventListener('keydown', (e) => {
+  // Press 'k' to go back
+  if (e.key === 'k' && !e.target.matches('input, textarea, select')) {
+    const backLink = document.querySelector('footer a[href="../"]') || document.querySelector('footer a[href="index.html"]');
+    if (backLink) {
+      backLink.click();
+    }
+  }
+  // Press '/' to focus search (if on list page)
+  if (e.key === '/' && !e.target.matches('input, textarea, select')) {
+    const searchInput = document.getElementById('search');
+    if (searchInput) {
+      e.preventDefault();
+      searchInput.focus();
+    }
+  }
+});
 
