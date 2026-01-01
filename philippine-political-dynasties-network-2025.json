@@ -1,0 +1,1958 @@
+{
+  "philippine_political_dynasties_network": {
+    "metadata": {
+      "title": "Philippine Political Dynasties Network Map - Historical & Contemporary",
+      "description": "Comprehensive network visualization of Philippine political dynasties throughout history, their relationships, alliances, territorial control, and geographic distribution. Includes historical data from establishment dates through 2025, with detailed geographic mapping of regional control.",
+      "version": "3.0",
+      "last_updated": "2026-01-01",
+      "data_scope": "historical_and_contemporary",
+      "earliest_dynasty": 1868,
+      "latest_update": 2025,
+      "total_dynasties": 50,
+      "total_members_tracked": 450,
+      "network_type": "multi-relational directed graph",
+      "compatible_tools": [
+        "Gephi",
+        "NodeXL",
+        "Cytoscape",
+        "Kumu",
+        "Neo4j",
+        "UCINET"
+      ],
+      "use_cases": [
+        "Network visualization",
+        "Relationship mapping",
+        "Power concentration analysis",
+        "Geographic dominance analysis",
+        "Alliance tracking",
+        "Succession planning analysis",
+        "Corruption network analysis",
+        "2025 crisis impact assessment"
+      ],
+      "key_2025_updates": [
+        "Duterte ICC detention and trial",
+        "VP Duterte impeachment proceedings (blocked by Supreme Court)",
+        "Midterm election results and dynasty shifts",
+        "Flood control corruption scandal connections",
+        "Marcos-Duterte alliance breakdown",
+        "Opposition resurgence (Aquino, Liberal Party)"
+      ]
+    },
+    "nodes": {
+      "dynasties": [
+        {
+          "id": "MARCOS_ROMUALDEZ",
+          "name": "Marcos-Romualdez Dynasty",
+          "patriarch": "Ferdinand Marcos Jr.",
+          "established": 1925,
+          "classification": "imperial_dynasty",
+          "power_level": "national",
+          "primary_regions": [
+            "Ilocos Norte",
+            "Leyte"
+          ],
+          "geographic_coordinates": {
+            "Ilocos Norte": {"lat": 18.1667, "lng": 120.5833},
+            "Leyte": {"lat": 11.1667, "lng": 124.8333}
+          },
+          "historical_span": {
+            "established": 1925,
+            "peak_power": "1965-1986, 2022-present",
+            "decline_period": "1986-2022"
+          },
+          "current_positions_held": 12,
+          "2025_status": "consolidating_power",
+          "key_members": [
+            {
+              "name": "Ferdinand Marcos Jr.",
+              "position": "President of Philippines",
+              "term_start": 2022,
+              "term_end": 2028,
+              "gender": "M",
+              "wikipedia": "https://en.wikipedia.org/wiki/Bongbong_Marcos",
+              "2025_events": [
+                "Addressed flood control corruption in SONA July 28",
+                "Launched Sumbong sa Pangulo platform August 11",
+                "Established Independent Commission for Infrastructure September 11",
+                "Announced mass arrests of corrupt politicians December 25"
+              ]
+            },
+            {
+              "name": "Imelda Marcos",
+              "position": "Congresswoman",
+              "region": "Leyte-2nd District",
+              "gender": "F",
+              "wikipedia": "https://en.wikipedia.org/wiki/Imelda_Marcos"
+            },
+            {
+              "name": "Imee Marcos-Manotoc",
+              "position": "Senator",
+              "term_start": 2019,
+              "gender": "F",
+              "wikipedia": "https://en.wikipedia.org/wiki/Imee_Marcos"
+            },
+            {
+              "name": "Sandro Marcos",
+              "position": "Representative, Ilocos Norte-1st District",
+              "gender": "M",
+              "wikipedia": "https://en.wikipedia.org/wiki/Sandro_Marcos"
+            },
+            {
+              "name": "Ferdinand Marcos Sr.",
+              "position": "Former President",
+              "term_start": 1965,
+              "term_end": 1986,
+              "gender": "M",
+              "wikipedia": "https://en.wikipedia.org/wiki/Ferdinand_Marcos",
+              "historical": true
+            }
+          ],
+          "allied_dynasties": [
+            "ROMUALDEZ",
+            "TOLENTINO",
+            "REMULLA",
+            "VILLAR_FAMILY"
+          ],
+          "rival_dynasties": [
+            "DUTERTE_FAMILY",
+            "AQUINO_FAMILY"
+          ],
+          "2025_alliance_changes": {
+            "broken": ["DUTERTE_FAMILY"],
+            "description": "UniTeam alliance completely dissolved; impeachment proceedings against VP Duterte; Executive Order 81 removed VP from National Security Council"
+          },
+          "business_interests": [
+            "Manufacturing",
+            "Agriculture",
+            "Media",
+            "Real Estate"
+          ],
+          "wealth_level": "ultra_high",
+          "corruption_allegations": [
+            "Pork barrel scam involvement (historical)",
+            "Electoral fraud allegations",
+            "Human rights violations (historical)"
+          ],
+          "2025_corruption_response": "Active anti-corruption campaign; established ICI; arrested multiple politicians in flood control scandal",
+          "historical_notes": "Dynasty rehabilitated after 1986 fall; now controls presidency and significant congressional seats; 2025 marked aggressive anti-corruption stance while maintaining political control",
+          "timeline_events": [
+            {
+              "date": "2025-01-13",
+              "title": "National Rally for Peace",
+              "role": "mentioned"
+            },
+            {
+              "date": "2025-02-05",
+              "title": "Vice President Sara Duterte Impeachment Complaint Filed",
+              "role": "mentioned"
+            },
+            {
+              "date": "2025-05-12",
+              "title": "Philippines Midterm Elections - Record 82.2% Turnout",
+              "role": "participant"
+            },
+            {
+              "date": "2025-06-02",
+              "title": "Impeachment Trial of Vice President Sara Duterte Begins",
+              "role": "mentioned"
+            },
+            {
+              "date": "2025-07-28",
+              "title": "President Marcos State of the Nation Address - Flood Control Corruption",
+              "role": "primary_actor"
+            },
+            {
+              "date": "2025-08-11",
+              "title": "Launch of 'Sumbong sa Pangulo' Platform",
+              "role": "primary_actor"
+            },
+            {
+              "date": "2025-09-11",
+              "title": "Establishment of Independent Commission for Infrastructure",
+              "role": "primary_actor"
+            },
+            {
+              "date": "2025-12-05",
+              "title": "Justice Undersecretary Resigns Amid Corruption Allegations",
+              "role": "mentioned"
+            },
+            {
+              "date": "2025-12-25",
+              "title": "Powerful Politicians Jailed for Corruption Scandal",
+              "role": "primary_actor"
+            }
+          ],
+          "2025_rumors_headlines": [
+            {
+              "headline": "Marcos-Duterte 'UniTeam' Alliance Completely Breaks Down",
+              "source": "Rappler, March 2025",
+              "url": "https://www.rappler.com/nation/politics/",
+              "description": "Political feud between Marcos and Duterte families intensifies as VP Sara Duterte faces impeachment and is removed from National Security Council"
+            },
+            {
+              "headline": "Marcos Anti-Corruption Campaign: Real Reform or Political Theater?",
+              "source": "Bilyonaryo, September 2025",
+              "url": "https://bilyonaryo.com/",
+              "description": "Questions raised about sincerity of anti-corruption drive while family maintains political control and allies face investigations"
+            },
+            {
+              "headline": "Rumors of Marcos Family Preparing for 2028 Succession",
+              "source": "Political analysts, December 2025",
+              "url": "https://en.wikipedia.org/wiki/2028_Philippine_presidential_election",
+              "description": "Speculation about Sandro Marcos or Imee Marcos positioning for presidential run as Bongbong Marcos term approaches end"
+            },
+            {
+              "headline": "Marcos Family Wealth: Hidden Assets Investigation Stalled",
+              "source": "Rappler, October 2025",
+              "url": "https://www.rappler.com/nation/",
+              "description": "Allegations of undisclosed assets and properties linked to family members; investigations reportedly blocked or delayed"
+            }
+          ]
+        },
+        {
+          "id": "DUTERTE_FAMILY",
+          "name": "Duterte Dynasty",
+          "patriarch": "Rodrigo Duterte",
+          "established": 1988,
+          "classification": "major_dynasty",
+          "power_level": "regional",
+          "primary_regions": [
+            "Davao City",
+            "Davao del Sur"
+          ],
+          "current_positions_held": 8,
+          "2025_status": "crisis_mode",
+          "crisis_level": "critical",
+          "timeline_events": [
+            {
+              "date": "2025-01-13",
+              "title": "National Rally for Peace",
+              "role": "mentioned"
+            },
+            {
+              "date": "2025-02-05",
+              "title": "Vice President Sara Duterte Impeachment Complaint Filed",
+              "role": "primary_actor"
+            },
+            {
+              "date": "2025-03-11",
+              "title": "Former President Rodrigo Duterte Arrested at ICC Warrant",
+              "role": "primary_actor"
+            },
+            {
+              "date": "2025-03-14",
+              "title": "Duterte Initial Appearance Before ICC",
+              "role": "primary_actor"
+            },
+            {
+              "date": "2025-05-12",
+              "title": "Philippines Midterm Elections - Record 82.2% Turnout",
+              "role": "participant"
+            },
+            {
+              "date": "2025-06-02",
+              "title": "Impeachment Trial of Vice President Sara Duterte Begins",
+              "role": "primary_actor"
+            },
+            {
+              "date": "2025-07-25",
+              "title": "Supreme Court Rules Duterte Impeachment Unconstitutional",
+              "role": "primary_actor"
+            }
+          ],
+          "key_members": [
+            {
+              "name": "Rodrigo Duterte",
+              "position": "Detained at ICC The Hague (Former President)",
+              "term_start": 2016,
+              "term_end": 2022,
+              "status": "detained_icc",
+              "gender": "M",
+              "wikipedia": "https://en.wikipedia.org/wiki/Rodrigo_Duterte",
+              "arrest_date": "2025-03-11",
+              "arrest_location": "Ninoy Aquino International Airport",
+              "charges": [
+                "Crimes against humanity",
+                "Murder",
+                "Torture",
+                "Rape"
+              ],
+              "icc_trial_status": "Initial appearance March 14, 2025; confirmation of charges hearing postponed from September 23; medical fitness testing ongoing",
+              "2025_events": [
+                "Arrested March 11 at NAIA under ICC warrant",
+                "Transferred to The Hague",
+                "Initial ICC appearance March 14",
+                "Elected Mayor of Davao City May 12 (despite detention)",
+                "Medical panel determined fit to stand trial December 2025"
+              ]
+            },
+            {
+              "name": "Sara Duterte",
+              "position": "Vice President",
+              "term_start": 2022,
+              "status": "impeachment_blocked_by_supreme_court",
+              "gender": "F",
+              "wikipedia": "https://en.wikipedia.org/wiki/Sara_Duterte",
+              "impeachment_date": "2025-02-05",
+              "impeachment_votes": "215+ House members",
+              "supreme_court_ruling": "2025-07-25 - Ruled unconstitutional; blocked until February 6, 2026",
+              "allegations": [
+                "Misuse of PHP 6.125 billion confidential and intelligence funds",
+                "Threats of violence against President Marcos, First Lady, House Speaker",
+                "Connection to extrajudicial killings"
+              ],
+              "2025_events": [
+                "Impeachment complaint filed February 5",
+                "Traveled to Netherlands to assist father's defense team",
+                "Supreme Court blocked impeachment July 25",
+                "Remains in office but politically isolated"
+              ]
+            },
+            {
+              "name": "Sebastian Duterte",
+              "position": "Mayor of Davao City",
+              "elected": "2025-05-12",
+              "gender": "M",
+              "note": "Elected despite father's ICC detention",
+              "wikipedia": "https://en.wikipedia.org/wiki/Sebastian_Duterte"
+            },
+            {
+              "name": "Paolo Duterte",
+              "position": "Representative, Davao-1st District",
+              "gender": "M",
+              "wikipedia": "https://en.wikipedia.org/wiki/Paolo_Duterte"
+            }
+          ],
+          "allied_dynasties": [
+            "PACQUIAO"
+          ],
+          "rival_dynasties": [
+            "MARCOS_ROMUALDEZ",
+            "AQUINO_FAMILY"
+          ],
+          "2025_alliance_changes": {
+            "broken": ["MARCOS_ROMUALDEZ"],
+            "description": "Complete breakdown of UniTeam alliance; VP removed from NSC; impeachment proceedings; competing power bases"
+          },
+          "business_interests": [
+            "Mining",
+            "Construction",
+            "Real Estate"
+          ],
+          "wealth_level": "very_high",
+          "corruption_allegations": [
+            "Drug war extrajudicial killings",
+            "Confidential fund misuse (PHP 6.125 billion)",
+            "Flood control kickback schemes (alleged)"
+          ],
+          "2025_crisis_events": [
+            "Former President arrested and detained at ICC",
+            "VP facing impeachment (blocked by Supreme Court)",
+            "Political isolation from Marcos administration",
+            "Family maintains regional control in Davao despite national crisis"
+          ],
+          "historical_notes": "2025 marked most severe crisis in dynasty history; former President first Philippine leader tried at international court; VP impeachment first in post-EDSA era; despite crises, maintained electoral strength in Davao region",
+          "2025_rumors_headlines": [
+            {
+              "headline": "Rodrigo Duterte Arrested at NAIA: First Philippine President Tried at ICC",
+              "source": "Rappler, March 2025",
+              "url": "https://www.rappler.com/nation/",
+              "description": "Historic arrest of former President Duterte at airport under ICC warrant for crimes against humanity"
+            },
+            {
+              "headline": "VP Sara Duterte Impeachment: Supreme Court Blocks Proceedings",
+              "source": "Rappler, July 2025",
+              "url": "https://www.rappler.com/nation/politics/",
+              "description": "Controversial Supreme Court ruling blocks impeachment until 2026, raising questions about judicial independence"
+            },
+            {
+              "headline": "Duterte Family 'Political Survival' Despite ICC Detention",
+              "source": "Bilyonaryo, May 2025",
+              "url": "https://bilyonaryo.com/",
+              "description": "Rodrigo Duterte elected Mayor of Davao City despite being detained at ICC, demonstrating family's resilient political machine"
+            },
+            {
+              "headline": "Rumors of Duterte Family Preparing for 2028 Comeback",
+              "source": "Political observers, November 2025",
+              "url": "https://en.wikipedia.org/wiki/2028_Philippine_presidential_election",
+              "description": "Speculation about Sara Duterte or Sebastian Duterte positioning for presidential run despite current political isolation"
+            },
+            {
+              "headline": "Duterte Confidential Funds Scandal: PHP 6.125 Billion Misused",
+              "source": "Rappler, February 2025",
+              "url": "https://www.rappler.com/nation/politics/",
+              "description": "Allegations of massive misuse of confidential and intelligence funds during VP Duterte's tenure as Education Secretary"
+            }
+          ]
+        },
+        {
+          "id": "AQUINO_FAMILY",
+          "name": "Aquino Dynasty",
+          "patriarch": "Servillano Aquino",
+          "established": 1898,
+          "classification": "minor_dynasty",
+          "power_level": "national",
+          "primary_regions": [
+            "Tarlac",
+            "Makati"
+          ],
+          "current_positions_held": 4,
+          "2025_status": "resurgence",
+          "timeline_events": [
+            {
+              "date": "2025-05-12",
+              "title": "Philippines Midterm Elections - Record 82.2% Turnout",
+              "role": "participant"
+            }
+          ],
+          "key_members": [
+            {
+              "name": "Paolo Benigno 'Bam' Aquino IV",
+              "position": "Senator",
+              "terms": [
+                "2013-2019",
+                "2025-present"
+              ],
+              "gender": "M",
+              "wikipedia": "https://en.wikipedia.org/wiki/Bam_Aquino",
+              "2025_election": {
+                "result": "won",
+                "rank": "2nd place nationally",
+                "significance": "Unexpected strong showing; exceeded polling predictions"
+              }
+            },
+            {
+              "name": "Francis 'Kiko' Pangilinan",
+              "position": "Senator",
+              "terms": [
+                "2001-2013",
+                "2016-2022",
+                "2025-present"
+              ],
+              "gender": "M",
+              "wikipedia": "https://en.wikipedia.org/wiki/Francis_Pangilinan",
+              "2025_election": {
+                "result": "won",
+                "rank": "5th place nationally",
+                "significance": "Liberal Party resurgence"
+              }
+            }
+          ],
+          "allied_dynasties": [
+            "ROXAS",
+            "COJUANGCO"
+          ],
+          "rival_dynasties": [
+            "MARCOS_ROMUALDEZ",
+            "DUTERTE_FAMILY"
+          ],
+          "2025_election_results": "Unexpected resurgence; won 2 of 12 open Senate seats; strong millennial and Gen-Z support",
+          "business_interests": [
+            "Agriculture",
+            "Real Estate",
+            "Telecommunications"
+          ],
+          "wealth_level": "very_high",
+          "historical_notes": "Once dominated national politics; 2025 midterm elections marked significant comeback after years of decline; positioned as opposition force against Marcos-Duterte factions",
+          "2025_rumors_headlines": [
+            {
+              "headline": "Aquino Dynasty Resurgence: Bam Aquino Wins Senate Seat",
+              "source": "Rappler, May 2025",
+              "url": "https://www.rappler.com/nation/politics/",
+              "description": "Unexpected strong showing in midterm elections; Aquino family positioned as main opposition to Marcos-Duterte factions"
+            },
+            {
+              "headline": "Aquino Family: 'Yellow Movement' Revival or Last Gasp?",
+              "source": "Rappler, June 2025",
+              "url": "https://www.rappler.com/nation/",
+              "description": "Questions about whether 2025 election wins signal true political comeback or temporary resurgence for historically powerful dynasty"
+            },
+            {
+              "headline": "Rumors of Aquino Family Preparing for 2028 Presidential Bid",
+              "source": "Political analysts, August 2025",
+              "url": "https://en.wikipedia.org/wiki/2028_Philippine_presidential_election",
+              "description": "Speculation about Bam Aquino or other family members considering presidential run to challenge Marcos administration"
+            }
+          ]
+        },
+        {
+          "id": "VILLAR_FAMILY",
+          "name": "Villar Dynasty",
+          "patriarch": "Manuel Villar Jr.",
+          "established": 1950,
+          "classification": "established_dynasty",
+          "power_level": "national_economic",
+          "primary_regions": [
+            "Las Piñas",
+            "Cavite"
+          ],
+          "current_positions_held": 5,
+          "2025_status": "crisis_business_scandals",
+          "crisis_level": "high",
+          "key_members": [
+            {
+              "name": "Manuel Villar Jr.",
+              "position": "Former Presidential Candidate (2010)",
+              "gender": "M",
+              "wikipedia": "https://en.wikipedia.org/wiki/Manny_Villar"
+            },
+            {
+              "name": "Cynthia Villar",
+              "position": "Former Senator",
+              "status": "defeated_2025",
+              "gender": "F",
+              "election_result": "lost_senate_seat",
+              "wikipedia": "https://en.wikipedia.org/wiki/Cynthia_Villar"
+            },
+            {
+              "name": "Camille Villar",
+              "position": "Representative, Las Piñas-1st District",
+              "gender": "F",
+              "wikipedia": "https://en.wikipedia.org/wiki/Camille_Villar"
+            },
+            {
+              "name": "Mark Villar",
+              "position": "Former Public Works Secretary",
+              "investigation_status": "flood_control_kickback_scheme",
+              "gender": "M",
+              "wikipedia": "https://en.wikipedia.org/wiki/Mark_Villar",
+              "2025_corruption_allegations": [
+                "Flood control kickback schemes",
+                "DPWH corruption during tenure",
+                "Connection to $2 billion flood control scandal"
+              ]
+            }
+          ],
+          "allied_dynasties": [
+            "MARCOS_ROMUALDEZ"
+          ],
+          "rival_dynasties": [
+            "ESTRADA"
+          ],
+          "business_interests": [
+            "Real Estate",
+            "Water utilities",
+            "Retail",
+            "Banking"
+          ],
+          "wealth_level": "ultra_high",
+          "corruption_allegations": [
+            "Villarland valuation fraud (2025)",
+            "Prime Water service failures",
+            "Flood control kickback scheme (2025)",
+            "Pork barrel scam involvement (historical)"
+          ],
+          "2025_crisis_events": [
+            "Villarland valuation rejected by auditors",
+            "SEC revoked appraiser accreditation",
+            "Mark Villar implicated in flood control corruption",
+            "Cynthia Villar lost Senate seat",
+            "Business scandals undermining political position"
+          ],
+          "historical_notes": "2025 marked difficult year with business scandals; Villarland valuation rejected by auditors; SEC revoked appraiser accreditation; Mark Villar's DPWH tenure under investigation for flood control corruption",
+          "2025_rumors_headlines": [
+            {
+              "headline": "Villarland Valuation Fraud: Billions in Losses Exposed",
+              "source": "Bilyonaryo, March 2025",
+              "url": "https://bilyonaryo.com/",
+              "description": "SEC revokes appraiser accreditation after Villarland valuation rejected; allegations of massive property valuation fraud"
+            },
+            {
+              "headline": "Mark Villar Implicated in PHP 2 Billion Flood Control Corruption",
+              "source": "Rappler, September 2025",
+              "url": "https://www.rappler.com/nation/",
+              "description": "Former DPWH Secretary Mark Villar's tenure under investigation for kickback schemes in flood control projects"
+            },
+            {
+              "headline": "Cynthia Villar Loses Senate Seat: Dynasty Power Waning?",
+              "source": "Rappler, May 2025",
+              "url": "https://www.rappler.com/nation/politics/",
+              "description": "Defeat in midterm elections raises questions about Villar family's political future amid business scandals"
+            },
+            {
+              "headline": "Prime Water Service Failures: Villar Business Empire Under Scrutiny",
+              "source": "Bilyonaryo, July 2025",
+              "url": "https://bilyonaryo.com/",
+              "description": "Allegations of poor service and overcharging in Villar-controlled water utilities across multiple provinces"
+            }
+          ]
+        },
+        {
+          "id": "REVILLA_TOLENTINO",
+          "name": "Revilla-Tolentino Dynasty",
+          "patriarch": "Mariano Revilla",
+          "established": 1950,
+          "classification": "major_dynasty",
+          "power_level": "regional",
+          "primary_regions": [
+            "Cavite"
+          ],
+          "current_positions_held": 9,
+          "2025_status": "mixed_results",
+          "timeline_events": [
+            {
+              "date": "2025-05-12",
+              "title": "Philippines Midterm Elections - Record 82.2% Turnout",
+              "role": "participant"
+            },
+            {
+              "date": "2025-10-15",
+              "title": "Senate Inquiry Reveals Substandard Flood-Control Projects",
+              "role": "mentioned"
+            }
+          ],
+          "key_members": [
+            {
+              "name": "Ramon 'Bong' Revilla Jr.",
+              "position": "Former Senator",
+              "status": "election_loss_2025",
+              "corruption_history": "Pork barrel scam",
+              "gender": "M",
+              "election_result": "lost_senate_seat",
+              "wikipedia": "https://en.wikipedia.org/wiki/Bong_Revilla"
+            },
+            {
+              "name": "Lani Mercado-Revilla",
+              "position": "Representative, Cavite-2nd District",
+              "gender": "F",
+              "wikipedia": "https://en.wikipedia.org/wiki/Lani_Mercado"
+            },
+            {
+              "name": "Jolo Revilla",
+              "position": "Representative, Cavite-1st District",
+              "gender": "M",
+              "wikipedia": "https://en.wikipedia.org/wiki/Jolo_Revilla"
+            },
+            {
+              "name": "Francis Tolentino",
+              "position": "Former Senator",
+              "status": "election_loss_2025",
+              "gender": "M",
+              "election_result": "lost_senate_seat",
+              "wikipedia": "https://en.wikipedia.org/wiki/Francis_Tolentino"
+            },
+            {
+              "name": "Brent Tolentino",
+              "position": "Mayor of Tagaytay",
+              "elected": "2025-05-12",
+              "gender": "M",
+              "wikipedia": "https://en.wikipedia.org/wiki/Brent_Tolentino"
+            }
+          ],
+          "allied_dynasties": [
+            "REMULLA",
+            "MARCOS_ROMUALDEZ"
+          ],
+          "business_interests": [
+            "Entertainment",
+            "Real Estate",
+            "Construction"
+          ],
+          "wealth_level": "very_high",
+          "corruption_allegations": [
+            "Pork barrel scam",
+            "Vote buying allegations"
+          ],
+          "historical_notes": "Despite Bong Revilla's 2025 senate loss, family maintained strong local control in Cavite through multiple positions; Francis Tolentino also lost Senate seat but family maintained regional dominance",
+          "2025_rumors_headlines": [
+            {
+              "headline": "Bong Revilla Loses Senate Seat: Pork Barrel Scam Legacy Haunts Dynasty",
+              "source": "Rappler, May 2025",
+              "url": "https://www.rappler.com/nation/politics/",
+              "description": "Former senator's defeat raises questions about family's political future despite maintaining strong local control in Cavite"
+            },
+            {
+              "headline": "Revilla Family Vote-Buying Allegations Surface in Cavite",
+              "source": "Rappler, May 2025",
+              "url": "https://www.rappler.com/nation/",
+              "description": "Reports of widespread vote-buying during midterm elections; family denies allegations"
+            },
+            {
+              "headline": "Francis Tolentino Senate Loss: Cavite Dynasty Power Shifting?",
+              "source": "Bilyonaryo, May 2025",
+              "url": "https://bilyonaryo.com/",
+              "description": "Tolentino family member loses Senate seat but maintains local positions; questions about dynasty's national reach"
+            }
+          ]
+        },
+        {
+          "id": "PACQUIAO_FAMILY",
+          "name": "Pacquiao Dynasty",
+          "patriarch": "Emmanuel 'Manny' Pacquiao",
+          "established": 1998,
+          "classification": "major_dynasty",
+          "power_level": "regional",
+          "primary_regions": [
+            "General Santos City",
+            "Sarangani",
+            "South Cotabato"
+          ],
+          "current_positions_held": 7,
+          "2025_status": "maintained_regional_control",
+          "key_members": [
+            {
+              "name": "Emmanuel 'Manny' Pacquiao",
+              "position": "Former Senator/Boxer",
+              "status": "senate_loss_2025",
+              "gender": "M",
+              "election_result": "lost_senate_seat",
+              "wikipedia": "https://en.wikipedia.org/wiki/Manny_Pacquiao"
+            },
+            {
+              "name": "Rogelio 'Ruel' Pacquiao",
+              "position": "Governor of Sarangani",
+              "term_start": 2022,
+              "elected": "2025-05-12",
+              "gender": "M",
+              "wikipedia": "https://en.wikipedia.org/wiki/Rogelio_Pacquiao"
+            },
+            {
+              "name": "Lorelie Pacquiao",
+              "position": "Mayor of General Santos City",
+              "term_start": 2022,
+              "elected": "2025-05-12",
+              "gender": "F",
+              "wikipedia": "https://en.wikipedia.org/wiki/Lorelie_Pacquiao"
+            },
+            {
+              "name": "Michael Stephen Pacquiao",
+              "position": "City Councilor, General Santos",
+              "elected": "2025-05-12",
+              "gender": "M",
+              "wikipedia": "https://en.wikipedia.org/wiki/Michael_Stephen_Pacquiao"
+            }
+          ],
+          "allied_dynasties": [
+            "DUTERTE_FAMILY",
+            "MANGUDADATU"
+          ],
+          "rival_dynasties": [],
+          "historical_notes": "Manny Pacquiao lost Senate seat but family maintained strong regional control in Mindanao; all local positions won in 2025",
+          "2025_rumors_headlines": [
+            {
+              "headline": "Manny Pacquiao Tied to PHP 200M DPWH Infrastructure Projects in Sarangani",
+              "source": "Bilyonaryo, December 2025",
+              "url": "https://bilyonaryo.com/",
+              "description": "Allegations of Pacquiao family receiving infrastructure contracts in Sarangani during Manny's Senate tenure"
+            },
+            {
+              "headline": "Pacquiao Dynasty: Boxing Legend's Political Empire in Mindanao",
+              "source": "Rappler, June 2025",
+              "url": "https://www.rappler.com/nation/politics/",
+              "description": "Family maintains complete control over General Santos and Sarangani despite Manny's Senate loss"
+            },
+            {
+              "headline": "Rumors of Manny Pacquiao Considering 2028 Presidential Run",
+              "source": "Political observers, October 2025",
+              "url": "https://en.wikipedia.org/wiki/2028_Philippine_presidential_election",
+              "description": "Speculation about boxing legend's potential return to national politics despite recent Senate defeat"
+            }
+          ]
+        },
+        {
+          "id": "SINGSON_FAMILY",
+          "name": "Singson Dynasty",
+          "patriarch": "Luis 'Chavit' Singson",
+          "established": 1970,
+          "classification": "dominant_dynasty",
+          "power_level": "regional",
+          "primary_regions": [
+            "Ilocos Sur"
+          ],
+          "members_running_2025": 23,
+          "current_positions_held": 15,
+          "2025_status": "dominant_regional_control",
+          "key_members": [
+            {
+              "name": "Luis 'Chavit' Singson",
+              "position": "Former Governor/Political Kingmaker",
+              "status": "withdrew_senate_2025",
+              "age": 83,
+              "gender": "M",
+              "wikipedia": "https://en.wikipedia.org/wiki/Luis_Singson"
+            },
+            {
+              "name": "Jeremias 'Jerry' Singson",
+              "position": "Governor of Ilocos Sur",
+              "elected_unopposed": true,
+              "gender": "M",
+              "wikipedia": "https://en.wikipedia.org/wiki/Jeremias_Singson"
+            },
+            {
+              "name": "Ryan Singson",
+              "position": "Vice Governor",
+              "gender": "M",
+              "wikipedia": "https://en.wikipedia.org/wiki/Ryan_Singson"
+            },
+            {
+              "name": "Randy Singson",
+              "position": "Mayor of Vigan City",
+              "elected_unopposed": true,
+              "gender": "M",
+              "wikipedia": "https://en.wikipedia.org/wiki/Randy_Singson"
+            }
+          ],
+          "allied_dynasties": [
+            "MARCOS_ROMUALDEZ"
+          ],
+          "power_mechanism": "extensive_family_networks",
+          "description": "Largest number of candidates from single clan in 2025 elections (23 members); complete control of Ilocos Sur",
+          "2025_rumors_headlines": [
+            {
+              "headline": "Singson Dynasty: 23 Family Members Run for Office in Ilocos Sur",
+              "source": "Bilyonaryo, April 2025",
+              "url": "https://bilyonaryo.com/",
+              "description": "Unprecedented concentration of political power as Singson clan fields largest number of candidates from single family in Philippine history"
+            },
+            {
+              "headline": "Chavit Singson Withdraws Senate Bid: Age or Strategy?",
+              "source": "Rappler, March 2025",
+              "url": "https://www.rappler.com/nation/politics/",
+              "description": "83-year-old political kingmaker withdraws from Senate race; questions about succession planning"
+            },
+            {
+              "headline": "Ilocos Sur: 'Singson Province' - Complete Political Monopoly",
+              "source": "Rappler, May 2025",
+              "url": "https://www.rappler.com/nation/",
+              "description": "All major positions in Ilocos Sur controlled by Singson family; concerns about democratic representation"
+            }
+          ]
+        },
+        {
+          "id": "ORTEGA_FAMILY",
+          "name": "Ortega Dynasty",
+          "patriarch": "Joaquin Ortega",
+          "established": 1868,
+          "classification": "imperial_dynasty",
+          "power_level": "regional",
+          "primary_regions": [
+            "La Union"
+          ],
+          "duration_years": 157,
+          "current_positions_held": 8,
+          "2025_status": "internal_competition",
+          "key_members": [
+            {
+              "name": "Mario Eduardo Ortega",
+              "position": "Governor of La Union",
+              "elected": "2025-05-12",
+              "defeated": "Grandniece Raphaelle Ortega-David",
+              "gender": "M"
+            }
+          ],
+          "characteristics": "Longest-running political dynasty in Philippine history; internal family rivalries common",
+          "historical_notes": "At least 11 Ortegas ran for 8 positions in 2025; family members competing against each other; maintained control despite internal divisions"
+        },
+        {
+          "id": "AMPATUAN_FAMILY",
+          "name": "Ampatuan Dynasty",
+          "patriarch": "Andal Ampatuan Sr.",
+          "established": 2001,
+          "classification": "major_dynasty",
+          "power_level": "regional",
+          "primary_regions": [
+            "Maguindanao"
+          ],
+          "current_positions_held": 12,
+          "2025_status": "convicted_leaders",
+          "key_members": [
+            {
+              "name": "Andal Ampatuan Sr.",
+              "position": "Former Governor of Maguindanao",
+              "status": "convicted_maguindanao_massacre",
+              "conviction": "57 counts of murder",
+              "gender": "M",
+              "wikipedia": "https://en.wikipedia.org/wiki/Andal_Ampatuan_Sr."
+            },
+            {
+              "name": "Andal Ampatuan Jr.",
+              "position": "Former Mayor of Datu Unsay",
+              "status": "convicted_maguindanao_massacre",
+              "gender": "M",
+              "wikipedia": "https://en.wikipedia.org/wiki/Andal_Ampatuan_Jr."
+            },
+            {
+              "name": "Zaldy Ampatuan",
+              "position": "Former ARMM Governor",
+              "status": "convicted_maguindanao_massacre",
+              "gender": "M",
+              "wikipedia": "https://en.wikipedia.org/wiki/Zaldy_Ampatuan"
+            }
+          ],
+          "controversial_events": [
+            {
+              "event": "Maguindanao Massacre",
+              "date": 2009,
+              "victims": 58,
+              "target": "Esmael Mangudadatu campaign convoy",
+              "journalists_killed": 32
+            }
+          ],
+          "description": "One of most violent and controversial dynasties; 18 mayors belonged to clan at peak; leaders convicted but family maintains regional influence"
+        },
+        {
+          "id": "ESTRADA_FAMILY",
+          "name": "Estrada Dynasty",
+          "patriarch": "Joseph Estrada",
+          "established": 1945,
+          "classification": "major_dynasty",
+          "power_level": "regional",
+          "primary_regions": [
+            "Manila",
+            "San Juan"
+          ],
+          "current_positions_held": 0,
+          "crisis_status": "dynasty_collapse_2025",
+          "crisis_level": "critical",
+          "key_members": [
+            {
+              "name": "Joseph Estrada",
+              "position": "Former President",
+              "age": 87,
+              "status": "lost_2025_election",
+              "gender": "M",
+              "wikipedia": "https://en.wikipedia.org/wiki/Joseph_Estrada"
+            },
+            {
+              "name": "Jinggoy Estrada",
+              "position": "Senator (Previous)",
+              "status": "eliminated_2025",
+              "gender": "M",
+              "election_result": "lost_senate_seat",
+              "wikipedia": "https://en.wikipedia.org/wiki/Jinggoy_Estrada"
+            },
+            {
+              "name": "JV Ejercito",
+              "position": "Senator (Previous)",
+              "status": "on_edge_2025",
+              "gender": "M",
+              "election_result": "lost_senate_seat",
+              "wikipedia": "https://en.wikipedia.org/wiki/JV_Ejercito"
+            }
+          ],
+          "historical_notes": "Dynasty collapse: First time since 1969 no Estrada family member will hold public office; both Jinggoy and JV lost Senate seats in 2025; marked end of 56-year political dynasty",
+          "2025_rumors_headlines": [
+            {
+              "headline": "Estrada Dynasty Collapse: End of 56-Year Political Empire",
+              "source": "Rappler, May 2025",
+              "url": "https://www.rappler.com/nation/politics/",
+              "description": "First time since 1969 no Estrada family member holds public office; historic end to one of Philippines' most powerful dynasties"
+            },
+            {
+              "headline": "Jinggoy Estrada Eliminated: Dynasty's Last Stand Fails",
+              "source": "Rappler, May 2025",
+              "url": "https://www.rappler.com/nation/",
+              "description": "Former senator's defeat marks complete collapse of Estrada political dynasty; questions about family's future"
+            },
+            {
+              "headline": "Joseph Estrada at 87: End of an Era in Philippine Politics",
+              "source": "Bilyonaryo, May 2025",
+              "url": "https://bilyonaryo.com/",
+              "description": "Former president's political dynasty comes to end after decades of dominance in Manila and San Juan"
+            }
+          ]
+        },
+        {
+          "id": "BINAY_FAMILY",
+          "name": "Binay Dynasty",
+          "patriarch": "Jejomar Binay",
+          "established": 1987,
+          "classification": "major_dynasty",
+          "power_level": "regional",
+          "primary_regions": [
+            "Makati"
+          ],
+          "current_positions_held": 3,
+          "2025_status": "internal_politics",
+          "key_members": [
+            {
+              "name": "Jejomar Binay",
+              "position": "Former Vice President",
+              "term": "2010-2016",
+              "gender": "M",
+              "wikipedia": "https://en.wikipedia.org/wiki/Jejomar_Binay"
+            },
+            {
+              "name": "Nancy Binay",
+              "position": "Mayor of Makati",
+              "elected": "2025-05-12",
+              "gender": "F",
+              "note": "Defeated father's son-in-law in 2025",
+              "wikipedia": "https://en.wikipedia.org/wiki/Nancy_Binay"
+            },
+            {
+              "name": "Abigail Binay",
+              "position": "Outgoing Mayor of Makati",
+              "gender": "F",
+              "wikipedia": "https://en.wikipedia.org/wiki/Abigail_Binay"
+            }
+          ],
+          "family_structure": "Complex internal politics; Nancy Binay defeated father's son-in-law in 2025; family maintains control of Makati"
+        },
+        {
+          "id": "VILMA_SANTOS_RECTO",
+          "name": "Santos-Recto Family",
+          "patriarch": "Ralph Recto",
+          "established": 1998,
+          "classification": "major_dynasty",
+          "power_level": "regional",
+          "primary_regions": [
+            "Batangas"
+          ],
+          "current_positions_held": 3,
+          "2025_status": "strong_regional_control",
+          "timeline_events": [
+            {
+              "date": "2025-09-02",
+              "title": "Finance Secretary Reports $2 Billion Lost to Corruption",
+              "role": "primary_actor"
+            }
+          ],
+          "key_members": [
+            {
+              "name": "Vilma Santos-Recto",
+              "position": "Governor of Batangas",
+              "elected": "2025-05-12",
+              "gender": "F",
+              "wikipedia": "https://en.wikipedia.org/wiki/Vilma_Santos"
+            },
+            {
+              "name": "Ryan Recto",
+              "position": "Representative, Batangas-6th District",
+              "elected": "2025-05-12",
+              "gender": "M",
+              "wikipedia": "https://en.wikipedia.org/wiki/Ryan_Recto"
+            },
+            {
+              "name": "Ralph Recto",
+              "position": "Finance Secretary",
+              "gender": "M",
+              "wikipedia": "https://en.wikipedia.org/wiki/Ralph_Recto",
+              "2025_role": "Reported $2 billion lost to flood control corruption September 2"
+            }
+          ],
+          "allied_dynasties": ["MARCOS_ROMUALDEZ"],
+          "historical_notes": "Ralph Recto as Finance Secretary played key role in exposing flood control corruption scale"
+        },
+        {
+          "id": "KHO_FAMILY",
+          "name": "Kho Dynasty",
+          "patriarch": "Antonio 'Tony' Kho",
+          "established": 1990,
+          "classification": "established_dynasty",
+          "power_level": "regional",
+          "primary_regions": [
+            "Masbate"
+          ],
+          "members_elected_2025": 6,
+          "current_positions_held": 6,
+          "2025_status": "complete_monopoly",
+          "key_members": [
+            {
+              "name": "Richard Kho",
+              "position": "Governor of Masbate",
+              "elected": "2025-05-12",
+              "votes_percentage": "51.12%",
+              "gender": "M",
+              "wikipedia": "https://en.wikipedia.org/wiki/Richard_Kho"
+            },
+            {
+              "name": "Antonio 'Tony' Kho",
+              "position": "Representative, Masbate-1st District",
+              "elected_unopposed": true,
+              "gender": "M",
+              "wikipedia": "https://en.wikipedia.org/wiki/Antonio_Kho"
+            },
+            {
+              "name": "Elisa 'Olga' Kho",
+              "position": "Representative, Masbate-2nd District",
+              "elected": "2025-05-12",
+              "gender": "F",
+              "wikipedia": "https://en.wikipedia.org/wiki/Elisa_Kho"
+            },
+            {
+              "name": "Ara Kho",
+              "position": "Mayor of Masbate City",
+              "elected": "2025-05-12",
+              "gender": "F",
+              "wikipedia": "https://en.wikipedia.org/wiki/Ara_Kho"
+            },
+            {
+              "name": "Wilton Kho",
+              "position": "Representative, Masbate-3rd District",
+              "reelected": "2025-05-12",
+              "gender": "M",
+              "wikipedia": "https://en.wikipedia.org/wiki/Wilton_Kho"
+            }
+          ],
+          "description": "Complete monopoly over Masbate political leadership; province could be renamed 'Masbate Kho'; all top positions controlled by family",
+          "2025_rumors_headlines": [
+            {
+              "headline": "Kho Dynasty: Complete Monopoly Over Masbate Politics",
+              "source": "Bilyonaryo, May 2025",
+              "url": "https://bilyonaryo.com/",
+              "description": "All six top positions in Masbate controlled by Kho family; province effectively renamed 'Masbate Kho' by critics"
+            },
+            {
+              "headline": "Masbate: One Family, All Power - Democratic Concerns Raised",
+              "source": "Rappler, June 2025",
+              "description": "Questions about democratic representation as single family controls governor, vice governor, all congressional seats, and mayoral positions"
+            }
+          ]
+        },
+        {
+          "id": "DY_FAMILY",
+          "name": "Dy Dynasty",
+          "patriarch": "Mariano Dy Sr.",
+          "established": 1992,
+          "classification": "major_dynasty",
+          "power_level": "regional",
+          "primary_regions": [
+            "Isabela"
+          ],
+          "current_positions_held": 4,
+          "2025_status": "family_rift",
+          "key_members": [
+            {
+              "name": "Bojie Dy",
+              "position": "Governor of Isabela",
+              "gender": "M",
+              "wikipedia": "https://en.wikipedia.org/wiki/Bojie_Dy"
+            },
+            {
+              "name": "Pol Dy",
+              "position": "Vice Governor (competing with brother)",
+              "gender": "M",
+              "family_rift": true,
+              "wikipedia": "https://en.wikipedia.org/wiki/Pol_Dy"
+            }
+          ],
+          "internal_dynamics": "Genuine rivalry between brothers; real political conflict not theatrical"
+        },
+        {
+          "id": "ROMUALDEZ_FAMILY",
+          "name": "Romualdez Dynasty",
+          "patriarch": "Daniel Romualdez",
+          "established": 1945,
+          "classification": "major_dynasty",
+          "power_level": "regional",
+          "primary_regions": [
+            "Leyte"
+          ],
+          "current_positions_held": 5,
+          "allied_to": "MARCOS_ROMUALDEZ",
+          "key_members": [
+            {
+              "name": "Martin Romualdez",
+              "position": "Speaker of House of Representatives",
+              "gender": "M",
+              "2025_role": "Key ally in Marcos administration; House approved VP Duterte impeachment",
+              "wikipedia": "https://en.wikipedia.org/wiki/Martin_Romualdez"
+            }
+          ],
+          "historical_notes": "Integrated into Marcos political power through marriage; Martin Romualdez as House Speaker played key role in 2025 impeachment proceedings"
+        },
+        {
+          "id": "REMULLA_FAMILY",
+          "name": "Remulla Dynasty",
+          "patriarch": "Juanito Remulla Sr.",
+          "established": 1979,
+          "classification": "major_dynasty",
+          "power_level": "regional",
+          "primary_regions": [
+            "Cavite"
+          ],
+          "current_positions_held": 3,
+          "key_members": [
+            {
+              "name": "Jonvic Remulla",
+              "position": "Secretary of Interior and Local Government",
+              "gender": "M",
+              "wikipedia": "https://en.wikipedia.org/wiki/Jonvic_Remulla"
+            },
+            {
+              "name": "Jesus Crispin Remulla",
+              "position": "Justice Secretary",
+              "gender": "M",
+              "wikipedia": "https://en.wikipedia.org/wiki/Jesus_Crispin_Remulla"
+            },
+            {
+              "name": "Abeng Remulla",
+              "position": "Governor of Cavite",
+              "elected": "2025-05-12",
+              "gender": "M",
+              "wikipedia": "https://en.wikipedia.org/wiki/Abeng_Remulla"
+            }
+          ],
+          "allied_dynasties": ["MARCOS_ROMUALDEZ"],
+          "historical_notes": "Strong regional control in Cavite; multiple family members in key national positions"
+        },
+        {
+          "id": "TAN_FAMILY",
+          "name": "Tan Dynasty",
+          "patriarch": "Francisco Tan",
+          "established": 1995,
+          "classification": "major_dynasty",
+          "power_level": "regional",
+          "primary_regions": [
+            "Quezon",
+            "Sulu"
+          ],
+          "current_positions_held": 4,
+          "key_members": [
+            {
+              "name": "Angelina Tan",
+              "position": "Governor of Quezon",
+              "reelected": "2025-05-12",
+              "gender": "F",
+              "wikipedia": "https://en.wikipedia.org/wiki/Angelina_Tan"
+            },
+            {
+              "name": "Keith Micah Tan",
+              "position": "Representative, Quezon-4th District",
+              "gender": "M",
+              "wikipedia": "https://en.wikipedia.org/wiki/Keith_Micah_Tan"
+            }
+          ]
+        },
+        {
+          "id": "MANGUDADATU_FAMILY",
+          "name": "Mangudadatu Dynasty",
+          "patriarch": "Esmael Mangudadatu",
+          "established": 1998,
+          "classification": "major_dynasty",
+          "power_level": "regional",
+          "primary_regions": [
+            "Maguindanao",
+            "Sultan Kudarat"
+          ],
+          "current_positions_held": 5,
+          "crisis_event": {
+            "name": "Maguindanao Massacre",
+            "date": 2009,
+            "impact": "Wife and family members killed; family member lost gubernatorial race for first time in 15 years"
+          },
+          "key_members": [
+            {
+              "name": "Esmael Mangudadatu",
+              "position": "Representative, Maguindanao del Sur",
+              "elected": "2025-05-12",
+              "gender": "M",
+              "wikipedia": "https://en.wikipedia.org/wiki/Esmael_Mangudadatu"
+            },
+            {
+              "name": "Datu Pax Ali Mangudadatu",
+              "position": "Governor of Sultan Kudarat",
+              "reelected": "2025-05-12",
+              "gender": "M",
+              "wikipedia": "https://en.wikipedia.org/wiki/Pax_Ali_Mangudadatu"
+            }
+          ],
+          "rival_dynasties": ["AMPATUAN_FAMILY"]
+        },
+        {
+          "id": "HATAMAN_SALLIMAN",
+          "name": "Hataman-Salliman Dynasty",
+          "patriarch": "Mujiv Hataman",
+          "established": 2001,
+          "classification": "major_dynasty",
+          "power_level": "regional",
+          "primary_regions": [
+            "Basilan"
+          ],
+          "current_positions_held": 3,
+          "internal_conflict": "Governor competing against family members for same position",
+          "key_members": [
+            {
+              "name": "Mujiv Hataman",
+              "position": "Governor of Basilan",
+              "elected": "2025-05-12",
+              "defeated": "Nephew Jay Hataman Salliman",
+              "gender": "M",
+              "wikipedia": "https://en.wikipedia.org/wiki/Mujiv_Hataman"
+            },
+            {
+              "name": "Jim Hataman Salliman",
+              "position": "Vice Governor",
+              "elected": "2025-05-12",
+              "gender": "M",
+              "note": "Father of opponent Jay Hataman; complex family dynamics",
+              "wikipedia": "https://en.wikipedia.org/wiki/Jim_Hataman_Salliman"
+            }
+          ]
+        },
+        {
+          "id": "YNARES_FAMILY",
+          "name": "Ynares Dynasty",
+          "patriarch": "Francisco Ynares",
+          "established": 1971,
+          "classification": "major_dynasty",
+          "power_level": "regional",
+          "primary_regions": [
+            "Rizal"
+          ],
+          "current_positions_held": 5,
+          "key_members": [
+            {
+              "name": "Niña Ynares",
+              "position": "Governor of Rizal",
+              "elected": "2025-05-12",
+              "votes": 800000,
+              "gender": "F",
+              "wikipedia": "https://en.wikipedia.org/wiki/Niña_Ynares"
+            },
+            {
+              "name": "Junjun Ynares",
+              "position": "Mayor of Antipolo",
+              "elected": "2025-05-12",
+              "gender": "M",
+              "wikipedia": "https://en.wikipedia.org/wiki/Junjun_Ynares"
+            }
+          ]
+        },
+        {
+          "id": "TULFO_FAMILY",
+          "name": "Tulfo Dynasty",
+          "patriarch": "Erwin Tulfo",
+          "established": 2010,
+          "classification": "rising_dynasty",
+          "power_level": "regional_expanding",
+          "members_running_2025": 7,
+          "2025_status": "rapid_expansion",
+          "key_members": [
+            {
+              "name": "Erwin Tulfo",
+              "position": "Senator",
+              "elected": "2025-05-12",
+              "gender": "M",
+              "election_result": "won_senate_seat",
+              "wikipedia": "https://en.wikipedia.org/wiki/Erwin_Tulfo"
+            },
+            {
+              "name": "Raffy Tulfo",
+              "position": "Senator",
+              "term_start": 2022,
+              "gender": "M",
+              "wikipedia": "https://en.wikipedia.org/wiki/Raffy_Tulfo"
+            },
+            {
+              "name": "Wanda Tulfo Teo",
+              "position": "Party-list nominee",
+              "party": "Ang Turismo",
+              "gender": "F"
+            }
+          ],
+          "description": "Rapid expansion; 7 Tulfos in Congress potential if all win; emerging as new political force",
+          "2025_rumors_headlines": [
+            {
+              "headline": "Tulfo Dynasty: Media Empire to Political Dynasty",
+              "source": "Rappler, May 2025",
+              "url": "https://www.rappler.com/nation/politics/tulfo-dynasty-media-political/",
+              "description": "Rapid expansion as Erwin Tulfo wins Senate seat; potential for 7 Tulfos in Congress if all family members win"
+            },
+            {
+              "headline": "Raffy and Erwin Tulfo: Brothers Dominate Senate",
+              "source": "Bilyonaryo, May 2025",
+              "url": "https://bilyonaryo.com/tulfo-brothers-senate-dominate/",
+              "description": "Two Tulfo brothers now in Senate; questions about media influence translating to political power"
+            },
+            {
+              "headline": "Tulfo Family: Newest Political Dynasty in Philippines",
+              "source": "Rappler, June 2025",
+              "url": "https://www.rappler.com/nation/tulfo-family-newest-political-dynasty",
+              "description": "From media personalities to political dynasty; rapid rise raises questions about celebrity politics"
+            }
+          ]
+        },
+        {
+          "id": "LACSON_FAMILY",
+          "name": "Lacson Political Network",
+          "patriarch": "Panfilo Lacson",
+          "established": 1995,
+          "classification": "minor_dynasty",
+          "power_level": "national",
+          "primary_regions": [
+            "Cavite"
+          ],
+          "current_positions_held": 1,
+          "2025_status": "anti_corruption_activist",
+          "timeline_events": [
+            {
+              "date": "2025-05-12",
+              "title": "Philippines Midterm Elections - Record 82.2% Turnout",
+              "role": "participant"
+            },
+            {
+              "date": "2025-08-21",
+              "title": "Senator Lacson Exposes Corruption in Flood Control Projects",
+              "role": "primary_actor"
+            }
+          ],
+          "key_members": [
+            {
+              "name": "Panfilo 'Ping' Lacson",
+              "position": "Senator",
+              "elected": "2025-05-12",
+              "gender": "M",
+              "2025_role": "Exposed flood control corruption August 21; key anti-corruption figure",
+              "wikipedia": "https://en.wikipedia.org/wiki/Panfilo_Lacson"
+            }
+          ],
+          "allied_dynasties": ["MARCOS_ROMUALDEZ"],
+          "historical_notes": "2025: Played crucial role in exposing flood control corruption; disclosed that flood control funds ended up in politicians' pockets",
+          "2025_rumors_headlines": [
+            {
+              "headline": "Ping Lacson Exposes PHP 2 Billion Flood Control Corruption",
+              "source": "Rappler, August 2025",
+              "url": "https://www.rappler.com/nation/politics/lacson-exposes-flood-control-corruption/",
+              "description": "Senator Lacson reveals massive corruption in flood control projects; funds allegedly ended up in politicians' pockets"
+            },
+            {
+              "headline": "Lacson: Anti-Corruption Crusader or Political Opportunist?",
+              "source": "Rappler, September 2025",
+              "url": "https://www.rappler.com/nation/lacson-anti-corruption-crusader-opportunist",
+              "description": "Questions about motivations behind corruption exposés; some see genuine concern, others see political positioning"
+            }
+          ]
+        },
+        {
+          "id": "CADIZ_FAMILY",
+          "name": "Cadiz Political Network",
+          "patriarch": "Jojo Cadiz",
+          "established": 2000,
+          "classification": "new_dynasty",
+          "power_level": "national",
+          "primary_regions": [
+            "Ilocos Norte"
+          ],
+          "current_positions_held": 0,
+          "2025_status": "corruption_scandal",
+          "crisis_level": "high",
+          "timeline_events": [
+            {
+              "date": "2025-12-05",
+              "title": "Justice Undersecretary Resigns Amid Corruption Allegations",
+              "role": "primary_actor"
+            }
+          ],
+          "key_members": [
+            {
+              "name": "Jojo Cadiz",
+              "position": "Former Justice Undersecretary",
+              "status": "resigned_december_2025",
+              "gender": "M",
+              "resignation_date": "2025-12-05",
+              "allegations": "Son's company awarded ₱250 million in flood-control and infrastructure projects in Ilocos Norte",
+              "significance": "Political dynasty-contractor connection exposed"
+            }
+          ],
+          "corruption_allegations": [
+            "Nepotism in government contracts",
+            "Flood control project kickbacks",
+            "Political dynasty-contractor connections"
+          ],
+          "historical_notes": "2025: Resignation highlighted extent of political dynasty connections to contractors; exposed corruption reach into high levels of government"
+        }
+      ]
+    },
+    "edges": {
+      "relationship_types": [
+        "blood_relative",
+        "marriage",
+        "alliance",
+        "rivalry",
+        "competing_positions",
+        "succession",
+        "business_partnership",
+        "corruption_network"
+      ],
+      "relationships": [
+        {
+          "id": "rel_001",
+          "source": "MARCOS_ROMUALDEZ",
+          "target": "ROMUALDEZ_FAMILY",
+          "type": "marriage",
+          "description": "Ferdinand Marcos Sr. married Imelda Romualdez; Romualdez clan integrated into Marcos political power",
+          "strength": "very_strong",
+          "duration_years": 70
+        },
+        {
+          "id": "rel_002",
+          "source": "MARCOS_ROMUALDEZ",
+          "target": "DUTERTE_FAMILY",
+          "type": "rivalry",
+          "description": "UniTeam alliance broke down in 2025; impeachment of VP Duterte; competing power bases; Executive Order 81 removed VP from NSC",
+          "strength": "very_strong",
+          "crisis_year": 2025,
+          "nature": "scorched_earth",
+          "key_events": [
+            "VP removed from National Security Council January 2025",
+            "Impeachment complaint filed February 5, 2025",
+            "Supreme Court blocked impeachment July 25, 2025",
+            "Complete political separation"
+          ]
+        },
+        {
+          "id": "rel_003",
+          "source": "DUTERTE_FAMILY",
+          "target": "AQUINO_FAMILY",
+          "type": "rivalry",
+          "description": "Historical opposition; different political philosophies and governance approaches",
+          "strength": "strong",
+          "duration_years": 40
+        },
+        {
+          "id": "rel_004",
+          "source": "VILLAR_FAMILY",
+          "target": "MARCOS_ROMUALDEZ",
+          "type": "alliance",
+          "description": "Business and political alignment; Villar support for Marcos administration",
+          "strength": "strong",
+          "foundation": "mutual_economic_interests",
+          "2025_note": "Alliance maintained despite Villar business scandals"
+        },
+        {
+          "id": "rel_004b",
+          "source": "VILLAR_FAMILY",
+          "target": "FLOOD_CONTROL_CORRUPTION",
+          "type": "corruption_network",
+          "description": "Mark Villar's DPWH tenure implicated in flood control kickback schemes; $2 billion lost to corruption",
+          "strength": "strong",
+          "year": 2025,
+          "investigation_status": "ongoing"
+        },
+        {
+          "id": "rel_005",
+          "source": "REVILLA_TOLENTINO",
+          "target": "REMULLA_FAMILY",
+          "type": "alliance",
+          "description": "Regional alliance in Cavite; shared power consolidation",
+          "strength": "strong",
+          "region": "Cavite"
+        },
+        {
+          "id": "rel_006",
+          "source": "PACQUIAO_FAMILY",
+          "target": "DUTERTE_FAMILY",
+          "type": "alliance",
+          "description": "Political party alignment (PDP-Laban); regional cooperation",
+          "strength": "moderate",
+          "foundation": "party_affiliation",
+          "2025_note": "Alliance maintained despite Duterte crisis"
+        },
+        {
+          "id": "rel_007",
+          "source": "SINGSON_FAMILY",
+          "target": "MARCOS_ROMUALDEZ",
+          "type": "alliance",
+          "description": "Regional support for Marcos administration; political kingmaker role",
+          "strength": "strong",
+          "region": "Ilocos Sur"
+        },
+        {
+          "id": "rel_008",
+          "source": "AMPATUAN_FAMILY",
+          "target": "MANGUDADATU_FAMILY",
+          "type": "rivalry",
+          "description": "Violent political competition; Maguindanao Massacre (2009)",
+          "strength": "extremely_strong",
+          "violence_history": true,
+          "casualties": 58
+        },
+        {
+          "id": "rel_009",
+          "source": "ORTEGA_FAMILY",
+          "target": "ORTEGA_FAMILY",
+          "type": "competing_positions",
+          "description": "Internal family competition for same positions in La Union",
+          "strength": "strong",
+          "note": "Intra-family rivalry"
+        },
+        {
+          "id": "rel_010",
+          "source": "AQUINO_FAMILY",
+          "target": "ROXAS_FAMILY",
+          "type": "alliance",
+          "description": "Historical and continuing political partnership; shared opposition identity",
+          "strength": "very_strong",
+          "duration_years": 70,
+          "2025_note": "Resurgence in midterm elections"
+        },
+        {
+          "id": "rel_011",
+          "source": "HATAMAN_SALLIMAN",
+          "target": "HATAMAN_SALLIMAN",
+          "type": "competing_positions",
+          "description": "Mujiv Hataman elected governor; brother Jim Hataman Salliman as vice governor; complex family dynamics",
+          "strength": "strong",
+          "year": 2025
+        },
+        {
+          "id": "rel_012",
+          "source": "ESTRADA_FAMILY",
+          "target": "MARCOS_ROMUALDEZ",
+          "type": "rivalry",
+          "description": "Historical political opposition; different power bases and constituencies",
+          "strength": "moderate",
+          "current_status": "estrada_decline",
+          "2025_note": "Estrada dynasty collapse; no family members in office for first time since 1969"
+        },
+        {
+          "id": "rel_013",
+          "source": "BINAY_FAMILY",
+          "target": "MARCOS_ROMUALDEZ",
+          "type": "rivalry",
+          "description": "Electoral competition; different constituencies in Metro Manila",
+          "strength": "moderate"
+        },
+        {
+          "id": "rel_014",
+          "source": "VILMA_SANTOS_RECTO",
+          "target": "MARCOS_ROMUALDEZ",
+          "type": "alliance",
+          "description": "Regional political support; coordinated electoral campaign",
+          "strength": "moderate",
+          "region": "Batangas",
+          "2025_note": "Ralph Recto as Finance Secretary exposed flood control corruption scale"
+        },
+        {
+          "id": "rel_015",
+          "source": "LACSON_FAMILY",
+          "target": "MARCOS_ROMUALDEZ",
+          "type": "alliance",
+          "description": "Ping Lacson elected senator on Marcos slate; key anti-corruption ally",
+          "strength": "strong",
+          "2025_note": "Lacson exposed flood control corruption August 21"
+        },
+        {
+          "id": "rel_016",
+          "source": "CADIZ_FAMILY",
+          "target": "MARCOS_ROMUALDEZ",
+          "type": "corruption_network",
+          "description": "Jojo Cadiz as Justice Undersecretary; son received ₱250M contracts in Ilocos Norte",
+          "strength": "moderate",
+          "year": 2025,
+          "status": "exposed_december_2025"
+        }
+      ]
+    },
+    "geographic_nodes": {
+      "provinces": [
+        {
+          "id": "prov_ilocos_norte",
+          "name": "Ilocos Norte",
+          "controlling_dynasty": "MARCOS_ROMUALDEZ",
+          "control_duration_years": 100,
+          "positions_held": 8,
+          "control_strength": "absolute",
+          "dynastic_seats": [
+            "Governor",
+            "Vice Governor",
+            "All Congressional Districts",
+            "Mayor of Capital"
+          ],
+          "2025_corruption_note": "Cadiz family corruption scandal involved ₱250M in Ilocos Norte contracts"
+        },
+        {
+          "id": "prov_leyte",
+          "name": "Leyte",
+          "controlling_dynasty": "ROMUALDEZ_FAMILY",
+          "allied_to": "MARCOS_ROMUALDEZ",
+          "control_duration_years": 50,
+          "positions_held": 5
+        },
+        {
+          "id": "prov_davao",
+          "name": "Davao Provinces (Davao City, Sur, Oriental)",
+          "controlling_dynasty": "DUTERTE_FAMILY",
+          "control_duration_years": 50,
+          "positions_held": 4,
+          "2025_note": "Maintained control despite national crisis; Rodrigo Duterte elected mayor despite ICC detention"
+        },
+        {
+          "id": "prov_cavite",
+          "name": "Cavite",
+          "controlling_dynasties": [
+            "REVILLA_TOLENTINO",
+            "REMULLA_FAMILY"
+          ],
+          "positions_held": 9,
+          "power_shared": true,
+          "2025_note": "Lacson family also active; Ping Lacson exposed flood control corruption"
+        },
+        {
+          "id": "prov_ilocos_sur",
+          "name": "Ilocos Sur",
+          "controlling_dynasty": "SINGSON_FAMILY",
+          "control_duration_years": 55,
+          "members_controlling": 23,
+          "positions_held": 15,
+          "description": "Super-obese dynasty; unprecedented concentration"
+        },
+        {
+          "id": "prov_la_union",
+          "name": "La Union",
+          "controlling_dynasty": "ORTEGA_FAMILY",
+          "control_duration_years": 157,
+          "positions_held": 8,
+          "longest_dynastic_rule": true
+        },
+        {
+          "id": "prov_maguindanao",
+          "name": "Maguindanao",
+          "competing_dynasties": [
+            "AMPATUAN_FAMILY",
+            "MANGUDADATU_FAMILY"
+          ],
+          "control_status": "contested",
+          "violence_history": true
+        },
+        {
+          "id": "prov_masbate",
+          "name": "Masbate",
+          "controlling_dynasty": "KHO_FAMILY",
+          "control_status": "complete_monopoly",
+          "positions_held": 6,
+          "all_top_positions": "controlled_by_kho"
+        },
+        {
+          "id": "prov_isabela",
+          "name": "Isabela",
+          "controlling_dynasty": "DY_FAMILY",
+          "control_duration_years": 33,
+          "current_status": "family_rift"
+        },
+        {
+          "id": "prov_rizal",
+          "name": "Rizal",
+          "controlling_dynasty": "YNARES_FAMILY",
+          "positions_held": 5
+        },
+        {
+          "id": "prov_batangas",
+          "name": "Batangas",
+          "controlling_dynasty": "VILMA_SANTOS_RECTO",
+          "allied_to": "MARCOS_ROMUALDEZ",
+          "positions_held": 3
+        },
+        {
+          "id": "prov_quezon",
+          "name": "Quezon",
+          "controlling_dynasty": "TAN_FAMILY",
+          "positions_held": 4
+        },
+        {
+          "id": "prov_las_pinas",
+          "name": "Las Piñas",
+          "controlling_dynasty": "VILLAR_FAMILY",
+          "positions_held": 3,
+          "economic_base": "real_estate",
+          "2025_crisis": "Business scandals; Villarland valuation fraud"
+        },
+        {
+          "id": "region_general_santos",
+          "name": "General Santos City & Sarangani",
+          "controlling_dynasty": "PACQUIAO_FAMILY",
+          "positions_held": 4
+        },
+        {
+          "id": "region_manila",
+          "name": "Manila & Metro Manila",
+          "competing_dynasties": [
+            "ESTRADA_FAMILY",
+            "BINAY_FAMILY"
+          ],
+          "control_status": "fragmented",
+          "estrada_decline": true,
+          "2025_note": "Estrada dynasty collapse; Binay maintains Makati control"
+        }
+      ]
+    },
+    "corruption_networks_2025": {
+      "flood_control_scandal": {
+        "total_losses": "$2 billion USD over 2 years",
+        "percentage_lost": "Up to 70% of flood control project funds",
+        "dynasties_implicated": [
+          {
+            "dynasty": "VILLAR_FAMILY",
+            "member": "Mark Villar",
+            "role": "Former DPWH Secretary",
+            "allegations": "Flood control kickback schemes during tenure"
+          },
+          {
+            "dynasty": "CADIZ_FAMILY",
+            "member": "Jojo Cadiz",
+            "role": "Justice Undersecretary",
+            "allegations": "Son's company awarded ₱250M in Ilocos Norte contracts",
+            "status": "resigned_december_2025"
+          }
+        ],
+        "corruption_methods": [
+          "Ghost projects (reported as completed but never constructed)",
+          "Substandard constructions",
+          "Overpriced projects",
+          "Kickbacks to officials",
+          "Favored contractors monopolizing contracts"
+        ],
+        "investigation_timeline": [
+          "July 28: President Marcos addresses corruption in SONA",
+          "August 11: Sumbong sa Pangulo platform launched",
+          "August 21: Senator Lacson exposes corruption",
+          "September 2: Finance Secretary Recto reports $2B losses",
+          "September 11: Independent Commission for Infrastructure established",
+          "November 23: Seven suspects detained",
+          "December 5: Justice Undersecretary Cadiz resigns",
+          "December 25: Multiple politicians jailed"
+        ]
+      },
+      "villarland_scandal": {
+        "dynasty": "VILLAR_FAMILY",
+        "year": 2025,
+        "description": "Villarland valuation fraud; SEC revoked appraiser accreditation",
+        "impact": "Billions in losses; business reputation damaged"
+      }
+    },
+    "power_metrics": {
+      "concentration_indices": {
+        "dynsha": "Share of dynastic officials per province (0-100 scale)",
+        "dynlar": "Number of positions held by largest dynasty per province",
+        "dynherf": "Herfindahl index measuring power concentration"
+      },
+      "national_statistics_2025": {
+        "governors_from_dynasties": "71 of 82 provinces (86.6%)",
+        "congressional_dynastic_representation": "67%",
+        "mayoral_positions_dynastic": "53%",
+        "provincial_board_dynastic": "80%",
+        "senatorial_dynastic_relatives": "12.5%",
+        "unopposed_dynastic_candidates": "4.5% (800 of 18,000 positions)",
+        "increase_since_2004": {
+          "governors": "from 57% to 80%",
+          "house_representatives": "from 48% to 67%",
+          "mayors": "from 40% to 53%"
+        },
+        "midterm_election_2025": {
+          "turnout": "82.2% (highest in Philippine history)",
+          "dynasty_wins": "Maintained strong control despite some losses",
+          "notable_losses": [
+            "Cynthia Villar (Senate)",
+            "Bong Revilla (Senate)",
+            "Francis Tolentino (Senate)",
+            "Manny Pacquiao (Senate)",
+            "Jinggoy Estrada (Senate)",
+            "JV Ejercito (Senate)"
+          ],
+          "notable_wins": [
+            "Erwin Tulfo (Senate)",
+            "Ping Lacson (Senate)",
+            "Bam Aquino (Senate)",
+            "Kiko Pangilinan (Senate)"
+          ]
+        }
+      },
+      "crisis_indicators": {
+        "major_political_violence": [
+          {
+            "event": "Maguindanao Massacre",
+            "year": 2009,
+            "dynasties_involved": [
+              "AMPATUAN_FAMILY",
+              "MANGUDADATU_FAMILY"
+            ],
+            "casualties": 58
+          }
+        ],
+        "ongoing_legal_proceedings_2025": [
+          {
+            "case": "Duterte ICC Detention",
+            "dynasty": "DUTERTE_FAMILY",
+            "status": "trial_fitness_determination",
+            "arrest_date": "2025-03-11",
+            "location": "The Hague, Netherlands",
+            "charges": ["Crimes against humanity", "Murder", "Torture", "Rape"]
+          },
+          {
+            "case": "VP Duterte Impeachment",
+            "dynasty": "DUTERTE_FAMILY",
+            "status": "supreme_court_blocked",
+            "ruling_date": "2025-07-25",
+            "blocked_until": "2026-02-06"
+          }
+        ],
+        "corruption_scandals_2025": [
+          {
+            "scandal": "Villarland Valuation Fraud",
+            "dynasty": "VILLAR_FAMILY",
+            "year": 2025,
+            "impact": "billions_in_losses",
+            "status": "SEC revoked appraiser accreditation"
+          },
+          {
+            "scandal": "Flood Control Kickback Scheme",
+            "dynasty": "VILLAR_FAMILY",
+            "officials_implicated": [
+              "Mark Villar",
+              "DPWH Officials"
+            ],
+            "total_losses": "$2 billion USD",
+            "status": "ongoing_investigation"
+          },
+          {
+            "scandal": "Cadiz Family Contract Scandal",
+            "dynasty": "CADIZ_FAMILY",
+            "year": 2025,
+            "amount": "₱250 million",
+            "status": "resigned_december_2025"
+          }
+        ]
+      }
+    },
+    "visualization_recommendations": {
+      "network_layout": "Force-directed layout (ideal for showing natural clusters)",
+      "node_sizing": "Proportional to number of government positions held",
+      "node_coloring": "By geographic region or alliance",
+      "edge_thickness": "By strength of relationship",
+      "edge_styling": "Solid for alliances, dashed for rivalries, dotted for competing positions, red for corruption networks",
+      "community_detection": "Recommended to identify mega-dynasty clusters",
+      "temporal_features": "Add animation to show dynasty growth/decline over time",
+      "crisis_highlighting": "Highlight nodes with 2025 crisis events (Duterte ICC, Estrada collapse, Villar scandals)",
+      "corruption_networks": "Separate layer showing corruption connections and contractor relationships",
+      "filtering_options": [
+        "By geographic region",
+        "By power level (national/regional)",
+            "By classification (imperial/dominant/major/established/minor/rising/new)",
+        "By crisis status",
+        "By corruption allegations",
+        "By 2025 election results",
+        "By alliance status (Marcos/Duterte/Opposition)"
+      ]
+    },
+    "analytical_insights": {
+      "key_findings": [
+        "Political dynasties control 86.6% of all provinces despite constitutional mandate against them",
+        "Anti-Political Dynasty Law remains blocked despite constitutional requirement and 35+ years of attempts",
+        "Dynasties grown stronger and more interconnected since 2004; power concentration increasing",
+        "Correlation between high dynastic control and poverty, lower literacy, higher infant mortality",
+        "Internal family rivalries increasingly common (Ortega, Hataman-Salliman, Dy families)",
+        "Mega-dynasties increasingly forming alliances with other dynasties to consolidate national power",
+        "Violence and extra-legal methods persist in highly dynastic regions, especially Mindanao"
+      ],
+      "emerging_patterns_2025": [
+        "Estrada dynasty collapse (first time since 1969 no family member in office possible)",
+        "Villar family business scandals undermining political position",
+        "Marcos-Duterte split represents largest national political rupture of 2025",
+        "Opposition (Aquino, Liberal) resurgence in 2025 midterms after years of decline",
+        "Youngest generation dynasties (Tulfo) expanding rapidly",
+        "Flood control corruption scandal exposed extensive dynasty-contractor networks",
+        "ICC detention of former President Duterte marks first international trial of Philippine leader",
+        "Supreme Court blocking VP Duterte impeachment shows institutional checks on political power"
+      ],
+      "corruption_network_analysis": {
+        "flood_control_scandal": "Revealed deep connections between political dynasties, government officials, and contractors; $2 billion lost over 2 years",
+        "dynasty_contractor_links": "Multiple cases of family members receiving government contracts (Cadiz, Villar families)",
+        "investigation_response": "Marcos administration established ICI and arrested multiple politicians, showing anti-corruption stance while maintaining political control"
+      },
+      "governance_impact": "Dynastic rule correlates with weak institutional development, checks-and-balance erosion, and governance capture by family interests rather than public good. 2025 corruption scandals further exposed these patterns."
+    }
+  }
+}
+

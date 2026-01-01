@@ -1,0 +1,1223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Philippine Political Dynasties Network Map 2025</title>
+  <script src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+      background: #f5f5f5;
+      color: #1a1a1a;
+    }
+
+    header {
+      background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+      color: white;
+      padding: 24px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+      font-size: 28px;
+      margin-bottom: 8px;
+    }
+
+    header p {
+      opacity: 0.9;
+      font-size: 14px;
+    }
+
+    .controls {
+      background: white;
+      padding: 16px 24px;
+      border-bottom: 1px solid #e0e0e0;
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    .controls label {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 14px;
+    }
+
+    .controls select {
+      padding: 6px 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 14px;
+    }
+
+    .controls button {
+      padding: 6px 16px;
+      background: #1a1a1a;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+
+    .controls button:hover {
+      background: #2d2d2d;
+    }
+
+    .info-panel {
+      position: fixed;
+      top: 200px;
+      right: 24px;
+      width: 320px;
+      max-height: calc(100vh - 220px);
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+      padding: 20px;
+      overflow-y: auto;
+      z-index: 1000;
+      display: none;
+    }
+
+    .info-panel.visible {
+      display: block;
+    }
+
+    .glossary-panel {
+      position: fixed;
+      top: 200px;
+      left: 24px;
+      width: 320px;
+      max-height: calc(100vh - 220px);
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+      padding: 20px;
+      overflow-y: auto;
+      z-index: 1000;
+      display: none;
+    }
+
+    .glossary-panel.visible {
+      display: block;
+    }
+
+    .glossary-panel h3 {
+      margin-bottom: 16px;
+      color: #1a1a1a;
+      font-size: 18px;
+      border-bottom: 2px solid #0038A8;
+      padding-bottom: 8px;
+    }
+
+    .glossary-panel .term {
+      margin-bottom: 16px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid #e0e0e0;
+    }
+
+    .glossary-panel .term:last-child {
+      border-bottom: none;
+    }
+
+    .glossary-panel .term-name {
+      font-weight: 600;
+      color: #0038A8;
+      font-size: 14px;
+      margin-bottom: 4px;
+    }
+
+    .glossary-panel .term-def {
+      font-size: 12px;
+      color: #666;
+      line-height: 1.5;
+    }
+
+    .info-panel h3 {
+      margin-bottom: 12px;
+      color: #1a1a1a;
+      font-size: 18px;
+    }
+
+    .info-panel .close {
+      float: right;
+      background: none;
+      border: none;
+      font-size: 20px;
+      cursor: pointer;
+      color: #666;
+    }
+
+    .info-panel .close:hover {
+      color: #1a1a1a;
+    }
+
+    .info-panel p {
+      margin: 8px 0;
+      font-size: 14px;
+      line-height: 1.5;
+    }
+
+    .info-panel .label {
+      font-weight: 600;
+      color: #666;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-top: 12px;
+    }
+
+    .info-panel .value {
+      margin-bottom: 8px;
+    }
+
+    .info-panel ul {
+      margin: 8px 0 8px 20px;
+      font-size: 14px;
+    }
+
+    #network-container {
+      width: 100%;
+      height: calc(100vh - 180px);
+      background: white;
+      border: 1px solid #e0e0e0;
+    }
+
+    .legend {
+      position: fixed;
+      bottom: 24px;
+      left: 24px;
+      background: white;
+      padding: 16px;
+      border-radius: 8px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+      font-size: 12px;
+      z-index: 1000;
+    }
+
+    .legend h4 {
+      margin-bottom: 12px;
+      font-size: 14px;
+    }
+
+    .legend-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin: 6px 0;
+    }
+
+    .legend-color {
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      border: 1px solid #ccc;
+    }
+
+    .legend-line {
+      width: 24px;
+      height: 2px;
+      background: #ccc;
+    }
+
+    .legend-line.dashed {
+      background: repeating-linear-gradient(to right, #666 0, #666 4px, transparent 4px, transparent 8px);
+    }
+
+    .stats {
+      position: fixed;
+      top: 180px;
+      left: 24px;
+      background: white;
+      padding: 16px;
+      border-radius: 8px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+      font-size: 12px;
+      z-index: 1000;
+    }
+
+    .stats h4 {
+      margin-bottom: 8px;
+      font-size: 14px;
+    }
+
+    .stats p {
+      margin: 4px 0;
+      font-size: 12px;
+    }
+
+    .map-legend {
+      background: white;
+      padding: 12px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    }
+
+    .province-marker {
+      background: transparent !important;
+      border: none !important;
+    }
+
+    @media (max-width: 1024px) {
+      .info-panel, .legend, .stats {
+        position: relative;
+        width: 100%;
+        margin: 16px;
+      }
+
+      #network-container, #map-container {
+        height: 600px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Philippine Political Dynasties Network Map - Historical & Contemporary</h1>
+    <p>Interactive network visualization of Philippine political dynasties throughout history, their relationships, alliances, rivalries, and geographic territorial control</p>
+  </header>
+
+  <div class="controls">
+    <label>
+      <input type="checkbox" id="showAlliances" checked> Show Alliances
+    </label>
+    <label>
+      <input type="checkbox" id="showRivalries" checked> Show Rivalries
+    </label>
+    <label>
+      <input type="checkbox" id="showCorruption" checked> Show Corruption Networks
+    </label>
+    <select id="filterPower">
+      <option value="all">All Power Levels</option>
+      <option value="national">National</option>
+      <option value="regional">Regional</option>
+    </select>
+    <select id="filterCrisis">
+      <option value="all">All Status</option>
+      <option value="crisis">Crisis Status</option>
+      <option value="stable">Stable</option>
+    </select>
+    <select id="filterRegion">
+      <option value="all">All Regions</option>
+      <option value="luzon">Luzon</option>
+      <option value="visayas">Visayas</option>
+      <option value="mindanao">Mindanao</option>
+    </select>
+    <button id="resetView">Reset View</button>
+    <button id="showGlossary">Glossary</button>
+    <button id="toggleView">Show Map View</button>
+  </div>
+
+  <div class="stats" id="stats">
+    <h4>Network Statistics</h4>
+    <p id="dynastyCount">Loading...</p>
+    <p id="relationshipCount">Loading...</p>
+  </div>
+
+  <div class="info-panel" id="infoPanel">
+    <button class="close" onclick="closeInfoPanel()">×</button>
+    <div id="infoContent"></div>
+  </div>
+
+  <div class="glossary-panel" id="glossaryPanel">
+    <button class="close" onclick="closeGlossaryPanel()" style="float: right; background: none; border: none; font-size: 20px; cursor: pointer; color: #666;">×</button>
+    <h3>Glossary of Terms</h3>
+    <div id="glossaryContent">
+      <div class="term">
+        <div class="term-name">Imperial Dynasty</div>
+        <div class="term-def">Highest level of political dynasty power. Controls national-level positions and has extensive influence across multiple regions.</div>
+      </div>
+      <div class="term">
+        <div class="term-name">Dominant Dynasty</div>
+        <div class="term-def">Very high power dynasty with strong regional control and significant national influence.</div>
+      </div>
+      <div class="term">
+        <div class="term-name">Major Dynasty</div>
+        <div class="term-def">High power dynasty with substantial regional control and multiple family members in office.</div>
+      </div>
+      <div class="term">
+        <div class="term-name">Established Dynasty</div>
+        <div class="term-def">Moderate-high power dynasty with stable regional control and established political presence.</div>
+      </div>
+      <div class="term">
+        <div class="term-name">Rising Dynasty</div>
+        <div class="term-def">Growing power dynasty that is expanding its political influence and control.</div>
+      </div>
+      <div class="term">
+        <div class="term-name">Minor Dynasty</div>
+        <div class="term-def">Lower power dynasty with limited regional control and fewer positions held.</div>
+      </div>
+      <div class="term">
+        <div class="term-name">New Dynasty</div>
+        <div class="term-def">Recently established political dynasty just beginning to build political power.</div>
+      </div>
+      <div class="term">
+        <div class="term-name">Alliance</div>
+        <div class="term-def">Political partnership between dynasties, often for mutual support and shared interests.</div>
+      </div>
+      <div class="term">
+        <div class="term-name">Rivalry</div>
+        <div class="term-def">Political opposition or competition between dynasties, often involving conflicts over power or territory.</div>
+      </div>
+      <div class="term">
+        <div class="term-name">Corruption Network</div>
+        <div class="term-def">Connections between dynasties and contractors/officials involved in corrupt practices, particularly in infrastructure projects.</div>
+      </div>
+      <div class="term">
+        <div class="term-name">Power Level: National</div>
+        <div class="term-def">Dynasty has members in national positions (President, Vice President, Senators, Cabinet Secretaries).</div>
+      </div>
+      <div class="term">
+        <div class="term-name">Power Level: Regional</div>
+        <div class="term-def">Dynasty primarily controls regional positions (Governors, Mayors, Congressional Districts).</div>
+      </div>
+      <div class="term">
+        <div class="term-name">Crisis Level: Critical</div>
+        <div class="term-def">Dynasty facing severe challenges such as legal proceedings, impeachment, or major scandals.</div>
+      </div>
+      <div class="term">
+        <div class="term-name">Crisis Level: High</div>
+        <div class="term-def">Dynasty facing significant challenges including investigations, business scandals, or electoral losses.</div>
+      </div>
+      <div class="term">
+        <div class="term-name">Control Strength: Absolute</div>
+        <div class="term-def">Dynasty controls all major positions in a province (Governor, Vice Governor, all Congressional seats, Mayor of capital).</div>
+      </div>
+      <div class="term">
+        <div class="term-name">Complete Monopoly</div>
+        <div class="term-def">Single family controls all top positions in a province, effectively eliminating political competition.</div>
+      </div>
+      <div class="term">
+        <div class="term-name">Contested Control</div>
+        <div class="term-def">Multiple dynasties competing for control of the same region, often involving conflicts.</div>
+      </div>
+      <div class="term">
+        <div class="term-name">Pork Barrel Scam</div>
+        <div class="term-def">Corruption scheme where legislators allocate government funds to fake NGOs in exchange for kickbacks.</div>
+      </div>
+      <div class="term">
+        <div class="term-name">ICC (International Criminal Court)</div>
+        <div class="term-def">International tribunal that prosecutes individuals for crimes against humanity, genocide, and war crimes.</div>
+      </div>
+      <div class="term">
+        <div class="term-name">DPWH (Department of Public Works and Highways)</div>
+        <div class="term-def">Philippine government agency responsible for infrastructure projects, often involved in corruption scandals.</div>
+      </div>
+    </div>
+  </div>
+
+  <div id="network-container"></div>
+  <div id="map-container" style="display: none; width: 100%; height: calc(100vh - 180px); position: relative;"></div>
+
+  <div class="legend">
+    <h4>Legend</h4>
+    <div class="legend-item">
+      <div class="legend-color" style="background: #0038A8; border: 2px solid #001F5C;"></div>
+      <span>Imperial Dynasty (Deep Blue)</span>
+    </div>
+    <div class="legend-item">
+      <div class="legend-color" style="background: #CE1126; border: 2px solid #8B0000;"></div>
+      <span>Dominant Dynasty (Bright Red)</span>
+    </div>
+    <div class="legend-item">
+      <div class="legend-color" style="background: #0066CC; border: 2px solid #003D7A;"></div>
+      <span>Major Dynasty (Bright Blue)</span>
+    </div>
+    <div class="legend-item">
+      <div class="legend-color" style="background: #DC143C; border: 2px solid #8B0000;"></div>
+      <span>Established Dynasty (Crimson)</span>
+    </div>
+    <div class="legend-item">
+      <div class="legend-color" style="background: #FFD700; border: 2px solid #B8860B;"></div>
+      <span>Rising Dynasty (Gold)</span>
+    </div>
+    <div class="legend-item">
+      <div class="legend-color" style="background: #228B22; border: 2px solid #006400;"></div>
+      <span>Minor Dynasty (Forest Green)</span>
+    </div>
+    <div class="legend-item">
+      <div class="legend-color" style="background: #FF6B35; border: 2px solid #CC5500;"></div>
+      <span>New Dynasty (Orange-Red)</span>
+    </div>
+    <div class="legend-item">
+      <div class="legend-line" style="background: #0038A8; height: 4px;"></div>
+      <span>Alliance (Deep Blue)</span>
+    </div>
+    <div class="legend-item">
+      <div class="legend-line dashed" style="background: #CE1126; height: 3px;"></div>
+      <span>Rivalry (Bright Red)</span>
+    </div>
+    <div class="legend-item">
+      <div class="legend-line" style="background: #FFD700; height: 5px;"></div>
+      <span>Corruption Network (Gold)</span>
+    </div>
+    <div class="legend-item">
+      <div class="legend-line" style="background: #0066CC; height: 4px;"></div>
+      <span>Marriage (Bright Blue)</span>
+    </div>
+  </div>
+
+  <script>
+    let network = null;
+    let nodes = null;
+    let edges = null;
+    let allNodes = [];
+    let allEdges = [];
+    let dynastiesData = null;
+    let phMap = null;
+    let provinceMarkers = [];
+
+    // Color mapping for dynasty classifications (Filipino flag colors)
+    // Philippine flag: Blue (#0038A8), Red (#CE1126), Yellow/Gold (#FCD116), White
+    const classificationColors = {
+      'imperial_dynasty': '#0038A8',        // Highest power - Deep Philippine blue (high contrast)
+      'dominant_dynasty': '#CE1126',         // Very high power - Bright Philippine red (high contrast)
+      'major_dynasty': '#0066CC',           // High power - Bright blue (better contrast)
+      'established_dynasty': '#DC143C',      // Moderate-high power - Crimson red (better contrast)
+      'rising_dynasty': '#FFD700',           // Growing power - Bright gold (high contrast)
+      'minor_dynasty': '#228B22',            // Lower power - Forest green (high contrast)
+      'new_dynasty': '#FF6B35'               // Just starting - Orange-red (high contrast)
+    };
+
+    // Load dynasties data
+    async function loadDynastiesData() {
+      try {
+        // Try multiple possible paths
+        const possiblePaths = [
+          'philippine-political-dynasties-network-2025.json',
+          './philippine-political-dynasties-network-2025.json',
+          '../philippine-political-dynasties-network-2025.json'
+        ];
+        
+        let response = null;
+        let lastError = null;
+        
+        for (const path of possiblePaths) {
+          try {
+            response = await fetch(path);
+            if (response.ok) break;
+          } catch (e) {
+            lastError = e;
+            continue;
+          }
+        }
+        
+        if (!response || !response.ok) {
+          throw new Error(`Failed to load JSON file. Status: ${response?.status || 'unknown'}. Error: ${lastError?.message || 'File not found'}`);
+        }
+        
+        const text = await response.text();
+        let data;
+        try {
+          data = JSON.parse(text);
+        } catch (parseError) {
+          throw new Error(`JSON parse error: ${parseError.message}. First 200 chars: ${text.substring(0, 200)}`);
+        }
+        
+        if (!data || !data.philippine_political_dynasties_network) {
+          throw new Error('Invalid JSON structure: missing philippine_political_dynasties_network. Keys found: ' + Object.keys(data || {}).join(', '));
+        }
+        
+        dynastiesData = data.philippine_political_dynasties_network;
+        
+        buildNetwork();
+        updateStats();
+      } catch (error) {
+        console.error('Error loading dynasties data:', error);
+        const errorMsg = error.message || 'Unknown error';
+        document.getElementById('network-container').innerHTML = 
+          `<div style="padding: 40px; text-align: center; color: #c44900;">
+            <h3 style="color: #c44900; margin-bottom: 16px;">Error loading network data</h3>
+            <p style="color: #666; margin-bottom: 8px;">${errorMsg}</p>
+            <p style="color: #666; font-size: 12px; margin-top: 16px;">
+              <strong>Note:</strong> If opening this file directly in a browser, you may need to:<br>
+              1. Use a local web server (e.g., <code>python -m http.server</code> or <code>npx serve</code>)<br>
+              2. Or ensure the JSON file is in the same directory as this HTML file
+            </p>
+            <p style="color: #666; font-size: 12px; margin-top: 8px;">
+              Check the browser console (F12) for more details.
+            </p>
+          </div>`;
+      }
+    }
+
+    function buildNetwork() {
+      allNodes = [];
+      allEdges = [];
+
+      // Create nodes from dynasties
+      dynastiesData.nodes.dynasties.forEach(dynasty => {
+        const classification = dynasty.classification || 'major_dynasty';
+        const color = classificationColors[classification] || '#666';
+        const size = Math.min(30 + (dynasty.current_positions_held || 0) * 2, 80);
+        
+        // Determine crisis status with high contrast borders
+        let borderColor = '#000000';
+        let borderWidth = 3;
+        if (dynasty.crisis_level === 'critical') {
+          borderColor = '#FF0000';  // Bright red for critical
+          borderWidth = 5;
+        } else if (dynasty.crisis_level === 'high') {
+          borderColor = '#FF8C00';  // Dark orange for high crisis
+          borderWidth = 4;
+        }
+
+        allNodes.push({
+          id: dynasty.id,
+          label: dynasty.name.replace('_', ' ').replace('FAMILY', '').trim(),
+          title: `${dynasty.name}\nPositions: ${dynasty.current_positions_held || 0}\nPower: ${dynasty.power_level}\nStatus: ${dynasty['2025_status'] || 'stable'}`,
+          color: {
+            background: color,
+            border: borderColor,
+            highlight: { background: color, border: borderColor }
+          },
+          size: size,
+          borderWidth: borderWidth,
+          font: { size: 14, face: 'Arial' },
+          shape: 'dot',
+          data: dynasty
+        });
+      });
+
+      // Create edges from relationships
+      dynastiesData.edges.relationships.forEach(rel => {
+        let edgeStyle = {};
+        let color = '#0b6e4f';
+        let width = 2;
+        let dashes = false;
+
+        // Use high contrast colors for relationships
+        if (rel.type === 'alliance') {
+          color = '#0038A8';  // Deep Philippine blue (high contrast)
+          width = 4;
+        } else if (rel.type === 'rivalry') {
+          color = '#CE1126';  // Bright Philippine red (high contrast)
+          width = 3;
+          dashes = true;
+        } else if (rel.type === 'corruption_network') {
+          color = '#FFD700';  // Bright gold (high contrast warning)
+          width = 5;
+        } else if (rel.type === 'marriage') {
+          color = '#0066CC';  // Bright blue (high contrast)
+          width = 4;
+        }
+
+        allEdges.push({
+          id: rel.id,
+          from: rel.source,
+          to: rel.target,
+          label: rel.type.replace('_', ' '),
+          color: { color: color, highlight: color },
+          width: width,
+          dashes: dashes,
+          title: rel.description || rel.type,
+          data: rel
+        });
+      });
+
+      // Initial render
+      updateNetwork();
+    }
+
+    function updateNetwork() {
+      // Apply filters
+      let filteredNodes = [...allNodes];
+      let filteredEdges = [...allEdges];
+
+      // Filter by power level
+      const powerFilter = document.getElementById('filterPower').value;
+      if (powerFilter !== 'all') {
+        filteredNodes = filteredNodes.filter(node => 
+          node.data.power_level === powerFilter
+        );
+        // Update edges to only include filtered nodes
+        const nodeIds = new Set(filteredNodes.map(n => n.id));
+        filteredEdges = filteredEdges.filter(edge => 
+          nodeIds.has(edge.from) && nodeIds.has(edge.to)
+        );
+      }
+
+      // Filter by crisis status
+      const crisisFilter = document.getElementById('filterCrisis').value;
+      if (crisisFilter === 'crisis') {
+        filteredNodes = filteredNodes.filter(node => 
+          node.data.crisis_level === 'critical' || node.data.crisis_level === 'high'
+        );
+        const nodeIds = new Set(filteredNodes.map(n => n.id));
+        filteredEdges = filteredEdges.filter(edge => 
+          nodeIds.has(edge.from) && nodeIds.has(edge.to)
+        );
+      } else if (crisisFilter === 'stable') {
+        filteredNodes = filteredNodes.filter(node => 
+          !node.data.crisis_level || (node.data.crisis_level !== 'critical' && node.data.crisis_level !== 'high')
+        );
+        const nodeIds = new Set(filteredNodes.map(n => n.id));
+        filteredEdges = filteredEdges.filter(edge => 
+          nodeIds.has(edge.from) && nodeIds.has(edge.to)
+        );
+      }
+
+      // Filter by geographic region (Luzon, Visayas, Mindanao)
+      const regionFilter = document.getElementById('filterRegion')?.value || 'all';
+      if (regionFilter !== 'all') {
+        // Define regions
+        const luzonRegions = ['Ilocos Norte', 'Ilocos Sur', 'La Union', 'Pangasinan', 'Tarlac', 'Pampanga', 'Bulacan', 'Rizal', 'Cavite', 'Laguna', 'Batangas', 'Quezon', 'Manila', 'Metro Manila', 'Bicol'];
+        const visayasRegions = ['Leyte', 'Cebu', 'Bohol', 'Negros', 'Iloilo', 'Aklan', 'Capiz', 'Antique', 'Samar', 'Biliran', 'Southern Leyte'];
+        const mindanaoRegions = ['Davao', 'Davao City', 'Davao del Sur', 'Davao Oriental', 'Davao del Norte', 'Maguindanao', 'Sultan Kudarat', 'Sarangani', 'General Santos', 'Cotabato', 'Zamboanga', 'Basilan', 'Sulu', 'Tawi-Tawi', 'Agusan', 'Surigao', 'Misamis', 'Lanao', 'Bukidnon'];
+        
+        const regionMap = {
+          'luzon': luzonRegions,
+          'visayas': visayasRegions,
+          'mindanao': mindanaoRegions
+        };
+        
+        const targetRegions = regionMap[regionFilter] || [];
+        filteredNodes = filteredNodes.filter(node => {
+          if (!node.data.primary_regions || node.data.primary_regions.length === 0) return false;
+          return node.data.primary_regions.some(region => 
+            targetRegions.some(target => region.includes(target) || target.includes(region))
+          );
+        });
+        const nodeIds = new Set(filteredNodes.map(n => n.id));
+        filteredEdges = filteredEdges.filter(edge => 
+          nodeIds.has(edge.from) && nodeIds.has(edge.to)
+        );
+      }
+
+      // Filter edges by type
+      const showAlliances = document.getElementById('showAlliances').checked;
+      const showRivalries = document.getElementById('showRivalries').checked;
+      const showCorruption = document.getElementById('showCorruption').checked;
+
+      filteredEdges = filteredEdges.filter(edge => {
+        if (edge.data.type === 'alliance' && !showAlliances) return false;
+        if (edge.data.type === 'rivalry' && !showRivalries) return false;
+        if (edge.data.type === 'corruption_network' && !showCorruption) return false;
+        return true;
+      });
+
+      nodes = new vis.DataSet(filteredNodes);
+      edges = new vis.DataSet(filteredEdges);
+
+      const data = { nodes: nodes, edges: edges };
+      const options = {
+        nodes: {
+          shape: 'dot',
+          font: { size: 14, face: 'Arial' },
+          borderWidth: 2,
+          shadow: true
+        },
+        edges: {
+          arrows: { to: { enabled: true, scaleFactor: 1 } },
+          smooth: { type: 'continuous', roundness: 0.5 },
+          font: { size: 10, align: 'middle' },
+          shadow: true
+        },
+        physics: {
+          enabled: true,
+          stabilization: { iterations: 200 },
+          barnesHut: {
+            gravitationalConstant: -2000,
+            centralGravity: 0.1,
+            springLength: 200,
+            springConstant: 0.04,
+            damping: 0.09
+          }
+        },
+        interaction: {
+          hover: true,
+          tooltipDelay: 200,
+          zoomView: true,
+          dragView: true
+        }
+      };
+
+      const container = document.getElementById('network-container');
+      network = new vis.Network(container, data, options);
+
+      // Add click event to show info panel
+      network.on('click', function(params) {
+        if (params.nodes.length > 0) {
+          const nodeId = params.nodes[0];
+          const node = nodes.get(nodeId);
+          showInfoPanel(node.data);
+        } else {
+          closeInfoPanel();
+        }
+      });
+
+      // Add hover event for edges
+      network.on('hoverEdge', function(params) {
+        if (params.edge) {
+          const edge = edges.get(params.edge);
+          // Could show edge info in a tooltip
+        }
+      });
+    }
+
+    function showInfoPanel(dynasty) {
+      const panel = document.getElementById('infoPanel');
+      const content = document.getElementById('infoContent');
+      
+      let html = `<h3>${dynasty.name.replace('_', ' ').replace('FAMILY', '').trim()}</h3>`;
+      
+      if (dynasty.patriarch) {
+        html += `<p><strong>Patriarch:</strong> ${dynasty.patriarch}</p>`;
+      }
+      
+      html += `<p><strong>Established:</strong> ${dynasty.established || 'N/A'}</p>`;
+      // Format classification for display
+      const classificationDisplay = {
+        'imperial_dynasty': 'Imperial Dynasty',
+        'dominant_dynasty': 'Dominant Dynasty',
+        'major_dynasty': 'Major Dynasty',
+        'established_dynasty': 'Established Dynasty',
+        'rising_dynasty': 'Rising Dynasty',
+        'minor_dynasty': 'Minor Dynasty',
+        'new_dynasty': 'New Dynasty'
+      };
+      const displayClassification = classificationDisplay[dynasty.classification] || dynasty.classification || 'N/A';
+      html += `<p><strong>Classification:</strong> ${displayClassification}</p>`;
+      html += `<p><strong>Power Level:</strong> ${dynasty.power_level || 'N/A'}</p>`;
+      html += `<p><strong>Current Positions:</strong> ${dynasty.current_positions_held || 0}</p>`;
+      
+      if (dynasty['2025_status']) {
+        html += `<p><strong>2025 Status:</strong> ${dynasty['2025_status']}</p>`;
+      }
+      
+      if (dynasty.primary_regions && dynasty.primary_regions.length > 0) {
+        html += `<div class="label">Primary Regions</div>`;
+        html += `<div class="value">${dynasty.primary_regions.join(', ')}</div>`;
+      }
+      
+      if (dynasty.key_members && dynasty.key_members.length > 0) {
+        html += `<div class="label">Key Members</div>`;
+        html += `<ul>`;
+        dynasty.key_members.slice(0, 8).forEach(member => {
+          // Generate Wikipedia link - use provided link or generate default
+          let wikiUrl = member.wikipedia;
+          if (!wikiUrl) {
+            // Generate Wikipedia URL from name (basic conversion)
+            const wikiName = member.name
+              .replace(/['"]/g, '')
+              .replace(/\s+/g, '_')
+              .replace(/[^a-zA-Z0-9_]/g, '');
+            wikiUrl = `https://en.wikipedia.org/wiki/${wikiName}`;
+          }
+          
+          const wikiLink = wikiUrl ? 
+            `<a href="${wikiUrl}" target="_blank" rel="noopener" style="color: #0038A8; text-decoration: none; margin-left: 4px; font-weight: 500;" title="Wikipedia">📖</a>` : '';
+          const historicalBadge = member.historical ? 
+            `<span style="background: #FCD116; color: #000; padding: 2px 6px; border-radius: 3px; font-size: 10px; margin-left: 4px;">Historical</span>` : '';
+          html += `<li>${member.name} - ${member.position}${wikiLink}${historicalBadge}</li>`;
+        });
+        if (dynasty.key_members.length > 8) {
+          html += `<li>... and ${dynasty.key_members.length - 8} more</li>`;
+        }
+        html += `</ul>`;
+      }
+      
+      if (dynasty.historical_span) {
+        html += `<div class="label">Historical Timeline</div>`;
+        html += `<div class="value">`;
+        html += `<p>Established: ${dynasty.historical_span.established || dynasty.established || 'N/A'}</p>`;
+        if (dynasty.historical_span.peak_power) {
+          html += `<p>Peak Power: ${dynasty.historical_span.peak_power}</p>`;
+        }
+        if (dynasty.historical_span.decline_period) {
+          html += `<p>Decline Period: ${dynasty.historical_span.decline_period}</p>`;
+        }
+        html += `</div>`;
+      }
+      
+      if (dynasty.geographic_coordinates) {
+        html += `<div class="label">Geographic Control</div>`;
+        html += `<div class="value">`;
+        Object.keys(dynasty.geographic_coordinates).forEach(region => {
+          const coords = dynasty.geographic_coordinates[region];
+          html += `<p>${region}: Lat ${coords.lat}, Lng ${coords.lng}</p>`;
+        });
+        html += `</div>`;
+      }
+      
+      if (dynasty.allied_dynasties && dynasty.allied_dynasties.length > 0) {
+        html += `<div class="label">Allied Dynasties</div>`;
+        html += `<div class="value">${dynasty.allied_dynasties.join(', ')}</div>`;
+      }
+      
+      if (dynasty.rival_dynasties && dynasty.rival_dynasties.length > 0) {
+        html += `<div class="label">Rival Dynasties</div>`;
+        html += `<div class="value">${dynasty.rival_dynasties.join(', ')}</div>`;
+      }
+      
+      if (dynasty.crisis_level) {
+        html += `<div class="label">Crisis Level</div>`;
+        html += `<div class="value" style="color: ${dynasty.crisis_level === 'critical' ? '#c44900' : '#f77f00'};">${dynasty.crisis_level.toUpperCase()}</div>`;
+      }
+      
+      if (dynasty.corruption_allegations && dynasty.corruption_allegations.length > 0) {
+        html += `<div class="label">Corruption Allegations</div>`;
+        html += `<ul>`;
+        dynasty.corruption_allegations.forEach(alg => {
+          html += `<li>${alg}</li>`;
+        });
+        html += `</ul>`;
+      }
+      
+      if (dynasty.timeline_events && dynasty.timeline_events.length > 0) {
+        html += `<div class="label">2025 Timeline Events</div>`;
+        html += `<ul style="list-style: none; padding-left: 0; margin-top: 8px;">`;
+        dynasty.timeline_events.forEach(event => {
+          const roleBadge = event.role === 'primary_actor' ? 
+            `<span style="background: #CE1126; color: #fff; padding: 2px 6px; border-radius: 3px; font-size: 10px; margin-left: 4px;">Primary</span>` :
+            event.role === 'participant' ?
+            `<span style="background: #0038A8; color: #fff; padding: 2px 6px; border-radius: 3px; font-size: 10px; margin-left: 4px;">Participant</span>` :
+            `<span style="background: #666; color: #fff; padding: 2px 6px; border-radius: 3px; font-size: 10px; margin-left: 4px;">Mentioned</span>`;
+          html += `<li style="margin-bottom: 8px; padding-bottom: 8px; border-bottom: 1px solid #e0e0e0;">`;
+          html += `<strong>${event.date}</strong> - ${event.title}${roleBadge}`;
+          html += `</li>`;
+        });
+        html += `</ul>`;
+        html += `<p style="font-size: 11px; color: #999; margin-top: 8px;">View full timeline: <a href="../interactive-timeline/" target="_blank" style="color: #0038A8;">Interactive Timeline</a></p>`;
+      }
+      
+      if (dynasty['2025_rumors_headlines'] && dynasty['2025_rumors_headlines'].length > 0) {
+        html += `<div class="label">2025 Rumors & Headlines</div>`;
+        html += `<div style="margin-top: 8px;">`;
+        dynasty['2025_rumors_headlines'].forEach((item, idx) => {
+          const headlineLink = item.url ? 
+            `<a href="${item.url}" target="_blank" rel="noopener" style="color: #0038A8; text-decoration: none; font-weight: 600;">${item.headline}</a>` : 
+            `<strong style="color: #0038A8; font-size: 13px;">${item.headline}</strong>`;
+          const sourceLink = item.url ? 
+            `<a href="${item.url}" target="_blank" rel="noopener" style="color: #666; text-decoration: none;">${item.source}</a>` : 
+            item.source;
+          
+          html += `<div style="margin-bottom: 12px; padding: 8px; background: #f5f5f5; border-left: 3px solid #0038A8; border-radius: 4px;">`;
+          html += `<div style="color: #0038A8; font-size: 13px; margin-bottom: 4px;">${headlineLink}</div>`;
+          html += `<p style="font-size: 11px; color: #666; margin: 4px 0;">Source: ${sourceLink}</p>`;
+          html += `<p style="font-size: 12px; margin: 4px 0;">${item.description}</p>`;
+          html += `</div>`;
+        });
+        html += `</div>`;
+      }
+      
+      content.innerHTML = html;
+      panel.classList.add('visible');
+    }
+
+    function closeInfoPanel() {
+      document.getElementById('infoPanel').classList.remove('visible');
+    }
+
+    function closeGlossaryPanel() {
+      document.getElementById('glossaryPanel').classList.remove('visible');
+    }
+
+    function showGlossaryPanel() {
+      const panel = document.getElementById('glossaryPanel');
+      panel.classList.add('visible');
+    }
+
+    function updateStats() {
+      document.getElementById('dynastyCount').textContent = 
+        `Dynasties: ${dynastiesData.nodes.dynasties.length}`;
+      document.getElementById('relationshipCount').textContent = 
+        `Relationships: ${dynastiesData.edges.relationships.length}`;
+    }
+
+    // Event listeners
+    document.getElementById('showAlliances').addEventListener('change', updateNetwork);
+    document.getElementById('showRivalries').addEventListener('change', updateNetwork);
+    document.getElementById('showCorruption').addEventListener('change', updateNetwork);
+    document.getElementById('filterPower').addEventListener('change', updateNetwork);
+    document.getElementById('filterCrisis').addEventListener('change', updateNetwork);
+    const filterRegion = document.getElementById('filterRegion');
+    if (filterRegion) {
+      filterRegion.addEventListener('change', updateNetwork);
+    }
+    document.getElementById('resetView').addEventListener('click', () => {
+      if (network) {
+        network.fit();
+      }
+      if (phMap) {
+        phMap.setView([12.8797, 121.7740], 6);
+      }
+    });
+    
+    document.getElementById('showGlossary').addEventListener('click', () => {
+      const panel = document.getElementById('glossaryPanel');
+      if (panel.classList.contains('visible')) {
+        closeGlossaryPanel();
+      } else {
+        showGlossaryPanel();
+        // Close info panel if open
+        closeInfoPanel();
+      }
+    });
+    
+    // Toggle between network and map view
+    let isMapView = false;
+    document.getElementById('toggleView').addEventListener('click', () => {
+      isMapView = !isMapView;
+      const networkContainer = document.getElementById('network-container');
+      const mapContainer = document.getElementById('map-container');
+      const toggleBtn = document.getElementById('toggleView');
+      
+      if (isMapView) {
+        networkContainer.style.display = 'none';
+        mapContainer.style.display = 'block';
+        toggleBtn.textContent = 'Show Network View';
+        if (!phMap) {
+          initializeMap();
+        }
+      } else {
+        networkContainer.style.display = 'block';
+        mapContainer.style.display = 'none';
+        toggleBtn.textContent = 'Show Map View';
+      }
+    });
+
+    // Check if opening via file:// protocol (CORS issue)
+    if (window.location.protocol === 'file:') {
+      document.getElementById('network-container').innerHTML = 
+        `<div style="padding: 40px; text-align: center; color: #c44900;">
+          <h3 style="color: #c44900; margin-bottom: 16px;">⚠️ CORS Error: File Protocol Detected</h3>
+          <p style="color: #666; margin-bottom: 16px;">
+            This visualization cannot load when opened directly from the file system due to browser security restrictions.
+          </p>
+          <p style="color: #666; font-size: 14px; margin-bottom: 8px;">
+            <strong>Solution: Use a local web server</strong>
+          </p>
+          <div style="background: #f5f5f5; padding: 16px; border-radius: 8px; text-align: left; max-width: 600px; margin: 0 auto; font-family: monospace; font-size: 12px;">
+            <p style="margin: 8px 0;"><strong>Python:</strong></p>
+            <code style="display: block; background: white; padding: 8px; border-radius: 4px; margin-bottom: 12px;">
+              git clone https://github.com/dat-angel/philippine-political-dynasties.git<br>
+              cd philippine-political-dynasties<br>
+              python3 -m http.server 8000
+            </code>
+            <p style="margin: 8px 0;">Then open: <code style="background: white; padding: 4px 8px; border-radius: 4px;">http://localhost:8000/dynasties-network-visualization.html</code></p>
+          </div>
+          <p style="color: #666; font-size: 12px; margin-top: 16px;">
+            See README-VISUALIZATION.md for more options
+          </p>
+        </div>`;
+    } else {
+    // Province coordinates mapping
+    const provinceCoordinates = {
+      'Ilocos Norte': [18.1667, 120.5833],
+      'Ilocos Sur': [17.3333, 120.5833],
+      'La Union': [16.5000, 120.3333],
+      'Leyte': [11.1667, 124.8333],
+      'Davao City': [7.0736, 125.6128],
+      'Davao del Sur': [6.7667, 125.3500],
+      'Davao Oriental': [7.1833, 126.3167],
+      'Davao Provinces (Davao City, Sur, Oriental)': [7.0736, 125.6128],
+      'Cavite': [14.4792, 120.8970],
+      'Masbate': [12.1667, 123.5833],
+      'Isabela': [16.7500, 121.7500],
+      'Rizal': [14.6500, 121.2000],
+      'Batangas': [13.7500, 121.0500],
+      'Quezon': [14.0000, 121.5000],
+      'Maguindanao': [7.1333, 124.2667],
+      'Sultan Kudarat': [6.5667, 124.2833],
+      'Sarangani': [5.8333, 125.1667],
+      'General Santos City & Sarangani': [6.1167, 125.1667],
+      'General Santos': [6.1167, 125.1667],
+      'Basilan': [6.5833, 122.0333],
+      'Manila': [14.5995, 120.9842],
+      'Metro Manila': [14.6042, 121.0000],
+      'Manila & Metro Manila': [14.6042, 121.0000],
+      'Cebu': [10.3157, 123.8854],
+      'Bohol': [9.8333, 124.1667],
+      'Negros': [10.6667, 123.0000],
+      'Iloilo': [10.7202, 122.5621],
+      'Pampanga': [15.0667, 120.6667],
+      'Bulacan': [14.8000, 121.0667],
+      'Laguna': [14.2667, 121.4167],
+      'Tarlac': [15.4833, 120.5833],
+      'Pangasinan': [16.0000, 120.3333],
+      'Las Piñas': [14.4500, 120.9833],
+      'Makati': [14.5500, 121.0333],
+      'Sulu': [5.9833, 121.0167]
+    };
+    
+    // Helper function to find province coordinates
+    function findProvinceCoordinates(provinceName) {
+      // Try exact match first
+      if (provinceCoordinates[provinceName]) {
+        return provinceCoordinates[provinceName];
+      }
+      
+      // Try partial match
+      for (const [key, coords] of Object.entries(provinceCoordinates)) {
+        if (provinceName.includes(key) || key.includes(provinceName)) {
+          return coords;
+        }
+      }
+      
+      // Try splitting by common separators
+      const parts = provinceName.split(/[(),]/).map(p => p.trim());
+      for (const part of parts) {
+        if (provinceCoordinates[part]) {
+          return provinceCoordinates[part];
+        }
+      }
+      
+      // Default to center of Philippines
+      return [12.8797, 121.7740];
+    }
+
+    function initializeMap() {
+      // Initialize map centered on Philippines
+      phMap = L.map('map-container').setView([12.8797, 121.7740], 6);
+      
+      // Add tile layer
+      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '© OpenStreetMap contributors',
+        maxZoom: 18
+      }).addTo(phMap);
+      
+      // Create a mapping of dynasty IDs to colors
+      const dynastyColorMap = {};
+      dynastiesData.nodes.dynasties.forEach(dynasty => {
+        const classification = dynasty.classification || 'major_dynasty';
+        dynastyColorMap[dynasty.id] = classificationColors[classification] || '#666';
+      });
+      
+      // Add markers for each province
+      dynastiesData.geographic_nodes.provinces.forEach(province => {
+        const coords = findProvinceCoordinates(province.name);
+        
+        // Determine controlling dynasty and color
+        let controllingDynasty = null;
+        let color = '#CCCCCC'; // Default gray
+        let controlInfo = '';
+        
+        if (province.controlling_dynasty) {
+          controllingDynasty = province.controlling_dynasty;
+          color = dynastyColorMap[controllingDynasty] || '#CCCCCC';
+          const dynasty = dynastiesData.nodes.dynasties.find(d => d.id === controllingDynasty);
+          controlInfo = dynasty ? dynasty.name.replace('_', ' ').replace('FAMILY', '').trim() : controllingDynasty;
+        } else if (province.controlling_dynasties && province.controlling_dynasties.length > 0) {
+          controllingDynasty = province.controlling_dynasties[0];
+          color = dynastyColorMap[controllingDynasty] || '#CCCCCC';
+          const dynasty = dynastiesData.nodes.dynasties.find(d => d.id === controllingDynasty);
+          controlInfo = dynasty ? dynasty.name.replace('_', ' ').replace('FAMILY', '').trim() : controllingDynasty;
+          if (province.controlling_dynasties.length > 1) {
+            controlInfo += ` (+${province.controlling_dynasties.length - 1} more)`;
+          }
+        } else if (province.competing_dynasties && province.competing_dynasties.length > 0) {
+          controllingDynasty = province.competing_dynasties[0];
+          color = '#FCD116'; // Gold for contested
+          controlInfo = 'Contested: ' + province.competing_dynasties.map(id => {
+            const d = dynastiesData.nodes.dynasties.find(dyn => dyn.id === id);
+            return d ? d.name.replace('_', ' ').replace('FAMILY', '').trim() : id;
+          }).join(', ');
+        }
+        
+        // Create custom icon with high contrast
+        const borderColor = color === '#0038A8' ? '#001F5C' : 
+                           color === '#CE1126' ? '#8B0000' :
+                           color === '#0066CC' ? '#003D7A' :
+                           color === '#DC143C' ? '#8B0000' :
+                           color === '#FFD700' ? '#B8860B' :
+                           color === '#228B22' ? '#006400' :
+                           color === '#FF6B35' ? '#CC5500' : '#000000';
+        
+        const icon = L.divIcon({
+          className: 'province-marker',
+          html: `<div style="
+            width: ${province.control_strength === 'absolute' ? '22' : '18'}px;
+            height: ${province.control_strength === 'absolute' ? '22' : '18'}px;
+            background: ${color};
+            border: 3px solid ${borderColor};
+            border-radius: 50%;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.5), 0 0 0 2px white;
+          "></div>`,
+          iconSize: [22, 22],
+          iconAnchor: [11, 11]
+        });
+        
+        // Create marker
+        const marker = L.marker(coords, { icon: icon }).addTo(phMap);
+        
+        // Create popup content
+        let popupContent = `<strong>${province.name}</strong><br>`;
+        if (controlInfo) {
+          popupContent += `Controlled by: ${controlInfo}<br>`;
+        }
+        if (province.control_duration_years) {
+          popupContent += `Control duration: ${province.control_duration_years} years<br>`;
+        }
+        if (province.positions_held) {
+          popupContent += `Positions held: ${province.positions_held}<br>`;
+        }
+        if (province.control_strength) {
+          popupContent += `Control strength: ${province.control_strength}<br>`;
+        }
+        if (province.control_status) {
+          popupContent += `Status: ${province.control_status}<br>`;
+        }
+        
+        marker.bindPopup(popupContent);
+        
+        // Add click handler to show dynasty info
+        marker.on('click', function() {
+          if (controllingDynasty) {
+            const dynasty = dynastiesData.nodes.dynasties.find(d => d.id === controllingDynasty);
+            if (dynasty) {
+              showInfoPanel(dynasty);
+            }
+          }
+        });
+        
+        provinceMarkers.push(marker);
+      });
+      
+      // Add legend for map
+      const mapLegend = L.control({ position: 'bottomright' });
+      mapLegend.onAdd = function() {
+        const div = L.DomUtil.create('div', 'map-legend');
+        div.innerHTML = `
+          <h4 style="margin: 0 0 8px 0; font-size: 14px;">Province Control</h4>
+          <div style="font-size: 12px;">
+            <div style="margin: 4px 0;">
+              <span style="display: inline-block; width: 15px; height: 15px; background: #0038A8; border-radius: 50%; border: 1px solid white; margin-right: 6px;"></span>
+              Imperial Dynasty
+            </div>
+            <div style="margin: 4px 0;">
+              <span style="display: inline-block; width: 15px; height: 15px; background: #CE1126; border-radius: 50%; border: 1px solid white; margin-right: 6px;"></span>
+              Dominant Dynasty
+            </div>
+            <div style="margin: 4px 0;">
+              <span style="display: inline-block; width: 15px; height: 15px; background: #FCD116; border-radius: 50%; border: 1px solid white; margin-right: 6px;"></span>
+              Contested
+            </div>
+            <div style="margin: 4px 0; font-size: 10px; color: #666; margin-top: 8px;">
+              Click markers for details
+            </div>
+          </div>
+        `;
+        return div;
+      };
+      mapLegend.addTo(phMap);
+    }
+
+    // Load data on page load
+    loadDynastiesData();
+    }
+  </script>
+</body>
+</html>
+

@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Philippine News Weekly Reviews Archive - 2026</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Spectral:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --ink: #1a1a1a;
+        --muted: #5e5e5e;
+        --paper: #f8f5f0;
+        --accent: #124559;
+        --accent-2: #c44900;
+        --card: #ffffff;
+        --line: #d6cbbd;
+        --shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: "Spectral", "Source Serif 4", Georgia, serif;
+        color: var(--ink);
+        background: radial-gradient(1200px 600px at 80% -10%, #f0e7d7 0%, transparent 60%),
+          radial-gradient(800px 500px at 10% 10%, #e6efe7 0%, transparent 55%),
+          var(--paper);
+        line-height: 1.6;
+      }
+
+      header {
+        padding: 32px 24px 20px;
+        max-width: 1100px;
+        margin: 0 auto;
+      }
+
+      h1 {
+        font-size: clamp(28px, 4vw, 44px);
+        margin: 0 0 8px;
+        letter-spacing: 0.3px;
+      }
+
+      .subtitle {
+        font-size: 18px;
+        color: var(--muted);
+        margin: 0 0 20px;
+      }
+
+      .nav-links {
+        display: flex;
+        gap: 16px;
+        flex-wrap: wrap;
+        margin: 20px 0;
+        padding: 12px 16px;
+        background: rgba(255, 255, 255, 0.75);
+        border: 1px solid #eadfce;
+        border-radius: 14px;
+        box-shadow: var(--shadow);
+      }
+
+      .nav-links a {
+        color: var(--accent);
+        text-decoration: none;
+        font-family: "IBM Plex Sans", "Source Sans 3", Arial, sans-serif;
+        font-weight: 500;
+        padding: 6px 12px;
+        border-radius: 8px;
+        transition: background 0.2s;
+      }
+
+      .nav-links a:hover {
+        background: rgba(18, 69, 89, 0.1);
+        text-decoration: none;
+      }
+
+      main {
+        max-width: 1100px;
+        margin: 16px auto 60px;
+        padding: 0 24px;
+      }
+
+      .reviews-list {
+        display: grid;
+        gap: 16px;
+        margin: 24px 0;
+      }
+
+      .review-card {
+        background: var(--card);
+        padding: 20px 24px;
+        border-radius: 12px;
+        box-shadow: var(--shadow);
+        border-left: 4px solid var(--accent);
+        transition: transform 0.2s, box-shadow 0.2s;
+      }
+
+      .review-card:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 16px 40px rgba(0, 0, 0, 0.12);
+      }
+
+      .review-card h2 {
+        margin: 0 0 8px;
+        font-size: 20px;
+      }
+
+      .review-card h2 a {
+        color: var(--ink);
+        text-decoration: none;
+      }
+
+      .review-card h2 a:hover {
+        color: var(--accent-2);
+        text-decoration: underline;
+      }
+
+      .review-meta {
+        font-size: 14px;
+        color: var(--muted);
+        margin: 8px 0;
+        font-family: "IBM Plex Sans", "Source Sans 3", Arial, sans-serif;
+      }
+
+      .empty-state {
+        padding: 40px;
+        text-align: center;
+        color: var(--muted);
+        background: var(--card);
+        border-radius: 16px;
+        box-shadow: var(--shadow);
+      }
+
+      footer {
+        max-width: 1100px;
+        margin: 60px auto 40px;
+        padding: 24px;
+        text-align: center;
+        color: var(--muted);
+        font-size: 14px;
+        border-top: 1px solid var(--line);
+      }
+
+      footer a {
+        color: var(--accent);
+        text-decoration: none;
+      }
+
+      footer a:hover {
+        text-decoration: underline;
+      }
+
+      @media (max-width: 720px) {
+        header {
+          padding: 24px 18px 16px;
+        }
+
+        main {
+          padding: 0 18px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Philippine News Weekly Reviews</h1>
+      <p class="subtitle">2026 Archive</p>
+      <nav class="nav-links">
+        <a href="../interactive-timeline/">📅 Full Timeline</a>
+        <a href="../dynasties-network-visualization.html">🗺️ Dynasty Map</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="reviews-list" id="reviews-container">
+        <div class="empty-state">
+          <p>Weekly reviews will appear here as they are published.</p>
+          <p style="margin-top: 12px; font-size: 14px;">
+            Use the template file to generate new weekly reviews.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        Part of the
+        <a href="https://github.com/dat-angel/philippine-political-dynasties"
+          >Philippine Political Dynasties</a
+        >
+        project
+      </p>
+      <p>
+        <a href="https://beatriz.page/philippine-politics">Live Demo</a> |
+        <a href="https://github.com/dat-angel/philippine-political-dynasties">GitHub</a>
+      </p>
+    </footer>
+
+    <script>
+      // This would be populated with actual review files
+      // For now, it's a placeholder that can be updated manually or via automation
+      const reviews = [
+        // Example structure:
+        // {
+        //   date: "2026-01-11",
+        //   weekRange: "January 5-11, 2026",
+        //   filename: "weekly-review-2026-01-11.html",
+        //   eventCount: 5
+        // }
+      ];
+
+      function renderReviews() {
+        const container = document.getElementById("reviews-container");
+        
+        if (reviews.length === 0) {
+          container.innerHTML = `
+            <div class="empty-state">
+              <p>Weekly reviews will appear here as they are published.</p>
+              <p style="margin-top: 12px; font-size: 14px;">
+                Use the template file to generate new weekly reviews.
+              </p>
+            </div>
+          `;
+          return;
+        }
+
+        // Sort by date (newest first)
+        const sorted = [...reviews].sort((a, b) => b.date.localeCompare(a.date));
+
+        container.innerHTML = sorted.map(review => `
+          <div class="review-card">
+            <h2><a href="${review.filename}">Week of ${review.weekRange}</a></h2>
+            <div class="review-meta">
+              ${review.eventCount} events | Published ${new Date(review.date).toLocaleDateString("en-US", { 
+                year: "numeric", 
+                month: "long", 
+                day: "numeric" 
+              })}
+            </div>
+          </div>
+        `).join("");
+      }
+
+      renderReviews();
+    </script>
+  </body>
+</html>
+

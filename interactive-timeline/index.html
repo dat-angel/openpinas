@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Philippines 2025 Timeline - Interactive</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Spectral:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>Philippines 2025 Timeline</h1>
+      <p>
+        Comprehensive interactive timeline of major Philippine events in 2025 for
+        diaspora context. Categories cover politics, weather, and culture, with
+        sources linked on each entry.
+      </p>
+      <div class="controls">
+        <label class="filter">
+          <input type="checkbox" value="weather" checked /> Weather
+        </label>
+        <label class="filter">
+          <input type="checkbox" value="politics" checked /> Politics
+        </label>
+        <label class="filter">
+          <input type="checkbox" value="culture" checked /> Culture
+        </label>
+        <input type="search" id="search" placeholder="Search titles or dates" />
+        <button id="sortOrder">Sort: Oldest</button>
+        <span id="count" aria-live="polite"></span>
+      </div>
+    </header>
+
+    <main>
+      <section class="timeline" aria-label="Timeline entries"></section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

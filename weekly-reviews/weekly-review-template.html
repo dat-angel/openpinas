@@ -1,0 +1,697 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Philippine News Review: Week of [DATE RANGE], 2026</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Spectral:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --ink: #1a1a1a;
+        --muted: #5e5e5e;
+        --paper: #f8f5f0;
+        --accent: #124559;
+        --accent-2: #c44900;
+        --weather: #0b6e4f;
+        --politics: #3a0ca3;
+        --culture: #b23a48;
+        --economic: #3a0ca3;
+        --legal: #1e3a5f;
+        --international: #0d7377;
+        --religious: #d4a017;
+        --card: #ffffff;
+        --line: #d6cbbd;
+        --shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: "Spectral", "Source Serif 4", Georgia, serif;
+        color: var(--ink);
+        background: radial-gradient(1200px 600px at 80% -10%, #f0e7d7 0%, transparent 60%),
+          radial-gradient(800px 500px at 10% 10%, #e6efe7 0%, transparent 55%),
+          var(--paper);
+        line-height: 1.6;
+      }
+
+      header {
+        padding: 32px 24px 20px;
+        max-width: 1100px;
+        margin: 0 auto;
+      }
+
+      h1 {
+        font-size: clamp(28px, 4vw, 44px);
+        margin: 0 0 8px;
+        letter-spacing: 0.3px;
+      }
+
+      .week-range {
+        font-size: 18px;
+        color: var(--muted);
+        margin: 0 0 20px;
+        font-weight: 500;
+      }
+
+      .nav-links {
+        display: flex;
+        gap: 16px;
+        flex-wrap: wrap;
+        margin: 20px 0;
+        padding: 12px 16px;
+        background: rgba(255, 255, 255, 0.75);
+        border: 1px solid #eadfce;
+        border-radius: 14px;
+        box-shadow: var(--shadow);
+      }
+
+      .nav-links a {
+        color: var(--accent);
+        text-decoration: none;
+        font-family: "IBM Plex Sans", "Source Sans 3", Arial, sans-serif;
+        font-weight: 500;
+        padding: 6px 12px;
+        border-radius: 8px;
+        transition: background 0.2s;
+      }
+
+      .nav-links a:hover {
+        background: rgba(18, 69, 89, 0.1);
+        text-decoration: none;
+      }
+
+      main {
+        max-width: 1100px;
+        margin: 16px auto 60px;
+        padding: 0 24px;
+      }
+
+      .summary-stats {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 16px;
+        margin: 24px 0 32px;
+      }
+
+      .stat-card {
+        background: var(--card);
+        padding: 20px;
+        border-radius: 12px;
+        box-shadow: var(--shadow);
+        text-align: center;
+      }
+
+      .stat-card .number {
+        font-size: 32px;
+        font-weight: 700;
+        color: var(--accent);
+        margin: 0;
+      }
+
+      .stat-card .label {
+        font-size: 14px;
+        color: var(--muted);
+        margin: 4px 0 0;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+      }
+
+      .section {
+        margin: 40px 0;
+      }
+
+      .section-title {
+        font-size: 24px;
+        margin: 0 0 20px;
+        padding-bottom: 12px;
+        border-bottom: 2px solid var(--line);
+        color: var(--ink);
+      }
+
+      .event {
+        background: var(--card);
+        border-radius: 16px;
+        padding: 20px 24px;
+        margin-bottom: 20px;
+        box-shadow: var(--shadow);
+        border-left: 4px solid var(--accent);
+        transition: transform 0.2s, box-shadow 0.2s;
+      }
+
+      .event:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 16px 40px rgba(0, 0, 0, 0.12);
+      }
+
+      .event-header {
+        display: flex;
+        gap: 12px;
+        align-items: center;
+        margin-bottom: 12px;
+        flex-wrap: wrap;
+      }
+
+      .event time {
+        font-family: "IBM Plex Sans", "Source Sans 3", Arial, sans-serif;
+        font-size: 14px;
+        color: var(--muted);
+        font-weight: 500;
+      }
+
+      .category-badge {
+        padding: 4px 12px;
+        border-radius: 999px;
+        font-size: 11px;
+        text-transform: uppercase;
+        letter-spacing: 0.6px;
+        color: #fff;
+        font-family: "IBM Plex Sans", "Source Sans 3", Arial, sans-serif;
+        font-weight: 600;
+      }
+
+      .category-badge.political {
+        background: var(--politics);
+      }
+
+      .category-badge.cultural {
+        background: var(--culture);
+      }
+
+      .category-badge.natural-disasters {
+        background: var(--weather);
+      }
+
+      .category-badge.economic {
+        background: var(--economic);
+      }
+
+      .category-badge.legal {
+        background: var(--legal);
+      }
+
+      .category-badge.international-relations {
+        background: var(--international);
+      }
+
+      .category-badge.religious {
+        background: var(--religious);
+      }
+
+      .event h2 {
+        margin: 0 0 12px;
+        font-size: 20px;
+      }
+
+      .event h2 a {
+        color: var(--ink);
+        text-decoration: none;
+      }
+
+      .event h2 a:hover {
+        color: var(--accent-2);
+        text-decoration: underline;
+      }
+
+      .event .description {
+        font-size: 15px;
+        color: var(--ink);
+        margin: 12px 0;
+        line-height: 1.7;
+      }
+
+      .event-details {
+        margin-top: 16px;
+        padding-top: 16px;
+        border-top: 1px solid var(--line);
+      }
+
+      .event-details p {
+        margin: 10px 0;
+        font-size: 14px;
+        line-height: 1.6;
+      }
+
+      .event-details strong {
+        color: var(--ink);
+        font-weight: 600;
+      }
+
+      .significance {
+        padding: 10px 14px;
+        background: rgba(18, 69, 89, 0.05);
+        border-left: 3px solid var(--accent);
+        border-radius: 6px;
+        margin: 12px 0;
+      }
+
+      .diaspora-impact {
+        padding: 10px 14px;
+        background: rgba(196, 73, 0, 0.05);
+        border-left: 3px solid var(--accent-2);
+        border-radius: 6px;
+        margin: 12px 0;
+      }
+
+      .dynasties {
+        margin: 12px 0;
+        padding: 12px;
+        background: rgba(58, 12, 163, 0.05);
+        border-left: 3px solid var(--politics);
+        border-radius: 6px;
+        font-size: 14px;
+      }
+
+      .dynasties a {
+        color: var(--politics);
+        text-decoration: none;
+        font-weight: 500;
+        margin: 0 4px;
+      }
+
+      .dynasties a:hover {
+        text-decoration: underline;
+      }
+
+      .sources {
+        margin: 12px 0;
+        font-size: 14px;
+      }
+
+      .sources a {
+        color: var(--accent-2);
+        text-decoration: none;
+        margin: 0 8px 0 0;
+      }
+
+      .sources a:hover {
+        text-decoration: underline;
+      }
+
+      .dynasty-highlights {
+        background: var(--card);
+        border-radius: 16px;
+        padding: 24px;
+        margin: 32px 0;
+        box-shadow: var(--shadow);
+        border-left: 4px solid var(--politics);
+      }
+
+      .dynasty-highlights h3 {
+        margin: 0 0 16px;
+        color: var(--politics);
+      }
+
+      .dynasty-item {
+        padding: 12px;
+        margin: 8px 0;
+        background: rgba(58, 12, 163, 0.05);
+        border-radius: 8px;
+        border-left: 3px solid var(--politics);
+      }
+
+      .dynasty-item a {
+        color: var(--politics);
+        text-decoration: none;
+        font-weight: 600;
+      }
+
+      .dynasty-item a:hover {
+        text-decoration: underline;
+      }
+
+      footer {
+        max-width: 1100px;
+        margin: 60px auto 40px;
+        padding: 24px;
+        text-align: center;
+        color: var(--muted);
+        font-size: 14px;
+        border-top: 1px solid var(--line);
+      }
+
+      footer a {
+        color: var(--accent);
+        text-decoration: none;
+      }
+
+      footer a:hover {
+        text-decoration: underline;
+      }
+
+      .empty-state {
+        padding: 40px;
+        text-align: center;
+        color: var(--muted);
+        background: var(--card);
+        border-radius: 16px;
+        box-shadow: var(--shadow);
+      }
+
+      @media (max-width: 720px) {
+        header {
+          padding: 24px 18px 16px;
+        }
+
+        main {
+          padding: 0 18px;
+        }
+
+        .event {
+          padding: 16px 18px;
+        }
+
+        .summary-stats {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Philippine News Review</h1>
+      <p class="week-range">Week of [START DATE] - [END DATE], 2026</p>
+      <nav class="nav-links">
+        <a href="../interactive-timeline/">📅 Full Timeline</a>
+        <a href="../dynasties-network-visualization.html">🗺️ Dynasty Map</a>
+        <a href="index.html">📚 All Reviews</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="summary-stats">
+        <div class="stat-card">
+          <p class="number" id="total-events">0</p>
+          <p class="label">Total Events</p>
+        </div>
+        <div class="stat-card">
+          <p class="number" id="political-count">0</p>
+          <p class="label">Political</p>
+        </div>
+        <div class="stat-card">
+          <p class="number" id="disaster-count">0</p>
+          <p class="label">Disasters</p>
+        </div>
+        <div class="stat-card">
+          <p class="number" id="dynasty-count">0</p>
+          <p class="label">Dynasties Mentioned</p>
+        </div>
+      </section>
+
+      <!-- Events will be inserted here by JavaScript -->
+      <section id="events-container">
+        <div class="empty-state">
+          <p>Loading events for this week...</p>
+        </div>
+      </section>
+
+      <section class="dynasty-highlights" id="dynasty-highlights">
+        <h3>Dynasty Highlights</h3>
+        <div id="dynasty-content">
+          <p>No significant dynasty news this week.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        Part of the
+        <a href="https://github.com/dat-angel/philippine-political-dynasties"
+          >Philippine Political Dynasties</a
+        >
+        project
+      </p>
+      <p>
+        <a href="https://beatriz.page/philippine-politics">Live Demo</a> |
+        <a href="https://github.com/dat-angel/philippine-political-dynasties">GitHub</a>
+      </p>
+      <p style="margin-top: 12px; font-size: 12px;">
+        Last updated: <span id="last-updated">[DATE]</span>
+      </p>
+    </footer>
+
+    <script>
+      // Configuration - Update these for each week
+      const WEEK_CONFIG = {
+        startDate: "2026-01-05",
+        endDate: "2026-01-11",
+        timelineFile: "../philippines-2026-timeline.json",
+        weekLabel: "January 5-11, 2026"
+      };
+
+      // Category mapping
+      const categoryMap = {
+        "Political": { slug: "political", display: "Political" },
+        "Cultural": { slug: "cultural", display: "Cultural" },
+        "Natural Disasters": { slug: "natural-disasters", display: "Natural Disasters" },
+        "Economic": { slug: "economic", display: "Economic" },
+        "Legal": { slug: "legal", display: "Legal" },
+        "International Relations": { slug: "international-relations", display: "International Relations" },
+        "Religious": { slug: "religious", display: "Religious" }
+      };
+
+      // Format date for display
+      function formatDate(dateString) {
+        const date = new Date(dateString + "T00:00:00");
+        return date.toLocaleDateString("en-US", { 
+          month: "long", 
+          day: "numeric", 
+          year: "numeric" 
+        });
+      }
+
+      // Format date for URL
+      function formatDateForURL(dateString) {
+        return dateString;
+      }
+
+      // Get dynasty display name from ID
+      function getDynastyName(id) {
+        const names = {
+          "MARCOS_ROMUALDEZ": "Marcos-Romualdez",
+          "DUTERTE_FAMILY": "Duterte",
+          "AQUINO_FAMILY": "Aquino",
+          "REVILLA_TOLENTINO": "Revilla-Tolentino",
+          "ESTRADA_FAMILY": "Estrada",
+          "VILLAR_FAMILY": "Villar",
+          "PACQUIAO_FAMILY": "Pacquiao",
+          "SINGSON_FAMILY": "Singson",
+          "ORTEGA_FAMILY": "Ortega",
+          "TULFO_FAMILY": "Tulfo",
+          "LACSON_FAMILY": "Lacson",
+          "GO_FAMILY": "Go",
+          "DELA_ROSA_FAMILY": "Dela Rosa",
+          "BINAY_FAMILY": "Binay"
+        };
+        return names[id] || id.replace(/_/g, " ");
+      }
+
+      // Create event HTML
+      function createEventHTML(event) {
+        const category = categoryMap[event.category] || { slug: "political", display: event.category };
+        const eventId = `event-${event.date}-${event.title.toLowerCase().replace(/\s+/g, "-").slice(0, 30)}`;
+        
+        let dynastiesHTML = "";
+        if (event.mentioned_dynasties && event.mentioned_dynasties.length > 0) {
+          const dynastyLinks = event.mentioned_dynasties.map(id => {
+            const name = getDynastyName(id);
+            return `<a href="../dynasties-network-visualization.html#dynasty-${id}">${name}</a>`;
+          }).join(", ");
+          dynastiesHTML = `<div class="dynasties"><strong>Dynasties:</strong> ${dynastyLinks}</div>`;
+        }
+
+        let sourcesHTML = "";
+        const allSources = [
+          ...(event.sources?.international || []),
+          ...(event.sources?.local || [])
+        ];
+        if (allSources.length > 0) {
+          const sourceLinks = allSources.map((url, idx) => {
+            const domain = new URL(url).hostname.replace("www.", "");
+            return `<a href="${url}" target="_blank" rel="noopener">${domain}</a>`;
+          }).join(", ");
+          sourcesHTML = `<div class="sources"><strong>Sources:</strong> ${sourceLinks}</div>`;
+        }
+
+        return `
+          <article class="event" data-category="${category.slug}" data-date="${event.date}">
+            <div class="event-header">
+              <time datetime="${event.date}">${formatDate(event.date)}</time>
+              <span class="category-badge ${category.slug}">${category.display}</span>
+            </div>
+            <h2>
+              <a href="../interactive-timeline/?date=${formatDateForURL(event.date)}&search=${encodeURIComponent(event.title)}">
+                ${event.title}
+              </a>
+            </h2>
+            <p class="description">${event.description}</p>
+            <div class="event-details">
+              ${event.significance ? `<p class="significance"><strong>Significance:</strong> ${event.significance}</p>` : ""}
+              ${event.diaspora_impact ? `<p class="diaspora-impact"><strong>Diaspora Impact:</strong> ${event.diaspora_impact}</p>` : ""}
+              ${dynastiesHTML}
+              ${sourcesHTML}
+            </div>
+          </article>
+        `;
+      }
+
+      // Group events by category
+      function groupEventsByCategory(events) {
+        const grouped = {};
+        events.forEach(event => {
+          const category = event.category || "Political";
+          if (!grouped[category]) {
+            grouped[category] = [];
+          }
+          grouped[category].push(event);
+        });
+        return grouped;
+      }
+
+      // Render events
+      function renderEvents(events) {
+        const container = document.getElementById("events-container");
+        
+        if (events.length === 0) {
+          container.innerHTML = `
+            <div class="empty-state">
+              <p>No significant events recorded for this week.</p>
+            </div>
+          `;
+          return;
+        }
+
+        const grouped = groupEventsByCategory(events);
+        const categoryOrder = ["Political", "Natural Disasters", "Economic", "Legal", "International Relations", "Cultural", "Religious"];
+        
+        let html = "";
+        categoryOrder.forEach(category => {
+          if (grouped[category] && grouped[category].length > 0) {
+            html += `<section class="section">
+              <h2 class="section-title">${category}</h2>
+              ${grouped[category].map(event => createEventHTML(event)).join("")}
+            </section>`;
+          }
+        });
+
+        container.innerHTML = html;
+      }
+
+      // Update statistics
+      function updateStats(events) {
+        const political = events.filter(e => e.category === "Political" || e.category === "Economic" || e.category === "Legal" || e.category === "International Relations").length;
+        const disasters = events.filter(e => e.category === "Natural Disasters").length;
+        const dynasties = new Set();
+        events.forEach(event => {
+          if (event.mentioned_dynasties) {
+            event.mentioned_dynasties.forEach(id => dynasties.add(id));
+          }
+        });
+
+        document.getElementById("total-events").textContent = events.length;
+        document.getElementById("political-count").textContent = political;
+        document.getElementById("disaster-count").textContent = disasters;
+        document.getElementById("dynasty-count").textContent = dynasties.size;
+      }
+
+      // Render dynasty highlights
+      function renderDynastyHighlights(events) {
+        const container = document.getElementById("dynasty-content");
+        const dynastyEvents = events.filter(e => e.mentioned_dynasties && e.mentioned_dynasties.length > 0);
+        
+        if (dynastyEvents.length === 0) {
+          container.innerHTML = "<p>No significant dynasty news this week.</p>";
+          return;
+        }
+
+        const dynastyMap = {};
+        dynastyEvents.forEach(event => {
+          event.mentioned_dynasties.forEach(id => {
+            if (!dynastyMap[id]) {
+              dynastyMap[id] = [];
+            }
+            dynastyMap[id].push(event);
+          });
+        });
+
+        let html = "";
+        Object.keys(dynastyMap).sort().forEach(id => {
+          const name = getDynastyName(id);
+          const relatedEvents = dynastyMap[id];
+          html += `
+            <div class="dynasty-item">
+              <strong>
+                <a href="../dynasties-network-visualization.html#dynasty-${id}">${name}</a>
+              </strong>
+              <ul style="margin: 8px 0 0 20px; padding: 0;">
+                ${relatedEvents.map(e => `<li><a href="../interactive-timeline/?date=${formatDateForURL(e.date)}">${e.title}</a></li>`).join("")}
+              </ul>
+            </div>
+          `;
+        });
+
+        container.innerHTML = html;
+      }
+
+      // Load and process timeline data
+      async function loadWeekReview() {
+        try {
+          // Update page title and header
+          document.title = `Philippine News Review: Week of ${WEEK_CONFIG.weekLabel}`;
+          document.querySelector(".week-range").textContent = `Week of ${WEEK_CONFIG.weekLabel}`;
+          document.getElementById("last-updated").textContent = new Date().toLocaleDateString("en-US", { 
+            year: "numeric", 
+            month: "long", 
+            day: "numeric" 
+          });
+
+          // Load timeline JSON
+          const response = await fetch(WEEK_CONFIG.timelineFile);
+          if (!response.ok) {
+            throw new Error(`Failed to load timeline: ${response.statusText}`);
+          }
+          
+          const data = await response.json();
+          const timeline = data.timeline || [];
+
+          // Filter events for this week
+          const weekEvents = timeline.filter(event => {
+            const eventDate = event.date;
+            return eventDate >= WEEK_CONFIG.startDate && eventDate <= WEEK_CONFIG.endDate;
+          });
+
+          // Sort by date
+          weekEvents.sort((a, b) => a.date.localeCompare(b.date));
+
+          // Render everything
+          renderEvents(weekEvents);
+          updateStats(weekEvents);
+          renderDynastyHighlights(weekEvents);
+
+        } catch (error) {
+          console.error("Error loading week review:", error);
+          document.getElementById("events-container").innerHTML = `
+            <div class="empty-state">
+              <p>Error loading events: ${error.message}</p>
+              <p style="margin-top: 12px; font-size: 14px;">
+                Make sure the timeline JSON file exists at: ${WEEK_CONFIG.timelineFile}
+              </p>
+            </div>
+          `;
+        }
+      }
+
+      // Initialize on page load
+      loadWeekReview();
+    </script>
+  </body>
+</html>
+

@@ -1,0 +1,37 @@
+# OS files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Temporary files
+*.tmp
+*.log
+*.cache
+
+# Private documentation (if accidentally copied)
+CONTEXT.md
+BLOG_POST.md
+GITHUB_SETUP.md
+Power-Map-Dynasties.md
+Timeline-2025.md
+
+# Weekly review internal docs
+weekly-reviews/README.md
+
+# Individual weekly review files (generated from template)
+# Keep template and index, but ignore generated reviews
+weekly-reviews/weekly-review-*.html
+!weekly-reviews/weekly-review-template.html
+!weekly-reviews/index.html
+

@@ -1,0 +1,260 @@
+:root {
+  --ink: #1a1a1a;
+  --muted: #5e5e5e;
+  --paper: #f8f5f0;
+  --accent: #124559;
+  --accent-2: #c44900;
+  --weather: #0b6e4f;
+  --politics: #3a0ca3;
+  --culture: #b23a48;
+  --card: #ffffff;
+  --line: #d6cbbd;
+  --shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Spectral", "Source Serif 4", Georgia, serif;
+  color: var(--ink);
+  background: radial-gradient(1200px 600px at 80% -10%, #f0e7d7 0%, transparent 60%),
+    radial-gradient(800px 500px at 10% 10%, #e6efe7 0%, transparent 55%),
+    var(--paper);
+}
+
+header {
+  padding: 32px 24px 12px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: clamp(28px, 4vw, 44px);
+  margin: 0 0 8px;
+  letter-spacing: 0.3px;
+}
+
+header p {
+  margin: 0;
+  color: var(--muted);
+  max-width: 70ch;
+}
+
+.controls {
+  margin: 20px 0 0;
+  padding: 12px 16px;
+  background: rgba(255, 255, 255, 0.75);
+  border: 1px solid #eadfce;
+  border-radius: 14px;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  align-items: center;
+  box-shadow: var(--shadow);
+}
+
+.controls label {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  font-size: 14px;
+  color: var(--ink);
+}
+
+.controls input[type="search"] {
+  flex: 1 1 240px;
+  border: 1px solid #d7c7b4;
+  border-radius: 10px;
+  padding: 10px 12px;
+  font-size: 14px;
+  font-family: "IBM Plex Sans", "Source Sans 3", Arial, sans-serif;
+}
+
+.controls button {
+  border: 1px solid #d7c7b4;
+  background: #fffaf2;
+  border-radius: 10px;
+  padding: 10px 12px;
+  cursor: pointer;
+  font-family: "IBM Plex Sans", "Source Sans 3", Arial, sans-serif;
+}
+
+main {
+  max-width: 1100px;
+  margin: 16px auto 60px;
+  padding: 0 24px;
+}
+
+.timeline {
+  position: relative;
+  padding-left: 32px;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 8px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: var(--line);
+}
+
+.month-marker {
+  font-size: 14px;
+  color: var(--muted);
+  margin: 26px 0 12px 0;
+  font-weight: 600;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+}
+
+.card {
+  position: relative;
+  background: var(--card);
+  border-radius: 16px;
+  padding: 16px 18px 14px;
+  margin-bottom: 18px;
+  box-shadow: var(--shadow);
+  border-left: 4px solid var(--accent);
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  left: -24px;
+  top: 22px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--accent);
+  border: 2px solid var(--paper);
+}
+
+.card h3 {
+  margin: 0 0 6px;
+  font-size: 18px;
+}
+
+.card .description {
+  font-size: 14px;
+  color: var(--ink);
+  margin: 8px 0;
+  line-height: 1.5;
+}
+
+.card .diaspora-impact {
+  font-size: 13px;
+  color: var(--muted);
+  margin: 8px 0;
+  padding: 8px;
+  background: rgba(18, 69, 89, 0.05);
+  border-left: 2px solid var(--accent);
+  line-height: 1.5;
+}
+
+.card .meta {
+  font-size: 13px;
+  color: var(--muted);
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  align-items: center;
+  font-family: "IBM Plex Sans", "Source Sans 3", Arial, sans-serif;
+  margin-top: 8px;
+}
+
+.tag {
+  padding: 4px 8px;
+  border-radius: 999px;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  color: #fff;
+}
+
+.tag.weather {
+  background: var(--weather);
+}
+
+.tag.politics {
+  background: var(--politics);
+}
+
+.tag.culture {
+  background: var(--culture);
+}
+
+.tag.economic {
+  background: var(--politics);
+}
+
+.tag.legal {
+  background: var(--politics);
+}
+
+.card a {
+  color: var(--accent-2);
+  text-decoration: none;
+}
+
+.card a:hover {
+  text-decoration: underline;
+}
+
+.card .dynasties {
+  margin-top: 12px;
+  padding: 10px;
+  background: rgba(58, 12, 163, 0.05);
+  border-left: 2px solid var(--politics);
+  border-radius: 6px;
+  font-size: 13px;
+}
+
+.card .dynasties .dynasty-link {
+  color: var(--politics);
+  font-weight: 500;
+}
+
+.card .description,
+.card .significance,
+.card .diaspora {
+  font-size: 14px;
+  color: var(--ink);
+  margin: 8px 0;
+  line-height: 1.6;
+}
+
+.empty {
+  padding: 22px;
+  border: 1px dashed #cdbfac;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.6);
+  color: var(--muted);
+}
+
+@media (max-width: 720px) {
+  header {
+    padding: 24px 18px 10px;
+  }
+
+  main {
+    padding: 0 18px;
+  }
+
+  .timeline {
+    padding-left: 0;
+  }
+
+  .timeline::before,
+  .card::before {
+    display: none;
+  }
+
+  .card {
+    border-left: 6px solid var(--accent);
+  }
+}
