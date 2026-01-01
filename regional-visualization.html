@@ -1,0 +1,752 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Regional Analysis: Dynasties & Corruption by Province – OpenPinas</title>
+    <meta name="description" content="Interactive visualization of political dynasties and corruption cases across Philippine regions (Luzon, Visayas, Mindanao) at provincial level." />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Spectral:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        line-height: 1.6;
+        color: #1a1a1a;
+        background: #fafafa;
+      }
+
+      header {
+        background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+        color: white;
+        padding: 2rem 1rem;
+        text-align: center;
+      }
+
+      .header-nav {
+        margin-bottom: 1rem;
+      }
+
+      .header-nav a {
+        color: rgba(255, 255, 255, 0.8);
+        text-decoration: none;
+        font-size: 0.9rem;
+      }
+
+      .header-nav a:hover {
+        color: white;
+      }
+
+      h1 {
+        font-family: 'Spectral', serif;
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-bottom: 0.5rem;
+      }
+
+      .subtitle {
+        font-size: 1.1rem;
+        color: rgba(255, 255, 255, 0.9);
+        max-width: 800px;
+        margin: 0 auto;
+      }
+
+      main {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 2rem 1rem;
+      }
+
+      .stats-overview {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 1.5rem;
+        margin-bottom: 3rem;
+      }
+
+      .stat-card {
+        background: white;
+        padding: 1.5rem;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        text-align: center;
+      }
+
+      .stat-card h3 {
+        font-size: 0.9rem;
+        color: #666;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        margin-bottom: 0.5rem;
+      }
+
+      .stat-card .number {
+        font-size: 2.5rem;
+        font-weight: 600;
+        color: #1a1a1a;
+        font-family: 'Spectral', serif;
+      }
+
+      .stat-card .label {
+        font-size: 0.9rem;
+        color: #888;
+        margin-top: 0.5rem;
+      }
+
+      .controls {
+        background: white;
+        padding: 1.5rem;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        margin-bottom: 2rem;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        align-items: center;
+      }
+
+      .control-group {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+      }
+
+      .control-group label {
+        font-weight: 500;
+        font-size: 0.9rem;
+      }
+
+      select, input {
+        padding: 0.5rem;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        font-family: inherit;
+        font-size: 0.9rem;
+      }
+
+      .region-tabs {
+        display: flex;
+        gap: 0.5rem;
+        margin-bottom: 2rem;
+        flex-wrap: wrap;
+      }
+
+      .region-tab {
+        padding: 0.75rem 1.5rem;
+        background: white;
+        border: 2px solid #ddd;
+        border-radius: 6px;
+        cursor: pointer;
+        font-weight: 500;
+        transition: all 0.2s;
+        font-size: 0.95rem;
+      }
+
+      .region-tab:hover {
+        border-color: #1a1a1a;
+        background: #f5f5f5;
+      }
+
+      .region-tab.active {
+        background: #1a1a1a;
+        color: white;
+        border-color: #1a1a1a;
+      }
+
+      .region-section {
+        display: none;
+      }
+
+      .region-section.active {
+        display: block;
+      }
+
+      .chart-container {
+        background: white;
+        padding: 2rem;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        margin-bottom: 2rem;
+        height: 400px;
+      }
+
+      .province-table {
+        background: white;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+
+      thead {
+        background: #1a1a1a;
+        color: white;
+      }
+
+      th {
+        padding: 1rem;
+        text-align: left;
+        font-weight: 600;
+        font-size: 0.9rem;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+      }
+
+      th.sortable {
+        cursor: pointer;
+        user-select: none;
+      }
+
+      th.sortable:hover {
+        background: #2d2d2d;
+      }
+
+      th.sortable::after {
+        content: ' ↕';
+        opacity: 0.5;
+        font-size: 0.8rem;
+      }
+
+      th.sortable.asc::after {
+        content: ' ↑';
+        opacity: 1;
+      }
+
+      th.sortable.desc::after {
+        content: ' ↓';
+        opacity: 1;
+      }
+
+      tbody tr {
+        border-bottom: 1px solid #eee;
+      }
+
+      tbody tr:hover {
+        background: #f9f9f9;
+      }
+
+      tbody tr:last-child {
+        border-bottom: none;
+      }
+
+      td {
+        padding: 1rem;
+      }
+
+      .province-name {
+        font-weight: 600;
+        color: #1a1a1a;
+      }
+
+      .count {
+        text-align: center;
+        font-weight: 600;
+        font-family: 'Spectral', serif;
+      }
+
+      .count.dynasties {
+        color: #2563eb;
+      }
+
+      .count.corruption {
+        color: #dc2626;
+      }
+
+      .bar-chart {
+        display: flex;
+        align-items: flex-end;
+        gap: 0.5rem;
+        height: 300px;
+        padding: 1rem;
+        background: #f9f9f9;
+        border-radius: 4px;
+      }
+
+      .bar {
+        flex: 1;
+        background: linear-gradient(to top, #2563eb, #3b82f6);
+        border-radius: 4px 4px 0 0;
+        position: relative;
+        min-width: 30px;
+        transition: opacity 0.2s;
+      }
+
+      .bar:hover {
+        opacity: 0.8;
+      }
+
+      .bar.corruption {
+        background: linear-gradient(to top, #dc2626, #ef4444);
+      }
+
+      .bar-label {
+        position: absolute;
+        bottom: -1.5rem;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 0.75rem;
+        color: #666;
+        white-space: nowrap;
+        writing-mode: horizontal-tb;
+      }
+
+      .bar-value {
+        position: absolute;
+        top: -1.5rem;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 0.85rem;
+        font-weight: 600;
+        color: #1a1a1a;
+      }
+
+      .legend {
+        display: flex;
+        gap: 2rem;
+        justify-content: center;
+        margin-top: 1rem;
+        padding: 1rem;
+        background: #f9f9f9;
+        border-radius: 4px;
+      }
+
+      .legend-item {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+      }
+
+      .legend-color {
+        width: 20px;
+        height: 20px;
+        border-radius: 4px;
+      }
+
+      .legend-color.dynasties {
+        background: #2563eb;
+      }
+
+      .legend-color.corruption {
+        background: #dc2626;
+      }
+
+      .no-data {
+        text-align: center;
+        padding: 3rem;
+        color: #888;
+      }
+
+      @media (max-width: 768px) {
+        h1 {
+          font-size: 2rem;
+        }
+
+        .stats-overview {
+          grid-template-columns: 1fr;
+        }
+
+        .controls {
+          flex-direction: column;
+          align-items: stretch;
+        }
+
+        .control-group {
+          flex-direction: column;
+          align-items: stretch;
+        }
+
+        table {
+          font-size: 0.85rem;
+        }
+
+        th, td {
+          padding: 0.75rem 0.5rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="header-nav"><a href="index.html">← OpenPinas</a></nav>
+      <h1>Regional Analysis</h1>
+      <p class="subtitle">
+        Political dynasties and corruption cases across Luzon, Visayas, and Mindanao
+      </p>
+    </header>
+
+    <main>
+      <div class="stats-overview" id="statsOverview">
+        <!-- Populated by JavaScript -->
+      </div>
+
+      <div class="controls">
+        <div class="control-group">
+          <label for="sortBy">Sort by:</label>
+          <select id="sortBy">
+            <option value="province">Province Name</option>
+            <option value="dynasties">Dynasties (High to Low)</option>
+            <option value="dynasties-asc">Dynasties (Low to High)</option>
+            <option value="corruption">Corruption Cases (High to Low)</option>
+            <option value="corruption-asc">Corruption Cases (Low to High)</option>
+            <option value="total">Total (Dynasties + Cases)</option>
+          </select>
+        </div>
+        <div class="control-group">
+          <label for="filterMin">Min Dynasties:</label>
+          <input type="number" id="filterMin" min="0" value="0" />
+        </div>
+        <div class="control-group">
+          <label>
+            <input type="checkbox" id="showOnlyWithData" />
+            Show only provinces with data
+          </label>
+        </div>
+      </div>
+
+      <div class="region-tabs">
+        <button class="region-tab active" data-region="all">All Regions</button>
+        <button class="region-tab" data-region="Luzon">Luzon</button>
+        <button class="region-tab" data-region="Visayas">Visayas</button>
+        <button class="region-tab" data-region="Mindanao">Mindanao</button>
+      </div>
+
+      <div id="chartSection" class="chart-container">
+        <canvas id="chartCanvas"></canvas>
+      </div>
+
+      <div class="province-table">
+        <table id="provinceTable">
+          <thead>
+            <tr>
+              <th class="sortable" data-sort="province">Province</th>
+              <th class="sortable" data-sort="region">Region</th>
+              <th class="sortable" data-sort="dynasties">Dynasties</th>
+              <th class="sortable" data-sort="corruption">Corruption Cases</th>
+              <th class="sortable" data-sort="total">Total</th>
+            </tr>
+          </thead>
+          <tbody id="tableBody">
+            <!-- Populated by JavaScript -->
+          </tbody>
+        </table>
+      </div>
+    </main>
+
+    <script>
+      let regionalData = {};
+      let currentRegion = 'all';
+      let currentSort = 'province';
+      let currentFilter = { minDynasties: 0, showOnlyWithData: false };
+      let chart = null;
+
+      // Load data
+      async function loadData() {
+        try {
+          const response = await fetch('regional-data.json');
+          regionalData = await response.json();
+          initializeVisualization();
+        } catch (error) {
+          console.error('Error loading data:', error);
+          document.getElementById('tableBody').innerHTML = 
+            '<tr><td colspan="5" class="no-data">Error loading data. Please ensure regional-data.json exists.</td></tr>';
+        }
+      }
+
+      function initializeVisualization() {
+        updateStatsOverview();
+        updateTable();
+        updateChart();
+        setupEventListeners();
+      }
+
+      function updateStatsOverview() {
+        const stats = calculateStats();
+        const statsHTML = `
+          <div class="stat-card">
+            <h3>Total Provinces</h3>
+            <div class="number">${stats.totalProvinces}</div>
+            <div class="label">With dynasties or cases</div>
+          </div>
+          <div class="stat-card">
+            <h3>Total Dynasties</h3>
+            <div class="number">${stats.totalDynasties}</div>
+            <div class="label">Across all provinces</div>
+          </div>
+          <div class="stat-card">
+            <h3>Corruption Cases</h3>
+            <div class="number">${stats.totalCorruption}</div>
+            <div class="label">Tracked cases</div>
+          </div>
+          <div class="stat-card">
+            <h3>Luzon Dynasties</h3>
+            <div class="number">${stats.luzonDynasties}</div>
+            <div class="label">${stats.luzonProvinces} provinces</div>
+          </div>
+          <div class="stat-card">
+            <h3>Visayas Dynasties</h3>
+            <div class="number">${stats.visayasDynasties}</div>
+            <div class="label">${stats.visayasProvinces} provinces</div>
+          </div>
+          <div class="stat-card">
+            <h3>Mindanao Dynasties</h3>
+            <div class="number">${stats.mindanaoDynasties}</div>
+            <div class="label">${stats.mindanaoProvinces} provinces</div>
+          </div>
+        `;
+        document.getElementById('statsOverview').innerHTML = statsHTML;
+      }
+
+      function calculateStats() {
+        const provinces = Object.values(regionalData.provinces || {});
+        const filtered = getFilteredProvinces();
+        
+        const stats = {
+          totalProvinces: filtered.length,
+          totalDynasties: filtered.reduce((sum, p) => sum + (p.dynasties || 0), 0),
+          totalCorruption: filtered.reduce((sum, p) => sum + (p.corruption_cases || 0), 0),
+          luzonDynasties: 0,
+          luzonProvinces: 0,
+          visayasDynasties: 0,
+          visayasProvinces: 0,
+          mindanaoDynasties: 0,
+          mindanaoProvinces: 0
+        };
+
+        provinces.forEach(p => {
+          if (p.region === 'Luzon') {
+            if (p.dynasties > 0) stats.luzonProvinces++;
+            stats.luzonDynasties += p.dynasties || 0;
+          } else if (p.region === 'Visayas') {
+            if (p.dynasties > 0) stats.visayasProvinces++;
+            stats.visayasDynasties += p.dynasties || 0;
+          } else if (p.region === 'Mindanao') {
+            if (p.dynasties > 0) stats.mindanaoProvinces++;
+            stats.mindanaoDynasties += p.dynasties || 0;
+          }
+        });
+
+        return stats;
+      }
+
+      function getFilteredProvinces() {
+        let provinces = Object.entries(regionalData.provinces || {})
+          .map(([name, data]) => ({ name, ...data }));
+
+        // Filter by region
+        if (currentRegion !== 'all') {
+          provinces = provinces.filter(p => p.region === currentRegion);
+        }
+
+        // Filter by minimum dynasties
+        if (currentFilter.minDynasties > 0) {
+          provinces = provinces.filter(p => p.dynasties >= currentFilter.minDynasties);
+        }
+
+        // Filter to show only provinces with data
+        if (currentFilter.showOnlyWithData) {
+          provinces = provinces.filter(p => p.dynasties > 0 || p.corruption_cases > 0);
+        }
+
+        // Sort
+        provinces.sort((a, b) => {
+          switch (currentSort) {
+            case 'province':
+              return a.name.localeCompare(b.name);
+            case 'dynasties':
+              return (b.dynasties || 0) - (a.dynasties || 0);
+            case 'dynasties-asc':
+              return (a.dynasties || 0) - (b.dynasties || 0);
+            case 'corruption':
+              return (b.corruption_cases || 0) - (a.corruption_cases || 0);
+            case 'corruption-asc':
+              return (a.corruption_cases || 0) - (b.corruption_cases || 0);
+            case 'total':
+              return ((b.dynasties || 0) + (b.corruption_cases || 0)) - 
+                     ((a.dynasties || 0) + (a.corruption_cases || 0));
+            default:
+              return 0;
+          }
+        });
+
+        return provinces;
+      }
+
+      function updateTable() {
+        const provinces = getFilteredProvinces();
+        const tbody = document.getElementById('tableBody');
+
+        if (provinces.length === 0) {
+          tbody.innerHTML = '<tr><td colspan="5" class="no-data">No provinces match the current filters.</td></tr>';
+          return;
+        }
+
+        tbody.innerHTML = provinces.map(p => {
+          const total = (p.dynasties || 0) + (p.corruption_cases || 0);
+          return `
+            <tr>
+              <td class="province-name">${p.name}</td>
+              <td>${p.region || 'Unknown'}</td>
+              <td class="count dynasties">${p.dynasties || 0}</td>
+              <td class="count corruption">${p.corruption_cases || 0}</td>
+              <td class="count">${total}</td>
+            </tr>
+          `;
+        }).join('');
+      }
+
+      function updateChart() {
+        const provinces = getFilteredProvinces();
+        const ctx = document.getElementById('chartCanvas').getContext('2d');
+
+        if (chart) {
+          chart.destroy();
+        }
+
+        if (provinces.length === 0) {
+          return;
+        }
+
+        // Limit to top 20 for readability
+        const topProvinces = provinces.slice(0, 20);
+
+        chart = new Chart(ctx, {
+          type: 'bar',
+          data: {
+            labels: topProvinces.map(p => p.name),
+            datasets: [
+              {
+                label: 'Dynasties',
+                data: topProvinces.map(p => p.dynasties || 0),
+                backgroundColor: '#2563eb',
+                borderColor: '#1e40af',
+                borderWidth: 1
+              },
+              {
+                label: 'Corruption Cases',
+                data: topProvinces.map(p => p.corruption_cases || 0),
+                backgroundColor: '#dc2626',
+                borderColor: '#b91c1c',
+                borderWidth: 1
+              }
+            ]
+          },
+          options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+              legend: {
+                display: true,
+                position: 'top'
+              },
+              title: {
+                display: true,
+                text: `Top ${topProvinces.length} Provinces by Dynasties and Corruption Cases${currentRegion !== 'all' ? ` (${currentRegion})` : ''}`,
+                font: {
+                  size: 16,
+                  family: "'Spectral', serif"
+                }
+              }
+            },
+            scales: {
+              y: {
+                beginAtZero: true,
+                ticks: {
+                  stepSize: 1
+                }
+              },
+              x: {
+                ticks: {
+                  maxRotation: 45,
+                  minRotation: 45
+                }
+              }
+            }
+          }
+        });
+      }
+
+      function setupEventListeners() {
+        // Region tabs
+        document.querySelectorAll('.region-tab').forEach(tab => {
+          tab.addEventListener('click', () => {
+            document.querySelectorAll('.region-tab').forEach(t => t.classList.remove('active'));
+            tab.classList.add('active');
+            currentRegion = tab.dataset.region;
+            updateTable();
+            updateChart();
+            updateStatsOverview();
+          });
+        });
+
+        // Sort dropdown
+        document.getElementById('sortBy').addEventListener('change', (e) => {
+          currentSort = e.target.value;
+          updateTable();
+          updateChart();
+        });
+
+        // Filter inputs
+        document.getElementById('filterMin').addEventListener('input', (e) => {
+          currentFilter.minDynasties = parseInt(e.target.value) || 0;
+          updateTable();
+          updateChart();
+          updateStatsOverview();
+        });
+
+        document.getElementById('showOnlyWithData').addEventListener('change', (e) => {
+          currentFilter.showOnlyWithData = e.target.checked;
+          updateTable();
+          updateChart();
+          updateStatsOverview();
+        });
+
+        // Table header sorting
+        document.querySelectorAll('th.sortable').forEach(th => {
+          th.addEventListener('click', () => {
+            const sortKey = th.dataset.sort;
+            if (currentSort === sortKey) {
+              currentSort = sortKey + '-asc';
+            } else if (currentSort === sortKey + '-asc') {
+              currentSort = sortKey;
+            } else {
+              currentSort = sortKey;
+            }
+            
+            document.getElementById('sortBy').value = currentSort;
+            updateTable();
+            updateChart();
+            
+            // Update visual indicators
+            document.querySelectorAll('th.sortable').forEach(t => {
+              t.classList.remove('asc', 'desc');
+            });
+            if (currentSort === sortKey) {
+              th.classList.add('desc');
+            } else if (currentSort === sortKey + '-asc') {
+              th.classList.add('asc');
+            }
+          });
+        });
+      }
+
+      // Initialize on load
+      loadData();
+    </script>
+  </body>
+</html>
+

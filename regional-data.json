@@ -1,0 +1,417 @@
+{
+  "regions": {
+    "Luzon": {
+      "Ilocos Norte": {
+        "dynasties": 2,
+        "corruption_cases": 0
+      },
+      "Tarlac": {
+        "dynasties": 3,
+        "corruption_cases": 1
+      },
+      "Cavite": {
+        "dynasties": 4,
+        "corruption_cases": 0
+      },
+      "Ilocos Sur": {
+        "dynasties": 1,
+        "corruption_cases": 0
+      },
+      "La Union": {
+        "dynasties": 1,
+        "corruption_cases": 0
+      },
+      "Batangas": {
+        "dynasties": 1,
+        "corruption_cases": 0
+      },
+      "Masbate": {
+        "dynasties": 1,
+        "corruption_cases": 0
+      },
+      "Isabela": {
+        "dynasties": 1,
+        "corruption_cases": 0
+      },
+      "Quezon": {
+        "dynasties": 1,
+        "corruption_cases": 0
+      },
+      "Rizal": {
+        "dynasties": 1,
+        "corruption_cases": 0
+      },
+      "Sorsogon": {
+        "dynasties": 2,
+        "corruption_cases": 0
+      },
+      "Palawan": {
+        "dynasties": 1,
+        "corruption_cases": 0
+      },
+      "Pangasinan": {
+        "dynasties": 1,
+        "corruption_cases": 0
+      },
+      "Camarines Sur": {
+        "dynasties": 1,
+        "corruption_cases": 0
+      },
+      "Albay": {
+        "dynasties": 2,
+        "corruption_cases": 0
+      },
+      "Metro Manila": {
+        "dynasties": 8,
+        "corruption_cases": 0
+      },
+      "Camarines Norte": {
+        "dynasties": 1,
+        "corruption_cases": 0
+      },
+      "Bulacan": {
+        "dynasties": 1,
+        "corruption_cases": 0
+      },
+      "Pampanga": {
+        "dynasties": 1,
+        "corruption_cases": 0
+      },
+      "Zambales": {
+        "dynasties": 1,
+        "corruption_cases": 0
+      },
+      "Aurora": {
+        "dynasties": 1,
+        "corruption_cases": 0
+      },
+      "Cagayan": {
+        "dynasties": 1,
+        "corruption_cases": 0
+      }
+    },
+    "Visayas": {
+      "Leyte": {
+        "dynasties": 2,
+        "corruption_cases": 0
+      },
+      "Cebu": {
+        "dynasties": 2,
+        "corruption_cases": 0
+      },
+      "Aklan": {
+        "dynasties": 1,
+        "corruption_cases": 0
+      },
+      "Negros Occidental": {
+        "dynasties": 7,
+        "corruption_cases": 0
+      },
+      "Iloilo": {
+        "dynasties": 2,
+        "corruption_cases": 0
+      },
+      "Bohol": {
+        "dynasties": 2,
+        "corruption_cases": 0
+      },
+      "Capiz": {
+        "dynasties": 1,
+        "corruption_cases": 0
+      }
+    },
+    "Mindanao": {
+      "Davao del Sur": {
+        "dynasties": 1,
+        "corruption_cases": 0
+      },
+      "Sarangani": {
+        "dynasties": 1,
+        "corruption_cases": 0
+      },
+      "South Cotabato": {
+        "dynasties": 1,
+        "corruption_cases": 0
+      },
+      "Maguindanao": {
+        "dynasties": 2,
+        "corruption_cases": 0
+      },
+      "Sulu": {
+        "dynasties": 1,
+        "corruption_cases": 0
+      },
+      "Sultan Kudarat": {
+        "dynasties": 1,
+        "corruption_cases": 0
+      },
+      "Basilan": {
+        "dynasties": 1,
+        "corruption_cases": 0
+      },
+      "Lanao del Norte": {
+        "dynasties": 1,
+        "corruption_cases": 0
+      },
+      "Lanao del Sur": {
+        "dynasties": 1,
+        "corruption_cases": 0
+      },
+      "Tawi-Tawi": {
+        "dynasties": 1,
+        "corruption_cases": 0
+      },
+      "Zamboanga del Norte": {
+        "dynasties": 1,
+        "corruption_cases": 0
+      },
+      "Zamboanga del Sur": {
+        "dynasties": 1,
+        "corruption_cases": 0
+      },
+      "Surigao del Norte": {
+        "dynasties": 1,
+        "corruption_cases": 0
+      },
+      "Cotabato": {
+        "dynasties": 1,
+        "corruption_cases": 0
+      },
+      "North Cotabato": {
+        "dynasties": 1,
+        "corruption_cases": 0
+      },
+      "Davao del Norte": {
+        "dynasties": 2,
+        "corruption_cases": 0
+      }
+    }
+  },
+  "provinces": {
+    "Ilocos Norte": {
+      "region": "Luzon",
+      "dynasties": 2,
+      "corruption_cases": 0
+    },
+    "Tarlac": {
+      "region": "Luzon",
+      "dynasties": 3,
+      "corruption_cases": 1
+    },
+    "Cavite": {
+      "region": "Luzon",
+      "dynasties": 4,
+      "corruption_cases": 0
+    },
+    "Ilocos Sur": {
+      "region": "Luzon",
+      "dynasties": 1,
+      "corruption_cases": 0
+    },
+    "La Union": {
+      "region": "Luzon",
+      "dynasties": 1,
+      "corruption_cases": 0
+    },
+    "Batangas": {
+      "region": "Luzon",
+      "dynasties": 1,
+      "corruption_cases": 0
+    },
+    "Masbate": {
+      "region": "Luzon",
+      "dynasties": 1,
+      "corruption_cases": 0
+    },
+    "Isabela": {
+      "region": "Luzon",
+      "dynasties": 1,
+      "corruption_cases": 0
+    },
+    "Quezon": {
+      "region": "Luzon",
+      "dynasties": 1,
+      "corruption_cases": 0
+    },
+    "Rizal": {
+      "region": "Luzon",
+      "dynasties": 1,
+      "corruption_cases": 0
+    },
+    "Sorsogon": {
+      "region": "Luzon",
+      "dynasties": 2,
+      "corruption_cases": 0
+    },
+    "Palawan": {
+      "region": "Luzon",
+      "dynasties": 1,
+      "corruption_cases": 0
+    },
+    "Pangasinan": {
+      "region": "Luzon",
+      "dynasties": 1,
+      "corruption_cases": 0
+    },
+    "Camarines Sur": {
+      "region": "Luzon",
+      "dynasties": 1,
+      "corruption_cases": 0
+    },
+    "Albay": {
+      "region": "Luzon",
+      "dynasties": 2,
+      "corruption_cases": 0
+    },
+    "Metro Manila": {
+      "region": "Luzon",
+      "dynasties": 8,
+      "corruption_cases": 0
+    },
+    "Camarines Norte": {
+      "region": "Luzon",
+      "dynasties": 1,
+      "corruption_cases": 0
+    },
+    "Bulacan": {
+      "region": "Luzon",
+      "dynasties": 1,
+      "corruption_cases": 0
+    },
+    "Pampanga": {
+      "region": "Luzon",
+      "dynasties": 1,
+      "corruption_cases": 0
+    },
+    "Zambales": {
+      "region": "Luzon",
+      "dynasties": 1,
+      "corruption_cases": 0
+    },
+    "Aurora": {
+      "region": "Luzon",
+      "dynasties": 1,
+      "corruption_cases": 0
+    },
+    "Cagayan": {
+      "region": "Luzon",
+      "dynasties": 1,
+      "corruption_cases": 0
+    },
+    "Leyte": {
+      "region": "Visayas",
+      "dynasties": 2,
+      "corruption_cases": 0
+    },
+    "Cebu": {
+      "region": "Visayas",
+      "dynasties": 2,
+      "corruption_cases": 0
+    },
+    "Aklan": {
+      "region": "Visayas",
+      "dynasties": 1,
+      "corruption_cases": 0
+    },
+    "Negros Occidental": {
+      "region": "Visayas",
+      "dynasties": 7,
+      "corruption_cases": 0
+    },
+    "Iloilo": {
+      "region": "Visayas",
+      "dynasties": 2,
+      "corruption_cases": 0
+    },
+    "Bohol": {
+      "region": "Visayas",
+      "dynasties": 2,
+      "corruption_cases": 0
+    },
+    "Capiz": {
+      "region": "Visayas",
+      "dynasties": 1,
+      "corruption_cases": 0
+    },
+    "Davao del Sur": {
+      "region": "Mindanao",
+      "dynasties": 1,
+      "corruption_cases": 0
+    },
+    "Sarangani": {
+      "region": "Mindanao",
+      "dynasties": 1,
+      "corruption_cases": 0
+    },
+    "South Cotabato": {
+      "region": "Mindanao",
+      "dynasties": 1,
+      "corruption_cases": 0
+    },
+    "Maguindanao": {
+      "region": "Mindanao",
+      "dynasties": 2,
+      "corruption_cases": 0
+    },
+    "Sulu": {
+      "region": "Mindanao",
+      "dynasties": 1,
+      "corruption_cases": 0
+    },
+    "Sultan Kudarat": {
+      "region": "Mindanao",
+      "dynasties": 1,
+      "corruption_cases": 0
+    },
+    "Basilan": {
+      "region": "Mindanao",
+      "dynasties": 1,
+      "corruption_cases": 0
+    },
+    "Lanao del Norte": {
+      "region": "Mindanao",
+      "dynasties": 1,
+      "corruption_cases": 0
+    },
+    "Lanao del Sur": {
+      "region": "Mindanao",
+      "dynasties": 1,
+      "corruption_cases": 0
+    },
+    "Tawi-Tawi": {
+      "region": "Mindanao",
+      "dynasties": 1,
+      "corruption_cases": 0
+    },
+    "Zamboanga del Norte": {
+      "region": "Mindanao",
+      "dynasties": 1,
+      "corruption_cases": 0
+    },
+    "Zamboanga del Sur": {
+      "region": "Mindanao",
+      "dynasties": 1,
+      "corruption_cases": 0
+    },
+    "Surigao del Norte": {
+      "region": "Mindanao",
+      "dynasties": 1,
+      "corruption_cases": 0
+    },
+    "Cotabato": {
+      "region": "Mindanao",
+      "dynasties": 1,
+      "corruption_cases": 0
+    },
+    "North Cotabato": {
+      "region": "Mindanao",
+      "dynasties": 1,
+      "corruption_cases": 0
+    },
+    "Davao del Norte": {
+      "region": "Mindanao",
+      "dynasties": 2,
+      "corruption_cases": 0
+    }
+  }
+}
