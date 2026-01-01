@@ -1,0 +1,77 @@
+{
+  "case_id": "CASE_ID_HERE",
+  "title": "Case Title Here",
+  "category": "POGO-related",
+  "subcategories": ["human_trafficking"],
+  "filing_date": "2024-01-01",
+  "status": "ongoing_investigation",
+  "priority": "high",
+  "court_agency": "Agency Name",
+  "location": {
+    "municipality": "City",
+    "province": "Province",
+    "region": "Region"
+  },
+  "accused": [
+    {
+      "name": "Name",
+      "aliases": [],
+      "position": "Position",
+      "position_dates": "2022-2024",
+      "nationality_claimed": "Filipino",
+      "nationality_alleged": null,
+      "status": "under_investigation",
+      "current_status": null,
+      "dynasty_connection": null,
+      "political_party": null
+    }
+  ],
+  "pogo_connections": [
+    {
+      "company": "Company Name",
+      "location": "City, Province",
+      "connection_type": "suspected_connection",
+      "description": "Description",
+      "status": "under_investigation",
+      "date_raided": null,
+      "victims_rescued": 0,
+      "permit_issued_by": null,
+      "license_status": null
+    }
+  ],
+  "charges": [
+    "Charge 1",
+    "Charge 2"
+  ],
+  "amount_involved_php": null,
+  "human_trafficking_victims": 0,
+  "timeline": [
+    {
+      "date": "2024-01-01",
+      "event": "Event Title",
+      "description": "What happened",
+      "sources": ["https://news-url.com"]
+    }
+  ],
+  "political_connections": [
+    {
+      "connection_type": "local_government",
+      "description": "How politics is involved",
+      "dynasty": null,
+      "details": null
+    }
+  ],
+  "dynasty_connections": [],
+  "related_cases": [],
+  "significance": "Why this case matters.",
+  "diaspora_impact": "How this affects diaspora communities.",
+  "sources": {
+    "senate": [],
+    "nbi": [],
+    "news": [
+      "https://www.rappler.com/..."
+    ]
+  },
+  "last_updated": "2024-01-01"
+}
+

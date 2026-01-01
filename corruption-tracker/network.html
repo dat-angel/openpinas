@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Corruption Cases Network - Case Tracker</title>
+    <script src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Spectral:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <style>
+      #network-container {
+        width: 100%;
+        height: calc(100vh - 200px);
+        background: white;
+        border: 1px solid #eadfce;
+        border-radius: 12px;
+        box-shadow: var(--shadow);
+      }
+
+      .network-controls {
+        margin: 20px 0;
+        padding: 16px;
+        background: rgba(255, 255, 255, 0.75);
+        border: 1px solid #eadfce;
+        border-radius: 14px;
+        display: flex;
+        gap: 12px;
+        flex-wrap: wrap;
+        align-items: center;
+        box-shadow: var(--shadow);
+      }
+
+      .network-controls label {
+        display: flex;
+        gap: 8px;
+        align-items: center;
+        font-size: 14px;
+        color: var(--ink);
+      }
+
+      .network-controls button {
+        padding: 10px 16px;
+        background: var(--accent);
+        color: white;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        font-family: "IBM Plex Sans", "Source Sans 3", Arial, sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+      }
+
+      .network-controls button:hover {
+        background: #0d3547;
+      }
+
+      .info-panel {
+        position: fixed;
+        top: 200px;
+        right: 24px;
+        width: 320px;
+        max-height: calc(100vh - 220px);
+        background: white;
+        border-radius: 12px;
+        box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+        padding: 20px;
+        overflow-y: auto;
+        z-index: 1000;
+        display: none;
+      }
+
+      .info-panel.visible {
+        display: block;
+      }
+
+      .info-panel h3 {
+        margin: 0 0 12px;
+        color: var(--accent);
+        font-size: 18px;
+      }
+
+      .info-panel .close {
+        float: right;
+        background: none;
+        border: none;
+        font-size: 20px;
+        cursor: pointer;
+        color: var(--muted);
+      }
+
+      .info-panel .close:hover {
+        color: var(--ink);
+      }
+
+      .legend {
+        position: fixed;
+        bottom: 24px;
+        left: 24px;
+        background: white;
+        padding: 16px;
+        border-radius: 12px;
+        box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+        font-size: 12px;
+        z-index: 1000;
+        max-width: 250px;
+      }
+
+      .legend h4 {
+        margin: 0 0 12px;
+        font-size: 14px;
+        color: var(--accent);
+      }
+
+      .legend-item {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        margin: 8px 0;
+      }
+
+      .legend-color {
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        border: 2px solid #000;
+      }
+
+      .legend-line {
+        width: 24px;
+        height: 3px;
+      }
+
+      @media (max-width: 1024px) {
+        .info-panel, .legend {
+          position: relative;
+          width: 100%;
+          margin: 16px 0;
+        }
+
+        #network-container {
+          height: 600px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Cases Network</h1>
+      <p class="subtitle">
+        See how cases, accused parties, and dynasties connect
+      </p>
+    </header>
+
+    <main>
+      <div class="network-controls">
+        <label>
+          <input type="checkbox" id="showCases" checked> Cases
+        </label>
+        <label>
+          <input type="checkbox" id="showAccused" checked> Accused
+        </label>
+        <label>
+          <input type="checkbox" id="showDynasties" checked> Dynasties
+        </label>
+        <label>
+          <input type="checkbox" id="showPOGO" checked> POGO Operations
+        </label>
+        <button id="resetView">Reset View</button>
+        <button id="fitNetwork">Fit to Screen</button>
+      </div>
+
+      <div id="network-container"></div>
+
+      <div class="info-panel" id="infoPanel">
+        <button class="close" onclick="closeInfoPanel()">×</button>
+        <div id="infoContent"></div>
+      </div>
+
+      <div class="legend">
+        <h4>Legend</h4>
+        <div class="legend-item">
+          <div class="legend-color" style="background: #124559;"></div>
+          <span>Case</span>
+        </div>
+        <div class="legend-item">
+          <div class="legend-color" style="background: #c44900;"></div>
+          <span>Accused</span>
+        </div>
+        <div class="legend-item">
+          <div class="legend-color" style="background: #0b6e4f;"></div>
+          <span>Dynasty</span>
+        </div>
+        <div class="legend-item">
+          <div class="legend-color" style="background: #f77f00;"></div>
+          <span>POGO Operation</span>
+        </div>
+        <div class="legend-item">
+          <div class="legend-line" style="background: #124559;"></div>
+          <span>Accused in Case</span>
+        </div>
+        <div class="legend-item">
+          <div class="legend-line" style="background: #0b6e4f; border-top: 2px dashed #0b6e4f;"></div>
+          <span>Dynasty Connection</span>
+        </div>
+        <div class="legend-item">
+          <div class="legend-line" style="background: #f77f00;"></div>
+          <span>POGO Connection</span>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>
+        <a href="index.html">← Back to Home</a> |
+        <a href="cases/">All Cases</a>
+      </p>
+    </footer>
+
+    <script src="js/network.js"></script>
+  </body>
+</html>
+

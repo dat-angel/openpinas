@@ -49,6 +49,19 @@ corruption-tracker/
 └── README.md
 ```
 
+## Adding New Cases
+
+See **[ADDING_CASES.md](ADDING_CASES.md)** for a complete guide on:
+- How to research and add new cases
+- Case template and field guidelines
+- JSON validation
+- Testing procedures
+
+Quick validation:
+```bash
+./validate-json.sh
+```
+
 ## Getting Started
 
 ### Local Development
@@ -96,13 +109,13 @@ See `data/pogo-corruption-cases-2025.json` for the complete schema.
 
 ## Next Steps
 
-### Phase 2 Enhancements (Planned)
-- [ ] Add 10-20 more POGO cases
+### Phase 2 Enhancements
+- [x] Network visualization (cases, accused, dynasties) ✅
+- [x] Map visualization (case locations) ✅
+- [x] Dynasty connections (link to OpenPinas) ✅
+- [ ] Add 10-20 more POGO cases (see ADDING_CASES.md guide)
 - [ ] Add general corruption cases (PDAF scam, etc.)
-- [ ] Network visualization (cases, accused, dynasties)
-- [ ] Map visualization (case locations)
-- [ ] Dynasty connections (link to OpenPinas)
-- [ ] Related cases linking
+- [ ] Related cases linking (partially implemented)
 
 ### Phase 3 Integration
 - [ ] Full integration with OpenPinas

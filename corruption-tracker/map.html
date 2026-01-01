@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Cases Map - Case Tracker</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Spectral:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <style>
+      #map-container {
+        width: 100%;
+        height: calc(100vh - 200px);
+        border-radius: 12px;
+        box-shadow: var(--shadow);
+        border: 1px solid #eadfce;
+      }
+
+      .map-controls {
+        margin: 20px 0;
+        padding: 16px;
+        background: rgba(255, 255, 255, 0.75);
+        border: 1px solid #eadfce;
+        border-radius: 14px;
+        display: flex;
+        gap: 12px;
+        flex-wrap: wrap;
+        align-items: center;
+        box-shadow: var(--shadow);
+      }
+
+      .map-controls label {
+        display: flex;
+        gap: 8px;
+        align-items: center;
+        font-size: 14px;
+        color: var(--ink);
+      }
+
+      .map-legend {
+        position: fixed;
+        bottom: 24px;
+        right: 24px;
+        background: white;
+        padding: 16px;
+        border-radius: 12px;
+        box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+        font-size: 12px;
+        z-index: 1000;
+        max-width: 200px;
+      }
+
+      .map-legend h4 {
+        margin: 0 0 12px;
+        font-size: 14px;
+        color: var(--accent);
+      }
+
+      .map-legend-item {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        margin: 6px 0;
+      }
+
+      .map-legend-marker {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        border: 2px solid white;
+      }
+
+      @media (max-width: 1024px) {
+        .map-legend {
+          position: relative;
+          width: 100%;
+          margin: 16px 0;
+        }
+
+        #map-container {
+          height: 600px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Cases Map</h1>
+      <p class="subtitle">
+        See where corruption cases are happening across the Philippines
+      </p>
+    </header>
+
+    <main>
+      <div class="map-controls">
+        <label>
+          <input type="checkbox" id="showOngoing" checked> Ongoing Cases
+        </label>
+        <label>
+          <input type="checkbox" id="showConvicted" checked> Convicted
+        </label>
+        <label>
+          <input type="checkbox" id="showPOGO" checked> POGO Cases
+        </label>
+        <label>
+          <input type="checkbox" id="showTrafficking" checked> Human Trafficking
+        </label>
+      </div>
+
+      <div id="map-container"></div>
+
+      <div class="map-legend">
+        <h4>Case Status</h4>
+        <div class="map-legend-item">
+          <div class="map-legend-marker" style="background: #f77f00;"></div>
+          <span>Ongoing</span>
+        </div>
+        <div class="map-legend-item">
+          <div class="map-legend-marker" style="background: #0b6e4f;"></div>
+          <span>Convicted</span>
+        </div>
+        <div class="map-legend-item">
+          <div class="map-legend-marker" style="background: #124559;"></div>
+          <span>Filed</span>
+        </div>
+        <div class="map-legend-item">
+          <div class="map-legend-marker" style="background: #b23a48;"></div>
+          <span>Dismissed</span>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>
+        <a href="index.html">← Back to Home</a> |
+        <a href="cases/">All Cases</a>
+      </p>
+    </footer>
+
+    <script src="js/map.js"></script>
+  </body>
+</html>
+
