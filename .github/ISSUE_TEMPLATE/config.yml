@@ -1,0 +1,12 @@
+blank_issues_enabled: true
+contact_links:
+  - name: OpenPinas Documentation
+    url: https://github.com/dat-angel/openpinas#readme
+    about: Check the README for project overview and quick start guide
+  - name: Contributing Guide
+    url: https://github.com/dat-angel/openpinas/blob/main/CONTRIBUTING.md
+    about: Read our contributing guidelines before submitting issues or PRs
+  - name: Live Demo
+    url: https://dat-angel.github.io/openpinas/
+    about: View the live website and visualizations
+

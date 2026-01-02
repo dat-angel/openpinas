@@ -1,0 +1,124 @@
+name: Validate Data
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main, develop ]
+  workflow_dispatch:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.11'
+        
+    - name: Validate JSON files
+      run: |
+        echo "Validating JSON syntax..."
+        
+        # Basic JSON validation
+        python3 -m json.tool philippine-political-dynasties-network-2025.json > /dev/null && echo "✓ Dynasty JSON valid"
+        python3 -m json.tool philippines-2025-timeline.json > /dev/null && echo "✓ Timeline JSON valid"
+        python3 -m json.tool pogo-corruption-cases-2025.json > /dev/null && echo "✓ Corruption cases JSON valid"
+        
+        if [ -f regional-data.json ]; then
+          python3 -m json.tool regional-data.json > /dev/null && echo "✓ Regional data JSON valid"
+        fi
+        
+    - name: Validate data integrity
+      run: |
+        python3 << 'EOF'
+        import json
+        import sys
+        import os
+        
+        errors = []
+        warnings = []
+        
+        # Validate dynasty data
+        try:
+            with open('philippine-political-dynasties-network-2025.json', 'r') as f:
+                dyn_data = json.load(f)
+            network = dyn_data['philippine_political_dynasties_network']
+            dynasties = network['nodes']['dynasties']
+            metadata = network['metadata']
+            edges = network['edges']['relationships']
+            
+            # Check count
+            actual_count = len(dynasties)
+            metadata_count = metadata.get('total_dynasties', 0)
+            if actual_count != metadata_count:
+                errors.append(f"Dynasty count mismatch: {actual_count} vs {metadata_count}")
+            
+            # Check IDs are unique
+            ids = [d['id'] for d in dynasties]
+            if len(ids) != len(set(ids)):
+                errors.append("Duplicate dynasty IDs found")
+            
+            # Check relationships reference valid IDs
+            dynasty_ids = set(ids)
+            for edge in edges:
+                if edge['source'] not in dynasty_ids and edge['source'] not in {'FLOOD_CONTROL_CORRUPTION'}:
+                    warnings.append(f"Relationship source '{edge['source']}' not found in dynasties")
+                if edge['target'] not in dynasty_ids and edge['target'] not in {'FLOOD_CONTROL_CORRUPTION'}:
+                    warnings.append(f"Relationship target '{edge['target']}' not found in dynasties")
+            
+            print(f"✓ Dynasties: {actual_count}")
+            print(f"✓ Relationships: {len(edges)}")
+        except Exception as e:
+            errors.append(f"Dynasty JSON error: {e}")
+        
+        # Validate timeline
+        try:
+            with open('philippines-2025-timeline.json', 'r') as f:
+                timeline_data = json.load(f)
+            events = timeline_data.get('timeline', [])
+            metadata_events = timeline_data.get('metadata', {}).get('total_events', 0)
+            
+            if len(events) != metadata_events:
+                warnings.append(f"Timeline events: {len(events)} actual vs {metadata_events} in metadata")
+            
+            print(f"✓ Timeline events: {len(events)}")
+        except Exception as e:
+            errors.append(f"Timeline JSON error: {e}")
+        
+        # Validate corruption cases
+        try:
+            with open('pogo-corruption-cases-2025.json', 'r') as f:
+                cases_data = json.load(f)
+            cases = cases_data.get('cases', [])
+            print(f"✓ Corruption cases: {len(cases)}")
+        except Exception as e:
+            errors.append(f"Corruption cases JSON error: {e}")
+        
+        if warnings:
+            print("\n⚠️  WARNINGS:")
+            for warning in warnings:
+                print(f"  - {warning}")
+        
+        if errors:
+            print("\n✗ ERRORS FOUND:")
+            for error in errors:
+                print(f"  - {error}")
+            sys.exit(1)
+        else:
+            print("\n✓ All validations passed!")
+            sys.exit(0)
+        EOF
+        
+    - name: Check file structure
+      run: |
+        echo "Checking required files exist..."
+        test -f README.md || (echo "Missing README.md" && exit 1)
+        test -f LICENSE || (echo "Missing LICENSE" && exit 1)
+        test -f LICENSE-DATA || (echo "Missing LICENSE-DATA" && exit 1)
+        test -f index.html || (echo "Missing index.html" && exit 1)
+        echo "✓ Required files present"

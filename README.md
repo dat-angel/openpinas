@@ -2,6 +2,8 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](LICENSE-DATA)
+[![Contributors Welcome](https://img.shields.io/badge/contributors-welcome-brightgreen.svg)](CONTRIBUTING.md)
+[![Code of Conduct](https://img.shields.io/badge/code%20of%20conduct-Contributor%20Covenant-blue.svg)](CODE_OF_CONDUCT.md)
 
 Tracking major political dynasties, their relationships, and major events for the Filipino diaspora. Currently tracking 71 dynasties (national and major regional), with ongoing expansion. Interactive visualizations showing how political families maintain control across 71 provinces.
 
@@ -118,7 +120,13 @@ The timeline and dynasty datasets are **complementary but standalone**:
 
 ## Contributing
 
-Found a new event or dynasty connection? Update the JSON files, validate the syntax, and open a Pull Request.
+We welcome contributions! Whether you're fixing data, adding new information, improving code, or enhancing documentation, your help makes this project better.
+
+**Quick Start:**
+- 🐛 Found a bug? [Report it](https://github.com/dat-angel/openpinas/issues/new?template=bug_report.md)
+- 📊 Have data to add or correct? [Submit an update](https://github.com/dat-angel/openpinas/issues/new?template=data_update.md)
+- 💡 Have a feature idea? [Suggest it](https://github.com/dat-angel/openpinas/issues/new?template=feature_request.md)
+- 📝 Want to contribute code? See [CONTRIBUTING.md](CONTRIBUTING.md)
 
 For major changes, open an issue first so we can discuss the approach.
 
@@ -129,10 +137,31 @@ For major changes, open an issue first so we can discuss the approach.
 
 Use the code however you want. Use the data too, just give attribution. This is for educational and research purposes.
 
+## Project Status & Roadmap
+
+See [ROADMAP.md](ROADMAP.md) for planned features and improvements.
+
+## Contributing
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) for detailed contribution guidelines.
+
+## Code of Conduct
+
+This project follows a [Code of Conduct](CODE_OF_CONDUCT.md). Please read it before participating.
+
+## Support
+
+Like it? Help me buy my next cup of coffee exploring Philippine coffee shops ☕
+
+[![ko-fi](https://img.shields.io/badge/Ko--fi-F16061?style=for-the-badge&logo=ko-fi&logoColor=white)](https://ko-fi.com/beatrizd)
+
+[Support on Ko-fi](https://ko-fi.com/beatrizd) · Every contribution helps keep this project updated and maintained.
+
 ## Contact
 
 - **Website**: [beatriz.page](https://beatriz.page)
 - **GitHub**: [@dat-angel](https://github.com/dat-angel)
+- **Issues**: [GitHub Issues](https://github.com/dat-angel/openpinas/issues)
 
 ---
 
