@@ -27,6 +27,13 @@ GITHUB_PAGES_SETUP.md
 Power-Map-Dynasties.md
 Timeline-2025.md
 
+# Internal development documentation (contains hardcoded paths)
+SKILLS_*.md
+SKILLS_INTEGRATION_GUIDE.md
+SKILLS_UPDATE_COMPLETE.md
+SKILLS_UPDATE_REQUIRED.md
+SKILLS_SCHEDULE_GUIDE.md
+
 # Weekly review internal docs
 # weekly-reviews/README.md  # Now public - helpful documentation for users
 

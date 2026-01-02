@@ -1,17 +1,18 @@
 {
   "metadata": {
     "title": "POGO & Corruption Cases Tracker - Philippines",
-    "description": "Comprehensive tracking of POGO-related cases, corruption cases, and their political connections. Includes high-profile cases like Alice Guo.",
+    "description": "Comprehensive tracking of POGO-related cases, flood control corruption, and other corruption cases with their political connections. Includes high-profile cases like Alice Guo, flood control scandal ($2B lost), and VP Duterte impeachment.",
     "version": "1.0",
     "last_updated": "2026-01-01",
     "prepared_for": "Filipino Diaspora Communities & Transparency Advocates",
-    "total_cases": 0,
+    "total_cases": 7,
     "categories": [
       "POGO-related",
+      "Flood Control Corruption",
+      "Graft",
       "Identity Fraud",
       "Tax Evasion",
       "Human Trafficking",
-      "Graft",
       "Plunder",
       "Bribery",
       "Money Laundering"
@@ -268,6 +269,489 @@
         "news": []
       },
       "last_updated": "2024-01-01"
+    },
+    {
+      "case_id": "FLOOD_CONTROL_SCANDAL_2025",
+      "title": "Flood Control Corruption Scandal - $2 Billion Lost",
+      "category": "Flood Control Corruption",
+      "subcategories": ["graft", "plunder", "bribery", "kickbacks"],
+      "filing_date": "2025-07-28",
+      "status": "ongoing_investigation",
+      "priority": "high",
+      "court_agency": "Independent Commission for Infrastructure (ICI), DPWH, Ombudsman, Senate",
+      "location": {
+        "municipality": "Multiple",
+        "province": "Multiple",
+        "region": "Nationwide"
+      },
+      "accused": [
+        {
+          "name": "Martin Romualdez",
+          "position": "Former House Speaker",
+          "position_dates": "2022-2025",
+          "status": "under_investigation",
+          "current_status": "resigned",
+          "dynasty_connection": "ROMUALDEZ_FAMILY",
+          "political_party": "Lakas-CMD",
+          "allegations": "Alleged recipient of kickbacks from flood control projects; named by contractor witnesses"
+        },
+        {
+          "name": "Chiz Escudero",
+          "position": "Former Senate President",
+          "position_dates": "2024-2025",
+          "status": "under_investigation",
+          "current_status": "ousted",
+          "dynasty_connection": "ESCUDERO_FAMILY",
+          "political_party": "NPC",
+          "allegations": "Alleged recipient of P160 million in kickbacks; admitted receiving P30M campaign donation from flagged contractor"
+        },
+        {
+          "name": "Bong Revilla",
+          "position": "Former Senator",
+          "status": "under_investigation",
+          "dynasty_connection": "REVILLA_TOLENTINO",
+          "political_party": "Lakas-CMD",
+          "allegations": "Named as recipient of kickbacks from flood control projects"
+        },
+        {
+          "name": "Nancy Binay",
+          "position": "Former Senator",
+          "status": "under_investigation",
+          "dynasty_connection": "BINAY_FAMILY",
+          "political_party": "UNA",
+          "allegations": "Named as recipient of kickbacks from flood control projects"
+        },
+        {
+          "name": "Mark Villar",
+          "position": "Former DPWH Secretary",
+          "position_dates": "2016-2021",
+          "status": "under_investigation",
+          "dynasty_connection": "VILLAR_FAMILY",
+          "political_party": "Nacionalista Party",
+          "allegations": "DPWH tenure under investigation for kickback schemes in flood control projects"
+        },
+        {
+          "name": "Jojo Cadiz",
+          "position": "Former Justice Undersecretary",
+          "position_dates": "2022-2025",
+          "status": "under_investigation",
+          "current_status": "resigned",
+          "dynasty_connection": null,
+          "political_party": null,
+          "allegations": "Son's company awarded ₱250 million in flood-control and infrastructure projects in Ilocos Norte"
+        },
+        {
+          "name": "Roberto Bernardo",
+          "position": "Former DPWH Undersecretary",
+          "status": "witness",
+          "allegations": "Testified about delivering kickbacks to politicians"
+        }
+      ],
+      "charges": [
+        "Graft and corruption",
+        "Plunder",
+        "Bribery",
+        "Violation of Anti-Graft and Corrupt Practices Act",
+        "Malversation of public funds"
+      ],
+      "amount_involved_php": 118000000000,
+      "amount_involved_usd": 2000000000,
+      "human_trafficking_victims": null,
+      "timeline": [
+        {
+          "date": "2025-07-28",
+          "event": "President Marcos Addresses Flood Control Corruption",
+          "description": "In SONA, President Marcos vows to expose and prosecute corruption in flood control projects, orders release of comprehensive list of projects",
+          "sources": ["https://en.wikipedia.org/wiki/Flood_control_projects_scandal_in_the_Philippines"]
+        },
+        {
+          "date": "2025-08-11",
+          "event": "Sumbong sa Pangulo Platform Launched",
+          "description": "President Marcos launches website allowing citizens to monitor flood control projects and report anomalies",
+          "sources": ["https://en.wikipedia.org/wiki/Flood_control_projects_scandal_in_the_Philippines"]
+        },
+        {
+          "date": "2025-08-21",
+          "event": "Senator Lacson Exposes Corruption",
+          "description": "Senator Panfilo Lacson exposes widespread corruption, revealing politicians and DPWH officials involved in kickback schemes",
+          "sources": ["https://www.rappler.com/nation/politics/lacson-exposes-flood-control-corruption/"]
+        },
+        {
+          "date": "2025-09-02",
+          "event": "Finance Secretary Reports $2 Billion Lost",
+          "description": "Finance Secretary Ralph Recto reports up to 70% of flood control funds lost to corruption, amounting to $2 billion over two years",
+          "sources": ["https://www.scmp.com/news/asia/southeast-asia/article/3324031/philippines-lost-us2-billion-2-years-flood-corruption-finance-secretary"]
+        },
+        {
+          "date": "2025-09-08",
+          "event": "Contractors Name Romualdez in Kickbacks",
+          "description": "Contractor couple names House Speaker Martin Romualdez as alleged recipient of kickbacks from flood control projects",
+          "sources": ["https://www.rappler.com/nation/politics/"]
+        },
+        {
+          "date": "2025-09-11",
+          "event": "Independent Commission for Infrastructure Established",
+          "description": "President Marcos establishes ICI to investigate irregularities in flood control projects",
+          "sources": ["https://en.wikipedia.org/wiki/Independent_Commission_for_Infrastructure"]
+        },
+        {
+          "date": "2025-09-17",
+          "event": "House Speaker Romualdez Resigns",
+          "description": "Martin Romualdez resigns as House Speaker following corruption allegations",
+          "sources": ["https://newsinfo.inquirer.net/2110811/romualdez-quits-as-speaker-amid-flood-probe-pressure"]
+        },
+        {
+          "date": "2025-09-21",
+          "event": "Trillion Peso March - Mass Protests",
+          "description": "Over 33,000 people participate in anti-corruption rallies in Manila",
+          "sources": ["https://time.com/7319164/philippines-flood-control-projects-corruption/"]
+        },
+        {
+          "date": "2025-09-25",
+          "event": "Former DPWH Official Names Senators",
+          "description": "Roberto Bernardo names Senators Escudero, Revilla, and Binay as recipients of kickbacks",
+          "sources": ["https://www.philstar.com/headlines/2025/09/25/2475343/escudero-binay-dragged-flood-control-fund-controversy"]
+        },
+        {
+          "date": "2025-12-05",
+          "event": "Justice Undersecretary Cadiz Resigns",
+          "description": "Jojo Cadiz resigns amid allegations son's company received ₱250 million in contracts",
+          "sources": []
+        },
+        {
+          "date": "2025-12-18",
+          "event": "DPWH Seeks Charges vs Romualdez and 86 Others",
+          "description": "DPWH recommends criminal charges against Martin Romualdez and 86 others in flood control scandal",
+          "sources": ["https://www.bworldonline.com/the-nation/2025/12/18/719872/dpwh-seeks-charges-vs-romualdez-86-others-in-flood-control-scandal/"]
+        },
+        {
+          "date": "2025-12-25",
+          "event": "Mass Arrests Announced",
+          "description": "President Marcos announces mass arrests of corrupt politicians",
+          "sources": []
+        }
+      ],
+      "political_connections": [
+        {
+          "connection_type": "kickbacks",
+          "description": "Politicians received kickbacks from contractors in exchange for awarding flood control projects",
+          "dynasty": "Multiple",
+          "details": "Up to 70% of project funds lost to corruption through ghost projects and kickbacks"
+        },
+        {
+          "connection_type": "contractor_politician_network",
+          "description": "Deep connections between political dynasties, government officials, and contractors",
+          "dynasty": "Multiple",
+          "details": "Contractors delivered kickbacks directly to politicians and their intermediaries"
+        }
+      ],
+      "dynasty_connections": ["ROMUALDEZ_FAMILY", "ESCUDERO_FAMILY", "REVILLA_TOLENTINO", "BINAY_FAMILY", "VILLAR_FAMILY"],
+      "related_cases": [],
+      "significance": "Largest corruption scandal in recent Philippine history. $2 billion lost over 2 years. Led to resignation of House Speaker, ouster of Senate President, and mass arrests. Exposed deep connections between political dynasties and contractors.",
+      "diaspora_impact": "Massive financial losses affect government capacity to serve families. Corruption undermines development that could benefit remittance recipients. Erosion of trust in government institutions.",
+      "sources": {
+        "senate": [],
+        "dpwh": [],
+        "ici": [],
+        "news": [
+          "https://www.rappler.com/nation/politics/lacson-exposes-flood-control-corruption/",
+          "https://www.scmp.com/news/asia/southeast-asia/article/3324031/philippines-lost-us2-billion-2-years-flood-corruption-finance-secretary",
+          "https://www.philstar.com/headlines/2025/09/25/2475343/escudero-binay-dragged-flood-control-fund-controversy",
+          "https://www.bworldonline.com/the-nation/2025/12/18/719872/dpwh-seeks-charges-vs-romualdez-86-others-in-flood-control-scandal/",
+          "https://time.com/7319164/philippines-flood-control-projects-corruption/"
+        ],
+        "international": [
+          "https://en.wikipedia.org/wiki/Flood_control_projects_scandal_in_the_Philippines"
+        ]
+      },
+      "last_updated": "2025-12-25"
+    },
+    {
+      "case_id": "MARTIN_ROMUALDEZ_FLOOD_CONTROL_2025",
+      "title": "Martin Romualdez Flood Control Kickbacks",
+      "category": "Flood Control Corruption",
+      "subcategories": ["graft", "bribery", "kickbacks"],
+      "filing_date": "2025-09-08",
+      "status": "filed",
+      "priority": "high",
+      "court_agency": "DPWH, Ombudsman",
+      "location": {
+        "municipality": "Multiple",
+        "province": "Multiple",
+        "region": "Nationwide"
+      },
+      "accused": [
+        {
+          "name": "Martin Romualdez",
+          "position": "Former House Speaker",
+          "position_dates": "2022-2025",
+          "status": "under_investigation",
+          "current_status": "resigned",
+          "dynasty_connection": "ROMUALDEZ_FAMILY",
+          "political_party": "Lakas-CMD",
+          "allegations": "Alleged recipient of kickbacks from flood control projects; named by contractor witnesses Pacifico and Cezarah Discaya"
+        }
+      ],
+      "charges": [
+        "Graft and corruption",
+        "Bribery",
+        "Violation of Anti-Graft and Corrupt Practices Act"
+      ],
+      "amount_involved_php": null,
+      "human_trafficking_victims": null,
+      "timeline": [
+        {
+          "date": "2025-09-08",
+          "event": "Named in Senate Hearing",
+          "description": "Contractor couple names House Speaker Martin Romualdez as alleged recipient of kickbacks",
+          "sources": ["https://www.rappler.com/nation/politics/"]
+        },
+        {
+          "date": "2025-09-17",
+          "event": "Resigns as House Speaker",
+          "description": "Resigns to 'stanch the chamber's bleeding credibility' following corruption allegations",
+          "sources": ["https://newsinfo.inquirer.net/2110811/romualdez-quits-as-speaker-amid-flood-probe-pressure"]
+        },
+        {
+          "date": "2025-12-18",
+          "event": "DPWH Recommends Charges",
+          "description": "DPWH recommends criminal charges against Romualdez and 86 others",
+          "sources": ["https://www.bworldonline.com/the-nation/2025/12/18/719872/dpwh-seeks-charges-vs-romualdez-86-others-in-flood-control-scandal/"]
+        }
+      ],
+      "political_connections": [
+        {
+          "connection_type": "kickbacks",
+          "description": "Alleged recipient of kickbacks from flood control project contractors",
+          "dynasty": "ROMUALDEZ_FAMILY",
+          "details": "First sitting House Speaker publicly implicated in corruption scandal"
+        }
+      ],
+      "dynasty_connections": ["ROMUALDEZ_FAMILY"],
+      "related_cases": ["FLOOD_CONTROL_SCANDAL_2025"],
+      "significance": "Historic case - first sitting House Speaker to resign due to corruption allegations. Marked major political upheaval.",
+      "diaspora_impact": "Leadership change signals accountability; political instability in Congress",
+      "sources": {
+        "senate": [],
+        "dpwh": ["https://www.bworldonline.com/the-nation/2025/12/18/719872/dpwh-seeks-charges-vs-romualdez-86-others-in-flood-control-scandal/"],
+        "news": [
+          "https://www.rappler.com/nation/politics/",
+          "https://newsinfo.inquirer.net/2110811/romualdez-quits-as-speaker-amid-flood-probe-pressure",
+          "https://www.philstar.com/headlines/2025/09/17/2473471/romualdez-resigns-house-speaker-amid-alleged-corruption-budget-woes"
+        ]
+      },
+      "last_updated": "2025-12-18"
+    },
+    {
+      "case_id": "CHIZ_ESCUDERO_FLOOD_CONTROL_2025",
+      "title": "Chiz Escudero Flood Control Kickbacks - P160 Million",
+      "category": "Flood Control Corruption",
+      "subcategories": ["graft", "plunder", "bribery", "kickbacks"],
+      "filing_date": "2025-09-25",
+      "status": "under_investigation",
+      "priority": "high",
+      "court_agency": "Ombudsman, Senate",
+      "location": {
+        "municipality": "Multiple",
+        "province": "Multiple",
+        "region": "Nationwide"
+      },
+      "accused": [
+        {
+          "name": "Chiz Escudero",
+          "position": "Former Senate President",
+          "position_dates": "2024-2025",
+          "status": "under_investigation",
+          "current_status": "ousted",
+          "dynasty_connection": "ESCUDERO_FAMILY",
+          "political_party": "NPC",
+          "allegations": "Alleged recipient of P160 million in kickbacks (20% of P800M projects); admitted receiving P30M campaign donation from flagged contractor"
+        }
+      ],
+      "charges": [
+        "Graft and corruption",
+        "Plunder",
+        "Bribery",
+        "Violation of Anti-Graft and Corrupt Practices Act"
+      ],
+      "amount_involved_php": 160000000,
+      "human_trafficking_victims": null,
+      "timeline": [
+        {
+          "date": "2025-09-25",
+          "event": "Named by Former DPWH Official",
+          "description": "Roberto Bernardo alleges he personally delivered P160 million to intermediary on Escudero's behalf",
+          "sources": ["https://www.philstar.com/headlines/2025/09/25/2475343/escudero-binay-dragged-flood-control-fund-controversy"]
+        },
+        {
+          "date": "2025-09-25",
+          "event": "Admits Campaign Donation",
+          "description": "Escudero admits receiving P30 million campaign donation from flagged contractor but denies kickbacks",
+          "sources": ["https://www.rappler.com/philippines/former-dpwh-official-bernardo-names-escudero-binay-revilla-alleged-flood-control-kickbacks/"]
+        },
+        {
+          "date": "2025-10-01",
+          "event": "Ousted as Senate President",
+          "description": "Escudero ousted as Senate President following corruption allegations",
+          "sources": []
+        }
+      ],
+      "political_connections": [
+        {
+          "connection_type": "kickbacks",
+          "description": "Alleged recipient of P160M in kickbacks from flood control projects",
+          "dynasty": "ESCUDERO_FAMILY",
+          "details": "Former DPWH official testified about delivering kickbacks through intermediary"
+        }
+      ],
+      "dynasty_connections": ["ESCUDERO_FAMILY"],
+      "related_cases": ["FLOOD_CONTROL_SCANDAL_2025"],
+      "significance": "Senate President ousted due to corruption scandal. Severely damaged Escudero dynasty reputation.",
+      "diaspora_impact": "Trust in Senate leadership eroded; concerns about systemic corruption",
+      "sources": {
+        "senate": [],
+        "ombudsman": [],
+        "news": [
+          "https://www.philstar.com/headlines/2025/09/25/2475343/escudero-binay-dragged-flood-control-fund-controversy",
+          "https://www.rappler.com/philippines/former-dpwh-official-bernardo-names-escudero-binay-revilla-alleged-flood-control-kickbacks/",
+          "https://gulfnews.com/world/asia/philippines/philippine-senators-in-kickbacks-scandal-escudero-binay-revilla-named-top-auditor-education-official-called-out-in-flood-control-scam-1.500282639"
+        ]
+      },
+      "last_updated": "2025-10-01"
+    },
+    {
+      "case_id": "JOJO_CADIZ_FLOOD_CONTROL_2025",
+      "title": "Jojo Cadiz - Son's Company Awarded ₱250M Contracts",
+      "category": "Flood Control Corruption",
+      "subcategories": ["graft", "conflict_of_interest"],
+      "filing_date": "2025-12-05",
+      "status": "under_investigation",
+      "priority": "high",
+      "court_agency": "DOJ, Ombudsman",
+      "location": {
+        "municipality": "Multiple",
+        "province": "Ilocos Norte",
+        "region": "Ilocos Region"
+      },
+      "accused": [
+        {
+          "name": "Jojo Cadiz",
+          "position": "Former Justice Undersecretary",
+          "position_dates": "2022-2025",
+          "status": "under_investigation",
+          "current_status": "resigned",
+          "dynasty_connection": null,
+          "political_party": null,
+          "allegations": "Son's company awarded ₱250 million in flood-control and infrastructure projects in Ilocos Norte"
+        }
+      ],
+      "charges": [
+        "Graft and corruption",
+        "Conflict of interest",
+        "Violation of Anti-Graft and Corrupt Practices Act"
+      ],
+      "amount_involved_php": 250000000,
+      "human_trafficking_victims": null,
+      "timeline": [
+        {
+          "date": "2025-12-05",
+          "event": "Resigns as Justice Undersecretary",
+          "description": "Resigns amid allegations son's company received ₱250 million in contracts",
+          "sources": []
+        }
+      ],
+      "political_connections": [
+        {
+          "connection_type": "conflict_of_interest",
+          "description": "Son's company received government contracts while father held high position",
+          "dynasty": null,
+          "details": "Highlights nepotism and conflict of interest in government contracting"
+        }
+      ],
+      "dynasty_connections": [],
+      "related_cases": ["FLOOD_CONTROL_SCANDAL_2025"],
+      "significance": "Highlights nepotism and conflict of interest in flood control project awards. Shows how corruption reaches high levels of government.",
+      "diaspora_impact": "Erosion of trust in justice system; concerns about nepotism affecting governance",
+      "sources": {
+        "doj": [],
+        "ombudsman": [],
+        "news": []
+      },
+      "last_updated": "2025-12-05"
+    },
+    {
+      "case_id": "VP_DUTERTE_IMPEACHMENT_2025",
+      "title": "Vice President Sara Duterte Impeachment - Confidential Funds Misuse",
+      "category": "Graft",
+      "subcategories": ["graft", "plunder", "misuse_of_funds"],
+      "filing_date": "2025-02-05",
+      "status": "dismissed",
+      "priority": "high",
+      "court_agency": "House of Representatives, Supreme Court",
+      "location": {
+        "municipality": "Multiple",
+        "province": "Multiple",
+        "region": "Nationwide"
+      },
+      "accused": [
+        {
+          "name": "Sara Duterte",
+          "position": "Vice President of the Philippines",
+          "position_dates": "2022-present",
+          "status": "acquitted",
+          "current_status": "in_office",
+          "dynasty_connection": "DUTERTE_FAMILY",
+          "political_party": "Lakas-CMD",
+          "allegations": "Misuse of PHP 6.125 billion in confidential and intelligence funds during tenure as Education Secretary; threats of violence against President Marcos, First Lady, and House Speaker"
+        }
+      ],
+      "charges": [
+        "Violation of Constitution",
+        "Bribery",
+        "Graft and corruption",
+        "Betrayal of public trust",
+        "High crimes"
+      ],
+      "amount_involved_php": 6125000000,
+      "human_trafficking_victims": null,
+      "timeline": [
+        {
+          "date": "2025-02-05",
+          "event": "Impeachment Complaint Filed",
+          "description": "More than two-thirds of House of Representatives (215+ members) sign impeachment complaint",
+          "sources": []
+        },
+        {
+          "date": "2025-06-02",
+          "event": "Impeachment Trial Begins",
+          "description": "Impeachment trial of Vice President Sara Duterte begins",
+          "sources": []
+        },
+        {
+          "date": "2025-06-15",
+          "event": "Supreme Court Blocks Impeachment",
+          "description": "Supreme Court issues temporary restraining order blocking impeachment proceedings",
+          "sources": []
+        }
+      ],
+      "political_connections": [
+        {
+          "connection_type": "misuse_of_funds",
+          "description": "Alleged misuse of confidential and intelligence funds as Education Secretary",
+          "dynasty": "DUTERTE_FAMILY",
+          "details": "PHP 6.125 billion in confidential funds questioned"
+        }
+      ],
+      "dynasty_connections": ["DUTERTE_FAMILY"],
+      "related_cases": [],
+      "significance": "First impeachment complaint against a sitting Vice President. Blocked by Supreme Court, raising questions about judicial independence.",
+      "diaspora_impact": "Questions about accountability of highest officials; concerns about judicial independence",
+      "sources": {
+        "house": [],
+        "supreme_court": [],
+        "news": []
+      },
+      "last_updated": "2025-06-15"
     }
   ],
   "pogo_operations": [
@@ -293,20 +777,22 @@
     }
   ],
   "statistics": {
-    "total_cases": 3,
+    "total_cases": 7,
     "by_status": {
-      "ongoing_investigation": 3,
-      "filed": 0,
+      "ongoing_investigation": 5,
+      "filed": 1,
       "under_trial": 0,
-      "dismissed": 0,
+      "dismissed": 1,
       "convicted": 0,
       "acquitted": 0
     },
     "by_category": {
-      "POGO-related": 3
+      "POGO-related": 3,
+      "Flood Control Corruption": 3,
+      "Graft": 1
     },
     "human_trafficking_victims": 2875,
-    "total_amount_php": 50000000000,
+    "total_amount_php": 174375000000,
     "pogo_operations_raided": 1,
     "pogo_operations_active": 0
   }

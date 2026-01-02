@@ -27,6 +27,7 @@ function loadFiltersFromURL() {
   const category = params.get('category');
   const status = params.get('status');
   const year = params.get('year');
+  const dynasty = params.get('dynasty');
   
   if (search) {
     const searchInput = document.getElementById('search');
@@ -44,16 +45,21 @@ function loadFiltersFromURL() {
     const yearFilter = document.getElementById('yearFilter');
     if (yearFilter) yearFilter.value = year;
   }
+  if (dynasty) {
+    const dynastyFilter = document.getElementById('dynastyFilter');
+    if (dynastyFilter) dynastyFilter.value = dynasty;
+  }
 }
 
 function updateURL() {
-  const { searchQuery, categoryFilter, statusFilter, yearFilter } = getFilters();
+  const { searchQuery, categoryFilter, statusFilter, yearFilter, dynastyFilter } = getFilters();
   const params = new URLSearchParams();
   
   if (searchQuery) params.set('search', searchQuery);
   if (categoryFilter !== 'all') params.set('category', categoryFilter);
   if (statusFilter !== 'all') params.set('status', statusFilter);
   if (yearFilter !== 'all') params.set('year', yearFilter);
+  if (dynastyFilter !== 'all') params.set('dynasty', dynastyFilter);
   
   const newURL = params.toString() 
     ? `${window.location.pathname}?${params.toString()}`
@@ -67,12 +73,13 @@ function getFilters() {
   const categoryFilter = document.getElementById('categoryFilter')?.value || 'all';
   const statusFilter = document.getElementById('statusFilter')?.value || 'all';
   const yearFilter = document.getElementById('yearFilter')?.value || 'all';
+  const dynastyFilter = document.getElementById('dynastyFilter')?.value || 'all';
   
-  return { searchQuery, categoryFilter, statusFilter, yearFilter };
+  return { searchQuery, categoryFilter, statusFilter, yearFilter, dynastyFilter };
 }
 
 function applyFilters() {
-  const { searchQuery, categoryFilter, statusFilter, yearFilter } = getFilters();
+  const { searchQuery, categoryFilter, statusFilter, yearFilter, dynastyFilter } = getFilters();
   
   filteredCases = allCases.filter(caseItem => {
     // Search filter
@@ -109,6 +116,17 @@ function applyFilters() {
     if (yearFilter !== 'all') {
       const caseYear = new Date(caseItem.filing_date).getFullYear().toString();
       if (caseYear !== yearFilter) {
+        return false;
+      }
+    }
+    
+    // Dynasty filter
+    if (dynastyFilter !== 'all') {
+      const caseDynasties = [
+        ...(caseItem.dynasty_connections || []),
+        ...(caseItem.accused?.map(a => a.dynasty_connection).filter(Boolean) || [])
+      ];
+      if (!caseDynasties.includes(dynastyFilter)) {
         return false;
       }
     }
@@ -364,6 +382,11 @@ function initializeFilters() {
     yearFilter.addEventListener('change', applyFilters);
   }
   
+  const dynastyFilter = document.getElementById('dynastyFilter');
+  if (dynastyFilter) {
+    dynastyFilter.addEventListener('change', applyFilters);
+  }
+  
   // Populate year filter
   if (yearFilter && allCases.length > 0) {
     const years = [...new Set(allCases.map(c => new Date(c.filing_date).getFullYear()))].sort((a, b) => b - a);
@@ -371,6 +394,37 @@ function initializeFilters() {
       years.map(year => {
         const count = allCases.filter(c => new Date(c.filing_date).getFullYear() === year).length;
         return `<option value="${year}">${year} (${count})</option>`;
+      }).join('');
+  }
+  
+  // Populate dynasty filter
+  const dynastyFilter = document.getElementById('dynastyFilter');
+  if (dynastyFilter && allCases.length > 0) {
+    const dynasties = new Set();
+    allCases.forEach(c => {
+      if (c.dynasty_connections) {
+        c.dynasty_connections.forEach(d => dynasties.add(d));
+      }
+      if (c.accused) {
+        c.accused.forEach(a => {
+          if (a.dynasty_connection) {
+            dynasties.add(a.dynasty_connection);
+          }
+        });
+      }
+    });
+    const sortedDynasties = Array.from(dynasties).sort();
+    dynastyFilter.innerHTML = '<option value="all">All Dynasties</option>' +
+      sortedDynasties.map(dynasty => {
+        const displayName = dynasty.replace(/_FAMILY|_/g, ' ').trim();
+        const count = allCases.filter(c => {
+          const caseDynasties = [
+            ...(c.dynasty_connections || []),
+            ...(c.accused?.map(a => a.dynasty_connection).filter(Boolean) || [])
+          ];
+          return caseDynasties.includes(dynasty);
+        }).length;
+        return `<option value="${dynasty}">${displayName} (${count})</option>`;
       }).join('');
   }
   

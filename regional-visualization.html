@@ -261,10 +261,48 @@
 
       .count.dynasties {
         color: #2563eb;
+        cursor: help;
+        position: relative;
       }
 
       .count.corruption {
         color: #dc2626;
+      }
+
+      .tooltip {
+        position: absolute;
+        background: #1a1a1a;
+        color: white;
+        padding: 0.75rem 1rem;
+        border-radius: 6px;
+        font-size: 0.85rem;
+        z-index: 1000;
+        pointer-events: none;
+        max-width: 300px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        opacity: 0;
+        transition: opacity 0.2s;
+      }
+
+      .tooltip.visible {
+        opacity: 1;
+      }
+
+      .tooltip-title {
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        padding-bottom: 0.5rem;
+      }
+
+      .tooltip-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      .tooltip-list li {
+        padding: 0.25rem 0;
       }
 
       .bar-chart {
@@ -449,21 +487,123 @@
 
     <script>
       let regionalData = {};
+      let dynastyData = {};
+      let provinceToDynasties = {}; // Maps province name to array of dynasty names
       let currentRegion = 'all';
       let currentSort = 'province';
       let currentFilter = { minDynasties: 0, showOnlyWithData: false };
       let chart = null;
+      let tooltip = null;
 
       // Load data
       async function loadData() {
         try {
-          const response = await fetch('regional-data.json');
-          regionalData = await response.json();
+          const [regionalResponse, dynastyResponse] = await Promise.all([
+            fetch('regional-data.json'),
+            fetch('philippine-political-dynasties-network-2025.json')
+          ]);
+          
+          regionalData = await regionalResponse.json();
+          const dynastyJson = await dynastyResponse.json();
+          dynastyData = dynastyJson.philippine_political_dynasties_network;
+          
+          // Build province to dynasties mapping
+          buildProvinceToDynastiesMap();
+          
+          // Create tooltip element
+          createTooltip();
+          
           initializeVisualization();
         } catch (error) {
           console.error('Error loading data:', error);
           document.getElementById('tableBody').innerHTML = 
-            '<tr><td colspan="5" class="no-data">Error loading data. Please ensure regional-data.json exists.</td></tr>';
+            '<tr><td colspan="5" class="no-data">Error loading data. Please ensure data files exist.</td></tr>';
+        }
+      }
+
+      function buildProvinceToDynastiesMap() {
+        provinceToDynasties = {};
+        
+        if (!dynastyData || !dynastyData.nodes || !dynastyData.nodes.dynasties) {
+          return;
+        }
+
+        dynastyData.nodes.dynasties.forEach(dynasty => {
+          const dynastyName = dynasty.name;
+          
+          // Check primary_regions
+          if (dynasty.primary_regions) {
+            dynasty.primary_regions.forEach(province => {
+              if (!provinceToDynasties[province]) {
+                provinceToDynasties[province] = [];
+              }
+              if (!provinceToDynasties[province].includes(dynastyName)) {
+                provinceToDynasties[province].push(dynastyName);
+              }
+            });
+          }
+          
+          // Check geographic_control if it exists
+          if (dynasty.geographic_control) {
+            dynasty.geographic_control.forEach(control => {
+              const province = control.province;
+              if (province) {
+                if (!provinceToDynasties[province]) {
+                  provinceToDynasties[province] = [];
+                }
+                if (!provinceToDynasties[province].includes(dynastyName)) {
+                  provinceToDynasties[province].push(dynastyName);
+                }
+              }
+            });
+          }
+        });
+      }
+
+      function createTooltip() {
+        tooltip = document.createElement('div');
+        tooltip.className = 'tooltip';
+        document.body.appendChild(tooltip);
+      }
+
+      function showTooltip(event, provinceName) {
+        const dynasties = provinceToDynasties[provinceName] || [];
+        
+        if (dynasties.length === 0) {
+          return; // Don't show tooltip if no dynasties
+        }
+
+        const tooltipContent = `
+          <div class="tooltip-title">Dynasties in ${provinceName}</div>
+          <ul class="tooltip-list">
+            ${dynasties.map(d => `<li>${d}</li>`).join('')}
+          </ul>
+        `;
+        
+        tooltip.innerHTML = tooltipContent;
+        tooltip.classList.add('visible');
+        
+        // Position tooltip near cursor
+        const x = event.clientX + 10;
+        const y = event.clientY + 10;
+        tooltip.style.left = x + 'px';
+        tooltip.style.top = y + 'px';
+        
+        // Adjust if tooltip goes off screen
+        setTimeout(() => {
+          const rect = tooltip.getBoundingClientRect();
+          if (rect.right > window.innerWidth) {
+            tooltip.style.left = (event.clientX - rect.width - 10) + 'px';
+          }
+          if (rect.bottom > window.innerHeight) {
+            tooltip.style.top = (event.clientY - rect.height - 10) + 'px';
+          }
+        }, 0);
+      }
+
+      function hideTooltip() {
+        if (tooltip) {
+          tooltip.classList.remove('visible');
         }
       }
 
@@ -597,16 +737,43 @@
 
         tbody.innerHTML = provinces.map(p => {
           const total = (p.dynasties || 0) + (p.corruption_cases || 0);
+          const hasDynasties = (p.dynasties || 0) > 0;
           return `
             <tr>
               <td class="province-name">${p.name}</td>
               <td>${p.region || 'Unknown'}</td>
-              <td class="count dynasties">${p.dynasties || 0}</td>
+              <td class="count dynasties" ${hasDynasties ? `data-province="${p.name}"` : ''}>${p.dynasties || 0}</td>
               <td class="count corruption">${p.corruption_cases || 0}</td>
               <td class="count">${total}</td>
             </tr>
           `;
         }).join('');
+
+        // Add event listeners for dynasty count hover
+        document.querySelectorAll('.count.dynasties[data-province]').forEach(cell => {
+          const provinceName = cell.getAttribute('data-province');
+          cell.addEventListener('mouseenter', (e) => showTooltip(e, provinceName));
+          cell.addEventListener('mouseleave', hideTooltip);
+          cell.addEventListener('mousemove', (e) => {
+            if (tooltip && tooltip.classList.contains('visible')) {
+              const x = e.clientX + 10;
+              const y = e.clientY + 10;
+              tooltip.style.left = x + 'px';
+              tooltip.style.top = y + 'px';
+              
+              // Adjust if tooltip goes off screen
+              setTimeout(() => {
+                const rect = tooltip.getBoundingClientRect();
+                if (rect.right > window.innerWidth) {
+                  tooltip.style.left = (e.clientX - rect.width - 10) + 'px';
+                }
+                if (rect.bottom > window.innerHeight) {
+                  tooltip.style.top = (e.clientY - rect.height - 10) + 'px';
+                }
+              }, 0);
+            }
+          });
+        });
       }
 
       function updateChart() {
