@@ -202,7 +202,6 @@
             <span><i style="background:#124559"></i>PHP:USD weekly range (2025)</span>
             <span><i style="background:#c44900"></i>CEB passengers (2025 YTD)</span>
             <span><i style="background:#7f8c8d"></i>DVO passengers (2024, seasonality only)</span>
-            <span><i style="background:#e0e0e0"></i>MNL data not public</span>
           </div>
         </div>
 
@@ -213,6 +212,18 @@
             feels it too. This is seasonality, not a Manila headcount.
           </p>
           <div class="chip-list" id="peakMonths"></div>
+
+          <h2 style="margin-top: 18px;">Cebu cargo peaks (signal)</h2>
+          <p>
+            Cargo tonnage is another congestion signal. Higher cargo months often mean fuller schedules.
+          </p>
+          <div class="chip-list" id="cargoMonths"></div>
+
+          <h2 style="margin-top: 18px;">Cebu aircraft movements (signal)</h2>
+          <p>
+            Aircraft movements show runway activity. Use this to sanity‑check peak months.
+          </p>
+          <div class="chip-list" id="movementMonths"></div>
 
           <h2 style="margin-top: 18px;">Price windows (USD advantage)</h2>
           <p>
@@ -231,8 +242,8 @@
         <h3>Methodology Notes</h3>
         <p>
           FX data is BSP daily reference rates aggregated to weekly highs and lows for 2025. Passenger
-          data uses MCIAA 2025 YTD passenger charts for CEB and CAAP 2024 Airpasscar totals for DVO.
-          NAIA/MNL monthly series are not publicly available.
+          data uses MCIAA 2025 YTD passenger, cargo, and aircraft movement charts for CEB and CAAP
+          2024 Airpasscar totals for DVO. NAIA/MNL monthly series are not publicly available.
         </p>
         <ul>
           <li><a href="https://www.bsp.gov.ph/statistics/external/pesodollar.xlsx" target="_blank" rel="noopener">BSP Peso-Dollar Reference Rate (daily)</a></li>
@@ -248,6 +259,8 @@
 
       const svg = document.getElementById("chart");
       const peakMonthsEl = document.getElementById("peakMonths");
+      const cargoMonthsEl = document.getElementById("cargoMonths");
+      const movementMonthsEl = document.getElementById("movementMonths");
       const priceWindowsEl = document.getElementById("priceWindows");
 
       const width = 1000;
@@ -272,6 +285,16 @@
           ...d,
           date: parseDate(d.month + "-15"),
           label: d.month
+        }));
+
+        const cebCargo = (pax.ceb_cargo_kg || []).map((d) => ({
+          ...d,
+          date: parseDate(d.month + "-15")
+        }));
+
+        const cebMovements = (pax.ceb_aircraft_movements || []).map((d) => ({
+          ...d,
+          date: parseDate(d.month + "-15")
         }));
 
         const dvo = pax.dvo_2024.map((d) => ({
@@ -321,6 +344,34 @@
           chip.className = "chip";
           chip.textContent = label;
           peakMonthsEl.appendChild(chip);
+        });
+
+        const topCargo = [...cebCargo]
+          .sort((a, b) => b.cargo_kg - a.cargo_kg)
+          .slice(0, 3);
+
+        cargoMonthsEl.innerHTML = "";
+        topCargo.forEach((item) => {
+          const date = parseDate(item.month + "-01");
+          const label = `${formatMonth(date)} ${date.getFullYear()} — ${item.cargo_kg.toLocaleString()} kg (CEB)`;
+          const chip = document.createElement("span");
+          chip.className = "chip";
+          chip.textContent = label;
+          cargoMonthsEl.appendChild(chip);
+        });
+
+        const topMovements = [...cebMovements]
+          .sort((a, b) => b.movements - a.movements)
+          .slice(0, 3);
+
+        movementMonthsEl.innerHTML = "";
+        topMovements.forEach((item) => {
+          const date = parseDate(item.month + "-01");
+          const label = `${formatMonth(date)} ${date.getFullYear()} — ${item.movements.toLocaleString()} movements (CEB)`;
+          const chip = document.createElement("span");
+          chip.className = "chip";
+          chip.textContent = label;
+          movementMonthsEl.appendChild(chip);
         });
 
         const topWeeks = [...weeks]

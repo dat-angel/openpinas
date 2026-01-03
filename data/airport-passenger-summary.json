@@ -1,6 +1,8 @@
 {
   "notes": {
     "ceb": "MCIAA passenger tables (2025 YTD through Oct 2025), domestic + international totals from published charts.",
+    "ceb_cargo_kg": "MCIAA cargo totals (2025 YTD through Oct 2025), domestic + international totals from published charts.",
+    "ceb_aircraft_movements": "MCIAA aircraft movement totals (2025 YTD through Oct 2025), domestic + international totals from published charts.",
     "dvo": "CAAP Airpasscar Annual 2024 (domestic). No 2025 monthly series published.",
     "mnl": "No public monthly passenger series found for NAIA/MIAA."
   },
@@ -44,6 +46,90 @@
     {
       "month": "2025-10",
       "passengers": 831559
+    }
+  ],
+  "ceb_cargo_kg": [
+    {
+      "month": "2025-01",
+      "cargo_kg": 5415236
+    },
+    {
+      "month": "2025-02",
+      "cargo_kg": 5663990
+    },
+    {
+      "month": "2025-03",
+      "cargo_kg": 6729218
+    },
+    {
+      "month": "2025-04",
+      "cargo_kg": 5845139
+    },
+    {
+      "month": "2025-05",
+      "cargo_kg": 6147785
+    },
+    {
+      "month": "2025-06",
+      "cargo_kg": 6582273
+    },
+    {
+      "month": "2025-07",
+      "cargo_kg": 6571504
+    },
+    {
+      "month": "2025-08",
+      "cargo_kg": 6538537
+    },
+    {
+      "month": "2025-09",
+      "cargo_kg": 6325593
+    },
+    {
+      "month": "2025-10",
+      "cargo_kg": 6882398
+    }
+  ],
+  "ceb_aircraft_movements": [
+    {
+      "month": "2025-01",
+      "movements": 9556
+    },
+    {
+      "month": "2025-02",
+      "movements": 7773
+    },
+    {
+      "month": "2025-03",
+      "movements": 8108
+    },
+    {
+      "month": "2025-04",
+      "movements": 8292
+    },
+    {
+      "month": "2025-05",
+      "movements": 8233
+    },
+    {
+      "month": "2025-06",
+      "movements": 7766
+    },
+    {
+      "month": "2025-07",
+      "movements": 7809
+    },
+    {
+      "month": "2025-08",
+      "movements": 7927
+    },
+    {
+      "month": "2025-09",
+      "movements": 6916
+    },
+    {
+      "month": "2025-10",
+      "movements": 7916
     }
   ],
   "dvo_2024": [
