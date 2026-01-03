@@ -1,0 +1,488 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>When to Go to Manila? (2025 FX + Air Traffic)</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Spectral:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --ink: #1a1a1a;
+        --muted: #5e5e5e;
+        --paper: #f7f2ea;
+        --accent: #124559;
+        --accent-2: #c44900;
+        --accent-3: #2b7a6d;
+        --card: #ffffff;
+        --shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+        --line: #d7c7b4;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: "IBM Plex Sans", "Segoe UI", sans-serif;
+        color: var(--ink);
+        background: radial-gradient(1200px 600px at 10% 0%, #f1e7d7 0%, transparent 55%),
+          radial-gradient(1000px 600px at 90% 10%, #e0efe9 0%, transparent 55%),
+          var(--paper);
+      }
+
+      header {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 40px 24px 20px;
+        text-align: center;
+      }
+
+      h1 {
+        font-family: "Spectral", Georgia, serif;
+        font-size: clamp(30px, 5vw, 44px);
+        margin: 0 0 12px;
+      }
+
+      header p {
+        margin: 0 auto;
+        max-width: 760px;
+        color: var(--muted);
+        font-size: 16px;
+      }
+
+      main {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 0 24px 60px;
+      }
+
+      .grid {
+        display: grid;
+        gap: 20px;
+        grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
+      }
+
+      .card {
+        background: var(--card);
+        border-radius: 16px;
+        padding: 20px;
+        box-shadow: var(--shadow);
+        border: 1px solid rgba(18, 69, 89, 0.1);
+      }
+
+      .chart-wrap {
+        position: relative;
+        height: 420px;
+      }
+
+      svg {
+        width: 100%;
+        height: 100%;
+      }
+
+      .legend {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin-top: 12px;
+        font-size: 12px;
+        color: var(--muted);
+      }
+
+      .legend span {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+      }
+
+      .legend i {
+        display: inline-block;
+        width: 12px;
+        height: 12px;
+        border-radius: 999px;
+      }
+
+      .summary h2 {
+        margin: 0 0 10px;
+        font-size: 18px;
+        color: var(--accent);
+      }
+
+      .summary p {
+        margin: 0 0 12px;
+        font-size: 14px;
+        color: var(--muted);
+      }
+
+      .chip-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+      }
+
+      .chip {
+        padding: 6px 10px;
+        border-radius: 999px;
+        background: #f1f6f3;
+        border: 1px solid rgba(43, 122, 109, 0.2);
+        font-size: 12px;
+        color: #1f4a3c;
+      }
+
+      .note {
+        font-size: 12px;
+        color: var(--muted);
+      }
+
+      .methodology {
+        margin-top: 24px;
+      }
+
+      .methodology h3 {
+        margin: 0 0 8px;
+        font-size: 14px;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        color: var(--muted);
+      }
+
+      .methodology p,
+      .methodology ul {
+        margin: 8px 0 0;
+        font-size: 13px;
+        color: var(--muted);
+      }
+
+      .methodology ul {
+        padding-left: 18px;
+      }
+
+      .methodology a {
+        color: var(--accent);
+        text-decoration: none;
+      }
+
+      .methodology a:hover {
+        text-decoration: underline;
+      }
+
+      @media (max-width: 960px) {
+        .grid {
+          grid-template-columns: 1fr;
+        }
+
+        .chart-wrap {
+          height: 380px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>When to Go to Manila?</h1>
+      <p>
+        Weekly PHP:USD price ranges for 2025 alongside passenger traffic signals. Use this to spot
+        higher-traffic months and currency windows, with clear labels for data gaps.
+      </p>
+    </header>
+
+    <main>
+      <div class="grid">
+        <div class="card">
+          <div class="chart-wrap">
+            <svg id="chart" viewBox="0 0 1000 420" preserveAspectRatio="none"></svg>
+          </div>
+          <div class="legend">
+            <span><i style="background:#124559"></i>PHP:USD weekly range (2025)</span>
+            <span><i style="background:#c44900"></i>CEB passengers (2025 YTD)</span>
+            <span><i style="background:#7f8c8d"></i>DVO passengers (2024, seasonality only)</span>
+            <span><i style="background:#e0e0e0"></i>MNL data not public</span>
+          </div>
+        </div>
+
+        <div class="card summary">
+          <h2>High travel season (proxy)</h2>
+          <p>
+            Based on Cebu traffic spikes in 2025 YTD. Use this as a seasonal signal, not a Manila
+            headcount.
+          </p>
+          <div class="chip-list" id="peakMonths"></div>
+
+          <h2 style="margin-top: 18px;">Price windows (USD advantage)</h2>
+          <p>
+            Weeks with the strongest USD vs PHP in 2025 (highest weekly highs).
+          </p>
+          <div class="chip-list" id="priceWindows"></div>
+
+          <p class="note" style="margin-top: 16px;">
+            If you spend in PHP, lower PHP:USD values are more favorable.
+          </p>
+        </div>
+      </div>
+
+      <div class="card methodology">
+        <h3>Methodology Notes</h3>
+        <p>
+          FX data is BSP daily reference rates aggregated to weekly highs and lows for 2025. Passenger
+          data uses MCIAA 2025 YTD passenger charts for CEB and CAAP 2024 Airpasscar totals for DVO.
+          NAIA/MNL monthly series are not publicly available.
+        </p>
+        <ul>
+          <li><a href="https://www.bsp.gov.ph/statistics/external/pesodollar.xlsx" target="_blank" rel="noopener">BSP Peso-Dollar Reference Rate (daily)</a></li>
+          <li><a href="https://mciaa.gov.ph/statistics/" target="_blank" rel="noopener">MCIAA Statistics (passenger charts)</a></li>
+          <li><a href="https://caap.gov.ph/wp-content/uploads/2025/01/AirpasscarANNUAL-2024.pdf" target="_blank" rel="noopener">CAAP Airpasscar Annual 2024 (PDF)</a></li>
+        </ul>
+      </div>
+    </main>
+
+    <script>
+      const fxUrl = "data/php-usd-weekly-2025.json";
+      const paxUrl = "data/airport-passenger-summary.json";
+
+      const svg = document.getElementById("chart");
+      const peakMonthsEl = document.getElementById("peakMonths");
+      const priceWindowsEl = document.getElementById("priceWindows");
+
+      const width = 1000;
+      const height = 420;
+      const margin = { top: 24, right: 70, bottom: 48, left: 70 };
+      const plotWidth = width - margin.left - margin.right;
+      const plotHeight = height - margin.top - margin.bottom;
+
+      const parseDate = (str) => new Date(str + "T00:00:00");
+
+      const formatMonth = (date) =>
+        date.toLocaleString("en-US", { month: "short" });
+
+      const draw = (fx, pax) => {
+        const weeks = fx.weeks.map((d) => ({
+          ...d,
+          date: parseDate(d.week_start),
+          mid: (d.low + d.high) / 2
+        }));
+
+        const ceb = pax.ceb.map((d) => ({
+          ...d,
+          date: parseDate(d.month + "-15"),
+          label: d.month
+        }));
+
+        const dvo = pax.dvo_2024.map((d) => ({
+          ...d,
+          date: parseDate("2025-" + d.month.slice(5) + "-15"),
+          label: d.month
+        }));
+
+        const xMin = weeks[0].date;
+        const xMax = weeks[weeks.length - 1].date;
+
+        const fxMin = Math.min(...weeks.map((d) => d.low));
+        const fxMax = Math.max(...weeks.map((d) => d.high));
+
+        const paxMax = Math.max(
+          ...ceb.map((d) => d.passengers),
+          ...dvo.map((d) => d.passengers)
+        );
+
+        const xScale = (date) =>
+          margin.left +
+          ((date - xMin) / (xMax - xMin)) * plotWidth;
+
+        const fxScale = (val) =>
+          margin.top + plotHeight - ((val - fxMin) / (fxMax - fxMin)) * plotHeight;
+
+        const paxScale = (val) =>
+          margin.top + plotHeight - (val / paxMax) * plotHeight;
+
+        const months = [];
+        const cursor = new Date(xMin);
+        cursor.setDate(1);
+        while (cursor <= xMax) {
+          months.push(new Date(cursor));
+          cursor.setMonth(cursor.getMonth() + 1);
+        }
+
+        const topMonths = [...ceb]
+          .sort((a, b) => b.passengers - a.passengers)
+          .slice(0, 3);
+
+        peakMonthsEl.innerHTML = "";
+        topMonths.forEach((item) => {
+          const date = parseDate(item.month + "-01");
+          const label = `${formatMonth(date)} ${date.getFullYear()} (${item.passengers.toLocaleString()})`;
+          const chip = document.createElement("span");
+          chip.className = "chip";
+          chip.textContent = label;
+          peakMonthsEl.appendChild(chip);
+        });
+
+        const topWeeks = [...weeks]
+          .sort((a, b) => b.high - a.high)
+          .slice(0, 6);
+
+        priceWindowsEl.innerHTML = "";
+        topWeeks.forEach((item) => {
+          const label = `${item.week_start} (hi ${item.high.toFixed(3)})`;
+          const chip = document.createElement("span");
+          chip.className = "chip";
+          chip.textContent = label;
+          priceWindowsEl.appendChild(chip);
+        });
+
+        svg.innerHTML = "";
+
+        const create = (tag, attrs) => {
+          const el = document.createElementNS("http://www.w3.org/2000/svg", tag);
+          Object.entries(attrs).forEach(([key, value]) => el.setAttribute(key, value));
+          return el;
+        };
+
+        const areaPath = weeks
+          .map((d, i) => `${i === 0 ? "M" : "L"} ${xScale(d.date)} ${fxScale(d.high)}`)
+          .join(" ")
+          .concat(
+            " ",
+            weeks
+              .slice()
+              .reverse()
+              .map((d) => `L ${xScale(d.date)} ${fxScale(d.low)}`)
+              .join(" "),
+            " Z"
+          );
+
+        svg.appendChild(
+          create("path", {
+            d: areaPath,
+            fill: "rgba(18, 69, 89, 0.18)",
+            stroke: "none"
+          })
+        );
+
+        const midPath = weeks
+          .map((d, i) => `${i === 0 ? "M" : "L"} ${xScale(d.date)} ${fxScale(d.mid)}`)
+          .join(" ");
+
+        svg.appendChild(
+          create("path", {
+            d: midPath,
+            fill: "none",
+            stroke: "#124559",
+            "stroke-width": 2
+          })
+        );
+
+        const cebPath = ceb
+          .map((d, i) => `${i === 0 ? "M" : "L"} ${xScale(d.date)} ${paxScale(d.passengers)}`)
+          .join(" ");
+
+        svg.appendChild(
+          create("path", {
+            d: cebPath,
+            fill: "none",
+            stroke: "#c44900",
+            "stroke-width": 2
+          })
+        );
+
+        ceb.forEach((d) => {
+          svg.appendChild(
+            create("circle", {
+              cx: xScale(d.date),
+              cy: paxScale(d.passengers),
+              r: 3,
+              fill: "#c44900"
+            })
+          );
+        });
+
+        const dvoPath = dvo
+          .map((d, i) => `${i === 0 ? "M" : "L"} ${xScale(d.date)} ${paxScale(d.passengers)}`)
+          .join(" ");
+
+        svg.appendChild(
+          create("path", {
+            d: dvoPath,
+            fill: "none",
+            stroke: "#7f8c8d",
+            "stroke-width": 1.6,
+            "stroke-dasharray": "4 4"
+          })
+        );
+
+        months.forEach((date) => {
+          const x = xScale(date);
+          svg.appendChild(
+            create("line", {
+              x1: x,
+              y1: margin.top,
+              x2: x,
+              y2: margin.top + plotHeight,
+              stroke: "rgba(0,0,0,0.05)"
+            })
+          );
+
+          svg.appendChild(
+            create("text", {
+              x,
+              y: margin.top + plotHeight + 26,
+              "text-anchor": "middle",
+              "font-size": 11,
+              fill: "#5e5e5e"
+            })
+          ).textContent = formatMonth(date);
+        });
+
+        topMonths.forEach((item) => {
+          const monthDate = parseDate(item.month + "-01");
+          const nextMonth = new Date(monthDate);
+          nextMonth.setMonth(nextMonth.getMonth() + 1);
+          const x = xScale(monthDate);
+          const w = xScale(nextMonth) - x;
+          svg.appendChild(
+            create("rect", {
+              x,
+              y: margin.top,
+              width: w,
+              height: plotHeight,
+              fill: "rgba(196, 73, 0, 0.08)"
+            })
+          );
+        });
+
+        const fxAxis = create("text", {
+          x: margin.left - 12,
+          y: margin.top - 6,
+          "text-anchor": "start",
+          "font-size": 12,
+          fill: "#124559"
+        });
+        fxAxis.textContent = "PHP per USD";
+        svg.appendChild(fxAxis);
+
+        const paxAxis = create("text", {
+          x: width - margin.right + 8,
+          y: margin.top - 6,
+          "text-anchor": "start",
+          "font-size": 12,
+          fill: "#c44900"
+        });
+        paxAxis.textContent = "Passengers";
+        svg.appendChild(paxAxis);
+      };
+
+      Promise.all([fetch(fxUrl), fetch(paxUrl)])
+        .then(([fx, pax]) => Promise.all([fx.json(), pax.json()]))
+        .then(([fx, pax]) => draw(fx, pax))
+        .catch(() => {
+          svg.innerHTML =
+            '<text x="50%" y="50%" text-anchor="middle" fill="#5e5e5e">Data failed to load.</text>';
+        });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,91 @@
+{
+  "notes": {
+    "ceb": "MCIAA passenger tables (2025 YTD through Oct 2025), domestic + international totals from published charts.",
+    "dvo": "CAAP Airpasscar Annual 2024 (domestic). No 2025 monthly series published.",
+    "mnl": "No public monthly passenger series found for NAIA/MIAA."
+  },
+  "ceb": [
+    {
+      "month": "2025-01",
+      "passengers": 1130312
+    },
+    {
+      "month": "2025-02",
+      "passengers": 945670
+    },
+    {
+      "month": "2025-03",
+      "passengers": 956993
+    },
+    {
+      "month": "2025-04",
+      "passengers": 964372
+    },
+    {
+      "month": "2025-05",
+      "passengers": 1002249
+    },
+    {
+      "month": "2025-06",
+      "passengers": 927333
+    },
+    {
+      "month": "2025-07",
+      "passengers": 935385
+    },
+    {
+      "month": "2025-08",
+      "passengers": 942129
+    },
+    {
+      "month": "2025-09",
+      "passengers": 775540
+    },
+    {
+      "month": "2025-10",
+      "passengers": 831559
+    }
+  ],
+  "dvo_2024": [
+    {
+      "month": "2024-01",
+      "passengers": 10648
+    },
+    {
+      "month": "2024-02",
+      "passengers": 10640
+    },
+    {
+      "month": "2024-03",
+      "passengers": 8341
+    },
+    {
+      "month": "2024-04",
+      "passengers": 10869
+    },
+    {
+      "month": "2024-05",
+      "passengers": 16588
+    },
+    {
+      "month": "2024-06",
+      "passengers": 19559
+    },
+    {
+      "month": "2024-07",
+      "passengers": 24436
+    },
+    {
+      "month": "2024-08",
+      "passengers": 22801
+    },
+    {
+      "month": "2024-09",
+      "passengers": 25842
+    },
+    {
+      "month": "2024-10",
+      "passengers": 18775
+    }
+  ]
+}
