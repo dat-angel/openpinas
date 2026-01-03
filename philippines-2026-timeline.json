@@ -150,6 +150,24 @@
       "ytd_trend": "Peso strengthened 0.34% in December 2025 but down 1.30% YoY"
     }
   },
+  "weather": {
+    "metro_manila": {
+      "week_ending": "2026-01-02",
+      "source": "PAGASA",
+      "forecast": [
+        { "day": "Fri", "date": "Dec 27", "high": 31, "low": 25, "condition": "partly_cloudy", "rain_chance": 20 },
+        { "day": "Sat", "date": "Dec 28", "high": 30, "low": 24, "condition": "cloudy", "rain_chance": 40 },
+        { "day": "Sun", "date": "Dec 29", "high": 29, "low": 24, "condition": "rain", "rain_chance": 70 },
+        { "day": "Mon", "date": "Dec 30", "high": 30, "low": 25, "condition": "partly_cloudy", "rain_chance": 30 },
+        { "day": "Tue", "date": "Dec 31", "high": 31, "low": 25, "condition": "sunny", "rain_chance": 10 },
+        { "day": "Wed", "date": "Jan 1", "high": 31, "low": 25, "condition": "sunny", "rain_chance": 15 },
+        { "day": "Thu", "date": "Jan 2", "high": 30, "low": 24, "condition": "partly_cloudy", "rain_chance": 25 }
+      ],
+      "alerts": [],
+      "avg_high": 30,
+      "avg_low": 25
+    }
+  },
   "upcoming_events": {
     "february_2026": [
       {

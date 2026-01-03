@@ -1,0 +1,1100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Philippine News Review: Week of December 27, 2025 - January 2, 2026</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Spectral:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --ink: #1a1a1a;
+        --muted: #5e5e5e;
+        --paper: #f8f5f0;
+        --accent: #124559;
+        --accent-2: #c44900;
+        --weather: #0b6e4f;
+        --politics: #3a0ca3;
+        --culture: #b23a48;
+        --economic: #3a0ca3;
+        --legal: #1e3a5f;
+        --international: #0d7377;
+        --religious: #d4a017;
+        --card: #ffffff;
+        --line: #d6cbbd;
+        --shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: "Spectral", "Source Serif 4", Georgia, serif;
+        color: var(--ink);
+        background: radial-gradient(1200px 600px at 80% -10%, #f0e7d7 0%, transparent 60%),
+          radial-gradient(800px 500px at 10% 10%, #e6efe7 0%, transparent 55%),
+          var(--paper);
+        line-height: 1.6;
+      }
+
+      header {
+        padding: 32px 24px 20px;
+        max-width: 1100px;
+        margin: 0 auto;
+      }
+
+      h1 {
+        font-size: clamp(28px, 4vw, 44px);
+        margin: 0 0 8px;
+        letter-spacing: 0.3px;
+      }
+
+      .week-range {
+        font-size: 18px;
+        color: var(--muted);
+        margin: 0 0 20px;
+        font-weight: 500;
+      }
+
+      .nav-links {
+        display: flex;
+        gap: 16px;
+        flex-wrap: wrap;
+        margin: 20px 0;
+        padding: 12px 16px;
+        background: rgba(255, 255, 255, 0.75);
+        border: 1px solid #eadfce;
+        border-radius: 14px;
+        box-shadow: var(--shadow);
+      }
+
+      .nav-links a {
+        color: var(--accent);
+        text-decoration: none;
+        font-family: "IBM Plex Sans", "Source Sans 3", Arial, sans-serif;
+        font-weight: 500;
+        padding: 6px 12px;
+        border-radius: 8px;
+        transition: background 0.2s;
+      }
+
+      .nav-links a:hover {
+        background: rgba(18, 69, 89, 0.1);
+        text-decoration: none;
+      }
+
+      main {
+        max-width: 1100px;
+        margin: 16px auto 60px;
+        padding: 0 24px;
+      }
+
+      /* Two-column sidebar layout */
+      .sidebar-row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        margin: 24px 0 32px;
+      }
+
+      @media (max-width: 800px) {
+        .sidebar-row {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      .left-sidebar {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+      }
+
+      .summary-stats {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        align-content: start;
+      }
+
+      /* Weather Widget */
+      .weather-widget {
+        background: linear-gradient(135deg, #0b6e4f 0%, #1a936f 100%);
+        border-radius: 12px;
+        padding: 14px;
+        color: #fff;
+        box-shadow: var(--shadow);
+      }
+
+      .weather-widget h3 {
+        margin: 0 0 10px;
+        font-size: 12px;
+        font-weight: 600;
+        color: #fff;
+        font-family: "IBM Plex Sans", sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        opacity: 0.9;
+      }
+
+      .weather-forecast {
+        display: flex;
+        gap: 4px;
+        justify-content: space-between;
+      }
+
+      .weather-day {
+        text-align: center;
+        flex: 1;
+        padding: 6px 2px;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 6px;
+      }
+
+      .weather-day .day-date {
+        font-size: 8px;
+        opacity: 0.7;
+        display: block;
+        margin-bottom: 2px;
+        font-family: "IBM Plex Sans", sans-serif;
+      }
+
+      .weather-day .day-name {
+        font-size: 9px;
+        font-weight: 600;
+        text-transform: uppercase;
+        opacity: 0.9;
+        display: block;
+        margin-bottom: 4px;
+        font-family: "IBM Plex Sans", sans-serif;
+      }
+
+      .weather-day .weather-icon {
+        font-size: 16px;
+        display: block;
+        margin: 2px 0;
+      }
+
+      .weather-day .temps {
+        font-size: 10px;
+        display: block;
+        font-family: "IBM Plex Sans", sans-serif;
+      }
+
+      .weather-day .temps .high {
+        font-weight: 600;
+      }
+
+      .weather-day .temps .low {
+        opacity: 0.7;
+      }
+
+      .weather-source {
+        margin: 8px 0 0;
+        font-size: 9px;
+        opacity: 0.6;
+        font-family: "IBM Plex Sans", sans-serif;
+        text-align: right;
+      }
+
+      .stat-card {
+        background: var(--card);
+        padding: 14px 12px;
+        border-radius: 10px;
+        box-shadow: var(--shadow);
+        text-align: center;
+      }
+
+      .stat-card .number {
+        font-size: 26px;
+        font-weight: 700;
+        color: var(--accent);
+        margin: 0;
+        line-height: 1.1;
+      }
+
+      .stat-card .label {
+        font-size: 11px;
+        color: var(--muted);
+        margin: 4px 0 0;
+        text-transform: uppercase;
+        letter-spacing: 0.3px;
+      }
+
+      .section {
+        margin: 40px 0;
+      }
+
+      .section-title {
+        font-size: 24px;
+        margin: 0 0 20px;
+        padding-bottom: 12px;
+        border-bottom: 2px solid var(--line);
+        color: var(--ink);
+      }
+
+      .event {
+        background: var(--card);
+        border-radius: 16px;
+        padding: 20px 24px;
+        margin-bottom: 20px;
+        box-shadow: var(--shadow);
+        border-left: 4px solid var(--accent);
+        transition: transform 0.2s, box-shadow 0.2s;
+      }
+
+      .event:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 16px 40px rgba(0, 0, 0, 0.12);
+      }
+
+      .event-header {
+        display: flex;
+        gap: 12px;
+        align-items: center;
+        margin-bottom: 12px;
+        flex-wrap: wrap;
+      }
+
+      .event time {
+        font-family: "IBM Plex Sans", "Source Sans 3", Arial, sans-serif;
+        font-size: 14px;
+        color: var(--muted);
+        font-weight: 500;
+      }
+
+      .category-badge {
+        padding: 4px 12px;
+        border-radius: 999px;
+        font-size: 11px;
+        text-transform: uppercase;
+        letter-spacing: 0.6px;
+        color: #fff;
+        font-family: "IBM Plex Sans", "Source Sans 3", Arial, sans-serif;
+        font-weight: 600;
+      }
+
+      .category-badge.political {
+        background: var(--politics);
+      }
+
+      .category-badge.cultural {
+        background: var(--culture);
+      }
+
+      .category-badge.natural-disasters {
+        background: var(--weather);
+      }
+
+      .category-badge.economic {
+        background: var(--economic);
+      }
+
+      .category-badge.legal {
+        background: var(--legal);
+      }
+
+      .category-badge.international-relations {
+        background: var(--international);
+      }
+
+      .category-badge.religious {
+        background: var(--religious);
+      }
+
+      .category-badge.ofw {
+        background: #2563eb;
+      }
+
+      /* Exchange Rate Box - Compact for sidebar */
+      .exchange-rate-box {
+        background: linear-gradient(135deg, #1e3a5f 0%, #124559 100%);
+        border-radius: 12px;
+        padding: 16px;
+        color: #fff;
+        box-shadow: var(--shadow);
+      }
+
+      .exchange-rate-box h3 {
+        margin: 0 0 10px;
+        font-size: 13px;
+        font-weight: 600;
+        color: #fff;
+        font-family: "IBM Plex Sans", sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        opacity: 0.9;
+      }
+
+      .rate-display {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      .current-rate {
+        text-align: center;
+        padding-bottom: 10px;
+        border-bottom: 1px solid rgba(255,255,255,0.15);
+      }
+
+      .rate-value {
+        font-size: 32px;
+        font-weight: 700;
+        display: block;
+        line-height: 1.1;
+      }
+
+      .rate-trend {
+        font-size: 13px;
+        padding: 3px 8px;
+        border-radius: 4px;
+        display: inline-block;
+        margin-top: 6px;
+        font-family: "IBM Plex Sans", sans-serif;
+        font-weight: 600;
+      }
+
+      .rate-trend.up {
+        background: rgba(34, 197, 94, 0.2);
+        color: #4ade80;
+      }
+
+      .rate-trend.down {
+        background: rgba(239, 68, 68, 0.2);
+        color: #fca5a5;
+      }
+
+      .rate-details {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px;
+      }
+
+      .rate-item {
+        background: rgba(255, 255, 255, 0.1);
+        padding: 8px 6px;
+        border-radius: 6px;
+        text-align: center;
+      }
+
+      .rate-item .label {
+        font-size: 9px;
+        text-transform: uppercase;
+        letter-spacing: 0.3px;
+        opacity: 0.8;
+        display: block;
+        margin-bottom: 2px;
+        font-family: "IBM Plex Sans", sans-serif;
+      }
+
+      .rate-item .value {
+        font-size: 14px;
+        font-weight: 600;
+      }
+
+      .rate-context {
+        margin: 8px 0 4px;
+        font-size: 11px;
+        opacity: 0.85;
+        line-height: 1.4;
+      }
+
+      .rate-source {
+        font-size: 10px;
+        opacity: 0.6;
+        margin: 0;
+        font-family: "IBM Plex Sans", sans-serif;
+      }
+
+      /* OFW Section */
+      .ofw-section {
+        background: var(--card);
+        border-radius: 16px;
+        padding: 24px;
+        margin: 32px 0;
+        box-shadow: var(--shadow);
+        border-left: 4px solid #2563eb;
+      }
+
+      .ofw-section h2 {
+        margin: 0 0 20px;
+        color: #2563eb;
+        font-size: 22px;
+      }
+
+      .ofw-stats {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 16px;
+        margin-bottom: 24px;
+      }
+
+      .ofw-stat {
+        background: rgba(37, 99, 235, 0.05);
+        padding: 16px;
+        border-radius: 10px;
+        text-align: center;
+        border: 1px solid rgba(37, 99, 235, 0.1);
+      }
+
+      .ofw-stat .number {
+        font-size: 28px;
+        font-weight: 700;
+        color: #2563eb;
+        display: block;
+      }
+
+      .ofw-stat .label {
+        font-size: 12px;
+        color: var(--muted);
+        text-transform: uppercase;
+        letter-spacing: 0.3px;
+      }
+
+      .ofw-story {
+        padding: 16px;
+        margin: 12px 0;
+        background: rgba(37, 99, 235, 0.03);
+        border-radius: 10px;
+        border-left: 3px solid #2563eb;
+      }
+
+      .ofw-story h3 {
+        margin: 0 0 8px;
+        font-size: 16px;
+        color: var(--ink);
+      }
+
+      .ofw-story p {
+        margin: 0 0 10px;
+        font-size: 14px;
+        line-height: 1.6;
+      }
+
+      .ofw-details {
+        display: flex;
+        gap: 16px;
+        flex-wrap: wrap;
+        font-size: 12px;
+        color: var(--muted);
+      }
+
+      .ofw-details a {
+        color: #2563eb;
+        text-decoration: none;
+      }
+
+      .ofw-details a:hover {
+        text-decoration: underline;
+      }
+
+      .travel-advisory {
+        margin-top: 20px;
+        padding: 16px;
+        background: rgba(239, 68, 68, 0.05);
+        border-radius: 10px;
+        border-left: 3px solid #ef4444;
+      }
+
+      .travel-advisory h4 {
+        margin: 0 0 10px;
+        font-size: 14px;
+        color: #ef4444;
+      }
+
+      .travel-advisory ul {
+        margin: 0;
+        padding-left: 20px;
+        font-size: 13px;
+      }
+
+      .travel-advisory li {
+        margin: 4px 0;
+      }
+
+      .event h2 {
+        margin: 0 0 12px;
+        font-size: 20px;
+      }
+
+      .event h2 a {
+        color: var(--ink);
+        text-decoration: none;
+      }
+
+      .event h2 a:hover {
+        color: var(--accent-2);
+        text-decoration: underline;
+      }
+
+      .event .description {
+        font-size: 15px;
+        color: var(--ink);
+        margin: 12px 0;
+        line-height: 1.7;
+      }
+
+      .event-details {
+        margin-top: 16px;
+        padding-top: 16px;
+        border-top: 1px solid var(--line);
+      }
+
+      .event-details p {
+        margin: 10px 0;
+        font-size: 14px;
+        line-height: 1.6;
+      }
+
+      .event-details strong {
+        color: var(--ink);
+        font-weight: 600;
+      }
+
+      .significance {
+        padding: 10px 14px;
+        background: rgba(18, 69, 89, 0.05);
+        border-left: 3px solid var(--accent);
+        border-radius: 6px;
+        margin: 12px 0;
+      }
+
+      .diaspora-impact {
+        padding: 10px 14px;
+        background: rgba(196, 73, 0, 0.05);
+        border-left: 3px solid var(--accent-2);
+        border-radius: 6px;
+        margin: 12px 0;
+      }
+
+      .dynasties {
+        margin: 12px 0;
+        padding: 12px;
+        background: rgba(58, 12, 163, 0.05);
+        border-left: 3px solid var(--politics);
+        border-radius: 6px;
+        font-size: 14px;
+      }
+
+      .dynasties a {
+        color: var(--politics);
+        text-decoration: none;
+        font-weight: 500;
+        margin: 0 4px;
+      }
+
+      .dynasties a:hover {
+        text-decoration: underline;
+      }
+
+      .sources {
+        margin: 12px 0;
+        font-size: 14px;
+      }
+
+      .sources a {
+        color: var(--accent-2);
+        text-decoration: none;
+        margin: 0 8px 0 0;
+      }
+
+      .sources a:hover {
+        text-decoration: underline;
+      }
+
+      .dynasty-highlights {
+        background: var(--card);
+        border-radius: 16px;
+        padding: 24px;
+        margin: 32px 0;
+        box-shadow: var(--shadow);
+        border-left: 4px solid var(--politics);
+      }
+
+      .dynasty-highlights h3 {
+        margin: 0 0 16px;
+        color: var(--politics);
+      }
+
+      .dynasty-item {
+        padding: 12px;
+        margin: 8px 0;
+        background: rgba(58, 12, 163, 0.05);
+        border-radius: 8px;
+        border-left: 3px solid var(--politics);
+      }
+
+      .dynasty-item a {
+        color: var(--politics);
+        text-decoration: none;
+        font-weight: 600;
+      }
+
+      .dynasty-item a:hover {
+        text-decoration: underline;
+      }
+
+      .week-summary {
+        background: linear-gradient(135deg, rgba(18, 69, 89, 0.08) 0%, rgba(196, 73, 0, 0.05) 100%);
+        border-radius: 16px;
+        padding: 24px;
+        margin: 24px 0 32px;
+        border: 1px solid var(--line);
+      }
+
+      .week-summary h2 {
+        margin: 0 0 16px;
+        font-size: 22px;
+        color: var(--accent);
+      }
+
+      .week-summary ul {
+        margin: 0;
+        padding-left: 20px;
+      }
+
+      .week-summary li {
+        margin: 8px 0;
+        line-height: 1.6;
+      }
+
+      footer {
+        max-width: 1100px;
+        margin: 60px auto 40px;
+        padding: 24px;
+        text-align: center;
+        color: var(--muted);
+        font-size: 14px;
+        border-top: 1px solid var(--line);
+      }
+
+      footer a {
+        color: var(--accent);
+        text-decoration: none;
+      }
+
+      footer a:hover {
+        text-decoration: underline;
+      }
+
+      @media (max-width: 720px) {
+        header {
+          padding: 24px 18px 16px;
+        }
+
+        main {
+          padding: 0 18px;
+        }
+
+        .event {
+          padding: 16px 18px;
+        }
+
+        .summary-stats {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Philippine News Review</h1>
+      <p class="week-range">Week of December 27, 2025 - January 2, 2026</p>
+      <nav class="nav-links">
+        <a href="../interactive-timeline/">Full Timeline</a>
+        <a href="../dynasties-network-visualization.html">Dynasty Map</a>
+        <a href="index.html">All Reviews</a>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Two-column layout: Stats + Weather | Exchange Rate side by side -->
+      <div class="sidebar-row">
+        <div class="left-sidebar">
+          <section class="summary-stats">
+            <div class="stat-card">
+              <p class="number">7</p>
+              <p class="label">Total Events</p>
+            </div>
+            <div class="stat-card">
+              <p class="number">4</p>
+              <p class="label">Political</p>
+            </div>
+            <div class="stat-card">
+              <p class="number">1</p>
+              <p class="label">Disasters</p>
+            </div>
+            <div class="stat-card">
+              <p class="number">3</p>
+              <p class="label">Dynasties</p>
+            </div>
+          </section>
+
+          <section class="weather-widget">
+            <h3>Metro Manila Weather</h3>
+            <div class="weather-forecast">
+              <div class="weather-day">
+                <span class="day-date">Dec 27</span>
+                <span class="day-name">Fri</span>
+                <span class="weather-icon">⛅</span>
+                <span class="temps"><span class="high">31°</span> <span class="low">25°</span></span>
+              </div>
+              <div class="weather-day">
+                <span class="day-date">Dec 28</span>
+                <span class="day-name">Sat</span>
+                <span class="weather-icon">☁️</span>
+                <span class="temps"><span class="high">30°</span> <span class="low">24°</span></span>
+              </div>
+              <div class="weather-day">
+                <span class="day-date">Dec 29</span>
+                <span class="day-name">Sun</span>
+                <span class="weather-icon">🌧️</span>
+                <span class="temps"><span class="high">29°</span> <span class="low">24°</span></span>
+              </div>
+              <div class="weather-day">
+                <span class="day-date">Dec 30</span>
+                <span class="day-name">Mon</span>
+                <span class="weather-icon">⛅</span>
+                <span class="temps"><span class="high">30°</span> <span class="low">25°</span></span>
+              </div>
+              <div class="weather-day">
+                <span class="day-date">Dec 31</span>
+                <span class="day-name">Tue</span>
+                <span class="weather-icon">☀️</span>
+                <span class="temps"><span class="high">31°</span> <span class="low">25°</span></span>
+              </div>
+              <div class="weather-day">
+                <span class="day-date">Jan 1</span>
+                <span class="day-name">Wed</span>
+                <span class="weather-icon">☀️</span>
+                <span class="temps"><span class="high">31°</span> <span class="low">25°</span></span>
+              </div>
+              <div class="weather-day">
+                <span class="day-date">Jan 2</span>
+                <span class="day-name">Thu</span>
+                <span class="weather-icon">⛅</span>
+                <span class="temps"><span class="high">30°</span> <span class="low">24°</span></span>
+              </div>
+            </div>
+            <p class="weather-source">Source: PAGASA</p>
+          </section>
+        </div>
+
+        <section class="exchange-rate-box">
+          <h3>PHP:USD Exchange Rate</h3>
+          <div class="rate-display">
+            <div class="current-rate">
+              <span class="rate-value">₱58.83</span>
+              <span class="rate-trend down">▼ 0.14% this week</span>
+            </div>
+            <div class="rate-details">
+              <div class="rate-item">
+                <span class="label">Open</span>
+                <span class="value">₱58.95</span>
+              </div>
+              <div class="rate-item">
+                <span class="label">High</span>
+                <span class="value">₱59.10</span>
+              </div>
+              <div class="rate-item">
+                <span class="label">Low</span>
+                <span class="value">₱58.75</span>
+              </div>
+              <div class="rate-item">
+                <span class="label">Close</span>
+                <span class="value">₱58.83</span>
+              </div>
+            </div>
+            <p class="rate-context">
+              <strong>2025:</strong> ₱55.35–₱59.33 | Down 1.30% YoY
+            </p>
+            <p class="rate-source">Source: BSP / Bloomberg</p>
+          </div>
+        </section>
+      </div>
+
+      <section class="week-summary">
+        <h2>Week at a Glance</h2>
+        <ul>
+          <li><strong>New Year Messages:</strong> President Marcos called for discipline and unity in 2026; VP Sara Duterte urged Filipinos to "rekindle courage and determination"</li>
+          <li><strong>Mayon Volcano Alert Raised:</strong> PHIVOLCS elevated Mayon to Alert Level 2 on New Year's Day amid increased volcanic activity</li>
+          <li><strong>2026 Budget:</strong> Expected to be signed first week of January after bicameral ratification</li>
+          <li><strong>ASEAN Chairmanship:</strong> Philippines assumes ASEAN leadership for 2026, facing South China Sea challenges</li>
+          <li><strong>New US Remittance Tax:</strong> 1% tax on remittances takes effect January 1, 2026</li>
+          <li><strong>Anti-Dynasty Bill:</strong> 54% of Filipinos support passage of anti-dynasty law</li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title">Political</h2>
+
+        <article class="event" data-category="political" data-date="2026-01-01">
+          <div class="event-header">
+            <time datetime="2026-01-01">January 1, 2026</time>
+            <span class="category-badge political">Political</span>
+          </div>
+          <h2>President Marcos Delivers New Year Message - Calls for Unity and Discipline</h2>
+          <p class="description">President Ferdinand Marcos Jr. renewed his call for discipline, unity, and readiness to choose service over self-interest as Filipinos welcomed 2026. The message comes as the administration prepares for a busy year ahead with ASEAN chairmanship and ongoing anti-corruption efforts.</p>
+          <div class="event-details">
+            <p class="significance"><strong>Significance:</strong> Sets the tone for 2026 amid ongoing political tensions and anti-corruption investigations</p>
+            <p class="diaspora-impact"><strong>Diaspora Impact:</strong> Signals continued focus on governance improvements that affect families and remittance effectiveness; political messaging important for diaspora communities monitoring homeland stability</p>
+            <div class="dynasties"><strong>Dynasties:</strong> <a href="../dynasties-network-visualization.html#dynasty-MARCOS_ROMUALDEZ">Marcos-Romualdez</a></div>
+            <div class="sources"><strong>Sources:</strong> <a href="https://www.philstar.com/headlines/2026/01/01/2498093/president-marcos-renews-call-discipline-unity-2026" target="_blank" rel="noopener">philstar.com</a></div>
+          </div>
+        </article>
+
+        <article class="event" data-category="political" data-date="2026-01-01">
+          <div class="event-header">
+            <time datetime="2026-01-01">January 1, 2026</time>
+            <span class="category-badge political">Political</span>
+          </div>
+          <h2>Vice President Sara Duterte Issues New Year Statement</h2>
+          <p class="description">Vice President Sara Duterte released her New Year message, calling 2026 "an invitation to unite and start a new vision." She urged Filipinos to "rekindle courage and determination" as the country enters a new chapter. This comes as the Marcos-Duterte political rift has deepened considerably throughout 2025.</p>
+          <div class="event-details">
+            <p class="significance"><strong>Significance:</strong> Conciliatory tone despite ongoing tensions; VP Duterte protected from impeachment until February 2026 by Supreme Court ruling</p>
+            <p class="diaspora-impact"><strong>Diaspora Impact:</strong> Political dynamics between major families affect governance stability; diaspora communities closely watch family feuds that impact national direction</p>
+            <div class="dynasties"><strong>Dynasties:</strong> <a href="../dynasties-network-visualization.html#dynasty-DUTERTE_FAMILY">Duterte</a></div>
+            <div class="sources"><strong>Sources:</strong> <a href="https://newsinfo.inquirer.net/2158424/2025-sees-relationship-between-marcos-sara-duterte-break-beyond-repair" target="_blank" rel="noopener">inquirer.net</a></div>
+          </div>
+        </article>
+
+        <article class="event" data-category="political" data-date="2025-12-29">
+          <div class="event-header">
+            <time datetime="2025-12-29">December 29, 2025</time>
+            <span class="category-badge political">Political</span>
+          </div>
+          <h2>2026 National Budget Ratified by Congress</h2>
+          <p class="description">The House and Senate ratified the bicameral conference committee report on the proposed PHP 6.3 trillion 2026 national budget. Acting Executive Secretary Ralph Recto confirmed the budget will be signed by President Marcos in the first week of January. The DPWH saw a PHP 53.99 billion cut following the flood control corruption scandal, while education received a PHP 72.35 billion increase.</p>
+          <div class="event-details">
+            <p class="significance"><strong>Significance:</strong> Budget reflects anti-corruption priorities with infrastructure cuts; education prioritized for development</p>
+            <p class="diaspora-impact"><strong>Diaspora Impact:</strong> Education budget increases benefit diaspora families with children in Philippines; infrastructure accountability may improve project quality in home provinces</p>
+            <div class="sources"><strong>Sources:</strong> <a href="https://www.rappler.com/philippines/2026-budget-marcos-review-signed-january-2026/" target="_blank" rel="noopener">rappler.com</a></div>
+          </div>
+        </article>
+
+        <article class="event" data-category="political" data-date="2025-12-29">
+          <div class="event-header">
+            <time datetime="2025-12-29">December 29, 2025</time>
+            <span class="category-badge political">Political</span>
+          </div>
+          <h2>Anti-Dynasty Bill Gains Momentum - 54% of Filipinos Support Passage</h2>
+          <p class="description">A new survey shows 54% of Filipinos want an anti-dynasty law passed now. Speaker Bojie Dy and Majority Leader Sandro Marcos have filed a landmark Anti-Political Dynasty Bill, though critics call it "weak" for not prohibiting immediate succession or cross-jurisdiction dynasties. Alternative bills from Makabayan and Akbayan include stronger provisions.</p>
+          <div class="event-details">
+            <p class="significance"><strong>Significance:</strong> First serious legislative push for anti-dynasty law in decades; multiple competing versions filed in 20th Congress</p>
+            <p class="diaspora-impact"><strong>Diaspora Impact:</strong> Political dynasties control 80% of provincial governorships; reform could improve governance and reduce corruption affecting diaspora families</p>
+            <div class="dynasties"><strong>Dynasties:</strong> <a href="../dynasties-network-visualization.html#dynasty-MARCOS_ROMUALDEZ">Marcos-Romualdez</a>, <a href="../dynasties-network-visualization.html#dynasty-DY_FAMILY">Dy</a></div>
+            <div class="sources"><strong>Sources:</strong> <a href="https://www.rappler.com/video/daily-wrap/december-29-2025/" target="_blank" rel="noopener">rappler.com</a>, <a href="https://www.congress.gov.ph/media/press-releases/view/?content=9545" target="_blank" rel="noopener">congress.gov.ph</a></div>
+          </div>
+        </article>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title">Natural Disasters</h2>
+
+        <article class="event" data-category="natural-disasters" data-date="2026-01-01">
+          <div class="event-header">
+            <time datetime="2026-01-01">January 1, 2026</time>
+            <span class="category-badge natural-disasters">Natural Disasters</span>
+          </div>
+          <h2>Mayon Volcano Alert Level Raised to 2 on New Year's Day</h2>
+          <p class="description">The Philippine Institute of Volcanology and Seismology (PHIVOLCS) raised Mayon Volcano's alert status from Level 1 to Level 2, signifying increasing volcanic unrest. On December 31, 2025, the volcano experienced 47 rockfall events in a single day - the highest daily incidence recorded over the entire year. The eastern to northeastern slopes have been swelling since June 2024. Albay Governor Noel Rosal ordered strict enforcement of the 6km permanent danger zone.</p>
+          <div class="event-details">
+            <p class="significance"><strong>Significance:</strong> Alert Level 2 indicates potential for sudden explosions, pyroclastic flows, and landslides; evacuation preparations underway</p>
+            <p class="diaspora-impact"><strong>Diaspora Impact:</strong> Families in Albay and surrounding Bicol region face potential evacuation; diaspora should monitor situation and prepare for emergency remittance needs; flight restrictions in effect until January 3</p>
+            <div class="sources"><strong>Sources:</strong> <a href="https://www.rappler.com/philippines/luzon/phivolcs-mayon-volcano-alert-level-january-1-2026/" target="_blank" rel="noopener">rappler.com</a>, <a href="https://www.philstar.com/headlines/2026/01/01/2498108/mayon-volcano-alert-level-raised-2" target="_blank" rel="noopener">philstar.com</a>, <a href="https://www.manilatimes.net/2026/01/03/regions/albay-gov-orders-strict-no-entry-to-mayons-danger-zone-as-volcano-turns-restive/2251907" target="_blank" rel="noopener">manilatimes.net</a></div>
+          </div>
+        </article>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title">Economic</h2>
+
+        <article class="event" data-category="economic" data-date="2026-01-01">
+          <div class="event-header">
+            <time datetime="2026-01-01">January 1, 2026</time>
+            <span class="category-badge economic">Economic</span>
+          </div>
+          <h2>New US 1% Remittance Tax Takes Effect</h2>
+          <p class="description">A new 1% excise tax on money remittance transfers from the United States took effect on January 1, 2026, as part of the "Big Beautiful Bill" legislation. The tax was reduced from the originally proposed 5%. The Philippines Department of Finance estimates the tax will have minimal impact (0.009% of GDP), though the Asian Development Bank projects it could cost about $250 million of the estimated $38-40 billion in annual remittances.</p>
+          <div class="event-details">
+            <p class="significance"><strong>Significance:</strong> First major US tax on remittances; affects the largest remittance corridor to Philippines (40.4% of total)</p>
+            <p class="diaspora-impact"><strong>Diaspora Impact:</strong> OFWs in the US face new costs on money sent home; December remittances typically surge to $3.73 billion for holiday season; may accelerate shift to digital remittance platforms with lower fees</p>
+            <div class="sources"><strong>Sources:</strong> <a href="https://thefilipinochronicle.com/2025/12/14/the-tradition-of-remittances-continues-to-bolster-the-philippines-but-it-also-comes-at-a-cost/" target="_blank" rel="noopener">thefilipinochronicle.com</a></div>
+          </div>
+        </article>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title">International Relations</h2>
+
+        <article class="event" data-category="international-relations" data-date="2026-01-01">
+          <div class="event-header">
+            <time datetime="2026-01-01">January 1, 2026</time>
+            <span class="category-badge international-relations">International Relations</span>
+          </div>
+          <h2>Philippines Assumes ASEAN Chairmanship for 2026</h2>
+          <p class="description">The Philippines officially assumed the ASEAN chairmanship for 2026, gaining global attention for President Marcos's strong stance against China's aggressive actions in the West Philippine Sea. Analysts from Chatham House note that a South China Sea code of conduct is unlikely to be concluded during the Philippine chairmanship given current tensions.</p>
+          <div class="event-details">
+            <p class="significance"><strong>Significance:</strong> Major regional leadership role; Philippines must balance foreign policy prominence with domestic challenges including anti-corruption protests</p>
+            <p class="diaspora-impact"><strong>Diaspora Impact:</strong> Increased Philippines visibility and influence in region; potential diplomatic and economic benefits; South China Sea tensions affect regional stability and fishing communities</p>
+            <div class="sources"><strong>Sources:</strong> <a href="https://www.chathamhouse.org/2025/12/philippines-asean-chair-south-china-sea-agreement-unlikely-be-concluded-2026" target="_blank" rel="noopener">chathamhouse.org</a>, <a href="https://thediplomat.com/2025/12/the-philippines-in-2025-corruption-accountability-and-the-marcos-duterte-rift/" target="_blank" rel="noopener">thediplomat.com</a></div>
+          </div>
+        </article>
+      </section>
+
+      <!-- OFW & Diaspora News Section -->
+      <section class="ofw-section">
+        <h2>OFW & Diaspora News</h2>
+
+        <div class="ofw-stats">
+          <div class="ofw-stat">
+            <span class="number">2.57M</span>
+            <span class="label">OFWs deployed in 2025</span>
+          </div>
+          <div class="ofw-stat">
+            <span class="number">$38.4B</span>
+            <span class="label">Remittances (2024)</span>
+          </div>
+          <div class="ofw-stat">
+            <span class="number">72</span>
+            <span class="label">Labor Agreements</span>
+          </div>
+          <div class="ofw-stat">
+            <span class="number">₱2.18B</span>
+            <span class="label">Aksyon Fund Aid (2025)</span>
+          </div>
+        </div>
+
+        <article class="ofw-story">
+          <h3>DMW Caps 2025 with Expanded OFW Protections</h3>
+          <p>The Department of Migrant Workers reported significant achievements in 2025: 2.57 million OFWs deployed (up from 2.2M in 2024), 10 new bilateral labor agreements signed (total now 72), and ₱2.18 billion distributed through the Aksyon Fund to over 160,000 OFWs. The Oman MOU on Labor Cooperation is expected to be signed in January 2026.</p>
+          <div class="ofw-details">
+            <span>Top destinations: Saudi Arabia (20%), UAE (13.6%)</span>
+            <a href="https://www.pna.gov.ph/articles/1266047" target="_blank">PNA</a>
+            <a href="https://www.manilatimes.net/2025/12/24/news/national/dmw-makes-big-progress-in-protecting-ofws/2248904" target="_blank">Manila Times</a>
+          </div>
+        </article>
+
+        <article class="ofw-story">
+          <h3>Digital OFW Pass Replaces Traditional OEC</h3>
+          <p>The DMW's digitalization efforts processed 514,966 e-Travel and OFW Pass transactions in 2025, reducing reliance on the decades-old Overseas Employment Certificate. Airlines are expected to fully recognize digital travel documents by 2026, streamlining the departure process for migrant workers.</p>
+          <div class="ofw-details">
+            <span>Impact: Faster processing, reduced paperwork</span>
+            <a href="https://filipinotimes.net/latest-news/2025/12/05/digital-ofw-pass-replaces-oec-for-overseas-filipino-workers/" target="_blank">Filipino Times</a>
+          </div>
+        </article>
+
+        <article class="ofw-story">
+          <h3>35 OFWs Repatriated from Cambodia Scam Hubs</h3>
+          <p>Just hours before 2026, 35 OFWs from Cambodia were safely repatriated by DMW as part of ongoing inter-agency efforts to assist Filipino victims of illegal recruitment, human trafficking, and scam hub operations. Around 3,000 OFWs currently face cases abroad, with 24 on death row.</p>
+          <div class="ofw-details">
+            <span>Affected: Southeast Asia scam operations</span>
+            <a href="https://www.sunstar.com.ph/manila/35-cambodia-ofws-back-home" target="_blank">Sun Star</a>
+            <a href="https://www.philstar.com/headlines/2025/12/23/2496326/around-3000-ofws-face-cases-abroad-24-death-row" target="_blank">Phil Star</a>
+          </div>
+        </article>
+
+        <article class="ofw-story">
+          <h3>New Minimum Salary for Domestic Workers: $500/month</h3>
+          <p>DMW rolled out new safeguards for domestic workers, increasing the minimum monthly salary from USD 400 to USD 500. This applies to new deployments in key destination countries including Saudi Arabia, UAE, Kuwait, and Hong Kong.</p>
+          <div class="ofw-details">
+            <span>Affected: Household service workers</span>
+            <a href="https://dmw.gov.ph/news-releases" target="_blank">DMW</a>
+          </div>
+        </article>
+
+        <div class="travel-advisory">
+          <h4>Active Travel Advisories</h4>
+          <ul>
+            <li><strong>Deployment Suspended:</strong> Israel, Lebanon, Iran, Jordan – due to ongoing conflict</li>
+            <li><strong>Exercise Caution:</strong> Myanmar, parts of Southeast Asia – scam hub operations</li>
+            <li><strong>New Market Opening:</strong> Oman MOU expected January 2026 – household workers, technicians, port staff</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="dynasty-highlights">
+        <h3>Dynasty Highlights This Week</h3>
+
+        <div class="dynasty-item">
+          <strong>
+            <a href="../dynasties/marcos-romualdez.html">Marcos-Romualdez</a>
+            <span style="font-weight: normal; font-size: 12px; margin-left: 8px;">
+              (<a href="../dynasties-network-visualization.html#dynasty-MARCOS_ROMUALDEZ" style="color: var(--muted);">map</a>)
+            </span>
+          </strong>
+          <ul style="margin: 8px 0 0 20px; padding: 0;">
+            <li>President Marcos delivers New Year message calling for unity</li>
+            <li>Sandro Marcos co-sponsors Anti-Political Dynasty Bill with Speaker Dy</li>
+            <li>2026 budget expected to be signed in first week of January</li>
+          </ul>
+        </div>
+
+        <div class="dynasty-item">
+          <strong>
+            <a href="../dynasties/duterte.html">Duterte</a>
+            <span style="font-weight: normal; font-size: 12px; margin-left: 8px;">
+              (<a href="../dynasties-network-visualization.html#dynasty-DUTERTE_FAMILY" style="color: var(--muted);">map</a>)
+            </span>
+          </strong>
+          <ul style="margin: 8px 0 0 20px; padding: 0;">
+            <li>VP Sara Duterte issues New Year message urging unity</li>
+            <li>Marcos-Duterte rift characterized as "beyond repair" by year's end</li>
+            <li>Former President Rodrigo Duterte remains in ICC custody in The Hague</li>
+          </ul>
+        </div>
+
+        <div class="dynasty-item">
+          <strong>
+            <a href="../dynasties/dy.html">Dy</a>
+            <span style="font-weight: normal; font-size: 12px; margin-left: 8px;">
+              (<a href="../dynasties-network-visualization.html#dynasty-DY_FAMILY" style="color: var(--muted);">map</a>)
+            </span>
+          </strong>
+          <ul style="margin: 8px 0 0 20px; padding: 0;">
+            <li>Speaker Bojie Dy files Anti-Political Dynasty Bill (criticized as "weak")</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title">Year-End Context: 2025 in Review</h2>
+
+        <article class="event" style="border-left-color: var(--muted);">
+          <div class="event-header">
+            <time>2025 Summary</time>
+            <span class="category-badge" style="background: var(--muted);">Context</span>
+          </div>
+          <h2>The 10 Biggest Stories That Defined Philippines in 2025</h2>
+          <p class="description">As 2025 closed, several major themes dominated the Philippine political landscape: the $2 billion flood control corruption scandal that led to Speaker Romualdez's resignation and multiple arrests; Former President Duterte's arrest and transfer to the ICC; the breakdown of the Marcos-Duterte alliance; devastating natural disasters including the Cebu earthquake (79 deaths) and Typhoon Kalmaegi (269+ deaths); and the Supreme Court's nullification of VP Sara Duterte's impeachment. The year saw unprecedented anti-corruption protests including the Trillion Peso March and INC rallies.</p>
+          <div class="event-details">
+            <p class="diaspora-impact"><strong>Diaspora Impact:</strong> 2025 was marked by political instability, natural disasters requiring emergency remittance support, and a corruption scandal that undermined trust in government. The new year brings continued challenges but also signs of accountability with high-profile arrests and anti-dynasty legislation.</p>
+            <div class="sources"><strong>Sources:</strong> <a href="https://www.rappler.com/newsbreak/podcasts-videos/biggest-political-stories-philippines-2025/" target="_blank" rel="noopener">rappler.com</a>, <a href="https://www.scmp.com/week-asia/politics/article/3337692/philippines-2025-year-crisis-corruption-scandal-south-china-sea-tensions" target="_blank" rel="noopener">scmp.com</a>, <a href="https://newsinfo.inquirer.net/2157224/yearend-2025-record-flood-control-corruption-unravels" target="_blank" rel="noopener">inquirer.net</a></div>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        Part of the
+        <a href="https://github.com/dat-angel/openpinas">OpenPinas</a>
+        project
+      </p>
+      <p>
+        <a href="https://github.com/dat-angel/openpinas">GitHub</a> |
+        <a href="../interactive-timeline/">Timeline</a> |
+        <a href="../dynasties-network-visualization.html">Dynasty Map</a>
+      </p>
+      <p style="margin-top: 12px; font-size: 12px;">
+        Last updated: January 2, 2026
+      </p>
+    </footer>
+  </body>
+</html>
