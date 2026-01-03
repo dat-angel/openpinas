@@ -187,8 +187,8 @@
     <header>
       <h1>When to Go to Manila?</h1>
       <p>
-        Weekly PHP:USD price ranges for 2025 alongside passenger traffic signals. Use this to spot
-        higher-traffic months and currency windows, with clear labels for data gaps.
+        A simple read on timing: weekly PHP:USD ranges for 2025 plus airport traffic signals.
+        Use it to spot busy months and weeks when your dollars stretch further.
       </p>
     </header>
 
@@ -207,21 +207,22 @@
         </div>
 
         <div class="card summary">
-          <h2>High travel season (proxy)</h2>
+          <h2>High travel season (signal)</h2>
           <p>
-            Based on Cebu traffic spikes in 2025 YTD. Use this as a seasonal signal, not a Manila
-            headcount.
+            Cebu (CEB) peaks are a proxy for travel pressure. If Cebu is crowded, Manila usually
+            feels it too. This is seasonality, not a Manila headcount.
           </p>
           <div class="chip-list" id="peakMonths"></div>
 
           <h2 style="margin-top: 18px;">Price windows (USD advantage)</h2>
           <p>
-            Weeks with the strongest USD vs PHP in 2025 (highest weekly highs).
+            These are the weeks when USD buys the most PHP in 2025. If you’re spending in pesos,
+            these windows can lower trip costs.
           </p>
           <div class="chip-list" id="priceWindows"></div>
 
           <p class="note" style="margin-top: 16px;">
-            If you spend in PHP, lower PHP:USD values are more favorable.
+            If you spend in PHP, a lower PHP per USD rate is better for you.
           </p>
         </div>
       </div>
@@ -315,7 +316,7 @@
         peakMonthsEl.innerHTML = "";
         topMonths.forEach((item) => {
           const date = parseDate(item.month + "-01");
-          const label = `${formatMonth(date)} ${date.getFullYear()} (${item.passengers.toLocaleString()})`;
+          const label = `${formatMonth(date)} ${date.getFullYear()} — ${item.passengers.toLocaleString()} passengers (CEB)`;
           const chip = document.createElement("span");
           chip.className = "chip";
           chip.textContent = label;
@@ -328,7 +329,10 @@
 
         priceWindowsEl.innerHTML = "";
         topWeeks.forEach((item) => {
-          const label = `${item.week_start} (hi ${item.high.toFixed(3)})`;
+          const start = parseDate(item.week_start);
+          const end = new Date(start);
+          end.setDate(end.getDate() + 6);
+          const label = `${start.toISOString().slice(0, 10)} to ${end.toISOString().slice(0, 10)} — high ${item.high.toFixed(3)} PHP/USD`;
           const chip = document.createElement("span");
           chip.className = "chip";
           chip.textContent = label;
