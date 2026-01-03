@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sources and Related Projects</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Spectral:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --ink: #1a1a1a;
+        --muted: #5e5e5e;
+        --paper: #f8f5f0;
+        --accent: #124559;
+        --accent-2: #c44900;
+        --card: #ffffff;
+        --shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: "Spectral", "Source Serif 4", Georgia, serif;
+        color: var(--ink);
+        background: radial-gradient(1200px 600px at 80% -10%, #f0e7d7 0%, transparent 60%),
+          radial-gradient(800px 500px at 10% 10%, #e6efe7 0%, transparent 55%),
+          var(--paper);
+        line-height: 1.6;
+      }
+
+      header {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 40px 24px 16px;
+        text-align: center;
+      }
+
+      h1 {
+        font-size: clamp(30px, 5vw, 44px);
+        margin: 0 0 12px;
+      }
+
+      header p {
+        margin: 0 auto;
+        max-width: 720px;
+        color: var(--muted);
+        font-size: 16px;
+      }
+
+      main {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 0 24px 60px;
+      }
+
+      .section {
+        background: var(--card);
+        border-radius: 16px;
+        padding: 24px;
+        box-shadow: var(--shadow);
+        margin: 20px 0;
+      }
+
+      .section h2 {
+        margin: 0 0 12px;
+        font-size: 20px;
+        color: var(--accent);
+      }
+
+      .section p {
+        margin: 0 0 12px;
+        color: var(--muted);
+        font-size: 14px;
+      }
+
+      .links {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      .links li {
+        margin-bottom: 10px;
+        font-size: 14px;
+      }
+
+      .links a {
+        color: var(--accent-2);
+        text-decoration: none;
+      }
+
+      .links a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Sources and Related Projects</h1>
+      <p>
+        OpenPinas builds on a broader ecosystem of academic research, civic tools, and investigative
+        reporting. This page credits that work and links to the sources I consult.
+      </p>
+    </header>
+
+    <main>
+      <section class="section">
+        <h2>Dynasty Tracking</h2>
+        <p>
+          These projects map political families, local power structures, and election patterns.
+        </p>
+        <ul class="links">
+          <li><a href="https://www.inclusivedemocracy.ph/data-and-infographics" target="_blank" rel="noopener">Ateneo Policy Center Political Dynasties Dataset</a></li>
+          <li><a href="https://pcij.org/political-dynasties/" target="_blank" rel="noopener">PCIJ Political Dynasties Database</a></li>
+          <li><a href="https://dynasty-tracker.bettergov.ph" target="_blank" rel="noopener">BetterGov Dynasty Tracker</a></li>
+          <li><a href="https://pcij.org/2025/01/26/113-out-of-149-philippine-cities-also-ruled-by-dynasties/" target="_blank" rel="noopener">PCIJ report: dynasties in 113 of 149 cities</a></li>
+          <li><a href="https://pcij.org/2025/01/26/pcij-research-data-philippines-political-clans/" target="_blank" rel="noopener">PCIJ research data on political clans</a></li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <h2>Corruption Monitoring</h2>
+        <p>
+          Government and watchdog platforms tracking infrastructure projects and corruption cases.
+        </p>
+        <ul class="links">
+          <li><a href="https://www.dpwh.gov.ph/DPWH/transparency/DPWH_Transparency_Portal" target="_blank" rel="noopener">DPWH Transparency Portal</a></li>
+          <li><a href="https://www.ombudsman.gov.ph/integrity-management-program-imp/" target="_blank" rel="noopener">Ombudsman Integrity Management Program</a></li>
+          <li><a href="https://www.pna.gov.ph/articles/1265885" target="_blank" rel="noopener">Sumbong sa Pangulo corruption reporting (PNA)</a></li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <h2>Context and Analysis</h2>
+        <p>
+          Academic and policy research that informs the framing of OpenPinas.
+        </p>
+        <ul class="links">
+          <li><a href="https://democratic-erosion.org/2025/05/01/the-ruling-family-how-political-dynasties-are-destroying-democracy-in-the-philippines/" target="_blank" rel="noopener">Democratic Erosion: The Ruling Family</a></li>
+          <li><a href="https://online.ucpress.edu/as/article/63/2/301/195814/The-Philippines-in-2022The-Power-of-Dynastic" target="_blank" rel="noopener">The Philippines in 2022: The Power of Dynastic Politics</a></li>
+          <li><a href="https://www.pids.gov.ph/details/news/in-the-news/zero-in-dynasties-plague-2025-philippine-elections" target="_blank" rel="noopener">PIDS: Dynasties and 2025 elections</a></li>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>

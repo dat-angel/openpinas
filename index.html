@@ -113,6 +113,52 @@
         margin: 40px 0;
       }
 
+      .context {
+        background: var(--card);
+        border-radius: 16px;
+        padding: 28px;
+        box-shadow: var(--shadow);
+        margin: 32px 0 10px;
+      }
+
+      .context h2 {
+        margin: 0 0 10px;
+        font-size: 22px;
+        color: var(--accent);
+      }
+
+      .context p {
+        margin: 0 0 12px;
+        color: var(--muted);
+        font-size: 15px;
+      }
+
+      .context ul {
+        margin: 0 0 16px 18px;
+        color: var(--muted);
+        font-size: 14px;
+      }
+
+      .context .links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+
+      .context .link-pill {
+        padding: 6px 12px;
+        border-radius: 999px;
+        background: #f1f6f3;
+        border: 1px solid rgba(18, 69, 89, 0.15);
+        font-size: 13px;
+        color: var(--accent);
+        text-decoration: none;
+      }
+
+      .context .link-pill:hover {
+        text-decoration: underline;
+      }
+
       .stat {
         text-align: center;
         padding: 20px;
@@ -214,6 +260,27 @@
           </p>
         </a>
       </div>
+
+      <section class="context">
+        <h2>Context & Positioning</h2>
+        <p>
+          I built OpenPinas alongside strong academic, civic, and investigative work. The focus here is
+          stitching dynasties, timelines, and regional impact into one place so patterns are easier to see.
+        </p>
+        <ul>
+          <li>Cross-links between dynasties, events, and geography</li>
+          <li>Readable summaries for diaspora audiences who want context fast</li>
+          <li>Open datasets you can verify, remix, or extend</li>
+        </ul>
+        <div class="links">
+          <a class="link-pill" href="sources-and-related-projects.html">Sources and related projects</a>
+          <a class="link-pill" href="https://www.inclusivedemocracy.ph/data-and-infographics" target="_blank" rel="noopener">Ateneo Policy Center</a>
+          <a class="link-pill" href="https://pcij.org/political-dynasties/" target="_blank" rel="noopener">PCIJ Dynasties</a>
+          <a class="link-pill" href="https://dynasty-tracker.bettergov.ph" target="_blank" rel="noopener">BetterGov Dynasty Tracker</a>
+          <a class="link-pill" href="https://www.dpwh.gov.ph/DPWH/transparency/DPWH_Transparency_Portal" target="_blank" rel="noopener">DPWH Portal</a>
+          <a class="link-pill" href="https://www.ombudsman.gov.ph/integrity-management-program-imp/" target="_blank" rel="noopener">Ombudsman IMP</a>
+        </div>
+      </section>
 
       <div class="stats">
         <div class="stat">
