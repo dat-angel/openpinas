@@ -1,0 +1,193 @@
+{
+  "year": 2026,
+  "country": "Philippines",
+  "prepared_for": "Filipino Diaspora Communities Worldwide",
+  "metadata": {
+    "purpose": "Comprehensive timeline of major Philippine events in 2026 to help overseas Filipinos understand developments affecting families, remittances, investments, and homeland governance",
+    "last_updated": "January 2, 2026",
+    "aggregation_note": "This timeline is aggregated by month as events unfold. Weekly reviews provide more detailed coverage.",
+    "total_events": 7,
+    "categories": ["Political", "Cultural", "Natural Disasters", "Economic", "International Relations", "Legal", "OFW/Diaspora"]
+  },
+  "timeline": [
+    {
+      "date": "2026-01-01",
+      "month": "January",
+      "title": "President Marcos Delivers New Year Message - Calls for Unity",
+      "category": "Political",
+      "description": "President Ferdinand Marcos Jr. renewed his call for discipline, unity, and readiness to choose service over self-interest as Filipinos welcomed 2026. The message set the tone for a year of ASEAN chairmanship and continued anti-corruption efforts.",
+      "significance": "Sets national agenda for 2026 amid ongoing political tensions",
+      "diaspora_impact": "Signals continued focus on governance improvements; political messaging important for diaspora communities monitoring homeland stability",
+      "mentioned_dynasties": ["MARCOS_ROMUALDEZ"],
+      "sources": {
+        "international": [],
+        "local": ["https://www.philstar.com/headlines/2026/01/01/2498093/president-marcos-renews-call-discipline-unity-2026"]
+      },
+      "weekly_review": "weekly-reviews/weekly-review-2026-01-02.html"
+    },
+    {
+      "date": "2026-01-01",
+      "month": "January",
+      "title": "Vice President Sara Duterte Issues New Year Statement",
+      "category": "Political",
+      "description": "Vice President Sara Duterte released her New Year message, calling 2026 'an invitation to unite and start a new vision.' She urged Filipinos to 'rekindle courage and determination.' This comes despite the Marcos-Duterte political rift deepening throughout 2025.",
+      "significance": "Conciliatory tone despite ongoing tensions; VP protected from impeachment until February 2026",
+      "diaspora_impact": "Political dynamics between major families affect governance stability",
+      "mentioned_dynasties": ["DUTERTE_FAMILY"],
+      "sources": {
+        "international": [],
+        "local": ["https://newsinfo.inquirer.net/2158424/2025-sees-relationship-between-marcos-sara-duterte-break-beyond-repair"]
+      },
+      "weekly_review": "weekly-reviews/weekly-review-2026-01-02.html"
+    },
+    {
+      "date": "2026-01-01",
+      "month": "January",
+      "title": "Philippines Assumes ASEAN Chairmanship for 2026",
+      "category": "International Relations",
+      "description": "The Philippines officially assumed the ASEAN chairmanship for 2026, gaining global attention for President Marcos's strong stance against China's aggressive actions in the West Philippine Sea. Analysts note a South China Sea code of conduct is unlikely during the Philippine chairmanship.",
+      "significance": "Major regional leadership role; Philippines balances foreign policy prominence with domestic challenges",
+      "diaspora_impact": "Increased Philippines visibility and influence in region; potential diplomatic and economic benefits",
+      "mentioned_dynasties": ["MARCOS_ROMUALDEZ"],
+      "sources": {
+        "international": ["https://www.chathamhouse.org/2025/12/philippines-asean-chair-south-china-sea-agreement-unlikely-be-concluded-2026"],
+        "local": []
+      },
+      "weekly_review": "weekly-reviews/weekly-review-2026-01-02.html"
+    },
+    {
+      "date": "2026-01-01",
+      "month": "January",
+      "title": "Mayon Volcano Alert Level Raised to 2",
+      "category": "Natural Disasters",
+      "description": "PHIVOLCS raised Mayon Volcano's alert status to Level 2 on New Year's Day, signifying increasing volcanic unrest. On December 31, 2025, the volcano experienced 47 rockfall events - the highest daily count of the year. Albay Governor ordered strict enforcement of the 6km permanent danger zone.",
+      "significance": "Alert Level 2 indicates potential for sudden explosions, pyroclastic flows, and landslides",
+      "diaspora_impact": "Families in Albay and Bicol region face potential evacuation; diaspora should monitor situation and prepare for emergency remittance needs",
+      "sources": {
+        "international": [],
+        "local": [
+          "https://www.rappler.com/philippines/luzon/phivolcs-mayon-volcano-alert-level-january-1-2026/",
+          "https://www.philstar.com/headlines/2026/01/01/2498108/mayon-volcano-alert-level-raised-2"
+        ]
+      },
+      "weekly_review": "weekly-reviews/weekly-review-2026-01-02.html"
+    },
+    {
+      "date": "2026-01-01",
+      "month": "January",
+      "title": "New US 1% Remittance Tax Takes Effect",
+      "category": "Economic",
+      "description": "A new 1% excise tax on money remittance transfers from the United States took effect, part of the 'Big Beautiful Bill' legislation. The tax was reduced from the originally proposed 5%. The Philippines DOF estimates minimal impact (0.009% of GDP), though ADB projects it could cost ~$250 million of the $38-40 billion in annual remittances.",
+      "significance": "First major US tax on remittances; affects the largest remittance corridor (40.4% of total)",
+      "diaspora_impact": "OFWs in the US face new costs on money sent home; may accelerate shift to digital remittance platforms with lower fees",
+      "sources": {
+        "international": [],
+        "local": ["https://thefilipinochronicle.com/2025/12/14/the-tradition-of-remittances-continues-to-bolster-the-philippines-but-it-also-comes-at-a-cost/"]
+      },
+      "weekly_review": "weekly-reviews/weekly-review-2026-01-02.html"
+    },
+    {
+      "date": "2025-12-29",
+      "month": "January",
+      "title": "2026 National Budget Ratified by Congress",
+      "category": "Economic",
+      "description": "The House and Senate ratified the PHP 6.3 trillion 2026 national budget. The DPWH saw a PHP 53.99 billion cut following the flood control corruption scandal, while education received a PHP 72.35 billion increase. Budget to be signed by President Marcos in early January.",
+      "significance": "Budget reflects anti-corruption priorities with infrastructure cuts; education prioritized",
+      "diaspora_impact": "Education budget increases benefit diaspora families with children in Philippines; infrastructure accountability may improve project quality",
+      "sources": {
+        "international": [],
+        "local": ["https://www.rappler.com/philippines/2026-budget-marcos-review-signed-january-2026/"]
+      },
+      "weekly_review": "weekly-reviews/weekly-review-2026-01-02.html"
+    },
+    {
+      "date": "2025-12-29",
+      "month": "January",
+      "title": "Anti-Dynasty Bill Gains Momentum - 54% Public Support",
+      "category": "Political",
+      "description": "Survey shows 54% of Filipinos want an anti-dynasty law passed now. Speaker Bojie Dy and Majority Leader Sandro Marcos filed a landmark Anti-Political Dynasty Bill, though critics call it 'weak' for not prohibiting immediate succession or cross-jurisdiction dynasties.",
+      "significance": "First serious legislative push for anti-dynasty law in decades; multiple versions filed in 20th Congress",
+      "diaspora_impact": "Political dynasties control 80% of provincial governorships; reform could improve governance and reduce corruption",
+      "mentioned_dynasties": ["MARCOS_ROMUALDEZ", "DY_FAMILY"],
+      "sources": {
+        "international": [],
+        "local": [
+          "https://www.rappler.com/video/daily-wrap/december-29-2025/",
+          "https://www.congress.gov.ph/media/press-releases/view/?content=9545"
+        ]
+      },
+      "weekly_review": "weekly-reviews/weekly-review-2026-01-02.html"
+    }
+  ],
+  "ofw_highlights": {
+    "january_2026": {
+      "deployment": "2.57 million OFWs deployed in 2025 (up from 2.2M in 2024)",
+      "remittances_2024": "$38.4 billion (record high)",
+      "labor_agreements": "72 bilateral labor agreements (10 new in 2025)",
+      "aksyon_fund": "₱2.18 billion distributed to 160,000+ OFWs in 2025",
+      "minimum_wage_increase": "Domestic workers: $400 to $500/month",
+      "digital_ofw_pass": "514,966 e-Travel transactions processed in 2025",
+      "travel_advisories": {
+        "suspended": ["Israel", "Lebanon", "Iran", "Jordan"],
+        "caution": ["Myanmar", "Southeast Asia (scam hub operations)"],
+        "new_market": "Oman MOU expected January 2026"
+      }
+    }
+  },
+  "exchange_rate": {
+    "january_2026": {
+      "week_ending_jan_2": {
+        "open": "58.95",
+        "high": "59.10",
+        "low": "58.75",
+        "close": "58.83",
+        "change": "-0.14%"
+      },
+      "2025_range": {
+        "low": "55.35 (May 23, 2025)",
+        "high": "59.33 (December 9, 2025)"
+      },
+      "ytd_trend": "Peso strengthened 0.34% in December 2025 but down 1.30% YoY"
+    }
+  },
+  "upcoming_events": {
+    "february_2026": [
+      {
+        "date": "2026-02-06",
+        "title": "VP Sara Duterte Impeachment Ban Expires",
+        "description": "One-year bar on impeachment complaints against VP Sara Duterte expires, allowing new complaints to be filed",
+        "significance": "Political tensions may escalate"
+      }
+    ],
+    "2026_general": [
+      "ASEAN Summit (Philippines as Chair)",
+      "Potential Mayon Volcano eruption response",
+      "2026 Budget implementation",
+      "Flood control corruption trials",
+      "Anti-dynasty bill deliberations"
+    ]
+  },
+  "summary": {
+    "total_events": 7,
+    "political_events": 3,
+    "natural_disasters": 1,
+    "economic_events": 2,
+    "international_relations": 1,
+    "ofw_diaspora": 0,
+    "key_themes_2026": [
+      "ASEAN Chairmanship and South China Sea tensions",
+      "Continuing flood control corruption prosecutions",
+      "Anti-dynasty legislation debate",
+      "Marcos-Duterte political dynamics",
+      "Mayon Volcano monitoring",
+      "New US remittance tax impact",
+      "OFW protections and digitalization"
+    ],
+    "diaspora_relevance": {
+      "remittances": "New 1% US tax may affect $15+ billion in US-Philippines corridor",
+      "natural_disasters": "Mayon Volcano unrest requires monitoring for Bicol families",
+      "governance": "Anti-dynasty and anti-corruption efforts may improve governance quality",
+      "ofw_support": "Expanded DMW programs and new labor agreements benefit workers abroad"
+    }
+  }
+}

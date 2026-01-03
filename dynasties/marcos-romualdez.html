@@ -1,0 +1,390 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Marcos-Romualdez Dynasty - Philippine Political Dynasties</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Spectral:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --ink: #1a1a1a;
+        --muted: #5e5e5e;
+        --paper: #f8f5f0;
+        --accent: #124559;
+        --accent-2: #c44900;
+        --politics: #3a0ca3;
+        --card: #ffffff;
+        --line: #d6cbbd;
+        --shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+      }
+
+      * { box-sizing: border-box; }
+
+      body {
+        margin: 0;
+        font-family: "Spectral", Georgia, serif;
+        color: var(--ink);
+        background: radial-gradient(1200px 600px at 80% -10%, #f0e7d7 0%, transparent 60%),
+          radial-gradient(800px 500px at 10% 10%, #e6efe7 0%, transparent 55%),
+          var(--paper);
+        line-height: 1.6;
+      }
+
+      header {
+        padding: 32px 24px 20px;
+        max-width: 1100px;
+        margin: 0 auto;
+      }
+
+      .breadcrumb {
+        font-size: 14px;
+        color: var(--muted);
+        margin-bottom: 8px;
+        font-family: "IBM Plex Sans", sans-serif;
+      }
+
+      .breadcrumb a {
+        color: var(--accent);
+        text-decoration: none;
+      }
+
+      h1 {
+        font-size: clamp(28px, 4vw, 44px);
+        margin: 0 0 8px;
+        color: var(--politics);
+      }
+
+      .subtitle {
+        font-size: 18px;
+        color: var(--muted);
+        margin: 0 0 20px;
+      }
+
+      .nav-links {
+        display: flex;
+        gap: 16px;
+        flex-wrap: wrap;
+        margin: 20px 0;
+        padding: 12px 16px;
+        background: rgba(255, 255, 255, 0.75);
+        border: 1px solid #eadfce;
+        border-radius: 14px;
+        box-shadow: var(--shadow);
+      }
+
+      .nav-links a {
+        color: var(--accent);
+        text-decoration: none;
+        font-family: "IBM Plex Sans", sans-serif;
+        font-weight: 500;
+        padding: 6px 12px;
+        border-radius: 8px;
+        transition: background 0.2s;
+      }
+
+      .nav-links a:hover {
+        background: rgba(18, 69, 89, 0.1);
+      }
+
+      main {
+        max-width: 1100px;
+        margin: 16px auto 60px;
+        padding: 0 24px;
+      }
+
+      .dynasty-overview {
+        background: var(--card);
+        border-radius: 16px;
+        padding: 24px;
+        margin-bottom: 32px;
+        box-shadow: var(--shadow);
+        border-left: 4px solid var(--politics);
+      }
+
+      .dynasty-overview h2 {
+        margin: 0 0 16px;
+        font-size: 20px;
+        color: var(--politics);
+      }
+
+      .info-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 16px;
+        margin-bottom: 16px;
+      }
+
+      .info-item {
+        background: rgba(58, 12, 163, 0.05);
+        padding: 12px;
+        border-radius: 8px;
+      }
+
+      .info-item .label {
+        font-size: 12px;
+        color: var(--muted);
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        display: block;
+        margin-bottom: 4px;
+        font-family: "IBM Plex Sans", sans-serif;
+      }
+
+      .info-item .value {
+        font-size: 16px;
+        font-weight: 600;
+      }
+
+      .current-positions {
+        margin-top: 16px;
+      }
+
+      .current-positions h3 {
+        font-size: 16px;
+        margin: 0 0 12px;
+        color: var(--ink);
+      }
+
+      .position-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+      }
+
+      .position-tag {
+        background: var(--politics);
+        color: #fff;
+        padding: 6px 12px;
+        border-radius: 20px;
+        font-size: 13px;
+        font-family: "IBM Plex Sans", sans-serif;
+      }
+
+      .section-title {
+        font-size: 24px;
+        margin: 40px 0 20px;
+        padding-bottom: 12px;
+        border-bottom: 2px solid var(--line);
+        color: var(--ink);
+      }
+
+      .news-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      .news-item {
+        background: var(--card);
+        border-radius: 12px;
+        padding: 20px;
+        margin-bottom: 16px;
+        box-shadow: var(--shadow);
+        border-left: 3px solid var(--politics);
+      }
+
+      .news-item .date {
+        font-size: 13px;
+        color: var(--muted);
+        font-family: "IBM Plex Sans", sans-serif;
+        margin-bottom: 6px;
+      }
+
+      .news-item h3 {
+        margin: 0 0 8px;
+        font-size: 18px;
+      }
+
+      .news-item h3 a {
+        color: var(--ink);
+        text-decoration: none;
+      }
+
+      .news-item h3 a:hover {
+        color: var(--accent-2);
+        text-decoration: underline;
+      }
+
+      .news-item p {
+        margin: 0 0 12px;
+        font-size: 15px;
+        line-height: 1.6;
+      }
+
+      .news-item .source {
+        font-size: 12px;
+        color: var(--muted);
+      }
+
+      .news-item .source a {
+        color: var(--accent-2);
+        text-decoration: none;
+      }
+
+      .year-section {
+        margin-bottom: 32px;
+      }
+
+      .year-section h3 {
+        font-size: 18px;
+        color: var(--politics);
+        margin: 0 0 16px;
+        padding: 8px 16px;
+        background: rgba(58, 12, 163, 0.05);
+        border-radius: 8px;
+        display: inline-block;
+      }
+
+      footer {
+        max-width: 1100px;
+        margin: 60px auto 40px;
+        padding: 24px;
+        text-align: center;
+        color: var(--muted);
+        font-size: 14px;
+        border-top: 1px solid var(--line);
+      }
+
+      footer a {
+        color: var(--accent);
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <p class="breadcrumb"><a href="index.html">Dynasties</a> / Marcos-Romualdez</p>
+      <h1>Marcos-Romualdez Dynasty</h1>
+      <p class="subtitle">Ilocos Norte, Leyte, and National Government</p>
+      <nav class="nav-links">
+        <a href="../dynasties-network-visualization.html#dynasty-MARCOS_ROMUALDEZ">View on Map</a>
+        <a href="../interactive-timeline/?search=Marcos">Timeline</a>
+        <a href="../weekly-reviews/">Weekly Reviews</a>
+        <a href="index.html">All Dynasties</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="dynasty-overview">
+        <h2>Dynasty Overview</h2>
+        <div class="info-grid">
+          <div class="info-item">
+            <span class="label">Core Regions</span>
+            <span class="value">Ilocos Norte, Leyte</span>
+          </div>
+          <div class="info-item">
+            <span class="label">Political Base Since</span>
+            <span class="value">1960s</span>
+          </div>
+          <div class="info-item">
+            <span class="label">National Offices Held</span>
+            <span class="value">Presidency (2), Senate, House</span>
+          </div>
+          <div class="info-item">
+            <span class="label">Related Dynasties</span>
+            <span class="value">Romualdez, Araneta</span>
+          </div>
+        </div>
+        <div class="current-positions">
+          <h3>Current Positions (2026)</h3>
+          <div class="position-list">
+            <span class="position-tag">President - Ferdinand Marcos Jr.</span>
+            <span class="position-tag">First Lady - Liza Araneta-Marcos</span>
+            <span class="position-tag">Senior Deputy Majority Leader - Sandro Marcos</span>
+            <span class="position-tag">Senator - Imee Marcos</span>
+            <span class="position-tag">Ilocos Norte Governor - Matthew Marcos Manotoc</span>
+          </div>
+        </div>
+      </section>
+
+      <h2 class="section-title">News Archive</h2>
+
+      <section class="year-section">
+        <h3>2026</h3>
+        <ul class="news-list">
+          <li class="news-item">
+            <p class="date">January 1, 2026</p>
+            <h3><a href="../weekly-reviews/weekly-review-2026-01-02.html">President Marcos Delivers New Year Message - Calls for Unity and Discipline</a></h3>
+            <p>President Ferdinand Marcos Jr. renewed his call for discipline, unity, and readiness to choose service over self-interest as Filipinos welcomed 2026.</p>
+            <p class="source">Source: <a href="https://www.philstar.com/headlines/2026/01/01/2498093/president-marcos-renews-call-discipline-unity-2026" target="_blank">PhilStar</a> | <a href="../weekly-reviews/weekly-review-2026-01-02.html">Weekly Review</a></p>
+          </li>
+
+          <li class="news-item">
+            <p class="date">January 1, 2026</p>
+            <h3><a href="../weekly-reviews/weekly-review-2026-01-02.html">Philippines Assumes ASEAN Chairmanship for 2026</a></h3>
+            <p>The Philippines officially assumed the ASEAN chairmanship for 2026, gaining global attention for President Marcos's strong stance against China's aggressive actions in the West Philippine Sea.</p>
+            <p class="source">Source: <a href="https://www.chathamhouse.org/2025/12/philippines-asean-chair-south-china-sea-agreement-unlikely-be-concluded-2026" target="_blank">Chatham House</a> | <a href="../weekly-reviews/weekly-review-2026-01-02.html">Weekly Review</a></p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="year-section">
+        <h3>2025</h3>
+        <ul class="news-list">
+          <li class="news-item">
+            <p class="date">December 29, 2025</p>
+            <h3><a href="../weekly-reviews/weekly-review-2026-01-02.html">Anti-Dynasty Bill Filed by Sandro Marcos and Speaker Dy</a></h3>
+            <p>Speaker Bojie Dy and Majority Leader Sandro Marcos filed a landmark Anti-Political Dynasty Bill, though critics call it "weak" for not prohibiting immediate succession or cross-jurisdiction dynasties.</p>
+            <p class="source">Source: <a href="https://www.congress.gov.ph/media/press-releases/view/?content=9545" target="_blank">Congress.gov.ph</a> | <a href="../weekly-reviews/weekly-review-2026-01-02.html">Weekly Review</a></p>
+          </li>
+
+          <li class="news-item">
+            <p class="date">December 29, 2025</p>
+            <h3><a href="../weekly-reviews/weekly-review-2026-01-02.html">2026 National Budget Ratified</a></h3>
+            <p>The House and Senate ratified the PHP 6.3 trillion 2026 national budget. The DPWH saw cuts following the flood control scandal while education received increases.</p>
+            <p class="source">Source: <a href="https://www.rappler.com/philippines/2026-budget-marcos-review-signed-january-2026/" target="_blank">Rappler</a> | <a href="../weekly-reviews/weekly-review-2026-01-02.html">Weekly Review</a></p>
+          </li>
+
+          <li class="news-item">
+            <p class="date">December 2025</p>
+            <h3>Flood Control Corruption Scandal - Martin Romualdez Resigns as Speaker</h3>
+            <p>The $2 billion flood control corruption scandal led to multiple investigations and the resignation of House Speaker Martin Romualdez, cousin of President Marcos.</p>
+            <p class="source">Source: <a href="https://newsinfo.inquirer.net/2157224/yearend-2025-record-flood-control-corruption-unravels" target="_blank">Inquirer</a></p>
+          </li>
+
+          <li class="news-item">
+            <p class="date">Throughout 2025</p>
+            <h3>Marcos-Duterte Alliance Breakdown</h3>
+            <p>The political alliance between the Marcos and Duterte families, which won them the 2022 election, deteriorated "beyond repair" throughout 2025, marked by impeachment proceedings and public accusations.</p>
+            <p class="source">Source: <a href="https://thediplomat.com/2025/12/the-philippines-in-2025-corruption-accountability-and-the-marcos-duterte-rift/" target="_blank">The Diplomat</a></p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="year-section">
+        <h3>Historical Context</h3>
+        <ul class="news-list">
+          <li class="news-item">
+            <p class="date">1965-1986</p>
+            <h3>Ferdinand Marcos Sr. Presidency and Martial Law</h3>
+            <p>Ferdinand Marcos Sr. served as president from 1965-1986, declaring martial law in 1972. The family went into exile after the 1986 People Power Revolution.</p>
+            <p class="source">Historical record</p>
+          </li>
+
+          <li class="news-item">
+            <p class="date">2022</p>
+            <h3>Ferdinand Marcos Jr. Elected President</h3>
+            <p>Ferdinand "Bongbong" Marcos Jr. won the 2022 presidential election with Sara Duterte as running mate, marking the family's return to Malacanang after 36 years.</p>
+            <p class="source">Historical record</p>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        Part of the <a href="https://github.com/dat-angel/openpinas">OpenPinas</a> project
+      </p>
+      <p>
+        <a href="index.html">All Dynasties</a> |
+        <a href="../weekly-reviews/">Weekly Reviews</a> |
+        <a href="../interactive-timeline/">Timeline</a>
+      </p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,166 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "province": "Metro Manila",
+        "region": "NCR",
+        "elite_school_count": 4,
+        "influence_score": 96,
+        "retention_index": 52,
+        "school_presence": ["UP", "ATENEO", "DLSU", "UST"]
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [121.0, 14.4],
+            [121.3, 14.4],
+            [121.3, 14.8],
+            [121.0, 14.8],
+            [121.0, 14.4]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "province": "Laguna",
+        "region": "CALABARZON",
+        "elite_school_count": 2,
+        "influence_score": 76,
+        "retention_index": 60,
+        "school_presence": ["UP", "DLSU"]
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [121.0, 14.0],
+            [121.4, 14.0],
+            [121.4, 14.3],
+            [121.0, 14.3],
+            [121.0, 14.0]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "province": "Ilocos Norte",
+        "region": "Ilocos",
+        "elite_school_count": 2,
+        "influence_score": 68,
+        "retention_index": 66,
+        "school_presence": ["UST", "MSUIIT"]
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [120.4, 18.0],
+            [120.8, 18.0],
+            [120.8, 18.4],
+            [120.4, 18.4],
+            [120.4, 18.0]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "province": "Cebu",
+        "region": "Central Visayas",
+        "elite_school_count": 4,
+        "influence_score": 80,
+        "retention_index": 70,
+        "school_presence": ["UP", "ATENEO", "DLSU", "SILLIMAN"]
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [123.6, 9.8],
+            [124.0, 9.8],
+            [124.0, 10.2],
+            [123.6, 10.2],
+            [123.6, 9.8]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "province": "Negros Oriental",
+        "region": "Central Visayas",
+        "elite_school_count": 2,
+        "influence_score": 64,
+        "retention_index": 74,
+        "school_presence": ["UST", "SILLIMAN"]
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [123.0, 9.1],
+            [123.4, 9.1],
+            [123.4, 9.5],
+            [123.0, 9.5],
+            [123.0, 9.1]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "province": "Iloilo",
+        "region": "Western Visayas",
+        "elite_school_count": 2,
+        "influence_score": 66,
+        "retention_index": 72,
+        "school_presence": ["ATENEO", "SILLIMAN"]
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [122.3, 10.5],
+            [122.7, 10.5],
+            [122.7, 10.9],
+            [122.3, 10.9],
+            [122.3, 10.5]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "province": "Davao del Sur",
+        "region": "Davao",
+        "elite_school_count": 2,
+        "influence_score": 70,
+        "retention_index": 78,
+        "school_presence": ["UP", "MSUIIT"]
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [125.3, 6.8],
+            [125.7, 6.8],
+            [125.7, 7.2],
+            [125.3, 7.2],
+            [125.3, 6.8]
+          ]
+        ]
+      }
+    }
+  ]
+}

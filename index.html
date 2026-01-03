@@ -3,243 +3,243 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>OpenPinas – Philippine Political Dynasties</title>
-    <meta name="description" content="Track 71 political dynasties, corruption cases, and 2025 events in the Philippines. Open data for the diaspora." />
-    <meta property="og:title" content="OpenPinas – Philippine Political Dynasties" />
-    <meta property="og:description" content="Track 71 political dynasties, corruption cases, and 2025 events in the Philippines. Open data for the diaspora." />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://dat-angel.github.io/openpinas/" />
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="OpenPinas" />
-    <meta name="twitter:description" content="Track Philippine political dynasties, corruption cases, and 2025 events." />
-    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <title>Philippine Political Dynasties</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Spectral:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Spectral:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
     <style>
-      * { box-sizing: border-box; margin: 0; padding: 0; }
+      :root {
+        --ink: #1a1a1a;
+        --muted: #5e5e5e;
+        --paper: #f8f5f0;
+        --accent: #124559;
+        --accent-2: #c44900;
+        --card: #ffffff;
+        --shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
 
       body {
-        font-family: "Spectral", Georgia, serif;
-        color: #222;
-        background: #fdfcfb;
+        margin: 0;
+        font-family: "Spectral", "Source Serif 4", Georgia, serif;
+        color: var(--ink);
+        background: radial-gradient(1200px 600px at 80% -10%, #f0e7d7 0%, transparent 60%),
+          radial-gradient(800px 500px at 10% 10%, #e6efe7 0%, transparent 55%),
+          var(--paper);
         line-height: 1.6;
         min-height: 100vh;
+        display: flex;
+        flex-direction: column;
       }
 
       header {
-        padding: 3rem 1.5rem 1.5rem;
-        max-width: 640px;
+        padding: 48px 24px 32px;
+        max-width: 900px;
         margin: 0 auto;
+        text-align: center;
       }
 
       h1 {
-        font-size: 2rem;
-        font-weight: 600;
-        margin-bottom: 0.5rem;
+        font-size: clamp(32px, 5vw, 48px);
+        margin: 0 0 16px;
+        letter-spacing: 0.3px;
+        color: var(--ink);
       }
 
-      .intro {
-        color: #444;
-        font-size: 1.125rem;
-        margin-bottom: 1.5rem;
-      }
-
-      .intro strong { color: #222; }
-
-      .context {
-        font-size: 0.9375rem;
-        color: #555;
-        padding: 1rem 1.25rem;
-        background: #fff;
-        border: 1px solid #e5e5e5;
-        line-height: 1.7;
+      .subtitle {
+        font-size: 18px;
+        color: var(--muted);
+        margin: 0 0 24px;
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
       }
 
       main {
-        max-width: 640px;
+        flex: 1;
+        max-width: 900px;
         margin: 0 auto;
-        padding: 0 1.5rem 4rem;
+        padding: 0 24px 60px;
       }
 
-      .links {
-        margin: 2rem 0;
-        border-top: 1px solid #e5e5e5;
+      .cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 24px;
+        margin: 32px 0;
       }
 
-      .links a {
-        display: block;
-        padding: 1rem 0;
-        border-bottom: 1px solid #e5e5e5;
+      .card {
+        background: var(--card);
+        border-radius: 16px;
+        padding: 32px;
+        box-shadow: var(--shadow);
+        border-left: 4px solid var(--accent);
+        transition: transform 0.2s, box-shadow 0.2s;
         text-decoration: none;
         color: inherit;
+        display: block;
       }
 
-      .links a:hover .title {
-        text-decoration: underline;
+      .card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 16px 40px rgba(0, 0, 0, 0.12);
+        text-decoration: none;
       }
 
-      .links .title {
-        font-family: "IBM Plex Sans", -apple-system, sans-serif;
-        font-weight: 600;
-        font-size: 1rem;
-        color: #222;
-        margin-bottom: 0.25rem;
+      .card h2 {
+        margin: 0 0 12px;
+        font-size: 24px;
+        color: var(--accent);
       }
 
-      .links .desc {
-        font-size: 0.875rem;
-        color: #666;
-        line-height: 1.5;
+      .card p {
+        margin: 0;
+        color: var(--muted);
+        font-size: 15px;
+        line-height: 1.6;
       }
 
-      .numbers {
-        font-family: "IBM Plex Sans", -apple-system, sans-serif;
-        font-size: 0.8125rem;
-        color: #888;
-        margin: 1.5rem 0 2.5rem;
+      .stats {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 16px;
+        margin: 40px 0;
       }
 
-      .numbers span {
-        display: inline-block;
-        margin-right: 1.25rem;
+      .stat {
+        text-align: center;
+        padding: 20px;
+        background: var(--card);
+        border-radius: 12px;
+        box-shadow: var(--shadow);
       }
 
-      .numbers strong {
-        color: #222;
+      .stat .number {
+        font-size: 32px;
+        font-weight: 700;
+        color: var(--accent);
+        margin: 0;
       }
 
-      section.about {
-        margin-top: 2rem;
-        padding-top: 2rem;
-        border-top: 1px solid #e5e5e5;
-      }
-
-      section.about h2 {
-        font-family: "IBM Plex Sans", -apple-system, sans-serif;
-        font-size: 0.75rem;
-        font-weight: 600;
+      .stat .label {
+        font-size: 13px;
+        color: var(--muted);
+        margin: 4px 0 0;
         text-transform: uppercase;
-        letter-spacing: 0.05em;
-        color: #888;
-        margin-bottom: 1rem;
-      }
-
-      section.about p {
-        font-size: 0.9375rem;
-        color: #444;
-        margin-bottom: 1rem;
-        line-height: 1.7;
-      }
-
-      section.about a {
-        color: #222;
-        text-decoration: underline;
-        text-underline-offset: 2px;
-      }
-
-      section.about a:hover {
-        color: #000;
+        letter-spacing: 0.5px;
       }
 
       footer {
-        max-width: 640px;
-        margin: 0 auto;
-        padding: 2rem 1.5rem;
-        font-family: "IBM Plex Sans", -apple-system, sans-serif;
-        font-size: 0.75rem;
-        color: #888;
-        border-top: 1px solid #e5e5e5;
+        text-align: center;
+        padding: 32px 24px;
+        color: var(--muted);
+        font-size: 14px;
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+        margin-top: 60px;
       }
 
       footer a {
-        color: #666;
+        color: var(--accent);
         text-decoration: none;
       }
 
-      footer a:hover { text-decoration: underline; }
+      footer a:hover {
+        text-decoration: underline;
+      }
 
-      @media (max-width: 640px) {
-        header, main, footer {
-          padding-left: 1.25rem;
-          padding-right: 1.25rem;
+      @media (max-width: 720px) {
+        header {
+          padding: 32px 18px 24px;
+        }
+
+        main {
+          padding: 0 18px 40px;
+        }
+
+        .cards {
+          grid-template-columns: 1fr;
         }
       }
     </style>
   </head>
   <body>
     <header>
-      <h1>OpenPinas</h1>
-      <p class="intro">
-        <strong>71 political dynasties</strong> run the Philippines. This is my attempt to keep track of them.
+      <h1>Philippine Political Dynasties</h1>
+      <p class="subtitle">
+        Tracking political dynasties, relationships, and major events for the Filipino diaspora
       </p>
-      <div class="context">
-        2025 was wild. The flood control scandal took down the House Speaker, got the Senate President ousted,
-        and exposed ₱118 billion in stolen funds. Half of Congress is implicated. I couldn't keep up with
-        who's related to whom anymore, so I made this.
-      </div>
     </header>
 
     <main>
-      <div class="links">
-        <a href="dynasties-network-visualization.html">
-          <div class="title">Dynasty Network Map</div>
-          <div class="desc">The Marcoses married into the Romualdezes. The Dutertes broke with both.
-          Who's allied with whom? Who's under investigation? It's all here.</div>
+      <div class="cards">
+        <a href="dynasties-network-visualization.html" class="card">
+          <h2>🗺️ Dynasty Network Map</h2>
+          <p>
+            Interactive network graph showing how 50+ political dynasties connect through alliances, rivalries, and corruption networks. Includes geographic control map of 71 provinces.
+          </p>
         </a>
 
-        <a href="interactive-timeline/">
-          <div class="title">2025 Timeline</div>
-          <div class="desc">Romualdez out in September. Escudero ousted. Arrests by Christmas. 49 events, sourced.</div>
+        <a href="interactive-timeline/" class="card">
+          <h2>📅 Timeline</h2>
+          <p>
+            Chronological view of major Philippine events in 2025. Filter by category, see which dynasties were involved, and understand how events connect.
+          </p>
         </a>
 
-        <a href="weekly-reviews/">
-          <div class="title">Weekly Digests</div>
-          <div class="desc">For when you've been busy and need to catch up.</div>
+        <a href="elite-schools-influence-visualization.html" class="card">
+          <h2>🎓 Elite Schools Influence Map</h2>
+          <p>
+            Schools as nodes, alumni pipelines as connectors, and provinces as shared impact zones. Explore community loops, mobility paths, and talent retention.
+          </p>
         </a>
 
-        <a href="corruption-tracker/">
-          <div class="title">Corruption Tracker</div>
-          <div class="desc">POGO cases, the Alice Guo mess, flood control kickbacks. Who got arrested, who's still free.</div>
-        </a>
-
-        <a href="regional-visualization.html">
-          <div class="title">Regional Analysis</div>
-          <div class="desc">Dynasties and corruption cases by province. See which regions have the most political families and where corruption cases are concentrated.</div>
+        <a href="weekly-reviews/" class="card">
+          <h2>📰 Weekly Reviews</h2>
+          <p>
+            Weekly news digests summarizing significant events, organized by category. Designed for diaspora communities to stay informed.
+          </p>
         </a>
       </div>
 
-      <div class="numbers">
-        <span><strong>71</strong> dynasties</span>
-        <span><strong>148+</strong> key politicians</span>
-        <span><strong>71</strong> provinces</span>
+      <div class="stats">
+        <div class="stat">
+          <p class="number">50+</p>
+          <p class="label">Dynasties</p>
+        </div>
+        <div class="stat">
+          <p class="number">450+</p>
+          <p class="label">Members</p>
+        </div>
+        <div class="stat">
+          <p class="number">71</p>
+          <p class="label">Provinces</p>
+        </div>
+        <div class="stat">
+          <p class="number">67%</p>
+          <p class="label">Congress</p>
+        </div>
       </div>
-
-      <section class="about">
-        <h2>Background</h2>
-        <p>
-          I live abroad. Every visit home, the political landscape has shifted—new alliances,
-          new scandals, someone's cousin is now governor. The family Viber group doesn't help.
-        </p>
-        <p>
-          So I started tracking it. Dynasty names, who married whom, which provinces they control,
-          what they're accused of. Data from Rappler, Inquirer, PCIJ, Wikipedia, and way too many
-          hours reading Senate hearing transcripts.
-        </p>
-        <p>
-          It's incomplete. It's probably got errors. But it's
-          <a href="https://github.com/dat-angel/openpinas">on GitHub</a>
-          if you want to fix something or add data.
-        </p>
-      </section>
     </main>
 
     <footer>
-      <a href="https://github.com/dat-angel/openpinas">Source</a> ·
-      Data: CC BY 4.0 ·
-      <a href="https://ko-fi.com/beatrizd">Support</a> ·
-      Last updated January 2026
+      <p>
+        Part of the
+        <a href="https://github.com/dat-angel/openpinas"
+          >Philippine Political Dynasties</a
+        >
+        project
+      </p>
+      <p>
+        <a href="https://github.com/dat-angel/openpinas">GitHub</a> |
+        <a href="https://dat-angel.github.io/openpinas/">Live Site</a>
+      </p>
     </footer>
   </body>
 </html>
-

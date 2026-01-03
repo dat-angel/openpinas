@@ -11,253 +11,417 @@
       rel="stylesheet"
     />
     <style>
-      * { box-sizing: border-box; margin: 0; padding: 0; }
+      :root {
+        --ink: #1a1a1a;
+        --muted: #5e5e5e;
+        --paper: #f8f5f0;
+        --accent: #124559;
+        --accent-2: #c44900;
+        --weather: #0b6e4f;
+        --politics: #3a0ca3;
+        --culture: #b23a48;
+        --economic: #3a0ca3;
+        --legal: #1e3a5f;
+        --international: #0d7377;
+        --religious: #d4a017;
+        --card: #ffffff;
+        --line: #d6cbbd;
+        --shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
 
       body {
-        font-family: "Spectral", Georgia, serif;
-        color: #222;
-        background: #fdfcfb;
+        margin: 0;
+        font-family: "Spectral", "Source Serif 4", Georgia, serif;
+        color: var(--ink);
+        background: radial-gradient(1200px 600px at 80% -10%, #f0e7d7 0%, transparent 60%),
+          radial-gradient(800px 500px at 10% 10%, #e6efe7 0%, transparent 55%),
+          var(--paper);
         line-height: 1.6;
-        min-height: 100vh;
       }
 
       header {
-        padding: 3rem 1.5rem 1.5rem;
-        max-width: 800px;
+        padding: 32px 24px 20px;
+        max-width: 1100px;
         margin: 0 auto;
       }
 
-      .header-nav {
-        font-size: 0.8125rem;
-        font-family: "IBM Plex Sans", -apple-system, sans-serif;
-        margin-bottom: 1.5rem;
-      }
-
-      .header-nav a {
-        color: #666;
-        text-decoration: none;
-      }
-
-      .header-nav a:hover {
-        text-decoration: underline;
-      }
-
       h1 {
-        font-size: 1.75rem;
-        font-weight: 600;
-        margin-bottom: 0.5rem;
+        font-size: clamp(28px, 4vw, 44px);
+        margin: 0 0 8px;
+        letter-spacing: 0.3px;
       }
 
       .week-range {
-        font-size: 1rem;
-        color: #666;
-        margin: 0 0 1.5rem;
+        font-size: 18px;
+        color: var(--muted);
+        margin: 0 0 20px;
+        font-weight: 500;
       }
 
       .nav-links {
         display: flex;
-        gap: 1.5rem;
+        gap: 16px;
         flex-wrap: wrap;
-        font-family: "IBM Plex Sans", -apple-system, sans-serif;
-        font-size: 0.875rem;
+        margin: 20px 0;
+        padding: 12px 16px;
+        background: rgba(255, 255, 255, 0.75);
+        border: 1px solid #eadfce;
+        border-radius: 14px;
+        box-shadow: var(--shadow);
       }
 
       .nav-links a {
-        color: #222;
-        text-decoration: underline;
-        text-underline-offset: 2px;
+        color: var(--accent);
+        text-decoration: none;
+        font-family: "IBM Plex Sans", "Source Sans 3", Arial, sans-serif;
+        font-weight: 500;
+        padding: 6px 12px;
+        border-radius: 8px;
+        transition: background 0.2s;
       }
 
       .nav-links a:hover {
-        color: #000;
+        background: rgba(18, 69, 89, 0.1);
+        text-decoration: none;
       }
 
       main {
-        max-width: 800px;
-        margin: 0 auto;
-        padding: 0 1.5rem 4rem;
+        max-width: 1100px;
+        margin: 16px auto 60px;
+        padding: 0 24px;
       }
 
       .summary-stats {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-        gap: 1rem;
-        margin: 1.5rem 0 2rem;
-        padding: 1rem;
-        background: #fff;
-        border: 1px solid #e5e5e5;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 16px;
+        margin: 24px 0 32px;
       }
 
       .stat-card {
+        background: var(--card);
+        padding: 20px;
+        border-radius: 12px;
+        box-shadow: var(--shadow);
         text-align: center;
       }
 
       .stat-card .number {
-        font-size: 1.5rem;
-        font-weight: 600;
-        color: #222;
+        font-size: 32px;
+        font-weight: 700;
+        color: var(--accent);
         margin: 0;
-        font-family: "IBM Plex Sans", -apple-system, sans-serif;
       }
 
       .stat-card .label {
-        font-size: 0.6875rem;
-        color: #888;
-        margin: 0.25rem 0 0;
+        font-size: 14px;
+        color: var(--muted);
+        margin: 4px 0 0;
         text-transform: uppercase;
-        letter-spacing: 0.05em;
-        font-family: "IBM Plex Sans", -apple-system, sans-serif;
+        letter-spacing: 0.5px;
       }
 
       .section {
-        margin: 2rem 0;
+        margin: 40px 0;
       }
 
       .section-title {
-        font-family: "IBM Plex Sans", -apple-system, sans-serif;
-        font-size: 0.75rem;
-        font-weight: 600;
-        text-transform: uppercase;
-        letter-spacing: 0.05em;
-        color: #888;
-        margin: 0 0 1rem;
-        padding-bottom: 0.5rem;
-        border-bottom: 1px solid #e5e5e5;
+        font-size: 24px;
+        margin: 0 0 20px;
+        padding-bottom: 12px;
+        border-bottom: 2px solid var(--line);
+        color: var(--ink);
       }
 
       .event {
-        background: #fff;
-        border: 1px solid #e5e5e5;
-        padding: 1rem 1.25rem;
-        margin-bottom: 1rem;
+        background: var(--card);
+        border-radius: 16px;
+        padding: 20px 24px;
+        margin-bottom: 20px;
+        box-shadow: var(--shadow);
+        border-left: 4px solid var(--accent);
+        transition: transform 0.2s, box-shadow 0.2s;
+      }
+
+      .event:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 16px 40px rgba(0, 0, 0, 0.12);
       }
 
       .event-header {
         display: flex;
-        gap: 0.75rem;
+        gap: 12px;
         align-items: center;
-        margin-bottom: 0.5rem;
+        margin-bottom: 12px;
         flex-wrap: wrap;
       }
 
       .event time {
-        font-family: "IBM Plex Sans", -apple-system, sans-serif;
-        font-size: 0.75rem;
-        color: #888;
+        font-family: "IBM Plex Sans", "Source Sans 3", Arial, sans-serif;
+        font-size: 14px;
+        color: var(--muted);
+        font-weight: 500;
       }
 
       .category-badge {
-        padding: 0.125rem 0.5rem;
-        font-size: 0.625rem;
+        padding: 4px 12px;
+        border-radius: 999px;
+        font-size: 11px;
         text-transform: uppercase;
-        letter-spacing: 0.05em;
+        letter-spacing: 0.6px;
+        color: #fff;
+        font-family: "IBM Plex Sans", "Source Sans 3", Arial, sans-serif;
         font-weight: 600;
-        border: 1px solid;
-        font-family: "IBM Plex Sans", -apple-system, sans-serif;
       }
 
       .category-badge.political {
-        color: #3a0ca3;
-        border-color: #3a0ca3;
+        background: var(--politics);
       }
 
       .category-badge.cultural {
-        color: #b23a48;
-        border-color: #b23a48;
+        background: var(--culture);
       }
 
       .category-badge.natural-disasters {
-        color: #0b6e4f;
-        border-color: #0b6e4f;
+        background: var(--weather);
       }
 
       .category-badge.economic {
-        color: #3a0ca3;
-        border-color: #3a0ca3;
+        background: var(--economic);
       }
 
       .category-badge.legal {
-        color: #1e3a5f;
-        border-color: #1e3a5f;
+        background: var(--legal);
       }
 
       .category-badge.international-relations {
-        color: #0d7377;
-        border-color: #0d7377;
+        background: var(--international);
       }
 
       .category-badge.religious {
-        color: #b45309;
-        border-color: #b45309;
+        background: var(--religious);
       }
 
-      .event h2 {
-        margin: 0 0 0.5rem;
-        font-size: 1rem;
+      .category-badge.ofw {
+        background: #2563eb;
+      }
+
+      /* Exchange Rate Box */
+      .exchange-rate-box {
+        background: linear-gradient(135deg, #1e3a5f 0%, #124559 100%);
+        border-radius: 16px;
+        padding: 24px;
+        margin: 24px 0;
+        color: #fff;
+        box-shadow: var(--shadow);
+      }
+
+      .exchange-rate-box h3 {
+        margin: 0 0 16px;
+        font-size: 18px;
+        font-weight: 600;
+        color: #fff;
+        font-family: "IBM Plex Sans", sans-serif;
+      }
+
+      .rate-display {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        align-items: center;
+      }
+
+      .current-rate {
+        flex: 1;
+        min-width: 180px;
+      }
+
+      .rate-value {
+        font-size: 42px;
+        font-weight: 700;
+        display: block;
+        line-height: 1.1;
+      }
+
+      .rate-trend {
+        font-size: 16px;
+        padding: 4px 10px;
+        border-radius: 6px;
+        display: inline-block;
+        margin-top: 8px;
+        font-family: "IBM Plex Sans", sans-serif;
         font-weight: 600;
       }
 
+      .rate-trend.up { background: rgba(34, 197, 94, 0.2); color: #4ade80; }
+      .rate-trend.down { background: rgba(239, 68, 68, 0.2); color: #fca5a5; }
+
+      .rate-details {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+        flex: 2;
+        min-width: 280px;
+      }
+
+      .rate-item {
+        background: rgba(255, 255, 255, 0.1);
+        padding: 12px;
+        border-radius: 8px;
+        text-align: center;
+      }
+
+      .rate-item .label {
+        font-size: 11px;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        opacity: 0.8;
+        display: block;
+        margin-bottom: 4px;
+        font-family: "IBM Plex Sans", sans-serif;
+      }
+
+      .rate-item .value { font-size: 18px; font-weight: 600; }
+      .rate-context { margin: 16px 0 8px; font-size: 13px; opacity: 0.9; width: 100%; }
+      .rate-source { font-size: 11px; opacity: 0.6; margin: 0; font-family: "IBM Plex Sans", sans-serif; }
+
+      /* OFW Section */
+      .ofw-section {
+        background: var(--card);
+        border-radius: 16px;
+        padding: 24px;
+        margin: 32px 0;
+        box-shadow: var(--shadow);
+        border-left: 4px solid #2563eb;
+      }
+
+      .ofw-section h2 { margin: 0 0 20px; color: #2563eb; font-size: 22px; }
+
+      .ofw-stats {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 16px;
+        margin-bottom: 24px;
+      }
+
+      .ofw-stat {
+        background: rgba(37, 99, 235, 0.05);
+        padding: 16px;
+        border-radius: 10px;
+        text-align: center;
+        border: 1px solid rgba(37, 99, 235, 0.1);
+      }
+
+      .ofw-stat .number { font-size: 28px; font-weight: 700; color: #2563eb; display: block; }
+      .ofw-stat .label { font-size: 12px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.3px; }
+
+      .ofw-story {
+        padding: 16px;
+        margin: 12px 0;
+        background: rgba(37, 99, 235, 0.03);
+        border-radius: 10px;
+        border-left: 3px solid #2563eb;
+      }
+
+      .ofw-story h3 { margin: 0 0 8px; font-size: 16px; color: var(--ink); }
+      .ofw-story p { margin: 0 0 10px; font-size: 14px; line-height: 1.6; }
+
+      .ofw-details {
+        display: flex;
+        gap: 16px;
+        flex-wrap: wrap;
+        font-size: 12px;
+        color: var(--muted);
+      }
+
+      .ofw-details a { color: #2563eb; text-decoration: none; }
+      .ofw-details a:hover { text-decoration: underline; }
+
+      .travel-advisory {
+        margin-top: 20px;
+        padding: 16px;
+        background: rgba(239, 68, 68, 0.05);
+        border-radius: 10px;
+        border-left: 3px solid #ef4444;
+      }
+
+      .travel-advisory h4 { margin: 0 0 10px; font-size: 14px; color: #ef4444; }
+      .travel-advisory ul { margin: 0; padding-left: 20px; font-size: 13px; }
+      .travel-advisory li { margin: 4px 0; }
+
+      .event h2 {
+        margin: 0 0 12px;
+        font-size: 20px;
+      }
+
       .event h2 a {
-        color: #222;
+        color: var(--ink);
         text-decoration: none;
       }
 
       .event h2 a:hover {
+        color: var(--accent-2);
         text-decoration: underline;
       }
 
       .event .description {
-        font-size: 0.875rem;
-        color: #444;
-        margin: 0.5rem 0;
-        line-height: 1.6;
+        font-size: 15px;
+        color: var(--ink);
+        margin: 12px 0;
+        line-height: 1.7;
       }
 
       .event-details {
-        margin-top: 0.75rem;
-        padding-top: 0.75rem;
-        border-top: 1px solid #e5e5e5;
+        margin-top: 16px;
+        padding-top: 16px;
+        border-top: 1px solid var(--line);
       }
 
       .event-details p {
-        margin: 0.5rem 0;
-        font-size: 0.8125rem;
-        line-height: 1.5;
+        margin: 10px 0;
+        font-size: 14px;
+        line-height: 1.6;
       }
 
       .event-details strong {
-        color: #222;
+        color: var(--ink);
         font-weight: 600;
       }
 
       .significance {
-        padding: 0.75rem;
-        background: #f9f9f9;
-        border-left: 2px solid #ddd;
-        margin: 0.75rem 0;
-        font-size: 0.8125rem;
+        padding: 10px 14px;
+        background: rgba(18, 69, 89, 0.05);
+        border-left: 3px solid var(--accent);
+        border-radius: 6px;
+        margin: 12px 0;
       }
 
       .diaspora-impact {
-        padding: 0.75rem;
-        background: #f9f9f9;
-        border-left: 2px solid #ddd;
-        margin: 0.75rem 0;
-        font-size: 0.8125rem;
+        padding: 10px 14px;
+        background: rgba(196, 73, 0, 0.05);
+        border-left: 3px solid var(--accent-2);
+        border-radius: 6px;
+        margin: 12px 0;
       }
 
       .dynasties {
-        margin: 0.75rem 0;
-        padding: 0.75rem;
-        background: #f9f9f9;
-        border-left: 2px solid #3a0ca3;
-        font-size: 0.8125rem;
+        margin: 12px 0;
+        padding: 12px;
+        background: rgba(58, 12, 163, 0.05);
+        border-left: 3px solid var(--politics);
+        border-radius: 6px;
+        font-size: 14px;
       }
 
       .dynasties a {
-        color: #3a0ca3;
+        color: var(--politics);
         text-decoration: none;
         font-weight: 500;
+        margin: 0 4px;
       }
 
       .dynasties a:hover {
@@ -265,48 +429,44 @@
       }
 
       .sources {
-        margin: 0.75rem 0;
-        font-size: 0.8125rem;
+        margin: 12px 0;
+        font-size: 14px;
       }
 
       .sources a {
-        color: #222;
-        text-decoration: underline;
-        text-underline-offset: 2px;
-        margin-right: 0.5rem;
+        color: var(--accent-2);
+        text-decoration: none;
+        margin: 0 8px 0 0;
       }
 
       .sources a:hover {
-        color: #000;
+        text-decoration: underline;
       }
 
       .dynasty-highlights {
-        background: #fff;
-        border: 1px solid #e5e5e5;
-        padding: 1.25rem;
-        margin: 2rem 0;
+        background: var(--card);
+        border-radius: 16px;
+        padding: 24px;
+        margin: 32px 0;
+        box-shadow: var(--shadow);
+        border-left: 4px solid var(--politics);
       }
 
       .dynasty-highlights h3 {
-        font-family: "IBM Plex Sans", -apple-system, sans-serif;
-        font-size: 0.75rem;
-        font-weight: 600;
-        text-transform: uppercase;
-        letter-spacing: 0.05em;
-        color: #888;
-        margin: 0 0 1rem;
+        margin: 0 0 16px;
+        color: var(--politics);
       }
 
       .dynasty-item {
-        padding: 0.75rem;
-        margin: 0.5rem 0;
-        background: #f9f9f9;
-        border-left: 2px solid #3a0ca3;
-        font-size: 0.875rem;
+        padding: 12px;
+        margin: 8px 0;
+        background: rgba(58, 12, 163, 0.05);
+        border-radius: 8px;
+        border-left: 3px solid var(--politics);
       }
 
       .dynasty-item a {
-        color: #3a0ca3;
+        color: var(--politics);
         text-decoration: none;
         font-weight: 600;
       }
@@ -316,18 +476,17 @@
       }
 
       footer {
-        max-width: 800px;
-        margin: 0 auto;
-        padding: 2rem 1.5rem;
+        max-width: 1100px;
+        margin: 60px auto 40px;
+        padding: 24px;
         text-align: center;
-        color: #888;
-        font-size: 0.75rem;
-        border-top: 1px solid #e5e5e5;
-        font-family: "IBM Plex Sans", -apple-system, sans-serif;
+        color: var(--muted);
+        font-size: 14px;
+        border-top: 1px solid var(--line);
       }
 
       footer a {
-        color: #666;
+        color: var(--accent);
         text-decoration: none;
       }
 
@@ -336,33 +495,41 @@
       }
 
       .empty-state {
-        padding: 3rem;
+        padding: 40px;
         text-align: center;
-        color: #888;
-        border: 1px dashed #ddd;
-        background: #fff;
+        color: var(--muted);
+        background: var(--card);
+        border-radius: 16px;
+        box-shadow: var(--shadow);
       }
 
-      @media (max-width: 640px) {
-        header, main, footer {
-          padding-left: 1.25rem;
-          padding-right: 1.25rem;
+      @media (max-width: 720px) {
+        header {
+          padding: 24px 18px 16px;
+        }
+
+        main {
+          padding: 0 18px;
+        }
+
+        .event {
+          padding: 16px 18px;
         }
 
         .summary-stats {
-          grid-template-columns: repeat(2, 1fr);
+          grid-template-columns: 1fr;
         }
       }
     </style>
   </head>
   <body>
     <header>
-      <nav class="header-nav"><a href="../">← OpenPinas</a> · <a href="index.html">Weekly Reviews</a></nav>
       <h1>Philippine News Review</h1>
       <p class="week-range">Week of [START DATE] - [END DATE], 2026</p>
       <nav class="nav-links">
-        <a href="../interactive-timeline/">Full Timeline</a>
-        <a href="../dynasties-network-visualization.html">Dynasty Map</a>
+        <a href="../interactive-timeline/">📅 Full Timeline</a>
+        <a href="../dynasties-network-visualization.html">🗺️ Dynasty Map</a>
+        <a href="index.html">📚 All Reviews</a>
       </nav>
     </header>
 
@@ -382,13 +549,90 @@
         </div>
         <div class="stat-card">
           <p class="number" id="dynasty-count">0</p>
-          <p class="label">Dynasties</p>
+          <p class="label">Dynasties Mentioned</p>
         </div>
       </section>
 
+      <!-- PHP:USD Exchange Rate Box - UPDATE WEEKLY -->
+      <section class="exchange-rate-box">
+        <h3>PHP:USD Exchange Rate</h3>
+        <div class="rate-display">
+          <div class="current-rate">
+            <span class="rate-value">₱[RATE]</span>
+            <span class="rate-trend [up/down]">[▲/▼] [X.XX]% this week</span>
+          </div>
+          <div class="rate-details">
+            <div class="rate-item">
+              <span class="label">Week Open</span>
+              <span class="value">₱[OPEN]</span>
+            </div>
+            <div class="rate-item">
+              <span class="label">Week High</span>
+              <span class="value">₱[HIGH]</span>
+            </div>
+            <div class="rate-item">
+              <span class="label">Week Low</span>
+              <span class="value">₱[LOW]</span>
+            </div>
+            <div class="rate-item">
+              <span class="label">Week Close</span>
+              <span class="value">₱[CLOSE]</span>
+            </div>
+          </div>
+          <p class="rate-context">
+            <strong>YTD Context:</strong> [Context about year range and trend]
+          </p>
+          <p class="rate-source">Source: BSP / Bloomberg</p>
+        </div>
+      </section>
+
+      <!-- Events will be inserted here by JavaScript -->
       <section id="events-container">
         <div class="empty-state">
           <p>Loading events for this week...</p>
+        </div>
+      </section>
+
+      <!-- OFW & Diaspora News Section - UPDATE WEEKLY -->
+      <section class="ofw-section">
+        <h2>OFW & Diaspora News</h2>
+
+        <div class="ofw-stats">
+          <div class="ofw-stat">
+            <span class="number">[X.XXM]</span>
+            <span class="label">OFWs deployed YTD</span>
+          </div>
+          <div class="ofw-stat">
+            <span class="number">$[XX.X]B</span>
+            <span class="label">Remittances (latest)</span>
+          </div>
+          <div class="ofw-stat">
+            <span class="number">[XX]</span>
+            <span class="label">Labor Agreements</span>
+          </div>
+          <div class="ofw-stat">
+            <span class="number">₱[X.XX]B</span>
+            <span class="label">Aksyon Fund Aid</span>
+          </div>
+        </div>
+
+        <!-- Add 3-5 OFW stories -->
+        <article class="ofw-story">
+          <h3>[Story Title]</h3>
+          <p>[Story description - 2-3 sentences]</p>
+          <div class="ofw-details">
+            <span>[Affected countries/sectors]</span>
+            <a href="[source-url]" target="_blank">[Source]</a>
+          </div>
+        </article>
+
+        <!-- Travel Advisories if applicable -->
+        <div class="travel-advisory">
+          <h4>Active Travel Advisories</h4>
+          <ul>
+            <li><strong>Deployment Suspended:</strong> [Countries] – [Reason]</li>
+            <li><strong>Exercise Caution:</strong> [Countries] – [Reason]</li>
+          </ul>
         </div>
       </section>
 
@@ -401,9 +645,19 @@
     </main>
 
     <footer>
-      <p>Part of <a href="../">OpenPinas</a></p>
-      <p><a href="https://github.com/dat-angel/openpinas">GitHub</a> · <a href="https://ko-fi.com/beatrizd">Support</a> · Data: CC BY 4.0</p>
-      <p style="margin-top: 0.75rem;">Last updated: <span id="last-updated">[DATE]</span></p>
+      <p>
+        Part of the
+        <a href="https://github.com/dat-angel/openpinas"
+          >Philippine Political Dynasties</a
+        >
+        project
+      </p>
+      <p>
+        <a href="https://github.com/dat-angel/openpinas">GitHub</a>
+      </p>
+      <p style="margin-top: 12px; font-size: 12px;">
+        Last updated: <span id="last-updated">[DATE]</span>
+      </p>
     </footer>
 
     <script>
@@ -426,19 +680,22 @@
         "Religious": { slug: "religious", display: "Religious" }
       };
 
+      // Format date for display
       function formatDate(dateString) {
         const date = new Date(dateString + "T00:00:00");
-        return date.toLocaleDateString("en-US", {
-          month: "long",
-          day: "numeric",
-          year: "numeric"
+        return date.toLocaleDateString("en-US", { 
+          month: "long", 
+          day: "numeric", 
+          year: "numeric" 
         });
       }
 
+      // Format date for URL
       function formatDateForURL(dateString) {
         return dateString;
       }
 
+      // Get dynasty display name from ID
       function getDynastyName(id) {
         const names = {
           "MARCOS_ROMUALDEZ": "Marcos-Romualdez",
@@ -459,9 +716,11 @@
         return names[id] || id.replace(/_/g, " ");
       }
 
+      // Create event HTML
       function createEventHTML(event) {
         const category = categoryMap[event.category] || { slug: "political", display: event.category };
-
+        const eventId = `event-${event.date}-${event.title.toLowerCase().replace(/\s+/g, "-").slice(0, 30)}`;
+        
         let dynastiesHTML = "";
         if (event.mentioned_dynasties && event.mentioned_dynasties.length > 0) {
           const dynastyLinks = event.mentioned_dynasties.map(id => {
@@ -477,10 +736,10 @@
           ...(event.sources?.local || [])
         ];
         if (allSources.length > 0) {
-          const sourceLinks = allSources.map((url) => {
+          const sourceLinks = allSources.map((url, idx) => {
             const domain = new URL(url).hostname.replace("www.", "");
             return `<a href="${url}" target="_blank" rel="noopener">${domain}</a>`;
-          }).join(" ");
+          }).join(", ");
           sourcesHTML = `<div class="sources"><strong>Sources:</strong> ${sourceLinks}</div>`;
         }
 
@@ -506,6 +765,7 @@
         `;
       }
 
+      // Group events by category
       function groupEventsByCategory(events) {
         const grouped = {};
         events.forEach(event => {
@@ -518,9 +778,10 @@
         return grouped;
       }
 
+      // Render events
       function renderEvents(events) {
         const container = document.getElementById("events-container");
-
+        
         if (events.length === 0) {
           container.innerHTML = `
             <div class="empty-state">
@@ -532,7 +793,7 @@
 
         const grouped = groupEventsByCategory(events);
         const categoryOrder = ["Political", "Natural Disasters", "Economic", "Legal", "International Relations", "Cultural", "Religious"];
-
+        
         let html = "";
         categoryOrder.forEach(category => {
           if (grouped[category] && grouped[category].length > 0) {
@@ -546,6 +807,7 @@
         container.innerHTML = html;
       }
 
+      // Update statistics
       function updateStats(events) {
         const political = events.filter(e => e.category === "Political" || e.category === "Economic" || e.category === "Legal" || e.category === "International Relations").length;
         const disasters = events.filter(e => e.category === "Natural Disasters").length;
@@ -562,10 +824,11 @@
         document.getElementById("dynasty-count").textContent = dynasties.size;
       }
 
+      // Render dynasty highlights
       function renderDynastyHighlights(events) {
         const container = document.getElementById("dynasty-content");
         const dynastyEvents = events.filter(e => e.mentioned_dynasties && e.mentioned_dynasties.length > 0);
-
+        
         if (dynastyEvents.length === 0) {
           container.innerHTML = "<p>No significant dynasty news this week.</p>";
           return;
@@ -587,8 +850,10 @@
           const relatedEvents = dynastyMap[id];
           html += `
             <div class="dynasty-item">
-              <strong><a href="../dynasties-network-visualization.html#dynasty-${id}">${name}</a></strong>
-              <ul style="margin: 0.5rem 0 0 1.25rem; padding: 0;">
+              <strong>
+                <a href="../dynasties-network-visualization.html#dynasty-${id}">${name}</a>
+              </strong>
+              <ul style="margin: 8px 0 0 20px; padding: 0;">
                 ${relatedEvents.map(e => `<li><a href="../interactive-timeline/?date=${formatDateForURL(e.date)}">${e.title}</a></li>`).join("")}
               </ul>
             </div>
@@ -598,31 +863,37 @@
         container.innerHTML = html;
       }
 
+      // Load and process timeline data
       async function loadWeekReview() {
         try {
+          // Update page title and header
           document.title = `Philippine News Review: Week of ${WEEK_CONFIG.weekLabel}`;
           document.querySelector(".week-range").textContent = `Week of ${WEEK_CONFIG.weekLabel}`;
-          document.getElementById("last-updated").textContent = new Date().toLocaleDateString("en-US", {
-            year: "numeric",
-            month: "long",
-            day: "numeric"
+          document.getElementById("last-updated").textContent = new Date().toLocaleDateString("en-US", { 
+            year: "numeric", 
+            month: "long", 
+            day: "numeric" 
           });
 
+          // Load timeline JSON
           const response = await fetch(WEEK_CONFIG.timelineFile);
           if (!response.ok) {
             throw new Error(`Failed to load timeline: ${response.statusText}`);
           }
-
+          
           const data = await response.json();
           const timeline = data.timeline || [];
 
+          // Filter events for this week
           const weekEvents = timeline.filter(event => {
             const eventDate = event.date;
             return eventDate >= WEEK_CONFIG.startDate && eventDate <= WEEK_CONFIG.endDate;
           });
 
+          // Sort by date
           weekEvents.sort((a, b) => a.date.localeCompare(b.date));
 
+          // Render everything
           renderEvents(weekEvents);
           updateStats(weekEvents);
           renderDynastyHighlights(weekEvents);
@@ -632,7 +903,7 @@
           document.getElementById("events-container").innerHTML = `
             <div class="empty-state">
               <p>Error loading events: ${error.message}</p>
-              <p style="margin-top: 0.75rem; font-size: 0.8125rem;">
+              <p style="margin-top: 12px; font-size: 14px;">
                 Make sure the timeline JSON file exists at: ${WEEK_CONFIG.timelineFile}
               </p>
             </div>
@@ -640,7 +911,9 @@
         }
       }
 
+      // Initialize on page load
       loadWeekReview();
     </script>
   </body>
 </html>
+

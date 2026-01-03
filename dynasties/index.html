@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Philippine Political Dynasties - News Archive</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Spectral:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --ink: #1a1a1a;
+        --muted: #5e5e5e;
+        --paper: #f8f5f0;
+        --accent: #124559;
+        --accent-2: #c44900;
+        --politics: #3a0ca3;
+        --card: #ffffff;
+        --line: #d6cbbd;
+        --shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+      }
+
+      * { box-sizing: border-box; }
+
+      body {
+        margin: 0;
+        font-family: "Spectral", Georgia, serif;
+        color: var(--ink);
+        background: radial-gradient(1200px 600px at 80% -10%, #f0e7d7 0%, transparent 60%),
+          radial-gradient(800px 500px at 10% 10%, #e6efe7 0%, transparent 55%),
+          var(--paper);
+        line-height: 1.6;
+      }
+
+      header {
+        padding: 32px 24px 20px;
+        max-width: 1100px;
+        margin: 0 auto;
+      }
+
+      h1 {
+        font-size: clamp(28px, 4vw, 44px);
+        margin: 0 0 8px;
+        color: var(--politics);
+      }
+
+      .subtitle {
+        font-size: 18px;
+        color: var(--muted);
+        margin: 0 0 20px;
+      }
+
+      .nav-links {
+        display: flex;
+        gap: 16px;
+        flex-wrap: wrap;
+        margin: 20px 0;
+        padding: 12px 16px;
+        background: rgba(255, 255, 255, 0.75);
+        border: 1px solid #eadfce;
+        border-radius: 14px;
+        box-shadow: var(--shadow);
+      }
+
+      .nav-links a {
+        color: var(--accent);
+        text-decoration: none;
+        font-family: "IBM Plex Sans", sans-serif;
+        font-weight: 500;
+        padding: 6px 12px;
+        border-radius: 8px;
+        transition: background 0.2s;
+      }
+
+      .nav-links a:hover {
+        background: rgba(18, 69, 89, 0.1);
+      }
+
+      main {
+        max-width: 1100px;
+        margin: 16px auto 60px;
+        padding: 0 24px;
+      }
+
+      .intro {
+        background: var(--card);
+        border-radius: 16px;
+        padding: 24px;
+        margin-bottom: 32px;
+        box-shadow: var(--shadow);
+        border-left: 4px solid var(--politics);
+      }
+
+      .intro p { margin: 0 0 12px; }
+      .intro p:last-child { margin: 0; }
+
+      .dynasty-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        gap: 20px;
+      }
+
+      .dynasty-card {
+        background: var(--card);
+        border-radius: 16px;
+        padding: 20px;
+        box-shadow: var(--shadow);
+        border-left: 4px solid var(--politics);
+        transition: transform 0.2s, box-shadow 0.2s;
+        text-decoration: none;
+        color: inherit;
+        display: block;
+      }
+
+      .dynasty-card:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 16px 40px rgba(0, 0, 0, 0.12);
+      }
+
+      .dynasty-card h2 {
+        margin: 0 0 8px;
+        font-size: 20px;
+        color: var(--politics);
+      }
+
+      .dynasty-card .region {
+        font-size: 13px;
+        color: var(--muted);
+        margin-bottom: 12px;
+        font-family: "IBM Plex Sans", sans-serif;
+      }
+
+      .dynasty-card .positions {
+        font-size: 14px;
+        margin-bottom: 12px;
+      }
+
+      .dynasty-card .news-count {
+        font-size: 12px;
+        color: var(--accent-2);
+        font-family: "IBM Plex Sans", sans-serif;
+        font-weight: 600;
+      }
+
+      footer {
+        max-width: 1100px;
+        margin: 60px auto 40px;
+        padding: 24px;
+        text-align: center;
+        color: var(--muted);
+        font-size: 14px;
+        border-top: 1px solid var(--line);
+      }
+
+      footer a {
+        color: var(--accent);
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Philippine Political Dynasties</h1>
+      <p class="subtitle">News Archive & Family Profiles</p>
+      <nav class="nav-links">
+        <a href="../interactive-timeline/">Full Timeline</a>
+        <a href="../dynasties-network-visualization.html">Dynasty Map</a>
+        <a href="../weekly-reviews/">Weekly Reviews</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="intro">
+        <p>This archive tracks news coverage of major Philippine political dynasties. Each dynasty page aggregates all related news mentions from weekly reviews, the timeline, and external sources.</p>
+        <p>By 2025, approximately <strong>80% of provincial governors</strong> belong to "fat dynasties" (multiple family members in power simultaneously), up from 57% in 2004. This project aims to make these connections transparent and accessible.</p>
+      </section>
+
+      <section class="dynasty-grid">
+        <a href="marcos-romualdez.html" class="dynasty-card">
+          <h2>Marcos-Romualdez</h2>
+          <p class="region">Ilocos Norte, Leyte, National</p>
+          <p class="positions">President, House Speaker, Senators, Governors</p>
+          <p class="news-count">View all news mentions</p>
+        </a>
+
+        <a href="duterte.html" class="dynasty-card">
+          <h2>Duterte</h2>
+          <p class="region">Davao City, Davao del Norte</p>
+          <p class="positions">Vice President, Mayor, Representative</p>
+          <p class="news-count">View all news mentions</p>
+        </a>
+
+        <a href="aquino.html" class="dynasty-card">
+          <h2>Aquino-Cojuangco</h2>
+          <p class="region">Tarlac, National</p>
+          <p class="positions">Former Presidents, Senators</p>
+          <p class="news-count">View all news mentions</p>
+        </a>
+
+        <a href="estrada.html" class="dynasty-card">
+          <h2>Estrada</h2>
+          <p class="region">San Juan, Manila</p>
+          <p class="positions">Former President, Mayor, Senators</p>
+          <p class="news-count">View all news mentions</p>
+        </a>
+
+        <a href="villar.html" class="dynasty-card">
+          <h2>Villar</h2>
+          <p class="region">Las Pinas, National</p>
+          <p class="positions">Senators, DPWH Secretary</p>
+          <p class="news-count">View all news mentions</p>
+        </a>
+
+        <a href="arroyo.html" class="dynasty-card">
+          <h2>Arroyo-Macapagal</h2>
+          <p class="region">Pampanga, National</p>
+          <p class="positions">Former President, Representative</p>
+          <p class="news-count">View all news mentions</p>
+        </a>
+
+        <a href="binay.html" class="dynasty-card">
+          <h2>Binay</h2>
+          <p class="region">Makati City</p>
+          <p class="positions">Former VP, Mayor, Senators</p>
+          <p class="news-count">View all news mentions</p>
+        </a>
+
+        <a href="revilla-tolentino.html" class="dynasty-card">
+          <h2>Revilla-Tolentino</h2>
+          <p class="region">Cavite</p>
+          <p class="positions">Senators, Governor</p>
+          <p class="news-count">View all news mentions</p>
+        </a>
+
+        <a href="singson.html" class="dynasty-card">
+          <h2>Singson</h2>
+          <p class="region">Ilocos Sur</p>
+          <p class="positions">Governor, Representatives</p>
+          <p class="news-count">View all news mentions</p>
+        </a>
+
+        <a href="dy.html" class="dynasty-card">
+          <h2>Dy</h2>
+          <p class="region">Isabela</p>
+          <p class="positions">House Speaker, Governor</p>
+          <p class="news-count">View all news mentions</p>
+        </a>
+
+        <a href="pacquiao.html" class="dynasty-card">
+          <h2>Pacquiao</h2>
+          <p class="region">General Santos, Sarangani</p>
+          <p class="positions">Senator, Governor</p>
+          <p class="news-count">View all news mentions</p>
+        </a>
+
+        <a href="tulfo.html" class="dynasty-card">
+          <h2>Tulfo</h2>
+          <p class="region">National (Media)</p>
+          <p class="positions">Senator, DSWD Secretary</p>
+          <p class="news-count">View all news mentions</p>
+        </a>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        Part of the <a href="https://github.com/dat-angel/openpinas">OpenPinas</a> project
+      </p>
+      <p>Data sources: PCIJ, Rappler, Inquirer, official government records</p>
+    </footer>
+  </body>
+</html>

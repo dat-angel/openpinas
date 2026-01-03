@@ -3,9 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>2025 Timeline – OpenPinas</title>
-    <meta name="description" content="Major events from the Philippines in 2025. Politics, disasters, culture—what happened when." />
-    <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
+    <title>Philippines Timeline - Interactive</title>
     <link rel="stylesheet" href="styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -13,14 +11,75 @@
       href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Spectral:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
+    <style>
+      .year-tabs {
+        display: flex;
+        gap: 8px;
+        margin-bottom: 16px;
+      }
+      .year-tab {
+        padding: 10px 24px;
+        border: 2px solid var(--accent, #124559);
+        background: transparent;
+        color: var(--accent, #124559);
+        font-family: "IBM Plex Sans", sans-serif;
+        font-weight: 600;
+        font-size: 15px;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: all 0.2s;
+      }
+      .year-tab:hover {
+        background: rgba(18, 69, 89, 0.1);
+      }
+      .year-tab.active {
+        background: var(--accent, #124559);
+        color: #fff;
+      }
+      .aggregation-note {
+        background: rgba(196, 73, 0, 0.1);
+        border-left: 4px solid var(--accent-2, #c44900);
+        padding: 12px 16px;
+        border-radius: 0 8px 8px 0;
+        margin-bottom: 20px;
+        font-size: 14px;
+        display: none;
+      }
+      .aggregation-note.visible {
+        display: block;
+      }
+      .aggregation-note strong {
+        color: var(--accent-2, #c44900);
+      }
+      .year-info {
+        font-size: 13px;
+        color: var(--muted, #5e5e5e);
+        margin-bottom: 8px;
+        font-family: "IBM Plex Sans", sans-serif;
+      }
+    </style>
   </head>
   <body>
     <header>
-      <nav class="header-nav"><a href="../">← OpenPinas</a></nav>
-      <h1>2025 Timeline</h1>
+      <h1>Philippines Timeline</h1>
       <p>
-        Major events from the year. Politics, disasters, culture—what happened when, and which dynasties were involved.
+        Comprehensive interactive timeline of major Philippine events for
+        diaspora context. Categories cover politics, weather, and culture, with
+        sources linked on each entry.
       </p>
+
+      <div class="year-tabs">
+        <button class="year-tab active" data-year="2025">2025</button>
+        <button class="year-tab" data-year="2026">2026</button>
+      </div>
+
+      <div id="aggregation-note" class="aggregation-note">
+        <strong>Note:</strong> The 2026 timeline is aggregated by month as events unfold.
+        For more detailed coverage, see the <a href="../weekly-reviews/">Weekly Reviews</a>.
+      </div>
+
+      <p id="year-info" class="year-info"></p>
+
       <div class="controls">
         <label class="filter">
           <input type="checkbox" value="weather" checked /> Weather
@@ -40,6 +99,19 @@
     <main>
       <section class="timeline" aria-label="Timeline entries"></section>
     </main>
+
+    <section class="methodology">
+      <h2>Methodology Notes (Prototype)</h2>
+      <p>
+        Timeline entries are compiled from public reporting. Some 2025 items are placeholders to test
+        filters, category mapping, and cross-links.
+      </p>
+      <ul>
+        <li><a href="https://www.rappler.com/nation/politics/" target="_blank" rel="noopener">Rappler Politics</a> for current events coverage.</li>
+        <li><a href="https://bilyonaryo.com/" target="_blank" rel="noopener">Bilyonaryo</a> for business and political reporting.</li>
+        <li><a href="https://www.wikipedia.org/" target="_blank" rel="noopener">Wikipedia</a> for background references.</li>
+      </ul>
+    </section>
 
     <script src="script.js"></script>
   </body>

@@ -1,0 +1,433 @@
+{
+  "metadata": {
+    "title": "Elite Schools Influence Map",
+    "year": 2025,
+    "note": "Placeholder data for layout, interaction, and narrative testing."
+  },
+  "schools": [
+    {
+      "id": "UP",
+      "name": "University of the Philippines",
+      "tier": "National Elite",
+      "sector": "public",
+      "region": "national",
+      "lat": 14.651,
+      "lng": 121.067,
+      "influence_score": 95,
+      "alumni_strength": {
+        "public_service": 92,
+        "business": 70,
+        "academia": 88,
+        "civil_society": 78
+      },
+      "community_loops": {
+        "scholarships": [
+          "Iskolar ng Bayan admissions",
+          "Regional campus grants"
+        ],
+        "outreach": [
+          "Legal aid clinics",
+          "Health caravans"
+        ],
+        "campuses": [
+          "Diliman",
+          "Los Banos",
+          "Cebu"
+        ]
+      },
+      "mobility_paths": [
+        {
+          "step": "First-gen entry",
+          "detail": "Iskolar ng Bayan + bridging program"
+        },
+        {
+          "step": "Mentorship + practicum",
+          "detail": "LGU immersion + alumni mentors"
+        },
+        {
+          "step": "Leadership in-region",
+          "detail": "Public service and academia placements"
+        }
+      ],
+      "retention": {
+        "stay_rate": 58,
+        "sectors": [
+          { "name": "Public Service", "value": 34 },
+          { "name": "Education", "value": 26 },
+          { "name": "Health", "value": 20 },
+          { "name": "Social Enterprise", "value": 20 }
+        ]
+      },
+      "micro_story": {
+        "title": "Public health teams built a rural telehealth line",
+        "location": "Laguna",
+        "outcome": "Alumni staffed a joint LGU clinic network and kept care local.",
+        "sector": "Health"
+      },
+      "province_influence": ["Metro Manila", "Laguna", "Cebu", "Davao del Sur"]
+    },
+    {
+      "id": "ATENEO",
+      "name": "Ateneo de Manila University",
+      "tier": "National Elite",
+      "sector": "private",
+      "region": "luzon",
+      "lat": 14.639,
+      "lng": 121.076,
+      "influence_score": 90,
+      "alumni_strength": {
+        "public_service": 84,
+        "business": 88,
+        "academia": 72,
+        "civil_society": 82
+      },
+      "community_loops": {
+        "scholarships": [
+          "Financial aid network",
+          "First-gen leadership awards"
+        ],
+        "outreach": [
+          "Public school partnerships",
+          "Disaster response teams"
+        ],
+        "campuses": [
+          "Loyola Heights",
+          "Makati"
+        ]
+      },
+      "mobility_paths": [
+        {
+          "step": "Access + bridge",
+          "detail": "Scholarships and regional recruitment"
+        },
+        {
+          "step": "Service immersion",
+          "detail": "Partnered communities practicum"
+        },
+        {
+          "step": "Public impact",
+          "detail": "Law, policy, and civic leadership"
+        }
+      ],
+      "retention": {
+        "stay_rate": 42,
+        "sectors": [
+          { "name": "Public Service", "value": 28 },
+          { "name": "Education", "value": 18 },
+          { "name": "NGO", "value": 24 },
+          { "name": "Social Enterprise", "value": 30 }
+        ]
+      },
+      "micro_story": {
+        "title": "Policy fellows scaled a coastal disaster fund",
+        "location": "Iloilo",
+        "outcome": "Alumni embedded in LGUs to streamline relief grants.",
+        "sector": "Public Service"
+      },
+      "province_influence": ["Metro Manila", "Cebu", "Iloilo"]
+    },
+    {
+      "id": "DLSU",
+      "name": "De La Salle University",
+      "tier": "National Elite",
+      "sector": "private",
+      "region": "luzon",
+      "lat": 14.564,
+      "lng": 120.993,
+      "influence_score": 86,
+      "alumni_strength": {
+        "public_service": 72,
+        "business": 92,
+        "academia": 64,
+        "civil_society": 68
+      },
+      "community_loops": {
+        "scholarships": [
+          "Lasallian scholarship fund",
+          "STEM access grants"
+        ],
+        "outreach": [
+          "Tech for public schools",
+          "Community innovation labs"
+        ],
+        "campuses": [
+          "Manila",
+          "Laguna"
+        ]
+      },
+      "mobility_paths": [
+        {
+          "step": "STEM access",
+          "detail": "Scholarships + bridge modules"
+        },
+        {
+          "step": "Applied research",
+          "detail": "Industry + LGU co-ops"
+        },
+        {
+          "step": "Local enterprise",
+          "detail": "Startup and SME leadership"
+        }
+      ],
+      "retention": {
+        "stay_rate": 38,
+        "sectors": [
+          { "name": "Industry", "value": 40 },
+          { "name": "Education", "value": 18 },
+          { "name": "Public Service", "value": 22 },
+          { "name": "Social Enterprise", "value": 20 }
+        ]
+      },
+      "micro_story": {
+        "title": "Manufacturing co-ops launched a tooling hub",
+        "location": "Laguna",
+        "outcome": "Graduates formed SMEs that kept production jobs nearby.",
+        "sector": "Industry"
+      },
+      "province_influence": ["Metro Manila", "Laguna", "Cebu"]
+    },
+    {
+      "id": "UST",
+      "name": "University of Santo Tomas",
+      "tier": "Leading Private",
+      "sector": "private",
+      "region": "luzon",
+      "lat": 14.610,
+      "lng": 120.989,
+      "influence_score": 82,
+      "alumni_strength": {
+        "public_service": 70,
+        "business": 64,
+        "academia": 68,
+        "civil_society": 60
+      },
+      "community_loops": {
+        "scholarships": [
+          "Health sciences access",
+          "Faith-based grants"
+        ],
+        "outreach": [
+          "Medical missions",
+          "Community health training"
+        ],
+        "campuses": [
+          "Manila"
+        ]
+      },
+      "mobility_paths": [
+        {
+          "step": "Health access",
+          "detail": "Scholarships into allied health"
+        },
+        {
+          "step": "Clinical immersion",
+          "detail": "Provincial hospitals rotation"
+        },
+        {
+          "step": "Local care leaders",
+          "detail": "Province-based medical leaders"
+        }
+      ],
+      "retention": {
+        "stay_rate": 55,
+        "sectors": [
+          { "name": "Health", "value": 44 },
+          { "name": "Education", "value": 18 },
+          { "name": "Public Service", "value": 20 },
+          { "name": "Civil Society", "value": 18 }
+        ]
+      },
+      "micro_story": {
+        "title": "Community clinics trained barangay health workers",
+        "location": "Ilocos Norte",
+        "outcome": "Alumni helped expand maternal care coverage.",
+        "sector": "Health"
+      },
+      "province_influence": ["Metro Manila", "Ilocos Norte", "Negros Oriental"]
+    },
+    {
+      "id": "SILLIMAN",
+      "name": "Silliman University",
+      "tier": "Leading Regional",
+      "sector": "private",
+      "region": "visayas",
+      "lat": 9.309,
+      "lng": 123.307,
+      "influence_score": 74,
+      "alumni_strength": {
+        "public_service": 62,
+        "business": 50,
+        "academia": 72,
+        "civil_society": 66
+      },
+      "community_loops": {
+        "scholarships": [
+          "Visayas access grants",
+          "Teacher training fellowships"
+        ],
+        "outreach": [
+          "Community development hubs",
+          "Marine conservation programs"
+        ],
+        "campuses": [
+          "Dumaguete"
+        ]
+      },
+      "mobility_paths": [
+        {
+          "step": "Regional access",
+          "detail": "Visayas recruitment + support"
+        },
+        {
+          "step": "Service learning",
+          "detail": "Community research labs"
+        },
+        {
+          "step": "Regional leadership",
+          "detail": "Education and NGO leadership"
+        }
+      ],
+      "retention": {
+        "stay_rate": 68,
+        "sectors": [
+          { "name": "Education", "value": 34 },
+          { "name": "Public Service", "value": 22 },
+          { "name": "Civil Society", "value": 24 },
+          { "name": "Health", "value": 20 }
+        ]
+      },
+      "micro_story": {
+        "title": "Marine science labs backed a reef recovery plan",
+        "location": "Negros Oriental",
+        "outcome": "Alumni partnered with fishers to restore spawning sites.",
+        "sector": "Civil Society"
+      },
+      "province_influence": ["Negros Oriental", "Cebu", "Iloilo"]
+    },
+    {
+      "id": "MSUIIT",
+      "name": "MSU-IIT",
+      "tier": "Leading Regional",
+      "sector": "public",
+      "region": "mindanao",
+      "lat": 8.245,
+      "lng": 124.243,
+      "influence_score": 72,
+      "alumni_strength": {
+        "public_service": 60,
+        "business": 52,
+        "academia": 70,
+        "civil_society": 58
+      },
+      "community_loops": {
+        "scholarships": [
+          "Mindanao access grants",
+          "STEM bridge programs"
+        ],
+        "outreach": [
+          "Community tech labs",
+          "Disaster preparedness training"
+        ],
+        "campuses": [
+          "Iligan"
+        ]
+      },
+      "mobility_paths": [
+        {
+          "step": "Access in Mindanao",
+          "detail": "Scholarships + preparatory tracks"
+        },
+        {
+          "step": "Industry immersion",
+          "detail": "Local manufacturing co-ops"
+        },
+        {
+          "step": "Regional innovators",
+          "detail": "STEM leadership in Mindanao"
+        }
+      ],
+      "retention": {
+        "stay_rate": 74,
+        "sectors": [
+          { "name": "Industry", "value": 32 },
+          { "name": "Education", "value": 26 },
+          { "name": "Public Service", "value": 22 },
+          { "name": "Civil Society", "value": 20 }
+        ]
+      },
+      "micro_story": {
+        "title": "STEM graduates built a flood early-warning dashboard",
+        "location": "Davao del Sur",
+        "outcome": "Local teams maintained the system for LGU responders.",
+        "sector": "Industry"
+      },
+      "province_influence": ["Davao del Sur", "Cebu", "Ilocos Norte"]
+    }
+  ],
+  "pipelines": [
+    {
+      "id": "p1",
+      "from": "UP",
+      "to": "SECTOR_PUBLIC",
+      "type": "public_service",
+      "strength": 92
+    },
+    {
+      "id": "p2",
+      "from": "UP",
+      "to": "SECTOR_ACADEMIA",
+      "type": "academia",
+      "strength": 88
+    },
+    {
+      "id": "p3",
+      "from": "ATENEO",
+      "to": "SECTOR_CIVIL",
+      "type": "civil_society",
+      "strength": 82
+    },
+    {
+      "id": "p4",
+      "from": "ATENEO",
+      "to": "SECTOR_BUSINESS",
+      "type": "business",
+      "strength": 88
+    },
+    {
+      "id": "p5",
+      "from": "DLSU",
+      "to": "SECTOR_BUSINESS",
+      "type": "business",
+      "strength": 92
+    },
+    {
+      "id": "p6",
+      "from": "UST",
+      "to": "SECTOR_HEALTH",
+      "type": "health",
+      "strength": 85
+    },
+    {
+      "id": "p7",
+      "from": "SILLIMAN",
+      "to": "SECTOR_ACADEMIA",
+      "type": "academia",
+      "strength": 72
+    },
+    {
+      "id": "p8",
+      "from": "MSUIIT",
+      "to": "SECTOR_INDUSTRY",
+      "type": "industry",
+      "strength": 78
+    }
+  ],
+  "sectors": [
+    { "id": "SECTOR_PUBLIC", "name": "Public Service", "type": "public_service" },
+    { "id": "SECTOR_BUSINESS", "name": "Business", "type": "business" },
+    { "id": "SECTOR_ACADEMIA", "name": "Academia", "type": "academia" },
+    { "id": "SECTOR_CIVIL", "name": "Civil Society", "type": "civil_society" },
+    { "id": "SECTOR_HEALTH", "name": "Health", "type": "health" },
+    { "id": "SECTOR_INDUSTRY", "name": "Industry", "type": "industry" }
+  ]
+}

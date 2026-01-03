@@ -3,12 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dynasty Map – OpenPinas</title>
-  <meta name="description" content="Interactive network map of 71 Philippine political dynasties. See alliances, rivalries, and corruption connections." />
-  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Spectral:wght@400;600;700&display=swap" rel="stylesheet" />
+  <title>Philippine Political Dynasties Network Map 2025</title>
   <script src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
@@ -20,64 +15,34 @@
     }
 
     body {
-      font-family: "IBM Plex Sans", -apple-system, sans-serif;
-      background: #fdfcfb;
-      color: #222;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+      background: #f5f5f5;
+      color: #1a1a1a;
     }
 
     header {
-      background: #fff;
-      color: #222;
-      padding: 1rem 1.5rem;
-      border-bottom: 1px solid #e5e5e5;
-    }
-
-    .header-nav {
-      font-size: 0.8125rem;
-      margin-bottom: 0.75rem;
-    }
-
-    .header-nav a {
-      color: #666;
-      text-decoration: none;
-    }
-
-    .header-nav a:hover {
-      text-decoration: underline;
+      background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+      color: white;
+      padding: 24px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     }
 
     h1 {
-      font-family: "Spectral", Georgia, serif;
-      font-size: 1.5rem;
-      font-weight: 600;
-      margin-bottom: 0.375rem;
-    }
-
-    .header-intro {
-      font-family: "Spectral", Georgia, serif;
-      font-size: 0.9375rem;
-      color: #666;
-      max-width: 600px;
-      line-height: 1.5;
-      margin-bottom: 0.375rem;
+      font-size: 28px;
+      margin-bottom: 8px;
     }
 
     header p {
-      font-size: 0.75rem;
-      color: #888;
-    }
-
-    header p a {
-      color: #666;
-      text-decoration: none;
+      opacity: 0.9;
+      font-size: 14px;
     }
 
     .controls {
-      background: #fff;
-      padding: 0.75rem 1.5rem;
-      border-bottom: 1px solid #e5e5e5;
+      background: white;
+      padding: 16px 24px;
+      border-bottom: 1px solid #e0e0e0;
       display: flex;
-      gap: 1rem;
+      gap: 16px;
       flex-wrap: wrap;
       align-items: center;
     }
@@ -85,45 +50,41 @@
     .controls label {
       display: flex;
       align-items: center;
-      gap: 0.5rem;
-      font-size: 0.8125rem;
-      color: #444;
+      gap: 8px;
+      font-size: 14px;
     }
 
     .controls select {
-      padding: 0.375rem 0.75rem;
-      border: 1px solid #ddd;
-      font-size: 0.8125rem;
-      background: #fff;
-    }
-
-    .controls select:focus {
-      outline: none;
-      border-color: #222;
+      padding: 6px 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 14px;
     }
 
     .controls button {
-      padding: 0.375rem 0.75rem;
-      background: #fff;
-      color: #222;
-      border: 1px solid #ddd;
+      padding: 6px 16px;
+      background: #1a1a1a;
+      color: white;
+      border: none;
+      border-radius: 4px;
       cursor: pointer;
-      font-size: 0.8125rem;
+      font-size: 14px;
     }
 
     .controls button:hover {
-      border-color: #222;
+      background: #2d2d2d;
     }
 
     .info-panel {
       position: fixed;
-      top: 160px;
-      right: 1rem;
-      width: 300px;
-      max-height: calc(100vh - 180px);
-      background: #fff;
-      border: 1px solid #e5e5e5;
-      padding: 1rem;
+      top: 200px;
+      right: 24px;
+      width: 320px;
+      max-height: calc(100vh - 220px);
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+      padding: 20px;
       overflow-y: auto;
       z-index: 1000;
       display: none;
@@ -135,13 +96,14 @@
 
     .glossary-panel {
       position: fixed;
-      top: 160px;
-      left: 1rem;
-      width: 280px;
-      max-height: calc(100vh - 180px);
-      background: #fff;
-      border: 1px solid #e5e5e5;
-      padding: 1rem;
+      top: 200px;
+      left: 24px;
+      width: 320px;
+      max-height: calc(100vh - 220px);
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+      padding: 20px;
       overflow-y: auto;
       z-index: 1000;
       display: none;
@@ -152,20 +114,17 @@
     }
 
     .glossary-panel h3 {
-      margin-bottom: 1rem;
-      color: #222;
-      font-size: 0.875rem;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-      border-bottom: 1px solid #e5e5e5;
-      padding-bottom: 0.5rem;
+      margin-bottom: 16px;
+      color: #1a1a1a;
+      font-size: 18px;
+      border-bottom: 2px solid #0038A8;
+      padding-bottom: 8px;
     }
 
     .glossary-panel .term {
-      margin-bottom: 0.75rem;
-      padding-bottom: 0.75rem;
-      border-bottom: 1px solid #f0f0f0;
+      margin-bottom: 16px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid #e0e0e0;
     }
 
     .glossary-panel .term:last-child {
@@ -174,142 +133,165 @@
 
     .glossary-panel .term-name {
       font-weight: 600;
-      color: #222;
-      font-size: 0.8125rem;
-      margin-bottom: 0.125rem;
+      color: #0038A8;
+      font-size: 14px;
+      margin-bottom: 4px;
     }
 
     .glossary-panel .term-def {
-      font-size: 0.75rem;
+      font-size: 12px;
       color: #666;
-      line-height: 1.4;
+      line-height: 1.5;
     }
 
     .info-panel h3 {
-      margin-bottom: 0.75rem;
-      color: #222;
-      font-size: 1rem;
-      font-weight: 600;
+      margin-bottom: 12px;
+      color: #1a1a1a;
+      font-size: 18px;
     }
 
     .info-panel .close {
       float: right;
       background: none;
       border: none;
-      font-size: 1.25rem;
+      font-size: 20px;
       cursor: pointer;
-      color: #888;
-      line-height: 1;
+      color: #666;
     }
 
     .info-panel .close:hover {
-      color: #222;
+      color: #1a1a1a;
     }
 
     .info-panel p {
-      margin: 0.5rem 0;
-      font-size: 0.8125rem;
+      margin: 8px 0;
+      font-size: 14px;
       line-height: 1.5;
     }
 
     .info-panel .label {
       font-weight: 600;
-      color: #888;
-      font-size: 0.6875rem;
+      color: #666;
+      font-size: 12px;
       text-transform: uppercase;
-      letter-spacing: 0.05em;
-      margin-top: 0.75rem;
+      letter-spacing: 0.5px;
+      margin-top: 12px;
     }
 
     .info-panel .value {
-      margin-bottom: 0.5rem;
+      margin-bottom: 8px;
     }
 
     .info-panel ul {
-      margin: 0.5rem 0 0.5rem 1.25rem;
-      font-size: 0.8125rem;
+      margin: 8px 0 8px 20px;
+      font-size: 14px;
     }
 
     #network-container {
       width: 100%;
-      height: calc(100vh - 140px);
-      background: #fff;
-      border-bottom: 1px solid #e5e5e5;
+      height: calc(100vh - 180px);
+      background: white;
+      border: 1px solid #e0e0e0;
     }
 
     .legend {
       position: fixed;
-      bottom: 1rem;
-      left: 1rem;
-      background: #fff;
-      padding: 0.75rem 1rem;
-      border: 1px solid #e5e5e5;
-      font-size: 0.75rem;
+      bottom: 24px;
+      left: 24px;
+      background: white;
+      padding: 16px;
+      border-radius: 8px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+      font-size: 12px;
       z-index: 1000;
     }
 
     .legend h4 {
-      margin-bottom: 0.5rem;
-      font-size: 0.6875rem;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-      color: #888;
+      margin-bottom: 12px;
+      font-size: 14px;
     }
 
     .legend-item {
       display: flex;
       align-items: center;
-      gap: 0.5rem;
-      margin: 0.25rem 0;
-      color: #444;
+      gap: 8px;
+      margin: 6px 0;
     }
 
     .legend-color {
-      width: 12px;
-      height: 12px;
+      width: 16px;
+      height: 16px;
       border-radius: 50%;
-      border: 1px solid #ddd;
+      border: 1px solid #ccc;
     }
 
     .legend-line {
-      width: 20px;
+      width: 24px;
       height: 2px;
       background: #ccc;
     }
 
     .legend-line.dashed {
-      background: repeating-linear-gradient(to right, #666 0, #666 3px, transparent 3px, transparent 6px);
+      background: repeating-linear-gradient(to right, #666 0, #666 4px, transparent 4px, transparent 8px);
     }
 
     .stats {
       position: fixed;
-      top: 160px;
-      left: 1rem;
-      background: #fff;
-      padding: 0.75rem 1rem;
-      border: 1px solid #e5e5e5;
-      font-size: 0.75rem;
+      top: 180px;
+      left: 24px;
+      background: white;
+      padding: 16px;
+      border-radius: 8px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+      font-size: 12px;
       z-index: 1000;
     }
 
     .stats h4 {
-      margin-bottom: 0.5rem;
-      font-size: 0.6875rem;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-      color: #888;
+      margin-bottom: 8px;
+      font-size: 14px;
     }
 
     .stats p {
-      margin: 0.25rem 0;
-      font-size: 0.75rem;
-      color: #444;
+      margin: 4px 0;
+      font-size: 12px;
     }
 
     .map-legend {
-      background: #fff;
-      padding: 0.75rem;
-      border: 1px solid #e5e5e5;
+      background: white;
+      padding: 12px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    }
+
+    .methodology {
+      margin: 24px;
+      background: white;
+      padding: 16px 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+      font-size: 13px;
+      color: #555;
+    }
+
+    .methodology h4 {
+      margin-bottom: 8px;
+      font-size: 14px;
+      color: #1a1a1a;
+    }
+
+    .methodology ul {
+      margin: 8px 0 0 18px;
+      padding: 0;
+    }
+
+    .methodology a {
+      color: #0038A8;
+      text-decoration: none;
+    }
+
+    .methodology a:hover {
+      text-decoration: underline;
     }
 
     .province-marker {
@@ -321,57 +303,56 @@
       .info-panel, .legend, .stats {
         position: relative;
         width: 100%;
-        margin: 1rem;
+        margin: 16px;
       }
 
       #network-container, #map-container {
-        height: 500px;
+        height: 600px;
       }
     }
   </style>
 </head>
 <body>
   <header>
-    <div class="header-nav"><a href="index.html">← OpenPinas</a></div>
-    <h1>Dynasty Map</h1>
-    <p class="header-intro">71 dynasties. This is how they connect—alliances, rivalries, marriages, and corruption networks. Click any node to see who's in power, who's in trouble, and how the families overlap.</p>
-    <p>Click a node. Drag to pan. Scroll to zoom.</p>
+    <h1>Philippine Political Dynasties Network Map - Historical & Contemporary</h1>
+    <p>Interactive network visualization of Philippine political dynasties throughout history, their relationships, alliances, rivalries, and geographic territorial control</p>
   </header>
 
   <div class="controls">
     <label>
-      <input type="checkbox" id="showAlliances" checked> Alliances
+      <input type="checkbox" id="showAlliances" checked> Show Alliances
     </label>
     <label>
-      <input type="checkbox" id="showRivalries" checked> Rivalries
+      <input type="checkbox" id="showRivalries" checked> Show Rivalries
     </label>
     <label>
-      <input type="checkbox" id="showCorruption" checked> Corruption
+      <input type="checkbox" id="showCorruption" checked> Show Corruption Networks
     </label>
     <select id="filterPower">
-      <option value="all">All</option>
-      <option value="national">National only</option>
-      <option value="regional">Regional only</option>
+      <option value="all">All Power Levels</option>
+      <option value="national">National</option>
+      <option value="regional">Regional</option>
     </select>
     <select id="filterCrisis">
-      <option value="all">All</option>
-      <option value="crisis">In trouble</option>
+      <option value="all">All Status</option>
+      <option value="crisis">Crisis Status</option>
       <option value="stable">Stable</option>
     </select>
     <select id="filterRegion">
-      <option value="all">All regions</option>
+      <option value="all">All Regions</option>
       <option value="luzon">Luzon</option>
       <option value="visayas">Visayas</option>
       <option value="mindanao">Mindanao</option>
     </select>
-    <button id="resetView">Reset</button>
-    <button id="showGlossary">?</button>
-    <button id="toggleView">Map</button>
+    <button id="resetView">Reset View</button>
+    <button id="showGlossary">Glossary</button>
+    <button id="toggleView">Show Map View</button>
   </div>
 
   <div class="stats" id="stats">
+    <h4>Network Statistics</h4>
     <p id="dynastyCount">Loading...</p>
-    <p id="relationshipCount"></p>
+    <p id="relationshipCount">Loading...</p>
   </div>
 
   <div class="info-panel" id="infoPanel">
@@ -381,42 +362,152 @@
 
   <div class="glossary-panel" id="glossaryPanel">
     <button class="close" onclick="closeGlossaryPanel()" style="float: right; background: none; border: none; font-size: 20px; cursor: pointer; color: #666;">×</button>
-    <h3>How to read this</h3>
+    <h3>Glossary of Terms</h3>
     <div id="glossaryContent">
       <div class="term">
-        <div class="term-name">Big nodes</div>
-        <div class="term-def">More positions held</div>
+        <div class="term-name">Imperial Dynasty</div>
+        <div class="term-def">Highest level of political dynasty power. Controls national-level positions and has extensive influence across multiple regions.</div>
       </div>
       <div class="term">
-        <div class="term-name">Red border</div>
-        <div class="term-def">In trouble (scandal, investigation)</div>
+        <div class="term-name">Dominant Dynasty</div>
+        <div class="term-def">Very high power dynasty with strong regional control and significant national influence.</div>
       </div>
       <div class="term">
-        <div class="term-name">Gold lines</div>
-        <div class="term-def">Corruption link</div>
+        <div class="term-name">Major Dynasty</div>
+        <div class="term-def">High power dynasty with substantial regional control and multiple family members in office.</div>
       </div>
       <div class="term">
-        <div class="term-name">Dashed red</div>
-        <div class="term-def">Rivals</div>
+        <div class="term-name">Established Dynasty</div>
+        <div class="term-def">Moderate-high power dynasty with stable regional control and established political presence.</div>
+      </div>
+      <div class="term">
+        <div class="term-name">Rising Dynasty</div>
+        <div class="term-def">Growing power dynasty that is expanding its political influence and control.</div>
+      </div>
+      <div class="term">
+        <div class="term-name">Minor Dynasty</div>
+        <div class="term-def">Lower power dynasty with limited regional control and fewer positions held.</div>
+      </div>
+      <div class="term">
+        <div class="term-name">New Dynasty</div>
+        <div class="term-def">Recently established political dynasty just beginning to build political power.</div>
+      </div>
+      <div class="term">
+        <div class="term-name">Alliance</div>
+        <div class="term-def">Political partnership between dynasties, often for mutual support and shared interests.</div>
+      </div>
+      <div class="term">
+        <div class="term-name">Rivalry</div>
+        <div class="term-def">Political opposition or competition between dynasties, often involving conflicts over power or territory.</div>
+      </div>
+      <div class="term">
+        <div class="term-name">Corruption Network</div>
+        <div class="term-def">Connections between dynasties and contractors/officials involved in corrupt practices, particularly in infrastructure projects.</div>
+      </div>
+      <div class="term">
+        <div class="term-name">Power Level: National</div>
+        <div class="term-def">Dynasty has members in national positions (President, Vice President, Senators, Cabinet Secretaries).</div>
+      </div>
+      <div class="term">
+        <div class="term-name">Power Level: Regional</div>
+        <div class="term-def">Dynasty primarily controls regional positions (Governors, Mayors, Congressional Districts).</div>
+      </div>
+      <div class="term">
+        <div class="term-name">Crisis Level: Critical</div>
+        <div class="term-def">Dynasty facing severe challenges such as legal proceedings, impeachment, or major scandals.</div>
+      </div>
+      <div class="term">
+        <div class="term-name">Crisis Level: High</div>
+        <div class="term-def">Dynasty facing significant challenges including investigations, business scandals, or electoral losses.</div>
+      </div>
+      <div class="term">
+        <div class="term-name">Control Strength: Absolute</div>
+        <div class="term-def">Dynasty controls all major positions in a province (Governor, Vice Governor, all Congressional seats, Mayor of capital).</div>
+      </div>
+      <div class="term">
+        <div class="term-name">Complete Monopoly</div>
+        <div class="term-def">Single family controls all top positions in a province, effectively eliminating political competition.</div>
+      </div>
+      <div class="term">
+        <div class="term-name">Contested Control</div>
+        <div class="term-def">Multiple dynasties competing for control of the same region, often involving conflicts.</div>
+      </div>
+      <div class="term">
+        <div class="term-name">Pork Barrel Scam</div>
+        <div class="term-def">Corruption scheme where legislators allocate government funds to fake NGOs in exchange for kickbacks.</div>
+      </div>
+      <div class="term">
+        <div class="term-name">ICC (International Criminal Court)</div>
+        <div class="term-def">International tribunal that prosecutes individuals for crimes against humanity, genocide, and war crimes.</div>
+      </div>
+      <div class="term">
+        <div class="term-name">DPWH (Department of Public Works and Highways)</div>
+        <div class="term-def">Philippine government agency responsible for infrastructure projects, often involved in corruption scandals.</div>
       </div>
     </div>
+  </div>
+
+  <div class="methodology">
+    <h4>Methodology Notes (Prototype)</h4>
+    <p>
+      Data is compiled from public reporting and historical records. Some 2025 events are hypothetical
+      to test narrative structure.
+    </p>
+    <ul>
+      <li><a href="https://www.rappler.com/nation/politics/" target="_blank" rel="noopener">Rappler Politics</a> for contemporary reporting.</li>
+      <li><a href="https://bilyonaryo.com/" target="_blank" rel="noopener">Bilyonaryo</a> for business and political coverage.</li>
+      <li><a href="https://www.wikipedia.org/" target="_blank" rel="noopener">Wikipedia</a> for historical references.</li>
+    </ul>
   </div>
 
   <div id="network-container"></div>
   <div id="map-container" style="display: none; width: 100%; height: calc(100vh - 180px); position: relative;"></div>
 
   <div class="legend">
+    <h4>Legend</h4>
     <div class="legend-item">
-      <div class="legend-color" style="background: #0038A8;"></div>
-      <span>National</span>
+      <div class="legend-color" style="background: #0038A8; border: 2px solid #001F5C;"></div>
+      <span>Imperial Dynasty (Deep Blue)</span>
     </div>
     <div class="legend-item">
-      <div class="legend-color" style="background: #CE1126;"></div>
-      <span>Regional</span>
+      <div class="legend-color" style="background: #CE1126; border: 2px solid #8B0000;"></div>
+      <span>Dominant Dynasty (Bright Red)</span>
     </div>
     <div class="legend-item">
-      <div class="legend-color" style="background: #FFD700;"></div>
-      <span>New/rising</span>
+      <div class="legend-color" style="background: #0066CC; border: 2px solid #003D7A;"></div>
+      <span>Major Dynasty (Bright Blue)</span>
+    </div>
+    <div class="legend-item">
+      <div class="legend-color" style="background: #DC143C; border: 2px solid #8B0000;"></div>
+      <span>Established Dynasty (Crimson)</span>
+    </div>
+    <div class="legend-item">
+      <div class="legend-color" style="background: #FFD700; border: 2px solid #B8860B;"></div>
+      <span>Rising Dynasty (Gold)</span>
+    </div>
+    <div class="legend-item">
+      <div class="legend-color" style="background: #228B22; border: 2px solid #006400;"></div>
+      <span>Minor Dynasty (Forest Green)</span>
+    </div>
+    <div class="legend-item">
+      <div class="legend-color" style="background: #FF6B35; border: 2px solid #CC5500;"></div>
+      <span>New Dynasty (Orange-Red)</span>
+    </div>
+    <div class="legend-item">
+      <div class="legend-line" style="background: #0038A8; height: 4px;"></div>
+      <span>Alliance (Deep Blue)</span>
+    </div>
+    <div class="legend-item">
+      <div class="legend-line dashed" style="background: #CE1126; height: 3px;"></div>
+      <span>Rivalry (Bright Red)</span>
+    </div>
+    <div class="legend-item">
+      <div class="legend-line" style="background: #FFD700; height: 5px;"></div>
+      <span>Corruption Network (Gold)</span>
+    </div>
+    <div class="legend-item">
+      <div class="legend-line" style="background: #0066CC; height: 4px;"></div>
+      <span>Marriage (Bright Blue)</span>
     </div>
   </div>
 
@@ -482,10 +573,9 @@
         }
         
         dynastiesData = data.philippine_political_dynasties_network;
-
+        
         buildNetwork();
         updateStats();
-        handleHashNavigation();
       } catch (error) {
         console.error('Error loading dynasties data:', error);
         const errorMsg = error.message || 'Unknown error';
@@ -663,9 +753,6 @@
       nodes = new vis.DataSet(filteredNodes);
       edges = new vis.DataSet(filteredEdges);
 
-      // Update stats with filtered counts
-      updateStats(filteredNodes, filteredEdges);
-
       const data = { nodes: nodes, edges: edges };
       const options = {
         nodes: {
@@ -835,17 +922,17 @@
         html += `<div class="label">2025 Timeline Events</div>`;
         html += `<ul style="list-style: none; padding-left: 0; margin-top: 8px;">`;
         dynasty.timeline_events.forEach(event => {
-          const roleBadge = event.role === 'primary_actor' ?
-            `<span style="background: #CE1126; color: #fff; padding: 2px 6px; font-size: 10px; margin-left: 4px;">Primary</span>` :
+          const roleBadge = event.role === 'primary_actor' ? 
+            `<span style="background: #CE1126; color: #fff; padding: 2px 6px; border-radius: 3px; font-size: 10px; margin-left: 4px;">Primary</span>` :
             event.role === 'participant' ?
-            `<span style="background: #0038A8; color: #fff; padding: 2px 6px; font-size: 10px; margin-left: 4px;">Participant</span>` :
-            `<span style="background: #666; color: #fff; padding: 2px 6px; font-size: 10px; margin-left: 4px;">Mentioned</span>`;
-          const timelineUrl = `interactive-timeline/?search=${encodeURIComponent(event.title)}`;
-          html += `<li style="margin-bottom: 8px; padding-bottom: 8px; border-bottom: 1px solid #e5e5e5;">`;
-          html += `<a href="${timelineUrl}" style="color: #222; text-decoration: underline; text-underline-offset: 2px;"><strong>${event.date}</strong> - ${event.title}</a>${roleBadge}`;
+            `<span style="background: #0038A8; color: #fff; padding: 2px 6px; border-radius: 3px; font-size: 10px; margin-left: 4px;">Participant</span>` :
+            `<span style="background: #666; color: #fff; padding: 2px 6px; border-radius: 3px; font-size: 10px; margin-left: 4px;">Mentioned</span>`;
+          html += `<li style="margin-bottom: 8px; padding-bottom: 8px; border-bottom: 1px solid #e0e0e0;">`;
+          html += `<strong>${event.date}</strong> - ${event.title}${roleBadge}`;
           html += `</li>`;
         });
         html += `</ul>`;
+        html += `<p style="font-size: 11px; color: #999; margin-top: 8px;">View full timeline: <a href="../interactive-timeline/" target="_blank" style="color: #0038A8;">Interactive Timeline</a></p>`;
       }
       
       if (dynasty['2025_rumors_headlines'] && dynasty['2025_rumors_headlines'].length > 0) {
@@ -885,53 +972,11 @@
       panel.classList.add('visible');
     }
 
-    // Handle hash navigation from other pages (e.g., timeline linking to #Marcos)
-    function handleHashNavigation() {
-      const hash = window.location.hash.substring(1); // Remove the #
-      if (!hash || !network) return;
-
-      // Find the dynasty node that matches the hash
-      const dynastyId = hash.replace(/_/g, ' '); // Convert underscores back to spaces
-      const matchingNode = allNodes.find(node => {
-        const nodeLabel = node.label.toLowerCase();
-        const searchId = dynastyId.toLowerCase();
-        return nodeLabel === searchId ||
-               nodeLabel.includes(searchId) ||
-               node.id.toLowerCase() === searchId;
-      });
-
-      if (matchingNode) {
-        // Focus on the node and show its info panel
-        network.focus(matchingNode.id, {
-          scale: 1.5,
-          animation: {
-            duration: 500,
-            easingFunction: 'easeInOutQuad'
-          }
-        });
-
-        // Find and show dynasty info
-        const dynasty = dynastiesData.nodes.dynasties.find(d =>
-          d.name === matchingNode.label ||
-          d.name.toLowerCase() === dynastyId.toLowerCase()
-        );
-        if (dynasty) {
-          setTimeout(() => showInfoPanel(dynasty), 600);
-        }
-      }
-    }
-
-    // Also listen for hash changes while on the page
-    window.addEventListener('hashchange', handleHashNavigation);
-
-    function updateStats(filteredNodes = null, filteredEdges = null) {
-      const dynastyCount = filteredNodes ? filteredNodes.length : dynastiesData.nodes.dynasties.length;
-      const relationshipCount = filteredEdges ? filteredEdges.length : dynastiesData.edges.relationships.length;
-      
+    function updateStats() {
       document.getElementById('dynastyCount').textContent = 
-        `Dynasties: ${dynastyCount}`;
+        `Dynasties: ${dynastiesData.nodes.dynasties.length}`;
       document.getElementById('relationshipCount').textContent = 
-        `Relationships: ${relationshipCount}`;
+        `Relationships: ${dynastiesData.edges.relationships.length}`;
     }
 
     // Event listeners
@@ -1218,4 +1263,3 @@
   </script>
 </body>
 </html>
-
