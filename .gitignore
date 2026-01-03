@@ -37,11 +37,10 @@ SKILLS_SCHEDULE_GUIDE.md
 # Weekly review internal docs
 # weekly-reviews/README.md  # Now public - helpful documentation for users
 
-# Individual weekly review files (generated from template)
-# Keep template and index, but ignore generated reviews
-weekly-reviews/weekly-review-*.html
-!weekly-reviews/weekly-review-template.html
-!weekly-reviews/index.html
+# Individual weekly review files - now included for GitHub Pages
+# weekly-reviews/weekly-review-*.html  # Removed - reviews should be published
+# !weekly-reviews/weekly-review-template.html
+# !weekly-reviews/index.html
 
 TEST_LINKS.md
 CHECKLIST.md
