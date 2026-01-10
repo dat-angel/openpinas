@@ -56,12 +56,21 @@
         margin: 0 0 1.5rem;
       }
 
+      .description {
+        font-size: 0.9375rem;
+        color: #555;
+        line-height: 1.7;
+        margin-bottom: 2rem;
+        max-width: 640px;
+      }
+
       .nav-links {
         display: flex;
         gap: 1.5rem;
         flex-wrap: wrap;
         font-family: "IBM Plex Sans", -apple-system, sans-serif;
         font-size: 0.875rem;
+        margin-bottom: 2rem;
       }
 
       .nav-links a {
@@ -72,6 +81,56 @@
 
       .nav-links a:hover {
         color: #000;
+      }
+
+      .related-datasets {
+        margin: 3rem 0 2rem;
+        padding: 1.5rem;
+        background: #f9f9f9;
+        border-left: 3px solid #124559;
+        border-radius: 4px;
+      }
+
+      .related-datasets h2 {
+        font-size: 1.125rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
+        color: #222;
+        font-family: "IBM Plex Sans", -apple-system, sans-serif;
+      }
+
+      .related-datasets ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      .related-datasets li {
+        margin-bottom: 1rem;
+        font-size: 0.875rem;
+        line-height: 1.6;
+      }
+
+      .related-datasets li strong {
+        display: block;
+        margin-bottom: 0.25rem;
+        color: #222;
+        font-family: "IBM Plex Sans", -apple-system, sans-serif;
+      }
+
+      .related-datasets li a {
+        color: #0038A8;
+        text-decoration: underline;
+        font-weight: 500;
+      }
+
+      .related-datasets li a:hover {
+        opacity: 0.8;
+      }
+
+      .related-datasets .dataset-desc {
+        color: #666;
+        margin-top: 0.25rem;
       }
 
       main {
@@ -152,6 +211,9 @@
       <nav class="header-nav"><a href="../">← OpenPinas</a></nav>
       <h1>Weekly Reviews</h1>
       <p class="subtitle">2026</p>
+      <p class="description">
+        Weekly news digests summarizing significant events, organized by category. Includes weather, exchange rates, OFW news, and dynasty highlights.
+      </p>
       <nav class="nav-links">
         <a href="../interactive-timeline/">Full Timeline</a>
         <a href="../dynasties-network-visualization.html">Dynasty Map</a>
@@ -159,6 +221,32 @@
     </header>
 
     <main>
+      <section class="related-datasets">
+        <h2>Related Datasets & Visualizations</h2>
+        <ul>
+          <li>
+            <strong><a href="../interactive-timeline/">📅 Timeline</a></strong>
+            <div class="dataset-desc">Chronological view of major Philippine events in 2025 and 2026. Filter by category, see which dynasties were involved, and understand how events connect.</div>
+          </li>
+          <li>
+            <strong><a href="../dynasties-network-visualization.html">🗺️ Dynasty Network Map</a></strong>
+            <div class="dataset-desc">Interactive network graph showing how 50+ political dynasties connect through alliances, rivalries, and corruption networks. Includes geographic control map of 71 provinces.</div>
+          </li>
+          <li>
+            <strong><a href="../business-connections-network-visualization.html">💼 Business Connections Network</a></strong>
+            <div class="dataset-desc">Interactive network visualization showing connections between businesses, PBA teams, media outlets, and political dynasties.</div>
+          </li>
+          <li>
+            <strong><a href="../elite-schools-influence-visualization.html">🎓 Elite Schools Influence Map</a></strong>
+            <div class="dataset-desc">Schools as nodes, alumni pipelines as connectors, and provinces as shared impact zones. Explore community loops, mobility paths, and talent retention.</div>
+          </li>
+          <li>
+            <strong><a href="../when-to-go-manila.html">🧭 When to Go to the Philippines?</a></strong>
+            <div class="dataset-desc">Weekly PHP:USD exchange rate tracking alongside airport passenger traffic data to identify optimal travel windows and currency exchange opportunities.</div>
+          </li>
+        </ul>
+      </section>
+
       <section class="reviews-list" id="reviews-container">
         <div class="empty-state">
           <p>No reviews yet. Check back later.</p>
