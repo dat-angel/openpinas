@@ -455,6 +455,20 @@
             "Real Estate",
             "Telecommunications"
           ],
+          "business_connections": {
+            "corporations": [
+              {
+                "company_id": "SAN_MIGUEL_CORP",
+                "name": "San Miguel Corporation",
+                "connection_type": "marriage_connection",
+                "notes": "Cojuangco-Aquino marriage connections link to San Miguel Corporation. Historical business connections through Cojuangco family.",
+                "verification_status": "partially_verified"
+              }
+            ],
+            "media": [],
+            "sports": [],
+            "notes": "Marriage connections to Cojuangco family, which had historical control of San Miguel Corporation."
+          },
           "wealth_level": "very_high",
           "historical_notes": "Once dominated national politics; 2025 midterm elections marked significant comeback after years of decline; positioned as opposition force against Marcos-Duterte factions",
           "2025_rumors_headlines": [
@@ -538,6 +552,24 @@
             "Retail",
             "Banking"
           ],
+          "business_connections": {
+            "corporations": [
+              {
+                "company_id": "VILLAR_GROUP",
+                "name": "Villar Group",
+                "connection_type": "direct_ownership",
+                "businesses": [
+                  "Real Estate (Camarines Sur, Las Piñas)",
+                  "Retail (AllHome, AllDay)",
+                  "Agriculture"
+                ],
+                "verification_status": "verified"
+              }
+            ],
+            "media": [],
+            "sports": [],
+            "notes": "Direct political-business integration. Family members hold political positions and control business empire. Mark Villar was DPWH Secretary (2016-2021), now Senator."
+          },
           "wealth_level": "ultra_high",
           "corruption_allegations": [
             "Villarland valuation fraud (2025)",
@@ -2097,6 +2129,21 @@
               "wikipedia": "https://en.wikipedia.org/wiki/Joy_Belmonte"
             }
           ],
+          "business_connections": {
+            "media": [
+              {
+                "media_id": "PHILIPPINE_STAR",
+                "name": "Philippine Star",
+                "connection_type": "partial_ownership",
+                "ownership_stake": "21%",
+                "notes": "Belmonte family owns 21% stake. MediaQuest Holdings (MVP Group) owns 51%. Feliciano Belmonte Jr. was Speaker of the House (2010-2016) and Quezon City Mayor.",
+                "verification_status": "verified"
+              }
+            ],
+            "corporations": [],
+            "sports": [],
+            "notes": "Media ownership connection. Family has direct political dynasty and media ownership, showing information control connection."
+          },
           "historical_notes": "Dominant political family in Quezon City. Feliciano Belmonte Jr. served as mayor and Speaker of the House, with daughter Joy continuing the legacy."
         },
         {
@@ -2815,6 +2862,42 @@
             }
           ],
           "allied_dynasties": ["AQUINO_FAMILY"],
+          "business_connections": {
+            "corporations": [
+              {
+                "company_id": "SAN_MIGUEL_CORP",
+                "name": "San Miguel Corporation",
+                "connection_type": "historical_control",
+                "notes": "Cojuangco family had historical control of San Miguel Corporation. Current ownership structure needs SEC verification. One of Philippines' largest conglomerates.",
+                "verification_status": "partially_verified"
+              }
+            ],
+            "sports": [
+              {
+                "team_id": "SAN_MIGUEL_BEERMEN",
+                "name": "San Miguel Beermen",
+                "connection_type": "indirect_ownership",
+                "notes": "Via San Miguel Corporation ownership. San Miguel Corporation owns 3 PBA teams.",
+                "verification_status": "verified"
+              },
+              {
+                "team_id": "BARANGAY_GINEBRA",
+                "name": "Barangay Ginebra San Miguel",
+                "connection_type": "indirect_ownership",
+                "notes": "Via San Miguel Corporation ownership.",
+                "verification_status": "verified"
+              },
+              {
+                "team_id": "MAGNOLIA_HOTSHOTS",
+                "name": "Magnolia Hotshots",
+                "connection_type": "indirect_ownership",
+                "notes": "Via San Miguel Corporation ownership.",
+                "verification_status": "verified"
+              }
+            ],
+            "media": [],
+            "notes": "Historical control of San Miguel Corporation. Cojuangco-Aquino marriage connections. Sports as soft power - controls 3 PBA teams through San Miguel Corporation."
+          },
           "historical_notes": "One of the most powerful political families in Philippine history. Eduardo Cojuangco was a business tycoon and political kingmaker, with deep connections to the Aquino family. Family maintains historical influence in Tarlac."
         },
         {
@@ -2884,6 +2967,23 @@
             "Utilities",
             "Real Estate"
           ],
+          "business_connections": {
+            "media": [
+              {
+                "media_id": "ABS_CBN",
+                "name": "ABS-CBN Corporation",
+                "connection_type": "direct_ownership",
+                "ownership_stake": "88.49%",
+                "ownership_details": "Lopez Holdings Corporation (56.28%), ABS-CBN Holdings Corporation (32.21%)",
+                "notes": "Lopez family controls ABS-CBN. Franchise renewal denied 2020, widely seen as politically motivated. Historical political dynasty with longstanding political connections.",
+                "verification_status": "verified",
+                "franchise_status": "expired_2020"
+              }
+            ],
+            "corporations": [],
+            "sports": [],
+            "notes": "Historical political dynasty with media ownership. ABS-CBN franchise denial (2020) shows how political power affects media. Family has longstanding history in Philippine politics and business."
+          },
           "wealth_level": "ultra_high",
           "historical_notes": "One of the most powerful business and political families. Fernando López served as Vice President, and the family controls major media and utility companies. Maintains significant influence through business empire."
         },

@@ -1,0 +1,945 @@
+{
+  "metadata": {
+    "title": "Philippine Business Connections: Athletics, Olympics & Major Corporations",
+    "description": "Business ownership and political connections for sports organizations, major corporations, and media outlets in the Philippines",
+    "version": "1.2",
+    "last_updated": "2026-01-03",
+    "data_scope": "initial_collection_phase_1_expanded",
+    "status": "data_structure_expanded",
+    "notes": "Initial data collection complete. Additional conglomerates added (JG Summit, LT Group, Aboitiz, GT Capital). Data structures created for government contracts, campaign financing, and PBA history. Ready for data collection phase."
+  },
+  "sports": {
+    "pba_teams": [
+      {
+        "team_id": "SAN_MIGUEL_BEERMEN",
+        "name": "San Miguel Beermen",
+        "owner": "San Miguel Corporation (San Miguel Brewery subsidiary)",
+        "owner_type": "corporation",
+        "established": 1975,
+        "championships": 28,
+        "dynasty_connections": ["COJUANGCO_FAMILY"],
+        "political_connections": [
+          {
+            "type": "family_business",
+            "dynasty": "COJUANGCO_FAMILY",
+            "description": "Cojuangco family controls San Miguel Corporation - historical ownership, verify current structure",
+            "verification_status": "partially_verified",
+            "research_note": "San Miguel Corporation ownership structure has evolved. Cojuangco family had significant historical control. Current ownership structure needs SEC filing verification."
+          },
+          {
+            "type": "marriage_connection",
+            "dynasty": "AQUINO_FAMILY",
+            "description": "Cojuangco-Aquino marriage connections",
+            "verification_status": "needs_verification"
+          }
+        ],
+        "notes": "Most successful PBA team. San Miguel Corporation is one of Philippines' largest conglomerates."
+      },
+      {
+        "team_id": "BARANGAY_GINEBRA",
+        "name": "Barangay Ginebra San Miguel",
+        "owner": "San Miguel Corporation (Ginebra San Miguel, Inc. subsidiary)",
+        "owner_type": "corporation",
+        "established": 1979,
+        "championships": 15,
+        "dynasty_connections": ["COJUANGCO_FAMILY"],
+        "political_connections": [
+          {
+            "type": "family_business",
+            "dynasty": "COJUANGCO_FAMILY",
+            "description": "Same ownership as San Miguel Beermen",
+            "verification_status": "partially_verified"
+          }
+        ]
+      },
+      {
+        "team_id": "MAGNOLIA_HOTSHOTS",
+        "name": "Magnolia Hotshots",
+        "owner": "San Miguel Corporation (San Miguel Food and Beverage subsidiary)",
+        "owner_type": "corporation",
+        "established": 1988,
+        "championships": 14,
+        "dynasty_connections": ["COJUANGCO_FAMILY"],
+        "political_connections": [
+          {
+            "type": "family_business",
+            "dynasty": "COJUANGCO_FAMILY",
+            "description": "Same ownership as other San Miguel teams",
+            "verification_status": "partially_verified"
+          }
+        ],
+        "notes": "Also known as Magnolia Chicken Timplados Hotshots"
+      },
+      {
+        "team_id": "TNT_TROPANG_GIGA",
+        "name": "TNT Tropang Giga",
+        "owner": "Smart Communications (PLDT Inc. subsidiary, MVP Group)",
+        "owner_type": "corporation",
+        "established": 1990,
+        "championships": 3,
+        "dynasty_connections": [],
+        "political_connections": [
+          {
+            "type": "business_political_network",
+            "description": "MVP Group has infrastructure contracts and business-political relationships. PLDT is major telecommunications provider with government relationships.",
+            "verification_status": "verified",
+            "research_note": "MVP Group controls PLDT, Meralco, Metro Pacific. No direct political dynasty but significant infrastructure contracts require government relationships."
+          }
+        ],
+        "notes": "MVP Group (Manny V. Pangilinan) - no direct political dynasty but significant business-political networks. PLDT is major telecommunications provider."
+      },
+      {
+        "team_id": "MERALCO_BOLTS",
+        "name": "Meralco Bolts",
+        "owner": "Manila Electric Company (Meralco) - MVP Group",
+        "owner_type": "corporation",
+        "established": 2010,
+        "championships": 0,
+        "dynasty_connections": [],
+        "political_connections": [
+          {
+            "type": "business_political_network",
+            "description": "Meralco is major utility company (electricity distribution) with government regulatory relationships. Part of MVP Group.",
+            "verification_status": "verified",
+            "research_note": "Utilities require government regulation and approvals. MVP Group has significant stake in Meralco."
+          }
+        ]
+      },
+      {
+        "team_id": "NLEX_ROAD_WARRIORS",
+        "name": "NLEX Road Warriors",
+        "owner": "NLEX Corporation (Metro Pacific Tollways, MVP Group)",
+        "owner_type": "corporation",
+        "established": 2014,
+        "championships": 0,
+        "dynasty_connections": [],
+        "political_connections": [
+          {
+            "type": "infrastructure_contracts",
+            "description": "NLEX is major tollway operator (North Luzon Expressway) with government contracts and regulatory approvals. Part of Metro Pacific Investments under MVP Group.",
+            "verification_status": "verified",
+            "research_note": "Tollway operations require government contracts and regulatory approvals. MVP Group has major infrastructure investments."
+          }
+        ]
+      },
+      {
+        "team_id": "PHOENIX_SUPER_LPG",
+        "name": "Phoenix Super LPG",
+        "owner": "Phoenix Petroleum",
+        "owner_type": "corporation",
+        "established": 2016,
+        "championships": 0,
+        "dynasty_connections": [],
+        "political_connections": [
+          {
+            "type": "duterte_ally",
+            "dynasty": "DUTERTE_FAMILY",
+            "description": "Dennis Uy is Duterte administration ally and business partner",
+            "verification_status": "needs_verification"
+          }
+        ],
+        "notes": "Dennis Uy has business connections to Duterte administration"
+      },
+      {
+        "team_id": "TERRAFIRMA_DYIP",
+        "name": "Terrafirma Dyip",
+        "owner": "Terrafirma Realty (Dennis Uy)",
+        "owner_type": "corporation",
+        "established": 2014,
+        "championships": 0,
+        "dynasty_connections": [],
+        "political_connections": [
+          {
+            "type": "duterte_ally",
+            "dynasty": "DUTERTE_FAMILY",
+            "description": "Same owner as Phoenix - Dennis Uy",
+            "verification_status": "needs_verification"
+          }
+        ]
+      },
+      {
+        "team_id": "CONVERGE_FIBERXERS",
+        "name": "Converge FiberXers",
+        "owner": "Converge ICT Solutions, Inc. (Dennis Anthony Uy)",
+        "owner_type": "corporation",
+        "established": 2020,
+        "championships": 0,
+        "dynasty_connections": [],
+        "political_connections": [
+          {
+            "type": "telecommunications",
+            "description": "Telecommunications company (fiber internet provider), requires government licenses and may have government relationships",
+            "verification_status": "needs_research",
+            "research_note": "Verify if Dennis Anthony Uy is related to Dennis Uy (Phoenix/Terrafirma). Telecommunications requires NTC licenses."
+          }
+        ],
+        "notes": "Converge ICT is major fiber internet provider. Research Dennis Anthony Uy's background and any connections to Dennis Uy (Phoenix/Terrafirma owner)."
+      },
+      {
+        "team_id": "NORTHPORT_BATANG_PIER",
+        "name": "NorthPort Batang Pier",
+        "owner": "Sultan 900, Inc. / GlobalPort 900, Inc. (Mikee Romero)",
+        "owner_type": "corporation",
+        "established": 2002,
+        "championships": 0,
+        "dynasty_connections": [],
+        "political_connections": [
+          {
+            "type": "business_political_network",
+            "description": "Mikee Romero - research political connections and port operations",
+            "verification_status": "needs_research",
+            "research_note": "Port operations may require government approvals. Research Mikee Romero's background and political connections."
+          }
+        ],
+        "notes": "Owned by Sultan 900, Inc. / GlobalPort 900, Inc. Research Mikee Romero's political connections and port business relationships."
+      },
+      {
+        "team_id": "RAIN_OR_SHINE",
+        "name": "Rain or Shine Elasto Painters",
+        "owner": "Asian Coatings Philippines Inc.",
+        "owner_type": "corporation",
+        "established": 2006,
+        "championships": 2,
+        "dynasty_connections": [],
+        "political_connections": [
+          {
+            "type": "unknown",
+            "description": "Research ownership and political connections",
+            "verification_status": "needs_research"
+          }
+        ]
+      },
+      {
+        "team_id": "BLACKWATER_BOSSING",
+        "name": "Blackwater Bossing",
+        "owner": "Ever Bilena (Dioceldo Sy)",
+        "owner_type": "corporation",
+        "established": 2014,
+        "championships": 0,
+        "dynasty_connections": [],
+        "political_connections": [
+          {
+            "type": "unknown",
+            "description": "Research Dioceldo Sy and Ever Bilena political connections",
+            "verification_status": "needs_research"
+          }
+        ]
+      }
+    ],
+    "olympic_organizations": [
+      {
+        "organization_id": "POC",
+        "name": "Philippine Olympic Committee",
+        "type": "sports_governing_body",
+        "current_leadership": {
+          "president": "Abraham 'Bambol' Tolentino",
+          "term": "Current (2025)",
+          "political_connections": "Serving congressman",
+          "political_position": "Congressman (Cavite)",
+          "status": "active"
+        },
+        "funding_sources": [
+          "government",
+          "private_sponsors"
+        ],
+        "dynasty_connections": [],
+        "political_connections": [
+          {
+            "type": "direct_political_position",
+            "description": "POC President Abraham 'Bambol' Tolentino is a serving congressman, illustrating overlap between political figures and sports administration",
+            "verification_status": "verified",
+            "political_position": "Congressman (Cavite)",
+            "research_note": "Shows direct connection between political position and sports organization leadership."
+          },
+          {
+            "type": "government_funding",
+            "description": "Receives government funding - political connections through leadership",
+            "verification_status": "verified"
+          }
+        ],
+        "notes": "Current president is Abraham 'Bambol' Tolentino, who is also a serving congressman. Shows direct political-sports connection."
+      },
+      {
+        "organization_id": "SBP",
+        "name": "Samahang Basketbol ng Pilipinas",
+        "type": "sports_governing_body",
+        "current_leadership": {
+          "president": "RESEARCH_NEEDED",
+          "term": "RESEARCH_NEEDED",
+          "political_connections": "RESEARCH_NEEDED"
+        },
+        "funding_sources": [
+          "government",
+          "private_sponsors"
+        ],
+        "dynasty_connections": [],
+        "political_connections": [
+          {
+            "type": "government_funding",
+            "description": "Receives government funding - research political connections",
+            "verification_status": "needs_research"
+          }
+        ],
+        "notes": "Research current leadership and political connections"
+      }
+    ],
+    "athlete_political_connections": [
+      {
+        "athlete_id": "MANNY_PACQUIAO",
+        "name": "Manny Pacquiao",
+        "sport": "Boxing",
+        "political_dynasty": "PACQUIAO_FAMILY",
+        "political_positions": [
+          {
+            "position": "Senator",
+            "term": "2016-2022",
+            "status": "former"
+          },
+          {
+            "position": "Presidential Candidate",
+            "year": 2022,
+            "status": "candidate"
+          }
+        ],
+        "connection_type": "athlete_turned_politician",
+        "dynasty_connections": ["PACQUIAO_FAMILY"],
+        "notes": "Most prominent example of athlete entering politics. Established Pacquiao political dynasty in Sarangani."
+      }
+    ]
+  },
+  "corporations": {
+    "conglomerates": [
+      {
+        "company_id": "SAN_MIGUEL_CORP",
+        "name": "San Miguel Corporation",
+        "ownership": "Cojuangco family (Tarlac branch) - historical control, verify current structure",
+        "ownership_type": "family_controlled",
+        "dynasty_connections": ["COJUANGCO_FAMILY"],
+        "businesses": [
+          "Food & Beverage",
+          "Energy",
+          "Infrastructure",
+          "Media",
+          "Petroleum",
+          "Banking (Bank of Commerce)"
+        ],
+        "political_connections": [
+          {
+            "type": "direct_ownership",
+            "dynasty": "COJUANGCO_FAMILY",
+            "description": "Cojuangco family had historical control of San Miguel Corporation. Current ownership structure needs SEC filing verification.",
+            "verification_status": "partially_verified",
+            "research_note": "San Miguel Corporation ownership has evolved. Cojuangco family had significant historical control. Need to verify current ownership structure through SEC filings."
+          },
+          {
+            "type": "marriage_connection",
+            "dynasty": "AQUINO_FAMILY",
+            "description": "Cojuangco-Aquino marriage connections",
+            "verification_status": "needs_verification"
+          },
+          {
+            "type": "campaign_financing",
+            "description": "Major campaign contributor - research specific campaigns",
+            "verification_status": "needs_research"
+          },
+          {
+            "type": "government_contracts",
+            "description": "Infrastructure project contracts - research specific projects",
+            "verification_status": "needs_research"
+          }
+        ],
+        "notes": "One of Philippines' largest and oldest conglomerates. Controls multiple PBA teams."
+      },
+      {
+        "company_id": "AYALA_CORP",
+        "name": "Ayala Corporation",
+        "ownership": "Zobel de Ayala family",
+        "ownership_type": "family_controlled",
+        "dynasty_connections": [],
+        "businesses": [
+          "Real Estate (Ayala Land)",
+          "Banking (BPI)",
+          "Telecommunications (Globe)",
+          "Utilities",
+          "Infrastructure"
+        ],
+        "political_connections": [
+          {
+            "type": "business_political_network",
+            "description": "Historical connections to various administrations, infrastructure projects",
+            "verification_status": "needs_research"
+          },
+          {
+            "type": "development_contracts",
+            "description": "Real estate development approvals, infrastructure projects",
+            "verification_status": "needs_research"
+          }
+        ],
+        "notes": "No active political dynasty but significant business-political networks and influence"
+      },
+      {
+        "company_id": "SM_GROUP",
+        "name": "SM Group (Sy Family)",
+        "ownership": "Sy family (Henry Sy Sr. descendants)",
+        "ownership_type": "family_controlled",
+        "dynasty_connections": [],
+        "businesses": [
+          "Retail (SM Malls)",
+          "Real Estate",
+          "Banking (BDO)",
+          "Property Development"
+        ],
+        "political_connections": [
+          {
+            "type": "business_political_network",
+            "description": "Real estate development approvals, local government relationships",
+            "verification_status": "needs_research"
+          },
+          {
+            "type": "local_government_relationships",
+            "description": "Mall developments require local government approvals",
+            "verification_status": "needs_research"
+          }
+        ],
+        "notes": "No active political dynasty but significant business-political influence through real estate development"
+      },
+      {
+        "company_id": "MVP_GROUP",
+        "name": "Metro Pacific Investments / MVP Group",
+        "ownership": "Manny V. Pangilinan",
+        "ownership_type": "individual_controlled",
+        "dynasty_connections": [],
+        "businesses": [
+          "Infrastructure (Metro Pacific)",
+          "Utilities (Meralco)",
+          "Telecommunications (PLDT, Smart)",
+          "Tollways (NLEX, SCTEX)",
+          "Media (TV5)"
+        ],
+        "political_connections": [
+          {
+            "type": "infrastructure_contracts",
+            "description": "Major infrastructure projects (tollways, utilities, telecommunications) require government contracts and regulatory approvals",
+            "verification_status": "verified",
+            "research_note": "MVP Group controls NLEX, SCTEX tollways, Meralco utility, PLDT telecommunications. All require government contracts/approvals."
+          },
+          {
+            "type": "business_political_network",
+            "description": "Business-political relationships through infrastructure and utilities. No direct political dynasty but significant government relationships required for operations.",
+            "verification_status": "verified"
+          }
+        ],
+        "notes": "No direct political dynasty but significant business-political networks. Controls multiple PBA teams (TNT, Meralco, NLEX). Major infrastructure and utility provider requiring government relationships."
+      },
+      {
+        "company_id": "VILLAR_GROUP",
+        "name": "Villar Group",
+        "ownership": "Villar family",
+        "ownership_type": "family_controlled",
+        "dynasty_connections": ["VILLAR_FAMILY"],
+        "businesses": [
+          "Real Estate (Camarines Sur, Las Piñas)",
+          "Retail (AllHome, AllDay)",
+          "Agriculture"
+        ],
+        "political_connections": [
+          {
+            "type": "direct_political_business_integration",
+            "dynasty": "VILLAR_FAMILY",
+            "description": "Direct integration - family members in politics and business",
+            "verification_status": "verified"
+          },
+          {
+            "type": "government_position",
+            "dynasty": "VILLAR_FAMILY",
+            "description": "Mark Villar was DPWH Secretary (2016-2021), now Senator",
+            "verification_status": "verified"
+          },
+          {
+            "type": "government_position",
+            "dynasty": "VILLAR_FAMILY",
+            "description": "Cynthia Villar is Senator",
+            "verification_status": "verified"
+          },
+          {
+            "type": "government_position",
+            "dynasty": "VILLAR_FAMILY",
+            "description": "Manny Villar was Senate President (2006-2008)",
+            "verification_status": "verified"
+          }
+        ],
+        "notes": "Clear example of direct political-business integration. Family members hold both political positions and control business empire."
+      },
+      {
+        "company_id": "JG_SUMMIT",
+        "name": "JG Summit Holdings",
+        "ownership": "Gokongwei family",
+        "ownership_type": "family_controlled",
+        "dynasty_connections": [],
+        "businesses": [
+          "Food & Beverage (Universal Robina Corporation)",
+          "Aviation (Cebu Pacific)",
+          "Real Estate (Robinsons Land)",
+          "Banking (Robinsons Bank)",
+          "Telecommunications",
+          "Petrochemicals"
+        ],
+        "political_connections": [
+          {
+            "type": "business_political_network",
+            "description": "Research Gokongwei family political connections",
+            "verification_status": "needs_research"
+          },
+          {
+            "type": "development_contracts",
+            "description": "Real estate development approvals, infrastructure projects",
+            "verification_status": "needs_research"
+          }
+        ],
+        "notes": "One of Philippines' largest conglomerates. Research Gokongwei family political connections."
+      },
+      {
+        "company_id": "LT_GROUP",
+        "name": "LT Group (Lucio Tan Group)",
+        "ownership": "Lucio Tan",
+        "ownership_type": "individual_controlled",
+        "dynasty_connections": [],
+        "businesses": [
+          "Tobacco (Fortune Tobacco)",
+          "Banking (Philippine National Bank)",
+          "Aviation (Philippine Airlines)",
+          "Beverages (Asia Brewery)",
+          "Real Estate",
+          "Education (University of the East)"
+        ],
+        "political_connections": [
+          {
+            "type": "business_political_network",
+            "description": "Research Lucio Tan political connections",
+            "verification_status": "needs_research"
+          },
+          {
+            "type": "government_contracts",
+            "description": "Research government contracts and relationships",
+            "verification_status": "needs_research"
+          }
+        ],
+        "notes": "Major conglomerate controlled by Lucio Tan. Research political connections and government relationships."
+      },
+      {
+        "company_id": "ABOITIZ_GROUP",
+        "name": "Aboitiz Group",
+        "ownership": "Aboitiz family",
+        "ownership_type": "family_controlled",
+        "dynasty_connections": [],
+        "businesses": [
+          "Power Generation (Aboitiz Power)",
+          "Banking (Union Bank of the Philippines)",
+          "Real Estate",
+          "Food & Beverage",
+          "Infrastructure"
+        ],
+        "political_connections": [
+          {
+            "type": "business_political_network",
+            "description": "Research Aboitiz family political connections",
+            "verification_status": "needs_research"
+          },
+          {
+            "type": "infrastructure_contracts",
+            "description": "Power generation contracts, infrastructure projects",
+            "verification_status": "needs_research"
+          }
+        ],
+        "notes": "Major conglomerate with significant power generation and banking interests. Research political connections."
+      },
+      {
+        "company_id": "GT_CAPITAL",
+        "name": "GT Capital Holdings",
+        "ownership": "Ty family",
+        "ownership_type": "family_controlled",
+        "dynasty_connections": [],
+        "businesses": [
+          "Banking (Metropolitan Bank & Trust Company)",
+          "Automotive (Toyota Philippines)",
+          "Insurance",
+          "Real Estate",
+          "Power Generation"
+        ],
+        "political_connections": [
+          {
+            "type": "business_political_network",
+            "description": "Research Ty family political connections",
+            "verification_status": "needs_research"
+          },
+          {
+            "type": "development_contracts",
+            "description": "Real estate development approvals, infrastructure projects",
+            "verification_status": "needs_research"
+          }
+        ],
+        "notes": "Major conglomerate with banking and automotive interests. Research Ty family political connections."
+      }
+    ],
+    "media": [
+      {
+        "media_id": "ABS_CBN",
+        "name": "ABS-CBN Corporation",
+        "type": "broadcast_network",
+        "ownership": "Lopez family (Lopez Holdings Corporation 56.28%, ABS-CBN Holdings Corporation 32.21%)",
+        "ownership_type": "family_controlled",
+        "dynasty_connections": ["LOPEZ_FAMILY"],
+        "platforms": [
+          "Television",
+          "Radio",
+          "Online"
+        ],
+        "political_connections": [
+          {
+            "type": "direct_ownership",
+            "dynasty": "LOPEZ_FAMILY",
+            "description": "Lopez family (Iloilo political dynasty) owns ABS-CBN through Lopez Holdings Corporation (56.28%) and ABS-CBN Holdings Corporation (32.21%). Lopez family has longstanding history in Philippine politics and business.",
+            "verification_status": "verified",
+            "research_note": "Lopez family has historical political connections. Eugenio Lopez was involved in politics. Family has been influential in both media and political spheres."
+          },
+          {
+            "type": "franchise_denial",
+            "description": "Franchise renewal denied 2020, widely seen as politically motivated",
+            "year": 2020,
+            "verification_status": "verified"
+          },
+          {
+            "type": "political_retaliation",
+            "description": "Closure linked to critical coverage of Duterte administration",
+            "verification_status": "needs_research"
+          }
+        ],
+        "status": "franchise_expired_2020",
+        "notes": "Major example of how political power affects media. Franchise denial seen as political retaliation."
+      },
+      {
+        "media_id": "GMA_NETWORK",
+        "name": "GMA Network",
+        "type": "broadcast_network",
+        "ownership": "Gozon, Duavit, Jimenez families (GMA Holdings Inc.)",
+        "ownership_type": "family_controlled",
+        "dynasty_connections": [],
+        "platforms": [
+          "Television",
+          "Radio",
+          "Online"
+        ],
+        "political_connections": [
+          {
+            "type": "business_political_network",
+            "description": "Gozon and Duavit families have been influential in both media and political spheres in the Philippines. Chairman Felipe Gozon and President Gilberto Duavit Jr. are key figures.",
+            "verification_status": "partially_verified",
+            "research_note": "Gozon and Duavit families have political influence but no active political dynasty identified. Research specific political positions held by family members."
+          }
+        ],
+        "status": "active_franchise",
+        "notes": "Gozon and Duavit families have been influential in media and political spheres. Research specific political positions and connections."
+      },
+      {
+        "media_id": "TV5",
+        "name": "TV5",
+        "type": "broadcast_network",
+        "ownership": "MVP Group (MediaQuest)",
+        "ownership_type": "corporation",
+        "dynasty_connections": [],
+        "platforms": [
+          "Television",
+          "Online"
+        ],
+        "political_connections": [
+          {
+            "type": "business_political_network",
+            "description": "Same ownership as MVP Group - research media-political relationships",
+            "verification_status": "needs_research"
+          }
+        ],
+        "status": "active_franchise"
+      },
+      {
+        "media_id": "PHILIPPINE_STAR",
+        "name": "Philippine Star",
+        "type": "newspaper",
+        "ownership": "MediaQuest Holdings (MVP Group) 51%, Belmonte family 21%",
+        "ownership_type": "mixed_ownership",
+        "dynasty_connections": ["BELMONTE_FAMILY"],
+        "platforms": [
+          "Print",
+          "Online"
+        ],
+        "political_connections": [
+          {
+            "type": "direct_ownership",
+            "dynasty": "BELMONTE_FAMILY",
+            "description": "Belmonte family (Quezon City political dynasty) retains 21% stake in Philippine Star. Feliciano Belmonte Jr. served as Speaker of the House of Representatives.",
+            "verification_status": "verified",
+            "political_positions": [
+              {
+                "name": "Feliciano Belmonte Jr.",
+                "position": "Speaker of the House of Representatives",
+                "term": "2010-2013, 2013-2016",
+                "status": "former"
+              },
+              {
+                "name": "Feliciano Belmonte Jr.",
+                "position": "Quezon City Mayor",
+                "term": "Multiple terms",
+                "status": "former"
+              }
+            ]
+          },
+          {
+            "type": "business_political_network",
+            "description": "MediaQuest Holdings (MVP Group) owns majority stake (51%), creating business-political network connection",
+            "verification_status": "verified"
+          }
+        ],
+        "status": "active",
+        "notes": "Belmonte family has direct political dynasty connection. Feliciano Belmonte Jr. was Speaker of the House and Quezon City Mayor. MediaQuest (MVP Group) owns majority stake."
+      },
+      {
+        "media_id": "MANILA_BULLETIN",
+        "name": "Manila Bulletin",
+        "type": "newspaper",
+        "ownership": "Yap family (U.S. Automotive Co., Inc. 54.20%, USAUTOCO, Inc. 23.34%)",
+        "ownership_type": "family_controlled",
+        "dynasty_connections": [],
+        "platforms": [
+          "Print",
+          "Online"
+        ],
+        "political_connections": [
+          {
+            "type": "media_political_relationships",
+            "description": "Yap family has significant business interests in the Philippines through U.S. Automotive Co., Inc. and USAUTOCO, Inc. Specific political affiliations less documented.",
+            "verification_status": "partially_verified",
+            "research_note": "Yap family has business interests but specific political connections need deeper research. Business interests may require government relationships."
+          }
+        ],
+        "status": "active",
+        "notes": "Yap family owns through U.S. Automotive Co., Inc. (54.20%) and USAUTOCO, Inc. (23.34%). Research specific political connections."
+      },
+      {
+        "media_id": "PHILIPPINE_DAILY_INQUIRER",
+        "name": "Philippine Daily Inquirer",
+        "type": "newspaper",
+        "ownership": "Rufino-Prieto family (Pinnacle Printers Corporation 68.9%)",
+        "ownership_type": "family_controlled",
+        "dynasty_connections": [],
+        "platforms": [
+          "Print",
+          "Online"
+        ],
+        "political_connections": [
+          {
+            "type": "media_political_relationships",
+            "description": "Rufino-Prieto family owns through Pinnacle Printers Corporation (68.9%), the holding investment arm. Family has been involved in various business ventures, with some members participating in civic activities.",
+            "verification_status": "partially_verified",
+            "research_note": "Rufino-Prieto family has business interests. Research specific political positions and connections. Civic activities may indicate political relationships."
+          }
+        ],
+        "status": "active",
+        "notes": "Rufino-Prieto family owns through Pinnacle Printers Corporation (68.9%). Research specific political connections and civic activities."
+      },
+      {
+        "media_id": "RAPPLER",
+        "name": "Rappler",
+        "type": "online_news",
+        "ownership": "Maria Ressa (founder)",
+        "ownership_type": "individual",
+        "dynasty_connections": [],
+        "platforms": [
+          "Online"
+        ],
+        "political_connections": [
+          {
+            "type": "investigative_journalism",
+            "description": "Investigative journalism, government conflicts, legal cases",
+            "verification_status": "verified"
+          },
+          {
+            "type": "government_conflicts",
+            "description": "Multiple legal cases, seen as political harassment",
+            "verification_status": "verified"
+          }
+        ],
+        "status": "active",
+        "notes": "Not a political dynasty connection, but shows how media faces political pressure for critical coverage"
+      }
+    ]
+  },
+  "government_contracts": {
+    "metadata": {
+      "description": "Government contracts and infrastructure projects with political connections",
+      "status": "initial_structure",
+      "notes": "Structure created. Specific contract data needs research and collection."
+    },
+    "contracts": [
+      {
+        "contract_id": "PLACEHOLDER_1",
+        "project_name": "Research needed",
+        "contractor": "Research needed",
+        "contract_type": "infrastructure|utilities|development",
+        "contract_amount_php": 0,
+        "contract_date": "YYYY-MM-DD",
+        "political_connections": [
+          {
+            "type": "dynasty_connection|business_political_network",
+            "dynasty": "DYNASTY_ID or null",
+            "description": "Research needed",
+            "verification_status": "needs_research"
+          }
+        ],
+        "notes": "Template for government contract data. Replace with actual contract information."
+      }
+    ],
+    "notes": "Government contracts data structure created. Research specific contracts for MVP Group, San Miguel Corporation, Ayala Corporation, and other major conglomerates."
+  },
+  "campaign_financing": {
+    "metadata": {
+      "description": "Corporate campaign contributions and political donations",
+      "status": "initial_structure",
+      "notes": "Structure created. Specific financing data needs research and collection."
+    },
+    "contributions": [
+      {
+        "contribution_id": "PLACEHOLDER_1",
+        "contributor": "Company or individual name",
+        "recipient": "Political candidate or party",
+        "amount_php": 0,
+        "election_year": 0,
+        "contribution_type": "direct_contribution|in_kind|advertising",
+        "political_connections": [
+          {
+            "type": "dynasty_connection|business_political_network",
+            "dynasty": "DYNASTY_ID or null",
+            "description": "Research needed",
+            "verification_status": "needs_research"
+          }
+        ],
+        "notes": "Template for campaign financing data. Replace with actual contribution information."
+      }
+    ],
+    "notes": "Campaign financing data structure created. Research specific contributions from major corporations to political candidates and parties."
+  },
+  "pba_history": {
+    "metadata": {
+      "description": "Historical PBA team ownership changes and relocations",
+      "status": "initial_structure",
+      "notes": "Structure created. Historical data needs research and collection."
+    },
+    "historical_ownership_changes": [
+      {
+        "change_id": "PLACEHOLDER_1",
+        "team_id": "TEAM_ID",
+        "team_name": "Team name",
+        "previous_owner": "Previous owner",
+        "new_owner": "New owner",
+        "change_date": "YYYY-MM-DD",
+        "reason": "Research needed",
+        "political_connections": [
+          {
+            "type": "dynasty_connection|business_political_network",
+            "dynasty": "DYNASTY_ID or null",
+            "description": "Research needed",
+            "verification_status": "needs_research"
+          }
+        ],
+        "notes": "Template for historical ownership changes. Replace with actual historical data."
+      }
+    ],
+    "team_relocations": [
+      {
+        "relocation_id": "PLACEHOLDER_1",
+        "team_id": "TEAM_ID",
+        "team_name": "Team name",
+        "previous_location": "Previous location",
+        "new_location": "New location",
+        "relocation_date": "YYYY-MM-DD",
+        "notes": "Template for team relocations. Replace with actual relocation data."
+      }
+    ],
+    "championship_connections": [
+      {
+        "championship_id": "PLACEHOLDER_1",
+        "season": "YYYY-YY",
+        "champion_team": "Team name",
+        "owner": "Owner name",
+        "political_connections": [
+          {
+            "type": "dynasty_connection|business_political_network",
+            "dynasty": "DYNASTY_ID or null",
+            "description": "Research needed",
+            "verification_status": "needs_research"
+          }
+        ],
+        "notes": "Template for championship connections. Replace with actual championship data."
+      }
+    ],
+    "notes": "PBA history data structure created. Research historical ownership changes, team relocations, and championship connections to ownership."
+  },
+  "data_collection_status": {
+    "phase_1_complete": false,
+    "pba_teams": {
+      "total": 12,
+      "collected": 12,
+      "verified": 3,
+      "partially_verified": 3,
+      "needs_research": 6
+    },
+    "conglomerates": {
+      "total": 9,
+      "collected": 9,
+      "verified": 2,
+      "partially_verified": 1,
+      "needs_research": 6
+    },
+    "government_contracts": {
+      "total": 0,
+      "collected": 0,
+      "structure_created": true,
+      "needs_research": true
+    },
+    "campaign_financing": {
+      "total": 0,
+      "collected": 0,
+      "structure_created": true,
+      "needs_research": true
+    },
+    "pba_history": {
+      "total": 0,
+      "collected": 0,
+      "structure_created": true,
+      "needs_research": true
+    },
+    "media": {
+      "total": 7,
+      "collected": 7,
+      "verified": 4,
+      "partially_verified": 3,
+      "needs_research": 0
+    },
+    "olympic_organizations": {
+      "total": 2,
+      "collected": 2,
+      "verified": 1,
+      "needs_research": 1
+    },
+    "next_steps": [
+      "Verify San Miguel Corporation ownership and Cojuangco family connections",
+      "Research MVP Group infrastructure contracts and political relationships",
+      "Research media ownership families (Gozon, Duavit, Jimenez, Yap, Prieto, Belmonte)",
+      "Research POC and SBP current leadership",
+      "Verify PBA team ownership details",
+      "Research Dennis Uy and Duterte administration connections",
+      "Research Mikee Romero political connections",
+      "Add government contracts data for major corporations",
+      "Add campaign financing data where available"
+    ]
+  }
+}
+

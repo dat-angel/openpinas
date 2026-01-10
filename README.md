@@ -31,11 +31,16 @@ Then open http://localhost:8000/ in your browser
 **Data:**
 - `philippine-political-dynasties-network-2025.json` - Dynasty data, relationships, geographic control
 - `philippines-2025-timeline.json` - Timeline of major events
+- `philippines-2026-timeline.json` - Timeline of major events (2026)
+- `business-connections-2025.json` - Business-political connections (PBA teams, conglomerates, media ownership)
 
 **Visualizations:**
 - `dynasties-network-visualization.html` - Interactive network and map
 - `interactive-timeline/` - Timeline visualization
 - `weekly-reviews/` - Weekly review template and archive
+
+**Documentation:**
+- `docs/business-connections/` - Business connections project documentation
 
 ## Key Stats (2025)
 
