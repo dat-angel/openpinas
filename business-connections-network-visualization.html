@@ -519,7 +519,7 @@
       // Add media nodes
       if (businessData.corporations && businessData.corporations.media) {
         businessData.corporations.media.forEach(media => {
-          const nodeId = media.company_id;
+          const nodeId = media.company_id || media.media_id;
           nodeMap.set(nodeId, { type: 'media', data: media });
           
           allNodes.push({
