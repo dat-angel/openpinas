@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Business Connections Network - OpenPinas</title>
+  <script src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+      background: #f5f5f5;
+      color: #1a1a1a;
+    }
+
+    header {
+      background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+      color: white;
+      padding: 24px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .header-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 12px;
+    }
+
+    .header-top a {
+      color: white;
+      text-decoration: none;
+      font-size: 20px;
+      font-weight: 600;
+    }
+
+    .header-top a:hover {
+      text-decoration: underline;
+    }
+
+    .last-updated {
+      font-size: 12px;
+      opacity: 0.8;
+    }
+
+    h1 {
+      font-size: 28px;
+      margin-bottom: 8px;
+    }
+
+    header p {
+      opacity: 0.9;
+      font-size: 14px;
+    }
+
+    .controls {
+      background: white;
+      padding: 16px 24px;
+      border-bottom: 1px solid #e0e0e0;
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    .controls label {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 14px;
+    }
+
+    .controls select {
+      padding: 6px 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 14px;
+    }
+
+    .controls button {
+      padding: 6px 16px;
+      background: #1a1a1a;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+
+    .controls button:hover {
+      background: #2d2d2d;
+    }
+
+    .info-panel {
+      position: fixed;
+      top: 200px;
+      right: 24px;
+      width: 360px;
+      max-height: calc(100vh - 220px);
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+      padding: 20px;
+      overflow-y: auto;
+      z-index: 1000;
+      display: none;
+    }
+
+    .info-panel.visible {
+      display: block;
+    }
+
+    .info-panel h3 {
+      margin-bottom: 12px;
+      color: #1a1a1a;
+      font-size: 18px;
+    }
+
+    .info-panel .close {
+      float: right;
+      background: none;
+      border: none;
+      font-size: 20px;
+      cursor: pointer;
+      color: #666;
+    }
+
+    .info-panel .close:hover {
+      color: #1a1a1a;
+    }
+
+    .info-panel p {
+      margin: 8px 0;
+      font-size: 14px;
+      line-height: 1.5;
+    }
+
+    .info-panel .label {
+      font-weight: 600;
+      color: #666;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-top: 12px;
+    }
+
+    .info-panel .value {
+      margin-bottom: 8px;
+      font-size: 14px;
+    }
+
+    .info-panel ul {
+      margin: 8px 0 8px 20px;
+      font-size: 14px;
+    }
+
+    .info-panel a {
+      color: #0038A8;
+      text-decoration: underline;
+      font-weight: 500;
+    }
+
+    #network-container {
+      width: 100%;
+      height: calc(100vh - 180px);
+      background: white;
+      border: 1px solid #e0e0e0;
+    }
+
+    .legend {
+      position: fixed;
+      bottom: 24px;
+      left: 24px;
+      background: white;
+      padding: 16px;
+      border-radius: 8px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+      font-size: 12px;
+      z-index: 1000;
+    }
+
+    .legend h4 {
+      margin-bottom: 12px;
+      font-size: 14px;
+    }
+
+    .legend-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin: 6px 0;
+    }
+
+    .legend-color {
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      border: 1px solid #ccc;
+    }
+
+    .legend-line {
+      width: 24px;
+      height: 2px;
+      background: #ccc;
+    }
+
+    .legend-line.dashed {
+      background: repeating-linear-gradient(to right, #666 0, #666 4px, transparent 4px, transparent 8px);
+    }
+
+    .stats {
+      position: fixed;
+      top: 180px;
+      left: 24px;
+      background: white;
+      padding: 16px;
+      border-radius: 8px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+      font-size: 12px;
+      z-index: 1000;
+    }
+
+    .stats h4 {
+      margin-bottom: 8px;
+      font-size: 14px;
+    }
+
+    .stats p {
+      margin: 4px 0;
+      font-size: 12px;
+    }
+
+    @media (max-width: 1024px) {
+      .info-panel, .legend, .stats {
+        position: relative;
+        width: 100%;
+        margin: 16px;
+      }
+
+      #network-container {
+        height: 600px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-top">
+      <a href="index.html">OpenPinas</a>
+      <span class="last-updated" id="lastUpdated">Last updated: Loading...</span>
+    </div>
+    <h1>Business Connections Network</h1>
+    <p>Interactive network visualization showing connections between businesses, PBA teams, media outlets, and political dynasties</p>
+  </header>
+
+  <div class="controls">
+    <label>
+      <input type="checkbox" id="showDynasties" checked> Show Dynasties
+    </label>
+    <label>
+      <input type="checkbox" id="showBusinesses" checked> Show Businesses
+    </label>
+    <label>
+      <input type="checkbox" id="showPBA" checked> Show PBA Teams
+    </label>
+    <label>
+      <input type="checkbox" id="showMedia" checked> Show Media
+    </label>
+    <select id="filterVerification">
+      <option value="all">All Verification Status</option>
+      <option value="verified">Verified Only</option>
+      <option value="partially_verified">Partially Verified</option>
+      <option value="needs_verification">Needs Verification</option>
+    </select>
+    <button id="resetView">Reset View</button>
+  </div>
+
+  <div class="stats" id="stats">
+    <h4>Network Statistics</h4>
+    <p id="businessCount">Loading...</p>
+    <p id="dynastyCount">Loading...</p>
+    <p id="connectionCount">Loading...</p>
+  </div>
+
+  <div class="info-panel" id="infoPanel">
+    <button class="close" onclick="closeInfoPanel()">×</button>
+    <div id="infoContent"></div>
+  </div>
+
+  <div id="network-container"></div>
+
+  <div class="legend">
+    <h4>Legend</h4>
+    <div class="legend-item">
+      <div class="legend-color" style="background: #0038A8;"></div>
+      <span>Political Dynasty</span>
+    </div>
+    <div class="legend-item">
+      <div class="legend-color" style="background: #2b7a6d;"></div>
+      <span>Conglomerate</span>
+    </div>
+    <div class="legend-item">
+      <div class="legend-color" style="background: #c44900;"></div>
+      <span>PBA Team</span>
+    </div>
+    <div class="legend-item">
+      <div class="legend-color" style="background: #6c5b7b;"></div>
+      <span>Media Outlet</span>
+    </div>
+    <div class="legend-item">
+      <div class="legend-line" style="background: #0038A8; height: 3px;"></div>
+      <span>Direct Ownership</span>
+    </div>
+    <div class="legend-item">
+      <div class="legend-line dashed" style="background: #666; height: 2px;"></div>
+      <span>Business-Political Network</span>
+    </div>
+    <div class="legend-item">
+      <div class="legend-line" style="background: #FFD700; height: 3px;"></div>
+      <span>Infrastructure Contracts</span>
+    </div>
+  </div>
+
+  <script>
+    let network = null;
+    let allNodes = [];
+    let allEdges = [];
+    let businessData = null;
+    let dynastiesData = null;
+
+    // Node colors by type
+    const nodeColors = {
+      'dynasty': '#0038A8',           // Deep blue
+      'conglomerate': '#2b7a6d',      // Teal
+      'pba_team': '#c44900',          // Orange
+      'media': '#6c5b7b',             // Purple
+      'olympic_org': '#e76f51',       // Coral
+      'athlete': '#f4a261'            // Light orange
+    };
+
+    // Edge colors by connection type
+    const edgeColors = {
+      'direct_ownership': '#0038A8',           // Deep blue
+      'family_business': '#0038A8',           // Deep blue
+      'business_political_network': '#666',   // Gray (dashed)
+      'infrastructure_contracts': '#FFD700',  // Gold
+      'government_contracts': '#FFD700',      // Gold
+      'media_political_relationships': '#6c5b7b', // Purple
+      'campaign_financing': '#CE1126',        // Red
+      'marriage_connection': '#0066CC',       // Blue
+      'duterte_ally': '#CE1126'               // Red
+    };
+
+    // Load data
+    async function loadData() {
+      try {
+        // Load business connections data
+        const businessResponse = await fetch('business-connections-2025.json');
+        if (!businessResponse.ok) throw new Error('Failed to load business connections data');
+        const businessJson = await businessResponse.json();
+        businessData = businessJson;
+
+        // Load dynasty data
+        const dynastyResponse = await fetch('philippine-political-dynasties-network-2025.json');
+        if (!dynastyResponse.ok) throw new Error('Failed to load dynasty data');
+        const dynastyJson = await dynastyResponse.json();
+        dynastiesData = dynastyJson.philippine_political_dynasties_network;
+
+        // Update last updated
+        const lastUpdated = businessData.metadata.last_updated || 'Unknown';
+        document.getElementById('lastUpdated').textContent = `Last updated: ${lastUpdated}`;
+
+        buildNetwork();
+        updateStats();
+      } catch (error) {
+        console.error('Error loading data:', error);
+        document.getElementById('network-container').innerHTML = 
+          `<div style="padding: 40px; text-align: center; color: #c44900;">
+            <h3>Error loading network data</h3>
+            <p>${error.message}</p>
+          </div>`;
+      }
+    }
+
+    function buildNetwork() {
+      allNodes = [];
+      allEdges = [];
+      const nodeMap = new Map();
+
+      // Add dynasty nodes
+      if (dynastiesData && dynastiesData.nodes && dynastiesData.nodes.dynasties) {
+        dynastiesData.nodes.dynasties.forEach(dynasty => {
+          const nodeId = dynasty.id;
+          nodeMap.set(nodeId, { type: 'dynasty', data: dynasty });
+          
+          allNodes.push({
+            id: nodeId,
+            label: dynasty.name.replace(/_/g, ' ').replace('FAMILY', '').trim(),
+            color: { background: nodeColors.dynasty },
+            size: 25,
+            shape: 'dot',
+            font: { size: 14 },
+            data: { type: 'dynasty', item: dynasty }
+          });
+        });
+      }
+
+      // Add PBA team nodes
+      if (businessData.sports && businessData.sports.pba_teams) {
+        businessData.sports.pba_teams.forEach(team => {
+          const nodeId = team.team_id;
+          nodeMap.set(nodeId, { type: 'pba_team', data: team });
+          
+          allNodes.push({
+            id: nodeId,
+            label: team.name,
+            color: { background: nodeColors.pba_team },
+            size: 20,
+            shape: 'dot',
+            font: { size: 12 },
+            data: { type: 'pba_team', item: team }
+          });
+
+          // Add edges for dynasty connections
+          if (team.dynasty_connections && team.dynasty_connections.length > 0) {
+            team.dynasty_connections.forEach(dynastyId => {
+              allEdges.push({
+                id: `${nodeId}-${dynastyId}`,
+                from: nodeId,
+                to: dynastyId,
+                color: { color: edgeColors.direct_ownership },
+                width: 3,
+                dashes: false,
+                label: 'Ownership',
+                data: { type: 'direct_ownership', source: team, target: dynastyId }
+              });
+            });
+          }
+
+          // Add edges for political connections
+          if (team.political_connections) {
+            team.political_connections.forEach(conn => {
+              if (conn.dynasty) {
+                const edgeColor = edgeColors[conn.type] || edgeColors.business_political_network;
+                allEdges.push({
+                  id: `${nodeId}-${conn.dynasty}-${conn.type}`,
+                  from: nodeId,
+                  to: conn.dynasty,
+                  color: { color: edgeColor },
+                  width: 2,
+                  dashes: conn.type === 'business_political_network',
+                  label: conn.type.replace(/_/g, ' '),
+                  data: { type: conn.type, connection: conn, source: team }
+                });
+              }
+            });
+          }
+        });
+      }
+
+      // Add conglomerate nodes
+      if (businessData.corporations && businessData.corporations.conglomerates) {
+        businessData.corporations.conglomerates.forEach(company => {
+          const nodeId = company.company_id;
+          nodeMap.set(nodeId, { type: 'conglomerate', data: company });
+          
+          allNodes.push({
+            id: nodeId,
+            label: company.name,
+            color: { background: nodeColors.conglomerate },
+            size: 30,
+            shape: 'dot',
+            font: { size: 13 },
+            data: { type: 'conglomerate', item: company }
+          });
+
+          // Add edges for dynasty connections
+          if (company.dynasty_connections && company.dynasty_connections.length > 0) {
+            company.dynasty_connections.forEach(dynastyId => {
+              allEdges.push({
+                id: `${nodeId}-${dynastyId}`,
+                from: nodeId,
+                to: dynastyId,
+                color: { color: edgeColors.direct_ownership },
+                width: 4,
+                dashes: false,
+                label: 'Ownership',
+                data: { type: 'direct_ownership', source: company, target: dynastyId }
+              });
+            });
+          }
+
+          // Add edges for political connections
+          if (company.political_connections) {
+            company.political_connections.forEach(conn => {
+              if (conn.dynasty) {
+                const edgeColor = edgeColors[conn.type] || edgeColors.business_political_network;
+                allEdges.push({
+                  id: `${nodeId}-${conn.dynasty}-${conn.type}`,
+                  from: nodeId,
+                  to: conn.dynasty,
+                  color: { color: edgeColor },
+                  width: 2,
+                  dashes: conn.type === 'business_political_network' || conn.type === 'infrastructure_contracts',
+                  label: conn.type.replace(/_/g, ' '),
+                  data: { type: conn.type, connection: conn, source: company }
+                });
+              }
+            });
+          }
+        });
+      }
+
+      // Add media nodes
+      if (businessData.corporations && businessData.corporations.media) {
+        businessData.corporations.media.forEach(media => {
+          const nodeId = media.company_id;
+          nodeMap.set(nodeId, { type: 'media', data: media });
+          
+          allNodes.push({
+            id: nodeId,
+            label: media.name,
+            color: { background: nodeColors.media },
+            size: 22,
+            shape: 'dot',
+            font: { size: 12 },
+            data: { type: 'media', item: media }
+          });
+
+          // Add edges for dynasty connections
+          if (media.dynasty_connections && media.dynasty_connections.length > 0) {
+            media.dynasty_connections.forEach(dynastyId => {
+              allEdges.push({
+                id: `${nodeId}-${dynastyId}`,
+                from: nodeId,
+                to: dynastyId,
+                color: { color: edgeColors.direct_ownership },
+                width: 3,
+                dashes: false,
+                label: 'Ownership',
+                data: { type: 'direct_ownership', source: media, target: dynastyId }
+              });
+            });
+          }
+
+          // Add edges for political connections
+          if (media.political_connections) {
+            media.political_connections.forEach(conn => {
+              if (conn.dynasty) {
+                const edgeColor = edgeColors[conn.type] || edgeColors.media_political_relationships;
+                allEdges.push({
+                  id: `${nodeId}-${conn.dynasty}-${conn.type}`,
+                  from: nodeId,
+                  to: conn.dynasty,
+                  color: { color: edgeColor },
+                  width: 2,
+                  dashes: true,
+                  label: conn.type.replace(/_/g, ' '),
+                  data: { type: conn.type, connection: conn, source: media }
+                });
+              }
+            });
+          }
+        });
+      }
+
+      // Initial render
+      updateNetwork();
+    }
+
+    function updateNetwork() {
+      let filteredNodes = [...allNodes];
+      let filteredEdges = [...allEdges];
+
+      // Apply filters
+      const showDynasties = document.getElementById('showDynasties').checked;
+      const showBusinesses = document.getElementById('showBusinesses').checked;
+      const showPBA = document.getElementById('showPBA').checked;
+      const showMedia = document.getElementById('showMedia').checked;
+      const verificationFilter = document.getElementById('filterVerification').value;
+
+      // Filter nodes by type
+      filteredNodes = filteredNodes.filter(node => {
+        if (node.data.type === 'dynasty' && !showDynasties) return false;
+        if (node.data.type === 'conglomerate' && !showBusinesses) return false;
+        if (node.data.type === 'pba_team' && !showPBA) return false;
+        if (node.data.type === 'media' && !showMedia) return false;
+        return true;
+      });
+
+      // Filter edges to only include visible nodes
+      const visibleNodeIds = new Set(filteredNodes.map(n => n.id));
+      filteredEdges = filteredEdges.filter(edge => 
+        visibleNodeIds.has(edge.from) && visibleNodeIds.has(edge.to)
+      );
+
+      // Filter by verification status if needed
+      if (verificationFilter !== 'all') {
+        filteredEdges = filteredEdges.filter(edge => {
+          if (edge.data && edge.data.connection) {
+            const status = edge.data.connection.verification_status;
+            if (verificationFilter === 'verified') return status === 'verified';
+            if (verificationFilter === 'partially_verified') return status === 'partially_verified';
+            if (verificationFilter === 'needs_verification') return status === 'needs_verification' || status === 'needs_research';
+          }
+          return true;
+        });
+      }
+
+      // Update network
+      const container = document.getElementById('network-container');
+      const data = { nodes: new vis.DataSet(filteredNodes), edges: new vis.DataSet(filteredEdges) };
+      const options = {
+        nodes: {
+          borderWidth: 2,
+          borderColor: '#fff',
+          font: { size: 12, face: 'Arial' }
+        },
+        edges: {
+          arrows: { to: { enabled: true, scaleFactor: 0.5 } },
+          smooth: { type: 'continuous' },
+          font: { size: 10, align: 'middle' }
+        },
+        physics: {
+          stabilization: { iterations: 200 }
+        },
+        interaction: {
+          hover: true,
+          tooltipDelay: 200
+        }
+      };
+
+      network = new vis.Network(container, data, options);
+
+      // Handle node clicks
+      network.on('click', (params) => {
+        if (params.nodes.length > 0) {
+          const nodeId = params.nodes[0];
+          const node = filteredNodes.find(n => n.id === nodeId);
+          if (node) {
+            showInfoPanel(node.data);
+          }
+        }
+      });
+
+      updateStats();
+    }
+
+    function showInfoPanel(nodeData) {
+      const panel = document.getElementById('infoPanel');
+      const content = document.getElementById('infoContent');
+      
+      let html = '';
+      const item = nodeData.item;
+
+      if (nodeData.type === 'dynasty') {
+        html = `<h3>${item.name.replace(/_/g, ' ').replace('FAMILY', '').trim()}</h3>`;
+        html += `<p><strong>Classification:</strong> ${item.classification || 'N/A'}</p>`;
+        html += `<p><strong>Power Level:</strong> ${item.power_level || 'N/A'}</p>`;
+        if (item.primary_regions && item.primary_regions.length > 0) {
+          html += `<div class="label">Primary Regions</div>`;
+          html += `<div class="value">${item.primary_regions.join(', ')}</div>`;
+        }
+      } else if (nodeData.type === 'pba_team') {
+        html = `<h3>${item.name}</h3>`;
+        html += `<p><strong>Owner:</strong> ${item.owner}</p>`;
+        html += `<p><strong>Established:</strong> ${item.established || 'N/A'}</p>`;
+        html += `<p><strong>Championships:</strong> ${item.championships || 0}</p>`;
+        
+        if (item.dynasty_connections && item.dynasty_connections.length > 0) {
+          html += `<div class="label">Dynasty Connections</div>`;
+          html += `<div class="value">`;
+          item.dynasty_connections.forEach(dynastyId => {
+            const dynastyName = dynastyId.replace(/_/g, ' ').replace('FAMILY', '').trim();
+            html += `<a href="#" onclick="showDynastyById('${dynastyId}'); return false;">${dynastyName}</a><br>`;
+          });
+          html += `</div>`;
+        }
+
+        if (item.political_connections && item.political_connections.length > 0) {
+          html += `<div class="label">Political Connections</div>`;
+          html += `<ul>`;
+          item.political_connections.forEach(conn => {
+            html += `<li><strong>${conn.type.replace(/_/g, ' ')}:</strong> ${conn.description || 'N/A'}<br>`;
+            html += `<span style="font-size: 11px; color: #666;">Status: ${conn.verification_status || 'unknown'}</span></li>`;
+          });
+          html += `</ul>`;
+        }
+      } else if (nodeData.type === 'conglomerate') {
+        html = `<h3>${item.name}</h3>`;
+        html += `<p><strong>Ownership:</strong> ${item.ownership || 'N/A'}</p>`;
+        
+        if (item.businesses && item.businesses.length > 0) {
+          html += `<div class="label">Businesses</div>`;
+          html += `<div class="value">${item.businesses.join(', ')}</div>`;
+        }
+
+        if (item.dynasty_connections && item.dynasty_connections.length > 0) {
+          html += `<div class="label">Dynasty Connections</div>`;
+          html += `<div class="value">`;
+          item.dynasty_connections.forEach(dynastyId => {
+            const dynastyName = dynastyId.replace(/_/g, ' ').replace('FAMILY', '').trim();
+            html += `<a href="#" onclick="showDynastyById('${dynastyId}'); return false;">${dynastyName}</a><br>`;
+          });
+          html += `</div>`;
+        }
+
+        if (item.political_connections && item.political_connections.length > 0) {
+          html += `<div class="label">Political Connections</div>`;
+          html += `<ul>`;
+          item.political_connections.forEach(conn => {
+            html += `<li><strong>${conn.type.replace(/_/g, ' ')}:</strong> ${conn.description || 'N/A'}<br>`;
+            html += `<span style="font-size: 11px; color: #666;">Status: ${conn.verification_status || 'unknown'}</span></li>`;
+          });
+          html += `</ul>`;
+        }
+      } else if (nodeData.type === 'media') {
+        html = `<h3>${item.name}</h3>`;
+        html += `<p><strong>Type:</strong> ${item.type || 'N/A'}</p>`;
+        
+        if (item.ownership && item.ownership.family) {
+          html += `<p><strong>Ownership:</strong> ${item.ownership.family}</p>`;
+        }
+
+        if (item.dynasty_connections && item.dynasty_connections.length > 0) {
+          html += `<div class="label">Dynasty Connections</div>`;
+          html += `<div class="value">`;
+          item.dynasty_connections.forEach(dynastyId => {
+            const dynastyName = dynastyId.replace(/_/g, ' ').replace('FAMILY', '').trim();
+            html += `<a href="#" onclick="showDynastyById('${dynastyId}'); return false;">${dynastyName}</a><br>`;
+          });
+          html += `</div>`;
+        }
+
+        if (item.political_connections && item.political_connections.length > 0) {
+          html += `<div class="label">Political Connections</div>`;
+          html += `<ul>`;
+          item.political_connections.forEach(conn => {
+            html += `<li><strong>${conn.type.replace(/_/g, ' ')}:</strong> ${conn.description || 'N/A'}<br>`;
+            html += `<span style="font-size: 11px; color: #666;">Status: ${conn.verification_status || 'unknown'}</span></li>`;
+          });
+          html += `</ul>`;
+        }
+      }
+
+      content.innerHTML = html;
+      panel.classList.add('visible');
+    }
+
+    function showDynastyById(dynastyId) {
+      const node = allNodes.find(n => n.id === dynastyId && n.data.type === 'dynasty');
+      if (node) {
+        showInfoPanel(node.data);
+        if (network) {
+          network.selectNodes([dynastyId]);
+          network.focus(dynastyId, { animation: true });
+        }
+      }
+    }
+
+    function closeInfoPanel() {
+      document.getElementById('infoPanel').classList.remove('visible');
+    }
+
+    function updateStats() {
+      const businessNodes = allNodes.filter(n => n.data.type === 'conglomerate' || n.data.type === 'pba_team' || n.data.type === 'media').length;
+      const dynastyNodes = allNodes.filter(n => n.data.type === 'dynasty').length;
+      const connections = allEdges.length;
+
+      document.getElementById('businessCount').textContent = `Businesses: ${businessNodes}`;
+      document.getElementById('dynastyCount').textContent = `Dynasties: ${dynastyNodes}`;
+      document.getElementById('connectionCount').textContent = `Connections: ${connections}`;
+    }
+
+    // Event listeners
+    document.getElementById('showDynasties').addEventListener('change', updateNetwork);
+    document.getElementById('showBusinesses').addEventListener('change', updateNetwork);
+    document.getElementById('showPBA').addEventListener('change', updateNetwork);
+    document.getElementById('showMedia').addEventListener('change', updateNetwork);
+    document.getElementById('filterVerification').addEventListener('change', updateNetwork);
+    document.getElementById('resetView').addEventListener('click', () => {
+      if (network) {
+        network.fit({ animation: true });
+      }
+    });
+
+    // Load data on page load
+    loadData();
+  </script>
+</body>
+</html>

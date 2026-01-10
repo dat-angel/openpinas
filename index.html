@@ -106,6 +106,13 @@
         line-height: 1.6;
       }
 
+      .card .last-updated {
+        margin-top: 12px;
+        font-size: 11px;
+        color: #999;
+        font-weight: 400;
+      }
+
       .stats {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -225,11 +232,20 @@
 
     <main>
       <div class="cards">
+        <a href="weekly-reviews/" class="card">
+          <h2>📰 Weekly Reviews</h2>
+          <p>
+            Weekly news digests summarizing significant events, organized by category. Includes weather, exchange rates, OFW news, and dynasty highlights.
+          </p>
+          <div class="last-updated">Last updated: January 9, 2026</div>
+        </a>
+
         <a href="dynasties-network-visualization.html" class="card">
           <h2>🗺️ Dynasty Network Map</h2>
           <p>
             Interactive network graph showing how 50+ political dynasties connect through alliances, rivalries, and corruption networks. Includes geographic control map of 71 provinces.
           </p>
+          <div class="last-updated">Last updated: January 1, 2026</div>
         </a>
 
         <a href="interactive-timeline/" class="card">
@@ -237,20 +253,15 @@
           <p>
             Chronological view of major Philippine events in 2025 and 2026. Filter by category, see which dynasties were involved, and understand how events connect.
           </p>
+          <div class="last-updated">Last updated: January 9, 2026</div>
         </a>
 
-        <a href="weekly-reviews/" class="card">
-          <h2>📰 Weekly Reviews</h2>
+        <a href="business-connections-network-visualization.html" class="card">
+          <h2>💼 Business Connections Network</h2>
           <p>
-            Weekly news digests summarizing significant events, organized by category. Includes weather, exchange rates, OFW news, and dynasty highlights.
+            Interactive network visualization showing connections between businesses, PBA teams, media outlets, and political dynasties.
           </p>
-        </a>
-
-        <a href="docs/business-connections/" class="card">
-          <h2>💼 Business Connections</h2>
-          <p>
-            Dataset tracking business-political connections: PBA team ownership, major conglomerates, media ownership, and their links to political dynasties.
-          </p>
+          <div class="last-updated">Last updated: January 3, 2026</div>
         </a>
 
         <a href="elite-schools-influence-visualization.html" class="card">
@@ -258,6 +269,7 @@
           <p>
             Schools as nodes, alumni pipelines as connectors, and provinces as shared impact zones. Explore community loops, mobility paths, and talent retention.
           </p>
+          <div class="last-updated">Last updated: 2025</div>
         </a>
 
         <a href="when-to-go-manila.html" class="card">
@@ -265,6 +277,7 @@
           <p>
             Weekly PHP:USD exchange rate tracking alongside airport passenger traffic data to identify optimal travel windows and currency exchange opportunities.
           </p>
+          <div class="last-updated">Last updated: 2025</div>
         </a>
       </div>
 
