@@ -444,11 +444,11 @@
 
           // Add edges for political connections
           if (team.political_connections) {
-            team.political_connections.forEach(conn => {
+            team.political_connections.forEach((conn, index) => {
               if (conn.dynasty) {
                 const edgeColor = edgeColors[conn.type] || edgeColors.business_political_network;
                 allEdges.push({
-                  id: `${nodeId}-${conn.dynasty}-${conn.type}`,
+                  id: `${nodeId}-${conn.dynasty}-${conn.type}-${index}`,
                   from: nodeId,
                   to: conn.dynasty,
                   color: { color: edgeColor },
@@ -497,11 +497,11 @@
 
           // Add edges for political connections
           if (company.political_connections) {
-            company.political_connections.forEach(conn => {
+            company.political_connections.forEach((conn, index) => {
               if (conn.dynasty) {
                 const edgeColor = edgeColors[conn.type] || edgeColors.business_political_network;
                 allEdges.push({
-                  id: `${nodeId}-${conn.dynasty}-${conn.type}`,
+                  id: `${nodeId}-${conn.dynasty}-${conn.type}-${index}`,
                   from: nodeId,
                   to: conn.dynasty,
                   color: { color: edgeColor },
@@ -550,11 +550,11 @@
 
           // Add edges for political connections
           if (media.political_connections) {
-            media.political_connections.forEach(conn => {
+            media.political_connections.forEach((conn, index) => {
               if (conn.dynasty) {
                 const edgeColor = edgeColors[conn.type] || edgeColors.media_political_relationships;
                 allEdges.push({
-                  id: `${nodeId}-${conn.dynasty}-${conn.type}`,
+                  id: `${nodeId}-${conn.dynasty}-${conn.type}-${index}`,
                   from: nodeId,
                   to: conn.dynasty,
                   color: { color: edgeColor },

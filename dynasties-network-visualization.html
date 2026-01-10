@@ -535,6 +535,8 @@
     let allNodes = [];
     let allEdges = [];
     let dynastiesData = null;
+    let timelineData = null;
+    let weeklyReviewsData = {};
     let phMap = null;
     let provinceMarkers = [];
 
@@ -596,6 +598,16 @@
         const lastUpdatedEl = document.getElementById('lastUpdated');
         if (lastUpdatedEl) {
           lastUpdatedEl.textContent = `Last updated: ${lastUpdated}`;
+        }
+        
+        // Load timeline data for recent news
+        try {
+          const timelineResponse = await fetch('philippines-2026-timeline.json');
+          if (timelineResponse.ok) {
+            timelineData = await timelineResponse.json();
+          }
+        } catch (e) {
+          console.log('Timeline data not available, continuing without it');
         }
         
         buildNetwork();
@@ -1026,6 +1038,38 @@
           html += `</div>`;
         });
         html += `</div>`;
+      }
+      
+      // Add recent news from weekly reviews (at the end, after all other info)
+      if (timelineData && timelineData.timeline) {
+        const dynastyId = dynasty.id;
+        const recentEvents = timelineData.timeline
+          .filter(event => event.mentioned_dynasties && event.mentioned_dynasties.includes(dynastyId))
+          .sort((a, b) => new Date(b.date) - new Date(a.date))
+          .slice(0, 5); // Show 5 most recent
+        
+        if (recentEvents.length > 0) {
+          html += `<div class="label" style="margin-top: 20px; border-top: 2px solid #e0e0e0; padding-top: 16px; font-size: 13px;">📰 Recent News from Weekly Reviews</div>`;
+          html += `<div class="value" style="max-height: 250px; overflow-y: auto; margin-top: 8px;">`;
+          recentEvents.forEach((event, idx) => {
+            const eventDate = new Date(event.date + 'T00:00:00').toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+            const weeklyReviewLink = event.weekly_review ? 
+              `<a href="${event.weekly_review}" target="_blank" style="color: #0038A8; text-decoration: underline; font-size: 11px; display: block; margin-top: 4px;">View in Weekly Review →</a>` : '';
+            const categoryBadge = event.category ? 
+              `<span style="background: #f0f0f0; padding: 2px 6px; border-radius: 3px; font-size: 10px; text-transform: uppercase; margin-left: 6px;">${event.category}</span>` : '';
+            html += `<div style="margin-bottom: 14px; padding-bottom: 12px; ${idx < recentEvents.length - 1 ? 'border-bottom: 1px solid #f0f0f0;' : ''}">`;
+            html += `<div style="display: flex; align-items: center; margin-bottom: 6px;">`;
+            html += `<strong style="font-size: 12px; color: #1a1a1a;">${eventDate}</strong>${categoryBadge}`;
+            html += `</div>`;
+            html += `<p style="font-size: 12px; color: #555; margin: 4px 0; line-height: 1.4;">${event.title}</p>`;
+            if (event.description && event.description.length < 100) {
+              html += `<p style="font-size: 11px; color: #888; margin: 4px 0; line-height: 1.3;">${event.description.substring(0, 80)}...</p>`;
+            }
+            html += `${weeklyReviewLink}`;
+            html += `</div>`;
+          });
+          html += `</div>`;
+        }
       }
       
       content.innerHTML = html;
