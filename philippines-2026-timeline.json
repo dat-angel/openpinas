@@ -4,10 +4,10 @@
   "prepared_for": "Filipino Diaspora Communities Worldwide",
   "metadata": {
     "purpose": "Comprehensive timeline of major Philippine events in 2026 to help overseas Filipinos understand developments affecting families, remittances, investments, and homeland governance",
-    "last_updated": "January 2, 2026",
+    "last_updated": "January 9, 2026",
     "aggregation_note": "This timeline is aggregated by month as events unfold. Weekly reviews provide more detailed coverage.",
-    "total_events": 7,
-    "categories": ["Political", "Cultural", "Natural Disasters", "Economic", "International Relations", "Legal", "OFW/Diaspora"]
+    "total_events": 13,
+    "categories": ["Political", "Cultural", "Natural Disasters", "Economic", "International Relations", "Legal", "OFW/Diaspora", "Religious"]
   },
   "timeline": [
     {
@@ -117,6 +117,96 @@
         ]
       },
       "weekly_review": "weekly-reviews/weekly-review-2026-01-02.html"
+    },
+    {
+      "date": "2026-01-05",
+      "month": "January",
+      "title": "Marcos Signs P6.793 Trillion Budget with Anti-Corruption Veto",
+      "category": "Economic",
+      "description": "Following the largest corruption scandal of his administration, President Ferdinand Marcos Jr. signed the 2026 General Appropriations Act worth PHP 6.793 trillion ($115 billion). In a significant anti-corruption move, Marcos vetoed PHP 92.5 billion in Unprogrammed Appropriations, vowing transparency in fund releases. The budget includes zero provision for new locally-funded flood control projects, reflecting lessons from the flood control scandal. The government aims to revive an economy stunted by the corruption crisis.",
+      "significance": "First budget signed after largest corruption scandal; removes backdoor for graft by eliminating unprogrammed funds",
+      "diaspora_impact": "Budget priorities affect services for families; education increases benefit diaspora families with children in Philippines; removal of unprogrammed funds reduces corruption opportunities.",
+      "mentioned_dynasties": ["MARCOS_ROMUALDEZ"],
+      "sources": {
+        "international": ["https://www.bloomberg.com/news/articles/2026-01-05/philippines-marcos-slashes-backdoor-for-graft-in-2026-budget-after-scandal"],
+        "local": ["https://www.philstar.com/headlines/2026/01/05/2498913/marcos-signs-p6793-trillion-budget-2026"]
+      },
+      "weekly_review": "weekly-reviews/weekly-review-2026-01-09.html"
+    },
+    {
+      "date": "2026-01-05",
+      "month": "January",
+      "title": "Retired General Romeo Poquiz Arrested for Sedition",
+      "category": "Political",
+      "description": "Retired Philippine Air Force General Romeo Poquiz, convenor of the United People's Initiative (UPI), was arrested at Ninoy Aquino International Airport on charges of inciting to sedition. Poquiz had just returned from a family trip to Thailand when police arrested him on a warrant from Quezon City Regional Trial Court. The charges stemmed from a Facebook post critical of President Marcos. The UPI had organized rallies calling for anti-corruption action and government accountability. Poquiz posted P48,000 bail and was released the same day, with arraignment set for January 14. He denied calling for Marcos's ouster, stating: 'This is harassment and intimidation of our citizens who are expressing their feelings about the rampant corruption in our country.'",
+      "significance": "High-profile arrest of retired military critic amid political tensions; raises concerns about free speech and political expression",
+      "diaspora_impact": "Concerns about free speech and political expression in Philippines; retired military criticism of government reflects deep political divisions.",
+      "mentioned_dynasties": ["MARCOS_ROMUALDEZ"],
+      "sources": {
+        "international": [],
+        "local": ["https://newsinfo.inquirer.net/2163031/retired-gen-poquiz-arrested-over-inciting-to-sedition", "https://www.rappler.com/philippines/retired-general-romeo-poquiz-arrested-inciting-sedition/", "https://www.philstar.com/headlines/2026/01/05/2498917/ex-air-force-general-nabbed-over-sedition-charge"]
+      },
+      "weekly_review": "weekly-reviews/weekly-review-2026-01-09.html"
+    },
+    {
+      "date": "2026-01-06",
+      "month": "January",
+      "title": "Mayon Volcano Alert Level Raised to 3 - Magmatic Eruption Underway",
+      "category": "Natural Disasters",
+      "description": "The Philippine Institute of Volcanology and Seismology (PHIVOLCS) raised Mayon Volcano to Alert Level 3, less than a week after being placed under Alert Level 2. PHIVOLCS confirmed that 'very slow extrusion of shallow degassed magma is ongoing and is incrementally increasing in rate,' indicating an effusive magmatic eruption with summit lava dome formation. The agency warned of 'increased chances of lava flows and hazardous pyroclastic density currents (PDCs) affecting the upper to middle slopes of the volcano, and of potential explosive activity within days or weeks.' Rockfall activity has spiked dramatically, with 364 incidents recorded since New Year's Day alone. PHIVOLCS recommended evacuation from the 6-kilometer-radius permanent danger zone surrounding Mayon.",
+      "significance": "Major volcanic threat with magmatic eruption underway; Alert Level 3 indicates potential for explosive activity within days or weeks",
+      "diaspora_impact": "Families in Albay and surrounding areas face mandatory evacuation; potential for major volcanic disaster requiring emergency remittance support; diaspora may need to assist with evacuation costs and temporary relocation.",
+      "mentioned_dynasties": [],
+      "sources": {
+        "international": [],
+        "local": ["https://www.rappler.com/philippines/luzon/phivolcs-mayon-volcano-alert-level-january-6-2026/"]
+      },
+      "weekly_review": "weekly-reviews/weekly-review-2026-01-09.html"
+    },
+    {
+      "date": "2026-01-07",
+      "month": "January",
+      "title": "Magnitude 6.4 Earthquake Strikes Davao Oriental",
+      "category": "Natural Disasters",
+      "description": "A very strong magnitude 6.4 earthquake struck the Philippine Sea near Davao Oriental at 11:02 am local time. The epicenter was located 28 km northeast of Manay at a shallow depth of 35 km. The earthquake was felt by over 11.7 million people across the Philippines, with approximately 860,000 people in areas with moderate shaking (intensity V) and 83,600 experiencing strong shaking (intensity VI). The quake is classified as an aftershock of the magnitude 7.5 earthquake that struck the same area on November 28, 2025. The Department of Social Welfare and Development (DSWD) is monitoring the effects.",
+      "significance": "Strong earthquake affecting millions; aftershock of devastating November 2025 earthquake; region still in recovery",
+      "diaspora_impact": "Families in Davao Oriental and surrounding areas affected; region still recovering from November 2025 earthquake; potential for additional displacement requiring diaspora support.",
+      "mentioned_dynasties": [],
+      "sources": {
+        "international": ["https://www.volcanodiscovery.com/earthquakes/quake-info/22585867/quake-felt-Jan-7-2026-Near-General-Santos-Soccsksargen-Philippines.html"],
+        "local": ["https://earthquake.phivolcs.dost.gov.ph/2026_Earthquake_Information/January/2026_0107_1638_B1F.html"]
+      },
+      "weekly_review": "weekly-reviews/weekly-review-2026-01-09.html"
+    },
+    {
+      "date": "2026-01-09",
+      "month": "January",
+      "title": "Black Nazarene Traslacion Becomes Platform for Anti-Corruption Protest",
+      "category": "Religious",
+      "description": "A massive crowd of devotees joined the annual Traslacion of the Black Nazarene in Manila, with some participants using the gathering to express outrage over the ongoing corruption scandal related to flood control projects. President Marcos declared January 9 a special non-working day in Manila for the Feast of the Black Nazarene. The intersection of religious devotion and political protest highlighted the depth of public frustration with government corruption.",
+      "significance": "Major religious event used as platform for anti-corruption expression; demonstrates depth of public frustration",
+      "diaspora_impact": "Religious event connects diaspora to homeland traditions; anti-corruption sentiments reflect widespread public concern that resonates with overseas Filipinos.",
+      "mentioned_dynasties": ["MARCOS_ROMUALDEZ"],
+      "sources": {
+        "international": [],
+        "local": ["https://newsinfo.inquirer.net"]
+      },
+      "weekly_review": "weekly-reviews/weekly-review-2026-01-09.html"
+    },
+    {
+      "date": "2026-01-09",
+      "month": "January",
+      "title": "5,594 Pass 2025 Bar Examinations with 48.98% Passing Rate",
+      "category": "Legal",
+      "description": "The Supreme Court announced that 5,594 examinees passed the 2025 Bar Examinations with a passing rate of 48.98 percent. This represents a significant milestone for the Philippine legal profession and the next generation of Filipino lawyers.",
+      "significance": "Major professional milestone for Filipino law graduates; nearly half of examinees passed",
+      "diaspora_impact": "Career milestone for families with law graduates; reflects educational achievements in Philippines; new lawyers may address governance issues important to diaspora.",
+      "mentioned_dynasties": [],
+      "sources": {
+        "international": [],
+        "local": ["https://en.wikipedia.org/wiki/2026_in_the_Philippines"]
+      },
+      "weekly_review": "weekly-reviews/weekly-review-2026-01-09.html"
     }
   ],
   "ofw_highlights": {
@@ -186,26 +276,31 @@
     ]
   },
   "summary": {
-    "total_events": 7,
-    "political_events": 3,
-    "natural_disasters": 1,
-    "economic_events": 2,
+    "total_events": 13,
+    "political_events": 4,
+    "natural_disasters": 3,
+    "economic_events": 3,
     "international_relations": 1,
+    "legal_events": 1,
+    "religious_events": 1,
     "ofw_diaspora": 0,
     "key_themes_2026": [
       "ASEAN Chairmanship and South China Sea tensions",
       "Continuing flood control corruption prosecutions",
       "Anti-dynasty legislation debate",
       "Marcos-Duterte political dynamics",
-      "Mayon Volcano monitoring",
+      "Mayon Volcano magmatic eruption (Alert Level 3)",
+      "Davao Oriental earthquake aftershocks",
       "New US remittance tax impact",
-      "OFW protections and digitalization"
+      "OFW protections and digitalization",
+      "Free speech concerns amid sedition arrests"
     ],
     "diaspora_relevance": {
       "remittances": "New 1% US tax may affect $15+ billion in US-Philippines corridor",
-      "natural_disasters": "Mayon Volcano unrest requires monitoring for Bicol families",
-      "governance": "Anti-dynasty and anti-corruption efforts may improve governance quality",
-      "ofw_support": "Expanded DMW programs and new labor agreements benefit workers abroad"
+      "natural_disasters": "Mayon Volcano at Alert Level 3 with magmatic eruption; M6.4 Davao earthquake - families in Bicol and Mindanao regions may need support",
+      "governance": "Anti-dynasty and anti-corruption efforts may improve governance quality; budget veto on unprogrammed funds reduces corruption opportunities",
+      "ofw_support": "Expanded DMW programs and new labor agreements benefit workers abroad",
+      "free_speech": "Sedition arrest of retired general raises concerns about political expression"
     }
   }
 }
