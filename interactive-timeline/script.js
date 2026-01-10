@@ -13,12 +13,19 @@ async function loadTimelineData(year) {
 
     // Update year info display
     const yearInfoEl = document.querySelector("#year-info");
+    const lastUpdatedEl = document.querySelector("#lastUpdated");
     if (data.metadata) {
       const totalEvents = data.metadata.total_events || data.timeline.length;
       const lastUpdated = data.metadata.last_updated || "Unknown";
       yearInfoEl.textContent = `${totalEvents} events | Last updated: ${lastUpdated}`;
+      if (lastUpdatedEl) {
+        lastUpdatedEl.textContent = `Last updated: ${lastUpdated}`;
+      }
     } else {
       yearInfoEl.textContent = `${data.timeline.length} events`;
+      if (lastUpdatedEl) {
+        lastUpdatedEl.textContent = `Last updated: Unknown`;
+      }
     }
 
     // Show/hide aggregation note for 2026

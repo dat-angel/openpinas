@@ -287,11 +287,22 @@
 
     .methodology a {
       color: #0038A8;
-      text-decoration: none;
+      text-decoration: underline;
+      font-weight: 500;
     }
 
     .methodology a:hover {
       text-decoration: underline;
+      opacity: 0.8;
+    }
+    
+    /* Global link styling */
+    a {
+      color: #0038A8;
+    }
+    
+    a:visited {
+      color: #0038A8;
     }
 
     .province-marker {
@@ -314,8 +325,14 @@
 </head>
 <body>
   <header>
-    <h1>Philippine Political Dynasties Network Map - Historical & Contemporary</h1>
-    <p>Interactive network visualization of Philippine political dynasties throughout history, their relationships, alliances, rivalries, and geographic territorial control</p>
+    <div style="max-width: 1200px; margin: 0 auto;">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
+        <a href="../index.html" style="color: white; text-decoration: none; font-size: 20px; font-weight: 600;">OpenPinas</a>
+        <span style="font-size: 12px; opacity: 0.8;" id="lastUpdated">Last updated: Loading...</span>
+      </div>
+      <h1>Philippine Political Dynasties Network Map - Historical & Contemporary</h1>
+      <p>Interactive network visualization of Philippine political dynasties throughout history, their relationships, alliances, rivalries, and geographic territorial control</p>
+    </div>
   </header>
 
   <div class="controls">
@@ -454,9 +471,9 @@
       to test narrative structure.
     </p>
     <ul>
-      <li><a href="https://www.rappler.com/nation/politics/" target="_blank" rel="noopener">Rappler Politics</a> for contemporary reporting.</li>
-      <li><a href="https://bilyonaryo.com/" target="_blank" rel="noopener">Bilyonaryo</a> for business and political coverage.</li>
-      <li><a href="https://www.wikipedia.org/" target="_blank" rel="noopener">Wikipedia</a> for historical references.</li>
+      <li><strong>Rappler Politics:</strong> <a href="https://www.rappler.com/nation/politics/" target="_blank" rel="noopener">Contemporary reporting →</a></li>
+      <li><strong>Bilyonaryo:</strong> <a href="https://bilyonaryo.com/" target="_blank" rel="noopener">Business and political coverage →</a></li>
+      <li><strong>Wikipedia:</strong> <a href="https://www.wikipedia.org/" target="_blank" rel="noopener">Historical references →</a></li>
     </ul>
   </div>
 
@@ -573,6 +590,13 @@
         }
         
         dynastiesData = data.philippine_political_dynasties_network;
+        
+        // Update last updated timestamp
+        const lastUpdated = dynastiesData.metadata.last_updated || 'Unknown';
+        const lastUpdatedEl = document.getElementById('lastUpdated');
+        if (lastUpdatedEl) {
+          lastUpdatedEl.textContent = `Last updated: ${lastUpdated}`;
+        }
         
         buildNetwork();
         updateStats();
@@ -809,6 +833,19 @@
       });
     }
 
+    function showDynastyById(dynastyId) {
+      if (!dynastiesData) return;
+      const dynasty = dynastiesData.nodes.dynasties.find(d => d.id === dynastyId);
+      if (dynasty) {
+        showInfoPanel(dynasty);
+        // Highlight the node in the network
+        if (network) {
+          network.selectNodes([dynastyId]);
+          network.focus(dynastyId, { animation: true });
+        }
+      }
+    }
+
     function showInfoPanel(dynasty) {
       const panel = document.getElementById('infoPanel');
       const content = document.getElementById('infoContent');
@@ -860,7 +897,7 @@
           }
           
           const wikiLink = wikiUrl ? 
-            `<a href="${wikiUrl}" target="_blank" rel="noopener" style="color: #0038A8; text-decoration: none; margin-left: 4px; font-weight: 500;" title="Wikipedia">📖</a>` : '';
+            `<a href="${wikiUrl}" target="_blank" rel="noopener" style="color: #0038A8; text-decoration: underline; margin-left: 4px; font-weight: 500;" title="View Wikipedia page">📖</a>` : '';
           const historicalBadge = member.historical ? 
             `<span style="background: #FCD116; color: #000; padding: 2px 6px; border-radius: 3px; font-size: 10px; margin-left: 4px;">Historical</span>` : '';
           html += `<li>${member.name} - ${member.position}${wikiLink}${historicalBadge}</li>`;
@@ -896,12 +933,24 @@
       
       if (dynasty.allied_dynasties && dynasty.allied_dynasties.length > 0) {
         html += `<div class="label">Allied Dynasties</div>`;
-        html += `<div class="value">${dynasty.allied_dynasties.join(', ')}</div>`;
+        html += `<div class="value">`;
+        dynasty.allied_dynasties.forEach((allyId, idx) => {
+          const allyName = allyId.replace(/_/g, ' ').replace('FAMILY', '').trim();
+          html += `<a href="#" onclick="showDynastyById('${allyId}'); return false;" style="color: #0038A8; text-decoration: none; font-weight: 500; margin-right: 8px;">${allyName}</a>`;
+          if (idx < dynasty.allied_dynasties.length - 1) html += ', ';
+        });
+        html += `</div>`;
       }
       
       if (dynasty.rival_dynasties && dynasty.rival_dynasties.length > 0) {
         html += `<div class="label">Rival Dynasties</div>`;
-        html += `<div class="value">${dynasty.rival_dynasties.join(', ')}</div>`;
+        html += `<div class="value">`;
+        dynasty.rival_dynasties.forEach((rivalId, idx) => {
+          const rivalName = rivalId.replace(/_/g, ' ').replace('FAMILY', '').trim();
+          html += `<a href="#" onclick="showDynastyById('${rivalId}'); return false;" style="color: #CE1126; text-decoration: none; font-weight: 500; margin-right: 8px;">${rivalName}</a>`;
+          if (idx < dynasty.rival_dynasties.length - 1) html += ', ';
+        });
+        html += `</div>`;
       }
       
       if (dynasty.crisis_level) {
@@ -911,9 +960,33 @@
       
       if (dynasty.corruption_allegations && dynasty.corruption_allegations.length > 0) {
         html += `<div class="label">Corruption Allegations</div>`;
-        html += `<ul>`;
+        html += `<ul style="margin-top: 8px;">`;
         dynasty.corruption_allegations.forEach(alg => {
-          html += `<li>${alg}</li>`;
+          // Check if there's a corresponding headline/rumor with URL
+          let allegationText = alg;
+          let sourceUrl = null;
+          let sourceName = null;
+          
+          if (dynasty['2025_rumors_headlines']) {
+            const matchingHeadline = dynasty['2025_rumors_headlines'].find(h => 
+              h.headline.toLowerCase().includes(alg.toLowerCase().split('(')[0].trim()) ||
+              alg.toLowerCase().includes(h.headline.toLowerCase().split(':')[0].trim())
+            );
+            if (matchingHeadline) {
+              sourceUrl = matchingHeadline.url;
+              sourceName = matchingHeadline.source;
+            }
+          }
+          
+          // Format allegation with link if available
+          if (sourceUrl) {
+            html += `<li style="margin-bottom: 8px; padding-bottom: 6px; border-bottom: 1px solid #e0e0e0;">`;
+            html += `<strong>${allegationText}</strong><br>`;
+            html += `<span style="font-size: 11px; color: #666;">Read more: <a href="${sourceUrl}" target="_blank" rel="noopener" style="color: #0038A8; text-decoration: underline; font-weight: 500;">${sourceName} →</a></span>`;
+            html += `</li>`;
+          } else {
+            html += `<li style="margin-bottom: 6px;"><strong>${allegationText}</strong></li>`;
+          }
         });
         html += `</ul>`;
       }
@@ -932,7 +1005,7 @@
           html += `</li>`;
         });
         html += `</ul>`;
-        html += `<p style="font-size: 11px; color: #999; margin-top: 8px;">View full timeline: <a href="../interactive-timeline/" target="_blank" style="color: #0038A8;">Interactive Timeline</a></p>`;
+        html += `<p style="font-size: 11px; color: #999; margin-top: 8px;">View full timeline: <a href="../interactive-timeline/" target="_blank" style="color: #0038A8; text-decoration: underline; font-weight: 500;">Interactive Timeline →</a></p>`;
       }
       
       if (dynasty['2025_rumors_headlines'] && dynasty['2025_rumors_headlines'].length > 0) {
@@ -940,16 +1013,16 @@
         html += `<div style="margin-top: 8px;">`;
         dynasty['2025_rumors_headlines'].forEach((item, idx) => {
           const headlineLink = item.url ? 
-            `<a href="${item.url}" target="_blank" rel="noopener" style="color: #0038A8; text-decoration: none; font-weight: 600;">${item.headline}</a>` : 
+            `<a href="${item.url}" target="_blank" rel="noopener" style="color: #0038A8; text-decoration: underline; font-weight: 600;">${item.headline}</a>` : 
             `<strong style="color: #0038A8; font-size: 13px;">${item.headline}</strong>`;
           const sourceLink = item.url ? 
-            `<a href="${item.url}" target="_blank" rel="noopener" style="color: #666; text-decoration: none;">${item.source}</a>` : 
+            `<a href="${item.url}" target="_blank" rel="noopener" style="color: #0038A8; text-decoration: underline; font-weight: 500;">${item.source}</a>` : 
             item.source;
           
           html += `<div style="margin-bottom: 12px; padding: 8px; background: #f5f5f5; border-left: 3px solid #0038A8; border-radius: 4px;">`;
           html += `<div style="color: #0038A8; font-size: 13px; margin-bottom: 4px;">${headlineLink}</div>`;
+          html += `<p style="font-size: 12px; margin: 4px 0; color: #333;">${item.description}</p>`;
           html += `<p style="font-size: 11px; color: #666; margin: 4px 0;">Source: ${sourceLink}</p>`;
-          html += `<p style="font-size: 12px; margin: 4px 0;">${item.description}</p>`;
           html += `</div>`;
         });
         html += `</div>`;

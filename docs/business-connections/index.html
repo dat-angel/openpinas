@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Business Connections - OpenPinas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Spectral:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --ink: #1a1a1a;
+        --muted: #5e5e5e;
+        --paper: #f8f5f0;
+        --accent: #124559;
+        --accent-2: #c44900;
+        --card: #ffffff;
+        --shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: "Spectral", "Source Serif 4", Georgia, serif;
+        color: var(--ink);
+        background: radial-gradient(1200px 600px at 80% -10%, #f0e7d7 0%, transparent 60%),
+          radial-gradient(800px 500px at 10% 10%, #e6efe7 0%, transparent 55%),
+          var(--paper);
+        line-height: 1.6;
+        min-height: 100vh;
+      }
+
+      header {
+        padding: 48px 24px 32px;
+        max-width: 900px;
+        margin: 0 auto;
+      }
+
+      .header-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 16px;
+      }
+
+      .header-top a {
+        color: var(--ink);
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: 600;
+      }
+
+      .header-top a:hover {
+        text-decoration: underline;
+      }
+
+      .last-updated {
+        font-size: 12px;
+        color: var(--muted);
+      }
+
+      h1 {
+        font-size: clamp(32px, 5vw, 48px);
+        margin: 0 0 16px;
+        letter-spacing: 0.3px;
+        color: var(--ink);
+      }
+
+      main {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 0 24px 60px;
+      }
+
+      .card {
+        background: var(--card);
+        border-radius: 16px;
+        padding: 32px;
+        box-shadow: var(--shadow);
+        border-left: 4px solid var(--accent);
+        margin: 24px 0;
+      }
+
+      .card h2 {
+        margin: 0 0 16px;
+        font-size: 24px;
+        color: var(--accent);
+      }
+
+      .card h3 {
+        margin: 24px 0 12px;
+        font-size: 20px;
+        color: var(--accent);
+      }
+
+      .card ul {
+        margin: 12px 0;
+        padding-left: 24px;
+      }
+
+      .card li {
+        margin: 8px 0;
+      }
+
+      .card a {
+        color: #0038A8;
+        text-decoration: underline;
+        font-weight: 500;
+      }
+
+      .card a:hover {
+        opacity: 0.8;
+      }
+
+      .status-badge {
+        display: inline-block;
+        padding: 4px 8px;
+        border-radius: 4px;
+        font-size: 12px;
+        font-weight: 600;
+        margin-right: 8px;
+      }
+
+      .status-complete {
+        background: #e6efe7;
+        color: #2b7a6d;
+      }
+
+      .status-research {
+        background: #fff4e6;
+        color: #c44900;
+      }
+
+      .data-link {
+        display: inline-block;
+        margin: 8px 0;
+        padding: 8px 16px;
+        background: #f1f6f3;
+        border: 1px solid rgba(18, 69, 89, 0.15);
+        border-radius: 8px;
+        color: var(--accent);
+        text-decoration: none;
+        font-weight: 500;
+      }
+
+      .data-link:hover {
+        background: #e6efe7;
+        text-decoration: underline;
+      }
+
+      footer {
+        text-align: center;
+        padding: 32px 24px;
+        color: var(--muted);
+        font-size: 14px;
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+        margin-top: 60px;
+      }
+
+      footer a {
+        color: var(--accent);
+        text-decoration: underline;
+      }
+
+      @media (max-width: 720px) {
+        header {
+          padding: 32px 18px 24px;
+        }
+
+        main {
+          padding: 0 18px 40px;
+        }
+
+        .header-top {
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 8px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="header-top">
+        <a href="../../index.html">OpenPinas</a>
+        <span class="last-updated">Last updated: January 3, 2026</span>
+      </div>
+      <h1>Business Connections</h1>
+      <p style="color: var(--muted); font-size: 18px;">
+        Dataset tracking business-political connections: PBA team ownership, major conglomerates, media ownership, and their links to political dynasties.
+      </p>
+    </header>
+
+    <main>
+      <div class="card">
+        <h2>Dataset Overview</h2>
+        <p>
+          The Business Connections dataset tracks the intersection of business and political power in the Philippines, 
+          including sports organizations, major corporations, media outlets, and their connections to political dynasties.
+        </p>
+        
+        <a href="../../business-connections-2025.json" class="data-link">
+          Download Dataset (JSON) →
+        </a>
+      </div>
+
+      <div class="card">
+        <h2>Data Coverage</h2>
+        
+        <h3>Sports Organizations</h3>
+        <ul>
+          <li><strong>PBA Teams:</strong> 12 teams with ownership details and political connections</li>
+          <li><strong>Olympic Organizations:</strong> Philippine Olympic Committee (POC) and Samahang Basketbol ng Pilipinas (SBP)</li>
+          <li><strong>Athlete Political Connections:</strong> Notable athletes with political involvement</li>
+        </ul>
+
+        <h3>Major Corporations</h3>
+        <ul>
+          <li><strong>Conglomerates:</strong> 9 major business groups (San Miguel, Ayala, SM, MVP, Villar, JG Summit, LT Group, Aboitiz, GT Capital)</li>
+          <li><strong>Media Ownership:</strong> 7 major media outlets (ABS-CBN, GMA, TV5, Philippine Star, Manila Bulletin, Philippine Daily Inquirer, Rappler)</li>
+          <li><strong>Government Contracts:</strong> Structure for tracking infrastructure and public works contracts</li>
+          <li><strong>Campaign Financing:</strong> Structure for tracking political campaign contributions</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>Integration with OpenPinas</h2>
+        <p>
+          Business connections are integrated with OpenPinas dynasty data through the 
+          <code>business_connections</code> field in the dynasty JSON file.
+        </p>
+        
+        <h3>Linked Dynasties</h3>
+        <ul>
+          <li><strong>VILLAR_FAMILY:</strong> Villar Group (real estate, retail, agriculture), AMBS media ownership</li>
+          <li><strong>BELMONTE_QUEZON_CITY:</strong> Philippine Star ownership</li>
+          <li><strong>LOPEZ_ILOILO:</strong> ABS-CBN ownership (historical)</li>
+          <li><strong>COJUANGCO_TARLAC:</strong> San Miguel Corporation connections</li>
+          <li><strong>AQUINO_FAMILY:</strong> Historical business connections</li>
+        </ul>
+
+        <a href="../../dynasties-network-visualization.html" class="data-link">
+          View Dynasty Network Map →
+        </a>
+      </div>
+
+      <div class="card">
+        <h2>Current Status</h2>
+        
+        <h3><span class="status-badge status-complete">✅ Completed</span></h3>
+        <ul>
+          <li>Data collection (12 PBA teams, 9 conglomerates, 7 media outlets)</li>
+          <li>Priority research (MVP Group, infrastructure contracts)</li>
+          <li>Political dynasty research (Belmonte, Lopez families verified)</li>
+          <li>Dynasty JSON integration</li>
+          <li>Data structure expansion (government contracts, campaign financing, PBA history)</li>
+        </ul>
+
+        <h3><span class="status-badge status-research">🔍 Needs Research</span></h3>
+        <ul>
+          <li>Additional conglomerates political connections (JG Summit, LT Group, Aboitiz, GT Capital)</li>
+          <li>Government contracts data</li>
+          <li>Campaign financing data</li>
+          <li>PBA historical data</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>Related Files</h2>
+        <ul>
+          <li><a href="../../philippine-political-dynasties-network-2025.json">Dynasty data with business connections</a></li>
+          <li><a href="../../business-connections-2025.json">Main business connections dataset</a></li>
+          <li><a href="../../index.html">OpenPinas Home</a></li>
+        </ul>
+      </div>
+    </main>
+
+    <footer>
+      <p>
+        Part of the
+        <a href="https://github.com/dat-angel/openpinas">OpenPinas</a>
+        open data project
+      </p>
+      <p>
+        <a href="https://github.com/dat-angel/openpinas">GitHub</a> |
+        <a href="https://dat-angel.github.io/openpinas/">Live Site</a>
+      </p>
+    </footer>
+  </body>
+</html>
