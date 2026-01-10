@@ -4,7 +4,7 @@
 
 body {
   margin: 0;
-  font-family: "Spectral", Georgia, serif;
+  font-family: "Source Serif Pro", Georgia, serif;
   color: #222;
   background: #fdfcfb;
   line-height: 1.6;
@@ -23,7 +23,7 @@ header {
 .header-nav {
   text-align: left;
   font-size: 0.8125rem;
-  font-family: "IBM Plex Sans", -apple-system, sans-serif;
+  font-family: "Source Sans Pro", -apple-system, sans-serif;
   margin-bottom: 1.5rem;
 }
 
@@ -110,7 +110,7 @@ main {
   font-weight: 600;
   color: #222;
   margin: 0;
-  font-family: "IBM Plex Sans", -apple-system, sans-serif;
+  font-family: "Source Sans Pro", -apple-system, sans-serif;
 }
 
 .stat .label {
@@ -119,7 +119,7 @@ main {
   margin: 0.25rem 0 0;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  font-family: "IBM Plex Sans", -apple-system, sans-serif;
+  font-family: "Source Sans Pro", -apple-system, sans-serif;
 }
 
 .info-section {
@@ -130,7 +130,7 @@ main {
 }
 
 .info-section h2 {
-  font-family: "IBM Plex Sans", -apple-system, sans-serif;
+  font-family: "Source Sans Pro", -apple-system, sans-serif;
   font-size: 0.75rem;
   font-weight: 600;
   text-transform: uppercase;
@@ -157,7 +157,7 @@ footer {
   font-size: 0.75rem;
   border-top: 1px solid #e5e5e5;
   margin-top: auto;
-  font-family: "IBM Plex Sans", -apple-system, sans-serif;
+  font-family: "Source Sans Pro", -apple-system, sans-serif;
 }
 
 footer a {
@@ -179,7 +179,7 @@ footer a:hover {
   gap: 0.75rem;
   flex-wrap: wrap;
   align-items: center;
-  font-family: "IBM Plex Sans", -apple-system, sans-serif;
+  font-family: "Source Sans Pro", -apple-system, sans-serif;
 }
 
 .controls label {
@@ -257,7 +257,7 @@ footer a:hover {
   text-transform: uppercase;
   letter-spacing: 0.05em;
   white-space: nowrap;
-  font-family: "IBM Plex Sans", -apple-system, sans-serif;
+  font-family: "Source Sans Pro", -apple-system, sans-serif;
 }
 
 .case-insights {
@@ -272,7 +272,7 @@ footer a:hover {
   color: #444;
   padding: 0.25rem 0.5rem;
   font-size: 0.6875rem;
-  font-family: "IBM Plex Sans", -apple-system, sans-serif;
+  font-family: "Source Sans Pro", -apple-system, sans-serif;
   border: 1px solid #e5e5e5;
 }
 
@@ -296,7 +296,7 @@ footer a:hover {
   margin: 0.75rem 0;
   font-size: 0.75rem;
   color: #888;
-  font-family: "IBM Plex Sans", -apple-system, sans-serif;
+  font-family: "Source Sans Pro", -apple-system, sans-serif;
 }
 
 .status-badge {
@@ -385,7 +385,7 @@ footer a:hover {
   letter-spacing: 0.05em;
   color: #888;
   margin-bottom: 0.25rem;
-  font-family: "IBM Plex Sans", -apple-system, sans-serif;
+  font-family: "Source Sans Pro", -apple-system, sans-serif;
 }
 
 .fact-box .value {
@@ -402,7 +402,7 @@ footer a:hover {
 }
 
 .section h2 {
-  font-family: "IBM Plex Sans", -apple-system, sans-serif;
+  font-family: "Source Sans Pro", -apple-system, sans-serif;
   font-size: 0.75rem;
   font-weight: 600;
   text-transform: uppercase;

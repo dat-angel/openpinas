@@ -18,7 +18,7 @@
 
 body {
   margin: 0;
-  font-family: "Spectral", "Source Serif 4", Georgia, serif;
+  font-family: "Source Serif Pro", Georgia, serif;
   color: var(--ink);
   background: radial-gradient(1200px 600px at 80% -10%, #f0e7d7 0%, transparent 60%),
     radial-gradient(800px 500px at 10% 10%, #e6efe7 0%, transparent 55%),
@@ -70,7 +70,7 @@ header p {
   border-radius: 10px;
   padding: 10px 12px;
   font-size: 14px;
-  font-family: "IBM Plex Sans", "Source Sans 3", Arial, sans-serif;
+  font-family: "Source Sans Pro", Arial, sans-serif;
 }
 
 .controls button {
@@ -79,7 +79,7 @@ header p {
   border-radius: 10px;
   padding: 10px 12px;
   cursor: pointer;
-  font-family: "IBM Plex Sans", "Source Sans 3", Arial, sans-serif;
+  font-family: "Source Sans Pro", Arial, sans-serif;
 }
 
 main {
@@ -163,7 +163,7 @@ main {
   gap: 12px;
   flex-wrap: wrap;
   align-items: center;
-  font-family: "IBM Plex Sans", "Source Sans 3", Arial, sans-serif;
+  font-family: "Source Sans Pro", Arial, sans-serif;
   margin-top: 8px;
 }
 

@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Alice Guo Case - Corruption Case Tracker</title>
+    <title>Flood Control Corruption Case - Corruption Case Tracker</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -57,6 +57,23 @@
         font-size: 0.8125rem;
       }
 
+      .network-link {
+        margin-top: 1.5rem;
+        padding: 1rem;
+        background: #f5f5f5;
+        border-left: 3px solid #124559;
+      }
+
+      .network-link a {
+        color: #124559;
+        font-weight: 600;
+        text-decoration: none;
+      }
+
+      .network-link a:hover {
+        text-decoration: underline;
+      }
+
       @media (max-width: 640px) {
         .timeline {
           padding-left: 0;
@@ -89,6 +106,11 @@
 
       <div class="key-facts" id="keyFacts"></div>
 
+      <div class="network-link">
+        <p><strong>🌐 Network Visualization:</strong> <a href="../flood-control-network.html">See the connections between politicians, contractors, and DPWH officials →</a></p>
+        <p><strong>👥 Dynasty Connections:</strong> <a href="../../dynasties/marcos-romualdez.html">Romualdez Dynasty</a> · <a href="../../dynasties/">Escudero Dynasty</a></p>
+      </div>
+
       <div class="section">
         <h2>What Happened</h2>
         <div id="caseTimeline"></div>
@@ -99,18 +121,13 @@
         <div id="accusedContent"></div>
       </div>
 
-      <div class="section" id="pogoSection">
-        <h2>POGO Operations</h2>
-        <div id="pogoContent"></div>
-      </div>
-
       <div class="section" id="chargesSection">
         <h2>Charges</h2>
         <div id="chargesContent"></div>
       </div>
 
       <div class="section" id="politicalSection">
-        <h2>Political Ties</h2>
+        <h2>Political Ties & Dynasty Connections</h2>
         <div id="politicalContent"></div>
       </div>
 
@@ -132,8 +149,11 @@
       </p>
     </footer>
 
+    <script>
+      // Set case ID for flood control before loading case-detail.js
+      window.CASE_ID = 'FLOOD_CONTROL_2025';
+    </script>
     <script src="../js/timeline.js"></script>
     <script src="../js/case-detail.js"></script>
   </body>
 </html>
-

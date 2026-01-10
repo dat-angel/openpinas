@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Corruption Cases Network - Case Tracker</title>
+    <title>Flood Control Corruption Network - Follow the Money</title>
     <script src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -15,8 +15,8 @@
     <style>
       #network-container {
         width: 100%;
-        height: calc(100vh - 200px);
-        min-height: 400px;
+        height: calc(100vh - 250px);
+        min-height: 500px;
         background: #fff;
         border: 1px solid #e5e5e5;
       }
@@ -31,14 +31,6 @@
         flex-wrap: wrap;
         align-items: center;
         font-family: "Source Sans Pro", -apple-system, sans-serif;
-      }
-
-      .network-controls label {
-        display: flex;
-        gap: 0.5rem;
-        align-items: center;
-        font-size: 0.8125rem;
-        color: #444;
       }
 
       .network-controls button {
@@ -60,7 +52,7 @@
         position: fixed;
         top: 180px;
         right: 1.5rem;
-        width: 280px;
+        width: 300px;
         max-height: calc(100vh - 200px);
         background: #fff;
         border: 1px solid #e5e5e5;
@@ -68,6 +60,7 @@
         overflow-y: auto;
         z-index: 1000;
         display: none;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
       }
 
       .info-panel.visible {
@@ -103,8 +96,9 @@
         border: 1px solid #e5e5e5;
         font-size: 0.75rem;
         z-index: 1000;
-        max-width: 200px;
+        max-width: 220px;
         font-family: "Source Sans Pro", -apple-system, sans-serif;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
       }
 
       .legend h4 {
@@ -125,15 +119,20 @@
       }
 
       .legend-color {
-        width: 12px;
-        height: 12px;
+        width: 14px;
+        height: 14px;
         border-radius: 50%;
         border: 1px solid #ddd;
       }
 
       .legend-line {
-        width: 20px;
+        width: 24px;
         height: 2px;
+      }
+
+      .money-amount {
+        font-weight: 600;
+        color: #c44900;
       }
 
       @media (max-width: 1024px) {
@@ -155,29 +154,19 @@
   </head>
   <body>
     <header>
-      <nav class="header-nav"><a href="../">← OpenPinas</a> · <a href="./">Corruption Tracker</a></nav>
-      <h1>Cases Network</h1>
+      <nav class="header-nav"><a href="../">← OpenPinas</a> · <a href="./">Corruption Tracker</a> · <a href="cases/flood-control.html">Flood Control Case</a></nav>
+      <h1>Flood Control Corruption Network</h1>
       <p class="subtitle">
-        See how cases, accused parties, and dynasties connect
+        Follow the money: ₱118.5 billion misused. See connections between politicians, contractors, and DPWH officials.
       </p>
     </header>
 
     <main>
       <div class="network-controls">
-        <label>
-          <input type="checkbox" id="showCases" checked> Cases
-        </label>
-        <label>
-          <input type="checkbox" id="showAccused" checked> Accused
-        </label>
-        <label>
-          <input type="checkbox" id="showDynasties" checked> Dynasties
-        </label>
-        <label>
-          <input type="checkbox" id="showPOGO" checked> POGO Operations
-        </label>
         <button id="resetView">Reset View</button>
         <button id="fitNetwork">Fit to Screen</button>
+        <button id="highlightMoney">Highlight Money Flow</button>
+        <button id="highlightDynasties">Highlight Dynasties</button>
       </div>
 
       <div id="network-container"></div>
@@ -195,7 +184,7 @@
         </div>
         <div class="legend-item">
           <div class="legend-color" style="background: #c44900;"></div>
-          <span>Accused</span>
+          <span>Politician/Official</span>
         </div>
         <div class="legend-item">
           <div class="legend-color" style="background: #0b6e4f;"></div>
@@ -203,19 +192,23 @@
         </div>
         <div class="legend-item">
           <div class="legend-color" style="background: #f77f00;"></div>
-          <span>POGO Operation</span>
+          <span>Contractor</span>
+        </div>
+        <div class="legend-item">
+          <div class="legend-color" style="background: #8b008b;"></div>
+          <span>DPWH Official</span>
         </div>
         <div class="legend-item">
           <div class="legend-line" style="background: #124559;"></div>
-          <span>Accused in Case</span>
+          <span>Involved in Case</span>
+        </div>
+        <div class="legend-item">
+          <div class="legend-line" style="background: #c44900; border-top: 2px dashed #c44900;"></div>
+          <span>Money Flow</span>
         </div>
         <div class="legend-item">
           <div class="legend-line" style="background: #0b6e4f; border-top: 2px dashed #0b6e4f;"></div>
           <span>Dynasty Connection</span>
-        </div>
-        <div class="legend-item">
-          <div class="legend-line" style="background: #f77f00;"></div>
-          <span>POGO Connection</span>
         </div>
       </div>
     </main>
@@ -227,7 +220,6 @@
       </p>
     </footer>
 
-    <script src="js/network.js"></script>
+    <script src="js/flood-control-network.js"></script>
   </body>
 </html>
-

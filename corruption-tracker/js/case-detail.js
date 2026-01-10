@@ -8,7 +8,7 @@ async function loadCaseDetail() {
     
     // Get case ID from URL or default to Alice Guo
     const urlParams = new URLSearchParams(window.location.search);
-    const caseId = urlParams.get('id') || 'ALICE_GUO_2024';
+    const caseId = urlParams.get('id') || (window.CASE_ID || 'ALICE_GUO_2024');
     
     caseData = data.cases.find(c => c.case_id === caseId);
     
