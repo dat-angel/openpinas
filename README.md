@@ -3,7 +3,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](LICENSE-DATA)
 
-Tracking 50+ political dynasties, their relationships, and major events for the Filipino diaspora. Interactive visualizations showing how political families maintain control across 71 provinces.
+Open data platform tracking Philippine political power structures, business connections, and major events. Interactive visualizations showing how political families maintain control across 71 provinces.
 
 **Live Demo**: [dat-angel.github.io/openpinas](https://dat-angel.github.io/openpinas/)
 
@@ -72,11 +72,11 @@ Then open http://localhost:8000/ in your browser
 
 Political dynasties have been a defining feature of Philippine politics since independence. Despite a constitutional mandate against political dynasties, no Anti-Political Dynasty Law has been passed in over 35 years.
 
-For the 10+ million Filipinos living abroad, understanding these power structures helps us:
-- Make sense of news from back home
-- Understand how governance affects our families
+Understanding these power structures helps us:
+- Make sense of political news and events
 - See connections between corruption scandals and political families
 - Track which regions have stable leadership vs. ongoing crises
+- Understand how business and political power intersect
 
 ## Related Work & Why OpenPinas
 
@@ -89,8 +89,8 @@ I’m building OpenPinas alongside strong academic, civic, and investigative wor
 - BetterGov Dynasty Tracker: https://dynasty-tracker.bettergov.ph
 
 **Why OpenPinas exists:**
-- Cross-links dynasties, timelines, and geography in one place
-- Summaries are written for diaspora readers who need fast context
+- Cross-links dynasties, timelines, business connections, and geography in one place
+- Curated summaries provide fast context on complex power structures
 - Open JSON datasets that can be audited, reused, and extended
 
 ## Data Structure

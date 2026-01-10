@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Philippine Political Dynasties</title>
+    <title>OpenPinas: Open Data Platform for Philippine Power Structures</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -217,9 +217,9 @@
   </head>
   <body>
     <header>
-      <h1>Philippine Political Dynasties</h1>
+      <h1>OpenPinas</h1>
       <p class="subtitle">
-        Tracking political dynasties, relationships, and major events for the Filipino diaspora
+        Open datasets and visualizations tracking Philippine political power, business connections, and major events
       </p>
     </header>
 
@@ -235,7 +235,21 @@
         <a href="interactive-timeline/" class="card">
           <h2>📅 Timeline</h2>
           <p>
-            Chronological view of major Philippine events in 2025. Filter by category, see which dynasties were involved, and understand how events connect.
+            Chronological view of major Philippine events in 2025 and 2026. Filter by category, see which dynasties were involved, and understand how events connect.
+          </p>
+        </a>
+
+        <a href="weekly-reviews/" class="card">
+          <h2>📰 Weekly Reviews</h2>
+          <p>
+            Weekly news digests summarizing significant events, organized by category. Includes weather, exchange rates, OFW news, and dynasty highlights.
+          </p>
+        </a>
+
+        <a href="docs/business-connections/" class="card">
+          <h2>💼 Business Connections</h2>
+          <p>
+            Dataset tracking business-political connections: PBA team ownership, major conglomerates, media ownership, and their links to political dynasties.
           </p>
         </a>
 
@@ -249,37 +263,50 @@
         <a href="when-to-go-manila.html" class="card">
           <h2>🧭 When to Go to the Philippines?</h2>
           <p>
-            Weekly PHP:USD price ranges for 2025 alongside passenger traffic signals to spot high travel season and currency windows.
-          </p>
-        </a>
-
-        <a href="weekly-reviews/" class="card">
-          <h2>📰 Weekly Reviews</h2>
-          <p>
-            Weekly news digests summarizing significant events, organized by category. Designed for diaspora communities to stay informed.
+            Weekly PHP:USD exchange rate tracking alongside airport passenger traffic data to identify optimal travel windows and currency exchange opportunities.
           </p>
         </a>
       </div>
 
       <section class="context">
-        <h2>Context & Positioning</h2>
+        <h2>Open Data Platform</h2>
         <p>
-          I built OpenPinas alongside strong academic, civic, and investigative work. The focus here is
-          stitching dynasties, timelines, and regional impact into one place so patterns are easier to see.
+          OpenPinas provides open, structured datasets and visualizations tracking Philippine political power, business connections, and major events. All data is available as JSON files you can verify, remix, or extend.
         </p>
         <ul>
-          <li>Cross-links between dynasties, events, and geography</li>
-          <li>Readable summaries for diaspora audiences who want context fast</li>
-          <li>Open datasets you can verify, remix, or extend</li>
+          <li><strong>Political Dynasties:</strong> 50+ dynasties, 450+ members, 71 provinces tracked with network relationships</li>
+          <li><strong>Business Connections:</strong> PBA teams, major conglomerates, media ownership, and political links</li>
+          <li><strong>Timeline Data:</strong> Major events from 2025 and 2026 with dynasty connections and impact analysis</li>
+          <li><strong>Weekly Reviews:</strong> Curated news digests with weather, exchange rates, and OFW updates</li>
+          <li><strong>Economic Data:</strong> PHP:USD exchange rates, airport passenger traffic, travel patterns</li>
         </ul>
         <div class="links">
           <a class="link-pill" href="sources-and-related-projects.html">Sources and related projects</a>
           <a class="link-pill" href="https://www.inclusivedemocracy.ph/data-and-infographics" target="_blank" rel="noopener">Ateneo Policy Center</a>
           <a class="link-pill" href="https://pcij.org/political-dynasties/" target="_blank" rel="noopener">PCIJ Dynasties</a>
           <a class="link-pill" href="https://dynasty-tracker.bettergov.ph" target="_blank" rel="noopener">BetterGov Dynasty Tracker</a>
-          <a class="link-pill" href="https://www.dpwh.gov.ph/DPWH/transparency/DPWH_Transparency_Portal" target="_blank" rel="noopener">DPWH Portal</a>
-          <a class="link-pill" href="https://www.ombudsman.gov.ph/integrity-management-program-imp/" target="_blank" rel="noopener">Ombudsman IMP</a>
+          <a class="link-pill" href="docs/business-connections/">Business Connections Docs</a>
         </div>
+      </section>
+
+      <section class="context" style="margin-top: 40px;">
+        <h2>Available Datasets</h2>
+        <p>
+          All OpenPinas data is available as open JSON files. Download, verify, remix, or extend any dataset.
+        </p>
+        <ul style="margin: 16px 0;">
+          <li><strong><a href="philippine-political-dynasties-network-2025.json" style="color: var(--accent);">Political Dynasties</a>:</strong> 50+ dynasties with relationships, geographic control, and business connections</li>
+          <li><strong><a href="business-connections-2025.json" style="color: var(--accent);">Business Connections</a>:</strong> PBA teams, conglomerates, media ownership, and political links</li>
+          <li><strong><a href="philippines-2025-timeline.json" style="color: var(--accent);">2025 Timeline</a>:</strong> Major events with dynasty connections and impact analysis</li>
+          <li><strong><a href="philippines-2026-timeline.json" style="color: var(--accent);">2026 Timeline</a>:</strong> Ongoing events tracking (updated weekly)</li>
+          <li><strong><a href="elite-schools-influence-2025.json" style="color: var(--accent);">Elite Schools</a>:</strong> Educational institutions and their influence networks</li>
+          <li><strong><a href="pogo-corruption-cases-2025.json" style="color: var(--accent);">POGO Corruption Cases</a>:</strong> Documented corruption cases related to Philippine Offshore Gaming Operators</li>
+          <li><strong><a href="data/php-usd-weekly-2025.json" style="color: var(--accent);">Exchange Rates</a>:</strong> Weekly PHP:USD exchange rate data</li>
+          <li><strong><a href="data/airport-passenger-summary.json" style="color: var(--accent);">Airport Data</a>:</strong> Passenger traffic patterns for major Philippine airports</li>
+        </ul>
+        <p style="margin-top: 16px; font-size: 14px; color: var(--muted);">
+          All datasets are licensed under <a href="LICENSE-DATA" style="color: var(--accent);">CC BY 4.0</a>. Use freely with attribution.
+        </p>
       </section>
 
       <div class="stats">
@@ -292,12 +319,12 @@
           <p class="label">Members</p>
         </div>
         <div class="stat">
-          <p class="number">71</p>
-          <p class="label">Provinces</p>
+          <p class="number">8</p>
+          <p class="label">Datasets</p>
         </div>
         <div class="stat">
-          <p class="number">67%</p>
-          <p class="label">Congress</p>
+          <p class="number">71</p>
+          <p class="label">Provinces</p>
         </div>
       </div>
     </main>
@@ -306,9 +333,9 @@
       <p>
         Part of the
         <a href="https://github.com/dat-angel/openpinas"
-          >Philippine Political Dynasties</a
+          >OpenPinas</a
         >
-        project
+        open data project
       </p>
       <p>
         <a href="https://github.com/dat-angel/openpinas">GitHub</a> |
