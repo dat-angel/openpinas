@@ -368,14 +368,14 @@
     <select id="filterSector">
       <option value="all">All Industries</option>
       <optgroup label="Financial Services">
-        <option value="fintech">FinTech</option>
+      <option value="fintech">FinTech</option>
         <option value="insurtech">InsurTech</option>
         <option value="blockchain">Blockchain</option>
         <option value="cryptocurrency">Cryptocurrency</option>
       </optgroup>
       <optgroup label="Commerce & Retail">
-        <option value="e-commerce">E-commerce</option>
-        <option value="F&B / Retail">F&B / Retail</option>
+      <option value="e-commerce">E-commerce</option>
+      <option value="F&B / Retail">F&B / Retail</option>
         <option value="retail_tech">Retail Tech</option>
       </optgroup>
       <optgroup label="Technology">
@@ -515,14 +515,14 @@
     let investorStats = new Map(); // Track investor activity
     let founderStats = new Map(); // Track founder activity
 
-    // Node colors by type
+    // Node colors by type - High contrast, vibrant colors for better visibility
     const nodeColors = {
-      'startup': '#0038A8',           // Deep blue
-      'founder': '#2b7a6d',            // Teal
-      'investor': '#c44900',           // Orange
-      'organization': '#6c5b7b',      // Purple
-      'dynasty': '#0b6e4f',            // Green
-      'accelerator': '#f77f00'         // Light orange
+      'startup': '#0066FF',           // Bright blue
+      'founder': '#00B894',            // Bright teal/green
+      'investor': '#FF6B35',           // Bright orange-red
+      'organization': '#9B59B6',      // Bright purple
+      'dynasty': '#00D084',            // Bright green
+      'accelerator': '#FFA500'         // Bright orange
     };
 
     // Load data
@@ -624,12 +624,12 @@
             color: { 
               background: nodeColors.startup,
               border: borderColor,
-              highlight: { background: nodeColors.startup, border: borderColor }
+              highlight: { background: '#00AAFF', border: borderColor }
             },
             borderWidth: borderWidth,
             size: hasAnyPowerConnection ? 35 : 30,
             shape: 'box',
-            font: { size: 16, face: 'Source Sans Pro', bold: true, color: hasAnyPowerConnection ? '#0038A8' : '#1a1a1a' },
+            font: { size: 16, face: 'Source Sans Pro', bold: true, color: '#FFFFFF', strokeWidth: 2, strokeColor: '#000000' },
             data: { type: 'startup', item: startup, hasPowerConnections: hasAnyPowerConnection }
           });
 
@@ -675,12 +675,12 @@
                     color: { 
                       background: nodeColors.founder,
                       border: founderBorderColor,
-                      highlight: { background: nodeColors.founder, border: founderBorderColor }
+                      highlight: { background: '#00D4A3', border: founderBorderColor }
                     },
                     borderWidth: founderBorderWidth,
                     size: isPowerPlayer ? 30 : founderHasConnections ? 25 : 20,
                     shape: 'dot',
-                    font: { size: isPowerPlayer ? 15 : 14, face: 'Source Sans Pro', bold: true, color: isPowerPlayer ? '#2b7a6d' : '#1a1a1a' },
+                    font: { size: isPowerPlayer ? 15 : 14, face: 'Source Sans Pro', bold: true, color: '#FFFFFF', strokeWidth: 2, strokeColor: '#000000' },
                     data: { type: 'founder', item: founder, hasPowerConnections: founderHasConnections, startupCount: founderStartupCount, isPowerPlayer: isPowerPlayer }
                   });
                 } else {
@@ -809,12 +809,12 @@
                   color: { 
                     background: nodeColors.investor,
                     border: isPowerPlayer ? '#FFD700' : '#fff',
-                    highlight: { background: nodeColors.investor, border: isPowerPlayer ? '#FFD700' : '#c44900' }
+                    highlight: { background: '#FF8C5A', border: isPowerPlayer ? '#FFD700' : '#FF6B35' }
                   },
                   size: isPowerPlayer ? 32 : 22,
                   borderWidth: isPowerPlayer ? 4 : 2,
                   shape: 'diamond',
-                  font: { size: isPowerPlayer ? 15 : 13, face: 'Source Sans Pro', bold: true, color: isPowerPlayer ? '#c44900' : '#1a1a1a' },
+                  font: { size: isPowerPlayer ? 15 : 13, face: 'Source Sans Pro', bold: true, color: '#FFFFFF', strokeWidth: 2, strokeColor: '#000000' },
                   data: { type: 'investor', item: investor, investmentCount: investmentCount, isPowerPlayer: isPowerPlayer }
                 });
               } else {
@@ -920,7 +920,7 @@
                     id: businessNodeId,
                     label: businessNode.name,
                     title: `${businessNode.name}\nType: ${businessType}`,
-                    color: { background: '#8b008b' },
+                    color: { background: '#9B59B6' },
                     size: 24,
                     shape: 'diamond',
                     font: { size: 13, face: 'Source Sans Pro', bold: true },
@@ -1086,13 +1086,13 @@
             label: vc.name,
             title: `${vc.name}\nType: ${vc.type || 'VC'}\nFounded: ${vc.founded || 'N/A'}${focusSectors}`,
             color: { 
-              background: '#c44900',
+              background: nodeColors.investor,
               border: '#fff',
-              highlight: { background: '#c44900', border: '#FFD700' }
+              highlight: { background: '#FF8C5A', border: '#FFD700' }
             },
             size: 28,
             shape: 'diamond',
-            font: { size: 14, face: 'Source Sans Pro', bold: true, color: '#ffffff' },
+            font: { size: 14, face: 'Source Sans Pro', bold: true, color: '#FFFFFF', strokeWidth: 2, strokeColor: '#000000' },
             data: { type: 'vc', item: vc }
           });
         });
@@ -1113,13 +1113,13 @@
             label: vc.name + ' 🌍',
             title: `${vc.name}\nType: ${vc.type || 'VC'} (International)\nLocation: ${vc.location}\nFounded: ${vc.founded || 'N/A'}${focusSectors}`,
             color: { 
-              background: '#2b7a6d',
+              background: '#00B894',
               border: '#fff',
-              highlight: { background: '#2b7a6d', border: '#FFD700' }
+              highlight: { background: '#00D4A3', border: '#FFD700' }
             },
             size: 26,
             shape: 'diamond',
-            font: { size: 13, face: 'Source Sans Pro', bold: true, color: '#ffffff' },
+            font: { size: 13, face: 'Source Sans Pro', bold: true, color: '#FFFFFF', strokeWidth: 2, strokeColor: '#000000' },
             data: { type: 'international_vc', item: vc }
           });
 
@@ -1179,13 +1179,13 @@
             title: `${unicorn.name} 🦄\nValuation: $${formatMoney(unicorn.valuation_usd)}\nIndustry: ${unicorn.industry}\n${unicorn.metrics && unicorn.metrics.users ? `Users: ${(unicorn.metrics.users / 1000000).toFixed(1)}M` : ''}`,
             color: { 
               background: '#FFD700',
-              border: '#c44900',
-              highlight: { background: '#FFD700', border: '#c44900' }
+              border: '#FF6B35',
+              highlight: { background: '#FFED4E', border: '#FF6B35' }
             },
             size: 40,
             borderWidth: 5,
             shape: 'star',
-            font: { size: 16, face: 'Source Sans Pro', bold: true, color: '#1a1a1a' },
+            font: { size: 16, face: 'Source Sans Pro', bold: true, color: '#000000', strokeWidth: 1, strokeColor: '#FFFFFF' },
             data: { type: 'unicorn', item: unicorn }
           });
         });
@@ -1207,13 +1207,13 @@
             label: office.name,
             title: `${office.name}\nType: ${office.type || 'Family Office'}\nFamily: ${office.family_group || 'N/A'}${familyGroup}${focusSectors}`,
             color: { 
-              background: '#8b008b',
+              background: '#9B59B6',
               border: '#fff',
-              highlight: { background: '#8b008b', border: '#FFD700' }
+              highlight: { background: '#B06FC7', border: '#FFD700' }
             },
             size: 30,
             shape: 'hexagon',
-            font: { size: 14, face: 'Source Sans Pro', bold: true, color: '#ffffff' },
+            font: { size: 14, face: 'Source Sans Pro', bold: true, color: '#FFFFFF', strokeWidth: 2, strokeColor: '#000000' },
             data: { type: 'family_office', item: office }
           });
         });
@@ -1427,21 +1427,21 @@
       const container = document.getElementById('network-container');
       const data = { nodes: new vis.DataSet(filteredNodes), edges: new vis.DataSet(filteredEdges) };
       const options = {
-        nodes: {
-          borderWidth: 2,
+          nodes: {
+          borderWidth: 3,
           borderColor: '#fff',
           font: { 
             size: 14, 
             face: 'Source Sans Pro',
             bold: true,
-            color: '#1a1a1a',
-            strokeWidth: 2,
-            strokeColor: '#ffffff'
+            color: '#FFFFFF',
+            strokeWidth: 3,
+            strokeColor: '#000000'
           },
           shadow: true,
           labelHighlightBold: true
         },
-        edges: {
+          edges: {
           arrows: { to: { enabled: true, scaleFactor: 0.6 } },
           smooth: { type: 'continuous' },
           font: { 
@@ -1449,12 +1449,12 @@
             align: 'middle',
             face: 'Source Sans Pro',
             bold: true,
-            color: '#333333',
-            strokeWidth: 3,
-            strokeColor: '#ffffff'
+            color: '#000000',
+            strokeWidth: 4,
+            strokeColor: '#FFFFFF'
           },
           shadow: true,
-          width: 3
+          width: 4
         },
         physics: {
           stabilization: { iterations: 200 },

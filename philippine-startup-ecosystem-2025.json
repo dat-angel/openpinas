@@ -1379,7 +1379,7 @@
       "ecosystem_value_usd": 6400000000,
       "growth_cagr": 0.72,
       "key_sectors": ["fintech", "e-commerce", "gaming", "healthtech", "edtech", "logistics", "agritech", "HR Tech"],
-      "notable_startups": ["KALIBRR", "PASAJOB", "PICKUP_COFFEE"],
+      "notable_startups": ["KALIBRR", "PASAJOB", "PICKUP_COFFEE", "LAZADA_PH", "SHOPEE_PH", "GRAB_PH", "FOODPANDA_PH"],
       "rankings": {
         "national": 1,
         "global": null,
@@ -1424,8 +1424,8 @@
   },
   "data_collection_status": {
     "startups": {
-      "total": 3,
-      "collected": 3,
+      "total": 16,
+      "collected": 16,
       "needs_research": 3
     },
     "organizations": {
@@ -1437,9 +1437,10 @@
       "Identify funding rounds and investors",
       "Map connections to political dynasties",
       "Link to elite schools network",
-      "Add more notable startups (fintech, e-commerce, gaming)",
+      "Add more gaming startups",
       "Research accelerator and incubator programs in Philippines",
-      "Identify venture capital firms investing in Philippine startups"
+      "Identify venture capital firms investing in Philippine startups",
+      "Add more detailed metrics for major platforms (Lazada, Shopee, Grab)"
     ]
   }
 }
