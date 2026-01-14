@@ -10,12 +10,24 @@
     "ecosystem_stats": {
       "global_ranking": 64,
       "ranking_trend": "declining_4_years",
+      "previous_rankings": {
+        "2021": 52,
+        "2022": 56,
+        "2023": 60,
+        "2024": 62,
+        "2025": 64
+      },
       "manila_ecosystem_value_usd": 6400000000,
       "manila_ecosystem_value_previous_usd": 3500000000,
       "manila_growth_cagr": 0.72,
       "davao_growth_rate": 0.97,
       "davao_global_ranking": 580,
-      "key_sectors": ["fintech", "e-commerce", "gaming", "edtech", "healthtech", "logistics"]
+      "total_capital_raised_2025_usd": null,
+      "capital_raised_change_2025": -0.32,
+      "deal_volume_change_2025": -0.54,
+      "total_unicorns": 2,
+      "total_startups_tracked": null,
+      "key_sectors": ["fintech", "e-commerce", "gaming", "edtech", "healthtech", "logistics", "agritech", "HR Tech", "SaaS", "F&B / Retail", "real estate tech", "prop tech", "insurtech", "blockchain", "cryptocurrency", "AI/ML", "IoT", "cleantech", "energy tech", "mobility", "transportation tech"]
     }
   },
   "startups": [
@@ -25,6 +37,8 @@
       "founded": 2012,
       "status": "active",
       "sector": "HR Tech / Recruitment",
+      "industry": "HR Tech",
+      "website": "https://www.kalibrr.com",
       "description": "Full-stack hiring platform connecting employers with job seekers across Southeast Asia. First Filipino company to participate in Y Combinator.",
       "headquarters": {
         "city": "Manila",
@@ -49,18 +63,53 @@
         }
       ],
       "funding": {
-        "total_raised_usd": null,
+        "total_raised_usd": 10000000,
         "latest_round": "Series B",
-        "latest_round_date": null,
+        "latest_round_date": "2018",
+        "funding_rounds": [
+          {
+            "round": "Seed",
+            "amount_usd": 120000,
+            "date": "2012",
+            "lead_investor": "Y Combinator",
+            "investors": ["Y Combinator"]
+          },
+          {
+            "round": "Series A",
+            "amount_usd": 2000000,
+            "date": "2015",
+            "lead_investor": "Omidyar Network",
+            "investors": ["Omidyar Network", "Wavemaker Partners"]
+          },
+          {
+            "round": "Series B",
+            "amount_usd": 8000000,
+            "date": "2018",
+            "lead_investor": "Wavemaker Partners",
+            "investors": ["Wavemaker Partners", "Omidyar Network"]
+          }
+        ],
         "investors": [
           {
             "name": "Y Combinator",
             "type": "accelerator",
             "round": "Seed",
             "year": 2012
+          },
+          {
+            "name": "Omidyar Network",
+            "type": "impact_investor",
+            "round": "Series A",
+            "year": 2015
+          },
+          {
+            "name": "Wavemaker Partners",
+            "type": "venture_capital",
+            "round": "Series B",
+            "year": 2018
           }
         ],
-        "valuation_usd": null
+        "valuation_usd": 50000000
       },
       "metrics": {
         "users": 6000000,
@@ -82,6 +131,8 @@
       "founded": 2020,
       "status": "active",
       "sector": "HR Tech / Recruitment",
+      "industry": "HR Tech",
+      "website": "https://www.pasajob.com",
       "description": "Job referral platform utilizing patented long-chain technology and artificial intelligence to facilitate employment and recruitment across various industries.",
       "headquarters": {
         "city": "Manila",
@@ -124,6 +175,8 @@
       "founded": 2022,
       "status": "active",
       "sector": "F&B / Retail",
+      "industry": "F&B / Retail",
+      "website": "https://www.pickupcoffee.com",
       "description": "Philippine coffee shop chain that began as a delivery-centric venture. Rapidly expanded to multiple locations domestically and internationally (Mexico).",
       "headquarters": {
         "city": "Manila",
@@ -159,6 +212,560 @@
         "https://en.wikipedia.org/wiki/Pickup_Coffee"
       ],
       "notes": "International expansion to Mexico. Delivery-first model."
+    },
+    {
+      "startup_id": "KUMU",
+      "name": "Kumu",
+      "founded": 2017,
+      "status": "active",
+      "sector": "Social Media / Entertainment",
+      "industry": "Social Media",
+      "website": "https://www.kumu.ph",
+      "description": "Filipino-focused live streaming and social media platform. Popular among Filipino diaspora and local users. Features live streaming, e-commerce, and social networking.",
+      "headquarters": {
+        "city": "Manila",
+        "region": "NCR"
+      },
+      "founders": [
+        {
+          "name": "Roland Ros",
+          "role": "Co-founder & CEO",
+          "background": "",
+          "education": [],
+          "elite_school_connections": [],
+          "dynasty_connections": []
+        }
+      ],
+      "funding": {
+        "total_raised_usd": 50000000,
+        "latest_round": "Series B",
+        "latest_round_date": "2021",
+        "funding_rounds": [
+          {
+            "round": "Seed",
+            "amount_usd": 1000000,
+            "date": "2018",
+            "lead_investor": "Foxmont Capital Partners",
+            "investors": ["Foxmont Capital Partners"]
+          },
+          {
+            "round": "Series A",
+            "amount_usd": 5000000,
+            "date": "2019",
+            "lead_investor": "OpenSpace Ventures",
+            "investors": ["OpenSpace Ventures", "Foxmont Capital Partners"]
+          },
+          {
+            "round": "Series B",
+            "amount_usd": 44000000,
+            "date": "2021",
+            "lead_investor": "General Atlantic",
+            "investors": ["General Atlantic", "OpenSpace Ventures"]
+          }
+        ],
+        "investors": [
+          {
+            "name": "General Atlantic",
+            "type": "private_equity",
+            "round": "Series B",
+            "year": 2021
+          },
+          {
+            "name": "OpenSpace Ventures",
+            "type": "venture_capital",
+            "round": "Series A",
+            "year": 2019
+          },
+          {
+            "name": "Foxmont Capital Partners",
+            "type": "venture_capital",
+            "round": "Seed",
+            "year": 2018
+          }
+        ],
+        "valuation_usd": 200000000
+      },
+      "metrics": {
+        "users": 10000000,
+        "employees": 200,
+        "markets": ["Philippines", "Global Filipino Diaspora"],
+        "revenue_usd": null,
+        "growth_rate": null
+      },
+      "dynasty_connections": [],
+      "business_network_connections": [],
+      "elite_school_connections": [],
+      "political_connections": [],
+      "sources": []
+    },
+    {
+      "startup_id": "COINS_PH",
+      "name": "Coins.ph",
+      "founded": 2014,
+      "status": "active",
+      "sector": "FinTech",
+      "industry": "FinTech",
+      "website": "https://www.coins.ph",
+      "description": "Digital wallet and cryptocurrency platform. Provides mobile payments, remittances, and cryptocurrency trading services. Acquired by Gojek (now GoTo) in 2018.",
+      "headquarters": {
+        "city": "Manila",
+        "region": "NCR"
+      },
+      "founders": [
+        {
+          "name": "Ron Hose",
+          "role": "Co-founder & CEO",
+          "background": "",
+          "education": [],
+          "elite_school_connections": [],
+          "dynasty_connections": []
+        }
+      ],
+      "funding": {
+        "total_raised_usd": null,
+        "latest_round": "Acquired",
+        "latest_round_date": "2018",
+        "funding_rounds": [],
+        "investors": [],
+        "valuation_usd": null
+      },
+      "metrics": {
+        "users": 16000000,
+        "employees": null,
+        "markets": ["Philippines"],
+        "revenue_usd": null,
+        "growth_rate": null
+      },
+      "exit": {
+        "exit_type": "acquisition",
+        "exit_date": "2018",
+        "exit_value_usd": null,
+        "acquirer": "Gojek (GoTo)",
+        "acquirer_country": "Indonesia"
+      },
+      "dynasty_connections": [],
+      "business_network_connections": [],
+      "elite_school_connections": [],
+      "political_connections": [],
+      "sources": []
+    },
+    {
+      "startup_id": "MAYANI",
+      "name": "Mayani",
+      "founded": 2019,
+      "status": "active",
+      "sector": "AgriTech",
+      "industry": "AgriTech",
+      "website": "https://www.mayani.ph",
+      "description": "Agricultural technology platform connecting farmers directly with consumers and businesses. Streamlines supply chain and provides digital farm management tools.",
+      "headquarters": {
+        "city": "Manila",
+        "region": "NCR"
+      },
+      "founders": [
+        {
+          "name": "JT Solis",
+          "role": "Co-founder & CEO",
+          "background": "",
+          "education": [],
+          "elite_school_connections": [],
+          "dynasty_connections": []
+        }
+      ],
+      "funding": {
+        "total_raised_usd": 1700000,
+        "latest_round": "Seed",
+        "latest_round_date": "2021",
+        "funding_rounds": [
+          {
+            "round": "Seed",
+            "amount_usd": 1700000,
+            "date": "2021",
+            "lead_investor": "AgFunder",
+            "investors": ["AgFunder", "Plug and Play Ventures"]
+          }
+        ],
+        "investors": [
+          {
+            "name": "AgFunder",
+            "type": "venture_capital",
+            "round": "Seed",
+            "year": 2021
+          },
+          {
+            "name": "Plug and Play Ventures",
+            "type": "accelerator",
+            "round": "Seed",
+            "year": 2021
+          }
+        ],
+        "valuation_usd": null
+      },
+      "metrics": {
+        "users": null,
+        "employees": null,
+        "markets": ["Philippines"],
+        "farmers_connected": 50000,
+        "revenue_usd": null,
+        "growth_rate": null
+      },
+      "dynasty_connections": [],
+      "business_network_connections": [],
+      "elite_school_connections": [],
+      "political_connections": [],
+      "sources": []
+    },
+    {
+      "startup_id": "HEALTHNOW",
+      "name": "HealthNow",
+      "founded": 2020,
+      "status": "active",
+      "sector": "HealthTech",
+      "industry": "HealthTech",
+      "website": "https://www.healthnow.ph",
+      "description": "Telemedicine and health services platform. Provides online consultations, medicine delivery, and health management services.",
+      "headquarters": {
+        "city": "Manila",
+        "region": "NCR"
+      },
+      "founders": [
+        {
+          "name": "Research Needed",
+          "role": "Founder",
+          "background": "",
+          "education": [],
+          "elite_school_connections": [],
+          "dynasty_connections": []
+        }
+      ],
+      "funding": {
+        "total_raised_usd": null,
+        "latest_round": null,
+        "latest_round_date": null,
+        "funding_rounds": [],
+        "investors": [],
+        "valuation_usd": null
+      },
+      "metrics": {
+        "users": 500000,
+        "employees": null,
+        "markets": ["Philippines"],
+        "doctors_connected": 1000,
+        "revenue_usd": null,
+        "growth_rate": null
+      },
+      "dynasty_connections": [],
+      "business_network_connections": [],
+      "elite_school_connections": [],
+      "political_connections": [],
+      "sources": []
+    },
+    {
+      "startup_id": "EDUKASYON_PH",
+      "name": "Edukasyon.ph",
+      "founded": 2015,
+      "status": "active",
+      "sector": "EdTech",
+      "industry": "EdTech",
+      "website": "https://www.edukasyon.ph",
+      "description": "Educational technology platform helping students find schools, courses, and scholarships. Largest education platform in the Philippines.",
+      "headquarters": {
+        "city": "Manila",
+        "region": "NCR"
+      },
+      "founders": [
+        {
+          "name": "Henry Motte-Muñoz",
+          "role": "Founder & CEO",
+          "background": "",
+          "education": [],
+          "elite_school_connections": [],
+          "dynasty_connections": []
+        }
+      ],
+      "funding": {
+        "total_raised_usd": 5000000,
+        "latest_round": "Series A",
+        "latest_round_date": "2020",
+        "funding_rounds": [
+          {
+            "round": "Seed",
+            "amount_usd": 500000,
+            "date": "2016",
+            "lead_investor": "Kickstart Ventures",
+            "investors": ["Kickstart Ventures"]
+          },
+          {
+            "round": "Series A",
+            "amount_usd": 4500000,
+            "date": "2020",
+            "lead_investor": "Foxmont Capital Partners",
+            "investors": ["Foxmont Capital Partners", "Kickstart Ventures"]
+          }
+        ],
+        "investors": [
+          {
+            "name": "Foxmont Capital Partners",
+            "type": "venture_capital",
+            "round": "Series A",
+            "year": 2020
+          },
+          {
+            "name": "Kickstart Ventures",
+            "type": "corporate_venture_capital",
+            "round": "Seed",
+            "year": 2016
+          }
+        ],
+        "valuation_usd": null
+      },
+      "metrics": {
+        "users": 5000000,
+        "employees": 50,
+        "markets": ["Philippines"],
+        "schools_listed": 5000,
+        "revenue_usd": null,
+        "growth_rate": null
+      },
+      "dynasty_connections": [],
+      "business_network_connections": [],
+      "elite_school_connections": [],
+      "political_connections": [],
+      "sources": []
+    },
+    {
+      "startup_id": "INVESTAGRAMS",
+      "name": "Investagrams",
+      "founded": 2016,
+      "status": "active",
+      "sector": "FinTech",
+      "industry": "FinTech",
+      "website": "https://www.investagrams.com",
+      "description": "Stock market analysis and trading platform. Provides tools for technical analysis, charting, and social trading features for Philippine stock market.",
+      "headquarters": {
+        "city": "Manila",
+        "region": "NCR"
+      },
+      "founders": [
+        {
+          "name": "Research Needed",
+          "role": "Founder",
+          "background": "",
+          "education": [],
+          "elite_school_connections": [],
+          "dynasty_connections": []
+        }
+      ],
+      "funding": {
+        "total_raised_usd": null,
+        "latest_round": null,
+        "latest_round_date": null,
+        "funding_rounds": [],
+        "investors": [],
+        "valuation_usd": null
+      },
+      "metrics": {
+        "users": 2000000,
+        "employees": null,
+        "markets": ["Philippines"],
+        "revenue_usd": null,
+        "growth_rate": null
+      },
+      "dynasty_connections": [],
+      "business_network_connections": [],
+      "elite_school_connections": [],
+      "political_connections": [],
+      "sources": []
+    },
+    {
+      "startup_id": "ANGRY_BIRDS_PH",
+      "name": "Angkas",
+      "founded": 2016,
+      "status": "active",
+      "sector": "Mobility / Transportation",
+      "industry": "Mobility",
+      "website": "https://www.angkas.com",
+      "description": "Motorcycle ride-hailing and delivery service. First legal motorcycle taxi service in the Philippines. Operates in Metro Manila and other major cities.",
+      "headquarters": {
+        "city": "Manila",
+        "region": "NCR"
+      },
+      "founders": [
+        {
+          "name": "George Royeca",
+          "role": "Founder & CEO",
+          "background": "",
+          "education": [],
+          "elite_school_connections": [],
+          "dynasty_connections": []
+        }
+      ],
+      "funding": {
+        "total_raised_usd": 15000000,
+        "latest_round": "Series A",
+        "latest_round_date": "2019",
+        "funding_rounds": [
+          {
+            "round": "Seed",
+            "amount_usd": 2000000,
+            "date": "2017",
+            "lead_investor": "Gobi Partners",
+            "investors": ["Gobi Partners"]
+          },
+          {
+            "round": "Series A",
+            "amount_usd": 13000000,
+            "date": "2019",
+            "lead_investor": "Gobi Partners",
+            "investors": ["Gobi Partners", "Infinity Ventures"]
+          }
+        ],
+        "investors": [
+          {
+            "name": "Gobi Partners",
+            "type": "venture_capital",
+            "round": "Series A",
+            "year": 2019
+          },
+          {
+            "name": "Infinity Ventures",
+            "type": "venture_capital",
+            "round": "Series A",
+            "year": 2019
+          }
+        ],
+        "valuation_usd": null
+      },
+      "metrics": {
+        "users": 5000000,
+        "employees": null,
+        "markets": ["Philippines"],
+        "riders": 25000,
+        "revenue_usd": null,
+        "growth_rate": null
+      },
+      "dynasty_connections": [],
+      "business_network_connections": [],
+      "elite_school_connections": [],
+      "political_connections": [],
+      "sources": []
+    },
+    {
+      "startup_id": "METROMART",
+      "name": "MetroMart",
+      "founded": 2016,
+      "status": "active",
+      "sector": "E-commerce / Grocery",
+      "industry": "E-commerce",
+      "website": "https://www.metromart.com",
+      "description": "Online grocery delivery platform. Partners with major supermarkets and retailers for same-day delivery.",
+      "headquarters": {
+        "city": "Manila",
+        "region": "NCR"
+      },
+      "founders": [
+        {
+          "name": "Research Needed",
+          "role": "Founder",
+          "background": "",
+          "education": [],
+          "elite_school_connections": [],
+          "dynasty_connections": []
+        }
+      ],
+      "funding": {
+        "total_raised_usd": null,
+        "latest_round": null,
+        "latest_round_date": null,
+        "funding_rounds": [],
+        "investors": [],
+        "valuation_usd": null
+      },
+      "metrics": {
+        "users": 1000000,
+        "employees": null,
+        "markets": ["Philippines"],
+        "revenue_usd": null,
+        "growth_rate": null
+      },
+      "dynasty_connections": [],
+      "business_network_connections": [],
+      "elite_school_connections": [],
+      "political_connections": [],
+      "sources": []
+    },
+    {
+      "startup_id": "SARISUKI",
+      "name": "SariSuki",
+      "founded": 2020,
+      "status": "active",
+      "sector": "E-commerce / Social Commerce",
+      "industry": "E-commerce",
+      "website": "https://www.sarisuki.com",
+      "description": "Social commerce platform enabling community-based buying. Focuses on sari-sari store owners and community leaders.",
+      "headquarters": {
+        "city": "Manila",
+        "region": "NCR"
+      },
+      "founders": [
+        {
+          "name": "Research Needed",
+          "role": "Founder",
+          "background": "",
+          "education": [],
+          "elite_school_connections": [],
+          "dynasty_connections": []
+        }
+      ],
+      "funding": {
+        "total_raised_usd": 11000000,
+        "latest_round": "Series A",
+        "latest_round_date": "2021",
+        "funding_rounds": [
+          {
+            "round": "Seed",
+            "amount_usd": 1000000,
+            "date": "2020",
+            "lead_investor": "Kaya Founders",
+            "investors": ["Kaya Founders"]
+          },
+          {
+            "round": "Series A",
+            "amount_usd": 10000000,
+            "date": "2021",
+            "lead_investor": "Gentree",
+            "investors": ["Gentree", "Kaya Founders"]
+          }
+        ],
+        "investors": [
+          {
+            "name": "Gentree",
+            "type": "venture_capital",
+            "round": "Series A",
+            "year": 2021
+          },
+          {
+            "name": "Kaya Founders",
+            "type": "venture_capital",
+            "round": "Seed",
+            "year": 2020
+          }
+        ],
+        "valuation_usd": null
+      },
+      "metrics": {
+        "users": 500000,
+        "employees": null,
+        "markets": ["Philippines"],
+        "sari_sari_stores": 50000,
+        "revenue_usd": null,
+        "growth_rate": null
+      },
+      "dynasty_connections": [],
+      "business_network_connections": [],
+      "elite_school_connections": [],
+      "political_connections": [],
+      "sources": []
     }
   ],
   "organizations": [
@@ -188,17 +795,606 @@
       "philippine_connections": []
     }
   ],
-  "investors_vcs": [],
+  "investors_vcs": [
+    {
+      "vc_id": "KAYA_FOUNDERS",
+      "name": "Kaya Founders",
+      "type": "venture_capital",
+      "founded": 2021,
+      "description": "Early-stage venture capital firm focused on backing exceptional founders in the Philippines and Southeast Asia. Focuses on seed and pre-seed investments.",
+      "focus_sectors": ["fintech", "e-commerce", "healthtech", "edtech", "SaaS"],
+      "portfolio_startups": [],
+      "location": "Manila, Philippines",
+      "website": "https://www.kayafounders.com",
+      "sources": []
+    },
+    {
+      "vc_id": "FOXMONT_CAPITAL",
+      "name": "Foxmont Capital Partners",
+      "type": "venture_capital",
+      "founded": 2018,
+      "description": "Independent venture capital fund dedicated to empowering Filipino entrepreneurs. Focuses on fintech, e-commerce, healthtech, and digital services.",
+      "focus_sectors": ["fintech", "e-commerce", "healthtech", "digital_services"],
+      "portfolio_startups": [],
+      "location": "Manila, Philippines",
+      "website": "https://www.foxmontcapital.com",
+      "sources": []
+    },
+    {
+      "vc_id": "KICKSTART_VENTURES",
+      "name": "Kickstart Ventures",
+      "type": "corporate_venture_capital",
+      "founded": 2012,
+      "description": "Corporate venture capital firm managing the Philippines' largest technology venture capital funds. Invests globally in early- to growth-stage tech startups.",
+      "focus_sectors": ["technology", "SaaS", "fintech", "e-commerce"],
+      "portfolio_startups": [],
+      "location": "Manila, Philippines",
+      "website": "https://www.kickstart.ph",
+      "sources": []
+    },
+    {
+      "vc_id": "GENTREE",
+      "name": "Gentree",
+      "type": "venture_capital",
+      "founded": null,
+      "description": "Venture capital firm affiliated with the Sy family, investing in technology-driven startups across Southeast Asia, particularly in technology, consumer, and retail sectors.",
+      "focus_sectors": ["technology", "consumer", "retail"],
+      "portfolio_startups": [],
+      "location": "Manila, Philippines",
+      "website": null,
+      "sources": []
+    }
+  ],
+  "family_offices_venture_offices": [
+    {
+      "office_id": "JG_DIGITAL_EQUITY",
+      "name": "JG Digital Equity Ventures (JGDev)",
+      "type": "corporate_venture_office",
+      "family_group": "Gokongwei",
+      "founded": 2016,
+      "description": "Corporate venture capital arm of the Gokongwei group (JG Summit Holdings). $50 million venture fund focused on e-commerce, fintech, supply chain, and logistics startups.",
+      "focus_sectors": ["e-commerce", "fintech", "supply_chain", "logistics"],
+      "portfolio_startups": [],
+      "location": "Manila, Philippines",
+      "website": null,
+      "parent_company": "JG Summit Holdings",
+      "sources": []
+    },
+    {
+      "office_id": "917_VENTURES",
+      "name": "917Ventures",
+      "type": "corporate_venture_office",
+      "family_group": "Ayala",
+      "founded": 2018,
+      "description": "Corporate investment firm wholly owned by Globe Telecom (Ayala Group). Operates independently to build ventures outside of its parent's core business. GCash is its flagship product.",
+      "focus_sectors": ["fintech", "digital_services", "telecommunications", "mobile_payments"],
+      "portfolio_startups": [],
+      "location": "Manila, Philippines",
+      "website": "https://www.917ventures.com",
+      "parent_company": "Globe Telecom / Ayala Corporation",
+      "sources": []
+    },
+    {
+      "office_id": "AC_VENTURES",
+      "name": "AC Ventures",
+      "type": "family_office",
+      "family_group": "Ayala",
+      "founded": null,
+      "description": "Venture capital arm of Ayala Corporation, one of the Philippines' oldest and largest conglomerates. Invests in technology and innovation across various sectors.",
+      "focus_sectors": ["technology", "real_estate_tech", "financial_services", "telecommunications"],
+      "portfolio_startups": [],
+      "location": "Manila, Philippines",
+      "website": null,
+      "parent_company": "Ayala Corporation",
+      "sources": []
+    },
+    {
+      "office_id": "ABOITIZ_VENTURES",
+      "name": "Aboitiz Ventures",
+      "type": "family_office",
+      "family_group": "Aboitiz",
+      "founded": null,
+      "description": "Venture capital and innovation arm of the Aboitiz Group, a diversified conglomerate with interests in power, banking, food, and infrastructure. Focuses on digital transformation and technology investments.",
+      "focus_sectors": ["energy_tech", "cleantech", "fintech", "agritech", "infrastructure_tech"],
+      "portfolio_startups": [],
+      "location": "Manila, Philippines",
+      "website": null,
+      "parent_company": "Aboitiz Group",
+      "sources": []
+    },
+    {
+      "office_id": "SM_INVESTMENTS_VENTURES",
+      "name": "SM Investments Ventures",
+      "type": "family_office",
+      "family_group": "Sy",
+      "founded": null,
+      "description": "Investment arm of SM Investments Corporation (Sy family). Invests in technology startups, particularly in retail tech, fintech, and real estate technology.",
+      "focus_sectors": ["retail_tech", "fintech", "real_estate_tech", "e-commerce"],
+      "portfolio_startups": [],
+      "location": "Manila, Philippines",
+      "website": null,
+      "parent_company": "SM Investments Corporation",
+      "sources": []
+    },
+    {
+      "office_id": "METRO_PACIFIC_VENTURES",
+      "name": "Metro Pacific Ventures",
+      "type": "corporate_venture_office",
+      "family_group": "Pangilinan",
+      "founded": null,
+      "description": "Venture capital arm of Metro Pacific Investments Corporation. Focuses on infrastructure technology, utilities tech, and smart city solutions.",
+      "focus_sectors": ["infrastructure_tech", "utilities_tech", "smart_cities", "IoT"],
+      "portfolio_startups": [],
+      "location": "Manila, Philippines",
+      "website": null,
+      "parent_company": "Metro Pacific Investments Corporation",
+      "sources": []
+    },
+    {
+      "office_id": "LOPEZ_HOLDINGS_VENTURES",
+      "name": "Lopez Holdings Ventures",
+      "type": "family_office",
+      "family_group": "Lopez",
+      "founded": null,
+      "description": "Investment arm of Lopez Holdings Corporation. Focuses on media tech, power generation tech, and real estate technology investments.",
+      "focus_sectors": ["media_tech", "energy_tech", "real_estate_tech", "content_tech"],
+      "portfolio_startups": [],
+      "location": "Manila, Philippines",
+      "website": null,
+      "parent_company": "Lopez Holdings Corporation",
+      "sources": []
+    },
+    {
+      "office_id": "FILINVEST_VENTURES",
+      "name": "Filinvest Ventures",
+      "type": "family_office",
+      "family_group": "Gotianun",
+      "founded": null,
+      "description": "Venture capital arm of Filinvest Development Corporation. Invests in real estate technology, hospitality tech, and financial technology startups.",
+      "focus_sectors": ["real_estate_tech", "prop_tech", "hospitality_tech", "fintech"],
+      "portfolio_startups": [],
+      "location": "Manila, Philippines",
+      "website": null,
+      "parent_company": "Filinvest Development Corporation",
+      "sources": []
+    }
+  ],
+  "unicorns": [
+    {
+      "startup_id": "GCASH",
+      "name": "GCash",
+      "founded": 2004,
+      "status": "active",
+      "sector": "FinTech",
+      "industry": "FinTech",
+      "valuation_usd": 2000000000,
+      "unicorn_status": true,
+      "unicorn_date": "2021",
+      "description": "Philippines' leading mobile wallet and financial services platform. Part of 917Ventures (Globe Telecom/Ayala Group).",
+      "parent_company": "917Ventures / Globe Telecom",
+      "family_group": "Ayala",
+      "website": "https://www.gcash.com",
+      "metrics": {
+        "users": 81000000,
+        "merchants": 5000000
+      },
+      "sources": []
+    },
+    {
+      "startup_id": "PAYMAYA",
+      "name": "PayMaya (Maya)",
+      "founded": 2000,
+      "status": "active",
+      "sector": "FinTech",
+      "industry": "FinTech",
+      "valuation_usd": 1000000000,
+      "unicorn_status": true,
+      "unicorn_date": "2021",
+      "description": "Digital financial services platform offering mobile wallet, payments, and banking services. Part of Voyager Innovations (PLDT/Smart).",
+      "parent_company": "Voyager Innovations / PLDT",
+      "family_group": "First Pacific",
+      "website": "https://www.maya.ph",
+      "metrics": {
+        "users": 50000000,
+        "merchants": 400000
+      },
+      "sources": []
+    }
+  ],
+  "government_support": [
+    {
+      "program_id": "DTI_STARTUP_PROGRAM",
+      "name": "DTI Startup Development Program",
+      "type": "government_program",
+      "agency": "Department of Trade and Industry (DTI)",
+      "description": "Government initiative supporting startup development through funding, mentorship, and regulatory support.",
+      "focus_areas": ["startup_funding", "mentorship", "regulatory_support", "market_access"],
+      "website": "https://www.dti.gov.ph",
+      "sources": []
+    },
+    {
+      "program_id": "BOI_INCENTIVES",
+      "name": "BOI Startup Incentives",
+      "type": "government_incentive",
+      "agency": "Board of Investments (BOI)",
+      "description": "Tax incentives and benefits for registered startups and technology companies.",
+      "focus_areas": ["tax_incentives", "business_registration", "export_incentives"],
+      "website": "https://www.boi.gov.ph",
+      "sources": []
+    },
+    {
+      "program_id": "INNOVATIVE_STARTUP_ACT",
+      "name": "Innovative Startup Act (Republic Act 11337)",
+      "type": "government_policy",
+      "agency": "DTI / DOST",
+      "description": "Legislation providing tax incentives, visa support, and funding for innovative startups. Enacted in 2019.",
+      "focus_areas": ["tax_incentives", "visa_support", "startup_funding", "regulatory_support"],
+      "website": "https://www.dti.gov.ph",
+      "sources": []
+    },
+    {
+      "program_id": "PHILIPPINE_INNOVATION_ACT",
+      "name": "Philippine Innovation Act (Republic Act 11293)",
+      "type": "government_policy",
+      "agency": "DOST",
+      "description": "Framework for promoting innovation and technology development in the Philippines.",
+      "focus_areas": ["innovation", "technology_development", "research_funding"],
+      "website": "https://www.dost.gov.ph",
+      "sources": []
+    }
+  ],
+  "regulatory_environment": [
+    {
+      "regulator_id": "BSP",
+      "name": "Bangko Sentral ng Pilipinas (BSP)",
+      "type": "financial_regulator",
+      "description": "Central bank regulating fintech, digital payments, and financial services. Issues licenses for e-money issuers and payment systems.",
+      "key_regulations": [
+        "Circular 649 (E-Money Issuers)",
+        "Circular 1049 (Payment Systems)",
+        "Digital Banking Framework"
+      ],
+      "impact_on_startups": "Fintech startups require BSP licenses for payment services. Regulatory sandbox available for testing.",
+      "website": "https://www.bsp.gov.ph",
+      "sources": []
+    },
+    {
+      "regulator_id": "NPC",
+      "name": "National Privacy Commission (NPC)",
+      "type": "data_privacy_regulator",
+      "description": "Regulates data privacy and protection. Enforces Data Privacy Act of 2012.",
+      "key_regulations": [
+        "Data Privacy Act of 2012",
+        "NPC Circulars on Data Breach Notification"
+      ],
+      "impact_on_startups": "All startups handling personal data must comply with data privacy requirements.",
+      "website": "https://www.privacy.gov.ph",
+      "sources": []
+    },
+    {
+      "regulator_id": "SEC",
+      "name": "Securities and Exchange Commission (SEC)",
+      "type": "securities_regulator",
+      "description": "Regulates securities, corporate registration, and crowdfunding. Oversees startup incorporation.",
+      "key_regulations": [
+        "Revised Corporation Code",
+        "Crowdfunding Rules"
+      ],
+      "impact_on_startups": "Startups must register with SEC. Crowdfunding regulations affect fundraising.",
+      "website": "https://www.sec.gov.ph",
+      "sources": []
+    },
+    {
+      "regulator_id": "LTFRB",
+      "name": "Land Transportation Franchising and Regulatory Board (LTFRB)",
+      "type": "transportation_regulator",
+      "description": "Regulates transportation services including ride-hailing and delivery services.",
+      "key_regulations": [
+        "Motorcycle Taxi Pilot Program",
+        "TNVS (Transport Network Vehicle Service) Regulations"
+      ],
+      "impact_on_startups": "Mobility startups like Angkas, Grab require LTFRB permits and compliance.",
+      "website": "https://www.ltfrb.gov.ph",
+      "sources": []
+    }
+  ],
+  "co_working_spaces_incubators": [
+    {
+      "space_id": "IDEASSPACE",
+      "name": "IdeaSpace Foundation",
+      "type": "incubator",
+      "founded": 2012,
+      "description": "Technology incubator and accelerator founded by the PLDT Group. Provides funding, mentorship, and workspace for early-stage startups.",
+      "location": "Manila, Philippines",
+      "focus_sectors": ["technology", "innovation"],
+      "website": "https://www.ideaspacefoundation.org",
+      "sources": []
+    },
+    {
+      "space_id": "QBO_INNOVATION_HUB",
+      "name": "QBO Innovation Hub",
+      "type": "incubator",
+      "founded": 2016,
+      "description": "Public-private partnership incubator supported by DTI, DOST, and IdeaSpace. Focuses on tech startups and innovation.",
+      "location": "Manila, Philippines",
+      "focus_sectors": ["technology", "innovation", "startups"],
+      "website": "https://www.qbo.com.ph",
+      "sources": []
+    },
+    {
+      "space_id": "IMPACT_HUB_MANILA",
+      "name": "Impact Hub Manila",
+      "type": "co_working_space",
+      "founded": null,
+      "description": "Co-working space and community for social entrepreneurs and impact-driven startups.",
+      "location": "Manila, Philippines",
+      "focus_sectors": ["social_impact", "sustainability"],
+      "website": "https://www.impacthub.ph",
+      "sources": []
+    },
+    {
+      "space_id": "LAUNCHGARAGE",
+      "name": "Launchgarage",
+      "type": "co_working_space",
+      "founded": null,
+      "description": "Co-working space and startup community hub in Manila.",
+      "location": "Manila, Philippines",
+      "focus_sectors": ["general"],
+      "website": null,
+      "sources": []
+    },
+    {
+      "space_id": "UP_AYALA_TECHNOHUB",
+      "name": "U.P.–Ayala Land TechnoHub",
+      "type": "tech_park",
+      "founded": 2009,
+      "description": "Technology park and business district in Quezon City. Houses tech companies, BPOs, and startups. Partnership between UP and Ayala Land.",
+      "location": "Quezon City, Philippines",
+      "focus_sectors": ["technology", "BPO", "startups"],
+      "website": null,
+      "sources": []
+    },
+    {
+      "space_id": "HUB_MAKE_LAB",
+      "name": "HUB: Make Lab",
+      "type": "incubator",
+      "founded": null,
+      "description": "Incubator space for creative startups and artists in Manila.",
+      "location": "Manila, Philippines",
+      "focus_sectors": ["creative", "arts", "design"],
+      "website": null,
+      "sources": []
+    }
+  ],
+  "education_pipeline": [
+    {
+      "university_id": "UP",
+      "name": "University of the Philippines",
+      "type": "public_university",
+      "description": "Premier state university. Produces many tech founders and entrepreneurs. Strong engineering and business programs.",
+      "notable_alumni_founders": [],
+      "startup_programs": ["UP Innovation Hub"],
+      "location": "Multiple campuses",
+      "website": "https://www.up.edu.ph",
+      "sources": []
+    },
+    {
+      "university_id": "ATENEO",
+      "name": "Ateneo de Manila University",
+      "type": "private_university",
+      "description": "Leading private university. Strong business and technology programs. Many founders from Ateneo.",
+      "notable_alumni_founders": [],
+      "startup_programs": ["Ateneo Innovation Center"],
+      "location": "Quezon City",
+      "website": "https://www.ateneo.edu",
+      "sources": []
+    },
+    {
+      "university_id": "DLSU",
+      "name": "De La Salle University",
+      "type": "private_university",
+      "description": "Major private university with strong engineering and business programs. Active in startup ecosystem.",
+      "notable_alumni_founders": [],
+      "startup_programs": ["DLSU Innovation Center"],
+      "location": "Manila",
+      "website": "https://www.dlsu.edu.ph",
+      "sources": []
+    },
+    {
+      "university_id": "MAPUA",
+      "name": "Mapua University",
+      "type": "private_university",
+      "description": "Leading engineering and technology university. Produces many tech talent and entrepreneurs.",
+      "notable_alumni_founders": [],
+      "startup_programs": [],
+      "location": "Manila",
+      "website": "https://www.mapua.edu.ph",
+      "sources": []
+    }
+  ],
+  "angel_investors": [
+    {
+      "investor_id": "ANGEL_PAULO_CAMPOS",
+      "name": "Paulo Campos III",
+      "type": "angel_investor",
+      "description": "Co-founder of Zalora Philippines and Kaya Founders. Active angel investor in Philippine startups.",
+      "focus_sectors": ["e-commerce", "fintech", "SaaS"],
+      "portfolio_startups": [],
+      "background": "Serial entrepreneur, former Zalora CEO",
+      "sources": []
+    },
+    {
+      "investor_id": "ANGEL_LANCE_GOKONGWEI",
+      "name": "Lance Gokongwei",
+      "type": "angel_investor",
+      "description": "CEO of JG Summit Holdings. Active in technology investments through JG Digital Equity Ventures.",
+      "focus_sectors": ["e-commerce", "fintech", "logistics"],
+      "portfolio_startups": [],
+      "background": "Gokongwei family, CEO of JG Summit",
+      "sources": []
+    }
+  ],
+  "international_vcs": [
+    {
+      "vc_id": "GOBI_PARTNERS",
+      "name": "Gobi Partners",
+      "type": "venture_capital",
+      "founded": 2002,
+      "description": "Pan-Asian venture capital firm with strong presence in Southeast Asia. Active investor in Philippine startups.",
+      "focus_sectors": ["fintech", "e-commerce", "logistics", "mobility"],
+      "portfolio_startups": ["ANGRY_BIRDS_PH"],
+      "location": "Hong Kong / Southeast Asia",
+      "website": "https://www.gobipartners.com",
+      "philippine_connections": ["Angkas"],
+      "sources": []
+    },
+    {
+      "vc_id": "GENERAL_ATLANTIC",
+      "name": "General Atlantic",
+      "type": "private_equity",
+      "founded": 1980,
+      "description": "Global growth equity firm. Invested in Kumu (Series B).",
+      "focus_sectors": ["technology", "consumer_internet", "fintech"],
+      "portfolio_startups": ["KUMU"],
+      "location": "Global",
+      "website": "https://www.generalatlantic.com",
+      "philippine_connections": ["Kumu"],
+      "sources": []
+    },
+    {
+      "vc_id": "OPENSPACE_VENTURES",
+      "name": "OpenSpace Ventures",
+      "type": "venture_capital",
+      "founded": 2017,
+      "description": "Southeast Asian venture capital firm. Invested in Kumu and other Philippine startups.",
+      "focus_sectors": ["consumer_internet", "e-commerce", "fintech"],
+      "portfolio_startups": ["KUMU"],
+      "location": "Southeast Asia",
+      "website": "https://www.openspace.vc",
+      "philippine_connections": ["Kumu"],
+      "sources": []
+    },
+    {
+      "vc_id": "WAVEMAKER_PARTNERS",
+      "name": "Wavemaker Partners",
+      "type": "venture_capital",
+      "founded": 2003,
+      "description": "Early-stage venture capital firm with offices in Los Angeles and Singapore. Invests in B2B and B2B2C startups in Southeast Asia.",
+      "focus_sectors": ["B2B", "SaaS", "enterprise_software"],
+      "portfolio_startups": ["KALIBRR"],
+      "location": "Singapore / Los Angeles",
+      "website": "https://www.wavemaker.vc",
+      "philippine_connections": ["Kalibrr"],
+      "sources": []
+    },
+    {
+      "vc_id": "OMIDYAR_NETWORK",
+      "name": "Omidyar Network",
+      "type": "impact_investor",
+      "founded": 2004,
+      "description": "Philanthropic investment firm. Invests in companies that create social impact, including in the Philippines.",
+      "focus_sectors": ["impact", "fintech", "edtech", "healthtech"],
+      "portfolio_startups": ["KALIBRR"],
+      "location": "Global",
+      "website": "https://www.omidyar.com",
+      "philippine_connections": ["Kalibrr"],
+      "sources": []
+    },
+    {
+      "vc_id": "500_STARTUPS",
+      "name": "500 Startups",
+      "type": "accelerator",
+      "founded": 2010,
+      "description": "Global venture capital firm and accelerator. Has invested in several Philippine startups.",
+      "focus_sectors": ["technology", "consumer_internet", "fintech"],
+      "portfolio_startups": [],
+      "location": "Global",
+      "website": "https://500.co",
+      "philippine_connections": [],
+      "sources": []
+    },
+    {
+      "vc_id": "SEQUOIA_CAPITAL",
+      "name": "Sequoia Capital",
+      "type": "venture_capital",
+      "founded": 1972,
+      "description": "Global venture capital firm. Limited presence in Philippines but tracks Southeast Asian market.",
+      "focus_sectors": ["technology", "enterprise", "consumer"],
+      "portfolio_startups": [],
+      "location": "Global",
+      "website": "https://www.sequoiacap.com",
+      "philippine_connections": [],
+      "sources": []
+    }
+  ],
+  "funding_trends": {
+    "2021": {
+      "total_capital_usd": null,
+      "deal_count": null,
+      "average_deal_size_usd": null
+    },
+    "2022": {
+      "total_capital_usd": null,
+      "deal_count": null,
+      "average_deal_size_usd": null
+    },
+    "2023": {
+      "total_capital_usd": null,
+      "deal_count": null,
+      "average_deal_size_usd": null
+    },
+    "2024": {
+      "total_capital_usd": null,
+      "deal_count": null,
+      "average_deal_size_usd": null
+    },
+    "2025": {
+      "total_capital_usd": null,
+      "deal_count": null,
+      "average_deal_size_usd": null,
+      "change_from_2024": {
+        "capital_change": -0.32,
+        "deal_volume_change": -0.54
+      }
+    }
+  },
+  "exits": [
+    {
+      "exit_id": "EXIT_COINS_PH",
+      "startup_id": "COINS_PH",
+      "startup_name": "Coins.ph",
+      "exit_type": "acquisition",
+      "exit_date": "2018",
+      "exit_value_usd": null,
+      "acquirer": "Gojek (GoTo)",
+      "acquirer_country": "Indonesia",
+      "description": "Acquired by Indonesian ride-hailing and payments company Gojek (now GoTo Group).",
+      "sources": []
+    }
+  ],
   "ecosystem_hubs": [
     {
       "city": "Manila",
       "region": "NCR",
       "ecosystem_value_usd": 6400000000,
       "growth_cagr": 0.72,
-      "key_sectors": ["fintech", "e-commerce", "gaming"],
+      "key_sectors": ["fintech", "e-commerce", "gaming", "healthtech", "edtech", "logistics", "agritech", "HR Tech"],
       "notable_startups": ["KALIBRR", "PASAJOB", "PICKUP_COFFEE"],
       "rankings": {
         "national": 1,
+        "global": null,
+        "global_bracket": "61-70"
+      }
+    },
+    {
+      "city": "Cebu",
+      "region": "Central Visayas",
+      "ecosystem_value_usd": null,
+      "growth_rate": null,
+      "key_sectors": ["fintech", "e-commerce", "tourism_tech"],
+      "notable_startups": [],
+      "rankings": {
+        "national": 2,
         "global": null
       }
     },
@@ -207,11 +1403,12 @@
       "region": "Davao Region",
       "ecosystem_value_usd": null,
       "growth_rate": 0.97,
-      "key_sectors": [],
+      "key_sectors": ["agritech", "logistics"],
       "notable_startups": [],
       "rankings": {
         "national": 3,
-        "global": 580
+        "global": 580,
+        "global_rank_change": "+163"
       }
     }
   ],

@@ -362,14 +362,62 @@
     <label>
       <input type="checkbox" id="highlightPowerConnections"> ⭐ Highlight Power Connections
     </label>
+    <label>
+      <input type="checkbox" id="showMoversShakers"> 👥 Show Movers & Shakers
+    </label>
     <select id="filterSector">
-      <option value="all">All Sectors</option>
-      <option value="fintech">FinTech</option>
-      <option value="e-commerce">E-commerce</option>
-      <option value="gaming">Gaming</option>
-      <option value="HR Tech / Recruitment">HR Tech</option>
-      <option value="F&B / Retail">F&B / Retail</option>
+      <option value="all">All Industries</option>
+      <optgroup label="Financial Services">
+        <option value="fintech">FinTech</option>
+        <option value="insurtech">InsurTech</option>
+        <option value="blockchain">Blockchain</option>
+        <option value="cryptocurrency">Cryptocurrency</option>
+      </optgroup>
+      <optgroup label="Commerce & Retail">
+        <option value="e-commerce">E-commerce</option>
+        <option value="F&B / Retail">F&B / Retail</option>
+        <option value="retail_tech">Retail Tech</option>
+      </optgroup>
+      <optgroup label="Technology">
+        <option value="SaaS">SaaS</option>
+        <option value="AI/ML">AI/ML</option>
+        <option value="IoT">IoT</option>
+        <option value="blockchain">Blockchain</option>
+      </optgroup>
+      <optgroup label="Industry-Specific">
+        <option value="HR Tech">HR Tech</option>
+        <option value="HR Tech / Recruitment">HR Tech / Recruitment</option>
+        <option value="edtech">EdTech</option>
+        <option value="healthtech">HealthTech</option>
+        <option value="agritech">AgriTech</option>
+        <option value="logistics">Logistics</option>
+        <option value="gaming">Gaming</option>
+      </optgroup>
+      <optgroup label="Real Estate & Infrastructure">
+        <option value="real estate tech">Real Estate Tech</option>
+        <option value="prop tech">PropTech</option>
+        <option value="infrastructure_tech">Infrastructure Tech</option>
+        <option value="smart_cities">Smart Cities</option>
+      </optgroup>
+      <optgroup label="Energy & Sustainability">
+        <option value="cleantech">CleanTech</option>
+        <option value="energy tech">Energy Tech</option>
+      </optgroup>
+      <optgroup label="Mobility">
+        <option value="mobility">Mobility</option>
+        <option value="transportation tech">Transportation Tech</option>
+      </optgroup>
     </select>
+    <select id="filterView">
+      <option value="all">All View</option>
+      <option value="investors">Focus: Investors</option>
+      <option value="founders">Focus: Founders</option>
+      <option value="power-players">Power Players Only</option>
+      <option value="unicorns">Unicorns Only</option>
+      <option value="by-year">By Founding Year</option>
+    </select>
+    <input type="range" id="yearFilter" min="2000" max="2026" value="2026" style="display: none;">
+    <span id="yearDisplay" style="display: none; font-size: 12px;">Year: 2026</span>
     <button id="resetView">Reset View</button>
     <button id="fitNetwork">Fit to Screen</button>
   </div>
@@ -411,6 +459,22 @@
       <span>Investor / VC</span>
     </div>
     <div class="legend-item">
+      <div class="legend-color" style="background: #c44900; border: 2px solid #fff;"></div>
+      <span>VC Firm (Kaya Founders, etc.)</span>
+    </div>
+    <div class="legend-item">
+      <div class="legend-color" style="background: #8b008b; border: 2px solid #fff;"></div>
+      <span>Family Office / Venture Office</span>
+    </div>
+    <div class="legend-item">
+      <div class="legend-color" style="background: #FFD700; border: 3px solid #c44900;"></div>
+      <span>🦄 Unicorn ($1B+ Valuation)</span>
+    </div>
+    <div class="legend-item">
+      <div class="legend-color" style="background: #2b7a6d; border: 2px solid #fff;"></div>
+      <span>🌍 International VC</span>
+    </div>
+    <div class="legend-item">
       <div class="legend-color" style="background: #6c5b7b;"></div>
       <span>Organization</span>
     </div>
@@ -448,6 +512,8 @@
     let dynastiesData = null;
     let businessData = null;
     let eliteSchoolsData = null;
+    let investorStats = new Map(); // Track investor activity
+    let founderStats = new Map(); // Track founder activity
 
     // Node colors by type
     const nodeColors = {
@@ -539,6 +605,10 @@
           
           const hasAnyPowerConnection = hasPowerConnections || foundersWithConnections;
           
+          // Get industry for label
+          const industry = startup.industry || startup.sector;
+          const industryLabel = industry ? `\n[${industry}]` : '';
+          
           // Highlight nodes with power structure connections
           let borderColor = '#fff';
           let borderWidth = 2;
@@ -549,8 +619,8 @@
           
           allNodes.push({
             id: nodeId,
-            label: startup.name + (hasAnyPowerConnection ? ' ⭐' : ''),
-            title: `${startup.name}\nSector: ${startup.sector}\nFounded: ${startup.founded}${hasAnyPowerConnection ? '\n⭐ Has Power Structure Connections' : ''}`,
+            label: startup.name + industryLabel + (hasAnyPowerConnection ? ' ⭐' : ''),
+            title: `${startup.name}\nIndustry: ${industry || startup.sector}\nSector: ${startup.sector}\nFounded: ${startup.founded}${hasAnyPowerConnection ? '\n⭐ Has Power Structure Connections' : ''}${startup.website ? `\n🌐 ${startup.website}` : ''}`,
             color: { 
               background: nodeColors.startup,
               border: borderColor,
@@ -559,7 +629,7 @@
             borderWidth: borderWidth,
             size: hasAnyPowerConnection ? 35 : 30,
             shape: 'box',
-            font: { size: 14, color: hasAnyPowerConnection ? '#0038A8' : '#1a1a1a' },
+            font: { size: 16, face: 'Source Sans Pro', bold: true, color: hasAnyPowerConnection ? '#0038A8' : '#1a1a1a' },
             data: { type: 'startup', item: startup, hasPowerConnections: hasAnyPowerConnection }
           });
 
@@ -569,6 +639,14 @@
               if (founder.name && founder.name !== 'Research Needed') {
                 const founderId = `founder_${founder.name.replace(/\s+/g, '_')}`;
                 
+                // Track founder activity
+                if (!founderStats.has(founderId)) {
+                  founderStats.set(founderId, { count: 0, startups: [], founder: founder });
+                }
+                const stats = founderStats.get(founderId);
+                stats.count++;
+                stats.startups.push(startup);
+                
                 if (!nodeMap.has(founderId)) {
                   nodeMap.set(founderId, { type: 'founder', data: founder });
                   
@@ -576,29 +654,55 @@
                   const founderHasDynasty = founder.dynasty_connections && founder.dynasty_connections.length > 0;
                   const founderHasEliteSchool = founder.elite_school_connections && founder.elite_school_connections.length > 0;
                   const founderHasConnections = founderHasDynasty || founderHasEliteSchool;
+                  const founderStartupCount = founderStats.get(founderId).count;
+                  const isSerialFounder = founderStartupCount >= 2;
+                  const isPowerPlayer = founderHasConnections || isSerialFounder;
                   
                   let founderBorderColor = '#fff';
                   let founderBorderWidth = 2;
-                  if (founderHasConnections) {
+                  if (isPowerPlayer) {
+                    founderBorderColor = '#FFD700';
+                    founderBorderWidth = 4;
+                  } else if (founderHasConnections) {
                     founderBorderColor = '#FFD700';
                     founderBorderWidth = 3;
                   }
                   
                   allNodes.push({
                     id: founderId,
-                    label: founder.name + (founderHasConnections ? ' ⭐' : ''),
-                    title: `${founder.name}\nRole: ${founder.role || 'Founder'}${founderHasConnections ? '\n⭐ Has Power Structure Connections' : ''}`,
+                    label: founder.name + (isPowerPlayer ? ' 🔥' : founderHasConnections ? ' ⭐' : ''),
+                    title: `${founder.name}\nRole: ${founder.role || 'Founder'}\nStartups: ${founderStartupCount}${isSerialFounder ? '\n🔥 Serial Founder' : ''}${founderHasConnections ? '\n⭐ Has Power Structure Connections' : ''}`,
                     color: { 
                       background: nodeColors.founder,
                       border: founderBorderColor,
                       highlight: { background: nodeColors.founder, border: founderBorderColor }
                     },
                     borderWidth: founderBorderWidth,
-                    size: founderHasConnections ? 25 : 20,
+                    size: isPowerPlayer ? 30 : founderHasConnections ? 25 : 20,
                     shape: 'dot',
-                    font: { size: 12 },
-                    data: { type: 'founder', item: founder, hasPowerConnections: founderHasConnections }
+                    font: { size: isPowerPlayer ? 15 : 14, face: 'Source Sans Pro', bold: true, color: isPowerPlayer ? '#2b7a6d' : '#1a1a1a' },
+                    data: { type: 'founder', item: founder, hasPowerConnections: founderHasConnections, startupCount: founderStartupCount, isPowerPlayer: isPowerPlayer }
                   });
+                } else {
+                  // Update existing founder node
+                  const existingNode = allNodes.find(n => n.id === founderId);
+                  if (existingNode) {
+                    const founderStartupCount = founderStats.get(founderId).count;
+                    const isSerialFounder = founderStartupCount >= 2;
+                    const founderHasDynasty = founder.dynasty_connections && founder.dynasty_connections.length > 0;
+                    const founderHasEliteSchool = founder.elite_school_connections && founder.elite_school_connections.length > 0;
+                    const founderHasConnections = founderHasDynasty || founderHasEliteSchool;
+                    const isPowerPlayer = founderHasConnections || isSerialFounder;
+                    
+                    existingNode.size = isPowerPlayer ? 30 : founderHasConnections ? 25 : 20;
+                    existingNode.borderWidth = isPowerPlayer ? 4 : founderHasConnections ? 3 : 2;
+                    existingNode.label = founder.name + (isPowerPlayer ? ' 🔥' : founderHasConnections ? ' ⭐' : '');
+                    existingNode.title = `${founder.name}\nRole: ${founder.role || 'Founder'}\nStartups: ${founderStartupCount}${isSerialFounder ? '\n🔥 Serial Founder' : ''}${founderHasConnections ? '\n⭐ Has Power Structure Connections' : ''}`;
+                    existingNode.font.size = isPowerPlayer ? 15 : 14;
+                    existingNode.font.bold = true;
+                    existingNode.data.startupCount = founderStartupCount;
+                    existingNode.data.isPowerPlayer = isPowerPlayer;
+                  }
                 }
                 
                 // Edge from startup to founder
@@ -607,9 +711,72 @@
                   from: nodeId,
                   to: founderId,
                   color: { color: nodeColors.startup },
-                  width: 3,
+                  width: 4,
                   label: 'Founded by',
+                  font: { size: 13, bold: true, color: '#1a1a1a', strokeWidth: 3, strokeColor: '#ffffff' },
                   data: { type: 'founder_connection', startup: startup, founder: founder }
+                });
+              }
+            });
+          }
+
+          // Add investor nodes and edges from funding rounds
+          if (startup.funding && startup.funding.funding_rounds) {
+            startup.funding.funding_rounds.forEach(round => {
+              if (round.investors && round.investors.length > 0) {
+                round.investors.forEach(investorName => {
+                  // Try to find investor in VCs, international VCs, or family offices
+                  let investor = null;
+                  let investorId = null;
+                  let investorType = 'investor';
+                  
+                  // Check local VCs
+                  if (startupData.investors_vcs) {
+                    const vc = startupData.investors_vcs.find(v => v.name === investorName);
+                    if (vc) {
+                      investor = vc;
+                      investorId = vc.vc_id;
+                      investorType = 'vc';
+                    }
+                  }
+                  
+                  // Check international VCs
+                  if (!investor && startupData.international_vcs) {
+                    const vc = startupData.international_vcs.find(v => v.name === investorName);
+                    if (vc) {
+                      investor = vc;
+                      investorId = vc.vc_id;
+                      investorType = 'international_vc';
+                    }
+                  }
+                  
+                  // Check family offices
+                  if (!investor && startupData.family_offices_venture_offices) {
+                    const office = startupData.family_offices_venture_offices.find(o => o.name === investorName);
+                    if (office) {
+                      investor = office;
+                      investorId = office.office_id;
+                      investorType = 'family_office';
+                    }
+                  }
+                  
+                  // If found, create edge
+                  if (investor && investorId && nodeMap.has(investorId)) {
+                    const edgeId = `${investorId}-${nodeId}`;
+                    // Only add if not already exists
+                    if (!allEdges.find(e => e.id === edgeId)) {
+                      allEdges.push({
+                        id: edgeId,
+                        from: investorId,
+                        to: nodeId,
+                        color: { color: investorType === 'international_vc' ? '#2b7a6d' : (investorType === 'family_office' ? '#8b008b' : '#c44900') },
+                        width: 4,
+                        label: `${round.round} (${round.date})`,
+                        font: { size: 13, bold: true, color: '#1a1a1a', strokeWidth: 3, strokeColor: '#ffffff' },
+                        data: { type: 'investment', startup: startup, investor: investor, round: round.round, date: round.date }
+                      });
+                    }
+                  }
                 });
               }
             });
@@ -620,19 +787,53 @@
             startup.funding.investors.forEach(investor => {
               const investorId = `investor_${investor.name.replace(/\s+/g, '_')}`;
               
+              // Track investor activity
+              if (!investorStats.has(investorId)) {
+                investorStats.set(investorId, { count: 0, startups: [], investor: investor });
+              }
+              const stats = investorStats.get(investorId);
+              stats.count++;
+              stats.startups.push(startup);
+              
               if (!nodeMap.has(investorId)) {
                 nodeMap.set(investorId, { type: 'investor', data: investor });
                 
+                // Size based on number of investments (will be updated later)
+                const investmentCount = investorStats.get(investorId).count;
+                const isPowerPlayer = investmentCount >= 2; // Investors with 2+ investments are power players
+                
                 allNodes.push({
                   id: investorId,
-                  label: investor.name,
-                  title: `${investor.name}\nType: ${investor.type || 'Investor'}`,
-                  color: { background: nodeColors.investor },
-                  size: 22,
+                  label: investor.name + (isPowerPlayer ? ' 🔥' : ''),
+                  title: `${investor.name}\nType: ${investor.type || 'Investor'}\nInvestments: ${investmentCount}${isPowerPlayer ? '\n🔥 Active Investor' : ''}`,
+                  color: { 
+                    background: nodeColors.investor,
+                    border: isPowerPlayer ? '#FFD700' : '#fff',
+                    highlight: { background: nodeColors.investor, border: isPowerPlayer ? '#FFD700' : '#c44900' }
+                  },
+                  size: isPowerPlayer ? 32 : 22,
+                  borderWidth: isPowerPlayer ? 4 : 2,
                   shape: 'diamond',
-                  font: { size: 11 },
-                  data: { type: 'investor', item: investor }
+                  font: { size: isPowerPlayer ? 15 : 13, face: 'Source Sans Pro', bold: true, color: isPowerPlayer ? '#c44900' : '#1a1a1a' },
+                  data: { type: 'investor', item: investor, investmentCount: investmentCount, isPowerPlayer: isPowerPlayer }
                 });
+              } else {
+                // Update existing node size if this investor has more investments
+                const existingNode = allNodes.find(n => n.id === investorId);
+                if (existingNode) {
+                  const investmentCount = investorStats.get(investorId).count;
+                  const isPowerPlayer = investmentCount >= 2;
+                  existingNode.size = isPowerPlayer ? 32 : 22;
+                  existingNode.borderWidth = isPowerPlayer ? 4 : 2;
+                  existingNode.label = investor.name + (isPowerPlayer ? ' 🔥' : '');
+                  existingNode.title = `${investor.name}\nType: ${investor.type || 'Investor'}\nInvestments: ${investmentCount}${isPowerPlayer ? '\n🔥 Active Investor' : ''}`;
+                  existingNode.font.size = isPowerPlayer ? 15 : 13;
+                  existingNode.font.bold = true;
+                  existingNode.font.color = isPowerPlayer ? '#c44900' : '#1a1a1a';
+                  existingNode.color.border = isPowerPlayer ? '#FFD700' : '#fff';
+                  existingNode.data.investmentCount = investmentCount;
+                  existingNode.data.isPowerPlayer = isPowerPlayer;
+                }
               }
               
               // Edge from investor to startup
@@ -641,8 +842,9 @@
                 from: investorId,
                 to: nodeId,
                 color: { color: nodeColors.investor },
-                width: 2,
+                width: 4,
                 label: investor.round || 'Invested',
+                font: { size: 13, bold: true, color: '#1a1a1a', strokeWidth: 3, strokeColor: '#ffffff' },
                 data: { type: 'investment', startup: startup, investor: investor }
               });
             });
@@ -665,7 +867,7 @@
                     color: { background: nodeColors.dynasty },
                     size: 25,
                     shape: 'dot',
-                    font: { size: 12 },
+                    font: { size: 14, face: 'Source Sans Pro', bold: true },
                     data: { type: 'dynasty', item: dynastyNode }
                   });
                 }
@@ -676,9 +878,10 @@
                   from: nodeId,
                   to: dynastyNodeId,
                   color: { color: '#FFD700', highlight: '#FFD700' },
-                  width: 4,
+                  width: 5,
                   dashes: true,
                   label: 'Dynasty Connection',
+                  font: { size: 13, bold: true, color: '#1a1a1a', strokeWidth: 3, strokeColor: '#ffffff' },
                   data: { type: 'dynasty_connection', startup: startup, dynasty: dynastyNode }
                 });
               }
@@ -720,7 +923,7 @@
                     color: { background: '#8b008b' },
                     size: 24,
                     shape: 'diamond',
-                    font: { size: 11 },
+                    font: { size: 13, face: 'Source Sans Pro', bold: true },
                     data: { type: 'business', item: businessNode, businessType: businessType }
                   });
                 }
@@ -731,9 +934,10 @@
                   from: nodeId,
                   to: businessNodeId,
                   color: { color: '#FFD700', highlight: '#FFD700' },
-                  width: 4,
+                  width: 5,
                   dashes: true,
                   label: 'Business Network',
+                  font: { size: 13, bold: true, color: '#1a1a1a', strokeWidth: 3, strokeColor: '#ffffff' },
                   data: { type: 'business_connection', startup: startup, business: businessNode }
                 });
               }
@@ -758,7 +962,7 @@
                       color: { background: '#9b59b6' },
                       size: 22,
                       shape: 'triangle',
-                      font: { size: 11 },
+                    font: { size: 13, face: 'Source Sans Pro', bold: true },
                       data: { type: 'elite_school', item: school }
                     });
                   }
@@ -769,9 +973,10 @@
                     from: nodeId,
                     to: schoolNodeId,
                     color: { color: '#FFD700', highlight: '#FFD700' },
-                    width: 4,
+                    width: 5,
                     dashes: true,
                     label: 'Elite School',
+                    font: { size: 13, bold: true, color: '#1a1a1a', strokeWidth: 3, strokeColor: '#ffffff' },
                     data: { type: 'elite_school_connection', startup: startup, school: school }
                   });
                 }
@@ -801,7 +1006,7 @@
                           color: { background: nodeColors.dynasty },
                           size: 25,
                           shape: 'dot',
-                          font: { size: 12 },
+                          font: { size: 14, face: 'Source Sans Pro', bold: true },
                           data: { type: 'dynasty', item: dynastyNode }
                         });
                       }
@@ -812,9 +1017,10 @@
                         from: founderId,
                         to: dynastyNodeId,
                         color: { color: '#FFD700', highlight: '#FFD700' },
-                        width: 3,
+                        width: 4,
                         dashes: true,
                         label: 'Dynasty',
+                        font: { size: 13, bold: true, color: '#1a1a1a', strokeWidth: 3, strokeColor: '#ffffff' },
                         data: { type: 'founder_dynasty_connection', founder: founder, dynasty: dynastyNode }
                       });
                     }
@@ -838,7 +1044,7 @@
                             color: { background: '#9b59b6' },
                             size: 22,
                             shape: 'triangle',
-                            font: { size: 11 },
+                            font: { size: 13, face: 'Source Sans Pro', bold: true },
                             data: { type: 'elite_school', item: school }
                           });
                         }
@@ -849,9 +1055,10 @@
                           from: founderId,
                           to: schoolNodeId,
                           color: { color: '#FFD700', highlight: '#FFD700' },
-                          width: 3,
+                          width: 4,
                           dashes: true,
                           label: 'Elite School',
+                          font: { size: 13, bold: true, color: '#1a1a1a', strokeWidth: 3, strokeColor: '#ffffff' },
                           data: { type: 'founder_elite_school_connection', founder: founder, school: school }
                         });
                       }
@@ -861,6 +1068,154 @@
               }
             });
           }
+        });
+      }
+
+      // Add VC/Investor organization nodes
+      if (startupData.investors_vcs && startupData.investors_vcs.length > 0) {
+        startupData.investors_vcs.forEach(vc => {
+          const nodeId = vc.vc_id;
+          nodeMap.set(nodeId, { type: 'vc', data: vc });
+          
+          const focusSectors = vc.focus_sectors && vc.focus_sectors.length > 0 
+            ? `\nFocus: ${vc.focus_sectors.slice(0, 3).join(', ')}` 
+            : '';
+          
+          allNodes.push({
+            id: nodeId,
+            label: vc.name,
+            title: `${vc.name}\nType: ${vc.type || 'VC'}\nFounded: ${vc.founded || 'N/A'}${focusSectors}`,
+            color: { 
+              background: '#c44900',
+              border: '#fff',
+              highlight: { background: '#c44900', border: '#FFD700' }
+            },
+            size: 28,
+            shape: 'diamond',
+            font: { size: 14, face: 'Source Sans Pro', bold: true, color: '#ffffff' },
+            data: { type: 'vc', item: vc }
+          });
+        });
+      }
+
+      // Add International VCs
+      if (startupData.international_vcs && startupData.international_vcs.length > 0) {
+        startupData.international_vcs.forEach(vc => {
+          const nodeId = vc.vc_id;
+          nodeMap.set(nodeId, { type: 'international_vc', data: vc });
+          
+          const focusSectors = vc.focus_sectors && vc.focus_sectors.length > 0 
+            ? `\nFocus: ${vc.focus_sectors.slice(0, 3).join(', ')}` 
+            : '';
+          
+          allNodes.push({
+            id: nodeId,
+            label: vc.name + ' 🌍',
+            title: `${vc.name}\nType: ${vc.type || 'VC'} (International)\nLocation: ${vc.location}\nFounded: ${vc.founded || 'N/A'}${focusSectors}`,
+            color: { 
+              background: '#2b7a6d',
+              border: '#fff',
+              highlight: { background: '#2b7a6d', border: '#FFD700' }
+            },
+            size: 26,
+            shape: 'diamond',
+            font: { size: 13, face: 'Source Sans Pro', bold: true, color: '#ffffff' },
+            data: { type: 'international_vc', item: vc }
+          });
+
+          // Add edges to portfolio startups
+          if (vc.portfolio_startups && vc.portfolio_startups.length > 0) {
+            vc.portfolio_startups.forEach(startupId => {
+              if (nodeMap.has(startupId)) {
+                allEdges.push({
+                  id: `${nodeId}-${startupId}`,
+                  from: nodeId,
+                  to: startupId,
+                  color: { color: '#2b7a6d' },
+                  width: 4,
+                  label: 'Invested',
+                  font: { size: 13, bold: true, color: '#1a1a1a', strokeWidth: 3, strokeColor: '#ffffff' },
+                  data: { type: 'investment', investor: vc, startup: startupId }
+                });
+              }
+            });
+          }
+
+          // Add edges to Philippine connections
+          if (vc.philippine_connections && vc.philippine_connections.length > 0) {
+            vc.philippine_connections.forEach(startupName => {
+              // Try to find startup by name
+              const startup = startupData.startups.find(s => s.name === startupName);
+              if (startup && nodeMap.has(startup.startup_id)) {
+                const edgeId = `${nodeId}-${startup.startup_id}`;
+                // Only add if not already added
+                if (!allEdges.find(e => e.id === edgeId)) {
+                  allEdges.push({
+                    id: edgeId,
+                    from: nodeId,
+                    to: startup.startup_id,
+                    color: { color: '#2b7a6d' },
+                    width: 4,
+                    label: 'Invested',
+                    font: { size: 13, bold: true, color: '#1a1a1a', strokeWidth: 3, strokeColor: '#ffffff' },
+                    data: { type: 'investment', investor: vc, startup: startup.startup_id }
+                  });
+                }
+              }
+            });
+          }
+        });
+      }
+
+      // Add Unicorns
+      if (startupData.unicorns && startupData.unicorns.length > 0) {
+        startupData.unicorns.forEach(unicorn => {
+          const nodeId = unicorn.startup_id;
+          nodeMap.set(nodeId, { type: 'unicorn', data: unicorn });
+          
+          allNodes.push({
+            id: nodeId,
+            label: unicorn.name + ' 🦄',
+            title: `${unicorn.name} 🦄\nValuation: $${formatMoney(unicorn.valuation_usd)}\nIndustry: ${unicorn.industry}\n${unicorn.metrics && unicorn.metrics.users ? `Users: ${(unicorn.metrics.users / 1000000).toFixed(1)}M` : ''}`,
+            color: { 
+              background: '#FFD700',
+              border: '#c44900',
+              highlight: { background: '#FFD700', border: '#c44900' }
+            },
+            size: 40,
+            borderWidth: 5,
+            shape: 'star',
+            font: { size: 16, face: 'Source Sans Pro', bold: true, color: '#1a1a1a' },
+            data: { type: 'unicorn', item: unicorn }
+          });
+        });
+      }
+
+      // Add Family Offices and Venture Offices
+      if (startupData.family_offices_venture_offices && startupData.family_offices_venture_offices.length > 0) {
+        startupData.family_offices_venture_offices.forEach(office => {
+          const nodeId = office.office_id;
+          nodeMap.set(nodeId, { type: 'family_office', data: office });
+          
+          const focusSectors = office.focus_sectors && office.focus_sectors.length > 0 
+            ? `\nFocus: ${office.focus_sectors.slice(0, 3).join(', ')}` 
+            : '';
+          const familyGroup = office.family_group ? `\nFamily Group: ${office.family_group}` : '';
+          
+          allNodes.push({
+            id: nodeId,
+            label: office.name,
+            title: `${office.name}\nType: ${office.type || 'Family Office'}\nFamily: ${office.family_group || 'N/A'}${familyGroup}${focusSectors}`,
+            color: { 
+              background: '#8b008b',
+              border: '#fff',
+              highlight: { background: '#8b008b', border: '#FFD700' }
+            },
+            size: 30,
+            shape: 'hexagon',
+            font: { size: 14, face: 'Source Sans Pro', bold: true, color: '#ffffff' },
+            data: { type: 'family_office', item: office }
+          });
         });
       }
 
@@ -877,7 +1232,7 @@
             color: { background: nodeColors.organization },
             size: 24,
             shape: 'triangle',
-            font: { size: 12 },
+            font: { size: 14, face: 'Source Sans Pro', bold: true },
             data: { type: 'organization', item: org }
           });
         });
@@ -896,7 +1251,7 @@
             color: { background: nodeColors.accelerator },
             size: 22,
             shape: 'star',
-            font: { size: 11 },
+            font: { size: 13, face: 'Source Sans Pro', bold: true },
             data: { type: 'accelerator', item: acc }
           });
 
@@ -909,8 +1264,9 @@
                   from: nodeId,
                   to: startupId,
                   color: { color: nodeColors.accelerator },
-                  width: 2,
+                  width: 3,
                   label: 'Accelerated',
+                  font: { size: 13, bold: true, color: '#1a1a1a', strokeWidth: 3, strokeColor: '#ffffff' },
                   data: { type: 'acceleration', accelerator: acc, startup: startupId }
                 });
               }
@@ -933,17 +1289,97 @@
       const showInvestors = document.getElementById('showInvestors').checked;
       const showOrganizations = document.getElementById('showOrganizations').checked;
       const sectorFilter = document.getElementById('filterSector').value;
+      const viewFilter = document.getElementById('filterView').value;
+      const showMoversShakers = document.getElementById('showMoversShakers').checked;
 
       // Filter nodes by type
       filteredNodes = filteredNodes.filter(node => {
-        if (node.data.type === 'startup' && !showStartups) return false;
+        if ((node.data.type === 'startup' || node.data.type === 'unicorn') && !showStartups) return false;
         if (node.data.type === 'founder' && !showFounders) return false;
-        if (node.data.type === 'investor' && !showInvestors) return false;
+        if ((node.data.type === 'investor' || node.data.type === 'vc' || node.data.type === 'family_office' || node.data.type === 'international_vc') && !showInvestors) return false;
         if ((node.data.type === 'organization' || node.data.type === 'accelerator') && !showOrganizations) return false;
         
-        // Filter by sector
+        // Timeline filter (by founding year)
+        if (viewFilter === 'by-year') {
+          const year = parseInt(document.getElementById('yearFilter').value);
+          if (node.data.type === 'startup' || node.data.type === 'unicorn') {
+            const founded = node.data.item.founded;
+            if (founded && founded > year) return false;
+          }
+        }
+        
+        // Unicorns only filter
+        if (viewFilter === 'unicorns') {
+          if (node.data.type !== 'unicorn') {
+            // Also show investors connected to unicorns
+            const isConnectedToUnicorn = filteredEdges.some(e => 
+              (e.from === node.id || e.to === node.id) && 
+              (filteredNodes.find(n => n.id === (e.from === node.id ? e.to : e.from))?.data?.type === 'unicorn')
+            );
+            return isConnectedToUnicorn;
+          }
+          return true;
+        }
+        
+        // Filter by sector/industry
         if (sectorFilter !== 'all' && node.data.type === 'startup') {
-          return node.data.item.sector === sectorFilter;
+          const startup = node.data.item;
+          const matchesSector = startup.sector === sectorFilter;
+          const matchesIndustry = startup.industry && startup.industry.toLowerCase() === sectorFilter.toLowerCase();
+          return matchesSector || matchesIndustry;
+        }
+        
+        // View filters
+        if (viewFilter === 'investors') {
+          // Show only investors and their connected startups
+          if (node.data.type === 'investor') return true;
+          if (node.data.type === 'startup') {
+            // Check if this startup has investors
+            const hasInvestors = filteredEdges.some(e => e.to === node.id && e.data && e.data.type === 'investment');
+            return hasInvestors;
+          }
+          return false;
+        }
+        
+        if (viewFilter === 'founders') {
+          // Show only founders and their startups
+          if (node.data.type === 'founder') return true;
+          if (node.data.type === 'startup') {
+            // Check if this startup has founders
+            const hasFounders = filteredEdges.some(e => e.from === node.id && e.data && e.data.type === 'founder_connection');
+            return hasFounders;
+          }
+          return false;
+        }
+        
+        if (viewFilter === 'power-players') {
+          // Show only power players (investors with 2+ investments, serial founders, or those with connections)
+          if (node.data.type === 'investor' && node.data.isPowerPlayer) return true;
+          if (node.data.type === 'founder' && node.data.isPowerPlayer) return true;
+          if (node.data.type === 'startup' && node.data.hasPowerConnections) return true;
+          // Also show startups connected to power players
+          if (node.data.type === 'startup') {
+            const connectedToPowerPlayer = filteredEdges.some(e => 
+              (e.from === node.id || e.to === node.id) && 
+              (filteredNodes.find(n => n.id === (e.from === node.id ? e.to : e.from))?.data?.isPowerPlayer)
+            );
+            return connectedToPowerPlayer;
+          }
+          return false;
+        }
+        
+        // Movers & Shakers highlight
+        if (showMoversShakers) {
+          if (node.data.type === 'investor' && node.data.isPowerPlayer) {
+            node.size = (node.size || 22) * 1.3;
+            node.font.size = (node.font.size || 13) + 3;
+            node.font.bold = true;
+          }
+          if (node.data.type === 'founder' && node.data.isPowerPlayer) {
+            node.size = (node.size || 20) * 1.3;
+            node.font.size = (node.font.size || 14) + 3;
+            node.font.bold = true;
+          }
         }
         
         return true;
@@ -964,7 +1400,7 @@
             return {
               ...node,
               size: (node.size || 20) * 1.5,
-              font: { ...node.font, size: (node.font.size || 12) + 2 }
+              font: { ...node.font, size: (node.font.size || 14) + 3, bold: true }
             };
           }
           return node;
@@ -994,14 +1430,31 @@
         nodes: {
           borderWidth: 2,
           borderColor: '#fff',
-          font: { size: 12, face: 'Source Sans Pro' },
-          shadow: true
+          font: { 
+            size: 14, 
+            face: 'Source Sans Pro',
+            bold: true,
+            color: '#1a1a1a',
+            strokeWidth: 2,
+            strokeColor: '#ffffff'
+          },
+          shadow: true,
+          labelHighlightBold: true
         },
         edges: {
-          arrows: { to: { enabled: true, scaleFactor: 0.5 } },
+          arrows: { to: { enabled: true, scaleFactor: 0.6 } },
           smooth: { type: 'continuous' },
-          font: { size: 10, align: 'middle' },
-          shadow: true
+          font: { 
+            size: 13, 
+            align: 'middle',
+            face: 'Source Sans Pro',
+            bold: true,
+            color: '#333333',
+            strokeWidth: 3,
+            strokeColor: '#ffffff'
+          },
+          shadow: true,
+          width: 3
         },
         physics: {
           stabilization: { iterations: 200 },
@@ -1057,10 +1510,22 @@
         const hasAnyConnection = hasDynasty || hasBusiness || hasEliteSchool || foundersWithConnections;
         
         html = `<h3>${item.name}${hasAnyConnection ? ' ⭐' : ''}</h3>`;
+        
+        // Industry/Sector badge
+        const industry = item.industry || item.sector;
+        if (industry) {
+          html += `<p style="margin-bottom: 8px;"><span style="display: inline-block; background: #e8f4f8; color: #0038A8; padding: 4px 10px; border-radius: 12px; font-size: 12px; font-weight: 600;">${industry}</span></p>`;
+        }
+        
         html += `<p><strong>Sector:</strong> ${item.sector}</p>`;
         html += `<p><strong>Founded:</strong> ${item.founded}</p>`;
         html += `<p><strong>Status:</strong> ${item.status}</p>`;
         html += `<p><strong>Location:</strong> ${item.headquarters.city}, ${item.headquarters.region}</p>`;
+        
+        // Website link
+        if (item.website) {
+          html += `<p style="margin-top: 12px;"><a href="${item.website}" target="_blank" rel="noopener" style="color: #0038A8; text-decoration: underline; font-weight: 600;">🌐 Visit Website →</a></p>`;
+        }
         
         // Highlight power structure connections prominently
         if (hasAnyConnection) {
@@ -1118,21 +1583,38 @@
           html += `<div class="value">${item.description}</div>`;
         }
 
-        if (item.funding && item.funding.total_raised_usd) {
+        if (item.funding) {
           html += `<div class="label">Funding</div>`;
-          html += `<div class="value">Total Raised: $${formatMoney(item.funding.total_raised_usd)}</div>`;
-          if (item.funding.latest_round) {
-            html += `<div class="value" style="font-size: 12px; color: #666;">Latest: ${item.funding.latest_round}</div>`;
+          if (item.funding.total_raised_usd) {
+            html += `<div class="value">Total Raised: <strong style="color: #0038A8;">$${formatMoney(item.funding.total_raised_usd)}</strong></div>`;
           }
-        } else if (item.funding && item.funding.latest_round) {
-          html += `<div class="label">Funding</div>`;
-          html += `<div class="value">Latest Round: ${item.funding.latest_round}</div>`;
+          if (item.funding.valuation_usd) {
+            html += `<div class="value">Current Valuation: <strong style="color: #c44900;">$${formatMoney(item.funding.valuation_usd)}</strong></div>`;
+          }
+          if (item.funding.latest_round) {
+            html += `<div class="value" style="font-size: 12px; color: #666;">Latest: ${item.funding.latest_round}${item.funding.latest_round_date ? ` (${item.funding.latest_round_date})` : ''}</div>`;
+          }
+          
+          // Show funding rounds if available
+          if (item.funding.funding_rounds && item.funding.funding_rounds.length > 0) {
+            html += `<div class="label" style="margin-top: 12px;">Funding History</div>`;
+            html += `<div class="value" style="font-size: 12px;">`;
+            item.funding.funding_rounds.forEach((round, idx) => {
+              html += `<div style="margin: 4px 0; padding: 6px; background: #f5f5f5; border-radius: 4px;">`;
+              html += `<strong>${round.round}</strong> (${round.date}): $${formatMoney(round.amount_usd)}`;
+              if (round.lead_investor) {
+                html += `<br><span style="color: #666; font-size: 11px;">Lead: ${round.lead_investor}</span>`;
+              }
+              html += `</div>`;
+            });
+            html += `</div>`;
+          }
         }
 
         if (item.metrics) {
           html += `<div class="label">Metrics</div>`;
           if (item.metrics.users) {
-            html += `<div class="value">Users: ${item.metrics.users.toLocaleString()}</div>`;
+            html += `<div class="value">Users: <strong>${item.metrics.users.toLocaleString()}</strong></div>`;
           }
           if (item.metrics.employees) {
             html += `<div class="value">Employees: ${item.metrics.employees}</div>`;
@@ -1140,9 +1622,54 @@
           if (item.metrics.locations) {
             html += `<div class="value">Locations: ${item.metrics.locations}</div>`;
           }
+          if (item.metrics.revenue_usd) {
+            html += `<div class="value">Revenue: <strong style="color: #0b6e4f;">$${formatMoney(item.metrics.revenue_usd)}</strong></div>`;
+          }
+          if (item.metrics.growth_rate) {
+            html += `<div class="value">Growth Rate: <strong style="color: #0b6e4f;">${(item.metrics.growth_rate * 100).toFixed(0)}%</strong></div>`;
+          }
+          if (item.metrics.merchants) {
+            html += `<div class="value">Merchants: ${item.metrics.merchants.toLocaleString()}</div>`;
+          }
+          if (item.metrics.farmers_connected) {
+            html += `<div class="value">Farmers Connected: ${item.metrics.farmers_connected.toLocaleString()}</div>`;
+          }
+          if (item.metrics.doctors_connected) {
+            html += `<div class="value">Doctors: ${item.metrics.doctors_connected.toLocaleString()}</div>`;
+          }
+          if (item.metrics.riders) {
+            html += `<div class="value">Riders: ${item.metrics.riders.toLocaleString()}</div>`;
+          }
+          if (item.metrics.sari_sari_stores) {
+            html += `<div class="value">Sari-Sari Stores: ${item.metrics.sari_sari_stores.toLocaleString()}</div>`;
+          }
+          if (item.metrics.schools_listed) {
+            html += `<div class="value">Schools Listed: ${item.metrics.schools_listed.toLocaleString()}</div>`;
+          }
           if (item.metrics.markets && item.metrics.markets.length > 0) {
             html += `<div class="value" style="font-size: 12px; color: #666;">Markets: ${item.metrics.markets.join(', ')}</div>`;
           }
+        }
+        
+        // Show exit information if available
+        if (item.exit) {
+          html += `<div class="label" style="margin-top: 12px; border-top: 2px solid #0b6e4f; padding-top: 12px; color: #0b6e4f; font-size: 13px;">✅ EXIT EVENT</div>`;
+          html += `<div class="value">`;
+          html += `<strong>Type:</strong> ${item.exit.exit_type}<br>`;
+          if (item.exit.exit_date) {
+            html += `<strong>Date:</strong> ${item.exit.exit_date}<br>`;
+          }
+          if (item.exit.acquirer) {
+            html += `<strong>Acquirer:</strong> ${item.exit.acquirer}`;
+            if (item.exit.acquirer_country) {
+              html += ` (${item.exit.acquirer_country})`;
+            }
+            html += `<br>`;
+          }
+          if (item.exit.exit_value_usd) {
+            html += `<strong>Exit Value:</strong> $${formatMoney(item.exit.exit_value_usd)}`;
+          }
+          html += `</div>`;
         }
 
         if (item.founders && item.founders.length > 0) {
@@ -1155,15 +1682,66 @@
           });
           html += `</ul>`;
         }
+      } else if (nodeData.type === 'unicorn') {
+        html = `<h3>${item.name} 🦄</h3>`;
+        html += `<p><strong>Status:</strong> Unicorn (${item.unicorn_date || 'N/A'})</p>`;
+        if (item.valuation_usd) {
+          html += `<p><strong>Valuation:</strong> <span style="color: #FFD700; font-weight: 700;">$${formatMoney(item.valuation_usd)}</span></p>`;
+        }
+        html += `<p><strong>Industry:</strong> ${item.industry}</p>`;
+        if (item.parent_company) {
+          html += `<p><strong>Parent Company:</strong> ${item.parent_company}</p>`;
+        }
+        if (item.family_group) {
+          html += `<p><strong>Family Group:</strong> <span style="color: #8b008b;">${item.family_group}</span></p>`;
+        }
+        if (item.description) {
+          html += `<div class="label" style="margin-top: 12px;">Description</div>`;
+          html += `<div class="value">${item.description}</div>`;
+        }
+        if (item.metrics) {
+          html += `<div class="label" style="margin-top: 12px;">Metrics</div>`;
+          if (item.metrics.users) {
+            html += `<div class="value">Users: ${(item.metrics.users / 1000000).toFixed(1)}M</div>`;
+          }
+          if (item.metrics.merchants) {
+            html += `<div class="value">Merchants: ${item.metrics.merchants.toLocaleString()}</div>`;
+          }
+        }
+        if (item.website) {
+          html += `<p style="margin-top: 12px;"><a href="${item.website}" target="_blank" rel="noopener" style="color: #FFD700; text-decoration: underline; font-weight: 600;">🌐 Visit Website →</a></p>`;
+        }
       } else if (nodeData.type === 'founder') {
         const founderHasDynasty = item.dynasty_connections && item.dynasty_connections.length > 0;
         const founderHasSchool = item.elite_school_connections && item.elite_school_connections.length > 0;
         const founderHasConnections = founderHasDynasty || founderHasSchool;
+        const startupCount = nodeData.startupCount || 1;
+        const isSerialFounder = startupCount >= 2;
+        const isPowerPlayer = nodeData.isPowerPlayer || false;
+        const founderId = `founder_${item.name.replace(/\s+/g, '_')}`;
+        const stats = founderStats.get(founderId);
         
-        html = `<h3>${item.name}${founderHasConnections ? ' ⭐' : ''}</h3>`;
+        html = `<h3>${item.name}${isPowerPlayer ? ' 🔥' : founderHasConnections ? ' ⭐' : ''}</h3>`;
         html += `<p><strong>Role:</strong> ${item.role || 'Founder'}</p>`;
+        html += `<p><strong>Startups Founded:</strong> ${startupCount}</p>`;
         if (item.background) {
           html += `<p><strong>Background:</strong> ${item.background}</p>`;
+        }
+        
+        if (isPowerPlayer) {
+          html += `<div class="label" style="margin-top: 12px; border-top: 2px solid #FFD700; padding-top: 12px; color: #c44900; font-size: 13px;">🔥 MOVER & SHAKER</div>`;
+          if (isSerialFounder) {
+            html += `<div class="value" style="font-size: 12px; margin-top: 8px;">Serial founder with multiple startups</div>`;
+          }
+        }
+        
+        if (stats && stats.startups.length > 0) {
+          html += `<div class="label" style="margin-top: ${isPowerPlayer ? '16px' : '12px'};">Founded Companies</div>`;
+          html += `<ul>`;
+          stats.startups.forEach(startup => {
+            html += `<li><a href="#" onclick="focusStartup('${startup.startup_id}'); return false;" style="color: #0038A8; text-decoration: underline; cursor: pointer;">${startup.name}</a> (${startup.sector})</li>`;
+          });
+          html += `</ul>`;
         }
         
         // Highlight founder connections
@@ -1189,9 +1767,113 @@
             html += `</div>`;
           }
         }
-      } else if (nodeData.type === 'investor') {
+      } else if (nodeData.type === 'international_vc') {
+        html = `<h3>${item.name} 🌍</h3>`;
+        html += `<p><strong>Type:</strong> ${item.type || 'Venture Capital'} (International)</p>`;
+        html += `<p><strong>Location:</strong> ${item.location}</p>`;
+        if (item.founded) {
+          html += `<p><strong>Founded:</strong> ${item.founded}</p>`;
+        }
+        if (item.description) {
+          html += `<div class="label" style="margin-top: 12px;">Description</div>`;
+          html += `<div class="value">${item.description}</div>`;
+        }
+        if (item.focus_sectors && item.focus_sectors.length > 0) {
+          html += `<div class="label" style="margin-top: 12px;">Focus Sectors</div>`;
+          html += `<div class="value">`;
+          item.focus_sectors.forEach(sector => {
+            html += `<span style="display: inline-block; background: #f5f5f5; color: #2b7a6d; padding: 3px 8px; border-radius: 8px; font-size: 11px; margin: 2px 4px 2px 0;">${sector}</span>`;
+          });
+          html += `</div>`;
+        }
+        if (item.philippine_connections && item.philippine_connections.length > 0) {
+          html += `<div class="label" style="margin-top: 12px;">Philippine Portfolio</div>`;
+          html += `<ul>`;
+          item.philippine_connections.forEach(startupName => {
+            html += `<li>${startupName}</li>`;
+          });
+          html += `</ul>`;
+        }
+        if (item.website) {
+          html += `<p style="margin-top: 12px;"><a href="${item.website}" target="_blank" rel="noopener" style="color: #2b7a6d; text-decoration: underline; font-weight: 600;">🌐 Visit Website →</a></p>`;
+        }
+      } else if (nodeData.type === 'vc') {
         html = `<h3>${item.name}</h3>`;
+        html += `<p><strong>Type:</strong> ${item.type || 'Venture Capital'}</p>`;
+        if (item.founded) {
+          html += `<p><strong>Founded:</strong> ${item.founded}</p>`;
+        }
+        if (item.location) {
+          html += `<p><strong>Location:</strong> ${item.location}</p>`;
+        }
+        if (item.description) {
+          html += `<div class="label" style="margin-top: 12px;">Description</div>`;
+          html += `<div class="value">${item.description}</div>`;
+        }
+        if (item.focus_sectors && item.focus_sectors.length > 0) {
+          html += `<div class="label" style="margin-top: 12px;">Focus Sectors</div>`;
+          html += `<div class="value">`;
+          item.focus_sectors.forEach(sector => {
+            html += `<span style="display: inline-block; background: #f5f5f5; color: #c44900; padding: 3px 8px; border-radius: 8px; font-size: 11px; margin: 2px 4px 2px 0;">${sector}</span>`;
+          });
+          html += `</div>`;
+        }
+        if (item.website) {
+          html += `<p style="margin-top: 12px;"><a href="${item.website}" target="_blank" rel="noopener" style="color: #c44900; text-decoration: underline; font-weight: 600;">🌐 Visit Website →</a></p>`;
+        }
+      } else if (nodeData.type === 'family_office') {
+        html = `<h3>${item.name}</h3>`;
+        html += `<p><strong>Type:</strong> ${item.type || 'Family Office'}</p>`;
+        if (item.family_group) {
+          html += `<p><strong>Family Group:</strong> <span style="color: #8b008b; font-weight: 600;">${item.family_group}</span></p>`;
+        }
+        if (item.parent_company) {
+          html += `<p><strong>Parent Company:</strong> ${item.parent_company}</p>`;
+        }
+        if (item.founded) {
+          html += `<p><strong>Founded:</strong> ${item.founded}</p>`;
+        }
+        if (item.location) {
+          html += `<p><strong>Location:</strong> ${item.location}</p>`;
+        }
+        if (item.description) {
+          html += `<div class="label" style="margin-top: 12px;">Description</div>`;
+          html += `<div class="value">${item.description}</div>`;
+        }
+        if (item.focus_sectors && item.focus_sectors.length > 0) {
+          html += `<div class="label" style="margin-top: 12px;">Focus Sectors</div>`;
+          html += `<div class="value">`;
+          item.focus_sectors.forEach(sector => {
+            html += `<span style="display: inline-block; background: #f5f5f5; color: #8b008b; padding: 3px 8px; border-radius: 8px; font-size: 11px; margin: 2px 4px 2px 0;">${sector}</span>`;
+          });
+          html += `</div>`;
+        }
+        if (item.website) {
+          html += `<p style="margin-top: 12px;"><a href="${item.website}" target="_blank" rel="noopener" style="color: #8b008b; text-decoration: underline; font-weight: 600;">🌐 Visit Website →</a></p>`;
+        }
+      } else if (nodeData.type === 'investor') {
+        const investmentCount = nodeData.investmentCount || 0;
+        const isPowerPlayer = nodeData.isPowerPlayer || false;
+        const investorId = `investor_${item.name.replace(/\s+/g, '_')}`;
+        const stats = investorStats.get(investorId);
+        
+        html = `<h3>${item.name}${isPowerPlayer ? ' 🔥' : ''}</h3>`;
         html += `<p><strong>Type:</strong> ${item.type || 'Investor'}</p>`;
+        html += `<p><strong>Investments:</strong> ${investmentCount} startup${investmentCount !== 1 ? 's' : ''}</p>`;
+        
+        if (isPowerPlayer) {
+          html += `<div class="label" style="margin-top: 12px; border-top: 2px solid #FFD700; padding-top: 12px; color: #c44900; font-size: 13px;">🔥 MOVER & SHAKER</div>`;
+          html += `<div class="value" style="font-size: 12px; margin-top: 8px;">Active investor with multiple portfolio companies</div>`;
+        }
+        
+        if (stats && stats.startups.length > 0) {
+          html += `<div class="label" style="margin-top: ${isPowerPlayer ? '16px' : '12px'};">Portfolio</div>`;
+          html += `<ul>`;
+          stats.startups.forEach(startup => {
+            html += `<li><a href="#" onclick="focusStartup('${startup.startup_id}'); return false;" style="color: #0038A8; text-decoration: underline; cursor: pointer;">${startup.name}</a> (${startup.sector})</li>`;
+          });
+          html += `</ul>`;
+        }
       } else if (nodeData.type === 'organization') {
         html = `<h3>${item.name}</h3>`;
         html += `<p><strong>Type:</strong> ${item.type}</p>`;
@@ -1235,8 +1917,18 @@
       document.getElementById('infoPanel').classList.remove('visible');
     }
 
+    function focusStartup(startupId) {
+      const node = allNodes.find(n => n.id === startupId);
+      if (node && network) {
+        network.selectNodes([startupId]);
+        network.focus(startupId, { animation: true, scale: 1.5 });
+        showInfoPanel({ type: 'startup', item: node.data.item });
+      }
+    }
+
     function updateStats() {
       const startups = allNodes.filter(n => n.data.type === 'startup').length;
+      const unicorns = allNodes.filter(n => n.data.type === 'unicorn').length;
       const founders = allNodes.filter(n => n.data.type === 'founder').length;
       const connections = allEdges.length;
       const stats = startupData.metadata.ecosystem_stats;
@@ -1245,13 +1937,17 @@
       const growthRate = stats.manila_growth_cagr;
       const globalRank = stats.global_ranking;
 
-      document.getElementById('startupCount').textContent = `Startups: ${startups}`;
+      document.getElementById('startupCount').textContent = `Startups: ${startups}${unicorns > 0 ? ` (${unicorns} 🦄)` : ''}`;
       document.getElementById('founderCount').textContent = `Founders: ${founders}`;
       document.getElementById('connectionCount').textContent = `Connections: ${connections}`;
       document.getElementById('ecosystemValue').innerHTML = `Manila Ecosystem: <span class="highlight">$${formatMoney(ecosystemValue)}</span>`;
       
       if (globalRank) {
-        document.getElementById('globalRanking').innerHTML = `Global Ranking: <span class="highlight">#${globalRank}</span>`;
+        const rankingChange = stats.previous_rankings && stats.previous_rankings['2021'] 
+          ? stats.global_ranking - stats.previous_rankings['2021']
+          : 0;
+        const changeText = rankingChange > 0 ? ` (+${rankingChange} since 2021)` : rankingChange < 0 ? ` (${rankingChange} since 2021)` : '';
+        document.getElementById('globalRanking').innerHTML = `Global Ranking: <span class="highlight">#${globalRank}</span>${changeText}`;
       }
       
       if (growthRate && previousValue) {
@@ -1259,8 +1955,8 @@
         document.getElementById('growthRate').innerHTML = `Growth: <span class="growth">+${growthPercent}%</span> (${(growthRate * 100).toFixed(0)}% CAGR)`;
       }
 
-      // Update ecosystem insights
-      updateEcosystemInsights(stats);
+        // Update ecosystem insights (after stats are calculated)
+        updateEcosystemInsights(stats);
     }
 
     function updateEcosystemInsights(stats) {
@@ -1294,16 +1990,93 @@
         `;
       }
 
-      // Key Sectors
+      // Key Sectors/Industries
       if (stats.key_sectors && stats.key_sectors.length > 0) {
         html += `
           <div class="insight-section">
-            <div class="insight-title">🚀 Key Sectors</div>
+            <div class="insight-title">🚀 Key Industries</div>
             <div style="margin-top: 8px;">
               ${stats.key_sectors.map(sector => `<span class="sector-tag">${sector}</span>`).join('')}
             </div>
           </div>
         `;
+      }
+      
+      // Active VCs
+      if (startupData.investors_vcs && startupData.investors_vcs.length > 0) {
+        html += `
+          <div class="insight-section">
+            <div class="insight-title">💰 Local VCs</div>
+        `;
+        startupData.investors_vcs.forEach(vc => {
+          const focusText = vc.focus_sectors && vc.focus_sectors.length > 0 
+            ? ` - ${vc.focus_sectors.slice(0, 2).join(', ')}` 
+            : '';
+          html += `<div class="milestone">
+            <strong>${vc.name}</strong>${focusText}
+            ${vc.website ? `<br><a href="${vc.website}" target="_blank" rel="noopener" style="color: #0038A8; font-size: 10px;">Visit website →</a>` : ''}
+          </div>`;
+        });
+        html += `</div>`;
+      }
+
+      // International VCs
+      if (startupData.international_vcs && startupData.international_vcs.length > 0) {
+        html += `
+          <div class="insight-section">
+            <div class="insight-title">🌍 International VCs</div>
+        `;
+        startupData.international_vcs.forEach(vc => {
+          const focusText = vc.focus_sectors && vc.focus_sectors.length > 0 
+            ? ` - ${vc.focus_sectors.slice(0, 2).join(', ')}` 
+            : '';
+          const phConnections = vc.philippine_connections && vc.philippine_connections.length > 0
+            ? `<br><span style="color: #666; font-size: 10px;">PH: ${vc.philippine_connections.join(', ')}</span>`
+            : '';
+          html += `<div class="milestone">
+            <strong>${vc.name}</strong> (${vc.location})${focusText}${phConnections}
+            ${vc.website ? `<br><a href="${vc.website}" target="_blank" rel="noopener" style="color: #2b7a6d; font-size: 10px;">Visit website →</a>` : ''}
+          </div>`;
+        });
+        html += `</div>`;
+      }
+
+      // Family Offices & Venture Offices
+      if (startupData.family_offices_venture_offices && startupData.family_offices_venture_offices.length > 0) {
+        html += `
+          <div class="insight-section">
+            <div class="insight-title">🏛️ Family & Venture Offices</div>
+        `;
+        startupData.family_offices_venture_offices.forEach(office => {
+          const focusText = office.focus_sectors && office.focus_sectors.length > 0 
+            ? ` - ${office.focus_sectors.slice(0, 2).join(', ')}` 
+            : '';
+          const familyText = office.family_group ? ` (${office.family_group})` : '';
+          html += `<div class="milestone">
+            <strong>${office.name}</strong>${familyText}${focusText}
+            ${office.website ? `<br><a href="${office.website}" target="_blank" rel="noopener" style="color: #8b008b; font-size: 10px;">Visit website →</a>` : ''}
+          </div>`;
+        });
+        html += `</div>`;
+      }
+
+      // Unicorns
+      if (startupData.unicorns && startupData.unicorns.length > 0) {
+        html += `
+          <div class="insight-section">
+            <div class="insight-title">🦄 Unicorns (${startupData.unicorns.length})</div>
+        `;
+        startupData.unicorns.forEach(unicorn => {
+          html += `
+            <div class="milestone">
+              <strong>${unicorn.name}</strong> 🦄
+              ${unicorn.valuation_usd ? ` - $${formatMoney(unicorn.valuation_usd)}` : ''}
+              ${unicorn.metrics && unicorn.metrics.users ? ` - ${(unicorn.metrics.users / 1000000).toFixed(1)}M users` : ''}
+              ${unicorn.family_group ? `<br><span style="color: #8b008b; font-size: 10px;">${unicorn.family_group} Group</span>` : ''}
+            </div>
+          `;
+        });
+        html += `</div>`;
       }
 
       // Regional Hubs
@@ -1316,21 +2089,60 @@
           if (hub.ecosystem_value_usd) {
             html += `
               <div class="milestone">
-                <strong>${hub.city}</strong>: $${formatMoney(hub.ecosystem_value_usd)}
+                <strong>${hub.city}</strong> (#${hub.rankings.national}): $${formatMoney(hub.ecosystem_value_usd)}
                 ${hub.growth_cagr ? ` (${(hub.growth_cagr * 100).toFixed(0)}% CAGR)` : ''}
+                ${hub.rankings && hub.rankings.global_bracket ? ` - Global ${hub.rankings.global_bracket}` : ''}
                 ${hub.rankings && hub.rankings.global ? ` - Global #${hub.rankings.global}` : ''}
               </div>
             `;
           } else if (hub.growth_rate) {
             html += `
               <div class="milestone">
-                <strong>${hub.city}</strong>: ${(hub.growth_rate * 100).toFixed(0)}% growth rate
+                <strong>${hub.city}</strong> (#${hub.rankings.national}): ${(hub.growth_rate * 100).toFixed(0)}% growth
                 ${hub.rankings && hub.rankings.global ? ` - Global #${hub.rankings.global}` : ''}
+                ${hub.rankings && hub.rankings.global_rank_change ? ` (${hub.rankings.global_rank_change})` : ''}
+              </div>
+            `;
+          } else {
+            html += `
+              <div class="milestone">
+                <strong>${hub.city}</strong> (#${hub.rankings.national})
               </div>
             `;
           }
         });
         html += `</div>`;
+      }
+
+      // Funding Trends
+      if (stats.capital_raised_change_2025 !== undefined) {
+        html += `
+          <div class="insight-section">
+            <div class="insight-title">📊 2025 Funding Trends</div>
+            <div class="insight-value" style="color: ${stats.capital_raised_change_2025 < 0 ? '#c44900' : '#0b6e4f'};">
+              ${(stats.capital_raised_change_2025 * 100).toFixed(0)}% Capital Change
+            </div>
+            <div class="insight-detail">
+              ${stats.deal_volume_change_2025 ? `Deal volume: ${(stats.deal_volume_change_2025 * 100).toFixed(0)}%` : 'Global liquidity constraints affecting deal flow'}
+            </div>
+          </div>
+        `;
+      }
+
+      // Ranking Trend
+      if (stats.previous_rankings) {
+        const rankingChange = stats.global_ranking - (stats.previous_rankings['2021'] || stats.global_ranking);
+        html += `
+          <div class="insight-section">
+            <div class="insight-title">📉 Global Ranking Trend</div>
+            <div class="insight-value" style="color: ${rankingChange > 0 ? '#c44900' : '#0b6e4f'};">
+              #${stats.global_ranking} (${rankingChange > 0 ? '+' : ''}${rankingChange} since 2021)
+            </div>
+            <div class="insight-detail">
+              ${stats.ranking_trend ? stats.ranking_trend.replace(/_/g, ' ') : 'Infrastructure and regulatory challenges'}
+            </div>
+          </div>
+        `;
       }
 
       // Key Milestones
@@ -1363,6 +2175,130 @@
         html += `</div>`;
       }
 
+      // Movers & Shakers: Top Investors
+      if (investorStats.size > 0) {
+        const topInvestors = Array.from(investorStats.entries())
+          .sort((a, b) => b[1].count - a[1].count)
+          .slice(0, 5);
+        
+        html += `
+          <div class="insight-section">
+            <div class="insight-title">💰 Movers & Shakers: Top Investors</div>
+        `;
+        topInvestors.forEach(([investorId, stats]) => {
+          const investorName = stats.investor.name;
+          const isPowerPlayer = stats.count >= 2;
+          html += `<div class="milestone">
+            <strong>${investorName}${isPowerPlayer ? ' 🔥' : ''}</strong>: ${stats.count} investment${stats.count !== 1 ? 's' : ''}
+            ${isPowerPlayer ? '<span style="color: #c44900;"> - Active Investor</span>' : ''}
+          </div>`;
+        });
+        html += `</div>`;
+      }
+
+      // Movers & Shakers: Top Founders
+      if (founderStats.size > 0) {
+        const topFounders = Array.from(founderStats.entries())
+          .sort((a, b) => b[1].count - a[1].count)
+          .slice(0, 5);
+        
+        html += `
+          <div class="insight-section">
+            <div class="insight-title">👥 Movers & Shakers: Top Founders</div>
+        `;
+        topFounders.forEach(([founderId, stats]) => {
+          const founderName = stats.founder.name;
+          const isSerialFounder = stats.count >= 2;
+          const hasConnections = stats.founder.dynasty_connections?.length > 0 || stats.founder.elite_school_connections?.length > 0;
+          const isPowerPlayer = isSerialFounder || hasConnections;
+          html += `<div class="milestone">
+            <strong>${founderName}${isPowerPlayer ? ' 🔥' : ''}</strong>: ${stats.count} startup${stats.count !== 1 ? 's' : ''}
+            ${isSerialFounder ? '<span style="color: #c44900;"> - Serial Founder</span>' : ''}
+            ${hasConnections ? '<span style="color: #0b6e4f;"> - Power Connections</span>' : ''}
+          </div>`;
+        });
+        html += `</div>`;
+      }
+
+      // Government Support
+      if (startupData.government_support && startupData.government_support.length > 0) {
+        html += `
+          <div class="insight-section">
+            <div class="insight-title">🏛️ Government Support</div>
+        `;
+        startupData.government_support.forEach(program => {
+          html += `<div class="milestone">
+            <strong>${program.name}</strong> (${program.agency})
+            ${program.website ? `<br><a href="${program.website}" target="_blank" rel="noopener" style="color: #0038A8; font-size: 10px;">Learn more →</a>` : ''}
+          </div>`;
+        });
+        html += `</div>`;
+      }
+
+      // Co-working Spaces & Incubators
+      if (startupData.co_working_spaces_incubators && startupData.co_working_spaces_incubators.length > 0) {
+        html += `
+          <div class="insight-section">
+            <div class="insight-title">🏢 Infrastructure</div>
+        `;
+        startupData.co_working_spaces_incubators.forEach(space => {
+          html += `<div class="milestone">
+            <strong>${space.name}</strong> (${space.type})
+            ${space.website ? `<br><a href="${space.website}" target="_blank" rel="noopener" style="color: #0038A8; font-size: 10px;">Visit →</a>` : ''}
+          </div>`;
+        });
+        html += `</div>`;
+      }
+
+      // Education Pipeline
+      if (startupData.education_pipeline && startupData.education_pipeline.length > 0) {
+        html += `
+          <div class="insight-section">
+            <div class="insight-title">🎓 Education Pipeline</div>
+        `;
+        startupData.education_pipeline.forEach(uni => {
+          html += `<div class="milestone">
+            <strong>${uni.name}</strong> (${uni.type})
+            ${uni.website ? `<br><a href="${uni.website}" target="_blank" rel="noopener" style="color: #0038A8; font-size: 10px;">Visit →</a>` : ''}
+          </div>`;
+        });
+        html += `</div>`;
+      }
+
+      // Regulatory Environment
+      if (startupData.regulatory_environment && startupData.regulatory_environment.length > 0) {
+        html += `
+          <div class="insight-section">
+            <div class="insight-title">⚖️ Regulatory Environment</div>
+        `;
+        startupData.regulatory_environment.forEach(regulator => {
+          html += `<div class="milestone">
+            <strong>${regulator.name}</strong> (${regulator.type})
+            ${regulator.website ? `<br><a href="${regulator.website}" target="_blank" rel="noopener" style="color: #0038A8; font-size: 10px;">Visit →</a>` : ''}
+          </div>`;
+        });
+        html += `</div>`;
+      }
+
+      // Exit Events
+      if (startupData.exits && startupData.exits.length > 0 && startupData.exits.some(e => e.startup_id)) {
+        html += `
+          <div class="insight-section">
+            <div class="insight-title">✅ Exit Events</div>
+        `;
+        startupData.exits.forEach(exit => {
+          if (exit.startup_id) {
+            html += `<div class="milestone">
+              <strong>${exit.startup_name}</strong> - ${exit.exit_type}
+              ${exit.exit_date ? ` (${exit.exit_date})` : ''}
+              ${exit.acquirer ? `<br>Acquired by: ${exit.acquirer}` : ''}
+              ${exit.exit_value_usd ? ` - $${formatMoney(exit.exit_value_usd)}` : ''}
+            </div>`;
+          }
+        });
+        html += `</div>`;
+      }
+
       // What This Answers
       html += `
         <div class="insight-section">
@@ -1377,10 +2313,19 @@
             <strong>Sector Focus:</strong> Where is innovation happening?
           </div>
           <div class="milestone">
-            <strong>Regional Hubs:</strong> Manila vs Davao ecosystem development
+            <strong>Regional Hubs:</strong> Manila, Cebu, Davao ecosystem development
           </div>
           <div class="milestone">
-            <strong>Global Position:</strong> How does Philippines rank globally?
+            <strong>Global Position:</strong> How does Philippines rank globally? (Declining trend)
+          </div>
+          <div class="milestone">
+            <strong>Movers & Shakers:</strong> Who are the key investors and founders?
+          </div>
+          <div class="milestone">
+            <strong>Unicorns:</strong> Which companies have reached $1B+ valuation?
+          </div>
+          <div class="milestone">
+            <strong>Funding Trends:</strong> Is capital flowing or declining?
           </div>
         </div>
       `;
@@ -1406,7 +2351,24 @@
     document.getElementById('showInvestors').addEventListener('change', updateNetwork);
     document.getElementById('showOrganizations').addEventListener('change', updateNetwork);
     document.getElementById('highlightPowerConnections').addEventListener('change', updateNetwork);
+    document.getElementById('showMoversShakers').addEventListener('change', updateNetwork);
     document.getElementById('filterSector').addEventListener('change', updateNetwork);
+    document.getElementById('filterView').addEventListener('change', (e) => {
+      const yearFilter = document.getElementById('yearFilter');
+      const yearDisplay = document.getElementById('yearDisplay');
+      if (e.target.value === 'by-year') {
+        yearFilter.style.display = 'inline-block';
+        yearDisplay.style.display = 'inline-block';
+      } else {
+        yearFilter.style.display = 'none';
+        yearDisplay.style.display = 'none';
+      }
+      updateNetwork();
+    });
+    document.getElementById('yearFilter').addEventListener('input', (e) => {
+      document.getElementById('yearDisplay').textContent = `Year: ${e.target.value}`;
+      updateNetwork();
+    });
     document.getElementById('resetView').addEventListener('click', () => {
       if (network) {
         network.fit({ animation: true });
