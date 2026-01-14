@@ -659,6 +659,7 @@
       const item = nodeData.item;
 
       if (nodeData.type === 'dynasty') {
+        const dynastyId = item.dynasty_id || item.name;
         html = `<h3>${item.name.replace(/_/g, ' ').replace('FAMILY', '').trim()}</h3>`;
         html += `<p><strong>Classification:</strong> ${item.classification || 'N/A'}</p>`;
         html += `<p><strong>Power Level:</strong> ${item.power_level || 'N/A'}</p>`;
@@ -666,6 +667,7 @@
           html += `<div class="label">Primary Regions</div>`;
           html += `<div class="value">${item.primary_regions.join(', ')}</div>`;
         }
+        html += `<p style="margin-top: 12px; font-size: 12px;"><a href="dynasties-network-visualization.html#dynasty-${dynastyId}" target="_blank" style="color: #0038A8; text-decoration: underline;">View in Dynasty Map →</a></p>`;
       } else if (nodeData.type === 'pba_team') {
         html = `<h3>${item.name}</h3>`;
         html += `<p><strong>Owner:</strong> ${item.owner}</p>`;
@@ -677,7 +679,7 @@
           html += `<div class="value">`;
           item.dynasty_connections.forEach(dynastyId => {
             const dynastyName = dynastyId.replace(/_/g, ' ').replace('FAMILY', '').trim();
-            html += `<a href="#" onclick="showDynastyById('${dynastyId}'); return false;">${dynastyName}</a><br>`;
+            html += `<a href="dynasties-network-visualization.html#dynasty-${dynastyId}" target="_blank" style="color: #0b6e4f; text-decoration: underline; margin-right: 8px;">${dynastyName}</a>`;
           });
           html += `</div>`;
         }
@@ -691,6 +693,7 @@
           });
           html += `</ul>`;
         }
+        html += `<p style="margin-top: 12px; font-size: 12px;"><a href="dynasties-network-visualization.html" target="_blank" style="color: #0038A8; text-decoration: underline;">View in Dynasty Map →</a></p>`;
       } else if (nodeData.type === 'conglomerate') {
         html = `<h3>${item.name}</h3>`;
         html += `<p><strong>Ownership:</strong> ${item.ownership || 'N/A'}</p>`;
@@ -705,7 +708,7 @@
           html += `<div class="value">`;
           item.dynasty_connections.forEach(dynastyId => {
             const dynastyName = dynastyId.replace(/_/g, ' ').replace('FAMILY', '').trim();
-            html += `<a href="#" onclick="showDynastyById('${dynastyId}'); return false;">${dynastyName}</a><br>`;
+            html += `<a href="dynasties-network-visualization.html#dynasty-${dynastyId}" target="_blank" style="color: #0b6e4f; text-decoration: underline; margin-right: 8px;">${dynastyName}</a>`;
           });
           html += `</div>`;
         }
@@ -719,6 +722,7 @@
           });
           html += `</ul>`;
         }
+        html += `<p style="margin-top: 12px; font-size: 12px;"><a href="startup-ecosystem-visualization.html" target="_blank" style="color: #0038A8; text-decoration: underline;">View in Startup Ecosystem →</a></p>`;
       } else if (nodeData.type === 'media') {
         html = `<h3>${item.name}</h3>`;
         html += `<p><strong>Type:</strong> ${item.type || 'N/A'}</p>`;
@@ -732,7 +736,7 @@
           html += `<div class="value">`;
           item.dynasty_connections.forEach(dynastyId => {
             const dynastyName = dynastyId.replace(/_/g, ' ').replace('FAMILY', '').trim();
-            html += `<a href="#" onclick="showDynastyById('${dynastyId}'); return false;">${dynastyName}</a><br>`;
+            html += `<a href="dynasties-network-visualization.html#dynasty-${dynastyId}" target="_blank" style="color: #0b6e4f; text-decoration: underline; margin-right: 8px;">${dynastyName}</a>`;
           });
           html += `</div>`;
         }
@@ -746,6 +750,7 @@
           });
           html += `</ul>`;
         }
+        html += `<p style="margin-top: 12px; font-size: 12px;"><a href="dynasties-network-visualization.html" target="_blank" style="color: #0038A8; text-decoration: underline;">View in Dynasty Map →</a></p>`;
       }
 
       content.innerHTML = html;

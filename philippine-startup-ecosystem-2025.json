@@ -1,0 +1,248 @@
+{
+  "metadata": {
+    "title": "Philippine Startup Ecosystem: Companies, Founders, Funding & Connections",
+    "description": "Comprehensive tracking of Philippine startups, founders, funding rounds, investors, and connections to political dynasties, business networks, and elite schools",
+    "version": "1.0",
+    "last_updated": "2026-01-09",
+    "data_scope": "initial_collection",
+    "status": "in_progress",
+    "notes": "Initial data collection. Tracking startups, funding, investors, and connections to power structures. Focus on notable startups, unicorns, and high-growth companies.",
+    "ecosystem_stats": {
+      "global_ranking": 64,
+      "ranking_trend": "declining_4_years",
+      "manila_ecosystem_value_usd": 6400000000,
+      "manila_ecosystem_value_previous_usd": 3500000000,
+      "manila_growth_cagr": 0.72,
+      "davao_growth_rate": 0.97,
+      "davao_global_ranking": 580,
+      "key_sectors": ["fintech", "e-commerce", "gaming", "edtech", "healthtech", "logistics"]
+    }
+  },
+  "startups": [
+    {
+      "startup_id": "KALIBRR",
+      "name": "Kalibrr",
+      "founded": 2012,
+      "status": "active",
+      "sector": "HR Tech / Recruitment",
+      "description": "Full-stack hiring platform connecting employers with job seekers across Southeast Asia. First Filipino company to participate in Y Combinator.",
+      "headquarters": {
+        "city": "Manila",
+        "region": "NCR"
+      },
+      "founders": [
+        {
+          "name": "Paul Rivera",
+          "role": "Co-founder & CEO",
+          "background": "Former McKinsey consultant",
+          "education": [],
+          "elite_school_connections": [],
+          "dynasty_connections": []
+        },
+        {
+          "name": "Derek Distenfeld",
+          "role": "Co-founder",
+          "background": "",
+          "education": [],
+          "elite_school_connections": [],
+          "dynasty_connections": []
+        }
+      ],
+      "funding": {
+        "total_raised_usd": null,
+        "latest_round": "Series B",
+        "latest_round_date": null,
+        "investors": [
+          {
+            "name": "Y Combinator",
+            "type": "accelerator",
+            "round": "Seed",
+            "year": 2012
+          }
+        ],
+        "valuation_usd": null
+      },
+      "metrics": {
+        "users": 6000000,
+        "employees": null,
+        "markets": ["Philippines", "Southeast Asia"]
+      },
+      "dynasty_connections": [],
+      "business_network_connections": [],
+      "elite_school_connections": [],
+      "political_connections": [],
+      "sources": [
+        "https://en.wikipedia.org/wiki/Kalibrr"
+      ],
+      "notes": "First Filipino startup in Y Combinator. Significant milestone for Philippine startup ecosystem."
+    },
+    {
+      "startup_id": "PASAJOB",
+      "name": "PasaJob",
+      "founded": 2020,
+      "status": "active",
+      "sector": "HR Tech / Recruitment",
+      "description": "Job referral platform utilizing patented long-chain technology and artificial intelligence to facilitate employment and recruitment across various industries.",
+      "headquarters": {
+        "city": "Manila",
+        "region": "NCR"
+      },
+      "founders": [
+        {
+          "name": "Research Needed",
+          "role": "Founder",
+          "background": "",
+          "education": [],
+          "elite_school_connections": [],
+          "dynasty_connections": []
+        }
+      ],
+      "funding": {
+        "total_raised_usd": null,
+        "latest_round": null,
+        "latest_round_date": null,
+        "investors": [],
+        "valuation_usd": null
+      },
+      "metrics": {
+        "users": null,
+        "employees": null,
+        "markets": ["Philippines"]
+      },
+      "dynasty_connections": [],
+      "business_network_connections": [],
+      "elite_school_connections": [],
+      "political_connections": [],
+      "sources": [
+        "https://en.wikipedia.org/wiki/PasaJob"
+      ],
+      "notes": "Patented technology for job referrals. AI-powered platform."
+    },
+    {
+      "startup_id": "PICKUP_COFFEE",
+      "name": "Pickup Coffee",
+      "founded": 2022,
+      "status": "active",
+      "sector": "F&B / Retail",
+      "description": "Philippine coffee shop chain that began as a delivery-centric venture. Rapidly expanded to multiple locations domestically and internationally (Mexico).",
+      "headquarters": {
+        "city": "Manila",
+        "region": "NCR"
+      },
+      "founders": [
+        {
+          "name": "Research Needed",
+          "role": "Founder",
+          "background": "",
+          "education": [],
+          "elite_school_connections": [],
+          "dynasty_connections": []
+        }
+      ],
+      "funding": {
+        "total_raised_usd": null,
+        "latest_round": null,
+        "latest_round_date": null,
+        "investors": [],
+        "valuation_usd": null
+      },
+      "metrics": {
+        "locations": null,
+        "employees": null,
+        "markets": ["Philippines", "Mexico"]
+      },
+      "dynasty_connections": [],
+      "business_network_connections": [],
+      "elite_school_connections": [],
+      "political_connections": [],
+      "sources": [
+        "https://en.wikipedia.org/wiki/Pickup_Coffee"
+      ],
+      "notes": "International expansion to Mexico. Delivery-first model."
+    }
+  ],
+  "organizations": [
+    {
+      "org_id": "FINTECH_ALLIANCE_PH",
+      "name": "FinTech Alliance PH",
+      "founded": 2017,
+      "type": "industry_association",
+      "description": "Non-profit industry association promoting digital innovation, financial inclusivity, and regulatory collaboration within the Philippine financial ecosystem.",
+      "focus_areas": ["fintech", "digital_innovation", "financial_inclusivity", "regulatory_collaboration"],
+      "members": [],
+      "dynasty_connections": [],
+      "business_network_connections": [],
+      "sources": [
+        "https://en.wikipedia.org/wiki/FinTech_Alliance_PH"
+      ]
+    }
+  ],
+  "accelerators_incubators": [
+    {
+      "org_id": "Y_COMBINATOR",
+      "name": "Y Combinator",
+      "type": "accelerator",
+      "description": "Silicon Valley accelerator. Kalibrr was first Filipino startup accepted.",
+      "philippine_startups": ["KALIBRR"],
+      "location": "Silicon Valley, USA",
+      "philippine_connections": []
+    }
+  ],
+  "investors_vcs": [],
+  "ecosystem_hubs": [
+    {
+      "city": "Manila",
+      "region": "NCR",
+      "ecosystem_value_usd": 6400000000,
+      "growth_cagr": 0.72,
+      "key_sectors": ["fintech", "e-commerce", "gaming"],
+      "notable_startups": ["KALIBRR", "PASAJOB", "PICKUP_COFFEE"],
+      "rankings": {
+        "national": 1,
+        "global": null
+      }
+    },
+    {
+      "city": "Davao",
+      "region": "Davao Region",
+      "ecosystem_value_usd": null,
+      "growth_rate": 0.97,
+      "key_sectors": [],
+      "notable_startups": [],
+      "rankings": {
+        "national": 3,
+        "global": 580
+      }
+    }
+  ],
+  "connections_to_power_structures": {
+    "note": "Initial data collection. Research needed to identify connections between startups, founders, and political dynasties, business networks, and elite schools.",
+    "research_priorities": [
+      "Founder backgrounds and education (elite schools)",
+      "Investor connections to political dynasties",
+      "Government contracts and regulatory relationships",
+      "Business network connections (conglomerates, media)",
+      "Family business connections"
+    ]
+  },
+  "data_collection_status": {
+    "startups": {
+      "total": 3,
+      "collected": 3,
+      "needs_research": 3
+    },
+    "organizations": {
+      "total": 1,
+      "collected": 1
+    },
+    "next_steps": [
+      "Research founder backgrounds and education",
+      "Identify funding rounds and investors",
+      "Map connections to political dynasties",
+      "Link to elite schools network",
+      "Add more notable startups (fintech, e-commerce, gaming)",
+      "Research accelerator and incubator programs in Philippines",
+      "Identify venture capital firms investing in Philippine startups"
+    ]
+  }
+}

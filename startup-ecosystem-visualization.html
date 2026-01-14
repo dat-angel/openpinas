@@ -1,0 +1,1425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Philippine Startup Ecosystem - OpenPinas</title>
+  <script src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;500;600;700&family=Source+Serif+Pro:wght@400;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #f5f5f5;
+      color: #1a1a1a;
+    }
+
+    header {
+      background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+      color: white;
+      padding: 24px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .header-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 12px;
+    }
+
+    .header-top a {
+      color: white;
+      text-decoration: none;
+      font-size: 20px;
+      font-weight: 600;
+    }
+
+    .header-top a:hover {
+      text-decoration: underline;
+    }
+
+    .last-updated {
+      font-size: 12px;
+      opacity: 0.8;
+    }
+
+    h1 {
+      font-size: 28px;
+      margin-bottom: 8px;
+    }
+
+    header p {
+      opacity: 0.9;
+      font-size: 14px;
+    }
+
+    .controls {
+      background: white;
+      padding: 16px 24px;
+      border-bottom: 1px solid #e0e0e0;
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    .controls label {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 14px;
+    }
+
+    .controls select {
+      padding: 6px 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 14px;
+    }
+
+    .controls button {
+      padding: 6px 16px;
+      background: #1a1a1a;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+
+    .controls button:hover {
+      background: #2d2d2d;
+    }
+
+    .info-panel {
+      position: fixed;
+      top: 200px;
+      right: 24px;
+      width: 360px;
+      max-height: calc(100vh - 220px);
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+      padding: 20px;
+      overflow-y: auto;
+      z-index: 1000;
+      display: none;
+    }
+
+    .info-panel.visible {
+      display: block;
+    }
+
+    .info-panel h3 {
+      margin-bottom: 12px;
+      color: #1a1a1a;
+      font-size: 18px;
+    }
+
+    .info-panel .close {
+      float: right;
+      background: none;
+      border: none;
+      font-size: 20px;
+      cursor: pointer;
+      color: #666;
+    }
+
+    .info-panel .close:hover {
+      color: #1a1a1a;
+    }
+
+    .info-panel p {
+      margin: 8px 0;
+      font-size: 14px;
+      line-height: 1.5;
+    }
+
+    .info-panel .label {
+      font-weight: 600;
+      color: #666;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-top: 12px;
+    }
+
+    .info-panel .value {
+      margin-bottom: 8px;
+      font-size: 14px;
+    }
+
+    .info-panel ul {
+      margin: 8px 0 8px 20px;
+      font-size: 14px;
+    }
+
+    .info-panel a {
+      color: #0038A8;
+      text-decoration: underline;
+      font-weight: 500;
+    }
+
+    #network-container {
+      width: 100%;
+      height: calc(100vh - 180px);
+      background: white;
+      border: 1px solid #e0e0e0;
+    }
+
+    .legend {
+      position: fixed;
+      bottom: 24px;
+      left: 24px;
+      background: white;
+      padding: 16px;
+      border-radius: 8px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+      font-size: 12px;
+      z-index: 1000;
+    }
+
+    .legend h4 {
+      margin-bottom: 12px;
+      font-size: 14px;
+    }
+
+    .legend-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin: 6px 0;
+    }
+
+    .legend-color {
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      border: 1px solid #ccc;
+    }
+
+    .legend-line {
+      width: 24px;
+      height: 2px;
+      background: #ccc;
+    }
+
+    .stats {
+      position: fixed;
+      top: 180px;
+      left: 24px;
+      background: white;
+      padding: 16px;
+      border-radius: 8px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+      font-size: 12px;
+      z-index: 1000;
+      max-width: 280px;
+    }
+
+    .stats h4 {
+      margin-bottom: 8px;
+      font-size: 14px;
+    }
+
+    .stats p {
+      margin: 4px 0;
+      font-size: 12px;
+    }
+
+    .stats .highlight {
+      color: #c44900;
+      font-weight: 600;
+    }
+
+    .stats .growth {
+      color: #0b6e4f;
+      font-weight: 600;
+    }
+
+    .ecosystem-insights {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+      font-size: 12px;
+      z-index: 1000;
+      max-width: 360px;
+      max-height: calc(100vh - 280px);
+      overflow-y: auto;
+    }
+
+    .ecosystem-insights h4 {
+      margin-bottom: 12px;
+      font-size: 16px;
+      color: #1a1a1a;
+      border-bottom: 2px solid #0038A8;
+      padding-bottom: 8px;
+    }
+
+    .ecosystem-insights .insight-section {
+      margin-bottom: 16px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid #e0e0e0;
+    }
+
+    .ecosystem-insights .insight-section:last-child {
+      border-bottom: none;
+    }
+
+    .ecosystem-insights .insight-title {
+      font-weight: 600;
+      color: #0038A8;
+      margin-bottom: 6px;
+      font-size: 13px;
+    }
+
+    .ecosystem-insights .insight-value {
+      font-size: 18px;
+      font-weight: 700;
+      color: #1a1a1a;
+      margin: 4px 0;
+    }
+
+    .ecosystem-insights .insight-detail {
+      font-size: 11px;
+      color: #666;
+      margin-top: 4px;
+    }
+
+    .ecosystem-insights .milestone {
+      background: #f5f5f5;
+      padding: 8px;
+      border-radius: 4px;
+      margin: 6px 0;
+      font-size: 11px;
+      border-left: 3px solid #0038A8;
+    }
+
+    .ecosystem-insights .sector-tag {
+      display: inline-block;
+      background: #e8f4f8;
+      color: #0038A8;
+      padding: 3px 8px;
+      border-radius: 12px;
+      font-size: 10px;
+      margin: 2px 4px 2px 0;
+    }
+
+    @media (max-width: 1024px) {
+      .info-panel, .legend, .stats, .ecosystem-insights {
+        position: relative;
+        width: 100%;
+        margin: 16px;
+      }
+
+      #network-container {
+        height: 600px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-top">
+      <a href="index.html">OpenPinas</a>
+      <span class="last-updated" id="lastUpdated">Last updated: Loading...</span>
+    </div>
+    <h1>Philippine Startup Ecosystem: An Emerging Tech Hub</h1>
+    <p>Explore the growing Philippine startup ecosystem: track startups, founders, investors, funding trends, and connections to power structures. Manila's ecosystem has grown 83% to $6.4B, ranking 64th globally. Discover how political dynasties, business networks, and elite schools intersect with tech innovation.</p>
+    <div style="margin-top: 12px; padding: 12px; background: rgba(255,255,255,0.1); border-radius: 6px; font-size: 13px;">
+      <strong>What This Answers:</strong> How fast is the ecosystem growing? Which startups connect to power structures? Where is innovation happening? How does the Philippines rank globally? What are the key sectors and regional hubs?
+    </div>
+  </header>
+
+  <div class="controls">
+    <label>
+      <input type="checkbox" id="showStartups" checked> Show Startups
+    </label>
+    <label>
+      <input type="checkbox" id="showFounders" checked> Show Founders
+    </label>
+    <label>
+      <input type="checkbox" id="showInvestors" checked> Show Investors
+    </label>
+    <label>
+      <input type="checkbox" id="showOrganizations" checked> Show Organizations
+    </label>
+    <label>
+      <input type="checkbox" id="highlightPowerConnections"> ⭐ Highlight Power Connections
+    </label>
+    <select id="filterSector">
+      <option value="all">All Sectors</option>
+      <option value="fintech">FinTech</option>
+      <option value="e-commerce">E-commerce</option>
+      <option value="gaming">Gaming</option>
+      <option value="HR Tech / Recruitment">HR Tech</option>
+      <option value="F&B / Retail">F&B / Retail</option>
+    </select>
+    <button id="resetView">Reset View</button>
+    <button id="fitNetwork">Fit to Screen</button>
+  </div>
+
+  <div class="stats" id="stats">
+    <h4>Ecosystem Statistics</h4>
+    <p id="startupCount">Loading...</p>
+    <p id="founderCount">Loading...</p>
+    <p id="connectionCount">Loading...</p>
+    <p id="ecosystemValue">Loading...</p>
+    <p id="globalRanking" style="margin-top: 12px; padding-top: 12px; border-top: 1px solid #e0e0e0;">Loading...</p>
+    <p id="growthRate" style="margin-top: 8px;">Loading...</p>
+  </div>
+
+  <div class="ecosystem-insights" id="ecosystemInsights">
+    <h4>🌏 Emerging Tech Hub Insights</h4>
+    <div id="insightsContent">Loading insights...</div>
+  </div>
+
+  <div class="info-panel" id="infoPanel">
+    <button class="close" onclick="closeInfoPanel()">×</button>
+    <div id="infoContent"></div>
+  </div>
+
+  <div id="network-container"></div>
+
+  <div class="legend">
+    <h4>Legend</h4>
+    <div class="legend-item">
+      <div class="legend-color" style="background: #0038A8;"></div>
+      <span>Startup</span>
+    </div>
+    <div class="legend-item">
+      <div class="legend-color" style="background: #2b7a6d;"></div>
+      <span>Founder</span>
+    </div>
+    <div class="legend-item">
+      <div class="legend-color" style="background: #c44900;"></div>
+      <span>Investor / VC</span>
+    </div>
+    <div class="legend-item">
+      <div class="legend-color" style="background: #6c5b7b;"></div>
+      <span>Organization</span>
+    </div>
+    <div class="legend-item">
+      <div class="legend-color" style="background: #0b6e4f;"></div>
+      <span>Dynasty / Power Structure</span>
+    </div>
+    <div class="legend-item">
+      <div class="legend-line" style="background: #0038A8; height: 3px;"></div>
+      <span>Founder Connection</span>
+    </div>
+    <div class="legend-item">
+      <div class="legend-line" style="background: #c44900; height: 3px;"></div>
+      <span>Investment</span>
+    </div>
+    <div class="legend-item">
+      <div class="legend-line" style="background: #0b6e4f; height: 2px; border-top: 2px dashed #0b6e4f;"></div>
+      <span>Power Structure Connection</span>
+    </div>
+    <div class="legend-item">
+      <div class="legend-color" style="background: #FFD700; border: 3px solid #FFD700;"></div>
+      <span>⭐ Has Power Connections</span>
+    </div>
+    <div class="legend-item">
+      <div class="legend-line" style="background: #FFD700; height: 4px;"></div>
+      <span>Power Connection (Highlighted)</span>
+    </div>
+  </div>
+
+  <script>
+    let network = null;
+    let allNodes = [];
+    let allEdges = [];
+    let startupData = null;
+    let dynastiesData = null;
+    let businessData = null;
+    let eliteSchoolsData = null;
+
+    // Node colors by type
+    const nodeColors = {
+      'startup': '#0038A8',           // Deep blue
+      'founder': '#2b7a6d',            // Teal
+      'investor': '#c44900',           // Orange
+      'organization': '#6c5b7b',      // Purple
+      'dynasty': '#0b6e4f',            // Green
+      'accelerator': '#f77f00'         // Light orange
+    };
+
+    // Load data
+    async function loadData() {
+      try {
+        // Load startup data
+        const startupResponse = await fetch('philippine-startup-ecosystem-2025.json');
+        if (!startupResponse.ok) throw new Error('Failed to load startup ecosystem data');
+        startupData = await startupResponse.json();
+
+        // Try to load dynasty data
+        try {
+          const dynastyResponse = await fetch('philippine-political-dynasties-network-2025.json');
+          if (dynastyResponse.ok) {
+            const dynastyJson = await dynastyResponse.json();
+            dynastiesData = dynastyJson.philippine_political_dynasties_network;
+          }
+        } catch (e) {
+          console.log('Dynasty data not available');
+        }
+
+        // Try to load business connections data
+        try {
+          const businessResponse = await fetch('business-connections-2025.json');
+          if (businessResponse.ok) {
+            businessData = await businessResponse.json();
+          }
+        } catch (e) {
+          console.log('Business connections data not available');
+        }
+
+        // Try to load elite schools data
+        try {
+          const eliteSchoolsResponse = await fetch('elite-schools-influence-2025.json');
+          if (eliteSchoolsResponse.ok) {
+            eliteSchoolsData = await eliteSchoolsResponse.json();
+          }
+        } catch (e) {
+          console.log('Elite schools data not available');
+        }
+
+        // Update last updated
+        const lastUpdated = startupData.metadata.last_updated || 'Unknown';
+        document.getElementById('lastUpdated').textContent = `Last updated: ${lastUpdated}`;
+
+        buildNetwork();
+        updateStats();
+      } catch (error) {
+        console.error('Error loading data:', error);
+        document.getElementById('network-container').innerHTML = 
+          `<div style="padding: 40px; text-align: center; color: #c44900;">
+            <h3>Error loading network data</h3>
+            <p>${error.message}</p>
+          </div>`;
+      }
+    }
+
+    function buildNetwork() {
+      allNodes = [];
+      allEdges = [];
+      const nodeMap = new Map();
+
+      // Add startup nodes
+      if (startupData.startups) {
+        startupData.startups.forEach(startup => {
+          const nodeId = startup.startup_id;
+          nodeMap.set(nodeId, { type: 'startup', data: startup });
+          
+          // Check for power structure connections
+          const hasDynastyConnections = startup.dynasty_connections && startup.dynasty_connections.length > 0;
+          const hasBusinessConnections = startup.business_network_connections && startup.business_network_connections.length > 0;
+          const hasEliteSchoolConnections = startup.elite_school_connections && startup.elite_school_connections.length > 0;
+          const hasPowerConnections = hasDynastyConnections || hasBusinessConnections || hasEliteSchoolConnections;
+          
+          // Check founders for connections
+          const foundersWithConnections = startup.founders ? startup.founders.some(f => 
+            (f.dynasty_connections && f.dynasty_connections.length > 0) ||
+            (f.elite_school_connections && f.elite_school_connections.length > 0)
+          ) : false;
+          
+          const hasAnyPowerConnection = hasPowerConnections || foundersWithConnections;
+          
+          // Highlight nodes with power structure connections
+          let borderColor = '#fff';
+          let borderWidth = 2;
+          if (hasAnyPowerConnection) {
+            borderColor = '#FFD700'; // Gold border for power connections
+            borderWidth = 4;
+          }
+          
+          allNodes.push({
+            id: nodeId,
+            label: startup.name + (hasAnyPowerConnection ? ' ⭐' : ''),
+            title: `${startup.name}\nSector: ${startup.sector}\nFounded: ${startup.founded}${hasAnyPowerConnection ? '\n⭐ Has Power Structure Connections' : ''}`,
+            color: { 
+              background: nodeColors.startup,
+              border: borderColor,
+              highlight: { background: nodeColors.startup, border: borderColor }
+            },
+            borderWidth: borderWidth,
+            size: hasAnyPowerConnection ? 35 : 30,
+            shape: 'box',
+            font: { size: 14, color: hasAnyPowerConnection ? '#0038A8' : '#1a1a1a' },
+            data: { type: 'startup', item: startup, hasPowerConnections: hasAnyPowerConnection }
+          });
+
+          // Add founder nodes and edges
+          if (startup.founders) {
+            startup.founders.forEach(founder => {
+              if (founder.name && founder.name !== 'Research Needed') {
+                const founderId = `founder_${founder.name.replace(/\s+/g, '_')}`;
+                
+                if (!nodeMap.has(founderId)) {
+                  nodeMap.set(founderId, { type: 'founder', data: founder });
+                  
+                  // Check for founder connections
+                  const founderHasDynasty = founder.dynasty_connections && founder.dynasty_connections.length > 0;
+                  const founderHasEliteSchool = founder.elite_school_connections && founder.elite_school_connections.length > 0;
+                  const founderHasConnections = founderHasDynasty || founderHasEliteSchool;
+                  
+                  let founderBorderColor = '#fff';
+                  let founderBorderWidth = 2;
+                  if (founderHasConnections) {
+                    founderBorderColor = '#FFD700';
+                    founderBorderWidth = 3;
+                  }
+                  
+                  allNodes.push({
+                    id: founderId,
+                    label: founder.name + (founderHasConnections ? ' ⭐' : ''),
+                    title: `${founder.name}\nRole: ${founder.role || 'Founder'}${founderHasConnections ? '\n⭐ Has Power Structure Connections' : ''}`,
+                    color: { 
+                      background: nodeColors.founder,
+                      border: founderBorderColor,
+                      highlight: { background: nodeColors.founder, border: founderBorderColor }
+                    },
+                    borderWidth: founderBorderWidth,
+                    size: founderHasConnections ? 25 : 20,
+                    shape: 'dot',
+                    font: { size: 12 },
+                    data: { type: 'founder', item: founder, hasPowerConnections: founderHasConnections }
+                  });
+                }
+                
+                // Edge from startup to founder
+                allEdges.push({
+                  id: `${nodeId}-${founderId}`,
+                  from: nodeId,
+                  to: founderId,
+                  color: { color: nodeColors.startup },
+                  width: 3,
+                  label: 'Founded by',
+                  data: { type: 'founder_connection', startup: startup, founder: founder }
+                });
+              }
+            });
+          }
+
+          // Add investor nodes and edges
+          if (startup.funding && startup.funding.investors) {
+            startup.funding.investors.forEach(investor => {
+              const investorId = `investor_${investor.name.replace(/\s+/g, '_')}`;
+              
+              if (!nodeMap.has(investorId)) {
+                nodeMap.set(investorId, { type: 'investor', data: investor });
+                
+                allNodes.push({
+                  id: investorId,
+                  label: investor.name,
+                  title: `${investor.name}\nType: ${investor.type || 'Investor'}`,
+                  color: { background: nodeColors.investor },
+                  size: 22,
+                  shape: 'diamond',
+                  font: { size: 11 },
+                  data: { type: 'investor', item: investor }
+                });
+              }
+              
+              // Edge from investor to startup
+              allEdges.push({
+                id: `${investorId}-${nodeId}`,
+                from: investorId,
+                to: nodeId,
+                color: { color: nodeColors.investor },
+                width: 2,
+                label: investor.round || 'Invested',
+                data: { type: 'investment', startup: startup, investor: investor }
+              });
+            });
+          }
+
+          // Add dynasty connections if available
+          if (startup.dynasty_connections && startup.dynasty_connections.length > 0 && dynastiesData) {
+            startup.dynasty_connections.forEach(dynastyId => {
+              const dynastyNode = dynastiesData.nodes.dynasties.find(d => d.id === dynastyId);
+              if (dynastyNode) {
+                const dynastyNodeId = `dynasty_${dynastyId}`;
+                
+                if (!nodeMap.has(dynastyNodeId)) {
+                  nodeMap.set(dynastyNodeId, { type: 'dynasty', data: dynastyNode });
+                  
+                  allNodes.push({
+                    id: dynastyNodeId,
+                    label: dynastyNode.name.replace(/_/g, ' ').replace('FAMILY', '').trim(),
+                    title: `${dynastyNode.name}\nPower Level: ${dynastyNode.power_level || 'N/A'}`,
+                    color: { background: nodeColors.dynasty },
+                    size: 25,
+                    shape: 'dot',
+                    font: { size: 12 },
+                    data: { type: 'dynasty', item: dynastyNode }
+                  });
+                }
+                
+                // Edge from startup to dynasty (highlighted)
+                allEdges.push({
+                  id: `${nodeId}-${dynastyNodeId}`,
+                  from: nodeId,
+                  to: dynastyNodeId,
+                  color: { color: '#FFD700', highlight: '#FFD700' },
+                  width: 4,
+                  dashes: true,
+                  label: 'Dynasty Connection',
+                  data: { type: 'dynasty_connection', startup: startup, dynasty: dynastyNode }
+                });
+              }
+            });
+          }
+
+          // Add business network connections
+          if (startup.business_network_connections && startup.business_network_connections.length > 0 && businessData) {
+            startup.business_network_connections.forEach(businessId => {
+              // Try to find in conglomerates, media, or PBA teams
+              let businessNode = null;
+              let businessType = null;
+              
+              if (businessData.corporations && businessData.corporations.conglomerates) {
+                businessNode = businessData.corporations.conglomerates.find(c => c.company_id === businessId);
+                businessType = 'conglomerate';
+              }
+              
+              if (!businessNode && businessData.corporations && businessData.corporations.media) {
+                businessNode = businessData.corporations.media.find(m => (m.company_id || m.media_id) === businessId);
+                businessType = 'media';
+              }
+              
+              if (!businessNode && businessData.sports && businessData.sports.pba_teams) {
+                businessNode = businessData.sports.pba_teams.find(t => t.team_id === businessId);
+                businessType = 'pba_team';
+              }
+              
+              if (businessNode) {
+                const businessNodeId = `business_${businessId}`;
+                
+                if (!nodeMap.has(businessNodeId)) {
+                  nodeMap.set(businessNodeId, { type: 'business', data: businessNode });
+                  
+                  allNodes.push({
+                    id: businessNodeId,
+                    label: businessNode.name,
+                    title: `${businessNode.name}\nType: ${businessType}`,
+                    color: { background: '#8b008b' },
+                    size: 24,
+                    shape: 'diamond',
+                    font: { size: 11 },
+                    data: { type: 'business', item: businessNode, businessType: businessType }
+                  });
+                }
+                
+                // Edge from startup to business network (highlighted)
+                allEdges.push({
+                  id: `${nodeId}-${businessNodeId}`,
+                  from: nodeId,
+                  to: businessNodeId,
+                  color: { color: '#FFD700', highlight: '#FFD700' },
+                  width: 4,
+                  dashes: true,
+                  label: 'Business Network',
+                  data: { type: 'business_connection', startup: startup, business: businessNode }
+                });
+              }
+            });
+          }
+
+          // Add elite school connections
+          if (startup.elite_school_connections && startup.elite_school_connections.length > 0 && eliteSchoolsData) {
+            startup.elite_school_connections.forEach(schoolId => {
+              if (eliteSchoolsData.schools) {
+                const school = eliteSchoolsData.schools.find(s => (s.school_id || s.id) === schoolId);
+                if (school) {
+                  const schoolNodeId = `school_${schoolId}`;
+                  
+                  if (!nodeMap.has(schoolNodeId)) {
+                    nodeMap.set(schoolNodeId, { type: 'elite_school', data: school });
+                    
+                    allNodes.push({
+                      id: schoolNodeId,
+                      label: school.name,
+                      title: `${school.name}\nType: Elite School`,
+                      color: { background: '#9b59b6' },
+                      size: 22,
+                      shape: 'triangle',
+                      font: { size: 11 },
+                      data: { type: 'elite_school', item: school }
+                    });
+                  }
+                  
+                  // Edge from startup to elite school (highlighted)
+                  allEdges.push({
+                    id: `${nodeId}-${schoolNodeId}`,
+                    from: nodeId,
+                    to: schoolNodeId,
+                    color: { color: '#FFD700', highlight: '#FFD700' },
+                    width: 4,
+                    dashes: true,
+                    label: 'Elite School',
+                    data: { type: 'elite_school_connection', startup: startup, school: school }
+                  });
+                }
+              }
+            });
+          }
+
+          // Add founder-level connections (dynasty and elite school)
+          if (startup.founders) {
+            startup.founders.forEach(founder => {
+              if (founder.name && founder.name !== 'Research Needed') {
+                const founderId = `founder_${founder.name.replace(/\s+/g, '_')}`;
+                
+                // Founder dynasty connections
+                if (founder.dynasty_connections && founder.dynasty_connections.length > 0 && dynastiesData) {
+                  founder.dynasty_connections.forEach(dynastyId => {
+                    const dynastyNode = dynastiesData.nodes.dynasties.find(d => d.id === dynastyId);
+                    if (dynastyNode) {
+                      const dynastyNodeId = `dynasty_${dynastyId}`;
+                      
+                      if (!nodeMap.has(dynastyNodeId)) {
+                        nodeMap.set(dynastyNodeId, { type: 'dynasty', data: dynastyNode });
+                        allNodes.push({
+                          id: dynastyNodeId,
+                          label: dynastyNode.name.replace(/_/g, ' ').replace('FAMILY', '').trim(),
+                          title: `${dynastyNode.name}\nPower Level: ${dynastyNode.power_level || 'N/A'}`,
+                          color: { background: nodeColors.dynasty },
+                          size: 25,
+                          shape: 'dot',
+                          font: { size: 12 },
+                          data: { type: 'dynasty', item: dynastyNode }
+                        });
+                      }
+                      
+                      // Edge from founder to dynasty (highlighted)
+                      allEdges.push({
+                        id: `${founderId}-${dynastyNodeId}`,
+                        from: founderId,
+                        to: dynastyNodeId,
+                        color: { color: '#FFD700', highlight: '#FFD700' },
+                        width: 3,
+                        dashes: true,
+                        label: 'Dynasty',
+                        data: { type: 'founder_dynasty_connection', founder: founder, dynasty: dynastyNode }
+                      });
+                    }
+                  });
+                }
+                
+                // Founder elite school connections
+                if (founder.elite_school_connections && founder.elite_school_connections.length > 0 && eliteSchoolsData) {
+                  founder.elite_school_connections.forEach(schoolId => {
+                    if (eliteSchoolsData.schools) {
+                      const school = eliteSchoolsData.schools.find(s => (s.school_id || s.id) === schoolId);
+                      if (school) {
+                        const schoolNodeId = `school_${schoolId}`;
+                        
+                        if (!nodeMap.has(schoolNodeId)) {
+                          nodeMap.set(schoolNodeId, { type: 'elite_school', data: school });
+                          allNodes.push({
+                            id: schoolNodeId,
+                            label: school.name,
+                            title: `${school.name}\nType: Elite School`,
+                            color: { background: '#9b59b6' },
+                            size: 22,
+                            shape: 'triangle',
+                            font: { size: 11 },
+                            data: { type: 'elite_school', item: school }
+                          });
+                        }
+                        
+                        // Edge from founder to elite school (highlighted)
+                        allEdges.push({
+                          id: `${founderId}-${schoolNodeId}`,
+                          from: founderId,
+                          to: schoolNodeId,
+                          color: { color: '#FFD700', highlight: '#FFD700' },
+                          width: 3,
+                          dashes: true,
+                          label: 'Elite School',
+                          data: { type: 'founder_elite_school_connection', founder: founder, school: school }
+                        });
+                      }
+                    }
+                  });
+                }
+              }
+            });
+          }
+        });
+      }
+
+      // Add organization nodes
+      if (startupData.organizations) {
+        startupData.organizations.forEach(org => {
+          const nodeId = org.org_id;
+          nodeMap.set(nodeId, { type: 'organization', data: org });
+          
+          allNodes.push({
+            id: nodeId,
+            label: org.name,
+            title: `${org.name}\nType: ${org.type || 'Organization'}`,
+            color: { background: nodeColors.organization },
+            size: 24,
+            shape: 'triangle',
+            font: { size: 12 },
+            data: { type: 'organization', item: org }
+          });
+        });
+      }
+
+      // Add accelerator/incubator nodes
+      if (startupData.accelerators_incubators) {
+        startupData.accelerators_incubators.forEach(acc => {
+          const nodeId = acc.org_id;
+          nodeMap.set(nodeId, { type: 'accelerator', data: acc });
+          
+          allNodes.push({
+            id: nodeId,
+            label: acc.name,
+            title: `${acc.name}\nType: ${acc.type}`,
+            color: { background: nodeColors.accelerator },
+            size: 22,
+            shape: 'star',
+            font: { size: 11 },
+            data: { type: 'accelerator', item: acc }
+          });
+
+          // Add edges to startups
+          if (acc.philippine_startups) {
+            acc.philippine_startups.forEach(startupId => {
+              if (nodeMap.has(startupId)) {
+                allEdges.push({
+                  id: `${nodeId}-${startupId}`,
+                  from: nodeId,
+                  to: startupId,
+                  color: { color: nodeColors.accelerator },
+                  width: 2,
+                  label: 'Accelerated',
+                  data: { type: 'acceleration', accelerator: acc, startup: startupId }
+                });
+              }
+            });
+          }
+        });
+      }
+
+      // Initial render
+      updateNetwork();
+    }
+
+    function updateNetwork() {
+      let filteredNodes = [...allNodes];
+      let filteredEdges = [...allEdges];
+
+      // Apply filters
+      const showStartups = document.getElementById('showStartups').checked;
+      const showFounders = document.getElementById('showFounders').checked;
+      const showInvestors = document.getElementById('showInvestors').checked;
+      const showOrganizations = document.getElementById('showOrganizations').checked;
+      const sectorFilter = document.getElementById('filterSector').value;
+
+      // Filter nodes by type
+      filteredNodes = filteredNodes.filter(node => {
+        if (node.data.type === 'startup' && !showStartups) return false;
+        if (node.data.type === 'founder' && !showFounders) return false;
+        if (node.data.type === 'investor' && !showInvestors) return false;
+        if ((node.data.type === 'organization' || node.data.type === 'accelerator') && !showOrganizations) return false;
+        
+        // Filter by sector
+        if (sectorFilter !== 'all' && node.data.type === 'startup') {
+          return node.data.item.sector === sectorFilter;
+        }
+        
+        return true;
+      });
+
+      // Filter edges to only include visible nodes
+      const visibleNodeIds = new Set(filteredNodes.map(n => n.id));
+      filteredEdges = filteredEdges.filter(edge => 
+        visibleNodeIds.has(edge.from) && visibleNodeIds.has(edge.to)
+      );
+
+      // Highlight power connections if checkbox is checked
+      const highlightPower = document.getElementById('highlightPowerConnections').checked;
+      if (highlightPower) {
+        // Make power-connected nodes larger and more visible
+        filteredNodes = filteredNodes.map(node => {
+          if (node.data && node.data.hasPowerConnections) {
+            return {
+              ...node,
+              size: (node.size || 20) * 1.5,
+              font: { ...node.font, size: (node.font.size || 12) + 2 }
+            };
+          }
+          return node;
+        });
+        
+        // Make power connection edges more visible
+        filteredEdges = filteredEdges.map(edge => {
+          if (edge.data && edge.data.type && (
+            edge.data.type.includes('dynasty') ||
+            edge.data.type.includes('business') ||
+            edge.data.type.includes('elite_school')
+          )) {
+            return {
+              ...edge,
+              width: (edge.width || 2) * 1.5,
+              color: { color: '#FFD700', highlight: '#FFD700' }
+            };
+          }
+          return edge;
+        });
+      }
+
+      // Update network
+      const container = document.getElementById('network-container');
+      const data = { nodes: new vis.DataSet(filteredNodes), edges: new vis.DataSet(filteredEdges) };
+      const options = {
+        nodes: {
+          borderWidth: 2,
+          borderColor: '#fff',
+          font: { size: 12, face: 'Source Sans Pro' },
+          shadow: true
+        },
+        edges: {
+          arrows: { to: { enabled: true, scaleFactor: 0.5 } },
+          smooth: { type: 'continuous' },
+          font: { size: 10, align: 'middle' },
+          shadow: true
+        },
+        physics: {
+          stabilization: { iterations: 200 },
+          barnesHut: {
+            gravitationalConstant: -2000,
+            centralGravity: 0.1,
+            springLength: 200,
+            springConstant: 0.04,
+            damping: 0.09
+          }
+        },
+        interaction: {
+          hover: true,
+          tooltipDelay: 200,
+          zoomView: true,
+          dragView: true
+        }
+      };
+
+      network = new vis.Network(container, data, options);
+
+      // Handle node clicks
+      network.on('click', (params) => {
+        if (params.nodes.length > 0) {
+          const nodeId = params.nodes[0];
+          const node = filteredNodes.find(n => n.id === nodeId);
+          if (node) {
+            showInfoPanel(node.data);
+          }
+        } else {
+          closeInfoPanel();
+        }
+      });
+
+      updateStats();
+    }
+
+    function showInfoPanel(nodeData) {
+      const panel = document.getElementById('infoPanel');
+      const content = document.getElementById('infoContent');
+      
+      let html = '';
+      const item = nodeData.item;
+
+      if (nodeData.type === 'startup') {
+        const hasDynasty = item.dynasty_connections && item.dynasty_connections.length > 0;
+        const hasBusiness = item.business_network_connections && item.business_network_connections.length > 0;
+        const hasEliteSchool = item.elite_school_connections && item.elite_school_connections.length > 0;
+        const foundersWithConnections = item.founders ? item.founders.some(f => 
+          (f.dynasty_connections && f.dynasty_connections.length > 0) ||
+          (f.elite_school_connections && f.elite_school_connections.length > 0)
+        ) : false;
+        const hasAnyConnection = hasDynasty || hasBusiness || hasEliteSchool || foundersWithConnections;
+        
+        html = `<h3>${item.name}${hasAnyConnection ? ' ⭐' : ''}</h3>`;
+        html += `<p><strong>Sector:</strong> ${item.sector}</p>`;
+        html += `<p><strong>Founded:</strong> ${item.founded}</p>`;
+        html += `<p><strong>Status:</strong> ${item.status}</p>`;
+        html += `<p><strong>Location:</strong> ${item.headquarters.city}, ${item.headquarters.region}</p>`;
+        
+        // Highlight power structure connections prominently
+        if (hasAnyConnection) {
+          html += `<div class="label" style="margin-top: 16px; border-top: 2px solid #FFD700; padding-top: 12px; color: #c44900; font-size: 13px;">⭐ POWER STRUCTURE CONNECTIONS</div>`;
+          
+          if (hasDynasty) {
+            html += `<div class="value" style="margin-top: 8px;">`;
+            html += `<strong style="color: #0b6e4f;">Political Dynasty Connections:</strong><br>`;
+            item.dynasty_connections.forEach(dynastyId => {
+              const dynastyName = dynastyId.replace(/_/g, ' ').replace('FAMILY', '').trim();
+              html += `<a href="dynasties-network-visualization.html#dynasty-${dynastyId}" target="_blank" style="color: #0b6e4f; text-decoration: underline; margin-right: 8px;">${dynastyName}</a>`;
+            });
+            html += `</div>`;
+          }
+          
+          if (hasBusiness) {
+            html += `<div class="value" style="margin-top: 8px;">`;
+            html += `<strong style="color: #8b008b;">Business Network Connections:</strong><br>`;
+            item.business_network_connections.forEach(businessId => {
+              html += `<a href="business-connections-network-visualization.html" target="_blank" style="color: #8b008b; text-decoration: underline; margin-right: 8px;">${businessId}</a>`;
+            });
+            html += `</div>`;
+          }
+          
+          if (hasEliteSchool) {
+            html += `<div class="value" style="margin-top: 8px;">`;
+            html += `<strong style="color: #9b59b6;">Elite School Connections:</strong><br>`;
+            item.elite_school_connections.forEach(schoolId => {
+              html += `<a href="elite-schools-influence-visualization.html" target="_blank" style="color: #9b59b6; text-decoration: underline; margin-right: 8px;">${schoolId}</a>`;
+            });
+            html += `</div>`;
+          }
+          
+          if (foundersWithConnections) {
+            html += `<div class="value" style="margin-top: 8px;">`;
+            html += `<strong style="color: #c44900;">Founder Connections:</strong><br>`;
+            item.founders.forEach(founder => {
+              if (founder.name && founder.name !== 'Research Needed') {
+                const founderHasDynasty = founder.dynasty_connections && founder.dynasty_connections.length > 0;
+                const founderHasSchool = founder.elite_school_connections && founder.elite_school_connections.length > 0;
+                if (founderHasDynasty || founderHasSchool) {
+                  html += `<div style="margin: 4px 0;">${founder.name}: `;
+                  if (founderHasDynasty) html += `<span style="color: #0b6e4f;">Dynasty</span> `;
+                  if (founderHasSchool) html += `<span style="color: #9b59b6;">Elite School</span>`;
+                  html += `</div>`;
+                }
+              }
+            });
+            html += `</div>`;
+          }
+        }
+        
+        if (item.description) {
+          html += `<div class="label" style="margin-top: ${hasAnyConnection ? '16px' : '12px'};">Description</div>`;
+          html += `<div class="value">${item.description}</div>`;
+        }
+
+        if (item.funding && item.funding.total_raised_usd) {
+          html += `<div class="label">Funding</div>`;
+          html += `<div class="value">Total Raised: $${formatMoney(item.funding.total_raised_usd)}</div>`;
+          if (item.funding.latest_round) {
+            html += `<div class="value" style="font-size: 12px; color: #666;">Latest: ${item.funding.latest_round}</div>`;
+          }
+        } else if (item.funding && item.funding.latest_round) {
+          html += `<div class="label">Funding</div>`;
+          html += `<div class="value">Latest Round: ${item.funding.latest_round}</div>`;
+        }
+
+        if (item.metrics) {
+          html += `<div class="label">Metrics</div>`;
+          if (item.metrics.users) {
+            html += `<div class="value">Users: ${item.metrics.users.toLocaleString()}</div>`;
+          }
+          if (item.metrics.employees) {
+            html += `<div class="value">Employees: ${item.metrics.employees}</div>`;
+          }
+          if (item.metrics.locations) {
+            html += `<div class="value">Locations: ${item.metrics.locations}</div>`;
+          }
+          if (item.metrics.markets && item.metrics.markets.length > 0) {
+            html += `<div class="value" style="font-size: 12px; color: #666;">Markets: ${item.metrics.markets.join(', ')}</div>`;
+          }
+        }
+
+        if (item.founders && item.founders.length > 0) {
+          html += `<div class="label">Founders</div>`;
+          html += `<ul>`;
+          item.founders.forEach(founder => {
+            if (founder.name && founder.name !== 'Research Needed') {
+              html += `<li>${founder.name} - ${founder.role || 'Founder'}</li>`;
+            }
+          });
+          html += `</ul>`;
+        }
+      } else if (nodeData.type === 'founder') {
+        const founderHasDynasty = item.dynasty_connections && item.dynasty_connections.length > 0;
+        const founderHasSchool = item.elite_school_connections && item.elite_school_connections.length > 0;
+        const founderHasConnections = founderHasDynasty || founderHasSchool;
+        
+        html = `<h3>${item.name}${founderHasConnections ? ' ⭐' : ''}</h3>`;
+        html += `<p><strong>Role:</strong> ${item.role || 'Founder'}</p>`;
+        if (item.background) {
+          html += `<p><strong>Background:</strong> ${item.background}</p>`;
+        }
+        
+        // Highlight founder connections
+        if (founderHasConnections) {
+          html += `<div class="label" style="margin-top: 16px; border-top: 2px solid #FFD700; padding-top: 12px; color: #c44900; font-size: 13px;">⭐ POWER STRUCTURE CONNECTIONS</div>`;
+          
+          if (founderHasDynasty) {
+            html += `<div class="value" style="margin-top: 8px;">`;
+            html += `<strong style="color: #0b6e4f;">Political Dynasty Connections:</strong><br>`;
+            item.dynasty_connections.forEach(dynastyId => {
+              const dynastyName = dynastyId.replace(/_/g, ' ').replace('FAMILY', '').trim();
+              html += `<a href="dynasties-network-visualization.html#dynasty-${dynastyId}" target="_blank" style="color: #0b6e4f; text-decoration: underline; margin-right: 8px;">${dynastyName}</a>`;
+            });
+            html += `</div>`;
+          }
+          
+          if (founderHasSchool) {
+            html += `<div class="value" style="margin-top: 8px;">`;
+            html += `<strong style="color: #9b59b6;">Elite School Connections:</strong><br>`;
+            item.elite_school_connections.forEach(schoolId => {
+              html += `<a href="elite-schools-influence-visualization.html" target="_blank" style="color: #9b59b6; text-decoration: underline; margin-right: 8px;">${schoolId}</a>`;
+            });
+            html += `</div>`;
+          }
+        }
+      } else if (nodeData.type === 'investor') {
+        html = `<h3>${item.name}</h3>`;
+        html += `<p><strong>Type:</strong> ${item.type || 'Investor'}</p>`;
+      } else if (nodeData.type === 'organization') {
+        html = `<h3>${item.name}</h3>`;
+        html += `<p><strong>Type:</strong> ${item.type}</p>`;
+        if (item.description) {
+          html += `<div class="label">Description</div>`;
+          html += `<div class="value">${item.description}</div>`;
+        }
+      } else if (nodeData.type === 'accelerator') {
+        html = `<h3>${item.name}</h3>`;
+        html += `<p><strong>Type:</strong> ${item.type}</p>`;
+        if (item.description) {
+          html += `<div class="label">Description</div>`;
+          html += `<div class="value">${item.description}</div>`;
+        }
+      } else if (nodeData.type === 'dynasty') {
+        html = `<h3>${item.name.replace(/_/g, ' ').replace('FAMILY', '').trim()}</h3>`;
+        html += `<p><strong>Power Level:</strong> ${item.power_level || 'N/A'}</p>`;
+        html += `<p><a href="dynasties-network-visualization.html#dynasty-${item.id}" target="_blank">View in Dynasty Map →</a></p>`;
+      }
+
+      // Add "What This Answers" section for startups
+      if (nodeData.type === 'startup') {
+        html += `<div class="label" style="margin-top: 16px; border-top: 2px solid #0038A8; padding-top: 12px; color: #0038A8; font-size: 13px;">💡 Ecosystem Insights</div>`;
+        html += `<div class="value" style="font-size: 12px; margin-top: 8px;">`;
+        html += `<strong>Founded:</strong> ${item.founded} (${new Date().getFullYear() - item.founded} years old)<br>`;
+        html += `<strong>Sector:</strong> ${item.sector}<br>`;
+        if (item.metrics && item.metrics.markets && item.metrics.markets.length > 1) {
+          html += `<strong>International:</strong> Operating in ${item.metrics.markets.length} markets<br>`;
+        }
+        if (item.metrics && item.metrics.users && item.metrics.users >= 1000000) {
+          html += `<strong>Scale:</strong> ${(item.metrics.users / 1000000).toFixed(1)}M+ users - Major player<br>`;
+        }
+        html += `</div>`;
+      }
+
+      content.innerHTML = html;
+      panel.classList.add('visible');
+    }
+
+    function closeInfoPanel() {
+      document.getElementById('infoPanel').classList.remove('visible');
+    }
+
+    function updateStats() {
+      const startups = allNodes.filter(n => n.data.type === 'startup').length;
+      const founders = allNodes.filter(n => n.data.type === 'founder').length;
+      const connections = allEdges.length;
+      const stats = startupData.metadata.ecosystem_stats;
+      const ecosystemValue = stats.manila_ecosystem_value_usd;
+      const previousValue = stats.manila_ecosystem_value_previous_usd;
+      const growthRate = stats.manila_growth_cagr;
+      const globalRank = stats.global_ranking;
+
+      document.getElementById('startupCount').textContent = `Startups: ${startups}`;
+      document.getElementById('founderCount').textContent = `Founders: ${founders}`;
+      document.getElementById('connectionCount').textContent = `Connections: ${connections}`;
+      document.getElementById('ecosystemValue').innerHTML = `Manila Ecosystem: <span class="highlight">$${formatMoney(ecosystemValue)}</span>`;
+      
+      if (globalRank) {
+        document.getElementById('globalRanking').innerHTML = `Global Ranking: <span class="highlight">#${globalRank}</span>`;
+      }
+      
+      if (growthRate && previousValue) {
+        const growthPercent = ((ecosystemValue - previousValue) / previousValue * 100).toFixed(0);
+        document.getElementById('growthRate').innerHTML = `Growth: <span class="growth">+${growthPercent}%</span> (${(growthRate * 100).toFixed(0)}% CAGR)`;
+      }
+
+      // Update ecosystem insights
+      updateEcosystemInsights(stats);
+    }
+
+    function updateEcosystemInsights(stats) {
+      const insightsDiv = document.getElementById('insightsContent');
+      let html = '';
+
+      // Growth Story
+      if (stats.manila_ecosystem_value_usd && stats.manila_ecosystem_value_previous_usd) {
+        const growthPercent = ((stats.manila_ecosystem_value_usd - stats.manila_ecosystem_value_previous_usd) / stats.manila_ecosystem_value_previous_usd * 100).toFixed(0);
+        html += `
+          <div class="insight-section">
+            <div class="insight-title">📈 Ecosystem Growth</div>
+            <div class="insight-value">+${growthPercent}% Growth</div>
+            <div class="insight-detail">
+              Manila ecosystem value increased from $${formatMoney(stats.manila_ecosystem_value_previous_usd)} to $${formatMoney(stats.manila_ecosystem_value_usd)}
+            </div>
+          </div>
+        `;
+      }
+
+      // Global Ranking
+      if (stats.global_ranking) {
+        html += `
+          <div class="insight-section">
+            <div class="insight-title">🌍 Global Position</div>
+            <div class="insight-value">Ranked #${stats.global_ranking}</div>
+            <div class="insight-detail">
+              ${stats.ranking_trend ? `Trend: ${stats.ranking_trend.replace(/_/g, ' ')}` : 'Among global startup ecosystems'}
+            </div>
+          </div>
+        `;
+      }
+
+      // Key Sectors
+      if (stats.key_sectors && stats.key_sectors.length > 0) {
+        html += `
+          <div class="insight-section">
+            <div class="insight-title">🚀 Key Sectors</div>
+            <div style="margin-top: 8px;">
+              ${stats.key_sectors.map(sector => `<span class="sector-tag">${sector}</span>`).join('')}
+            </div>
+          </div>
+        `;
+      }
+
+      // Regional Hubs
+      if (startupData.ecosystem_hubs && startupData.ecosystem_hubs.length > 0) {
+        html += `
+          <div class="insight-section">
+            <div class="insight-title">📍 Regional Hubs</div>
+        `;
+        startupData.ecosystem_hubs.forEach(hub => {
+          if (hub.ecosystem_value_usd) {
+            html += `
+              <div class="milestone">
+                <strong>${hub.city}</strong>: $${formatMoney(hub.ecosystem_value_usd)}
+                ${hub.growth_cagr ? ` (${(hub.growth_cagr * 100).toFixed(0)}% CAGR)` : ''}
+                ${hub.rankings && hub.rankings.global ? ` - Global #${hub.rankings.global}` : ''}
+              </div>
+            `;
+          } else if (hub.growth_rate) {
+            html += `
+              <div class="milestone">
+                <strong>${hub.city}</strong>: ${(hub.growth_rate * 100).toFixed(0)}% growth rate
+                ${hub.rankings && hub.rankings.global ? ` - Global #${hub.rankings.global}` : ''}
+              </div>
+            `;
+          }
+        });
+        html += `</div>`;
+      }
+
+      // Key Milestones
+      const milestones = [];
+      if (startupData.startups) {
+        startupData.startups.forEach(startup => {
+          if (startup.notes && startup.notes.includes('Y Combinator')) {
+            milestones.push({
+              text: `First Filipino startup in Y Combinator: ${startup.name} (${startup.founded})`,
+              year: startup.founded
+            });
+          }
+          if (startup.metrics && startup.metrics.users && startup.metrics.users >= 1000000) {
+            milestones.push({
+              text: `${startup.name}: ${(startup.metrics.users / 1000000).toFixed(1)}M users`,
+              year: startup.founded
+            });
+          }
+        });
+      }
+
+      if (milestones.length > 0) {
+        html += `
+          <div class="insight-section">
+            <div class="insight-title">🏆 Key Milestones</div>
+        `;
+        milestones.forEach(milestone => {
+          html += `<div class="milestone">${milestone.text}</div>`;
+        });
+        html += `</div>`;
+      }
+
+      // What This Answers
+      html += `
+        <div class="insight-section">
+          <div class="insight-title">💡 What This Answers</div>
+          <div class="milestone">
+            <strong>Growth Trajectory:</strong> How fast is the ecosystem growing?
+          </div>
+          <div class="milestone">
+            <strong>Power Connections:</strong> Which startups connect to political dynasties?
+          </div>
+          <div class="milestone">
+            <strong>Sector Focus:</strong> Where is innovation happening?
+          </div>
+          <div class="milestone">
+            <strong>Regional Hubs:</strong> Manila vs Davao ecosystem development
+          </div>
+          <div class="milestone">
+            <strong>Global Position:</strong> How does Philippines rank globally?
+          </div>
+        </div>
+      `;
+
+      insightsDiv.innerHTML = html;
+    }
+
+    function formatMoney(amount) {
+      if (!amount) return 'N/A';
+      if (amount >= 1000000000) {
+        return (amount / 1000000000).toFixed(1) + 'B';
+      } else if (amount >= 1000000) {
+        return (amount / 1000000).toFixed(1) + 'M';
+      } else if (amount >= 1000) {
+        return (amount / 1000).toFixed(1) + 'K';
+      }
+      return amount.toLocaleString();
+    }
+
+    // Event listeners
+    document.getElementById('showStartups').addEventListener('change', updateNetwork);
+    document.getElementById('showFounders').addEventListener('change', updateNetwork);
+    document.getElementById('showInvestors').addEventListener('change', updateNetwork);
+    document.getElementById('showOrganizations').addEventListener('change', updateNetwork);
+    document.getElementById('highlightPowerConnections').addEventListener('change', updateNetwork);
+    document.getElementById('filterSector').addEventListener('change', updateNetwork);
+    document.getElementById('resetView').addEventListener('click', () => {
+      if (network) {
+        network.fit({ animation: true });
+      }
+    });
+    document.getElementById('fitNetwork').addEventListener('click', () => {
+      if (network) {
+        network.fit({ animation: true });
+      }
+    });
+
+    // Load data on page load
+    loadData();
+  </script>
+</body>
+</html>
