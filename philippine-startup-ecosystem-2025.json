@@ -3,7 +3,7 @@
     "title": "Philippine Startup Ecosystem: Companies, Founders, Funding & Connections",
     "description": "Comprehensive tracking of Philippine startups, founders, funding rounds, investors, and connections to political dynasties, business networks, and elite schools",
     "version": "1.0",
-    "last_updated": "2026-01-09",
+    "last_updated": "2026-01-16",
     "data_scope": "initial_collection",
     "status": "in_progress",
     "notes": "Initial data collection. Tracking startups, funding, investors, and connections to power structures. Focus on notable startups, unicorns, and high-growth companies.",
@@ -27,7 +27,7 @@
       "deal_volume_change_2025": -0.54,
       "total_unicorns": 2,
       "total_startups_tracked": null,
-      "key_sectors": ["fintech", "e-commerce", "gaming", "edtech", "healthtech", "logistics", "agritech", "HR Tech", "SaaS", "F&B / Retail", "real estate tech", "prop tech", "insurtech", "blockchain", "cryptocurrency", "AI/ML", "IoT", "cleantech", "energy tech", "mobility", "transportation tech"]
+      "key_sectors": ["fintech", "e-commerce", "gaming", "edtech", "healthtech", "logistics", "agritech", "HR Tech", "SaaS", "F&B / Retail", "real estate tech", "prop tech", "insurtech", "blockchain", "cryptocurrency", "AI/ML", "IoT", "cleantech", "energy tech", "mobility", "transportation tech", "civic tech"]
     }
   },
   "startups": [
@@ -999,6 +999,75 @@
         "merchants": 400000
       },
       "sources": []
+    },
+    {
+      "startup_id": "OVOVTEC",
+      "name": "OVOVTEC",
+      "founded": 2024,
+      "status": "active",
+      "sector": "Civic Tech / Transparency",
+      "industry": "Civic Tech",
+      "website": "https://ovovtec.org",
+      "description": "One Village, One Volunteer: Trained, Educated, and Community-Centered, Concerned Citizen Confronting Corruption in Construction. Youth-led citizen-powered platform to document public construction projects and combat corruption in infrastructure. Uses crowdsourced reporting from vetted local experts who rate projects on completion, quality, and functionality. Plans to integrate AI for automated construction quality assessment.",
+      "headquarters": {
+        "city": "Manila",
+        "region": "NCR"
+      },
+      "founders": [
+        {
+          "name": "Gian Alingog",
+          "role": "Creator & Software Developer",
+          "background": "Computer Science awardee from Ateneo de Manila (2023), silver medalist at national computer science competition (NOI.PH). Currently Computer Science major at University of California.",
+          "education": [
+            {
+              "institution": "Ateneo de Manila University",
+              "degree": "High School",
+              "graduation_year": 2023,
+              "achievements": ["Computer Science awardee"]
+            },
+            {
+              "institution": "University of California",
+              "degree": "Computer Science (in progress)",
+              "graduation_year": null
+            }
+          ],
+          "elite_school_connections": ["ATENEO"],
+          "dynasty_connections": [],
+          "awards": ["Silver medalist, NOI.PH national computer science competition"]
+        }
+      ],
+      "funding": {
+        "total_raised_usd": null,
+        "latest_round": null,
+        "latest_round_date": null,
+        "funding_rounds": [],
+        "investors": [],
+        "valuation_usd": null
+      },
+      "metrics": {
+        "users": null,
+        "experts": null,
+        "projects_documented": null,
+        "regions_covered": ["Philippines"]
+      },
+      "mission": "To empower citizens as active stewards of public infrastructure by providing a platform that crowdsources transparency. OVOVTEC's mission is to ensure every government-funded construction project is openly documented and assessed, so that corruption, substandard work, and 'ghost projects' are brought to light and addressed.",
+      "vision": "A transparent Philippines (and eventually a transparent world) where every village has a voice and no public project goes unwitnessed.",
+      "key_features": [
+        "Crowdsourced infrastructure project documentation",
+        "Vetted local expert network",
+        "Multi-dimensional project ratings (completion, quality, functionality)",
+        "Community feedback and voting system",
+        "AI-powered construction quality assessment (planned)",
+        "Decentralized, non-political platform"
+      ],
+      "dynasty_connections": [],
+      "business_network_connections": [],
+      "elite_school_connections": ["ATENEO"],
+      "political_connections": [],
+      "sources": [
+        "https://ovovtec.org"
+      ],
+      "notes": "Open source civic tech platform focused on infrastructure transparency and anti-corruption. Founded by a young Filipino computer science student inspired by 'ghost projects' in flood control infrastructure. Represents a growing trend of youth-led civic technology initiatives in the Philippines."
     }
   ],
   "government_support": [
@@ -1424,8 +1493,8 @@
   },
   "data_collection_status": {
     "startups": {
-      "total": 16,
-      "collected": 16,
+      "total": 17,
+      "collected": 17,
       "needs_research": 3
     },
     "organizations": {

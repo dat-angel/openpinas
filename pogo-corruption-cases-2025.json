@@ -1,18 +1,17 @@
 {
   "metadata": {
     "title": "POGO & Corruption Cases Tracker - Philippines",
-    "description": "Comprehensive tracking of POGO-related cases, flood control corruption, and other corruption cases with their political connections. Includes high-profile cases like Alice Guo, flood control scandal ($2B lost), and VP Duterte impeachment.",
+    "description": "Comprehensive tracking of POGO-related cases, corruption cases, and their political connections. Includes high-profile cases like Alice Guo.",
     "version": "1.0",
-    "last_updated": "2026-01-01",
+    "last_updated": "2026-01-03",
     "prepared_for": "Filipino Diaspora Communities & Transparency Advocates",
-    "total_cases": 7,
+    "total_cases": 4,
     "categories": [
       "POGO-related",
-      "Flood Control Corruption",
-      "Graft",
       "Identity Fraud",
       "Tax Evasion",
       "Human Trafficking",
+      "Graft",
       "Plunder",
       "Bribery",
       "Money Laundering"
@@ -23,11 +22,17 @@
       "case_id": "ALICE_GUO_2024",
       "title": "Alice Guo Identity Fraud & POGO Connections",
       "category": "POGO-related",
-      "subcategories": ["identity_fraud", "human_trafficking", "corruption"],
+      "subcategories": [
+        "identity_fraud",
+        "human_trafficking",
+        "corruption",
+        "money_laundering",
+        "tax_evasion"
+      ],
       "filing_date": "2024-05-01",
-      "status": "ongoing_investigation",
+      "status": "convicted",
       "priority": "high",
-      "court_agency": "Senate of the Philippines, NBI, PNP",
+      "court_agency": "Senate of the Philippines, NBI, PNP, Ombudsman, Anti-Money Laundering Council, BIR, Manila RTC Branch 34",
       "location": {
         "municipality": "Bamban",
         "province": "Tarlac",
@@ -36,13 +41,18 @@
       "accused": [
         {
           "name": "Alice Guo",
-          "aliases": ["Guo Hua Ping"],
-          "position": "Mayor, Bamban, Tarlac",
+          "aliases": [
+            "Guo Hua Ping"
+          ],
+          "position": "Former Mayor, Bamban, Tarlac",
           "position_dates": "2022-2024",
           "nationality_claimed": "Filipino",
           "nationality_alleged": "Chinese",
-          "status": "under_investigation",
-          "current_status": "suspended",
+          "nationality_confirmed": "Chinese",
+          "status": "convicted",
+          "current_status": "imprisoned",
+          "sentence": "Life imprisonment",
+          "fine_php": 2000000,
           "dynasty_connection": null,
           "political_party": null
         }
@@ -68,32 +78,40 @@
         }
       ],
       "charges": [
+        "Qualified human trafficking",
         "Identity fraud",
         "Falsification of documents",
-        "Human trafficking (complicity)",
+        "Money laundering",
+        "Tax evasion",
         "Graft and corruption",
         "Violation of Anti-Trafficking in Persons Act"
       ],
-      "amount_involved_php": null,
+      "amount_involved_php": 100000000,
       "human_trafficking_victims": 875,
       "timeline": [
         {
           "date": "2024-03-13",
           "event": "POGO Raid",
           "description": "PNP (Philippine National Police) raids Hongsheng Gaming Technology Inc. in Bamban, rescues 875 individuals, many suspected victims of human trafficking",
-          "sources": ["https://www.rappler.com/nation/pnp-raids-pogo-facility-bamban-tarlac/"]
+          "sources": [
+            "https://www.rappler.com/nation/pnp-raids-pogo-facility-bamban-tarlac/"
+          ]
         },
         {
           "date": "2024-05-01",
           "event": "Senate Investigation Begins",
           "description": "Senate Committee on Women, Children, Family Relations and Gender Equality starts probe into Alice Guo's identity and POGO connections",
-          "sources": ["https://www.rappler.com/nation/senate-probes-alice-guo-identity-pogo-connections/"]
+          "sources": [
+            "https://www.rappler.com/nation/senate-probes-alice-guo-identity-pogo-connections/"
+          ]
         },
         {
           "date": "2024-05-22",
           "event": "Identity Questions Raised",
           "description": "Questions emerge about Alice Guo's birth certificate, nationality, and identity. Allegations that she is actually Chinese national Guo Hua Ping",
-          "sources": ["https://www.rappler.com/nation/alice-guo-identity-questions-chinese-national/"]
+          "sources": [
+            "https://www.rappler.com/nation/alice-guo-identity-questions-chinese-national/"
+          ]
         },
         {
           "date": "2024-06-05",
@@ -104,8 +122,86 @@
         {
           "date": "2024-07-15",
           "event": "Suspension",
-          "description": "Alice Guo suspended as mayor pending investigation",
+          "description": "Alice Guo suspended as mayor pending investigation. Assets frozen and arrest order issued",
           "sources": []
+        },
+        {
+          "date": "2024-07-20",
+          "event": "Fled Philippines",
+          "description": "Alice Guo flees the Philippines, traveling through Malaysia and Singapore",
+          "sources": []
+        },
+        {
+          "date": "2024-08-13",
+          "event": "Ombudsman Dismissal",
+          "description": "Office of the Ombudsman dismisses Alice Guo from mayoral position for grave misconduct related to POGO involvement. Retirement benefits forfeited, permanently barred from public office",
+          "sources": [
+            "https://www.gmanetwork.com/regionaltv/news/103434/ombudsman-orders-dismissal-of-alice-guo-from-service/story/"
+          ]
+        },
+        {
+          "date": "2024-08-14",
+          "event": "Tax Evasion Charges Filed",
+          "description": "Bureau of Internal Revenue (BIR) files criminal case against Guo for tax evasion related to transfer of shares in Baofu Land Development Inc. without filing and payment of corresponding taxes",
+          "sources": [
+            "https://bir-cdn.bir.gov.ph/BIR/pdf/PR54AUG1424.pdf"
+          ]
+        },
+        {
+          "date": "2024-08-30",
+          "event": "Money Laundering Charges Filed",
+          "description": "Anti-Money Laundering Council, in collaboration with NBI and Presidential Anti-Organized Crime Commission, files multiple counts of money laundering against Guo and 35 others. Alleged to have laundered over 100 million PHP (approximately US$1.8 million) from criminal activities",
+          "sources": [
+            "https://www.scmp.com/news/asia/southeast-asia/article/3276644/philippines-files-money-laundering-case-against-fugitive-ex-mayor-alice-guo"
+          ]
+        },
+        {
+          "date": "2024-09-03",
+          "event": "Arrest in Indonesia",
+          "description": "Alice Guo arrested in Jakarta, Indonesia after fleeing the Philippines",
+          "sources": [
+            "https://www.aljazeera.com/news/2024/9/4/former-philippines-mayor-accused-of-china-crime-links-arrested-in-indonesia"
+          ]
+        },
+        {
+          "date": "2024-09-05",
+          "event": "Deported to Philippines",
+          "description": "Alice Guo deported back to the Philippines to face multiple charges including human trafficking, money laundering, and tax evasion. Remains in detention",
+          "sources": [
+            "https://www.aljazeera.com/news/2024/9/6/fugitive-former-mayor-alice-guo-back-in-the-philippines-to-face-senate"
+          ]
+        },
+        {
+          "date": "2024-10-28",
+          "event": "Arraignment Postponed",
+          "description": "Guo's arraignment for graft and corruption charges before Valenzuela court postponed due to prosecution's motion to admit amended information in criminal cases",
+          "sources": [
+            "https://www.philstar.com/headlines/2024/10/01/2389222/arraignment-alice-guo-postponed-anew"
+          ]
+        },
+        {
+          "date": "2025-06-27",
+          "event": "Mayoral Term Declared Null and Void",
+          "description": "Manila Regional Trial Court Branch 34 declares Guo's term as mayor null and void, ruling that she was a Chinese citizen and thus ineligible for the position",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Alice_Guo"
+          ]
+        },
+        {
+          "date": "2025-11-20",
+          "event": "Convicted of Human Trafficking",
+          "description": "Philippine court convicts Alice Guo and seven co-defendants of qualified human trafficking. Sentenced to life imprisonment and fined 2 million pesos (approximately US$34,000) each. Court found that Guo oversaw an illegal online gaming complex in Tarlac province where hundreds of foreign nationals were forced to participate in cyber fraud schemes",
+          "sources": [
+            "https://apnews.com/article/0193403684842b8858e2ef5cb3c2f604"
+          ]
+        },
+        {
+          "date": "2025-11-22",
+          "event": "Motion to Remain in Pasig Jail",
+          "description": "Guo files urgent motion to remain in Pasig City Jail, delaying transfer to Correctional Institution for Women in Mandaluyong City",
+          "sources": [
+            "https://www.philstar.com/headlines/2025/11/22/2489020/alice-guo-transfer-correctional-delayed-motion-filed"
+          ]
         }
       ],
       "political_connections": [
@@ -123,24 +219,39 @@
       ],
       "dynasty_connections": [],
       "related_cases": [],
-      "significance": "High-profile case exposing how POGO operations are facilitated by local government officials. Raises questions about identity fraud, human trafficking, and corruption in POGO industry.",
-      "diaspora_impact": "Shows how corruption enables human trafficking and illegal operations. Highlights need for transparency in local government permits and POGO regulation.",
+      "significance": "High-profile case exposing how POGO operations are facilitated by local government officials. Alice Guo was convicted of qualified human trafficking and sentenced to life imprisonment in November 2025. Her mayoral term was declared null and void after court ruled she was a Chinese citizen, not Filipino. Case demonstrates identity fraud, human trafficking, money laundering, and corruption in POGO industry.",
+      "diaspora_impact": "Shows how corruption enables human trafficking and illegal operations. Highlights need for transparency in local government permits and POGO regulation. The conviction demonstrates that accountability is possible, but also reveals systemic vulnerabilities that allowed a foreign national to hold public office and facilitate criminal operations.",
       "sources": {
         "senate": [],
         "nbi": [],
+        "ombudsman": [
+          "https://www.gmanetwork.com/regionaltv/news/103434/ombudsman-orders-dismissal-of-alice-guo-from-service/story/"
+        ],
+        "amlc": [
+          "https://www.scmp.com/news/asia/southeast-asia/article/3276644/philippines-files-money-laundering-case-against-fugitive-ex-mayor-alice-guo"
+        ],
+        "bir": [
+          "https://bir-cdn.bir.gov.ph/BIR/pdf/PR54AUG1424.pdf"
+        ],
         "news": [
           "https://www.rappler.com/nation/alice-guo-pogo-bamban-tarlac/",
           "https://www.inquirer.net/nation/alice-guo-identity-investigation/",
-          "https://www.philstar.com/headlines/2024/05/23/alice-guo-pogo-connections"
+          "https://www.philstar.com/headlines/2024/05/23/alice-guo-pogo-connections",
+          "https://apnews.com/article/0193403684842b8858e2ef5cb3c2f604",
+          "https://www.aljazeera.com/news/2024/9/4/former-philippines-mayor-accused-of-china-crime-links-arrested-in-indonesia",
+          "https://www.philstar.com/headlines/2025/11/22/2489020/alice-guo-transfer-correctional-delayed-motion-filed"
         ]
       },
-      "last_updated": "2024-07-15"
+      "last_updated": "2025-11-22"
     },
     {
       "case_id": "POGO_TAX_2023",
       "title": "POGO Tax Evasion - Multiple Companies",
       "category": "POGO-related",
-      "subcategories": ["tax_evasion", "money_laundering"],
+      "subcategories": [
+        "tax_evasion",
+        "money_laundering"
+      ],
       "filing_date": "2023-01-15",
       "status": "ongoing",
       "priority": "high",
@@ -207,7 +318,10 @@
       "case_id": "POGO_TRAFFICKING_2024",
       "title": "POGO Human Trafficking - Multiple Raids",
       "category": "POGO-related",
-      "subcategories": ["human_trafficking", "kidnapping"],
+      "subcategories": [
+        "human_trafficking",
+        "kidnapping"
+      ],
       "filing_date": "2024-01-01",
       "status": "ongoing",
       "priority": "high",
@@ -260,7 +374,9 @@
         }
       ],
       "dynasty_connections": [],
-      "related_cases": ["ALICE_GUO_2024"],
+      "related_cases": [
+        "ALICE_GUO_2024"
+      ],
       "significance": "Shows systematic human trafficking through POGO operations. Thousands of victims, mostly from China and other Asian countries.",
       "diaspora_impact": "Highlights human rights abuses and corruption enabling trafficking. Shows need for better regulation and enforcement.",
       "sources": {
@@ -271,18 +387,24 @@
       "last_updated": "2024-01-01"
     },
     {
-      "case_id": "FLOOD_CONTROL_SCANDAL_2025",
-      "title": "Flood Control Corruption Scandal - $2 Billion Lost",
+      "case_id": "FLOOD_CONTROL_2025",
+      "title": "Flood Control Projects Corruption Scandal",
       "category": "Flood Control Corruption",
-      "subcategories": ["graft", "plunder", "bribery", "kickbacks"],
-      "filing_date": "2025-07-28",
-      "status": "ongoing_investigation",
+      "subcategories": [
+        "graft",
+        "plunder",
+        "bribery",
+        "overpricing",
+        "ghost_projects"
+      ],
+      "filing_date": "2025-08-01",
+      "status": "under_investigation",
       "priority": "high",
-      "court_agency": "Independent Commission for Infrastructure (ICI), DPWH, Ombudsman, Senate",
+      "court_agency": "Senate Blue Ribbon Committee, NBI, Ombudsman, COA, Anti-Money Laundering Council",
       "location": {
         "municipality": "Multiple",
-        "province": "Multiple",
-        "region": "Nationwide"
+        "province": "Multiple (Bulacan, Iloilo, Metro Manila, etc.)",
+        "region": "NCR, Central Luzon, Western Visayas, Multiple"
       },
       "accused": [
         {
@@ -290,468 +412,250 @@
           "position": "Former House Speaker",
           "position_dates": "2022-2025",
           "status": "under_investigation",
-          "current_status": "resigned",
-          "dynasty_connection": "ROMUALDEZ_FAMILY",
+          "current_status": "resigned_september_2025",
+          "dynasty_connection": "Romualdez Dynasty",
           "political_party": "Lakas-CMD",
-          "allegations": "Alleged recipient of kickbacks from flood control projects; named by contractor witnesses"
+          "charges": [
+            "graft",
+            "corruption",
+            "plunder"
+          ]
         },
         {
-          "name": "Chiz Escudero",
+          "name": "Francis Escudero",
           "position": "Former Senate President",
           "position_dates": "2024-2025",
           "status": "under_investigation",
-          "current_status": "ousted",
-          "dynasty_connection": "ESCUDERO_FAMILY",
+          "current_status": "resigned_september_2025",
+          "dynasty_connection": "Escudero Dynasty",
           "political_party": "NPC",
-          "allegations": "Alleged recipient of P160 million in kickbacks; admitted receiving P30M campaign donation from flagged contractor"
+          "charges": [
+            "graft",
+            "corruption"
+          ]
         },
         {
-          "name": "Bong Revilla",
-          "position": "Former Senator",
+          "name": "Curlee Discaya",
+          "position": "Contractor",
           "status": "under_investigation",
-          "dynasty_connection": "REVILLA_TOLENTINO",
-          "political_party": "Lakas-CMD",
-          "allegations": "Named as recipient of kickbacks from flood control projects"
-        },
-        {
-          "name": "Nancy Binay",
-          "position": "Former Senator",
-          "status": "under_investigation",
-          "dynasty_connection": "BINAY_FAMILY",
-          "political_party": "UNA",
-          "allegations": "Named as recipient of kickbacks from flood control projects"
-        },
-        {
-          "name": "Mark Villar",
-          "position": "Former DPWH Secretary",
-          "position_dates": "2016-2021",
-          "status": "under_investigation",
-          "dynasty_connection": "VILLAR_FAMILY",
-          "political_party": "Nacionalista Party",
-          "allegations": "DPWH tenure under investigation for kickback schemes in flood control projects"
-        },
-        {
-          "name": "Jojo Cadiz",
-          "position": "Former Justice Undersecretary",
-          "position_dates": "2022-2025",
-          "status": "under_investigation",
-          "current_status": "resigned",
+          "current_status": "under_investigation",
           "dynasty_connection": null,
           "political_party": null,
-          "allegations": "Son's company awarded ₱250 million in flood-control and infrastructure projects in Ilocos Norte"
+          "charges": [
+            "graft",
+            "bribery",
+            "fraud"
+          ]
         },
         {
-          "name": "Roberto Bernardo",
-          "position": "Former DPWH Undersecretary",
-          "status": "witness",
-          "allegations": "Testified about delivering kickbacks to politicians"
+          "name": "Sarah Discaya",
+          "position": "Contractor",
+          "status": "under_investigation",
+          "current_status": "under_investigation",
+          "dynasty_connection": null,
+          "political_party": null,
+          "charges": [
+            "graft",
+            "bribery",
+            "fraud"
+          ]
+        },
+        {
+          "name": "Multiple DPWH Officials",
+          "position": "Department of Public Works and Highways",
+          "status": "under_investigation",
+          "current_status": "under_investigation",
+          "dynasty_connection": null,
+          "political_party": null,
+          "charges": [
+            "graft",
+            "corruption",
+            "bribery"
+          ]
+        },
+        {
+          "name": "Multiple Senators and Congressmen",
+          "position": "Legislators",
+          "status": "under_investigation",
+          "current_status": "under_investigation",
+          "dynasty_connection": "Various",
+          "political_party": "Various",
+          "charges": [
+            "graft",
+            "corruption",
+            "plunder"
+          ]
         }
       ],
       "charges": [
         "Graft and corruption",
         "Plunder",
         "Bribery",
-        "Violation of Anti-Graft and Corrupt Practices Act",
-        "Malversation of public funds"
+        "Overpricing",
+        "Ghost projects",
+        "Fraud",
+        "Violation of Anti-Graft and Corrupt Practices Act"
       ],
-      "amount_involved_php": 118000000000,
-      "amount_involved_usd": 2000000000,
+      "amount_involved_php": 118500000000,
       "human_trafficking_victims": null,
       "timeline": [
         {
-          "date": "2025-07-28",
-          "event": "President Marcos Addresses Flood Control Corruption",
-          "description": "In SONA, President Marcos vows to expose and prosecute corruption in flood control projects, orders release of comprehensive list of projects",
-          "sources": ["https://en.wikipedia.org/wiki/Flood_control_projects_scandal_in_the_Philippines"]
+          "date": "2023-01-01",
+          "event": "Flood Control Projects Begin",
+          "description": "Massive flood control projects initiated across Philippines, with billions allocated. Projects continue through 2024-2025",
+          "sources": []
         },
         {
-          "date": "2025-08-11",
-          "event": "Sumbong sa Pangulo Platform Launched",
-          "description": "President Marcos launches website allowing citizens to monitor flood control projects and report anomalies",
-          "sources": ["https://en.wikipedia.org/wiki/Flood_control_projects_scandal_in_the_Philippines"]
+          "date": "2024-07-01",
+          "event": "COA Audit Begins",
+          "description": "Commission on Audit begins investigating flood control projects, noting irregularities and potential fraud",
+          "sources": []
         },
         {
-          "date": "2025-08-21",
-          "event": "Senator Lacson Exposes Corruption",
-          "description": "Senator Panfilo Lacson exposes widespread corruption, revealing politicians and DPWH officials involved in kickback schemes",
-          "sources": ["https://www.rappler.com/nation/politics/lacson-exposes-flood-control-corruption/"]
+          "date": "2025-07-22",
+          "event": "SONA Announcement",
+          "description": "President Ferdinand Marcos Jr. announces plans for large-scale flood control projects in State of the Nation Address",
+          "sources": []
         },
         {
-          "date": "2025-09-02",
-          "event": "Finance Secretary Reports $2 Billion Lost",
-          "description": "Finance Secretary Ralph Recto reports up to 70% of flood control funds lost to corruption, amounting to $2 billion over two years",
-          "sources": ["https://www.scmp.com/news/asia/southeast-asia/article/3324031/philippines-lost-us2-billion-2-years-flood-corruption-finance-secretary"]
+          "date": "2025-08-01",
+          "event": "Senate Investigation Launched",
+          "description": "Senate Blue Ribbon Committee launches investigation into flood control project irregularities. Reports emerge of 'ghost' projects, contractor monopolies, and misallocation of funds",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Flood_control_projects_scandal_in_the_Philippines"
+          ]
         },
         {
           "date": "2025-09-08",
-          "event": "Contractors Name Romualdez in Kickbacks",
-          "description": "Contractor couple names House Speaker Martin Romualdez as alleged recipient of kickbacks from flood control projects",
-          "sources": ["https://www.rappler.com/nation/politics/"]
-        },
-        {
-          "date": "2025-09-11",
-          "event": "Independent Commission for Infrastructure Established",
-          "description": "President Marcos establishes ICI to investigate irregularities in flood control projects",
-          "sources": ["https://en.wikipedia.org/wiki/Independent_Commission_for_Infrastructure"]
+          "event": "Explosive Testimony",
+          "description": "Explosive testimony identifies legislators and officials in flood-control corruption inquiry. Construction companies owned by Curlee and Sarah Discaya implicated in securing substantial government contracts and allegedly paying kickbacks to lawmakers",
+          "sources": [
+            "https://apnews.com/article/61deba5e59f9bc5fac1800a660591c35"
+          ]
         },
         {
           "date": "2025-09-17",
-          "event": "House Speaker Romualdez Resigns",
-          "description": "Martin Romualdez resigns as House Speaker following corruption allegations",
-          "sources": ["https://newsinfo.inquirer.net/2110811/romualdez-quits-as-speaker-amid-flood-probe-pressure"]
+          "event": "NBI Prepares Cases",
+          "description": "National Bureau of Investigation prepares to submit cases against DPWH officials and contractors linked to flood control scandal. Investigation reveals several firms shared directors, indicating interlocking boards",
+          "sources": [
+            "https://www.pep.ph/news/local/188618/philippine-flood-control-corruption-scandal-timeline-a5128-20250921-lfrm3"
+          ]
+        },
+        {
+          "date": "2025-09-18",
+          "event": "Senate Hearing Reveals Master Plan Absence",
+          "description": "During Senate Blue Ribbon hearing, DPWH Secretary Vince Dizon admits absence of updated master plan for flood control (last plan from 2013). Senator Risa Hontiveros highlights that uncoordinated projects had worsened flooding. Contractors and former DPWH officials cited in contempt for providing false information",
+          "sources": [
+            "https://www.pep.ph/news/local/188618/philippine-flood-control-corruption-scandal-timeline-a5128-20250921-lfrm3"
+          ]
         },
         {
           "date": "2025-09-21",
-          "event": "Trillion Peso March - Mass Protests",
-          "description": "Over 33,000 people participate in anti-corruption rallies in Manila",
-          "sources": ["https://time.com/7319164/philippines-flood-control-projects-corruption/"]
+          "event": "Mass Protests",
+          "description": "Mass protests erupt across Philippines demanding accountability for misuse of flood control funds. Citizens call for radical changes and resignation of President Marcos Jr. Demonstrators highlight systemic corruption affecting infrastructure projects",
+          "sources": [
+            "https://time.com/7319164/philippines-flood-control-projects-corruption/"
+          ]
         },
         {
-          "date": "2025-09-25",
-          "event": "Former DPWH Official Names Senators",
-          "description": "Roberto Bernardo names Senators Escudero, Revilla, and Binay as recipients of kickbacks",
-          "sources": ["https://www.philstar.com/headlines/2025/09/25/2475343/escudero-binay-dragged-flood-control-fund-controversy"]
-        },
-        {
-          "date": "2025-12-05",
-          "event": "Justice Undersecretary Cadiz Resigns",
-          "description": "Jojo Cadiz resigns amid allegations son's company received ₱250 million in contracts",
+          "date": "2025-09-2025",
+          "event": "Romualdez and Escudero Resign",
+          "description": "House Speaker Martin Romualdez and Senate President Francis Escudero resign amid flood control corruption scandal",
           "sources": []
         },
         {
-          "date": "2025-12-18",
-          "event": "DPWH Seeks Charges vs Romualdez and 86 Others",
-          "description": "DPWH recommends criminal charges against Martin Romualdez and 86 others in flood control scandal",
-          "sources": ["https://www.bworldonline.com/the-nation/2025/12/18/719872/dpwh-seeks-charges-vs-romualdez-86-others-in-flood-control-scandal/"]
+          "date": "2025-10-20",
+          "event": "New Detention Facility",
+          "description": "Philippines unveils new jail facility for legislators who may face corruption trial. Facility prepared to house high-profile politicians implicated in flood control scandal",
+          "sources": [
+            "https://apnews.com/article/312609aa6b53b9b4c37f0c6db3aa8641"
+          ]
         },
         {
-          "date": "2025-12-25",
-          "event": "Mass Arrests Announced",
-          "description": "President Marcos announces mass arrests of corrupt politicians",
-          "sources": []
+          "date": "2025-11-12",
+          "event": "President Announces Arrests",
+          "description": "President Ferdinand Marcos Jr. announces that numerous high-profile politicians, including senators and members of Congress, will be jailed by Christmas for involvement in corruption scandal. Charges include graft, corruption, and plunder. Assets worth billions of pesos frozen",
+          "sources": [
+            "https://apnews.com/article/3972804a08eb6b06a74c12a4b3ae8335"
+          ]
+        },
+        {
+          "date": "2025-11-2025",
+          "event": "Assets Frozen",
+          "description": "Anti-Money Laundering Council freezes assets worth 6.3 billion pesos, including over 1,600 bank accounts and luxury vehicles linked to flood control corruption",
+          "sources": [
+            "https://apnews.com/article/3972804a08eb6b06a74c12a4b3ae8335"
+          ]
+        },
+        {
+          "date": "2025-12-2025",
+          "event": "COA Performance Audit",
+          "description": "Commission on Audit initiates performance audit of government flood control projects. Fraud audit ordered for Bulacan projects covering January 2022 to July 2025",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Gamaliel_Cordoba"
+          ]
         }
       ],
       "political_connections": [
         {
-          "connection_type": "kickbacks",
-          "description": "Politicians received kickbacks from contractors in exchange for awarding flood control projects",
-          "dynasty": "Multiple",
-          "details": "Up to 70% of project funds lost to corruption through ghost projects and kickbacks"
+          "connection_type": "legislative",
+          "description": "House Speaker and Senate President implicated in approving and overseeing flawed flood control projects",
+          "dynasty": "Romualdez Dynasty, Escudero Dynasty",
+          "details": "Martin Romualdez (House Speaker) and Francis Escudero (Senate President) resigned in September 2025 amid scandal"
         },
         {
-          "connection_type": "contractor_politician_network",
-          "description": "Deep connections between political dynasties, government officials, and contractors",
-          "dynasty": "Multiple",
-          "details": "Contractors delivered kickbacks directly to politicians and their intermediaries"
+          "connection_type": "executive",
+          "description": "DPWH officials allegedly colluded with contractors in project bidding and execution",
+          "dynasty": null,
+          "details": "Multiple DPWH officials under investigation for mismanaging and misallocating funds"
+        },
+        {
+          "connection_type": "contractor",
+          "description": "Small group of contractors cornered contracts worth around 20% of administration's flood control expenditures. Interlocking boards suggest collusion",
+          "dynasty": null,
+          "details": "Discaya-owned construction companies secured substantial contracts in Bulacan and Iloilo City"
+        },
+        {
+          "connection_type": "kickbacks",
+          "description": "Contractors allegedly paid kickbacks to lawmakers and officials for project approvals",
+          "dynasty": "Various",
+          "details": "Testimony revealed systematic kickback scheme involving legislators and contractors"
         }
       ],
-      "dynasty_connections": ["ROMUALDEZ_FAMILY", "ESCUDERO_FAMILY", "REVILLA_TOLENTINO", "BINAY_FAMILY", "VILLAR_FAMILY"],
+      "dynasty_connections": [
+        {
+          "dynasty": "Romualdez Dynasty",
+          "member": "Martin Romualdez",
+          "role": "House Speaker (resigned September 2025)",
+          "connection": "Alleged approval and oversight of corrupt flood control projects"
+        },
+        {
+          "dynasty": "Escudero Dynasty",
+          "member": "Francis Escudero",
+          "role": "Senate President (resigned September 2025)",
+          "connection": "Alleged approval and oversight of corrupt flood control projects"
+        }
+      ],
       "related_cases": [],
-      "significance": "Largest corruption scandal in recent Philippine history. $2 billion lost over 2 years. Led to resignation of House Speaker, ouster of Senate President, and mass arrests. Exposed deep connections between political dynasties and contractors.",
-      "diaspora_impact": "Massive financial losses affect government capacity to serve families. Corruption undermines development that could benefit remittance recipients. Erosion of trust in government institutions.",
+      "significance": "Massive corruption scandal involving approximately ₱118.5 billion ($2 billion) misused in over 9,800 flood control projects since 2023. Led to resignation of House Speaker and Senate President. Reveals systemic corruption in infrastructure projects, with 'ghost' projects, contractor monopolies, and substandard work. Public outrage led to mass protests demanding accountability.",
+      "diaspora_impact": "Shows how corruption in infrastructure projects directly impacts Filipino communities through substandard flood control leading to devastating floods. Billions of pesos meant for public safety were misappropriated, affecting millions of Filipinos. Highlights need for transparency and accountability in public infrastructure spending.",
       "sources": {
-        "senate": [],
-        "dpwh": [],
-        "ici": [],
-        "news": [
-          "https://www.rappler.com/nation/politics/lacson-exposes-flood-control-corruption/",
-          "https://www.scmp.com/news/asia/southeast-asia/article/3324031/philippines-lost-us2-billion-2-years-flood-corruption-finance-secretary",
-          "https://www.philstar.com/headlines/2025/09/25/2475343/escudero-binay-dragged-flood-control-fund-controversy",
-          "https://www.bworldonline.com/the-nation/2025/12/18/719872/dpwh-seeks-charges-vs-romualdez-86-others-in-flood-control-scandal/",
-          "https://time.com/7319164/philippines-flood-control-projects-corruption/"
+        "senate": [
+          "https://www.pep.ph/news/local/188618/philippine-flood-control-corruption-scandal-timeline-a5128-20250921-lfrm3"
         ],
-        "international": [
+        "nbi": [],
+        "coa": [],
+        "ombudsman": [],
+        "amlc": [],
+        "news": [
+          "https://apnews.com/article/3972804a08eb6b06a74c12a4b3ae8335",
+          "https://apnews.com/article/61deba5e59f9bc5fac1800a660591c35",
+          "https://apnews.com/article/312609aa6b53b9b4c37f0c6db3aa8641",
+          "https://time.com/7319164/philippines-flood-control-projects-corruption/",
           "https://en.wikipedia.org/wiki/Flood_control_projects_scandal_in_the_Philippines"
         ]
       },
-      "last_updated": "2025-12-25"
-    },
-    {
-      "case_id": "MARTIN_ROMUALDEZ_FLOOD_CONTROL_2025",
-      "title": "Martin Romualdez Flood Control Kickbacks",
-      "category": "Flood Control Corruption",
-      "subcategories": ["graft", "bribery", "kickbacks"],
-      "filing_date": "2025-09-08",
-      "status": "filed",
-      "priority": "high",
-      "court_agency": "DPWH, Ombudsman",
-      "location": {
-        "municipality": "Multiple",
-        "province": "Multiple",
-        "region": "Nationwide"
-      },
-      "accused": [
-        {
-          "name": "Martin Romualdez",
-          "position": "Former House Speaker",
-          "position_dates": "2022-2025",
-          "status": "under_investigation",
-          "current_status": "resigned",
-          "dynasty_connection": "ROMUALDEZ_FAMILY",
-          "political_party": "Lakas-CMD",
-          "allegations": "Alleged recipient of kickbacks from flood control projects; named by contractor witnesses Pacifico and Cezarah Discaya"
-        }
-      ],
-      "charges": [
-        "Graft and corruption",
-        "Bribery",
-        "Violation of Anti-Graft and Corrupt Practices Act"
-      ],
-      "amount_involved_php": null,
-      "human_trafficking_victims": null,
-      "timeline": [
-        {
-          "date": "2025-09-08",
-          "event": "Named in Senate Hearing",
-          "description": "Contractor couple names House Speaker Martin Romualdez as alleged recipient of kickbacks",
-          "sources": ["https://www.rappler.com/nation/politics/"]
-        },
-        {
-          "date": "2025-09-17",
-          "event": "Resigns as House Speaker",
-          "description": "Resigns to 'stanch the chamber's bleeding credibility' following corruption allegations",
-          "sources": ["https://newsinfo.inquirer.net/2110811/romualdez-quits-as-speaker-amid-flood-probe-pressure"]
-        },
-        {
-          "date": "2025-12-18",
-          "event": "DPWH Recommends Charges",
-          "description": "DPWH recommends criminal charges against Romualdez and 86 others",
-          "sources": ["https://www.bworldonline.com/the-nation/2025/12/18/719872/dpwh-seeks-charges-vs-romualdez-86-others-in-flood-control-scandal/"]
-        }
-      ],
-      "political_connections": [
-        {
-          "connection_type": "kickbacks",
-          "description": "Alleged recipient of kickbacks from flood control project contractors",
-          "dynasty": "ROMUALDEZ_FAMILY",
-          "details": "First sitting House Speaker publicly implicated in corruption scandal"
-        }
-      ],
-      "dynasty_connections": ["ROMUALDEZ_FAMILY"],
-      "related_cases": ["FLOOD_CONTROL_SCANDAL_2025"],
-      "significance": "Historic case - first sitting House Speaker to resign due to corruption allegations. Marked major political upheaval.",
-      "diaspora_impact": "Leadership change signals accountability; political instability in Congress",
-      "sources": {
-        "senate": [],
-        "dpwh": ["https://www.bworldonline.com/the-nation/2025/12/18/719872/dpwh-seeks-charges-vs-romualdez-86-others-in-flood-control-scandal/"],
-        "news": [
-          "https://www.rappler.com/nation/politics/",
-          "https://newsinfo.inquirer.net/2110811/romualdez-quits-as-speaker-amid-flood-probe-pressure",
-          "https://www.philstar.com/headlines/2025/09/17/2473471/romualdez-resigns-house-speaker-amid-alleged-corruption-budget-woes"
-        ]
-      },
-      "last_updated": "2025-12-18"
-    },
-    {
-      "case_id": "CHIZ_ESCUDERO_FLOOD_CONTROL_2025",
-      "title": "Chiz Escudero Flood Control Kickbacks - P160 Million",
-      "category": "Flood Control Corruption",
-      "subcategories": ["graft", "plunder", "bribery", "kickbacks"],
-      "filing_date": "2025-09-25",
-      "status": "under_investigation",
-      "priority": "high",
-      "court_agency": "Ombudsman, Senate",
-      "location": {
-        "municipality": "Multiple",
-        "province": "Multiple",
-        "region": "Nationwide"
-      },
-      "accused": [
-        {
-          "name": "Chiz Escudero",
-          "position": "Former Senate President",
-          "position_dates": "2024-2025",
-          "status": "under_investigation",
-          "current_status": "ousted",
-          "dynasty_connection": "ESCUDERO_FAMILY",
-          "political_party": "NPC",
-          "allegations": "Alleged recipient of P160 million in kickbacks (20% of P800M projects); admitted receiving P30M campaign donation from flagged contractor"
-        }
-      ],
-      "charges": [
-        "Graft and corruption",
-        "Plunder",
-        "Bribery",
-        "Violation of Anti-Graft and Corrupt Practices Act"
-      ],
-      "amount_involved_php": 160000000,
-      "human_trafficking_victims": null,
-      "timeline": [
-        {
-          "date": "2025-09-25",
-          "event": "Named by Former DPWH Official",
-          "description": "Roberto Bernardo alleges he personally delivered P160 million to intermediary on Escudero's behalf",
-          "sources": ["https://www.philstar.com/headlines/2025/09/25/2475343/escudero-binay-dragged-flood-control-fund-controversy"]
-        },
-        {
-          "date": "2025-09-25",
-          "event": "Admits Campaign Donation",
-          "description": "Escudero admits receiving P30 million campaign donation from flagged contractor but denies kickbacks",
-          "sources": ["https://www.rappler.com/philippines/former-dpwh-official-bernardo-names-escudero-binay-revilla-alleged-flood-control-kickbacks/"]
-        },
-        {
-          "date": "2025-10-01",
-          "event": "Ousted as Senate President",
-          "description": "Escudero ousted as Senate President following corruption allegations",
-          "sources": []
-        }
-      ],
-      "political_connections": [
-        {
-          "connection_type": "kickbacks",
-          "description": "Alleged recipient of P160M in kickbacks from flood control projects",
-          "dynasty": "ESCUDERO_FAMILY",
-          "details": "Former DPWH official testified about delivering kickbacks through intermediary"
-        }
-      ],
-      "dynasty_connections": ["ESCUDERO_FAMILY"],
-      "related_cases": ["FLOOD_CONTROL_SCANDAL_2025"],
-      "significance": "Senate President ousted due to corruption scandal. Severely damaged Escudero dynasty reputation.",
-      "diaspora_impact": "Trust in Senate leadership eroded; concerns about systemic corruption",
-      "sources": {
-        "senate": [],
-        "ombudsman": [],
-        "news": [
-          "https://www.philstar.com/headlines/2025/09/25/2475343/escudero-binay-dragged-flood-control-fund-controversy",
-          "https://www.rappler.com/philippines/former-dpwh-official-bernardo-names-escudero-binay-revilla-alleged-flood-control-kickbacks/",
-          "https://gulfnews.com/world/asia/philippines/philippine-senators-in-kickbacks-scandal-escudero-binay-revilla-named-top-auditor-education-official-called-out-in-flood-control-scam-1.500282639"
-        ]
-      },
-      "last_updated": "2025-10-01"
-    },
-    {
-      "case_id": "JOJO_CADIZ_FLOOD_CONTROL_2025",
-      "title": "Jojo Cadiz - Son's Company Awarded ₱250M Contracts",
-      "category": "Flood Control Corruption",
-      "subcategories": ["graft", "conflict_of_interest"],
-      "filing_date": "2025-12-05",
-      "status": "under_investigation",
-      "priority": "high",
-      "court_agency": "DOJ, Ombudsman",
-      "location": {
-        "municipality": "Multiple",
-        "province": "Ilocos Norte",
-        "region": "Ilocos Region"
-      },
-      "accused": [
-        {
-          "name": "Jojo Cadiz",
-          "position": "Former Justice Undersecretary",
-          "position_dates": "2022-2025",
-          "status": "under_investigation",
-          "current_status": "resigned",
-          "dynasty_connection": null,
-          "political_party": null,
-          "allegations": "Son's company awarded ₱250 million in flood-control and infrastructure projects in Ilocos Norte"
-        }
-      ],
-      "charges": [
-        "Graft and corruption",
-        "Conflict of interest",
-        "Violation of Anti-Graft and Corrupt Practices Act"
-      ],
-      "amount_involved_php": 250000000,
-      "human_trafficking_victims": null,
-      "timeline": [
-        {
-          "date": "2025-12-05",
-          "event": "Resigns as Justice Undersecretary",
-          "description": "Resigns amid allegations son's company received ₱250 million in contracts",
-          "sources": []
-        }
-      ],
-      "political_connections": [
-        {
-          "connection_type": "conflict_of_interest",
-          "description": "Son's company received government contracts while father held high position",
-          "dynasty": null,
-          "details": "Highlights nepotism and conflict of interest in government contracting"
-        }
-      ],
-      "dynasty_connections": [],
-      "related_cases": ["FLOOD_CONTROL_SCANDAL_2025"],
-      "significance": "Highlights nepotism and conflict of interest in flood control project awards. Shows how corruption reaches high levels of government.",
-      "diaspora_impact": "Erosion of trust in justice system; concerns about nepotism affecting governance",
-      "sources": {
-        "doj": [],
-        "ombudsman": [],
-        "news": []
-      },
-      "last_updated": "2025-12-05"
-    },
-    {
-      "case_id": "VP_DUTERTE_IMPEACHMENT_2025",
-      "title": "Vice President Sara Duterte Impeachment - Confidential Funds Misuse",
-      "category": "Graft",
-      "subcategories": ["graft", "plunder", "misuse_of_funds"],
-      "filing_date": "2025-02-05",
-      "status": "dismissed",
-      "priority": "high",
-      "court_agency": "House of Representatives, Supreme Court",
-      "location": {
-        "municipality": "Multiple",
-        "province": "Multiple",
-        "region": "Nationwide"
-      },
-      "accused": [
-        {
-          "name": "Sara Duterte",
-          "position": "Vice President of the Philippines",
-          "position_dates": "2022-present",
-          "status": "acquitted",
-          "current_status": "in_office",
-          "dynasty_connection": "DUTERTE_FAMILY",
-          "political_party": "Lakas-CMD",
-          "allegations": "Misuse of PHP 6.125 billion in confidential and intelligence funds during tenure as Education Secretary; threats of violence against President Marcos, First Lady, and House Speaker"
-        }
-      ],
-      "charges": [
-        "Violation of Constitution",
-        "Bribery",
-        "Graft and corruption",
-        "Betrayal of public trust",
-        "High crimes"
-      ],
-      "amount_involved_php": 6125000000,
-      "human_trafficking_victims": null,
-      "timeline": [
-        {
-          "date": "2025-02-05",
-          "event": "Impeachment Complaint Filed",
-          "description": "More than two-thirds of House of Representatives (215+ members) sign impeachment complaint",
-          "sources": []
-        },
-        {
-          "date": "2025-06-02",
-          "event": "Impeachment Trial Begins",
-          "description": "Impeachment trial of Vice President Sara Duterte begins",
-          "sources": []
-        },
-        {
-          "date": "2025-06-15",
-          "event": "Supreme Court Blocks Impeachment",
-          "description": "Supreme Court issues temporary restraining order blocking impeachment proceedings",
-          "sources": []
-        }
-      ],
-      "political_connections": [
-        {
-          "connection_type": "misuse_of_funds",
-          "description": "Alleged misuse of confidential and intelligence funds as Education Secretary",
-          "dynasty": "DUTERTE_FAMILY",
-          "details": "PHP 6.125 billion in confidential funds questioned"
-        }
-      ],
-      "dynasty_connections": ["DUTERTE_FAMILY"],
-      "related_cases": [],
-      "significance": "First impeachment complaint against a sitting Vice President. Blocked by Supreme Court, raising questions about judicial independence.",
-      "diaspora_impact": "Questions about accountability of highest officials; concerns about judicial independence",
-      "sources": {
-        "house": [],
-        "supreme_court": [],
-        "news": []
-      },
-      "last_updated": "2025-06-15"
+      "last_updated": "2025-12-31"
     }
   ],
   "pogo_operations": [
@@ -769,32 +673,36 @@
       "date_established": "2022",
       "date_raided": "2024-03-13",
       "date_closed": "2024-03-13",
-      "political_connections": ["ALICE_GUO_2024"],
+      "political_connections": [
+        "ALICE_GUO_2024"
+      ],
       "dynasty_connections": [],
       "victims_rescued": 875,
-      "charges": ["human_trafficking", "illegal_detention"],
-      "related_cases": ["ALICE_GUO_2024"]
+      "charges": [
+        "human_trafficking",
+        "illegal_detention"
+      ],
+      "related_cases": [
+        "ALICE_GUO_2024"
+      ]
     }
   ],
   "statistics": {
-    "total_cases": 7,
+    "total_cases": 3,
     "by_status": {
-      "ongoing_investigation": 5,
-      "filed": 1,
+      "ongoing_investigation": 2,
+      "filed": 0,
       "under_trial": 0,
-      "dismissed": 1,
-      "convicted": 0,
+      "dismissed": 0,
+      "convicted": 1,
       "acquitted": 0
     },
     "by_category": {
-      "POGO-related": 3,
-      "Flood Control Corruption": 3,
-      "Graft": 1
+      "POGO-related": 3
     },
     "human_trafficking_victims": 2875,
-    "total_amount_php": 174375000000,
+    "total_amount_php": 50100000000,
     "pogo_operations_raided": 1,
     "pogo_operations_active": 0
   }
 }
-

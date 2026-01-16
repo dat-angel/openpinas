@@ -5,7 +5,7 @@
     "version": "1.0",
     "last_updated": "2026-01-03",
     "prepared_for": "Filipino Diaspora Communities & Transparency Advocates",
-    "total_cases": 0,
+    "total_cases": 4,
     "categories": [
       "POGO-related",
       "Identity Fraud",
@@ -22,7 +22,13 @@
       "case_id": "ALICE_GUO_2024",
       "title": "Alice Guo Identity Fraud & POGO Connections",
       "category": "POGO-related",
-      "subcategories": ["identity_fraud", "human_trafficking", "corruption", "money_laundering", "tax_evasion"],
+      "subcategories": [
+        "identity_fraud",
+        "human_trafficking",
+        "corruption",
+        "money_laundering",
+        "tax_evasion"
+      ],
       "filing_date": "2024-05-01",
       "status": "convicted",
       "priority": "high",
@@ -35,7 +41,9 @@
       "accused": [
         {
           "name": "Alice Guo",
-          "aliases": ["Guo Hua Ping"],
+          "aliases": [
+            "Guo Hua Ping"
+          ],
           "position": "Former Mayor, Bamban, Tarlac",
           "position_dates": "2022-2024",
           "nationality_claimed": "Filipino",
@@ -85,19 +93,25 @@
           "date": "2024-03-13",
           "event": "POGO Raid",
           "description": "PNP (Philippine National Police) raids Hongsheng Gaming Technology Inc. in Bamban, rescues 875 individuals, many suspected victims of human trafficking",
-          "sources": ["https://www.rappler.com/nation/pnp-raids-pogo-facility-bamban-tarlac/"]
+          "sources": [
+            "https://www.rappler.com/nation/pnp-raids-pogo-facility-bamban-tarlac/"
+          ]
         },
         {
           "date": "2024-05-01",
           "event": "Senate Investigation Begins",
           "description": "Senate Committee on Women, Children, Family Relations and Gender Equality starts probe into Alice Guo's identity and POGO connections",
-          "sources": ["https://www.rappler.com/nation/senate-probes-alice-guo-identity-pogo-connections/"]
+          "sources": [
+            "https://www.rappler.com/nation/senate-probes-alice-guo-identity-pogo-connections/"
+          ]
         },
         {
           "date": "2024-05-22",
           "event": "Identity Questions Raised",
           "description": "Questions emerge about Alice Guo's birth certificate, nationality, and identity. Allegations that she is actually Chinese national Guo Hua Ping",
-          "sources": ["https://www.rappler.com/nation/alice-guo-identity-questions-chinese-national/"]
+          "sources": [
+            "https://www.rappler.com/nation/alice-guo-identity-questions-chinese-national/"
+          ]
         },
         {
           "date": "2024-06-05",
@@ -121,55 +135,73 @@
           "date": "2024-08-13",
           "event": "Ombudsman Dismissal",
           "description": "Office of the Ombudsman dismisses Alice Guo from mayoral position for grave misconduct related to POGO involvement. Retirement benefits forfeited, permanently barred from public office",
-          "sources": ["https://www.gmanetwork.com/regionaltv/news/103434/ombudsman-orders-dismissal-of-alice-guo-from-service/story/"]
+          "sources": [
+            "https://www.gmanetwork.com/regionaltv/news/103434/ombudsman-orders-dismissal-of-alice-guo-from-service/story/"
+          ]
         },
         {
           "date": "2024-08-14",
           "event": "Tax Evasion Charges Filed",
           "description": "Bureau of Internal Revenue (BIR) files criminal case against Guo for tax evasion related to transfer of shares in Baofu Land Development Inc. without filing and payment of corresponding taxes",
-          "sources": ["https://bir-cdn.bir.gov.ph/BIR/pdf/PR54AUG1424.pdf"]
+          "sources": [
+            "https://bir-cdn.bir.gov.ph/BIR/pdf/PR54AUG1424.pdf"
+          ]
         },
         {
           "date": "2024-08-30",
           "event": "Money Laundering Charges Filed",
           "description": "Anti-Money Laundering Council, in collaboration with NBI and Presidential Anti-Organized Crime Commission, files multiple counts of money laundering against Guo and 35 others. Alleged to have laundered over 100 million PHP (approximately US$1.8 million) from criminal activities",
-          "sources": ["https://www.scmp.com/news/asia/southeast-asia/article/3276644/philippines-files-money-laundering-case-against-fugitive-ex-mayor-alice-guo"]
+          "sources": [
+            "https://www.scmp.com/news/asia/southeast-asia/article/3276644/philippines-files-money-laundering-case-against-fugitive-ex-mayor-alice-guo"
+          ]
         },
         {
           "date": "2024-09-03",
           "event": "Arrest in Indonesia",
           "description": "Alice Guo arrested in Jakarta, Indonesia after fleeing the Philippines",
-          "sources": ["https://www.aljazeera.com/news/2024/9/4/former-philippines-mayor-accused-of-china-crime-links-arrested-in-indonesia"]
+          "sources": [
+            "https://www.aljazeera.com/news/2024/9/4/former-philippines-mayor-accused-of-china-crime-links-arrested-in-indonesia"
+          ]
         },
         {
           "date": "2024-09-05",
           "event": "Deported to Philippines",
           "description": "Alice Guo deported back to the Philippines to face multiple charges including human trafficking, money laundering, and tax evasion. Remains in detention",
-          "sources": ["https://www.aljazeera.com/news/2024/9/6/fugitive-former-mayor-alice-guo-back-in-the-philippines-to-face-senate"]
+          "sources": [
+            "https://www.aljazeera.com/news/2024/9/6/fugitive-former-mayor-alice-guo-back-in-the-philippines-to-face-senate"
+          ]
         },
         {
           "date": "2024-10-28",
           "event": "Arraignment Postponed",
           "description": "Guo's arraignment for graft and corruption charges before Valenzuela court postponed due to prosecution's motion to admit amended information in criminal cases",
-          "sources": ["https://www.philstar.com/headlines/2024/10/01/2389222/arraignment-alice-guo-postponed-anew"]
+          "sources": [
+            "https://www.philstar.com/headlines/2024/10/01/2389222/arraignment-alice-guo-postponed-anew"
+          ]
         },
         {
           "date": "2025-06-27",
           "event": "Mayoral Term Declared Null and Void",
           "description": "Manila Regional Trial Court Branch 34 declares Guo's term as mayor null and void, ruling that she was a Chinese citizen and thus ineligible for the position",
-          "sources": ["https://en.wikipedia.org/wiki/Alice_Guo"]
+          "sources": [
+            "https://en.wikipedia.org/wiki/Alice_Guo"
+          ]
         },
         {
           "date": "2025-11-20",
           "event": "Convicted of Human Trafficking",
           "description": "Philippine court convicts Alice Guo and seven co-defendants of qualified human trafficking. Sentenced to life imprisonment and fined 2 million pesos (approximately US$34,000) each. Court found that Guo oversaw an illegal online gaming complex in Tarlac province where hundreds of foreign nationals were forced to participate in cyber fraud schemes",
-          "sources": ["https://apnews.com/article/0193403684842b8858e2ef5cb3c2f604"]
+          "sources": [
+            "https://apnews.com/article/0193403684842b8858e2ef5cb3c2f604"
+          ]
         },
         {
           "date": "2025-11-22",
           "event": "Motion to Remain in Pasig Jail",
           "description": "Guo files urgent motion to remain in Pasig City Jail, delaying transfer to Correctional Institution for Women in Mandaluyong City",
-          "sources": ["https://www.philstar.com/headlines/2025/11/22/2489020/alice-guo-transfer-correctional-delayed-motion-filed"]
+          "sources": [
+            "https://www.philstar.com/headlines/2025/11/22/2489020/alice-guo-transfer-correctional-delayed-motion-filed"
+          ]
         }
       ],
       "political_connections": [
@@ -192,9 +224,15 @@
       "sources": {
         "senate": [],
         "nbi": [],
-        "ombudsman": ["https://www.gmanetwork.com/regionaltv/news/103434/ombudsman-orders-dismissal-of-alice-guo-from-service/story/"],
-        "amlc": ["https://www.scmp.com/news/asia/southeast-asia/article/3276644/philippines-files-money-laundering-case-against-fugitive-ex-mayor-alice-guo"],
-        "bir": ["https://bir-cdn.bir.gov.ph/BIR/pdf/PR54AUG1424.pdf"],
+        "ombudsman": [
+          "https://www.gmanetwork.com/regionaltv/news/103434/ombudsman-orders-dismissal-of-alice-guo-from-service/story/"
+        ],
+        "amlc": [
+          "https://www.scmp.com/news/asia/southeast-asia/article/3276644/philippines-files-money-laundering-case-against-fugitive-ex-mayor-alice-guo"
+        ],
+        "bir": [
+          "https://bir-cdn.bir.gov.ph/BIR/pdf/PR54AUG1424.pdf"
+        ],
         "news": [
           "https://www.rappler.com/nation/alice-guo-pogo-bamban-tarlac/",
           "https://www.inquirer.net/nation/alice-guo-identity-investigation/",
@@ -210,7 +248,10 @@
       "case_id": "POGO_TAX_2023",
       "title": "POGO Tax Evasion - Multiple Companies",
       "category": "POGO-related",
-      "subcategories": ["tax_evasion", "money_laundering"],
+      "subcategories": [
+        "tax_evasion",
+        "money_laundering"
+      ],
       "filing_date": "2023-01-15",
       "status": "ongoing",
       "priority": "high",
@@ -277,7 +318,10 @@
       "case_id": "POGO_TRAFFICKING_2024",
       "title": "POGO Human Trafficking - Multiple Raids",
       "category": "POGO-related",
-      "subcategories": ["human_trafficking", "kidnapping"],
+      "subcategories": [
+        "human_trafficking",
+        "kidnapping"
+      ],
       "filing_date": "2024-01-01",
       "status": "ongoing",
       "priority": "high",
@@ -330,7 +374,9 @@
         }
       ],
       "dynasty_connections": [],
-      "related_cases": ["ALICE_GUO_2024"],
+      "related_cases": [
+        "ALICE_GUO_2024"
+      ],
       "significance": "Shows systematic human trafficking through POGO operations. Thousands of victims, mostly from China and other Asian countries.",
       "diaspora_impact": "Highlights human rights abuses and corruption enabling trafficking. Shows need for better regulation and enforcement.",
       "sources": {
@@ -343,8 +389,14 @@
     {
       "case_id": "FLOOD_CONTROL_2025",
       "title": "Flood Control Projects Corruption Scandal",
-      "category": "Graft",
-      "subcategories": ["graft", "plunder", "bribery", "overpricing", "ghost_projects"],
+      "category": "Flood Control Corruption",
+      "subcategories": [
+        "graft",
+        "plunder",
+        "bribery",
+        "overpricing",
+        "ghost_projects"
+      ],
       "filing_date": "2025-08-01",
       "status": "under_investigation",
       "priority": "high",
@@ -363,7 +415,11 @@
           "current_status": "resigned_september_2025",
           "dynasty_connection": "Romualdez Dynasty",
           "political_party": "Lakas-CMD",
-          "charges": ["graft", "corruption", "plunder"]
+          "charges": [
+            "graft",
+            "corruption",
+            "plunder"
+          ]
         },
         {
           "name": "Francis Escudero",
@@ -373,7 +429,10 @@
           "current_status": "resigned_september_2025",
           "dynasty_connection": "Escudero Dynasty",
           "political_party": "NPC",
-          "charges": ["graft", "corruption"]
+          "charges": [
+            "graft",
+            "corruption"
+          ]
         },
         {
           "name": "Curlee Discaya",
@@ -382,7 +441,11 @@
           "current_status": "under_investigation",
           "dynasty_connection": null,
           "political_party": null,
-          "charges": ["graft", "bribery", "fraud"]
+          "charges": [
+            "graft",
+            "bribery",
+            "fraud"
+          ]
         },
         {
           "name": "Sarah Discaya",
@@ -391,7 +454,11 @@
           "current_status": "under_investigation",
           "dynasty_connection": null,
           "political_party": null,
-          "charges": ["graft", "bribery", "fraud"]
+          "charges": [
+            "graft",
+            "bribery",
+            "fraud"
+          ]
         },
         {
           "name": "Multiple DPWH Officials",
@@ -400,7 +467,11 @@
           "current_status": "under_investigation",
           "dynasty_connection": null,
           "political_party": null,
-          "charges": ["graft", "corruption", "bribery"]
+          "charges": [
+            "graft",
+            "corruption",
+            "bribery"
+          ]
         },
         {
           "name": "Multiple Senators and Congressmen",
@@ -409,7 +480,11 @@
           "current_status": "under_investigation",
           "dynasty_connection": "Various",
           "political_party": "Various",
-          "charges": ["graft", "corruption", "plunder"]
+          "charges": [
+            "graft",
+            "corruption",
+            "plunder"
+          ]
         }
       ],
       "charges": [
@@ -446,31 +521,41 @@
           "date": "2025-08-01",
           "event": "Senate Investigation Launched",
           "description": "Senate Blue Ribbon Committee launches investigation into flood control project irregularities. Reports emerge of 'ghost' projects, contractor monopolies, and misallocation of funds",
-          "sources": ["https://en.wikipedia.org/wiki/Flood_control_projects_scandal_in_the_Philippines"]
+          "sources": [
+            "https://en.wikipedia.org/wiki/Flood_control_projects_scandal_in_the_Philippines"
+          ]
         },
         {
           "date": "2025-09-08",
           "event": "Explosive Testimony",
           "description": "Explosive testimony identifies legislators and officials in flood-control corruption inquiry. Construction companies owned by Curlee and Sarah Discaya implicated in securing substantial government contracts and allegedly paying kickbacks to lawmakers",
-          "sources": ["https://apnews.com/article/61deba5e59f9bc5fac1800a660591c35"]
+          "sources": [
+            "https://apnews.com/article/61deba5e59f9bc5fac1800a660591c35"
+          ]
         },
         {
           "date": "2025-09-17",
           "event": "NBI Prepares Cases",
           "description": "National Bureau of Investigation prepares to submit cases against DPWH officials and contractors linked to flood control scandal. Investigation reveals several firms shared directors, indicating interlocking boards",
-          "sources": ["https://www.pep.ph/news/local/188618/philippine-flood-control-corruption-scandal-timeline-a5128-20250921-lfrm3"]
+          "sources": [
+            "https://www.pep.ph/news/local/188618/philippine-flood-control-corruption-scandal-timeline-a5128-20250921-lfrm3"
+          ]
         },
         {
           "date": "2025-09-18",
           "event": "Senate Hearing Reveals Master Plan Absence",
           "description": "During Senate Blue Ribbon hearing, DPWH Secretary Vince Dizon admits absence of updated master plan for flood control (last plan from 2013). Senator Risa Hontiveros highlights that uncoordinated projects had worsened flooding. Contractors and former DPWH officials cited in contempt for providing false information",
-          "sources": ["https://www.pep.ph/news/local/188618/philippine-flood-control-corruption-scandal-timeline-a5128-20250921-lfrm3"]
+          "sources": [
+            "https://www.pep.ph/news/local/188618/philippine-flood-control-corruption-scandal-timeline-a5128-20250921-lfrm3"
+          ]
         },
         {
           "date": "2025-09-21",
           "event": "Mass Protests",
           "description": "Mass protests erupt across Philippines demanding accountability for misuse of flood control funds. Citizens call for radical changes and resignation of President Marcos Jr. Demonstrators highlight systemic corruption affecting infrastructure projects",
-          "sources": ["https://time.com/7319164/philippines-flood-control-projects-corruption/"]
+          "sources": [
+            "https://time.com/7319164/philippines-flood-control-projects-corruption/"
+          ]
         },
         {
           "date": "2025-09-2025",
@@ -482,25 +567,33 @@
           "date": "2025-10-20",
           "event": "New Detention Facility",
           "description": "Philippines unveils new jail facility for legislators who may face corruption trial. Facility prepared to house high-profile politicians implicated in flood control scandal",
-          "sources": ["https://apnews.com/article/312609aa6b53b9b4c37f0c6db3aa8641"]
+          "sources": [
+            "https://apnews.com/article/312609aa6b53b9b4c37f0c6db3aa8641"
+          ]
         },
         {
           "date": "2025-11-12",
           "event": "President Announces Arrests",
           "description": "President Ferdinand Marcos Jr. announces that numerous high-profile politicians, including senators and members of Congress, will be jailed by Christmas for involvement in corruption scandal. Charges include graft, corruption, and plunder. Assets worth billions of pesos frozen",
-          "sources": ["https://apnews.com/article/3972804a08eb6b06a74c12a4b3ae8335"]
+          "sources": [
+            "https://apnews.com/article/3972804a08eb6b06a74c12a4b3ae8335"
+          ]
         },
         {
           "date": "2025-11-2025",
           "event": "Assets Frozen",
           "description": "Anti-Money Laundering Council freezes assets worth 6.3 billion pesos, including over 1,600 bank accounts and luxury vehicles linked to flood control corruption",
-          "sources": ["https://apnews.com/article/3972804a08eb6b06a74c12a4b3ae8335"]
+          "sources": [
+            "https://apnews.com/article/3972804a08eb6b06a74c12a4b3ae8335"
+          ]
         },
         {
           "date": "2025-12-2025",
           "event": "COA Performance Audit",
           "description": "Commission on Audit initiates performance audit of government flood control projects. Fraud audit ordered for Bulacan projects covering January 2022 to July 2025",
-          "sources": ["https://en.wikipedia.org/wiki/Gamaliel_Cordoba"]
+          "sources": [
+            "https://en.wikipedia.org/wiki/Gamaliel_Cordoba"
+          ]
         }
       ],
       "political_connections": [
@@ -547,7 +640,9 @@
       "significance": "Massive corruption scandal involving approximately ₱118.5 billion ($2 billion) misused in over 9,800 flood control projects since 2023. Led to resignation of House Speaker and Senate President. Reveals systemic corruption in infrastructure projects, with 'ghost' projects, contractor monopolies, and substandard work. Public outrage led to mass protests demanding accountability.",
       "diaspora_impact": "Shows how corruption in infrastructure projects directly impacts Filipino communities through substandard flood control leading to devastating floods. Billions of pesos meant for public safety were misappropriated, affecting millions of Filipinos. Highlights need for transparency and accountability in public infrastructure spending.",
       "sources": {
-        "senate": ["https://www.pep.ph/news/local/188618/philippine-flood-control-corruption-scandal-timeline-a5128-20250921-lfrm3"],
+        "senate": [
+          "https://www.pep.ph/news/local/188618/philippine-flood-control-corruption-scandal-timeline-a5128-20250921-lfrm3"
+        ],
         "nbi": [],
         "coa": [],
         "ombudsman": [],
@@ -578,31 +673,36 @@
       "date_established": "2022",
       "date_raided": "2024-03-13",
       "date_closed": "2024-03-13",
-      "political_connections": ["ALICE_GUO_2024"],
+      "political_connections": [
+        "ALICE_GUO_2024"
+      ],
       "dynasty_connections": [],
       "victims_rescued": 875,
-      "charges": ["human_trafficking", "illegal_detention"],
-      "related_cases": ["ALICE_GUO_2024"]
+      "charges": [
+        "human_trafficking",
+        "illegal_detention"
+      ],
+      "related_cases": [
+        "ALICE_GUO_2024"
+      ]
     }
   ],
-    "statistics": {
-      "total_cases": 4,
-      "by_status": {
-        "ongoing_investigation": 3,
-        "filed": 0,
-        "under_trial": 0,
-        "dismissed": 0,
-        "convicted": 1,
-        "acquitted": 0
-      },
-      "by_category": {
-        "POGO-related": 3,
-        "Graft": 1
-      },
-      "human_trafficking_victims": 2875,
-      "total_amount_php": 168600000000,
-      "pogo_operations_raided": 1,
-      "pogo_operations_active": 0
-    }
+  "statistics": {
+    "total_cases": 3,
+    "by_status": {
+      "ongoing_investigation": 2,
+      "filed": 0,
+      "under_trial": 0,
+      "dismissed": 0,
+      "convicted": 1,
+      "acquitted": 0
+    },
+    "by_category": {
+      "POGO-related": 3
+    },
+    "human_trafficking_victims": 2875,
+    "total_amount_php": 50100000000,
+    "pogo_operations_raided": 1,
+    "pogo_operations_active": 0
+  }
 }
-
