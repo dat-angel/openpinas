@@ -3,26 +3,69 @@ let caseData = null;
 
 async function loadCaseDetail() {
   try {
-    const response = await fetch('../data/pogo-corruption-cases-2025.json');
+    // Determine the correct path based on current location
+    const currentPath = window.location.pathname;
+    let dataPath = '../data/pogo-corruption-cases-2025.json';
+    
+    // If we're in a cases/ subdirectory, go up one level to data/
+    // If we're at root, use absolute path
+    if (currentPath.includes('/cases/')) {
+      dataPath = '../data/pogo-corruption-cases-2025.json';
+    } else if (currentPath.includes('/corruption-tracker/')) {
+      dataPath = 'data/pogo-corruption-cases-2025.json';
+    } else {
+      dataPath = 'corruption-tracker/data/pogo-corruption-cases-2025.json';
+    }
+    
+    const response = await fetch(dataPath);
+    
+    if (!response.ok) {
+      throw new Error(`Failed to fetch data: ${response.status} ${response.statusText} from ${dataPath}`);
+    }
+    
     const data = await response.json();
+    
+    if (!data || !data.cases) {
+      throw new Error('Invalid data structure: missing cases array');
+    }
     
     // Get case ID from URL or default to Alice Guo
     const urlParams = new URLSearchParams(window.location.search);
     const caseId = urlParams.get('id') || (window.CASE_ID || 'ALICE_GUO_2024');
     
+    console.log('Loading case:', caseId);
+    console.log('Available cases:', data.cases.map(c => c.case_id));
+    
     caseData = data.cases.find(c => c.case_id === caseId);
     
     if (!caseData) {
+      console.error('Case not found:', caseId);
+      const availableCases = data.cases.map(c => c.case_id).join(', ');
       document.querySelector('main').innerHTML = 
-        '<div class="empty">Case not found.</div>';
+        `<div class="empty">
+          <p><strong>Case not found:</strong> ${caseId}</p>
+          <p style="margin-top: 12px; font-size: 14px;">Available cases: ${availableCases}</p>
+        </div>`;
       return;
     }
     
     renderCaseDetail();
   } catch (error) {
     console.error('Error loading case detail:', error);
+    console.error('Error details:', {
+      message: error.message,
+      stack: error.stack,
+      url: window.location.href,
+      pathname: window.location.pathname,
+      caseId: window.CASE_ID || new URLSearchParams(window.location.search).get('id')
+    });
+    
+    const errorMessage = error.message || 'Unknown error';
     document.querySelector('main').innerHTML = 
-      '<div class="empty">Error loading case data. Please check the console for details.</div>';
+      `<div class="empty">
+        <p><strong>Error loading case data:</strong> ${errorMessage}</p>
+        <p style="margin-top: 12px; font-size: 14px;">Please check the browser console for more details.</p>
+      </div>`;
   }
 }
 
@@ -30,9 +73,12 @@ function renderCaseDetail() {
   if (!caseData) return;
   
   // Header
-  document.getElementById('caseTitle').textContent = caseData.title;
+  document.getElementById('caseTitle').textContent = `OpenPinas: ${caseData.title}`;
   document.getElementById('caseSubtitle').textContent = 
     `${caseData.category} • ${formatStatus(caseData.status)}`;
+  
+  // Update page title
+  document.title = `OpenPinas: ${caseData.title} - Corruption Tracker`;
   
   // Case header with status badge
   const statusClass = getStatusClass(caseData.status);
@@ -242,7 +288,23 @@ function renderCaseDetail() {
 let allCases = [];
 async function loadAllCases() {
   try {
-    const response = await fetch('../data/pogo-corruption-cases-2025.json');
+    // Use same path detection as loadCaseDetail
+    const currentPath = window.location.pathname;
+    let dataPath = '../data/pogo-corruption-cases-2025.json';
+    
+    if (currentPath.includes('/cases/')) {
+      dataPath = '../data/pogo-corruption-cases-2025.json';
+    } else if (currentPath.includes('/corruption-tracker/')) {
+      dataPath = 'data/pogo-corruption-cases-2025.json';
+    } else {
+      dataPath = 'corruption-tracker/data/pogo-corruption-cases-2025.json';
+    }
+    
+    const response = await fetch(dataPath);
+    if (!response.ok) {
+      console.warn('Failed to load all cases for related cases lookup');
+      return;
+    }
     const data = await response.json();
     allCases = data.cases || [];
   } catch (error) {
