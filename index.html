@@ -237,7 +237,7 @@
           <p>
             Weekly news digests summarizing significant events, organized by category. Includes weather, exchange rates, OFW news, and dynasty highlights.
           </p>
-          <div class="last-updated">Last updated: January 16, 2026</div>
+          <div class="last-updated" id="weekly-reviews-last-updated">Last updated: Loading...</div>
         </a>
 
         <a href="dynasties-network-visualization.html" class="card">
@@ -372,5 +372,80 @@
         <a href="https://dat-angel.github.io/openpinas/">Live Site</a>
       </p>
     </footer>
+
+    <script>
+      // Update Weekly Reviews last updated date from the reviews index
+      async function updateWeeklyReviewsDate() {
+        try {
+          // Try to fetch the timeline JSON first (more reliable)
+          const timelineResponse = await fetch('philippines-2026-timeline.json');
+          if (timelineResponse.ok) {
+            const timelineData = await timelineResponse.json();
+            if (timelineData.metadata && timelineData.metadata.last_updated) {
+              const lastUpdated = timelineData.metadata.last_updated;
+              const element = document.getElementById('weekly-reviews-last-updated');
+              if (element) {
+                // Parse the date string (format: "January 16, 2026")
+                element.textContent = `Last updated: ${lastUpdated}`;
+                return;
+              }
+            }
+          }
+          
+          // Fallback: Try to read from weekly-reviews index
+          const response = await fetch('weekly-reviews/index.html');
+          if (!response.ok) throw new Error('Failed to fetch');
+          
+          const html = await response.text();
+          // Extract the latest review date from the reviews array
+          const reviewsMatch = html.match(/const reviews = (\[[\s\S]*?\]);/);
+          if (reviewsMatch) {
+            // Safely parse JSON from the array string
+            const reviewsText = reviewsMatch[1];
+            const reviews = JSON.parse(reviewsText);
+            
+            if (reviews && reviews.length > 0) {
+              // Get the latest review (first in sorted array, which is newest)
+              const latestReview = reviews[0];
+              const latestDate = new Date(latestReview.date);
+              
+              // Format date
+              const formattedDate = latestDate.toLocaleDateString("en-US", {
+                year: "numeric",
+                month: "long",
+                day: "numeric"
+              });
+              
+              // Update the homepage card
+              const element = document.getElementById('weekly-reviews-last-updated');
+              if (element) {
+                element.textContent = `Last updated: ${formattedDate}`;
+                return;
+              }
+            }
+          }
+        } catch (error) {
+          console.error('Error updating weekly reviews date:', error);
+        }
+        
+        // If all else fails, show current date
+        const element = document.getElementById('weekly-reviews-last-updated');
+        if (element && element.textContent === 'Last updated: Loading...') {
+          const today = new Date().toLocaleDateString("en-US", {
+            year: "numeric",
+            month: "long",
+            day: "numeric"
+          });
+          element.textContent = `Last updated: ${today}`;
+        }
+      }
+      
+      // Run on page load
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', updateWeeklyReviewsDate);
+      } else {
+        updateWeeklyReviewsDate();
+      }
+    </script>
   </body>
 </html>
