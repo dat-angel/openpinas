@@ -222,9 +222,7 @@
 
     <main>
       <section class="reviews-list" id="reviews-container">
-        <div class="empty-state">
-          <p>No reviews yet. Check back later.</p>
-        </div>
+        <!-- Reviews will be loaded here by JavaScript -->
       </section>
 
       <section class="related-datasets">
@@ -281,8 +279,24 @@
         }
       ];
 
+      function formatDate(dateString) {
+        // Parse YYYY-MM-DD format properly
+        const [year, month, day] = dateString.split('-');
+        const date = new Date(parseInt(year), parseInt(month) - 1, parseInt(day));
+        return date.toLocaleDateString("en-US", { 
+          year: "numeric", 
+          month: "long", 
+          day: "numeric" 
+        });
+      }
+
       function renderReviews() {
         const container = document.getElementById("reviews-container");
+        
+        if (!container) {
+          console.error("Reviews container not found");
+          return;
+        }
         
         if (reviews.length === 0) {
           container.innerHTML = `
@@ -300,17 +314,18 @@
           <div class="review-card">
             <h2><a href="${review.filename}">Week of ${review.weekRange}</a></h2>
             <div class="review-meta">
-              ${review.eventCount} events | Published ${new Date(review.date).toLocaleDateString("en-US", { 
-                year: "numeric", 
-                month: "long", 
-                day: "numeric" 
-              })}
+              ${review.eventCount} events | Published ${formatDate(review.date)}
             </div>
           </div>
         `).join("");
       }
 
-      renderReviews();
+      // Run when DOM is ready
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', renderReviews);
+      } else {
+        renderReviews();
+      }
     </script>
   </body>
 </html>
