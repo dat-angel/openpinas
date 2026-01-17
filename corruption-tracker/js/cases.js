@@ -142,18 +142,25 @@ function renderCaseList() {
   const container = document.querySelector('.case-list');
   if (!container) return;
   
+  // Sort cases by filing date (newest first)
+  const sortedCases = [...filteredCases].sort((a, b) => {
+    const dateA = new Date(a.filing_date || 0);
+    const dateB = new Date(b.filing_date || 0);
+    return dateB - dateA; // Newest first
+  });
+  
   // Show result count
   const resultCount = document.getElementById('resultCount');
   if (resultCount) {
-    resultCount.textContent = `${filteredCases.length} ${filteredCases.length === 1 ? 'case' : 'cases'}`;
+    resultCount.textContent = `${sortedCases.length} ${sortedCases.length === 1 ? 'case' : 'cases'}`;
   }
   
-  if (filteredCases.length === 0) {
+  if (sortedCases.length === 0) {
     container.innerHTML = '<div class="empty">No cases match your filters. Try adjusting your search or filters.</div>';
     return;
   }
   
-  container.innerHTML = filteredCases.map(caseItem => {
+  container.innerHTML = sortedCases.map(caseItem => {
     const statusClass = getStatusClass(caseItem.status);
     const statusLabel = formatStatus(caseItem.status);
     const filingDate = formatDate(caseItem.filing_date);

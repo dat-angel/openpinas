@@ -8,9 +8,9 @@ function renderCaseTimeline(timeline, containerId) {
     return;
   }
 
-  // Sort timeline by date
+  // Sort timeline by date (newest first)
   const sortedTimeline = [...timeline].sort((a, b) => 
-    new Date(a.date) - new Date(b.date)
+    new Date(b.date) - new Date(a.date)
   );
 
   let html = '<div class="timeline">';
@@ -18,6 +18,7 @@ function renderCaseTimeline(timeline, containerId) {
   sortedTimeline.forEach((event, index) => {
     const date = formatDate(event.date);
     const monthLabel = getMonthLabel(event.date);
+    // When sorted newest first, check previous item (which is newer)
     const prevMonth = index > 0 ? getMonthLabel(sortedTimeline[index - 1].date) : null;
     
     // Add month marker if needed
