@@ -1,0 +1,867 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>OpenPinas: Monthly Review - [MONTH] [YEAR]</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;500;600;700&family=Source+Serif+Pro:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --ink: #1a1a1a;
+        --muted: #5e5e5e;
+        --paper: #f8f5f0;
+        --accent: #124559;
+        --accent-2: #c44900;
+        --weather: #0b6e4f;
+        --politics: #3a0ca3;
+        --culture: #b23a48;
+        --economic: #3a0ca3;
+        --legal: #1e3a5f;
+        --international: #0d7377;
+        --religious: #d4a017;
+        --card: #ffffff;
+        --line: #d6cbbd;
+        --shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: "Source Serif Pro", Georgia, serif;
+        color: var(--ink);
+        background: radial-gradient(1200px 600px at 80% -10%, #f0e7d7 0%, transparent 60%),
+          radial-gradient(800px 500px at 10% 10%, #e6efe7 0%, transparent 55%),
+          var(--paper);
+        line-height: 1.6;
+      }
+
+      header {
+        padding: 32px 24px 20px;
+        max-width: 1100px;
+        margin: 0 auto;
+      }
+
+      h1 {
+        font-size: clamp(28px, 4vw, 44px);
+        margin: 0 0 8px;
+        letter-spacing: 0.3px;
+      }
+
+      .month-label {
+        font-size: 20px;
+        color: var(--muted);
+        margin: 0 0 20px;
+        font-weight: 500;
+      }
+
+      .nav-links {
+        display: flex;
+        gap: 16px;
+        flex-wrap: wrap;
+        margin: 20px 0;
+        padding: 12px 16px;
+        background: rgba(255, 255, 255, 0.75);
+        border: 1px solid #eadfce;
+        border-radius: 14px;
+        box-shadow: var(--shadow);
+      }
+
+      .nav-links a {
+        color: var(--accent);
+        text-decoration: none;
+        font-family: "Source Sans Pro", Arial, sans-serif;
+        font-weight: 500;
+        padding: 6px 12px;
+        border-radius: 8px;
+        transition: background 0.2s;
+      }
+
+      .nav-links a:hover {
+        background: rgba(18, 69, 89, 0.1);
+        text-decoration: none;
+      }
+
+      main {
+        max-width: 1100px;
+        margin: 16px auto 60px;
+        padding: 0 24px;
+      }
+
+      /* Stats Grid */
+      .stats-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+        gap: 16px;
+        margin: 24px 0 32px;
+      }
+
+      .stat-card {
+        background: var(--card);
+        padding: 20px 16px;
+        border-radius: 12px;
+        box-shadow: var(--shadow);
+        text-align: center;
+      }
+
+      .stat-card .number {
+        font-size: 32px;
+        font-weight: 700;
+        color: var(--accent);
+        margin: 0;
+        line-height: 1.1;
+      }
+
+      .stat-card .label {
+        font-size: 12px;
+        color: var(--muted);
+        margin: 6px 0 0;
+        text-transform: uppercase;
+        letter-spacing: 0.3px;
+        font-family: "Source Sans Pro", sans-serif;
+      }
+
+      /* Month Overview */
+      .month-overview {
+        background: var(--card);
+        border-radius: 16px;
+        padding: 24px;
+        margin: 32px 0;
+        box-shadow: var(--shadow);
+        border-left: 4px solid var(--accent);
+      }
+
+      .month-overview h2 {
+        margin: 0 0 16px;
+        font-size: 22px;
+        color: var(--accent);
+      }
+
+      .month-overview p {
+        margin: 0 0 12px;
+        line-height: 1.7;
+      }
+
+      /* Section Styles */
+      .section {
+        margin: 40px 0;
+      }
+
+      .section-title {
+        font-size: 24px;
+        margin: 0 0 20px;
+        padding-bottom: 12px;
+        border-bottom: 2px solid var(--line);
+        color: var(--ink);
+      }
+
+      /* Top Stories */
+      .top-stories {
+        display: grid;
+        gap: 20px;
+      }
+
+      .story-card {
+        background: var(--card);
+        border-radius: 16px;
+        padding: 20px 24px;
+        box-shadow: var(--shadow);
+        border-left: 4px solid var(--accent);
+        transition: transform 0.2s, box-shadow 0.2s;
+      }
+
+      .story-card:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 16px 40px rgba(0, 0, 0, 0.12);
+      }
+
+      .story-card.political { border-left-color: var(--politics); }
+      .story-card.natural-disasters { border-left-color: var(--weather); }
+      .story-card.economic { border-left-color: var(--economic); }
+      .story-card.cultural { border-left-color: var(--culture); }
+      .story-card.international { border-left-color: var(--international); }
+
+      .story-card time {
+        font-family: "Source Sans Pro", sans-serif;
+        font-size: 13px;
+        color: var(--muted);
+        font-weight: 500;
+      }
+
+      .story-card h3 {
+        margin: 8px 0;
+        font-size: 18px;
+      }
+
+      .story-card h3 a {
+        color: var(--ink);
+        text-decoration: none;
+      }
+
+      .story-card h3 a:hover {
+        color: var(--accent-2);
+        text-decoration: underline;
+      }
+
+      .story-card p {
+        margin: 0;
+        font-size: 14px;
+        color: var(--muted);
+        line-height: 1.6;
+      }
+
+      .category-badge {
+        display: inline-block;
+        padding: 3px 10px;
+        border-radius: 999px;
+        font-size: 10px;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        color: #fff;
+        font-family: "Source Sans Pro", sans-serif;
+        font-weight: 600;
+        margin-left: 8px;
+      }
+
+      .category-badge.political { background: var(--politics); }
+      .category-badge.natural-disasters { background: var(--weather); }
+      .category-badge.economic { background: var(--economic); }
+      .category-badge.cultural { background: var(--culture); }
+      .category-badge.international-relations { background: var(--international); }
+      .category-badge.legal { background: var(--legal); }
+      .category-badge.religious { background: var(--religious); }
+
+      /* Category Breakdown */
+      .category-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 20px;
+      }
+
+      .category-card {
+        background: var(--card);
+        border-radius: 12px;
+        padding: 20px;
+        box-shadow: var(--shadow);
+      }
+
+      .category-card h3 {
+        margin: 0 0 12px;
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+
+      .category-card .count {
+        background: var(--accent);
+        color: #fff;
+        padding: 2px 8px;
+        border-radius: 12px;
+        font-size: 12px;
+        font-family: "Source Sans Pro", sans-serif;
+      }
+
+      .category-card ul {
+        margin: 0;
+        padding: 0 0 0 20px;
+        font-size: 14px;
+      }
+
+      .category-card li {
+        margin: 6px 0;
+      }
+
+      .category-card a {
+        color: var(--accent);
+        text-decoration: none;
+      }
+
+      .category-card a:hover {
+        text-decoration: underline;
+      }
+
+      /* Dynasty Summary */
+      .dynasty-summary {
+        background: var(--card);
+        border-radius: 16px;
+        padding: 24px;
+        margin: 32px 0;
+        box-shadow: var(--shadow);
+        border-left: 4px solid var(--politics);
+      }
+
+      .dynasty-summary h2 {
+        margin: 0 0 16px;
+        color: var(--politics);
+      }
+
+      .dynasty-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 12px;
+      }
+
+      .dynasty-item {
+        padding: 12px;
+        background: rgba(58, 12, 163, 0.05);
+        border-radius: 8px;
+        border-left: 3px solid var(--politics);
+      }
+
+      .dynasty-item a {
+        color: var(--politics);
+        text-decoration: none;
+        font-weight: 600;
+      }
+
+      .dynasty-item a:hover {
+        text-decoration: underline;
+      }
+
+      .dynasty-item .mention-count {
+        font-size: 12px;
+        color: var(--muted);
+        font-family: "Source Sans Pro", sans-serif;
+      }
+
+      /* Economic Summary */
+      .economic-summary {
+        background: linear-gradient(135deg, #1e3a5f 0%, #124559 100%);
+        border-radius: 16px;
+        padding: 24px;
+        margin: 32px 0;
+        box-shadow: var(--shadow);
+        color: #fff;
+      }
+
+      .economic-summary h2 {
+        margin: 0 0 16px;
+        color: #fff;
+      }
+
+      .economic-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+        gap: 16px;
+      }
+
+      .economic-item {
+        background: rgba(255, 255, 255, 0.1);
+        padding: 16px;
+        border-radius: 10px;
+        text-align: center;
+      }
+
+      .economic-item .value {
+        font-size: 24px;
+        font-weight: 700;
+        display: block;
+      }
+
+      .economic-item .label {
+        font-size: 11px;
+        text-transform: uppercase;
+        letter-spacing: 0.3px;
+        opacity: 0.8;
+        font-family: "Source Sans Pro", sans-serif;
+      }
+
+      .trend-up { color: #4ade80; }
+      .trend-down { color: #fca5a5; }
+
+      /* Weekly Reviews List */
+      .weekly-reviews-list {
+        background: var(--card);
+        border-radius: 16px;
+        padding: 24px;
+        margin: 32px 0;
+        box-shadow: var(--shadow);
+      }
+
+      .weekly-reviews-list h2 {
+        margin: 0 0 16px;
+        font-size: 20px;
+      }
+
+      .weekly-review-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 12px 0;
+        border-bottom: 1px solid var(--line);
+      }
+
+      .weekly-review-item:last-child {
+        border-bottom: none;
+      }
+
+      .weekly-review-item a {
+        color: var(--accent);
+        text-decoration: none;
+        font-weight: 500;
+      }
+
+      .weekly-review-item a:hover {
+        text-decoration: underline;
+      }
+
+      .weekly-review-item .events {
+        font-size: 13px;
+        color: var(--muted);
+        font-family: "Source Sans Pro", sans-serif;
+      }
+
+      /* Footer */
+      footer {
+        max-width: 1100px;
+        margin: 60px auto 40px;
+        padding: 24px;
+        text-align: center;
+        color: var(--muted);
+        font-size: 14px;
+        border-top: 1px solid var(--line);
+      }
+
+      footer a {
+        color: var(--accent);
+        text-decoration: none;
+      }
+
+      footer a:hover {
+        text-decoration: underline;
+      }
+
+      .empty-state {
+        padding: 40px;
+        text-align: center;
+        color: var(--muted);
+        background: var(--card);
+        border-radius: 16px;
+        box-shadow: var(--shadow);
+      }
+
+      @media (max-width: 720px) {
+        header, main {
+          padding-left: 18px;
+          padding-right: 18px;
+        }
+
+        .stats-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav style="font-size: 0.875rem; margin-bottom: 16px; font-family: 'Source Sans Pro', sans-serif;">
+        <a href="../" style="color: var(--muted); text-decoration: none;">← OpenPinas</a>
+      </nav>
+      <h1>OpenPinas: Monthly Review</h1>
+      <p class="month-label" id="month-label">[MONTH] [YEAR]</p>
+      <nav class="nav-links">
+        <a href="../interactive-timeline/">Full Timeline</a>
+        <a href="../dynasties-network-visualization.html">Dynasty Map</a>
+        <a href="../weekly-reviews/">Weekly Reviews</a>
+        <a href="index.html">All Monthly Reviews</a>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Stats Dashboard -->
+      <section class="stats-grid" id="stats-grid">
+        <div class="stat-card">
+          <p class="number" id="total-events">0</p>
+          <p class="label">Total Events</p>
+        </div>
+        <div class="stat-card">
+          <p class="number" id="political-count">0</p>
+          <p class="label">Political</p>
+        </div>
+        <div class="stat-card">
+          <p class="number" id="disaster-count">0</p>
+          <p class="label">Disasters</p>
+        </div>
+        <div class="stat-card">
+          <p class="number" id="economic-count">0</p>
+          <p class="label">Economic</p>
+        </div>
+        <div class="stat-card">
+          <p class="number" id="dynasty-count">0</p>
+          <p class="label">Dynasties</p>
+        </div>
+        <div class="stat-card">
+          <p class="number" id="weekly-count">0</p>
+          <p class="label">Weekly Reviews</p>
+        </div>
+      </section>
+
+      <!-- Month Overview - UPDATE MANUALLY -->
+      <section class="month-overview">
+        <h2>Month Overview</h2>
+        <p id="overview-text">
+          [Write 2-3 paragraphs summarizing the key themes and developments of the month. Include major political events, economic indicators, and significant news.]
+        </p>
+      </section>
+
+      <!-- Top Stories -->
+      <section class="section">
+        <h2 class="section-title">Top Stories</h2>
+        <div class="top-stories" id="top-stories">
+          <!-- Will be populated by JavaScript -->
+        </div>
+      </section>
+
+      <!-- Category Breakdown -->
+      <section class="section">
+        <h2 class="section-title">Events by Category</h2>
+        <div class="category-grid" id="category-breakdown">
+          <!-- Will be populated by JavaScript -->
+        </div>
+      </section>
+
+      <!-- Dynasty Activity Summary -->
+      <section class="dynasty-summary" id="dynasty-summary">
+        <h2>Dynasty Activity</h2>
+        <div class="dynasty-grid" id="dynasty-grid">
+          <!-- Will be populated by JavaScript -->
+        </div>
+      </section>
+
+      <!-- Economic Indicators - UPDATE MANUALLY -->
+      <section class="economic-summary">
+        <h2>Economic Indicators</h2>
+        <div class="economic-grid">
+          <div class="economic-item">
+            <span class="value" id="forex-open">₱--</span>
+            <span class="label">Month Open</span>
+          </div>
+          <div class="economic-item">
+            <span class="value" id="forex-high">₱--</span>
+            <span class="label">Month High</span>
+          </div>
+          <div class="economic-item">
+            <span class="value" id="forex-low">₱--</span>
+            <span class="label">Month Low</span>
+          </div>
+          <div class="economic-item">
+            <span class="value" id="forex-close">₱--</span>
+            <span class="label">Month Close</span>
+          </div>
+          <div class="economic-item">
+            <span class="value trend-down" id="forex-change">--</span>
+            <span class="label">Monthly Change</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Weekly Reviews for this Month -->
+      <section class="weekly-reviews-list">
+        <h2>Weekly Reviews</h2>
+        <div id="weekly-reviews-container">
+          <!-- Will be populated by JavaScript -->
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        Part of the
+        <a href="https://github.com/dat-angel/openpinas">Philippine Political Dynasties</a>
+        project
+      </p>
+      <p>
+        <a href="https://github.com/dat-angel/openpinas">GitHub</a>
+      </p>
+      <p style="margin-top: 12px; font-size: 12px;">
+        Last updated: <span id="last-updated">[DATE]</span>
+      </p>
+    </footer>
+
+    <script>
+      // Configuration - Update these for each month
+      const MONTH_CONFIG = {
+        month: 1, // January = 1, February = 2, etc.
+        year: 2026,
+        monthName: "January",
+        timelineFile: "../philippines-2026-timeline.json",
+        // List all weekly reviews that fall within this month
+        weeklyReviews: [
+          { file: "../weekly-reviews/weekly-review-2026-01-02.html", range: "Dec 27 - Jan 2", events: 7 },
+          { file: "../weekly-reviews/weekly-review-2026-01-09.html", range: "Jan 3-9", events: 7 },
+          { file: "../weekly-reviews/weekly-review-2026-01-16.html", range: "Jan 10-16", events: 5 }
+        ],
+        // Economic data - update manually
+        economics: {
+          open: "58.10",
+          high: "58.45",
+          low: "57.85",
+          close: "58.20",
+          change: "-0.17%"
+        },
+        // Month overview - update manually
+        overview: `January 2026 marked a significant month for Philippine politics with the signing of the P6.793 trillion national budget following the largest corruption scandal of the Marcos administration. The budget removed PHP 92.5 billion in unprogrammed appropriations and eliminated new locally-funded flood control projects.
+
+The Philippines assumed ASEAN chairmanship, gaining regional prominence with President Marcos's stance on West Philippine Sea issues. Weather concerns dominated early January with Mayon Volcano's alert level raised to 2 and Tropical Storm Ada forming towards month's end.
+
+Key political developments included the arrest of retired General Romeo Poquiz for sedition, continued tensions in the Marcos-Duterte political rift, and growing momentum for anti-dynasty legislation with 54% public support.`
+      };
+
+      // Category mapping
+      const categoryMap = {
+        "Political": { slug: "political", display: "Political", color: "var(--politics)" },
+        "Cultural": { slug: "cultural", display: "Cultural", color: "var(--culture)" },
+        "Natural Disasters": { slug: "natural-disasters", display: "Natural Disasters", color: "var(--weather)" },
+        "Economic": { slug: "economic", display: "Economic", color: "var(--economic)" },
+        "Legal": { slug: "legal", display: "Legal", color: "var(--legal)" },
+        "International Relations": { slug: "international-relations", display: "International Relations", color: "var(--international)" },
+        "Religious": { slug: "religious", display: "Religious", color: "var(--religious)" }
+      };
+
+      // Dynasty name mapping
+      function getDynastyName(id) {
+        const names = {
+          "MARCOS_ROMUALDEZ": "Marcos-Romualdez",
+          "DUTERTE_FAMILY": "Duterte",
+          "AQUINO_FAMILY": "Aquino",
+          "REVILLA_TOLENTINO": "Revilla-Tolentino",
+          "ESTRADA_FAMILY": "Estrada",
+          "VILLAR_FAMILY": "Villar",
+          "PACQUIAO_FAMILY": "Pacquiao",
+          "SINGSON_FAMILY": "Singson",
+          "ORTEGA_FAMILY": "Ortega",
+          "TULFO_FAMILY": "Tulfo",
+          "LACSON_FAMILY": "Lacson",
+          "DY_FAMILY": "Dy",
+          "BINAY_FAMILY": "Binay",
+          "CAYETANO_TAGUIG": "Cayetano"
+        };
+        return names[id] || id.replace(/_/g, " ");
+      }
+
+      // Format date for display
+      function formatDate(dateString) {
+        const date = new Date(dateString + "T00:00:00");
+        return date.toLocaleDateString("en-US", {
+          month: "short",
+          day: "numeric",
+          year: "numeric"
+        });
+      }
+
+      // Filter events for this month
+      function filterMonthEvents(timeline) {
+        return timeline.filter(event => {
+          const eventDate = new Date(event.date + "T00:00:00");
+          return eventDate.getMonth() === (MONTH_CONFIG.month - 1) &&
+                 eventDate.getFullYear() === MONTH_CONFIG.year;
+        });
+      }
+
+      // Update statistics
+      function updateStats(events) {
+        const political = events.filter(e =>
+          e.category === "Political" || e.category === "Legal" || e.category === "International Relations"
+        ).length;
+        const disasters = events.filter(e => e.category === "Natural Disasters").length;
+        const economic = events.filter(e => e.category === "Economic").length;
+
+        const dynasties = new Set();
+        events.forEach(event => {
+          if (event.mentioned_dynasties) {
+            event.mentioned_dynasties.forEach(id => dynasties.add(id));
+          }
+        });
+
+        document.getElementById("total-events").textContent = events.length;
+        document.getElementById("political-count").textContent = political;
+        document.getElementById("disaster-count").textContent = disasters;
+        document.getElementById("economic-count").textContent = economic;
+        document.getElementById("dynasty-count").textContent = dynasties.size;
+        document.getElementById("weekly-count").textContent = MONTH_CONFIG.weeklyReviews.length;
+      }
+
+      // Render top stories (most significant events)
+      function renderTopStories(events) {
+        const container = document.getElementById("top-stories");
+
+        // Get top 5 events (prioritize by significance field or use first 5)
+        const topEvents = events
+          .filter(e => e.significance)
+          .slice(0, 5);
+
+        if (topEvents.length === 0) {
+          container.innerHTML = `<div class="empty-state"><p>No significant events recorded.</p></div>`;
+          return;
+        }
+
+        container.innerHTML = topEvents.map(event => {
+          const category = categoryMap[event.category] || { slug: "political", display: event.category };
+          return `
+            <article class="story-card ${category.slug}">
+              <time datetime="${event.date}">${formatDate(event.date)}</time>
+              <span class="category-badge ${category.slug}">${category.display}</span>
+              <h3>
+                <a href="../interactive-timeline/?date=${event.date}&search=${encodeURIComponent(event.title)}">
+                  ${event.title}
+                </a>
+              </h3>
+              <p>${event.significance || event.description}</p>
+            </article>
+          `;
+        }).join("");
+      }
+
+      // Render category breakdown
+      function renderCategoryBreakdown(events) {
+        const container = document.getElementById("category-breakdown");
+
+        // Group events by category
+        const grouped = {};
+        events.forEach(event => {
+          const cat = event.category || "Other";
+          if (!grouped[cat]) grouped[cat] = [];
+          grouped[cat].push(event);
+        });
+
+        const categoryOrder = ["Political", "Natural Disasters", "Economic", "International Relations", "Legal", "Cultural", "Religious"];
+
+        container.innerHTML = categoryOrder
+          .filter(cat => grouped[cat] && grouped[cat].length > 0)
+          .map(cat => {
+            const catEvents = grouped[cat];
+            const category = categoryMap[cat] || { slug: "other", display: cat };
+            return `
+              <div class="category-card">
+                <h3>
+                  ${category.display}
+                  <span class="count">${catEvents.length}</span>
+                </h3>
+                <ul>
+                  ${catEvents.slice(0, 4).map(e => `
+                    <li>
+                      <a href="../interactive-timeline/?date=${e.date}">${e.title}</a>
+                    </li>
+                  `).join("")}
+                  ${catEvents.length > 4 ? `<li><em>+ ${catEvents.length - 4} more</em></li>` : ""}
+                </ul>
+              </div>
+            `;
+          }).join("");
+      }
+
+      // Render dynasty activity
+      function renderDynastyActivity(events) {
+        const container = document.getElementById("dynasty-grid");
+
+        // Count dynasty mentions
+        const dynastyMentions = {};
+        events.forEach(event => {
+          (event.mentioned_dynasties || []).forEach(id => {
+            dynastyMentions[id] = (dynastyMentions[id] || 0) + 1;
+          });
+        });
+
+        // Sort by mention count
+        const sorted = Object.entries(dynastyMentions)
+          .sort((a, b) => b[1] - a[1]);
+
+        if (sorted.length === 0) {
+          container.innerHTML = `<p>No dynasty mentions this month.</p>`;
+          return;
+        }
+
+        container.innerHTML = sorted.map(([id, count]) => `
+          <div class="dynasty-item">
+            <a href="../dynasties-network-visualization.html#dynasty-${id}">${getDynastyName(id)}</a>
+            <div class="mention-count">${count} mention${count > 1 ? 's' : ''}</div>
+          </div>
+        `).join("");
+      }
+
+      // Render weekly reviews list
+      function renderWeeklyReviews() {
+        const container = document.getElementById("weekly-reviews-container");
+
+        container.innerHTML = MONTH_CONFIG.weeklyReviews.map(review => `
+          <div class="weekly-review-item">
+            <a href="${review.file}">Week of ${review.range}</a>
+            <span class="events">${review.events} events</span>
+          </div>
+        `).join("");
+      }
+
+      // Update economic indicators
+      function updateEconomics() {
+        const econ = MONTH_CONFIG.economics;
+        document.getElementById("forex-open").textContent = `₱${econ.open}`;
+        document.getElementById("forex-high").textContent = `₱${econ.high}`;
+        document.getElementById("forex-low").textContent = `₱${econ.low}`;
+        document.getElementById("forex-close").textContent = `₱${econ.close}`;
+
+        const changeEl = document.getElementById("forex-change");
+        changeEl.textContent = econ.change;
+        changeEl.className = `value ${econ.change.startsWith('-') ? 'trend-down' : 'trend-up'}`;
+      }
+
+      // Load and process data
+      async function loadMonthlyReview() {
+        try {
+          // Update page header
+          document.title = `OpenPinas: Monthly Review - ${MONTH_CONFIG.monthName} ${MONTH_CONFIG.year}`;
+          document.getElementById("month-label").textContent = `${MONTH_CONFIG.monthName} ${MONTH_CONFIG.year}`;
+          document.getElementById("last-updated").textContent = new Date().toLocaleDateString("en-US", {
+            year: "numeric",
+            month: "long",
+            day: "numeric"
+          });
+
+          // Update overview
+          document.getElementById("overview-text").innerHTML = MONTH_CONFIG.overview.split('\n\n').map(p => `<p>${p}</p>`).join('');
+
+          // Load timeline JSON
+          const response = await fetch(MONTH_CONFIG.timelineFile);
+          if (!response.ok) {
+            throw new Error(`Failed to load timeline: ${response.statusText}`);
+          }
+
+          const data = await response.json();
+          const timeline = data.timeline || [];
+
+          // Filter events for this month
+          const monthEvents = filterMonthEvents(timeline);
+
+          // Sort by date
+          monthEvents.sort((a, b) => a.date.localeCompare(b.date));
+
+          // Render all sections
+          updateStats(monthEvents);
+          renderTopStories(monthEvents);
+          renderCategoryBreakdown(monthEvents);
+          renderDynastyActivity(monthEvents);
+          renderWeeklyReviews();
+          updateEconomics();
+
+        } catch (error) {
+          console.error("Error loading monthly review:", error);
+          document.getElementById("top-stories").innerHTML = `
+            <div class="empty-state">
+              <p>Error loading data: ${error.message}</p>
+            </div>
+          `;
+        }
+      }
+
+      // Initialize
+      loadMonthlyReview();
+    </script>
+  </body>
+</html>

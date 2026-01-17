@@ -1,0 +1,392 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Monthly Reviews – OpenPinas</title>
+    <meta name="description" content="Monthly summaries of Philippine news and political events for the diaspora." />
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;500;600;700&family=Source+Serif+Pro:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * { box-sizing: border-box; margin: 0; padding: 0; }
+
+      body {
+        font-family: "Source Serif Pro", Georgia, serif;
+        color: #222;
+        background: #fdfcfb;
+        line-height: 1.6;
+        min-height: 100vh;
+      }
+
+      header {
+        padding: 3rem 1.5rem 1.5rem;
+        max-width: 800px;
+        margin: 0 auto;
+      }
+
+      .header-nav {
+        font-size: 0.8125rem;
+        font-family: "Source Sans Pro", -apple-system, sans-serif;
+        margin-bottom: 1.5rem;
+      }
+
+      .header-nav a {
+        color: #666;
+        text-decoration: none;
+      }
+
+      .header-nav a:hover {
+        text-decoration: underline;
+      }
+
+      h1 {
+        font-size: 2rem;
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+      }
+
+      .subtitle {
+        font-size: 1rem;
+        color: #666;
+        margin: 0 0 1.5rem;
+      }
+
+      .description {
+        font-size: 0.9375rem;
+        color: #555;
+        line-height: 1.7;
+        margin-bottom: 2rem;
+        max-width: 640px;
+      }
+
+      .nav-links {
+        display: flex;
+        gap: 1.5rem;
+        flex-wrap: wrap;
+        font-family: "Source Sans Pro", -apple-system, sans-serif;
+        font-size: 0.875rem;
+        margin-bottom: 2rem;
+      }
+
+      .nav-links a {
+        color: #222;
+        text-decoration: underline;
+        text-underline-offset: 2px;
+      }
+
+      .nav-links a:hover {
+        color: #000;
+      }
+
+      main {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 0 1.5rem 4rem;
+      }
+
+      /* Year Section */
+      .year-section {
+        margin-bottom: 3rem;
+      }
+
+      .year-header {
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
+        padding-bottom: 0.5rem;
+        border-bottom: 2px solid #e5e5e5;
+        color: #124559;
+      }
+
+      /* Reviews Grid */
+      .reviews-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+        gap: 16px;
+        margin: 1.5rem 0;
+      }
+
+      .review-card {
+        background: #fff;
+        border-radius: 12px;
+        padding: 20px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+        transition: transform 0.2s, box-shadow 0.2s;
+        border-left: 4px solid #124559;
+      }
+
+      .review-card:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      }
+
+      .review-card h2 {
+        margin: 0 0 8px;
+        font-size: 1.125rem;
+        font-weight: 600;
+      }
+
+      .review-card h2 a {
+        color: #222;
+        text-decoration: none;
+      }
+
+      .review-card h2 a:hover {
+        color: #124559;
+        text-decoration: underline;
+      }
+
+      .review-meta {
+        font-size: 0.75rem;
+        color: #888;
+        font-family: "Source Sans Pro", -apple-system, sans-serif;
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+      }
+
+      .review-meta .stat {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+      }
+
+      .review-meta .stat-icon {
+        opacity: 0.6;
+      }
+
+      /* Related Section */
+      .related-datasets {
+        margin: 3rem 0 2rem;
+        padding: 1.5rem;
+        background: #f9f9f9;
+        border-left: 3px solid #124559;
+        border-radius: 4px;
+      }
+
+      .related-datasets h2 {
+        font-size: 1.125rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
+        color: #222;
+        font-family: "Source Sans Pro", -apple-system, sans-serif;
+      }
+
+      .related-datasets ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      .related-datasets li {
+        margin-bottom: 1rem;
+        font-size: 0.875rem;
+        line-height: 1.6;
+      }
+
+      .related-datasets li strong {
+        display: block;
+        margin-bottom: 0.25rem;
+        color: #222;
+        font-family: "Source Sans Pro", -apple-system, sans-serif;
+      }
+
+      .related-datasets li a {
+        color: #0038A8;
+        text-decoration: underline;
+        font-weight: 500;
+      }
+
+      .related-datasets li a:hover {
+        opacity: 0.8;
+      }
+
+      .related-datasets .dataset-desc {
+        color: #666;
+        margin-top: 0.25rem;
+      }
+
+      .empty-state {
+        padding: 3rem;
+        text-align: center;
+        color: #888;
+        border: 1px dashed #ddd;
+        background: #fff;
+        border-radius: 8px;
+      }
+
+      footer {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 2rem 1.5rem;
+        text-align: center;
+        color: #888;
+        font-size: 0.75rem;
+        border-top: 1px solid #e5e5e5;
+        font-family: "Source Sans Pro", -apple-system, sans-serif;
+      }
+
+      footer a {
+        color: #666;
+        text-decoration: none;
+      }
+
+      footer a:hover {
+        text-decoration: underline;
+      }
+
+      @media (max-width: 640px) {
+        header, main, footer {
+          padding-left: 1.25rem;
+          padding-right: 1.25rem;
+        }
+
+        .reviews-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="header-nav"><a href="../">← OpenPinas</a></nav>
+      <h1>Monthly Reviews</h1>
+      <p class="subtitle">Comprehensive Monthly Summaries</p>
+      <p class="description">
+        Monthly aggregations of Philippine news, compiled from weekly reviews. Each monthly summary provides statistics, top stories, dynasty activity, and economic indicators for the month.
+      </p>
+      <nav class="nav-links">
+        <a href="../interactive-timeline/">Full Timeline</a>
+        <a href="../dynasties-network-visualization.html">Dynasty Map</a>
+        <a href="../weekly-reviews/">Weekly Reviews</a>
+      </nav>
+    </header>
+
+    <main id="main-content">
+      <!-- Content will be populated by JavaScript -->
+    </main>
+
+    <footer>
+      <p>Part of <a href="../">OpenPinas</a></p>
+      <p>
+        <a href="https://github.com/dat-angel/openpinas">GitHub</a> ·
+        <a href="https://ko-fi.com/beatrizd">Support</a> ·
+        Data: CC BY 4.0
+      </p>
+    </footer>
+
+    <script>
+      // Monthly reviews data - update when new reviews are added
+      const reviews = [
+        {
+          date: "2026-01",
+          monthName: "January 2026",
+          filename: "monthly-review-2026-01.html",
+          eventCount: 23,
+          weeklyReviews: 3,
+          highlights: "Budget signing, ASEAN chairmanship, Mayon alert"
+        }
+      ];
+
+      function groupByYear(reviews) {
+        const grouped = {};
+        reviews.forEach(review => {
+          const year = review.date.substring(0, 4);
+          if (!grouped[year]) grouped[year] = [];
+          grouped[year].push(review);
+        });
+        return grouped;
+      }
+
+      function renderReviews() {
+        const container = document.getElementById("main-content");
+
+        if (reviews.length === 0) {
+          container.innerHTML = `
+            <div class="empty-state">
+              <p>No monthly reviews yet. Check back after the first month ends.</p>
+            </div>
+            ${renderRelatedSection()}
+          `;
+          return;
+        }
+
+        // Group by year
+        const byYear = groupByYear(reviews);
+        const years = Object.keys(byYear).sort().reverse();
+
+        let html = "";
+
+        years.forEach(year => {
+          const yearReviews = byYear[year].sort((a, b) => b.date.localeCompare(a.date));
+
+          html += `
+            <section class="year-section">
+              <h2 class="year-header">${year}</h2>
+              <div class="reviews-grid">
+                ${yearReviews.map(review => `
+                  <article class="review-card">
+                    <h2><a href="${review.filename}">${review.monthName}</a></h2>
+                    <div class="review-meta">
+                      <span class="stat">
+                        <span class="stat-icon">📊</span>
+                        ${review.eventCount} events
+                      </span>
+                      <span class="stat">
+                        <span class="stat-icon">📰</span>
+                        ${review.weeklyReviews} weekly reviews
+                      </span>
+                      ${review.highlights ? `
+                        <span class="stat" style="margin-top: 4px; color: #666;">
+                          ${review.highlights}
+                        </span>
+                      ` : ''}
+                    </div>
+                  </article>
+                `).join("")}
+              </div>
+            </section>
+          `;
+        });
+
+        html += renderRelatedSection();
+
+        container.innerHTML = html;
+      }
+
+      function renderRelatedSection() {
+        return `
+          <section class="related-datasets">
+            <h2>Related Resources</h2>
+            <ul>
+              <li>
+                <strong><a href="../weekly-reviews/">📅 Weekly Reviews</a></strong>
+                <div class="dataset-desc">Detailed weekly news digests with weather, exchange rates, and OFW news.</div>
+              </li>
+              <li>
+                <strong><a href="../interactive-timeline/">📅 Interactive Timeline</a></strong>
+                <div class="dataset-desc">Full chronological view of major Philippine events.</div>
+              </li>
+              <li>
+                <strong><a href="../dynasties-network-visualization.html">🗺️ Dynasty Network Map</a></strong>
+                <div class="dataset-desc">Interactive network showing political dynasty connections.</div>
+              </li>
+            </ul>
+          </section>
+        `;
+      }
+
+      // Initialize
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', renderReviews);
+      } else {
+        renderReviews();
+      }
+    </script>
+  </body>
+</html>

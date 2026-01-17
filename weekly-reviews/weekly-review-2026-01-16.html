@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Philippine News Review: Week of January 10-16, 2026</title>
+    <title>OpenPinas: Weekly News Review - Week of January 10-16, 2026</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -620,7 +620,10 @@
   </head>
   <body>
     <header>
-      <h1>Philippine News Review</h1>
+      <nav style="font-size: 0.875rem; margin-bottom: 16px; font-family: 'Source Sans Pro', sans-serif;">
+        <a href="../" style="color: var(--muted); text-decoration: none;">← OpenPinas</a>
+      </nav>
+      <h1>OpenPinas: Weekly News Review</h1>
       <p class="week-range">Week of January 10-16, 2026</p>
       <nav class="nav-links">
         <a href="../interactive-timeline/">📅 Full Timeline</a>
@@ -1045,7 +1048,7 @@
       async function loadWeekReview() {
         try {
           // Update page title and header
-          document.title = `Philippine News Review: Week of ${WEEK_CONFIG.weekLabel}`;
+          document.title = `OpenPinas: Weekly News Review - Week of ${WEEK_CONFIG.weekLabel}`;
           document.querySelector(".week-range").textContent = `Week of ${WEEK_CONFIG.weekLabel}`;
           document.getElementById("last-updated").textContent = new Date().toLocaleDateString("en-US", { 
             year: "numeric", 

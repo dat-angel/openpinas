@@ -6,7 +6,7 @@
     "purpose": "Comprehensive timeline of major Philippine events in 2026 to help overseas Filipinos understand developments affecting families, remittances, investments, and homeland governance",
     "last_updated": "January 16, 2026",
     "aggregation_note": "This timeline is aggregated by month as events unfold. Weekly reviews provide more detailed coverage.",
-    "total_events": 19,
+    "total_events": 23,
     "categories": ["Political", "Cultural", "Natural Disasters", "Economic", "International Relations", "Legal", "OFW/Diaspora", "Religious"]
   },
   "timeline": [
@@ -179,6 +179,29 @@
       "weekly_review": "weekly-reviews/weekly-review-2026-01-09.html"
     },
     {
+      "date": "2026-01-08",
+      "month": "January",
+      "title": "Binaliw Landfill Collapse Kills 28 in Cebu City - State of Calamity Declared",
+      "category": "Natural Disasters",
+      "description": "A catastrophic garbage landslide occurred at the Binaliw Sanitary Landfill in Cebu City at 4:17 PM, burying approximately 50 sanitation workers. An estimated 35-meter (115 ft) pile of garbage collapsed onto the Material Recovery Facility and surrounding structures. As of January 16, the death toll reached 28 with 8 still missing and 18 injured, making it one of Cebu's deadliest industrial disasters. Cebu City declared a state of calamity on January 13, pledging ₱30 million for rescue operations and waste management solutions. The DENR issued a cease-and-desist order against operator Prime Integrated Waste Solutions Inc. The Mines and Geosciences Bureau cited oversaturation of waste due to heavy rains and possible engineering lapses as causes. Senator Imee Marcos filed Senate Resolution 244 calling for an investigation into landfill safety compliance with RA 9003 (Ecological Solid Waste Management Act).",
+      "significance": "Deadliest industrial disaster in Cebu history; exposes systemic failures in waste management regulation; triggered regional waste crisis as Metro Cebu's primary disposal facility shut down",
+      "diaspora_impact": "Families in Cebu and Metro Cebu affected by tragedy; waste crisis affects quality of life for residents; raises concerns about workplace safety regulations and enforcement in Philippines.",
+      "mentioned_dynasties": ["MARCOS_ROMUALDEZ"],
+      "sources": {
+        "international": [
+          "https://www.cnn.com/2026/01/09/asia/landfill-collapse-philippines-intl-hnk",
+          "https://abcnews.go.com/International/wireStory/mound-garbage-collapses-philippine-landfill-burying-38-people-129038874",
+          "https://www.nbcnews.com/world/asia/mound-garbage-collapses-philippine-landfill-burying-trapping-38-people-rcna253166"
+        ],
+        "local": [
+          "https://cebudailynews.inquirer.net/686177/binaliw-landfill-collapse-in-cebu-city-live-updates",
+          "https://www.rappler.com/philippines/visayas/state-calamity-cebu-landfill-landslide-january-13-2026/",
+          "https://www.manilatimes.net/2026/01/16/regions/cebu-city-landfill-collapse-death-toll-rises-to-22-mourning-day-declared/2259521"
+        ]
+      },
+      "weekly_review": "weekly-reviews/weekly-review-2026-01-09.html"
+    },
+    {
       "date": "2026-01-09",
       "month": "January",
       "title": "Black Nazarene Traslacion - Record 9.6 Million Devotees, Longest Procession Ever",
@@ -249,6 +272,44 @@
       "weekly_review": "weekly-reviews/weekly-review-2026-01-16.html"
     },
     {
+      "date": "2026-01-13",
+      "month": "January",
+      "title": "Nationwide Manhunt for Gaming Tycoon Atong Ang - ₱10M Reward Offered",
+      "category": "Legal",
+      "description": "The government launched a nationwide manhunt for gambling tycoon Charlie 'Atong' Ang after the Laguna RTC Branch 26 issued arrest warrants for kidnapping with homicide in the missing sabungeros (cockfighting enthusiasts) case. DILG Secretary Jonvic Remulla announced a ₱10 million reward for information leading to Ang's arrest, declaring him the 'most wanted criminal in the country.' Whistleblower testimony alleges Ang masterminded the disappearance and murder of over 100 sabungeros accused of cheating, with bodies dumped in Taal Lake. By January 17, all 17 co-accused (including 10 police officers) were arrested while Ang remains at large. The NBI reported 'reliable leads' on his whereabouts. Napolcom dismissed 11 police officers for grave misconduct related to the case. A second arrest warrant was issued on January 15 from Lipa RTC for six additional counts of kidnapping with homicide (non-bailable).",
+      "significance": "Major organized crime case exposing ties between gambling industry, police corruption, and extrajudicial killings; reflects post-POGO crime concerns as closed gambling operations lead to other criminal activities",
+      "diaspora_impact": "Raises serious concerns about rule of law and police corruption; case reveals depth of impunity in Philippines affecting safety perceptions for diaspora families.",
+      "mentioned_dynasties": [],
+      "sources": {
+        "international": [],
+        "local": [
+          "https://www.rappler.com/philippines/millions-reward-atong-ang-arrest/",
+          "https://www.gmanetwork.com/news/topstories/regions/972765/arrest-warrant-issued-vs-atong-ang-17-others-for-kidnapping-with-homicide-no-bail-set/story/",
+          "https://www.philstar.com/headlines/2026/01/16/2501298/p10-million-reward-offered-arrest-atong-ang"
+        ]
+      },
+      "weekly_review": "weekly-reviews/weekly-review-2026-01-16.html"
+    },
+    {
+      "date": "2026-01-14",
+      "month": "January",
+      "title": "Chinese Vessels Double in West Philippine Sea - 41 Ships Monitored",
+      "category": "International Relations",
+      "description": "The Philippine Navy reported Chinese vessels in West Philippine Sea increased to 41 in early January 2026, up from 20 in December 2025. Around Panatag (Scarborough) Shoal, monitors detected 2 PLA Navy ships, 3 coast guard vessels, and 3 maritime militia ships. Near Ayungin Shoal, 6 Coast Guard and 8 militia vessels were spotted. The AFP announced it will increase operations to defend Philippine maritime territory. The Philippines rejected China's claim of 'provocations,' stating protection of Filipino fishermen is a lawful duty. Rep. Leila de Lima called China's overlapping EEZ claims 'selective amnesia,' citing the 2016 Hague ruling. China's embassy called Philippine claims 'unfounded,' urging acceptance of 'overlapping claims.'",
+      "significance": "Escalating maritime tensions as China doubles vessel presence; Philippines stands firm on 2016 arbitral ruling; strategic importance during ASEAN chairmanship year",
+      "diaspora_impact": "Continued WPS tensions affect regional stability and fishing communities; diaspora families in coastal areas face economic uncertainty; Philippines' sovereignty stance resonates with overseas Filipinos.",
+      "mentioned_dynasties": [],
+      "sources": {
+        "international": [],
+        "local": [
+          "https://www.philstar.com/headlines/2026/01/14/2500809/china-ships-increase-west-philippine-sea-2026",
+          "https://www.gmanetwork.com/news/topstories/nation/972640/ph-navy-chinese-vessels-in-wps-increased-to-41-in-january/story/",
+          "https://www.pna.gov.ph/articles/1266721"
+        ]
+      },
+      "weekly_review": "weekly-reviews/weekly-review-2026-01-16.html"
+    },
+    {
       "date": "2026-01-14",
       "month": "January",
       "title": "Public Trust in Flood Control Prosecution Declining - POGO-Crypto Links Discovered",
@@ -262,6 +323,46 @@
         "local": [
           "https://newsinfo.inquirer.net/2166880/fwd-most-filipinos-still-believe-flood-control-scandal-culprits-will-go-to-jail-poll",
           "https://fortune.com/2026/01/14/philippines-asean-chair-marcos-flood-corruption-tariffs/"
+        ]
+      },
+      "weekly_review": "weekly-reviews/weekly-review-2026-01-16.html"
+    },
+    {
+      "date": "2026-01-14",
+      "month": "January",
+      "title": "Billionaire Enrique Razon Files ₱110M Cyber Libel Suit Against Rep. Barzaga",
+      "category": "Legal",
+      "description": "Port tycoon Enrique Razon Jr., chairman of International Container Terminal Services Inc. (ICTSI) and Bloomberry Resorts Corp., filed two counts of cyber libel against suspended Cavite Rep. Francisco 'Kiko' Barzaga before the Makati City Prosecutor's Office. The complaint stems from Barzaga's January 9 Facebook post alleging Razon bribed National Unity Party (NUP) lawmakers at Solaire to support then-Speaker Martin Romualdez's leadership. Razon seeks ₱100 million in moral damages and ₱10 million in exemplary damages. Razon called the allegations 'false and damaging,' noting Romualdez ran unopposed. Barzaga, serving a 60-day House suspension for ethics violations, responded: 'I am prepared to face Enrique Razon in court, the sooner, the better!' and promised to reveal evidence upon returning to Congress.",
+      "significance": "High-profile clash between business elite and politician; raises questions about congressional corruption allegations and limits of parliamentary immunity on social media",
+      "diaspora_impact": "Reflects ongoing tensions between business interests and political actors; potential revelations about congressional corruption concern diaspora monitoring governance quality.",
+      "mentioned_dynasties": ["MARCOS_ROMUALDEZ"],
+      "sources": {
+        "international": [],
+        "local": [
+          "https://www.philstar.com/nation/2026/01/15/2501124/razon-sues-barzaga-cyber-libel",
+          "https://newsinfo.inquirer.net/2168143/razon-sues-barzaga-for-p110m-over-fb-post",
+          "https://www.manilatimes.net/2026/01/14/news/razon-files-cyber-libel-complaint-vs-barzaga/2258741"
+        ]
+      },
+      "weekly_review": "weekly-reviews/weekly-review-2026-01-16.html"
+    },
+    {
+      "date": "2026-01-15",
+      "month": "January",
+      "title": "Japan-Philippines Sign ACSA Defense Pact Amid China Tensions",
+      "category": "International Relations",
+      "description": "Japan and the Philippines signed the Acquisition and Cross-Servicing Agreement (ACSA), allowing tax-free provision of ammunition, fuel, food, and other supplies during joint military exercises. Foreign Minister Toshimitsu Motegi and Secretary Theresa Lazaro signed the pact in Manila, building on the 2024 Reciprocal Access Agreement (RAA) that took effect September 2025. Japan announced ¥2.53 billion ($15.9M) in new security and economic assistance, including $6M for facilities to house donated inflatable boats and funds to expand internet in conflict-affected Mindanao. The agreement also enables joint disaster response and UN peacekeeping operations. Officials continue negotiating a classified information sharing agreement.",
+      "significance": "Deepening Japan-Philippines security alliance to counter Chinese regional aggression; second major defense agreement following RAA; strengthens deterrence capabilities",
+      "diaspora_impact": "Enhanced regional security partnership benefits Filipino communities; Japan assistance to conflict-affected Mindanao areas improves development; stronger defense ties provide reassurance amid WPS tensions.",
+      "mentioned_dynasties": [],
+      "sources": {
+        "international": [
+          "https://www.cnn.com/2026/01/15/asia/japan-philippines-pact-intl-hnk",
+          "https://www.bloomberg.com/news/articles/2026-01-15/japan-philippines-sign-military-logistics-pact-amid-china-row",
+          "https://www.aljazeera.com/news/2026/1/15/japan-philippines-sign-new-defence-pacts-amid-surging-china-tensions"
+        ],
+        "local": [
+          "https://www.manilatimes.net/2026/01/16/news/national/philippines-japan-sign-new-defense-pact/2259814"
         ]
       },
       "weekly_review": "weekly-reviews/weekly-review-2026-01-16.html"
@@ -372,12 +473,12 @@
     ]
   },
   "summary": {
-    "total_events": 19,
+    "total_events": 23,
     "political_events": 6,
-    "natural_disasters": 5,
+    "natural_disasters": 6,
     "economic_events": 4,
-    "international_relations": 1,
-    "legal_events": 1,
+    "international_relations": 3,
+    "legal_events": 4,
     "religious_events": 1,
     "ofw_diaspora": 0,
     "key_themes_2026": [
@@ -387,16 +488,21 @@
       "Marcos-Duterte political dynamics",
       "Mayon Volcano magmatic eruption (Alert Level 3) - 4,000+ evacuated",
       "Davao Oriental earthquake aftershocks",
+      "Binaliw landfill collapse - 28 dead, state of calamity in Cebu City",
       "New US remittance tax impact",
       "OFW protections and digitalization",
       "Free speech concerns amid sedition arrests",
       "Philippines-UAE historic free trade agreement (CEPA)",
       "Leandro Leviste and 'Cabral Files' corruption exposé",
-      "Tropical Storm Ada - first storm of 2026"
+      "High-profile libel suits - Razon vs Barzaga, Leviste vs Castro",
+      "Tropical Storm Ada - first storm of 2026",
+      "Japan-Philippines ACSA defense pact signed",
+      "Chinese vessels double in West Philippine Sea - 41 monitored",
+      "Atong Ang manhunt - ₱10M reward for 'most wanted' gambling tycoon"
     ],
     "diaspora_relevance": {
       "remittances": "New 1% US tax may affect $15+ billion in US-Philippines corridor; Philippines-UAE CEPA benefits OFWs in Middle East",
-      "natural_disasters": "Mayon Volcano at Alert Level 3 with 4,000+ evacuated; Tropical Storm Ada threatens Eastern Visayas; M6.4 Davao earthquake - families in Bicol, Visayas, and Mindanao regions may need support",
+      "natural_disasters": "Mayon Volcano at Alert Level 3 with 4,000+ evacuated; Binaliw landfill collapse kills 28 in Cebu - state of calamity declared; Tropical Storm Ada threatens Eastern Visayas; M6.4 Davao earthquake - families in Bicol, Visayas, and Mindanao regions may need support",
       "governance": "Anti-dynasty and anti-corruption efforts may improve governance quality; budget veto on unprogrammed funds reduces corruption opportunities; declining public trust in prosecution (59% vs 71%)",
       "ofw_support": "Expanded DMW programs and new labor agreements benefit workers abroad; UAE free trade agreement strengthens economic ties with major OFW destination",
       "free_speech": "Sedition arrest of retired general raises concerns about political expression",
