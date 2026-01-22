@@ -41,13 +41,13 @@ function buildNetwork() {
       label: caseItem.title.length > 30 ? caseItem.title.substring(0, 30) + '...' : caseItem.title,
       title: `${caseItem.title}\nStatus: ${caseItem.status}\nCategory: ${caseItem.category}`,
       color: {
-        background: '#1a5a73',
-        border: '#0d3547',
-        highlight: { background: '#2a7a93', border: '#0d3547' }
+        background: '#E3F2FD',
+        border: '#1976D2',
+        highlight: { background: '#BBDEFB', border: '#1565C0' }
       },
       size: 25,
       shape: 'box',
-      font: { size: 15, face: 'Source Sans Pro', bold: true, color: '#FFFFFF', strokeWidth: 2, strokeColor: '#FFFFFF' },
+      font: { size: 15, face: 'Source Sans Pro', bold: true, color: '#0D47A1', strokeWidth: 0 },
       data: { type: 'case', case: caseItem }
     });
     
@@ -78,7 +78,7 @@ function buildNetwork() {
           id: `edge_${nodeId}_${accusedId}`,
           from: nodeId,
           to: accusedId,
-          color: { color: '#1a5a73', highlight: '#2a7a93' },
+          color: { color: '#1976D2', highlight: '#1565C0' },
           width: 2,
           title: 'Accused in case'
         });
@@ -193,7 +193,7 @@ function updateNetwork() {
   const data = { nodes: nodes, edges: edges };
   const options = {
     nodes: {
-      font: { size: 13, face: 'Source Sans Pro', bold: true, color: '#FFFFFF', strokeWidth: 2, strokeColor: '#FFFFFF' },
+      font: { size: 13, face: 'Source Sans Pro', bold: true, color: '#FFFFFF', strokeWidth: 2, strokeColor: '#000000' },
       borderWidth: 3,
       shadow: true
     },
