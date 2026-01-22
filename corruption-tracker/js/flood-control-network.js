@@ -51,13 +51,13 @@ function buildNetwork(floodControlCase) {
     label: 'Flood Control Corruption',
     title: `Flood Control Projects Corruption Scandal\nAmount: ₱118.5 billion\nStatus: ${floodControlCase.status}`,
     color: {
-      background: '#124559',
+      background: '#1a5a73',
       border: '#0d3547',
-      highlight: { background: '#1a5a73', border: '#0d3547' }
+      highlight: { background: '#2a7a93', border: '#0d3547' }
     },
     size: 35,
     shape: 'box',
-    font: { size: 16, face: 'Source Sans Pro', bold: true, color: '#FFFFFF', strokeWidth: 3, strokeColor: '#000000' },
+    font: { size: 17, face: 'Source Sans Pro', bold: true, color: '#FFFFFF', strokeWidth: 2, strokeColor: '#FFFFFF' },
     data: { type: 'case', case: floodControlCase }
   });
   
@@ -96,7 +96,7 @@ function buildNetwork(floodControlCase) {
         id: `edge_${caseId}_${accusedId}`,
         from: caseId,
         to: accusedId,
-        color: { color: '#124559', highlight: '#1a5a73' },
+        color: { color: '#1a5a73', highlight: '#2a7a93' },
         width: 3,
         title: 'Involved in case'
       });
@@ -174,7 +174,7 @@ function buildNetwork(floodControlCase) {
         bold: true,
         color: '#FFFFFF',
         strokeWidth: 2,
-        strokeColor: '#000000'
+        strokeColor: '#FFFFFF'
       }
     },
     edges: {
