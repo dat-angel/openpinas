@@ -4,8 +4,33 @@ let filteredCases = [];
 
 async function loadCases() {
   try {
-    const response = await fetch('../data/pogo-corruption-cases-2025.json');
+    // Determine the correct path based on current location
+    const currentPath = window.location.pathname;
+    let dataPath = '../data/pogo-corruption-cases-2025.json';
+    
+    // If we're in a cases/ subdirectory, go up one level to data/
+    if (currentPath.includes('/cases/')) {
+      dataPath = '../data/pogo-corruption-cases-2025.json';
+    } else if (currentPath.includes('/corruption-tracker/')) {
+      dataPath = 'data/pogo-corruption-cases-2025.json';
+    } else {
+      dataPath = 'corruption-tracker/data/pogo-corruption-cases-2025.json';
+    }
+    
+    console.log('Loading cases from:', dataPath);
+    const response = await fetch(dataPath);
+    
+    if (!response.ok) {
+      throw new Error(`Failed to fetch data: ${response.status} ${response.statusText} from ${dataPath}`);
+    }
+    
     const data = await response.json();
+    
+    if (!data || !data.cases) {
+      throw new Error('Invalid data structure: missing cases array');
+    }
+    
+    console.log('Loaded', data.cases.length, 'cases');
     allCases = data.cases || [];
     filteredCases = [...allCases];
     
@@ -14,10 +39,29 @@ async function loadCases() {
     
     renderCaseList();
     renderStatistics(data.statistics);
+    initializeFilters();
   } catch (error) {
     console.error('Error loading cases:', error);
-    document.querySelector('.case-list').innerHTML = 
-      '<div class="empty">Error loading case data. Please check the console for details.</div>';
+    console.error('Error details:', {
+      message: error.message,
+      stack: error.stack,
+      url: window.location.href,
+      pathname: window.location.pathname
+    });
+    
+    const container = document.querySelector('.case-list');
+    if (container) {
+      container.innerHTML = 
+        `<div class="empty">
+          <p><strong>Error loading case data:</strong> ${error.message}</p>
+          <p style="margin-top: 12px; font-size: 14px;">Please check the browser console for more details.</p>
+        </div>`;
+    }
+    
+    const resultCount = document.getElementById('resultCount');
+    if (resultCount) {
+      resultCount.textContent = 'Error loading cases';
+    }
   }
 }
 
@@ -442,11 +486,9 @@ function initializeFilters() {
 // Load cases when page loads
 if (document.readyState === 'loading') {
   document.addEventListener('DOMContentLoaded', () => {
-    loadCases();
-    initializeFilters();
+    loadCases(); // initializeFilters() is now called inside loadCases()
   });
 } else {
-  loadCases();
-  initializeFilters();
+  loadCases(); // initializeFilters() is now called inside loadCases()
 }
 

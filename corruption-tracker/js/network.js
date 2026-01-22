@@ -47,7 +47,7 @@ function buildNetwork() {
       },
       size: 25,
       shape: 'box',
-      font: { size: 14, face: 'Source Sans Pro' },
+      font: { size: 14, face: 'Source Sans Pro', bold: true, color: '#FFFFFF', strokeWidth: 3, strokeColor: '#000000' },
       data: { type: 'case', case: caseItem }
     });
     
@@ -68,7 +68,7 @@ function buildNetwork() {
             },
             size: 20,
             shape: 'dot',
-            font: { size: 12, face: 'Source Sans Pro' },
+            font: { size: 13, face: 'Source Sans Pro', bold: true, color: '#FFFFFF', strokeWidth: 2, strokeColor: '#000000' },
             data: { type: 'accused', accused: accused }
           });
         }
@@ -102,7 +102,7 @@ function buildNetwork() {
             },
             size: 18,
             shape: 'triangle',
-            font: { size: 11, face: 'Source Sans Pro' },
+            font: { size: 12, face: 'Source Sans Pro', bold: true, color: '#FFFFFF', strokeWidth: 2, strokeColor: '#000000' },
             data: { type: 'pogo', pogo: pogo }
           });
         }
@@ -139,7 +139,7 @@ function buildNetwork() {
             },
             size: 22,
             shape: 'diamond',
-            font: { size: 12, face: 'Source Sans Pro' },
+            font: { size: 12, face: 'Source Sans Pro', bold: true, color: '#FFFFFF', strokeWidth: 2, strokeColor: '#000000' },
             data: { type: 'dynasty', dynasty: dynasty }
           });
         }
@@ -193,8 +193,8 @@ function updateNetwork() {
   const data = { nodes: nodes, edges: edges };
   const options = {
     nodes: {
-      font: { size: 12, face: 'Source Sans Pro' },
-      borderWidth: 2,
+      font: { size: 13, face: 'Source Sans Pro', bold: true, color: '#FFFFFF', strokeWidth: 2, strokeColor: '#000000' },
+      borderWidth: 3,
       shadow: true
     },
     edges: {

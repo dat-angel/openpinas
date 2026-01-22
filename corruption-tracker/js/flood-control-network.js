@@ -57,7 +57,7 @@ function buildNetwork(floodControlCase) {
     },
     size: 35,
     shape: 'box',
-    font: { size: 16, face: 'Source Sans Pro', color: '#fff' },
+    font: { size: 16, face: 'Source Sans Pro', bold: true, color: '#FFFFFF', strokeWidth: 3, strokeColor: '#000000' },
     data: { type: 'case', case: floodControlCase }
   });
   
@@ -87,7 +87,7 @@ function buildNetwork(floodControlCase) {
         },
         size: isPolitician || accused.name.includes('Romualdez') || accused.name.includes('Escudero') ? 25 : 20,
         shape: 'dot',
-        font: { size: 12, face: 'Source Sans Pro' },
+        font: { size: 13, face: 'Source Sans Pro', bold: true, color: '#FFFFFF', strokeWidth: 2, strokeColor: '#000000' },
         data: { type: 'accused', accused: accused }
       });
       
@@ -117,7 +117,7 @@ function buildNetwork(floodControlCase) {
             },
             size: 22,
             shape: 'diamond',
-            font: { size: 11, face: 'Source Sans Pro' },
+            font: { size: 12, face: 'Source Sans Pro', bold: true, color: '#FFFFFF', strokeWidth: 2, strokeColor: '#000000' },
             data: { type: 'dynasty', dynasty: accused.dynasty_connection }
           });
         }
@@ -166,10 +166,15 @@ function buildNetwork(floodControlCase) {
   
   const options = {
     nodes: {
-      borderWidth: 2,
+      borderWidth: 3,
       shadow: true,
       font: {
-        color: '#222'
+        size: 13,
+        face: 'Source Sans Pro',
+        bold: true,
+        color: '#FFFFFF',
+        strokeWidth: 2,
+        strokeColor: '#000000'
       }
     },
     edges: {
