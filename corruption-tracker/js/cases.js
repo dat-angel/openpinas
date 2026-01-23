@@ -2,6 +2,14 @@
 let allCases = [];
 let filteredCases = [];
 
+// Status icons for accessibility (color + icon)
+const statusIcons = {
+  ongoing: '⏳',
+  convicted: '⚖️',
+  dismissed: '✕',
+  filed: '📋'
+};
+
 async function loadCases() {
   try {
     // Determine the correct path based on current location
@@ -232,7 +240,7 @@ function renderCaseList() {
           ${caseItem.priority === 'high' ? '<span class="priority-badge">High Priority</span>' : ''}
         </div>
         <div class="case-meta">
-          <span class="status-badge ${statusClass}">${statusLabel}</span>
+          <span class="status-badge ${statusClass}"><span class="status-icon" aria-hidden="true">${statusIcons[statusClass] || ''}</span>${statusLabel}</span>
           <span class="category-tag">${escapeHtml(caseItem.category)}</span>
           <span>${filingDate}</span>
           ${caseItem.location ? `<span>📍 ${escapeHtml(caseItem.location.municipality || caseItem.location.province || '')}</span>` : ''}

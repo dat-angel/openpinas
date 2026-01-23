@@ -1,6 +1,18 @@
 let entries = [];
 let currentYear = "2025";
 
+// Category icons for accessibility (color + icon)
+const categoryIcons = {
+  'Political': '🏛️',
+  'Cultural': '🎭',
+  'Natural Disasters': '🌀',
+  'Economic': '📊',
+  'International Relations': '🌐',
+  'Legal': '⚖️',
+  'Religious': '✝️',
+  'OFW/Diaspora': '✈️'
+};
+
 const timelineFiles = {
   "2025": "../philippines-2025-timeline.json",
   "2026": "../philippines-2026-timeline.json"
@@ -53,6 +65,7 @@ async function loadTimelineData(year) {
         title: event.title,
         theme: categoryMap[event.category] || event.category.toLowerCase(),
         category: event.category, // Keep original for display
+        categoryIcon: categoryIcons[event.category] || '📌',
         description: event.description,
         significance: event.significance,
         diaspora_impact: event.diaspora_impact,
@@ -197,7 +210,7 @@ const renderTimeline = (items) => {
       <h3>${entry.title}</h3>
       <div class="meta">
         <span>${formatDate(entry.date)}</span>
-        <span class="tag ${entry.theme}">${entry.category || entry.theme}</span>
+        <span class="tag ${entry.theme}"><span class="tag-icon" aria-hidden="true">${entry.categoryIcon}</span>${entry.category || entry.theme}</span>
         ${sourcesHTML ? `<span>${sourcesHTML}</span>` : ''}
       </div>
       ${descriptionHTML}

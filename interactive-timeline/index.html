@@ -60,6 +60,7 @@
     </style>
   </head>
   <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
     <header>
       <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
         <a href="../index.html" style="color: var(--ink, #1a1a1a); text-decoration: none; font-size: 20px; font-weight: 600;">OpenPinas</a>
@@ -85,13 +86,13 @@
 
       <div class="controls">
         <label class="filter">
-          <input type="checkbox" value="weather" checked /> Weather
+          <input type="checkbox" value="weather" checked /> <span aria-hidden="true">🌀</span> Weather
         </label>
         <label class="filter">
-          <input type="checkbox" value="politics" checked /> Politics
+          <input type="checkbox" value="politics" checked /> <span aria-hidden="true">🏛️</span> Politics
         </label>
         <label class="filter">
-          <input type="checkbox" value="culture" checked /> Culture
+          <input type="checkbox" value="culture" checked /> <span aria-hidden="true">🎭</span> Culture
         </label>
         <input type="search" id="search" placeholder="Search titles or dates" />
         <button id="sortOrder">Sort: Oldest</button>
@@ -99,7 +100,7 @@
       </div>
     </header>
 
-    <main>
+    <main id="main-content">
       <section class="timeline" aria-label="Timeline entries"></section>
     </main>
 

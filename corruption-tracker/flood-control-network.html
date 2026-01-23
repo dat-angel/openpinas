@@ -118,21 +118,80 @@
         color: #444;
       }
 
-      .legend-color {
+      .legend-shape {
+        width: 16px;
+        height: 16px;
+        flex-shrink: 0;
+      }
+
+      .legend-box {
+        border-radius: 3px;
+      }
+
+      .legend-circle {
+        border-radius: 50%;
+      }
+
+      .legend-triangle {
+        width: 0;
+        height: 0;
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        border-bottom: 14px solid;
+        background: transparent !important;
+      }
+
+      .legend-diamond {
+        transform: rotate(45deg);
+        width: 11px;
+        height: 11px;
+      }
+
+      .legend-hexagon {
         width: 14px;
         height: 14px;
         border-radius: 50%;
-        border: 1px solid #ddd;
       }
 
       .legend-line {
         width: 24px;
-        height: 2px;
+        height: 3px;
+        flex-shrink: 0;
+      }
+
+      .legend-line-dashed {
+        height: 0;
+        border-top: 3px dashed;
+        background: transparent !important;
       }
 
       .money-amount {
         font-weight: 600;
         color: #c44900;
+      }
+
+      /* Accessibility */
+      .skip-link {
+        position: absolute;
+        top: -40px;
+        left: 0;
+        background: #222;
+        color: #fff;
+        padding: 8px 16px;
+        z-index: 1000;
+        text-decoration: none;
+        font-family: "Source Sans Pro", -apple-system, sans-serif;
+      }
+
+      .skip-link:focus {
+        top: 0;
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        * {
+          animation-duration: 0.01ms !important;
+          transition-duration: 0.01ms !important;
+        }
       }
 
       @media (max-width: 1024px) {
@@ -153,6 +212,7 @@
     </style>
   </head>
   <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
     <header>
       <nav class="header-nav"><a href="../">← OpenPinas</a> · <a href="./">Corruption Tracker</a> · <a href="cases/flood-control.html">Flood Control Case</a></nav>
       <h1>Flood Control Corruption Network</h1>
@@ -161,7 +221,7 @@
       </p>
     </header>
 
-    <main>
+    <main id="main-content">
       <div class="network-controls">
         <button id="resetView">Reset View</button>
         <button id="fitNetwork">Fit to Screen</button>
@@ -179,36 +239,36 @@
       <div class="legend">
         <h4>Legend</h4>
         <div class="legend-item">
-          <div class="legend-color" style="background: #E3F2FD; border: 2px solid #1976D2;"></div>
-          <span>Case</span>
+          <div class="legend-shape legend-box" style="background: #E3F2FD; border: 2px solid #1976D2;"></div>
+          <span>Case (□)</span>
         </div>
         <div class="legend-item">
-          <div class="legend-color" style="background: #c44900;"></div>
-          <span>Politician/Official</span>
+          <div class="legend-shape legend-circle" style="background: #c44900;"></div>
+          <span>Politician/Official (●)</span>
         </div>
         <div class="legend-item">
-          <div class="legend-color" style="background: #0b6e4f;"></div>
-          <span>Dynasty</span>
+          <div class="legend-shape legend-triangle" style="border-bottom-color: #0b6e4f;"></div>
+          <span>Dynasty (▲)</span>
         </div>
         <div class="legend-item">
-          <div class="legend-color" style="background: #f77f00;"></div>
-          <span>Contractor</span>
+          <div class="legend-shape legend-diamond" style="background: #f77f00;"></div>
+          <span>Contractor (◆)</span>
         </div>
         <div class="legend-item">
-          <div class="legend-color" style="background: #8b008b;"></div>
-          <span>DPWH Official</span>
+          <div class="legend-shape legend-hexagon" style="background: #8b008b;"></div>
+          <span>DPWH Official (⬢)</span>
         </div>
         <div class="legend-item">
           <div class="legend-line" style="background: #1976D2;"></div>
-          <span>Involved in Case</span>
+          <span>Involved in Case (—)</span>
         </div>
         <div class="legend-item">
-          <div class="legend-line" style="background: #c44900; border-top: 2px dashed #c44900;"></div>
-          <span>Money Flow</span>
+          <div class="legend-line legend-line-dashed" style="border-color: #c44900;"></div>
+          <span>Money Flow (┄)</span>
         </div>
         <div class="legend-item">
-          <div class="legend-line" style="background: #0b6e4f; border-top: 2px dashed #0b6e4f;"></div>
-          <span>Dynasty Connection</span>
+          <div class="legend-line legend-line-dashed" style="border-color: #0b6e4f;"></div>
+          <span>Dynasty Connection (┄)</span>
         </div>
       </div>
     </main>

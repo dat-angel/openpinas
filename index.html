@@ -220,9 +220,50 @@
           grid-template-columns: 1fr;
         }
       }
+
+      /* Accessibility */
+      .sr-only {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+      }
+
+      .skip-link {
+        position: absolute;
+        top: -40px;
+        left: 0;
+        background: var(--ink);
+        color: #fff;
+        padding: 8px 16px;
+        z-index: 1000;
+        text-decoration: none;
+        font-family: "Source Sans Pro", Arial, sans-serif;
+      }
+
+      .skip-link:focus {
+        top: 0;
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        *,
+        *::before,
+        *::after {
+          animation-duration: 0.01ms !important;
+          animation-iteration-count: 1 !important;
+          transition-duration: 0.01ms !important;
+          scroll-behavior: auto !important;
+        }
+      }
     </style>
   </head>
   <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
     <header>
       <h1>OpenPinas</h1>
       <p class="subtitle">
@@ -230,7 +271,7 @@
       </p>
     </header>
 
-    <main>
+    <main id="main-content">
       <div class="cards">
         <a href="weekly-reviews/" class="card">
           <h2>📰 Weekly Reviews</h2>

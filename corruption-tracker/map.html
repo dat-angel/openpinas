@@ -91,9 +91,34 @@
           height: 500px;
         }
       }
+
+      /* Accessibility */
+      .skip-link {
+        position: absolute;
+        top: -40px;
+        left: 0;
+        background: #222;
+        color: #fff;
+        padding: 8px 16px;
+        z-index: 1001;
+        text-decoration: none;
+        font-family: "Source Sans Pro", -apple-system, sans-serif;
+      }
+
+      .skip-link:focus {
+        top: 0;
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        * {
+          animation-duration: 0.01ms !important;
+          transition-duration: 0.01ms !important;
+        }
+      }
     </style>
   </head>
   <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
     <header>
       <nav class="header-nav"><a href="../">← OpenPinas</a> · <a href="./">Corruption Tracker</a></nav>
       <h1>OpenPinas: Corruption Cases Map</h1>
@@ -102,13 +127,13 @@
       </p>
     </header>
 
-    <main>
+    <main id="main-content">
       <div class="map-controls">
         <label>
-          <input type="checkbox" id="showOngoing" checked> Ongoing Cases
+          <input type="checkbox" id="showOngoing" checked> <span aria-hidden="true">⏳</span> Ongoing Cases
         </label>
         <label>
-          <input type="checkbox" id="showConvicted" checked> Convicted
+          <input type="checkbox" id="showConvicted" checked> <span aria-hidden="true">✓</span> Convicted
         </label>
         <label>
           <input type="checkbox" id="showPOGO" checked> POGO Cases
@@ -123,20 +148,20 @@
       <div class="map-legend">
         <h4>Case Status</h4>
         <div class="map-legend-item">
-          <div class="map-legend-marker" style="background: #f77f00;"></div>
-          <span>Ongoing</span>
+          <div class="map-legend-marker" style="background: #f77f00; display: flex; align-items: center; justify-content: center; color: white; font-size: 8px;">⏳</div>
+          <span>Ongoing (⏳)</span>
         </div>
         <div class="map-legend-item">
-          <div class="map-legend-marker" style="background: #0b6e4f;"></div>
-          <span>Convicted</span>
+          <div class="map-legend-marker" style="background: #0b6e4f; display: flex; align-items: center; justify-content: center; color: white; font-size: 8px;">✓</div>
+          <span>Convicted (✓)</span>
         </div>
         <div class="map-legend-item">
-          <div class="map-legend-marker" style="background: #124559;"></div>
-          <span>Filed</span>
+          <div class="map-legend-marker" style="background: #124559; display: flex; align-items: center; justify-content: center; color: white; font-size: 8px;">📋</div>
+          <span>Filed (📋)</span>
         </div>
         <div class="map-legend-item">
-          <div class="map-legend-marker" style="background: #b23a48;"></div>
-          <span>Dismissed</span>
+          <div class="map-legend-marker" style="background: #b23a48; display: flex; align-items: center; justify-content: center; color: white; font-size: 8px;">✕</div>
+          <span>Dismissed (✕)</span>
         </div>
       </div>
     </main>

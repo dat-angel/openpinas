@@ -218,21 +218,54 @@
       margin: 6px 0;
     }
 
-    .legend-color {
+    .legend-shape {
       width: 16px;
       height: 16px;
+      flex-shrink: 0;
+    }
+
+    .legend-ellipse {
       border-radius: 50%;
-      border: 1px solid #ccc;
+    }
+
+    .legend-box {
+      border-radius: 3px;
+    }
+
+    .legend-star {
+      width: 16px;
+      height: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+    }
+
+    .legend-triangle {
+      width: 0;
+      height: 0;
+      border-left: 8px solid transparent;
+      border-right: 8px solid transparent;
+      border-bottom: 14px solid;
+      background: transparent !important;
+    }
+
+    .legend-diamond {
+      transform: rotate(45deg);
+      width: 11px;
+      height: 11px;
     }
 
     .legend-line {
       width: 24px;
-      height: 2px;
-      background: #ccc;
+      height: 3px;
+      flex-shrink: 0;
     }
 
     .legend-line.dashed {
-      background: repeating-linear-gradient(to right, #666 0, #666 4px, transparent 4px, transparent 8px);
+      height: 0;
+      border-top: 3px dashed;
+      background: transparent !important;
     }
 
     .stats {
@@ -321,9 +354,33 @@
         height: 600px;
       }
     }
+
+    /* Accessibility */
+    .skip-link {
+      position: absolute;
+      top: -40px;
+      left: 0;
+      background: #1a1a1a;
+      color: #fff;
+      padding: 8px 16px;
+      z-index: 1001;
+      text-decoration: none;
+    }
+
+    .skip-link:focus {
+      top: 0;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      * {
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
   </style>
 </head>
 <body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
   <header>
     <div style="max-width: 1200px; margin: 0 auto;">
       <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
@@ -477,54 +534,56 @@
     </ul>
   </div>
 
-  <div id="network-container"></div>
-  <div id="map-container" style="display: none; width: 100%; height: calc(100vh - 180px); position: relative;"></div>
+  <div id="main-content">
+    <div id="network-container"></div>
+    <div id="map-container" style="display: none; width: 100%; height: calc(100vh - 180px); position: relative;"></div>
+  </div>
 
   <div class="legend">
     <h4>Legend</h4>
     <div class="legend-item">
-      <div class="legend-color" style="background: #0038A8; border: 2px solid #001F5C;"></div>
-      <span>Imperial Dynasty (Deep Blue)</span>
+      <div class="legend-shape legend-star" style="color: #0038A8;">★</div>
+      <span>Imperial Dynasty (★)</span>
     </div>
     <div class="legend-item">
-      <div class="legend-color" style="background: #CE1126; border: 2px solid #8B0000;"></div>
-      <span>Dominant Dynasty (Bright Red)</span>
+      <div class="legend-shape legend-ellipse" style="background: #CE1126; border: 2px solid #8B0000;"></div>
+      <span>Dominant Dynasty (●)</span>
     </div>
     <div class="legend-item">
-      <div class="legend-color" style="background: #0066CC; border: 2px solid #003D7A;"></div>
-      <span>Major Dynasty (Bright Blue)</span>
+      <div class="legend-shape legend-box" style="background: #0066CC; border: 2px solid #003D7A;"></div>
+      <span>Major Dynasty (■)</span>
     </div>
     <div class="legend-item">
-      <div class="legend-color" style="background: #DC143C; border: 2px solid #8B0000;"></div>
-      <span>Established Dynasty (Crimson)</span>
+      <div class="legend-shape legend-triangle" style="border-bottom-color: #DC143C;"></div>
+      <span>Established Dynasty (▲)</span>
     </div>
     <div class="legend-item">
-      <div class="legend-color" style="background: #FFD700; border: 2px solid #B8860B;"></div>
-      <span>Rising Dynasty (Gold)</span>
+      <div class="legend-shape legend-diamond" style="background: #FFD700; border: 2px solid #B8860B;"></div>
+      <span>Rising Dynasty (◆)</span>
     </div>
     <div class="legend-item">
-      <div class="legend-color" style="background: #228B22; border: 2px solid #006400;"></div>
-      <span>Minor Dynasty (Forest Green)</span>
+      <div class="legend-shape legend-ellipse" style="background: #228B22; border: 2px solid #006400;"></div>
+      <span>Minor Dynasty (●)</span>
     </div>
     <div class="legend-item">
-      <div class="legend-color" style="background: #FF6B35; border: 2px solid #CC5500;"></div>
-      <span>New Dynasty (Orange-Red)</span>
+      <div class="legend-shape legend-ellipse" style="background: #FF6B35; border: 2px solid #CC5500;"></div>
+      <span>New Dynasty (●)</span>
     </div>
     <div class="legend-item">
-      <div class="legend-line" style="background: #0038A8; height: 4px;"></div>
-      <span>Alliance (Deep Blue)</span>
+      <div class="legend-line" style="background: #0038A8;"></div>
+      <span>Alliance (—)</span>
     </div>
     <div class="legend-item">
-      <div class="legend-line dashed" style="background: #CE1126; height: 3px;"></div>
-      <span>Rivalry (Bright Red)</span>
+      <div class="legend-line dashed" style="border-color: #CE1126;"></div>
+      <span>Rivalry (┄)</span>
     </div>
     <div class="legend-item">
-      <div class="legend-line" style="background: #FFD700; height: 5px;"></div>
-      <span>Corruption Network (Gold)</span>
+      <div class="legend-line" style="background: #FFD700; height: 4px;"></div>
+      <span>Corruption Network (≡)</span>
     </div>
     <div class="legend-item">
-      <div class="legend-line" style="background: #0066CC; height: 4px;"></div>
-      <span>Marriage (Bright Blue)</span>
+      <div class="legend-line" style="background: #0066CC;"></div>
+      <span>Marriage (—)</span>
     </div>
   </div>
 

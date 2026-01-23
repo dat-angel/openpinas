@@ -300,12 +300,19 @@ footer a:hover {
 }
 
 .status-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
   padding: 0.125rem 0.5rem;
   font-size: 0.625rem;
   text-transform: uppercase;
   letter-spacing: 0.05em;
   font-weight: 600;
   border: 1px solid;
+}
+
+.status-icon {
+  font-size: 0.7rem;
 }
 
 .status-badge.ongoing {
@@ -486,5 +493,46 @@ footer a:hover {
   .controls select {
     width: 100%;
     min-width: auto;
+  }
+}
+
+/* Accessibility utilities */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: #222;
+  color: #fff;
+  padding: 8px 16px;
+  z-index: 1000;
+  text-decoration: none;
+  font-family: "Source Sans Pro", -apple-system, sans-serif;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
   }
 }
