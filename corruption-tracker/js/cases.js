@@ -14,18 +14,21 @@ async function loadCases() {
   try {
     // Determine the correct path based on current location
     const currentPath = window.location.pathname;
-    let dataPath = '../data/pogo-corruption-cases-2025.json';
-    
-    // If we're in a cases/ subdirectory, go up one level to data/
-    if (currentPath.includes('/cases/')) {
+    let dataPath;
+
+    // Handle different path scenarios
+    if (currentPath.includes('/cases/') || currentPath.endsWith('/cases')) {
+      // Inside /corruption-tracker/cases/ - go up to corruption-tracker/data/
       dataPath = '../data/pogo-corruption-cases-2025.json';
-    } else if (currentPath.includes('/corruption-tracker/')) {
+    } else if (currentPath.includes('/corruption-tracker')) {
+      // Inside /corruption-tracker/ but not in cases/
       dataPath = 'data/pogo-corruption-cases-2025.json';
     } else {
+      // At root or elsewhere
       dataPath = 'corruption-tracker/data/pogo-corruption-cases-2025.json';
     }
-    
-    console.log('Loading cases from:', dataPath);
+
+    console.log('Loading cases from:', dataPath, 'Current path:', currentPath);
     const response = await fetch(dataPath);
     
     if (!response.ok) {
@@ -449,15 +452,14 @@ function initializeFilters() {
   // Populate year filter
   if (yearFilter && allCases.length > 0) {
     const years = [...new Set(allCases.map(c => new Date(c.filing_date).getFullYear()))].sort((a, b) => b - a);
-    yearFilter.innerHTML = '<option value="all">All Years</option>' + 
+    yearFilter.innerHTML = '<option value="all">All Years</option>' +
       years.map(year => {
         const count = allCases.filter(c => new Date(c.filing_date).getFullYear() === year).length;
         return `<option value="${year}">${year} (${count})</option>`;
       }).join('');
   }
-  
-  // Populate dynasty filter
-  const dynastyFilter = document.getElementById('dynastyFilter');
+
+  // Populate dynasty filter (reuse dynastyFilter from above)
   if (dynastyFilter && allCases.length > 0) {
     const dynasties = new Set();
     allCases.forEach(c => {
