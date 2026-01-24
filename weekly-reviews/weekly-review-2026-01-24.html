@@ -848,7 +848,8 @@
         "Economic": { slug: "economic", display: "Economic" },
         "Legal": { slug: "legal", display: "Legal" },
         "International Relations": { slug: "international-relations", display: "International Relations" },
-        "Religious": { slug: "religious", display: "Religious" }
+        "Religious": { slug: "religious", display: "Religious" },
+        "OFW/Diaspora": { slug: "ofw", display: "OFW/Diaspora" }
       };
 
       // Format date for display
@@ -963,7 +964,7 @@
         }
 
         const grouped = groupEventsByCategory(events);
-        const categoryOrder = ["Political", "Natural Disasters", "Economic", "Legal", "International Relations", "Cultural", "Religious"];
+        const categoryOrder = ["Political", "Natural Disasters", "Economic", "Legal", "International Relations", "Cultural", "Religious", "OFW/Diaspora"];
         
         let html = "";
         categoryOrder.forEach(category => {
