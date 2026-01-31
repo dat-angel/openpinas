@@ -4,9 +4,9 @@
   "prepared_for": "Filipino Diaspora Communities Worldwide",
   "metadata": {
     "purpose": "Comprehensive timeline of major Philippine events in 2026 to help overseas Filipinos understand developments affecting families, remittances, investments, and homeland governance",
-    "last_updated": "January 24, 2026",
+    "last_updated": "January 31, 2026",
     "aggregation_note": "This timeline is aggregated by month as events unfold. Weekly reviews provide more detailed coverage.",
-    "total_events": 41,
+    "total_events": 47,
     "categories": ["Political", "Cultural", "Natural Disasters", "Economic", "International Relations", "Legal", "OFW/Diaspora", "Religious"]
   },
   "timeline": [
@@ -720,6 +720,126 @@
         ]
       },
       "weekly_review": "weekly-reviews/weekly-review-2026-01-24.html"
+    },
+    {
+      "date": "2026-01-25",
+      "month": "January",
+      "title": "US-Philippines Joint Sail at Scarborough Shoal - 11th Maritime Cooperative Activity",
+      "category": "International Relations",
+      "description": "The Armed Forces of the Philippines and US Indo-Pacific Command conducted their first joint maritime cooperative activity of 2026 near Scarborough Shoal on January 25-26. The Philippines deployed the frigate BRP Antonio Luna, a coast guard offshore patrol vessel, two military aircraft, and a helicopter. The US contributed the USS John Finn, an Arleigh Burke-class guided missile destroyer, and an MH-60R Seahawk helicopter. This marked the 11th such exercise since November 2023, reflecting intensified military cooperation under President Marcos. The exercise occurred as China and the Philippines engage in tense negotiations over the South China Sea Code of Conduct.",
+      "significance": "First joint maritime activity of 2026 in contested waters; demonstrates deepening US-Philippines alliance; over 500 joint military activities planned for 2026",
+      "diaspora_impact": "Enhanced defense cooperation provides security reassurance for diaspora families; strengthens Philippines' position in maritime disputes affecting fishing communities.",
+      "mentioned_dynasties": ["MARCOS_ROMUALDEZ"],
+      "sources": {
+        "international": [
+          "https://www.bloomberg.com/news/articles/2026-01-27/us-philippines-stage-drills-at-disputed-shoal-claimed-by-china"
+        ],
+        "local": [
+          "https://www.gmanetwork.com/news/topstories/nation/974306/philippines-us-hold-joint-sail-in-disputed-south-china-sea-shoal/story/",
+          "https://www.bworldonline.com/the-nation/2026/01/27/726671/philippines-us-hold-joint-sail-in-disputed-south-china-sea-shoal/"
+        ]
+      },
+      "weekly_review": "weekly-reviews/weekly-review-2026-01-31.html"
+    },
+    {
+      "date": "2026-01-26",
+      "month": "January",
+      "title": "MV Trisha Kerstin 3 Ferry Sinks Off Basilan - At Least 31 Dead",
+      "category": "Natural Disasters",
+      "description": "The passenger ferry MV Trisha Kerstin 3, carrying 332 passengers and 27 crew, capsized off Basilan province shortly after midnight while en route from Zamboanga City to Jolo, Sulu. Strong waves flooded the lower deck, causing the triple-decker vessel to list and capsize about 1 nautical mile from Baluk-baluk Island. At least 31 people died with 10 missing; 316 passengers and crew were rescued by coast guard, navy ships, and fishing boats. The Department of Transportation grounded Aleson Shipping Lines' entire passenger fleet pending investigation. This was the company's second major incident after M/V Lady Mary Joy 3 caught fire in March 2023. A nationwide maritime safety audit was ordered.",
+      "significance": "Deadliest maritime disaster in Philippines since 2023; exposes ongoing maritime safety concerns; triggered industry-wide safety audit",
+      "diaspora_impact": "Maritime safety concerns affect families in island provinces dependent on ferry travel; highlights infrastructure and regulatory gaps.",
+      "mentioned_dynasties": [],
+      "sources": {
+        "international": [
+          "https://www.aljazeera.com/news/2026/1/26/ferry-carrying-over-350-people-sinks-in-philippines-killing-at-least-seven",
+          "https://www.cbc.ca/news/world/philippines-ferry-sinks-9.7060761",
+          "https://edition.cnn.com/2026/01/25/asia/ferry-sinking-philippines-basilan-intl-hnk"
+        ],
+        "local": [
+          "https://www.rappler.com/philippines/mindanao/basilan-ferry-sinking-deaths-updates-january-26-2026/",
+          "https://en.wikipedia.org/wiki/Sinking_of_MV_Trisha_Kerstin_3"
+        ]
+      },
+      "weekly_review": "weekly-reviews/weekly-review-2026-01-31.html"
+    },
+    {
+      "date": "2026-01-26",
+      "month": "January",
+      "title": "ICC Rules Former President Duterte Fit to Stand Trial",
+      "category": "Legal",
+      "description": "Judges at the International Criminal Court ruled that former President Rodrigo Duterte, 80, is fit to stand trial for crimes against humanity related to his 'war on drugs.' The court rejected defense arguments that Duterte is in frail health and unfit to participate in legal proceedings. Following assessment by a panel of medical experts, judges found Duterte 'is able effectively to exercise his procedural rights.' The hearing has been rescheduled for February 23, 2026. ICC prosecutors allege Duterte created, funded, and armed death squads that killed thousands of alleged drug users. Human rights groups hailed the ruling as 'a resounding victory for justice and accountability.'",
+      "significance": "Historic ruling - first Asian former head of state to face ICC trial; sets precedent for accountability; hearing scheduled for February 23",
+      "diaspora_impact": "Landmark case for human rights accountability resonates with diaspora; families of drug war victims may see justice; raises questions about rule of law in Philippines.",
+      "mentioned_dynasties": ["DUTERTE_FAMILY"],
+      "sources": {
+        "international": [
+          "https://www.aljazeera.com/news/2026/1/26/icc-judges-find-former-philippine-president-duterte-fit-to-stand-trial",
+          "https://abcnews.go.com/International/wireStory/icc-judges-find-former-philippine-president-rodrigo-duterte-129556516",
+          "https://www.pbs.org/newshour/world/icc-judges-say-former-philippine-president-rodrigo-duterte-is-fit-to-stand-trial"
+        ],
+        "local": [
+          "https://www.philstar.com/headlines/2026/01/02/2498175/facing-crimes-against-humanity-duterte-turned-over-icc"
+        ]
+      },
+      "weekly_review": "weekly-reviews/weekly-review-2026-01-31.html"
+    },
+    {
+      "date": "2026-01-26",
+      "month": "January",
+      "title": "Philippines Protests China Over Escalating Diplomatic Tensions",
+      "category": "International Relations",
+      "description": "The Philippines told China it is alarmed about heated diplomatic exchanges over the South China Sea territorial dispute. China's Ministry of Foreign Affairs summoned Philippine Ambassador Jaime FlorCruz to protest remarks by Philippine Coast Guard spokesperson Commodore Jay Tarriela, one of the most vocal critics of China's actions in disputed waters. The protest came as ASEAN foreign ministers met in Cebu, with China and ASEAN negotiators beginning a new round of talks on the South China Sea Code of Conduct. Philippine officials reiterated that protection of Filipino fishermen is a lawful duty under the 2016 Hague ruling.",
+      "significance": "Diplomatic tensions escalate during Philippines' ASEAN chairmanship; Code of Conduct negotiations ongoing; verbal conflicts intensify",
+      "diaspora_impact": "Diplomatic tensions affect regional stability; sovereignty issues resonate strongly with overseas Filipinos concerned about homeland security.",
+      "mentioned_dynasties": [],
+      "sources": {
+        "international": [
+          "https://abcnews.go.com/International/wireStory/philippines-tells-beijing-alarmed-escalating-verbal-tussle-south-129557051"
+        ],
+        "local": [
+          "https://www.philstar.com/headlines/2026/01/05/2498804/philippines-stands-its-ground-against-more-assertive-china-west-philippine-sea"
+        ]
+      },
+      "weekly_review": "weekly-reviews/weekly-review-2026-01-31.html"
+    },
+    {
+      "date": "2026-01-28",
+      "month": "January",
+      "title": "COMELEC Defers Bangsamoro Elections - Third Postponement",
+      "category": "Political",
+      "description": "The Commission on Elections officially deferred the Bangsamoro parliamentary elections scheduled for March 30, 2026, saying they will be held 'once a new date is set by law.' COMELEC cited that election timelines 'are already too proximate which rendered the conduct of the BARMM parliamentary elections no longer feasible.' This marks the third postponement of elections in the predominantly Muslim autonomous region since its creation in 2019 (originally 2022, then May 2025, October 2025, and now March 2026). The Bangsamoro Parliament passed new districting law BAA 86 in January, but it violated the 120-day precinct freeze period. Congress must now set a new election date.",
+      "significance": "Third postponement delays democratic transition in BARMM; Supreme Court deadline missed; Congress must act to set new date",
+      "diaspora_impact": "Delayed elections affect governance in Muslim Mindanao; Moro diaspora communities await democratic transition in homeland.",
+      "mentioned_dynasties": [],
+      "sources": {
+        "international": [
+          "https://www.aa.com.tr/en/asia-pacific/philippines-postpones-elections-in-bangsamoro-for-3rd-time/3704063"
+        ],
+        "local": [
+          "https://www.rappler.com/philippines/mindanao/comelec-defers-barmm-polls-march-2026/",
+          "https://www.rappler.com/philippines/mindanao/barmm-districting-law-risks-election-postponement-2026/"
+        ]
+      },
+      "weekly_review": "weekly-reviews/weekly-review-2026-01-31.html"
+    },
+    {
+      "date": "2026-01-29",
+      "month": "January",
+      "title": "Supreme Court Affirms Barring of VP Sara Duterte Impeachment",
+      "category": "Legal",
+      "description": "The Supreme Court affirmed its ruling that barred impeachment proceedings against Vice President Sara Duterte. The High Court en banc unanimously denied the motion for reconsideration that sought to overturn the decision voiding impeachment complaints against the Vice President. SC spokesperson Camille Sue Mae Ting confirmed the ruling upholds that the fourth impeachment complaint was covered by the one-year bar rule. According to the original ruling, any subsequent impeachment complaint 'may only be filed starting February 6, 2026.' Meanwhile, new plunder and graft complaints were filed against VP Duterte on January 21 over alleged misuse of P650 million in confidential funds.",
+      "significance": "VP Duterte protected until February 6; House revising impeachment rules; new criminal complaints separate from impeachment process",
+      "diaspora_impact": "Political dynamics between major families affect governance stability; outcome shapes 2028 election dynamics important to diaspora.",
+      "mentioned_dynasties": ["DUTERTE_FAMILY", "MARCOS_ROMUALDEZ"],
+      "sources": {
+        "international": [],
+        "local": [
+          "https://www.rappler.com/philippines/supreme-court-decision-affirms-appeal-sara-duterte-impeachment-unconstitutional/",
+          "https://www.rappler.com/philippines/sara-duterte-plunder-graft-complaint-confidential-funds-2026/"
+        ]
+      },
+      "weekly_review": "weekly-reviews/weekly-review-2026-01-31.html"
     }
   ],
   "ofw_highlights": {
@@ -789,40 +909,46 @@
     ]
   },
   "summary": {
-    "total_events": 23,
-    "political_events": 6,
-    "natural_disasters": 6,
+    "total_events": 47,
+    "political_events": 7,
+    "natural_disasters": 7,
     "economic_events": 4,
-    "international_relations": 3,
-    "legal_events": 4,
+    "international_relations": 6,
+    "legal_events": 6,
     "religious_events": 1,
     "ofw_diaspora": 0,
     "key_themes_2026": [
       "ASEAN Chairmanship and South China Sea tensions",
       "Continuing flood control corruption prosecutions - POGO-crypto links discovered",
       "Anti-dynasty legislation debate",
-      "Marcos-Duterte political dynamics",
+      "Marcos-Duterte political dynamics intensify - impeachment, ICC trial",
+      "ICC rules Duterte fit for trial - hearing Feb 23",
       "Mayon Volcano magmatic eruption (Alert Level 3) - 4,000+ evacuated",
       "Davao Oriental earthquake aftershocks",
-      "Binaliw landfill collapse - 28 dead, state of calamity in Cebu City",
+      "Binaliw landfill collapse - 36 dead, state of calamity in Cebu City",
+      "MV Trisha Kerstin 3 ferry disaster - 31+ dead off Basilan",
       "New US remittance tax impact",
       "OFW protections and digitalization",
-      "Free speech concerns amid sedition arrests",
+      "Free speech concerns amid sedition arrests and journalist conviction",
       "Philippines-UAE historic free trade agreement (CEPA)",
       "Leandro Leviste and 'Cabral Files' corruption exposé",
       "High-profile libel suits - Razon vs Barzaga, Leviste vs Castro",
       "Tropical Storm Ada - first storm of 2026",
       "Japan-Philippines ACSA defense pact signed",
+      "US-Philippines joint sail at Scarborough Shoal - 500+ exercises planned for 2026",
       "Chinese vessels double in West Philippine Sea - 41 monitored",
-      "Atong Ang manhunt - ₱10M reward for 'most wanted' gambling tycoon"
+      "Atong Ang manhunt - ₱10M reward for 'most wanted' gambling tycoon",
+      "Bangsamoro elections postponed for third time",
+      "SC affirms Sara Duterte impeachment bar until Feb 6"
     ],
     "diaspora_relevance": {
       "remittances": "New 1% US tax may affect $15+ billion in US-Philippines corridor; Philippines-UAE CEPA benefits OFWs in Middle East",
-      "natural_disasters": "Mayon Volcano at Alert Level 3 with 4,000+ evacuated; Binaliw landfill collapse kills 28 in Cebu - state of calamity declared; Tropical Storm Ada threatens Eastern Visayas; M6.4 Davao earthquake - families in Bicol, Visayas, and Mindanao regions may need support",
-      "governance": "Anti-dynasty and anti-corruption efforts may improve governance quality; budget veto on unprogrammed funds reduces corruption opportunities; declining public trust in prosecution (59% vs 71%)",
+      "natural_disasters": "Mayon Volcano at Alert Level 3 with 4,000+ evacuated; Binaliw landfill collapse kills 36 in Cebu - state of calamity declared; MV Trisha Kerstin 3 ferry sinks off Basilan - 31+ dead; Tropical Storm Ada threats - families in Bicol, Visayas, and Mindanao regions may need support",
+      "governance": "Anti-dynasty and anti-corruption efforts may improve governance quality; budget veto on unprogrammed funds reduces corruption opportunities; declining public trust in prosecution (59% vs 71%); Bangsamoro elections postponed again",
       "ofw_support": "Expanded DMW programs and new labor agreements benefit workers abroad; UAE free trade agreement strengthens economic ties with major OFW destination",
-      "free_speech": "Sedition arrest of retired general raises concerns about political expression",
-      "corruption_links": "Flood control funds linked to POGO crypto schemes; 'Cabral Files' may reveal more corruption details"
+      "free_speech": "Sedition arrest of retired general raises concerns about political expression; journalist Frenchie Mae Cumpio convicted of terror financing",
+      "corruption_links": "Flood control funds linked to POGO crypto schemes; 'Cabral Files' may reveal more corruption details",
+      "accountability": "ICC rules Duterte fit for trial - Feb 23 hearing; VP Sara Duterte faces new plunder/graft complaints; SC affirms impeachment bar until Feb 6"
     }
   }
 }
