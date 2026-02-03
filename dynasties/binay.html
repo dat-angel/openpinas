@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Binay Dynasty - Philippine Political Dynasties</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;500;600;700&family=Source+Serif+Pro:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --ink: #1a1a1a;
+        --muted: #5e5e5e;
+        --paper: #f8f5f0;
+        --accent: #124559;
+        --accent-2: #c44900;
+        --politics: #3a0ca3;
+        --card: #ffffff;
+        --line: #d6cbbd;
+        --shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+      }
+
+      * { box-sizing: border-box; }
+
+      body {
+        margin: 0;
+        font-family: "Source Serif Pro", Georgia, serif;
+        color: var(--ink);
+        background: radial-gradient(1200px 600px at 80% -10%, #f0e7d7 0%, transparent 60%),
+          radial-gradient(800px 500px at 10% 10%, #e6efe7 0%, transparent 55%),
+          var(--paper);
+        line-height: 1.6;
+      }
+
+      header { padding: 32px 24px 20px; max-width: 1100px; margin: 0 auto; }
+      .breadcrumb { font-size: 14px; color: var(--muted); margin-bottom: 8px; font-family: "Source Sans Pro", sans-serif; }
+      .breadcrumb a { color: var(--accent); text-decoration: none; }
+      h1 { font-size: clamp(28px, 4vw, 44px); margin: 0 0 8px; color: var(--politics); }
+      .subtitle { font-size: 18px; color: var(--muted); margin: 0 0 20px; }
+
+      .nav-links {
+        display: flex; gap: 16px; flex-wrap: wrap; margin: 20px 0; padding: 12px 16px;
+        background: rgba(255, 255, 255, 0.75); border: 1px solid #eadfce;
+        border-radius: 14px; box-shadow: var(--shadow);
+      }
+      .nav-links a {
+        color: var(--accent); text-decoration: none; font-family: "Source Sans Pro", sans-serif;
+        font-weight: 500; padding: 6px 12px; border-radius: 8px; transition: background 0.2s;
+      }
+      .nav-links a:hover { background: rgba(18, 69, 89, 0.1); }
+
+      main { max-width: 1100px; margin: 16px auto 60px; padding: 0 24px; }
+
+      .dynasty-overview {
+        background: var(--card); border-radius: 16px; padding: 24px;
+        margin-bottom: 32px; box-shadow: var(--shadow); border-left: 4px solid var(--politics);
+      }
+      .dynasty-overview h2 { margin: 0 0 16px; font-size: 20px; color: var(--politics); }
+
+      .info-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; margin-bottom: 16px; }
+      .info-item { background: rgba(58, 12, 163, 0.05); padding: 12px; border-radius: 8px; }
+      .info-item .label { font-size: 12px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.5px; display: block; margin-bottom: 4px; font-family: "Source Sans Pro", sans-serif; }
+      .info-item .value { font-size: 16px; font-weight: 600; }
+
+      .current-positions { margin-top: 16px; }
+      .current-positions h3 { font-size: 16px; margin: 0 0 12px; color: var(--ink); }
+      .position-list { display: flex; flex-wrap: wrap; gap: 8px; }
+      .position-tag { background: var(--politics); color: #fff; padding: 6px 12px; border-radius: 20px; font-size: 13px; font-family: "Source Sans Pro", sans-serif; }
+
+      .info-box {
+        background: rgba(59, 130, 246, 0.1); border-left: 4px solid #3b82f6;
+        padding: 16px; border-radius: 8px; margin-top: 16px;
+      }
+      .info-box h4 { margin: 0 0 8px; color: #2563eb; font-size: 14px; }
+      .info-box p { margin: 0; font-size: 14px; }
+
+      .section-title { font-size: 24px; margin: 40px 0 20px; padding-bottom: 12px; border-bottom: 2px solid var(--line); color: var(--ink); }
+
+      .news-list { list-style: none; padding: 0; margin: 0; }
+      .news-item { background: var(--card); border-radius: 12px; padding: 20px; margin-bottom: 16px; box-shadow: var(--shadow); border-left: 3px solid var(--politics); }
+      .news-item .date { font-size: 13px; color: var(--muted); font-family: "Source Sans Pro", sans-serif; margin-bottom: 6px; }
+      .news-item h3 { margin: 0 0 8px; font-size: 18px; }
+      .news-item h3 a { color: var(--ink); text-decoration: none; }
+      .news-item h3 a:hover { color: var(--accent-2); text-decoration: underline; }
+      .news-item p { margin: 0 0 12px; font-size: 15px; line-height: 1.6; }
+      .news-item .source { font-size: 12px; color: var(--muted); }
+      .news-item .source a { color: var(--accent-2); text-decoration: none; }
+
+      .year-section { margin-bottom: 32px; }
+      .year-section h3 { font-size: 18px; color: var(--politics); margin: 0 0 16px; padding: 8px 16px; background: rgba(58, 12, 163, 0.05); border-radius: 8px; display: inline-block; }
+
+      footer { max-width: 1100px; margin: 60px auto 40px; padding: 24px; text-align: center; color: var(--muted); font-size: 14px; border-top: 1px solid var(--line); }
+      footer a { color: var(--accent); text-decoration: none; }
+    </style>
+  </head>
+  <body>
+    <header>
+      <p class="breadcrumb"><a href="index.html">Dynasties</a> / Binay</p>
+      <h1>Binay Dynasty</h1>
+      <p class="subtitle">Makati City</p>
+      <nav class="nav-links">
+        <a href="../dynasties-network-visualization.html#dynasty-BINAY_FAMILY">View on Map</a>
+        <a href="../interactive-timeline/?search=Binay">Timeline</a>
+        <a href="../weekly-reviews/">Weekly Reviews</a>
+        <a href="index.html">All Dynasties</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="dynasty-overview">
+        <h2>Dynasty Overview</h2>
+        <div class="info-grid">
+          <div class="info-item">
+            <span class="label">Core Region</span>
+            <span class="value">Makati City</span>
+          </div>
+          <div class="info-item">
+            <span class="label">Political Base Since</span>
+            <span class="value">1987</span>
+          </div>
+          <div class="info-item">
+            <span class="label">National Offices Held</span>
+            <span class="value">Vice Presidency, Senate</span>
+          </div>
+          <div class="info-item">
+            <span class="label">2025 Status</span>
+            <span class="value">Internal Politics</span>
+          </div>
+        </div>
+        <div class="current-positions">
+          <h3>Current Positions (2026)</h3>
+          <div class="position-list">
+            <span class="position-tag">Mayor of Makati - Nancy Binay</span>
+            <span class="position-tag">Outgoing Mayor - Abigail Binay</span>
+          </div>
+        </div>
+
+        <div class="info-box">
+          <h4>Internal Family Politics</h4>
+          <p>The 2025 elections saw complex internal family dynamics, with Nancy Binay defeating her father's son-in-law for the Makati mayorship. Despite internal competition, the family maintains control over Makati City.</p>
+        </div>
+      </section>
+
+      <h2 class="section-title">News Archive</h2>
+
+      <section class="year-section">
+        <h3>2025</h3>
+        <ul class="news-list">
+          <li class="news-item">
+            <p class="date">May 12, 2025</p>
+            <h3>Nancy Binay Wins Makati Mayorship</h3>
+            <p>Nancy Binay was elected as Mayor of Makati, defeating her father's son-in-law in a contested family election. The victory ensures continued Binay control over one of the wealthiest cities in the Philippines.</p>
+            <p class="source">Source: <a href="https://www.rappler.com/nation/politics/" target="_blank">Rappler</a></p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="year-section">
+        <h3>Historical Context</h3>
+        <ul class="news-list">
+          <li class="news-item">
+            <p class="date">2010-2016</p>
+            <h3>Jejomar Binay as Vice President</h3>
+            <p>Jejomar Binay served as Vice President of the Philippines under President Noynoy Aquino from 2010-2016. He ran for president in 2016 but finished fourth amid corruption allegations.</p>
+            <p class="source">Historical record</p>
+          </li>
+
+          <li class="news-item">
+            <p class="date">1987-2010</p>
+            <h3>Makati Mayorship</h3>
+            <p>Jejomar Binay served as Mayor of Makati for a total of 21 years (1986-1998, 2001-2010), transforming it into the financial capital of the Philippines and establishing the family's political base.</p>
+            <p class="source">Historical record</p>
+          </li>
+
+          <li class="news-item">
+            <p class="date">2013-2022</p>
+            <h3>Nancy Binay in the Senate</h3>
+            <p>Nancy Binay served in the Senate from 2013-2022, continuing the family's national political presence while her father was Vice President.</p>
+            <p class="source">Historical record</p>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        Part of the <a href="https://github.com/dat-angel/openpinas">OpenPinas</a> project
+      </p>
+      <p>
+        <a href="index.html">All Dynasties</a> |
+        <a href="../weekly-reviews/">Weekly Reviews</a> |
+        <a href="../interactive-timeline/">Timeline</a>
+      </p>
+    </footer>
+  </body>
+</html>
