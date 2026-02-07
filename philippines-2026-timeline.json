@@ -4,9 +4,9 @@
   "prepared_for": "Filipino Diaspora Communities Worldwide",
   "metadata": {
     "purpose": "Comprehensive timeline of major Philippine events in 2026 to help overseas Filipinos understand developments affecting families, remittances, investments, and homeland governance",
-    "last_updated": "January 31, 2026",
+    "last_updated": "February 7, 2026",
     "aggregation_note": "This timeline is aggregated by month as events unfold. Weekly reviews provide more detailed coverage.",
-    "total_events": 47,
+    "total_events": 57,
     "categories": ["Political", "Cultural", "Natural Disasters", "Economic", "International Relations", "Legal", "OFW/Diaspora", "Religious"]
   },
   "timeline": [
@@ -840,6 +840,217 @@
         ]
       },
       "weekly_review": "weekly-reviews/weekly-review-2026-01-31.html"
+    },
+    {
+      "date": "2026-02-02",
+      "month": "February",
+      "title": "Two Impeachment Complaints Filed Against VP Sara Duterte",
+      "category": "Political",
+      "description": "Activists filed two impeachment complaints against Vice President Sara Duterte on February 2, 2026, the first day new complaints could be filed after the one-year constitutional bar expired. The first complaint was filed by leftist leaders and endorsed by the three-member Makabayan bloc. The second was led by Tindig Pilipinas convenor Kiko Aquino Dee and religious leaders, with support from Akbayan Partylist Rep. Perci Cendaña and former Senator Leila de Lima. The complaints allege five articles of impeachment: constitutional violations, graft and corruption, bribery, betrayal of public trust, and other high crimes. Specific allegations include misuse of billions in confidential and intelligence funds, bribery and unexplained wealth accumulation, gross incompetence and abuse of power, and tolerating extrajudicial killings while participating in efforts to destabilize the government. On February 6, House Secretary General Cheloy Velicaria-Garafil confirmed the complaints were transmitted to Speaker Bojie Dy's office.",
+      "significance": "First impeachment complaints against VP Duterte since Supreme Court voided previous attempts; signals intensification of Marcos-Duterte political warfare as 2028 elections approach",
+      "diaspora_impact": "Escalating political tensions between major families affect governance stability; outcome will shape 2028 election dynamics and national direction.",
+      "mentioned_dynasties": ["DUTERTE_FAMILY", "MARCOS_ROMUALDEZ"],
+      "sources": {
+        "international": [
+          "https://abcnews.go.com/International/wireStory/philippine-vice-president-faces-2-new-impeachment-bids-129775355",
+          "https://www.bloomberg.com/news/articles/2026-02-02/impeachment-complaint-filed-against-philippines-vp-sara-duterte",
+          "https://asia.nikkei.com/politics/philippine-vice-president-sara-duterte-faces-fresh-impeachment-complaints"
+        ],
+        "local": [
+          "https://www.rappler.com/philippines/new-impeachment-complaint-filed-vice-president-sara-duterte-february-2-2026/",
+          "https://newsinfo.inquirer.net/2176079/fwd-embargo-first-in-second-set-of-impeachment-complaints-vs-vp-sara-filed"
+        ]
+      },
+      "weekly_review": "weekly-reviews/weekly-review-2026-02-08.html"
+    },
+    {
+      "date": "2026-02-04",
+      "month": "February",
+      "title": "House Panel Dismisses Marcos Impeachment - President Gains One-Year Immunity",
+      "category": "Political",
+      "description": "The House Committee on Justice voted to dismiss two impeachment complaints against President Ferdinand Marcos Jr., ruling both 'insufficient in substance' under constitutional standards. The first complaint, filed by private citizen Andre de Jesus, was dismissed 42-1-3. The second, endorsed by the Makabayan coalition, was dismissed 39-7. Charges included betrayal of public trust over the alleged 'BBM Parametric Formula' in infrastructure spending linked to flood control anomalies, irregularities in PhilHealth funds, and claims of drug use. With the dismissal, Marcos effectively gains one-year immunity from further impeachment proceedings under the Constitution, unless the House plenary reverses the committee with a one-third vote. Critics noted the swift dismissal may set precedent for VP Sara Duterte's case.",
+      "significance": "First impeachment attempt against Marcos since 2022; dismissal grants constitutional immunity for one year; reflects House dominance by administration allies",
+      "diaspora_impact": "Political stability concerns for diaspora monitoring homeland governance; one-year immunity provides predictability but raises accountability questions.",
+      "mentioned_dynasties": ["MARCOS_ROMUALDEZ"],
+      "sources": {
+        "international": [
+          "https://abcnews.go.com/International/wireStory/philippine-lawmakers-find-bid-impeach-marcos-insufficient-substance-129842292",
+          "https://asia.nikkei.com/politics/philippine-house-committee-rejects-marcos-impeachment-complaints"
+        ],
+        "local": [
+          "https://www.philstar.com/headlines/2026/02/04/2505714/marcos-survives-first-impeachment-attempt-justice-panel-kills-complaints",
+          "https://www.congress.gov.ph/media/press-releases/view/?content=9603"
+        ]
+      },
+      "weekly_review": "weekly-reviews/weekly-review-2026-02-08.html"
+    },
+    {
+      "date": "2026-02-05",
+      "month": "February",
+      "title": "MV Trisha Kerstin 3 Death Toll Rises to 45 - Wreckage Located",
+      "category": "Natural Disasters",
+      "description": "The Philippine Coast Guard Technical Diving Group located the sunken MV Trisha Kerstin 3 in waters off Baluk-Baluk Island, Basilan, using side-scan sonar approximately 1.8 nautical miles from the island. Coast Guard divers entered the submerged ferry to continue recovery operations. The confirmed death toll rose to 45 with 316 survivors accounted for. The ferry, operated by Aleson Shipping Lines, capsized on January 26 while en route from Zamboanga City to Jolo, Sulu, carrying 332 passengers and 27 crew. Investigations revealed Aleson Shipping is linked to at least 31 other maritime incidents. The sinking prompted authorities to suspend the company's operations and order a nationwide maritime safety audit.",
+      "significance": "Deadliest ferry disaster since 2023; exposes systemic maritime safety failures; Aleson linked to 31+ incidents",
+      "diaspora_impact": "Maritime safety concerns affect families in island provinces dependent on ferry travel; highlights regulatory gaps in critical transportation infrastructure.",
+      "mentioned_dynasties": [],
+      "sources": {
+        "international": [],
+        "local": [
+          "https://www.philstar.com/headlines/2026/02/04/2505706/mv-trisha-kerstin-3-death-toll-rises-45",
+          "https://www.pna.gov.ph/articles/1268323",
+          "https://www.manilatimes.net/2026/02/05/news/national/pcg-finds-sunken-ferry-as-death-toll-rises-to-45/2271258"
+        ]
+      },
+      "weekly_review": "weekly-reviews/weekly-review-2026-02-08.html"
+    },
+    {
+      "date": "2026-02-05",
+      "month": "February",
+      "title": "Tropical Storm Basyang Makes Landfall in Surigao del Sur",
+      "category": "Natural Disasters",
+      "description": "Tropical Storm Basyang (international name: Penha), the Philippines' second tropical cyclone of 2026, made landfall in Bayabas, Surigao del Sur at 11:50 PM on February 5. The storm brought heavy to torrential rainfall to Caraga and Northern Mindanao regions. Basyang made five landfalls total - once in Mindanao at peak strength as a tropical storm, and four times in the Visayas as it weakened to a tropical depression. Nearly a dozen provinces experienced moderate to intense rainfall (50-100mm). The storm tracked across the central Philippines before weakening into a low pressure area over the Sulu Sea on February 7 and dissipating by 8 AM the same day. PAGASA forecasts 4-11 tropical cyclones from February to June 2026.",
+      "significance": "Second tropical cyclone of 2026; five landfalls across Mindanao and Visayas; adds to compound disaster risks with ongoing Mayon eruption",
+      "diaspora_impact": "Families in Caraga, Northern Mindanao, and Visayas affected by flooding; region still recovering from previous disasters may need support.",
+      "mentioned_dynasties": [],
+      "sources": {
+        "international": [
+          "https://ahacentre.org/flash-update/flash-update-no-1-tropical-cyclone-penha-5-feb-2026/"
+        ],
+        "local": [
+          "https://www.rappler.com/philippines/weather/tropical-storm-basyang-update-pagasa-forecast-february-6-2026-2am/",
+          "https://www.philstar.com/headlines/weather/2026/02/05/2505986/14-areas-under-signal-no-2-basyang-maintains-strength"
+        ]
+      },
+      "weekly_review": "weekly-reviews/weekly-review-2026-02-08.html"
+    },
+    {
+      "date": "2026-02-06",
+      "month": "February",
+      "title": "Mayon Volcano SO2 Emissions Hit 15-Year High - Over 6,500 Tonnes",
+      "category": "Natural Disasters",
+      "description": "PHIVOLCS recorded over 6,500 tonnes of sulfur dioxide (SO2) emissions from Mayon Volcano on February 6 - the highest SO2 emission in 15 years. The February average has increased to 5,503 tonnes/day, more than double January's average of 2,571 tonnes/day. The effusive eruption has continued for approximately 30 consecutive days, with lava flows extending 3.7 km in Basud Gully (east flank) and 1.6 km in Bonga Gully. Alert Level 3 remains in effect with a 6-km Permanent Danger Zone. APSEMO warned residents within 8 km to prepare for evacuation should alerts escalate to Level 4. The heightened SO2 emissions indicate increased magma supply and potential for intensified eruptive activity.",
+      "significance": "Record SO2 emissions signal escalating volcanic crisis; 30+ days of continuous eruption; potential for sudden escalation to explosive activity",
+      "diaspora_impact": "Families in Albay face prolonged displacement and health risks from volcanic gases; emergency remittance needs may increase if situation escalates.",
+      "mentioned_dynasties": [],
+      "sources": {
+        "international": [],
+        "local": [
+          "https://www.gmanetwork.com/news/topstories/regions/975412/mayon-volcano-s-sulfur-dioxide-emission-hits-15-year-high/story/",
+          "https://newsinfo.inquirer.net/2178088/fwd-albay-safety-office-warn-of-sudden-mayon-escalation",
+          "https://www.volcanodiscovery.com/mayon/news/294167/Mayon-Volcano-Philippines-activity-update-Feb-6-2026-Continuing-eruption.html"
+        ]
+      },
+      "weekly_review": "weekly-reviews/weekly-review-2026-02-08.html"
+    },
+    {
+      "date": "2026-02-06",
+      "month": "February",
+      "title": "China Warship Challenges Philippine Aircraft 28 Times Over Panatag Shoal",
+      "category": "International Relations",
+      "description": "A Chinese naval vessel issued 28 radio challenges to a Philippine patrol aircraft during a routine government surveillance flight over Panatag (Scarborough) Shoal. The People's Liberation Army-Navy vessel, identified as hull number 553, issued the repeated challenges at around 10 AM during the Philippine aircraft's maritime domain awareness mission. The incident comes as Chinese vessels in the West Philippine Sea doubled from 20 in December 2025 to 41 in January 2026. Malacañang reaffirmed the Philippines will continue to assert its sovereignty over the WPS, rejecting calls from some politicians to give up the Kalayaan Island Group. The Philippines, as ASEAN Chair, aims to complete the South China Sea Code of Conduct negotiations in 2026.",
+      "significance": "Escalating WPS tensions with unprecedented radio challenges; reflects China's more aggressive posture during Philippines' ASEAN chairmanship year",
+      "diaspora_impact": "Sovereignty issues resonate strongly with overseas Filipinos; fishing community safety and regional stability affect diaspora families.",
+      "mentioned_dynasties": ["MARCOS_ROMUALDEZ"],
+      "sources": {
+        "international": [],
+        "local": [
+          "https://www.inquirer.net/466940/china-warship-challenges-philippine-patrol-aircraft-28-times-over-panatag/",
+          "https://www.gmanetwork.com/news/topstories/nation/975625/ph-to-assert-rights-in-wps-amid-call-to-give-up-kalayaan-group-of-islands-palace/story/"
+        ]
+      },
+      "weekly_review": "weekly-reviews/weekly-review-2026-02-08.html"
+    },
+    {
+      "date": "2026-02-07",
+      "month": "February",
+      "title": "Duterte Defense Seeks to Add 78 Evidence Items Before ICC Hearing",
+      "category": "Legal",
+      "description": "The defense team of former President Rodrigo Duterte filed a motion to add 78 evidence items ahead of the International Criminal Court confirmation of charges hearing scheduled for February 23-27, 2026. The hearing before Pre-Trial Chamber I, presided by Judge Iulia Antoanella Motoc, will determine whether sufficient evidence exists to establish substantial grounds that Duterte committed crimes against humanity. If charges are confirmed, the case transfers to a Trial Chamber for trial. The ICC ruled on January 26 that the 80-year-old Duterte is fit to stand trial, rejecting defense arguments of frail health. Human rights groups continue to call the proceedings 'a resounding victory for justice and accountability' for thousands of drug war victims.",
+      "significance": "Critical pre-hearing developments as first Asian former head of state faces ICC trial; Feb 23 hearing is historic moment for international justice",
+      "diaspora_impact": "Landmark case for human rights accountability resonates with diaspora; families of drug war victims await justice; outcome shapes Philippines' international standing.",
+      "mentioned_dynasties": ["DUTERTE_FAMILY"],
+      "sources": {
+        "international": [
+          "https://www.icc-cpi.int/news/duterte-case-confirmation-charges-hearing-open-23-february-2026-practical-information"
+        ],
+        "local": [
+          "https://www.manilatimes.net/2026/02/07/news/duterte-defense-seeks-to-add-78-evidence-ahead-of-icc-hearing/2273635"
+        ]
+      },
+      "weekly_review": "weekly-reviews/weekly-review-2026-02-08.html"
+    },
+    {
+      "date": "2026-02-01",
+      "month": "February",
+      "title": "San Miguel Beermen Win Back-to-Back PBA Philippine Cup Championships",
+      "category": "Cultural",
+      "description": "The San Miguel Beermen clinched their second consecutive PBA Philippine Cup championship, defeating TNT Tropang Giga 92-77 in Game 6 of the Finals. June Mar Fajardo was named Finals MVP, continuing his legendary run as one of the greatest players in PBA history. The Beermen's dominant performance cemented their dynasty status in Philippine basketball. The 2026 PBA Commissioner's Cup (Season 50) is set to begin on March 11, featuring the Macau Black Bears as the guest team.",
+      "significance": "San Miguel extends basketball dynasty with back-to-back titles; June Mar Fajardo cements legacy as all-time great",
+      "diaspora_impact": "PBA remains the most-watched Filipino sports league abroad; championship celebrations unite diaspora communities worldwide.",
+      "mentioned_dynasties": [],
+      "sources": {
+        "international": [],
+        "local": [
+          "https://www.pba.ph/news",
+          "https://www.spin.ph/basketball/pba/"
+        ]
+      },
+      "weekly_review": "weekly-reviews/weekly-review-2026-02-08.html"
+    },
+    {
+      "date": "2026-02-05",
+      "month": "February",
+      "title": "Trump Invites Marcos to Join 'Board of Peace' for Gaza Reconstruction",
+      "category": "International Relations",
+      "description": "US President Donald Trump sent a personal letter to President Ferdinand Marcos Jr. inviting the Philippines to join the 'Board of Peace,' an initiative to oversee Gaza's rehabilitation until 2027. The board, chaired by Trump, is envisioned as a group of world leaders mediating global conflicts. US Ambassador MaryKay Carlson confirmed the Philippines cannot afford the $1 billion 'voluntary' membership fee but may contribute construction workers and healthcare personnel instead. The Makabayan bloc urged the government to reject the invitation, calling it 'a mechanism to legitimize US occupation of Gaza' that bypasses the United Nations.",
+      "significance": "Philippines faces diplomatic balancing act between US alliance and international law concerns; cost barrier limits participation options",
+      "diaspora_impact": "Filipino construction and healthcare workers may find employment opportunities in Gaza reconstruction; diplomatic stance affects Philippines' international standing.",
+      "mentioned_dynasties": ["MARCOS_ROMUALDEZ"],
+      "sources": {
+        "international": [],
+        "local": [
+          "https://www.manilatimes.net/2026/02/05/news/trump-invites-philippines-to-join-board-of-peace/2272515",
+          "https://www.gmanetwork.com/news/topstories/nation/975547/trump-philippines-board-peace/story/"
+        ]
+      },
+      "weekly_review": "weekly-reviews/weekly-review-2026-02-08.html"
+    },
+    {
+      "date": "2026-02-07",
+      "month": "February",
+      "title": "Philippines-US Commemorate 80 Years of Diplomatic Relations",
+      "category": "International Relations",
+      "description": "The Philippines and United States launched celebrations commemorating the 80th anniversary of diplomatic relations. House Speaker Martin Romualdez joined US Embassy Chargé d'Affaires Robert Ewing to unveil the official anniversary logo at a ceremony in Manila. The milestone comes as the two nations maintain their Mutual Defense Treaty alliance, conduct over 500 joint military exercises annually, and navigate regional tensions in the South China Sea. The Philippines hosts ASEAN this year while strengthening security cooperation with Washington.",
+      "significance": "Eight decades of alliance reinforced amid regional tensions; Philippines-US defense ties at historic high with 500+ annual exercises",
+      "diaspora_impact": "Strong bilateral ties benefit the 4+ million Filipino Americans; continued visa facilitation and people-to-people exchanges strengthen diaspora connections.",
+      "mentioned_dynasties": ["MARCOS_ROMUALDEZ", "ROMUALDEZ_FAMILY"],
+      "sources": {
+        "international": [
+          "https://ph.usembassy.gov/united-states-philippines-celebrate-80th-anniversary-of-diplomatic-ties-in-2026/"
+        ],
+        "local": [
+          "https://www.philstar.com/headlines/2026/02/07/2506278/philippines-united-states-commemorate-80-years-diplomatic-relations"
+        ]
+      },
+      "weekly_review": "weekly-reviews/weekly-review-2026-02-08.html"
+    },
+    {
+      "date": "2026-02-06",
+      "month": "February",
+      "title": "Philippines Makes History at Winter Olympics - Proulx is SE Asia's First Female Winter Olympian",
+      "category": "Cultural",
+      "description": "The Philippines participated in the 2026 Winter Olympics Opening Ceremony in Milan-Cortina, Italy, with two alpine skiers representing the nation. Tallulah Proulx, 17, became the Philippines' youngest-ever Winter Olympian and Southeast Asia's first female athlete to compete in the Winter Games. Francis Ceccarelli, 22, who was born in Quezon City and adopted by Italian parents, makes his Olympic debut as the fifth alpine skier to represent the Philippines. The Games run from February 6-22, 2026, marking only the sixth Winter Olympics appearance in Philippine history.",
+      "significance": "Historic firsts for Philippine sports - youngest Winter Olympian and Southeast Asia's first female Winter Games competitor",
+      "diaspora_impact": "Source of national pride for diaspora communities; both athletes represent the global Filipino identity with international upbringings.",
+      "mentioned_dynasties": [],
+      "sources": {
+        "international": [],
+        "local": [
+          "https://www.gmanetwork.com/news/sports/othersports/975715/team-philippines-at-the-milano-cortina-winter-olympics-opening-ceremony/story/",
+          "https://www.gmanetwork.com/news/sports/othersports/974944/who-are-the-philippine-athletes-competing-in-the-2026-winter-olympics/story/"
+        ]
+      },
+      "weekly_review": "weekly-reviews/weekly-review-2026-02-08.html"
     }
   ],
   "ofw_highlights": {
@@ -894,10 +1105,10 @@
   "upcoming_events": {
     "february_2026": [
       {
-        "date": "2026-02-06",
-        "title": "VP Sara Duterte Impeachment Ban Expires",
-        "description": "One-year bar on impeachment complaints against VP Sara Duterte expires, allowing new complaints to be filed",
-        "significance": "Political tensions may escalate"
+        "date": "2026-02-23",
+        "title": "ICC Duterte Confirmation of Charges Hearing",
+        "description": "Four-day hearing (Feb 23, 24, 26, 27) at The Hague to determine if sufficient evidence exists for trial on crimes against humanity charges",
+        "significance": "Historic - first Asian former head of state to face ICC trial"
       }
     ],
     "2026_general": [
@@ -909,46 +1120,52 @@
     ]
   },
   "summary": {
-    "total_events": 47,
-    "political_events": 7,
-    "natural_disasters": 7,
+    "total_events": 57,
+    "political_events": 9,
+    "natural_disasters": 10,
     "economic_events": 4,
-    "international_relations": 6,
-    "legal_events": 6,
+    "international_relations": 9,
+    "legal_events": 7,
     "religious_events": 1,
     "ofw_diaspora": 0,
+    "cultural_events": 3,
     "key_themes_2026": [
-      "ASEAN Chairmanship and South China Sea tensions",
+      "ASEAN Chairmanship and South China Sea tensions - Code of Conduct talks prioritized",
       "Continuing flood control corruption prosecutions - POGO-crypto links discovered",
       "Anti-dynasty legislation debate",
-      "Marcos-Duterte political dynamics intensify - impeachment, ICC trial",
-      "ICC rules Duterte fit for trial - hearing Feb 23",
-      "Mayon Volcano magmatic eruption (Alert Level 3) - 4,000+ evacuated",
-      "Davao Oriental earthquake aftershocks",
+      "Marcos-Duterte political warfare intensifies - dual impeachment proceedings",
+      "Marcos impeachment dismissed by House - gains 1-year immunity",
+      "VP Sara Duterte faces two new impeachment complaints (Feb 2)",
+      "ICC Duterte trial - confirmation hearing Feb 23-27",
+      "Mayon Volcano crisis escalates - SO2 emissions hit 15-year high (6,500+ tonnes)",
+      "MV Trisha Kerstin 3 ferry disaster - death toll rises to 45",
+      "Tropical Storm Basyang - second storm of 2026, 5 landfalls",
+      "China warship challenges PH aircraft 28 times over Panatag Shoal",
+      "Trump invites Philippines to 'Board of Peace' for Gaza",
+      "Philippines-US mark 80 years of diplomatic relations",
+      "Winter Olympics 2026 - Proulx is SE Asia's first female Winter Olympian",
+      "PBA San Miguel Beermen win back-to-back Philippine Cup championships",
       "Binaliw landfill collapse - 36 dead, state of calamity in Cebu City",
-      "MV Trisha Kerstin 3 ferry disaster - 31+ dead off Basilan",
       "New US remittance tax impact",
       "OFW protections and digitalization",
       "Free speech concerns amid sedition arrests and journalist conviction",
       "Philippines-UAE historic free trade agreement (CEPA)",
-      "Leandro Leviste and 'Cabral Files' corruption exposé",
-      "High-profile libel suits - Razon vs Barzaga, Leviste vs Castro",
-      "Tropical Storm Ada - first storm of 2026",
       "Japan-Philippines ACSA defense pact signed",
       "US-Philippines joint sail at Scarborough Shoal - 500+ exercises planned for 2026",
       "Chinese vessels double in West Philippine Sea - 41 monitored",
-      "Atong Ang manhunt - ₱10M reward for 'most wanted' gambling tycoon",
-      "Bangsamoro elections postponed for third time",
-      "SC affirms Sara Duterte impeachment bar until Feb 6"
+      "Atong Ang manhunt continues - Interpol red notice requested",
+      "Bangsamoro elections postponed for third time"
     ],
     "diaspora_relevance": {
       "remittances": "New 1% US tax may affect $15+ billion in US-Philippines corridor; Philippines-UAE CEPA benefits OFWs in Middle East",
-      "natural_disasters": "Mayon Volcano at Alert Level 3 with 4,000+ evacuated; Binaliw landfill collapse kills 36 in Cebu - state of calamity declared; MV Trisha Kerstin 3 ferry sinks off Basilan - 31+ dead; Tropical Storm Ada threats - families in Bicol, Visayas, and Mindanao regions may need support",
-      "governance": "Anti-dynasty and anti-corruption efforts may improve governance quality; budget veto on unprogrammed funds reduces corruption opportunities; declining public trust in prosecution (59% vs 71%); Bangsamoro elections postponed again",
-      "ofw_support": "Expanded DMW programs and new labor agreements benefit workers abroad; UAE free trade agreement strengthens economic ties with major OFW destination",
+      "natural_disasters": "Mayon Volcano SO2 emissions hit 15-year high - crisis escalating; MV Trisha Kerstin 3 death toll rises to 45; Tropical Storm Basyang makes 5 landfalls; families in Mindanao, Visayas, and Bicol regions may need support",
+      "governance": "Marcos impeachment dismissed - gains 1-year immunity; VP Sara Duterte faces new impeachment complaints; House-dominated process raises accountability concerns",
+      "ofw_support": "Expanded DMW programs and new labor agreements benefit workers abroad; UAE free trade agreement strengthens economic ties with major OFW destination; potential Gaza reconstruction jobs for Filipino workers",
       "free_speech": "Sedition arrest of retired general raises concerns about political expression; journalist Frenchie Mae Cumpio convicted of terror financing",
-      "corruption_links": "Flood control funds linked to POGO crypto schemes; 'Cabral Files' may reveal more corruption details",
-      "accountability": "ICC rules Duterte fit for trial - Feb 23 hearing; VP Sara Duterte faces new plunder/graft complaints; SC affirms impeachment bar until Feb 6"
+      "wps_tensions": "China warship challenges PH aircraft 28 times; Philippines aims to complete SCS Code of Conduct during ASEAN chairmanship",
+      "accountability": "ICC Duterte confirmation hearing Feb 23-27; defense seeks to add 78 evidence items; historic trial for drug war accountability",
+      "us_relations": "80 years of US-PH diplomatic ties celebrated; Trump invites Marcos to 'Board of Peace'; 4+ million Filipino Americans benefit from strong bilateral relations",
+      "national_pride": "Winter Olympics 2026 - Tallulah Proulx becomes SE Asia's first female Winter Olympian; PBA Beermen championship unites diaspora sports fans"
     }
   }
 }

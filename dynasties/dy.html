@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dy Dynasty - Philippine Political Dynasties</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;500;600;700&family=Source+Serif+Pro:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --ink: #1a1a1a;
+        --muted: #5e5e5e;
+        --paper: #f8f5f0;
+        --accent: #124559;
+        --accent-2: #c44900;
+        --politics: #3a0ca3;
+        --card: #ffffff;
+        --line: #d6cbbd;
+        --shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+      }
+
+      * { box-sizing: border-box; }
+
+      body {
+        margin: 0;
+        font-family: "Source Serif Pro", Georgia, serif;
+        color: var(--ink);
+        background: radial-gradient(1200px 600px at 80% -10%, #f0e7d7 0%, transparent 60%),
+          radial-gradient(800px 500px at 10% 10%, #e6efe7 0%, transparent 55%),
+          var(--paper);
+        line-height: 1.6;
+      }
+
+      header { padding: 32px 24px 20px; max-width: 1100px; margin: 0 auto; }
+      .breadcrumb { font-size: 14px; color: var(--muted); margin-bottom: 8px; font-family: "Source Sans Pro", sans-serif; }
+      .breadcrumb a { color: var(--accent); text-decoration: none; }
+      h1 { font-size: clamp(28px, 4vw, 44px); margin: 0 0 8px; color: var(--politics); }
+      .subtitle { font-size: 18px; color: var(--muted); margin: 0 0 20px; }
+
+      .nav-links {
+        display: flex; gap: 16px; flex-wrap: wrap; margin: 20px 0; padding: 12px 16px;
+        background: rgba(255, 255, 255, 0.75); border: 1px solid #eadfce;
+        border-radius: 14px; box-shadow: var(--shadow);
+      }
+      .nav-links a {
+        color: var(--accent); text-decoration: none; font-family: "Source Sans Pro", sans-serif;
+        font-weight: 500; padding: 6px 12px; border-radius: 8px; transition: background 0.2s;
+      }
+      .nav-links a:hover { background: rgba(18, 69, 89, 0.1); }
+
+      main { max-width: 1100px; margin: 16px auto 60px; padding: 0 24px; }
+
+      .dynasty-overview {
+        background: var(--card); border-radius: 16px; padding: 24px;
+        margin-bottom: 32px; box-shadow: var(--shadow); border-left: 4px solid var(--politics);
+      }
+      .dynasty-overview h2 { margin: 0 0 16px; font-size: 20px; color: var(--politics); }
+
+      .info-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; margin-bottom: 16px; }
+      .info-item { background: rgba(58, 12, 163, 0.05); padding: 12px; border-radius: 8px; }
+      .info-item .label { font-size: 12px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.5px; display: block; margin-bottom: 4px; font-family: "Source Sans Pro", sans-serif; }
+      .info-item .value { font-size: 16px; font-weight: 600; }
+
+      .current-positions { margin-top: 16px; }
+      .current-positions h3 { font-size: 16px; margin: 0 0 12px; color: var(--ink); }
+      .position-list { display: flex; flex-wrap: wrap; gap: 8px; }
+      .position-tag { background: var(--politics); color: #fff; padding: 6px 12px; border-radius: 20px; font-size: 13px; font-family: "Source Sans Pro", sans-serif; }
+
+      .alert-box {
+        background: rgba(255, 193, 7, 0.1); border-left: 4px solid #ffc107;
+        padding: 16px; border-radius: 8px; margin-top: 16px;
+      }
+      .alert-box h4 { margin: 0 0 8px; color: #d4a017; font-size: 14px; }
+      .alert-box p { margin: 0; font-size: 14px; }
+
+      .section-title { font-size: 24px; margin: 40px 0 20px; padding-bottom: 12px; border-bottom: 2px solid var(--line); color: var(--ink); }
+
+      .news-list { list-style: none; padding: 0; margin: 0; }
+      .news-item { background: var(--card); border-radius: 12px; padding: 20px; margin-bottom: 16px; box-shadow: var(--shadow); border-left: 3px solid var(--politics); }
+      .news-item .date { font-size: 13px; color: var(--muted); font-family: "Source Sans Pro", sans-serif; margin-bottom: 6px; }
+      .news-item h3 { margin: 0 0 8px; font-size: 18px; }
+      .news-item h3 a { color: var(--ink); text-decoration: none; }
+      .news-item h3 a:hover { color: var(--accent-2); text-decoration: underline; }
+      .news-item p { margin: 0 0 12px; font-size: 15px; line-height: 1.6; }
+      .news-item .source { font-size: 12px; color: var(--muted); }
+      .news-item .source a { color: var(--accent-2); text-decoration: none; }
+
+      .year-section { margin-bottom: 32px; }
+      .year-section h3 { font-size: 18px; color: var(--politics); margin: 0 0 16px; padding: 8px 16px; background: rgba(58, 12, 163, 0.05); border-radius: 8px; display: inline-block; }
+
+      footer { max-width: 1100px; margin: 60px auto 40px; padding: 24px; text-align: center; color: var(--muted); font-size: 14px; border-top: 1px solid var(--line); }
+      footer a { color: var(--accent); text-decoration: none; }
+    </style>
+  </head>
+  <body>
+    <header>
+      <p class="breadcrumb"><a href="index.html">Dynasties</a> / Dy</p>
+      <h1>Dy Dynasty</h1>
+      <p class="subtitle">Isabela Province, Cagayan Valley</p>
+      <nav class="nav-links">
+        <a href="../dynasties-network-visualization.html#dynasty-DY_FAMILY">View on Map</a>
+        <a href="../interactive-timeline/?search=Dy">Timeline</a>
+        <a href="../weekly-reviews/">Weekly Reviews</a>
+        <a href="index.html">All Dynasties</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="dynasty-overview">
+        <h2>Dynasty Overview</h2>
+        <div class="info-grid">
+          <div class="info-item">
+            <span class="label">Core Region</span>
+            <span class="value">Isabela Province</span>
+          </div>
+          <div class="info-item">
+            <span class="label">Political Base Since</span>
+            <span class="value">1992</span>
+          </div>
+          <div class="info-item">
+            <span class="label">Classification</span>
+            <span class="value">Major Dynasty</span>
+          </div>
+          <div class="info-item">
+            <span class="label">Power Level</span>
+            <span class="value">Regional</span>
+          </div>
+        </div>
+        <div class="current-positions">
+          <h3>Current Positions (2026)</h3>
+          <div class="position-list">
+            <span class="position-tag">House Speaker - Bojie Dy</span>
+            <span class="position-tag">Governor of Isabela - Bojie Dy (former)</span>
+            <span class="position-tag">Vice Governor - Pol Dy</span>
+          </div>
+        </div>
+
+        <div class="alert-box">
+          <h4>Family Rift</h4>
+          <p>The Dy family is experiencing a genuine internal rift, with brothers Bojie and Pol Dy competing for political positions. This is real political conflict, not theatrical.</p>
+        </div>
+      </section>
+
+      <h2 class="section-title">News Archive</h2>
+
+      <section class="year-section">
+        <h3>2026</h3>
+        <ul class="news-list">
+          <li class="news-item">
+            <p class="date">January 2026</p>
+            <h3><a href="../weekly-reviews/weekly-review-2026-01-02.html">Anti-Dynasty Bill Filed by Speaker Dy</a></h3>
+            <p>Speaker Bojie Dy and Majority Leader Sandro Marcos filed a landmark Anti-Political Dynasty Bill, though critics have called it "weak" for not prohibiting immediate succession or cross-jurisdiction dynasties.</p>
+            <p class="source">Source: <a href="https://www.congress.gov.ph/media/press-releases/view/?content=9545" target="_blank">Congress.gov.ph</a> | <a href="../weekly-reviews/weekly-review-2026-01-02.html">Weekly Review</a></p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="year-section">
+        <h3>2025</h3>
+        <ul class="news-list">
+          <li class="news-item">
+            <p class="date">September 2025</p>
+            <h3>Bojie Dy Becomes House Speaker</h3>
+            <p>Following Martin Romualdez's resignation amid the flood control corruption scandal, Bojie Dy was elected as the new Speaker of the House of Representatives.</p>
+            <p class="source">Source: <a href="https://www.rappler.com/nation/politics/" target="_blank">Rappler</a></p>
+          </li>
+
+          <li class="news-item">
+            <p class="date">May 2025</p>
+            <h3>Dy Brothers Rivalry in Isabela Elections</h3>
+            <p>The midterm elections highlighted the ongoing political rivalry between brothers Bojie and Pol Dy in Isabela, with both competing for dominance in the province.</p>
+            <p class="source">Source: <a href="https://www.rappler.com/nation/politics/" target="_blank">Rappler</a></p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="year-section">
+        <h3>Historical Context</h3>
+        <ul class="news-list">
+          <li class="news-item">
+            <p class="date">1992-Present</p>
+            <h3>Dy Family Political Dynasty in Isabela</h3>
+            <p>The Dy family has dominated Isabela politics since Mariano Dy Sr. first established their political presence in 1992. The family has controlled the governorship and multiple congressional seats for decades.</p>
+            <p class="source">Historical record</p>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        Part of the <a href="https://github.com/dat-angel/openpinas">OpenPinas</a> project
+      </p>
+      <p>
+        <a href="index.html">All Dynasties</a> |
+        <a href="../weekly-reviews/">Weekly Reviews</a> |
+        <a href="../interactive-timeline/">Timeline</a>
+      </p>
+    </footer>
+  </body>
+</html>
