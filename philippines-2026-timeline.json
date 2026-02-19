@@ -4,12 +4,58 @@
   "prepared_for": "Filipino Diaspora Communities Worldwide",
   "metadata": {
     "purpose": "Comprehensive timeline of major Philippine events in 2026 to help overseas Filipinos understand developments affecting families, remittances, investments, and homeland governance",
-    "last_updated": "February 7, 2026",
+    "last_updated": "February 14, 2026",
     "aggregation_note": "This timeline is aggregated by month as events unfold. Weekly reviews provide more detailed coverage.",
-    "total_events": 57,
-    "categories": ["Political", "Cultural", "Natural Disasters", "Economic", "International Relations", "Legal", "OFW/Diaspora", "Religious"]
+    "total_events": 64,
+    "categories": [
+      "Political",
+      "Cultural",
+      "Natural Disasters",
+      "Economic",
+      "International Relations",
+      "Legal",
+      "OFW/Diaspora",
+      "Religious"
+    ]
   },
   "timeline": [
+    {
+      "date": "2025-12-29",
+      "month": "January",
+      "title": "2026 National Budget Ratified by Congress",
+      "category": "Economic",
+      "description": "The House and Senate ratified the PHP 6.3 trillion 2026 national budget. The DPWH saw a PHP 53.99 billion cut following the flood control corruption scandal, while education received a PHP 72.35 billion increase. Budget to be signed by President Marcos in early January.",
+      "significance": "Budget reflects anti-corruption priorities with infrastructure cuts; education prioritized",
+      "diaspora_impact": "Education budget increases benefit diaspora families with children in Philippines; infrastructure accountability may improve project quality",
+      "sources": {
+        "international": [],
+        "local": [
+          "https://www.rappler.com/philippines/2026-budget-marcos-review-signed-january-2026/"
+        ]
+      },
+      "weekly_review": "weekly-reviews/weekly-review-2026-01-02.html"
+    },
+    {
+      "date": "2025-12-29",
+      "month": "January",
+      "title": "Anti-Dynasty Bill Gains Momentum - 54% Public Support",
+      "category": "Political",
+      "description": "Survey shows 54% of Filipinos want an anti-dynasty law passed now. Speaker Bojie Dy and Majority Leader Sandro Marcos filed a landmark Anti-Political Dynasty Bill, though critics call it 'weak' for not prohibiting immediate succession or cross-jurisdiction dynasties.",
+      "significance": "First serious legislative push for anti-dynasty law in decades; multiple versions filed in 20th Congress",
+      "diaspora_impact": "Political dynasties control 80% of provincial governorships; reform could improve governance and reduce corruption",
+      "mentioned_dynasties": [
+        "MARCOS_ROMUALDEZ",
+        "DY_FAMILY"
+      ],
+      "sources": {
+        "international": [],
+        "local": [
+          "https://www.rappler.com/video/daily-wrap/december-29-2025/",
+          "https://www.congress.gov.ph/media/press-releases/view/?content=9545"
+        ]
+      },
+      "weekly_review": "weekly-reviews/weekly-review-2026-01-02.html"
+    },
     {
       "date": "2026-01-01",
       "month": "January",
@@ -18,10 +64,14 @@
       "description": "President Ferdinand Marcos Jr. renewed his call for discipline, unity, and readiness to choose service over self-interest as Filipinos welcomed 2026. The message set the tone for a year of ASEAN chairmanship and continued anti-corruption efforts.",
       "significance": "Sets national agenda for 2026 amid ongoing political tensions",
       "diaspora_impact": "Signals continued focus on governance improvements; political messaging important for diaspora communities monitoring homeland stability",
-      "mentioned_dynasties": ["MARCOS_ROMUALDEZ"],
+      "mentioned_dynasties": [
+        "MARCOS_ROMUALDEZ"
+      ],
       "sources": {
         "international": [],
-        "local": ["https://www.philstar.com/headlines/2026/01/01/2498093/president-marcos-renews-call-discipline-unity-2026"]
+        "local": [
+          "https://www.philstar.com/headlines/2026/01/01/2498093/president-marcos-renews-call-discipline-unity-2026"
+        ]
       },
       "weekly_review": "weekly-reviews/weekly-review-2026-01-02.html"
     },
@@ -33,10 +83,14 @@
       "description": "Vice President Sara Duterte released her New Year message, calling 2026 'an invitation to unite and start a new vision.' She urged Filipinos to 'rekindle courage and determination.' This comes despite the Marcos-Duterte political rift deepening throughout 2025.",
       "significance": "Conciliatory tone despite ongoing tensions; VP protected from impeachment until February 2026",
       "diaspora_impact": "Political dynamics between major families affect governance stability",
-      "mentioned_dynasties": ["DUTERTE_FAMILY"],
+      "mentioned_dynasties": [
+        "DUTERTE_FAMILY"
+      ],
       "sources": {
         "international": [],
-        "local": ["https://newsinfo.inquirer.net/2158424/2025-sees-relationship-between-marcos-sara-duterte-break-beyond-repair"]
+        "local": [
+          "https://newsinfo.inquirer.net/2158424/2025-sees-relationship-between-marcos-sara-duterte-break-beyond-repair"
+        ]
       },
       "weekly_review": "weekly-reviews/weekly-review-2026-01-02.html"
     },
@@ -48,9 +102,13 @@
       "description": "The Philippines officially assumed the ASEAN chairmanship for 2026, gaining global attention for President Marcos's strong stance against China's aggressive actions in the West Philippine Sea. Analysts note a South China Sea code of conduct is unlikely during the Philippine chairmanship.",
       "significance": "Major regional leadership role; Philippines balances foreign policy prominence with domestic challenges",
       "diaspora_impact": "Increased Philippines visibility and influence in region; potential diplomatic and economic benefits",
-      "mentioned_dynasties": ["MARCOS_ROMUALDEZ"],
+      "mentioned_dynasties": [
+        "MARCOS_ROMUALDEZ"
+      ],
       "sources": {
-        "international": ["https://www.chathamhouse.org/2025/12/philippines-asean-chair-south-china-sea-agreement-unlikely-be-concluded-2026"],
+        "international": [
+          "https://www.chathamhouse.org/2025/12/philippines-asean-chair-south-china-sea-agreement-unlikely-be-concluded-2026"
+        ],
         "local": []
       },
       "weekly_review": "weekly-reviews/weekly-review-2026-01-02.html"
@@ -82,38 +140,8 @@
       "diaspora_impact": "OFWs in the US face new costs on money sent home; may accelerate shift to digital remittance platforms with lower fees",
       "sources": {
         "international": [],
-        "local": ["https://thefilipinochronicle.com/2025/12/14/the-tradition-of-remittances-continues-to-bolster-the-philippines-but-it-also-comes-at-a-cost/"]
-      },
-      "weekly_review": "weekly-reviews/weekly-review-2026-01-02.html"
-    },
-    {
-      "date": "2025-12-29",
-      "month": "January",
-      "title": "2026 National Budget Ratified by Congress",
-      "category": "Economic",
-      "description": "The House and Senate ratified the PHP 6.3 trillion 2026 national budget. The DPWH saw a PHP 53.99 billion cut following the flood control corruption scandal, while education received a PHP 72.35 billion increase. Budget to be signed by President Marcos in early January.",
-      "significance": "Budget reflects anti-corruption priorities with infrastructure cuts; education prioritized",
-      "diaspora_impact": "Education budget increases benefit diaspora families with children in Philippines; infrastructure accountability may improve project quality",
-      "sources": {
-        "international": [],
-        "local": ["https://www.rappler.com/philippines/2026-budget-marcos-review-signed-january-2026/"]
-      },
-      "weekly_review": "weekly-reviews/weekly-review-2026-01-02.html"
-    },
-    {
-      "date": "2025-12-29",
-      "month": "January",
-      "title": "Anti-Dynasty Bill Gains Momentum - 54% Public Support",
-      "category": "Political",
-      "description": "Survey shows 54% of Filipinos want an anti-dynasty law passed now. Speaker Bojie Dy and Majority Leader Sandro Marcos filed a landmark Anti-Political Dynasty Bill, though critics call it 'weak' for not prohibiting immediate succession or cross-jurisdiction dynasties.",
-      "significance": "First serious legislative push for anti-dynasty law in decades; multiple versions filed in 20th Congress",
-      "diaspora_impact": "Political dynasties control 80% of provincial governorships; reform could improve governance and reduce corruption",
-      "mentioned_dynasties": ["MARCOS_ROMUALDEZ", "DY_FAMILY"],
-      "sources": {
-        "international": [],
         "local": [
-          "https://www.rappler.com/video/daily-wrap/december-29-2025/",
-          "https://www.congress.gov.ph/media/press-releases/view/?content=9545"
+          "https://thefilipinochronicle.com/2025/12/14/the-tradition-of-remittances-continues-to-bolster-the-philippines-but-it-also-comes-at-a-cost/"
         ]
       },
       "weekly_review": "weekly-reviews/weekly-review-2026-01-02.html"
@@ -126,10 +154,16 @@
       "description": "Following the largest corruption scandal of his administration, President Ferdinand Marcos Jr. signed the 2026 General Appropriations Act worth PHP 6.793 trillion ($115 billion). In a significant anti-corruption move, Marcos vetoed PHP 92.5 billion in Unprogrammed Appropriations, vowing transparency in fund releases. The budget includes zero provision for new locally-funded flood control projects, reflecting lessons from the flood control scandal. The government aims to revive an economy stunted by the corruption crisis.",
       "significance": "First budget signed after largest corruption scandal; removes backdoor for graft by eliminating unprogrammed funds",
       "diaspora_impact": "Budget priorities affect services for families; education increases benefit diaspora families with children in Philippines; removal of unprogrammed funds reduces corruption opportunities.",
-      "mentioned_dynasties": ["MARCOS_ROMUALDEZ"],
+      "mentioned_dynasties": [
+        "MARCOS_ROMUALDEZ"
+      ],
       "sources": {
-        "international": ["https://www.bloomberg.com/news/articles/2026-01-05/philippines-marcos-slashes-backdoor-for-graft-in-2026-budget-after-scandal"],
-        "local": ["https://www.philstar.com/headlines/2026/01/05/2498913/marcos-signs-p6793-trillion-budget-2026"]
+        "international": [
+          "https://www.bloomberg.com/news/articles/2026-01-05/philippines-marcos-slashes-backdoor-for-graft-in-2026-budget-after-scandal"
+        ],
+        "local": [
+          "https://www.philstar.com/headlines/2026/01/05/2498913/marcos-signs-p6793-trillion-budget-2026"
+        ]
       },
       "weekly_review": "weekly-reviews/weekly-review-2026-01-09.html"
     },
@@ -141,10 +175,16 @@
       "description": "Retired Philippine Air Force General Romeo Poquiz, convenor of the United People's Initiative (UPI), was arrested at Ninoy Aquino International Airport on charges of inciting to sedition. Poquiz had just returned from a family trip to Thailand when police arrested him on a warrant from Quezon City Regional Trial Court. The charges stemmed from a Facebook post critical of President Marcos. The UPI had organized rallies calling for anti-corruption action and government accountability. Poquiz posted P48,000 bail and was released the same day, with arraignment set for January 14. He denied calling for Marcos's ouster, stating: 'This is harassment and intimidation of our citizens who are expressing their feelings about the rampant corruption in our country.'",
       "significance": "High-profile arrest of retired military critic amid political tensions; raises concerns about free speech and political expression",
       "diaspora_impact": "Concerns about free speech and political expression in Philippines; retired military criticism of government reflects deep political divisions.",
-      "mentioned_dynasties": ["MARCOS_ROMUALDEZ"],
+      "mentioned_dynasties": [
+        "MARCOS_ROMUALDEZ"
+      ],
       "sources": {
         "international": [],
-        "local": ["https://newsinfo.inquirer.net/2163031/retired-gen-poquiz-arrested-over-inciting-to-sedition", "https://www.rappler.com/philippines/retired-general-romeo-poquiz-arrested-inciting-sedition/", "https://www.philstar.com/headlines/2026/01/05/2498917/ex-air-force-general-nabbed-over-sedition-charge"]
+        "local": [
+          "https://newsinfo.inquirer.net/2163031/retired-gen-poquiz-arrested-over-inciting-to-sedition",
+          "https://www.rappler.com/philippines/retired-general-romeo-poquiz-arrested-inciting-sedition/",
+          "https://www.philstar.com/headlines/2026/01/05/2498917/ex-air-force-general-nabbed-over-sedition-charge"
+        ]
       },
       "weekly_review": "weekly-reviews/weekly-review-2026-01-09.html"
     },
@@ -159,7 +199,9 @@
       "mentioned_dynasties": [],
       "sources": {
         "international": [],
-        "local": ["https://www.rappler.com/philippines/luzon/phivolcs-mayon-volcano-alert-level-january-6-2026/"]
+        "local": [
+          "https://www.rappler.com/philippines/luzon/phivolcs-mayon-volcano-alert-level-january-6-2026/"
+        ]
       },
       "weekly_review": "weekly-reviews/weekly-review-2026-01-09.html"
     },
@@ -173,8 +215,12 @@
       "diaspora_impact": "Families in Davao Oriental and surrounding areas affected; region still recovering from November 2025 earthquake; potential for additional displacement requiring diaspora support.",
       "mentioned_dynasties": [],
       "sources": {
-        "international": ["https://www.volcanodiscovery.com/earthquakes/quake-info/22585867/quake-felt-Jan-7-2026-Near-General-Santos-Soccsksargen-Philippines.html"],
-        "local": ["https://earthquake.phivolcs.dost.gov.ph/2026_Earthquake_Information/January/2026_0107_1638_B1F.html"]
+        "international": [
+          "https://www.volcanodiscovery.com/earthquakes/quake-info/22585867/quake-felt-Jan-7-2026-Near-General-Santos-Soccsksargen-Philippines.html"
+        ],
+        "local": [
+          "https://earthquake.phivolcs.dost.gov.ph/2026_Earthquake_Information/January/2026_0107_1638_B1F.html"
+        ]
       },
       "weekly_review": "weekly-reviews/weekly-review-2026-01-09.html"
     },
@@ -186,7 +232,9 @@
       "description": "A catastrophic garbage landslide occurred at the Binaliw Sanitary Landfill in Cebu City at 4:17 PM, burying approximately 50 sanitation workers. An estimated 35-meter (115 ft) pile of garbage collapsed onto the Material Recovery Facility and surrounding structures. As of January 16, the death toll reached 28 with 8 still missing and 18 injured, making it one of Cebu's deadliest industrial disasters. Cebu City declared a state of calamity on January 13, pledging ₱30 million for rescue operations and waste management solutions. The DENR issued a cease-and-desist order against operator Prime Integrated Waste Solutions Inc. The Mines and Geosciences Bureau cited oversaturation of waste due to heavy rains and possible engineering lapses as causes. Senator Imee Marcos filed Senate Resolution 244 calling for an investigation into landfill safety compliance with RA 9003 (Ecological Solid Waste Management Act).",
       "significance": "Deadliest industrial disaster in Cebu history; exposes systemic failures in waste management regulation; triggered regional waste crisis as Metro Cebu's primary disposal facility shut down",
       "diaspora_impact": "Families in Cebu and Metro Cebu affected by tragedy; waste crisis affects quality of life for residents; raises concerns about workplace safety regulations and enforcement in Philippines.",
-      "mentioned_dynasties": ["MARCOS_ROMUALDEZ"],
+      "mentioned_dynasties": [
+        "MARCOS_ROMUALDEZ"
+      ],
       "sources": {
         "international": [
           "https://www.cnn.com/2026/01/09/asia/landfill-collapse-philippines-intl-hnk",
@@ -209,7 +257,9 @@
       "description": "Manila's Feast of the Black Nazarene drew a record 9.6 million devotees over the nine-day novena (Dec 31 - Jan 10). The Traslacion procession from Quirino Grandstand to Quiapo Church lasted 30 hours, 50 minutes, and 1 second - the longest ever recorded. Four deaths were reported during the event. Church leaders used the occasion to criticize the political establishment, with Bishop Rufino Sescon urging devotees to learn humility from Jesus Christ amid the nation's corruption scandal. The theme was 'He Must Go Up, and I Also Go Down' (cf. John 3:30). President Marcos declared January 9 a special non-working day in Manila.",
       "significance": "Longest Traslacion procession in history; largest religious gathering used as platform for anti-corruption expression; demonstrates depth of public frustration with government corruption",
       "diaspora_impact": "Major religious event connects diaspora to homeland traditions; anti-corruption messaging during religious gathering reflects depth of public frustration that resonates with overseas Filipinos.",
-      "mentioned_dynasties": ["MARCOS_ROMUALDEZ"],
+      "mentioned_dynasties": [
+        "MARCOS_ROMUALDEZ"
+      ],
       "sources": {
         "international": [],
         "local": [
@@ -230,7 +280,9 @@
       "mentioned_dynasties": [],
       "sources": {
         "international": [],
-        "local": ["https://en.wikipedia.org/wiki/2026_in_the_Philippines"]
+        "local": [
+          "https://en.wikipedia.org/wiki/2026_in_the_Philippines"
+        ]
       },
       "weekly_review": "weekly-reviews/weekly-review-2026-01-09.html"
     },
@@ -244,7 +296,9 @@
       "diaspora_impact": "Families in Albay region face ongoing evacuation; diaspora may need to provide emergency remittance support for temporary relocation and basic needs.",
       "mentioned_dynasties": [],
       "sources": {
-        "international": ["https://abcnews.go.com/Technology/wireStory/philippines-evacuates-3000-people-after-activity-increases-mayon-129000629"],
+        "international": [
+          "https://abcnews.go.com/Technology/wireStory/philippines-evacuates-3000-people-after-activity-increases-mayon-129000629"
+        ],
         "local": [
           "https://newsinfo.inquirer.net/2166303/mayon-volcano-activity-for-past-24-hours",
           "https://newsinfo.inquirer.net/2166738/phivolcs-records-increased-seismic-energy-release-in-mayon-volcano",
@@ -261,7 +315,9 @@
       "description": "President Marcos and UAE officials signed the Comprehensive Economic Partnership Agreement (CEPA) during the Abu Dhabi Sustainability Week 2026 Summit. This is the first free trade agreement between the Philippines and a Middle Eastern country. The agreement aims to achieve at least 90% tariff liberalization and provides broader access to the Gulf Cooperation Council market. This is the fourth CEPA the UAE has signed with ASEAN countries, following Cambodia, Indonesia, and Vietnam. The Philippines was recognized as among the fastest-growing ASEAN economies with 5.6% GDP growth in 2024 and nominal GDP of approximately $471.8 billion.",
       "significance": "First free trade agreement between Philippines and Middle East; strengthens economic ties with major OFW destination",
       "diaspora_impact": "Major milestone for OFWs in Middle East (largest OFW destination region); improved trade ties may create additional job opportunities in UAE and broader GCC region; strengthens economic relationship benefiting Filipino workers abroad.",
-      "mentioned_dynasties": ["MARCOS_ROMUALDEZ"],
+      "mentioned_dynasties": [
+        "MARCOS_ROMUALDEZ"
+      ],
       "sources": {
         "international": [],
         "local": [
@@ -317,9 +373,13 @@
       "description": "A Pulse Asia survey published in January 2026 found that only 59% of Filipinos believe flood control scandal culprits will be jailed - down 12 points from 71% in September 2025. Many Filipinos express frustration that President Marcos's Christmas promise to jail legislators hasn't fully materialized. In a major development, investigators discovered a 'definite link' between flood control scandal funds converted to cryptocurrency and POGO (Philippine Offshore Gaming Operator) scam syndicates. The connection suggests siphoned government funds were laundered through online gaming operations, adding another layer to the corruption scandal.",
       "significance": "Declining public confidence in accountability; flood control corruption linked to POGO and cryptocurrency scams reveals depth of systemic corruption",
       "diaspora_impact": "Declining trust in accountability efforts concerns diaspora; corruption-POGO-crypto links show depth of systemic issues affecting governance quality for families in Philippines.",
-      "mentioned_dynasties": ["MARCOS_ROMUALDEZ"],
+      "mentioned_dynasties": [
+        "MARCOS_ROMUALDEZ"
+      ],
       "sources": {
-        "international": ["https://www.scmp.com/week-asia/economics/article/3335414/probe-links-philippines-flood-corruption-pogo-crypto-schemes"],
+        "international": [
+          "https://www.scmp.com/week-asia/economics/article/3335414/probe-links-philippines-flood-corruption-pogo-crypto-schemes"
+        ],
         "local": [
           "https://newsinfo.inquirer.net/2166880/fwd-most-filipinos-still-believe-flood-control-scandal-culprits-will-go-to-jail-poll",
           "https://fortune.com/2026/01/14/philippines-asean-chair-marcos-flood-corruption-tariffs/"
@@ -335,7 +395,9 @@
       "description": "Port tycoon Enrique Razon Jr., chairman of International Container Terminal Services Inc. (ICTSI) and Bloomberry Resorts Corp., filed two counts of cyber libel against suspended Cavite Rep. Francisco 'Kiko' Barzaga before the Makati City Prosecutor's Office. The complaint stems from Barzaga's January 9 Facebook post alleging Razon bribed National Unity Party (NUP) lawmakers at Solaire to support then-Speaker Martin Romualdez's leadership. Razon seeks ₱100 million in moral damages and ₱10 million in exemplary damages. Razon called the allegations 'false and damaging,' noting Romualdez ran unopposed. Barzaga, serving a 60-day House suspension for ethics violations, responded: 'I am prepared to face Enrique Razon in court, the sooner, the better!' and promised to reveal evidence upon returning to Congress.",
       "significance": "High-profile clash between business elite and politician; raises questions about congressional corruption allegations and limits of parliamentary immunity on social media",
       "diaspora_impact": "Reflects ongoing tensions between business interests and political actors; potential revelations about congressional corruption concern diaspora monitoring governance quality.",
-      "mentioned_dynasties": ["MARCOS_ROMUALDEZ"],
+      "mentioned_dynasties": [
+        "MARCOS_ROMUALDEZ"
+      ],
       "sources": {
         "international": [],
         "local": [
@@ -394,7 +456,10 @@
       "description": "Batangas 1st District Rep. Leandro Antonio Legarda Leviste, founder of Solar Philippines and son of Senator Loren Legarda, claims to possess the 'Cabral Files' - documents allegedly listing 2025 infrastructure allocations and their proponents. The files are linked to the late DPWH Undersecretary Maria Catalina Cabral who was found dead in December 2025 during the flood control investigation. Leviste confirmed requesting a meeting with Senate President Pro Tempore Ping Lacson to discuss the files. Meanwhile, the DOE slapped his Solar Philippines company with a P24 billion penalty for failing to deliver on power contracts (only 2% of 11,000 megawatts committed capacity). Leviste called the fine an attempt to silence him and filed a P110 million libel case against Presidential spokesperson Claire Castro. The 32-year-old neophyte congressman, recognized as the youngest self-made billionaire in the Philippines, has emerged as a key figure in the ongoing corruption exposé.",
       "significance": "Emerging political figure from prominent dynasty claims possession of key corruption evidence; faces government retaliation accusations; intersection of business, politics, and anti-corruption efforts",
       "diaspora_impact": "Complex intersection of business, politics, and anti-corruption efforts reflects challenging governance landscape; potential new revelations about corruption affecting infrastructure quality for families.",
-      "mentioned_dynasties": ["LEGARDA_FAMILY", "LACSON_FAMILY"],
+      "mentioned_dynasties": [
+        "LEGARDA_FAMILY",
+        "LACSON_FAMILY"
+      ],
       "sources": {
         "international": [],
         "local": [
@@ -420,6 +485,42 @@
           "https://www.philstar.com/headlines/2026/01/17/2501488/another-arrest-warrant-out-vs-atong-ang-20-others",
           "https://globalnation.inquirer.net/305726/interpol-red-notice-requested-for-atong-ang-cidg",
           "https://www.pna.gov.ph/articles/1267075"
+        ]
+      },
+      "weekly_review": "weekly-reviews/weekly-review-2026-01-24.html"
+    },
+    {
+      "date": "2026-01-17",
+      "month": "January",
+      "title": "DICT Orders Takedown of AI Chatbot Grok Over Deepfake Concerns",
+      "category": "Political",
+      "description": "The Department of Information and Communications Technology (DICT) ordered the takedown of artificial intelligence chatbot Grok in the Philippines due to lapses in regulating content, particularly nonconsensual illicit deepfakes of women and minors. The action reflects growing concerns about AI-generated content and its potential for abuse in creating harmful imagery.",
+      "significance": "First major AI content regulation action by Philippine government; sets precedent for platform accountability on deepfake content",
+      "diaspora_impact": "Regulation of AI platforms affects digital safety for Filipino families; shows government taking action on emerging technology concerns.",
+      "mentioned_dynasties": [],
+      "sources": {
+        "international": [],
+        "local": [
+          "https://www.gmanetwork.com/news/topstories/nation/973249/palace-issues-11-local-special-non-working-days-for-2026/story/"
+        ]
+      },
+      "weekly_review": "weekly-reviews/weekly-review-2026-01-24.html"
+    },
+    {
+      "date": "2026-01-17",
+      "month": "January",
+      "title": "Philippine Airlines Launches New Airbus A350-1000 on 85th Anniversary",
+      "category": "Economic",
+      "description": "President Marcos led the launch of Philippine Airlines' new Airbus A350-1000 during the carrier's 85th anniversary celebration. The new wide-body aircraft enhances PAL's long-haul fleet capabilities and represents a major investment in Philippine aviation.",
+      "significance": "Major aviation investment signaling confidence in Philippine air travel market; enhances connectivity for diaspora travel",
+      "diaspora_impact": "Improved aircraft and service on PAL long-haul routes benefits overseas Filipinos traveling home; reflects continued investment in diaspora connectivity.",
+      "mentioned_dynasties": [
+        "MARCOS_ROMUALDEZ"
+      ],
+      "sources": {
+        "international": [],
+        "local": [
+          "https://www.gmanetwork.com/news/video/24oras/741129/24-oras-weekend-part-1-january-17-2026/video/"
         ]
       },
       "weekly_review": "weekly-reviews/weekly-review-2026-01-24.html"
@@ -452,7 +553,10 @@
       "description": "Lawyer Andre de Jesus filed the first impeachment complaint against President Ferdinand Marcos Jr. at the House of Representatives, endorsed by Rep. Jett Nisay of Pusong Pinoy party-list. The complaint cites three grounds: culpable violation of the Constitution, graft and corruption, and betrayal of public trust. Specific allegations include allowing the arrest of former President Rodrigo Duterte on an ICC warrant, alleged drug use, and his role in the flood control corruption scandal. The complaint faces an uphill battle as the House is dominated by Marcos allies. Legal observers note that if this complaint is dismissed, Marcos gains one-year immunity from further impeachment attempts under the Constitution.",
       "significance": "First impeachment complaint against Marcos since taking office in 2022; reflects deep political divisions; outcome will shape political landscape heading into 2028 elections",
       "diaspora_impact": "Political instability concerns diaspora; outcome of impeachment attempt affects governance continuity and investor confidence.",
-      "mentioned_dynasties": ["MARCOS_ROMUALDEZ", "DUTERTE_FAMILY"],
+      "mentioned_dynasties": [
+        "MARCOS_ROMUALDEZ",
+        "DUTERTE_FAMILY"
+      ],
       "sources": {
         "international": [
           "https://www.bloomberg.com/news/articles/2026-01-19/impeachment-complaint-filed-against-philippines-marcos-gma",
@@ -480,96 +584,6 @@
         "local": [
           "https://www.manilatimes.net/2026/01/19/news/national/china-urges-philippines-avoid-provocations-in-south-china-sea/2260836",
           "https://www.philstar.com/headlines/2026/01/14/2500809/china-ships-increase-west-philippine-sea-2026"
-        ]
-      },
-      "weekly_review": "weekly-reviews/weekly-review-2026-01-24.html"
-    },
-    {
-      "date": "2026-01-20",
-      "month": "January",
-      "title": "Mayon Volcano Eruption Continues - Lahar Warnings Issued",
-      "category": "Natural Disasters",
-      "description": "PHIVOLCS maintained Alert Level 3 for Mayon Volcano as eruptive activity continued with 50 pyroclastic density currents (PDCs) recorded in a 24-hour period. The agency issued lahar warnings as Tropical Storm Ada (Nokaen) brought heavy rainfall to the region, threatening volcanic sediment flows in rivers and drainage channels around the volcano. Over 4,000 residents remain displaced in 14 evacuation shelters. The 6-kilometer Permanent Danger Zone evacuation remains in effect. PHIVOLCS Director Teresito Bacolcol said raising the alert to Level 4 remains unlikely despite heightened activity.",
-      "significance": "Ongoing volcanic crisis with dual threat from eruption and rain-triggered lahars; over 4,000 displaced with no timeline for return",
-      "diaspora_impact": "Families in Albay face prolonged displacement; potential need for emergency remittance support for temporary housing and basic needs.",
-      "mentioned_dynasties": [],
-      "sources": {
-        "international": [],
-        "local": [
-          "https://www.volcanodiscovery.com/mayon/news/292522/Mayon-Volcano-Philippines-activity-update-Jan-20-2026-Continuing-eruption.html",
-          "https://www.pna.gov.ph/articles/1267101"
-        ]
-      },
-      "weekly_review": "weekly-reviews/weekly-review-2026-01-24.html"
-    },
-    {
-      "date": "2026-01-22",
-      "month": "January",
-      "title": "AMRO Projects 5.3% GDP Growth for Philippines in 2026",
-      "category": "Economic",
-      "description": "The ASEAN+3 Macroeconomic Research Office (AMRO) projected the Philippine economy will grow by 5.3% in 2026, driven by robust domestic demand. This would make the Philippines the second fastest-growing economy in Southeast Asia after Vietnam (7.6%). However, the government had already cut its growth target from 6-7% to 5-6% following the flood control corruption scandal. Capital Economics projects more cautious 4.5% growth. Inflation is forecast at 3.2%, with the BSP expected to cut rates by 25 basis points in Q1 2026. Structural challenges include high power costs, red tape, and climate vulnerability.",
-      "significance": "Economic outlook remains positive but tempered by corruption fallout and structural challenges; growth target downgrade reflects investor confidence concerns",
-      "diaspora_impact": "Economic performance affects job opportunities for families; remittance purchasing power depends on exchange rate stability; corruption scandal impact on investor confidence concerns diaspora investors.",
-      "mentioned_dynasties": [],
-      "sources": {
-        "international": [
-          "https://www.bloomberg.com/news/articles/2026-01-05/philippines-cuts-2026-gdp-growth-target-as-graft-pain-persists"
-        ],
-        "local": [
-          "https://www.bworldonline.com/top-stories/2026/01/22/725685/philippine-economy-likely-to-expand-by-5-3-in-2026-amro/",
-          "https://business.inquirer.net/567025/philippine-economy-faces-make-or-break-year-in-2026"
-        ]
-      },
-      "weekly_review": "weekly-reviews/weekly-review-2026-01-24.html"
-    },
-    {
-      "date": "2026-01-22",
-      "month": "January",
-      "title": "Second Impeachment Complaint Filed Against Marcos - House Allegedly Blocked Receipt",
-      "category": "Political",
-      "description": "A second impeachment complaint was filed against President Marcos by leftist groups, but complainants alleged the House of Representatives 'blocked' its receipt. The rapid succession of complaints highlights the political strategy: if the first weak complaint is dismissed by the House justice committee, Marcos gains constitutional immunity from impeachment for one year. Meanwhile, the House is revising impeachment rules to build an 'airtight' and 'Supreme Court-proof' case against Vice President Sara Duterte when the one-year ban expires on February 6, 2026.",
-      "significance": "Political maneuvering around impeachment rules; timing critical as VP Sara Duterte's immunity expires in February; reflects intensifying Marcos-Duterte political warfare",
-      "diaspora_impact": "Political instability and potential constitutional crisis concerns diaspora monitoring homeland governance; outcome shapes 2028 election dynamics.",
-      "mentioned_dynasties": ["MARCOS_ROMUALDEZ", "DUTERTE_FAMILY"],
-      "sources": {
-        "international": [],
-        "local": [
-          "https://www.rappler.com/philippines/marcos-jr-second-impeachment-complaint-january-22-2026/",
-          "https://newsinfo.inquirer.net/2169804/house-eyes-revisions-to-impeach-rules-vs-vp-sara-duterte"
-        ]
-      },
-      "weekly_review": "weekly-reviews/weekly-review-2026-01-24.html"
-    },
-    {
-      "date": "2026-01-17",
-      "month": "January",
-      "title": "DICT Orders Takedown of AI Chatbot Grok Over Deepfake Concerns",
-      "category": "Political",
-      "description": "The Department of Information and Communications Technology (DICT) ordered the takedown of artificial intelligence chatbot Grok in the Philippines due to lapses in regulating content, particularly nonconsensual illicit deepfakes of women and minors. The action reflects growing concerns about AI-generated content and its potential for abuse in creating harmful imagery.",
-      "significance": "First major AI content regulation action by Philippine government; sets precedent for platform accountability on deepfake content",
-      "diaspora_impact": "Regulation of AI platforms affects digital safety for Filipino families; shows government taking action on emerging technology concerns.",
-      "mentioned_dynasties": [],
-      "sources": {
-        "international": [],
-        "local": [
-          "https://www.gmanetwork.com/news/topstories/nation/973249/palace-issues-11-local-special-non-working-days-for-2026/story/"
-        ]
-      },
-      "weekly_review": "weekly-reviews/weekly-review-2026-01-24.html"
-    },
-    {
-      "date": "2026-01-17",
-      "month": "January",
-      "title": "Philippine Airlines Launches New Airbus A350-1000 on 85th Anniversary",
-      "category": "Economic",
-      "description": "President Marcos led the launch of Philippine Airlines' new Airbus A350-1000 during the carrier's 85th anniversary celebration. The new wide-body aircraft enhances PAL's long-haul fleet capabilities and represents a major investment in Philippine aviation.",
-      "significance": "Major aviation investment signaling confidence in Philippine air travel market; enhances connectivity for diaspora travel",
-      "diaspora_impact": "Improved aircraft and service on PAL long-haul routes benefits overseas Filipinos traveling home; reflects continued investment in diaspora connectivity.",
-      "mentioned_dynasties": ["MARCOS_ROMUALDEZ"],
-      "sources": {
-        "international": [],
-        "local": [
-          "https://www.gmanetwork.com/news/video/24oras/741129/24-oras-weekend-part-1-january-17-2026/video/"
         ]
       },
       "weekly_review": "weekly-reviews/weekly-review-2026-01-24.html"
@@ -629,6 +643,24 @@
     {
       "date": "2026-01-20",
       "month": "January",
+      "title": "Mayon Volcano Eruption Continues - Lahar Warnings Issued",
+      "category": "Natural Disasters",
+      "description": "PHIVOLCS maintained Alert Level 3 for Mayon Volcano as eruptive activity continued with 50 pyroclastic density currents (PDCs) recorded in a 24-hour period. The agency issued lahar warnings as Tropical Storm Ada (Nokaen) brought heavy rainfall to the region, threatening volcanic sediment flows in rivers and drainage channels around the volcano. Over 4,000 residents remain displaced in 14 evacuation shelters. The 6-kilometer Permanent Danger Zone evacuation remains in effect. PHIVOLCS Director Teresito Bacolcol said raising the alert to Level 4 remains unlikely despite heightened activity.",
+      "significance": "Ongoing volcanic crisis with dual threat from eruption and rain-triggered lahars; over 4,000 displaced with no timeline for return",
+      "diaspora_impact": "Families in Albay face prolonged displacement; potential need for emergency remittance support for temporary housing and basic needs.",
+      "mentioned_dynasties": [],
+      "sources": {
+        "international": [],
+        "local": [
+          "https://www.volcanodiscovery.com/mayon/news/292522/Mayon-Volcano-Philippines-activity-update-Jan-20-2026-Continuing-eruption.html",
+          "https://www.pna.gov.ph/articles/1267101"
+        ]
+      },
+      "weekly_review": "weekly-reviews/weekly-review-2026-01-24.html"
+    },
+    {
+      "date": "2026-01-20",
+      "month": "January",
       "title": "Bangsamoro Parliament Districts Restored to 32 After Sulu Exclusion",
       "category": "Political",
       "description": "Bangsamoro Chief Minister Abdulraof Macacua signed Bangsamoro Autonomy Act No. 86, restoring the number of single-member parliamentary districts in the Bangsamoro Parliament from 25 to 32. The change responds to the 2024 Supreme Court ruling that excluded Sulu from the Bangsamoro Autonomous Region in Muslim Mindanao (BARMM), requiring reallocation of legislative representation.",
@@ -663,12 +695,55 @@
     {
       "date": "2026-01-22",
       "month": "January",
+      "title": "AMRO Projects 5.3% GDP Growth for Philippines in 2026",
+      "category": "Economic",
+      "description": "The ASEAN+3 Macroeconomic Research Office (AMRO) projected the Philippine economy will grow by 5.3% in 2026, driven by robust domestic demand. This would make the Philippines the second fastest-growing economy in Southeast Asia after Vietnam (7.6%). However, the government had already cut its growth target from 6-7% to 5-6% following the flood control corruption scandal. Capital Economics projects more cautious 4.5% growth. Inflation is forecast at 3.2%, with the BSP expected to cut rates by 25 basis points in Q1 2026. Structural challenges include high power costs, red tape, and climate vulnerability.",
+      "significance": "Economic outlook remains positive but tempered by corruption fallout and structural challenges; growth target downgrade reflects investor confidence concerns",
+      "diaspora_impact": "Economic performance affects job opportunities for families; remittance purchasing power depends on exchange rate stability; corruption scandal impact on investor confidence concerns diaspora investors.",
+      "mentioned_dynasties": [],
+      "sources": {
+        "international": [
+          "https://www.bloomberg.com/news/articles/2026-01-05/philippines-cuts-2026-gdp-growth-target-as-graft-pain-persists"
+        ],
+        "local": [
+          "https://www.bworldonline.com/top-stories/2026/01/22/725685/philippine-economy-likely-to-expand-by-5-3-in-2026-amro/",
+          "https://business.inquirer.net/567025/philippine-economy-faces-make-or-break-year-in-2026"
+        ]
+      },
+      "weekly_review": "weekly-reviews/weekly-review-2026-01-24.html"
+    },
+    {
+      "date": "2026-01-22",
+      "month": "January",
+      "title": "Second Impeachment Complaint Filed Against Marcos - House Allegedly Blocked Receipt",
+      "category": "Political",
+      "description": "A second impeachment complaint was filed against President Marcos by leftist groups, but complainants alleged the House of Representatives 'blocked' its receipt. The rapid succession of complaints highlights the political strategy: if the first weak complaint is dismissed by the House justice committee, Marcos gains constitutional immunity from impeachment for one year. Meanwhile, the House is revising impeachment rules to build an 'airtight' and 'Supreme Court-proof' case against Vice President Sara Duterte when the one-year ban expires on February 6, 2026.",
+      "significance": "Political maneuvering around impeachment rules; timing critical as VP Sara Duterte's immunity expires in February; reflects intensifying Marcos-Duterte political warfare",
+      "diaspora_impact": "Political instability and potential constitutional crisis concerns diaspora monitoring homeland governance; outcome shapes 2028 election dynamics.",
+      "mentioned_dynasties": [
+        "MARCOS_ROMUALDEZ",
+        "DUTERTE_FAMILY"
+      ],
+      "sources": {
+        "international": [],
+        "local": [
+          "https://www.rappler.com/philippines/marcos-jr-second-impeachment-complaint-january-22-2026/",
+          "https://newsinfo.inquirer.net/2169804/house-eyes-revisions-to-impeach-rules-vs-vp-sara-duterte"
+        ]
+      },
+      "weekly_review": "weekly-reviews/weekly-review-2026-01-24.html"
+    },
+    {
+      "date": "2026-01-22",
+      "month": "January",
       "title": "Journalist Frenchie Mae Cumpio Convicted of Terror Financing - Up to 18 Years",
       "category": "Legal",
       "description": "The Regional Trial Court Branch 45 of Tacloban City convicted journalist Frenchie Mae Cumpio, 26, and lay worker Marielle Domequil, 28, of terrorism financing but acquitted them on illegal possession of firearms and explosives charges. Both have been detained since February 2020 when they were arrested at the Eastern Vista news office in Tacloban. Cumpio was a radio news anchor reporting on alleged police and military abuses. The Committee to Protect Journalists and Reporters Without Borders condemned the verdict as a 'devastating failure' for press freedom. The government maintained they were convicted for 'financing a terrorist organization.' Defense counsel announced plans to file for bail pending appeal.",
       "significance": "Major press freedom case draws international condemnation; CPJ says verdict shows 'empty talk' on Marcos press freedom pledges",
       "diaspora_impact": "Press freedom concerns affect information access for diaspora; international condemnation of verdict raises governance concerns.",
-      "mentioned_dynasties": ["MARCOS_ROMUALDEZ"],
+      "mentioned_dynasties": [
+        "MARCOS_ROMUALDEZ"
+      ],
       "sources": {
         "international": [
           "https://www.democracynow.org/2026/1/23/headlines/filipino_radio_journalist_sentenced_to_up_to_18_years_in_prison",
@@ -729,7 +804,9 @@
       "description": "The Armed Forces of the Philippines and US Indo-Pacific Command conducted their first joint maritime cooperative activity of 2026 near Scarborough Shoal on January 25-26. The Philippines deployed the frigate BRP Antonio Luna, a coast guard offshore patrol vessel, two military aircraft, and a helicopter. The US contributed the USS John Finn, an Arleigh Burke-class guided missile destroyer, and an MH-60R Seahawk helicopter. This marked the 11th such exercise since November 2023, reflecting intensified military cooperation under President Marcos. The exercise occurred as China and the Philippines engage in tense negotiations over the South China Sea Code of Conduct.",
       "significance": "First joint maritime activity of 2026 in contested waters; demonstrates deepening US-Philippines alliance; over 500 joint military activities planned for 2026",
       "diaspora_impact": "Enhanced defense cooperation provides security reassurance for diaspora families; strengthens Philippines' position in maritime disputes affecting fishing communities.",
-      "mentioned_dynasties": ["MARCOS_ROMUALDEZ"],
+      "mentioned_dynasties": [
+        "MARCOS_ROMUALDEZ"
+      ],
       "sources": {
         "international": [
           "https://www.bloomberg.com/news/articles/2026-01-27/us-philippines-stage-drills-at-disputed-shoal-claimed-by-china"
@@ -771,7 +848,9 @@
       "description": "Judges at the International Criminal Court ruled that former President Rodrigo Duterte, 80, is fit to stand trial for crimes against humanity related to his 'war on drugs.' The court rejected defense arguments that Duterte is in frail health and unfit to participate in legal proceedings. Following assessment by a panel of medical experts, judges found Duterte 'is able effectively to exercise his procedural rights.' The hearing has been rescheduled for February 23, 2026. ICC prosecutors allege Duterte created, funded, and armed death squads that killed thousands of alleged drug users. Human rights groups hailed the ruling as 'a resounding victory for justice and accountability.'",
       "significance": "Historic ruling - first Asian former head of state to face ICC trial; sets precedent for accountability; hearing scheduled for February 23",
       "diaspora_impact": "Landmark case for human rights accountability resonates with diaspora; families of drug war victims may see justice; raises questions about rule of law in Philippines.",
-      "mentioned_dynasties": ["DUTERTE_FAMILY"],
+      "mentioned_dynasties": [
+        "DUTERTE_FAMILY"
+      ],
       "sources": {
         "international": [
           "https://www.aljazeera.com/news/2026/1/26/icc-judges-find-former-philippine-president-duterte-fit-to-stand-trial",
@@ -831,7 +910,10 @@
       "description": "The Supreme Court affirmed its ruling that barred impeachment proceedings against Vice President Sara Duterte. The High Court en banc unanimously denied the motion for reconsideration that sought to overturn the decision voiding impeachment complaints against the Vice President. SC spokesperson Camille Sue Mae Ting confirmed the ruling upholds that the fourth impeachment complaint was covered by the one-year bar rule. According to the original ruling, any subsequent impeachment complaint 'may only be filed starting February 6, 2026.' Meanwhile, new plunder and graft complaints were filed against VP Duterte on January 21 over alleged misuse of P650 million in confidential funds.",
       "significance": "VP Duterte protected until February 6; House revising impeachment rules; new criminal complaints separate from impeachment process",
       "diaspora_impact": "Political dynamics between major families affect governance stability; outcome shapes 2028 election dynamics important to diaspora.",
-      "mentioned_dynasties": ["DUTERTE_FAMILY", "MARCOS_ROMUALDEZ"],
+      "mentioned_dynasties": [
+        "DUTERTE_FAMILY",
+        "MARCOS_ROMUALDEZ"
+      ],
       "sources": {
         "international": [],
         "local": [
@@ -842,6 +924,24 @@
       "weekly_review": "weekly-reviews/weekly-review-2026-01-31.html"
     },
     {
+      "date": "2026-02-01",
+      "month": "February",
+      "title": "San Miguel Beermen Win Back-to-Back PBA Philippine Cup Championships",
+      "category": "Cultural",
+      "description": "The San Miguel Beermen clinched their second consecutive PBA Philippine Cup championship, defeating TNT Tropang Giga 92-77 in Game 6 of the Finals. June Mar Fajardo was named Finals MVP, continuing his legendary run as one of the greatest players in PBA history. The Beermen's dominant performance cemented their dynasty status in Philippine basketball. The 2026 PBA Commissioner's Cup (Season 50) is set to begin on March 11, featuring the Macau Black Bears as the guest team.",
+      "significance": "San Miguel extends basketball dynasty with back-to-back titles; June Mar Fajardo cements legacy as all-time great",
+      "diaspora_impact": "PBA remains the most-watched Filipino sports league abroad; championship celebrations unite diaspora communities worldwide.",
+      "mentioned_dynasties": [],
+      "sources": {
+        "international": [],
+        "local": [
+          "https://www.pba.ph/news",
+          "https://www.spin.ph/basketball/pba/"
+        ]
+      },
+      "weekly_review": "weekly-reviews/weekly-review-2026-02-08.html"
+    },
+    {
       "date": "2026-02-02",
       "month": "February",
       "title": "Two Impeachment Complaints Filed Against VP Sara Duterte",
@@ -849,7 +949,10 @@
       "description": "Activists filed two impeachment complaints against Vice President Sara Duterte on February 2, 2026, the first day new complaints could be filed after the one-year constitutional bar expired. The first complaint was filed by leftist leaders and endorsed by the three-member Makabayan bloc. The second was led by Tindig Pilipinas convenor Kiko Aquino Dee and religious leaders, with support from Akbayan Partylist Rep. Perci Cendaña and former Senator Leila de Lima. The complaints allege five articles of impeachment: constitutional violations, graft and corruption, bribery, betrayal of public trust, and other high crimes. Specific allegations include misuse of billions in confidential and intelligence funds, bribery and unexplained wealth accumulation, gross incompetence and abuse of power, and tolerating extrajudicial killings while participating in efforts to destabilize the government. On February 6, House Secretary General Cheloy Velicaria-Garafil confirmed the complaints were transmitted to Speaker Bojie Dy's office.",
       "significance": "First impeachment complaints against VP Duterte since Supreme Court voided previous attempts; signals intensification of Marcos-Duterte political warfare as 2028 elections approach",
       "diaspora_impact": "Escalating political tensions between major families affect governance stability; outcome will shape 2028 election dynamics and national direction.",
-      "mentioned_dynasties": ["DUTERTE_FAMILY", "MARCOS_ROMUALDEZ"],
+      "mentioned_dynasties": [
+        "DUTERTE_FAMILY",
+        "MARCOS_ROMUALDEZ"
+      ],
       "sources": {
         "international": [
           "https://abcnews.go.com/International/wireStory/philippine-vice-president-faces-2-new-impeachment-bids-129775355",
@@ -864,6 +967,24 @@
       "weekly_review": "weekly-reviews/weekly-review-2026-02-08.html"
     },
     {
+      "date": "2026-02-02",
+      "month": "February",
+      "title": "Philippine Economic Outlook Darkens Amid Corruption Scandal",
+      "category": "Economic",
+      "description": "The Philippines' economic outlook darkened in early February 2026 as authorities continued grappling with findings of misuse of funds in infrastructure projects. Government spending, traditionally a key driver of Philippine economic growth, has stalled amid the corruption scandal. The Independent Commission for Infrastructure (ICI) submitted its accomplishment report to the Office of the President on February 6, covering September 15, 2025 to January 18, 2026, detailing investigations into anomalous flood control projects and budget insertions. Despite OECD projections of 5.1% GDP growth in 2026 and 5.8% in 2027, analysts warn that the spending freeze could undermine these targets. The scandal compounds other economic pressures including persistent fuel price increases (diesel entering eighth week of uptrend) and concerns about consumption despite central bank rate cuts.",
+      "significance": "Infrastructure corruption scandal stalling government spending, threatening GDP growth projections amid broader economic pressures",
+      "diaspora_impact": "The corruption scandal directly affects diaspora remittances' effectiveness, as misused infrastructure funds could have improved living conditions for families in the Philippines. Reduced government spending may slow economic growth, affecting job opportunities for relatives and potentially increasing pressure on overseas Filipinos to send more support. The scandal also erodes confidence in governance, influencing investment decisions by diaspora members considering business ventures or retirement plans in the Philippines.",
+      "mentioned_dynasties": [],
+      "sources": {
+        "international": [],
+        "local": [
+          "https://mb.com.ph/2026/02/02/philippines-economic-outlook-darkens-as-corruption-scandal-lingers",
+          "https://www.philstar.com/headlines/2026/02/06/2506222/125-day-report-submitted-marcos-decide-icis-fate-soon"
+        ]
+      },
+      "weekly_review": "weekly-reviews/weekly-review-2026-02-08.html"
+    },
+    {
       "date": "2026-02-04",
       "month": "February",
       "title": "House Panel Dismisses Marcos Impeachment - President Gains One-Year Immunity",
@@ -871,7 +992,9 @@
       "description": "The House Committee on Justice voted to dismiss two impeachment complaints against President Ferdinand Marcos Jr., ruling both 'insufficient in substance' under constitutional standards. The first complaint, filed by private citizen Andre de Jesus, was dismissed 42-1-3. The second, endorsed by the Makabayan coalition, was dismissed 39-7. Charges included betrayal of public trust over the alleged 'BBM Parametric Formula' in infrastructure spending linked to flood control anomalies, irregularities in PhilHealth funds, and claims of drug use. With the dismissal, Marcos effectively gains one-year immunity from further impeachment proceedings under the Constitution, unless the House plenary reverses the committee with a one-third vote. Critics noted the swift dismissal may set precedent for VP Sara Duterte's case.",
       "significance": "First impeachment attempt against Marcos since 2022; dismissal grants constitutional immunity for one year; reflects House dominance by administration allies",
       "diaspora_impact": "Political stability concerns for diaspora monitoring homeland governance; one-year immunity provides predictability but raises accountability questions.",
-      "mentioned_dynasties": ["MARCOS_ROMUALDEZ"],
+      "mentioned_dynasties": [
+        "MARCOS_ROMUALDEZ"
+      ],
       "sources": {
         "international": [
           "https://abcnews.go.com/International/wireStory/philippine-lawmakers-find-bid-impeach-marcos-insufficient-substance-129842292",
@@ -924,6 +1047,26 @@
       "weekly_review": "weekly-reviews/weekly-review-2026-02-08.html"
     },
     {
+      "date": "2026-02-05",
+      "month": "February",
+      "title": "Trump Invites Marcos to Join 'Board of Peace' for Gaza Reconstruction",
+      "category": "International Relations",
+      "description": "US President Donald Trump sent a personal letter to President Ferdinand Marcos Jr. inviting the Philippines to join the 'Board of Peace,' an initiative to oversee Gaza's rehabilitation until 2027. The board, chaired by Trump, is envisioned as a group of world leaders mediating global conflicts. US Ambassador MaryKay Carlson confirmed the Philippines cannot afford the $1 billion 'voluntary' membership fee but may contribute construction workers and healthcare personnel instead. The Makabayan bloc urged the government to reject the invitation, calling it 'a mechanism to legitimize US occupation of Gaza' that bypasses the United Nations.",
+      "significance": "Philippines faces diplomatic balancing act between US alliance and international law concerns; cost barrier limits participation options",
+      "diaspora_impact": "Filipino construction and healthcare workers may find employment opportunities in Gaza reconstruction; diplomatic stance affects Philippines' international standing.",
+      "mentioned_dynasties": [
+        "MARCOS_ROMUALDEZ"
+      ],
+      "sources": {
+        "international": [],
+        "local": [
+          "https://www.manilatimes.net/2026/02/05/news/trump-invites-philippines-to-join-board-of-peace/2272515",
+          "https://www.gmanetwork.com/news/topstories/nation/975547/trump-philippines-board-peace/story/"
+        ]
+      },
+      "weekly_review": "weekly-reviews/weekly-review-2026-02-08.html"
+    },
+    {
       "date": "2026-02-06",
       "month": "February",
       "title": "Mayon Volcano SO2 Emissions Hit 15-Year High - Over 6,500 Tonnes",
@@ -950,86 +1093,14 @@
       "description": "A Chinese naval vessel issued 28 radio challenges to a Philippine patrol aircraft during a routine government surveillance flight over Panatag (Scarborough) Shoal. The People's Liberation Army-Navy vessel, identified as hull number 553, issued the repeated challenges at around 10 AM during the Philippine aircraft's maritime domain awareness mission. The incident comes as Chinese vessels in the West Philippine Sea doubled from 20 in December 2025 to 41 in January 2026. Malacañang reaffirmed the Philippines will continue to assert its sovereignty over the WPS, rejecting calls from some politicians to give up the Kalayaan Island Group. The Philippines, as ASEAN Chair, aims to complete the South China Sea Code of Conduct negotiations in 2026.",
       "significance": "Escalating WPS tensions with unprecedented radio challenges; reflects China's more aggressive posture during Philippines' ASEAN chairmanship year",
       "diaspora_impact": "Sovereignty issues resonate strongly with overseas Filipinos; fishing community safety and regional stability affect diaspora families.",
-      "mentioned_dynasties": ["MARCOS_ROMUALDEZ"],
+      "mentioned_dynasties": [
+        "MARCOS_ROMUALDEZ"
+      ],
       "sources": {
         "international": [],
         "local": [
           "https://www.inquirer.net/466940/china-warship-challenges-philippine-patrol-aircraft-28-times-over-panatag/",
           "https://www.gmanetwork.com/news/topstories/nation/975625/ph-to-assert-rights-in-wps-amid-call-to-give-up-kalayaan-group-of-islands-palace/story/"
-        ]
-      },
-      "weekly_review": "weekly-reviews/weekly-review-2026-02-08.html"
-    },
-    {
-      "date": "2026-02-07",
-      "month": "February",
-      "title": "Duterte Defense Seeks to Add 78 Evidence Items Before ICC Hearing",
-      "category": "Legal",
-      "description": "The defense team of former President Rodrigo Duterte filed a motion to add 78 evidence items ahead of the International Criminal Court confirmation of charges hearing scheduled for February 23-27, 2026. The hearing before Pre-Trial Chamber I, presided by Judge Iulia Antoanella Motoc, will determine whether sufficient evidence exists to establish substantial grounds that Duterte committed crimes against humanity. If charges are confirmed, the case transfers to a Trial Chamber for trial. The ICC ruled on January 26 that the 80-year-old Duterte is fit to stand trial, rejecting defense arguments of frail health. Human rights groups continue to call the proceedings 'a resounding victory for justice and accountability' for thousands of drug war victims.",
-      "significance": "Critical pre-hearing developments as first Asian former head of state faces ICC trial; Feb 23 hearing is historic moment for international justice",
-      "diaspora_impact": "Landmark case for human rights accountability resonates with diaspora; families of drug war victims await justice; outcome shapes Philippines' international standing.",
-      "mentioned_dynasties": ["DUTERTE_FAMILY"],
-      "sources": {
-        "international": [
-          "https://www.icc-cpi.int/news/duterte-case-confirmation-charges-hearing-open-23-february-2026-practical-information"
-        ],
-        "local": [
-          "https://www.manilatimes.net/2026/02/07/news/duterte-defense-seeks-to-add-78-evidence-ahead-of-icc-hearing/2273635"
-        ]
-      },
-      "weekly_review": "weekly-reviews/weekly-review-2026-02-08.html"
-    },
-    {
-      "date": "2026-02-01",
-      "month": "February",
-      "title": "San Miguel Beermen Win Back-to-Back PBA Philippine Cup Championships",
-      "category": "Cultural",
-      "description": "The San Miguel Beermen clinched their second consecutive PBA Philippine Cup championship, defeating TNT Tropang Giga 92-77 in Game 6 of the Finals. June Mar Fajardo was named Finals MVP, continuing his legendary run as one of the greatest players in PBA history. The Beermen's dominant performance cemented their dynasty status in Philippine basketball. The 2026 PBA Commissioner's Cup (Season 50) is set to begin on March 11, featuring the Macau Black Bears as the guest team.",
-      "significance": "San Miguel extends basketball dynasty with back-to-back titles; June Mar Fajardo cements legacy as all-time great",
-      "diaspora_impact": "PBA remains the most-watched Filipino sports league abroad; championship celebrations unite diaspora communities worldwide.",
-      "mentioned_dynasties": [],
-      "sources": {
-        "international": [],
-        "local": [
-          "https://www.pba.ph/news",
-          "https://www.spin.ph/basketball/pba/"
-        ]
-      },
-      "weekly_review": "weekly-reviews/weekly-review-2026-02-08.html"
-    },
-    {
-      "date": "2026-02-05",
-      "month": "February",
-      "title": "Trump Invites Marcos to Join 'Board of Peace' for Gaza Reconstruction",
-      "category": "International Relations",
-      "description": "US President Donald Trump sent a personal letter to President Ferdinand Marcos Jr. inviting the Philippines to join the 'Board of Peace,' an initiative to oversee Gaza's rehabilitation until 2027. The board, chaired by Trump, is envisioned as a group of world leaders mediating global conflicts. US Ambassador MaryKay Carlson confirmed the Philippines cannot afford the $1 billion 'voluntary' membership fee but may contribute construction workers and healthcare personnel instead. The Makabayan bloc urged the government to reject the invitation, calling it 'a mechanism to legitimize US occupation of Gaza' that bypasses the United Nations.",
-      "significance": "Philippines faces diplomatic balancing act between US alliance and international law concerns; cost barrier limits participation options",
-      "diaspora_impact": "Filipino construction and healthcare workers may find employment opportunities in Gaza reconstruction; diplomatic stance affects Philippines' international standing.",
-      "mentioned_dynasties": ["MARCOS_ROMUALDEZ"],
-      "sources": {
-        "international": [],
-        "local": [
-          "https://www.manilatimes.net/2026/02/05/news/trump-invites-philippines-to-join-board-of-peace/2272515",
-          "https://www.gmanetwork.com/news/topstories/nation/975547/trump-philippines-board-peace/story/"
-        ]
-      },
-      "weekly_review": "weekly-reviews/weekly-review-2026-02-08.html"
-    },
-    {
-      "date": "2026-02-07",
-      "month": "February",
-      "title": "Philippines-US Commemorate 80 Years of Diplomatic Relations",
-      "category": "International Relations",
-      "description": "The Philippines and United States launched celebrations commemorating the 80th anniversary of diplomatic relations. House Speaker Martin Romualdez joined US Embassy Chargé d'Affaires Robert Ewing to unveil the official anniversary logo at a ceremony in Manila. The milestone comes as the two nations maintain their Mutual Defense Treaty alliance, conduct over 500 joint military exercises annually, and navigate regional tensions in the South China Sea. The Philippines hosts ASEAN this year while strengthening security cooperation with Washington.",
-      "significance": "Eight decades of alliance reinforced amid regional tensions; Philippines-US defense ties at historic high with 500+ annual exercises",
-      "diaspora_impact": "Strong bilateral ties benefit the 4+ million Filipino Americans; continued visa facilitation and people-to-people exchanges strengthen diaspora connections.",
-      "mentioned_dynasties": ["MARCOS_ROMUALDEZ", "ROMUALDEZ_FAMILY"],
-      "sources": {
-        "international": [
-          "https://ph.usembassy.gov/united-states-philippines-celebrate-80th-anniversary-of-diplomatic-ties-in-2026/"
-        ],
-        "local": [
-          "https://www.philstar.com/headlines/2026/02/07/2506278/philippines-united-states-commemorate-80-years-diplomatic-relations"
         ]
       },
       "weekly_review": "weekly-reviews/weekly-review-2026-02-08.html"
@@ -1051,6 +1122,159 @@
         ]
       },
       "weekly_review": "weekly-reviews/weekly-review-2026-02-08.html"
+    },
+    {
+      "date": "2026-02-06",
+      "month": "February",
+      "title": "Typhoon Basyang Makes Landfall in Caraga Region",
+      "category": "Natural Disasters",
+      "description": "Typhoon Basyang (international name: Penha) made landfall near the city of Cantilan in Caraga region on February 6, 2026, with sustained winds of 40 mph. The storm initially formed in the Northwest Pacific on February 4 with wind speeds of 33 mph before intensifying as it approached the Philippines. Cantilan and surrounding communities in Surigao del Sur province experienced heavy rainfall and strong winds, affecting fishing communities and agricultural areas. The typhoon marked the first significant storm to make landfall in February 2026, raising concerns about an active early typhoon season.",
+      "significance": "First typhoon of February 2026 to make landfall, affecting eastern Mindanao communities still recovering from previous storms",
+      "diaspora_impact": "Overseas Filipinos with family in eastern Mindanao monitored the storm's impact closely, particularly those with relatives in coastal communities dependent on fishing. The timing raises concerns about multiple typhoons early in the year, potentially affecting food security and requiring remittance support for rebuilding efforts.",
+      "mentioned_dynasties": [],
+      "sources": {
+        "international": [
+          "https://www.worlddata.info/asia/philippines/typhoons.php"
+        ],
+        "local": []
+      },
+      "weekly_review": "weekly-reviews/weekly-review-2026-02-08.html"
+    },
+    {
+      "date": "2026-02-06",
+      "month": "February",
+      "title": "5.0 Magnitude Earthquake Strikes Off Northern Mindanao",
+      "category": "Natural Disasters",
+      "description": "A magnitude 5.0 earthquake struck 189 kilometers northeast of Cagayan de Oro in Northern Mindanao at 2:15 AM local time on February 6, 2026. The quake occurred at a depth of approximately 152 kilometers. The offshore location and depth minimized damage, but the event coincided with Typhoon Basyang's landfall in nearby Caraga region, creating a challenging dual-disaster scenario for emergency responders. No immediate reports of casualties or significant structural damage emerged, though the deep offshore tremor was felt across parts of Northern Mindanao.",
+      "significance": "Moderate earthquake occurring simultaneously with Typhoon Basyang, adding to disaster preparedness concerns in Mindanao",
+      "diaspora_impact": "The coincidence of earthquake and typhoon on the same day heightened anxiety for diaspora families with relatives in Mindanao. The dual events underscore the Philippines' vulnerability to multiple natural hazards and the importance of disaster preparedness investments that diaspora remittances often support.",
+      "mentioned_dynasties": [],
+      "sources": {
+        "international": [
+          "https://www.worlddata.info/asia/philippines/earthquakes.php"
+        ],
+        "local": []
+      },
+      "weekly_review": "weekly-reviews/weekly-review-2026-02-08.html"
+    },
+    {
+      "date": "2026-02-07",
+      "month": "February",
+      "title": "Duterte Defense Seeks to Add 78 Evidence Items Before ICC Hearing",
+      "category": "Legal",
+      "description": "The defense team of former President Rodrigo Duterte filed a motion to add 78 evidence items ahead of the International Criminal Court confirmation of charges hearing scheduled for February 23-27, 2026. The hearing before Pre-Trial Chamber I, presided by Judge Iulia Antoanella Motoc, will determine whether sufficient evidence exists to establish substantial grounds that Duterte committed crimes against humanity. If charges are confirmed, the case transfers to a Trial Chamber for trial. The ICC ruled on January 26 that the 80-year-old Duterte is fit to stand trial, rejecting defense arguments of frail health. Human rights groups continue to call the proceedings 'a resounding victory for justice and accountability' for thousands of drug war victims.",
+      "significance": "Critical pre-hearing developments as first Asian former head of state faces ICC trial; Feb 23 hearing is historic moment for international justice",
+      "diaspora_impact": "Landmark case for human rights accountability resonates with diaspora; families of drug war victims await justice; outcome shapes Philippines' international standing.",
+      "mentioned_dynasties": [
+        "DUTERTE_FAMILY"
+      ],
+      "sources": {
+        "international": [
+          "https://www.icc-cpi.int/news/duterte-case-confirmation-charges-hearing-open-23-february-2026-practical-information"
+        ],
+        "local": [
+          "https://www.manilatimes.net/2026/02/07/news/duterte-defense-seeks-to-add-78-evidence-ahead-of-icc-hearing/2273635"
+        ]
+      },
+      "weekly_review": "weekly-reviews/weekly-review-2026-02-08.html"
+    },
+    {
+      "date": "2026-02-07",
+      "month": "February",
+      "title": "Philippines-US Commemorate 80 Years of Diplomatic Relations",
+      "category": "International Relations",
+      "description": "The Philippines and United States launched celebrations commemorating the 80th anniversary of diplomatic relations. House Speaker Martin Romualdez joined US Embassy Chargé d'Affaires Robert Ewing to unveil the official anniversary logo at a ceremony in Manila. The milestone comes as the two nations maintain their Mutual Defense Treaty alliance, conduct over 500 joint military exercises annually, and navigate regional tensions in the South China Sea. The Philippines hosts ASEAN this year while strengthening security cooperation with Washington.",
+      "significance": "Eight decades of alliance reinforced amid regional tensions; Philippines-US defense ties at historic high with 500+ annual exercises",
+      "diaspora_impact": "Strong bilateral ties benefit the 4+ million Filipino Americans; continued visa facilitation and people-to-people exchanges strengthen diaspora connections.",
+      "mentioned_dynasties": [
+        "MARCOS_ROMUALDEZ",
+        "ROMUALDEZ_FAMILY"
+      ],
+      "sources": {
+        "international": [
+          "https://ph.usembassy.gov/united-states-philippines-celebrate-80th-anniversary-of-diplomatic-ties-in-2026/"
+        ],
+        "local": [
+          "https://www.philstar.com/headlines/2026/02/07/2506278/philippines-united-states-commemorate-80-years-diplomatic-relations"
+        ]
+      },
+      "weekly_review": "weekly-reviews/weekly-review-2026-02-08.html"
+    },
+    {
+      "date": "2026-02-09",
+      "month": "February",
+      "title": "Duterte Defense Team Accused of ICC Delaying Tactics",
+      "category": "Legal",
+      "description": "A network of human rights advocates supporting victims of Rodrigo Duterte's drug war publicly criticized the former president and his legal defense team on February 9, 2026, accusing them of employing 'delaying tactics' to prevent the International Criminal Court trial from proceeding. The advocates' statement comes two weeks before Duterte's confirmation of charges hearing, scheduled to begin February 23 at 10 AM Netherlands time (5 PM Philippine time). The hearing will span multiple days, with February 26 reserved for Duterte's defense team (180 minutes total), and February 27 as the final day. The defense team had previously attempted to submit 78 additional evidence items and sought disclosure of medical information, both moves seen by critics as attempts to postpone proceedings.",
+      "significance": "Critical development in the ICC case against former president Duterte, with confirmation hearing scheduled for February 23",
+      "diaspora_impact": "The ICC case remains highly significant for Filipino diaspora communities, particularly human rights advocates abroad who have campaigned for accountability. The trial's outcome could affect the Philippines' international reputation and governance standards, which directly impact diaspora members' pride in their homeland and their willingness to invest or return. Family members of drug war victims living overseas watch the proceedings closely for justice.",
+      "mentioned_dynasties": [
+        "DUTERTE_FAMILY"
+      ],
+      "sources": {
+        "international": [],
+        "local": [
+          "https://www.philstar.com/headlines/2026/02/09/2506703/duterte-camp-hit-delaying-tactics-icc",
+          "https://www.rappler.com/newsbreak/iq/rodrigo-duterte-international-criminal-court-key-dates/"
+        ]
+      },
+      "weekly_review": "weekly-reviews/weekly-review-2026-02-15.html"
+    },
+    {
+      "date": "2026-02-09",
+      "month": "February",
+      "title": "Senate Approves Resolution Condemning Chinese Embassy",
+      "category": "International Relations",
+      "description": "The Philippine Senate approved a resolution on February 9, 2026, condemning remarks made by the Chinese embassy in the Philippines, after days of deliberation and plenary debate. The resolution represents an escalation in diplomatic tensions between Manila and Beijing, coming shortly after reports that a Chinese warship challenged Philippine aircraft 28 times over Panatag (Scarborough) Shoal on February 6. The Senate action reflects growing frustration among lawmakers over Chinese assertions in the West Philippine Sea and represents one of the strongest formal legislative rebukes against Beijing's embassy in recent years.",
+      "significance": "Escalation of Philippines-China diplomatic tensions, reflecting ongoing South China Sea disputes",
+      "diaspora_impact": "South China Sea tensions directly affect diaspora confidence in the Philippines' sovereignty and security. Overseas Filipinos monitor these developments as indicators of geopolitical stability affecting family safety and investment decisions. The Senate's firm stance may reassure diaspora communities that Philippine institutions are defending territorial integrity, though escalating tensions also raise concerns about potential conflicts.",
+      "mentioned_dynasties": [],
+      "sources": {
+        "international": [],
+        "local": [
+          "https://www.rappler.com/video/top-5-news-this-week/february-14-2026/"
+        ]
+      },
+      "weekly_review": "weekly-reviews/weekly-review-2026-02-15.html"
+    },
+    {
+      "date": "2026-02-09",
+      "month": "February",
+      "title": "Clergy Files Third Impeachment Complaint Against VP Sara Duterte",
+      "category": "Political",
+      "description": "Clergy members filed a third impeachment complaint against Vice President Sara Duterte on February 9, 2026, describing it as an issue of 'moral concern.' This followed the February 2 refiling of complaints by progressive and civil society leaders, made possible after the Supreme Court ruled that Duterte's one-year impeachment immunity (triggered January 14, 2025) expired on January 15, 2026. The clergy complaint accuses Duterte of betrayal of public trust, culpable violation of the Constitution, and high crimes related to alleged misuse of P612.5 million in confidential funds, supposed bribery of education officials, her assassination threat against President Ferdinand Marcos Jr. and his family, and alleged unexplained wealth. The new complaints include the affidavit of detainee Ramil Madriaga. Political analysts note that the 20th Congress has more vocal Duterte supporters than the previous session, making conviction difficult despite 215 of 306 lawmakers supporting impeachment in the 19th Congress.",
+      "significance": "Third impeachment complaint filed, now from clergy members, maintaining pressure on Vice President despite political challenges",
+      "diaspora_impact": "The impeachment saga affects diaspora views on Philippine governance and accountability. As frontrunner for the 2028 presidential elections, Sara Duterte's legal troubles and the complaints' allegations about fund misuse directly concern overseas Filipinos who care about anti-corruption efforts and proper use of public funds that could otherwise support services for families back home.",
+      "mentioned_dynasties": [
+        "DUTERTE_FAMILY",
+        "MARCOS_ROMUALDEZ"
+      ],
+      "sources": {
+        "international": [],
+        "local": [
+          "https://www.rappler.com/philippines/clergy-members-file-impeachment-complaint-sara-duterte-february-9-2026/",
+          "https://www.rappler.com/philippines/new-impeachment-complaint-filed-vice-president-sara-duterte-february-2-2026/"
+        ]
+      },
+      "weekly_review": "weekly-reviews/weekly-review-2026-02-15.html"
+    },
+    {
+      "date": "2026-02-14",
+      "month": "February",
+      "title": "Philippines Celebrates First Valentine's Day with Michelin-Recognized Restaurants",
+      "category": "Cultural",
+      "description": "Valentine's Day 2026 marked a historic first for the Philippines: the first Valentine's celebration since the prestigious Michelin Guide launched in the country in October 2025, recognizing 108 establishments. Restaurants across Metro Manila offered special Valentine's set menus ranging from P3,500 to P15,000 for two people. Notable offerings included Morton's The Steakhouse (P15,000, Feb 10-17), Sakagura's five-course omakase (P11,990, Feb 13-15), Your Local (P9,800, Feb 14-15), and Michelin-recognized Linamnam (P9,500, Feb 11-15). December Avenue's 'For the Ones We Love' concert was held at the Big Dome on Valentine's Day, adding to the festive atmosphere. The occasion showcased the Philippines' growing reputation as a culinary destination, with diners able to celebrate in internationally recognized establishments for the first time.",
+      "significance": "Milestone celebration marking the Philippines' entry into Michelin Guide recognition, boosting culinary tourism and national pride",
+      "diaspora_impact": "The Michelin recognition and Valentine's celebrations represent cultural pride for Filipino diaspora communities, demonstrating the Philippines' world-class culinary scene. This milestone may encourage diaspora visits home and boosts the country's image as a sophisticated destination, countering stereotypes. For overseas Filipinos in the food industry, it validates Filipino cuisine's international caliber.",
+      "mentioned_dynasties": [],
+      "sources": {
+        "international": [],
+        "local": [
+          "https://www.gmanetwork.com/news/lifestyle/food/975012/valentine-s-day-2026-restaurants-with-special-set-menus-for-you-to-enjoy-with-your-special-someone/story/",
+          "https://www.gmanetwork.com/news/lifestyle/food/976433/how-much-does-a-valentine-s-day-date-in-a-michelin-recognized-restaurant-cost/story/"
+        ]
+      },
+      "weekly_review": "weekly-reviews/weekly-review-2026-02-15.html"
     }
   ],
   "ofw_highlights": {
@@ -1062,8 +1286,16 @@
       "minimum_wage_increase": "Domestic workers: $400 to $500/month",
       "digital_ofw_pass": "514,966 e-Travel transactions processed in 2025",
       "travel_advisories": {
-        "suspended": ["Israel", "Lebanon", "Iran", "Jordan"],
-        "caution": ["Myanmar", "Southeast Asia (scam hub operations)"],
+        "suspended": [
+          "Israel",
+          "Lebanon",
+          "Iran",
+          "Jordan"
+        ],
+        "caution": [
+          "Myanmar",
+          "Southeast Asia (scam hub operations)"
+        ],
         "new_market": "Oman MOU expected January 2026"
       }
     }
@@ -1073,13 +1305,62 @@
       "week_ending": "2026-01-02",
       "source": "PAGASA",
       "forecast": [
-        { "day": "Fri", "date": "Dec 27", "high": 31, "low": 25, "condition": "partly_cloudy", "rain_chance": 20 },
-        { "day": "Sat", "date": "Dec 28", "high": 30, "low": 24, "condition": "cloudy", "rain_chance": 40 },
-        { "day": "Sun", "date": "Dec 29", "high": 29, "low": 24, "condition": "rain", "rain_chance": 70 },
-        { "day": "Mon", "date": "Dec 30", "high": 30, "low": 25, "condition": "partly_cloudy", "rain_chance": 30 },
-        { "day": "Tue", "date": "Dec 31", "high": 31, "low": 25, "condition": "sunny", "rain_chance": 10 },
-        { "day": "Wed", "date": "Jan 1", "high": 31, "low": 25, "condition": "sunny", "rain_chance": 15 },
-        { "day": "Thu", "date": "Jan 2", "high": 30, "low": 24, "condition": "partly_cloudy", "rain_chance": 25 }
+        {
+          "day": "Fri",
+          "date": "Dec 27",
+          "high": 31,
+          "low": 25,
+          "condition": "partly_cloudy",
+          "rain_chance": 20
+        },
+        {
+          "day": "Sat",
+          "date": "Dec 28",
+          "high": 30,
+          "low": 24,
+          "condition": "cloudy",
+          "rain_chance": 40
+        },
+        {
+          "day": "Sun",
+          "date": "Dec 29",
+          "high": 29,
+          "low": 24,
+          "condition": "rain",
+          "rain_chance": 70
+        },
+        {
+          "day": "Mon",
+          "date": "Dec 30",
+          "high": 30,
+          "low": 25,
+          "condition": "partly_cloudy",
+          "rain_chance": 30
+        },
+        {
+          "day": "Tue",
+          "date": "Dec 31",
+          "high": 31,
+          "low": 25,
+          "condition": "sunny",
+          "rain_chance": 10
+        },
+        {
+          "day": "Wed",
+          "date": "Jan 1",
+          "high": 31,
+          "low": 25,
+          "condition": "sunny",
+          "rain_chance": 15
+        },
+        {
+          "day": "Thu",
+          "date": "Jan 2",
+          "high": 30,
+          "low": 24,
+          "condition": "partly_cloudy",
+          "rain_chance": 25
+        }
       ],
       "alerts": [],
       "avg_high": 30,
