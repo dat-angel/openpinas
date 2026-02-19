@@ -321,10 +321,13 @@ async function loadAllCases() {
 }
 
 function getCaseUrl(caseId) {
-  if (caseId === 'ALICE_GUO_2024') {
-    return 'alice-guo.html';
-  }
-  return `case-${caseId.toLowerCase().replace(/_/g, '-')}.html`;
+  const caseUrlMap = {
+    'ALICE_GUO_2024': 'alice-guo.html',
+    'FLOOD_CONTROL_2025': 'flood-control.html',
+    'POGO_TAX_2023': 'pogo-tax.html',
+    'POGO_TRAFFICKING_2024': 'pogo-trafficking.html'
+  };
+  return caseUrlMap[caseId] || `case-${caseId.toLowerCase().replace(/_/g, '-')}.html`;
 }
 
 function getStatusClass(status) {
