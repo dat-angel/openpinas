@@ -16,6 +16,7 @@ async function loadCaseDetail() {
     } else {
       dataPath = 'corruption-tracker/data/pogo-corruption-cases-2025.json';
     }
+    dataPath += '?v=20260219';
     
     const response = await fetch(dataPath);
     
@@ -98,7 +99,7 @@ function renderCaseDetail() {
       ${caseData.last_updated ? `<span><strong>Last Updated:</strong> ${formatDate(caseData.last_updated)}</span>` : ''}
     </div>
     <div style="margin-top: 16px; font-size: 14px;">
-      <a href="${timelineSearchUrl}" style="color: #0038A8; text-decoration: underline; text-underline-offset: 2px;">View related events in 2025 Timeline →</a>
+      <a href="${timelineSearchUrl}" style="color: #0038A8; text-decoration: underline; text-underline-offset: 2px;">View related events in Timeline →</a>
     </div>
   `;
   
@@ -154,7 +155,8 @@ function renderCaseDetail() {
       </div>
     `).join('');
   } else {
-    document.getElementById('accusedSection').style.display = 'none';
+    const el = document.getElementById('accusedSection');
+    if (el) el.style.display = 'none';
   }
   
   // POGO connections
@@ -173,7 +175,8 @@ function renderCaseDetail() {
       </div>
     `).join('');
   } else {
-    document.getElementById('pogoSection').style.display = 'none';
+    const el = document.getElementById('pogoSection');
+    if (el) el.style.display = 'none';
   }
   
   // Charges
@@ -184,7 +187,8 @@ function renderCaseDetail() {
       </ul>
     `;
   } else {
-    document.getElementById('chargesSection').style.display = 'none';
+    const el = document.getElementById('chargesSection');
+    if (el) el.style.display = 'none';
   }
   
   // Political connections
@@ -205,7 +209,8 @@ function renderCaseDetail() {
       `;
     }).join('');
   } else {
-    document.getElementById('politicalSection').style.display = 'none';
+    const el = document.getElementById('politicalSection');
+    if (el) el.style.display = 'none';
   }
   
   // Significance
@@ -219,7 +224,8 @@ function renderCaseDetail() {
     }
     document.getElementById('significanceContent').innerHTML = html;
   } else {
-    document.getElementById('significanceSection').style.display = 'none';
+    const el = document.getElementById('significanceSection');
+    if (el) el.style.display = 'none';
   }
   
   // Related cases
@@ -280,7 +286,8 @@ function renderCaseDetail() {
     }
     document.getElementById('sourcesContent').innerHTML = sourcesHtml || '<p>No sources available.</p>';
   } else {
-    document.getElementById('sourcesSection').style.display = 'none';
+    const el = document.getElementById('sourcesSection');
+    if (el) el.style.display = 'none';
   }
 }
 
@@ -299,6 +306,7 @@ async function loadAllCases() {
     } else {
       dataPath = 'corruption-tracker/data/pogo-corruption-cases-2025.json';
     }
+    dataPath += '?v=20260219';
     
     const response = await fetch(dataPath);
     if (!response.ok) {
