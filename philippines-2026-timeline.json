@@ -4,9 +4,9 @@
   "prepared_for": "Filipino Diaspora Communities Worldwide",
   "metadata": {
     "purpose": "Comprehensive timeline of major Philippine events in 2026 to help overseas Filipinos understand developments affecting families, remittances, investments, and homeland governance",
-    "last_updated": "February 14, 2026",
+    "last_updated": "February 21, 2026",
     "aggregation_note": "This timeline is aggregated by month as events unfold. Weekly reviews provide more detailed coverage.",
-    "total_events": 64,
+    "total_events": 72,
     "categories": [
       "Political",
       "Cultural",
@@ -1259,6 +1259,27 @@
       "weekly_review": "weekly-reviews/weekly-review-2026-02-15.html"
     },
     {
+      "date": "2026-02-13",
+      "month": "February",
+      "title": "Atong Ang Bounty Doubled to P20 Million as Manhunt Intensifies",
+      "category": "Legal",
+      "description": "The Department of the Interior and Local Government doubled the bounty on fugitive businessman Charlie 'Atong' Ang from P10 million to P20 million, as authorities intensified their manhunt for the alleged mastermind behind the disappearance of at least 34 cockfighting enthusiasts (sabungeros) between 2021 and 2022. Whistleblower Julie Patidongan identified Ang as the mastermind, claiming the missing sabungeros were killed and their bodies dumped in Taal Lake. Despite 10 raids on known properties across Metro Manila, Central Luzon, Calabarzon, and Bicol, authorities failed to locate Ang. The Cambodian government issued a statement denying Ang was in their country, while the Bureau of Immigration confirmed no record of him departing the Philippines. Interior Secretary Jonvic Remulla maintained that Ang remains in the country. The DOJ reiterated there are no formal records of Ang leaving the Philippines.",
+      "significance": "One of the Philippines' most high-profile manhunts, linked to the Duterte-era online sabong (e-sabong) industry that generated billions but was connected to kidnappings and killings",
+      "diaspora_impact": "The case underscores ongoing concerns about rule of law and impunity in the Philippines. The e-sabong industry affected overseas Filipino communities who also participated in online cockfighting. The manhunt tests law enforcement credibility.",
+      "mentioned_dynasties": [
+        "DUTERTE_FAMILY"
+      ],
+      "sources": {
+        "international": [],
+        "local": [
+          "https://www.philstar.com/headlines/2026/02/13/2507639/dilg-doubles-bounty-atong-ang-p20-milion",
+          "https://newsinfo.inquirer.net/2183234/atong-ang-manhunt-10-raids-in-past-week-fail-to-find-him-remulla",
+          "https://www.manilatimes.net/2026/02/17/news/atong-ang-nowhere-to-be-found-after-10-raids-on-known-sites-remulla/2279240"
+        ]
+      },
+      "weekly_review": "weekly-reviews/weekly-review-2026-02-22.html"
+    },
+    {
       "date": "2026-02-14",
       "month": "February",
       "title": "Philippines Celebrates First Valentine's Day with Michelin-Recognized Restaurants",
@@ -1275,6 +1296,161 @@
         ]
       },
       "weekly_review": "weekly-reviews/weekly-review-2026-02-15.html"
+    },
+    {
+      "date": "2026-02-14",
+      "month": "February",
+      "title": "Philippines Signs Defense Pacts with Italy and Estonia at Munich Security Conference",
+      "category": "International Relations",
+      "description": "Foreign Affairs Secretary Theresa Lazaro signed two bilateral agreements at the Munich Security Conference in Germany. The Philippines and Italy sealed a renewed defense cooperation agreement with Italian Defense Minister Guido Crosetto, replacing an expired memorandum of understanding. The new pact expands potential for defense co-production, technology partnerships, and procurement cooperation, with a focus on boosting maritime security. Lazaro also signed a Memorandum of Understanding on Digital Cooperation with Estonia, covering cybersecurity and capacity building. Estonian Foreign Minister Margus Tsahkna expressed readiness to deepen cybersecurity cooperation with the Philippines. The agreements reflect the Philippines' strategy of diversifying defense partnerships beyond the United States amid ongoing South China Sea tensions with Beijing.",
+      "significance": "Expands the Philippines' defense network to European partners, signaling a more diversified security posture beyond traditional US alliance",
+      "diaspora_impact": "Defense modernization and international partnerships improve national security, directly affecting the safety of families in the Philippines. The Estonia cybersecurity deal could strengthen digital infrastructure protecting OFW remittance systems and government services.",
+      "mentioned_dynasties": [
+        "MARCOS_ROMUALDEZ"
+      ],
+      "sources": {
+        "international": [
+          "https://manilastandard.net/news/314704129/philippines-signs-pacts-with-estonia-italy-at-munich-security-conference.html"
+        ],
+        "local": [
+          "https://www.pna.gov.ph/articles/1269057",
+          "https://mb.com.ph/2026/02/17/dnd-phs-renewed-defense-pact-with-italy-to-boost-maritime-security"
+        ]
+      },
+      "weekly_review": "weekly-reviews/weekly-review-2026-02-22.html"
+    },
+    {
+      "date": "2026-02-15",
+      "month": "February",
+      "title": "US-Australia-Philippines Trilateral Naval Drills in South China Sea Draw Chinese Response",
+      "category": "International Relations",
+      "description": "The United States, Australia, and the Philippines conducted a two-day Multilateral Maritime Cooperative Activity on February 15-16 inside the Philippine Exclusive Economic Zone in the South China Sea. The USS Dewey (guided-missile destroyer) and a P-8A Poseidon maritime patrol aircraft represented the US, while Australia deployed the HMAS Toowoomba and another P-8A Poseidon. The Philippines contributed the BRP Teresa Magbanua, guided-missile frigate BRP Diego Silang, FA-50 fighter jets, an A-29 Super Tucano attack aircraft, and several helicopters. The exercises included visual information drills and a replenishment-at-sea. Beijing responded by deploying air and naval forces on 'combat readiness patrols' within the Philippine EEZ, according to Chinese state media. Australia's visible participation near Philippine-claimed features represents a significant deepening of trilateral maritime security cooperation in the region.",
+      "significance": "First major trilateral maritime exercise of 2026 in the South China Sea, demonstrating allied commitment to freedom of navigation and Philippine sovereignty claims",
+      "diaspora_impact": "South China Sea security directly affects Filipino fishing communities and maritime industries. Strengthened alliances reassure diaspora communities about homeland defense. However, Chinese military responses raise tensions that could affect trade and Filipino workers in China.",
+      "mentioned_dynasties": [
+        "MARCOS_ROMUALDEZ"
+      ],
+      "sources": {
+        "international": [
+          "https://www.stripes.com/theaters/asia_pacific/2026-02-17/south-china-sea-us-navy-philippines-australia-20770871.html",
+          "https://www.armyrecognition.com/news/navy-news/2026/u-s-strengthens-south-china-sea-presence-with-australia-and-philippines-in-new-trilateral-naval-activity"
+        ],
+        "local": []
+      },
+      "weekly_review": "weekly-reviews/weekly-review-2026-02-22.html"
+    },
+    {
+      "date": "2026-02-17",
+      "month": "February",
+      "title": "DFA Condemns Chinese Embassy's 'Job Loss' Warning; Senate Passes Condemnation Resolution",
+      "category": "International Relations",
+      "description": "A diplomatic row erupted after Chinese Embassy spokesman Ji Lingpeng warned that 'any serious damage to diplomatic relations, including downgrading of those relations, would cost millions of jobs' in the Philippines. The Department of Foreign Affairs took 'strong exception' to the embassy's tone, saying it implied economic cooperation could be weaponized as leverage or retaliation. The Philippine Senate adopted Resolution No. 256 condemning the Chinese Embassy for what it described as aggressive statements against Philippine officials and uniformed personnel over the South China Sea dispute. Several senators went further, calling for the expulsion of Chinese embassy officials or the recall of Ambassador Jing Quan. The row intensified amid broader tensions over the South China Sea, following the trilateral US-Australia-Philippines naval exercises and the Philippines' push to finalize an ASEAN-China code of conduct during its ASEAN chairmanship.",
+      "significance": "Rare formal Senate condemnation of a foreign embassy; marks a new low in Philippine-China diplomatic relations and reflects hardening public sentiment against Beijing's assertiveness",
+      "diaspora_impact": "The job loss warning directly concerns OFWs and diaspora families dependent on Chinese-linked industries. Deteriorating PH-China relations could affect Filipino workers in Chinese companies, trade volumes, and agricultural exports. However, Filipino public opinion has shifted strongly in favor of defending sovereignty.",
+      "mentioned_dynasties": [
+        "MARCOS_ROMUALDEZ"
+      ],
+      "sources": {
+        "international": [
+          "https://www.aljazeera.com/news/2026/2/17/philippines-rebukes-china-embassy-over-coercive-warning-of-job"
+        ],
+        "local": [
+          "https://www.rappler.com/philippines/manila-response-china-embasse-statement-job-losses/",
+          "https://www.bworldonline.com/the-nation/2026/02/17/731218/dfa-condemns-chinese-embassys-job-loss-threat/"
+        ]
+      },
+      "weekly_review": "weekly-reviews/weekly-review-2026-02-22.html"
+    },
+    {
+      "date": "2026-02-18",
+      "month": "February",
+      "title": "VP Sara Duterte Announces 2028 Presidential Bid Amid Impeachment Efforts",
+      "category": "Political",
+      "description": "Vice President Sara Duterte formally declared her candidacy for the 2028 presidential elections at a press conference at the Office of the Vice President headquarters in Mandaluyong City. Stating 'It took me 47 years to understand that my life was never meant to be only mine,' Duterte framed the announcement as a response to what she described as political persecution by the Marcos administration. The declaration came amid a deepening feud with President Marcos Jr. — whom she supported in 2022 — and fresh impeachment attempts against her. Their relationship deteriorated following a 2024 corruption inquiry into Duterte's alleged misuse of government funds and Marcos's authorization of her father's arrest. Malacañang dismissed the announcement as 'irrelevant,' noting the 2028 elections were still two years away. The announcement was widely covered internationally, with Bloomberg, The Washington Post, Al Jazeera, and The Japan Times all reporting on the story.",
+      "significance": "Earliest presidential bid declaration in Philippine history; signals the Marcos-Duterte alliance is irreparably broken and sets the stage for a bitter 2028 election cycle",
+      "diaspora_impact": "The Marcos-Duterte political war creates uncertainty about Philippine governance stability. Diaspora communities are divided along pro-Marcos and pro-Duterte lines, and this announcement will intensify political engagement among overseas Filipinos who vote in national elections.",
+      "mentioned_dynasties": [
+        "DUTERTE_FAMILY",
+        "MARCOS_ROMUALDEZ"
+      ],
+      "sources": {
+        "international": [
+          "https://www.aljazeera.com/news/2026/2/18/philippine-vp-sara-duterte-announces-run-for-president-in-2028",
+          "https://www.washingtonpost.com/world/2026/02/18/philippines-sara-duterte-ferdinand-marcos-jr/90e4abce-0c8e-11f1-8e91-6e1451aab67e_story.html"
+        ],
+        "local": [
+          "https://www.rappler.com/philippines/sara-duterte-announces-2028-presidential-bid/",
+          "https://newsinfo.inquirer.net/2183578/vice-president-sara-duterte-announces-2028-presidential-bid"
+        ]
+      },
+      "weekly_review": "weekly-reviews/weekly-review-2026-02-22.html"
+    },
+    {
+      "date": "2026-02-18",
+      "month": "February",
+      "title": "Fourth Impeachment Complaint Filed Against VP Sara Duterte",
+      "category": "Legal",
+      "description": "Lawyer Nathaniel Cabrera filed the fourth impeachment complaint against Vice President Sara Duterte before the Office of the House Secretary General, just hours after Duterte announced her intent to run for president in the 2028 elections. The complaint adds to three previous filings in February 2026: the Makabayan bloc and Tindig Pilipinas/Akbayan coalition filed complaints on February 2, and church-led groups filed a third complaint on February 9 accusing Duterte of misusing approximately P612 million in confidential funds and corrupting Department of Education officials. The renewed impeachment push follows the Supreme Court's ruling that the first impeachment in 2025 was unconstitutional due to violation of the one-year bar rule, which expired in February 2026. The House of Representatives now faces the question of whether to fast-track these new complaints as it did in 2025.",
+      "significance": "Four impeachment complaints in 16 days signals intensifying political pressure on the Vice President; tests whether the House will pursue removal proceedings a second time",
+      "diaspora_impact": "Continued political instability at the highest levels of government concerns diaspora communities monitoring governance quality. The confidential funds misuse allegations involve education budgets that directly affect families with children in Philippine public schools.",
+      "mentioned_dynasties": [
+        "DUTERTE_FAMILY"
+      ],
+      "sources": {
+        "international": [
+          "https://thediplomat.com/2026/02/fourth-impeachment-complaint-filed-against-philippine-vice-president/"
+        ],
+        "local": [
+          "https://www.rappler.com/philippines/sara-duterte-slapped-fourth-impeachment-complaint-february-18-2026/",
+          "https://tribune.net.ph/2026/02/18/lawyer-filed-4th-impeachment-rap-vs-vp-duterte"
+        ]
+      },
+      "weekly_review": "weekly-reviews/weekly-review-2026-02-22.html"
+    },
+    {
+      "date": "2026-02-19",
+      "month": "February",
+      "title": "Third Trillion Peso March Confirmed for EDSA@40 Anniversary on February 25",
+      "category": "Political",
+      "description": "Organizers confirmed the third Trillion Peso March for February 25, 2026, coinciding with the 40th anniversary of the EDSA People Power Revolution. The anti-corruption rally, organized by Caritas Philippines and civil society groups, carries the theme 'Tayo ang People Power Laban sa Korapsyon at Dinastiya!' (We are the People Power against Corruption and Dynasty). Quezon City granted access to the entire one-kilometer stretch of White Plains Avenue for the protest. Demands include passage of the Anti-Dynasty Law, Party-List Reform Law, creation of an Independent People's Commission and Independent Commission Against Infrastructure Corruption, and prosecution of perpetrators in the flood control scandal. The PNP prepared security arrangements for the event. Organizers stipulated that no political takeover calls would be allowed. The first two Trillion Peso Marches were held on September 21, 2025 (Martial Law anniversary) and November 30, 2025 (Bonifacio Day).",
+      "significance": "Largest sustained anti-corruption protest movement in the Philippines since EDSA 1986; EDSA@40 timing amplifies the message of people power against corruption and political dynasties",
+      "diaspora_impact": "The anti-dynasty and anti-corruption demands directly align with diaspora concerns about governance quality. Overseas Filipino organizations have organized solidarity marches in previous iterations. The movement's focus on the flood control scandal and political dynasties resonates with diaspora voters who want systemic reform.",
+      "mentioned_dynasties": [
+        "MARCOS_ROMUALDEZ"
+      ],
+      "sources": {
+        "international": [],
+        "local": [
+          "https://www.philstar.com/headlines/2026/02/11/2507330/trillion-peso-march-part-3-set-people-power-anniversary",
+          "https://www.gmanetwork.com/news/topstories/nation/977266/what-to-expect-for-trillion-peso-march-on-february-25-edsa-anniv/story/",
+          "https://www.pna.gov.ph/articles/1268932"
+        ]
+      },
+      "weekly_review": "weekly-reviews/weekly-review-2026-02-22.html"
+    },
+    {
+      "date": "2026-02-20",
+      "month": "February",
+      "title": "ICC Grants Duterte Request to Skip Confirmation of Charges Hearing",
+      "category": "Legal",
+      "description": "The International Criminal Court granted former President Rodrigo Duterte's request to waive his appearance at the confirmation of charges hearing scheduled for February 23-27, 2026 in The Hague, Netherlands. Duterte, who described himself as 'old, tired, and frail,' will not attend the four-day hearing. Under the Rome Statute, the confirmation hearing may proceed even without the suspect's presence. The hearing will determine whether there is sufficient evidence to establish substantial grounds that Duterte committed crimes against humanity — specifically murder and attempted murder — in connection with the 'war on drugs' campaign between November 2011 and March 2019. Following the hearing, the judges have 60 days to issue a written decision. Human Rights Watch called the hearing a 'critical step toward justice' for thousands of victims. President Marcos said he would not monitor the hearing but would be updated on developments.",
+      "significance": "Historic moment as a former Philippine president faces ICC proceedings; the confirmation hearing is the last step before a formal trial. Duterte's absence strategy aims to deny legitimacy to the court.",
+      "diaspora_impact": "The ICC proceedings are a defining moment for the Filipino diaspora, many of whom were directly affected by the drug war's violence or know victims. The case has international implications for Philippine human rights reputation and may affect how diaspora communities engage with homeland politics.",
+      "mentioned_dynasties": [
+        "DUTERTE_FAMILY",
+        "MARCOS_ROMUALDEZ"
+      ],
+      "sources": {
+        "international": [
+          "https://www.hrw.org/news/2026/02/16/philippines-icc-hearing-to-confirm-duterte-charges",
+          "https://www.jurist.org/news/2026/02/icc-hearing-over-former-philippines-president-a-critical-step-toward-justice-rights-groups-says/"
+        ],
+        "local": [
+          "https://www.rappler.com/philippines/duterte-waives-appearance-icc-confirmation-charges-february-2026/",
+          "https://www.manilatimes.net/2026/02/21/news/duterte-to-skip-pre-trial-hearing/2281809"
+        ]
+      },
+      "weekly_review": "weekly-reviews/weekly-review-2026-02-22.html"
     }
   ],
   "ofw_highlights": {

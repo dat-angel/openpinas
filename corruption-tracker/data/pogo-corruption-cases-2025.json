@@ -3,7 +3,7 @@
     "title": "POGO & Corruption Cases Tracker - Philippines",
     "description": "Comprehensive tracking of POGO-related cases, corruption cases, and their political connections. Includes high-profile cases like Alice Guo.",
     "version": "1.0",
-    "last_updated": "2026-02-19",
+    "last_updated": "2026-02-21",
     "prepared_for": "Filipino Diaspora Communities & Transparency Advocates",
     "total_cases": 4,
     "categories": [
@@ -692,6 +692,30 @@
           "sources": [
             "https://tribune.net.ph/2026/02/13/call-for-probe-mounts-over-alleged-p8-b-flood-control-payoffs"
           ]
+        },
+        {
+          "date": "2026-02-15",
+          "event": "Anticorruption Assembly Demands Probe of 'Sacred Cows'",
+          "description": "KBKK coalition holds anticorruption assembly calling for investigation of executive branch officials including former DPWH Secretary Manuel Bonoan, former Budget Secretary Amenah Pangandaman, former Executive Secretary Lucas Bersamin, and former PLLO Undersecretary Adrian Bersamin. Critics say six months after Marcos vowed accountability, 'untouchable sacred cows' among his allies remain unscathed",
+          "sources": [
+            "https://newsinfo.inquirer.net/2182386/civil-society-group-flood-mess-probe-still-has-sacred-cows"
+          ]
+        },
+        {
+          "date": "2026-02-18",
+          "event": "Implicated Contractor Still Building on Laguna de Bay",
+          "description": "Topnotch Catalyst Builders Inc., a firm implicated in Bulacan ghost flood control projects, found to still have 68 ongoing government contracts as of Feb 17. The firm was actively building a flood control project on reclaimed land along Laguna de Bay despite being linked to the kickback scheme, raising questions about contract enforcement and blacklisting",
+          "sources": [
+            "https://www.philstar.com/headlines/2026/02/18/2507557/contractor-linked-flood-control-scandal-builds-laguna-de-bay-shores"
+          ]
+        },
+        {
+          "date": "2026-02-19",
+          "event": "Philippines Drops to 120th in Corruption Perceptions Index",
+          "description": "Philippines fell six places to rank 120th out of 182 countries in Transparency International's 2025 Corruption Perceptions Index, the third straight year of decline. The flood control corruption scandal cited as a major factor in the continued slide",
+          "sources": [
+            "https://globalnation.inquirer.net/308729/ph-drops-anew-in-world-corruption-rankings"
+          ]
         }
       ],
       "political_connections": [
@@ -763,7 +787,7 @@
           "https://en.wikipedia.org/wiki/Flood_control_projects_scandal_in_the_Philippines"
         ]
       },
-      "last_updated": "2026-02-19"
+      "last_updated": "2026-02-21"
     }
   ],
   "pogo_operations": [
