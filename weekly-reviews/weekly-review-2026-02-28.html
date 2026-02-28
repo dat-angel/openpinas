@@ -1,0 +1,1218 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>OpenPinas: Weekly News Review - Week of February 22-28, 2026</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;500;600;700&family=Source+Serif+Pro:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --ink: #1a1a1a;
+        --muted: #5e5e5e;
+        --paper: #f8f5f0;
+        --accent: #124559;
+        --accent-2: #c44900;
+        --weather: #0b6e4f;
+        --politics: #3a0ca3;
+        --culture: #b23a48;
+        --economic: #3a0ca3;
+        --legal: #1e3a5f;
+        --international: #0d7377;
+        --religious: #d4a017;
+        --card: #ffffff;
+        --line: #d6cbbd;
+        --shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: "Source Serif Pro", Georgia, serif;
+        color: var(--ink);
+        background: radial-gradient(1200px 600px at 80% -10%, #f0e7d7 0%, transparent 60%),
+          radial-gradient(800px 500px at 10% 10%, #e6efe7 0%, transparent 55%),
+          var(--paper);
+        line-height: 1.6;
+      }
+
+      header {
+        padding: 32px 24px 20px;
+        max-width: 1100px;
+        margin: 0 auto;
+      }
+
+      h1 {
+        font-size: clamp(28px, 4vw, 44px);
+        margin: 0 0 8px;
+        letter-spacing: 0.3px;
+      }
+
+      .week-range {
+        font-size: 18px;
+        color: var(--muted);
+        margin: 0 0 20px;
+        font-weight: 500;
+      }
+
+      .nav-links {
+        display: flex;
+        gap: 16px;
+        flex-wrap: wrap;
+        margin: 20px 0;
+        padding: 12px 16px;
+        background: rgba(255, 255, 255, 0.75);
+        border: 1px solid #eadfce;
+        border-radius: 14px;
+        box-shadow: var(--shadow);
+      }
+
+      .nav-links a {
+        color: var(--accent);
+        text-decoration: none;
+        font-family: "Source Sans Pro", Arial, sans-serif;
+        font-weight: 500;
+        padding: 6px 12px;
+        border-radius: 8px;
+        transition: background 0.2s;
+      }
+
+      .nav-links a:hover {
+        background: rgba(18, 69, 89, 0.1);
+        text-decoration: none;
+      }
+
+      main {
+        max-width: 1100px;
+        margin: 16px auto 60px;
+        padding: 0 24px;
+      }
+
+      /* Two-column sidebar layout */
+      .sidebar-row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        margin: 24px 0 32px;
+      }
+
+      @media (max-width: 800px) {
+        .sidebar-row {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      .left-sidebar {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+      }
+
+      .summary-stats {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        align-content: start;
+      }
+
+      /* Weather Widget */
+      .weather-widget {
+        background: linear-gradient(135deg, #0b6e4f 0%, #1a936f 100%);
+        border-radius: 12px;
+        padding: 14px;
+        color: #fff;
+        box-shadow: var(--shadow);
+      }
+
+      .weather-widget h3 {
+        margin: 0 0 10px;
+        font-size: 12px;
+        font-weight: 600;
+        color: #fff;
+        font-family: "Source Sans Pro", sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        opacity: 0.9;
+      }
+
+      .weather-forecast {
+        display: flex;
+        gap: 4px;
+        justify-content: space-between;
+      }
+
+      .weather-day {
+        text-align: center;
+        flex: 1;
+        padding: 6px 2px;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 6px;
+      }
+
+      .weather-day .day-date {
+        font-size: 8px;
+        opacity: 0.7;
+        display: block;
+        margin-bottom: 2px;
+        font-family: "Source Sans Pro", sans-serif;
+      }
+
+      .weather-day .day-name {
+        font-size: 9px;
+        font-weight: 600;
+        text-transform: uppercase;
+        opacity: 0.9;
+        display: block;
+        margin-bottom: 4px;
+        font-family: "Source Sans Pro", sans-serif;
+      }
+
+      .weather-day .weather-icon {
+        font-size: 16px;
+        display: block;
+        margin: 2px 0;
+      }
+
+      .weather-day .temps {
+        font-size: 10px;
+        display: block;
+        font-family: "Source Sans Pro", sans-serif;
+      }
+
+      .weather-day .temps .high { font-weight: 600; }
+      .weather-day .temps .low { opacity: 0.7; }
+
+      .weather-source {
+        margin: 8px 0 0;
+        font-size: 9px;
+        opacity: 0.6;
+        font-family: "Source Sans Pro", sans-serif;
+        text-align: right;
+      }
+
+      .stat-card {
+        background: var(--card);
+        padding: 14px 12px;
+        border-radius: 10px;
+        box-shadow: var(--shadow);
+        text-align: center;
+      }
+
+      .stat-card .number {
+        font-size: 26px;
+        font-weight: 700;
+        color: var(--accent);
+        margin: 0;
+        line-height: 1.1;
+      }
+
+      .stat-card .label {
+        font-size: 11px;
+        color: var(--muted);
+        margin: 4px 0 0;
+        text-transform: uppercase;
+        letter-spacing: 0.3px;
+      }
+
+      .section {
+        margin: 40px 0;
+      }
+
+      .section-title {
+        font-size: 24px;
+        margin: 0 0 20px;
+        padding-bottom: 12px;
+        border-bottom: 2px solid var(--line);
+        color: var(--ink);
+      }
+
+      .event {
+        background: var(--card);
+        border-radius: 16px;
+        padding: 20px 24px;
+        margin-bottom: 20px;
+        box-shadow: var(--shadow);
+        border-left: 4px solid var(--accent);
+        transition: transform 0.2s, box-shadow 0.2s;
+      }
+
+      .event:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 16px 40px rgba(0, 0, 0, 0.12);
+      }
+
+      .event-header {
+        display: flex;
+        gap: 12px;
+        align-items: center;
+        margin-bottom: 12px;
+        flex-wrap: wrap;
+      }
+
+      .event time {
+        font-family: "Source Sans Pro", Arial, sans-serif;
+        font-size: 14px;
+        color: var(--muted);
+        font-weight: 500;
+      }
+
+      .category-badge {
+        padding: 4px 12px;
+        border-radius: 999px;
+        font-size: 11px;
+        text-transform: uppercase;
+        letter-spacing: 0.6px;
+        color: #fff;
+        font-family: "Source Sans Pro", Arial, sans-serif;
+        font-weight: 600;
+      }
+
+      .category-badge.political {
+        background: var(--politics);
+      }
+
+      .category-badge.cultural {
+        background: var(--culture);
+      }
+
+      .category-badge.natural-disasters {
+        background: #c44900;
+      }
+
+      .category-badge.economic {
+        background: #0b6e4f;
+      }
+
+      .category-badge.legal {
+        background: var(--legal);
+      }
+
+      .category-badge.international-relations {
+        background: var(--international);
+      }
+
+      .category-badge.religious {
+        background: var(--religious);
+      }
+
+      .category-badge.ofw {
+        background: #2563eb;
+      }
+
+      /* Exchange Rate Box - Compact for sidebar */
+      .exchange-rate-box {
+        background: linear-gradient(135deg, #1e3a5f 0%, #124559 100%);
+        border-radius: 12px;
+        padding: 16px;
+        color: #fff;
+        box-shadow: var(--shadow);
+      }
+
+      .exchange-rate-box h3 {
+        margin: 0 0 10px;
+        font-size: 13px;
+        font-weight: 600;
+        color: #fff;
+        font-family: "Source Sans Pro", sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        opacity: 0.9;
+      }
+
+      .rate-display {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      .current-rate {
+        text-align: center;
+        padding-bottom: 10px;
+        border-bottom: 1px solid rgba(255,255,255,0.15);
+      }
+
+      .rate-value {
+        font-size: 32px;
+        font-weight: 700;
+        display: block;
+        line-height: 1.1;
+      }
+
+      .rate-trend {
+        font-size: 13px;
+        padding: 3px 8px;
+        border-radius: 4px;
+        display: inline-block;
+        margin-top: 6px;
+        font-family: "Source Sans Pro", sans-serif;
+        font-weight: 600;
+      }
+
+      .rate-trend.up { background: rgba(34, 197, 94, 0.2); color: #4ade80; }
+      .rate-trend.down { background: rgba(239, 68, 68, 0.2); color: #fca5a5; }
+
+      .rate-details {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px;
+      }
+
+      .rate-item {
+        background: rgba(255, 255, 255, 0.1);
+        padding: 8px 6px;
+        border-radius: 6px;
+        text-align: center;
+      }
+
+      .rate-item .label {
+        font-size: 9px;
+        text-transform: uppercase;
+        letter-spacing: 0.3px;
+        opacity: 0.8;
+        display: block;
+        margin-bottom: 2px;
+        font-family: "Source Sans Pro", sans-serif;
+      }
+
+      .rate-item .value { font-size: 14px; font-weight: 600; }
+      .rate-context { margin: 8px 0 4px; font-size: 11px; opacity: 0.85; line-height: 1.4; }
+      .rate-source { font-size: 10px; opacity: 0.6; margin: 0; font-family: "Source Sans Pro", sans-serif; }
+
+      /* OFW Section */
+      .ofw-section {
+        background: var(--card);
+        border-radius: 16px;
+        padding: 24px;
+        margin: 32px 0;
+        box-shadow: var(--shadow);
+        border-left: 4px solid #2563eb;
+      }
+
+      .ofw-section h2 { margin: 0 0 20px; color: #2563eb; font-size: 22px; }
+
+      .ofw-stats {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 16px;
+        margin-bottom: 24px;
+      }
+
+      .ofw-stat {
+        background: rgba(37, 99, 235, 0.05);
+        padding: 16px;
+        border-radius: 10px;
+        text-align: center;
+        border: 1px solid rgba(37, 99, 235, 0.1);
+      }
+
+      .ofw-stat .number { font-size: 28px; font-weight: 700; color: #2563eb; display: block; }
+      .ofw-stat .label { font-size: 12px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.3px; }
+
+      .ofw-story {
+        padding: 16px;
+        margin: 12px 0;
+        background: rgba(37, 99, 235, 0.03);
+        border-radius: 10px;
+        border-left: 3px solid #2563eb;
+      }
+
+      .ofw-story h3 { margin: 0 0 8px; font-size: 16px; color: var(--ink); }
+      .ofw-story p { margin: 0 0 10px; font-size: 14px; line-height: 1.6; }
+
+      .ofw-details {
+        display: flex;
+        gap: 16px;
+        flex-wrap: wrap;
+        font-size: 12px;
+        color: var(--muted);
+      }
+
+      .ofw-details a { color: #2563eb; text-decoration: none; }
+      .ofw-details a:hover { text-decoration: underline; }
+
+      .travel-advisory {
+        margin-top: 20px;
+        padding: 16px;
+        background: rgba(239, 68, 68, 0.05);
+        border-radius: 10px;
+        border-left: 3px solid #ef4444;
+      }
+
+      .travel-advisory h4 { margin: 0 0 10px; font-size: 14px; color: #ef4444; }
+      .travel-advisory ul { margin: 0; padding-left: 20px; font-size: 13px; }
+      .travel-advisory li { margin: 4px 0; }
+
+      .event h2 {
+        margin: 0 0 12px;
+        font-size: 20px;
+      }
+
+      .event h2 a {
+        color: var(--ink);
+        text-decoration: none;
+      }
+
+      .event h2 a:hover {
+        color: var(--accent-2);
+        text-decoration: underline;
+      }
+
+      .event .description {
+        font-size: 15px;
+        color: var(--ink);
+        margin: 12px 0;
+        line-height: 1.7;
+      }
+
+      .event-details {
+        margin-top: 16px;
+        padding-top: 16px;
+        border-top: 1px solid var(--line);
+      }
+
+      .event-details p {
+        margin: 10px 0;
+        font-size: 14px;
+        line-height: 1.6;
+      }
+
+      .event-details strong {
+        color: var(--ink);
+        font-weight: 600;
+      }
+
+      .significance {
+        padding: 10px 14px;
+        background: rgba(18, 69, 89, 0.05);
+        border-left: 3px solid var(--accent);
+        border-radius: 6px;
+        margin: 12px 0;
+      }
+
+      .diaspora-impact {
+        padding: 10px 14px;
+        background: rgba(196, 73, 0, 0.05);
+        border-left: 3px solid var(--accent-2);
+        border-radius: 6px;
+        margin: 12px 0;
+      }
+
+      .dynasties {
+        margin: 12px 0;
+        padding: 12px;
+        background: rgba(58, 12, 163, 0.05);
+        border-left: 3px solid var(--politics);
+        border-radius: 6px;
+        font-size: 14px;
+      }
+
+      .dynasties a {
+        color: var(--politics);
+        text-decoration: none;
+        font-weight: 500;
+        margin: 0 4px;
+      }
+
+      .dynasties a:hover {
+        text-decoration: underline;
+      }
+
+      .sources {
+        margin: 12px 0;
+        font-size: 14px;
+      }
+
+      .sources a {
+        color: var(--accent-2);
+        text-decoration: none;
+        margin: 0 8px 0 0;
+      }
+
+      .sources a:hover {
+        text-decoration: underline;
+      }
+
+      .dynasty-highlights {
+        background: var(--card);
+        border-radius: 16px;
+        padding: 24px;
+        margin: 32px 0;
+        box-shadow: var(--shadow);
+        border-left: 4px solid var(--politics);
+      }
+
+      .dynasty-highlights h3 {
+        margin: 0 0 16px;
+        color: var(--politics);
+      }
+
+      .dynasty-item {
+        padding: 12px;
+        margin: 8px 0;
+        background: rgba(58, 12, 163, 0.05);
+        border-radius: 8px;
+        border-left: 3px solid var(--politics);
+      }
+
+      .dynasty-item a {
+        color: var(--politics);
+        text-decoration: none;
+        font-weight: 600;
+      }
+
+      .dynasty-item a:hover {
+        text-decoration: underline;
+      }
+
+      footer {
+        max-width: 1100px;
+        margin: 60px auto 40px;
+        padding: 24px;
+        text-align: center;
+        color: var(--muted);
+        font-size: 14px;
+        border-top: 1px solid var(--line);
+      }
+
+      footer a {
+        color: var(--accent);
+        text-decoration: none;
+      }
+
+      footer a:hover {
+        text-decoration: underline;
+      }
+
+      @media (max-width: 720px) {
+        header {
+          padding: 24px 18px 16px;
+        }
+
+        main {
+          padding: 0 18px;
+        }
+
+        .event {
+          padding: 16px 18px;
+        }
+
+        .summary-stats {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav style="font-size: 0.875rem; margin-bottom: 16px; font-family: 'Source Sans Pro', sans-serif;">
+        <a href="../" style="color: var(--muted); text-decoration: none;">&larr; OpenPinas</a>
+      </nav>
+      <h1>OpenPinas: Weekly News Review</h1>
+      <p class="week-range">Week of February 22-28, 2026</p>
+      <nav class="nav-links">
+        <a href="../interactive-timeline/">&#x1F4C5; Full Timeline</a>
+        <a href="../dynasties-network-visualization.html">&#x1F5FA;&#xFE0F; Dynasty Map</a>
+        <a href="index.html">&#x1F4DA; All Reviews</a>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Two-column layout: Stats + Weather | Exchange Rate side by side -->
+      <div class="sidebar-row">
+        <div class="left-sidebar">
+          <section class="summary-stats">
+            <div class="stat-card">
+              <p class="number">14</p>
+              <p class="label">Total Events</p>
+            </div>
+            <div class="stat-card">
+              <p class="number">8</p>
+              <p class="label">Political</p>
+            </div>
+            <div class="stat-card">
+              <p class="number">3</p>
+              <p class="label">Disasters</p>
+            </div>
+            <div class="stat-card">
+              <p class="number">4</p>
+              <p class="label">Dynasties</p>
+            </div>
+          </section>
+
+          <!-- Metro Manila Weather - February 22-28, 2026 -->
+          <section class="weather-widget">
+            <h3>Metro Manila Weather</h3>
+            <div class="weather-forecast">
+              <div class="weather-day">
+                <span class="day-date">Feb 22</span>
+                <span class="day-name">Sun</span>
+                <span class="weather-icon">&#x2600;&#xFE0F;</span>
+                <span class="temps"><span class="high">32&deg;</span> <span class="low">26&deg;</span></span>
+              </div>
+              <div class="weather-day">
+                <span class="day-date">Feb 23</span>
+                <span class="day-name">Mon</span>
+                <span class="weather-icon">&#x26C5;</span>
+                <span class="temps"><span class="high">32&deg;</span> <span class="low">26&deg;</span></span>
+              </div>
+              <div class="weather-day">
+                <span class="day-date">Feb 24</span>
+                <span class="day-name">Tue</span>
+                <span class="weather-icon">&#x26C5;</span>
+                <span class="temps"><span class="high">31&deg;</span> <span class="low">26&deg;</span></span>
+              </div>
+              <div class="weather-day">
+                <span class="day-date">Feb 25</span>
+                <span class="day-name">Wed</span>
+                <span class="weather-icon">&#x2600;&#xFE0F;</span>
+                <span class="temps"><span class="high">32&deg;</span> <span class="low">26&deg;</span></span>
+              </div>
+              <div class="weather-day">
+                <span class="day-date">Feb 26</span>
+                <span class="day-name">Thu</span>
+                <span class="weather-icon">&#x26C5;</span>
+                <span class="temps"><span class="high">31&deg;</span> <span class="low">26&deg;</span></span>
+              </div>
+              <div class="weather-day">
+                <span class="day-date">Feb 27</span>
+                <span class="day-name">Fri</span>
+                <span class="weather-icon">&#x1F327;&#xFE0F;</span>
+                <span class="temps"><span class="high">31&deg;</span> <span class="low">26&deg;</span></span>
+              </div>
+              <div class="weather-day">
+                <span class="day-date">Feb 28</span>
+                <span class="day-name">Sat</span>
+                <span class="weather-icon">&#x26C5;</span>
+                <span class="temps"><span class="high">32&deg;</span> <span class="low">26&deg;</span></span>
+              </div>
+            </div>
+            <p class="weather-source">Source: PAGASA &mdash; Easterlies dominant; amihan weakening</p>
+          </section>
+        </div>
+
+        <!-- PHP:USD Exchange Rate Box - February 22-28, 2026 -->
+        <section class="exchange-rate-box">
+          <h3>PHP:USD Exchange Rate</h3>
+          <div class="rate-display">
+            <div class="current-rate">
+              <span class="rate-value">&#x20B1;57.70</span>
+              <span class="rate-trend up">&#9650; 0.77% peso stronger this week</span>
+            </div>
+            <div class="rate-details">
+              <div class="rate-item">
+                <span class="label">Open</span>
+                <span class="value">&#x20B1;58.15</span>
+              </div>
+              <div class="rate-item">
+                <span class="label">High</span>
+                <span class="value">&#x20B1;58.15</span>
+              </div>
+              <div class="rate-item">
+                <span class="label">Low</span>
+                <span class="value">&#x20B1;57.48</span>
+              </div>
+              <div class="rate-item">
+                <span class="label">Close</span>
+                <span class="value">&#x20B1;57.70</span>
+              </div>
+            </div>
+            <p class="rate-context">
+              <strong>YTD:</strong> Peso at strongest level since late 2024; BSP cut rate 25bps to 4.25% on Feb 19 but peso strengthened on improved sentiment. 2026 range: 57.48-59.48
+            </p>
+            <p class="rate-source">Source: BSP / Bloomberg / exchange-rates.org</p>
+          </div>
+        </section>
+      </div>
+
+      <!-- ===== EVENTS ===== -->
+
+      <!-- LEGAL -->
+      <section class="section">
+        <h2 class="section-title">Legal</h2>
+
+        <article class="event" style="border-left-color: var(--legal);">
+          <div class="event-header">
+            <time datetime="2026-02-23">February 23, 2026</time>
+            <span class="category-badge legal">Legal</span>
+          </div>
+          <h2><a href="../interactive-timeline/?date=2026-02-23&search=ICC%20Duterte%20Confirmation">ICC Opens Confirmation of Charges Hearing Against Rodrigo Duterte</a></h2>
+          <p class="description">The International Criminal Court began its four-day confirmation of charges hearing against former President Rodrigo Duterte at The Hague. Duterte is suspected of crimes against humanity&mdash;murder and attempted murder&mdash;committed during his "war on drugs" campaign from November 2011 to March 2019. The ICC prosecution presented evidence showing at least 5,823 killings linked to the drug war.</p>
+          <div class="event-details">
+            <p class="significance"><strong>Significance:</strong> This is the most consequential international legal proceeding involving a Philippine head of state in history. If charges are confirmed, Duterte will face a full trial. The Pre-Trial Chamber has 60 days to issue its written decision. The prosecution expressed strong confidence the case will proceed to trial.</p>
+            <p class="diaspora-impact"><strong>Diaspora Impact:</strong> Filipino communities worldwide are closely watching the proceedings. Rights groups among the diaspora, many of whom lost family members in the drug war, have been vocal advocates for ICC accountability. The hearing has galvanized renewed activism among overseas Filipinos.</p>
+            <div class="dynasties"><strong>Dynasties:</strong>
+              <a href="../dynasties-network-visualization.html#dynasty-DUTERTE_FAMILY">Duterte</a>
+            </div>
+            <div class="sources"><strong>Sources:</strong>
+              <a href="https://www.icc-cpi.int/news/duterte-case-confirmation-charges-hearing-open-23-february-2026-practical-information" target="_blank" rel="noopener">icc-cpi.int</a>,
+              <a href="https://www.aljazeera.com/news/2026/2/23/icc-to-hold-hearings-on-charges-against-ex-philippine-president-duterte" target="_blank" rel="noopener">aljazeera.com</a>,
+              <a href="https://www.hrw.org/news/2026/02/16/philippines-duterte-icc-hearing-set-to-begin" target="_blank" rel="noopener">hrw.org</a>,
+              <a href="https://www.rappler.com/newsbreak/explainers/highlights-duterte-pre-trial-day-4-february-27-2026/" target="_blank" rel="noopener">rappler.com</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="event" style="border-left-color: var(--legal);">
+          <div class="event-header">
+            <time datetime="2026-02-27">February 27, 2026</time>
+            <span class="category-badge legal">Legal</span>
+          </div>
+          <h2><a href="../interactive-timeline/?date=2026-02-27&search=ICC%20Hearing%20Concludes">ICC Concludes Duterte Confirmation Hearing; Decision Expected Within 60 Days</a></h2>
+          <p class="description">The four-day ICC confirmation of charges hearing concluded on February 27. Deputy Prosecutor Mame Mandiaye Niang expressed confidence the judges would "vindicate" the prosecution. Duterte's defense team, led by lawyer Toby Cadman, argued there was no direct link between Duterte's public statements and the actual killings, while the prosecution used Duterte's own recorded words against him.</p>
+          <div class="event-details">
+            <p class="significance"><strong>Significance:</strong> The Pre-Trial Chamber now has 60 days to decide whether there is sufficient evidence to proceed to a full trial. Insider witnesses testified that Duterte drug war victims "had to be the poor." The defense suffered setbacks earlier when the chamber denied requests for additional witness information.</p>
+            <p class="diaspora-impact"><strong>Diaspora Impact:</strong> OFW groups and Filipino diaspora human rights organizations held solidarity vigils in major cities worldwide during the hearing. The outcome will shape the Philippines' international human rights reputation for years to come.</p>
+            <div class="dynasties"><strong>Dynasties:</strong>
+              <a href="../dynasties-network-visualization.html#dynasty-DUTERTE_FAMILY">Duterte</a>
+            </div>
+            <div class="sources"><strong>Sources:</strong>
+              <a href="https://www.icc-cpi.int/news/icc-concludes-confirmation-charges-hearing-duterte-case" target="_blank" rel="noopener">icc-cpi.int</a>,
+              <a href="https://www.philstar.com/headlines/2026/02/25/2510383/lawyers-see-bankrupt-duterte-defense-ahead-last-two-days-icc-hearing" target="_blank" rel="noopener">philstar.com</a>,
+              <a href="https://www.manilatimes.net/2026/02/28/podcasts/headlines-closing-arguments-wind-up-icc-hearing-feb-28-2026/2289954" target="_blank" rel="noopener">manilatimes.net</a>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <!-- POLITICAL -->
+      <section class="section">
+        <h2 class="section-title">Political</h2>
+
+        <article class="event" style="border-left-color: var(--politics);">
+          <div class="event-header">
+            <time datetime="2026-02-25">February 25, 2026</time>
+            <span class="category-badge political">Political</span>
+          </div>
+          <h2><a href="../interactive-timeline/?date=2026-02-25&search=EDSA%2040th%20Anniversary">40th Anniversary of EDSA People Power Revolution Marked by Mass Protests</a></h2>
+          <p class="description">Tens of thousands of Filipinos took to the streets on the 40th anniversary of the 1986 EDSA People Power Revolution. Two major rallies converged in Metro Manila&mdash;one at the EDSA Shrine organized by Bayan and progressive groups, and another at the People Power Monument led by the Trillion Peso March Movement and Caritas Philippines. Protesters clashed with police as they demanded accountability for the flood control corruption scandal.</p>
+          <div class="event-details">
+            <p class="significance"><strong>Significance:</strong> The protests merged historical commemoration with present-day demands for accountability. A House bill was filed to declare EDSA anniversary a regular non-working holiday, and President Marcos said he would "study" the recommendation. The CBCP called on Filipinos to preserve justice, truth, and peace.</p>
+            <p class="diaspora-impact"><strong>Diaspora Impact:</strong> Filipino communities in Rome, New York, and other cities held commemorative events. The Vatican News covered Filipino celebrations of People Power in Rome, underscoring the revolution's global legacy for the diaspora.</p>
+            <div class="dynasties"><strong>Dynasties:</strong>
+              <a href="../dynasties-network-visualization.html#dynasty-MARCOS_ROMUALDEZ">Marcos-Romualdez</a>,
+              <a href="../dynasties-network-visualization.html#dynasty-AQUINO_FAMILY">Aquino</a>
+            </div>
+            <div class="sources"><strong>Sources:</strong>
+              <a href="https://www.aljazeera.com/video/newsfeed/2026/2/25/thousands-join-manila-corruption-protest-on-40th-anniversary-of-uprising" target="_blank" rel="noopener">aljazeera.com</a>,
+              <a href="https://www.rappler.com/philippines/edsa-people-power-revolution-40th-anniversary-news-photos-videos-february-2026/" target="_blank" rel="noopener">rappler.com</a>,
+              <a href="https://www.vaticannews.va/en/church/news/2026-02/philippines-people-power-non-violence-manila-rome-overseas.html" target="_blank" rel="noopener">vaticannews.va</a>,
+              <a href="https://newsinfo.inquirer.net/2186691/marcos-to-see-if-feb-25-can-be-declared-non-working-holiday-each-year" target="_blank" rel="noopener">inquirer.net</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="event" style="border-left-color: var(--politics);">
+          <div class="event-header">
+            <time datetime="2026-02-25">February 25, 2026</time>
+            <span class="category-badge political">Political</span>
+          </div>
+          <h2><a href="../interactive-timeline/?date=2026-02-25&search=Flood%20Control%20Scandal%20Protests">Trillion Peso March: Anti-Corruption Protests Escalate Over Flood Control Scandal</a></h2>
+          <p class="description">The third major Trillion Peso March protest was held on February 25, coinciding with the EDSA anniversary. Various church and civil society groups, including Caritas Philippines, conducted day-long activities. The Department of Justice confirmed there is now enough evidence for corruption charges in connection with 14 flood control projects, with more cases expected.</p>
+          <div class="event-details">
+            <p class="significance"><strong>Significance:</strong> The flood control scandal has become the most destabilizing domestic issue for the Marcos administration. It has pushed construction activity to historic lows, contributed to job losses, and eroded investor confidence, prompting the BSP to cut rates. The DoJ filing charges marks a turning point in accountability.</p>
+            <p class="diaspora-impact"><strong>Diaspora Impact:</strong> OFW remittance-funded construction projects are affected by the scandal's chilling effect on the industry. The corruption revelations have sharpened diaspora scrutiny of how Philippine tax revenues and development funds are spent.</p>
+            <div class="dynasties"><strong>Dynasties:</strong>
+              <a href="../dynasties-network-visualization.html#dynasty-MARCOS_ROMUALDEZ">Marcos-Romualdez</a>
+            </div>
+            <div class="sources"><strong>Sources:</strong>
+              <a href="https://en.wikipedia.org/wiki/2025%E2%80%932026_Philippine_anti-corruption_protests" target="_blank" rel="noopener">wikipedia.org</a>,
+              <a href="https://www.nbcnews.com/world/asia/thousands-philippines-protest-corruption-flood-projects-rcna246720" target="_blank" rel="noopener">nbcnews.com</a>,
+              <a href="https://tribune.net.ph/2026/02/11/timeline-flood-control-scandal" target="_blank" rel="noopener">tribune.net.ph</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="event" style="border-left-color: var(--politics);">
+          <div class="event-header">
+            <time datetime="2026-02-22">February 22, 2026</time>
+            <span class="category-badge political">Political</span>
+          </div>
+          <h2><a href="../interactive-timeline/?date=2026-02-22&search=VP%20Duterte%20Impeachment">Fourth Impeachment Complaint Filed Against VP Sara Duterte</a></h2>
+          <p class="description">Lawyer Nathaniel Cabrera filed the fourth impeachment complaint against Vice President Sara Duterte, transmitted to the House on February 19. All four complaints cite alleged misuse of P612.5 million in confidential funds, non-declaration of assets, abuse of power, bribery, and threatening the life of President Marcos. Sara Duterte formally announced her 2028 presidential bid on February 18.</p>
+          <div class="event-details">
+            <p class="significance"><strong>Significance:</strong> The escalating impeachment efforts against VP Duterte underscore the deepening Marcos-Duterte political rift. Her presidential announcement while facing multiple impeachment complaints sets up a dramatic 2028 election cycle. The Supreme Court previously nullified a 2025 impeachment on constitutional grounds.</p>
+            <p class="diaspora-impact"><strong>Diaspora Impact:</strong> The Marcos-Duterte feud divides Filipino communities abroad, where both political camps maintain active social media campaigns and fundraising operations. The political instability creates uncertainty for diaspora investments.</p>
+            <div class="dynasties"><strong>Dynasties:</strong>
+              <a href="../dynasties-network-visualization.html#dynasty-DUTERTE_FAMILY">Duterte</a>,
+              <a href="../dynasties-network-visualization.html#dynasty-MARCOS_ROMUALDEZ">Marcos-Romualdez</a>
+            </div>
+            <div class="sources"><strong>Sources:</strong>
+              <a href="https://thediplomat.com/2026/02/fourth-impeachment-complaint-filed-against-philippine-vice-president/" target="_blank" rel="noopener">thediplomat.com</a>,
+              <a href="https://www.bloomberg.com/news/articles/2026-02-09/philippines-vp-duterte-faces-third-impeachment-bid-this-month" target="_blank" rel="noopener">bloomberg.com</a>,
+              <a href="https://newsinfo.inquirer.net/2188413/look-lawmakers-receive-formal-notice-of-duterte-impeachment-hearing" target="_blank" rel="noopener">inquirer.net</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="event" style="border-left-color: var(--politics);">
+          <div class="event-header">
+            <time datetime="2026-02-22">February 22, 2026</time>
+            <span class="category-badge political">Political</span>
+          </div>
+          <h2><a href="../interactive-timeline/?date=2026-02-22&search=DENR%20Appointment">Marcos Appoints New DENR Acting Secretary; Lotilla Named Vatican Ambassador</a></h2>
+          <p class="description">President Marcos appointed Environment Undersecretary Juan Miguel Cuna as acting secretary of the Department of Environment and Natural Resources (DENR), replacing Raphael Lotilla who was named Philippine ambassador to the Holy See. The appointment continues the administration's pattern of cabinet shuffles amid governance challenges.</p>
+          <div class="event-details">
+            <p class="significance"><strong>Significance:</strong> The DENR leadership change comes at a critical time as the Philippines faces escalating volcanic activity from Mayon and Kanlaon. The Vatican ambassadorship signals continued diplomatic engagement with the Catholic Church during a period of Church-led anti-corruption activism.</p>
+            <div class="dynasties"><strong>Dynasties:</strong>
+              <a href="../dynasties-network-visualization.html#dynasty-MARCOS_ROMUALDEZ">Marcos-Romualdez</a>
+            </div>
+            <div class="sources"><strong>Sources:</strong>
+              <a href="https://www.manilatimes.net/2026/02/22/podcasts/headlines-duterte-suffers-setbacks-ahead-of-key-icc-hearing-feb-22-2026/2282286" target="_blank" rel="noopener">manilatimes.net</a>,
+              <a href="https://www.da.gov.ph/wp-content/uploads/2026/02/Clippings-for-February-22-2026.pdf" target="_blank" rel="noopener">da.gov.ph</a>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <!-- NATURAL DISASTERS -->
+      <section class="section">
+        <h2 class="section-title">Natural Disasters</h2>
+
+        <article class="event" style="border-left-color: #c44900;">
+          <div class="event-header">
+            <time datetime="2026-02-26">February 26, 2026</time>
+            <span class="category-badge natural-disasters">Natural Disasters</span>
+          </div>
+          <h2><a href="../interactive-timeline/?date=2026-02-26&search=Kanlaon%20Eruption">Kanlaon Volcano Erupts Again; Pyroclastic Flows and Ashfall Across 121 Barangays</a></h2>
+          <p class="description">Kanlaon Volcano in Negros Island erupted at 7:04 PM on February 26, generating a 2,500-meter ash plume and incandescent ballistics around the crater. Pyroclastic density currents descended the eastern and southeastern slopes within 2 km of the summit. Ashfall was reported across 121 barangays. The eruption came exactly one week after a similar event on February 19.</p>
+          <div class="event-details">
+            <p class="significance"><strong>Significance:</strong> PHIVOLCS maintained Alert Level 2 but was assessing whether to raise it to Alert Level 3. The volcano's continuing unrest poses risks to surrounding communities and agriculture in Negros Occidental and Negros Oriental. The 4-km permanent danger zone remains strictly prohibited.</p>
+            <p class="diaspora-impact"><strong>Diaspora Impact:</strong> Families of residents near Kanlaon are monitoring the situation. Relief organizations among diaspora communities are on standby. OFW remittances to affected Negros families may increase for emergency needs.</p>
+            <div class="sources"><strong>Sources:</strong>
+              <a href="https://newsinfo.inquirer.net/2188132/kanlaon-volcano-in-moderate-explosive-eruption" target="_blank" rel="noopener">inquirer.net</a>,
+              <a href="https://www.manilatimes.net/2026/02/26/news/kanlaon-volcano-erupts-again/2285941" target="_blank" rel="noopener">manilatimes.net</a>,
+              <a href="https://watchers.news/2026/02/27/kanlaon-eruption-sends-ballistics-1-5-km-high-triggers-pdcs-forest-fires-and-ashfall-across-121-barangays/" target="_blank" rel="noopener">watchers.news</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="event" style="border-left-color: #c44900;">
+          <div class="event-header">
+            <time datetime="2026-02-26">February 26, 2026</time>
+            <span class="category-badge natural-disasters">Natural Disasters</span>
+          </div>
+          <h2><a href="../interactive-timeline/?date=2026-02-26&search=Mayon%20Eruption">Mayon Volcano Continues Steady Eruption; SO2 Emissions Hit 15-Year High</a></h2>
+          <p class="description">Mayon Volcano continued its magmatic eruption for over a month under Alert Level 3. Lava flow lengths reached 3.8 km in the Basud Gully (east flank), 2.6 km in the Bonga Gully (southeast), and 1.3 km in the Mi-isi Gully (south). February's average sulfur dioxide output was 5,503 tons per day&mdash;the highest recorded at Mayon in 15 years and more than double the January average.</p>
+          <div class="event-details">
+            <p class="significance"><strong>Significance:</strong> The dramatically increased SO2 emissions suggest intensifying magmatic activity below the surface. Having two major volcanoes&mdash;Mayon and Kanlaon&mdash;in simultaneous eruption strains PHIVOLCS monitoring resources and disaster preparedness systems. The 6-km permanent danger zone remains enforced.</p>
+            <p class="diaspora-impact"><strong>Diaspora Impact:</strong> Bicolano OFWs are particularly concerned about family safety. International relief organizations are monitoring both eruptions. The dual volcanic crisis could affect agricultural exports from both Albay and Negros provinces.</p>
+            <div class="sources"><strong>Sources:</strong>
+              <a href="https://newsinfo.inquirer.net/2179203/mayon-remains-in-steady-magmatic-eruption-for-more-than-a-month-now" target="_blank" rel="noopener">inquirer.net</a>,
+              <a href="https://www.volcanodiscovery.com/mayon/news/296113/Mayon-Volcano-Philippines-activity-update-Feb-26-2026-Continuing-eruption.html" target="_blank" rel="noopener">volcanodiscovery.com</a>,
+              <a href="https://pia.gov.ph/disaster-information-service/mayon-still-spewing-lava-more-than-a-month-on/" target="_blank" rel="noopener">pia.gov.ph</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="event" style="border-left-color: #c44900;">
+          <div class="event-header">
+            <time datetime="2026-02-22">February 22, 2026</time>
+            <span class="category-badge natural-disasters">Natural Disasters</span>
+          </div>
+          <h2><a href="../interactive-timeline/?date=2026-02-22&search=Taal%20Unrest">Taal Volcano Maintains Low-Level Unrest; 12-Hour Tremor Episode Recorded</a></h2>
+          <p class="description">PHIVOLCS reported continued low-level unrest at Taal Volcano, with a tremor episode lasting 12 hours and 32 minutes recorded during the week. Alert Level 1 ("Low-Level Unrest") was maintained. The sustained tremor activity, while not immediately dangerous, keeps Taal on the monitoring watchlist alongside the more active Mayon and Kanlaon.</p>
+          <div class="event-details">
+            <p class="significance"><strong>Significance:</strong> Three active volcanoes showing unrest simultaneously is an unusual situation for the Philippines. While Taal remains at the lowest alert level, its proximity to Metro Manila (only 66 km) means any escalation would have outsized economic and population impacts.</p>
+            <div class="sources"><strong>Sources:</strong>
+              <a href="https://reliefweb.int/report/philippines/philippines-volcanic-eruption-phivolcs-pna-media-echo-daily-flash-20-february-2026" target="_blank" rel="noopener">reliefweb.int</a>,
+              <a href="https://www.phivolcs.dost.gov.ph/" target="_blank" rel="noopener">phivolcs.dost.gov.ph</a>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <!-- INTERNATIONAL RELATIONS -->
+      <section class="section">
+        <h2 class="section-title">International Relations</h2>
+
+        <article class="event" style="border-left-color: var(--international);">
+          <div class="event-header">
+            <time datetime="2026-02-28">February 28, 2026</time>
+            <span class="category-badge international-relations">International Relations</span>
+          </div>
+          <h2><a href="../interactive-timeline/?date=2026-02-28&search=PH%20US%20Japan%20Batanes">Philippines, US, Japan Hold Historic Trilateral Military Drills in Batanes</a></h2>
+          <p class="description">Philippine, US, and Japanese warplanes and ships conducted joint exercises over the Bashi Channel near Taiwan from February 23-26 as part of the 15th Multilateral Maritime Cooperative Activity. Philippine FA-50 jets, Japan's P-3 Orion maritime patrol aircraft, and a US P-8A Poseidon flew combined patrols over the Philippines' northernmost Batanes islands. BRP Antonio Luna conducted a live-fire gunnery exercise.</p>
+          <div class="event-details">
+            <p class="significance"><strong>Significance:</strong> This marked the first time MMMCAs expanded beyond the South China Sea to include the Bashi Channel, a strategic waterway between the Philippines and Taiwan. Chinese Navy ships were spotted monitoring the exercises. The drills demonstrate deepening trilateral defense integration amid rising regional tensions.</p>
+            <p class="diaspora-impact"><strong>Diaspora Impact:</strong> Filipino-Americans and Filipino-Japanese communities see the closer trilateral defense ties as enhancing regional stability. The expanded military cooperation also creates more professional exchange opportunities for Filipino military personnel.</p>
+            <div class="sources"><strong>Sources:</strong>
+              <a href="https://www.philstar.com/headlines/2026/02/28/2510996/philippines-japan-united-states-hold-drills-batanes" target="_blank" rel="noopener">philstar.com</a>,
+              <a href="https://www.japantimes.co.jp/news/2026/02/28/japan/japan-us-philippines-military-bashi-channel/" target="_blank" rel="noopener">japantimes.co.jp</a>,
+              <a href="https://www.gmanetwork.com/news/topstories/nation/978060/ph-us-japan-maritime-drills-expand-to-batanes-waters/story/" target="_blank" rel="noopener">gmanetwork.com</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="event" style="border-left-color: var(--international);">
+          <div class="event-header">
+            <time datetime="2026-02-24">February 24, 2026</time>
+            <span class="category-badge international-relations">International Relations</span>
+          </div>
+          <h2><a href="../interactive-timeline/?date=2026-02-24&search=West%20Philippine%20Sea%20China">18 Chinese Vessels Monitored in West Philippine Sea; Signal Jamming Reported</a></h2>
+          <p class="description">The Philippine Navy reported 18 Chinese vessels maintaining presence in the West Philippine Sea from February 15-22, including four PLA Navy ships and five Coast Guard ships at Bajo de Masinloc, four CCG vessels at Ayungin Shoal, three at Escoda Shoal, and two near Pag-asa Island. The Philippine Coast Guard also reported signal jamming by China hampering communications near Bajo de Masinloc.</p>
+          <div class="event-details">
+            <p class="significance"><strong>Significance:</strong> Despite diplomatic overtures including a proposed Philippines-China joint coast guard patrol MoA slated for late March, Chinese maritime aggression continues. The signal jamming represents an escalation in gray-zone tactics. Senior Justice Antonio Carpio emphasized that the Philippine EEZ is anchored on UNCLOS and needs no additional coordinates.</p>
+            <p class="diaspora-impact"><strong>Diaspora Impact:</strong> Filipino seafarers and fishing communities along the West Philippine Sea are directly affected. The maritime tension remains a rallying point for diaspora advocacy groups pushing for stronger sovereignty protection.</p>
+            <div class="sources"><strong>Sources:</strong>
+              <a href="https://tribune.net.ph/2026/02/24/18-chinese-vessels-monitored-in-west-philippine-sea-navy-says" target="_blank" rel="noopener">tribune.net.ph</a>,
+              <a href="https://www.gmanetwork.com/news/topstories/nation/976585/ph-navy-china/story/" target="_blank" rel="noopener">gmanetwork.com</a>,
+              <a href="https://gulfnews.com/world/asia/breakthrough-manila-eyes-joint-patrols-with-beijing-in-disputed-sea-1.500455626" target="_blank" rel="noopener">gulfnews.com</a>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <!-- ECONOMIC -->
+      <section class="section">
+        <h2 class="section-title">Economic</h2>
+
+        <article class="event" style="border-left-color: #0b6e4f;">
+          <div class="event-header">
+            <time datetime="2026-02-27">February 27, 2026</time>
+            <span class="category-badge economic">Economic</span>
+          </div>
+          <h2><a href="../interactive-timeline/?date=2026-02-27&search=BSP%20Rate%20Cut">BSP Rate Cut to 4.25% Takes Effect; Capital Economics Sees One More Cut Possible</a></h2>
+          <p class="description">The Bangko Sentral ng Pilipinas' 25-basis-point rate cut on February 19&mdash;the ninth since August 2024, bringing total easing to 225 bps&mdash;continued to ripple through markets this week. Yields on BSP term deposits dropped further. Capital Economics suggested one additional rate cut may come in 2026, citing weak economic growth linked to the flood control scandal's fallout on construction and investment.</p>
+          <div class="event-details">
+            <p class="significance"><strong>Significance:</strong> The easing cycle signals BSP's concern about growth over inflation, with the policy rate now at 4.25%. The OECD maintained its 5.1% GDP growth forecast for 2026 while recommending ambitious structural reforms. The peso strengthened despite the cut, reflecting improved market sentiment.</p>
+            <p class="diaspora-impact"><strong>Diaspora Impact:</strong> Lower interest rates make OFW remittances worth slightly less in peso terms for savings, but could stimulate employment-generating economic activity. Real estate investments by diaspora Filipinos become more accessible with cheaper borrowing costs.</p>
+            <div class="sources"><strong>Sources:</strong>
+              <a href="https://mb.com.ph/2026/02/27/bsp-may-deliver-one-more-rate-cut-in-2026capital-economics" target="_blank" rel="noopener">mb.com.ph</a>,
+              <a href="https://www.bloomberg.com/news/articles/2026-02-19/philippines-cuts-rate-as-graft-fallout-continues-to-drag-growth" target="_blank" rel="noopener">bloomberg.com</a>,
+              <a href="https://www.rappler.com/business/bangko-sentral-pilipinas-monetary-policy-interest-rates-february-2026/" target="_blank" rel="noopener">rappler.com</a>,
+              <a href="https://www.oecd.org/en/about/news/press-releases/2026/02/ambitious-reforms-to-strengthen-competition-and-increase-formal-employment-would-further-boost-the-philippines-growth-trajectory.html" target="_blank" rel="noopener">oecd.org</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="event" style="border-left-color: #0b6e4f;">
+          <div class="event-header">
+            <time datetime="2026-02-28">February 28, 2026</time>
+            <span class="category-badge economic">Economic</span>
+          </div>
+          <h2><a href="../interactive-timeline/?date=2026-02-28&search=Inflation%20Forecast">BSP Pegs Faster February Inflation; Rice and Energy Prices Drive Pressure</a></h2>
+          <p class="description">The BSP projected faster inflation for February 2026 compared to the 2.0% reading in January, with official data due March 5. Upward price pressures are expected from higher rice and fish prices, elevated domestic petroleum prices, and increased electricity charges in Meralco-serviced areas. The BSP forecasts headline inflation to average 3.2% for 2026.</p>
+          <div class="event-details">
+            <p class="significance"><strong>Significance:</strong> Rising inflation could limit the BSP's room for further rate cuts. The balance between supporting growth and containing prices becomes more delicate. The OECD projects inflation at 2.6% for 2026 and 3.0% for 2027, within the BSP's 2-4% target band.</p>
+            <p class="diaspora-impact"><strong>Diaspora Impact:</strong> Rising food prices directly affect the purchasing power of OFW remittances for families back home. Rice price increases are particularly impactful for lower-income households that depend on remittance income.</p>
+            <div class="sources"><strong>Sources:</strong>
+              <a href="https://www.gmanetwork.com/news/money/economy/978134/bsp-pegs-faster-february-2026-inflation/story/" target="_blank" rel="noopener">gmanetwork.com</a>,
+              <a href="https://www.focus-economics.com/countries/philippines/news/inflation/philippines-consumer-prices-06-02-2026-inflation-rises-in-january-from-december/" target="_blank" rel="noopener">focus-economics.com</a>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <!-- CULTURAL -->
+      <section class="section">
+        <h2 class="section-title">Cultural</h2>
+
+        <article class="event" style="border-left-color: var(--culture);">
+          <div class="event-header">
+            <time datetime="2026-02-25">February 25, 2026</time>
+            <span class="category-badge cultural">Cultural</span>
+          </div>
+          <h2><a href="../interactive-timeline/?date=2026-02-25&search=EDSA%20Holiday%20Bill">Bill Filed to Make EDSA People Power Anniversary a Regular Holiday</a></h2>
+          <p class="description">A bill was filed in the House of Representatives seeking to declare the EDSA People Power Revolution anniversary a regular non-working holiday nationwide. Currently February 25 is only a school holiday. The DOLE clarified that workers who worked on the day were not entitled to additional holiday pay. President Marcos said he would study the recommendation.</p>
+          <div class="event-details">
+            <p class="significance"><strong>Significance:</strong> The push to upgrade EDSA Day to a full national holiday carries political weight, particularly for the Marcos family given that the revolution toppled the president's father. The UP system held special commemorative events as the nation debated the legacy of People Power 40 years on.</p>
+            <div class="sources"><strong>Sources:</strong>
+              <a href="https://newsinfo.inquirer.net/2186830/bill-declaring-edsa-revolution-anniversary-a-regular-holiday-filed" target="_blank" rel="noopener">inquirer.net</a>,
+              <a href="https://pia.gov.ph/news/dole-edsa-people-power-anniversary-is-working-day-no-extra-pay-required/" target="_blank" rel="noopener">pia.gov.ph</a>,
+              <a href="https://up.edu.ph/up-commemorates-the-40th-anniversary-of-the-edsa-people-power-revolution/" target="_blank" rel="noopener">up.edu.ph</a>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <!-- RELIGIOUS -->
+      <section class="section">
+        <h2 class="section-title">Religious</h2>
+
+        <article class="event" style="border-left-color: var(--religious);">
+          <div class="event-header">
+            <time datetime="2026-02-25">February 25, 2026</time>
+            <span class="category-badge religious">Religious</span>
+          </div>
+          <h2><a href="../interactive-timeline/?date=2026-02-25&search=CBCP%20Digital%20Fasting">CBCP Calls for Digital Media Fasting as Lent Approaches; Urges Justice on EDSA Day</a></h2>
+          <p class="description">The Catholic Bishops' Conference of the Philippines urged Catholics to fast from digital distractions during Lent, proposing device-free meals, 24-hour digital fasts, and replacing screen time with prayer. Separately, CBCP President Archbishop Gilbert Garcera called on Filipinos to preserve justice, truth, and peace on the EDSA anniversary, linking the 1986 spirit to ongoing demands for social transformation.</p>
+          <div class="event-details">
+            <p class="significance"><strong>Significance:</strong> The CBCP's dual messaging&mdash;spiritual discipline and political conscience&mdash;reflects the Catholic Church's continued influence in Philippine public life. Caritas Philippines' participation in the Trillion Peso March protests signals the Church's stance against government corruption.</p>
+            <p class="diaspora-impact"><strong>Diaspora Impact:</strong> Filipino Catholic communities worldwide, one of the largest global Catholic diaspora populations, are observing the CBCP's Lenten guidance. The Church's moral authority resonates particularly strongly among OFWs in the Middle East and other predominantly non-Christian host countries.</p>
+            <div class="sources"><strong>Sources:</strong>
+              <a href="https://www.davaocatholicherald.com/2026/02/cbcp-urges-digital-media-fasting-this-lent/" target="_blank" rel="noopener">davaocatholicherald.com</a>,
+              <a href="https://www.gmanetwork.com/news/topstories/nation/977857/cbcp-preservation-justice-truth-peace-anniversary/story/" target="_blank" rel="noopener">gmanetwork.com</a>,
+              <a href="https://rcam.org/cbcp-pastoral-statement-on-digital-fasting/" target="_blank" rel="noopener">rcam.org</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="event" style="border-left-color: var(--religious);">
+          <div class="event-header">
+            <time datetime="2026-02-27">February 27, 2026</time>
+            <span class="category-badge religious">Religious</span>
+          </div>
+          <h2><a href="../interactive-timeline/?date=2026-02-27&search=Unity%20Iftar">PCG New York Hosts 2026 Unity Iftar for Filipino-Muslim Community</a></h2>
+          <p class="description">The Philippine Consulate General in New York hosted the 2026 Unity Iftar on February 27, bringing together Filipino-Muslim Americans and other community members in a call for solidarity and heritage preservation. The event highlighted the diversity within the Filipino diaspora and promoted interfaith understanding ahead of Ramadan.</p>
+          <div class="event-details">
+            <p class="significance"><strong>Significance:</strong> The event underscores the Philippine government's outreach to its Muslim diaspora population and promotes the Bangsamoro peace process narrative internationally. It reflects growing recognition of the Filipino-Muslim community's role in diaspora identity.</p>
+            <p class="diaspora-impact"><strong>Diaspora Impact:</strong> Directly impacts Filipino-Muslim communities in the US and worldwide. The consular event strengthens community ties and provides a platform for interfaith dialogue among diverse Filipino-American populations.</p>
+            <div class="sources"><strong>Sources:</strong>
+              <a href="https://newyorkpcg.org/pcgny/2026/02/27/pcg-new-york-hosts-2026-unity-iftar-a-call-for-solidarity-and-heritage/" target="_blank" rel="noopener">newyorkpcg.org</a>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <!-- OFW & Diaspora News Section -->
+      <section class="ofw-section">
+        <h2>OFW &amp; Diaspora News</h2>
+
+        <div class="ofw-stats">
+          <div class="ofw-stat">
+            <span class="number">2.57M</span>
+            <span class="label">OFWs deployed (2025)</span>
+          </div>
+          <div class="ofw-stat">
+            <span class="number">$38.4B</span>
+            <span class="label">Remittances (2024)</span>
+          </div>
+          <div class="ofw-stat">
+            <span class="number">70</span>
+            <span class="label">Labor Agreements</span>
+          </div>
+          <div class="ofw-stat">
+            <span class="number">&#x20B1;2.18B</span>
+            <span class="label">Aksyon Fund Aid</span>
+          </div>
+        </div>
+
+        <article class="ofw-story">
+          <h3>Philippines and Oman to Sign OFW Safeguard Agreement</h3>
+          <p>The Philippines and Oman are preparing to sign an agreement formalizing stronger safeguards for the estimated 50,000 OFWs in the sultanate. The accord will provide a guiding framework on ethical recruitment and promote transparency in the deployment process.</p>
+          <div class="ofw-details">
+            <span>Middle East &mdash; Oman</span>
+            <a href="https://www.gmanetwork.com/news/pinoyabroad/dispatch/978016/philippines-oman-agreement-ofw-safeguards-recruitment/story/" target="_blank">GMA News</a>
+          </div>
+        </article>
+
+        <article class="ofw-story">
+          <h3>Senate Bill 1776: Comprehensive Reintegration Program for Returning OFWs</h3>
+          <p>Senator Christopher "Bong Go" filed a bill seeking to institutionalize a comprehensive support system for returning OFWs, focusing on sustainable employment, entrepreneurship, and skills recognition rather than just immediate welfare assistance.</p>
+          <div class="ofw-details">
+            <span>Policy &mdash; Senate</span>
+            <a href="https://gulfnews.com/world/asia/philippines/new-bill-seeks-sustainable-reintegration-program-for-returning-overseas-filipinos-1.500448817" target="_blank">Gulf News</a>
+          </div>
+        </article>
+
+        <article class="ofw-story">
+          <h3>DOLE Labor Row Mechanism No Longer Applies to Overseas Workers</h3>
+          <p>The Department of Labor and Employment clarified that its dispute resolution mechanism no longer applies to overseas Filipino workers, with the Department of Migrant Workers (DMW) now handling all OFW labor disputes under its mandate.</p>
+          <div class="ofw-details">
+            <span>Policy &mdash; DOLE/DMW jurisdiction</span>
+            <a href="https://www.manilatimes.net/2026/02/24/news/national/dole-labor-row-mechanism-no-longer-applies-to-overseas-workers/2283120" target="_blank">Manila Times</a>
+          </div>
+        </article>
+
+        <article class="ofw-story">
+          <h3>Bureau of Customs Enhances Balikbayan Box Processing for OFWs</h3>
+          <p>BOC Commissioner Ariel Nepomuceno and DMW officials met with OFW organizations on February 24 to address issues involving balikbayan box shipments and freight forwarding companies, announcing new protective measures for OFW package processing.</p>
+          <div class="ofw-details">
+            <span>Logistics &mdash; All deployment countries</span>
+            <a href="https://thechronicle.com.ph/boc-rolls-out-new-measures-to-protect-ofws/" target="_blank">The Chronicle</a>
+          </div>
+        </article>
+
+        <article class="ofw-story">
+          <h3>70 Bilateral Labor Agreements Protect OFWs Amid Global Anti-Migrant Sentiment</h3>
+          <p>OWWA confirmed the Philippines has established approximately 70 bilateral labor agreements globally to protect OFWs, with particular focus on maintaining protections amid harsh anti-migrant stances in Europe and the US under the second Trump administration.</p>
+          <div class="ofw-details">
+            <span>Global &mdash; Anti-migrant policy response</span>
+            <a href="https://globalnation.inquirer.net/309817/owwa-70-labor-pacts-protect-ofws-despite-growing-anti-migrant-stance" target="_blank">Inquirer</a>
+          </div>
+        </article>
+
+        <!-- Travel Advisories -->
+        <div class="travel-advisory">
+          <h4>Active Travel Advisories</h4>
+          <ul>
+            <li><strong>Deployment Suspended:</strong> Israel, Lebanon, Iran, Jordan &ndash; Ongoing regional conflicts</li>
+            <li><strong>Exercise Caution:</strong> Myanmar, Cambodia, Laos &ndash; Scam hub operations targeting OFWs</li>
+            <li><strong>Monitoring:</strong> US, Europe &ndash; Stricter immigration enforcement under anti-migrant policies</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Dynasty Highlights -->
+      <section class="dynasty-highlights">
+        <h3>Dynasty Highlights</h3>
+        <div>
+          <div class="dynasty-item">
+            <strong>
+              <a href="../dynasties-network-visualization.html#dynasty-DUTERTE_FAMILY">Duterte</a>
+            </strong>
+            <p style="margin: 8px 0 0; font-size: 14px;">Dominated the week's headlines with the historic ICC confirmation of charges hearing (Feb 23-27). Former President Rodrigo Duterte faced four days of testimony and arguments at The Hague. VP Sara Duterte continued to face multiple impeachment complaints while announcing her 2028 presidential bid.</p>
+            <ul style="margin: 8px 0 0 20px; padding: 0; font-size: 14px;">
+              <li><a href="../interactive-timeline/?date=2026-02-23">ICC Confirmation of Charges Hearing Opens</a></li>
+              <li><a href="../interactive-timeline/?date=2026-02-27">ICC Hearing Concludes; 60-Day Decision Window</a></li>
+              <li><a href="../interactive-timeline/?date=2026-02-22">Fourth Impeachment Complaint vs VP Sara Duterte</a></li>
+            </ul>
+          </div>
+
+          <div class="dynasty-item">
+            <strong>
+              <a href="../dynasties-network-visualization.html#dynasty-MARCOS_ROMUALDEZ">Marcos-Romualdez</a>
+            </strong>
+            <p style="margin: 8px 0 0; font-size: 14px;">President Marcos navigated the politically fraught 40th EDSA anniversary (commemorating the revolution that ousted his father), appointed a new DENR acting secretary, and continued to face pressure from the flood control scandal and anti-corruption protests.</p>
+            <ul style="margin: 8px 0 0 20px; padding: 0; font-size: 14px;">
+              <li><a href="../interactive-timeline/?date=2026-02-25">40th EDSA People Power Anniversary Protests</a></li>
+              <li><a href="../interactive-timeline/?date=2026-02-25">Flood Control Scandal - Trillion Peso March III</a></li>
+              <li><a href="../interactive-timeline/?date=2026-02-22">DENR Acting Secretary Appointed</a></li>
+            </ul>
+          </div>
+
+          <div class="dynasty-item">
+            <strong>
+              <a href="../dynasties-network-visualization.html#dynasty-AQUINO_FAMILY">Aquino</a>
+            </strong>
+            <p style="margin: 8px 0 0; font-size: 14px;">The Aquino legacy was invoked repeatedly during the 40th EDSA People Power anniversary commemorations. The revolution that put Corazon Aquino in power was celebrated by civil society groups as a touchstone for democratic accountability.</p>
+            <ul style="margin: 8px 0 0 20px; padding: 0; font-size: 14px;">
+              <li><a href="../interactive-timeline/?date=2026-02-25">EDSA People Power 40th Anniversary</a></li>
+            </ul>
+          </div>
+
+          <div class="dynasty-item">
+            <strong>
+              <a href="../dynasties-network-visualization.html#dynasty-GO_FAMILY">Go</a>
+            </strong>
+            <p style="margin: 8px 0 0; font-size: 14px;">Senator Christopher "Bong Go" filed Senate Bill 1776 seeking to institutionalize a comprehensive reintegration program for returning OFWs.</p>
+            <ul style="margin: 8px 0 0 20px; padding: 0; font-size: 14px;">
+              <li><a href="../interactive-timeline/?date=2026-02-24">SB 1776: OFW Reintegration Bill Filed</a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        Part of the
+        <a href="https://github.com/dat-angel/openpinas">Philippine Political Dynasties</a>
+        project
+      </p>
+      <p>
+        <a href="https://github.com/dat-angel/openpinas">GitHub</a>
+      </p>
+      <p style="margin-top: 12px; font-size: 12px;">
+        Last updated: February 28, 2026
+      </p>
+    </footer>
+  </body>
+</html>
