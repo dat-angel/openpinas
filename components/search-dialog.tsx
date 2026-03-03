@@ -1,7 +1,7 @@
 "use client"
 
-import { useEffect, useState, useCallback } from "react"
-import { Search, X, ArrowRight, Network, Scale, Building2, GraduationCap, MapPin } from "lucide-react"
+import { useEffect, useState } from "react"
+import { Search, ArrowRight, Network, Scale, Building2, GraduationCap, MapPin } from "lucide-react"
 
 const CATEGORIES = [
   { label: "Dynasties", icon: Network, count: "71 families" },
@@ -20,35 +20,32 @@ const SUGGESTIONS = [
   "University of the Philippines",
 ]
 
-export function SearchDialog() {
-  const [open, setOpen] = useState(false)
+interface SearchDialogProps {
+  open: boolean
+  onClose: () => void
+}
+
+export function SearchDialog({ open, onClose }: SearchDialogProps) {
   const [query, setQuery] = useState("")
 
-  const handleKeyDown = useCallback(
-    (e: KeyboardEvent) => {
-      if ((e.metaKey || e.ctrlKey) && e.key === "k") {
-        e.preventDefault()
-        setOpen((prev) => !prev)
-      }
+  useEffect(() => {
+    function handleKeyDown(e: KeyboardEvent) {
       if (e.key === "Escape") {
-        setOpen(false)
+        onClose()
       }
-    },
-    []
-  )
-
-  useEffect(() => {
-    document.addEventListener("keydown", handleKeyDown)
-    return () => document.removeEventListener("keydown", handleKeyDown)
-  }, [handleKeyDown])
-
-  useEffect(() => {
-    if (open) {
-      document.body.style.overflow = "hidden"
-    } else {
-      document.body.style.overflow = ""
-      setQuery("")
     }
+    if (open) {
+      document.addEventListener("keydown", handleKeyDown)
+      document.body.style.overflow = "hidden"
+    }
+    return () => {
+      document.removeEventListener("keydown", handleKeyDown)
+      document.body.style.overflow = ""
+    }
+  }, [open, onClose])
+
+  useEffect(() => {
+    if (!open) setQuery("")
   }, [open])
 
   if (!open) return null
@@ -61,7 +58,7 @@ export function SearchDialog() {
     <div className="fixed inset-0 z-50 flex items-start justify-center pt-[15vh]">
       <div
         className="fixed inset-0 bg-background/80 backdrop-blur-sm"
-        onClick={() => setOpen(false)}
+        onClick={onClose}
         aria-hidden="true"
       />
       <div className="relative z-50 w-full max-w-lg rounded-xl border border-border bg-card shadow-2xl">
@@ -76,7 +73,7 @@ export function SearchDialog() {
             autoFocus
           />
           <button
-            onClick={() => setOpen(false)}
+            onClick={onClose}
             className="flex h-6 items-center rounded border border-border bg-secondary px-1.5 text-xs text-muted-foreground"
           >
             ESC
@@ -143,17 +140,4 @@ export function SearchDialog() {
   )
 }
 
-export function SearchTrigger({ onClick }: { onClick: () => void }) {
-  return (
-    <button
-      onClick={onClick}
-      className="flex h-9 items-center gap-2 rounded-md border border-border bg-secondary px-3 text-sm text-muted-foreground transition-colors hover:border-primary hover:text-foreground"
-    >
-      <Search className="h-4 w-4" />
-      <span className="hidden sm:inline">Search</span>
-      <kbd className="ml-1 hidden rounded border border-border bg-background px-1.5 py-0.5 font-mono text-[10px] sm:inline">
-        {"Ctrl+K"}
-      </kbd>
-    </button>
-  )
-}
+

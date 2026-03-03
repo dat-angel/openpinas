@@ -1,6 +1,6 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useEffect, useCallback } from "react"
 import { Rss, Menu, X, Search } from "lucide-react"
 import { ThemeToggle } from "./theme-toggle"
 import { SearchDialog } from "./search-dialog"
@@ -14,6 +14,19 @@ const NAV_LINKS = [
 export function Nav() {
   const [mobileOpen, setMobileOpen] = useState(false)
   const [searchOpen, setSearchOpen] = useState(false)
+
+  const handleSearchClose = useCallback(() => setSearchOpen(false), [])
+
+  useEffect(() => {
+    function handleKeyDown(e: KeyboardEvent) {
+      if ((e.metaKey || e.ctrlKey) && e.key === "k") {
+        e.preventDefault()
+        setSearchOpen((prev) => !prev)
+      }
+    }
+    document.addEventListener("keydown", handleKeyDown)
+    return () => document.removeEventListener("keydown", handleKeyDown)
+  }, [])
 
   return (
     <>
@@ -95,7 +108,7 @@ export function Nav() {
         )}
       </header>
 
-      {searchOpen && <SearchDialog />}
+      <SearchDialog open={searchOpen} onClose={handleSearchClose} />
     </>
   )
 }
