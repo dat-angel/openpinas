@@ -81,9 +81,9 @@ export default async function WeeklyReviewPage({ params }: PageProps) {
           {/* Header */}
           <header className="mb-10">
             {/* Flag stripe */}
-            <div className="flex h-1 w-full rounded-t-lg overflow-hidden mb-6">
+            <div className="flex h-1.5 w-full rounded-t-lg overflow-hidden mb-6">
               <div className="w-1/2 bg-primary" />
-              <div className="w-1/2 bg-destructive" />
+              <div className="w-1/2 bg-primary/60" />
             </div>
 
             <div className="flex items-center gap-2 text-sm text-muted-foreground mb-3">

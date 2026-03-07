@@ -61,9 +61,9 @@ export default async function DynastyPage({ params }: PageProps) {
 
           {/* Header */}
           <header className="mb-10">
-            <div className="flex h-1 w-full rounded-t-lg overflow-hidden mb-6">
+            <div className="flex h-1.5 w-full rounded-t-lg overflow-hidden mb-6">
               <div className="w-1/2 bg-primary" />
-              <div className="w-1/2 bg-destructive" />
+              <div className="w-1/2 bg-primary/60" />
             </div>
 
             <div className="flex items-center gap-2 mb-3">

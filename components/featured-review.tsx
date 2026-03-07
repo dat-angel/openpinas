@@ -54,10 +54,10 @@ export function FeaturedReview() {
         </div>
 
         <div className="overflow-hidden rounded-xl border border-border bg-card">
-          {/* Philippine flag stripe: blue (dark) / gold (accent) */}
-          <div className="flex h-1 w-full">
+          {/* Philippine flag stripe: gold and blue */}
+          <div className="flex h-1.5 w-full">
             <div className="w-1/2 bg-primary" />
-            <div className="w-1/2 bg-destructive" />
+            <div className="w-1/2 bg-primary/60" />
           </div>
           <div className="p-6 lg:p-8">
             <h2 className="mb-4 max-w-3xl text-balance font-serif text-2xl font-bold leading-snug text-foreground lg:text-3xl">

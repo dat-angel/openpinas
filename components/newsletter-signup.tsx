@@ -92,7 +92,7 @@ export function NewsletterSignup() {
             )}
 
             {status === "error" && (
-              <p className="mt-2 text-sm text-destructive">{errorMessage}</p>
+              <p className="mt-2 text-sm text-primary">{errorMessage}</p>
             )}
 
             <div className="mt-4 flex items-center gap-4">

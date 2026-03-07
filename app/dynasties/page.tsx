@@ -60,9 +60,9 @@ export default function DynastiesPage() {
         <div className="mx-auto max-w-6xl px-4 py-12 sm:px-6 lg:px-8">
           {/* Header */}
           <header className="mb-12">
-            <div className="flex h-1 w-24 rounded-full overflow-hidden mb-6">
+            <div className="flex h-1.5 w-24 rounded-full overflow-hidden mb-6">
               <div className="w-1/2 bg-primary" />
-              <div className="w-1/2 bg-destructive" />
+              <div className="w-1/2 bg-primary/60" />
             </div>
             <h1 className="font-serif text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
               Political Dynasties

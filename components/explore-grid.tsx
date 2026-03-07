@@ -33,7 +33,7 @@ const SECTIONS = [
     icon: Scale,
     updated: "Feb 2026",
     href: "#",
-    accentClass: "text-destructive bg-destructive/10",
+    accentClass: "text-primary bg-primary/10",
   },
   {
     title: "Business Connections",

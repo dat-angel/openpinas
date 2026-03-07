@@ -47,7 +47,7 @@ function StatusBadge({ status }: { status: string }) {
 function PriorityBadge({ priority }: { priority: string }) {
   if (priority === "high") {
     return (
-      <span className="flex items-center gap-1 text-xs text-destructive">
+      <span className="flex items-center gap-1 text-xs text-primary">
         <AlertTriangle className="h-3 w-3" />
         High Priority
       </span>
@@ -80,9 +80,9 @@ export default function CorruptionTrackerPage() {
         <div className="mx-auto max-w-6xl px-4 py-12 sm:px-6 lg:px-8">
           {/* Header */}
           <header className="mb-12">
-            <div className="flex h-1 w-24 rounded-full overflow-hidden mb-6">
-              <div className="w-1/2 bg-destructive" />
+            <div className="flex h-1.5 w-24 rounded-full overflow-hidden mb-6">
               <div className="w-1/2 bg-primary" />
+              <div className="w-1/2 bg-primary/60" />
             </div>
             <h1 className="font-serif text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
               Corruption Tracker
@@ -92,17 +92,17 @@ export default function CorruptionTrackerPage() {
             </p>
             <div className="mt-6 flex flex-wrap gap-6 text-sm">
               <div className="flex items-center gap-2">
-                <Scale className="h-4 w-4 text-destructive" />
+                <Scale className="h-4 w-4 text-primary" />
                 <span className="text-foreground font-medium">{formatAmount(totalAmount)}</span>
                 <span className="text-muted-foreground">total amount involved</span>
               </div>
               <div className="flex items-center gap-2">
-                <Users className="h-4 w-4 text-destructive" />
+                <Users className="h-4 w-4 text-primary" />
                 <span className="text-foreground font-medium">{totalVictims.toLocaleString()}</span>
                 <span className="text-muted-foreground">victims documented</span>
               </div>
               <div className="flex items-center gap-2">
-                <AlertTriangle className="h-4 w-4 text-destructive" />
+                <AlertTriangle className="h-4 w-4 text-primary" />
                 <span className="text-foreground font-medium">{corruptionCases.length}</span>
                 <span className="text-muted-foreground">cases tracked</span>
               </div>
@@ -112,7 +112,7 @@ export default function CorruptionTrackerPage() {
           {/* High Priority Cases */}
           <section className="mb-12">
             <h2 className="font-serif text-xl font-semibold text-foreground mb-6 flex items-center gap-2">
-              <AlertTriangle className="h-5 w-5 text-destructive" />
+              <AlertTriangle className="h-5 w-5 text-primary" />
               High Priority Cases
             </h2>
             <div className="space-y-4">
@@ -120,12 +120,12 @@ export default function CorruptionTrackerPage() {
                 <Link
                   key={case_.slug}
                   href={`/corruption-tracker/${case_.slug}`}
-                  className="group block overflow-hidden rounded-xl border border-destructive/30 bg-card transition-all hover:border-destructive/60 hover:shadow-lg hover:shadow-destructive/5"
+                  className="group block overflow-hidden rounded-xl border border-primary/30 bg-card transition-all hover:border-primary/60 hover:shadow-lg hover:shadow-primary/5"
                 >
-                  <div className="border-l-4 border-destructive p-6">
+                  <div className="border-l-4 border-primary p-6">
                     <div className="flex items-start justify-between gap-4 mb-3">
                       <div>
-                        <h3 className="font-serif text-lg font-semibold text-foreground group-hover:text-destructive transition-colors">
+                        <h3 className="font-serif text-lg font-semibold text-foreground group-hover:text-primary transition-colors">
                           {case_.title}
                         </h3>
                         <div className="flex items-center gap-2 mt-1">

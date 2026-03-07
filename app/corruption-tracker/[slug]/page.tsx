@@ -96,15 +96,15 @@ export default async function CorruptionCasePage({ params }: PageProps) {
 
           {/* Header */}
           <header className="mb-10">
-            <div className="flex h-1 w-full rounded-t-lg overflow-hidden mb-6">
-              <div className="w-1/2 bg-destructive" />
+            <div className="flex h-1.5 w-full rounded-t-lg overflow-hidden mb-6">
               <div className="w-1/2 bg-primary" />
+              <div className="w-1/2 bg-primary/60" />
             </div>
 
             <div className="flex items-center gap-3 mb-4 flex-wrap">
               <StatusBadge status={case_.status} />
               {case_.priority === "high" && (
-                <span className="flex items-center gap-1 text-sm text-destructive">
+                <span className="flex items-center gap-1 text-sm text-primary">
                   <AlertTriangle className="h-4 w-4" />
                   High Priority
                 </span>
@@ -137,15 +137,15 @@ export default async function CorruptionCasePage({ params }: PageProps) {
           {/* Stats Grid */}
           <div className="grid grid-cols-2 gap-4 sm:grid-cols-4 mb-10">
             {case_.amountInvolvedPhp > 0 && (
-              <div className="rounded-lg border border-destructive/30 bg-destructive/5 p-4 text-center">
-                <Scale className="h-5 w-5 mx-auto mb-2 text-destructive" />
+              <div className="rounded-lg border border-primary/30 bg-primary/5 p-4 text-center">
+                <Scale className="h-5 w-5 mx-auto mb-2 text-primary" />
                 <div className="text-lg font-bold text-foreground">{formatAmount(case_.amountInvolvedPhp)}</div>
                 <div className="text-xs text-muted-foreground uppercase tracking-wide mt-1">Amount Involved</div>
               </div>
             )}
             {case_.victims && (
-              <div className="rounded-lg border border-destructive/30 bg-destructive/5 p-4 text-center">
-                <Users className="h-5 w-5 mx-auto mb-2 text-destructive" />
+              <div className="rounded-lg border border-primary/30 bg-primary/5 p-4 text-center">
+                <Users className="h-5 w-5 mx-auto mb-2 text-primary" />
                 <div className="text-lg font-bold text-foreground">{case_.victims.toLocaleString()}</div>
                 <div className="text-xs text-muted-foreground uppercase tracking-wide mt-1">Victims</div>
               </div>
@@ -185,7 +185,7 @@ export default async function CorruptionCasePage({ params }: PageProps) {
                     </span>
                   </div>
                   {person.sentence && (
-                    <p className="mt-2 text-sm font-medium text-destructive">
+                    <p className="mt-2 text-sm font-medium text-primary">
                       Sentence: {person.sentence}
                     </p>
                   )}
@@ -203,7 +203,7 @@ export default async function CorruptionCasePage({ params }: PageProps) {
               {case_.charges.map((charge) => (
                 <span
                   key={charge}
-                  className="rounded-full border border-destructive/30 bg-destructive/5 px-3 py-1 text-sm text-foreground"
+                  className="rounded-full border border-primary/30 bg-primary/5 px-3 py-1 text-sm text-foreground"
                 >
                   {charge}
                 </span>

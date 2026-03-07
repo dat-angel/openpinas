@@ -51,9 +51,9 @@ export default function WeeklyReviewsPage() {
                 className="group relative overflow-hidden rounded-xl border border-border bg-card transition-all hover:border-primary/40 hover:shadow-lg hover:shadow-black/10"
               >
                 {index === 0 && (
-                  <div className="flex h-1 w-full">
+                  <div className="flex h-1.5 w-full">
                     <div className="w-1/2 bg-primary" />
-                    <div className="w-1/2 bg-destructive" />
+                    <div className="w-1/2 bg-primary/60" />
                   </div>
                 )}
                 <Link href={`/weekly-reviews/${review.slug}`} className="block p-6">
