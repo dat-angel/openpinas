@@ -1,38 +1,45 @@
+import Link from "next/link"
 import {
   ArrowRight,
-  TrendingDown,
-  CloudRain,
+  TrendingUp,
+  Scale,
   Landmark,
   Calendar,
 } from "lucide-react"
+import { getLatestWeeklyReview } from "@/lib/data/weekly-reviews"
 
-const REVIEW = {
-  title: "Week 8: Budget Battle Heats Up as Marcos Signs Contested 2026 Budget",
-  dateRange: "February 16 -- 22, 2026",
-  summary:
-    "Marcos signs the P6.326 trillion 2026 budget amid protests over pork barrel insertions. Typhoon Pepito recovery continues. OFW remittances hit $3.1B in December 2025.",
-  stats: [
-    {
-      label: "PHP/USD Rate",
-      value: "57.18",
-      icon: TrendingDown,
-    },
-    {
-      label: "Typhoon Pepito",
-      value: "Recovery",
-      icon: CloudRain,
-    },
-    {
-      label: "2026 Budget",
-      value: "P6.326T",
-      icon: Landmark,
-    },
-  ],
-  weekNumber: 8,
-  year: 2026,
+function getReviewData() {
+  const latest = getLatestWeeklyReview()
+  return {
+    slug: latest.slug,
+    title: `Week 8: ${latest.topStory}`,
+    dateRange: latest.dateRange,
+    summary: latest.excerpt,
+    stats: [
+      {
+        label: "PHP/USD Rate",
+        value: latest.exchangeRate.value.toFixed(2),
+        icon: TrendingUp,
+      },
+      {
+        label: "Political Events",
+        value: String(latest.stats.politicalEvents),
+        icon: Scale,
+      },
+      {
+        label: "Total Events",
+        value: String(latest.stats.totalEvents),
+        icon: Landmark,
+      },
+    ],
+    weekNumber: 8,
+    year: 2026,
+  }
 }
 
 export function FeaturedReview() {
+  const REVIEW = getReviewData()
+  
   return (
     <section id="featured" className="px-4 pt-8 pb-4 lg:px-6">
       <div className="mx-auto max-w-6xl">
@@ -80,13 +87,13 @@ export function FeaturedReview() {
               ))}
             </div>
 
-            <a
-              href="#"
+            <Link
+              href={`/weekly-reviews/${REVIEW.slug}`}
               className="group inline-flex items-center gap-2 rounded-lg bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground transition-all hover:brightness-110"
             >
               Read Week {REVIEW.weekNumber} Review
               <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
-            </a>
+            </Link>
           </div>
         </div>
       </div>

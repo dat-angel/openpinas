@@ -13,11 +13,28 @@ export function NewsletterSignup() {
     if (!email) return
 
     setStatus("loading")
+    setErrorMessage("")
 
-    // Simulate subscription (will wire to Buttondown API later)
-    await new Promise((resolve) => setTimeout(resolve, 1000))
-    setStatus("success")
-    setEmail("")
+    try {
+      const response = await fetch("/api/subscribe", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email }),
+      })
+
+      const data = await response.json()
+
+      if (response.ok || data.success) {
+        setStatus("success")
+        setEmail("")
+      } else {
+        setStatus("error")
+        setErrorMessage(data.error || "Something went wrong. Please try again.")
+      }
+    } catch {
+      setStatus("error")
+      setErrorMessage("Something went wrong. Please try again.")
+    }
   }
 
   return (
@@ -80,7 +97,7 @@ export function NewsletterSignup() {
 
             <div className="mt-4 flex items-center gap-4">
               <a
-                href="/feed.xml"
+                href="/rss.xml"
                 className="flex items-center gap-1.5 text-xs text-muted-foreground transition-colors hover:text-accent"
               >
                 <Rss className="h-3.5 w-3.5" />

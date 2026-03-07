@@ -6,9 +6,9 @@ import { ThemeToggle } from "./theme-toggle"
 import { SearchDialog } from "./search-dialog"
 
 const NAV_LINKS = [
-  { label: "Weekly Review", href: "#featured" },
-  { label: "Explore", href: "#explore" },
-  { label: "Datasets", href: "#datasets" },
+  { label: "Weekly Reviews", href: "/weekly-reviews" },
+  { label: "Dynasties", href: "/dynasties" },
+  { label: "Corruption Tracker", href: "/corruption-tracker" },
 ]
 
 export function Nav() {
@@ -32,7 +32,7 @@ export function Nav() {
     <>
       <header className="sticky top-0 z-40 w-full border-b border-border bg-background/90 backdrop-blur-md">
         <nav className="mx-auto flex h-14 max-w-6xl items-center justify-between px-4 lg:px-6">
-          <a href="#" className="flex items-center gap-2">
+          <a href="/" className="flex items-center gap-2">
             <span className="text-lg font-bold tracking-tight text-foreground">
               Open
             </span>
@@ -67,7 +67,7 @@ export function Nav() {
             </button>
 
             <a
-              href="/feed.xml"
+              href="/rss.xml"
               className="flex h-9 w-9 items-center justify-center rounded-md border border-border bg-secondary text-muted-foreground transition-colors hover:text-accent"
               aria-label="RSS Feed"
             >
