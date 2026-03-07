@@ -83,7 +83,7 @@ export function ExploreGrid() {
             <a
               key={section.title}
               href={section.href}
-              className="group relative flex flex-col rounded-xl border border-border bg-card p-5 transition-all hover:border-primary/40 hover:shadow-lg hover:shadow-primary/5"
+              className="group relative flex flex-col rounded-xl border border-border bg-card p-5 transition-all hover:border-primary/50 hover:shadow-lg hover:shadow-black/20"
             >
               <div className="mb-4 flex items-center justify-between">
                 <div

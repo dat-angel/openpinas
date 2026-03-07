@@ -47,6 +47,11 @@ export function FeaturedReview() {
         </div>
 
         <div className="overflow-hidden rounded-xl border border-border bg-card">
+          {/* Philippine flag stripe: blue (dark) / gold (accent) */}
+          <div className="flex h-1 w-full">
+            <div className="w-1/2 bg-primary" />
+            <div className="w-1/2 bg-destructive" />
+          </div>
           <div className="p-6 lg:p-8">
             <h2 className="mb-4 max-w-3xl text-balance font-serif text-2xl font-bold leading-snug text-foreground lg:text-3xl">
               {REVIEW.title}
