@@ -1,0 +1,1137 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>OpenPinas: Weekly News Review - Week of March 1-7, 2026</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;500;600;700&family=Source+Serif+Pro:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --ink: #1a1a1a;
+        --muted: #5e5e5e;
+        --paper: #f8f5f0;
+        --accent: #124559;
+        --accent-2: #c44900;
+        --weather: #0b6e4f;
+        --politics: #3a0ca3;
+        --culture: #b23a48;
+        --economic: #3a0ca3;
+        --legal: #1e3a5f;
+        --international: #0d7377;
+        --religious: #d4a017;
+        --card: #ffffff;
+        --line: #d6cbbd;
+        --shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: "Source Serif Pro", Georgia, serif;
+        color: var(--ink);
+        background: radial-gradient(1200px 600px at 80% -10%, #f0e7d7 0%, transparent 60%),
+          radial-gradient(800px 500px at 10% 10%, #e6efe7 0%, transparent 55%),
+          var(--paper);
+        line-height: 1.6;
+      }
+
+      header {
+        padding: 32px 24px 20px;
+        max-width: 1100px;
+        margin: 0 auto;
+      }
+
+      h1 {
+        font-size: clamp(28px, 4vw, 44px);
+        margin: 0 0 8px;
+        letter-spacing: 0.3px;
+      }
+
+      .week-range {
+        font-size: 18px;
+        color: var(--muted);
+        margin: 0 0 20px;
+        font-weight: 500;
+      }
+
+      .nav-links {
+        display: flex;
+        gap: 16px;
+        flex-wrap: wrap;
+        margin: 20px 0;
+        padding: 12px 16px;
+        background: rgba(255, 255, 255, 0.75);
+        border: 1px solid #eadfce;
+        border-radius: 14px;
+        box-shadow: var(--shadow);
+      }
+
+      .nav-links a {
+        color: var(--accent);
+        text-decoration: none;
+        font-family: "Source Sans Pro", Arial, sans-serif;
+        font-weight: 500;
+        padding: 6px 12px;
+        border-radius: 8px;
+        transition: background 0.2s;
+      }
+
+      .nav-links a:hover {
+        background: rgba(18, 69, 89, 0.1);
+        text-decoration: none;
+      }
+
+      main {
+        max-width: 1100px;
+        margin: 16px auto 60px;
+        padding: 0 24px;
+      }
+
+      /* Two-column sidebar layout */
+      .sidebar-row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        margin: 24px 0 32px;
+      }
+
+      @media (max-width: 800px) {
+        .sidebar-row {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      .left-sidebar {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+      }
+
+      .summary-stats {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        align-content: start;
+      }
+
+      /* Weather Widget */
+      .weather-widget {
+        background: linear-gradient(135deg, #0b6e4f 0%, #1a936f 100%);
+        border-radius: 12px;
+        padding: 14px;
+        color: #fff;
+        box-shadow: var(--shadow);
+      }
+
+      .weather-widget h3 {
+        margin: 0 0 10px;
+        font-size: 12px;
+        font-weight: 600;
+        color: #fff;
+        font-family: "Source Sans Pro", sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        opacity: 0.9;
+      }
+
+      .weather-forecast {
+        display: flex;
+        gap: 4px;
+        justify-content: space-between;
+      }
+
+      .weather-day {
+        text-align: center;
+        flex: 1;
+        padding: 6px 2px;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 6px;
+      }
+
+      .weather-day .day-date {
+        font-size: 8px;
+        opacity: 0.7;
+        display: block;
+        margin-bottom: 2px;
+        font-family: "Source Sans Pro", sans-serif;
+      }
+
+      .weather-day .day-name {
+        font-size: 9px;
+        font-weight: 600;
+        text-transform: uppercase;
+        opacity: 0.9;
+        display: block;
+        margin-bottom: 4px;
+        font-family: "Source Sans Pro", sans-serif;
+      }
+
+      .weather-day .weather-icon {
+        font-size: 16px;
+        display: block;
+        margin: 2px 0;
+      }
+
+      .weather-day .temps {
+        font-size: 10px;
+        display: block;
+        font-family: "Source Sans Pro", sans-serif;
+      }
+
+      .weather-day .temps .high { font-weight: 600; }
+      .weather-day .temps .low { opacity: 0.7; }
+
+      .weather-source {
+        margin: 8px 0 0;
+        font-size: 9px;
+        opacity: 0.6;
+        font-family: "Source Sans Pro", sans-serif;
+        text-align: right;
+      }
+
+      .stat-card {
+        background: var(--card);
+        padding: 14px 12px;
+        border-radius: 10px;
+        box-shadow: var(--shadow);
+        text-align: center;
+      }
+
+      .stat-card .number {
+        font-size: 26px;
+        font-weight: 700;
+        color: var(--accent);
+        margin: 0;
+        line-height: 1.1;
+      }
+
+      .stat-card .label {
+        font-size: 11px;
+        color: var(--muted);
+        margin: 4px 0 0;
+        text-transform: uppercase;
+        letter-spacing: 0.3px;
+      }
+
+      .section {
+        margin: 40px 0;
+      }
+
+      .section-title {
+        font-size: 24px;
+        margin: 0 0 20px;
+        padding-bottom: 12px;
+        border-bottom: 2px solid var(--line);
+        color: var(--ink);
+      }
+
+      .event {
+        background: var(--card);
+        border-radius: 16px;
+        padding: 20px 24px;
+        margin-bottom: 20px;
+        box-shadow: var(--shadow);
+        border-left: 4px solid var(--accent);
+        transition: transform 0.2s, box-shadow 0.2s;
+      }
+
+      .event:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 16px 40px rgba(0, 0, 0, 0.12);
+      }
+
+      .event-header {
+        display: flex;
+        gap: 12px;
+        align-items: center;
+        margin-bottom: 12px;
+        flex-wrap: wrap;
+      }
+
+      .event time {
+        font-family: "Source Sans Pro", Arial, sans-serif;
+        font-size: 14px;
+        color: var(--muted);
+        font-weight: 500;
+      }
+
+      .category-badge {
+        padding: 4px 12px;
+        border-radius: 999px;
+        font-size: 11px;
+        text-transform: uppercase;
+        letter-spacing: 0.6px;
+        color: #fff;
+        font-family: "Source Sans Pro", Arial, sans-serif;
+        font-weight: 600;
+      }
+
+      .category-badge.political {
+        background: var(--politics);
+      }
+
+      .category-badge.cultural {
+        background: var(--culture);
+      }
+
+      .category-badge.natural-disasters {
+        background: #c44900;
+      }
+
+      .category-badge.economic {
+        background: #0b6e4f;
+      }
+
+      .category-badge.legal {
+        background: var(--legal);
+      }
+
+      .category-badge.international-relations {
+        background: var(--international);
+      }
+
+      .category-badge.religious {
+        background: var(--religious);
+      }
+
+      .category-badge.ofw {
+        background: #2563eb;
+      }
+
+      /* Exchange Rate Box - Compact for sidebar */
+      .exchange-rate-box {
+        background: linear-gradient(135deg, #1e3a5f 0%, #124559 100%);
+        border-radius: 12px;
+        padding: 16px;
+        color: #fff;
+        box-shadow: var(--shadow);
+      }
+
+      .exchange-rate-box h3 {
+        margin: 0 0 10px;
+        font-size: 13px;
+        font-weight: 600;
+        color: #fff;
+        font-family: "Source Sans Pro", sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        opacity: 0.9;
+      }
+
+      .rate-display {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      .current-rate {
+        text-align: center;
+        padding-bottom: 10px;
+        border-bottom: 1px solid rgba(255,255,255,0.15);
+      }
+
+      .rate-value {
+        font-size: 32px;
+        font-weight: 700;
+        display: block;
+        line-height: 1.1;
+      }
+
+      .rate-trend {
+        font-size: 13px;
+        padding: 3px 8px;
+        border-radius: 4px;
+        display: inline-block;
+        margin-top: 6px;
+        font-family: "Source Sans Pro", sans-serif;
+        font-weight: 600;
+      }
+
+      .rate-trend.up { background: rgba(34, 197, 94, 0.2); color: #4ade80; }
+      .rate-trend.down { background: rgba(239, 68, 68, 0.2); color: #fca5a5; }
+
+      .rate-details {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px;
+      }
+
+      .rate-item {
+        background: rgba(255, 255, 255, 0.1);
+        padding: 8px 6px;
+        border-radius: 6px;
+        text-align: center;
+      }
+
+      .rate-item .label {
+        font-size: 9px;
+        text-transform: uppercase;
+        letter-spacing: 0.3px;
+        opacity: 0.8;
+        display: block;
+        margin-bottom: 2px;
+        font-family: "Source Sans Pro", sans-serif;
+      }
+
+      .rate-item .value { font-size: 14px; font-weight: 600; }
+      .rate-context { margin: 8px 0 4px; font-size: 11px; opacity: 0.85; line-height: 1.4; }
+      .rate-source { font-size: 10px; opacity: 0.6; margin: 0; font-family: "Source Sans Pro", sans-serif; }
+
+      /* OFW Section */
+      .ofw-section {
+        background: var(--card);
+        border-radius: 16px;
+        padding: 24px;
+        margin: 32px 0;
+        box-shadow: var(--shadow);
+        border-left: 4px solid #2563eb;
+      }
+
+      .ofw-section h2 { margin: 0 0 20px; color: #2563eb; font-size: 22px; }
+
+      .ofw-stats {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 16px;
+        margin-bottom: 24px;
+      }
+
+      .ofw-stat {
+        background: rgba(37, 99, 235, 0.05);
+        padding: 16px;
+        border-radius: 10px;
+        text-align: center;
+        border: 1px solid rgba(37, 99, 235, 0.1);
+      }
+
+      .ofw-stat .number { font-size: 28px; font-weight: 700; color: #2563eb; display: block; }
+      .ofw-stat .label { font-size: 12px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.3px; }
+
+      .ofw-story {
+        padding: 16px;
+        margin: 12px 0;
+        background: rgba(37, 99, 235, 0.03);
+        border-radius: 10px;
+        border-left: 3px solid #2563eb;
+      }
+
+      .ofw-story h3 { margin: 0 0 8px; font-size: 16px; color: var(--ink); }
+      .ofw-story p { margin: 0 0 10px; font-size: 14px; line-height: 1.6; }
+
+      .ofw-details {
+        display: flex;
+        gap: 16px;
+        flex-wrap: wrap;
+        font-size: 12px;
+        color: var(--muted);
+      }
+
+      .ofw-details a { color: #2563eb; text-decoration: none; }
+      .ofw-details a:hover { text-decoration: underline; }
+
+      .travel-advisory {
+        margin-top: 20px;
+        padding: 16px;
+        background: rgba(239, 68, 68, 0.05);
+        border-radius: 10px;
+        border-left: 3px solid #ef4444;
+      }
+
+      .travel-advisory h4 { margin: 0 0 10px; font-size: 14px; color: #ef4444; }
+      .travel-advisory ul { margin: 0; padding-left: 20px; font-size: 13px; }
+      .travel-advisory li { margin: 4px 0; }
+
+      .event h2 {
+        margin: 0 0 12px;
+        font-size: 20px;
+      }
+
+      .event h2 a {
+        color: var(--ink);
+        text-decoration: none;
+      }
+
+      .event h2 a:hover {
+        color: var(--accent-2);
+        text-decoration: underline;
+      }
+
+      .event .description {
+        font-size: 15px;
+        color: var(--ink);
+        margin: 12px 0;
+        line-height: 1.7;
+      }
+
+      .event-details {
+        margin-top: 16px;
+        padding-top: 16px;
+        border-top: 1px solid var(--line);
+      }
+
+      .event-details p {
+        margin: 10px 0;
+        font-size: 14px;
+        line-height: 1.6;
+      }
+
+      .event-details strong {
+        color: var(--ink);
+        font-weight: 600;
+      }
+
+      .significance {
+        padding: 10px 14px;
+        background: rgba(18, 69, 89, 0.05);
+        border-left: 3px solid var(--accent);
+        border-radius: 6px;
+        margin: 12px 0;
+      }
+
+      .diaspora-impact {
+        padding: 10px 14px;
+        background: rgba(196, 73, 0, 0.05);
+        border-left: 3px solid var(--accent-2);
+        border-radius: 6px;
+        margin: 12px 0;
+      }
+
+      .dynasties {
+        margin: 12px 0;
+        padding: 12px;
+        background: rgba(58, 12, 163, 0.05);
+        border-left: 3px solid var(--politics);
+        border-radius: 6px;
+        font-size: 14px;
+      }
+
+      .dynasties a {
+        color: var(--politics);
+        text-decoration: none;
+        font-weight: 500;
+        margin: 0 4px;
+      }
+
+      .dynasties a:hover {
+        text-decoration: underline;
+      }
+
+      .sources {
+        margin: 12px 0;
+        font-size: 14px;
+      }
+
+      .sources a {
+        color: var(--accent-2);
+        text-decoration: none;
+        margin: 0 8px 0 0;
+      }
+
+      .sources a:hover {
+        text-decoration: underline;
+      }
+
+      .dynasty-highlights {
+        background: var(--card);
+        border-radius: 16px;
+        padding: 24px;
+        margin: 32px 0;
+        box-shadow: var(--shadow);
+        border-left: 4px solid var(--politics);
+      }
+
+      .dynasty-highlights h3 {
+        margin: 0 0 16px;
+        color: var(--politics);
+      }
+
+      .dynasty-item {
+        padding: 12px;
+        margin: 8px 0;
+        background: rgba(58, 12, 163, 0.05);
+        border-radius: 8px;
+        border-left: 3px solid var(--politics);
+      }
+
+      .dynasty-item a {
+        color: var(--politics);
+        text-decoration: none;
+        font-weight: 600;
+      }
+
+      .dynasty-item a:hover {
+        text-decoration: underline;
+      }
+
+      footer {
+        max-width: 1100px;
+        margin: 60px auto 40px;
+        padding: 24px;
+        text-align: center;
+        color: var(--muted);
+        font-size: 14px;
+        border-top: 1px solid var(--line);
+      }
+
+      footer a {
+        color: var(--accent);
+        text-decoration: none;
+      }
+
+      footer a:hover {
+        text-decoration: underline;
+      }
+
+      @media (max-width: 720px) {
+        header {
+          padding: 24px 18px 16px;
+        }
+
+        main {
+          padding: 0 18px;
+        }
+
+        .event {
+          padding: 16px 18px;
+        }
+
+        .summary-stats {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav style="font-size: 0.875rem; margin-bottom: 16px; font-family: 'Source Sans Pro', sans-serif;">
+        <a href="../" style="color: var(--muted); text-decoration: none;">&larr; OpenPinas</a>
+      </nav>
+      <h1>OpenPinas: Weekly News Review</h1>
+      <p class="week-range">Week of March 1-7, 2026</p>
+      <nav class="nav-links">
+        <a href="../interactive-timeline/">&#x1F4C5; Full Timeline</a>
+        <a href="../dynasties-network-visualization.html">&#x1F5FA;&#xFE0F; Dynasty Map</a>
+        <a href="index.html">&#x1F4DA; All Reviews</a>
+        <a href="weekly-review-2026-02-28.html">&larr; Previous Week</a>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Two-column layout: Stats + Weather | Exchange Rate side by side -->
+      <div class="sidebar-row">
+        <div class="left-sidebar">
+          <section class="summary-stats">
+            <div class="stat-card">
+              <p class="number">12</p>
+              <p class="label">Total Events</p>
+            </div>
+            <div class="stat-card">
+              <p class="number">4</p>
+              <p class="label">Intl Relations</p>
+            </div>
+            <div class="stat-card">
+              <p class="number">3</p>
+              <p class="label">Political</p>
+            </div>
+            <div class="stat-card">
+              <p class="number">5</p>
+              <p class="label">Dynasties</p>
+            </div>
+          </section>
+
+          <!-- Metro Manila Weather - March 1-7, 2026 -->
+          <section class="weather-widget">
+            <h3>Metro Manila Weather</h3>
+            <div class="weather-forecast">
+              <div class="weather-day">
+                <span class="day-date">Mar 1</span>
+                <span class="day-name">Sun</span>
+                <span class="weather-icon">&#x2600;&#xFE0F;</span>
+                <span class="temps"><span class="high">34&deg;</span> <span class="low">26&deg;</span></span>
+              </div>
+              <div class="weather-day">
+                <span class="day-date">Mar 2</span>
+                <span class="day-name">Mon</span>
+                <span class="weather-icon">&#x2600;&#xFE0F;</span>
+                <span class="temps"><span class="high">34&deg;</span> <span class="low">27&deg;</span></span>
+              </div>
+              <div class="weather-day">
+                <span class="day-date">Mar 3</span>
+                <span class="day-name">Tue</span>
+                <span class="weather-icon">&#x26C5;</span>
+                <span class="temps"><span class="high">33&deg;</span> <span class="low">27&deg;</span></span>
+              </div>
+              <div class="weather-day">
+                <span class="day-date">Mar 4</span>
+                <span class="day-name">Wed</span>
+                <span class="weather-icon">&#x26C5;</span>
+                <span class="temps"><span class="high">33&deg;</span> <span class="low">26&deg;</span></span>
+              </div>
+              <div class="weather-day">
+                <span class="day-date">Mar 5</span>
+                <span class="day-name">Thu</span>
+                <span class="weather-icon">&#x2600;&#xFE0F;</span>
+                <span class="temps"><span class="high">34&deg;</span> <span class="low">27&deg;</span></span>
+              </div>
+              <div class="weather-day">
+                <span class="day-date">Mar 6</span>
+                <span class="day-name">Fri</span>
+                <span class="weather-icon">&#x26C5;</span>
+                <span class="temps"><span class="high">33&deg;</span> <span class="low">27&deg;</span></span>
+              </div>
+              <div class="weather-day">
+                <span class="day-date">Mar 7</span>
+                <span class="day-name">Sat</span>
+                <span class="weather-icon">&#x26C5;</span>
+                <span class="temps"><span class="high">34&deg;</span> <span class="low">27&deg;</span></span>
+              </div>
+            </div>
+            <p class="weather-source">Source: PAGASA &mdash; Hot dry season; easterlies dominant, La Ni&ntilde;a weakening</p>
+          </section>
+        </div>
+
+        <!-- PHP:USD Exchange Rate Box - March 1-7, 2026 -->
+        <section class="exchange-rate-box">
+          <h3>PHP:USD Exchange Rate</h3>
+          <div class="rate-display">
+            <div class="current-rate">
+              <span class="rate-value">&#x20B1;59.27</span>
+              <span class="rate-trend down">&#9660; 2.72% peso weaker this week</span>
+            </div>
+            <div class="rate-details">
+              <div class="rate-item">
+                <span class="label">Open</span>
+                <span class="value">&#x20B1;58.23</span>
+              </div>
+              <div class="rate-item">
+                <span class="label">High</span>
+                <span class="value">&#x20B1;59.27</span>
+              </div>
+              <div class="rate-item">
+                <span class="label">Low</span>
+                <span class="value">&#x20B1;58.23</span>
+              </div>
+              <div class="rate-item">
+                <span class="label">Close</span>
+                <span class="value">&#x20B1;59.27</span>
+              </div>
+            </div>
+            <p class="rate-context">
+              <strong>Crisis Impact:</strong> Peso reversed gains from Feb (57.70) as Middle East conflict, oil shock, and OFW repatriation fears hit markets. Approaching record-low territory (59.33, Dec 2025). BSP may be forced to hike rates if oil hits $100/bbl. 2026 range: 57.48&ndash;59.27
+            </p>
+            <p class="rate-source">Source: BSP / exchange-rates.org</p>
+          </div>
+        </section>
+      </div>
+
+      <!-- ===== EVENTS ===== -->
+
+      <!-- INTERNATIONAL RELATIONS -->
+      <section class="section">
+        <h2 class="section-title">International Relations</h2>
+
+        <article class="event" style="border-left-color: var(--international);">
+          <div class="event-header">
+            <time datetime="2026-03-01">March 1, 2026</time>
+            <span class="category-badge international-relations">International Relations</span>
+          </div>
+          <h2><a href="../interactive-timeline/?date=2026-03-01&search=Middle%20East%20Crisis%20OFW">Middle East Crisis Strands Thousands of Filipino Workers; OFW Killed in Israel</a></h2>
+          <p class="description">Following the February 28 US-Israel airstrikes on Iran that killed Supreme Leader Ali Khamenei, the Philippines was placed on heightened alert as the crisis directly threatened over 2.4 million Filipino workers in the Middle East. By March 7, more than 1,400 OFWs had requested repatriation, mostly from the UAE (586), Israel (297), Abu Dhabi (270), and Bahrain (231). Only around 299 OFWs were successfully returned by mid-week, drawing criticism of the DMW's response. Filipina caregiver Mary Ann Velasquez de Vera, 32, from Pangasinan was killed in Tel Aviv on March 1 by shrapnel while helping her elderly patient reach a bomb shelter&mdash;making her the first civilian casualty in Israel during the renewed fighting.</p>
+          <div class="event-details">
+            <p class="significance"><strong>Significance:</strong> The most consequential international crisis for the Philippines in years, directly threatening the safety of 2.4 million OFWs and the remittance flows that constitute ~9% of GDP. Iran's closure of the Strait of Hormuz on March 2 sent oil futures soaring, with the Philippines identified as among the worst-impacted nations given 90% of its oil imports transit the strait. President Marcos told OFWs to "stay put" as airports remained non-operational due to airstrikes.</p>
+            <p class="diaspora-impact"><strong>Diaspora Impact:</strong> Directly affects 2.4 million Filipino workers in the Middle East. Safety, employment, remittance flows, and family separation anxiety are all acute concerns. The death of Mary Ann de Vera has become a symbol of OFW vulnerability. Airspace closures prevented even repatriation of her remains to Pangasinan.</p>
+            <div class="dynasties"><strong>Dynasties:</strong>
+              <a href="../dynasties-network-visualization.html#dynasty-MARCOS_ROMUALDEZ">Marcos-Romualdez</a>
+            </div>
+            <div class="sources"><strong>Sources:</strong>
+              <a href="https://www.philstar.com/headlines/2026/03/02/2511541/what-we-know-filipinos-stranded-seeking-return-amid-us-israel-war-iran" target="_blank" rel="noopener">philstar.com</a>,
+              <a href="https://www.timesofisrael.com/woman-killed-saturday-in-strike-on-tel-aviv-identified-as-philippine-national/" target="_blank" rel="noopener">timesofisrael.com</a>,
+              <a href="https://globalnation.inquirer.net/312040/gulf-conflict-poses-direct-economic-risk-to-philippines" target="_blank" rel="noopener">inquirer.net</a>,
+              <a href="https://www.khaleejtimes.com/world/asia/filipina-caregiver-killed-israel-amid-iranian-airstrike" target="_blank" rel="noopener">khaleejtimes.com</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="event" style="border-left-color: var(--international);">
+          <div class="event-header">
+            <time datetime="2026-03-03">March 3, 2026</time>
+            <span class="category-badge international-relations">International Relations</span>
+          </div>
+          <h2><a href="../interactive-timeline/?date=2026-03-03&search=South%20Korea%20Philippines%20Agreements">Marcos and South Korean President Lee Sign 10 Bilateral Agreements</a></h2>
+          <p class="description">President Marcos and South Korean President Lee Jae-myung signed 10 agreements during Lee's two-day state visit to Manila, covering defense, nuclear energy, AI, agriculture, trade and investment, intellectual property, cultural cooperation, and police collaboration. In a parallel private sector summit, the Philippine Chamber of Commerce and Korean Federation of Industries sealed additional deals covering shipbuilding, nuclear power development (a KEXIM-KHNP-Meralco MOU), aerospace, and critical minerals supply chains. Lee expressed support for the Philippines' 2026 ASEAN chairmanship.</p>
+          <div class="event-details">
+            <p class="significance"><strong>Significance:</strong> The visit, coinciding with the 77th anniversary of PH-Korea diplomatic relations, marks a significant deepening of the bilateral relationship across defense, energy, and technology sectors. The nuclear energy MOU signals progress on the Marcos administration's push for nuclear power. Defense materials procurement cooperation diversifies the Philippines' security partnerships beyond the US.</p>
+            <p class="diaspora-impact"><strong>Diaspora Impact:</strong> Over 65,000 Filipinos live and work in South Korea. The language program MOUs benefit Filipino Korean-language learners seeking employment in Korea. Defense and nuclear energy cooperation create new professional exchange opportunities. Stronger trade ties benefit both OFWs in Korea and the broader Philippine economy.</p>
+            <div class="dynasties"><strong>Dynasties:</strong>
+              <a href="../dynasties-network-visualization.html#dynasty-MARCOS_ROMUALDEZ">Marcos-Romualdez</a>
+            </div>
+            <div class="sources"><strong>Sources:</strong>
+              <a href="https://www.philstar.com/headlines/2026/03/03/2511785/marcos-meets-south-koreas-lee-manila-securing-10-deals" target="_blank" rel="noopener">philstar.com</a>,
+              <a href="https://www.bworldonline.com/the-nation/2026/03/03/734124/philippines-south-korea-sign-trade-defense-and-tech-deals/" target="_blank" rel="noopener">bworldonline.com</a>,
+              <a href="https://globalnation.inquirer.net/312175/philippines-south-korea-deepen-defense-ai-and-nuclear-energy-ties" target="_blank" rel="noopener">inquirer.net</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="event" style="border-left-color: var(--international);">
+          <div class="event-header">
+            <time datetime="2026-03-05">March 5, 2026</time>
+            <span class="category-badge international-relations">International Relations</span>
+          </div>
+          <h2><a href="../interactive-timeline/?date=2026-03-05&search=Chinese%20Espionage%20Ring">NSC Exposes Chinese Espionage Ring Inside Philippine Military</a></h2>
+          <p class="description">The Philippine National Security Council arrested three Filipino nationals&mdash;employees of the Department of National Defense, the Philippine Navy, and the Philippine Coast Guard&mdash;for espionage activities linked to Chinese intelligence. The operatives, all in their mid-to-late-20s from financially unstable families, allegedly relayed sensitive data on South China Sea resupply missions, military personnel lists, and deployment schedules. One operative used a Tetris game containing a hidden encrypted messaging platform to communicate with Chinese handlers.</p>
+          <div class="event-details">
+            <p class="significance"><strong>Significance:</strong> The most significant China-linked espionage case in the Philippines in recent memory, directly compromising South China Sea resupply operations central to the Philippines' territorial sovereignty strategy. All three confessed and are cooperating. The AFP and PCG confirmed counter-checks for additional informants are ongoing.</p>
+            <p class="diaspora-impact"><strong>Diaspora Impact:</strong> Raises concerns about the integrity of Philippine national defense institutions. Filipino fishermen and families in coastal communities near contested waters face heightened uncertainty. Diaspora groups following sovereignty issues will track the investigation closely.</p>
+            <div class="dynasties"><strong>Dynasties:</strong>
+              <a href="../dynasties-network-visualization.html#dynasty-MARCOS_ROMUALDEZ">Marcos-Romualdez</a>
+            </div>
+            <div class="sources"><strong>Sources:</strong>
+              <a href="https://thediplomat.com/2026/03/philippines-arrests-3-defense-personnel-over-china-spy-claims/" target="_blank" rel="noopener">thediplomat.com</a>,
+              <a href="https://globalnation.inquirer.net/312372/nsc-confirms-uncovering-of-espionage-ops-linked-to-china-filipino-operatives-arrested" target="_blank" rel="noopener">inquirer.net</a>,
+              <a href="https://www.philstar.com/headlines/2026/03/06/2512454/filipino-defense-analysts-held-china-spying-allegations" target="_blank" rel="noopener">philstar.com</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="event" style="border-left-color: var(--international);">
+          <div class="event-header">
+            <time datetime="2026-03-05">March 5, 2026</time>
+            <span class="category-badge international-relations">International Relations</span>
+          </div>
+          <h2><a href="../interactive-timeline/?date=2026-03-05&search=ASEAN%20Forum%20Singapore%20MOU">Philippines Hosts ASEAN Forum, Signs Singapore Social Protection MOU</a></h2>
+          <p class="description">The Philippines hosted the High-Level ASEAN Socio-Cultural Community Council Forum from March 3-6 in Manila as part of its 2026 ASEAN chairmanship. DSWD Secretary Rex Gatchalian and Singapore's Minister for Social and Family Development signed a Memorandum of Understanding on social protection, family and child development, and the First 1,000 Days of a Child initiative. The forum advanced the Philippines' R.I.S.E. priorities and the ASPECT Framework for regional disaster response.</p>
+          <div class="event-details">
+            <p class="significance"><strong>Significance:</strong> Demonstrates the Philippines' active use of its ASEAN Chair role to advance concrete social protection and disaster resilience frameworks with tangible bilateral deliverables.</p>
+            <p class="diaspora-impact"><strong>Diaspora Impact:</strong> The ASPECT disaster response framework addresses vulnerability of Filipino families to natural disasters. The Singapore MOU on child development may inform policies benefiting children of OFWs raised by extended families in the Philippines.</p>
+            <div class="dynasties"><strong>Dynasties:</strong>
+              <a href="../dynasties-network-visualization.html#dynasty-MARCOS_ROMUALDEZ">Marcos-Romualdez</a>
+            </div>
+            <div class="sources"><strong>Sources:</strong>
+              <a href="https://www.rappler.com/philippines/dswd-disaster-response-framework-asean-2026/" target="_blank" rel="noopener">rappler.com</a>,
+              <a href="https://mb.com.ph/2026/03/05/philippines-singapore-ink-mou-to-boost-child-care-social-protection-cooperation" target="_blank" rel="noopener">mb.com.ph</a>,
+              <a href="https://pia.gov.ph/news/ph-singapore-sign-mou-on-social-sector-devt-initiative-for-child-care-protection/" target="_blank" rel="noopener">pia.gov.ph</a>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <!-- POLITICAL -->
+      <section class="section">
+        <h2 class="section-title">Political</h2>
+
+        <article class="event" style="border-left-color: var(--politics);">
+          <div class="event-header">
+            <time datetime="2026-03-04">March 4, 2026</time>
+            <span class="category-badge political">Political</span>
+          </div>
+          <h2><a href="../interactive-timeline/?date=2026-03-04&search=VP%20Duterte%20Impeachment%20Substance">VP Sara Duterte Impeachment Complaints Pass Substance Test in House</a></h2>
+          <p class="description">The House Committee on Justice ruled that two impeachment complaints against Vice President Sara Duterte were sufficient in substance on March 4, allowing proceedings to advance. Of four original complaints, one was set aside for violating the one-year bar rule and another was voluntarily withdrawn to consolidate efforts. The two surviving complaints allege misuse of P612.5 million in confidential funds, bribery of education officials, unexplained wealth, and threats against President Marcos and his family. On March 5, the committee formally served notice directing Duterte to respond within 10 calendar days.</p>
+          <div class="event-details">
+            <p class="significance"><strong>Significance:</strong> Marks a historic milestone as the first impeachment drive against VP Sara Duterte to clear both form and substance hurdles. The committee has 60 session days to issue a final decision. Could reshape the 2028 presidential race and further fracture the Marcos-Duterte alliance.</p>
+            <p class="diaspora-impact"><strong>Diaspora Impact:</strong> The impeachment deepens political instability in Manila, affecting investor confidence and peso strength. Diaspora communities are tracking developments closely as the outcome will influence governance quality, anti-corruption enforcement, and the broader political landscape heading into the 2028 elections.</p>
+            <div class="dynasties"><strong>Dynasties:</strong>
+              <a href="../dynasties-network-visualization.html#dynasty-DUTERTE_FAMILY">Duterte</a>,
+              <a href="../dynasties-network-visualization.html#dynasty-MARCOS_ROMUALDEZ">Marcos-Romualdez</a>
+            </div>
+            <div class="sources"><strong>Sources:</strong>
+              <a href="https://www.rappler.com/philippines/impeachment-complaints-sara-duterte-pass-substance-test-house-representatives-march-4-2026/" target="_blank" rel="noopener">rappler.com</a>,
+              <a href="https://mb.com.ph/2026/03/05/house-justice-panel-serves-notice-to-vp-duterte-seeks-answer-to-impeachment-raps" target="_blank" rel="noopener">mb.com.ph</a>,
+              <a href="https://www.philstar.com/headlines/2026/03/02/2511539/house-panel-clears-two-duterte-complaints-sufficient-form" target="_blank" rel="noopener">philstar.com</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="event" style="border-left-color: var(--politics);">
+          <div class="event-header">
+            <time datetime="2026-03-04">March 4, 2026</time>
+            <span class="category-badge political">Political</span>
+          </div>
+          <h2><a href="../interactive-timeline/?date=2026-03-04&search=EDCOM%202%20Extension%20AI">Marcos Signs EDCOM 2 Extension, Adds AI to Education Roadmap</a></h2>
+          <p class="description">President Marcos signed Republic Act 12315, extending the mandate of the Second Congressional Commission on Education (EDCOM 2) by two years and integrating artificial intelligence into the national education roadmap. EDCOM 2 will continue overseeing education reforms and aligning the system with national development and workforce needs. The 2026 budget includes a record P1.3 trillion for education, the largest allocation in Philippine history.</p>
+          <div class="event-details">
+            <p class="significance"><strong>Significance:</strong> Sustains oversight of the Philippines' most ambitious education reform agenda in decades. The AI integration signals a modernization push in a country where education quality gaps remain a top concern.</p>
+            <p class="diaspora-impact"><strong>Diaspora Impact:</strong> Diaspora families supporting children in Philippine schools benefit from continued reform oversight. AI integration in the education roadmap could improve learning outcomes and workforce readiness for future generations.</p>
+            <div class="dynasties"><strong>Dynasties:</strong>
+              <a href="../dynasties-network-visualization.html#dynasty-MARCOS_ROMUALDEZ">Marcos-Romualdez</a>
+            </div>
+            <div class="sources"><strong>Sources:</strong>
+              <a href="https://www.philstar.com/headlines/2026/03/06/2512371/edcom-2-work-extended" target="_blank" rel="noopener">philstar.com</a>,
+              <a href="https://mb.com.ph/2026/03/05/marcos-extends-edcom-2-for-another-two-years" target="_blank" rel="noopener">mb.com.ph</a>,
+              <a href="https://businessmirror.com.ph/2026/03/05/marcos-signs-law-extending-edcom-2-term-and-integrating-ai-into-education-roadmap/" target="_blank" rel="noopener">businessmirror.com.ph</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="event" style="border-left-color: var(--politics);">
+          <div class="event-header">
+            <time datetime="2026-03-05">March 5, 2026</time>
+            <span class="category-badge political">Political</span>
+          </div>
+          <h2><a href="../interactive-timeline/?date=2026-03-05&search=Anti-Dynasty%20Bill">House Advances Anti-Dynasty Bill Amid Criticism It May Legalize Dynasties</a></h2>
+          <p class="description">The House Committee on Suffrage and Electoral Reforms approved a consolidated anti-political dynasty bill authored by Speaker Faustino Dy III and Deputy Majority Leader Sandro Marcos. President Marcos certified the bill as a priority. The bill bars spouses and relatives within the second degree from simultaneously holding elective posts within the same jurisdiction. However, a think tank analysis warned the bill "risks legalizing dynasties instead of dismantling them" because it only prohibits simultaneous office-holding rather than multi-generational concentration of power.</p>
+          <div class="event-details">
+            <p class="significance"><strong>Significance:</strong> The 1987 Constitution mandated an anti-dynasty law that has gone unpassed for nearly 40 years. If enacted, this would be historic&mdash;but reform groups argue the current version codifies rather than dismantles dynastic control. Critics note the irony of a Marcos scion co-authoring the bill.</p>
+            <p class="diaspora-impact"><strong>Diaspora Impact:</strong> Diaspora families in provinces controlled by political dynasties would benefit from genuine anti-dynasty reform that improves political competition and accountability. A watered-down law could entrench existing power structures with a veneer of reform.</p>
+            <div class="dynasties"><strong>Dynasties:</strong>
+              <a href="../dynasties-network-visualization.html#dynasty-MARCOS_ROMUALDEZ">Marcos-Romualdez</a>,
+              <a href="../dynasties-network-visualization.html#dynasty-DY_FAMILY">Dy</a>
+            </div>
+            <div class="sources"><strong>Sources:</strong>
+              <a href="https://www.bworldonline.com/the-nation/2026/03/05/734545/congress-anti-political-dynasty-bill-risks-legalizing-dynasties-think-tank-says/" target="_blank" rel="noopener">bworldonline.com</a>,
+              <a href="https://www.pna.gov.ph/articles/1270278" target="_blank" rel="noopener">pna.gov.ph</a>,
+              <a href="https://newsinfo.inquirer.net/2153091/marcos-lists-antidynasty-bill-among-his-priorities" target="_blank" rel="noopener">inquirer.net</a>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <!-- ECONOMIC -->
+      <section class="section">
+        <h2 class="section-title">Economic</h2>
+
+        <article class="event" style="border-left-color: #0b6e4f;">
+          <div class="event-header">
+            <time datetime="2026-03-03">March 3, 2026</time>
+            <span class="category-badge economic">Economic</span>
+          </div>
+          <h2><a href="../interactive-timeline/?date=2026-03-03&search=Fuel%20Price%20Hikes%20Strait%20Hormuz">Record Fuel Price Hikes Loom as Strait of Hormuz Closure Disrupts Oil Supply</a></h2>
+          <p class="description">Oil companies implemented the eighth consecutive week of gasoline price increases on March 3&mdash;P1.90/liter for gasoline, P1.20/liter for diesel, and P1.50/liter for kerosene. But projections for March 9 are far steeper: kerosene may spike by an unprecedented P24.92/liter, diesel by P19.62/liter, and gasoline by P10.43/liter, driven by the Strait of Hormuz closure. The Philippines holds a 60-day petroleum inventory but 98% of its crude oil imports come from the Middle East. Energy Secretary Sharon Garin announced negotiations with oil firms to stagger increases.</p>
+          <div class="event-details">
+            <p class="significance"><strong>Significance:</strong> The projected fuel price increases are the steepest in Philippine history, threatening to trigger a nationwide inflation spiral affecting food, transport, and basic goods. The 60-day fuel reserve provides a buffer but not a solution if the crisis persists.</p>
+            <p class="diaspora-impact"><strong>Diaspora Impact:</strong> Rising fuel costs cascade through the economy, increasing transport fares, food prices, and electricity rates. Remittances may not stretch as far at a time when OFWs in the Middle East face their own employment instability.</p>
+            <div class="sources"><strong>Sources:</strong>
+              <a href="https://mb.com.ph/2026/03/07/ultra-fuel-price-hike-coming-diesel-up-1962-gasoline-up-1043" target="_blank" rel="noopener">mb.com.ph</a>,
+              <a href="https://pia.gov.ph/news/how-the-strait-of-hormuz-closure-affects-our-oil-prices/" target="_blank" rel="noopener">pia.gov.ph</a>,
+              <a href="https://www.philstar.com/headlines/2026/03/06/2512414/staggered-fuel-price-hikes-start-next-week" target="_blank" rel="noopener">philstar.com</a>,
+              <a href="https://www.cnbc.com/2026/03/03/strait-of-hormuz-closure-which-countries-will-be-hit-the-most.html" target="_blank" rel="noopener">cnbc.com</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="event" style="border-left-color: #0b6e4f;">
+          <div class="event-header">
+            <time datetime="2026-03-04">March 4, 2026</time>
+            <span class="category-badge economic">Economic</span>
+          </div>
+          <h2><a href="../interactive-timeline/?date=2026-03-04&search=PSEi%20Falls%20Peso%20Weakens">PSEi Falls 2.13%, Peso Weakens to P58.57 as Middle East Crisis Hits Markets</a></h2>
+          <p class="description">The Philippine Stock Exchange Index dropped 2.13% to 6,307.84 on March 4 as the Middle East conflict and oil price surge rattled investors. The peso weakened to P58.57 per dollar amid a strengthening US dollar and heightened geopolitical risk. Brent crude traded around $83.80/barrel. Economists urged the government to establish OFW contingency plans including rapid assistance and job-matching programs, and to provide liquidity support to households at risk of reduced remittance income.</p>
+          <div class="event-details">
+            <p class="significance"><strong>Significance:</strong> Reflects the Philippines' acute economic vulnerability to Middle East instability as a net oil importer with 2.4 million workers in the region. The peso reversal from its recent strength (57.70 last week) underscores how quickly geopolitical shocks can unwind gains.</p>
+            <p class="diaspora-impact"><strong>Diaspora Impact:</strong> A weaker peso offers short-term remittance gains but sustained depreciation signals economic distress. Rising import costs from oil and currency weakness drive inflation, eroding the real purchasing power of remittances.</p>
+            <div class="dynasties"><strong>Dynasties:</strong>
+              <a href="../dynasties-network-visualization.html#dynasty-MARCOS_ROMUALDEZ">Marcos-Romualdez</a>
+            </div>
+            <div class="sources"><strong>Sources:</strong>
+              <a href="https://tribune.net.ph/2026/03/04/psei-drops-213-as-oil-fears-grow-2" target="_blank" rel="noopener">tribune.net.ph</a>,
+              <a href="https://mb.com.ph/2026/03/02/economists-urge-ofw-safeguards-fuel-stability-as-marcos-economic-team-weighs-response" target="_blank" rel="noopener">mb.com.ph</a>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <!-- ECONOMIC (continued) -->
+      <section class="section">
+        <h2 class="section-title">Economic (continued)</h2>
+
+        <article class="event" style="border-left-color: #0b6e4f;">
+          <div class="event-header">
+            <time datetime="2026-03-05">March 5, 2026</time>
+            <span class="category-badge economic">Economic</span>
+          </div>
+          <h2><a href="../interactive-timeline/?date=2026-03-05&search=Inflation%20February">Inflation Quickens to 2.4% in February; Third Consecutive Monthly Rise</a></h2>
+          <p class="description">Philippine inflation rose for the third consecutive month to 2.4% in February 2026, driven by faster increases in food and beverage prices. While still within the BSP's 2-4% target band, the upward trend&mdash;combined with the Middle East oil crisis&mdash;raises concerns about accelerating inflation in the coming months. BSP Governor Remolona had projected faster February inflation the previous week.</p>
+          <div class="event-details">
+            <p class="significance"><strong>Significance:</strong> The rising trend, combined with the imminent record fuel price hikes, signals that the BSP's easing cycle (six consecutive cuts since August 2024, totaling 225 bps) may be forced to reverse. If oil hits $100/barrel, BSP may need to hike rates, ending the accommodative stance that has supported economic recovery.</p>
+            <p class="diaspora-impact"><strong>Diaspora Impact:</strong> Remittance purchasing power is directly affected. OFW families feel food price increases acutely, especially lower-income households. The potential for rate hikes would also raise borrowing costs for families with loans.</p>
+            <div class="sources"><strong>Sources:</strong>
+              <a href="https://www.abs-cbn.com/news/business/2026/3/5/inflation-quickens-to-2-4-pct-in-february-0910" target="_blank" rel="noopener">abs-cbn.com</a>,
+              <a href="https://www.rappler.com/business/inflation-rate-philippines-february-2026/" target="_blank" rel="noopener">rappler.com</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="event" style="border-left-color: #0b6e4f;">
+          <div class="event-header">
+            <time datetime="2026-03-07">March 7, 2026</time>
+            <span class="category-badge economic">Economic</span>
+          </div>
+          <h2><a href="../interactive-timeline/?date=2026-03-07&search=Four%20Day%20Workweek">Marcos Orders 4-Day Government Workweek to Conserve Energy Amid Oil Crisis</a></h2>
+          <p class="description">President Marcos ordered a temporary four-day workweek for all executive branch offices starting March 9 to conserve energy amid the global oil supply crisis. Government agencies must cut electricity and fuel consumption by 10-20%. Air conditioning is set to 24&deg;C, and non-essential travel is suspended. Emergency and essential services (police, fire, healthcare) are exempted from the shortened workweek.</p>
+          <div class="event-details">
+            <p class="significance"><strong>Significance:</strong> The drastic measure signals the severity of the Philippines' energy vulnerability. A government-wide workweek reduction has not been implemented since the global oil shocks of the 1970s. It is intended as a temporary stopgap while the DOE negotiates staggered fuel price increases with oil companies.</p>
+            <p class="diaspora-impact"><strong>Diaspora Impact:</strong> Affects government services OFWs rely on, including consular processing, documentation, and OWWA/DMW services&mdash;particularly concerning during the Middle East repatriation crisis when demand for government assistance is at its highest.</p>
+            <div class="dynasties"><strong>Dynasties:</strong>
+              <a href="../dynasties-network-visualization.html#dynasty-MARCOS_ROMUALDEZ">Marcos-Romualdez</a>
+            </div>
+            <div class="sources"><strong>Sources:</strong>
+              <a href="https://www.philstar.com/headlines/2026/03/07/2512592/president-marcos-oks-4-day-workweek-executive-offices" target="_blank" rel="noopener">philstar.com</a>,
+              <a href="https://mb.com.ph/2026/03/06/marcos-implements-4-day-work-week-in-govt-agencies-to-cushion-expected-oil-supply-woes" target="_blank" rel="noopener">mb.com.ph</a>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <!-- NATURAL DISASTERS -->
+      <section class="section">
+        <h2 class="section-title">Natural Disasters</h2>
+
+        <article class="event" style="border-left-color: #c44900;">
+          <div class="event-header">
+            <time datetime="2026-03-05">March 5, 2026</time>
+            <span class="category-badge natural-disasters">Natural Disasters</span>
+          </div>
+          <h2><a href="../interactive-timeline/?date=2026-03-05&search=Mayon%20Kanlaon%20Eruption">Dual Volcanic Crisis Continues: Mayon Day 55+, Kanlaon Ash Plumes Persist</a></h2>
+          <p class="description">Mayon Volcano continued its effusive eruption for over 55 consecutive days under Alert Level 3, with PHIVOLCS recording 323 rockfall events and six pyroclastic density currents in a single 24-hour period. Sulfur dioxide emissions measured 1,582 tonnes. Separately, Kanlaon Volcano in Negros Island maintained Alert Level 2 with ongoing grayish ash plumes rising ~1,000 meters above the summit and continued volcanic earthquakes and edifice inflation. The simultaneous unrest of both volcanoes continues to strain monitoring resources.</p>
+          <div class="event-details">
+            <p class="significance"><strong>Significance:</strong> Having two major volcanoes in simultaneous eruption strains PHIVOLCS monitoring and disaster preparedness. Mayon's persistent lava flows and Kanlaon's explosive episodes pose ongoing risks to agriculture and communities in Albay and Negros.</p>
+            <p class="diaspora-impact"><strong>Diaspora Impact:</strong> Bicolano and Negrense OFWs remain concerned about family safety. Agricultural damage to coconut, abaca, and sugarcane crops in affected zones impacts livelihoods. Diaspora remittances are being channeled to support displaced relatives in both regions.</p>
+            <div class="sources"><strong>Sources:</strong>
+              <a href="https://tribune.net.ph/2026/03/05/mayon-logs-30-quakes-effusive-eruption" target="_blank" rel="noopener">tribune.net.ph</a>,
+              <a href="https://www.gmanetwork.com/news/topstories/regions/978365/phivolcs-eruption-mayon-volcano/story/" target="_blank" rel="noopener">gmanetwork.com</a>,
+              <a href="https://www.volcanodiscovery.com/mayon/news/296708/Mayon-Volcano-Philippines-activity-update-Mar-4-2026-Continuing-eruption.html" target="_blank" rel="noopener">volcanodiscovery.com</a>,
+              <a href="https://gulfnews.com/world/asia/philippines/philippines-back-to-back-eruptions-mayon-unleashes-fast-moving-avalanche-of-hot-rocks-kanlaon-shoots-ash-plumes-1.500457181" target="_blank" rel="noopener">gulfnews.com</a>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <!-- OFW & Diaspora News Section -->
+      <section class="ofw-section">
+        <h2>OFW &amp; Diaspora News</h2>
+
+        <div class="ofw-stats">
+          <div class="ofw-stat">
+            <span class="number">2.4M</span>
+            <span class="label">OFWs in Middle East</span>
+          </div>
+          <div class="ofw-stat">
+            <span class="number">1,400+</span>
+            <span class="label">Repatriation Requests</span>
+          </div>
+          <div class="ofw-stat">
+            <span class="number">299</span>
+            <span class="label">Returned This Week</span>
+          </div>
+          <div class="ofw-stat">
+            <span class="number">42</span>
+            <span class="label">Flights Cancelled</span>
+          </div>
+        </div>
+
+        <article class="ofw-story">
+          <h3>Filipina Caregiver Mary Ann de Vera Killed in Israel Missile Strike</h3>
+          <p>Mary Ann Velasquez de Vera, 32, a caregiver from Basista, Pangasinan, was killed by shrapnel in Tel Aviv on March 1 while helping her elderly patient reach a bomb shelter during the Iranian retaliatory strikes. Her husband Ernie, also a caregiver in Israel, identified her remains. Airspace closures are preventing repatriation of her body. The Israeli Embassy called her "selfless."</p>
+          <div class="ofw-details">
+            <span>Israel &mdash; Tel Aviv</span>
+            <a href="https://www.timesofisrael.com/woman-killed-saturday-in-strike-on-tel-aviv-identified-as-philippine-national/" target="_blank">Times of Israel</a>
+            <a href="https://mb.com.ph/2026/03/02/kin-of-ofw-killed-in-israel-seek-privacy-speedy-repatriation" target="_blank">Manila Bulletin</a>
+          </div>
+        </article>
+
+        <article class="ofw-story">
+          <h3>Government Prepares Mass Evacuation Plans but No Mandatory Repatriation Yet</h3>
+          <p>The Philippine government has not ordered mandatory repatriation (Alert Level 4) but is preparing mass evacuation plans. DMW confirmed exit points and repatriation logistics are ready. President Marcos told OFWs to "stay put" while airports remain non-operational. TESDA announced fast-tracked skills assessment for returning OFWs to help with re-employment.</p>
+          <div class="ofw-details">
+            <span>Middle East &mdash; Regional</span>
+            <a href="https://www.philstar.com/headlines/2026/03/03/2511616/government-prepares-mass-ofw-evacuation-middle-east" target="_blank">Philstar</a>
+            <a href="https://pco.gov.ph/news_releases/dmw-exit-points-repatriation-plans-ready-for-filipinos-affected-by-middle-east-conflict/" target="_blank">PCO</a>
+          </div>
+        </article>
+
+        <article class="ofw-story">
+          <h3>OFW Repatriation Breakdown: 1,400+ Requests, 299 Returned</h3>
+          <p>As of March 5, a total of 1,416 OFWs had requested repatriation: 586 from Dubai, 297 from Israel, 270 from Abu Dhabi, 231 from Bahrain, and 22 from Jordan. Only 299 Filipinos have been successfully returned. Critics say the DMW response has been too slow, with many OFWs unable to contact Philippine embassies.</p>
+          <div class="ofw-details">
+            <span>UAE, Israel, Bahrain, Jordan</span>
+            <a href="https://www.philstar.com/headlines/2026/03/05/2512216/299-filipinos-repatriated-middle-east-amid-tensions" target="_blank">Philstar</a>
+            <a href="https://www.pna.gov.ph/articles/1270107" target="_blank">PNA</a>
+          </div>
+        </article>
+
+        <article class="ofw-story">
+          <h3>Oil Crisis Threatens OFW Remittance Purchasing Power</h3>
+          <p>Economists warn that the dual shock of oil price increases and potential OFW job losses in the Middle East could significantly reduce the real value of remittances for Filipino families. The Philippines receives ~$38.4 billion in annual remittances, with a large share from Middle Eastern countries. BSP urged banks to prepare liquidity support for remittance-dependent households.</p>
+          <div class="ofw-details">
+            <span>Economic Impact &mdash; Global</span>
+            <a href="https://globalnation.inquirer.net/312040/gulf-conflict-poses-direct-economic-risk-to-philippines" target="_blank">Inquirer</a>
+          </div>
+        </article>
+
+        <!-- Travel Advisories -->
+        <div class="travel-advisory">
+          <h4>Active Travel Advisories &mdash; ELEVATED</h4>
+          <ul>
+            <li><strong>Deployment Suspended:</strong> Israel, Lebanon, Iran, Jordan &ndash; Active military conflict; airspace closures</li>
+            <li><strong>Heightened Alert:</strong> UAE, Bahrain, Saudi Arabia, Kuwait &ndash; Strait of Hormuz closure; regional instability</li>
+            <li><strong>Exercise Caution:</strong> Myanmar, Cambodia, Laos &ndash; Scam hub operations targeting OFWs</li>
+            <li><strong>Monitoring:</strong> US, Europe &ndash; Stricter immigration enforcement under anti-migrant policies</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Dynasty Highlights -->
+      <section class="dynasty-highlights">
+        <h3>Dynasty Highlights</h3>
+        <div>
+          <div class="dynasty-item">
+            <strong>
+              <a href="../dynasties-network-visualization.html#dynasty-MARCOS_ROMUALDEZ">Marcos-Romualdez</a>
+            </strong>
+            <p style="margin: 8px 0 0; font-size: 14px;">Dominated the week as President Marcos navigated the Middle East crisis affecting 2.4M OFWs, ordered a 4-day government workweek to conserve energy, signed 10 agreements with South Korea, extended EDCOM 2, and certified the anti-dynasty bill as a priority. The Marcos-Duterte rift deepened with the impeachment advancing. Sandro Marcos co-authored the anti-dynasty bill, drawing criticism for the irony.</p>
+            <ul style="margin: 8px 0 0 20px; padding: 0; font-size: 14px;">
+              <li><a href="../interactive-timeline/?date=2026-03-01">Middle East Crisis &mdash; OFW Response</a></li>
+              <li><a href="../interactive-timeline/?date=2026-03-07">4-Day Workweek Order &mdash; Energy Conservation</a></li>
+              <li><a href="../interactive-timeline/?date=2026-03-03">South Korea &mdash; 10 Bilateral Agreements</a></li>
+              <li><a href="../interactive-timeline/?date=2026-03-05">Anti-Dynasty Bill Advanced</a></li>
+              <li><a href="../interactive-timeline/?date=2026-03-04">EDCOM 2 Extension Signed</a></li>
+            </ul>
+          </div>
+
+          <div class="dynasty-item">
+            <strong>
+              <a href="../dynasties-network-visualization.html#dynasty-DUTERTE_FAMILY">Duterte</a>
+            </strong>
+            <p style="margin: 8px 0 0; font-size: 14px;">VP Sara Duterte's impeachment reached a historic milestone as two complaints cleared the substance test in the House Committee on Justice for the first time. She was formally served notice to respond within 10 days. The impeachment proceedings, combined with the pending ICC decision on her father, put the Duterte dynasty under unprecedented legal pressure.</p>
+            <ul style="margin: 8px 0 0 20px; padding: 0; font-size: 14px;">
+              <li><a href="../interactive-timeline/?date=2026-03-04">Impeachment Complaints Pass Substance Test</a></li>
+              <li><a href="../interactive-timeline/?date=2026-02-27">ICC Decision Expected Within 60 Days (from Feb 27)</a></li>
+            </ul>
+          </div>
+
+          <div class="dynasty-item">
+            <strong>
+              <a href="../dynasties-network-visualization.html#dynasty-DY_FAMILY">Dy</a>
+            </strong>
+            <p style="margin: 8px 0 0; font-size: 14px;">Speaker Faustino "Bojie" Dy III co-authored the consolidated anti-dynasty bill, which critics say may legalize rather than dismantle dynastic politics.</p>
+            <ul style="margin: 8px 0 0 20px; padding: 0; font-size: 14px;">
+              <li><a href="../interactive-timeline/?date=2026-03-05">Anti-Dynasty Bill Advanced in House</a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        Part of the
+        <a href="https://github.com/dat-angel/openpinas">OpenPinas</a>
+        project
+      </p>
+      <p>
+        <a href="https://github.com/dat-angel/openpinas">GitHub</a>
+      </p>
+      <p style="margin-top: 12px; font-size: 12px;">
+        Last updated: March 7, 2026
+      </p>
+    </footer>
+  </body>
+</html>

@@ -4,9 +4,9 @@
   "prepared_for": "Filipino Diaspora Communities Worldwide",
   "metadata": {
     "purpose": "Comprehensive timeline of major Philippine events in 2026 to help overseas Filipinos understand developments affecting families, remittances, investments, and homeland governance",
-    "last_updated": "February 22, 2026",
+    "last_updated": "March 7, 2026",
     "aggregation_note": "This timeline is aggregated by month as events unfold. Weekly reviews provide more detailed coverage.",
-    "total_events": 76,
+    "total_events": 88,
     "categories": [
       "Political",
       "Cultural",
@@ -1534,6 +1534,254 @@
         ]
       },
       "weekly_review": "weekly-reviews/weekly-review-2026-02-22.html"
+    },
+    {
+      "date": "2026-03-01",
+      "month": "March",
+      "title": "Middle East Crisis Strands Thousands of Filipino Workers Abroad",
+      "category": "International Relations",
+      "description": "Following the February 28 US-Israel airstrikes on Iran that killed Supreme Leader Ali Khamenei, the Philippines was placed on heightened alert as the Middle East crisis directly threatened over 2.4 million Filipino workers in the region. By March 7, more than 2,000 OFWs had requested repatriation, mostly from the UAE. Airspace closures grounded 42 Philippine-route flights, with President Marcos noting airports were non-operational due to airstrikes. Only around 400 OFWs were successfully returned by mid-week, drawing criticism of the Department of Migrant Workers' response. Iran's closure of the Strait of Hormuz on March 2 sent oil futures soaring, with the Philippines identified as among the worst-impacted nations given 90% of its oil imports come from the Middle East. The peso weakened to P58.57 per dollar, and the PSEi fell 2.13% to 6,307.84.",
+      "significance": "The most consequential international crisis for the Philippines in years, directly threatening the safety of 2.4 million OFWs and the remittance flows that constitute ~9% of GDP. The oil price shock compounds existing inflationary pressures.",
+      "diaspora_impact": "Directly affects 2.4 million Filipino workers in the Middle East. Safety, employment, remittance flows, and family separation anxiety are all acute concerns. Oil-driven inflation will erode the real value of remittances sent home.",
+      "mentioned_dynasties": [
+        "MARCOS_ROMUALDEZ"
+      ],
+      "sources": {
+        "international": [],
+        "local": [
+          "https://www.philstar.com/headlines/2026/03/02/2511541/what-we-know-filipinos-stranded-seeking-return-amid-us-israel-war-iran",
+          "https://globalnation.inquirer.net/312040/gulf-conflict-poses-direct-economic-risk-to-philippines",
+          "https://mb.com.ph/2026/03/03/philippines-among-worst-hit-by-oil-price-surge-amid-middle-east-tensionsing"
+        ]
+      },
+      "weekly_review": "weekly-reviews/weekly-review-2026-03-07.html"
+    },
+    {
+      "date": "2026-03-03",
+      "month": "March",
+      "title": "Record Fuel Price Hikes Loom as Middle East Crisis Disrupts Oil Supply",
+      "category": "Economic",
+      "description": "Major oil companies implemented the eighth consecutive week of gasoline price increases on March 3 -- P1.90/liter for gasoline, P1.20/liter for diesel, and P1.50/liter for kerosene. But projections for March 9 are far steeper: kerosene may spike by an unprecedented P24.92/liter, diesel by P19.62/liter, and gasoline by P10.43/liter, driven by the Strait of Hormuz closure and Middle East conflict. Energy Secretary Sharon Garin announced negotiations with oil firms to stagger the increases and prevent sudden inflationary shock. The Philippines holds a 60-day petroleum inventory but its near-total dependence on Middle Eastern oil imports (~90%) makes it uniquely vulnerable. The DOE confirmed it will distribute the price increases across multiple weeks.",
+      "significance": "The projected fuel price increases are the steepest in Philippine history, threatening to trigger a nationwide inflation spiral affecting food, transport, and basic goods.",
+      "diaspora_impact": "Rising fuel costs cascade through the economy, increasing transport fares, food prices, and electricity rates. Remittances may not stretch as far, and OFWs may face pressure to send more at a time when their own Middle East employment is unstable.",
+      "mentioned_dynasties": [
+        "MARCOS_ROMUALDEZ"
+      ],
+      "sources": {
+        "international": [],
+        "local": [
+          "https://mb.com.ph/2026/03/07/ultra-fuel-price-hike-coming-diesel-up-1962-gasoline-up-1043",
+          "https://mb.com.ph/2026/03/02/gasoline-up-190-diesel-120-in-latest-oil-price-hike",
+          "https://www.philstar.com/headlines/2026/03/06/2512414/staggered-fuel-price-hikes-start-next-week"
+        ]
+      },
+      "weekly_review": "weekly-reviews/weekly-review-2026-03-07.html"
+    },
+    {
+      "date": "2026-03-04",
+      "month": "March",
+      "title": "VP Sara Duterte Impeachment Complaints Pass Substance Test in House",
+      "category": "Political",
+      "description": "The House Committee on Justice ruled that two impeachment complaints against Vice President Sara Duterte were sufficient in substance on March 4, 2026, allowing the proceedings to advance to the next phase. Of four original complaints, one was set aside for violating the one-year bar rule and another was voluntarily withdrawn to consolidate efforts. The two surviving complaints, filed by clergy members and civic groups, allege misuse of P612.5 million in confidential funds, bribery of education officials, unexplained wealth, and threats against President Marcos and his family. On March 5, the committee formally served notice directing Duterte to respond within 10 calendar days. The committee has 60 session days from the February 23 initiation to issue a final decision. This is the farthest any impeachment drive against Duterte has progressed, reflecting the deepening Marcos-Duterte political rift.",
+      "significance": "Marks a historic milestone as the first impeachment drive against VP Sara Duterte to clear both form and substance hurdles. Could reshape the 2028 presidential race and further fracture the Marcos-Duterte alliance that won the 2022 election.",
+      "diaspora_impact": "The impeachment deepens political instability in Manila, affecting investor confidence and peso strength. Diaspora communities are tracking developments closely as the outcome will influence governance quality, anti-corruption enforcement, and the broader political landscape heading into the 2028 elections.",
+      "mentioned_dynasties": [
+        "DUTERTE_FAMILY",
+        "MARCOS_ROMUALDEZ"
+      ],
+      "sources": {
+        "international": [],
+        "local": [
+          "https://www.rappler.com/philippines/impeachment-complaints-sara-duterte-pass-substance-test-house-representatives-march-4-2026/",
+          "https://mb.com.ph/2026/03/05/house-justice-panel-serves-notice-to-vp-duterte-seeks-answer-to-impeachment-raps",
+          "https://www.philstar.com/headlines/2026/03/02/2511539/house-panel-clears-two-duterte-complaints-sufficient-form"
+        ]
+      },
+      "weekly_review": "weekly-reviews/weekly-review-2026-03-07.html"
+    },
+    {
+      "date": "2026-03-04",
+      "month": "March",
+      "title": "Marcos Signs EDCOM 2 Extension, Adds AI to Education Roadmap",
+      "category": "Political",
+      "description": "President Marcos signed Republic Act 12315 on March 4, extending the mandate of the Second Congressional Commission on Education (EDCOM 2) by two years beyond its December 2025 expiration. The law also integrates artificial intelligence into the national education roadmap. EDCOM 2 will continue overseeing education reforms and aligning the system with national development and workforce needs. The 2026 budget includes a record P1.3 trillion for education, the largest allocation in Philippine history. The commission's funding will come from existing congressional outlays, with subsequent requirements in annual budgets.",
+      "significance": "Sustains oversight of the Philippines' most ambitious education reform agenda in decades. The AI integration signals a modernization push in a country where education quality gaps remain a top concern.",
+      "diaspora_impact": "Diaspora families supporting children in Philippine schools benefit from continued reform oversight. AI integration in the education roadmap could improve learning outcomes and workforce readiness for future generations.",
+      "mentioned_dynasties": [
+        "MARCOS_ROMUALDEZ"
+      ],
+      "sources": {
+        "international": [],
+        "local": [
+          "https://www.philstar.com/headlines/2026/03/06/2512371/edcom-2-work-extended",
+          "https://mb.com.ph/2026/03/05/marcos-extends-edcom-2-for-another-two-years",
+          "https://businessmirror.com.ph/2026/03/05/marcos-signs-law-extending-edcom-2-term-and-integrating-ai-into-education-roadmap/"
+        ]
+      },
+      "weekly_review": "weekly-reviews/weekly-review-2026-03-07.html"
+    },
+    {
+      "date": "2026-03-04",
+      "month": "March",
+      "title": "PSEi Falls 2.13%, Peso Weakens as Middle East Crisis Hits Markets",
+      "category": "Economic",
+      "description": "The Philippine Stock Exchange Index dropped 2.13% to 6,307.84 on March 4 as the Middle East conflict and oil price surge rattled investors. The peso weakened to P58.57 per dollar amid a strengthening US dollar and heightened geopolitical risk. Brent crude traded around $83.80/barrel. Economists urged the government to establish OFW contingency plans including rapid assistance and job-matching programs, and to provide liquidity support to households at risk of reduced remittance income.",
+      "significance": "Reflects the Philippines' acute economic vulnerability to Middle East instability as a net oil importer with 2.4 million workers in the region.",
+      "diaspora_impact": "A weaker peso offers short-term remittance gains but sustained depreciation signals economic distress. Rising import costs from oil and currency weakness drive inflation, eroding the real purchasing power of remittances.",
+      "mentioned_dynasties": [
+        "MARCOS_ROMUALDEZ"
+      ],
+      "sources": {
+        "international": [],
+        "local": [
+          "https://tribune.net.ph/2026/03/04/psei-drops-213-as-oil-fears-grow-2",
+          "https://mb.com.ph/2026/03/02/economists-urge-ofw-safeguards-fuel-stability-as-marcos-economic-team-weighs-response"
+        ]
+      },
+      "weekly_review": "weekly-reviews/weekly-review-2026-03-07.html"
+    },
+    {
+      "date": "2026-03-05",
+      "month": "March",
+      "title": "NSC Exposes Chinese Espionage Ring Inside Philippine Military",
+      "category": "International Relations",
+      "description": "The Philippine National Security Council arrested three Filipino nationals -- employees of the Department of National Defense, the Philippine Navy, and the Philippine Coast Guard -- for espionage activities linked to Chinese intelligence. The operatives, all in their mid-to-late-20s from financially unstable families, allegedly relayed sensitive data on rotational and resupply missions to contested South China Sea features, military personnel lists, and deployment schedules to Chinese handlers. One operative used a Tetris game containing a hidden encrypted messaging platform to communicate. All three confessed and are cooperating. The Armed Forces and Coast Guard confirmed ongoing counter-checks for additional informants. China's embassy issued a standard non-interference response. The case is the most significant China-linked espionage incident in the Philippines in recent memory, occurring as Manila leads ASEAN Code of Conduct negotiations.",
+      "significance": "Most significant China-linked espionage case in the Philippines in years. Directly compromised South China Sea resupply operations that are central to the Philippines' territorial sovereignty strategy.",
+      "diaspora_impact": "Raises concerns about the integrity of Philippine national defense institutions. Filipino fishermen and families in coastal communities near contested waters face heightened uncertainty. Diaspora groups following sovereignty issues will track the investigation closely.",
+      "mentioned_dynasties": [
+        "MARCOS_ROMUALDEZ"
+      ],
+      "sources": {
+        "international": [
+          "https://thediplomat.com/2026/03/philippines-arrests-3-defense-personnel-over-china-spy-claims/"
+        ],
+        "local": [
+          "https://globalnation.inquirer.net/312372/nsc-confirms-uncovering-of-espionage-ops-linked-to-china-filipino-operatives-arrested",
+          "https://www.philstar.com/headlines/2026/03/06/2512454/filipino-defense-analysts-held-china-spying-allegations"
+        ]
+      },
+      "weekly_review": "weekly-reviews/weekly-review-2026-03-07.html"
+    },
+    {
+      "date": "2026-03-05",
+      "month": "March",
+      "title": "Philippines Hosts ASEAN Forum, Signs Singapore Social Protection MOU",
+      "category": "International Relations",
+      "description": "The Philippines hosted the High-Level ASEAN Socio-Cultural Community Council Forum from March 3-6 in Manila as part of its 2026 ASEAN chairmanship. DSWD Secretary Rex Gatchalian and Singapore's Minister for Social and Family Development signed a Memorandum of Understanding on March 4, formalizing cooperation on social protection, family and child development, and the First 1,000 Days of a Child initiative. The forum advanced the Philippines' R.I.S.E. priorities: Resilient and Empowered Families, Inclusive Development, Smart Youth and Innovations, and Environmentally Sustainable and Food Secure Future. The Philippines is also pushing the ASPECT Framework for regional disaster response, targeting adoption by end of its chairmanship.",
+      "significance": "Demonstrates the Philippines' active use of its ASEAN Chair role to advance concrete social protection and disaster resilience frameworks with tangible bilateral deliverables.",
+      "diaspora_impact": "The ASPECT disaster response framework addresses vulnerability of Filipino families to natural disasters. The Singapore MOU on child development may inform policies benefiting children of OFWs raised by extended families in the Philippines.",
+      "mentioned_dynasties": [
+        "MARCOS_ROMUALDEZ"
+      ],
+      "sources": {
+        "international": [],
+        "local": [
+          "https://www.rappler.com/philippines/dswd-disaster-response-framework-asean-2026/",
+          "https://mb.com.ph/2026/03/05/philippines-singapore-ink-mou-to-boost-child-care-social-protection-cooperation",
+          "https://pia.gov.ph/news/ph-singapore-sign-mou-on-social-sector-devt-initiative-for-child-care-protection/"
+        ]
+      },
+      "weekly_review": "weekly-reviews/weekly-review-2026-03-07.html"
+    },
+    {
+      "date": "2026-03-05",
+      "month": "March",
+      "title": "House Advances Anti-Dynasty Bill Amid Criticism It May Legalize Dynasties",
+      "category": "Political",
+      "description": "The House Committee on Suffrage and Electoral Reforms approved a consolidated anti-political dynasty bill authored by Speaker Faustino Dy III and Deputy Majority Leader Sandro Marcos. President Marcos certified the bill as a priority alongside three other reform measures. The bill bars spouses and relatives within the second degree of consanguinity or affinity from simultaneously holding elective posts within the same jurisdiction. However, a think tank analysis published March 5 warned the bill 'risks legalizing dynasties instead of dismantling them' because it only prohibits simultaneous office-holding rather than multi-generational concentration of power. Critics note the irony of a Marcos scion co-authoring the bill while the Marcos family holds multiple government positions.",
+      "significance": "The 1987 Constitution mandated an anti-dynasty law that has gone unpassed for nearly 40 years. If enacted, this would be historic -- but reform groups argue the current version codifies rather than dismantles dynastic control.",
+      "diaspora_impact": "Diaspora families in provinces controlled by political dynasties would benefit from genuine anti-dynasty reform that improves political competition and accountability. A watered-down law could entrench existing power structures with a veneer of reform.",
+      "mentioned_dynasties": [
+        "MARCOS_ROMUALDEZ"
+      ],
+      "sources": {
+        "international": [],
+        "local": [
+          "https://www.bworldonline.com/the-nation/2026/03/05/734545/congress-anti-political-dynasty-bill-risks-legalizing-dynasties-think-tank-says/",
+          "https://www.pna.gov.ph/articles/1270278",
+          "https://newsinfo.inquirer.net/2153091/marcos-lists-antidynasty-bill-among-his-priorities"
+        ]
+      },
+      "weekly_review": "weekly-reviews/weekly-review-2026-03-07.html"
+    },
+    {
+      "date": "2026-03-05",
+      "month": "March",
+      "title": "Inflation Quickens to 2.4% in February; Third Consecutive Monthly Rise",
+      "category": "Economic",
+      "description": "Philippine inflation rose for the third consecutive month to 2.4% in February 2026, driven by faster increases in food and beverage prices. While still within the BSP's 2-4% target band, the upward trend combined with the Middle East oil crisis raises concerns about accelerating inflation. If oil hits $100/barrel, BSP may need to hike rates, ending the easing cycle.",
+      "significance": "Rising inflation combined with imminent record fuel hikes may force the BSP to reverse its easing cycle (225 bps of cuts since August 2024)",
+      "diaspora_impact": "Remittance purchasing power directly affected; food price increases hit lower-income households dependent on remittance income.",
+      "mentioned_dynasties": [],
+      "sources": {
+        "international": [],
+        "local": [
+          "https://www.abs-cbn.com/news/business/2026/3/5/inflation-quickens-to-2-4-pct-in-february-0910",
+          "https://www.rappler.com/business/inflation-rate-philippines-february-2026/"
+        ]
+      },
+      "weekly_review": "weekly-reviews/weekly-review-2026-03-07.html"
+    },
+    {
+      "date": "2026-03-07",
+      "month": "March",
+      "title": "Marcos Orders 4-Day Government Workweek to Conserve Energy Amid Oil Crisis",
+      "category": "Political",
+      "description": "President Marcos ordered a temporary four-day workweek for all executive branch offices starting March 9 to conserve energy amid the global oil supply crisis caused by the Strait of Hormuz closure. Government agencies must cut electricity and fuel consumption by 10-20%. Air conditioning set to 24C. Emergency/essential services (police, fire, healthcare) exempted.",
+      "significance": "Most drastic government energy conservation measure since the 1970s oil shocks; signals severity of the Philippines' energy vulnerability",
+      "diaspora_impact": "Affects government services OFWs rely on including consular processing, OWWA/DMW services -- particularly concerning during the Middle East repatriation crisis.",
+      "mentioned_dynasties": [
+        "MARCOS_ROMUALDEZ"
+      ],
+      "sources": {
+        "international": [],
+        "local": [
+          "https://www.philstar.com/headlines/2026/03/07/2512592/president-marcos-oks-4-day-workweek-executive-offices",
+          "https://mb.com.ph/2026/03/06/marcos-implements-4-day-work-week-in-govt-agencies-to-cushion-expected-oil-supply-woes"
+        ]
+      },
+      "weekly_review": "weekly-reviews/weekly-review-2026-03-07.html"
+    },
+    {
+      "date": "2026-03-03",
+      "month": "March",
+      "title": "Marcos and South Korean President Lee Sign 10 Bilateral Agreements",
+      "category": "International Relations",
+      "description": "President Marcos and South Korean President Lee Jae-myung signed 10 agreements during Lee's two-day state visit to Manila, covering defense, nuclear energy, AI, agriculture, trade and investment, intellectual property, cultural cooperation, and police collaboration. Private sector deals covered shipbuilding, nuclear power development (KEXIM-KHNP-Meralco MOU), aerospace, and critical minerals supply chains.",
+      "significance": "Deepens PH-Korea bilateral relationship across defense, energy, and technology; nuclear energy MOU advances Marcos nuclear power push",
+      "diaspora_impact": "Over 65,000 Filipinos live and work in South Korea; language program MOUs benefit Korean-language learners seeking employment. Defense and nuclear cooperation create new professional exchange opportunities.",
+      "mentioned_dynasties": [
+        "MARCOS_ROMUALDEZ"
+      ],
+      "sources": {
+        "international": [],
+        "local": [
+          "https://www.philstar.com/headlines/2026/03/03/2511785/marcos-meets-south-koreas-lee-manila-securing-10-deals",
+          "https://www.bworldonline.com/the-nation/2026/03/03/734124/philippines-south-korea-sign-trade-defense-and-tech-deals/",
+          "https://globalnation.inquirer.net/312175/philippines-south-korea-deepen-defense-ai-and-nuclear-energy-ties"
+        ]
+      },
+      "weekly_review": "weekly-reviews/weekly-review-2026-03-07.html"
+    },
+    {
+      "date": "2026-03-05",
+      "month": "March",
+      "title": "Dual Volcanic Crisis Continues: Mayon Day 55+, Kanlaon Ash Plumes Persist",
+      "category": "Natural Disasters",
+      "description": "Mayon Volcano continued its effusive eruption for over 55 consecutive days under Alert Level 3, with PHIVOLCS recording 323 rockfall events and six pyroclastic density currents in 24 hours. Sulfur dioxide emissions measured 1,582 tonnes. Kanlaon Volcano maintained Alert Level 2 with ongoing grayish ash plumes rising ~1,000 meters above the summit and continued volcanic earthquakes and edifice inflation.",
+      "significance": "Two major volcanoes in simultaneous eruption strains PHIVOLCS monitoring and disaster preparedness systems",
+      "diaspora_impact": "Bicolano and Negrense OFWs remain concerned about family safety. Agricultural damage to coconut, abaca, and sugarcane crops in affected zones impacts livelihoods.",
+      "mentioned_dynasties": [],
+      "sources": {
+        "international": [
+          "https://gulfnews.com/world/asia/philippines/philippines-back-to-back-eruptions-mayon-unleashes-fast-moving-avalanche-of-hot-rocks-kanlaon-shoots-ash-plumes-1.500457181"
+        ],
+        "local": [
+          "https://tribune.net.ph/2026/03/05/mayon-logs-30-quakes-effusive-eruption",
+          "https://www.gmanetwork.com/news/topstories/regions/978365/phivolcs-eruption-mayon-volcano/story/"
+        ]
+      },
+      "weekly_review": "weekly-reviews/weekly-review-2026-03-07.html"
     }
   ],
   "ofw_highlights": {
@@ -1660,11 +1908,11 @@
     ]
   },
   "summary": {
-    "total_events": 57,
-    "political_events": 9,
-    "natural_disasters": 10,
-    "economic_events": 4,
-    "international_relations": 9,
+    "total_events": 61,
+    "political_events": 10,
+    "natural_disasters": 11,
+    "economic_events": 5,
+    "international_relations": 10,
     "legal_events": 7,
     "religious_events": 1,
     "ofw_diaspora": 0,
@@ -1694,7 +1942,13 @@
       "US-Philippines joint sail at Scarborough Shoal - 500+ exercises planned for 2026",
       "Chinese vessels double in West Philippine Sea - 41 monitored",
       "Atong Ang manhunt continues - Interpol red notice requested",
-      "Bangsamoro elections postponed for third time"
+      "Bangsamoro elections postponed for third time",
+      "Middle East crisis strands 2.4M OFWs - Strait of Hormuz closed, record fuel hikes loom",
+      "Chinese espionage ring exposed inside Philippine military - 3 arrested",
+      "Philippines-South Korea sign 10 bilateral agreements including nuclear energy",
+      "VP Sara Duterte impeachment clears substance test - historic first",
+      "Anti-dynasty bill advances but critics say it may legalize dynasties",
+      "OFW Mary Ann de Vera killed in Israel - first civilian casualty"
     ],
     "diaspora_relevance": {
       "remittances": "New 1% US tax may affect $15+ billion in US-Philippines corridor; Philippines-UAE CEPA benefits OFWs in Middle East",
@@ -1705,7 +1959,9 @@
       "wps_tensions": "China warship challenges PH aircraft 28 times; Philippines aims to complete SCS Code of Conduct during ASEAN chairmanship",
       "accountability": "ICC Duterte confirmation hearing Feb 23-27; defense seeks to add 78 evidence items; historic trial for drug war accountability",
       "us_relations": "80 years of US-PH diplomatic ties celebrated; Trump invites Marcos to 'Board of Peace'; 4+ million Filipino Americans benefit from strong bilateral relations",
-      "national_pride": "Winter Olympics 2026 - Tallulah Proulx becomes SE Asia's first female Winter Olympian; PBA Beermen championship unites diaspora sports fans"
+      "national_pride": "Winter Olympics 2026 - Tallulah Proulx becomes SE Asia's first female Winter Olympian; PBA Beermen championship unites diaspora sports fans",
+      "middle_east_crisis": "US-Israel strikes on Iran and Strait of Hormuz closure directly threaten 2.4M OFWs; 1,400+ repatriation requests; Filipina caregiver Mary Ann de Vera killed in Tel Aviv; record fuel price hikes loom for Philippines",
+      "china_espionage": "Three Filipino defense/navy/coast guard personnel arrested for spying for China; compromised South China Sea resupply operations"
     }
   }
 }
