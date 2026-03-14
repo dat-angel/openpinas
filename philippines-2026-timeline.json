@@ -4,9 +4,9 @@
   "prepared_for": "Filipino Diaspora Communities Worldwide",
   "metadata": {
     "purpose": "Comprehensive timeline of major Philippine events in 2026 to help overseas Filipinos understand developments affecting families, remittances, investments, and homeland governance",
-    "last_updated": "March 7, 2026",
+    "last_updated": "March 14, 2026",
     "aggregation_note": "This timeline is aggregated by month as events unfold. Weekly reviews provide more detailed coverage.",
-    "total_events": 88,
+    "total_events": 96,
     "categories": [
       "Political",
       "Cultural",
@@ -1578,6 +1578,27 @@
       "weekly_review": "weekly-reviews/weekly-review-2026-03-07.html"
     },
     {
+      "date": "2026-03-03",
+      "month": "March",
+      "title": "Marcos and South Korean President Lee Sign 10 Bilateral Agreements",
+      "category": "International Relations",
+      "description": "President Marcos and South Korean President Lee Jae-myung signed 10 agreements during Lee's two-day state visit to Manila, covering defense, nuclear energy, AI, agriculture, trade and investment, intellectual property, cultural cooperation, and police collaboration. Private sector deals covered shipbuilding, nuclear power development (KEXIM-KHNP-Meralco MOU), aerospace, and critical minerals supply chains.",
+      "significance": "Deepens PH-Korea bilateral relationship across defense, energy, and technology; nuclear energy MOU advances Marcos nuclear power push",
+      "diaspora_impact": "Over 65,000 Filipinos live and work in South Korea; language program MOUs benefit Korean-language learners seeking employment. Defense and nuclear cooperation create new professional exchange opportunities.",
+      "mentioned_dynasties": [
+        "MARCOS_ROMUALDEZ"
+      ],
+      "sources": {
+        "international": [],
+        "local": [
+          "https://www.philstar.com/headlines/2026/03/03/2511785/marcos-meets-south-koreas-lee-manila-securing-10-deals",
+          "https://www.bworldonline.com/the-nation/2026/03/03/734124/philippines-south-korea-sign-trade-defense-and-tech-deals/",
+          "https://globalnation.inquirer.net/312175/philippines-south-korea-deepen-defense-ai-and-nuclear-energy-ties"
+        ]
+      },
+      "weekly_review": "weekly-reviews/weekly-review-2026-03-07.html"
+    },
+    {
       "date": "2026-03-04",
       "month": "March",
       "title": "VP Sara Duterte Impeachment Complaints Pass Substance Test in House",
@@ -1723,6 +1744,26 @@
       "weekly_review": "weekly-reviews/weekly-review-2026-03-07.html"
     },
     {
+      "date": "2026-03-05",
+      "month": "March",
+      "title": "Dual Volcanic Crisis Continues: Mayon Day 55+, Kanlaon Ash Plumes Persist",
+      "category": "Natural Disasters",
+      "description": "Mayon Volcano continued its effusive eruption for over 55 consecutive days under Alert Level 3, with PHIVOLCS recording 323 rockfall events and six pyroclastic density currents in 24 hours. Sulfur dioxide emissions measured 1,582 tonnes. Kanlaon Volcano maintained Alert Level 2 with ongoing grayish ash plumes rising ~1,000 meters above the summit and continued volcanic earthquakes and edifice inflation.",
+      "significance": "Two major volcanoes in simultaneous eruption strains PHIVOLCS monitoring and disaster preparedness systems",
+      "diaspora_impact": "Bicolano and Negrense OFWs remain concerned about family safety. Agricultural damage to coconut, abaca, and sugarcane crops in affected zones impacts livelihoods.",
+      "mentioned_dynasties": [],
+      "sources": {
+        "international": [
+          "https://gulfnews.com/world/asia/philippines/philippines-back-to-back-eruptions-mayon-unleashes-fast-moving-avalanche-of-hot-rocks-kanlaon-shoots-ash-plumes-1.500457181"
+        ],
+        "local": [
+          "https://tribune.net.ph/2026/03/05/mayon-logs-30-quakes-effusive-eruption",
+          "https://www.gmanetwork.com/news/topstories/regions/978365/phivolcs-eruption-mayon-volcano/story/"
+        ]
+      },
+      "weekly_review": "weekly-reviews/weekly-review-2026-03-07.html"
+    },
+    {
       "date": "2026-03-07",
       "month": "March",
       "title": "Marcos Orders 4-Day Government Workweek to Conserve Energy Amid Oil Crisis",
@@ -1743,45 +1784,166 @@
       "weekly_review": "weekly-reviews/weekly-review-2026-03-07.html"
     },
     {
-      "date": "2026-03-03",
+      "date": "2026-03-08",
       "month": "March",
-      "title": "Marcos and South Korean President Lee Sign 10 Bilateral Agreements",
+      "title": "Marcos Departs for UN New York — Security Council Bid and Middle East Peace Push",
       "category": "International Relations",
-      "description": "President Marcos and South Korean President Lee Jae-myung signed 10 agreements during Lee's two-day state visit to Manila, covering defense, nuclear energy, AI, agriculture, trade and investment, intellectual property, cultural cooperation, and police collaboration. Private sector deals covered shipbuilding, nuclear power development (KEXIM-KHNP-Meralco MOU), aerospace, and critical minerals supply chains.",
-      "significance": "Deepens PH-Korea bilateral relationship across defense, energy, and technology; nuclear energy MOU advances Marcos nuclear power push",
-      "diaspora_impact": "Over 65,000 Filipinos live and work in South Korea; language program MOUs benefit Korean-language learners seeking employment. Defense and nuclear cooperation create new professional exchange opportunities.",
+      "description": "President Marcos departed for New York on March 8 for a working visit (March 8-11) to attend the UN General Assembly, campaign for a non-permanent Security Council seat (2027-2028), address the Commission on the Status of Women, and call for peace in the Middle East. This is his 41st overseas trip since taking office.",
+      "significance": "Security Council seat would amplify Philippines' voice on OFW protection, maritime disputes, and Middle East conflict.",
+      "diaspora_impact": "A UN Security Council seat could amplify the Philippines' voice on OFW protection and maritime disputes. Middle East peace push directly relevant to 2.4 million Filipinos in the region.",
       "mentioned_dynasties": [
         "MARCOS_ROMUALDEZ"
       ],
       "sources": {
         "international": [],
         "local": [
-          "https://www.philstar.com/headlines/2026/03/03/2511785/marcos-meets-south-koreas-lee-manila-securing-10-deals",
-          "https://www.bworldonline.com/the-nation/2026/03/03/734124/philippines-south-korea-sign-trade-defense-and-tech-deals/",
-          "https://globalnation.inquirer.net/312175/philippines-south-korea-deepen-defense-ai-and-nuclear-energy-ties"
+          "https://www.philstar.com/headlines/2026/03/08/2512776/marcos-new-york-today",
+          "https://mb.com.ph/2026/03/06/marcos-to-push-middle-east-peace-civilian-protection-in-un-address"
         ]
       },
-      "weekly_review": "weekly-reviews/weekly-review-2026-03-07.html"
+      "weekly_review": "weekly-reviews/weekly-review-2026-03-14.html"
     },
     {
-      "date": "2026-03-05",
+      "date": "2026-03-11",
       "month": "March",
-      "title": "Dual Volcanic Crisis Continues: Mayon Day 55+, Kanlaon Ash Plumes Persist",
+      "title": "Mayon Volcano Alert Level 3 Extended — SO2 Spikes to 5,875 Tons",
       "category": "Natural Disasters",
-      "description": "Mayon Volcano continued its effusive eruption for over 55 consecutive days under Alert Level 3, with PHIVOLCS recording 323 rockfall events and six pyroclastic density currents in 24 hours. Sulfur dioxide emissions measured 1,582 tonnes. Kanlaon Volcano maintained Alert Level 2 with ongoing grayish ash plumes rising ~1,000 meters above the summit and continued volcanic earthquakes and edifice inflation.",
-      "significance": "Two major volcanoes in simultaneous eruption strains PHIVOLCS monitoring and disaster preparedness systems",
-      "diaspora_impact": "Bicolano and Negrense OFWs remain concerned about family safety. Agricultural damage to coconut, abaca, and sugarcane crops in affected zones impacts livelihoods.",
+      "description": "PHIVOLCS maintained Alert Level 3 over Mayon on its 65th+ consecutive day of heightened activity. Seismic activity intensified March 11-13; sulfur dioxide emissions spiked to 5,875 tons on March 10 before dropping to 3,551 tons on March 11. Lava effusion with collapse pyroclastic density currents and minor strombolian activity observed. The 6-km permanent danger zone remains strictly enforced.",
+      "significance": "Eruption not waning; one of highest SO2 levels recorded this year.",
+      "diaspora_impact": "Families in Albay and Bicol face ongoing evacuation risk and livelihood disruption. Diaspora families from Bicol may need to send additional support.",
       "mentioned_dynasties": [],
       "sources": {
         "international": [
-          "https://gulfnews.com/world/asia/philippines/philippines-back-to-back-eruptions-mayon-unleashes-fast-moving-avalanche-of-hot-rocks-kanlaon-shoots-ash-plumes-1.500457181"
+          "https://science.nasa.gov/earth/earth-observatory/eruption-at-mayon/"
         ],
         "local": [
-          "https://tribune.net.ph/2026/03/05/mayon-logs-30-quakes-effusive-eruption",
-          "https://www.gmanetwork.com/news/topstories/regions/978365/phivolcs-eruption-mayon-volcano/story/"
+          "https://www.gmanetwork.com/news/topstories/regions/979681/lava-effusion-pdcs-minor-strombolian-activity-at-mayon-volcano-phivolcs/story/",
+          "https://newsinfo.inquirer.net/2193826/mayon-volcano-spews-lava-anew-amid-65th-day-of-eruption"
         ]
       },
-      "weekly_review": "weekly-reviews/weekly-review-2026-03-07.html"
+      "weekly_review": "weekly-reviews/weekly-review-2026-03-14.html"
+    },
+    {
+      "date": "2026-03-13",
+      "month": "March",
+      "title": "Frasco Removed as Tourism Secretary — Reassigned as Presidential Adviser",
+      "category": "Political",
+      "description": "Malacañang confirmed on March 13 that Christina Garcia Frasco was removed as Secretary of the Department of Tourism (DOT) and reassigned as Presidential Adviser for Sustainable and Resilient Communities. DOT Undersecretary Verna Burnsuceso was designated officer-in-charge. Frasco had drawn criticism for featuring her own photos on official tourism materials. The Philippines is hosting ASEAN meetings throughout 2026 as bloc chair.",
+      "significance": "Cabinet shake-up during ASEAN chairmanship year; tourism sector faces headwinds from Middle East conflict and fuel crisis.",
+      "diaspora_impact": "Leadership instability at DOT during ASEAN hosting could affect investor confidence. Overseas Filipinos planning homecoming face higher airfares and route disruptions.",
+      "mentioned_dynasties": [
+        "MARCOS_ROMUALDEZ"
+      ],
+      "sources": {
+        "international": [],
+        "local": [
+          "https://www.philstar.com/headlines/2026/03/13/2513980/frasco-out-tourism-chief",
+          "https://newsinfo.inquirer.net/2194903/frasco-out-as-tourism-chief-gets-adviser-role"
+        ]
+      },
+      "weekly_review": "weekly-reviews/weekly-review-2026-03-14.html"
+    },
+    {
+      "date": "2026-03-13",
+      "month": "March",
+      "title": "ICI Winds Down Operations — Turns Over Flood Control Probe to Ombudsman",
+      "category": "Legal",
+      "description": "The Independent Commission for Infrastructure (ICI) announced it will cease operations on March 31, 2026 after six months. Chairman Andres Reyes Jr. turned over all documents and evidence to the Office of the Ombudsman. Key accomplishments: nine referrals covering 65 individuals, 20 agencies in Asset Recovery TWG, three fraud-detection systems. The commission's work centered on the DPWH flood control scandal implicating former Secretary Bonoan and others.",
+      "significance": "End of high-profile anti-corruption body; accountability now rests with Ombudsman.",
+      "diaspora_impact": "Whether the Ombudsman acts on ICI referrals will test government credibility on infrastructure accountability affecting flood-prone communities.",
+      "mentioned_dynasties": [
+        "ESTRADA_FAMILY",
+        "REVILLA_TOLENTINO",
+        "VILLAR_FAMILY"
+      ],
+      "sources": {
+        "international": [],
+        "local": [
+          "https://www.rappler.com/philippines/ici-operation-end-march-31-2026/",
+          "https://www.gmanetwork.com/news/topstories/nation/979888/ici-set-to-end-operations-on-march-31/story/"
+        ]
+      },
+      "weekly_review": "weekly-reviews/weekly-review-2026-03-14.html"
+    },
+    {
+      "date": "2026-03-13",
+      "month": "March",
+      "title": "64% of Filipinos Back Anti-Dynasty Law — Pulse Asia Survey",
+      "category": "Political",
+      "description": "A Pulse Asia survey released March 13 found 64% of Filipino adults support passage of an anti-political dynasty bill, up from 54% in December 2025. The survey (Feb 27–Mar 2, 1,200 adults, ±2.8% margin) showed 70% of those favoring or undecided agree with a ban on relatives holding national and local elective positions simultaneously. Support was weakest in Mindanao.",
+      "significance": "Highest recorded support for anti-dynasty law; 10-point surge in three months driven by corruption protests and dynasty-linked scandals.",
+      "diaspora_impact": "Diaspora has long advocated for anti-dynasty legislation. Surge suggests flood control scandal and Duterte ICC case are shifting domestic opinion.",
+      "mentioned_dynasties": [
+        "DUTERTE_FAMILY",
+        "ESTRADA_FAMILY",
+        "REVILLA_TOLENTINO"
+      ],
+      "sources": {
+        "international": [],
+        "local": [
+          "https://www.rappler.com/philippines/anti-political-dynasty-law-survey-pulse-asia-march-2026/",
+          "https://newsinfo.inquirer.net/2195151/pulse-asia-64-of-filipinos-back-bill-banning-political-dynasties"
+        ]
+      },
+      "weekly_review": "weekly-reviews/weekly-review-2026-03-14.html"
+    },
+    {
+      "date": "2026-03-13",
+      "month": "March",
+      "title": "6,000 Filipino Sailors Stranded by Strait of Hormuz Closure — One Missing",
+      "category": "International Relations",
+      "description": "More than 6,000 Filipino seafarers remained stranded in and around the Strait of Hormuz after Iranian strikes effectively closed the waterway. One Filipino sailor, 46-year-old George Miranda, was missing after his tugboat Mussafah 2 was struck by missiles. The Philippines is the world's largest supplier of seafarers, with approximately 380,000 Filipinos serving on international vessels at any given time.",
+      "significance": "Hormuz crisis directly endangers thousands of Filipino seafarers; one missing sailor personalizes the crisis.",
+      "diaspora_impact": "Most urgent diaspora-impact story. Seafarer families worldwide in direct distress. Remittances and supply chains that employ Filipino port workers threatened.",
+      "mentioned_dynasties": [],
+      "sources": {
+        "international": [
+          "https://www.scmp.com/news/asia/southeast-asia/article/3346330/6000-filipino-sailors-stranded-strait-hormuz-closure-bored-and-little-scared"
+        ],
+        "local": [
+          "https://www.philstar.com/headlines/2026/03/12/2513788/fear-boredom-filipino-sailors-stuck-hormuz-strait",
+          "https://www.manilatimes.net/2026/03/13/news/national/fear-boredom-beset-filipino-sailors-stuck-in-hormuz-strait/2299076"
+        ]
+      },
+      "weekly_review": "weekly-reviews/weekly-review-2026-03-14.html"
+    },
+    {
+      "date": "2026-03-13",
+      "month": "March",
+      "title": "Oil Crisis Deepens — Next Fuel Hike Could Hit P18/Liter for Diesel",
+      "category": "Economic",
+      "description": "Iran's supreme leader ordered the Strait of Hormuz to remain closed. Industry projections show diesel may rise by approximately P18/liter and gasoline by P15/liter in the next adjustment. The DOE assured supply until end of April. P5,000 driver subsidies roll out March 17; 4-day government workweek in effect since March 9. Capital Economics warned the Middle East conflict may hit OFW remittances and put further depreciation pressure on the peso.",
+      "significance": "Philippines sources 98% of crude from Middle East; fuel crisis entering more severe phase.",
+      "diaspora_impact": "Remittances buy less as inflation erodes peso; OFWs in Middle East face danger and job disruption; fare hikes hit remittance recipients.",
+      "mentioned_dynasties": [
+        "MARCOS_ROMUALDEZ"
+      ],
+      "sources": {
+        "international": [],
+        "local": [
+          "https://newsinfo.inquirer.net/2195066/oil-price-watch-as-of-march-13-2026",
+          "https://mb.com.ph/2026/03/13/middle-east-conflict-may-hit-ofw-remittances-pesocapital-economics"
+        ]
+      },
+      "weekly_review": "weekly-reviews/weekly-review-2026-03-14.html"
+    },
+    {
+      "date": "2026-03-13",
+      "month": "March",
+      "title": "Cebu Bus Rapid Transit Begins Partial Operations — Free Rides for One Year",
+      "category": "Cultural",
+      "description": "The Cebu Bus Rapid Transit (CBRT) began partial operations on March 13 with at least 17 CeBus electric bus units on the Il Corso-IT Park route. Package 1 spans 2.38 km from Cebu South Bus Terminal to Provincial Capitol. Commuters ride free for one year. The system had been in the pipeline for over a decade. Electric buses reduce dependence on diesel amid the fuel crisis.",
+      "significance": "Milestone for Philippine mass transit outside Metro Manila; free-ride policy makes it immediately accessible amid fuel crisis.",
+      "diaspora_impact": "Cebu is a top province of origin for OFWs. Improved public transit reduces daily costs for families left behind.",
+      "mentioned_dynasties": [],
+      "sources": {
+        "international": [],
+        "local": [
+          "https://www.philstar.com/the-freeman/cebu-news/2026/03/13/2514019/cbrt-starts-partial-operations-today",
+          "https://www.sunstar.com.ph/cebu/cbrt-offers-free-rides-for-1-year-as-initial-operations-begin-march-13"
+        ]
+      },
+      "weekly_review": "weekly-reviews/weekly-review-2026-03-14.html"
     }
   ],
   "ofw_highlights": {
