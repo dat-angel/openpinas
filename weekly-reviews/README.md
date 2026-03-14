@@ -2,6 +2,9 @@
 
 This directory contains weekly review pages that summarize significant Philippine events for each week of 2026.
 
+- **Last updated:** 2026-03-14 (week of March 8-14; latest: `weekly-review-2026-03-14.html`)
+- **Date convention:** Filename uses the **week-ending date (Sunday)**. Week range in the page is e.g. "March 8-14, 2026".
+
 ## Files
 
 - **`weekly-review-template.html`** - Template file for generating new weekly reviews
