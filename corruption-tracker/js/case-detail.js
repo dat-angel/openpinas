@@ -4,19 +4,10 @@ let caseData = null;
 async function loadCaseDetail() {
   try {
     // Determine the correct path based on current location
-    const currentPath = window.location.pathname;
-    let dataPath = '../data/pogo-corruption-cases-2025.json';
-    
-    // If we're in a cases/ subdirectory, go up one level to data/
-    // If we're at root, use absolute path
-    if (currentPath.includes('/cases/')) {
-      dataPath = '../data/pogo-corruption-cases-2025.json';
-    } else if (currentPath.includes('/corruption-tracker/')) {
-      dataPath = 'data/pogo-corruption-cases-2025.json';
-    } else {
-      dataPath = 'corruption-tracker/data/pogo-corruption-cases-2025.json';
-    }
-    dataPath += '?v=20260219';
+    const dataPath =
+      (typeof getOpenpinasCorruptionDataPath === "function"
+        ? getOpenpinasCorruptionDataPath()
+        : "corruption-tracker/data/pogo-corruption-cases-2025.json") + "?v=20260219";
     
     const response = await fetch(dataPath);
     
@@ -296,17 +287,10 @@ let allCases = [];
 async function loadAllCases() {
   try {
     // Use same path detection as loadCaseDetail
-    const currentPath = window.location.pathname;
-    let dataPath = '../data/pogo-corruption-cases-2025.json';
-    
-    if (currentPath.includes('/cases/')) {
-      dataPath = '../data/pogo-corruption-cases-2025.json';
-    } else if (currentPath.includes('/corruption-tracker/')) {
-      dataPath = 'data/pogo-corruption-cases-2025.json';
-    } else {
-      dataPath = 'corruption-tracker/data/pogo-corruption-cases-2025.json';
-    }
-    dataPath += '?v=20260219';
+    const dataPath =
+      (typeof getOpenpinasCorruptionDataPath === "function"
+        ? getOpenpinasCorruptionDataPath()
+        : "corruption-tracker/data/pogo-corruption-cases-2025.json") + "?v=20260219";
     
     const response = await fetch(dataPath);
     if (!response.ok) {

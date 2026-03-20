@@ -12,23 +12,12 @@ const statusIcons = {
 
 async function loadCases() {
   try {
-    // Determine the correct path based on current location
-    const currentPath = window.location.pathname;
-    let dataPath;
+    const dataPath =
+      typeof getOpenpinasCorruptionDataPath === "function"
+        ? getOpenpinasCorruptionDataPath()
+        : "corruption-tracker/data/pogo-corruption-cases-2025.json";
 
-    // Handle different path scenarios
-    if (currentPath.includes('/cases/') || currentPath.endsWith('/cases')) {
-      // Inside /corruption-tracker/cases/ - go up to corruption-tracker/data/
-      dataPath = '../data/pogo-corruption-cases-2025.json';
-    } else if (currentPath.includes('/corruption-tracker')) {
-      // Inside /corruption-tracker/ but not in cases/
-      dataPath = 'data/pogo-corruption-cases-2025.json';
-    } else {
-      // At root or elsewhere
-      dataPath = 'corruption-tracker/data/pogo-corruption-cases-2025.json';
-    }
-
-    console.log('Loading cases from:', dataPath, 'Current path:', currentPath);
+    console.log("Loading cases from:", dataPath, "Current path:", window.location.pathname);
     const response = await fetch(dataPath);
     
     if (!response.ok) {

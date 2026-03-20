@@ -65,7 +65,11 @@ function getStatusIcon(status) {
 
 async function loadData() {
   try {
-    const response = await fetch('data/pogo-corruption-cases-2025.json');
+    const url =
+      typeof getOpenpinasCorruptionDataPath === "function"
+        ? getOpenpinasCorruptionDataPath()
+        : "data/pogo-corruption-cases-2025.json";
+    const response = await fetch(url);
     casesData = await response.json();
     initializeMap();
   } catch (error) {

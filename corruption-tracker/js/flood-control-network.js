@@ -10,7 +10,11 @@ let dynastiesData = null;
 async function loadData() {
   try {
     // Load cases data
-    const casesResponse = await fetch('data/pogo-corruption-cases-2025.json');
+    const casesUrl =
+      typeof getOpenpinasCorruptionDataPath === "function"
+        ? getOpenpinasCorruptionDataPath()
+        : "data/pogo-corruption-cases-2025.json";
+    const casesResponse = await fetch(casesUrl);
     casesData = await casesResponse.json();
     
     // Find flood control case
@@ -24,7 +28,11 @@ async function loadData() {
     
     // Try to load dynasty data from OpenPinas
     try {
-      const dynastiesResponse = await fetch('../philippine-political-dynasties-network-2025.json');
+      const dynUrl =
+        typeof getOpenpinasPhilippineDynastiesJsonPath === "function"
+          ? getOpenpinasPhilippineDynastiesJsonPath()
+          : "../philippine-political-dynasties-network-2025.json";
+      const dynastiesResponse = await fetch(dynUrl);
       dynastiesData = await dynastiesResponse.json();
     } catch (e) {
       console.log('Dynasty data not available, continuing without it');

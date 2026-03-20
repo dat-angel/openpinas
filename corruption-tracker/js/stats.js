@@ -1,7 +1,11 @@
 // Load statistics for landing page
 async function loadStats() {
   try {
-    const response = await fetch('data/pogo-corruption-cases-2025.json');
+    const url =
+      typeof getOpenpinasCorruptionDataPath === "function"
+        ? getOpenpinasCorruptionDataPath()
+        : "data/pogo-corruption-cases-2025.json";
+    const response = await fetch(url);
     const data = await response.json();
     
     const stats = data.statistics || {};

@@ -3,11 +3,12 @@
     "title": "POGO & Corruption Cases Tracker - Philippines",
     "description": "Comprehensive tracking of POGO-related cases, corruption cases, and their political connections. Includes high-profile cases like Alice Guo.",
     "version": "1.0",
-    "last_updated": "2026-01-03",
+    "last_updated": "2026-02-21",
     "prepared_for": "Filipino Diaspora Communities & Transparency Advocates",
     "total_cases": 4,
     "categories": [
       "POGO-related",
+      "Flood Control Corruption",
       "Identity Fraud",
       "Tax Evasion",
       "Human Trafficking",
@@ -400,7 +401,7 @@
       "filing_date": "2025-08-01",
       "status": "under_investigation",
       "priority": "high",
-      "court_agency": "Senate Blue Ribbon Committee, NBI, Ombudsman, COA, Anti-Money Laundering Council",
+      "court_agency": "Senate Blue Ribbon Committee, NBI, Ombudsman, COA, Anti-Money Laundering Council, Independent Commission for Infrastructure, Sandiganbayan, DOJ",
       "location": {
         "municipality": "Multiple",
         "province": "Multiple (Bulacan, Iloilo, Metro Manila, etc.)",
@@ -485,6 +486,47 @@
             "corruption",
             "plunder"
           ]
+        },
+        {
+          "name": "Zaldy Co",
+          "position": "Former Congressman, House Appropriations Chair",
+          "position_dates": "2019-2025",
+          "status": "fugitive",
+          "current_status": "at_large",
+          "dynasty_connection": null,
+          "political_party": null,
+          "charges": [
+            "graft",
+            "malversation",
+            "falsification"
+          ]
+        },
+        {
+          "name": "Roberto Bernardo",
+          "position": "Former DPWH Undersecretary",
+          "position_dates": "2022-2025",
+          "status": "under_investigation",
+          "current_status": "under_investigation",
+          "dynasty_connection": null,
+          "political_party": null,
+          "charges": [
+            "graft",
+            "bribery",
+            "kickbacks"
+          ]
+        },
+        {
+          "name": "Ramon Revilla Jr.",
+          "position": "Former Senator",
+          "position_dates": "2016-2022",
+          "status": "surrendered",
+          "current_status": "detained",
+          "dynasty_connection": "Revilla Dynasty",
+          "political_party": "Lakas-CMD",
+          "charges": [
+            "graft",
+            "ghost_projects"
+          ]
         }
       ],
       "charges": [
@@ -496,7 +538,7 @@
         "Fraud",
         "Violation of Anti-Graft and Corrupt Practices Act"
       ],
-      "amount_involved_php": 118500000000,
+      "amount_involved_php": 350000000000,
       "human_trafficking_victims": null,
       "timeline": [
         {
@@ -558,7 +600,7 @@
           ]
         },
         {
-          "date": "2025-09-2025",
+          "date": "2025-09-08",
           "event": "Romualdez and Escudero Resign",
           "description": "House Speaker Martin Romualdez and Senate President Francis Escudero resign amid flood control corruption scandal",
           "sources": []
@@ -580,7 +622,7 @@
           ]
         },
         {
-          "date": "2025-11-2025",
+          "date": "2025-11-22",
           "event": "Assets Frozen",
           "description": "Anti-Money Laundering Council freezes assets worth 6.3 billion pesos, including over 1,600 bank accounts and luxury vehicles linked to flood control corruption",
           "sources": [
@@ -588,11 +630,91 @@
           ]
         },
         {
-          "date": "2025-12-2025",
+          "date": "2025-11-18",
+          "event": "First Ombudsman Cases Filed",
+          "description": "Ombudsman files first batch of cases before Sandiganbayan against fugitive former congressman Zaldy Co, 10 DPWH Region IV-B officials, and 5 Sunwest Inc. executives. Charges: graft and malversation over P289.5-million substandard project along Mag-Asawang Tubig River in Naujan, Oriental Mindoro",
+          "sources": [
+            "https://www.philstar.com/headlines/2026/01/02/2498177/flood-control-scam-raps-filed-no-big-fish"
+          ]
+        },
+        {
+          "date": "2025-12-05",
+          "event": "Second Ombudsman Cases Filed",
+          "description": "Ombudsman files second batch: graft and malversation over P96.5-million ghost project in Davao Occidental awarded to St. Timothy Construction Corp. (Sarah Discaya). Accused include Discaya and 8 DPWH Davao Occidental officials. All detained at Lapu-Lapu City Jail",
+          "sources": [
+            "https://www.philstar.com/headlines/2026/01/02/2498177/flood-control-scam-raps-filed-no-big-fish"
+          ]
+        },
+        {
+          "date": "2025-12-01",
           "event": "COA Performance Audit",
           "description": "Commission on Audit initiates performance audit of government flood control projects. Fraud audit ordered for Bulacan projects covering January 2022 to July 2025",
           "sources": [
             "https://en.wikipedia.org/wiki/Gamaliel_Cordoba"
+          ]
+        },
+        {
+          "date": "2025-12-20",
+          "event": "Cabral Dies, Key Files Sought",
+          "description": "Former DPWH Undersecretary Maria Catalina Cabral dies in reported fall in Benguet. Ombudsman to conduct digital forensic examination of her computer to retrieve alleged budget insertion files",
+          "sources": [
+            "https://www.philstar.com/headlines/2026/01/02/2498177/flood-control-scam-raps-filed-no-big-fish"
+          ]
+        },
+        {
+          "date": "2026-01-02",
+          "event": "No Big Fish Charged Yet",
+          "description": "Philstar reports Ombudsman filed only lower-ranking cases; no incumbent senators or top officials charged despite Remulla's promise of 14-15 cases by year-end. Senators Escudero, Jinggoy Estrada, Joel Villanueva, Ramon Revilla Jr., Nancy Binay were named but none charged",
+          "sources": [
+            "https://www.philstar.com/headlines/2026/01/02/2498177/flood-control-scam-raps-filed-no-big-fish"
+          ]
+        },
+        {
+          "date": "2026-01-18",
+          "event": "DoJ Ready to File More Cases",
+          "description": "Department of Justice says enough evidence for corruption charges in 14 flood control projects, with more expected. Former Senator Bong Revilla surrenders over alleged P92.8-million ghost project in Pandi, Bulacan",
+          "sources": [
+            "https://tribune.net.ph/2026/02/11/timeline-flood-control-scandal"
+          ]
+        },
+        {
+          "date": "2026-02-11",
+          "event": "Senate Inquiry: Substandard by Design",
+          "description": "Former Bulacan engineers Brice Ericson Hernandez and Jaypee Mendoza testify before Senate Blue Ribbon that flood control projects were deliberately substandard or overpriced to cover kickbacks (20%+ of project cost). Cheaper materials used. DPWH Sec Dizon reports 10 more regional officials implicated. Manuel Bonoan's resignation accepted",
+          "sources": [
+            "https://apnews.com/article/philippines-flood-control-corruption-inquiry-6ec985cb21d1c14ba617a57b9f223974"
+          ]
+        },
+        {
+          "date": "2026-02-13",
+          "event": "P8-B Kickback Allegations Surface",
+          "description": "ACT Teachers Rep. Antonio Tinio discloses alleged P8-billion kickback delivered by former DPWH Undersecretary Roberto Bernardo. Tinio claims communication records show President Marcos had direct knowledge. Caloocan Rep. Edgar Erice calls for formal investigation",
+          "sources": [
+            "https://tribune.net.ph/2026/02/13/call-for-probe-mounts-over-alleged-p8-b-flood-control-payoffs"
+          ]
+        },
+        {
+          "date": "2026-02-15",
+          "event": "Anticorruption Assembly Demands Probe of 'Sacred Cows'",
+          "description": "KBKK coalition holds anticorruption assembly calling for investigation of executive branch officials including former DPWH Secretary Manuel Bonoan, former Budget Secretary Amenah Pangandaman, former Executive Secretary Lucas Bersamin, and former PLLO Undersecretary Adrian Bersamin. Critics say six months after Marcos vowed accountability, 'untouchable sacred cows' among his allies remain unscathed",
+          "sources": [
+            "https://newsinfo.inquirer.net/2182386/civil-society-group-flood-mess-probe-still-has-sacred-cows"
+          ]
+        },
+        {
+          "date": "2026-02-18",
+          "event": "Implicated Contractor Still Building on Laguna de Bay",
+          "description": "Topnotch Catalyst Builders Inc., a firm implicated in Bulacan ghost flood control projects, found to still have 68 ongoing government contracts as of Feb 17. The firm was actively building a flood control project on reclaimed land along Laguna de Bay despite being linked to the kickback scheme, raising questions about contract enforcement and blacklisting",
+          "sources": [
+            "https://www.philstar.com/headlines/2026/02/18/2507557/contractor-linked-flood-control-scandal-builds-laguna-de-bay-shores"
+          ]
+        },
+        {
+          "date": "2026-02-19",
+          "event": "Philippines Drops to 120th in Corruption Perceptions Index",
+          "description": "Philippines fell six places to rank 120th out of 182 countries in Transparency International's 2025 Corruption Perceptions Index, the third straight year of decline. The flood control corruption scandal cited as a major factor in the continued slide",
+          "sources": [
+            "https://globalnation.inquirer.net/308729/ph-drops-anew-in-world-corruption-rankings"
           ]
         }
       ],
@@ -620,6 +742,12 @@
           "description": "Contractors allegedly paid kickbacks to lawmakers and officials for project approvals",
           "dynasty": "Various",
           "details": "Testimony revealed systematic kickback scheme involving legislators and contractors"
+        },
+        {
+          "connection_type": "p8b_alleged_kickback",
+          "description": "Feb 2026: Former DPWH Usec Roberto Bernardo allegedly delivered P8 billion in kickbacks. ACT Rep. Tinio claims communication records show President Marcos had direct knowledge",
+          "dynasty": null,
+          "details": "Caloocan Rep. Edgar Erice and Makabayan bloc call for formal investigation"
         }
       ],
       "dynasty_connections": [
@@ -637,7 +765,7 @@
         }
       ],
       "related_cases": [],
-      "significance": "Massive corruption scandal involving approximately ₱118.5 billion ($2 billion) misused in over 9,800 flood control projects since 2023. Led to resignation of House Speaker and Senate President. Reveals systemic corruption in infrastructure projects, with 'ghost' projects, contractor monopolies, and substandard work. Public outrage led to mass protests demanding accountability.",
+      "significance": "Massive corruption scandal: over ₱350 billion in projects with vague or duplicate designs; ₱100 billion to just 15 contractors; 421 ghost projects among ~8,000 reviewed; ~₱180 billion frozen. Led to resignation of House Speaker and Senate President. Ombudsman has filed cases against lower-ranking officials and contractors, but no incumbent senators or top officials charged as of Feb 2026. February 2026 Senate inquiry heard testimony that projects were deliberately substandard to cover 20%+ kickbacks. P8-billion kickback allegations involving former DPWH Usec Roberto Bernardo have surfaced, with lawmakers calling for probe into alleged presidential knowledge.",
       "diaspora_impact": "Shows how corruption in infrastructure projects directly impacts Filipino communities through substandard flood control leading to devastating floods. Billions of pesos meant for public safety were misappropriated, affecting millions of Filipinos. Highlights need for transparency and accountability in public infrastructure spending.",
       "sources": {
         "senate": [
@@ -651,11 +779,15 @@
           "https://apnews.com/article/3972804a08eb6b06a74c12a4b3ae8335",
           "https://apnews.com/article/61deba5e59f9bc5fac1800a660591c35",
           "https://apnews.com/article/312609aa6b53b9b4c37f0c6db3aa8641",
+          "https://apnews.com/article/philippines-flood-control-corruption-inquiry-6ec985cb21d1c14ba617a57b9f223974",
           "https://time.com/7319164/philippines-flood-control-projects-corruption/",
+          "https://www.philstar.com/headlines/2026/01/02/2498177/flood-control-scam-raps-filed-no-big-fish",
+          "https://tribune.net.ph/2026/02/11/timeline-flood-control-scandal",
+          "https://tribune.net.ph/2026/02/13/call-for-probe-mounts-over-alleged-p8-b-flood-control-payoffs",
           "https://en.wikipedia.org/wiki/Flood_control_projects_scandal_in_the_Philippines"
         ]
       },
-      "last_updated": "2025-12-31"
+      "last_updated": "2026-02-21"
     }
   ],
   "pogo_operations": [
