@@ -4,9 +4,9 @@
   "prepared_for": "Filipino Diaspora Communities Worldwide",
   "metadata": {
     "purpose": "Comprehensive timeline of major Philippine events in 2026 to help overseas Filipinos understand developments affecting families, remittances, investments, and homeland governance",
-    "last_updated": "March 14, 2026",
+    "last_updated": "March 21, 2026",
     "aggregation_note": "This timeline is aggregated by month as events unfold. Weekly reviews provide more detailed coverage.",
-    "total_events": 96,
+    "total_events": 103,
     "categories": [
       "Political",
       "Cultural",
@@ -1944,6 +1944,146 @@
         ]
       },
       "weekly_review": "weekly-reviews/weekly-review-2026-03-14.html"
+    },
+    {
+      "date": "2026-03-16",
+      "month": "March",
+      "title": "Fuel Excise Tax Suspension Bill Clears Congress in Record Time",
+      "category": "Economic",
+      "description": "Both chambers of Congress passed a bill authorizing President Marcos to suspend or reduce excise taxes on petroleum products. The House approved it March 16 (247-3), the Senate passed it March 17, and the House adopted the Senate version March 18 — bypassing bicam. The bill allows suspension when Dubai Crude hits $80/barrel, for up to six months per suspension. Marcos certified it as urgent on March 13. The bill could cost P136B in lost revenue but provides critical relief as diesel breached P100/liter.",
+      "significance": "Fastest major legislation in 20th Congress. Reflects severity of the Hormuz-driven oil crisis and Congress's willingness to grant sweeping emergency economic powers to the President.",
+      "diaspora_impact": "Direct relief for families paying record fuel and transport costs. Remittance purchasing power has been eroding with P100+ diesel; excise suspension could stabilize daily costs. PHP/USD at 60.15 means remittances buy less.",
+      "mentioned_dynasties": [
+        "MARCOS_ROMUALDEZ"
+      ],
+      "sources": {
+        "international": [],
+        "local": [
+          "https://www.rappler.com/philippines/house-approves-bill-allowing-marcos-suspend-reduce-excise-tax-fuel-march-2026/",
+          "https://newsinfo.inquirer.net/2197207/senate-oks-bill-letting-marcos-cut-fuel-excise-taxes",
+          "https://mb.com.ph/2026/03/16/house-gives-final-nod-to-fuel-excise-tax-suspension-bill"
+        ]
+      }
+    },
+    {
+      "date": "2026-03-16",
+      "month": "March",
+      "title": "Oil Supply Crisis Deepens — Philippines Down to 3-4 Weeks of Fuel Reserves",
+      "category": "Economic",
+      "description": "The Philippines faces a fuel supply crisis beyond just price. The DOE stated March 12 that national reserves stand at ~50 days including incoming orders, but industry insiders contend official figures are overly optimistic, with usable reserves closer to 3-4 weeks. The Philippines imports 95-98% of crude oil from the Middle East, making it among the worst-hit nations from the Strait of Hormuz closure. Domestic fuel prices have soared past P100/liter for diesel. Chinese refineries on force majeure have further disrupted alternative supply chains. ING Bank named the Philippines among the 'worst hit' economies globally.",
+      "significance": "The crisis has shifted from price shock to potential supply emergency. A 3-4 week reserve window means the Philippines could face rationing by mid-April if the Hormuz blockade persists.",
+      "diaspora_impact": "Families facing P100+ diesel, P104+ gasoline. Transport costs rising. LPG for cooking increasingly unaffordable. OFW remittances from Gulf states disrupted by the same conflict causing the crisis.",
+      "mentioned_dynasties": [],
+      "sources": {
+        "international": [
+          "https://www.intellinews.com/philippines-down-to-its-last-three-weeks-of-fuel-reserves-turns-to-russia-for-help-431862/",
+          "https://www.aljazeera.com/news/2026/3/12/southeast-asia-shuts-offices-limits-travel-as-oil-crisis-deepens"
+        ],
+        "local": [
+          "https://www.manilatimes.net/2026/03/16/opinion/columns/if-hormuz-remains-closed-we-got-three-weeks-to-empty/2300302",
+          "https://www.rappler.com/philippines/gulf-crisis-impact-disruptions-global-oil-supply/"
+        ]
+      }
+    },
+    {
+      "date": "2026-03-16",
+      "month": "March",
+      "title": "Pulse Asia Q1 2026: Marcos Trust Rises 10 Points, Duterte Trust Drops 7",
+      "category": "Political",
+      "description": "Pulse Asia's Q1 2026 survey (Feb 27-Mar 2, 1,200 adults) showed President Marcos's trust rating rising to 35% (+10 YoY) while distrust fell to 44% (-10). VP Sara Duterte's trust dropped to 54% (-7) with distrust rising to 26% (+10). The trust gap narrowed from 36 points to 19 points. Marcos's approval rose to 36% (+11) while disapproval fell to 45% (-8). Mindanao showed a stark divide — Duterte still commands majority support in her home region while Marcos performs better in Luzon.",
+      "significance": "The narrowing gap reflects both Marcos's improved crisis management optics and Duterte's erosion from the impeachment pressure and confidential funds scandal. The 19-point gap is the closest since the 2022 election.",
+      "diaspora_impact": "Trust ratings signal political stability trajectory. A narrowing gap could mean a more competitive 2028 election, which affects governance predictability for diaspora investments.",
+      "mentioned_dynasties": [
+        "MARCOS_ROMUALDEZ",
+        "DUTERTE_FAMILY"
+      ],
+      "sources": {
+        "international": [],
+        "local": [
+          "https://www.rappler.com/philippines/marcos-sara-duterte-performance-trust-ratings-pulse-asia-survey-march-2026/",
+          "https://mb.com.ph/2026/03/16/44-of-filipinos-distrust-marcos-54-trust-duterte-in-q1-2026-pulse-asia"
+        ]
+      }
+    },
+    {
+      "date": "2026-03-17",
+      "month": "March",
+      "title": "ICC Duterte Confirmation Hearing Concludes — Decision Expected April 28",
+      "category": "Legal",
+      "description": "The ICC confirmation of charges hearing for former President Rodrigo Duterte, held February 23-27, has concluded. Pre-Trial Chamber I is expected to issue its decision by April 28 — the 60-day deadline. Legal analysts describe this as a potential 'turning point' toward a full trial for crimes against humanity related to the drug war (estimated 12,000-30,000 extrajudicial killings, 2016-2022). A confirmation of charges would make Duterte only the second head of state to face an ICC trial.",
+      "significance": "The ICC decision is the single most consequential legal event in Philippine political history since Marcos Sr.'s exile. A trial order would reshape the 2028 election, the Duterte dynasty's political future, and the Philippines' relationship with international law.",
+      "diaspora_impact": "The drug war affected millions of Filipino families. ICC accountability signals whether international justice reaches the Philippines. The decision will dominate diaspora political discourse through the 2028 cycle.",
+      "mentioned_dynasties": [
+        "DUTERTE_FAMILY"
+      ],
+      "sources": {
+        "international": [
+          "https://www.philstar.com/headlines/2026/03/17/2514751/turning-point-icc-hearings-raise-hopes-duterte-trial"
+        ],
+        "local": [
+          "https://www.philstar.com/headlines/2026/02/27/2509677/live-coverage-icc-confirmation-charges-hearing-rodrigo-duterte"
+        ]
+      }
+    },
+    {
+      "date": "2026-03-18",
+      "month": "March",
+      "title": "House Panel Declares Sara Duterte Impeachment Complaints Have 'Sufficient Grounds'",
+      "category": "Legal",
+      "description": "The House Committee on Justice found that impeachment complaints against Vice President Sara Duterte allege sufficient grounds, authorizing Congress to proceed to hearing proper starting March 25. Four complaints cite alleged misuse of confidential funds, non-declaration of assets, abuse of power, bribery, and threatening the lives of officials including President Marcos. The hearing is described as a 'mini-trial.' VP Duterte confirmed receipt of the March 25 hearing invitation on March 21. Four hearing dates are set through April 29.",
+      "significance": "Major escalation in the Marcos-Duterte political split. Proceeding to hearing proper is a significant step — previous impeachment attempts against other officials rarely reached this stage. The VP's response will shape the 2028 election dynamics.",
+      "diaspora_impact": "The Marcos-Duterte rift is the defining political dynamic of the 20th Congress. Impeachment proceedings could paralyze governance at a time when the oil crisis demands executive focus.",
+      "mentioned_dynasties": [
+        "DUTERTE_FAMILY",
+        "MARCOS_ROMUALDEZ"
+      ],
+      "sources": {
+        "international": [],
+        "local": [
+          "https://www.rappler.com/philippines/house-committee-declares-sara-duterte-impeachment-complaints-allege-sufficient-grounds-march-2026/",
+          "https://newsinfo.inquirer.net/2197506/live-updates-sara-duterte-impeachment-hearingmarch-18-2026"
+        ]
+      }
+    },
+    {
+      "date": "2026-03-20",
+      "month": "March",
+      "title": "China Locks Fire Control Radar on BRP Miguel Malvar Near Sabina Shoal",
+      "category": "International Relations",
+      "description": "The Armed Forces of the Philippines disclosed that on March 7, a PLA Navy corvette (bow number 622) directed fire control radar at the Philippine Navy frigate BRP Miguel Malvar during a sovereignty patrol near Sabina Shoal in the West Philippine Sea. Fire control radar is a precision targeting system used to guide weapons — locking it on a vessel is one step below firing. The frigate challenged the Chinese vessel by radio, and the PLA Navy ship eventually stowed its radar and departed after tailing the BRP Miguel Malvar for several hours. WPS spokesperson Rear Admiral Roy Vincent Trinidad called it 'alarming and provocative.'",
+      "significance": "The most aggressive Chinese military action against a Philippine warship in the West Philippine Sea to date. Fire control radar lock is the most provocative act short of weapons release. Escalation risk is high.",
+      "diaspora_impact": "WPS tensions directly affect Filipino fishermen's livelihoods and national sovereignty. Military escalation could trigger OFW safety concerns and affect foreign investment confidence.",
+      "mentioned_dynasties": [
+        "MARCOS_ROMUALDEZ"
+      ],
+      "sources": {
+        "international": [
+          "https://www.newsweek.com/philippines-chinese-warship-locked-radar-naval-vessel-11709533",
+          "https://hongkongfp.com/2026/03/21/philippines-accuses-china-of-provocative-target-tracking-on-ship/"
+        ],
+        "local": [
+          "https://mb.com.ph/2026/03/20/afp-chinese-warship-locks-fire-control-radar-on-ph-frigate-near-sabina-shoal",
+          "https://www.gmanetwork.com/news/topstories/nation/980774/brp-miguel-malvar-radar-chinese-navy-ship/story/"
+        ]
+      }
+    },
+    {
+      "date": "2026-03-21",
+      "month": "March",
+      "title": "Eid'l Fitr 2026 Celebrated Nationwide — Mt. Kanlaon Erupts",
+      "category": "Religious",
+      "description": "Muslim Filipinos celebrated the end of Ramadan with Eid'l Fitr on March 21, a national holiday. Prayers were held across Quezon City and the Bangsamoro region. President Marcos issued a message emphasizing compassion, unity, and shared responsibility. Separately, Mt. Kanlaon in Negros Occidental emitted ash starting at 5:58 AM, a reminder of ongoing volcanic risks in the Visayas.",
+      "significance": "Eid'l Fitr as a national holiday reflects the Philippines' religious pluralism and the Bangsamoro Autonomous Region's growing integration. The volcanic eruption underscores the country's exposure to natural hazards.",
+      "diaspora_impact": "Cultural moment for the Muslim Filipino diaspora. Mt. Kanlaon activity may affect Negros-bound travel and Visayas agricultural output.",
+      "mentioned_dynasties": [
+        "MARCOS_ROMUALDEZ"
+      ],
+      "sources": {
+        "international": [],
+        "local": [
+          "https://newsinfo.inquirer.net/2198309/eid-al-fitr-is-on-march-21-says-bangsamoro-darul-ifta"
+        ]
+      }
     }
   ],
   "ofw_highlights": {
