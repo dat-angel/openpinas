@@ -6,7 +6,7 @@
     "purpose": "Comprehensive timeline of major Philippine events in 2026 to help overseas Filipinos understand developments affecting families, remittances, investments, and homeland governance",
     "last_updated": "March 21, 2026",
     "aggregation_note": "This timeline is aggregated by month as events unfold. Weekly reviews provide more detailed coverage.",
-    "total_events": 103,
+    "total_events": 112,
     "categories": [
       "Political",
       "Cultural",
@@ -1557,6 +1557,25 @@
       "weekly_review": "weekly-reviews/weekly-review-2026-03-07.html"
     },
     {
+      "date": "2026-03-02",
+      "month": "March",
+      "title": "Indigenous Activists Arrested and Disappeared in Mindanao",
+      "category": "Political",
+      "description": "Indigenous leader Genasque Enriquez was arrested in Surigao del Sur on March 2; his whereabouts remain unknown. On March 5, Indigenous activist Michelle Campos and three others went missing in neighboring Agusan del Sur. They later surfaced in a hospital under military guard, effectively detained while treated for unspecified injuries. Human Rights Watch documented the cases as part of a pattern of enforced disappearances targeting land rights and environmental defenders under the Marcos administration, despite repeated assurances that his government prioritized human rights.",
+      "significance": "Continuing pattern of enforced disappearances and military detention of Indigenous activists despite government human rights pledges",
+      "diaspora_impact": "Raises concerns about safety of Indigenous and activist communities; international advocacy groups calling on diaspora to pressure Philippine government on human rights",
+      "mentioned_dynasties": [
+        "MARCOS_ROMUALDEZ"
+      ],
+      "sources": {
+        "international": [
+          "https://www.hrw.org/world-report/2026/country-chapters/philippines",
+          "https://amnesty.ca/urgent-actions/philippines-indigenous-rights-activists-reported-missing/"
+        ],
+        "local": []
+      }
+    },
+    {
       "date": "2026-03-03",
       "month": "March",
       "title": "Record Fuel Price Hikes Loom as Middle East Crisis Disrupts Oil Supply",
@@ -1764,6 +1783,26 @@
       "weekly_review": "weekly-reviews/weekly-review-2026-03-07.html"
     },
     {
+      "date": "2026-03-06",
+      "month": "March",
+      "title": "ICC Appeals Chamber Rejects Duterte's Appeal Against Detention",
+      "category": "Legal",
+      "description": "The ICC Appeals Chamber issued a judgment rejecting former President Rodrigo Duterte's appeal against the decision on his continued detention, issued on January 26 under Article 60(3) of the Rome Statute. The Pre-Trial Chamber found no new or changed circumstances requiring modification of its prior ruling on detention risks. Duterte has been in ICC custody since his surrender on March 12, 2025. The confirmation of charges hearing took place February 23-27, 2026, with a decision expected by April 28.",
+      "significance": "Duterte will remain in ICC detention; removes last legal avenue for release before charges are confirmed",
+      "diaspora_impact": "Historic milestone — first former Philippine president held in international detention; diaspora communities divided on accountability vs. sovereignty",
+      "mentioned_dynasties": [
+        "DUTERTE_FAMILY"
+      ],
+      "sources": {
+        "international": [
+          "https://www.icc-cpi.int/news/icc-appeals-chamber-confirms-decision-review-mr-dutertes-detention"
+        ],
+        "local": [
+          "https://www.rappler.com/philippines/rodrigo-duterte-length-icc-detention-anniversary-2026/"
+        ]
+      }
+    },
+    {
       "date": "2026-03-07",
       "month": "March",
       "title": "Marcos Orders 4-Day Government Workweek to Conserve Energy Amid Oil Crisis",
@@ -1946,6 +1985,44 @@
       "weekly_review": "weekly-reviews/weekly-review-2026-03-14.html"
     },
     {
+      "date": "2026-03-15",
+      "month": "March",
+      "title": "Kanlaon Volcano Erupts for Third Time in 2026 — 50 Barangays Hit by Ashfall",
+      "category": "Natural Disasters",
+      "description": "Mt. Kanlaon on Negros Island produced a moderately explosive eruption at 6:07 PM on March 15, generating a 2-kilometer-high ash column drifting southwest. Up to 50 barangays in 10 local government units were affected by ashfall. This was the third eruption of 2026, following events on February 19 and 26. PHIVOLCS maintained Alert Level 2 (Moderate Unrest) with the 4-kilometer permanent danger zone strictly prohibited. Eruption activity continued through March 20 with sustained ash emissions lasting up to 109 minutes.",
+      "significance": "Third eruption in Q1 2026 signals increasing volcanic unrest; prolonged eruption cycle since 2024 continues",
+      "diaspora_impact": "Families in Negros Occidental and Oriental face recurring evacuations and crop damage from ashfall; remittances may be needed for relocation costs",
+      "mentioned_dynasties": [],
+      "sources": {
+        "international": [
+          "https://www.volcanodiscovery.com/canlaon/news/298138/Kanlaon-Volcano-Philippines-activity-update-Mar-20-2026-Continuing-eruption.html"
+        ],
+        "local": [
+          "https://www.gmanetwork.com/news/topstories/regions/980097/moderately-explosive-eruption-at-kanlaon-volcano-underway-phivolcs/story/",
+          "https://mb.com.ph/2026/03/16/ash-rises-from-kanlaons-summit-after-moderately-explosive-eruption"
+        ]
+      }
+    },
+    {
+      "date": "2026-03-15",
+      "month": "March",
+      "title": "Former DPWH Officials Arraigned in Flood Control Corruption Cases",
+      "category": "Legal",
+      "description": "Former DPWH engineers Brice Hernandez and Jaypee Mendoza, detained at the Quezon City Jail since January, were arraigned before QC Regional Trial Courts on graft, malversation, and falsification charges linked to the PHP 118 billion flood control projects scandal. Pre-trial hearings are set for April 13. Hernandez, who surrendered luxury vehicles during the investigation, also faces a separate malversation case before the Sandiganbayan alongside Senator Bong Revilla.",
+      "significance": "First criminal proceedings against key figures in the largest public works corruption scandal in Philippine history",
+      "diaspora_impact": "Accountability for flood control corruption directly affects disaster resilience in diaspora families' home provinces",
+      "mentioned_dynasties": [
+        "REVILLA_TOLENTINO"
+      ],
+      "sources": {
+        "international": [],
+        "local": [
+          "https://www.rappler.com/philippines/brice-hernandez-jaypee-mendoza-former-dpwh-officials-flood-control-cases-quezon-city-courts/",
+          "https://www.gmanetwork.com/news/topstories/nation/980486/pre-trial-malversation-cases-ex-dpwh-engineers/story/"
+        ]
+      }
+    },
+    {
       "date": "2026-03-16",
       "month": "March",
       "title": "Fuel Excise Tax Suspension Bill Clears Congress in Record Time",
@@ -2006,6 +2083,43 @@
       }
     },
     {
+      "date": "2026-03-16",
+      "month": "March",
+      "title": "Peso Hits Record Low P59.87/$1 as Oil Crisis Batters Economy",
+      "category": "Economic",
+      "description": "The Philippine peso slumped to a new record low of P59.87 per US dollar on March 16, driven by fears of prolonged Middle East conflict and continued disruption of oil supplies through the Strait of Hormuz. ING named the Philippines among the 'worst impacted' economies by the oil price surge, with 90% of oil imports sourced from the Middle East. Crude oil surged to nearly $115 per barrel, up 59% from $72 before the conflict. The peso would breach P60 by March 19.",
+      "significance": "Weakest peso level in history; oil-dependent economy uniquely vulnerable among Asia-Pacific peers",
+      "diaspora_impact": "Remittances now worth more in peso terms but purchasing power eroded by inflation; OFW families face higher prices for fuel, food, and transport",
+      "mentioned_dynasties": [],
+      "sources": {
+        "international": [
+          "https://www.bloomberg.com/news/articles/2026-03-09/philippine-firms-brace-for-rising-costs-as-oil-surge-drags-peso"
+        ],
+        "local": [
+          "https://www.philstar.com/business/2026/03/16/2514744/peso-slips-record-low-p59871-amid-middle-east-tensions",
+          "https://mb.com.ph/2026/03/09/peso-tests-record-596-low-as-mideast-fears-mount"
+        ]
+      }
+    },
+    {
+      "date": "2026-03-16",
+      "month": "March",
+      "title": "Rice Prices Surge Amid Oil Crisis — DA Proposes P50 Cap on Imported Rice",
+      "category": "Economic",
+      "description": "Rice prices rose P2 per kilo following fuel price hikes, with imported milled rice reaching P60-65/kg in Metro Manila and local varieties exceeding P70/kg in Cebu. Freight costs doubled from $20 to $40 per metric ton due to fuel prices, disrupting shipments from Vietnam. Long lines formed at government-subsidized rice outlets selling at P20/kg. The Department of Agriculture proposed a P50/kg price cap on imported rice and began distributing stocks at P45-48/kg through Metro Manila markets. Traders reduced deliveries as fuel costs constrained transport.",
+      "significance": "Oil crisis cascading into food security crisis; rice prices at multi-year highs threatening household budgets",
+      "diaspora_impact": "Families in the Philippines face rising food costs; diaspora may need to increase remittances to cover basic needs; food security a growing concern",
+      "mentioned_dynasties": [],
+      "sources": {
+        "international": [],
+        "local": [
+          "https://www.philstar.com/headlines/2026/03/16/2514629/rice-prices-also-rise-amid-global-oil-crisis",
+          "https://mb.com.ph/2026/03/16/da-proposes-50-price-cap-on-imported-rice-amid-rising-freight-costs",
+          "https://www.rappler.com/philippines/long-lines-subsidized-rice-middle-east-conflict/"
+        ]
+      }
+    },
+    {
       "date": "2026-03-17",
       "month": "March",
       "title": "ICC Duterte Confirmation Hearing Concludes — Decision Expected April 28",
@@ -2042,6 +2156,59 @@
         "local": [
           "https://www.rappler.com/philippines/house-committee-declares-sara-duterte-impeachment-complaints-allege-sufficient-grounds-march-2026/",
           "https://newsinfo.inquirer.net/2197506/live-updates-sara-duterte-impeachment-hearingmarch-18-2026"
+        ]
+      }
+    },
+    {
+      "date": "2026-03-18",
+      "month": "March",
+      "title": "Marcos Suspends 19% Transport Fare Hike — Orders Free Rides and Toll Discounts",
+      "category": "Economic",
+      "description": "President Marcos suspended the LTFRB-approved 19% fare increase for all public transport modes (jeepneys, buses, airport taxis, TNVS) one day before its March 19 implementation, saying 'this is not the time to raise fares.' He ordered a nationwide free ride program, MRT/LRT fare discounts, toll road discounts, and expedited cash and fuel subsidies of P5,000 per affected PUV driver through DSWD. The LTFRB had approved the fare hike to offset surging fuel costs from the Middle East crisis.",
+      "significance": "Largest government transport intervention since pandemic; signals depth of oil crisis impact on ordinary Filipinos",
+      "diaspora_impact": "Protects transport-dependent families from immediate fare shock; subsidies partially offset but don't solve underlying fuel crisis affecting remittance purchasing power",
+      "mentioned_dynasties": [
+        "MARCOS_ROMUALDEZ"
+      ],
+      "sources": {
+        "international": [],
+        "local": [
+          "https://newsinfo.inquirer.net/2197784/marcos-orders-suspension-of-fare-hike",
+          "https://www.philstar.com/headlines/2026/03/19/2515358/marcos-suspends-fare-hike",
+          "https://www.gmanetwork.com/news/topstories/nation/980472/marcos-to-dotr-suspend-fare-hike/story/"
+        ]
+      }
+    },
+    {
+      "date": "2026-03-19",
+      "month": "March",
+      "title": "Peso Breaches P60/$1 for First Time — 317 OFWs Evacuated from Middle East",
+      "category": "Economic",
+      "description": "The Philippine peso weakened past the P60 level for the first time in history, closing at P60.10 per dollar on March 19 amid deepening Middle East tensions. The same day, 317 Filipinos safely arrived in Manila from the Middle East via a government-chartered evacuation flight, the first of planned repatriation flights. The Department of Migrant Workers classified the Persian Gulf, Strait of Hormuz, and Gulf of Oman as Warlike Operations Areas.",
+      "significance": "Psychological P60 barrier breached; government shifts from advisory to active evacuation of OFWs",
+      "diaspora_impact": "Direct impact on all OFWs — remittance values in flux, those in Middle East face possible repatriation; P60 peso makes dollar-denominated remittances worth more but inflation erodes gains",
+      "mentioned_dynasties": [],
+      "sources": {
+        "international": [],
+        "local": [
+          "https://tribune.net.ph/2026/03/19/philippine-peso-hits-record-low-past-p60",
+          "https://pco.gov.ph/news_releases/"
+        ]
+      }
+    },
+    {
+      "date": "2026-03-19",
+      "month": "March",
+      "title": "PISTON Launches Two-Day Transport Strike — 60 Metro Manila Routes Paralyzed",
+      "category": "Political",
+      "description": "Transport group PISTON and allied progressive organizations launched a two-day strike on March 19-20, paralyzing approximately 60 major routes across Metro Manila. PISTON president Mody Floranda said the strike protested the government's failure to address surging fuel prices and the impact of the oil crisis on transport workers. The strike ended on March 21 after government dialogue, but tensions remain as fuel prices continue to climb past P100 per liter for diesel.",
+      "significance": "Largest transport strike since pandemic; signals growing public frustration with economic fallout from Middle East crisis",
+      "diaspora_impact": "Disruptions affect daily life for families in Metro Manila; reflects deteriorating economic conditions that may increase OFW deployment pressure",
+      "mentioned_dynasties": [],
+      "sources": {
+        "international": [],
+        "local": [
+          "https://www.philstar.com/headlines/2026/03/21/2515835/transport-strike-ends"
         ]
       }
     },
