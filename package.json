@@ -10,6 +10,7 @@
     "dev": "next dev",
     "prebuild": "node scripts/sync-openpinas-public.cjs",
     "build": "next build",
+    "postbuild": "node scripts/ensure-out-routes-manifest.cjs",
     "start": "next start",
     "lint": "next lint"
   },
