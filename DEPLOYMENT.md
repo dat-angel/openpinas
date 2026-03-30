@@ -2,7 +2,13 @@
 
 ## Canonical hosting: Vercel
 
-This repo is configured for **static deployment on Vercel** ([`vercel.json`](./vercel.json): no install/build, `outputDirectory` is the repo root).
+This repo is configured for **Next.js static export on Vercel**.
+
+- `npm install`
+- `npm run build` (runs `next build`, output to `out/`)
+- Vercel serves `out/` (`vercel.json` sets `outputDirectory` to `out`)
+
+URL paths are preserved from the legacy `.html` files (including nested paths like `/weekly-reviews/weekly-review-2026-03-21.html`).
 
 1. Import [github.com/dat-angel/openpinas](https://github.com/dat-angel/openpinas) in the Vercel dashboard (or `vercel link` from a local clone).
 2. Use the **production URL** Vercel assigns (e.g. `https://openpinas-<team>.vercel.app`) or attach a custom domain.
@@ -15,8 +21,9 @@ This repo is configured for **static deployment on Vercel** ([`vercel.json`](./v
 ## Local preview
 
 ```bash
-python3 -m http.server 8000
-# open http://localhost:8000/
+npm install
+npm run dev
+# open http://localhost:3000/
 ```
 
 ## Related docs

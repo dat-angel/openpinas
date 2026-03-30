@@ -19,6 +19,11 @@ Thumbs.db
 *.log
 *.cache
 
+# Next.js build artifacts
+node_modules/
+.next/
+out/
+
 # Private documentation (if accidentally copied)
 CONTEXT.md
 BLOG_POST.md

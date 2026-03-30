@@ -18,15 +18,16 @@ Open data platform tracking Philippine political power structures, business conn
 
 ## Quick Start
 
-You need a local web server to run the visualizations (browser security restrictions):
+Run the local Next.js app:
 
 ```bash
 git clone https://github.com/dat-angel/openpinas.git
 cd openpinas
-python3 -m http.server 8000
+npm install
+npm run dev
 ```
 
-Then open http://localhost:8000/ in your browser
+Then open http://localhost:3000/ in your browser
 
 ## Files
 
