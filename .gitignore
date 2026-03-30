@@ -25,6 +25,7 @@ node_modules/
 out/
 public/interactive-timeline/
 public/corruption-tracker/
+public/dynasty-map/
 
 # Private documentation (if accidentally copied)
 CONTEXT.md

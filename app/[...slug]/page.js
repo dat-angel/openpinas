@@ -1,5 +1,7 @@
 import { notFound } from "next/navigation";
+import AliceGuoCasePage from "@/app/native/alice-guo-case-page";
 import CorruptionTrackerIndexPage from "@/app/native/corruption-tracker-index-page";
+import DynastyNetworkMapPage from "@/app/native/dynasty-network-map-page";
 import DynastiesIndexPage from "@/app/native/dynasties-index-page";
 import InteractiveTimelinePage from "@/app/native/interactive-timeline-page";
 import SourcesRelatedProjectsPage from "@/app/native/sources-related-projects-page";
@@ -44,6 +46,12 @@ export default async function LegacyPage({ params }) {
   }
   if (file === "when-to-go-manila.html") {
     return <WhenToGoManilaPage />;
+  }
+  if (file === "dynasties-network-visualization.html") {
+    return <DynastyNetworkMapPage />;
+  }
+  if (file === "corruption-tracker/cases/alice-guo.html") {
+    return <AliceGuoCasePage />;
   }
 
   const all = await collectHtmlFiles(ROOT);

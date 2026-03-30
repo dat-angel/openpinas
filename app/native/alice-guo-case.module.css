@@ -1,0 +1,62 @@
+/* Case detail timeline (matches corruption-tracker/cases/alice-guo.html extras) */
+.timeline {
+  position: relative;
+  padding-left: 1.5rem;
+  border-left: 1px solid #e5e5e5;
+  margin-left: 0.5rem;
+}
+
+.monthMarker {
+  font-family: "Source Sans Pro", -apple-system, sans-serif;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #888;
+  margin: 1.5rem 0 0.75rem -1.5rem;
+  padding-left: 1.5rem;
+}
+
+.timelineEvent {
+  position: relative;
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.timelineEvent::before {
+  content: "";
+  position: absolute;
+  left: -1.5rem;
+  top: 1.25rem;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #ddd;
+  margin-left: -4px;
+}
+
+.eventSources {
+  margin-top: 0.75rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid #e5e5e5;
+  font-size: 0.8125rem;
+}
+
+@media (max-width: 640px) {
+  .timeline {
+    padding-left: 0;
+    border-left: none;
+    margin-left: 0;
+  }
+
+  .timelineEvent::before {
+    display: none;
+  }
+
+  .monthMarker {
+    margin-left: 0;
+    padding-left: 0;
+  }
+}
