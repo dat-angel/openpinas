@@ -2,6 +2,10 @@
 
 > **Note:** Currently, OpenPinas serves data as static JSON files. This document describes the current data structure and future API plans.
 
+## Base URL for fetches
+
+Use your **Vercel production URL** as the primary base once the project is deployed ([DEPLOYMENT.md](./DEPLOYMENT.md)). Until then, **GitHub Pages** works as a public mirror. Examples below use the GitHub Pages host; substitute your Vercel domain when available.
+
 ## Current Data Access
 
 All data is available as JSON files in the repository:
@@ -18,10 +22,11 @@ All data is available as JSON files in the repository:
 https://raw.githubusercontent.com/dat-angel/openpinas/main/philippine-political-dynasties-network-2025.json
 ```
 
-**Via GitHub Pages:**
+**Via static host (GitHub Pages mirror or Vercel production):**
 ```
 https://dat-angel.github.io/openpinas/philippine-political-dynasties-network-2025.json
 ```
+Replace the origin with your Vercel deployment URL when using Vercel as canonical.
 
 **Local Development:**
 ```bash

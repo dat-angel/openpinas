@@ -5,7 +5,9 @@
 
 Open data platform tracking Philippine political power structures, business connections, and major events. Interactive visualizations showing how political families maintain control across 71 provinces.
 
-**Live Demo**: [dat-angel.github.io/openpinas](https://dat-angel.github.io/openpinas/)
+**Live site:** Deploy from this repo on **[Vercel](https://vercel.com)** (recommended — see [DEPLOYMENT.md](./DEPLOYMENT.md) for the production URL after you connect the project).
+
+**Mirror:** [dat-angel.github.io/openpinas](https://dat-angel.github.io/openpinas/) (GitHub Pages, backward compatible).
 
 ## What's Here
 
@@ -40,6 +42,11 @@ Then open http://localhost:8000/ in your browser
 - `weekly-reviews/` - Weekly review template and archive
 
 **Documentation:**
+- `CONTEXT.md` - Data rules and agent workflow (timeline, dynasties, validation)
+- `Skills/` - **Canonical agent skills** (`ph-news-refresher`, `ph-weekly-review`) — edit here
+- `API.md` - JSON structures and fetch examples
+- `DEPLOYMENT.md` - Vercel + GitHub Pages
+- `AUTOMATION.md` - News pipeline (skills, n8n, optional cron)
 - `docs/business-connections/` - Business connections project documentation
 
 ## Key Stats (2025)
