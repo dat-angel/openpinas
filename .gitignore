@@ -23,6 +23,7 @@ Thumbs.db
 node_modules/
 .next/
 out/
+public/interactive-timeline/
 
 # Private documentation (if accidentally copied)
 CONTEXT.md

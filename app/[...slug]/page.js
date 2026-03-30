@@ -1,5 +1,7 @@
 import { notFound } from "next/navigation";
 import DynastiesIndexPage from "@/app/native/dynasties-index-page";
+import InteractiveTimelinePage from "@/app/native/interactive-timeline-page";
+import SourcesRelatedProjectsPage from "@/app/native/sources-related-projects-page";
 import WeeklyReviewsIndexPage from "@/app/native/weekly-reviews-index-page";
 import {
   collectHtmlFiles,
@@ -28,6 +30,12 @@ export default async function LegacyPage({ params }) {
   }
   if (file === "dynasties/index.html") {
     return <DynastiesIndexPage />;
+  }
+  if (file === "interactive-timeline/index.html") {
+    return <InteractiveTimelinePage />;
+  }
+  if (file === "sources-and-related-projects.html") {
+    return <SourcesRelatedProjectsPage />;
   }
 
   const all = await collectHtmlFiles(ROOT);

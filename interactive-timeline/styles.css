@@ -354,3 +354,57 @@ main {
     scroll-behavior: auto !important;
   }
 }
+
+/* Year tabs + aggregation note (used by native React page and legacy HTML) */
+.year-tabs {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.year-tab {
+  padding: 10px 24px;
+  border: 2px solid var(--accent, #124559);
+  background: transparent;
+  color: var(--accent, #124559);
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.year-tab:hover {
+  background: rgba(18, 69, 89, 0.1);
+}
+
+.year-tab.active {
+  background: var(--accent, #124559);
+  color: #fff;
+}
+
+.aggregation-note {
+  background: rgba(196, 73, 0, 0.1);
+  border-left: 4px solid var(--accent-2, #c44900);
+  padding: 12px 16px;
+  border-radius: 0 8px 8px 0;
+  margin-bottom: 20px;
+  font-size: 14px;
+  display: none;
+}
+
+.aggregation-note.visible {
+  display: block;
+}
+
+.aggregation-note strong {
+  color: var(--accent-2, #c44900);
+}
+
+.year-info {
+  font-size: 13px;
+  color: var(--muted, #5e5e5e);
+  margin-bottom: 8px;
+  font-family: "Source Sans Pro", sans-serif;
+}

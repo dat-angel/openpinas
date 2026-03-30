@@ -3,7 +3,9 @@
   "private": true,
   "version": "0.1.0",
   "scripts": {
+    "predev": "mkdir -p public/interactive-timeline && cp -f interactive-timeline/styles.css public/interactive-timeline/styles.css",
     "dev": "next dev",
+    "prebuild": "mkdir -p public/interactive-timeline && cp -f interactive-timeline/styles.css public/interactive-timeline/styles.css",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
