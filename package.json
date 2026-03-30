@@ -3,9 +3,9 @@
   "private": true,
   "version": "0.1.0",
   "scripts": {
-    "predev": "mkdir -p public/interactive-timeline && cp -f interactive-timeline/styles.css public/interactive-timeline/styles.css",
+    "predev": "mkdir -p public/interactive-timeline public/corruption-tracker/css && cp -f interactive-timeline/styles.css public/interactive-timeline/styles.css && cp -f corruption-tracker/css/styles.css public/corruption-tracker/css/styles.css",
     "dev": "next dev",
-    "prebuild": "mkdir -p public/interactive-timeline && cp -f interactive-timeline/styles.css public/interactive-timeline/styles.css",
+    "prebuild": "mkdir -p public/interactive-timeline public/corruption-tracker/css && cp -f interactive-timeline/styles.css public/interactive-timeline/styles.css && cp -f corruption-tracker/css/styles.css public/corruption-tracker/css/styles.css",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"

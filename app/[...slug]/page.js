@@ -1,8 +1,10 @@
 import { notFound } from "next/navigation";
+import CorruptionTrackerIndexPage from "@/app/native/corruption-tracker-index-page";
 import DynastiesIndexPage from "@/app/native/dynasties-index-page";
 import InteractiveTimelinePage from "@/app/native/interactive-timeline-page";
 import SourcesRelatedProjectsPage from "@/app/native/sources-related-projects-page";
 import WeeklyReviewsIndexPage from "@/app/native/weekly-reviews-index-page";
+import WhenToGoManilaPage from "@/app/native/when-to-go-manila-page";
 import {
   collectHtmlFiles,
   fileFromSlug,
@@ -36,6 +38,12 @@ export default async function LegacyPage({ params }) {
   }
   if (file === "sources-and-related-projects.html") {
     return <SourcesRelatedProjectsPage />;
+  }
+  if (file === "corruption-tracker/index.html") {
+    return <CorruptionTrackerIndexPage />;
+  }
+  if (file === "when-to-go-manila.html") {
+    return <WhenToGoManilaPage />;
   }
 
   const all = await collectHtmlFiles(ROOT);

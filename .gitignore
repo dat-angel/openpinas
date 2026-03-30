@@ -24,6 +24,7 @@ node_modules/
 .next/
 out/
 public/interactive-timeline/
+public/corruption-tracker/
 
 # Private documentation (if accidentally copied)
 CONTEXT.md
