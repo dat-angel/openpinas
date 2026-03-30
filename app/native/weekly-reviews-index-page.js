@@ -1,4 +1,5 @@
 const REVIEW_PATHS = [
+  "weekly-review-2026-03-29.html",
   "weekly-review-2026-03-21.html",
   "weekly-review-2026-03-14.html",
   "weekly-review-2026-03-07.html",
