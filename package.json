@@ -2,6 +2,9 @@
   "name": "openpinas",
   "private": true,
   "version": "0.1.0",
+  "engines": {
+    "node": ">=20.9.0"
+  },
   "scripts": {
     "predev": "node scripts/sync-openpinas-public.cjs",
     "dev": "next dev",
