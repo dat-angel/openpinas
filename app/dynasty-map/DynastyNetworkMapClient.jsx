@@ -1,14 +1,48 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect, useRef } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { mountDynastyMap } from "./mountDynastyMap";
 import "leaflet/dist/leaflet.css";
 import "./dynasty-map.css";
 
+const STORY_PRESETS = [
+  {
+    id: "marcos-duterte",
+    label: "Power Split: Marcos vs Duterte",
+    primary: "MARCOS_ROMUALDEZ",
+    secondary: "DUTERTE_FAMILY",
+    window: 365,
+  },
+  {
+    id: "anti-dynasty",
+    label: "Reform Tension: Anti-Dynasty Push",
+    primary: "MARCOS_ROMUALDEZ",
+    secondary: "DY_FAMILY",
+    window: 365,
+  },
+  {
+    id: "local-strongholds",
+    label: "Provincial Strongholds",
+    primary: "REVILLA_TOLENTINO",
+    secondary: "GARCIA_FAMILY",
+    window: 730,
+  },
+];
+
+function toDynastyLabel(id, dynasties) {
+  return dynasties.find((d) => d.id === id)?.name || id.replaceAll("_", " ");
+}
+
 export default function DynastyNetworkMapClient() {
   const rootRef = useRef(null);
   const apiRef = useRef(null);
+  const [dynasties, setDynasties] = useState([]);
+  const [timeline, setTimeline] = useState([]);
+  const [selectedDynastyId, setSelectedDynastyId] = useState("");
+  const [compareDynastyId, setCompareDynastyId] = useState("");
+  const [timelineWindowDays, setTimelineWindowDays] = useState(365);
+  const [searchText, setSearchText] = useState("");
 
   useEffect(() => {
     const root = rootRef.current;
@@ -27,6 +61,12 @@ export default function DynastyNetworkMapClient() {
         Network,
         DataSet,
         L,
+      }, {
+        onSelectDynasty: (dynasty) => {
+          if (dynasty?.id) {
+            setSelectedDynastyId(dynasty.id);
+          }
+        },
       });
     })();
 
@@ -37,7 +77,95 @@ export default function DynastyNetworkMapClient() {
     };
   }, []);
 
-  const closeInfo = () => apiRef.current?.closeInfoPanel();
+  useEffect(() => {
+    let cancelled = false;
+    (async () => {
+      const [networkRes, timelineRes] = await Promise.all([
+        fetch("/dynasty-map/philippine-political-dynasties-network-2025.json"),
+        fetch("/dynasty-map/philippines-2026-timeline.json"),
+      ]);
+      if (!networkRes.ok || !timelineRes.ok) return;
+      const networkJson = await networkRes.json();
+      const timelineJson = await timelineRes.json();
+      if (cancelled) return;
+      const loadedDynasties = networkJson?.philippine_political_dynasties_network?.nodes?.dynasties || [];
+      const loadedTimeline = timelineJson?.timeline || [];
+      setDynasties(loadedDynasties);
+      setTimeline(loadedTimeline);
+      if (loadedDynasties[0]?.id) {
+        setSelectedDynastyId(loadedDynasties[0].id);
+      }
+    })();
+    return () => {
+      cancelled = true;
+    };
+  }, []);
+
+  const spotlightIds = useMemo(
+    () => [selectedDynastyId, compareDynastyId].filter(Boolean),
+    [selectedDynastyId, compareDynastyId],
+  );
+
+  const timelineAnchor = useMemo(() => {
+    if (!timeline.length) return null;
+    return new Date(
+      timeline.reduce((maxDate, e) => (e.date > maxDate ? e.date : maxDate), timeline[0].date),
+    );
+  }, [timeline]);
+
+  const filteredEvents = useMemo(() => {
+    if (!timeline.length || !spotlightIds.length || !timelineAnchor) return [];
+    const minDate = new Date(timelineAnchor);
+    minDate.setDate(minDate.getDate() - timelineWindowDays);
+    return timeline
+      .filter((event) => {
+        if (!event?.mentioned_dynasties?.length) return false;
+        const eventDate = new Date(`${event.date}T00:00:00`);
+        return (
+          eventDate >= minDate &&
+          event.mentioned_dynasties.some((dynastyId) => spotlightIds.includes(dynastyId))
+        );
+      })
+      .sort((a, b) => (a.date < b.date ? 1 : -1))
+      .slice(0, 10);
+  }, [timeline, spotlightIds, timelineAnchor, timelineWindowDays]);
+
+  const selectedDynasty = useMemo(
+    () => dynasties.find((d) => d.id === selectedDynastyId) || null,
+    [dynasties, selectedDynastyId],
+  );
+  const compareDynasty = useMemo(
+    () => dynasties.find((d) => d.id === compareDynastyId) || null,
+    [dynasties, compareDynastyId],
+  );
+
+  const focusDynasty = (dynastyId) => {
+    if (!dynastyId) return;
+    setSelectedDynastyId(dynastyId);
+    window.location.hash = `dynasty-${encodeURIComponent(dynastyId)}`;
+    if (window.__OPENPINAS_DYNASTY_MAP__?.showDynastyById) {
+      window.__OPENPINAS_DYNASTY_MAP__.showDynastyById(dynastyId);
+    }
+  };
+
+  const runStory = (preset) => {
+    setTimelineWindowDays(preset.window);
+    setCompareDynastyId(preset.secondary);
+    focusDynasty(preset.primary);
+  };
+
+  const handleSearchFocus = () => {
+    const needle = searchText.trim().toLowerCase();
+    if (!needle) return;
+    const match = dynasties.find(
+      (d) => d.name.toLowerCase().includes(needle) || d.id.toLowerCase().includes(needle),
+    );
+    if (match) {
+      focusDynasty(match.id);
+      setSearchText(match.name);
+    }
+  };
+
   const closeGlossary = () => apiRef.current?.closeGlossaryPanel();
 
   return (
@@ -110,17 +238,229 @@ export default function DynastyNetworkMapClient() {
         </button>
       </div>
 
+      <section
+        style={{
+          margin: "16px 24px",
+          padding: "16px",
+          borderRadius: "12px",
+          background: "linear-gradient(135deg, #111827, #1f2937)",
+          color: "#f9fafb",
+          boxShadow: "0 8px 24px rgba(0,0,0,0.2)",
+        }}
+      >
+        <div
+          style={{
+            display: "grid",
+            gridTemplateColumns: "1.2fr 1fr 1fr",
+            gap: "12px",
+            alignItems: "end",
+          }}
+        >
+          <div>
+            <p style={{ fontSize: "12px", opacity: 0.8, marginBottom: "6px" }}>
+              Spotlight a dynasty
+            </p>
+            <div style={{ display: "flex", gap: "8px" }}>
+              <input
+                value={searchText}
+                onChange={(e) => setSearchText(e.target.value)}
+                placeholder="Try: Marcos, Duterte, Revilla"
+                list="dynasty-search-options"
+                style={{
+                  flex: 1,
+                  padding: "10px 12px",
+                  borderRadius: "8px",
+                  border: "1px solid #374151",
+                  background: "#111827",
+                  color: "#f9fafb",
+                }}
+              />
+              <button type="button" onClick={handleSearchFocus}>
+                Focus
+              </button>
+            </div>
+            <datalist id="dynasty-search-options">
+              {dynasties.map((dynasty) => (
+                <option key={dynasty.id} value={dynasty.name} />
+              ))}
+            </datalist>
+          </div>
+
+          <div>
+            <p style={{ fontSize: "12px", opacity: 0.8, marginBottom: "6px" }}>Compare against</p>
+            <select
+              value={compareDynastyId}
+              onChange={(e) => setCompareDynastyId(e.target.value)}
+              style={{ width: "100%" }}
+            >
+              <option value="">None</option>
+              {dynasties.map((dynasty) => (
+                <option key={dynasty.id} value={dynasty.id}>
+                  {dynasty.name}
+                </option>
+              ))}
+            </select>
+          </div>
+
+          <div>
+            <p style={{ fontSize: "12px", opacity: 0.8, marginBottom: "6px" }}>
+              Timeline window: {timelineWindowDays} days
+            </p>
+            <input
+              type="range"
+              min={90}
+              max={1460}
+              step={30}
+              value={timelineWindowDays}
+              onChange={(e) => setTimelineWindowDays(Number(e.target.value))}
+              style={{ width: "100%" }}
+            />
+          </div>
+        </div>
+
+        <div style={{ marginTop: "12px", display: "flex", gap: "8px", flexWrap: "wrap" }}>
+          {STORY_PRESETS.map((preset) => (
+            <button key={preset.id} type="button" onClick={() => runStory(preset)}>
+              {preset.label}
+            </button>
+          ))}
+        </div>
+      </section>
+
+      <section
+        style={{
+          margin: "0 24px 16px",
+          display: "grid",
+          gridTemplateColumns: "1fr 1fr 1.4fr",
+          gap: "12px",
+        }}
+      >
+        {[selectedDynasty, compareDynasty].map((dynasty, idx) => (
+          <article
+            key={idx === 0 ? "selected" : "compare"}
+            style={{
+              background: "white",
+              borderRadius: "10px",
+              padding: "14px",
+              border: "1px solid #e5e7eb",
+              minHeight: "190px",
+            }}
+          >
+            <h4 style={{ marginBottom: "8px" }}>
+              {idx === 0 ? "Primary Dynasty" : "Compare Dynasty"}
+            </h4>
+            {!dynasty ? (
+              <p style={{ color: "#6b7280", fontSize: "13px" }}>Select a dynasty to compare.</p>
+            ) : (
+              <>
+                <p style={{ fontWeight: 600 }}>{dynasty.name}</p>
+                <p style={{ fontSize: "13px" }}>Power: {dynasty.power_level}</p>
+                <p style={{ fontSize: "13px" }}>
+                  Positions held: {dynasty.current_positions_held || 0}
+                </p>
+                <p style={{ fontSize: "13px" }}>Status: {dynasty["2025_status"] || "n/a"}</p>
+                <p style={{ fontSize: "13px" }}>
+                  Regions: {(dynasty.primary_regions || []).slice(0, 3).join(", ") || "n/a"}
+                </p>
+                {idx === 0 && (
+                  <>
+                    <p style={{ fontSize: "13px" }}>
+                      Patriarch: {dynasty.patriarch || "n/a"} | Established: {dynasty.established || "n/a"}
+                    </p>
+                    {!!dynasty.allied_dynasties?.length && (
+                      <p style={{ fontSize: "12px", color: "#1f4f9e" }}>
+                        Allies:{" "}
+                        {dynasty.allied_dynasties.slice(0, 4).map((allyId, i) => (
+                          <span key={allyId}>
+                            <a
+                              href={`#dynasty-${encodeURIComponent(allyId)}`}
+                              onClick={(e) => {
+                                e.preventDefault();
+                                focusDynasty(allyId);
+                              }}
+                            >
+                              {toDynastyLabel(allyId, dynasties)}
+                            </a>
+                            {i < Math.min(dynasty.allied_dynasties.length, 4) - 1 ? ", " : ""}
+                          </span>
+                        ))}
+                      </p>
+                    )}
+                    {!!dynasty.rival_dynasties?.length && (
+                      <p style={{ fontSize: "12px", color: "#9b1c1c" }}>
+                        Rivals:{" "}
+                        {dynasty.rival_dynasties.slice(0, 4).map((rivalId, i) => (
+                          <span key={rivalId}>
+                            <a
+                              href={`#dynasty-${encodeURIComponent(rivalId)}`}
+                              onClick={(e) => {
+                                e.preventDefault();
+                                focusDynasty(rivalId);
+                              }}
+                            >
+                              {toDynastyLabel(rivalId, dynasties)}
+                            </a>
+                            {i < Math.min(dynasty.rival_dynasties.length, 4) - 1 ? ", " : ""}
+                          </span>
+                        ))}
+                      </p>
+                    )}
+                  </>
+                )}
+                <button type="button" onClick={() => focusDynasty(dynasty.id)}>
+                  Center on network
+                </button>
+              </>
+            )}
+          </article>
+        ))}
+
+        <article
+          style={{
+            background: "white",
+            borderRadius: "10px",
+            padding: "14px",
+            border: "1px solid #e5e7eb",
+            minHeight: "190px",
+          }}
+        >
+          <h4 style={{ marginBottom: "8px" }}>Recent Timeline Signals</h4>
+          {!filteredEvents.length ? (
+            <p style={{ color: "#6b7280", fontSize: "13px" }}>
+              Pick one or two dynasties to see recent connected events.
+            </p>
+          ) : (
+            <div style={{ maxHeight: "220px", overflowY: "auto", paddingRight: "6px" }}>
+              {filteredEvents.map((event, index) => (
+                <div
+                  key={`${event.date}-${event.title}-${index}`}
+                  style={{
+                    borderBottom: index === filteredEvents.length - 1 ? "none" : "1px solid #e5e7eb",
+                    paddingBottom: "8px",
+                    marginBottom: "8px",
+                  }}
+                >
+                  <p style={{ fontSize: "11px", color: "#6b7280" }}>
+                    {event.date} - {event.category || "General"}
+                  </p>
+                  <p style={{ fontSize: "13px", fontWeight: 600 }}>{event.title}</p>
+                  <p style={{ fontSize: "12px", color: "#4b5563" }}>
+                    {event.mentioned_dynasties
+                      ?.slice(0, 3)
+                      .map((id) => toDynastyLabel(id, dynasties))
+                      .join(", ")}
+                  </p>
+                </div>
+              ))}
+            </div>
+          )}
+        </article>
+      </section>
+
       <div className="stats" id="stats">
         <h4>Network Statistics</h4>
         <p id="dynastyCount">Loading...</p>
         <p id="relationshipCount">Loading...</p>
-      </div>
-
-      <div className="info-panel" id="infoPanel">
-        <button type="button" className="close" onClick={closeInfo} aria-label="Close">
-          ×
-        </button>
-        <div id="infoContent" />
       </div>
 
       <div className="glossary-panel" id="glossaryPanel">
