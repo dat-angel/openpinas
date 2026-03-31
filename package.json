@@ -12,12 +12,17 @@
     "build": "next build",
     "postbuild": "node scripts/ensure-out-routes-manifest.cjs",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "validate": "node scripts/validate-openpinas.mjs",
+    "import:weekly-json": "node scripts/import-weekly-html-to-json.mjs"
   },
   "dependencies": {
     "@vercel/analytics": "latest",
     "next": "latest",
     "react": "latest",
     "react-dom": "latest"
+  },
+  "devDependencies": {
+    "cheerio": "^1.0.0-rc.12"
   }
 }

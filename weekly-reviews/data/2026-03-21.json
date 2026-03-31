@@ -1,0 +1,524 @@
+{
+  "version": 1,
+  "weekEnding": "2026-03-21",
+  "weekLabel": "March 15-21, 2026",
+  "title": "OpenPinas: Weekly News Review",
+  "lastUpdated": "March 21, 2026",
+  "prevWeekFile": "weekly-review-2026-03-29.html",
+  "stats": [
+    {
+      "number": "12",
+      "label": "Total Events"
+    },
+    {
+      "number": "5",
+      "label": "Economic"
+    },
+    {
+      "number": "2",
+      "label": "Legal"
+    },
+    {
+      "number": "4",
+      "label": "Dynasties"
+    }
+  ],
+  "weather": {
+    "title": "Metro Manila Weather",
+    "days": [
+      {
+        "dateLabel": "Mar 15",
+        "name": "Sat",
+        "icon": "☀️",
+        "high": "35°",
+        "low": "27°"
+      },
+      {
+        "dateLabel": "Mar 16",
+        "name": "Sun",
+        "icon": "☀️",
+        "high": "34°",
+        "low": "27°"
+      },
+      {
+        "dateLabel": "Mar 17",
+        "name": "Mon",
+        "icon": "⛅",
+        "high": "34°",
+        "low": "27°"
+      },
+      {
+        "dateLabel": "Mar 18",
+        "name": "Tue",
+        "icon": "☀️",
+        "high": "35°",
+        "low": "27°"
+      },
+      {
+        "dateLabel": "Mar 19",
+        "name": "Wed",
+        "icon": "⛅",
+        "high": "33°",
+        "low": "27°"
+      },
+      {
+        "dateLabel": "Mar 20",
+        "name": "Thu",
+        "icon": "☀️",
+        "high": "34°",
+        "low": "27°"
+      },
+      {
+        "dateLabel": "Mar 21",
+        "name": "Fri",
+        "icon": "⛅",
+        "high": "34°",
+        "low": "27°"
+      }
+    ],
+    "sourceNote": "Source: PAGASA — Hot dry season; easterlies dominant"
+  },
+  "exchangeRate": {
+    "title": "PHP:USD Exchange Rate",
+    "currentRate": "₱60.10",
+    "trend": "▼ Peso breaches P60 — record low on oil crisis",
+    "details": [
+      {
+        "label": "Open",
+        "value": "₱59.40"
+      },
+      {
+        "label": "High",
+        "value": "₱60.10"
+      },
+      {
+        "label": "Low",
+        "value": "₱59.35"
+      },
+      {
+        "label": "Close",
+        "value": "₱60.10"
+      }
+    ],
+    "contextHtml": "<strong>Crisis Impact:</strong> Historic P60 breach. Peso plunged from P59.40 to P60.10 in one week — worst weekly decline since Asian Financial Crisis. Oil at $115/barrel; Middle East crisis shows no signs of easing. ING: Philippines ‘worst impacted’ in Asia-Pacific.",
+    "sourceNote": "Source: BSP / exchange-rates.org"
+  },
+  "eventSections": [
+    {
+      "title": "Economic",
+      "articles": [
+        {
+          "timeDatetime": "2026-03-16",
+          "timeDisplay": "March 16, 2026",
+          "category": "Economic",
+          "categoryClass": "economic",
+          "borderColor": "#0b6e4f",
+          "headline": "Peso Hits Record Low P59.87/$1 as Oil Crisis Batters Economy",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-03-16&search=Peso%20Record%20Low%20P59.87",
+          "descriptionHtml": "The Philippine peso slumped to a new record low of P59.87 per US dollar on March 16, driven by fears of prolonged Middle East conflict. ING named the Philippines among the ‘worst impacted’ economies. Crude oil at ~$115/barrel, up 59% from pre-conflict $72. The peso would breach P60 by March 19.",
+          "significance": "Weakest peso level in history; oil-dependent economy uniquely vulnerable among Asia-Pacific peers.",
+          "diasporaImpact": "Remittances worth more in peso terms but purchasing power eroded by inflation; OFW families face higher prices.",
+          "dynastyLinks": [],
+          "sourceLinks": [
+            {
+              "label": "philstar.com",
+              "href": "https://www.philstar.com/business/2026/03/16/2514744/peso-slips-record-low-p59871-amid-middle-east-tensions"
+            },
+            {
+              "label": "bloomberg.com",
+              "href": "https://www.bloomberg.com/news/articles/2026-03-09/philippine-firms-brace-for-rising-costs-as-oil-surge-drags-peso"
+            }
+          ]
+        },
+        {
+          "timeDatetime": "2026-03-16",
+          "timeDisplay": "March 16, 2026",
+          "category": "Economic",
+          "categoryClass": "economic",
+          "borderColor": "#0b6e4f",
+          "headline": "Rice Prices Surge Amid Oil Crisis — DA Proposes P50 Cap on Imported Rice",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-03-16&search=Rice%20Prices%20Surge",
+          "descriptionHtml": "Rice prices rose P2/kg following fuel hikes. Imported milled rice reached P60-65/kg in Metro Manila, local varieties exceeded P70/kg in Cebu. Freight costs doubled from $20 to $40/MT. Long lines at government-subsidized rice outlets (P20/kg). DA proposed P50/kg price cap on imported rice.",
+          "significance": "Oil crisis cascading into food security crisis; rice at multi-year highs.",
+          "diasporaImpact": "Families face rising food costs; diaspora may need to increase remittances for basic needs.",
+          "dynastyLinks": [],
+          "sourceLinks": [
+            {
+              "label": "philstar.com",
+              "href": "https://www.philstar.com/headlines/2026/03/16/2514629/rice-prices-also-rise-amid-global-oil-crisis"
+            },
+            {
+              "label": "rappler.com",
+              "href": "https://www.rappler.com/philippines/long-lines-subsidized-rice-middle-east-conflict/"
+            },
+            {
+              "label": "mb.com.ph",
+              "href": "https://mb.com.ph/2026/03/16/da-proposes-50-price-cap-on-imported-rice-amid-rising-freight-costs"
+            }
+          ]
+        },
+        {
+          "timeDatetime": "2026-03-18",
+          "timeDisplay": "March 18, 2026",
+          "category": "Economic",
+          "categoryClass": "economic",
+          "borderColor": "#0b6e4f",
+          "headline": "Marcos Suspends 19% Transport Fare Hike — Orders Free Rides and Toll Discounts",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-03-18&search=Marcos%20Suspends%20Fare%20Hike",
+          "descriptionHtml": "President Marcos suspended the LTFRB-approved 19% fare increase for all public transport modes one day before March 19 implementation. Ordered nationwide free ride program, MRT/LRT fare discounts, toll road discounts, and P5,000 cash/fuel subsidies per PUV driver via DSWD.",
+          "significance": "Largest government transport intervention since pandemic; signals depth of oil crisis impact.",
+          "diasporaImpact": "Protects transport-dependent families from fare shock; subsidies partially offset fuel crisis.",
+          "dynastyLinks": [
+            {
+              "label": "Marcos-Romualdez",
+              "href": "/dynasties-network-visualization.html#dynasty-MARCOS_ROMUALDEZ"
+            }
+          ],
+          "sourceLinks": [
+            {
+              "label": "inquirer.net",
+              "href": "https://newsinfo.inquirer.net/2197784/marcos-orders-suspension-of-fare-hike"
+            },
+            {
+              "label": "philstar.com",
+              "href": "https://www.philstar.com/headlines/2026/03/19/2515358/marcos-suspends-fare-hike"
+            },
+            {
+              "label": "gmanetwork.com",
+              "href": "https://www.gmanetwork.com/news/topstories/nation/980472/marcos-to-dotr-suspend-fare-hike/story/"
+            }
+          ]
+        },
+        {
+          "timeDatetime": "2026-03-19",
+          "timeDisplay": "March 19, 2026",
+          "category": "Economic",
+          "categoryClass": "economic",
+          "borderColor": "#0b6e4f",
+          "headline": "Peso Breaches P60/$1 for First Time — 317 OFWs Evacuated from Middle East",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-03-19&search=Peso%20Breaches%20P60",
+          "descriptionHtml": "Peso closed at P60.10 per dollar on March 19 — first time past P60. Same day, 317 Filipinos arrived via government-chartered evacuation flight from Middle East. DMW classified Persian Gulf, Strait of Hormuz, and Gulf of Oman as Warlike Operations Areas.",
+          "significance": "Psychological P60 barrier breached; government shifts to active OFW evacuation.",
+          "diasporaImpact": "Direct impact on all OFWs — remittance values in flux, Middle East OFWs face possible repatriation.",
+          "dynastyLinks": [],
+          "sourceLinks": [
+            {
+              "label": "tribune.net.ph",
+              "href": "https://tribune.net.ph/2026/03/19/philippine-peso-hits-record-low-past-p60"
+            }
+          ]
+        },
+        {
+          "timeDatetime": "2026-03-19",
+          "timeDisplay": "March 19-20, 2026",
+          "category": "Political",
+          "categoryClass": "political",
+          "borderColor": "#0b6e4f",
+          "headline": "PISTON Launches Two-Day Transport Strike — 60 Metro Manila Routes Paralyzed",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-03-19&search=PISTON%20Transport%20Strike",
+          "descriptionHtml": "Transport group PISTON and allied organizations launched a two-day strike protesting surging fuel prices and impact on transport workers. ~60 major Metro Manila routes paralyzed. Strike ended March 21 after government dialogue. Diesel past P100/liter.",
+          "significance": "Largest transport strike since pandemic; growing public frustration with oil crisis fallout.",
+          "diasporaImpact": "Disruptions affect daily life for families; reflects deteriorating economic conditions.",
+          "dynastyLinks": [],
+          "sourceLinks": [
+            {
+              "label": "philstar.com",
+              "href": "https://www.philstar.com/headlines/2026/03/21/2515835/transport-strike-ends"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Legal",
+      "articles": [
+        {
+          "timeDatetime": "2026-03-15",
+          "timeDisplay": "March 15, 2026",
+          "category": "Legal",
+          "categoryClass": "legal",
+          "borderColor": "var(--legal)",
+          "headline": "Former DPWH Officials Arraigned in Flood Control Corruption Cases",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-03-15&search=DPWH%20Officials%20Arraigned",
+          "descriptionHtml": "Former DPWH engineers Brice Hernandez and Jaypee Mendoza, detained at QC Jail since January, arraigned on graft, malversation, and falsification charges linked to PHP 118B flood control scandal. Pre-trial set for April 13. Hernandez also faces Sandiganbayan case alongside Senator Bong Revilla.",
+          "significance": "First criminal proceedings against key figures in largest PH public works corruption scandal.",
+          "diasporaImpact": "Accountability for flood control corruption directly affects disaster resilience in diaspora families' provinces.",
+          "dynastyLinks": [
+            {
+              "label": "Revilla-Tolentino",
+              "href": "/dynasties-network-visualization.html#dynasty-REVILLA_TOLENTINO"
+            }
+          ],
+          "sourceLinks": [
+            {
+              "label": "rappler.com",
+              "href": "https://www.rappler.com/philippines/brice-hernandez-jaypee-mendoza-former-dpwh-officials-flood-control-cases-quezon-city-courts/"
+            },
+            {
+              "label": "gmanetwork.com",
+              "href": "https://www.gmanetwork.com/news/topstories/nation/980486/pre-trial-malversation-cases-ex-dpwh-engineers/story/"
+            }
+          ]
+        },
+        {
+          "timeDatetime": "2026-03-18",
+          "timeDisplay": "March 18, 2026",
+          "category": "Legal",
+          "categoryClass": "legal",
+          "borderColor": "var(--legal)",
+          "headline": "House Panel Declares Sara Duterte Impeachment Complaints Have ‘Sufficient Grounds’",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-03-18&search=Sara%20Duterte%20Impeachment",
+          "descriptionHtml": "The House Committee on Justice declared two impeachment complaints against VP Sara Duterte have sufficient grounds, advancing proceedings. Duterte filed her verified answer March 16 but refused to address material allegations, questioning House integrity. Mini-trial hearings set for March 25, April 14, 22, 29. If she skips March 25, it may accelerate Senate transmission.",
+          "significance": "Impeachment advancing to trial phase; first VP impeachment trial in Philippine history.",
+          "diasporaImpact": "Tests democratic accountability processes; diaspora communities divided on Duterte legacy.",
+          "dynastyLinks": [
+            {
+              "label": "Duterte",
+              "href": "/dynasties-network-visualization.html#dynasty-DUTERTE_FAMILY"
+            }
+          ],
+          "sourceLinks": [
+            {
+              "label": "rappler.com",
+              "href": "https://www.rappler.com/philippines/house-committee-declares-sara-duterte-impeachment-complaints-allege-sufficient-grounds-march-2026/"
+            },
+            {
+              "label": "inquirer.net",
+              "href": "https://newsinfo.inquirer.net/2197506/live-updates-sara-duterte-impeachment-hearingmarch-18-2026"
+            },
+            {
+              "label": "philnews.ph",
+              "href": "https://philnews.ph/2026/03/20/house-warns-sara-duterte-over-skipping-march-25-mini-trial-impeachment-complaint"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "International Relations",
+      "articles": [
+        {
+          "timeDatetime": "2026-03-20",
+          "timeDisplay": "March 20, 2026",
+          "category": "International Relations",
+          "categoryClass": "international-relations",
+          "borderColor": "var(--international)",
+          "headline": "China Locks Fire Control Radar on BRP Miguel Malvar Near Sabina Shoal",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-03-20&search=China%20Fire%20Control%20Radar%20Sabina%20Shoal",
+          "descriptionHtml": "A PLA Navy vessel (bow number 622) directed its fire control radar toward the BRP Miguel Malvar during a patrol near Sabina Shoal on March 7, about 150 km from Palawan. Fire control radar provides precise targeting coordinates to weapons systems. The Philippines called it “an alarming and provocative action.” The Chinese vessel eventually stowed its radar. Reported publicly on March 20.",
+          "significance": "Fire control radar lock is a direct escalation — considered a hostile act under international maritime law.",
+          "diasporaImpact": "Raises security concerns for families near disputed waters; test of Philippines' ability to defend sovereignty.",
+          "dynastyLinks": [
+            {
+              "label": "Marcos-Romualdez",
+              "href": "/dynasties-network-visualization.html#dynasty-MARCOS_ROMUALDEZ"
+            }
+          ],
+          "sourceLinks": [
+            {
+              "label": "hongkongfp.com",
+              "href": "https://hongkongfp.com/2026/03/21/philippines-accuses-china-of-provocative-target-tracking-on-ship/"
+            },
+            {
+              "label": "mb.com.ph",
+              "href": "https://mb.com.ph/2026/03/20/afp-chinese-warship-locks-fire-control-radar-on-ph-frigate-near-sabina-shoal"
+            },
+            {
+              "label": "newsweek.com",
+              "href": "https://www.newsweek.com/philippines-chinese-warship-locked-radar-naval-vessel-11709533"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Natural Disasters",
+      "articles": [
+        {
+          "timeDatetime": "2026-03-15",
+          "timeDisplay": "March 15, 2026",
+          "category": "Natural Disasters",
+          "categoryClass": "natural-disasters",
+          "borderColor": "#c44900",
+          "headline": "Kanlaon Volcano Erupts for Third Time in 2026 — 50 Barangays Hit by Ashfall",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-03-15&search=Kanlaon%20Volcano%20Erupts",
+          "descriptionHtml": "Mt. Kanlaon on Negros Island produced a moderately explosive eruption at 6:07 PM, generating a 2-km-high ash column drifting southwest. 50 barangays in 10 LGUs affected. Third eruption of 2026 (after Feb 19 and 26). PHIVOLCS maintained Alert Level 2. Activity continued through March 20 with sustained ash emissions.",
+          "significance": "Third eruption in Q1 2026 signals increasing volcanic unrest; prolonged cycle since 2024.",
+          "diasporaImpact": "Families in Negros face recurring evacuations and crop damage; remittances needed for relocation.",
+          "dynastyLinks": [],
+          "sourceLinks": [
+            {
+              "label": "gmanetwork.com",
+              "href": "https://www.gmanetwork.com/news/topstories/regions/980097/moderately-explosive-eruption-at-kanlaon-volcano-underway-phivolcs/story/"
+            },
+            {
+              "label": "mb.com.ph",
+              "href": "https://mb.com.ph/2026/03/16/ash-rises-from-kanlaons-summit-after-moderately-explosive-eruption"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Political",
+      "articles": [
+        {
+          "timeDatetime": "2026-03-06",
+          "timeDisplay": "March 6, 2026",
+          "category": "Political",
+          "categoryClass": "political",
+          "borderColor": "var(--politics)",
+          "headline": "ICC Appeals Chamber Rejects Duterte’s Appeal Against Detention",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-03-06&search=ICC%20Duterte%20Detention%20Appeal",
+          "descriptionHtml": "The ICC Appeals Chamber rejected Rodrigo Duterte’s appeal against continued detention under Article 60(3) of the Rome Statute. Pre-Trial Chamber found no new circumstances. Duterte in ICC custody since March 12, 2025. Confirmation hearing was Feb 23-27; decision expected April 28.",
+          "significance": "Duterte remains in ICC detention; removes last legal avenue for release before charges confirmed.",
+          "diasporaImpact": "Historic — first former Philippine president in international detention; communities divided.",
+          "dynastyLinks": [
+            {
+              "label": "Duterte",
+              "href": "/dynasties-network-visualization.html#dynasty-DUTERTE_FAMILY"
+            }
+          ],
+          "sourceLinks": [
+            {
+              "label": "icc-cpi.int",
+              "href": "https://www.icc-cpi.int/news/icc-appeals-chamber-confirms-decision-review-mr-dutertes-detention"
+            },
+            {
+              "label": "rappler.com",
+              "href": "https://www.rappler.com/philippines/rodrigo-duterte-length-icc-detention-anniversary-2026/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Religious",
+      "articles": [
+        {
+          "timeDatetime": "2026-03-21",
+          "timeDisplay": "March 21, 2026",
+          "category": "Religious",
+          "categoryClass": "religious",
+          "borderColor": "var(--religious)",
+          "headline": "Eid’l Fitr 2026 Celebrated Nationwide — Mt. Kanlaon Erupts",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-03-21&search=Eid%20Fitr%202026",
+          "descriptionHtml": "Filipino Muslims celebrated Eid’l Fitr marking the end of Ramadan. March 20 was declared a national regular holiday. Bangsamoro Chief Minister Macacua led Takbir in Cotabato City. In Quezon City, Muslim families offered prayers at Quezon Memorial Circle. Kanlaon volcano continued ash emissions during celebrations.",
+          "significance": "National holiday celebrating Muslim identity in a predominantly Catholic nation.",
+          "diasporaImpact": "Celebration of Filipino Muslim identity worldwide; inclusive national holiday reflects diversity.",
+          "dynastyLinks": [],
+          "sourceLinks": [
+            {
+              "label": "rappler.com",
+              "href": "https://www.rappler.com/philippines/photos-filipino-muslims-eidl-fitr-celebrations-2026/"
+            },
+            {
+              "label": "inquirer.net",
+              "href": "https://newsinfo.inquirer.net/2198309/eid-al-fitr-is-on-march-21-says-bangsamoro-darul-ifta"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "ofwSection": {
+    "title": "OFW & Diaspora News",
+    "stats": [
+      {
+        "number": "317",
+        "label": "OFWs Evacuated (first flight)"
+      },
+      {
+        "number": "P60.10/$1",
+        "label": "Record Low"
+      },
+      {
+        "number": "6,000+",
+        "label": "Sailors Still Stranded"
+      },
+      {
+        "number": "P100+/L",
+        "label": "Diesel Price"
+      }
+    ],
+    "stories": [
+      {
+        "title": "317 Filipinos Evacuated from Middle East on Government-Chartered Flight",
+        "bodyHtml": "The first government-chartered evacuation flight arrived March 19 carrying 317 Filipinos from the Middle East. DMW classified Persian Gulf, Strait of Hormuz, and Gulf of Oman as Warlike Operations Areas. More repatriation flights planned.",
+        "details": {
+          "label": "Middle East Evacuation",
+          "href": "https://www.pco.gov.ph"
+        }
+      },
+      {
+        "title": "Peso Breaches P60 — Remittance Impact",
+        "bodyHtml": "The P60 breach means OFW dollar remittances are nominally worth more in peso, but inflation is eroding purchasing power. Rice, fuel, and transport costs are all surging simultaneously, creating a cost-of-living squeeze for recipient families.",
+        "details": {
+          "label": "Economic Impact",
+          "href": "https://tribune.net.ph/2026/03/19/philippine-peso-hits-record-low-past-p60"
+        }
+      }
+    ],
+    "travelAdvisories": {
+      "title": "Active Travel Advisories — ELEVATED",
+      "items": [
+        "Deployment Suspended: Israel, Lebanon, Iran, Jordan – Active military conflict; airspace closures",
+        "Heightened Alert: UAE, Bahrain, Saudi Arabia, Kuwait – Warlike Operations Area declared",
+        "Exercise Caution: Myanmar, Cambodia, Laos – Scam hub operations targeting OFWs",
+        "Monitoring: US, Europe – Stricter immigration enforcement under anti-migrant policies"
+      ]
+    }
+  },
+  "dynastyHighlights": {
+    "title": "Dynasty Highlights",
+    "items": [
+      {
+        "title": "Marcos-Romualdez",
+        "titleHref": "/dynasties-network-visualization.html#dynasty-MARCOS_ROMUALDEZ",
+        "bodyHtml": "Suspended 19% fare hike, ordered free rides and toll discounts. China fire control radar incident near Sabina Shoal. Fuel excise suspension bill cleared Congress. Marcos trust rating up 10 points (Pulse Asia Q1).",
+        "bullets": [
+          {
+            "text": "Fare Hike Suspension (March 18)",
+            "href": "/interactive-timeline/index.html?date=2026-03-18"
+          },
+          {
+            "text": "China Radar Lock (March 20)",
+            "href": "/interactive-timeline/index.html?date=2026-03-20"
+          }
+        ]
+      },
+      {
+        "title": "Duterte",
+        "titleHref": "/dynasties-network-visualization.html#dynasty-DUTERTE_FAMILY",
+        "bodyHtml": "ICC Appeals Chamber rejected detention appeal (March 6). Sara Duterte impeachment advances — ‘sufficient grounds’ declared, mini-trial March 25. Sara filed answer but refused to address allegations. Trust rating dropped 7 points.",
+        "bullets": [
+          {
+            "text": "ICC Detention Appeal Rejected (March 6)",
+            "href": "/interactive-timeline/index.html?date=2026-03-06"
+          },
+          {
+            "text": "Impeachment Advances (March 18)",
+            "href": "/interactive-timeline/index.html?date=2026-03-18"
+          }
+        ]
+      },
+      {
+        "title": "Revilla-Tolentino",
+        "titleHref": "/dynasties-network-visualization.html#dynasty-REVILLA_TOLENTINO",
+        "bodyHtml": "Brice Hernandez arraigned alongside Revilla in flood control corruption cases. Pre-trial set for April 13.",
+        "bullets": [
+          {
+            "text": "DPWH Arraignment (March 15)",
+            "href": "/interactive-timeline/index.html?date=2026-03-15"
+          }
+        ]
+      },
+      {
+        "title": "Marcos-Romualdez (economic)",
+        "titleHref": "/dynasties-network-visualization.html#dynasty-MARCOS_ROMUALDEZ",
+        "bodyHtml": "Government response to oil crisis dominates the week — fare suspension, free rides, OFW evacuation, fuel subsidies. Peso breaches P60.",
+        "bullets": []
+      }
+    ]
+  }
+}

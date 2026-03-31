@@ -1,0 +1,457 @@
+{
+  "version": 1,
+  "weekEnding": "2026-03-14",
+  "weekLabel": "March 8-14, 2026",
+  "title": "OpenPinas: Weekly News Review",
+  "lastUpdated": "March 14, 2026",
+  "prevWeekFile": "weekly-review-2026-03-07.html",
+  "stats": [
+    {
+      "number": "8",
+      "label": "Total Events"
+    },
+    {
+      "number": "2",
+      "label": "Intl Relations"
+    },
+    {
+      "number": "2",
+      "label": "Political"
+    },
+    {
+      "number": "5",
+      "label": "Dynasties"
+    }
+  ],
+  "weather": {
+    "title": "Metro Manila Weather",
+    "days": [
+      {
+        "dateLabel": "Mar 8",
+        "name": "Sun",
+        "icon": "☀️",
+        "high": "34°",
+        "low": "27°"
+      },
+      {
+        "dateLabel": "Mar 9",
+        "name": "Mon",
+        "icon": "⛅",
+        "high": "33°",
+        "low": "27°"
+      },
+      {
+        "dateLabel": "Mar 10",
+        "name": "Tue",
+        "icon": "⛅",
+        "high": "33°",
+        "low": "26°"
+      },
+      {
+        "dateLabel": "Mar 11",
+        "name": "Wed",
+        "icon": "☀️",
+        "high": "34°",
+        "low": "27°"
+      },
+      {
+        "dateLabel": "Mar 12",
+        "name": "Thu",
+        "icon": "⛅",
+        "high": "33°",
+        "low": "27°"
+      },
+      {
+        "dateLabel": "Mar 13",
+        "name": "Fri",
+        "icon": "☀️",
+        "high": "34°",
+        "low": "27°"
+      },
+      {
+        "dateLabel": "Mar 14",
+        "name": "Sat",
+        "icon": "⛅",
+        "high": "34°",
+        "low": "27°"
+      }
+    ],
+    "sourceNote": "Source: PAGASA — Hot dry season; easterlies dominant"
+  },
+  "exchangeRate": {
+    "title": "PHP:USD Exchange Rate",
+    "currentRate": "₱59.40",
+    "trend": "▼ Peso weak on oil crisis, OFW risk",
+    "details": [
+      {
+        "label": "Open",
+        "value": "₱59.27"
+      },
+      {
+        "label": "High",
+        "value": "₱59.45"
+      },
+      {
+        "label": "Low",
+        "value": "₱59.20"
+      },
+      {
+        "label": "Close",
+        "value": "₱59.40"
+      }
+    ],
+    "contextHtml": "<strong>Crisis Impact:</strong> Strait of Hormuz closure and oil shock keep peso under pressure. Capital Economics warned Middle East conflict may hit OFW remittances and add depreciation pressure. Diesel may rise P18/L in next adjustment.",
+    "sourceNote": "Source: BSP / exchange-rates.org"
+  },
+  "eventSections": [
+    {
+      "title": "International Relations",
+      "articles": [
+        {
+          "timeDatetime": "2026-03-08",
+          "timeDisplay": "March 8, 2026",
+          "category": "International Relations",
+          "categoryClass": "international-relations",
+          "borderColor": "var(--international)",
+          "headline": "Marcos Departs for UN New York — Security Council Bid and Middle East Peace Push",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-03-08&search=Marcos%20UN%20New%20York",
+          "descriptionHtml": "President Marcos departed for New York on March 8 for a working visit (March 8-11) to attend the UN General Assembly, campaign for a non-permanent Security Council seat (2027-2028), address the Commission on the Status of Women, and call for peace in the Middle East. This is his 41st overseas trip since taking office.",
+          "significance": "Security Council seat would amplify Philippines' voice on OFW protection, maritime disputes, and Middle East conflict.",
+          "diasporaImpact": "A UN Security Council seat could amplify the Philippines' voice on OFW protection and maritime disputes. Middle East peace push directly relevant to 2.4 million Filipinos in the region.",
+          "dynastyLinks": [
+            {
+              "label": "Marcos-Romualdez",
+              "href": "/dynasties-network-visualization.html#dynasty-MARCOS_ROMUALDEZ"
+            }
+          ],
+          "sourceLinks": [
+            {
+              "label": "philstar.com",
+              "href": "https://www.philstar.com/headlines/2026/03/08/2512776/marcos-new-york-today"
+            },
+            {
+              "label": "mb.com.ph",
+              "href": "https://mb.com.ph/2026/03/06/marcos-to-push-middle-east-peace-civilian-protection-in-un-address"
+            }
+          ]
+        },
+        {
+          "timeDatetime": "2026-03-13",
+          "timeDisplay": "March 13, 2026",
+          "category": "International Relations",
+          "categoryClass": "international-relations",
+          "borderColor": "var(--international)",
+          "headline": "6,000 Filipino Sailors Stranded by Strait of Hormuz Closure — One Missing",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-03-13&search=Filipino%20sailors%20Hormuz",
+          "descriptionHtml": "More than 6,000 Filipino seafarers remained stranded in and around the Strait of Hormuz after Iranian strikes effectively closed the waterway. One Filipino sailor, 46-year-old George Miranda, was missing after his tugboat Mussafah 2 was struck by missiles. The Philippines is the world's largest supplier of seafarers (~380,000 on international vessels at any time).",
+          "significance": "Hormuz crisis directly endangers thousands of Filipino seafarers; one missing sailor personalizes the crisis.",
+          "diasporaImpact": "Most urgent diaspora-impact story. Seafarer families worldwide in direct distress. Remittances and supply chains that employ Filipino port workers threatened.",
+          "dynastyLinks": [],
+          "sourceLinks": [
+            {
+              "label": "philstar.com",
+              "href": "https://www.philstar.com/headlines/2026/03/12/2513788/fear-boredom-filipino-sailors-stuck-hormuz-strait"
+            },
+            {
+              "label": "scmp.com",
+              "href": "https://www.scmp.com/news/asia/southeast-asia/article/3346330/6000-filipino-sailors-stranded-strait-hormuz-closure-bored-and-little-scared"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Political",
+      "articles": [
+        {
+          "timeDatetime": "2026-03-13",
+          "timeDisplay": "March 13, 2026",
+          "category": "Political",
+          "categoryClass": "political",
+          "borderColor": "var(--politics)",
+          "headline": "Frasco Removed as Tourism Secretary — Reassigned as Presidential Adviser",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-03-13&search=Frasco%20Tourism",
+          "descriptionHtml": "Malacañang confirmed on March 13 that Christina Garcia Frasco was removed as Secretary of the Department of Tourism (DOT) and reassigned as Presidential Adviser for Sustainable and Resilient Communities. DOT Undersecretary Verna Burnsuceso was designated officer-in-charge. Frasco had drawn criticism for featuring her own photos on official tourism materials. The Philippines is hosting ASEAN meetings throughout 2026 as bloc chair.",
+          "significance": "Cabinet shake-up during ASEAN chairmanship year; tourism sector faces headwinds from Middle East conflict and fuel crisis.",
+          "diasporaImpact": "Leadership instability at DOT during ASEAN hosting could affect investor confidence. Overseas Filipinos planning homecoming face higher airfares and route disruptions.",
+          "dynastyLinks": [
+            {
+              "label": "Marcos-Romualdez",
+              "href": "/dynasties-network-visualization.html#dynasty-MARCOS_ROMUALDEZ"
+            }
+          ],
+          "sourceLinks": [
+            {
+              "label": "philstar.com",
+              "href": "https://www.philstar.com/headlines/2026/03/13/2513980/frasco-out-tourism-chief"
+            },
+            {
+              "label": "inquirer.net",
+              "href": "https://newsinfo.inquirer.net/2194903/frasco-out-as-tourism-chief-gets-adviser-role"
+            }
+          ]
+        },
+        {
+          "timeDatetime": "2026-03-13",
+          "timeDisplay": "March 13, 2026",
+          "category": "Political",
+          "categoryClass": "political",
+          "borderColor": "var(--politics)",
+          "headline": "64% of Filipinos Back Anti-Dynasty Law — Pulse Asia Survey",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-03-13&search=64%25%20anti-dynasty",
+          "descriptionHtml": "A Pulse Asia survey released March 13 found 64% of Filipino adults support passage of an anti-political dynasty bill, up from 54% in December 2025. The survey (Feb 27–Mar 2, 1,200 adults) showed 70% of those favoring or undecided agree with a ban on relatives holding national and local elective positions simultaneously. Support was weakest in Mindanao.",
+          "significance": "Highest recorded support for anti-dynasty law; 10-point surge in three months driven by corruption protests and dynasty-linked scandals.",
+          "diasporaImpact": "Diaspora has long advocated for anti-dynasty legislation. Surge suggests flood control scandal and Duterte ICC case are shifting domestic opinion.",
+          "dynastyLinks": [
+            {
+              "label": "Duterte",
+              "href": "/dynasties-network-visualization.html#dynasty-DUTERTE_FAMILY"
+            },
+            {
+              "label": "Estrada",
+              "href": "/dynasties-network-visualization.html#dynasty-ESTRADA_FAMILY"
+            },
+            {
+              "label": "Revilla-Tolentino",
+              "href": "/dynasties-network-visualization.html#dynasty-REVILLA_TOLENTINO"
+            }
+          ],
+          "sourceLinks": [
+            {
+              "label": "rappler.com",
+              "href": "https://www.rappler.com/philippines/anti-political-dynasty-law-survey-pulse-asia-march-2026/"
+            },
+            {
+              "label": "inquirer.net",
+              "href": "https://newsinfo.inquirer.net/2195151/pulse-asia-64-of-filipinos-back-bill-banning-political-dynasties"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Legal",
+      "articles": [
+        {
+          "timeDatetime": "2026-03-13",
+          "timeDisplay": "March 13, 2026",
+          "category": "Legal",
+          "categoryClass": "legal",
+          "borderColor": "var(--legal)",
+          "headline": "ICI Winds Down Operations — Turns Over Flood Control Probe to Ombudsman",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-03-13&search=ICI%20Ombudsman",
+          "descriptionHtml": "The Independent Commission for Infrastructure (ICI) announced it will cease operations on March 31, 2026 after six months. Chairman Andres Reyes Jr. turned over all documents and evidence to the Office of the Ombudsman. Key accomplishments: nine referrals covering 65 individuals, 20 agencies in Asset Recovery TWG. The commission's work centered on the DPWH flood control scandal.",
+          "significance": "End of high-profile anti-corruption body; accountability now rests with Ombudsman.",
+          "diasporaImpact": "Whether the Ombudsman acts on ICI referrals will test government credibility on infrastructure accountability affecting flood-prone communities.",
+          "dynastyLinks": [
+            {
+              "label": "Estrada",
+              "href": "/dynasties-network-visualization.html#dynasty-ESTRADA_FAMILY"
+            },
+            {
+              "label": "Revilla-Tolentino",
+              "href": "/dynasties-network-visualization.html#dynasty-REVILLA_TOLENTINO"
+            },
+            {
+              "label": "Villar",
+              "href": "/dynasties-network-visualization.html#dynasty-VILLAR_FAMILY"
+            }
+          ],
+          "sourceLinks": [
+            {
+              "label": "rappler.com",
+              "href": "https://www.rappler.com/philippines/ici-operation-end-march-31-2026/"
+            },
+            {
+              "label": "gmanetwork.com",
+              "href": "https://www.gmanetwork.com/news/topstories/nation/979888/ici-set-to-end-operations-on-march-31/story/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Economic",
+      "articles": [
+        {
+          "timeDatetime": "2026-03-13",
+          "timeDisplay": "March 13, 2026",
+          "category": "Economic",
+          "categoryClass": "economic",
+          "borderColor": "#0b6e4f",
+          "headline": "Oil Crisis Deepens — Next Fuel Hike Could Hit P18/Liter for Diesel",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-03-13&search=Oil%20crisis%20diesel",
+          "descriptionHtml": "Iran's supreme leader ordered the Strait of Hormuz to remain closed. Industry projections show diesel may rise by approximately P18/liter and gasoline by P15/liter in the next adjustment. The DOE assured supply until end of April. P5,000 driver subsidies roll out March 17; 4-day government workweek in effect since March 9. Capital Economics warned the Middle East conflict may hit OFW remittances and put further depreciation pressure on the peso.",
+          "significance": "Philippines sources 98% of crude from Middle East; fuel crisis entering more severe phase.",
+          "diasporaImpact": "Remittances buy less as inflation erodes peso; OFWs in Middle East face danger and job disruption; fare hikes hit remittance recipients.",
+          "dynastyLinks": [
+            {
+              "label": "Marcos-Romualdez",
+              "href": "/dynasties-network-visualization.html#dynasty-MARCOS_ROMUALDEZ"
+            }
+          ],
+          "sourceLinks": [
+            {
+              "label": "inquirer.net",
+              "href": "https://newsinfo.inquirer.net/2195066/oil-price-watch-as-of-march-13-2026"
+            },
+            {
+              "label": "mb.com.ph",
+              "href": "https://mb.com.ph/2026/03/13/middle-east-conflict-may-hit-ofw-remittances-pesocapital-economics"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Cultural",
+      "articles": [
+        {
+          "timeDatetime": "2026-03-13",
+          "timeDisplay": "March 13, 2026",
+          "category": "Cultural",
+          "categoryClass": "cultural",
+          "borderColor": "var(--culture)",
+          "headline": "Cebu Bus Rapid Transit Begins Partial Operations — Free Rides for One Year",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-03-13&search=Cebu%20BRT",
+          "descriptionHtml": "The Cebu Bus Rapid Transit (CBRT) began partial operations on March 13 with at least 17 CeBus electric bus units on the Il Corso-IT Park route. Package 1 spans 2.38 km from Cebu South Bus Terminal to Provincial Capitol. Commuters ride free for one year. Electric buses reduce dependence on diesel amid the fuel crisis.",
+          "significance": "Milestone for Philippine mass transit outside Metro Manila; free-ride policy makes it immediately accessible amid fuel crisis.",
+          "diasporaImpact": "Cebu is a top province of origin for OFWs. Improved public transit reduces daily costs for families left behind.",
+          "dynastyLinks": [],
+          "sourceLinks": [
+            {
+              "label": "philstar.com",
+              "href": "https://www.philstar.com/the-freeman/cebu-news/2026/03/13/2514019/cbrt-starts-partial-operations-today"
+            },
+            {
+              "label": "sunstar.com.ph",
+              "href": "https://www.sunstar.com.ph/cebu/cbrt-offers-free-rides-for-1-year-as-initial-operations-begin-march-13"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Natural Disasters",
+      "articles": [
+        {
+          "timeDatetime": "2026-03-11",
+          "timeDisplay": "March 11, 2026",
+          "category": "Natural Disasters",
+          "categoryClass": "natural-disasters",
+          "borderColor": "#c44900",
+          "headline": "Mayon Volcano Alert Level 3 Extended — SO2 Spikes to 5,875 Tons",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-03-11&search=Mayon%20SO2",
+          "descriptionHtml": "PHIVOLCS maintained Alert Level 3 over Mayon on its 65th+ consecutive day of heightened activity. Seismic activity intensified March 11-13; sulfur dioxide emissions spiked to 5,875 tons on March 10 before dropping to 3,551 tons on March 11. Lava effusion with collapse pyroclastic density currents and minor strombolian activity observed. The 6-km permanent danger zone remains strictly enforced.",
+          "significance": "Eruption not waning; one of highest SO2 levels recorded this year.",
+          "diasporaImpact": "Families in Albay and Bicol face ongoing evacuation risk and livelihood disruption. Diaspora families from Bicol may need to send additional support.",
+          "dynastyLinks": [],
+          "sourceLinks": [
+            {
+              "label": "gmanetwork.com",
+              "href": "https://www.gmanetwork.com/news/topstories/regions/979681/lava-effusion-pdcs-minor-strombolian-activity-at-mayon-volcano-phivolcs/story/"
+            },
+            {
+              "label": "inquirer.net",
+              "href": "https://newsinfo.inquirer.net/2193826/mayon-volcano-spews-lava-anew-amid-65th-day-of-eruption"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "ofwSection": {
+    "title": "OFW & Diaspora News",
+    "stats": [
+      {
+        "number": "6,000+",
+        "label": "Sailors Stranded (Hormuz)"
+      },
+      {
+        "number": "1",
+        "label": "Seafarer Missing"
+      },
+      {
+        "number": "2.4M",
+        "label": "OFWs in Middle East"
+      },
+      {
+        "number": "P18/L",
+        "label": "Next Diesel Hike (est.)"
+      }
+    ],
+    "stories": [
+      {
+        "title": "6,000 Filipino Sailors Stranded in Strait of Hormuz — George Miranda Missing",
+        "bodyHtml": "More than 6,000 Filipino seafarers remained stranded in and around the Strait of Hormuz after Iranian strikes closed the waterway. One Filipino sailor, 46-year-old George Miranda, is missing after his tugboat Mussafah 2 was struck by missiles. The United Filipino Seafarers union reported hundreds of calls from sailors with food supplies an immediate concern. The Philippines is the world's largest supplier of seafarers (~380,000 on international vessels).",
+        "details": {
+          "label": "Strait of Hormuz — Middle East",
+          "href": "https://www.philstar.com/headlines/2026/03/12/2513788/fear-boredom-filipino-sailors-stuck-hormuz-strait"
+        }
+      },
+      {
+        "title": "Oil Crisis and Peso Pressure — Capital Economics Warns on OFW Remittances",
+        "bodyHtml": "Capital Economics warned the Middle East conflict may hit OFW remittances and put further depreciation pressure on the peso. Diesel may rise by ~P18/liter and gasoline by P15/liter in the next adjustment. The 4-day government workweek is in effect; P5,000 driver subsidies roll out March 17.",
+        "details": {
+          "label": "Economic Impact",
+          "href": "https://mb.com.ph/2026/03/13/middle-east-conflict-may-hit-ofw-remittances-pesocapital-economics"
+        }
+      }
+    ],
+    "travelAdvisories": {
+      "title": "Active Travel Advisories — ELEVATED",
+      "items": [
+        "Deployment Suspended: Israel, Lebanon, Iran, Jordan – Active military conflict; airspace closures",
+        "Heightened Alert: UAE, Bahrain, Saudi Arabia, Kuwait – Strait of Hormuz closure; regional instability",
+        "Exercise Caution: Myanmar, Cambodia, Laos – Scam hub operations targeting OFWs",
+        "Monitoring: US, Europe – Stricter immigration enforcement under anti-migrant policies"
+      ]
+    }
+  },
+  "dynastyHighlights": {
+    "title": "Dynasty Highlights",
+    "items": [
+      {
+        "title": "Marcos-Romualdez",
+        "titleHref": "/dynasties-network-visualization.html#dynasty-MARCOS_ROMUALDEZ",
+        "bodyHtml": "President Marcos departed for UN New York (Security Council bid, Middle East peace). Frasco removed as Tourism secretary and reassigned as Presidential Adviser. Oil crisis response: 4-day workweek in effect, driver subsidies from March 17. ICI handoff to Ombudsman declared \"job done.\"",
+        "bullets": [
+          {
+            "text": "UN New York Visit",
+            "href": "/interactive-timeline/index.html?date=2026-03-08"
+          },
+          {
+            "text": "Frasco Removed as DOT Chief",
+            "href": "/interactive-timeline/index.html?date=2026-03-13"
+          },
+          {
+            "text": "Oil Crisis Deepens",
+            "href": "/interactive-timeline/index.html?date=2026-03-13"
+          }
+        ]
+      },
+      {
+        "title": "Duterte",
+        "titleHref": "/dynasties-network-visualization.html#dynasty-DUTERTE_FAMILY",
+        "bodyHtml": "VP Sara Duterte's impeachment answer deadline is March 15/16. Diokno defended witness protection motions. 16-lawyer defense team has entered appearance. Rodrigo Duterte remains in ICC detention; confirmation-of-charges decision expected by April 28.",
+        "bullets": [
+          {
+            "text": "64% Support Anti-Dynasty Law (Pulse Asia)",
+            "href": "/interactive-timeline/index.html?date=2026-03-13"
+          }
+        ]
+      },
+      {
+        "title": "Estrada",
+        "titleHref": "/dynasties-network-visualization.html#dynasty-ESTRADA_FAMILY",
+        "bodyHtml": "ICI wound down and turned over flood control probe to Ombudsman; nine referrals covering 65 individuals. Jinggoy Estrada and Bong Revilla were subpoenaed in the probe; Mark Villar implicated in Senate testimony.",
+        "bullets": [
+          {
+            "text": "ICI Winds Down — Ombudsman Handoff",
+            "href": "/interactive-timeline/index.html?date=2026-03-13"
+          }
+        ]
+      }
+    ]
+  }
+}

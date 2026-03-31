@@ -1,0 +1,639 @@
+{
+  "version": 1,
+  "weekEnding": "2026-02-22",
+  "weekLabel": "February 15-22, 2026",
+  "title": "OpenPinas: Weekly News Review",
+  "lastUpdated": "February 22, 2026",
+  "prevWeekFile": null,
+  "stats": [
+    {
+      "number": "12",
+      "label": "Total Events"
+    },
+    {
+      "number": "9",
+      "label": "Political/Legal"
+    },
+    {
+      "number": "3",
+      "label": "Disasters"
+    },
+    {
+      "number": "2",
+      "label": "Dynasties"
+    }
+  ],
+  "weather": {
+    "title": "Metro Manila Weather",
+    "days": [
+      {
+        "dateLabel": "Feb 16",
+        "name": "Sun",
+        "icon": "☀️",
+        "high": "33°",
+        "low": "24°"
+      },
+      {
+        "dateLabel": "Feb 17",
+        "name": "Mon",
+        "icon": "⛅",
+        "high": "31°",
+        "low": "24°"
+      },
+      {
+        "dateLabel": "Feb 18",
+        "name": "Tue",
+        "icon": "⛅",
+        "high": "31°",
+        "low": "24°"
+      },
+      {
+        "dateLabel": "Feb 19",
+        "name": "Wed",
+        "icon": "⛅",
+        "high": "31°",
+        "low": "23°"
+      },
+      {
+        "dateLabel": "Feb 20",
+        "name": "Thu",
+        "icon": "⛅",
+        "high": "31°",
+        "low": "23°"
+      },
+      {
+        "dateLabel": "Feb 21",
+        "name": "Fri",
+        "icon": "☀️",
+        "high": "31°",
+        "low": "24°"
+      },
+      {
+        "dateLabel": "Feb 22",
+        "name": "Sat",
+        "icon": "☀️",
+        "high": "32°",
+        "low": "24°"
+      }
+    ],
+    "sourceNote": "Source: PAGASA"
+  },
+  "exchangeRate": {
+    "title": "PHP:USD Exchange Rate",
+    "currentRate": "₱57.96",
+    "trend": "▲ 0.84% this week",
+    "details": [
+      {
+        "label": "Open",
+        "value": "₱57.85"
+      },
+      {
+        "label": "High",
+        "value": "₱57.98"
+      },
+      {
+        "label": "Low",
+        "value": "₱57.85"
+      },
+      {
+        "label": "Close",
+        "value": "₱57.96"
+      }
+    ],
+    "contextHtml": "<strong>YTD:</strong> Peso strengthened past ₱58 to its firmest level in over four months, supported by strong remittance inflows and improved investor sentiment",
+    "sourceNote": "Source: BSP / Bloomberg"
+  },
+  "eventSections": [
+    {
+      "title": "Legal",
+      "articles": [
+        {
+          "timeDatetime": "2026-02-13",
+          "timeDisplay": "February 13, 2026",
+          "category": "Legal",
+          "categoryClass": "legal",
+          "borderColor": "",
+          "headline": "Atong Ang Bounty Doubled to P20 Million as Manhunt Intensifies",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-02-13&search=Atong%20Ang%20Bounty%20Doubled%20to%20P20%20Million%20as%20Manhunt%20Intensifies",
+          "descriptionHtml": "The Department of the Interior and Local Government doubled the bounty on fugitive businessman Charlie 'Atong' Ang from P10 million to P20 million, as authorities intensified their manhunt for the alleged mastermind behind the disappearance of at least 34 cockfighting enthusiasts (sabungeros) between 2021 and 2022. Whistleblower Julie Patidongan identified Ang as the mastermind, claiming the missing sabungeros were killed and their bodies dumped in Taal Lake. Despite 10 raids on known properties across Metro Manila, Central Luzon, Calabarzon, and Bicol, authorities failed to locate Ang. The Cambodian government issued a statement denying Ang was in their country, while the Bureau of Immigration confirmed no record of him departing the Philippines. Interior Secretary Jonvic Remulla maintained that Ang remains in the country. The DOJ reiterated there are no formal records of Ang leaving the Philippines.",
+          "significance": "One of the Philippines' most high-profile manhunts, linked to the Duterte-era online sabong (e-sabong) industry that generated billions but was connected to kidnappings and killings",
+          "diasporaImpact": "The case underscores ongoing concerns about rule of law and impunity in the Philippines. The e-sabong industry affected overseas Filipino communities who also participated in online cockfighting. The manhunt tests law enforcement credibility.",
+          "dynastyLinks": [
+            {
+              "label": "Duterte",
+              "href": "/dynasties-network-visualization.html#dynasty-DUTERTE_FAMILY"
+            }
+          ],
+          "sourceLinks": [
+            {
+              "label": "philstar.com",
+              "href": "https://www.philstar.com/headlines/2026/02/13/2507639/dilg-doubles-bounty-atong-ang-p20-milion"
+            },
+            {
+              "label": "newsinfo.inquirer.net",
+              "href": "https://newsinfo.inquirer.net/2183234/atong-ang-manhunt-10-raids-in-past-week-fail-to-find-him-remulla"
+            },
+            {
+              "label": "manilatimes.net",
+              "href": "https://www.manilatimes.net/2026/02/17/news/atong-ang-nowhere-to-be-found-after-10-raids-on-known-sites-remulla/2279240"
+            }
+          ]
+        },
+        {
+          "timeDatetime": "2026-02-18",
+          "timeDisplay": "February 18, 2026",
+          "category": "Legal",
+          "categoryClass": "legal",
+          "borderColor": "",
+          "headline": "Fourth Impeachment Complaint Filed Against VP Sara Duterte",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-02-18&search=Fourth%20Impeachment%20Complaint%20Filed%20Against%20VP%20Sara%20Duterte",
+          "descriptionHtml": "Lawyer Nathaniel Cabrera filed the fourth impeachment complaint against Vice President Sara Duterte before the Office of the House Secretary General, just hours after Duterte announced her intent to run for president in the 2028 elections. The complaint adds to three previous filings in February 2026: the Makabayan bloc and Tindig Pilipinas/Akbayan coalition filed complaints on February 2, and church-led groups filed a third complaint on February 9 accusing Duterte of misusing approximately P612 million in confidential funds and corrupting Department of Education officials. The renewed impeachment push follows the Supreme Court's ruling that the first impeachment in 2025 was unconstitutional due to violation of the one-year bar rule, which expired in February 2026. The House of Representatives now faces the question of whether to fast-track these new complaints as it did in 2025.",
+          "significance": "Four impeachment complaints in 16 days signals intensifying political pressure on the Vice President; tests whether the House will pursue removal proceedings a second time",
+          "diasporaImpact": "Continued political instability at the highest levels of government concerns diaspora communities monitoring governance quality. The confidential funds misuse allegations involve education budgets that directly affect families with children in Philippine public schools.",
+          "dynastyLinks": [
+            {
+              "label": "Duterte",
+              "href": "/dynasties-network-visualization.html#dynasty-DUTERTE_FAMILY"
+            }
+          ],
+          "sourceLinks": [
+            {
+              "label": "thediplomat.com",
+              "href": "https://thediplomat.com/2026/02/fourth-impeachment-complaint-filed-against-philippine-vice-president/"
+            },
+            {
+              "label": "rappler.com",
+              "href": "https://www.rappler.com/philippines/sara-duterte-slapped-fourth-impeachment-complaint-february-18-2026/"
+            },
+            {
+              "label": "tribune.net.ph",
+              "href": "https://tribune.net.ph/2026/02/18/lawyer-filed-4th-impeachment-rap-vs-vp-duterte"
+            }
+          ]
+        },
+        {
+          "timeDatetime": "2026-02-20",
+          "timeDisplay": "February 20, 2026",
+          "category": "Legal",
+          "categoryClass": "legal",
+          "borderColor": "",
+          "headline": "ICC Grants Duterte Request to Skip Confirmation of Charges Hearing",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-02-20&search=ICC%20Grants%20Duterte%20Request%20to%20Skip%20Confirmation%20of%20Charges%20Hearing",
+          "descriptionHtml": "The International Criminal Court granted former President Rodrigo Duterte's request to waive his appearance at the confirmation of charges hearing scheduled for February 23-27, 2026 in The Hague, Netherlands. Duterte, who described himself as 'old, tired, and frail,' will not attend the four-day hearing. Under the Rome Statute, the confirmation hearing may proceed even without the suspect's presence. The hearing will determine whether there is sufficient evidence to establish substantial grounds that Duterte committed crimes against humanity — specifically murder and attempted murder — in connection with the 'war on drugs' campaign between November 2011 and March 2019. Following the hearing, the judges have 60 days to issue a written decision. Human Rights Watch called the hearing a 'critical step toward justice' for thousands of victims. President Marcos said he would not monitor the hearing but would be updated on developments.",
+          "significance": "Historic moment as a former Philippine president faces ICC proceedings; the confirmation hearing is the last step before a formal trial. Duterte's absence strategy aims to deny legitimacy to the court.",
+          "diasporaImpact": "The ICC proceedings are a defining moment for the Filipino diaspora, many of whom were directly affected by the drug war's violence or know victims. The case has international implications for Philippine human rights reputation and may affect how diaspora communities engage with homeland politics.",
+          "dynastyLinks": [
+            {
+              "label": "Duterte",
+              "href": "/dynasties-network-visualization.html#dynasty-DUTERTE_FAMILY"
+            },
+            {
+              "label": "Marcos-Romualdez",
+              "href": "/dynasties-network-visualization.html#dynasty-MARCOS_ROMUALDEZ"
+            }
+          ],
+          "sourceLinks": [
+            {
+              "label": "hrw.org",
+              "href": "https://www.hrw.org/news/2026/02/16/philippines-icc-hearing-to-confirm-duterte-charges"
+            },
+            {
+              "label": "jurist.org",
+              "href": "https://www.jurist.org/news/2026/02/icc-hearing-over-former-philippines-president-a-critical-step-toward-justice-rights-groups-says/"
+            },
+            {
+              "label": "rappler.com",
+              "href": "https://www.rappler.com/philippines/duterte-waives-appearance-icc-confirmation-charges-february-2026/"
+            },
+            {
+              "label": "manilatimes.net",
+              "href": "https://www.manilatimes.net/2026/02/21/news/duterte-to-skip-pre-trial-hearing/2281809"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Political",
+      "articles": [
+        {
+          "timeDatetime": "2026-02-18",
+          "timeDisplay": "February 18, 2026",
+          "category": "Political",
+          "categoryClass": "political",
+          "borderColor": "",
+          "headline": "VP Sara Duterte Announces 2028 Presidential Bid Amid Impeachment Efforts",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-02-18&search=VP%20Sara%20Duterte%20Announces%202028%20Presidential%20Bid%20Amid%20Impeachment%20Efforts",
+          "descriptionHtml": "Vice President Sara Duterte formally declared her candidacy for the 2028 presidential elections at a press conference at the Office of the Vice President headquarters in Mandaluyong City. Stating 'It took me 47 years to understand that my life was never meant to be only mine,' Duterte framed the announcement as a response to what she described as political persecution by the Marcos administration. The declaration came amid a deepening feud with President Marcos Jr. — whom she supported in 2022 — and fresh impeachment attempts against her. Their relationship deteriorated following a 2024 corruption inquiry into Duterte's alleged misuse of government funds and Marcos's authorization of her father's arrest. Malacañang dismissed the announcement as 'irrelevant,' noting the 2028 elections were still two years away. The announcement was widely covered internationally, with Bloomberg, The Washington Post, Al Jazeera, and The Japan Times all reporting on the story.",
+          "significance": "Earliest presidential bid declaration in Philippine history; signals the Marcos-Duterte alliance is irreparably broken and sets the stage for a bitter 2028 election cycle",
+          "diasporaImpact": "The Marcos-Duterte political war creates uncertainty about Philippine governance stability. Diaspora communities are divided along pro-Marcos and pro-Duterte lines, and this announcement will intensify political engagement among overseas Filipinos who vote in national elections.",
+          "dynastyLinks": [
+            {
+              "label": "Duterte",
+              "href": "/dynasties-network-visualization.html#dynasty-DUTERTE_FAMILY"
+            },
+            {
+              "label": "Marcos-Romualdez",
+              "href": "/dynasties-network-visualization.html#dynasty-MARCOS_ROMUALDEZ"
+            }
+          ],
+          "sourceLinks": [
+            {
+              "label": "aljazeera.com",
+              "href": "https://www.aljazeera.com/news/2026/2/18/philippine-vp-sara-duterte-announces-run-for-president-in-2028"
+            },
+            {
+              "label": "washingtonpost.com",
+              "href": "https://www.washingtonpost.com/world/2026/02/18/philippines-sara-duterte-ferdinand-marcos-jr/90e4abce-0c8e-11f1-8e91-6e1451aab67e_story.html"
+            },
+            {
+              "label": "rappler.com",
+              "href": "https://www.rappler.com/philippines/sara-duterte-announces-2028-presidential-bid/"
+            },
+            {
+              "label": "newsinfo.inquirer.net",
+              "href": "https://newsinfo.inquirer.net/2183578/vice-president-sara-duterte-announces-2028-presidential-bid"
+            }
+          ]
+        },
+        {
+          "timeDatetime": "2026-02-19",
+          "timeDisplay": "February 19, 2026",
+          "category": "Political",
+          "categoryClass": "political",
+          "borderColor": "",
+          "headline": "Third Trillion Peso March Confirmed for EDSA@40 Anniversary on February 25",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-02-19&search=Third%20Trillion%20Peso%20March%20Confirmed%20for%20EDSA%4040%20Anniversary%20on%20February%2025",
+          "descriptionHtml": "Organizers confirmed the third Trillion Peso March for February 25, 2026, coinciding with the 40th anniversary of the EDSA People Power Revolution. The anti-corruption rally, organized by Caritas Philippines and civil society groups, carries the theme 'Tayo ang People Power Laban sa Korapsyon at Dinastiya!' (We are the People Power against Corruption and Dynasty). Quezon City granted access to the entire one-kilometer stretch of White Plains Avenue for the protest. Demands include passage of the Anti-Dynasty Law, Party-List Reform Law, creation of an Independent People's Commission and Independent Commission Against Infrastructure Corruption, and prosecution of perpetrators in the flood control scandal. The PNP prepared security arrangements for the event. Organizers stipulated that no political takeover calls would be allowed. The first two Trillion Peso Marches were held on September 21, 2025 (Martial Law anniversary) and November 30, 2025 (Bonifacio Day).",
+          "significance": "Largest sustained anti-corruption protest movement in the Philippines since EDSA 1986; EDSA@40 timing amplifies the message of people power against corruption and political dynasties",
+          "diasporaImpact": "The anti-dynasty and anti-corruption demands directly align with diaspora concerns about governance quality. Overseas Filipino organizations have organized solidarity marches in previous iterations. The movement's focus on the flood control scandal and political dynasties resonates with diaspora voters who want systemic reform.",
+          "dynastyLinks": [
+            {
+              "label": "Marcos-Romualdez",
+              "href": "/dynasties-network-visualization.html#dynasty-MARCOS_ROMUALDEZ"
+            }
+          ],
+          "sourceLinks": [
+            {
+              "label": "philstar.com",
+              "href": "https://www.philstar.com/headlines/2026/02/11/2507330/trillion-peso-march-part-3-set-people-power-anniversary"
+            },
+            {
+              "label": "gmanetwork.com",
+              "href": "https://www.gmanetwork.com/news/topstories/nation/977266/what-to-expect-for-trillion-peso-march-on-february-25-edsa-anniv/story/"
+            },
+            {
+              "label": "pna.gov.ph",
+              "href": "https://www.pna.gov.ph/articles/1268932"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "International Relations",
+      "articles": [
+        {
+          "timeDatetime": "2026-02-14",
+          "timeDisplay": "February 14, 2026",
+          "category": "International Relations",
+          "categoryClass": "international-relations",
+          "borderColor": "",
+          "headline": "Philippines Signs Defense Pacts with Italy and Estonia at Munich Security Conference",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-02-14&search=Philippines%20Signs%20Defense%20Pacts%20with%20Italy%20and%20Estonia%20at%20Munich%20Security%20Conference",
+          "descriptionHtml": "Foreign Affairs Secretary Theresa Lazaro signed two bilateral agreements at the Munich Security Conference in Germany. The Philippines and Italy sealed a renewed defense cooperation agreement with Italian Defense Minister Guido Crosetto, replacing an expired memorandum of understanding. The new pact expands potential for defense co-production, technology partnerships, and procurement cooperation, with a focus on boosting maritime security. Lazaro also signed a Memorandum of Understanding on Digital Cooperation with Estonia, covering cybersecurity and capacity building. Estonian Foreign Minister Margus Tsahkna expressed readiness to deepen cybersecurity cooperation with the Philippines. The agreements reflect the Philippines' strategy of diversifying defense partnerships beyond the United States amid ongoing South China Sea tensions with Beijing.",
+          "significance": "Expands the Philippines' defense network to European partners, signaling a more diversified security posture beyond traditional US alliance",
+          "diasporaImpact": "Defense modernization and international partnerships improve national security, directly affecting the safety of families in the Philippines. The Estonia cybersecurity deal could strengthen digital infrastructure protecting OFW remittance systems and government services.",
+          "dynastyLinks": [
+            {
+              "label": "Marcos-Romualdez",
+              "href": "/dynasties-network-visualization.html#dynasty-MARCOS_ROMUALDEZ"
+            }
+          ],
+          "sourceLinks": [
+            {
+              "label": "manilastandard.net",
+              "href": "https://manilastandard.net/news/314704129/philippines-signs-pacts-with-estonia-italy-at-munich-security-conference.html"
+            },
+            {
+              "label": "pna.gov.ph",
+              "href": "https://www.pna.gov.ph/articles/1269057"
+            },
+            {
+              "label": "mb.com.ph",
+              "href": "https://mb.com.ph/2026/02/17/dnd-phs-renewed-defense-pact-with-italy-to-boost-maritime-security"
+            }
+          ]
+        },
+        {
+          "timeDatetime": "2026-02-15",
+          "timeDisplay": "February 15, 2026",
+          "category": "International Relations",
+          "categoryClass": "international-relations",
+          "borderColor": "",
+          "headline": "US-Australia-Philippines Trilateral Naval Drills in South China Sea Draw Chinese Response",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-02-15&search=US-Australia-Philippines%20Trilateral%20Naval%20Drills%20in%20South%20China%20Sea%20Draw%20Chinese%20Response",
+          "descriptionHtml": "The United States, Australia, and the Philippines conducted a two-day Multilateral Maritime Cooperative Activity on February 15-16 inside the Philippine Exclusive Economic Zone in the South China Sea. The USS Dewey (guided-missile destroyer) and a P-8A Poseidon maritime patrol aircraft represented the US, while Australia deployed the HMAS Toowoomba and another P-8A Poseidon. The Philippines contributed the BRP Teresa Magbanua, guided-missile frigate BRP Diego Silang, FA-50 fighter jets, an A-29 Super Tucano attack aircraft, and several helicopters. The exercises included visual information drills and a replenishment-at-sea. Beijing responded by deploying air and naval forces on 'combat readiness patrols' within the Philippine EEZ, according to Chinese state media. Australia's visible participation near Philippine-claimed features represents a significant deepening of trilateral maritime security cooperation in the region.",
+          "significance": "First major trilateral maritime exercise of 2026 in the South China Sea, demonstrating allied commitment to freedom of navigation and Philippine sovereignty claims",
+          "diasporaImpact": "South China Sea security directly affects Filipino fishing communities and maritime industries. Strengthened alliances reassure diaspora communities about homeland defense. However, Chinese military responses raise tensions that could affect trade and Filipino workers in China.",
+          "dynastyLinks": [
+            {
+              "label": "Marcos-Romualdez",
+              "href": "/dynasties-network-visualization.html#dynasty-MARCOS_ROMUALDEZ"
+            }
+          ],
+          "sourceLinks": [
+            {
+              "label": "stripes.com",
+              "href": "https://www.stripes.com/theaters/asia_pacific/2026-02-17/south-china-sea-us-navy-philippines-australia-20770871.html"
+            },
+            {
+              "label": "armyrecognition.com",
+              "href": "https://www.armyrecognition.com/news/navy-news/2026/u-s-strengthens-south-china-sea-presence-with-australia-and-philippines-in-new-trilateral-naval-activity"
+            }
+          ]
+        },
+        {
+          "timeDatetime": "2026-02-17",
+          "timeDisplay": "February 17, 2026",
+          "category": "International Relations",
+          "categoryClass": "international-relations",
+          "borderColor": "",
+          "headline": "DFA Condemns Chinese Embassy's 'Job Loss' Warning; Senate Passes Condemnation Resolution",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-02-17&search=DFA%20Condemns%20Chinese%20Embassy%27s%20%27Job%20Loss%27%20Warning%3B%20Senate%20Passes%20Condemnation%20Resolution",
+          "descriptionHtml": "A diplomatic row erupted after Chinese Embassy spokesman Ji Lingpeng warned that 'any serious damage to diplomatic relations, including downgrading of those relations, would cost millions of jobs' in the Philippines. The Department of Foreign Affairs took 'strong exception' to the embassy's tone, saying it implied economic cooperation could be weaponized as leverage or retaliation. The Philippine Senate adopted Resolution No. 256 condemning the Chinese Embassy for what it described as aggressive statements against Philippine officials and uniformed personnel over the South China Sea dispute. Several senators went further, calling for the expulsion of Chinese embassy officials or the recall of Ambassador Jing Quan. The row intensified amid broader tensions over the South China Sea, following the trilateral US-Australia-Philippines naval exercises and the Philippines' push to finalize an ASEAN-China code of conduct during its ASEAN chairmanship.",
+          "significance": "Rare formal Senate condemnation of a foreign embassy; marks a new low in Philippine-China diplomatic relations and reflects hardening public sentiment against Beijing's assertiveness",
+          "diasporaImpact": "The job loss warning directly concerns OFWs and diaspora families dependent on Chinese-linked industries. Deteriorating PH-China relations could affect Filipino workers in Chinese companies, trade volumes, and agricultural exports. However, Filipino public opinion has shifted strongly in favor of defending sovereignty.",
+          "dynastyLinks": [
+            {
+              "label": "Marcos-Romualdez",
+              "href": "/dynasties-network-visualization.html#dynasty-MARCOS_ROMUALDEZ"
+            }
+          ],
+          "sourceLinks": [
+            {
+              "label": "aljazeera.com",
+              "href": "https://www.aljazeera.com/news/2026/2/17/philippines-rebukes-china-embassy-over-coercive-warning-of-job"
+            },
+            {
+              "label": "rappler.com",
+              "href": "https://www.rappler.com/philippines/manila-response-china-embasse-statement-job-losses/"
+            },
+            {
+              "label": "bworldonline.com",
+              "href": "https://www.bworldonline.com/the-nation/2026/02/17/731218/dfa-condemns-chinese-embassys-job-loss-threat/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Natural Disasters",
+      "articles": [
+        {
+          "timeDatetime": "2026-02-17",
+          "timeDisplay": "February 17, 2026",
+          "category": "Natural Disasters",
+          "categoryClass": "natural-disasters",
+          "borderColor": "",
+          "headline": "Mayon Volcano Lava Flows Confirmed by Satellite as Activity Continues",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-02-17&search=Mayon%20Volcano%20Lava%20Flows%20Confirmed%20by%20Satellite%20as%20Activity%20Continues",
+          "descriptionHtml": "Satellite imagery confirmed multiple active lava flows emerging from Mayon Volcano's summit cone on February 17, 2026, as the mountain's elevated effusive eruption continued. PHIVOLCS reported minor strombolian activity at the summit crater on February 15, with incandescent rockfalls observed on the upper slopes. The volcano, which escalated to Alert Level 3 in January 2026 following a magmatic eruption, has displaced thousands of residents in the 6-kilometer Permanent Danger Zone around Albay province. Lahar warnings remained in effect for river channels on the volcano's flanks, particularly during rain events. SO2 emissions remained elevated but below the record 15-year high recorded in early February. PHIVOLCS continued to advise against entry into the PDZ and within valleys and river channels due to lahar and rockfall hazards.",
+          "significance": "Mayon Volcano's persistent lava flows through February indicate an extended eruption cycle, with continued Alert Level 3 posing ongoing displacement and hazard risks for Albay communities",
+          "diasporaImpact": "Thousands of OFW family members in Albay and Bicol region remain displaced or under evacuation advisories. Diaspora remittances are being channeled to support displaced relatives. Agricultural damage to coconut and abaca crops in the affected zones affects livelihoods dependent on diaspora support.",
+          "dynastyLinks": [],
+          "sourceLinks": [
+            {
+              "label": "volcanodiscovery.com",
+              "href": "https://www.volcanodiscovery.com/mayon/news/295217/Mayon-Volcano-Philippines-activity-update-Feb-17-2026-Continuing-eruption.html"
+            },
+            {
+              "label": "philstar.com",
+              "href": "https://www.philstar.com/nation/2026/02/17/2507440/mayon-lava-flows-continue-communities-remain-alert"
+            }
+          ]
+        },
+        {
+          "timeDatetime": "2026-02-19",
+          "timeDisplay": "February 19, 2026",
+          "category": "Natural Disasters",
+          "categoryClass": "natural-disasters",
+          "borderColor": "",
+          "headline": "Kanlaon Volcano Explosive Eruption Rains Ash on 41 Barangays in Negros",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-02-19&search=Kanlaon%20Volcano%20Explosive%20Eruption%20Rains%20Ash%20on%2041%20Barangays%20in%20Negros",
+          "descriptionHtml": "Kanlaon Volcano in Negros Island produced a two-minute moderate explosive eruption at 4:39 p.m. on February 19, 2026, generating a dense dark gray ash column that rose 2,000 meters above the vent and drifted southwest. PHIVOLCS reported the eruption produced hazardous pyroclastic density currents (PDCs) — fast-moving hot gas, ash, and fragmented rocks — descending the upper slopes within one kilometer of the crater and reaching at least two kilometers downslope on the southwest flank. The eruption was followed by approximately 40 minutes of continuous ash emission. Minor to moderate ashfall was reported in 41 barangays across Bago City, La Castellana, Hinigaran, Pontevedra, La Carlota City, Don Salvador Benedicto, Valladolid, and Batuan in Negros Occidental. Response teams and logistics were pre-positioned by NDRRMC. PHIVOLCS maintained Alert Level 2 (moderate unrest) and prohibited entry into the 4-kilometer Permanent Danger Zone around the crater.",
+          "significance": "Kanlaon's escalating explosive activity — including pyroclastic flows — signals increasing volcanic unrest in Negros and threatens communities in one of the Philippines' most productive agricultural regions",
+          "diasporaImpact": "OFW families in Negros Occidental face ashfall disrupting livelihoods, particularly in the sugarcane industry central to the regional economy. Diaspora remittances to families in affected barangays provide critical support during eruptions. The alert level and evacuation advisories concern diaspora members with relatives near the volcano.",
+          "dynastyLinks": [],
+          "sourceLinks": [
+            {
+              "label": "volcanodiscovery.com",
+              "href": "https://www.volcanodiscovery.com/canlaon/news/295414/Kanlaon-Volcano-Philippines-activity-update-Feb-19-2026-Continuing-eruption.html"
+            },
+            {
+              "label": "newsinfo.inquirer.net",
+              "href": "https://newsinfo.inquirer.net/2184196/fwd-kanlaon-volcano-in-explosive-eruption"
+            },
+            {
+              "label": "manilatimes.net",
+              "href": "https://www.manilatimes.net/2026/02/20/news/national/kanlaon-volcano-remains-on-alert-level-2-amid-ongoing-unrest/2281759"
+            },
+            {
+              "label": "tribune.net.ph",
+              "href": "https://tribune.net.ph/2026/02/19/kanlaon-acts-up-anew-ashfall-prompts-evacs"
+            }
+          ]
+        },
+        {
+          "timeDatetime": "2026-02-20",
+          "timeDisplay": "February 20, 2026",
+          "category": "Natural Disasters",
+          "categoryClass": "natural-disasters",
+          "borderColor": "",
+          "headline": "Davao Region Landslides Kill 7, Displace Thousands Amid Torrential Rains",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-02-20&search=Davao%20Region%20Landslides%20Kill%207%2C%20Displace%20Thousands%20Amid%20Torrential%20Rains",
+          "descriptionHtml": "Torrential rains triggered deadly landslides in the Davao Region of southeastern Mindanao on February 20, 2026, killing at least seven people and displacing more than 3,000 villagers. A boulder-laden landslide struck a home in the coastal city of Mati in Davao Oriental, killing a family of four — a couple and their two daughters. Additional fatalities were recorded in surrounding provinces. Flooding inundated communities and cut off road access to several barangays. Nearly 5,000 passengers and cargo workers were stranded in 94 seaports across the affected region due to suspended ferry and cargo services. Dozens of domestic flights were cancelled. NDRRMC activated emergency response and pre-positioned relief goods. The rains were caused by the Intertropical Convergence Zone (ITCZ) affecting Mindanao, well outside the official typhoon season which runs June to November. PHIVOLCS and PAGASA issued additional weather warnings for continued rain in Mindanao.",
+          "significance": "Deadly landslides in Davao Region highlight the Philippines' year-round vulnerability to rain-induced geohazards, even outside typhoon season, underscoring the need for geohazard mapping and community relocation in high-risk areas",
+          "diasporaImpact": "The Davao Region has a substantial OFW population; families of overseas workers in Mindanao face displacement and property loss. Davao is also the political base of the Duterte family, making the disaster response a politically sensitive matter. Diaspora remittances will be critical for recovery and rebuilding.",
+          "dynastyLinks": [
+            {
+              "label": "Duterte",
+              "href": "/dynasties-network-visualization.html#dynasty-DUTERTE_FAMILY"
+            }
+          ],
+          "sourceLinks": [
+            {
+              "label": "washingtonpost.com",
+              "href": "https://www.washingtonpost.com/world/2026/02/20/philippines-landslides-flooding/f3bb3858-0e46-11f1-8e91-6e1451aab67e_story.html"
+            },
+            {
+              "label": "news.mongabay.com",
+              "href": "https://news.mongabay.com/short-article/2026/02/torrential-rains-unleash-landslides-that-kill-7-in-southern-philippines/"
+            },
+            {
+              "label": "manilatimes.net",
+              "href": "https://www.manilatimes.net/2026/02/20/news/7-killed-in-landslides-unleashed-by-torrential-rains-in-davao-region/2281816"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Cultural",
+      "articles": [
+        {
+          "timeDatetime": "2026-02-18",
+          "timeDisplay": "February 18, 2026",
+          "category": "Cultural",
+          "categoryClass": "cultural",
+          "borderColor": "",
+          "headline": "Alex Eala Reaches Dubai WTA 1000 Quarterfinals, Rises to World No. 32",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-02-18&search=Alex%20Eala%20Reaches%20Dubai%20WTA%201000%20Quarterfinals%2C%20Rises%20to%20World%20No.%2032",
+          "descriptionHtml": "Philippine tennis star Alexandra 'Alex' Eala reached the quarterfinals of the Dubai Tennis Championships, a prestigious WTA 1000 event, defeating Romanian Sorana Cirstea 7-5, 6-4 in the round of 16 on February 18, 2026. The victory earned Eala 205 WTA ranking points, propelling her 15 places to world No. 32 in WTA live rankings — the highest ranking ever achieved by a Filipino tennis player. At No. 32, Eala entered the seeded category for Grand Slam events for the first time in her career, a milestone that guarantees her a seeded position and favorable draws at future major tournaments. In the quarterfinals on February 19, Eala fell to world No. 4 Coco Gauff 6-0, 6-2, but was cheered by a strongly pro-Eala crowd in Dubai that Gauff herself acknowledged. Eala earned $148,000 in prize money from the Dubai run. The 20-year-old Filipina, trained partly in the Rafael Nadal Academy, also reached the Abu Dhabi Open quarterfinals in January 2026, establishing herself as a consistent top-tier WTA competitor.",
+          "significance": "Eala's ascent to world No. 32 and Grand Slam seeded status marks a historic milestone — the highest WTA ranking ever achieved by a Filipino, establishing the Philippines as a significant force in women's professional tennis",
+          "diasporaImpact": "Alex Eala has become a unifying source of national pride for Filipino diaspora communities worldwide. Her Grand Slam seeded status means diaspora fans will see her featured prominently at major tournaments. The achievement resonates deeply with Filipino-American, Filipino-European, and Filipino-Gulf diaspora communities who have followed her career from her junior Grand Slam wins.",
+          "dynastyLinks": [],
+          "sourceLinks": [
+            {
+              "label": "tennis.com",
+              "href": "https://www.tennis.com/news/articles/channeling-pro-alexandra-eala-crowd-coco-gauff-storms-into-dubai-semifinals"
+            },
+            {
+              "label": "tennishead.net",
+              "href": "https://tennishead.net/alex-eala-set-to-achieve-landmark-personal-feat-despite-defeat-to-coco-gauff/"
+            },
+            {
+              "label": "manilatimes.net",
+              "href": "https://www.manilatimes.net/2026/02/19/sports/eala-rises-to-no-32-in-wta-live-rankings-after-reaching-qf-in-dubai/2280703"
+            },
+            {
+              "label": "philstar.com",
+              "href": "https://www.philstar.com/sports/2026/02/20/2509260/eala-still-big-winner-ranking-points-cash-earned-despite-dubai-exit"
+            },
+            {
+              "label": "abs-cbn.com",
+              "href": "https://www.abs-cbn.com/sports/othersports/2026/2/19/tennis-alex-eala-takes-down-cirstea-marches-to-dubai-quarterfinals-0328"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "ofwSection": {
+    "title": "OFW & Diaspora News",
+    "stats": [
+      {
+        "number": "2.57M",
+        "label": "OFWs deployed (2025)"
+      },
+      {
+        "number": "$38.4B",
+        "label": "Remittances (2024)"
+      },
+      {
+        "number": "72",
+        "label": "Labor Agreements"
+      },
+      {
+        "number": "₱2.18B",
+        "label": "Aksyon Fund Aid"
+      }
+    ],
+    "stories": [
+      {
+        "title": "ICC Confirmation Hearing Starting Feb 23 - A Defining Moment for Diaspora",
+        "bodyHtml": "The ICC's confirmation of charges hearing against former President Duterte, scheduled for February 23-27 in The Hague, is the most significant international legal proceeding involving a Philippine leader in history. Duterte has been granted permission to skip the hearing, but diaspora human rights organizations worldwide are mobilizing to observe the proceedings. For many overseas Filipinos, particularly those who lost family members during the drug war, the hearing represents a critical step toward accountability and justice.",
+        "details": {
+          "label": "International Human Rights - Global Filipino Communities",
+          "href": "https://www.hrw.org/news/2026/02/16/philippines-icc-hearing-to-confirm-duterte-charges"
+        }
+      },
+      {
+        "title": "Chinese Embassy Job Loss Warning Alarms OFW Communities",
+        "bodyHtml": "The Chinese Embassy's warning that deteriorating diplomatic relations could cost 'millions of jobs' in the Philippines has alarmed OFW communities and diaspora families with economic ties to Chinese-linked industries. While the DFA condemned the statement as economic coercion, Filipino workers in Chinese companies and those in the BPO sector serving Chinese clients are monitoring the diplomatic fallout closely. The peso's strengthening past P58 this week, however, signals broader market confidence.",
+        "details": {
+          "label": "Economic Security - OFWs in Trade-dependent Industries",
+          "href": "https://www.rappler.com/philippines/manila-response-china-embasse-statement-job-losses/"
+        }
+      },
+      {
+        "title": "Trilateral Naval Exercises Reassure Diaspora on Homeland Defense",
+        "bodyHtml": "The US-Australia-Philippines trilateral naval drills in the South China Sea demonstrate strengthened alliance commitments that reassure overseas Filipino communities about homeland security. However, Beijing's 'combat readiness patrol' response raises concerns about escalation. Diaspora communities continue to watch South China Sea developments as indicators of long-term stability for investment and retirement plans in the Philippines.",
+        "details": {
+          "label": "National Security - All OFW Destinations",
+          "href": "https://www.stripes.com/theaters/asia_pacific/2026-02-17/south-china-sea-us-navy-philippines-australia-20770871.html"
+        }
+      }
+    ],
+    "travelAdvisories": {
+      "title": "Active Travel Advisories",
+      "items": [
+        "Deployment Suspended: Israel, Lebanon, Iran, Jordan – Ongoing conflicts",
+        "Exercise Caution: Myanmar, Southeast Asia – Scam hub operations targeting OFWs"
+      ]
+    }
+  },
+  "dynastyHighlights": {
+    "title": "Dynasty Highlights",
+    "items": [
+      {
+        "title": "Duterte",
+        "titleHref": "/dynasties-network-visualization.html#dynasty-DUTERTE_FAMILY",
+        "bodyHtml": "",
+        "bullets": [
+          {
+            "text": "Atong Ang Bounty Doubled to P20 Million as Manhunt Intensifies",
+            "href": "/interactive-timeline/index.html?date=2026-02-13"
+          },
+          {
+            "text": "VP Sara Duterte Announces 2028 Presidential Bid Amid Impeachment Efforts",
+            "href": "/interactive-timeline/index.html?date=2026-02-18"
+          },
+          {
+            "text": "Fourth Impeachment Complaint Filed Against VP Sara Duterte",
+            "href": "/interactive-timeline/index.html?date=2026-02-18"
+          },
+          {
+            "text": "ICC Grants Duterte Request to Skip Confirmation of Charges Hearing",
+            "href": "/interactive-timeline/index.html?date=2026-02-20"
+          },
+          {
+            "text": "Davao Region Landslides Kill 7, Displace Thousands Amid Torrential Rains",
+            "href": "/interactive-timeline/index.html?date=2026-02-20"
+          }
+        ]
+      },
+      {
+        "title": "Marcos-Romualdez",
+        "titleHref": "/dynasties-network-visualization.html#dynasty-MARCOS_ROMUALDEZ",
+        "bodyHtml": "",
+        "bullets": [
+          {
+            "text": "Philippines Signs Defense Pacts with Italy and Estonia at Munich Security Conference",
+            "href": "/interactive-timeline/index.html?date=2026-02-14"
+          },
+          {
+            "text": "US-Australia-Philippines Trilateral Naval Drills in South China Sea Draw Chinese Response",
+            "href": "/interactive-timeline/index.html?date=2026-02-15"
+          },
+          {
+            "text": "DFA Condemns Chinese Embassy's 'Job Loss' Warning; Senate Passes Condemnation Resolution",
+            "href": "/interactive-timeline/index.html?date=2026-02-17"
+          },
+          {
+            "text": "VP Sara Duterte Announces 2028 Presidential Bid Amid Impeachment Efforts",
+            "href": "/interactive-timeline/index.html?date=2026-02-18"
+          },
+          {
+            "text": "Third Trillion Peso March Confirmed for EDSA@40 Anniversary on February 25",
+            "href": "/interactive-timeline/index.html?date=2026-02-19"
+          },
+          {
+            "text": "ICC Grants Duterte Request to Skip Confirmation of Charges Hearing",
+            "href": "/interactive-timeline/index.html?date=2026-02-20"
+          }
+        ]
+      }
+    ]
+  }
+}

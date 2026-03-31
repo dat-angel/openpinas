@@ -1,0 +1,150 @@
+{
+  "version": 1,
+  "weekEnding": "2026-01-09",
+  "weekLabel": "January 3-9, 2026",
+  "title": "OpenPinas: Weekly News Review",
+  "lastUpdated": "",
+  "prevWeekFile": null,
+  "stats": [
+    {
+      "number": "0",
+      "label": "Total Events"
+    },
+    {
+      "number": "0",
+      "label": "Political"
+    },
+    {
+      "number": "0",
+      "label": "Disasters"
+    },
+    {
+      "number": "0",
+      "label": "Dynasties"
+    }
+  ],
+  "weather": {
+    "title": "Metro Manila Weather",
+    "days": [
+      {
+        "dateLabel": "Jan 3",
+        "name": "Fri",
+        "icon": "⛅",
+        "high": "30°",
+        "low": "24°"
+      },
+      {
+        "dateLabel": "Jan 4",
+        "name": "Sat",
+        "icon": "☀️",
+        "high": "31°",
+        "low": "25°"
+      },
+      {
+        "dateLabel": "Jan 5",
+        "name": "Sun",
+        "icon": "☀️",
+        "high": "31°",
+        "low": "25°"
+      },
+      {
+        "dateLabel": "Jan 6",
+        "name": "Mon",
+        "icon": "⛅",
+        "high": "30°",
+        "low": "24°"
+      },
+      {
+        "dateLabel": "Jan 7",
+        "name": "Tue",
+        "icon": "☁️",
+        "high": "29°",
+        "low": "24°"
+      },
+      {
+        "dateLabel": "Jan 8",
+        "name": "Wed",
+        "icon": "⛅",
+        "high": "30°",
+        "low": "24°"
+      },
+      {
+        "dateLabel": "Jan 9",
+        "name": "Thu",
+        "icon": "☀️",
+        "high": "31°",
+        "low": "25°"
+      }
+    ],
+    "sourceNote": "Source: PAGASA"
+  },
+  "exchangeRate": {
+    "title": "PHP:USD Exchange Rate",
+    "currentRate": "₱58.95",
+    "trend": "▲ 0.20% this week",
+    "details": [
+      {
+        "label": "Open",
+        "value": "₱58.83"
+      },
+      {
+        "label": "High",
+        "value": "₱59.05"
+      },
+      {
+        "label": "Low",
+        "value": "₱58.80"
+      },
+      {
+        "label": "Close",
+        "value": "₱58.95"
+      }
+    ],
+    "contextHtml": "<strong>2026:</strong> ₱58.75–₱59.05 | Up 0.20% from week start",
+    "sourceNote": "Source: BSP / Bloomberg"
+  },
+  "eventSections": [],
+  "ofwSection": {
+    "title": "OFW & Diaspora News",
+    "stats": [
+      {
+        "number": "2.57M",
+        "label": "OFWs deployed in 2025"
+      },
+      {
+        "number": "$38.4B",
+        "label": "Remittances (2024)"
+      },
+      {
+        "number": "72",
+        "label": "Labor Agreements"
+      },
+      {
+        "number": "₱2.18B",
+        "label": "Aksyon Fund Aid (2025)"
+      }
+    ],
+    "stories": [
+      {
+        "title": "Oman MOU on Labor Cooperation Expected in January 2026",
+        "bodyHtml": "The Department of Migrant Workers expects to sign the Oman Memorandum of Understanding on Labor Cooperation in January 2026, opening new deployment opportunities for household workers, technicians, and port staff. This follows 10 new bilateral labor agreements signed in 2025, bringing the total to 72 agreements.",
+        "details": {
+          "label": "New market: Oman",
+          "href": "https://www.pna.gov.ph/articles/1266047"
+        }
+      }
+    ],
+    "travelAdvisories": {
+      "title": "Active Travel Advisories",
+      "items": [
+        "Deployment Suspended: Israel, Lebanon, Iran, Jordan – due to ongoing conflict",
+        "Exercise Caution: Myanmar, parts of Southeast Asia – scam hub operations",
+        "New Market Opening: Oman MOU expected January 2026"
+      ]
+    }
+  },
+  "dynastyHighlights": {
+    "title": "Dynasty Highlights",
+    "items": []
+  }
+}

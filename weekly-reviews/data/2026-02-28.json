@@ -1,0 +1,741 @@
+{
+  "version": 1,
+  "weekEnding": "2026-02-28",
+  "weekLabel": "February 22-28, 2026",
+  "title": "OpenPinas: Weekly News Review",
+  "lastUpdated": "February 28, 2026",
+  "prevWeekFile": null,
+  "stats": [
+    {
+      "number": "14",
+      "label": "Total Events"
+    },
+    {
+      "number": "8",
+      "label": "Political"
+    },
+    {
+      "number": "3",
+      "label": "Disasters"
+    },
+    {
+      "number": "4",
+      "label": "Dynasties"
+    }
+  ],
+  "weather": {
+    "title": "Metro Manila Weather",
+    "days": [
+      {
+        "dateLabel": "Feb 22",
+        "name": "Sun",
+        "icon": "☀️",
+        "high": "32°",
+        "low": "26°"
+      },
+      {
+        "dateLabel": "Feb 23",
+        "name": "Mon",
+        "icon": "⛅",
+        "high": "32°",
+        "low": "26°"
+      },
+      {
+        "dateLabel": "Feb 24",
+        "name": "Tue",
+        "icon": "⛅",
+        "high": "31°",
+        "low": "26°"
+      },
+      {
+        "dateLabel": "Feb 25",
+        "name": "Wed",
+        "icon": "☀️",
+        "high": "32°",
+        "low": "26°"
+      },
+      {
+        "dateLabel": "Feb 26",
+        "name": "Thu",
+        "icon": "⛅",
+        "high": "31°",
+        "low": "26°"
+      },
+      {
+        "dateLabel": "Feb 27",
+        "name": "Fri",
+        "icon": "🌧️",
+        "high": "31°",
+        "low": "26°"
+      },
+      {
+        "dateLabel": "Feb 28",
+        "name": "Sat",
+        "icon": "⛅",
+        "high": "32°",
+        "low": "26°"
+      }
+    ],
+    "sourceNote": "Source: PAGASA — Easterlies dominant; amihan weakening"
+  },
+  "exchangeRate": {
+    "title": "PHP:USD Exchange Rate",
+    "currentRate": "₱57.70",
+    "trend": "▲ 0.77% peso stronger this week",
+    "details": [
+      {
+        "label": "Open",
+        "value": "₱58.15"
+      },
+      {
+        "label": "High",
+        "value": "₱58.15"
+      },
+      {
+        "label": "Low",
+        "value": "₱57.48"
+      },
+      {
+        "label": "Close",
+        "value": "₱57.70"
+      }
+    ],
+    "contextHtml": "<strong>YTD:</strong> Peso at strongest level since late 2024; BSP cut rate 25bps to 4.25% on Feb 19 but peso strengthened on improved sentiment. 2026 range: 57.48-59.48",
+    "sourceNote": "Source: BSP / Bloomberg / exchange-rates.org"
+  },
+  "eventSections": [
+    {
+      "title": "Legal",
+      "articles": [
+        {
+          "timeDatetime": "2026-02-23",
+          "timeDisplay": "February 23, 2026",
+          "category": "Legal",
+          "categoryClass": "legal",
+          "borderColor": "var(--legal)",
+          "headline": "ICC Opens Confirmation of Charges Hearing Against Rodrigo Duterte",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-02-23&search=ICC%20Duterte%20Confirmation",
+          "descriptionHtml": "The International Criminal Court began its four-day confirmation of charges hearing against former President Rodrigo Duterte at The Hague. Duterte is suspected of crimes against humanity—murder and attempted murder—committed during his \"war on drugs\" campaign from November 2011 to March 2019. The ICC prosecution presented evidence showing at least 5,823 killings linked to the drug war.",
+          "significance": "This is the most consequential international legal proceeding involving a Philippine head of state in history. If charges are confirmed, Duterte will face a full trial. The Pre-Trial Chamber has 60 days to issue its written decision. The prosecution expressed strong confidence the case will proceed to trial.",
+          "diasporaImpact": "Filipino communities worldwide are closely watching the proceedings. Rights groups among the diaspora, many of whom lost family members in the drug war, have been vocal advocates for ICC accountability. The hearing has galvanized renewed activism among overseas Filipinos.",
+          "dynastyLinks": [
+            {
+              "label": "Duterte",
+              "href": "/dynasties-network-visualization.html#dynasty-DUTERTE_FAMILY"
+            }
+          ],
+          "sourceLinks": [
+            {
+              "label": "icc-cpi.int",
+              "href": "https://www.icc-cpi.int/news/duterte-case-confirmation-charges-hearing-open-23-february-2026-practical-information"
+            },
+            {
+              "label": "aljazeera.com",
+              "href": "https://www.aljazeera.com/news/2026/2/23/icc-to-hold-hearings-on-charges-against-ex-philippine-president-duterte"
+            },
+            {
+              "label": "hrw.org",
+              "href": "https://www.hrw.org/news/2026/02/16/philippines-duterte-icc-hearing-set-to-begin"
+            },
+            {
+              "label": "rappler.com",
+              "href": "https://www.rappler.com/newsbreak/explainers/highlights-duterte-pre-trial-day-4-february-27-2026/"
+            }
+          ]
+        },
+        {
+          "timeDatetime": "2026-02-27",
+          "timeDisplay": "February 27, 2026",
+          "category": "Legal",
+          "categoryClass": "legal",
+          "borderColor": "var(--legal)",
+          "headline": "ICC Concludes Duterte Confirmation Hearing; Decision Expected Within 60 Days",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-02-27&search=ICC%20Hearing%20Concludes",
+          "descriptionHtml": "The four-day ICC confirmation of charges hearing concluded on February 27. Deputy Prosecutor Mame Mandiaye Niang expressed confidence the judges would \"vindicate\" the prosecution. Duterte's defense team, led by lawyer Toby Cadman, argued there was no direct link between Duterte's public statements and the actual killings, while the prosecution used Duterte's own recorded words against him.",
+          "significance": "The Pre-Trial Chamber now has 60 days to decide whether there is sufficient evidence to proceed to a full trial. Insider witnesses testified that Duterte drug war victims \"had to be the poor.\" The defense suffered setbacks earlier when the chamber denied requests for additional witness information.",
+          "diasporaImpact": "OFW groups and Filipino diaspora human rights organizations held solidarity vigils in major cities worldwide during the hearing. The outcome will shape the Philippines' international human rights reputation for years to come.",
+          "dynastyLinks": [
+            {
+              "label": "Duterte",
+              "href": "/dynasties-network-visualization.html#dynasty-DUTERTE_FAMILY"
+            }
+          ],
+          "sourceLinks": [
+            {
+              "label": "icc-cpi.int",
+              "href": "https://www.icc-cpi.int/news/icc-concludes-confirmation-charges-hearing-duterte-case"
+            },
+            {
+              "label": "philstar.com",
+              "href": "https://www.philstar.com/headlines/2026/02/25/2510383/lawyers-see-bankrupt-duterte-defense-ahead-last-two-days-icc-hearing"
+            },
+            {
+              "label": "manilatimes.net",
+              "href": "https://www.manilatimes.net/2026/02/28/podcasts/headlines-closing-arguments-wind-up-icc-hearing-feb-28-2026/2289954"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Political",
+      "articles": [
+        {
+          "timeDatetime": "2026-02-25",
+          "timeDisplay": "February 25, 2026",
+          "category": "Political",
+          "categoryClass": "political",
+          "borderColor": "var(--politics)",
+          "headline": "40th Anniversary of EDSA People Power Revolution Marked by Mass Protests",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-02-25&search=EDSA%2040th%20Anniversary",
+          "descriptionHtml": "Tens of thousands of Filipinos took to the streets on the 40th anniversary of the 1986 EDSA People Power Revolution. Two major rallies converged in Metro Manila—one at the EDSA Shrine organized by Bayan and progressive groups, and another at the People Power Monument led by the Trillion Peso March Movement and Caritas Philippines. Protesters clashed with police as they demanded accountability for the flood control corruption scandal.",
+          "significance": "The protests merged historical commemoration with present-day demands for accountability. A House bill was filed to declare EDSA anniversary a regular non-working holiday, and President Marcos said he would \"study\" the recommendation. The CBCP called on Filipinos to preserve justice, truth, and peace.",
+          "diasporaImpact": "Filipino communities in Rome, New York, and other cities held commemorative events. The Vatican News covered Filipino celebrations of People Power in Rome, underscoring the revolution's global legacy for the diaspora.",
+          "dynastyLinks": [
+            {
+              "label": "Marcos-Romualdez",
+              "href": "/dynasties-network-visualization.html#dynasty-MARCOS_ROMUALDEZ"
+            },
+            {
+              "label": "Aquino",
+              "href": "/dynasties-network-visualization.html#dynasty-AQUINO_FAMILY"
+            }
+          ],
+          "sourceLinks": [
+            {
+              "label": "aljazeera.com",
+              "href": "https://www.aljazeera.com/video/newsfeed/2026/2/25/thousands-join-manila-corruption-protest-on-40th-anniversary-of-uprising"
+            },
+            {
+              "label": "rappler.com",
+              "href": "https://www.rappler.com/philippines/edsa-people-power-revolution-40th-anniversary-news-photos-videos-february-2026/"
+            },
+            {
+              "label": "vaticannews.va",
+              "href": "https://www.vaticannews.va/en/church/news/2026-02/philippines-people-power-non-violence-manila-rome-overseas.html"
+            },
+            {
+              "label": "inquirer.net",
+              "href": "https://newsinfo.inquirer.net/2186691/marcos-to-see-if-feb-25-can-be-declared-non-working-holiday-each-year"
+            }
+          ]
+        },
+        {
+          "timeDatetime": "2026-02-25",
+          "timeDisplay": "February 25, 2026",
+          "category": "Political",
+          "categoryClass": "political",
+          "borderColor": "var(--politics)",
+          "headline": "Trillion Peso March: Anti-Corruption Protests Escalate Over Flood Control Scandal",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-02-25&search=Flood%20Control%20Scandal%20Protests",
+          "descriptionHtml": "The third major Trillion Peso March protest was held on February 25, coinciding with the EDSA anniversary. Various church and civil society groups, including Caritas Philippines, conducted day-long activities. The Department of Justice confirmed there is now enough evidence for corruption charges in connection with 14 flood control projects, with more cases expected.",
+          "significance": "The flood control scandal has become the most destabilizing domestic issue for the Marcos administration. It has pushed construction activity to historic lows, contributed to job losses, and eroded investor confidence, prompting the BSP to cut rates. The DoJ filing charges marks a turning point in accountability.",
+          "diasporaImpact": "OFW remittance-funded construction projects are affected by the scandal's chilling effect on the industry. The corruption revelations have sharpened diaspora scrutiny of how Philippine tax revenues and development funds are spent.",
+          "dynastyLinks": [
+            {
+              "label": "Marcos-Romualdez",
+              "href": "/dynasties-network-visualization.html#dynasty-MARCOS_ROMUALDEZ"
+            }
+          ],
+          "sourceLinks": [
+            {
+              "label": "wikipedia.org",
+              "href": "https://en.wikipedia.org/wiki/2025%E2%80%932026_Philippine_anti-corruption_protests"
+            },
+            {
+              "label": "nbcnews.com",
+              "href": "https://www.nbcnews.com/world/asia/thousands-philippines-protest-corruption-flood-projects-rcna246720"
+            },
+            {
+              "label": "tribune.net.ph",
+              "href": "https://tribune.net.ph/2026/02/11/timeline-flood-control-scandal"
+            }
+          ]
+        },
+        {
+          "timeDatetime": "2026-02-22",
+          "timeDisplay": "February 22, 2026",
+          "category": "Political",
+          "categoryClass": "political",
+          "borderColor": "var(--politics)",
+          "headline": "Fourth Impeachment Complaint Filed Against VP Sara Duterte",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-02-22&search=VP%20Duterte%20Impeachment",
+          "descriptionHtml": "Lawyer Nathaniel Cabrera filed the fourth impeachment complaint against Vice President Sara Duterte, transmitted to the House on February 19. All four complaints cite alleged misuse of P612.5 million in confidential funds, non-declaration of assets, abuse of power, bribery, and threatening the life of President Marcos. Sara Duterte formally announced her 2028 presidential bid on February 18.",
+          "significance": "The escalating impeachment efforts against VP Duterte underscore the deepening Marcos-Duterte political rift. Her presidential announcement while facing multiple impeachment complaints sets up a dramatic 2028 election cycle. The Supreme Court previously nullified a 2025 impeachment on constitutional grounds.",
+          "diasporaImpact": "The Marcos-Duterte feud divides Filipino communities abroad, where both political camps maintain active social media campaigns and fundraising operations. The political instability creates uncertainty for diaspora investments.",
+          "dynastyLinks": [
+            {
+              "label": "Duterte",
+              "href": "/dynasties-network-visualization.html#dynasty-DUTERTE_FAMILY"
+            },
+            {
+              "label": "Marcos-Romualdez",
+              "href": "/dynasties-network-visualization.html#dynasty-MARCOS_ROMUALDEZ"
+            }
+          ],
+          "sourceLinks": [
+            {
+              "label": "thediplomat.com",
+              "href": "https://thediplomat.com/2026/02/fourth-impeachment-complaint-filed-against-philippine-vice-president/"
+            },
+            {
+              "label": "bloomberg.com",
+              "href": "https://www.bloomberg.com/news/articles/2026-02-09/philippines-vp-duterte-faces-third-impeachment-bid-this-month"
+            },
+            {
+              "label": "inquirer.net",
+              "href": "https://newsinfo.inquirer.net/2188413/look-lawmakers-receive-formal-notice-of-duterte-impeachment-hearing"
+            }
+          ]
+        },
+        {
+          "timeDatetime": "2026-02-22",
+          "timeDisplay": "February 22, 2026",
+          "category": "Political",
+          "categoryClass": "political",
+          "borderColor": "var(--politics)",
+          "headline": "Marcos Appoints New DENR Acting Secretary; Lotilla Named Vatican Ambassador",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-02-22&search=DENR%20Appointment",
+          "descriptionHtml": "President Marcos appointed Environment Undersecretary Juan Miguel Cuna as acting secretary of the Department of Environment and Natural Resources (DENR), replacing Raphael Lotilla who was named Philippine ambassador to the Holy See. The appointment continues the administration's pattern of cabinet shuffles amid governance challenges.",
+          "significance": "The DENR leadership change comes at a critical time as the Philippines faces escalating volcanic activity from Mayon and Kanlaon. The Vatican ambassadorship signals continued diplomatic engagement with the Catholic Church during a period of Church-led anti-corruption activism.",
+          "diasporaImpact": "",
+          "dynastyLinks": [
+            {
+              "label": "Marcos-Romualdez",
+              "href": "/dynasties-network-visualization.html#dynasty-MARCOS_ROMUALDEZ"
+            }
+          ],
+          "sourceLinks": [
+            {
+              "label": "manilatimes.net",
+              "href": "https://www.manilatimes.net/2026/02/22/podcasts/headlines-duterte-suffers-setbacks-ahead-of-key-icc-hearing-feb-22-2026/2282286"
+            },
+            {
+              "label": "da.gov.ph",
+              "href": "https://www.da.gov.ph/wp-content/uploads/2026/02/Clippings-for-February-22-2026.pdf"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Natural Disasters",
+      "articles": [
+        {
+          "timeDatetime": "2026-02-26",
+          "timeDisplay": "February 26, 2026",
+          "category": "Natural Disasters",
+          "categoryClass": "natural-disasters",
+          "borderColor": "#c44900",
+          "headline": "Kanlaon Volcano Erupts Again; Pyroclastic Flows and Ashfall Across 121 Barangays",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-02-26&search=Kanlaon%20Eruption",
+          "descriptionHtml": "Kanlaon Volcano in Negros Island erupted at 7:04 PM on February 26, generating a 2,500-meter ash plume and incandescent ballistics around the crater. Pyroclastic density currents descended the eastern and southeastern slopes within 2 km of the summit. Ashfall was reported across 121 barangays. The eruption came exactly one week after a similar event on February 19.",
+          "significance": "PHIVOLCS maintained Alert Level 2 but was assessing whether to raise it to Alert Level 3. The volcano's continuing unrest poses risks to surrounding communities and agriculture in Negros Occidental and Negros Oriental. The 4-km permanent danger zone remains strictly prohibited.",
+          "diasporaImpact": "Families of residents near Kanlaon are monitoring the situation. Relief organizations among diaspora communities are on standby. OFW remittances to affected Negros families may increase for emergency needs.",
+          "dynastyLinks": [],
+          "sourceLinks": [
+            {
+              "label": "inquirer.net",
+              "href": "https://newsinfo.inquirer.net/2188132/kanlaon-volcano-in-moderate-explosive-eruption"
+            },
+            {
+              "label": "manilatimes.net",
+              "href": "https://www.manilatimes.net/2026/02/26/news/kanlaon-volcano-erupts-again/2285941"
+            },
+            {
+              "label": "watchers.news",
+              "href": "https://watchers.news/2026/02/27/kanlaon-eruption-sends-ballistics-1-5-km-high-triggers-pdcs-forest-fires-and-ashfall-across-121-barangays/"
+            }
+          ]
+        },
+        {
+          "timeDatetime": "2026-02-26",
+          "timeDisplay": "February 26, 2026",
+          "category": "Natural Disasters",
+          "categoryClass": "natural-disasters",
+          "borderColor": "#c44900",
+          "headline": "Mayon Volcano Continues Steady Eruption; SO2 Emissions Hit 15-Year High",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-02-26&search=Mayon%20Eruption",
+          "descriptionHtml": "Mayon Volcano continued its magmatic eruption for over a month under Alert Level 3. Lava flow lengths reached 3.8 km in the Basud Gully (east flank), 2.6 km in the Bonga Gully (southeast), and 1.3 km in the Mi-isi Gully (south). February's average sulfur dioxide output was 5,503 tons per day—the highest recorded at Mayon in 15 years and more than double the January average.",
+          "significance": "The dramatically increased SO2 emissions suggest intensifying magmatic activity below the surface. Having two major volcanoes—Mayon and Kanlaon—in simultaneous eruption strains PHIVOLCS monitoring resources and disaster preparedness systems. The 6-km permanent danger zone remains enforced.",
+          "diasporaImpact": "Bicolano OFWs are particularly concerned about family safety. International relief organizations are monitoring both eruptions. The dual volcanic crisis could affect agricultural exports from both Albay and Negros provinces.",
+          "dynastyLinks": [],
+          "sourceLinks": [
+            {
+              "label": "inquirer.net",
+              "href": "https://newsinfo.inquirer.net/2179203/mayon-remains-in-steady-magmatic-eruption-for-more-than-a-month-now"
+            },
+            {
+              "label": "volcanodiscovery.com",
+              "href": "https://www.volcanodiscovery.com/mayon/news/296113/Mayon-Volcano-Philippines-activity-update-Feb-26-2026-Continuing-eruption.html"
+            },
+            {
+              "label": "pia.gov.ph",
+              "href": "https://pia.gov.ph/disaster-information-service/mayon-still-spewing-lava-more-than-a-month-on/"
+            }
+          ]
+        },
+        {
+          "timeDatetime": "2026-02-22",
+          "timeDisplay": "February 22, 2026",
+          "category": "Natural Disasters",
+          "categoryClass": "natural-disasters",
+          "borderColor": "#c44900",
+          "headline": "Taal Volcano Maintains Low-Level Unrest; 12-Hour Tremor Episode Recorded",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-02-22&search=Taal%20Unrest",
+          "descriptionHtml": "PHIVOLCS reported continued low-level unrest at Taal Volcano, with a tremor episode lasting 12 hours and 32 minutes recorded during the week. Alert Level 1 (\"Low-Level Unrest\") was maintained. The sustained tremor activity, while not immediately dangerous, keeps Taal on the monitoring watchlist alongside the more active Mayon and Kanlaon.",
+          "significance": "Three active volcanoes showing unrest simultaneously is an unusual situation for the Philippines. While Taal remains at the lowest alert level, its proximity to Metro Manila (only 66 km) means any escalation would have outsized economic and population impacts.",
+          "diasporaImpact": "",
+          "dynastyLinks": [],
+          "sourceLinks": [
+            {
+              "label": "reliefweb.int",
+              "href": "https://reliefweb.int/report/philippines/philippines-volcanic-eruption-phivolcs-pna-media-echo-daily-flash-20-february-2026"
+            },
+            {
+              "label": "phivolcs.dost.gov.ph",
+              "href": "https://www.phivolcs.dost.gov.ph/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "International Relations",
+      "articles": [
+        {
+          "timeDatetime": "2026-02-28",
+          "timeDisplay": "February 28, 2026",
+          "category": "International Relations",
+          "categoryClass": "international-relations",
+          "borderColor": "var(--international)",
+          "headline": "Philippines, US, Japan Hold Historic Trilateral Military Drills in Batanes",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-02-28&search=PH%20US%20Japan%20Batanes",
+          "descriptionHtml": "Philippine, US, and Japanese warplanes and ships conducted joint exercises over the Bashi Channel near Taiwan from February 23-26 as part of the 15th Multilateral Maritime Cooperative Activity. Philippine FA-50 jets, Japan's P-3 Orion maritime patrol aircraft, and a US P-8A Poseidon flew combined patrols over the Philippines' northernmost Batanes islands. BRP Antonio Luna conducted a live-fire gunnery exercise.",
+          "significance": "This marked the first time MMMCAs expanded beyond the South China Sea to include the Bashi Channel, a strategic waterway between the Philippines and Taiwan. Chinese Navy ships were spotted monitoring the exercises. The drills demonstrate deepening trilateral defense integration amid rising regional tensions.",
+          "diasporaImpact": "Filipino-Americans and Filipino-Japanese communities see the closer trilateral defense ties as enhancing regional stability. The expanded military cooperation also creates more professional exchange opportunities for Filipino military personnel.",
+          "dynastyLinks": [],
+          "sourceLinks": [
+            {
+              "label": "philstar.com",
+              "href": "https://www.philstar.com/headlines/2026/02/28/2510996/philippines-japan-united-states-hold-drills-batanes"
+            },
+            {
+              "label": "japantimes.co.jp",
+              "href": "https://www.japantimes.co.jp/news/2026/02/28/japan/japan-us-philippines-military-bashi-channel/"
+            },
+            {
+              "label": "gmanetwork.com",
+              "href": "https://www.gmanetwork.com/news/topstories/nation/978060/ph-us-japan-maritime-drills-expand-to-batanes-waters/story/"
+            }
+          ]
+        },
+        {
+          "timeDatetime": "2026-02-24",
+          "timeDisplay": "February 24, 2026",
+          "category": "International Relations",
+          "categoryClass": "international-relations",
+          "borderColor": "var(--international)",
+          "headline": "18 Chinese Vessels Monitored in West Philippine Sea; Signal Jamming Reported",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-02-24&search=West%20Philippine%20Sea%20China",
+          "descriptionHtml": "The Philippine Navy reported 18 Chinese vessels maintaining presence in the West Philippine Sea from February 15-22, including four PLA Navy ships and five Coast Guard ships at Bajo de Masinloc, four CCG vessels at Ayungin Shoal, three at Escoda Shoal, and two near Pag-asa Island. The Philippine Coast Guard also reported signal jamming by China hampering communications near Bajo de Masinloc.",
+          "significance": "Despite diplomatic overtures including a proposed Philippines-China joint coast guard patrol MoA slated for late March, Chinese maritime aggression continues. The signal jamming represents an escalation in gray-zone tactics. Senior Justice Antonio Carpio emphasized that the Philippine EEZ is anchored on UNCLOS and needs no additional coordinates.",
+          "diasporaImpact": "Filipino seafarers and fishing communities along the West Philippine Sea are directly affected. The maritime tension remains a rallying point for diaspora advocacy groups pushing for stronger sovereignty protection.",
+          "dynastyLinks": [],
+          "sourceLinks": [
+            {
+              "label": "tribune.net.ph",
+              "href": "https://tribune.net.ph/2026/02/24/18-chinese-vessels-monitored-in-west-philippine-sea-navy-says"
+            },
+            {
+              "label": "gmanetwork.com",
+              "href": "https://www.gmanetwork.com/news/topstories/nation/976585/ph-navy-china/story/"
+            },
+            {
+              "label": "gulfnews.com",
+              "href": "https://gulfnews.com/world/asia/breakthrough-manila-eyes-joint-patrols-with-beijing-in-disputed-sea-1.500455626"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Economic",
+      "articles": [
+        {
+          "timeDatetime": "2026-02-27",
+          "timeDisplay": "February 27, 2026",
+          "category": "Economic",
+          "categoryClass": "economic",
+          "borderColor": "#0b6e4f",
+          "headline": "BSP Rate Cut to 4.25% Takes Effect; Capital Economics Sees One More Cut Possible",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-02-27&search=BSP%20Rate%20Cut",
+          "descriptionHtml": "The Bangko Sentral ng Pilipinas' 25-basis-point rate cut on February 19—the ninth since August 2024, bringing total easing to 225 bps—continued to ripple through markets this week. Yields on BSP term deposits dropped further. Capital Economics suggested one additional rate cut may come in 2026, citing weak economic growth linked to the flood control scandal's fallout on construction and investment.",
+          "significance": "The easing cycle signals BSP's concern about growth over inflation, with the policy rate now at 4.25%. The OECD maintained its 5.1% GDP growth forecast for 2026 while recommending ambitious structural reforms. The peso strengthened despite the cut, reflecting improved market sentiment.",
+          "diasporaImpact": "Lower interest rates make OFW remittances worth slightly less in peso terms for savings, but could stimulate employment-generating economic activity. Real estate investments by diaspora Filipinos become more accessible with cheaper borrowing costs.",
+          "dynastyLinks": [],
+          "sourceLinks": [
+            {
+              "label": "mb.com.ph",
+              "href": "https://mb.com.ph/2026/02/27/bsp-may-deliver-one-more-rate-cut-in-2026capital-economics"
+            },
+            {
+              "label": "bloomberg.com",
+              "href": "https://www.bloomberg.com/news/articles/2026-02-19/philippines-cuts-rate-as-graft-fallout-continues-to-drag-growth"
+            },
+            {
+              "label": "rappler.com",
+              "href": "https://www.rappler.com/business/bangko-sentral-pilipinas-monetary-policy-interest-rates-february-2026/"
+            },
+            {
+              "label": "oecd.org",
+              "href": "https://www.oecd.org/en/about/news/press-releases/2026/02/ambitious-reforms-to-strengthen-competition-and-increase-formal-employment-would-further-boost-the-philippines-growth-trajectory.html"
+            }
+          ]
+        },
+        {
+          "timeDatetime": "2026-02-28",
+          "timeDisplay": "February 28, 2026",
+          "category": "Economic",
+          "categoryClass": "economic",
+          "borderColor": "#0b6e4f",
+          "headline": "BSP Pegs Faster February Inflation; Rice and Energy Prices Drive Pressure",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-02-28&search=Inflation%20Forecast",
+          "descriptionHtml": "The BSP projected faster inflation for February 2026 compared to the 2.0% reading in January, with official data due March 5. Upward price pressures are expected from higher rice and fish prices, elevated domestic petroleum prices, and increased electricity charges in Meralco-serviced areas. The BSP forecasts headline inflation to average 3.2% for 2026.",
+          "significance": "Rising inflation could limit the BSP's room for further rate cuts. The balance between supporting growth and containing prices becomes more delicate. The OECD projects inflation at 2.6% for 2026 and 3.0% for 2027, within the BSP's 2-4% target band.",
+          "diasporaImpact": "Rising food prices directly affect the purchasing power of OFW remittances for families back home. Rice price increases are particularly impactful for lower-income households that depend on remittance income.",
+          "dynastyLinks": [],
+          "sourceLinks": [
+            {
+              "label": "gmanetwork.com",
+              "href": "https://www.gmanetwork.com/news/money/economy/978134/bsp-pegs-faster-february-2026-inflation/story/"
+            },
+            {
+              "label": "focus-economics.com",
+              "href": "https://www.focus-economics.com/countries/philippines/news/inflation/philippines-consumer-prices-06-02-2026-inflation-rises-in-january-from-december/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Cultural",
+      "articles": [
+        {
+          "timeDatetime": "2026-02-25",
+          "timeDisplay": "February 25, 2026",
+          "category": "Cultural",
+          "categoryClass": "cultural",
+          "borderColor": "var(--culture)",
+          "headline": "Bill Filed to Make EDSA People Power Anniversary a Regular Holiday",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-02-25&search=EDSA%20Holiday%20Bill",
+          "descriptionHtml": "A bill was filed in the House of Representatives seeking to declare the EDSA People Power Revolution anniversary a regular non-working holiday nationwide. Currently February 25 is only a school holiday. The DOLE clarified that workers who worked on the day were not entitled to additional holiday pay. President Marcos said he would study the recommendation.",
+          "significance": "The push to upgrade EDSA Day to a full national holiday carries political weight, particularly for the Marcos family given that the revolution toppled the president's father. The UP system held special commemorative events as the nation debated the legacy of People Power 40 years on.",
+          "diasporaImpact": "",
+          "dynastyLinks": [],
+          "sourceLinks": [
+            {
+              "label": "inquirer.net",
+              "href": "https://newsinfo.inquirer.net/2186830/bill-declaring-edsa-revolution-anniversary-a-regular-holiday-filed"
+            },
+            {
+              "label": "pia.gov.ph",
+              "href": "https://pia.gov.ph/news/dole-edsa-people-power-anniversary-is-working-day-no-extra-pay-required/"
+            },
+            {
+              "label": "up.edu.ph",
+              "href": "https://up.edu.ph/up-commemorates-the-40th-anniversary-of-the-edsa-people-power-revolution/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Religious",
+      "articles": [
+        {
+          "timeDatetime": "2026-02-25",
+          "timeDisplay": "February 25, 2026",
+          "category": "Religious",
+          "categoryClass": "religious",
+          "borderColor": "var(--religious)",
+          "headline": "CBCP Calls for Digital Media Fasting as Lent Approaches; Urges Justice on EDSA Day",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-02-25&search=CBCP%20Digital%20Fasting",
+          "descriptionHtml": "The Catholic Bishops' Conference of the Philippines urged Catholics to fast from digital distractions during Lent, proposing device-free meals, 24-hour digital fasts, and replacing screen time with prayer. Separately, CBCP President Archbishop Gilbert Garcera called on Filipinos to preserve justice, truth, and peace on the EDSA anniversary, linking the 1986 spirit to ongoing demands for social transformation.",
+          "significance": "The CBCP's dual messaging—spiritual discipline and political conscience—reflects the Catholic Church's continued influence in Philippine public life. Caritas Philippines' participation in the Trillion Peso March protests signals the Church's stance against government corruption.",
+          "diasporaImpact": "Filipino Catholic communities worldwide, one of the largest global Catholic diaspora populations, are observing the CBCP's Lenten guidance. The Church's moral authority resonates particularly strongly among OFWs in the Middle East and other predominantly non-Christian host countries.",
+          "dynastyLinks": [],
+          "sourceLinks": [
+            {
+              "label": "davaocatholicherald.com",
+              "href": "https://www.davaocatholicherald.com/2026/02/cbcp-urges-digital-media-fasting-this-lent/"
+            },
+            {
+              "label": "gmanetwork.com",
+              "href": "https://www.gmanetwork.com/news/topstories/nation/977857/cbcp-preservation-justice-truth-peace-anniversary/story/"
+            },
+            {
+              "label": "rcam.org",
+              "href": "https://rcam.org/cbcp-pastoral-statement-on-digital-fasting/"
+            }
+          ]
+        },
+        {
+          "timeDatetime": "2026-02-27",
+          "timeDisplay": "February 27, 2026",
+          "category": "Religious",
+          "categoryClass": "religious",
+          "borderColor": "var(--religious)",
+          "headline": "PCG New York Hosts 2026 Unity Iftar for Filipino-Muslim Community",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-02-27&search=Unity%20Iftar",
+          "descriptionHtml": "The Philippine Consulate General in New York hosted the 2026 Unity Iftar on February 27, bringing together Filipino-Muslim Americans and other community members in a call for solidarity and heritage preservation. The event highlighted the diversity within the Filipino diaspora and promoted interfaith understanding ahead of Ramadan.",
+          "significance": "The event underscores the Philippine government's outreach to its Muslim diaspora population and promotes the Bangsamoro peace process narrative internationally. It reflects growing recognition of the Filipino-Muslim community's role in diaspora identity.",
+          "diasporaImpact": "Directly impacts Filipino-Muslim communities in the US and worldwide. The consular event strengthens community ties and provides a platform for interfaith dialogue among diverse Filipino-American populations.",
+          "dynastyLinks": [],
+          "sourceLinks": [
+            {
+              "label": "newyorkpcg.org",
+              "href": "https://newyorkpcg.org/pcgny/2026/02/27/pcg-new-york-hosts-2026-unity-iftar-a-call-for-solidarity-and-heritage/"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "ofwSection": {
+    "title": "OFW & Diaspora News",
+    "stats": [
+      {
+        "number": "2.57M",
+        "label": "OFWs deployed (2025)"
+      },
+      {
+        "number": "$38.4B",
+        "label": "Remittances (2024)"
+      },
+      {
+        "number": "70",
+        "label": "Labor Agreements"
+      },
+      {
+        "number": "₱2.18B",
+        "label": "Aksyon Fund Aid"
+      }
+    ],
+    "stories": [
+      {
+        "title": "Philippines and Oman to Sign OFW Safeguard Agreement",
+        "bodyHtml": "The Philippines and Oman are preparing to sign an agreement formalizing stronger safeguards for the estimated 50,000 OFWs in the sultanate. The accord will provide a guiding framework on ethical recruitment and promote transparency in the deployment process.",
+        "details": {
+          "label": "Middle East — Oman",
+          "href": "https://www.gmanetwork.com/news/pinoyabroad/dispatch/978016/philippines-oman-agreement-ofw-safeguards-recruitment/story/"
+        }
+      },
+      {
+        "title": "Senate Bill 1776: Comprehensive Reintegration Program for Returning OFWs",
+        "bodyHtml": "Senator Christopher \"Bong Go\" filed a bill seeking to institutionalize a comprehensive support system for returning OFWs, focusing on sustainable employment, entrepreneurship, and skills recognition rather than just immediate welfare assistance.",
+        "details": {
+          "label": "Policy — Senate",
+          "href": "https://gulfnews.com/world/asia/philippines/new-bill-seeks-sustainable-reintegration-program-for-returning-overseas-filipinos-1.500448817"
+        }
+      },
+      {
+        "title": "DOLE Labor Row Mechanism No Longer Applies to Overseas Workers",
+        "bodyHtml": "The Department of Labor and Employment clarified that its dispute resolution mechanism no longer applies to overseas Filipino workers, with the Department of Migrant Workers (DMW) now handling all OFW labor disputes under its mandate.",
+        "details": {
+          "label": "Policy — DOLE/DMW jurisdiction",
+          "href": "https://www.manilatimes.net/2026/02/24/news/national/dole-labor-row-mechanism-no-longer-applies-to-overseas-workers/2283120"
+        }
+      },
+      {
+        "title": "Bureau of Customs Enhances Balikbayan Box Processing for OFWs",
+        "bodyHtml": "BOC Commissioner Ariel Nepomuceno and DMW officials met with OFW organizations on February 24 to address issues involving balikbayan box shipments and freight forwarding companies, announcing new protective measures for OFW package processing.",
+        "details": {
+          "label": "Logistics — All deployment countries",
+          "href": "https://thechronicle.com.ph/boc-rolls-out-new-measures-to-protect-ofws/"
+        }
+      },
+      {
+        "title": "70 Bilateral Labor Agreements Protect OFWs Amid Global Anti-Migrant Sentiment",
+        "bodyHtml": "OWWA confirmed the Philippines has established approximately 70 bilateral labor agreements globally to protect OFWs, with particular focus on maintaining protections amid harsh anti-migrant stances in Europe and the US under the second Trump administration.",
+        "details": {
+          "label": "Global — Anti-migrant policy response",
+          "href": "https://globalnation.inquirer.net/309817/owwa-70-labor-pacts-protect-ofws-despite-growing-anti-migrant-stance"
+        }
+      }
+    ],
+    "travelAdvisories": {
+      "title": "Active Travel Advisories",
+      "items": [
+        "Deployment Suspended: Israel, Lebanon, Iran, Jordan – Ongoing regional conflicts",
+        "Exercise Caution: Myanmar, Cambodia, Laos – Scam hub operations targeting OFWs",
+        "Monitoring: US, Europe – Stricter immigration enforcement under anti-migrant policies"
+      ]
+    }
+  },
+  "dynastyHighlights": {
+    "title": "Dynasty Highlights",
+    "items": [
+      {
+        "title": "Duterte",
+        "titleHref": "/dynasties-network-visualization.html#dynasty-DUTERTE_FAMILY",
+        "bodyHtml": "Dominated the week's headlines with the historic ICC confirmation of charges hearing (Feb 23-27). Former President Rodrigo Duterte faced four days of testimony and arguments at The Hague. VP Sara Duterte continued to face multiple impeachment complaints while announcing her 2028 presidential bid.",
+        "bullets": [
+          {
+            "text": "ICC Confirmation of Charges Hearing Opens",
+            "href": "/interactive-timeline/index.html?date=2026-02-23"
+          },
+          {
+            "text": "ICC Hearing Concludes; 60-Day Decision Window",
+            "href": "/interactive-timeline/index.html?date=2026-02-27"
+          },
+          {
+            "text": "Fourth Impeachment Complaint vs VP Sara Duterte",
+            "href": "/interactive-timeline/index.html?date=2026-02-22"
+          }
+        ]
+      },
+      {
+        "title": "Marcos-Romualdez",
+        "titleHref": "/dynasties-network-visualization.html#dynasty-MARCOS_ROMUALDEZ",
+        "bodyHtml": "President Marcos navigated the politically fraught 40th EDSA anniversary (commemorating the revolution that ousted his father), appointed a new DENR acting secretary, and continued to face pressure from the flood control scandal and anti-corruption protests.",
+        "bullets": [
+          {
+            "text": "40th EDSA People Power Anniversary Protests",
+            "href": "/interactive-timeline/index.html?date=2026-02-25"
+          },
+          {
+            "text": "Flood Control Scandal - Trillion Peso March III",
+            "href": "/interactive-timeline/index.html?date=2026-02-25"
+          },
+          {
+            "text": "DENR Acting Secretary Appointed",
+            "href": "/interactive-timeline/index.html?date=2026-02-22"
+          }
+        ]
+      },
+      {
+        "title": "Aquino",
+        "titleHref": "/dynasties-network-visualization.html#dynasty-AQUINO_FAMILY",
+        "bodyHtml": "The Aquino legacy was invoked repeatedly during the 40th EDSA People Power anniversary commemorations. The revolution that put Corazon Aquino in power was celebrated by civil society groups as a touchstone for democratic accountability.",
+        "bullets": [
+          {
+            "text": "EDSA People Power 40th Anniversary",
+            "href": "/interactive-timeline/index.html?date=2026-02-25"
+          }
+        ]
+      },
+      {
+        "title": "Go",
+        "titleHref": "/dynasties-network-visualization.html#dynasty-GO_FAMILY",
+        "bodyHtml": "Senator Christopher \"Bong Go\" filed Senate Bill 1776 seeking to institutionalize a comprehensive reintegration program for returning OFWs.",
+        "bullets": [
+          {
+            "text": "SB 1776: OFW Reintegration Bill Filed",
+            "href": "/interactive-timeline/index.html?date=2026-02-24"
+          }
+        ]
+      }
+    ]
+  }
+}

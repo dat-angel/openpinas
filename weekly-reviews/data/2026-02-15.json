@@ -1,0 +1,315 @@
+{
+  "version": 1,
+  "weekEnding": "2026-02-15",
+  "weekLabel": "February 9-15, 2026",
+  "title": "OpenPinas: Weekly News Review",
+  "lastUpdated": "February 15, 2026",
+  "prevWeekFile": null,
+  "stats": [
+    {
+      "number": "4",
+      "label": "Total Events"
+    },
+    {
+      "number": "3",
+      "label": "Political/Legal"
+    },
+    {
+      "number": "1",
+      "label": "International"
+    },
+    {
+      "number": "2",
+      "label": "Dynasties"
+    }
+  ],
+  "weather": {
+    "title": "Metro Manila Weather",
+    "days": [
+      {
+        "dateLabel": "Feb 9",
+        "name": "Sun",
+        "icon": "☀️",
+        "high": "32°",
+        "low": "25°"
+      },
+      {
+        "dateLabel": "Feb 10",
+        "name": "Mon",
+        "icon": "⛅",
+        "high": "31°",
+        "low": "25°"
+      },
+      {
+        "dateLabel": "Feb 11",
+        "name": "Tue",
+        "icon": "⛅",
+        "high": "32°",
+        "low": "26°"
+      },
+      {
+        "dateLabel": "Feb 12",
+        "name": "Wed",
+        "icon": "☀️",
+        "high": "33°",
+        "low": "26°"
+      },
+      {
+        "dateLabel": "Feb 13",
+        "name": "Thu",
+        "icon": "☀️",
+        "high": "33°",
+        "low": "26°"
+      },
+      {
+        "dateLabel": "Feb 14",
+        "name": "Fri",
+        "icon": "⛅",
+        "high": "32°",
+        "low": "26°"
+      },
+      {
+        "dateLabel": "Feb 15",
+        "name": "Sat",
+        "icon": "⛅",
+        "high": "31°",
+        "low": "25°"
+      }
+    ],
+    "sourceNote": "Source: PAGASA"
+  },
+  "exchangeRate": {
+    "title": "PHP:USD Exchange Rate",
+    "currentRate": "₱58.45",
+    "trend": "▲ 0.34% this week",
+    "details": [
+      {
+        "label": "Open",
+        "value": "₱58.65"
+      },
+      {
+        "label": "High",
+        "value": "₱58.70"
+      },
+      {
+        "label": "Low",
+        "value": "₱58.40"
+      },
+      {
+        "label": "Close",
+        "value": "₱58.45"
+      }
+    ],
+    "contextHtml": "<strong>YTD:</strong> Peso continues strengthening trend; BSP signals continued monetary easing in Q1 2026",
+    "sourceNote": "Source: BSP / Bloomberg"
+  },
+  "eventSections": [
+    {
+      "title": "Political",
+      "articles": [
+        {
+          "timeDatetime": "2026-02-09",
+          "timeDisplay": "February 9, 2026",
+          "category": "Political",
+          "categoryClass": "political",
+          "borderColor": "",
+          "headline": "Clergy Files Third Impeachment Complaint Against VP Sara Duterte",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-02-09&search=Clergy%20Files%20Third%20Impeachment%20Complaint%20Against%20VP%20Sara%20Duterte",
+          "descriptionHtml": "Religious leaders file the third impeachment complaint against Vice President Sara Duterte, alleging betrayal of public trust, culpable violation of the Constitution, and other high crimes related to questionable fund transfers and budget utilization at the Office of the Vice President and the Department of Education. The complaint joins two others already pending, though political support for impeachment remains limited in the supermajority-controlled House of Representatives.",
+          "significance": "Third impeachment complaint filed, now from clergy members, maintaining pressure on Vice President despite political challenges",
+          "diasporaImpact": "The impeachment saga affects diaspora views on Philippine governance and accountability. As frontrunner for the 2028 presidential elections, Sara Duterte's legal troubles and the complaints' allegations about fund misuse directly concern overseas Filipinos who care about anti-corruption efforts and proper use of public funds that could otherwise support services for families back home.",
+          "dynastyLinks": [
+            {
+              "label": "Duterte",
+              "href": "/dynasties-network-visualization.html#dynasty-DUTERTE_FAMILY"
+            },
+            {
+              "label": "Marcos-Romualdez",
+              "href": "/dynasties-network-visualization.html#dynasty-MARCOS_ROMUALDEZ"
+            }
+          ],
+          "sourceLinks": [
+            {
+              "label": "rappler.com",
+              "href": "https://www.rappler.com/philippines/clergy-members-file-impeachment-complaint-sara-duterte-february-9-2026/"
+            },
+            {
+              "label": "rappler.com",
+              "href": "https://www.rappler.com/philippines/new-impeachment-complaint-filed-vice-president-sara-duterte-february-2-2026/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Legal",
+      "articles": [
+        {
+          "timeDatetime": "2026-02-09",
+          "timeDisplay": "February 9, 2026",
+          "category": "Legal",
+          "categoryClass": "legal",
+          "borderColor": "",
+          "headline": "Duterte Defense Team Accused of ICC Delaying Tactics",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-02-09&search=Duterte%20Defense%20Team%20Accused%20of%20ICC%20Delaying%20Tactics",
+          "descriptionHtml": "Legal experts and human rights advocates criticize former President Duterte's defense team for alleged delaying tactics in the International Criminal Court case regarding crimes against humanity during his anti-drug campaign. The defense has sought multiple postponements and procedural challenges, which critics argue are designed to stall the proceedings. The confirmation hearing is scheduled for February 23, 2026, to determine if the case will proceed to full trial.",
+          "significance": "Critical development in the ICC case against former president Duterte, with confirmation hearing scheduled for February 23",
+          "diasporaImpact": "The ICC case remains highly significant for Filipino diaspora communities, particularly human rights advocates abroad who have campaigned for accountability. The trial's outcome could affect the Philippines' international reputation and governance standards, which directly impact diaspora members' pride in their homeland and their willingness to invest or return. Family members of drug war victims living overseas watch the proceedings closely for justice.",
+          "dynastyLinks": [
+            {
+              "label": "Duterte",
+              "href": "/dynasties-network-visualization.html#dynasty-DUTERTE_FAMILY"
+            }
+          ],
+          "sourceLinks": [
+            {
+              "label": "philstar.com",
+              "href": "https://www.philstar.com/headlines/2026/02/09/2506703/duterte-camp-hit-delaying-tactics-icc"
+            },
+            {
+              "label": "rappler.com",
+              "href": "https://www.rappler.com/newsbreak/iq/rodrigo-duterte-international-criminal-court-key-dates/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "International Relations",
+      "articles": [
+        {
+          "timeDatetime": "2026-02-09",
+          "timeDisplay": "February 9, 2026",
+          "category": "International Relations",
+          "categoryClass": "international-relations",
+          "borderColor": "",
+          "headline": "Senate Approves Resolution Condemning Chinese Embassy",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-02-09&search=Senate%20Approves%20Resolution%20Condemning%20Chinese%20Embassy",
+          "descriptionHtml": "The Philippine Senate unanimously passes a resolution condemning recent statements and actions by the Chinese Embassy in Manila, citing violations of diplomatic protocol and interference in Philippine sovereignty. The resolution specifically addresses China's continued aggressive posturing in the West Philippine Sea and public statements perceived as threatening toward Philippine officials and institutions. Senate President emphasized the resolution sends a clear message about the Philippines' commitment to defending its territorial integrity.",
+          "significance": "Escalation of Philippines-China diplomatic tensions, reflecting ongoing South China Sea disputes",
+          "diasporaImpact": "South China Sea tensions directly affect diaspora confidence in the Philippines' sovereignty and security. Overseas Filipinos monitor these developments as indicators of geopolitical stability affecting family safety and investment decisions. The Senate's firm stance may reassure diaspora communities that Philippine institutions are defending territorial integrity, though escalating tensions also raise concerns about potential conflicts.",
+          "dynastyLinks": [],
+          "sourceLinks": [
+            {
+              "label": "rappler.com",
+              "href": "https://www.rappler.com/video/top-5-news-this-week/february-14-2026/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Cultural",
+      "articles": [
+        {
+          "timeDatetime": "2026-02-14",
+          "timeDisplay": "February 14, 2026",
+          "category": "Cultural",
+          "categoryClass": "cultural",
+          "borderColor": "",
+          "headline": "Philippines Celebrates First Valentine's Day with Michelin-Recognized Restaurants",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-02-14&search=Philippines%20Celebrates%20First%20Valentine's%20Day%20with%20Michelin-Recognized%20Restaurants",
+          "descriptionHtml": "The Philippines celebrates its first Valentine's Day since receiving Michelin Guide recognition, with newly-starred and Bib Gourmand restaurants offering special Valentine's set menus ranging from PHP 2,500 to PHP 15,000 per couple. The milestone represents a significant achievement for Philippine culinary tourism, with restaurants like Gallery by Chele, Toyo Eatery, and Hapag showcasing Filipino cuisine's world-class caliber. The occasion boosts national pride and positions Manila as a sophisticated dining destination in Asia.",
+          "significance": "Milestone celebration marking the Philippines' entry into Michelin Guide recognition, boosting culinary tourism and national pride",
+          "diasporaImpact": "The Michelin recognition and Valentine's celebrations represent cultural pride for Filipino diaspora communities, demonstrating the Philippines' world-class culinary scene. This milestone may encourage diaspora visits home and boosts the country's image as a sophisticated destination, countering stereotypes. For overseas Filipinos in the food industry, it validates Filipino cuisine's international caliber.",
+          "dynastyLinks": [],
+          "sourceLinks": [
+            {
+              "label": "gmanetwork.com",
+              "href": "https://www.gmanetwork.com/news/lifestyle/food/975012/valentine-s-day-2026-restaurants-with-special-set-menus-for-you-to-enjoy-with-your-special-someone/story/"
+            },
+            {
+              "label": "gmanetwork.com",
+              "href": "https://www.gmanetwork.com/news/lifestyle/food/976433/how-much-does-a-valentine-s-day-date-in-a-michelin-recognized-restaurant-cost/story/"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "ofwSection": {
+    "title": "OFW & Diaspora News",
+    "stats": [
+      {
+        "number": "2.57M",
+        "label": "OFWs deployed (2025)"
+      },
+      {
+        "number": "$38.4B",
+        "label": "Remittances (2024)"
+      },
+      {
+        "number": "72",
+        "label": "Labor Agreements"
+      },
+      {
+        "number": "₱2.18B",
+        "label": "Aksyon Fund Aid"
+      }
+    ],
+    "stories": [
+      {
+        "title": "ICC Case Against Duterte - Diaspora Human Rights Groups React",
+        "bodyHtml": "Filipino diaspora human rights organizations continue monitoring the ICC case against former President Duterte for crimes against humanity. Defense team delaying tactics have drawn criticism from overseas advocates who have documented drug war violations. The February 23 confirmation hearing is being closely watched by diaspora communities worldwide.",
+        "details": {
+          "label": "International Human Rights - Global Filipino Communities",
+          "href": "https://www.philstar.com/headlines/2026/02/09/2506703/duterte-camp-hit-delaying-tactics-icc"
+        }
+      },
+      {
+        "title": "Michelin Recognition Boosts Filipino Chefs Abroad",
+        "bodyHtml": "The Philippines' first Michelin Guide recognition validates Filipino cuisine internationally, benefiting overseas Filipino chefs and restaurant owners. Diaspora culinary professionals celebrate the milestone as proof of Filipino gastronomy's world-class standards. The recognition may create new opportunities for Filipino chefs seeking positions in Michelin-starred establishments worldwide.",
+        "details": {
+          "label": "Culinary Industry - Global",
+          "href": "https://www.gmanetwork.com/news/lifestyle/food/976433/how-much-does-a-valentine-s-day-date-in-a-michelin-recognized-restaurant-cost/story/"
+        }
+      },
+      {
+        "title": "South China Sea Tensions Impact OFW Confidence",
+        "bodyHtml": "The Senate resolution condemning Chinese Embassy actions reflects escalating territorial disputes that affect diaspora sentiment. OFWs and their families monitor geopolitical stability as it influences decisions about investments, retirement plans, and family safety. The firm Senate stance reassures some diaspora members about institutional strength.",
+        "details": {
+          "label": "Geopolitics - All OFW Destinations",
+          "href": "https://www.rappler.com/video/top-5-news-this-week/february-14-2026/"
+        }
+      }
+    ],
+    "travelAdvisories": {
+      "title": "Active Travel Advisories",
+      "items": [
+        "Deployment Suspended: Israel, Lebanon, Iran, Jordan – Ongoing conflicts",
+        "Exercise Caution: Myanmar, Southeast Asia – Scam hub operations targeting OFWs"
+      ]
+    }
+  },
+  "dynastyHighlights": {
+    "title": "Dynasty Highlights",
+    "items": [
+      {
+        "title": "Duterte",
+        "titleHref": "/dynasties-network-visualization.html#dynasty-DUTERTE_FAMILY",
+        "bodyHtml": "",
+        "bullets": [
+          {
+            "text": "Duterte Defense Team Accused of ICC Delaying Tactics",
+            "href": "/interactive-timeline/index.html?date=2026-02-09"
+          },
+          {
+            "text": "Clergy Files Third Impeachment Complaint Against VP Sara Duterte",
+            "href": "/interactive-timeline/index.html?date=2026-02-09"
+          }
+        ]
+      },
+      {
+        "title": "Marcos-Romualdez",
+        "titleHref": "/dynasties-network-visualization.html#dynasty-MARCOS_ROMUALDEZ",
+        "bodyHtml": "",
+        "bullets": [
+          {
+            "text": "Clergy Files Third Impeachment Complaint Against VP Sara Duterte",
+            "href": "/interactive-timeline/index.html?date=2026-02-09"
+          }
+        ]
+      }
+    ]
+  }
+}

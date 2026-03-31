@@ -1,0 +1,157 @@
+{
+  "version": 1,
+  "weekEnding": "2026-02-08",
+  "weekLabel": "February 2-8, 2026",
+  "title": "OpenPinas: Weekly News Review",
+  "lastUpdated": "[DATE]",
+  "prevWeekFile": null,
+  "stats": [
+    {
+      "number": "0",
+      "label": "Total Events"
+    },
+    {
+      "number": "0",
+      "label": "Political"
+    },
+    {
+      "number": "0",
+      "label": "Disasters"
+    },
+    {
+      "number": "0",
+      "label": "Dynasties"
+    }
+  ],
+  "weather": {
+    "title": "Metro Manila Weather",
+    "days": [
+      {
+        "dateLabel": "Feb 2",
+        "name": "Mon",
+        "icon": "⛅",
+        "high": "31°",
+        "low": "25°"
+      },
+      {
+        "dateLabel": "Feb 3",
+        "name": "Tue",
+        "icon": "☁️",
+        "high": "30°",
+        "low": "24°"
+      },
+      {
+        "dateLabel": "Feb 4",
+        "name": "Wed",
+        "icon": "🌧️",
+        "high": "29°",
+        "low": "24°"
+      },
+      {
+        "dateLabel": "Feb 5",
+        "name": "Thu",
+        "icon": "🌧️",
+        "high": "28°",
+        "low": "24°"
+      },
+      {
+        "dateLabel": "Feb 6",
+        "name": "Fri",
+        "icon": "⛅",
+        "high": "30°",
+        "low": "25°"
+      },
+      {
+        "dateLabel": "Feb 7",
+        "name": "Sat",
+        "icon": "⛅",
+        "high": "31°",
+        "low": "25°"
+      },
+      {
+        "dateLabel": "Feb 8",
+        "name": "Sun",
+        "icon": "☀️",
+        "high": "32°",
+        "low": "25°"
+      }
+    ],
+    "sourceNote": "Source: PAGASA"
+  },
+  "exchangeRate": {
+    "title": "PHP:USD Exchange Rate",
+    "currentRate": "₱58.65",
+    "trend": "▲ 0.31% this week",
+    "details": [
+      {
+        "label": "Open",
+        "value": "₱58.83"
+      },
+      {
+        "label": "High",
+        "value": "₱58.95"
+      },
+      {
+        "label": "Low",
+        "value": "₱58.50"
+      },
+      {
+        "label": "Close",
+        "value": "₱58.65"
+      }
+    ],
+    "contextHtml": "<strong>YTD:</strong> Peso strengthening slightly; BSP expected to cut rates 25bps in Q1 2026",
+    "sourceNote": "Source: BSP / Bloomberg"
+  },
+  "eventSections": [],
+  "ofwSection": {
+    "title": "OFW & Diaspora News",
+    "stats": [
+      {
+        "number": "2.57M",
+        "label": "OFWs deployed (2025)"
+      },
+      {
+        "number": "$38.4B",
+        "label": "Remittances (2024)"
+      },
+      {
+        "number": "72",
+        "label": "Labor Agreements"
+      },
+      {
+        "number": "₱2.18B",
+        "label": "Aksyon Fund Aid"
+      }
+    ],
+    "stories": [
+      {
+        "title": "MV Devon Bay Sinking - 2 Filipino Sailors Dead, 4 Missing",
+        "bodyHtml": "The Singapore-flagged cargo ship MV Devon Bay capsized near Scarborough Shoal on January 23, carrying 21 Filipino sailors. Two died and four remain missing. Chinese Coast Guard vessels led the initial rescue before Philippine forces arrived.",
+        "details": {
+          "label": "Seafarers - International Waters",
+          "href": "https://www.rappler.com/philippines/filipinos-dead-search-rescue-operation-cargo-ship-west-sea/"
+        }
+      },
+      {
+        "title": "Philippines-UAE CEPA Benefits OFWs in Middle East",
+        "bodyHtml": "The historic free trade agreement signed January 13 aims to achieve 90% tariff liberalization. The UAE hosts one of the largest Filipino communities in the Middle East, and the CEPA is expected to create additional job opportunities in the GCC region.",
+        "details": {
+          "label": "Middle East - UAE, GCC",
+          "href": "https://www.philstar.com/business/2026/01/15/2500973/ten-points-phl-uae-partnership"
+        }
+      }
+    ],
+    "travelAdvisories": {
+      "title": "Active Travel Advisories",
+      "items": [
+        "Deployment Suspended: Israel, Lebanon, Iran, Jordan – Ongoing conflicts",
+        "Exercise Caution: Myanmar, Southeast Asia – Scam hub operations targeting OFWs"
+      ]
+    }
+  },
+  "dynastyHighlights": {
+    "title": "Dynasty Highlights",
+    "items": []
+  }
+}

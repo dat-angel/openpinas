@@ -5,6 +5,7 @@ import DynastyNetworkMapPage from "@/app/native/dynasty-network-map-page";
 import DynastiesIndexPage from "@/app/native/dynasties-index-page";
 import InteractiveTimelinePage from "@/app/native/interactive-timeline-page";
 import SourcesRelatedProjectsPage from "@/app/native/sources-related-projects-page";
+import WeeklyReviewPage from "@/app/native/weekly-review-page";
 import WeeklyReviewsIndexPage from "@/app/native/weekly-reviews-index-page";
 import WhenToGoManilaPage from "@/app/native/when-to-go-manila-page";
 import {
@@ -52,6 +53,10 @@ export default async function LegacyPage({ params }) {
   }
   if (file === "corruption-tracker/cases/alice-guo.html") {
     return <AliceGuoCasePage />;
+  }
+  const weeklyMatch = file.match(/^weekly-reviews\/weekly-review-(\d{4}-\d{2}-\d{2})\.html$/);
+  if (weeklyMatch) {
+    return <WeeklyReviewPage weekEnding={weeklyMatch[1]} />;
   }
 
   const all = await collectHtmlFiles(ROOT);

@@ -1,0 +1,165 @@
+{
+  "version": 1,
+  "weekEnding": "2026-01-24",
+  "weekLabel": "January 17-24, 2026",
+  "title": "OpenPinas: Weekly News Review",
+  "lastUpdated": "[DATE]",
+  "prevWeekFile": null,
+  "stats": [
+    {
+      "number": "0",
+      "label": "Total Events"
+    },
+    {
+      "number": "0",
+      "label": "Political"
+    },
+    {
+      "number": "0",
+      "label": "Disasters"
+    },
+    {
+      "number": "0",
+      "label": "Dynasties"
+    }
+  ],
+  "weather": {
+    "title": "Metro Manila Weather",
+    "days": [
+      {
+        "dateLabel": "Jan 18",
+        "name": "Sat",
+        "icon": "⛅",
+        "high": "30°",
+        "low": "25°"
+      },
+      {
+        "dateLabel": "Jan 19",
+        "name": "Sun",
+        "icon": "⛅",
+        "high": "30°",
+        "low": "25°"
+      },
+      {
+        "dateLabel": "Jan 20",
+        "name": "Mon",
+        "icon": "⛅",
+        "high": "30°",
+        "low": "25°"
+      },
+      {
+        "dateLabel": "Jan 21",
+        "name": "Tue",
+        "icon": "☁️",
+        "high": "28°",
+        "low": "24°"
+      },
+      {
+        "dateLabel": "Jan 22",
+        "name": "Wed",
+        "icon": "☁️",
+        "high": "29°",
+        "low": "24°"
+      },
+      {
+        "dateLabel": "Jan 23",
+        "name": "Thu",
+        "icon": "⛅",
+        "high": "28°",
+        "low": "24°"
+      },
+      {
+        "dateLabel": "Jan 24",
+        "name": "Fri",
+        "icon": "⛅",
+        "high": "26°",
+        "low": "24°"
+      }
+    ],
+    "sourceNote": "Source: PAGASA"
+  },
+  "exchangeRate": {
+    "title": "PHP:USD Exchange Rate",
+    "currentRate": "₱59.07",
+    "trend": "▼ 0.54% this week",
+    "details": [
+      {
+        "label": "Open",
+        "value": "₱59.50"
+      },
+      {
+        "label": "High",
+        "value": "₱59.50"
+      },
+      {
+        "label": "Low",
+        "value": "₱58.98"
+      },
+      {
+        "label": "Close",
+        "value": "₱59.07"
+      }
+    ],
+    "contextHtml": "<strong>YTD:</strong> Peso weakened 1.34% over past 12 months. Trading around 59 per dollar after BSP rate cut signaled end of easing cycle.",
+    "sourceNote": "Source: BSP / Bloomberg"
+  },
+  "eventSections": [],
+  "ofwSection": {
+    "title": "OFW & Diaspora News",
+    "stats": [
+      {
+        "number": "2.57M",
+        "label": "OFWs deployed (2025)"
+      },
+      {
+        "number": "$38.4B",
+        "label": "Remittances (2024 record)"
+      },
+      {
+        "number": "72",
+        "label": "Labor Agreements"
+      },
+      {
+        "number": "₱2.18B",
+        "label": "Aksyon Fund (2025)"
+      }
+    ],
+    "stories": [
+      {
+        "title": "MV Devon Bay Sinks in South China Sea - 2 Filipino Sailors Dead",
+        "bodyHtml": "A Singapore-flagged cargo ship with 21 Filipino crew members capsized near Scarborough Shoal. Chinese Coast Guard rescued 15 survivors; 2 died and 4 remain missing. The incident highlights risks faced by Filipino seafarers in disputed waters.",
+        "details": {
+          "label": "Maritime sector - South China Sea",
+          "href": "https://www.aljazeera.com/news/2026/1/23/cargo-ship-capsizes-in-disputed-area-of-south-china-sea"
+        }
+      },
+      {
+        "title": "Digital Remittances Growing Rapidly in Philippines",
+        "bodyHtml": "J.P. Morgan sees the Philippines at the center of Asia's cross-border remittance growth, driven by digital wallets and instant payment schemes. The 1% US remittance tax that took effect January 1 may accelerate shift to digital platforms with lower fees.",
+        "details": {
+          "label": "US corridor - 40.4% of total remittances",
+          "href": "https://www.philstar.com/business/2026/01/11/2500056/philippines-emerges-battleground-faster-cheaper-digital-remittances"
+        }
+      },
+      {
+        "title": "ASEAN Para Games - Filipino Athletes Receive Bonuses",
+        "bodyHtml": "Filipino para athletes and coaches received ₱6,000 bonuses from the Philippine Sports Commission for the 2026 ASEAN Para Games in Thailand (January 20-26). The Philippines sent 216 athletes to the competition.",
+        "details": {
+          "label": "Thailand - Sports",
+          "href": "https://newsinfo.inquirer.net"
+        }
+      }
+    ],
+    "travelAdvisories": {
+      "title": "Active Travel Advisories",
+      "items": [
+        "Deployment Suspended: Israel, Lebanon, Iran, Jordan – Regional conflict",
+        "Exercise Caution: Myanmar, Southeast Asia scam hub areas – Security concerns"
+      ]
+    }
+  },
+  "dynastyHighlights": {
+    "title": "Dynasty Highlights",
+    "items": []
+  }
+}

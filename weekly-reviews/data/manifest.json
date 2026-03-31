@@ -1,0 +1,83 @@
+{
+  "version": 1,
+  "reviews": [
+    {
+      "weekEnding": "2026-03-29",
+      "weekLabel": "March 22-29, 2026",
+      "eventCount": 11,
+      "prevWeekEnding": "2026-03-21"
+    },
+    {
+      "weekEnding": "2026-03-21",
+      "weekLabel": "March 15-21, 2026",
+      "eventCount": 12,
+      "prevWeekEnding": "2026-03-14"
+    },
+    {
+      "weekEnding": "2026-03-14",
+      "weekLabel": "March 8-14, 2026",
+      "eventCount": 8,
+      "prevWeekEnding": "2026-03-07"
+    },
+    {
+      "weekEnding": "2026-03-07",
+      "weekLabel": "March 1-7, 2026",
+      "eventCount": 12,
+      "prevWeekEnding": "2026-02-28"
+    },
+    {
+      "weekEnding": "2026-02-28",
+      "weekLabel": "February 22-28, 2026",
+      "eventCount": 14,
+      "prevWeekEnding": "2026-02-22"
+    },
+    {
+      "weekEnding": "2026-02-22",
+      "weekLabel": "February 15-22, 2026",
+      "eventCount": 12,
+      "prevWeekEnding": "2026-02-15"
+    },
+    {
+      "weekEnding": "2026-02-15",
+      "weekLabel": "February 9-15, 2026",
+      "eventCount": 4,
+      "prevWeekEnding": "2026-02-08"
+    },
+    {
+      "weekEnding": "2026-02-08",
+      "weekLabel": "February 2-8, 2026",
+      "eventCount": 0,
+      "prevWeekEnding": "2026-01-31"
+    },
+    {
+      "weekEnding": "2026-01-31",
+      "weekLabel": "January 25-31, 2026",
+      "eventCount": 0,
+      "prevWeekEnding": "2026-01-24"
+    },
+    {
+      "weekEnding": "2026-01-24",
+      "weekLabel": "January 17-24, 2026",
+      "eventCount": 0,
+      "prevWeekEnding": "2026-01-16"
+    },
+    {
+      "weekEnding": "2026-01-16",
+      "weekLabel": "January 10-16, 2026",
+      "eventCount": 0,
+      "prevWeekEnding": "2026-01-09"
+    },
+    {
+      "weekEnding": "2026-01-09",
+      "weekLabel": "January 3-9, 2026",
+      "eventCount": 0,
+      "prevWeekEnding": "2026-01-02"
+    },
+    {
+      "weekEnding": "2026-01-02",
+      "weekLabel": "December 27, 2025 - January 2, 2026",
+      "eventCount": 7,
+      "prevWeekEnding": null
+    }
+  ]
+}

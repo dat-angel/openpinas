@@ -1,0 +1,414 @@
+{
+  "version": 1,
+  "weekEnding": "2026-01-02",
+  "weekLabel": "December 27, 2025 - January 2, 2026",
+  "title": "OpenPinas: Weekly News Review",
+  "lastUpdated": "",
+  "prevWeekFile": null,
+  "stats": [
+    {
+      "number": "7",
+      "label": "Total Events"
+    },
+    {
+      "number": "4",
+      "label": "Political"
+    },
+    {
+      "number": "1",
+      "label": "Disasters"
+    },
+    {
+      "number": "3",
+      "label": "Dynasties"
+    }
+  ],
+  "weather": {
+    "title": "Metro Manila Weather",
+    "days": [
+      {
+        "dateLabel": "Dec 27",
+        "name": "Fri",
+        "icon": "⛅",
+        "high": "31°",
+        "low": "25°"
+      },
+      {
+        "dateLabel": "Dec 28",
+        "name": "Sat",
+        "icon": "☁️",
+        "high": "30°",
+        "low": "24°"
+      },
+      {
+        "dateLabel": "Dec 29",
+        "name": "Sun",
+        "icon": "🌧️",
+        "high": "29°",
+        "low": "24°"
+      },
+      {
+        "dateLabel": "Dec 30",
+        "name": "Mon",
+        "icon": "⛅",
+        "high": "30°",
+        "low": "25°"
+      },
+      {
+        "dateLabel": "Dec 31",
+        "name": "Tue",
+        "icon": "☀️",
+        "high": "31°",
+        "low": "25°"
+      },
+      {
+        "dateLabel": "Jan 1",
+        "name": "Wed",
+        "icon": "☀️",
+        "high": "31°",
+        "low": "25°"
+      },
+      {
+        "dateLabel": "Jan 2",
+        "name": "Thu",
+        "icon": "⛅",
+        "high": "30°",
+        "low": "24°"
+      }
+    ],
+    "sourceNote": "Source: PAGASA"
+  },
+  "exchangeRate": {
+    "title": "PHP:USD Exchange Rate",
+    "currentRate": "₱58.83",
+    "trend": "▼ 0.14% this week",
+    "details": [
+      {
+        "label": "Open",
+        "value": "₱58.95"
+      },
+      {
+        "label": "High",
+        "value": "₱59.10"
+      },
+      {
+        "label": "Low",
+        "value": "₱58.75"
+      },
+      {
+        "label": "Close",
+        "value": "₱58.83"
+      }
+    ],
+    "contextHtml": "<strong>2025:</strong> ₱55.35–₱59.33 | Down 1.30% YoY",
+    "sourceNote": "Source: BSP / Bloomberg"
+  },
+  "eventSections": [
+    {
+      "title": "Political",
+      "articles": [
+        {
+          "timeDatetime": "2026-01-01",
+          "timeDisplay": "January 1, 2026",
+          "category": "Political",
+          "categoryClass": "political",
+          "borderColor": "",
+          "headline": "",
+          "headlineHref": "",
+          "descriptionHtml": "President Ferdinand Marcos Jr. renewed his call for discipline, unity, and readiness to choose service over self-interest as Filipinos welcomed 2026. The message comes as the administration prepares for a busy year ahead with ASEAN chairmanship and ongoing anti-corruption efforts.",
+          "significance": "Sets the tone for 2026 amid ongoing political tensions and anti-corruption investigations",
+          "diasporaImpact": "Signals continued focus on governance improvements that affect families and remittance effectiveness; political messaging important for diaspora communities monitoring homeland stability",
+          "dynastyLinks": [
+            {
+              "label": "Marcos-Romualdez",
+              "href": "/dynasties-network-visualization.html#dynasty-MARCOS_ROMUALDEZ"
+            }
+          ],
+          "sourceLinks": [
+            {
+              "label": "philstar.com",
+              "href": "https://www.philstar.com/headlines/2026/01/01/2498093/president-marcos-renews-call-discipline-unity-2026"
+            }
+          ]
+        },
+        {
+          "timeDatetime": "2026-01-01",
+          "timeDisplay": "January 1, 2026",
+          "category": "Political",
+          "categoryClass": "political",
+          "borderColor": "",
+          "headline": "",
+          "headlineHref": "",
+          "descriptionHtml": "Vice President Sara Duterte released her New Year message, calling 2026 \"an invitation to unite and start a new vision.\" She urged Filipinos to \"rekindle courage and determination\" as the country enters a new chapter. This comes as the Marcos-Duterte political rift has deepened considerably throughout 2025.",
+          "significance": "Conciliatory tone despite ongoing tensions; VP Duterte protected from impeachment until February 2026 by Supreme Court ruling",
+          "diasporaImpact": "Political dynamics between major families affect governance stability; diaspora communities closely watch family feuds that impact national direction",
+          "dynastyLinks": [
+            {
+              "label": "Duterte",
+              "href": "/dynasties-network-visualization.html#dynasty-DUTERTE_FAMILY"
+            }
+          ],
+          "sourceLinks": [
+            {
+              "label": "inquirer.net",
+              "href": "https://newsinfo.inquirer.net/2158424/2025-sees-relationship-between-marcos-sara-duterte-break-beyond-repair"
+            }
+          ]
+        },
+        {
+          "timeDatetime": "2025-12-29",
+          "timeDisplay": "December 29, 2025",
+          "category": "Political",
+          "categoryClass": "political",
+          "borderColor": "",
+          "headline": "",
+          "headlineHref": "",
+          "descriptionHtml": "The House and Senate ratified the bicameral conference committee report on the proposed PHP 6.3 trillion 2026 national budget. Acting Executive Secretary Ralph Recto confirmed the budget will be signed by President Marcos in the first week of January. The DPWH saw a PHP 53.99 billion cut following the flood control corruption scandal, while education received a PHP 72.35 billion increase.",
+          "significance": "Budget reflects anti-corruption priorities with infrastructure cuts; education prioritized for development",
+          "diasporaImpact": "Education budget increases benefit diaspora families with children in Philippines; infrastructure accountability may improve project quality in home provinces",
+          "dynastyLinks": [],
+          "sourceLinks": [
+            {
+              "label": "rappler.com",
+              "href": "https://www.rappler.com/philippines/2026-budget-marcos-review-signed-january-2026/"
+            }
+          ]
+        },
+        {
+          "timeDatetime": "2025-12-29",
+          "timeDisplay": "December 29, 2025",
+          "category": "Political",
+          "categoryClass": "political",
+          "borderColor": "",
+          "headline": "",
+          "headlineHref": "",
+          "descriptionHtml": "A new survey shows 54% of Filipinos want an anti-dynasty law passed now. Speaker Bojie Dy and Majority Leader Sandro Marcos have filed a landmark Anti-Political Dynasty Bill, though critics call it \"weak\" for not prohibiting immediate succession or cross-jurisdiction dynasties. Alternative bills from Makabayan and Akbayan include stronger provisions.",
+          "significance": "First serious legislative push for anti-dynasty law in decades; multiple competing versions filed in 20th Congress",
+          "diasporaImpact": "Political dynasties control 80% of provincial governorships; reform could improve governance and reduce corruption affecting diaspora families",
+          "dynastyLinks": [
+            {
+              "label": "Marcos-Romualdez",
+              "href": "/dynasties-network-visualization.html#dynasty-MARCOS_ROMUALDEZ"
+            },
+            {
+              "label": "Dy",
+              "href": "/dynasties-network-visualization.html#dynasty-DY_FAMILY"
+            }
+          ],
+          "sourceLinks": [
+            {
+              "label": "rappler.com",
+              "href": "https://www.rappler.com/video/daily-wrap/december-29-2025/"
+            },
+            {
+              "label": "congress.gov.ph",
+              "href": "https://www.congress.gov.ph/media/press-releases/view/?content=9545"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Natural Disasters",
+      "articles": [
+        {
+          "timeDatetime": "2026-01-01",
+          "timeDisplay": "January 1, 2026",
+          "category": "Natural Disasters",
+          "categoryClass": "natural-disasters",
+          "borderColor": "",
+          "headline": "",
+          "headlineHref": "",
+          "descriptionHtml": "The Philippine Institute of Volcanology and Seismology (PHIVOLCS) raised Mayon Volcano's alert status from Level 1 to Level 2, signifying increasing volcanic unrest. On December 31, 2025, the volcano experienced 47 rockfall events in a single day - the highest daily incidence recorded over the entire year. The eastern to northeastern slopes have been swelling since June 2024. Albay Governor Noel Rosal ordered strict enforcement of the 6km permanent danger zone.",
+          "significance": "Alert Level 2 indicates potential for sudden explosions, pyroclastic flows, and landslides; evacuation preparations underway",
+          "diasporaImpact": "Families in Albay and surrounding Bicol region face potential evacuation; diaspora should monitor situation and prepare for emergency remittance needs; flight restrictions in effect until January 3",
+          "dynastyLinks": [],
+          "sourceLinks": [
+            {
+              "label": "rappler.com",
+              "href": "https://www.rappler.com/philippines/luzon/phivolcs-mayon-volcano-alert-level-january-1-2026/"
+            },
+            {
+              "label": "philstar.com",
+              "href": "https://www.philstar.com/headlines/2026/01/01/2498108/mayon-volcano-alert-level-raised-2"
+            },
+            {
+              "label": "manilatimes.net",
+              "href": "https://www.manilatimes.net/2026/01/03/regions/albay-gov-orders-strict-no-entry-to-mayons-danger-zone-as-volcano-turns-restive/2251907"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Economic",
+      "articles": [
+        {
+          "timeDatetime": "2026-01-01",
+          "timeDisplay": "January 1, 2026",
+          "category": "Economic",
+          "categoryClass": "economic",
+          "borderColor": "",
+          "headline": "",
+          "headlineHref": "",
+          "descriptionHtml": "A new 1% excise tax on money remittance transfers from the United States took effect on January 1, 2026, as part of the \"Big Beautiful Bill\" legislation. The tax was reduced from the originally proposed 5%. The Philippines Department of Finance estimates the tax will have minimal impact (0.009% of GDP), though the Asian Development Bank projects it could cost about $250 million of the estimated $38-40 billion in annual remittances.",
+          "significance": "First major US tax on remittances; affects the largest remittance corridor to Philippines (40.4% of total)",
+          "diasporaImpact": "OFWs in the US face new costs on money sent home; December remittances typically surge to $3.73 billion for holiday season; may accelerate shift to digital remittance platforms with lower fees",
+          "dynastyLinks": [],
+          "sourceLinks": [
+            {
+              "label": "thefilipinochronicle.com",
+              "href": "https://thefilipinochronicle.com/2025/12/14/the-tradition-of-remittances-continues-to-bolster-the-philippines-but-it-also-comes-at-a-cost/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "International Relations",
+      "articles": [
+        {
+          "timeDatetime": "2026-01-01",
+          "timeDisplay": "January 1, 2026",
+          "category": "International Relations",
+          "categoryClass": "international-relations",
+          "borderColor": "",
+          "headline": "",
+          "headlineHref": "",
+          "descriptionHtml": "The Philippines officially assumed the ASEAN chairmanship for 2026, gaining global attention for President Marcos's strong stance against China's aggressive actions in the West Philippine Sea. Analysts from Chatham House note that a South China Sea code of conduct is unlikely to be concluded during the Philippine chairmanship given current tensions.",
+          "significance": "Major regional leadership role; Philippines must balance foreign policy prominence with domestic challenges including anti-corruption protests",
+          "diasporaImpact": "Increased Philippines visibility and influence in region; potential diplomatic and economic benefits; South China Sea tensions affect regional stability and fishing communities",
+          "dynastyLinks": [],
+          "sourceLinks": [
+            {
+              "label": "chathamhouse.org",
+              "href": "https://www.chathamhouse.org/2025/12/philippines-asean-chair-south-china-sea-agreement-unlikely-be-concluded-2026"
+            },
+            {
+              "label": "thediplomat.com",
+              "href": "https://thediplomat.com/2025/12/the-philippines-in-2025-corruption-accountability-and-the-marcos-duterte-rift/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Year-End Context: 2025 in Review",
+      "articles": [
+        {
+          "timeDatetime": "",
+          "timeDisplay": "2025 Summary",
+          "category": "Context",
+          "categoryClass": "",
+          "borderColor": "var(--muted)",
+          "headline": "",
+          "headlineHref": "",
+          "descriptionHtml": "As 2025 closed, several major themes dominated the Philippine political landscape: the $2 billion flood control corruption scandal that led to Speaker Romualdez's resignation and multiple arrests; Former President Duterte's arrest and transfer to the ICC; the breakdown of the Marcos-Duterte alliance; devastating natural disasters including the Cebu earthquake (79 deaths) and Typhoon Kalmaegi (269+ deaths); and the Supreme Court's nullification of VP Sara Duterte's impeachment. The year saw unprecedented anti-corruption protests including the Trillion Peso March and INC rallies.",
+          "significance": "",
+          "diasporaImpact": "2025 was marked by political instability, natural disasters requiring emergency remittance support, and a corruption scandal that undermined trust in government. The new year brings continued challenges but also signs of accountability with high-profile arrests and anti-dynasty legislation.",
+          "dynastyLinks": [],
+          "sourceLinks": [
+            {
+              "label": "rappler.com",
+              "href": "https://www.rappler.com/newsbreak/podcasts-videos/biggest-political-stories-philippines-2025/"
+            },
+            {
+              "label": "scmp.com",
+              "href": "https://www.scmp.com/week-asia/politics/article/3337692/philippines-2025-year-crisis-corruption-scandal-south-china-sea-tensions"
+            },
+            {
+              "label": "inquirer.net",
+              "href": "https://newsinfo.inquirer.net/2157224/yearend-2025-record-flood-control-corruption-unravels"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "ofwSection": {
+    "title": "OFW & Diaspora News",
+    "stats": [
+      {
+        "number": "2.57M",
+        "label": "OFWs deployed in 2025"
+      },
+      {
+        "number": "$38.4B",
+        "label": "Remittances (2024)"
+      },
+      {
+        "number": "72",
+        "label": "Labor Agreements"
+      },
+      {
+        "number": "₱2.18B",
+        "label": "Aksyon Fund Aid (2025)"
+      }
+    ],
+    "stories": [
+      {
+        "title": "DMW Caps 2025 with Expanded OFW Protections",
+        "bodyHtml": "The Department of Migrant Workers reported significant achievements in 2025: 2.57 million OFWs deployed (up from 2.2M in 2024), 10 new bilateral labor agreements signed (total now 72), and ₱2.18 billion distributed through the Aksyon Fund to over 160,000 OFWs. The Oman MOU on Labor Cooperation is expected to be signed in January 2026.",
+        "details": {
+          "label": "Top destinations: Saudi Arabia (20%), UAE (13.6%)",
+          "href": "https://www.pna.gov.ph/articles/1266047"
+        }
+      },
+      {
+        "title": "Digital OFW Pass Replaces Traditional OEC",
+        "bodyHtml": "The DMW's digitalization efforts processed 514,966 e-Travel and OFW Pass transactions in 2025, reducing reliance on the decades-old Overseas Employment Certificate. Airlines are expected to fully recognize digital travel documents by 2026, streamlining the departure process for migrant workers.",
+        "details": {
+          "label": "Impact: Faster processing, reduced paperwork",
+          "href": "https://filipinotimes.net/latest-news/2025/12/05/digital-ofw-pass-replaces-oec-for-overseas-filipino-workers/"
+        }
+      },
+      {
+        "title": "35 OFWs Repatriated from Cambodia Scam Hubs",
+        "bodyHtml": "Just hours before 2026, 35 OFWs from Cambodia were safely repatriated by DMW as part of ongoing inter-agency efforts to assist Filipino victims of illegal recruitment, human trafficking, and scam hub operations. Around 3,000 OFWs currently face cases abroad, with 24 on death row.",
+        "details": {
+          "label": "Affected: Southeast Asia scam operations",
+          "href": "https://www.sunstar.com.ph/manila/35-cambodia-ofws-back-home"
+        }
+      },
+      {
+        "title": "New Minimum Salary for Domestic Workers: $500/month",
+        "bodyHtml": "DMW rolled out new safeguards for domestic workers, increasing the minimum monthly salary from USD 400 to USD 500. This applies to new deployments in key destination countries including Saudi Arabia, UAE, Kuwait, and Hong Kong.",
+        "details": {
+          "label": "Affected: Household service workers",
+          "href": "https://dmw.gov.ph/news-releases"
+        }
+      }
+    ],
+    "travelAdvisories": {
+      "title": "Active Travel Advisories",
+      "items": [
+        "Deployment Suspended: Israel, Lebanon, Iran, Jordan – due to ongoing conflict",
+        "Exercise Caution: Myanmar, parts of Southeast Asia – scam hub operations",
+        "New Market Opening: Oman MOU expected January 2026 – household workers, technicians, port staff"
+      ]
+    }
+  },
+  "dynastyHighlights": {
+    "title": "Dynasty Highlights This Week",
+    "items": [
+      {
+        "title": "Marcos-Romualdez",
+        "titleHref": "../dynasties/marcos-romualdez.html",
+        "bodyHtml": "",
+        "bullets": []
+      },
+      {
+        "title": "Duterte",
+        "titleHref": "../dynasties/duterte.html",
+        "bodyHtml": "",
+        "bullets": []
+      },
+      {
+        "title": "Dy",
+        "titleHref": "../dynasties/dy.html",
+        "bodyHtml": "",
+        "bullets": []
+      }
+    ]
+  }
+}

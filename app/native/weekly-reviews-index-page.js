@@ -1,23 +1,4 @@
-const REVIEW_PATHS = [
-  "weekly-review-2026-03-29.html",
-  "weekly-review-2026-03-21.html",
-  "weekly-review-2026-03-14.html",
-  "weekly-review-2026-03-07.html",
-  "weekly-review-2026-02-28.html",
-  "weekly-review-2026-02-22.html",
-  "weekly-review-2026-02-15.html",
-  "weekly-review-2026-02-08.html",
-  "weekly-review-2026-01-31.html",
-  "weekly-review-2026-01-24.html",
-  "weekly-review-2026-01-16.html",
-  "weekly-review-2026-01-09.html",
-  "weekly-review-2026-01-02.html",
-];
-
-function labelFor(file) {
-  const date = file.replace("weekly-review-", "").replace(".html", "");
-  return date;
-}
+import manifest from "@/weekly-reviews/data/manifest.json";
 
 export default function WeeklyReviewsIndexPage() {
   return (
@@ -34,15 +15,15 @@ export default function WeeklyReviewsIndexPage() {
         <a href="/dynasties-network-visualization.html">Dynasty Map</a>
       </div>
       <section style={{ borderTop: "1px solid #e5e5e5" }}>
-        {REVIEW_PATHS.map((file) => (
-          <article key={file} style={{ borderBottom: "1px solid #e5e5e5", padding: "12px 0" }}>
+        {manifest.reviews.map((review) => (
+          <article key={review.weekEnding} style={{ borderBottom: "1px solid #e5e5e5", padding: "12px 0" }}>
             <h2 style={{ margin: "0 0 4px", fontSize: 17 }}>
-              <a href={`/weekly-reviews/${file}`} style={{ color: "#222", textDecoration: "none" }}>
-                Weekly Review {labelFor(file)}
+              <a href={`/weekly-reviews/weekly-review-${review.weekEnding}.html`} style={{ color: "#222", textDecoration: "none" }}>
+                Weekly Review {review.weekEnding}
               </a>
             </h2>
             <p style={{ margin: 0, color: "#888", fontSize: 12, fontFamily: '"Source Sans Pro", sans-serif' }}>
-              {labelFor(file)}
+              {review.weekLabel}
             </p>
           </article>
         ))}

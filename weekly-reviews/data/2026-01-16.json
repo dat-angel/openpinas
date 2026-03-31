@@ -1,0 +1,184 @@
+{
+  "version": 1,
+  "weekEnding": "2026-01-16",
+  "weekLabel": "January 10-16, 2026",
+  "title": "OpenPinas: Weekly News Review",
+  "lastUpdated": "January 16, 2026",
+  "prevWeekFile": null,
+  "stats": [
+    {
+      "number": "0",
+      "label": "Total Events"
+    },
+    {
+      "number": "0",
+      "label": "Political"
+    },
+    {
+      "number": "0",
+      "label": "Disasters"
+    },
+    {
+      "number": "0",
+      "label": "Dynasties"
+    }
+  ],
+  "weather": {
+    "title": "Metro Manila Weather",
+    "days": [
+      {
+        "dateLabel": "Jan 10",
+        "name": "Fri",
+        "icon": "⛅",
+        "high": "30°",
+        "low": "24°"
+      },
+      {
+        "dateLabel": "Jan 11",
+        "name": "Sat",
+        "icon": "☁️",
+        "high": "29°",
+        "low": "24°"
+      },
+      {
+        "dateLabel": "Jan 12",
+        "name": "Sun",
+        "icon": "⛅",
+        "high": "30°",
+        "low": "25°"
+      },
+      {
+        "dateLabel": "Jan 13",
+        "name": "Mon",
+        "icon": "☁️",
+        "high": "29°",
+        "low": "24°"
+      },
+      {
+        "dateLabel": "Jan 14",
+        "name": "Tue",
+        "icon": "🌧️",
+        "high": "28°",
+        "low": "24°"
+      },
+      {
+        "dateLabel": "Jan 15",
+        "name": "Wed",
+        "icon": "🌧️",
+        "high": "28°",
+        "low": "24°"
+      },
+      {
+        "dateLabel": "Jan 16",
+        "name": "Thu",
+        "icon": "⛅",
+        "high": "29°",
+        "low": "24°"
+      }
+    ],
+    "sourceNote": "Source: PAGASA"
+  },
+  "exchangeRate": {
+    "title": "PHP:USD Exchange Rate",
+    "currentRate": "₱59.41",
+    "trend": "▼ 0.11% this week",
+    "details": [
+      {
+        "label": "Open",
+        "value": "₱59.37"
+      },
+      {
+        "label": "High",
+        "value": "₱59.51"
+      },
+      {
+        "label": "Low",
+        "value": "₱58.82"
+      },
+      {
+        "label": "Close",
+        "value": "₱59.41"
+      }
+    ],
+    "contextHtml": "<strong>YTD:</strong> Peso hit record low of ₱59.37 on Jan 7 after BSP signaled rate cut. Down 1.58% over past 12 months.",
+    "sourceNote": "Source: BSP / Bloomberg"
+  },
+  "eventSections": [],
+  "ofwSection": {
+    "title": "OFW & Diaspora News",
+    "stats": [
+      {
+        "number": "2.57M",
+        "label": "OFWs deployed in 2025"
+      },
+      {
+        "number": "$38.4B",
+        "label": "Remittances (2024)"
+      },
+      {
+        "number": "72",
+        "label": "Labor Agreements"
+      },
+      {
+        "number": "₱2.18B",
+        "label": "Aksyon Fund Aid"
+      }
+    ],
+    "stories": [
+      {
+        "title": "Philippines-UAE Sign Historic Free Trade Agreement (CEPA)",
+        "bodyHtml": "President Marcos and UAE officials signed the first free trade agreement between the Philippines and a Middle Eastern country. The CEPA aims for 90% tariff liberalization and broader access to the Gulf Cooperation Council market, benefiting the large OFW population in the UAE.",
+        "details": {
+          "label": "UAE, Middle East, GCC",
+          "href": "https://www.gmanetwork.com/news/money/economy/972666/ph-uae-ink-historic-free-trade-deal/story/"
+        }
+      },
+      {
+        "title": "New US 1% Remittance Tax Impact Continues",
+        "bodyHtml": "The 1% excise tax on remittances from the US (effective Jan 1) continues to affect the largest OFW corridor. The Philippines DOF estimates minimal GDP impact (0.009%), though ADB projects it could cost ~$250 million of the $38-40 billion in annual remittances.",
+        "details": {
+          "label": "United States",
+          "href": "https://thefilipinochronicle.com/2025/12/14/the-tradition-of-remittances-continues-to-bolster-the-philippines-but-it-also-comes-at-a-cost/"
+        }
+      },
+      {
+        "title": "Tropical Storm Ada May Affect Travel Plans",
+        "bodyHtml": "Tropical Storm Ada, the first storm of 2026, is affecting Eastern Visayas and Caraga regions. OFWs with families in affected areas should monitor the situation. DSWD has extended ₱13.9 million in aid to over 100,000 affected families.",
+        "details": {
+          "label": "Eastern Visayas, Caraga",
+          "href": "https://www.philstar.com/headlines/2026/01/15/2501052/ada-first-storm-2026-enters-philippines"
+        }
+      }
+    ],
+    "travelAdvisories": {
+      "title": "Active Travel Advisories",
+      "items": [
+        "Deployment Suspended: Israel, Lebanon, Iran, Jordan – Ongoing conflict",
+        "Exercise Caution: Myanmar, Southeast Asia – Scam hub operations targeting OFWs"
+      ]
+    }
+  },
+  "dynastyHighlights": {
+    "title": "Dynasty Highlights",
+    "items": [
+      {
+        "title": "",
+        "titleHref": "",
+        "bodyHtml": "",
+        "bullets": []
+      },
+      {
+        "title": "",
+        "titleHref": "",
+        "bodyHtml": "",
+        "bullets": []
+      },
+      {
+        "title": "",
+        "titleHref": "",
+        "bodyHtml": "",
+        "bullets": []
+      }
+    ]
+  }
+}
