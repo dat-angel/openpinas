@@ -1,0 +1,373 @@
+/* Scoped for Next.js — generated from dynasties-network-visualization.html */
+    .dynastyMapRoot * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    .dynastyMapRoot {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+      background: #f5f5f5;
+      color: #1a1a1a;
+    }
+
+    .dynastyMapRoot header {
+      background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+      color: white;
+      padding: 24px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .dynastyMapRoot h1 {
+      font-size: 28px;
+      margin-bottom: 8px;
+    }
+
+    .dynastyMapRoot header p {
+      opacity: 0.9;
+      font-size: 14px;
+    }
+
+    .dynastyMapRoot .controls {
+      background: white;
+      padding: 16px 24px;
+      border-bottom: 1px solid #e0e0e0;
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    .dynastyMapRoot .controls label {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 14px;
+    }
+
+    .dynastyMapRoot .controls select {
+      padding: 6px 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 14px;
+    }
+
+    .dynastyMapRoot .controls button {
+      padding: 6px 16px;
+      background: #1a1a1a;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+
+    .dynastyMapRoot .controls button:hover {
+      background: #2d2d2d;
+    }
+
+    .dynastyMapRoot .info-panel {
+      position: fixed;
+      top: 200px;
+      right: 24px;
+      width: 320px;
+      max-height: calc(100vh - 220px);
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+      padding: 20px;
+      overflow-y: auto;
+      z-index: 1000;
+      display: none;
+    }
+
+    .dynastyMapRoot .info-panel.visible {
+      display: block;
+    }
+
+    .dynastyMapRoot .glossary-panel {
+      position: fixed;
+      top: 200px;
+      left: 24px;
+      width: 320px;
+      max-height: calc(100vh - 220px);
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+      padding: 20px;
+      overflow-y: auto;
+      z-index: 1000;
+      display: none;
+    }
+
+    .dynastyMapRoot .glossary-panel.visible {
+      display: block;
+    }
+
+    .dynastyMapRoot .glossary-panel h3 {
+      margin-bottom: 16px;
+      color: #1a1a1a;
+      font-size: 18px;
+      border-bottom: 2px solid #0038A8;
+      padding-bottom: 8px;
+    }
+
+    .dynastyMapRoot .glossary-panel .term {
+      margin-bottom: 16px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid #e0e0e0;
+    }
+
+    .dynastyMapRoot .glossary-panel .term:last-child {
+      border-bottom: none;
+    }
+
+    .dynastyMapRoot .glossary-panel .term-name {
+      font-weight: 600;
+      color: #0038A8;
+      font-size: 14px;
+      margin-bottom: 4px;
+    }
+
+    .dynastyMapRoot .glossary-panel .term-def {
+      font-size: 12px;
+      color: #666;
+      line-height: 1.5;
+    }
+
+    .dynastyMapRoot .info-panel h3 {
+      margin-bottom: 12px;
+      color: #1a1a1a;
+      font-size: 18px;
+    }
+
+    .dynastyMapRoot .info-panel .close {
+      float: right;
+      background: none;
+      border: none;
+      font-size: 20px;
+      cursor: pointer;
+      color: #666;
+    }
+
+    .dynastyMapRoot .info-panel .close:hover {
+      color: #1a1a1a;
+    }
+
+    .dynastyMapRoot .info-panel p {
+      margin: 8px 0;
+      font-size: 14px;
+      line-height: 1.5;
+    }
+
+    .dynastyMapRoot .info-panel .label {
+      font-weight: 600;
+      color: #666;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-top: 12px;
+    }
+
+    .dynastyMapRoot .info-panel .value {
+      margin-bottom: 8px;
+    }
+
+    .dynastyMapRoot .info-panel ul {
+      margin: 8px 0 8px 20px;
+      font-size: 14px;
+    }
+
+    .dynastyMapRoot #network-container {
+      width: 100%;
+      height: calc(100vh - 180px);
+      background: white;
+      border: 1px solid #e0e0e0;
+    }
+
+    .dynastyMapRoot .legend {
+      position: fixed;
+      bottom: 24px;
+      left: 24px;
+      background: white;
+      padding: 16px;
+      border-radius: 8px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+      font-size: 12px;
+      z-index: 1000;
+    }
+
+    .dynastyMapRoot .legend h4 {
+      margin-bottom: 12px;
+      font-size: 14px;
+    }
+
+    .dynastyMapRoot .legend-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin: 6px 0;
+    }
+
+    .dynastyMapRoot .legend-shape {
+      width: 16px;
+      height: 16px;
+      flex-shrink: 0;
+    }
+
+    .dynastyMapRoot .legend-ellipse {
+      border-radius: 50%;
+    }
+
+    .dynastyMapRoot .legend-box {
+      border-radius: 3px;
+    }
+
+    .dynastyMapRoot .legend-star {
+      width: 16px;
+      height: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+    }
+
+    .dynastyMapRoot .legend-triangle {
+      width: 0;
+      height: 0;
+      border-left: 8px solid transparent;
+      border-right: 8px solid transparent;
+      border-bottom: 14px solid;
+      background: transparent !important;
+    }
+
+    .dynastyMapRoot .legend-diamond {
+      transform: rotate(45deg);
+      width: 11px;
+      height: 11px;
+    }
+
+    .dynastyMapRoot .legend-line {
+      width: 24px;
+      height: 3px;
+      flex-shrink: 0;
+    }
+
+    .dynastyMapRoot .legend-line.dashed {
+      height: 0;
+      border-top: 3px dashed;
+      background: transparent !important;
+    }
+
+    .dynastyMapRoot .stats {
+      position: fixed;
+      top: 180px;
+      left: 24px;
+      background: white;
+      padding: 16px;
+      border-radius: 8px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+      font-size: 12px;
+      z-index: 1000;
+    }
+
+    .dynastyMapRoot .stats h4 {
+      margin-bottom: 8px;
+      font-size: 14px;
+    }
+
+    .dynastyMapRoot .stats p {
+      margin: 4px 0;
+      font-size: 12px;
+    }
+
+    .dynastyMapRoot .map-legend {
+      background: white;
+      padding: 12px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    }
+
+    .dynastyMapRoot .methodology {
+      margin: 24px;
+      background: white;
+      padding: 16px 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+      font-size: 13px;
+      color: #555;
+    }
+
+    .dynastyMapRoot .methodology h4 {
+      margin-bottom: 8px;
+      font-size: 14px;
+      color: #1a1a1a;
+    }
+
+    .dynastyMapRoot .methodology ul {
+      margin: 8px 0 0 18px;
+      padding: 0;
+    }
+
+    .dynastyMapRoot .methodology a {
+      color: #0038A8;
+      text-decoration: underline;
+      font-weight: 500;
+    }
+
+    .dynastyMapRoot .methodology a:hover {
+      text-decoration: underline;
+      opacity: 0.8;
+    }
+    
+    /* Global link styling */
+    .dynastyMapRoot a {
+      color: #0038A8;
+    }
+    
+    .dynastyMapRoot a:visited {
+      color: #0038A8;
+    }
+
+    .dynastyMapRoot .province-marker {
+      background: transparent !important;
+      border: none !important;
+    }
+
+    @media (max-width: 1024px) {
+      .dynastyMapRoot .info-panel,
+      .dynastyMapRoot .legend,
+      .dynastyMapRoot .stats {
+        position: relative;
+        width: 100%;
+        margin: 16px;
+      }
+
+      .dynastyMapRoot #network-container,
+      .dynastyMapRoot #map-container {
+        height: 600px;
+      }
+    }
+
+    /* Accessibility */
+    .dynastyMapRoot .skip-link {
+      position: absolute;
+      top: -40px;
+      left: 0;
+      background: #1a1a1a;
+      color: #fff;
+      padding: 8px 16px;
+      z-index: 1001;
+      text-decoration: none;
+    }
+
+    .dynastyMapRoot .skip-link:focus {
+      top: 0;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .dynastyMapRoot * {
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+      }
+    }

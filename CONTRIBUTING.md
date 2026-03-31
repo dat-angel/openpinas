@@ -148,34 +148,27 @@ Before submitting data:
 
 ### Running Locally
 
-You need a local web server (browser security restrictions):
+**Next.js app (recommended):**
 
 ```bash
-# Python 3
-python3 -m http.server 8000
-
-# Or Node.js
-npx http-server -p 8000
-
-# Or PHP
-php -S localhost:8000
+npm install
+npm run dev
 ```
 
-Then open `http://localhost:8000` in your browser.
+Open the URL printed in the terminal (typically `http://localhost:3000`).
+
+**Static HTML / legacy files only:** use any static file server if you are not using the Next app, for example `npx serve` from the repo root.
 
 ### Validating Data
 
-Before committing, validate JSON files:
+Before committing:
 
 ```bash
-# Validate all JSON files
-./validate-openpinas.sh
-
-# Or validate individual files
-python3 -m json.tool philippine-political-dynasties-network-2025.json
-python3 -m json.tool philippines-2025-timeline.json
-python3 -m json.tool pogo-corruption-cases-2025.json
+npm install
+npm run validate
 ```
+
+`./validate-openpinas.sh` is a thin wrapper that runs `npm run validate`.
 
 ### Testing
 
@@ -216,7 +209,7 @@ python3 -m json.tool pogo-corruption-cases-2025.json
 
 4. **Validate:**
    ```bash
-   ./validate-openpinas.sh
+   npm run validate
    ```
 
 5. **Commit:**

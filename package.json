@@ -18,9 +18,11 @@
   },
   "dependencies": {
     "@vercel/analytics": "latest",
+    "leaflet": "^1.9.4",
     "next": "latest",
     "react": "latest",
-    "react-dom": "latest"
+    "react-dom": "latest",
+    "vis-network": "^10.0.2"
   },
   "devDependencies": {
     "cheerio": "^1.0.0-rc.12"

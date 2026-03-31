@@ -7,7 +7,7 @@ Human review is required before merging timeline or dynasty JSON to `main`.
 | Layer | Role |
 |--------|------|
 | **`ph-news-refresher`** (canonical: **this repo** `Skills/ph-news-refresher/SKILL.md`) | Scans sources; writes Purple Docs `az` vault `09-News/ph-news/YYYY-MM-DD-ph-news-scan.md`; updates JSON under `OPENPINAS_ROOT`. |
-| **`ph-weekly-review`** (canonical: **this repo** `Skills/ph-weekly-review/SKILL.md`) | Builds `weekly-reviews/*.html` from timeline JSON after the news scan. |
+| **`ph-weekly-review`** (canonical: **this repo** `Skills/ph-weekly-review/SKILL.md`) | Writes `weekly-reviews/data/*.json` + `manifest.json` from timeline JSON after the news scan. |
 | **Purple Docs `az`** | Pointer-only copies under `Skills/ph-*/SKILL.md` so Codex/Cursor still resolve skill names when the vault workspace is open. |
 | **n8n** `07-ph-news-refresher.json` | Sunday ~7pm PT: RSS/Reddit aggregation → AI → Slack **draft** (no direct repo write). |
 | **n8n** `08-ph-breaking-news-research.json` | On-demand webhook → research → Slack **draft**. |
