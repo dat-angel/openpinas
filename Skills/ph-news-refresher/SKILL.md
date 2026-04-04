@@ -83,9 +83,18 @@ If using n8n or similar automation:
 
 When run as part of **gm** or **run morning news** (e.g. quick PH check in the batch), keep the run short:
 
-- **Sources:** Tier 1 only (Rappler, Inquirer, ABS-CBN). One combined search (e.g. "Philippines news today") or 1–2 source-specific fetches. Skip Tier 2–4.
-- **Output:** 3–5 top PH stories, markdown only. Skip dynasty tracking, deep analysis, and full weekly scan report. Timeline JSON updates optional — or add 1–2 events only.
-- **Searches:** 1–2 fetch/search calls total.
+- **Sources:** Use 3–5 total checks. Tier 1 remains primary, but daily fast path should not stay trapped in one national-politics or fuel lane. Pull from at least two different source types when useful: hard news, broadcast/service reporting, and one culture/religion/travel/public-life angle.
+- **Coverage mix:** Daily fast path should try to include:
+  - 1 governance / election / institutional-power story
+  - 1 practical diaspora-impact story (fuel, travel, remittances, safety, major infrastructure, weather)
+  - 1 culture / religion / holy week / public-life story when seasonally relevant
+  - 1 broader "what the country is feeling right now" item when there is signal
+- **Output:** 4–6 top PH stories, markdown only. Add:
+  - `Why it matters`
+  - `Diaspora relevance`
+  - `OpenPinas Thread`
+  - `If you want to read more / watch this`
+- **Searches:** 3–5 fetch/search calls total.
 
 ---
 
@@ -97,6 +106,8 @@ When run as part of **gm** or **run morning news** (e.g. quick PH check in the b
 - International Relations
 - Legal
 - Religious
+- Travel / Mobility
+- Diaspora life
 
 ### Target Audience
 Filipino diaspora communities worldwide who want to understand developments affecting:
@@ -168,6 +179,18 @@ Filipino diaspora communities worldwide who want to understand developments affe
 - Legal/constitutional precedent
 - Major disaster (deaths, displacement, damage)
 - International attention
+- Major holiday / religious observance logistics or mood when seasonally relevant
+- Transport, fuel, or travel stories that change what ordinary families can actually do
+
+## Daily Quality Bar
+
+Do not let the PH fast path become only "fuel + impeachment."
+
+The daily note should feel closer to OpenPinas:
+- institutions and power
+- lived public life
+- religion / culture / seasonality when relevant
+- a diaspora lens that is concrete, not generic
 
 ---
 

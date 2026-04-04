@@ -40,7 +40,7 @@ h1 {
   font-size: 1.75rem;
   font-weight: 600;
   margin: 0 0 0.5rem;
-  color: #0d0d0d;
+  color: #222;
 }
 
 .subtitle {
@@ -74,14 +74,14 @@ main {
 }
 
 .card:hover {
-  border-color: #0d0d0d;
+  border-color: #222;
 }
 
 .card h2 {
   margin: 0 0 0.5rem;
   font-size: 1rem;
   font-weight: 600;
-  color: #0d0d0d;
+  color: #222;
 }
 
 .card p {
@@ -108,7 +108,7 @@ main {
 .stat .number {
   font-size: 1.5rem;
   font-weight: 600;
-  color: #0d0d0d;
+  color: #222;
   margin: 0;
   font-family: Inter, system-ui, -apple-system, sans-serif;
 }
@@ -206,7 +206,7 @@ footer a:hover {
 .controls input[type="search"]:focus,
 .controls select:focus {
   outline: none;
-  border-color: #0d0d0d;
+  border-color: #222;
 }
 
 .controls select {
@@ -230,7 +230,7 @@ footer a:hover {
 }
 
 .case-card:hover {
-  border-color: #0d0d0d;
+  border-color: #222;
 }
 
 .case-card-header {
@@ -398,7 +398,7 @@ footer a:hover {
 .fact-box .value {
   font-size: 1rem;
   font-weight: 600;
-  color: #0d0d0d;
+  color: #222;
 }
 
 .section {
@@ -438,7 +438,7 @@ footer a:hover {
 }
 
 .source-link {
-  color: #0d0d0d;
+  color: #222;
   text-decoration: underline;
   text-underline-offset: 2px;
   font-size: 0.875rem;

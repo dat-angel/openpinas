@@ -23,8 +23,6 @@ Thumbs.db
 node_modules/
 .next/
 out/
-public/interactive-timeline/
-public/corruption-tracker/
 public/dynasty-map/
 
 # Private documentation (if accidentally copied)

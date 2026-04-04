@@ -3,14 +3,14 @@ import { getNowDeveloping } from "@/lib/get-now-developing";
 const DESK_LINKS = [
   {
     href: "/dynasties-network-visualization.html",
-    title: "Dynasty Network Desk",
+    title: "Dynasty Network Map",
     kicker: "Investigate power maps",
     description:
       "Trace alliances, rivalries, and territorial control in an interactive network + map view.",
   },
   {
     href: "/interactive-timeline/index.html",
-    title: "Timeline Desk",
+    title: "Timeline",
     kicker: "Follow events over time",
     description:
       "Review significant political events and dynasty mentions across a chronological timeline.",
@@ -31,15 +31,18 @@ const STATS = [
   { number: "67%", label: "Congressional Seats" },
 ];
 
-const edgePad = "clamp(16px, 5vw, 56px)";
+const edgePad = "clamp(20px, 5vw, 64px)";
 
-const pageStyle = {
-  minHeight: "100vh",
-  margin: 0,
-  fontFamily: '"Source Serif Pro", Georgia, serif',
-  color: "#1a1a1a",
-  background:
-    "radial-gradient(1200px 600px at 80% -10%, #f0e7d7 0%, transparent 60%), radial-gradient(800px 500px at 10% 10%, #e6efe7 0%, transparent 55%), #f8f5f0",
+// Design tokens
+const T = {
+  bg: "#ffffff",
+  surface: "#f7f7f5",
+  ink: "#0d0d0d",
+  muted: "#6b7280",
+  subtle: "#e5e5e3",
+  accent: "#1a1a72",
+  accentBright: "#2d2de8",
+  font: '"Inter", "SF Pro Display", system-ui, -apple-system, sans-serif',
 };
 
 function formatStripDate(iso) {
@@ -54,313 +57,198 @@ export default function HomePageNative() {
   const dateLine = formatStripDate(updated);
 
   return (
-    <main style={pageStyle}>
-      {/* Full-bleed hero + decorative rule */}
+    <main style={{ minHeight: "100vh", margin: 0, fontFamily: T.font, color: T.ink, background: T.bg }}>
+
+      {/* Hero */}
       <header
         style={{
-          width: "100%",
-          padding: `48px ${edgePad} 28px`,
-          textAlign: "center",
-          borderBottom: "1px solid rgba(18, 69, 89, 0.12)",
+          padding: `clamp(56px, 10vw, 112px) ${edgePad} clamp(48px, 8vw, 80px)`,
+          maxWidth: 760,
         }}
       >
         <p
           style={{
-            margin: "0 0 8px",
-            color: "#124559",
-            textTransform: "uppercase",
-            letterSpacing: "0.08em",
+            margin: "0 0 20px",
             fontSize: 12,
-            fontWeight: 700,
+            fontWeight: 600,
+            letterSpacing: "0.1em",
+            textTransform: "uppercase",
+            color: T.accentBright,
           }}
         >
-          Editorial + Resource Hub
+          Open Data Platform · Philippines
         </p>
-        <h1 style={{ margin: "0 0 12px", fontSize: "clamp(30px, 5vw, 48px)" }}>OpenPinas</h1>
-        <div
-          aria-hidden
+        <h1
           style={{
-            width: "min(180px, 40%)",
-            height: 3,
-            margin: "0 auto 20px",
-            background: "linear-gradient(90deg, transparent, #124559 20%, #124559 80%, transparent)",
-            borderRadius: 2,
+            margin: "0 0 24px",
+            fontSize: "clamp(36px, 6vw, 64px)",
+            fontWeight: 800,
+            lineHeight: 1.05,
+            letterSpacing: "-0.03em",
+            color: T.ink,
           }}
-        />
+        >
+          Who holds power<br />in the Philippines.
+        </h1>
         <p
           style={{
-            margin: "0 auto",
-            color: "#5e5e5e",
-            fontSize: 18,
-            maxWidth: "42rem",
-            lineHeight: 1.55,
+            margin: "0 0 32px",
+            fontSize: "clamp(16px, 2vw, 19px)",
+            color: T.muted,
+            lineHeight: 1.6,
+            maxWidth: 540,
           }}
         >
-          A living newsroom for understanding Philippine political dynasties: who holds power, where
-          influence is concentrated, and how weekly events reshape the map.
+          Structured datasets and visualizations tracking political dynasties, business connections,
+          and the events that reshape Philippine power week by week.
         </p>
+        <a
+          href={weeklyReviewHref}
+          style={{
+            display: "inline-flex",
+            alignItems: "center",
+            gap: 8,
+            padding: "12px 22px",
+            background: T.ink,
+            color: "#fff",
+            borderRadius: 6,
+            fontSize: 14,
+            fontWeight: 600,
+            textDecoration: "none",
+            letterSpacing: "-0.01em",
+          }}
+        >
+          Read this week&apos;s review →
+        </a>
       </header>
 
-      {/* Editorial strip — update weekly via content/now-developing.json */}
-      <section
-        aria-label={label}
-        style={{
-          width: "100%",
-          padding: `22px ${edgePad} 24px`,
-          background: "rgba(18, 69, 89, 0.06)",
-          borderTop: "1px solid rgba(18, 69, 89, 0.14)",
-          borderBottom: "1px solid rgba(18, 69, 89, 0.14)",
-        }}
-      >
-        <div
-          style={{
-            display: "flex",
-            flexWrap: "wrap",
-            alignItems: "baseline",
-            justifyContent: "space-between",
-            gap: "12px 24px",
-            marginBottom: 14,
-          }}
-        >
-          <p
-            style={{
-              margin: 0,
-              color: "#124559",
-              fontWeight: 700,
-              fontSize: 12,
-              letterSpacing: "0.12em",
-              textTransform: "uppercase",
-            }}
-          >
-            {label}
-          </p>
-          {dateLine ? (
-            <p style={{ margin: 0, fontSize: 13, color: "#5e5e5e" }}>Updated {dateLine}</p>
-          ) : null}
-        </div>
-        <ul
-          style={{
-            margin: 0,
-            paddingLeft: 20,
-            color: "#383838",
-            fontSize: 16,
-            lineHeight: 1.65,
-            maxWidth: "58rem",
-          }}
-        >
-          {items.map((line, i) => (
-            <li key={`${i}-${line.slice(0, 40)}`} style={{ marginBottom: 6 }}>
-              {line}
-            </li>
-          ))}
-        </ul>
-        <p style={{ margin: "14px 0 0", fontSize: 14 }}>
-          <a href={weeklyReviewHref} style={{ color: "#124559", fontWeight: 700 }}>
-            Read this week in the review archive →
-          </a>
-        </p>
-      </section>
-
-      {/* Full-bleed desk grid — no max-width container */}
+      {/* Stats band */}
       <section
         style={{
-          width: "100%",
-          padding: `32px ${edgePad} 28px`,
+          borderTop: `1px solid ${T.subtle}`,
+          borderBottom: `1px solid ${T.subtle}`,
           display: "grid",
-          gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, 280px), 1fr))",
-          gap: "1px",
-          background: "rgba(18, 69, 89, 0.15)",
-          borderTop: "1px solid rgba(18, 69, 89, 0.08)",
-          borderBottom: "1px solid rgba(18, 69, 89, 0.08)",
-        }}
-      >
-        {DESK_LINKS.map((item) => (
-          <a
-            key={item.href}
-            href={item.href}
-            style={{
-              display: "block",
-              background: "#faf8f4",
-              padding: "24px 22px",
-              color: "inherit",
-              textDecoration: "none",
-              borderLeft: "3px solid #124559",
-              boxShadow: "none",
-              transition: "background 0.15s ease",
-            }}
-          >
-            <p style={{ margin: "0 0 6px", fontSize: 12, color: "#476a6f", fontWeight: 700 }}>
-              {item.kicker}
-            </p>
-            <h2 style={{ margin: "0 0 8px", fontSize: 22, color: "#124559", lineHeight: 1.15 }}>
-              {item.title}
-            </h2>
-            <p style={{ margin: 0, color: "#5e5e5e", fontSize: 15, lineHeight: 1.5 }}>
-              {item.description}
-            </p>
-          </a>
-        ))}
-      </section>
-
-      {/* Stats strip — full width */}
-      <section
-        style={{
-          width: "100%",
-          padding: `28px ${edgePad} 0`,
-          display: "grid",
-          gridTemplateColumns: "repeat(auto-fit, minmax(140px, 1fr))",
-          gap: 0,
-          borderTop: "1px solid rgba(18, 69, 89, 0.08)",
+          gridTemplateColumns: "repeat(auto-fit, minmax(130px, 1fr))",
         }}
       >
         {STATS.map((s, i) => (
           <div
             key={s.label}
             style={{
-              textAlign: "center",
-              padding: "20px 12px",
-              borderRight: i < STATS.length - 1 ? "1px solid rgba(18, 69, 89, 0.1)" : "none",
+              padding: "28px 24px",
+              borderRight: i < STATS.length - 1 ? `1px solid ${T.subtle}` : "none",
             }}
           >
-            <p style={{ margin: 0, fontSize: 28, color: "#124559", fontWeight: 700 }}>{s.number}</p>
-            <p
-              style={{
-                margin: "6px 0 0",
-                color: "#5e5e5e",
-                fontSize: 11,
-                letterSpacing: "0.06em",
-                textTransform: "uppercase",
-              }}
-            >
-              {s.label}
-            </p>
+            <p style={{ margin: 0, fontSize: "clamp(28px, 4vw, 40px)", fontWeight: 800, letterSpacing: "-0.03em", color: T.ink }}>{s.number}</p>
+            <p style={{ margin: "6px 0 0", fontSize: 12, color: T.muted, fontWeight: 500, textTransform: "uppercase", letterSpacing: "0.06em" }}>{s.label}</p>
           </div>
         ))}
       </section>
 
-      {/* Footer: flush, no card boxes — editorial + how-to */}
-      <footer
+      {/* Now developing strip */}
+      <section
+        aria-label={label}
         style={{
-          width: "100%",
-          marginTop: 40,
-          padding: `40px ${edgePad} 56px`,
-          background: "linear-gradient(180deg, #ede8df 0%, #e8e3da 100%)",
-          borderTop: "1px solid rgba(18, 69, 89, 0.18)",
-          color: "#2d2d2d",
+          padding: `28px ${edgePad}`,
+          borderBottom: `1px solid ${T.subtle}`,
+          display: "flex",
+          flexWrap: "wrap",
+          gap: "16px 48px",
+          alignItems: "flex-start",
         }}
       >
-        <div
-          style={{
-            display: "grid",
-            gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, 320px), 1fr))",
-            gap: "clamp(28px, 5vw, 48px)",
-            alignItems: "start",
-          }}
-        >
-          <div>
-            <p
-              style={{
-                margin: "0 0 6px",
-                color: "#124559",
-                fontWeight: 700,
-                fontSize: 12,
-                letterSpacing: "0.06em",
-                textTransform: "uppercase",
-              }}
-            >
-              This Week&apos;s Editorial Frame
-            </p>
-            <h2 style={{ margin: "0 0 12px", fontSize: "clamp(22px, 3vw, 30px)", lineHeight: 1.15 }}>
-              Power is local, but narratives are national.
-            </h2>
-            <p style={{ margin: "0 0 16px", color: "#454545", fontSize: 16, lineHeight: 1.6 }}>
-              Use OpenPinas to connect what happens in Congress and national headlines to provincial
-              control, alliances, and long-running dynastic networks.
-            </p>
-            <a
-              href="/weekly-reviews/index.html"
-              style={{
-                color: "#124559",
-                textDecoration: "underline",
-                fontWeight: 700,
-                fontSize: 16,
-                display: "inline-block",
-                marginBottom: 20,
-              }}
-            >
-              Start with the latest weekly review →
-            </a>
+        <div style={{ minWidth: 120 }}>
+          <p style={{ margin: "0 0 4px", fontSize: 11, fontWeight: 600, letterSpacing: "0.1em", textTransform: "uppercase", color: T.accentBright }}>{label}</p>
+          {dateLine && <p style={{ margin: 0, fontSize: 12, color: T.muted }}>Updated {dateLine}</p>}
+        </div>
+        <div style={{ flex: 1, minWidth: 260 }}>
+          <ul style={{ margin: 0, paddingLeft: 18, color: T.muted, fontSize: 15, lineHeight: 1.7, maxWidth: "64rem" }}>
+            {items.map((line, i) => (
+              <li key={`${i}-${line.slice(0, 40)}`} style={{ marginBottom: 4 }}>{line}</li>
+            ))}
+          </ul>
+          <a href={weeklyReviewHref} style={{ display: "inline-block", marginTop: 14, fontSize: 13, fontWeight: 600, color: T.ink, textDecoration: "underline" }}>
+            Full weekly review →
+          </a>
+        </div>
+      </section>
 
-            {/* Readme / note — distinct from body copy (not a floating card) */}
-            <aside
-              style={{
-                marginTop: 8,
-                padding: "16px 18px 16px 20px",
-                background: "rgba(255, 252, 245, 0.85)",
-                borderLeft: "4px solid #b8860b",
-                borderTop: "1px solid rgba(184, 134, 11, 0.25)",
-                borderBottom: "1px solid rgba(184, 134, 11, 0.2)",
-                borderRight: "1px solid rgba(184, 134, 11, 0.12)",
-                fontSize: 14,
-                lineHeight: 1.55,
-                color: "#3d3a36",
-              }}
+      {/* Desk grid */}
+      <section
+        style={{
+          display: "grid",
+          gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, 300px), 1fr))",
+          borderBottom: `1px solid ${T.subtle}`,
+        }}
+      >
+        {DESK_LINKS.map((item, i) => (
+          <a
+            key={item.href}
+            href={item.href}
+            style={{
+              display: "block",
+              padding: `clamp(28px, 4vw, 44px) ${edgePad}`,
+              color: "inherit",
+              textDecoration: "none",
+              borderRight: i < DESK_LINKS.length - 1 ? `1px solid ${T.subtle}` : "none",
+              transition: "background 0.15s",
+            }}
             >
-              <p
-                style={{
-                  margin: "0 0 8px",
-                  fontSize: 11,
-                  fontWeight: 700,
-                  letterSpacing: "0.1em",
-                  textTransform: "uppercase",
-                  color: "#8a6d1d",
-                }}
-              >
-                Readme · Sources &amp; methods
-              </p>
-              <p style={{ margin: "0 0 10px" }}>
-                This project links reporting, timelines, and structured data. Always cross-check claims
-                against primary reporting and our cited sources.
-              </p>
-              <a
-                href="/sources-and-related-projects.html"
-                style={{ color: "#124559", fontWeight: 700, textDecoration: "underline" }}
-              >
-                Open the source index and methodology →
-              </a>
-            </aside>
-          </div>
+            <p style={{ margin: "0 0 10px", fontSize: 11, fontWeight: 600, letterSpacing: "0.1em", textTransform: "uppercase", color: T.accentBright }}>{item.kicker}</p>
+            <h2 style={{ margin: "0 0 10px", fontSize: "clamp(20px, 2.5vw, 26px)", fontWeight: 700, letterSpacing: "-0.02em", lineHeight: 1.15, color: T.ink }}>{item.title}</h2>
+            <p style={{ margin: 0, color: T.muted, fontSize: 15, lineHeight: 1.6 }}>{item.description}</p>
+          </a>
+        ))}
+      </section>
 
-          <div>
-            <p
-              style={{
-                margin: "0 0 12px",
-                color: "#124559",
-                fontWeight: 700,
-                fontSize: 12,
-                letterSpacing: "0.06em",
-                textTransform: "uppercase",
-              }}
-            >
-              How To Use This Site
-            </p>
-            <ol
-              style={{
-                margin: 0,
-                paddingLeft: 20,
-                color: "#454545",
-                lineHeight: 1.85,
-                fontSize: 16,
-              }}
-            >
-              <li>Open the dynasty map and spotlight key families.</li>
-              <li>Switch to timeline to understand event sequences.</li>
-              <li>Read weekly reviews for context and interpretation.</li>
-              <li>Verify claims through sources and related projects.</li>
-            </ol>
-          </div>
+      {/* Footer */}
+      <footer
+        style={{
+          padding: `56px ${edgePad} 64px`,
+          borderTop: `1px solid ${T.subtle}`,
+          display: "grid",
+          gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, 300px), 1fr))",
+          gap: "clamp(32px, 5vw, 64px)",
+          alignItems: "start",
+          background: T.surface,
+        }}
+      >
+        <div>
+          <p style={{ margin: "0 0 6px", fontSize: 11, fontWeight: 600, letterSpacing: "0.1em", textTransform: "uppercase", color: T.muted }}>About</p>
+          <h2 style={{ margin: "0 0 14px", fontSize: "clamp(20px, 2.5vw, 26px)", fontWeight: 700, letterSpacing: "-0.02em", lineHeight: 1.2 }}>
+            Power is local,<br />narratives are national.
+          </h2>
+          <p style={{ margin: "0 0 20px", color: T.muted, fontSize: 15, lineHeight: 1.65 }}>
+            Use OpenPinas to connect what happens in Congress and national headlines to provincial
+            control, alliances, and long-running dynastic networks.
+          </p>
+          <a href="/sources-and-related-projects.html" style={{ fontSize: 14, fontWeight: 600, color: T.ink, textDecoration: "underline" }}>
+            Sources and methodology →
+          </a>
+        </div>
+
+        <div>
+          <p style={{ margin: "0 0 16px", fontSize: 11, fontWeight: 600, letterSpacing: "0.1em", textTransform: "uppercase", color: T.muted }}>How to use this site</p>
+          <ol style={{ margin: 0, paddingLeft: 20, color: T.muted, lineHeight: 1.9, fontSize: 15 }}>
+            <li>Open the dynasty map and spotlight key families.</li>
+            <li>Switch to timeline to understand event sequences.</li>
+            <li>Read weekly reviews for context and interpretation.</li>
+            <li>Verify claims through sources and related projects.</li>
+          </ol>
+        </div>
+
+        <div>
+          <p style={{ margin: "0 0 16px", fontSize: 11, fontWeight: 600, letterSpacing: "0.1em", textTransform: "uppercase", color: T.muted }}>Open Data</p>
+          <p style={{ margin: "0 0 14px", color: T.muted, fontSize: 15, lineHeight: 1.65 }}>
+            All datasets are available as open JSON files — download, verify, remix, or extend.
+            Licensed under CC BY 4.0.
+          </p>
+          <a href="https://github.com/dat-angel/openpinas" target="_blank" rel="noopener noreferrer" style={{ fontSize: 14, fontWeight: 600, color: T.ink, textDecoration: "underline" }}>
+            View on GitHub →
+          </a>
         </div>
       </footer>
+
     </main>
   );
 }

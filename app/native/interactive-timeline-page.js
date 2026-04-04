@@ -186,18 +186,8 @@ export default function InteractiveTimelinePage() {
         Skip to main content
       </a>
       <header>
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "space-between",
-            alignItems: "center",
-            marginBottom: 12,
-          }}
-        >
-          <Link href="/" style={{ color: "var(--ink, #1a1a1a)", textDecoration: "none", fontSize: 20, fontWeight: 600 }}>
-            OpenPinas
-          </Link>
-          <span style={{ fontSize: 12, color: "var(--muted, #5e5e5e)" }}>{headerUpdated}</span>
+        <div style={{ display: "flex", justifyContent: "flex-end", marginBottom: 8 }}>
+          <span style={{ fontSize: 12, color: "var(--muted, #6b7280)" }}>{headerUpdated}</span>
         </div>
         <h1>Philippines Timeline</h1>
         <p>

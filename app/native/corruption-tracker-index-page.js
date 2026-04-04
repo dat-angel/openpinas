@@ -46,9 +46,6 @@ export default function CorruptionTrackerIndexPage() {
         Skip to main content
       </a>
       <header>
-        <nav className="header-nav">
-          <a href="/">← OpenPinas</a>
-        </nav>
         <h1>Corruption &amp; POGO Cases</h1>
         <p className="subtitle">Who&apos;s being investigated, who got caught, and what it means</p>
       </header>

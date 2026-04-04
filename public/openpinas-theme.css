@@ -1,0 +1,95 @@
+/* OpenPinas Global Design Theme
+   Loaded on all static HTML pages via scripts/apply-theme.cjs */
+
+:root {
+  --ink: #0d0d0d;
+  --muted: #6b7280;
+  --paper: #ffffff;
+  --surface: #f7f7f5;
+  --accent: #2d2de8;
+  --accent-2: #c44900;
+  --card: #ffffff;
+  --line: #e5e5e3;
+  --subtle: #e5e5e3;
+  --shadow: 0 1px 2px rgba(0, 0, 0, 0.04), 0 4px 12px rgba(0, 0, 0, 0.04);
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif !important;
+  background: #ffffff !important;
+  padding-top: 56px;
+}
+
+/* ── Shared nav ───────────────────────────────────────── */
+
+.op-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 clamp(20px, 5vw, 64px);
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid #e5e5e3;
+  box-sizing: border-box;
+}
+
+.op-nav a {
+  text-decoration: none;
+  color: #6b7280;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: 'Inter', system-ui, sans-serif;
+  transition: color 0.15s;
+}
+
+.op-nav a:hover {
+  color: #0d0d0d;
+}
+
+.op-nav-brand {
+  font-weight: 700 !important;
+  font-size: 16px !important;
+  color: #0d0d0d !important;
+  letter-spacing: -0.01em;
+}
+
+.op-nav-links {
+  display: flex;
+  gap: 28px;
+  align-items: center;
+}
+
+@media (max-width: 600px) {
+  .op-nav-links {
+    gap: 16px;
+  }
+  .op-nav-hide-mobile {
+    display: none;
+  }
+}
+
+/* ── Typography reset ─────────────────────────────────── */
+
+h1, h2, h3, h4, h5, h6,
+p, li, a, span, label, button, input, select, textarea, td, th {
+  font-family: inherit;
+}
+
+/* ── Card border refresh ──────────────────────────────── */
+
+.card {
+  border-left-color: var(--accent) !important;
+}
+
+/* ── Skip link ────────────────────────────────────────── */
+
+.skip-link:focus {
+  top: 56px !important;
+}

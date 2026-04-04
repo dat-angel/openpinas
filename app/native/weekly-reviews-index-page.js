@@ -1,29 +1,34 @@
 import manifest from "@/weekly-reviews/data/manifest.json";
 
+const T = {
+  ink: "#0d0d0d",
+  muted: "#6b7280",
+  subtle: "#e5e5e3",
+  accent: "#2d2de8",
+};
+
 export default function WeeklyReviewsIndexPage() {
   return (
-    <main style={{ maxWidth: 760, margin: "0 auto", padding: "40px 20px", fontFamily: '"Source Serif Pro", Georgia, serif' }}>
-      <nav style={{ marginBottom: 16, fontFamily: '"Source Sans Pro", sans-serif', fontSize: 13 }}>
-        <a href="/" style={{ color: "#666" }}>← OpenPinas</a>
-      </nav>
-      <h1 style={{ margin: 0, fontSize: 34 }}>Weekly Reviews</h1>
-      <p style={{ marginTop: 8, color: "#666" }}>
+    <main style={{ maxWidth: 760, margin: "0 auto", padding: "48px 24px 64px" }}>
+      <p style={{ margin: "0 0 16px", fontSize: 11, fontWeight: 600, letterSpacing: "0.1em", textTransform: "uppercase", color: T.accent }}>
+        Archive
+      </p>
+      <h1 style={{ margin: "0 0 12px", fontSize: "clamp(28px, 4vw, 40px)", fontWeight: 800, letterSpacing: "-0.03em", lineHeight: 1.1 }}>
+        Weekly Reviews
+      </h1>
+      <p style={{ marginTop: 0, marginBottom: 32, color: T.muted, fontSize: 16, lineHeight: 1.6 }}>
         Weekly digests summarizing major events, dynasties, weather, and exchange-rate context.
       </p>
-      <div style={{ display: "flex", gap: 16, margin: "16px 0 24px", fontFamily: '"Source Sans Pro", sans-serif' }}>
-        <a href="/interactive-timeline/index.html">Full Timeline</a>
-        <a href="/dynasties-network-visualization.html">Dynasty Map</a>
-      </div>
-      <section style={{ borderTop: "1px solid #e5e5e5" }}>
+      <section style={{ borderTop: `1px solid ${T.subtle}` }}>
         {manifest.reviews.map((review) => (
-          <article key={review.weekEnding} style={{ borderBottom: "1px solid #e5e5e5", padding: "12px 0" }}>
-            <h2 style={{ margin: "0 0 4px", fontSize: 17 }}>
-              <a href={`/weekly-reviews/weekly-review-${review.weekEnding}.html`} style={{ color: "#222", textDecoration: "none" }}>
-                Weekly Review {review.weekEnding}
+          <article key={review.weekEnding} style={{ borderBottom: `1px solid ${T.subtle}`, padding: "16px 0" }}>
+            <h2 style={{ margin: "0 0 4px", fontSize: 16, fontWeight: 600 }}>
+              <a href={`/weekly-reviews/weekly-review-${review.weekEnding}.html`} style={{ color: T.ink, textDecoration: "none" }}>
+                {review.weekLabel || `Week of ${review.weekEnding}`}
               </a>
             </h2>
-            <p style={{ margin: 0, color: "#888", fontSize: 12, fontFamily: '"Source Sans Pro", sans-serif' }}>
-              {review.weekLabel}
+            <p style={{ margin: 0, color: T.muted, fontSize: 12 }}>
+              {review.weekEnding}
             </p>
           </article>
         ))}

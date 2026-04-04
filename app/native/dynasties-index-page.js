@@ -13,19 +13,25 @@ const DYNASTIES = [
   ["dy.html", "Dy", "Isabela"],
 ];
 
+const T = {
+  ink: "#0d0d0d",
+  muted: "#6b7280",
+  subtle: "#e5e5e3",
+  surface: "#f7f7f5",
+  accent: "#2d2de8",
+};
+
 export default function DynastiesIndexPage() {
   return (
-    <main style={{ maxWidth: 1100, margin: "0 auto", padding: "36px 24px", fontFamily: '"Source Serif Pro", Georgia, serif' }}>
-      <h1 style={{ margin: "0 0 8px", color: "#3a0ca3", fontSize: "clamp(30px,4vw,44px)" }}>
+    <main style={{ maxWidth: 1100, margin: "0 auto", padding: "48px 24px 64px" }}>
+      <p style={{ margin: "0 0 16px", fontSize: 11, fontWeight: 600, letterSpacing: "0.1em", textTransform: "uppercase", color: T.accent }}>
+        Dynasty Profiles
+      </p>
+      <h1 style={{ margin: "0 0 12px", fontSize: "clamp(28px, 4vw, 40px)", fontWeight: 800, letterSpacing: "-0.03em", lineHeight: 1.1, color: T.ink }}>
         Philippine Political Dynasties
       </h1>
-      <p style={{ margin: "0 0 14px", color: "#5e5e5e" }}>News Archive and family profiles.</p>
-      <nav style={{ display: "flex", gap: 12, flexWrap: "wrap", marginBottom: 20, fontFamily: '"Source Sans Pro", sans-serif' }}>
-        <a href="/interactive-timeline/index.html">Full Timeline</a>
-        <a href="/dynasties-network-visualization.html">Dynasty Map</a>
-        <a href="/weekly-reviews/index.html">Weekly Reviews</a>
-      </nav>
-      <section style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(260px, 1fr))", gap: 16 }}>
+      <p style={{ margin: "0 0 32px", color: T.muted, fontSize: 16 }}>News archives and family profiles.</p>
+      <section style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(260px, 1fr))", gap: 1, background: T.subtle }}>
         {DYNASTIES.map(([href, name, region]) => (
           <a
             key={href}
@@ -35,14 +41,11 @@ export default function DynastiesIndexPage() {
               textDecoration: "none",
               color: "inherit",
               background: "#fff",
-              borderLeft: "4px solid #3a0ca3",
-              borderRadius: 12,
-              padding: 18,
-              boxShadow: "0 10px 24px rgba(0,0,0,.08)",
+              padding: "24px 20px",
             }}
           >
-            <h2 style={{ margin: "0 0 6px", fontSize: 20, color: "#3a0ca3" }}>{name}</h2>
-            <p style={{ margin: 0, color: "#666", fontSize: 13, fontFamily: '"Source Sans Pro", sans-serif' }}>{region}</p>
+            <h2 style={{ margin: "0 0 6px", fontSize: 18, fontWeight: 700, letterSpacing: "-0.01em", color: T.ink }}>{name}</h2>
+            <p style={{ margin: 0, color: T.muted, fontSize: 13 }}>{region}</p>
           </a>
         ))}
       </section>

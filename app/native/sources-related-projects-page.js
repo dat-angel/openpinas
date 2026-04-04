@@ -66,56 +66,53 @@ const SECTIONS = [
   },
 ];
 
-const pageStyle = {
-  minHeight: "100vh",
-  margin: 0,
-  fontFamily: '"Source Serif Pro", Georgia, serif',
-  color: "#1a1a1a",
-  background:
-    "radial-gradient(1200px 600px at 80% -10%, #f0e7d7 0%, transparent 60%), radial-gradient(800px 500px at 10% 10%, #e6efe7 0%, transparent 55%), #f8f5f0",
-  lineHeight: 1.6,
+const T = {
+  ink: "#0d0d0d",
+  muted: "#6b7280",
+  subtle: "#e5e5e3",
+  surface: "#f7f7f5",
+  accent: "#2d2de8",
 };
 
 export default function SourcesRelatedProjectsPage() {
   return (
-    <div style={pageStyle}>
-      <header style={{ maxWidth: 900, margin: "0 auto", padding: "40px 24px 16px", textAlign: "center" }}>
-        <h1 style={{ fontSize: "clamp(30px, 5vw, 44px)", margin: "0 0 12px" }}>
-          Sources and Related Projects
-        </h1>
-        <p style={{ margin: "0 auto", maxWidth: 720, color: "#5e5e5e", fontSize: 16 }}>
-          OpenPinas builds on a broader ecosystem of academic research, civic tools, and investigative
-          reporting. This page credits that work and links to the sources I consult.
-        </p>
-      </header>
+    <main style={{ maxWidth: 900, margin: "0 auto", padding: "48px 24px 64px" }}>
+      <p style={{ margin: "0 0 16px", fontSize: 11, fontWeight: 600, letterSpacing: "0.1em", textTransform: "uppercase", color: T.accent }}>
+        Open Research
+      </p>
+      <h1 style={{ margin: "0 0 12px", fontSize: "clamp(28px, 4vw, 40px)", fontWeight: 800, letterSpacing: "-0.03em", lineHeight: 1.1 }}>
+        Sources and Related Projects
+      </h1>
+      <p style={{ margin: "0 0 40px", maxWidth: 640, color: T.muted, fontSize: 16, lineHeight: 1.6 }}>
+        OpenPinas builds on a broader ecosystem of academic research, civic tools, and investigative
+        reporting. This page credits that work and links to the sources I consult.
+      </p>
 
-      <main style={{ maxWidth: 900, margin: "0 auto", padding: "0 24px 60px" }}>
+      <div style={{ display: "grid", gap: 24 }}>
         {SECTIONS.map((section) => (
           <section
             key={section.title}
             style={{
-              background: "#ffffff",
-              borderRadius: 16,
+              background: T.surface,
+              border: `1px solid ${T.subtle}`,
               padding: 24,
-              boxShadow: "0 12px 30px rgba(0, 0, 0, 0.08)",
-              margin: "20px 0",
             }}
           >
-            <h2 style={{ margin: "0 0 12px", fontSize: 20, color: "#124559" }}>{section.title}</h2>
-            <p style={{ margin: "0 0 12px", color: "#5e5e5e", fontSize: 14 }}>{section.description}</p>
+            <h2 style={{ margin: "0 0 8px", fontSize: 17, fontWeight: 700, color: T.ink }}>{section.title}</h2>
+            <p style={{ margin: "0 0 16px", color: T.muted, fontSize: 14, lineHeight: 1.6 }}>{section.description}</p>
             <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
               {section.links.map((item) => (
                 <li key={item.href + item.label} style={{ marginBottom: 10, fontSize: 14 }}>
-                  <a href={item.href} target="_blank" rel="noopener noreferrer" style={{ color: "#c44900", textDecoration: "none" }}>
+                  <a href={item.href} target="_blank" rel="noopener noreferrer" style={{ color: T.accent, textDecoration: "underline" }}>
                     {item.label}
                   </a>
-                  {item.suffix ?? null}
+                  {item.suffix ? <span style={{ color: T.muted }}>{item.suffix}</span> : null}
                 </li>
               ))}
             </ul>
           </section>
         ))}
-      </main>
-    </div>
+      </div>
+    </main>
   );
 }
