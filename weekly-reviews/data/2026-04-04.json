@@ -1,0 +1,212 @@
+{
+  "version": 1,
+  "weekEnding": "2026-04-04",
+  "weekLabel": "March 29 – April 4, 2026",
+  "title": "OpenPinas: Weekly News Review",
+  "lastUpdated": "April 4, 2026",
+  "prevWeekEnding": "2026-03-29",
+  "stats": [
+    { "number": "6", "label": "Stories" },
+    { "number": "2", "label": "Executive Orders" },
+    { "number": "3", "label": "Dynasties" },
+    { "number": "Apr 22", "label": "ICC Ruling Date" }
+  ],
+  "exchangeRate": {
+    "title": "PHP:USD Exchange Rate",
+    "currentRate": "₱60.34",
+    "trend": "▼ Peso holding near multi-year lows on oil + Fed pressure",
+    "contextHtml": "<p>The peso remained pinned past ₱60/USD through Holy Week, with the energy emergency declaration adding to downward pressure. BSP is smoothing volatility rather than defending a floor.</p>",
+    "sourceNote": "Source: BSP / Bloomberg"
+  },
+  "weather": {
+    "title": "Metro Manila Weather",
+    "days": [
+      { "dateLabel": "Mar 29", "name": "Sun", "icon": "☀️", "high": "35°", "low": "27°" },
+      { "dateLabel": "Mar 30", "name": "Mon", "icon": "☀️", "high": "36°", "low": "27°" },
+      { "dateLabel": "Mar 31", "name": "Tue", "icon": "⛅", "high": "35°", "low": "27°" },
+      { "dateLabel": "Apr 1",  "name": "Wed", "icon": "☀️", "high": "36°", "low": "28°" },
+      { "dateLabel": "Apr 2",  "name": "Thu", "icon": "☀️", "high": "35°", "low": "28°" },
+      { "dateLabel": "Apr 3",  "name": "Fri", "icon": "⛅", "high": "34°", "low": "27°" },
+      { "dateLabel": "Apr 4",  "name": "Sat", "icon": "☀️", "high": "35°", "low": "27°" }
+    ],
+    "sourceNote": "Source: PAGASA — peak dry season, isolated afternoon convection possible"
+  },
+  "eventSections": [
+    {
+      "title": "Economic",
+      "articles": [
+        {
+          "timeDatetime": "2026-03-30",
+          "timeDisplay": "March 30, 2026",
+          "category": "Economic",
+          "categoryClass": "economic",
+          "borderColor": "#0b6e4f",
+          "headline": "Marcos Declares National Energy Emergency — EO 110, RA 12316, and ₱20B Malampaya Release",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-03-30&search=energy+emergency+EO+110",
+          "descriptionHtml": "<p>President Marcos activated <strong>Executive Order No. 110</strong>, declaring a state of national energy emergency — the Philippines is the first country to do so in the 2026 Middle East conflict. He simultaneously signed <strong>RA 12316</strong>, giving him authority to suspend or reduce fuel excise taxes. The <strong>Department of Budget and Management released ₱20 billion</strong> from the Malampaya gas fund to secure supply, even as the <strong>DOE reported stocks had dropped to 45 days</strong> (from 55-57 at the war's start). On the same day, <strong>Philtranco</strong> — the country's oldest bus operator — ceased operations, citing fuel-driven losses; Speaker Dy ordered joint legislative-executive hearings on the crisis.</p><p>The emergency declaration formalizes what transport workers and households have felt for weeks: this is a sustained structural shock, not a passing price spike, and its management will define Marcos's political standing heading into the rest of 2026.</p>",
+          "diasporaImpact": "OFWs in the Middle East face elevated evacuation risk; families at home face fuel and food inflation with limited government relief beyond one-off cash aid.",
+          "dynastyLinks": [
+            { "label": "Marcos-Romualdez", "href": "/dynasties-network-visualization.html#dynasty-MARCOS_ROMUALDEZ" }
+          ],
+          "sourceLinks": [
+            { "label": "Rappler (live updates)", "href": "https://www.rappler.com/philippines/impact-energy-fuel-prices-transport-economy-ofws-agriculture-trade-middle-east-crisis-2026/" },
+            { "label": "CGTN", "href": "https://news.cgtn.com/news/2026-03-30/Philippines-has-declared-a-national-energy-emergency-amid-fuel-crisis-1LW1XIGqTV6/p.html" },
+            { "label": "Asia Times", "href": "https://asiatimes.com/2026/04/philippine-energy-crisis-exposes-a-reactive-state/" },
+            { "label": "CSMonitor", "href": "https://www.csmonitor.com/World/Asia-Pacific/2026/0331/philippines-national-energy-emergency-oil-price" },
+            { "label": "ING Think", "href": "https://think.ing.com/articles/oil-price-shock-raises-inflation-and-policy-risks-in-philippines/" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "International Relations",
+      "articles": [
+        {
+          "timeDatetime": "2026-03-31",
+          "timeDisplay": "March 31 – April 2, 2026",
+          "category": "International Relations",
+          "categoryClass": "international",
+          "borderColor": "#0d7377",
+          "headline": "Marcos Renames 131 WPS Features — China Threatens 'Strong Measures'",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-03-31&search=Kalayaan+EO+111+renaming",
+          "descriptionHtml": "<p>President Marcos signed <strong>Executive Order No. 111</strong> (dated March 26, published March 31), requiring all government agencies to use Philippine names for <strong>131 features of the Kalayaan Island Group</strong> — including reefs and shoals not currently under Philippine control. China's Foreign Ministry condemned the order as a sovereignty violation; by April 2, Beijing's embassy was urging Manila to <strong>'cease provocations'</strong> and warning of <strong>'strong measures.'</strong> The Philippines' National Maritime Council matched the tone on April 2, calling on China to withdraw ships and stop <strong>'illegal, provocative and dangerous actions'</strong> following near-weekly harassment incidents through March.</p><p>EO 111 is the Marcos administration's most assertive territorial branding move in the WPS to date — and it landed the week after the fire-control radar incident on the <em>Miguel Malvar</em>, marking a deliberate escalation of the symbolic and diplomatic contest with Beijing.</p>",
+          "dynastyLinks": [
+            { "label": "Marcos-Romualdez", "href": "/dynasties-network-visualization.html#dynasty-MARCOS_ROMUALDEZ" }
+          ],
+          "sourceLinks": [
+            { "label": "Rappler (EO 111)", "href": "https://www.rappler.com/newsbreak/explainers/marcos-executive-order-philippine-names-features-west-sea/" },
+            { "label": "Philstar (renaming)", "href": "https://www.philstar.com/headlines/2026/04/01/2518338/philippines-rename-over-100-kalayaan-island-group-features" },
+            { "label": "Manila Bulletin (China warning)", "href": "https://mb.com.ph/2026/04/05/china-urges-ph-to-cease-provocations-warns-of-strong-measures-in-west-ph-sea" },
+            { "label": "Rappler (PH withdrawal demand)", "href": "https://www.rappler.com/philippines/china-withdraw-ships-stop-illegal-dangerous-actions-west-sea/" },
+            { "label": "The Diplomat", "href": "https://thediplomat.com/2026/04/china-the-philippines-and-the-real-lesson-of-second-thomas-shoal/" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Legal",
+      "articles": [
+        {
+          "timeDatetime": "2026-04-03",
+          "timeDisplay": "April 3, 2026",
+          "category": "Legal",
+          "categoryClass": "legal",
+          "borderColor": "#1e3a5f",
+          "headline": "ICC Sets April 22 for Duterte Jurisdiction Ruling — Trial Window Opens If Upheld",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-04-03&search=ICC+Duterte+jurisdiction+April+22",
+          "descriptionHtml": "<p>The ICC's Appeals Chamber announced it will deliver its ruling on former President Rodrigo Duterte's jurisdiction challenge on <strong>April 22, 2026</strong>, in open court. Duterte argues that the Philippines' ICC withdrawal (effective March 2019) strips the court of authority; the court maintains it retains jurisdiction over crimes committed while the country was still a Rome Statute member. The Pre-Trial Chamber had rejected his challenge in October 2025, and his detention appeal was dismissed in March 2026 — leaving him in The Hague. If the Appeals Chamber upholds jurisdiction, prosecutors say <strong>trial could begin toward end of 2026</strong>, covering the drug war killings suspected as crimes against humanity.</p><p>April 22 is the single most consequential pending date in Philippine legal history — the outcome will determine whether Duterte faces a full international trial, reshaping accountability politics domestically and abroad.</p>",
+          "diasporaImpact": "Filipino communities abroad have championed ICC accountability since the drug war; the April 22 ruling will either validate that pursuit or force a reckoning with the limits of international law.",
+          "dynastyLinks": [
+            { "label": "Duterte", "href": "/dynasties-network-visualization.html#dynasty-DUTERTE_FAMILY" }
+          ],
+          "sourceLinks": [
+            { "label": "Rappler", "href": "https://www.rappler.com/philippines/icc-ruling-proceed-duterte-trial-april-2026/" },
+            { "label": "Manila Times", "href": "https://www.manilatimes.net/2026/04/03/news/icc-to-deliver-ruling-on-duterte-jurisdiction-appeal-on-april-22/2313866" },
+            { "label": "Inquirer", "href": "https://globalnation.inquirer.net/316705/jurisdiction-of-icc-on-duterte-to-be-determined-on-april-22" },
+            { "label": "Manila Bulletin", "href": "https://mb.com.ph/2026/04/03/icc-to-announce-decision-on-fprrds-challenge-vs-jurisdiction-on-april-22" },
+            { "label": "Philstar", "href": "https://www.philstar.com/headlines/2026/04/04/2518632/icc-rule-ex-president-dutertes-jurisdiction-challenge-april-22" },
+            { "label": "HRW", "href": "https://www.hrw.org/news/2026/03/10/dutertes-drug-war-faces-judgement-at-the-icc" }
+          ]
+        },
+        {
+          "timeDatetime": "2026-04-01",
+          "timeDisplay": "March 29 – April 2, 2026",
+          "category": "Legal",
+          "categoryClass": "legal",
+          "borderColor": "#1e3a5f",
+          "headline": "VP Sara Duterte: Third Impeachment Complaint Filed, Probable Cause Hearings Set for April",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-04-01&search=Sara+Duterte+impeachment+probable+cause",
+          "descriptionHtml": "<p>A <strong>third impeachment complaint</strong> against Vice President Sara Duterte was filed this week, joining two already found sufficient in form and substance by the House Committee on Justice. The committee scheduled <strong>probable cause hearings for April 14, 22, and 29</strong>, with the panel expected to elevate the case to the House plenary by end of April. Her lawyers were reportedly not consulted on a related Supreme Court petition. A survey released April 1 showed her <strong>public disapproval rising</strong> as impeachment and her father's ICC situation compound political damage.</p><p>The accelerating House timeline now means Sara faces a potential plenary impeachment vote around the same weeks her father awaits the ICC jurisdiction ruling — a convergence that could reshape the Duterte political brand in a matter of days.</p>",
+          "dynastyLinks": [
+            { "label": "Duterte", "href": "/dynasties-network-visualization.html#dynasty-DUTERTE_FAMILY" },
+            { "label": "Marcos-Romualdez", "href": "/dynasties-network-visualization.html#dynasty-MARCOS_ROMUALDEZ" }
+          ],
+          "sourceLinks": [
+            { "label": "Inquirer (probable cause timeline)", "href": "https://newsinfo.inquirer.net/2205463/probable-cause-stage-of-duterte-impeachment-hearings-may-end-in-april" },
+            { "label": "PNA (sufficient in grounds)", "href": "https://www.pna.gov.ph/articles/1271313" },
+            { "label": "Philstar (VP lawyers)", "href": "https://www.philstar.com/pang-masa/pang-masa/police-metro/2026/04/02/2518504/vp-lawyers-not-consulted-sc-impeach-petition" },
+            { "label": "Politiko (disapproval survey)", "href": "https://politiko.com.ph/2026/04/01/nai-issue-si-inday-public-disapproval-of-sara-duterte-climbs-over-impeachment-icc-woes/daily-feed/" },
+            { "label": "Manila Bulletin (2028 implications)", "href": "https://mb.com.ph/2026/04/05/could-you-imagine-in-2028-chua-shares-apprehensions-on-a-sara-duterte-presidency-amid-impeachment-allegations" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Political",
+      "articles": [
+        {
+          "timeDatetime": "2026-03-30",
+          "timeDisplay": "March 30, 2026",
+          "category": "Political",
+          "categoryClass": "political",
+          "borderColor": "#3a0ca3",
+          "headline": "Bangsamoro Parliament Elections Reset to September 2026 via RA 12317",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-03-30&search=Bangsamoro+elections+RA+12317",
+          "descriptionHtml": "<p>President Marcos signed <strong>Republic Act No. 12317</strong>, resetting the first regular elections for the Bangsamoro Autonomous Region in Muslim Mindanao (BARMM) parliament to the <strong>second Monday of September 2026</strong>, with elected officials serving October 30, 2026 through June 30, 2031. Future Bangsamoro elections are synchronized with national elections every three years starting 2031. The reset follows MILF-MNLF clashes in Cotabato in early March that killed five and displaced over 20,000 residents — a reminder of ongoing security fault lines in the region even as the peace process advances institutionally.</p>",
+          "dynastyLinks": [
+            { "label": "Marcos-Romualdez", "href": "/dynasties-network-visualization.html#dynasty-MARCOS_ROMUALDEZ" }
+          ],
+          "sourceLinks": [
+            { "label": "PNA", "href": "https://www.pna.gov.ph/" },
+            { "label": "Wikipedia (2026 Philippines)", "href": "https://en.wikipedia.org/wiki/2026_in_the_Philippines" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Cultural",
+      "articles": [
+        {
+          "timeDatetime": "2026-04-02",
+          "timeDisplay": "March 29 – April 5, 2026",
+          "category": "Cultural",
+          "categoryClass": "cultural",
+          "borderColor": "#b23a48",
+          "headline": "Holy Week 2026: Record 1.35M Airport Passengers Despite the Fuel Crisis",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-04-02&search=Holy+Week+2026+travel",
+          "descriptionHtml": "<p>Holy Week 2026 runs Palm Sunday (March 29) through Easter Sunday (April 5), with the Paschal Triduum from Maundy Thursday (April 2) through Easter. Airport operators projected <strong>over 1.35 million passengers</strong> between March 28 and April 5 — a record, slightly above 2025 highs — despite airfares elevated by the energy crisis. Metro Manila churches released full Triduum schedules; pastoral letters this year specifically linked Lenten reflection to the cost-of-living emergency, calling for <strong>'digital fasting'</strong> and solidarity with transport workers bearing the brunt of fuel price shocks.</p>",
+          "diasporaImpact": "Record balikbayan travel during Holy Week despite higher airfares reflects how central family reunions remain even under economic stress.",
+          "dynastyLinks": [],
+          "sourceLinks": [
+            { "label": "GMA News (restaurant guide)", "href": "https://www.gmanetwork.com/news/lifestyle/food/980326/holy-week-2026-metro-manila-restaurants-open-on-maundy-thursday-to-easter-sunday/story/" },
+            { "label": "Tribune (mass schedules)", "href": "https://tribune.net.ph/2026/03/31/list-holy-week-2026-mass-schedules-and-activities-across-metro-churches" },
+            { "label": "The Traveler (travel surge)", "href": "https://www.thetraveler.org/philippines-easter-2026-travel-surges-despite-rising-costs/" }
+          ]
+        }
+      ]
+    }
+  ],
+  "ofwSection": {
+    "title": "OFW & Diaspora",
+    "stories": [
+      {
+        "title": "Middle East OFWs: Energy Emergency Heightens Evacuation Watch",
+        "bodyHtml": "<p>With the Philippines now under a formal energy emergency tied to the Middle East conflict, the <strong>OWWA and DFA are on heightened alert</strong> for OFW repatriation needs. The 317 OFWs evacuated in mid-March were a first wave; agencies are monitoring conditions in Iran, Israel, and Gulf states. Families of OFWs in the region are urged to maintain contact and register with the nearest Philippine Embassy or Consulate.</p>"
+      },
+      {
+        "title": "Holy Week Balikbayan Surge Meets Higher Airfares",
+        "bodyHtml": "<p>Despite fuel-driven fare increases, OFW homecoming demand drove airport passenger projections to a record 1.35M for the Holy Week window. NAIA and Clark International processed elevated volumes; balikbayan box shipments also rose as families sent goods ahead of the break.</p>"
+      }
+    ]
+  },
+  "dynastyHighlights": {
+    "title": "Dynasty Watch",
+    "items": [
+      {
+        "title": "Marcos-Romualdez",
+        "titleHref": "/dynasties-network-visualization.html#dynasty-MARCOS_ROMUALDEZ",
+        "bodyHtml": "<p>BBM signed three major executive and legislative acts this week — EO 110 (energy emergency), EO 111 (WPS renaming), and RA 12317 (Bangsamoro elections). The cluster of actions signals an attempt to project governance momentum amid the energy crisis and rising political costs.</p>",
+        "bullets": []
+      },
+      {
+        "title": "Duterte",
+        "titleHref": "/dynasties-network-visualization.html#dynasty-DUTERTE_FAMILY",
+        "bodyHtml": "<p>The Duterte family faces a two-front legal reckoning: Rodrigo awaits the April 22 ICC jurisdiction ruling from The Hague while Sara's impeachment probable cause hearings accelerate in Manila. Both tracks converge in the last two weeks of April.</p>",
+        "bullets": [
+          { "text": "ICC jurisdiction ruling: April 22", "href": "https://www.rappler.com/philippines/icc-ruling-proceed-duterte-trial-april-2026/" },
+          { "text": "Sara impeachment hearings: April 14, 22, 29", "href": "https://newsinfo.inquirer.net/2205463/probable-cause-stage-of-duterte-impeachment-hearings-may-end-in-april" }
+        ]
+      }
+    ]
+  }
+}

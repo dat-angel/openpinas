@@ -15,6 +15,7 @@ import {
   prepareSrcDoc,
   readLegacyHtml,
 } from "@/app/lib/legacy";
+import { readWeeklyManifest } from "@/app/lib/weekly-reviews";
 
 const ROOT = process.cwd();
 
@@ -22,9 +23,19 @@ export const dynamic = "force-static";
 
 export async function generateStaticParams() {
   const files = await collectHtmlFiles(ROOT);
-  return files
+  const htmlSlugs = files
     .filter((f) => f !== "index.html")
-    .map((f) => ({ slug: f.split("/") }));
+    .map((f) => f.split("/"));
+
+  // Also generate routes for JSON-only weekly reviews (no matching HTML file needed)
+  const manifest = readWeeklyManifest();
+  const existingWeeklyFiles = new Set(files);
+  const manifestSlugs = manifest
+    .map((r) => `weekly-reviews/weekly-review-${r.weekEnding}.html`)
+    .filter((f) => !existingWeeklyFiles.has(f))
+    .map((f) => f.split("/"));
+
+  return [...htmlSlugs, ...manifestSlugs];
 }
 
 export default async function LegacyPage({ params }) {

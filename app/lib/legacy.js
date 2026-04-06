@@ -107,6 +107,7 @@ export const KNOWN_HTML_PATHS = [
   'weekly-reviews/weekly-review-2026-03-07.html',
   'weekly-reviews/weekly-review-2026-03-14.html',
   'weekly-reviews/weekly-review-2026-03-21.html',
+  'weekly-reviews/weekly-review-2026-03-29.html',
   'weekly-reviews/weekly-review-template.html',
   'when-to-go-manila.html'
 ];
