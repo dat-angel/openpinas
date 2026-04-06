@@ -1,0 +1,26 @@
+/* Injected into all iframe-served legacy pages via prepareSrcDoc.
+   Fixes nav overflow on small screens without touching page HTML. */
+
+/* .nav-links — used in dynasty detail, weekly review HTML pages */
+@media (max-width: 639px) {
+  .nav-links {
+    gap: 6px 10px;
+    padding: 8px 12px;
+  }
+  .nav-links a {
+    font-size: 12px;
+    padding: 4px 8px;
+  }
+}
+
+/* .header-nav — used in corruption tracker case pages (inline text, no flex) */
+.header-nav {
+  overflow-x: auto;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+}
+@media (max-width: 639px) {
+  .header-nav {
+    font-size: 12px;
+  }
+}

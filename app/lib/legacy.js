@@ -44,14 +44,18 @@ export function computeBaseHref(filePath) {
 export function prepareSrcDoc(rawHtml, baseHref) {
   const baseTag = `<base href="${baseHref}" target="_top" />`;
   const analyticsTag = '<script defer src="/_vercel/insights/script.js"></script>';
+  const mobileFixTag = '<link rel="stylesheet" href="/legacy-mobile-fix.css" />';
   if (rawHtml.includes('<head>')) {
     let out = rawHtml.replace('<head>', `<head>\n    ${baseTag}`, 1);
     if (!out.includes('/_vercel/insights/script.js')) {
       out = out.replace('<head>', `<head>\n    ${analyticsTag}`, 1);
     }
+    if (!out.includes('legacy-mobile-fix.css')) {
+      out = out.replace('</head>', `  ${mobileFixTag}\n  </head>`);
+    }
     return out;
   }
-  return `${baseTag}\n${analyticsTag}\n${rawHtml}`;
+  return `${baseTag}\n${analyticsTag}\n${mobileFixTag}\n${rawHtml}`;
 }
 
 export async function readLegacyHtml(rootDir, relPath) {
