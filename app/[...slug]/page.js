@@ -8,6 +8,8 @@ import SourcesRelatedProjectsPage from "@/app/native/sources-related-projects-pa
 import WeeklyReviewPage from "@/app/native/weekly-review-page";
 import WeeklyReviewsIndexPage from "@/app/native/weekly-reviews-index-page";
 import WhenToGoManilaPage from "@/app/native/when-to-go-manila-page";
+import fs from "node:fs";
+import path from "node:path";
 import {
   collectHtmlFiles,
   fileFromSlug,
@@ -15,7 +17,6 @@ import {
   prepareSrcDoc,
   readLegacyHtml,
 } from "@/app/lib/legacy";
-import { readWeeklyManifest } from "@/app/lib/weekly-reviews";
 
 const ROOT = process.cwd();
 
@@ -25,17 +26,23 @@ export async function generateStaticParams() {
   const files = await collectHtmlFiles(ROOT);
   const htmlSlugs = files
     .filter((f) => f !== "index.html")
-    .map((f) => f.split("/"));
+    .map((f) => ({ slug: f.split("/") }));
 
   // Also generate routes for JSON-only weekly reviews (no matching HTML file needed)
-  const manifest = readWeeklyManifest();
   const existingWeeklyFiles = new Set(files);
-  const manifestSlugs = manifest
-    .map((r) => `weekly-reviews/weekly-review-${r.weekEnding}.html`)
-    .filter((f) => !existingWeeklyFiles.has(f))
-    .map((f) => f.split("/"));
-
-  return [...htmlSlugs, ...manifestSlugs];
+  try {
+    const raw = fs.readFileSync(
+      path.join(ROOT, "weekly-reviews", "data", "manifest.json"),
+      "utf8"
+    );
+    const manifestSlugs = (JSON.parse(raw).reviews ?? [])
+      .map((r) => `weekly-reviews/weekly-review-${r.weekEnding}.html`)
+      .filter((f) => !existingWeeklyFiles.has(f))
+      .map((f) => ({ slug: f.split("/") }));
+    return [...htmlSlugs, ...manifestSlugs];
+  } catch {
+    return htmlSlugs;
+  }
 }
 
 export default async function LegacyPage({ params }) {
