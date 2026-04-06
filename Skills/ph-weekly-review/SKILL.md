@@ -38,9 +38,13 @@ Do not proceed until week scope is confirmed.
 ## Data Sources
 
 Use:
-- `philippines-2026-timeline.json` (events source)
+- `philippines-2026-timeline.json` (events source — covers full year; `ph-news-refresher` adds events weekly)
 - `philippine-political-dynasties-network-2025.json` (dynasty IDs/names)
-- Existing weekly data in `weekly-reviews/data/*.json` (style consistency)
+- Existing weekly data in `weekly-reviews/data/*.json` (style/density consistency)
+
+### Timeline field translation
+
+Timeline events have their own `significance` and `diaspora_impact` fields. **Do not copy these directly into article fields.** Instead, synthesize them into `descriptionHtml` — use them as research notes to write a tighter description, not as pass-through content.
 
 ---
 
@@ -93,17 +97,50 @@ Recommended keys (if available):
 - `ofwSection`
 - `dynastyHighlights`
 
+Each article in `eventSections[].articles[]` should have:
+- `timeDatetime`, `timeDisplay`, `category`, `categoryClass`, `borderColor`
+- `headline` + `headlineHref`
+- `descriptionHtml` — synthesis of all grouped events; significance baked into final sentence
+- `sourceLinks[]` — all sources for this grouped story (often 3–6 links)
+- `dynastyLinks[]` — optional
+- `diasporaImpact` — optional, one sentence only
+
+Do **not** include a `significance` field. Fold it into `descriptionHtml`.
+
 Keep link fields as route-safe href values used by the React page.
 
 ---
 
 ## Content Guidelines
 
-- Include all significant events for the week found in timeline source.
-- Prioritize diaspora-relevant implications.
-- Keep descriptions concise and factual.
+### Story count and grouping (most important)
+
+Target **5–8 articles total per review**, spread across categories. Quality over quantity.
+
+**Group related events under one headline.** If two or more timeline events share an underlying theme, they become one article — not separate ones. Put all their source links in `sourceLinks`. Example: "fuel prices," "peso weakness," "DSWD transport relief," and "toll discounts" are all one story: *Cost-of-living pressure on transport workers*. Four sources, one article.
+
+Ask yourself: *"Is this a new story or more detail on a story already in this review?"* If the latter, add a source link to the existing article.
+
+### Writing each article
+
+- **Headline**: Frame the week's development, not just the event. What shifted?
+- **descriptionHtml**: 2–4 sentences. Cover the key facts. Make the significance clear in the final sentence — do not use a separate `significance` field.
+- **diasporaImpact**: Optional. One sentence maximum. Only include if the OFW/remittance angle is genuinely distinct from the main description. Omit if it would just restate what's already in the description.
+- **sourceLinks**: List every article you drew from for this story. Multiple sources per article is the norm, not the exception.
 - Keep dynasty references accurate; do not invent dynasty IDs.
-- Keep source links explicit and verifiable.
+
+### Calibration example
+
+**Wrong (fragmented):**
+- Article 1: "DSWD Rolls Out ₱5,000 Cash Aid to Transport Workers" + 1 source
+- Article 2: "Peso Weakness Persists Past ₱60" + 2 sources
+- Article 3: "Fuel Volatility, Toll Discounts for PUVs" + 3 sources
+- Article 4: "Pump-Price Math Remains Brutal for Households" + 1 source
+
+**Right (grouped):**
+- Article 1: "Fuel Shock Drives Peso to ₱60+, Emergency Aid, and PUV Toll Relief" + all 7 sources
+  - Description: Crude above $100/bbl drove the peso past ₱60.34 — among Asia's worst March performers — as the BSP prioritized smoothing over defense. The Marcos administration responded with staggered ₱5,000 AICS payouts to 34,000+ Metro Manila transport workers and expressway toll discounts for PUVs starting March 23; lawmakers added pressure with fuel-tax suspension bills. The emergency responses signal how much electoral-cycle politics now tracks cost-of-living stress.
+  - diasporaImpact: Remittances convert better on paper but import-cost inflation and logistics price pressure eat into real household budgets.
 
 ---
 

@@ -75,8 +75,11 @@ export default function WeeklyReviewPage({ weekEnding }) {
                 <a href={article.headlineHref} style={{ color: T.ink, textDecoration: "none" }}>{article.headline}</a>
               </h3>
               <HtmlBlock html={article.descriptionHtml} />
-              {article.significance ? <p style={{ color: T.muted, fontSize: 14 }}><strong style={{ color: T.ink }}>Significance:</strong> {article.significance}</p> : null}
-              {article.diasporaImpact ? <p style={{ color: T.muted, fontSize: 14 }}><strong style={{ color: T.ink }}>Diaspora Impact:</strong> {article.diasporaImpact}</p> : null}
+              {article.diasporaImpact ? (
+                <p style={{ color: T.muted, fontSize: 13, borderLeft: `2px solid ${T.subtle}`, paddingLeft: 10, margin: "8px 0" }}>
+                  {article.diasporaImpact}
+                </p>
+              ) : null}
               {article.sourceLinks?.length ? (
                 <p style={{ marginBottom: 0, fontSize: 13, color: T.muted }}>
                   <strong style={{ color: T.ink }}>Sources:</strong>{" "}

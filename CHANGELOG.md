@@ -17,6 +17,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Security policy
 
 ### Changed
+- **Site migrated from static HTML to Next.js (React).** Core pages (home, dynasties index, corruption tracker, weekly reviews) are now React components in `app/`. Visualization pages (network map, timeline, charts) remain as static HTML assets served through the `[...slug]` catch-all route while being ported.
+- **Canonical URL changed to `openpinas.dev`** (previously GitHub Pages at `dat-angel.github.io/openpinas`). All existing URL paths are preserved — no broken links.
+- GitHub Pages mirror remains live as a legacy redirect target.
 - Enhanced README with better contribution links
 - Improved project documentation structure
 

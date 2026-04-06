@@ -28,7 +28,7 @@ If applicable, add screenshots to help explain your problem.
 - **Browser**: [e.g. Chrome 120, Firefox 121, Safari 17]
 - **OS**: [e.g. macOS, Windows, Linux]
 - **Device**: [e.g. Desktop, Mobile, Tablet]
-- **URL**: [e.g. https://dat-angel.github.io/openpinas/dynasties-network-visualization.html]
+- **URL**: [e.g. https://openpinas.dev/dynasties-network-visualization.html]
 
 ## Console Errors
 If there are any errors in the browser console, please paste them here:

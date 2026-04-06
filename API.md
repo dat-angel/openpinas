@@ -1,40 +1,46 @@
 # OpenPinas API Documentation
 
-> **Note:** Currently, OpenPinas serves data as static JSON files. This document describes the current data structure and future API plans.
+> **Note:** OpenPinas serves data as static JSON files. This document describes the current data structure and future API plans.
 
-## Base URL for fetches
+## Base URLs
 
-Use your **Vercel production URL** as the primary base once the project is deployed ([DEPLOYMENT.md](./DEPLOYMENT.md)). Until then, **GitHub Pages** works as a public mirror. Examples below use the GitHub Pages host; substitute your Vercel domain when available.
+| Purpose | URL |
+|---|---|
+| **Visit the site** | `https://openpinas.dev` |
+| **Fetch data (stable CDN)** | `https://dat-angel.github.io/openpinas/<file>.json` |
+| **Fetch data (always latest)** | `https://raw.githubusercontent.com/dat-angel/openpinas/main/<file>.json` |
+
+Use the **GitHub Pages URL** (`dat-angel.github.io/openpinas`) when fetching JSON in scripts, notebooks, or apps — it's served from GitHub's CDN, doesn't depend on the Vercel deployment, and works even if the site is being redeployed.
+
+Use the **raw GitHub URL** when you need the very latest data (e.g. in CI or data pipelines that run after a push to `main`).
+
+`openpinas.dev` also serves the JSON files, but prefer the above two for data access.
 
 ## Current Data Access
 
 All data is available as JSON files in the repository:
 
-- `philippine-political-dynasties-network-2025.json` - Dynasty network data
-- `philippines-2025-timeline.json` - Timeline events
-- `pogo-corruption-cases-2025.json` - Corruption cases
-- `regional-data.json` - Regional statistics
+- `philippine-political-dynasties-network-2025.json` — Dynasty network data
+- `philippines-2025-timeline.json` — Timeline events
+- `pogo-corruption-cases-2025.json` — Corruption cases
+- `regional-data.json` — Regional statistics
 
 ### Accessing Data
 
-**Via GitHub:**
+**Via GitHub Pages (recommended for scripts and apps):**
+```
+https://dat-angel.github.io/openpinas/philippine-political-dynasties-network-2025.json
+```
+
+**Via GitHub raw (always latest, good for CI/pipelines):**
 ```
 https://raw.githubusercontent.com/dat-angel/openpinas/main/philippine-political-dynasties-network-2025.json
 ```
 
-**Via static host (GitHub Pages mirror or Vercel production):**
-```
-https://dat-angel.github.io/openpinas/philippine-political-dynasties-network-2025.json
-```
-Replace the origin with your Vercel deployment URL when using Vercel as canonical.
-
-**Local Development:**
+**Local:**
 ```bash
-# Clone the repository
 git clone https://github.com/dat-angel/openpinas.git
 cd openpinas
-
-# Access JSON files directly
 cat philippine-political-dynasties-network-2025.json
 ```
 
@@ -160,7 +166,6 @@ fetch('https://dat-angel.github.io/openpinas/philippines-2025-timeline.json')
 import json
 import urllib.request
 
-# Fetch dynasty data
 url = 'https://dat-angel.github.io/openpinas/philippine-political-dynasties-network-2025.json'
 with urllib.request.urlopen(url) as response:
     data = json.loads(response.read())
@@ -172,7 +177,6 @@ with urllib.request.urlopen(url) as response:
 
 ```javascript
 const https = require('https');
-const fs = require('fs');
 
 https.get('https://dat-angel.github.io/openpinas/philippine-political-dynasties-network-2025.json', (res) => {
   let data = '';
@@ -221,4 +225,3 @@ Currently, there are no rate limits. However, please be respectful:
 ## Contributing
 
 Want to improve the API or data structure? See [CONTRIBUTING.md](CONTRIBUTING.md).
-
