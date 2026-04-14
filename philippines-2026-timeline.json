@@ -4,9 +4,9 @@
   "prepared_for": "Filipino Diaspora Communities Worldwide",
   "metadata": {
     "purpose": "Comprehensive timeline of major Philippine events in 2026 to help overseas Filipinos understand developments affecting families, remittances, investments, and homeland governance",
-    "last_updated": "April 4, 2026",
+    "last_updated": "April 12, 2026",
     "aggregation_note": "This timeline is aggregated by month as events unfold. Weekly reviews provide more detailed coverage.",
-    "total_events": 118,
+    "total_events": 123,
     "categories": [
       "Political",
       "Cultural",
@@ -2380,6 +2380,112 @@
           "https://www.philstar.com/headlines/2026/04/04/2518632/icc-rule-ex-president-dutertes-jurisdiction-challenge-april-22"
         ]
       }
+    },
+    {
+      "date": "2026-04-05",
+      "month": "April",
+      "title": "Holy Week Closes With Record Travel Volume and Heavy Road-Safety Strain",
+      "category": "Cultural",
+      "description": "As Holy Week 2026 moved into Easter Sunday, the Philippines' real national systems story was movement under stress. NAIA projected more than 1.35 million passengers between March 28 and April 5 while CAAP kept airports on heightened alert, and port authorities monitored more than 374,000 passengers on Maundy Thursday alone. At the same time, the Department of Health logged 1,091 road-crash accidents from Palm Sunday through Maundy Thursday, while the Philippine Red Cross said it had treated more than 7,000 patients during the observance. The week ended with immigration authorities also warning travelers about fake eTravel websites trying to charge for a free government process.",
+      "significance": "Holy Week exposed how quickly routine travel, emergency response, and public-service systems can come under pressure when a major religious migration wave overlaps with a fuel and cost-of-living shock.",
+      "diaspora_impact": "Balikbayan families and overseas Filipinos coordinating trips faced higher fares, crowded terminals, road-safety risks, and scam warnings at the same time.",
+      "mentioned_dynasties": [],
+      "sources": {
+        "international": [],
+        "local": [
+          "https://www.gmanetwork.com/news/topstories/nation/981722/over-1-35m-passengers-to-pass-through-naia-for-holy-week-travel-nnic/story/",
+          "https://www.gmanetwork.com/news/topstories/nation/981890/caap-places-airports-on-heightened-alert-for-holy-week/story/",
+          "https://www.gmanetwork.com/news/topstories/nation/982447/over-374k-passengers-monitored-in-ports-on-maundy-thursday/story/",
+          "https://www.gmanetwork.com/news/topstories/nation/982624/doh-logs-1-091-road-crash-accidents-on-holy-week-2026/story/",
+          "https://www.gmanetwork.com/news/topstories/nation/982567/phil-red-cross-says-it-treated-over-7k-patients-during-holy-week-2026/story/",
+          "https://www.philstar.com/headlines/2026/04/01/2518364/immigration-personnel-full-force-during-holy-week"
+        ]
+      },
+      "weekly_review": "weekly-reviews/weekly-review-2026-04-12.html"
+    },
+    {
+      "date": "2026-04-07",
+      "month": "April",
+      "title": "March Inflation Quickens to 4.1% as Transport Costs Jump 9.9%",
+      "category": "Economic",
+      "description": "Philippine inflation accelerated to 4.1% in March, moving above the Bangko Sentral ng Pilipinas target range as the Middle East fuel shock translated into household economics. The sharpest detail was transport inflation at 9.9% year over year, confirming that the oil crisis had moved beyond headlines into fares, logistics, and daily budgets. Coverage in Reuters, Philstar, ABS-CBN, and other outlets framed the print as the highest in about 20 months and a sign that any diplomatic easing abroad would arrive too late to spare families from the domestic aftershock.",
+      "significance": "The inflation print turned a geopolitical energy shock into a measurable domestic political problem, tightening pressure on the administration to show both supply control and real consumer relief.",
+      "diaspora_impact": "Remitters may be sending into a weaker cost environment: more pesos on paper, but less real relief once transport and food inflation hit household budgets.",
+      "mentioned_dynasties": [],
+      "sources": {
+        "international": [],
+        "local": [
+          "https://interaksyon.philstar.com/business/2026/04/07/311617/philippine-annual-inflation-quickens-to-4-1-in-march/",
+          "https://www.philstar.com/business/2026/04/07/2519278/oil-crisis-pushes-philippine-inflation-41-transport-costs-surge/amp/",
+          "https://www.abs-cbn.com/news/business/2026/4/7/inflation-quickens-to-4-1-percent-in-march-0905",
+          "https://www.philstar.com/business/2026/04/08/2519336/middle-east-war-pushes-inflation-highest-20-months/amp/"
+        ]
+      },
+      "weekly_review": "weekly-reviews/weekly-review-2026-04-12.html"
+    },
+    {
+      "date": "2026-04-07",
+      "month": "April",
+      "title": "April 7 Pump Hikes Push Diesel Near ₱148.60 and Gasoline Past ₱100",
+      "category": "Economic",
+      "description": "Fuel retailers raised gasoline prices by P5.90 per liter, diesel by P19.80, and kerosene by P9.10 on April 7, extending the Philippines' most punishing stretch of 2026 fuel volatility. By the time daily price trackers stabilized, diesel was nearing P148.60 per liter at some Metro Manila benchmarks, gasoline was around P100.20, and kerosene remained above P164. The hikes made the crisis legible in the most ordinary way possible: on pump boards, transport fares, and delivery costs, well before any larger rollback could be credibly promised.",
+      "significance": "This was the week when the cost of the Middle East shock became unavoidable at street level, turning fuel into the clearest pressure signal for commuters, transport operators, and policymakers alike.",
+      "diaspora_impact": "Families abroad helping with groceries, transport, or provincial travel were effectively subsidizing a price environment that had become visibly abnormal.",
+      "mentioned_dynasties": [],
+      "sources": {
+        "international": [],
+        "local": [
+          "https://www.gmanetwork.com/news/money/companies/982756/list-pump-price-hikes-on-tuesday-april-7-2026/story/",
+          "https://www.philstar.com/headlines/2026/04/07/2519108/price-tracker-oil-fuel-monitor-apr-7",
+          "https://www.philstar.com/headlines/2026/04/08/2519433/price-tracker-oil-fuel-monitor-apr-8/amp/",
+          "https://www.philstar.com/headlines/2026/04/09/2519744/price-tracker-oil-fuel-monitor-apr-9/amp/",
+          "https://www.philstar.com/videos/2026/04/10/2519987/price-tracker-oil-fuel-monitor-apr-10"
+        ]
+      },
+      "weekly_review": "weekly-reviews/weekly-review-2026-04-12.html"
+    },
+    {
+      "date": "2026-04-08",
+      "month": "April",
+      "title": "Marcos Uses Ceasefire Window to Build Fuel Buffers as DOE Holds 50-Day Supply Line",
+      "category": "Economic",
+      "description": "As global ceasefire hopes briefly softened the war narrative, President Marcos said the Philippines would use the two-week window to build petroleum reserves rather than assume the crisis was over. The Department of Energy said the country had roughly 50.42 days of fuel supply on hand, with a 300,000-barrel diesel shipment from Malaysia expected on April 10 and 165.7 million liters secured for April demand. The operating tone remained one of endurance, replenishment, and continuity planning rather than confidence that pump prices would quickly normalize.",
+      "significance": "The administration's response showed that Manila was treating the truce as a logistics opportunity, not a policy off-ramp, which made fuel security a direct test of executive competence.",
+      "diaspora_impact": "For overseas Filipinos watching both Middle East risk and home-country inflation, the message was clear: the state still expected instability and was building buffers accordingly.",
+      "mentioned_dynasties": [
+        "MARCOS_ROMUALDEZ"
+      ],
+      "sources": {
+        "international": [],
+        "local": [
+          "https://www.philstar.com/headlines/2026/04/08/2519577/marcos-ph-take-advantage-2-week-ceasefire-fuel-relief-uncertain/amp/",
+          "https://www.philstar.com/headlines/2026/04/08/2519426/doe-fuel-supply-enough-50-days",
+          "https://www.gmanetwork.com/news/topstories/nation/982938/doe-ph-fuel-supply-good-up-to-50-days/story/",
+          "https://pia.gov.ph/news/doe-ensures-supply-stability-with-165-7-million-liters-of-diesel-for-april-demand/",
+          "https://www.onenews.ph/doe-eyes-fuel-purchase-limits"
+        ]
+      },
+      "weekly_review": "weekly-reviews/weekly-review-2026-04-12.html"
+    },
+    {
+      "date": "2026-04-12",
+      "month": "April",
+      "title": "DOE Signals First Major Fuel Rollback for April 14-20 After Weeks of Extreme Prices",
+      "category": "Economic",
+      "description": "By April 11 and 12, the first genuinely meaningful relief signal of the month finally appeared. Manila Bulletin and GMA reported that diesel was on track for the first double-digit rollback of the year, and by Sunday the Department of Energy was projecting cuts of P20.89 per liter for diesel, P4.43 for gasoline, and P8.50 for kerosene for April 14 through 20. The better headline arrived only after households had already lived through weeks of severe pump pain, which is why much of the coverage emphasized that relief was coming from a punishing baseline rather than from anything close to normal.",
+      "significance": "The projected rollback marked a narrative shift from pure shock management to cautious decompression, but it also underscored how much damage had already been absorbed before relief became visible.",
+      "diaspora_impact": "Remittance-dependent households may finally get modest breathing room, though transport and food costs are likely to lag behind the pump-price improvement.",
+      "mentioned_dynasties": [],
+      "sources": {
+        "international": [],
+        "local": [
+          "https://mb.com.ph/2026/04/11/first-double-digit-diesel-rollback-expected-next-week",
+          "https://www.gmanetwork.com/news/money/economy/983203/fuel-price-rollback-adjustment/story/",
+          "https://www.gmanetwork.com/news/money/economy/983560/oil-price-rollback-for-diesel-gasoline-kerosene-april-14-20-doe/story/",
+          "https://www.philstar.com/videos/2026/04/09/2519783/watch-why-fuel-prices-philippines-remain-high-despite-irans-assurance"
+        ]
+      },
+      "weekly_review": "weekly-reviews/weekly-review-2026-04-12.html"
     }
   ],
   "ofw_highlights": {
