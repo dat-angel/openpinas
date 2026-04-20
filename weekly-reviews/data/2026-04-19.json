@@ -1,0 +1,139 @@
+{
+  "version": 1,
+  "weekEnding": "2026-04-19",
+  "weekLabel": "April 12 – April 19, 2026",
+  "title": "OpenPinas: Weekly News Review",
+  "lastUpdated": "April 20, 2026",
+  "prevWeekEnding": "2026-04-12",
+  "stats": [
+    { "number": "6", "label": "Stories" },
+    { "number": "4.1%", "label": "IMF Growth" },
+    { "number": "6,706", "label": "Repatriates" },
+    { "number": "44°C", "label": "Peak Heat Index" }
+  ],
+  "eventSections": [
+    {
+      "title": "International Relations",
+      "articles": [
+        {
+          "timeDatetime": "2026-04-15",
+          "timeDisplay": "April 13-15, 2026",
+          "category": "International Relations",
+          "categoryClass": "international",
+          "borderColor": "#0d7377",
+          "headline": "China Tightened Control in the West Philippine Sea Through Ecology and Access",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-04-15&search=Ayungin+cyanide+Scarborough+barrier",
+          "descriptionHtml": "<p>The week's clearest sovereignty story was that Chinese pressure around Philippine-claimed waters looked both more granular and more deliberate. On April 13, the National Security Council said laboratory tests found <strong>cyanide</strong> in bottles seized from Chinese boats near Ayungin Shoal, describing it as sabotage that could wipe out fish stocks and damage the reef supporting the BRP <em>Sierra Madre</em>. Two days later, Reuters satellite imagery showed Chinese vessels and a floating barrier narrowing the entrance to Scarborough Shoal, reinforcing the sense that Beijing was testing both environmental resilience and physical access at the same time.</p><p>The significance is that the West Philippine Sea dispute is no longer just a series of confrontations caught on video. It is increasingly about whether China can make exclusion, depletion, and gatekeeping feel routine enough that Philippine presence starts looking temporary by comparison.</p>",
+          "diasporaImpact": "For Filipinos abroad, the WPS story is not abstract foreign policy; it directly affects fisher livelihoods, food security, and the credibility of Manila's territorial claims.",
+          "sourceLinks": [
+            { "label": "GMA/Reuters: cyanide sabotage claim", "href": "https://www.gmanetwork.com/news/topstories/nation/983751/cyanide-south-china-sea/story/" },
+            { "label": "GMA/Reuters: Scarborough barrier imagery", "href": "https://www.gmanetwork.com/news/topstories/world/984064/china-block-entrance-scarborough-shoal-south-china-sea/story/" },
+            { "label": "GMA: US vows continued WPS efforts", "href": "https://www.gmanetwork.com/news/topstories/nation/983837/us-military-vows-continued-wps-efforts-despite-middle-east-ops/story/" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Legal",
+      "articles": [
+        {
+          "timeDatetime": "2026-04-14",
+          "timeDisplay": "April 14-17, 2026",
+          "category": "Legal",
+          "categoryClass": "legal",
+          "borderColor": "#1e3a5f",
+          "headline": "Sara Duterte’s Impeachment Case Shifted From Allegation to Audit Trail",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-04-14&search=Sara+Duterte+confidential+funds+COA+Madriaga",
+          "descriptionHtml": "<p>The April 14 House justice hearing made the case against Vice President Sara Duterte look more evidentiary and less hypothetical. Witness Ramil Madriaga alleged that <strong>₱125 million</strong> in confidential funds was moved to three locations within <strong>24 hours</strong>, while COA officials said the notice disallowing <strong>₱73 million</strong> in 2022 OVP confidential funds had been affirmed and that three more notices covering <strong>₱375 million</strong> in 2023 had also been issued. Reporting the same day also pointed to handwriting and signature similarities in records tied to the fund trail, and by April 15 several lawmakers were publicly saying the record already pointed toward probable cause.</p><p>The importance of the week is that the impeachment ceased to feel like a distant partisan script. It started to look like a test of whether audit findings, sworn testimony, and documentary irregularities are finally enough to force the Duterte brand into a formal Senate reckoning.</p>",
+          "diasporaImpact": "For overseas Filipinos, this is a governance story with real stakes: the outcome signals whether high office still shields officials once money trails and constitutional remedies begin to line up.",
+          "sourceLinks": [
+            { "label": "GMA: Madriaga on ₱125M in 24 hours", "href": "https://www.gmanetwork.com/news/topstories/nation/983825/madriaga-sara-duterte-s-office-disbursed-p125-m-in-24-hours-not-11-days/story/" },
+            { "label": "GMA: COA affirms ₱73M disallowance", "href": "https://www.gmanetwork.com/news/topstories/nation/983879/coa-affirms-disallowance-of-p73m-ovp-confidential-funds-release-in-2022/story/" },
+            { "label": "ABS-CBN: NBI finds handwriting similarities", "href": "https://www.abs-cbn.com/news/nation/2026/4/14/nbi-finds-similarities-in-signatures-handwriting-tied-to-vp-duterte-s-confidential-funds-1730/" },
+            { "label": "GMA: lawmakers say probable cause exists", "href": "https://www.gmanetwork.com/news/topstories/nation/984038/probable-cause-to-impeach-vp-sara-exists-several-house-justice-panel-members-say/story/" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Economic",
+      "articles": [
+        {
+          "timeDatetime": "2026-04-17",
+          "timeDisplay": "April 14-17, 2026",
+          "category": "Economic",
+          "categoryClass": "economic",
+          "borderColor": "#0b6e4f",
+          "headline": "The Fuel Shock Turned Into a 4.1% Growth Warning Even as Manila Froze Basic Goods",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-04-17&search=IMF+4.1+DTI+May+10+Russian+oil",
+          "descriptionHtml": "<p>By midweek, the energy crisis had fully crossed into macroeconomics and kitchen-table policy. The IMF cut its 2026 Philippine growth forecast to <strong>4.1%</strong>, down from <strong>5.6%</strong> in January, saying the Middle East war shock was compounding the drag from the flood control corruption scandal and weaker investment confidence. At the same time, the DOE said Manila was seeking another US waiver window to keep importing Russian oil while still lining up alternative suppliers, and the DTI extended the voluntary no-price-hike commitment on basic necessities and prime commodities through <strong>May 10</strong>.</p><p>The administration's posture was revealing: relief now means buying time. The state is no longer just trying to explain why prices spiked; it is trying to stop the fuel shock from hardening into a slower-growth, higher-cost national baseline.</p>",
+          "diasporaImpact": "For remittance-supported households, price holds on basic goods matter more than headline diplomacy because essentials determine whether money from abroad preserves living standards or merely slows the squeeze.",
+          "sourceLinks": [
+            { "label": "GMA: IMF cuts growth outlook to 4.1%", "href": "https://www.gmanetwork.com/news/money/economy/983883/ph-seen-to-miss-economic-growth-target-for-4th-straight-year/story/" },
+            { "label": "GMA: PH seeks Russian-oil waiver extension", "href": "https://www.gmanetwork.com/news/money/economy/983832/ph-eyes-waiver-extension-for-russian-oil-imports-cites-alternative-suppliers/story/" },
+            { "label": "GMA: basic-goods price hold until May 10", "href": "https://www.gmanetwork.com/news/money/economy/984267/dti-no-price-hike-on-basic-goods-until-may-10-2026/story/" }
+          ]
+        },
+        {
+          "timeDatetime": "2026-04-17",
+          "timeDisplay": "April 17, 2026",
+          "category": "Economic",
+          "categoryClass": "economic",
+          "borderColor": "#0b6e4f",
+          "headline": "Washington and Manila Turned Security Alignment Into a Luzon Supply-Chain Bet",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-04-17&search=Pax+Silica+Luzon+Economic+Corridor",
+          "descriptionHtml": "<p>The Philippines and the United States announced plans for a <strong>4,000-acre</strong> Economic Security Zone inside the Luzon Economic Corridor, the first such hub under the US-led <strong>Pax Silica</strong> initiative. The proposal links Philippine minerals, labor, and geography to allied manufacturing for critical technologies, giving the alliance a new industrial form rather than leaving it purely in defense language. The same week, US officials kept stressing that Balikatan and West Philippine Sea commitments would continue despite Middle East demands on Washington.</p><p>The significance is strategic as much as economic: Luzon is being pitched not just as a market or logistics chain, but as a piece of the anti-dependence architecture that Washington wants around China's industrial dominance.</p>",
+          "diasporaImpact": "If projects like this move beyond announcements, they could widen the Philippines' long-term economic options beyond export labor and remittance dependence.",
+          "sourceLinks": [
+            { "label": "GMA: 4,000-acre industrial hub", "href": "https://www.gmanetwork.com/news/money/economy/984271/ph-us-plan-4-000-acre-industrial-hub-in-luzon-economic-corridor/story/" },
+            { "label": "ABS-CBN: economic security zone in Luzon", "href": "https://www.abs-cbn.com/news/business/2026/4/17/ph-us-to-build-economic-security-zone-in-luzon-1013" },
+            { "label": "GMA/Reuters: Balikatan underscores US commitment", "href": "https://www.gmanetwork.com/news/topstories/world/983857/balikatan-2026-us-military-commitment/story/" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "OFW & Diaspora",
+      "articles": [
+        {
+          "timeDatetime": "2026-04-19",
+          "timeDisplay": "April 15-19, 2026",
+          "category": "OFW/Diaspora",
+          "categoryClass": "diaspora",
+          "borderColor": "#8a5a44",
+          "headline": "Middle East Repatriation Passed 6,700 and Started Looking Like a Long War Budget",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-04-19&search=OFW+repatriation+1.2+billion+6706",
+          "descriptionHtml": "<p>The most direct diaspora story of the week was scale. The DMW said it had already spent <strong>₱1.2 billion</strong> from its AKSYON Fund to repatriate more than <strong>6,700</strong> overseas Filipinos and dependents affected by the Middle East conflict. On April 18, another <strong>138 OFWs</strong> and <strong>59 dependents</strong> arrived from Dubai and Qatar, while government agencies rolled out reintegration, transport, livelihood, and housing-relief measures for returnees whose crisis no longer ends at the airport.</p><p>The significance is that evacuation has become a domestic labor-market issue. Once repatriation reaches this scale, the question is not only how fast workers get home, but how the state prevents a regional war from turning into a prolonged income shock for thousands of Filipino households.</p>",
+          "diasporaImpact": "This is the week's clearest diaspora pressure point: returning home safely is only the first step, and many families are now confronting interrupted overseas income with no quick substitute.",
+          "sourceLinks": [
+            { "label": "Philstar: ₱1.2B spent on repatriation", "href": "https://www.philstar.com/headlines/2026/04/19/2521966/p12-billion-spent-middle-east-repatriation-dmw" },
+            { "label": "GMA: 138 OFWs from Dubai and Qatar arrive", "href": "https://www.gmanetwork.com/news/pinoyabroad/dispatch/984398/138-ofws-from-dubai-and-qatar-arrive-safely-in-ph/story/" },
+            { "label": "ABS-CBN: programs for displaced OFWs", "href": "https://www.abs-cbn.com/news/nation/2026/4/15/gov-t-launches-programs-for-ofws-displaced-by-middle-east-war-1600" },
+            { "label": "ABS-CBN: another batch set to arrive", "href": "https://www.abs-cbn.com/news/nation/2026/4/17/another-batch-of-pinoy-repatriates-from-middle-east-set-to-arrive-saturday-1632" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Natural Disasters",
+      "articles": [
+        {
+          "timeDatetime": "2026-04-19",
+          "timeDisplay": "April 14-19, 2026",
+          "category": "Natural Disasters",
+          "categoryClass": "disaster",
+          "borderColor": "#c77d10",
+          "headline": "The Week Closed Under Nationwide Extreme-Caution Heat",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-04-19&search=heat+index+PAGASA+Sangley",
+          "descriptionHtml": "<p>By the weekend, the country's weather story had become a public-health story. PAGASA said most of the Philippines would see heat-index readings in the <strong>33°C to 41°C</strong> range for April 19 and 20, while Sangley Point in Cavite hit a <strong>44°C</strong> danger-level heat index on Sunday and remained the lone danger-level forecast for Monday. Earlier in the week, Cotabato City logged <strong>45°C</strong>, showing that the dry-season peak was no longer a localized warning but a recurring national strain on commuters, outdoor workers, and schools.</p><p>The importance of the week-end heat story is its ordinariness: this is the kind of stress that does not always produce a single dramatic disaster headline, but steadily raises health risk, household costs, and lost productivity across the country.</p>",
+          "diasporaImpact": "Families abroad may need to absorb extra health, transport, and utility costs as relatives back home cope with a harsher late-April dry-season peak.",
+          "sourceLinks": [
+            { "label": "GMA: Cotabato City hits 45°C", "href": "https://www.gmanetwork.com/news/weather/content/983888/cotabato-city-heat-index/story/" },
+            { "label": "GMA: Sangley Point logs 44°C", "href": "https://www.gmanetwork.com/news/weather/content/984529/danger-level-heat-index-logged-in-cavite-city-on-april-19/story/" },
+            { "label": "Philstar: extreme caution across PH", "href": "https://www.philstar.com/headlines/weather/2026/04/19/2522076/april-19-pagasa-warns-extreme-caution-heat-index-across-philippines" }
+          ]
+        }
+      ]
+    }
+  ]
+}
