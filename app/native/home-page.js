@@ -1,4 +1,5 @@
 import { getNowDeveloping } from "@/lib/get-now-developing";
+import { FEATURED_VISUAL_IDS, getVisualizationsByIds } from "@/app/lib/visualizations";
 
 const DESK_LINKS = [
   {
@@ -55,6 +56,7 @@ function formatStripDate(iso) {
 export default function HomePageNative() {
   const { label, updated, items, weeklyReviewHref } = getNowDeveloping();
   const dateLine = formatStripDate(updated);
+  const visualStack = getVisualizationsByIds(FEATURED_VISUAL_IDS);
 
   return (
     <main style={{ minHeight: "100vh", margin: 0, fontFamily: T.font, color: T.ink, background: T.bg }}>
@@ -199,6 +201,102 @@ export default function HomePageNative() {
             <p style={{ margin: 0, color: T.muted, fontSize: 15, lineHeight: 1.6 }}>{item.description}</p>
           </a>
         ))}
+      </section>
+
+      <section
+        style={{
+          padding: `40px ${edgePad} 48px`,
+          borderBottom: `1px solid ${T.subtle}`,
+          background: T.surface,
+        }}
+      >
+        <div style={{ maxWidth: 1280, margin: "0 auto" }}>
+          <div style={{ maxWidth: 720, marginBottom: 28 }}>
+            <p
+              style={{
+                margin: "0 0 8px",
+                fontSize: 11,
+                fontWeight: 700,
+                letterSpacing: "0.1em",
+                textTransform: "uppercase",
+                color: T.accentBright,
+              }}
+            >
+              Visual Analysis
+            </p>
+            <h2
+              style={{
+                margin: "0 0 12px",
+                fontSize: "clamp(24px, 3.2vw, 34px)",
+                fontWeight: 800,
+                letterSpacing: "-0.03em",
+                lineHeight: 1.1,
+              }}
+            >
+              Follow the supporting systems around political power.
+            </h2>
+            <p style={{ margin: 0, fontSize: 16, lineHeight: 1.65, color: T.muted }}>
+              These are the next five visuals worth foregrounding on the Vercel home: business
+              ties, elite education, startup capital, and the networked and geographic views of
+              corruption.
+            </p>
+            <a href="/visualizations/index.html" style={{ display: "inline-block", marginTop: 14, color: T.ink, fontSize: 14, fontWeight: 600 }}>
+              Open the full visualization index →
+            </a>
+          </div>
+
+          <div
+            style={{
+              display: "grid",
+              gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))",
+              gap: 1,
+              background: T.subtle,
+              border: `1px solid ${T.subtle}`,
+            }}
+          >
+            {visualStack.map((item) => (
+              <a
+                key={item.href}
+                href={item.href}
+                style={{
+                  display: "block",
+                  minHeight: 220,
+                  padding: "22px 20px 24px",
+                  background: "#fff",
+                  textDecoration: "none",
+                  color: T.ink,
+                }}
+              >
+                <p
+                  style={{
+                    margin: "0 0 10px",
+                    fontSize: 11,
+                    fontWeight: 700,
+                    letterSpacing: "0.1em",
+                    textTransform: "uppercase",
+                    color: T.accent,
+                  }}
+                >
+                  {item.kicker}
+                </p>
+                <h3
+                  style={{
+                    margin: "0 0 10px",
+                    fontSize: 21,
+                    fontWeight: 700,
+                    letterSpacing: "-0.02em",
+                    lineHeight: 1.15,
+                  }}
+                >
+                  {item.title}
+                </h3>
+                <p style={{ margin: 0, color: T.muted, fontSize: 15, lineHeight: 1.6 }}>
+                  {item.description}
+                </p>
+              </a>
+            ))}
+          </div>
+        </div>
       </section>
 
       {/* Footer */}

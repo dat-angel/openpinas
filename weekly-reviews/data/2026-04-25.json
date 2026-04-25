@@ -1,0 +1,189 @@
+{
+  "version": 1,
+  "weekEnding": "2026-04-25",
+  "weekLabel": "April 18 – April 25, 2026",
+  "title": "OpenPinas: Weekly News Review",
+  "lastUpdated": "April 25, 2026",
+  "prevWeekEnding": "2026-04-19",
+  "stats": [
+    { "number": "8", "label": "Stories" },
+    { "number": "17,000", "label": "Balikatan Troops" },
+    { "number": "7,408", "label": "Repatriates" },
+    { "number": "79%", "label": "El Nino Alert" }
+  ],
+  "eventSections": [
+    {
+      "title": "International Relations",
+      "articles": [
+        {
+          "timeDatetime": "2026-04-20",
+          "timeDisplay": "April 20-21, 2026",
+          "category": "International Relations",
+          "categoryClass": "international",
+          "borderColor": "#0d7377",
+          "headline": "Balikatan Opened as Manila Stopped Pretending a China Crisis Would Stay Distant",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-04-20&search=Balikatan+China+Taiwan+contingency",
+          "descriptionHtml": "<p>Balikatan 2026 began with roughly <strong>17,000 troops</strong> from the Philippines and the United States, plus smaller partner contingents, giving the alliance one of its biggest exercise footprints yet. But the real shift was rhetorical as much as military: the AFP said it already had contingencies in place for a possible China-Taiwan conflict because any fighting there would inevitably affect northern Luzon, evacuation corridors, and Philippine bases. The exercise made clear that Manila now sees deterrence, access, and homeland preparation as parts of the same story.</p><p>The significance is that Philippine alliance messaging has become less ceremonial and more operational. This is no longer just about showing flags together in April; it is about telling Beijing that the archipelago is preparing for the spillover effects of a regional war.</p>",
+          "diasporaImpact": "For Filipinos abroad, especially families tied to northern Luzon or seafaring livelihoods, the exercise underscored that great-power conflict planning now has direct homeland implications.",
+          "sourceLinks": [
+            { "label": "GMA: Balikatan officially opens", "href": "https://www.gmanetwork.com/news/topstories/nation/984649/balikatan-exercise-officially-opens/story/" },
+            { "label": "ABS-CBN: 17,000 PH-US troops launch exercises", "href": "https://www.abs-cbn.com/news/nation/2026/4/20/17-000-ph-us-troops-launch-balikatan-2026-1040" },
+            { "label": "GMA: AFP has China-Taiwan contingencies", "href": "https://www.gmanetwork.com/news/topstories/nation/984842/afp-contingencies-for-possible-conflict-between-china-taiwan-in-place/story/" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Legal",
+      "articles": [
+        {
+          "timeDatetime": "2026-04-22",
+          "timeDisplay": "April 22-23, 2026",
+          "category": "Legal",
+          "categoryClass": "legal",
+          "borderColor": "#1e3a5f",
+          "headline": "Sara Duterte’s Impeachment Fight Turned Into a Battle Over the Origins of Wealth",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-04-22&search=Sara+Duterte+AMLC+6.7+billion",
+          "descriptionHtml": "<p>The next turn in Vice President Sara Duterte’s impeachment proceedings was bigger than another dispute over confidential funds. Lawmakers said AMLC records showed about <strong>₱6.7 billion</strong> in covered and suspicious transactions linked to Duterte and her husband across nearly two decades, while Antonio Trillanes alleged that one <strong>₱181 million</strong> transfer in 2011 came from a drug personality. Duterte denied wrongdoing and insisted that every cent in her family’s possession came from legitimate sources, but the week’s hearings made the case look less like a bookkeeping argument and more like a fight over provenance, enrichment, and credibility.</p><p>The importance of the shift is political as much as evidentiary. Once the argument turns to suspicious transactions and accumulated wealth, the impeachment story becomes harder to contain as a narrow dispute over procedure or partisan timing.</p>",
+          "diasporaImpact": "For overseas Filipinos, the hearing sharpened a familiar question: whether paper trails and banking records can still force accountability at the highest levels of office.",
+          "sourceLinks": [
+            { "label": "GMA: camp calls ₱6.7B claim fake news", "href": "https://www.gmanetwork.com/news/topstories/nation/985036/sara-duterte-s-camp-on-alleged-p6-7-b-transactions-it-s-fake-news/story/" },
+            { "label": "GMA: Duterte says family's money is legitimate", "href": "https://www.gmanetwork.com/news/topstories/nation/985117/sara-duterte-says-every-cent-in-family-s-possession-from-legitimate-source/story/" },
+            { "label": "ABS-CBN: Trillanes on ₱181M transaction", "href": "https://www.abs-cbn.com/news/nation/2026/4/23/trillanes-claims-p181-million-from-drug-lord-went-to-accounts-tied-to-vp-sara-husband-1119" }
+          ]
+        },
+        {
+          "timeDatetime": "2026-04-25",
+          "timeDisplay": "April 21-25, 2026",
+          "category": "Legal",
+          "categoryClass": "legal",
+          "borderColor": "#1e3a5f",
+          "headline": "The Flood-Control Scandal Reached Romualdez’s Assets and the Administration’s Core",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-04-25&search=Romualdez+flood+control+freeze",
+          "descriptionHtml": "<p>The anti-corruption story that had already damaged confidence in Philippine growth moved closer to the center of power this week. The Ombudsman denied Martin Romualdez’s bid to halt the flood-control probe, later reporting identified him as the legislator tied to a court-authorized freeze order, and by April 25 the House Speaker confirmed that his assets had indeed been frozen. Romualdez said he was being denied due process, but the sequence made it clear that the case was no longer confined to contractors or faceless intermediaries.</p><p>The significance is that Marcos-era anti-corruption credibility is now being tested against the President’s own governing network. Once the scandal touches the administration’s inner circle, cleanup rhetoric is no longer enough on its own.</p>",
+          "diasporaImpact": "For Filipinos abroad, this is a direct test of whether anti-corruption promises still hold once investigations move from local operatives to national power brokers.",
+          "sourceLinks": [
+            { "label": "GMA: Ombudsman denies bid to stop probe", "href": "https://www.gmanetwork.com/news/topstories/nation/985050/ombudsman-denies-romualdez-request-to-stop-flood-control-scandal-probe/story/" },
+            { "label": "GMA: court order names legislator-linked associate", "href": "https://www.gmanetwork.com/news/topstories/nation/985196/alleged-business-associate-of-legislator-linked-to-flood-control-scandal-named-in-court-order/story/" },
+            { "label": "GMA: Romualdez confirms assets were frozen", "href": "https://www.gmanetwork.com/news/topstories/nation/985378/martin-romualdez-confirms-his-assets-were-frozen-in-flood-control-probe/story/" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Economic",
+      "articles": [
+        {
+          "timeDatetime": "2026-04-23",
+          "timeDisplay": "April 20-23, 2026",
+          "category": "Economic",
+          "categoryClass": "economic",
+          "borderColor": "#0b6e4f",
+          "headline": "Fitch Went Negative and the BSP Hit the Brakes, Confirming the Oil Shock Was No Blip",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-04-23&search=Fitch+negative+BSP+rate+hike",
+          "descriptionHtml": "<p>The week’s macro signal was stark: Fitch revised the Philippines’ outlook to <strong>negative</strong>, then the BSP raised its key rate by <strong>25 basis points</strong> to <strong>6%</strong> as inflation risk from the energy shock stayed alive. Officials argued that tighter policy was necessary to keep price expectations anchored, but the broader message was that relief measures and supply workarounds had not restored a normal baseline. The government is now managing a slower-growth, higher-cost reality rather than a brief external disturbance.</p><p>The significance is that the crisis has matured from painful consumer math into a credibility problem for macro management. Ratings pressure and tighter monetary policy arriving together tell households and investors that the damage is no longer theoretical.</p>",
+          "diasporaImpact": "A firmer peso may help at the margin, but remittance-supported families still face the harder mix of slower growth, tighter credit, and sticky living costs.",
+          "sourceLinks": [
+            { "label": "GMA: Fitch cuts PH outlook to negative", "href": "https://www.gmanetwork.com/news/money/economy/984769/fitch-cuts-ph-outlook-to-negative/story/" },
+            { "label": "GMA: BSP raises rates by 25 bps", "href": "https://www.gmanetwork.com/news/money/economy/985184/bsp-raises-rates-by-25-basis-points/story/" },
+            { "label": "ABS-CBN: BSP hikes to tame inflation risks", "href": "https://www.abs-cbn.com/news/business/2026/4/23/bsp-raises-key-rate-by-25-basis-points-to-tame-inflation-risks-1602" }
+          ]
+        },
+        {
+          "timeDatetime": "2026-04-22",
+          "timeDisplay": "April 22-25, 2026",
+          "category": "Economic",
+          "categoryClass": "economic",
+          "borderColor": "#0b6e4f",
+          "headline": "The Fuel Shock Stayed in Daily Life Through Airfares and Power-Bill Politics",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-04-22&search=fuel+surcharge+Meralco+refund",
+          "descriptionHtml": "<p>The country’s everyday cost story spread along two very different tracks. The Civil Aeronautics Board raised passenger fuel surcharges to <strong>Level 19</strong> for May, pushing flight costs higher just as domestic and family travel remained active. Meanwhile regulators ordered Meralco to refund <strong>₱14.17 billion</strong> to customers over three years after a Supreme Court ruling on excess distribution charges, creating relief that mattered but would arrive gradually rather than all at once.</p><p>The importance of the week is that fuel volatility is no longer confined to gas stations. It now shows up in the cost of movement through the air, while household electricity relief arrives slowly enough that families still feel the squeeze in real time.</p>",
+          "diasporaImpact": "Balikbayan travel stays expensive, and even where power-bill relief is coming, it is too staggered to erase the broader rise in living costs for families back home.",
+          "sourceLinks": [
+            { "label": "GMA: Meralco to refund over ₱14B", "href": "https://www.gmanetwork.com/news/money/companies/985005/meralco-to-refund-over-p14-b-to-customers-spread-over-3-years/story/" },
+            { "label": "GMA: CAB raises surcharge to Level 19", "href": "https://www.gmanetwork.com/news/money/economy/984887/cab-raises-passenger-fuel-surcharge-to-level-19-in-may/story/" },
+            { "label": "ABS-CBN: passenger fuel surcharge up in May", "href": "https://www.abs-cbn.com/news/business/2026/4/22/passenger-fuel-surcharge-up-in-may-cab-1618" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "OFW & Diaspora",
+      "articles": [
+        {
+          "timeDatetime": "2026-04-23",
+          "timeDisplay": "April 23, 2026",
+          "category": "OFW/Diaspora",
+          "categoryClass": "diaspora",
+          "borderColor": "#8a5a44",
+          "headline": "Repatriation Passed 7,400 as the Middle East Crisis Spread From Airports to Shipping Lanes",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-04-23&search=7408+OFWs+1161+seafarers",
+          "descriptionHtml": "<p>The Philippine overseas crisis widened in both scale and sector this week. The DMW said repatriated OFWs and dependents affected by the Middle East conflict had reached <strong>7,408</strong>, while Malacanang separately said <strong>1,161 Filipino seafarers</strong> had already exited the Persian Gulf as maritime risk intensified. The story was no longer just about chartering flights home; it became a broader problem of disrupted contracts, shipping exposure, and how quickly the state can absorb returning workers whose crisis does not end on arrival.</p><p>The significance is that the conflict now looks like a sustained labor and logistics shock for the Philippines, not a short emergency that can be managed only through evacuation headlines.</p>",
+          "diasporaImpact": "Many OFW families are now juggling interrupted income, reintegration costs, and the possibility that Gulf risk could affect both land-based workers and maritime crews at the same time.",
+          "sourceLinks": [
+            { "label": "GMA: 7,408 OFWs and dependents displaced", "href": "https://www.gmanetwork.com/news/pinoyabroad/dispatch/985199/middle-east-crisis-displaces-7-408-ofws-dependents-dmw/story/" },
+            { "label": "ABS-CBN: 1,161 Filipino seafarers exited Persian Gulf", "href": "https://www.abs-cbn.com/news/nation/2026/4/23/1-161-filipino-seafarers-exited-persian-gulf-amid-middle-east-conflict-palace-1910" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Natural Disasters",
+      "articles": [
+        {
+          "timeDatetime": "2026-04-24",
+          "timeDisplay": "April 24-25, 2026",
+          "category": "Natural Disasters",
+          "categoryClass": "disaster",
+          "borderColor": "#c77d10",
+          "headline": "PAGASA Turned the Heat Story Into a Drought Story Too",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-04-24&search=El+Nino+79+heat+index",
+          "descriptionHtml": "<p>PAGASA raised its El Niño Alert to <strong>79%</strong> for the October 2026 to March 2027 season even as danger-level and extreme-caution heat continued across parts of Luzon. Aparri joined Sangley Point in the danger range on successive days, reinforcing that the late-April heat wave was not just a short-term discomfort story. The bureau’s warning effectively connected present heat stress to a longer drought-planning horizon.</p><p>The significance is that the country is being asked to think beyond one brutal week. Heat is now part of a broader climate-risk cycle with implications for water, agriculture, household power demand, and public-health planning.</p>",
+          "diasporaImpact": "Families abroad may need to prepare for a longer run of higher health, water, and electricity costs as both present heat and future drought risk become harder to separate.",
+          "sourceLinks": [
+            { "label": "GMA: El Niño Alert raised to 79%", "href": "https://www.gmanetwork.com/news/weather/content/985094/pagasa-raises-el-nino-alert-to-79-for-october-2026-march-2027/story/" },
+            { "label": "GMA: Aparri at danger-level heat index", "href": "https://www.gmanetwork.com/news/weather/content/985172/heat-index-danger-level-in-aparri-on-thursday-april-24-pagasa/story/" },
+            { "label": "GMA: two areas forecast at danger level on April 25", "href": "https://www.gmanetwork.com/news/weather/content/985321/danger-level-heat-index-forecast-in-2-areas-on-friday-april-25-pagasa/story/" }
+          ]
+        },
+        {
+          "timeDatetime": "2026-04-25",
+          "timeDisplay": "April 25, 2026",
+          "category": "Natural Disasters",
+          "categoryClass": "disaster",
+          "borderColor": "#c77d10",
+          "headline": "Kanlaon Sent Up Another Ash Plume, Keeping Negros in Long-Running Volcanic Uncertainty",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-04-25&search=Kanlaon+ash+plume",
+          "descriptionHtml": "<p>Kanlaon Volcano emitted another grayish ash plume on April 25, rising to about <strong>900 meters</strong> and drifting westward while the volcano remained under <strong>Alert Level 2</strong>. PHIVOLCS repeated that moderate unrest persists and that steam-driven eruptions remain possible, which means the danger zone cannot yet be treated as a normal space again. Even without a dramatic escalation, the latest plume kept farming, school, and evacuation planning unsettled across parts of Negros.</p><p>The significance is in the persistence. A volcano does not need to explode catastrophically every week to keep communities economically and psychologically off-balance.</p>",
+          "diasporaImpact": "Families with ties to Negros may continue absorbing crop losses, disrupted routines, and precautionary costs even while Kanlaon stays below a headline-grabbing eruption level.",
+          "sourceLinks": [
+            { "label": "GMA: Kanlaon emits ash plume", "href": "https://www.gmanetwork.com/news/topstories/regions/985396/kanlaon-emits-grayish-ash-plume-on-friday-morning/story/" },
+            { "label": "PHIVOLCS bulletin", "href": "https://www.phivolcs.dost.gov.ph/index.php/kanlaon-volcano-bulletin-menu/kanlaon-volcano-bulletin/21358-kanlaon-volcano-bulletin-25-april-2026-8-00-a-m" }
+          ]
+        }
+      ]
+    }
+  ],
+  "dynastyHighlights": {
+    "title": "Dynasty Watch",
+    "items": [
+      {
+        "title": "Marcos-Romualdez",
+        "titleHref": "/dynasties-network-visualization.html#dynasty-MARCOS_ROMUALDEZ",
+        "bodyHtml": "<p>The administration’s week split in two directions at once: Marcos presided over a more openly deterrence-focused Balikatan while Martin Romualdez moved deeper into the flood-control corruption scandal after the confirmation of an asset freeze. The combination sharpened a core OpenPinas tension: external resolve on China is rising even as internal legitimacy remains vulnerable to corruption fallout.</p>",
+        "bullets": [
+          { "text": "Balikatan 2026 opens", "href": "/interactive-timeline/index.html?date=2026-04-20" },
+          { "text": "Romualdez assets frozen in flood-control probe", "href": "/interactive-timeline/index.html?date=2026-04-25" }
+        ]
+      },
+      {
+        "title": "Duterte",
+        "titleHref": "/dynasties-network-visualization.html#dynasty-DUTERTE_FAMILY",
+        "bodyHtml": "<p>Sara Duterte’s defense line shifted from disputing audit findings to defending the legitimacy of family wealth after AMLC-linked transaction figures entered the impeachment conversation. That change matters because it broadens the political battlefield from confidential funds to a longer argument about money, patronage, and the durability of the Duterte brand.</p>",
+        "bullets": [
+          { "text": "AMLC-linked transaction issue enters hearing", "href": "/interactive-timeline/index.html?date=2026-04-22" }
+        ]
+      }
+    ]
+  }
+}

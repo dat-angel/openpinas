@@ -31,6 +31,7 @@ const linkStyle = {
 };
 
 const LINKS = [
+  { href: "/visualizations/index.html", label: "Visuals" },
   { href: "/weekly-reviews/index.html", label: "Reviews" },
   { href: "/dynasties-network-visualization.html", label: "Map" },
   { href: "/interactive-timeline/index.html", label: "Timeline" },
