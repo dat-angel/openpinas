@@ -1,0 +1,269 @@
+{
+  "version": 1,
+  "weekEnding": "2026-05-09",
+  "weekLabel": "May 2 – May 9, 2026",
+  "title": "OpenPinas: Weekly News Review",
+  "lastUpdated": "May 9, 2026",
+  "prevWeekEnding": "2026-05-02",
+  "stats": [
+    {
+      "number": "7",
+      "label": "Stories"
+    },
+    {
+      "number": "215+",
+      "label": "Impeachment Votes"
+    },
+    {
+      "number": "102,000",
+      "label": "Mayon Affected"
+    },
+    {
+      "number": "2.8%",
+      "label": "Q1 GDP Growth"
+    }
+  ],
+  "eventSections": [
+    {
+      "title": "Political",
+      "articles": [
+        {
+          "timeDatetime": "2026-05-05",
+          "timeDisplay": "May 5, 2026",
+          "category": "Political",
+          "categoryClass": "political",
+          "borderColor": "#3a0ca3",
+          "headline": "House Justice Panel Approves Sara Duterte’s Second Impeachment for Plenary Vote",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-05-05&search=Sara+Duterte+impeachment+panel+plenary",
+          "descriptionHtml": "<p>The House Committee on Justice approved four impeachment articles against Vice President Sara Duterte and transmitted them to the plenary: misuse of confidential funds, bribery of government officials, plotting against President Marcos’s life, and unexplained wealth. The committee found probable cause on all four counts. By May 7, House leadership confirmed at least <strong>215 members</strong>—more than double the 106-vote threshold—were committed to yes votes, with two-thirds of the chamber expected to back the articles. The vote was scheduled for Monday, May 11.</p>",
+          "significance": "Second impeachment attempt against the same official in under a year; if the Senate convicts, Duterte is permanently barred from the 2028 presidential race.",
+          "diasporaImpact": "Heightens political uncertainty that overseas Filipinos monitor for governance stability; a Senate conviction would reshape the 2028 field that diaspora voters participate in.",
+          "dynastyLinks": [
+            {
+              "label": "Duterte",
+              "href": "/dynasties-network-visualization.html#dynasty-DUTERTE_FAMILY"
+            },
+            {
+              "label": "Marcos-Romualdez",
+              "href": "/dynasties-network-visualization.html#dynasty-MARCOS_ROMUALDEZ"
+            }
+          ],
+          "sourceLinks": [
+            {
+              "label": "Rappler",
+              "href": "https://www.rappler.com/philippines/sara-duterte-impeachment-numbers-update-house-may-7-2026/"
+            },
+            {
+              "label": "Philstar",
+              "href": "https://www.philstar.com/headlines/2026/05/05/2525727/vp-impeachment-okd-house-plenary-vote"
+            },
+            {
+              "label": "GMA News",
+              "href": "https://www.gmanetwork.com/news/topstories/nation/986309/house-justice-panel-vp-sara-duterte-impeachment/story/"
+            }
+          ]
+        },
+        {
+          "timeDatetime": "2026-05-06",
+          "timeDisplay": "May 6–8, 2026",
+          "category": "International Relations",
+          "categoryClass": "international",
+          "borderColor": "#0d7377",
+          "headline": "48th ASEAN Summit Opens in Cebu; Marcos Chairs Response to Middle East Energy Crisis",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-05-06&search=ASEAN+Summit+Cebu+Marcos+energy+security",
+          "descriptionHtml": "<p>President Marcos presided over the <strong>48th ASEAN Summit</strong> in Lapu-Lapu City, Cebu (May 6–8) as the Philippines holds the 2026 chairmanship. He anchored the agenda on three priorities: energy security amid the Middle East conflict, food supply chain stabilization, and protection of ASEAN nationals in conflict zones. Member states adopted the <strong>“Lead, Sail, Rise”</strong> framework—the Philippine-authored ASEAN vision for the year. The Philippines also secured a supply agreement with Vietnam for <strong>1.5 million metric tons of rice</strong> at $450/MT, and was approved to host the new ASEAN Maritime Centre.</p>",
+          "significance": "Marcos used the chairmanship to reframe the Philippines as a regional security and food-security anchor; Maritime Centre signals PH leadership on WPS coordination.",
+          "diasporaImpact": "Rice supply deal may moderate domestic prices for families back home; ASEAN Maritime Centre gives the PH a permanent institutional role in South China Sea diplomacy.",
+          "dynastyLinks": [
+            {
+              "label": "Marcos-Romualdez",
+              "href": "/dynasties-network-visualization.html#dynasty-MARCOS_ROMUALDEZ"
+            }
+          ],
+          "sourceLinks": [
+            {
+              "label": "Manila Bulletin",
+              "href": "https://mb.com.ph/2026/05/08/marcos-opens-asean-summit-urges-united-response-to-middle-east-crisis"
+            },
+            {
+              "label": "Rappler",
+              "href": "https://www.rappler.com/philippines/updates-videos-48th-asean-summit-related-meetings-cebu-may-2026/"
+            },
+            {
+              "label": "Philstar",
+              "href": "https://interaksyon.philstar.com/politics-issues/2026/05/11/313174/asean-summit-ends-with-only-a-push-to-fast-track-oil-share-pact/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Legal",
+      "articles": [
+        {
+          "timeDatetime": "2026-05-05",
+          "timeDisplay": "May 5–6, 2026",
+          "category": "Legal",
+          "categoryClass": "legal",
+          "borderColor": "#1e3a5f",
+          "headline": "NBI Arrests PGMN Founder Franco Mabanta for Alleged P300M Extortion vs. Speaker Romualdez",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-05-05&search=Mabanta+NBI+arrest+Romualdez+extortion",
+          "descriptionHtml": "<p>The National Bureau of Investigation arrested <strong>Franco Mabanta</strong>, founder of Peanut Gallery Media Network (PGMN), and four associates in a sting operation at Valle Verde Country Club in Pasig City. Mabanta allegedly demanded <strong>P300 million</strong> from House Speaker Martin Romualdez in exchange for withholding video content linking the Speaker to corruption—part of a broader P350M extortion scheme. He was caught when undercover agents posed as Romualdez representatives at the Manila Peninsula Hotel. Charges include robbery by extortion and cybercrime violations. Mabanta called the arrest a politically motivated “setup” timed to silence an upcoming documentary on House corruption; the Pasig RTC later released him on P120,000 bail.</p>",
+          "significance": "Arrest of a prominent anti-Marcos media operator weeks before the Duterte impeachment vote; raises simultaneous questions about extortion criminality and press freedom.",
+          "diasporaImpact": "Highlights the precarious legal environment for critical Philippine media; diaspora supporters of independent journalism should monitor press freedom developments closely.",
+          "dynastyLinks": [
+            {
+              "label": "Marcos-Romualdez",
+              "href": "/dynasties-network-visualization.html#dynasty-MARCOS_ROMUALDEZ"
+            }
+          ],
+          "sourceLinks": [
+            {
+              "label": "Rappler",
+              "href": "https://www.rappler.com/philippines/pgmn-founder-franco-mabanta-arrested-alleged-extortion-martin-romualdez/"
+            },
+            {
+              "label": "Philstar",
+              "href": "https://www.philstar.com/headlines/2026/05/06/2526068/socmed-operator-franco-mabanta-nabbed-alleged-romualdez-extortion"
+            },
+            {
+              "label": "GMA News",
+              "href": "https://www.gmanetwork.com/news/topstories/nation/986578/nbi-arrests-media-personality-in-alleged-extort-try-on-martin-romualdez/story/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Economic",
+      "articles": [
+        {
+          "timeDatetime": "2026-05-07",
+          "timeDisplay": "May 7, 2026",
+          "category": "Economic",
+          "categoryClass": "economic",
+          "borderColor": "#3a0ca3",
+          "headline": "Q1 2026 GDP Grows Only 2.8% — Weakest Non-Pandemic Growth in Five Years",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-05-07&search=GDP+2.8+percent+Q1+2026+oil+shock",
+          "descriptionHtml": "<p>The Philippine Statistics Authority reported GDP grew just <strong>2.8 percent</strong> in Q1 2026, down sharply from 5.4% in Q1 2025 and the weakest pace since Q1 2021. The twin culprits: the historic oil shock from the US-Iran war, and the fiscal drag from the DPWH flood-control corruption scandal. Domestic inflation rose to 4.1% in March, breaching the BSP’s 2–4% target band. International forecasters rapidly downgraded their full-year outlooks: ADB cut to <strong>4.4%</strong>, World Bank to <strong>3.7%</strong>, IMF to <strong>4.1%</strong>. NEDA Secretary Balisacan pushed back on stagflation framing but the government’s own full-year target is expected to be revised downward.</p>",
+          "significance": "Worst non-pandemic quarterly performance since 2021; puts the Marcos economic team under pressure to respond to simultaneous oil and governance shocks.",
+          "diasporaImpact": "Slower growth means fewer jobs at home and higher prices on basic goods; OFW families absorbing peso depreciation and elevated inflation will feel the squeeze in the value of their remittances.",
+          "dynastyLinks": [
+            {
+              "label": "Marcos-Romualdez",
+              "href": "/dynasties-network-visualization.html#dynasty-MARCOS_ROMUALDEZ"
+            }
+          ],
+          "sourceLinks": [
+            {
+              "label": "Philstar",
+              "href": "https://www.philstar.com/headlines/2026/05/07/2526251/philippine-economy-slows-28-q1-weakest-5-years"
+            },
+            {
+              "label": "Rappler",
+              "href": "https://www.rappler.com/business/gross-domestic-product-philippines-q1-2026/"
+            },
+            {
+              "label": "Inquirer",
+              "href": "https://business.inquirer.net/584588/adb-cuts-2026-ph-gdp-growth-forecast-to-4-4"
+            }
+          ]
+        },
+        {
+          "timeDatetime": "2026-05-07",
+          "timeDisplay": "May 7, 2026",
+          "category": "Economic",
+          "categoryClass": "economic",
+          "borderColor": "#3a0ca3",
+          "headline": "DOLE Activates P110M TUPAD Emergency Aid for 20,000+ Mayon-Displaced Workers in Albay",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-05-07&search=DOLE+TUPAD+Mayon+Albay+workers",
+          "descriptionHtml": "<p>The Department of Labor and Employment activated <strong>P110 million</strong> in TUPAD (Tulong Panghanapbuhay sa Ating Disadvantaged/Displaced Workers) emergency employment assistance for more than <strong>20,000 workers</strong> displaced by the Mayon Volcano eruption in Albay. Beneficiaries will be engaged in ashfall clearing, community clean-up, and rehabilitation work in affected barangays. Over <strong>6,000 farmers</strong> are separately receiving P10,200 cash assistance through agricultural emergency funds. DSWD prepositioned over 300,000 food and non-food items in Bicol; more than 1,230 hectares of farmland and 158 km of roads were affected by ashfall.</p>",
+          "significance": "Government mobilized multi-agency emergency employment and relief programs within days of peak Mayon impact; TUPAD scale reflects severity of livelihood disruption across Albay.",
+          "diasporaImpact": "Bicol is a top OFW-sending region; diaspora are likely fielding urgent requests from relatives whose crops and income were disrupted. TUPAD provides wage income while rehabilitation proceeds.",
+          "dynastyLinks": [],
+          "sourceLinks": [
+            {
+              "label": "Inquirer",
+              "href": "https://newsinfo.inquirer.net/2224246/p110-million-aid-set-for-mayon-hit-workers-in-albay"
+            },
+            {
+              "label": "GMA News",
+              "href": "https://www.gmanetwork.com/news/topstories/regions/987189/over-6-000-farmers-in-albay-to-receive-p10-200-cash-assistance-amid-mayon-s-unrest/story/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Natural Disasters",
+      "articles": [
+        {
+          "timeDatetime": "2026-05-08",
+          "timeDisplay": "May 2–8, 2026",
+          "category": "Natural Disasters",
+          "categoryClass": "natural-disasters",
+          "borderColor": "#7b4f12",
+          "headline": "Mayon Eruption Peaks: 102,000 Affected, CAAP Restricts Airspace, 132 Schools Closed",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-05-08&search=Mayon+volcano+102000+Alert+Level+3",
+          "descriptionHtml": "<p>Mayon Volcano’s ongoing eruption reached peak impact during the week, with the Office of Civil Defense reporting <strong>102,406 people affected</strong> across Albay Province—of whom 5,440 remained in formal evacuation centers. PHIVOLCS maintained <strong>Alert Level 3</strong> (high volcanic unrest) throughout the week. The Civil Aviation Authority of the Philippines (CAAP) imposed a flight ban within <strong>6 km of the summit</strong> to protect aircraft from ash and ballistic hazards. Ashfall affected 52 barangays, disrupted <strong>132 schools</strong>, and damaged over 1,230 hectares of agricultural land. Road clearing was underway across 158 kilometers of affected routes. Government prepositioned 300,000+ food and non-food items in Bicol in preparation for potential escalation to Alert Level 4.</p>",
+          "significance": "Most extensive Mayon impact event in years; 102,000 affected with sustained Alert Level 3 signals a prolonged volcanic crisis requiring multi-agency response and possible future expansion of evacuation zones.",
+          "diasporaImpact": "Bicol Region is among the top five OFW-sending regions; hundreds of thousands of diaspora families have relatives in Albay facing disrupted livelihoods, damaged crops, and potential displacement.",
+          "dynastyLinks": [],
+          "sourceLinks": [
+            {
+              "label": "Inquirer",
+              "href": "https://newsinfo.inquirer.net/2222929/ocd-over-102000-people-affected-by-eruption-of-mayon-volcano"
+            },
+            {
+              "label": "Rappler",
+              "href": "https://www.rappler.com/philippines/luzon/mayon-ashfall-affects-thousands-albay-may-2026/"
+            },
+            {
+              "label": "Philstar",
+              "href": "https://www.philstar.com/nation/2026/05/06/2525891/mayon-ashfall-affects-132-schools"
+            },
+            {
+              "label": "GMA News",
+              "href": "https://www.gmanetwork.com/news/topstories/regions/986305/more-than-6-000-houses-in-albay-affected-by-ashfall-from-mayon-volcano-governor/story/"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "dynastyHighlights": {
+    "title": "Dynasty Watch",
+    "items": [
+      {
+        "title": "Duterte",
+        "titleHref": "/dynasties-network-visualization.html#dynasty-DUTERTE_FAMILY",
+        "bodyHtml": "<p>Sara Duterte’s second impeachment moved from committee to plenary within the week: the House justice panel approved all four articles, and 215+ members confirmed yes votes by May 7. The family now faces simultaneous pressure tracks—Senate trial ahead domestically, and Rodrigo Duterte’s ICC case already in the trial-management phase internationally.</p>",
+        "bullets": [
+          {
+            "text": "House panel approves Sara Duterte impeachment articles",
+            "href": "/interactive-timeline/index.html?date=2026-05-05"
+          },
+          {
+            "text": "215+ House votes confirmed ahead of May 11 plenary",
+            "href": "/interactive-timeline/index.html?date=2026-05-08"
+          }
+        ]
+      },
+      {
+        "title": "Marcos-Romualdez",
+        "titleHref": "/dynasties-network-visualization.html#dynasty-MARCOS_ROMUALDEZ",
+        "bodyHtml": "<p>The administration had a week of contrasts: Marcos chaired the 48th ASEAN Summit in Cebu with international visibility and a rice supply deal with Vietnam, while Speaker Romualdez became the complainant in a high-profile extortion arrest that raised simultaneous questions about press freedom and the use of law enforcement against critics.</p>",
+        "bullets": [
+          {
+            "text": "Marcos chairs 48th ASEAN Summit; “Lead, Sail, Rise” framework adopted",
+            "href": "/interactive-timeline/index.html?date=2026-05-06"
+          },
+          {
+            "text": "NBI arrests PGMN’s Mabanta for alleged P300M extortion vs. Romualdez",
+            "href": "/interactive-timeline/index.html?date=2026-05-05"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -239,6 +239,14 @@
               "date": "2026-05-01",
               "title": "Labor Day Protests Center Wage Demands Amid Soaring Prices",
               "role": "primary_actor"
+            },
+            {
+              "event_id": "2026-05-05-mabanta-arrest-romualdez",
+              "role": "primary_actor"
+            },
+            {
+              "event_id": "2026-05-06-asean-summit-cebu-marcos",
+              "role": "primary_actor"
             }
           ],
           "2025_rumors_headlines": [
@@ -291,6 +299,22 @@
               "source": "Multiple sources, February 2026",
               "url": "https://newsinfo.inquirer.net/2183578/vice-president-sara-duterte-announces-2028-presidential-bid",
               "description": "Malacañang called Sara Duterte's early presidential announcement irrelevant, signaling the Marcos-Duterte political war will define the 2028 election cycle."
+            },
+            {
+              "date": "2026-05-05",
+              "headline": "NBI Arrests PGMN Founder Mabanta for Alleged P300M Extortion vs. Speaker Romualdez",
+              "source": "Rappler, Philstar, GMA News, May 2026",
+              "url": "https://www.gmanetwork.com/news/topstories/nation/986578/nbi-arrests-media-personality-in-alleged-extort-try-on-martin-romualdez/story/",
+              "category": "legal",
+              "description": "Social media personality Franco Mabanta arrested via entrapment for allegedly demanding P300M in exchange for withholding corruption content about the Speaker. Mabanta claims politically motivated setup."
+            },
+            {
+              "date": "2026-05-06",
+              "headline": "Marcos Chairs 48th ASEAN Summit in Cebu; 'Lead, Sail, Rise' Framework Adopted",
+              "source": "Rappler, Manila Bulletin, Philstar, May 2026",
+              "url": "https://mb.com.ph/2026/05/08/marcos-opens-asean-summit-urges-united-response-to-middle-east-crisis",
+              "category": "alliance",
+              "description": "Philippines hosted 48th ASEAN Summit (May 6-8) in Lapu-Lapu City, Cebu. Marcos anchored agenda on energy security and food supply; PH approved to host ASEAN Maritime Centre; secured Vietnam rice deal (1.5M MT at $450/MT)."
             }
           ]
         },
@@ -387,6 +411,14 @@
             {
               "date": "2026-04-30",
               "title": "ICC Trial Chamber Sets May 27 Duterte Status Conference",
+              "role": "primary_actor"
+            },
+            {
+              "event_id": "2026-05-05-house-duterte-impeachment-panel",
+              "role": "primary_actor"
+            },
+            {
+              "event_id": "2026-05-08-house-duterte-215-votes",
               "role": "primary_actor"
             }
           ],
@@ -534,6 +566,22 @@
               "source": "Rappler, The Diplomat, February 2026",
               "url": "https://www.rappler.com/philippines/sara-duterte-slapped-fourth-impeachment-complaint-february-18-2026/",
               "description": "Renewed impeachment push after one-year bar expired: Makabayan bloc (Feb 2), Tindig Pilipinas/Akbayan (Feb 2), clergy groups (Feb 9), and lawyer Nathaniel Cabrera (Feb 18)."
+            },
+            {
+              "date": "2026-05-05",
+              "headline": "House Justice Panel Approves Sara Duterte Second Impeachment for Plenary Vote",
+              "source": "Rappler, Philstar, GMA News, May 2026",
+              "url": "https://www.gmanetwork.com/news/topstories/nation/986309/house-justice-panel-vp-sara-duterte-impeachment/story/",
+              "category": "legal",
+              "description": "Committee on Justice found probable cause on four articles: confidential funds misuse, bribery, death threats vs. Marcos, unexplained wealth. 215+ votes confirmed as of May 7."
+            },
+            {
+              "date": "2026-05-08",
+              "headline": "House Confirms 215+ Votes to Impeach Sara Duterte Ahead of May 11 Plenary",
+              "source": "Rappler, Manila Bulletin, May 2026",
+              "url": "https://www.rappler.com/philippines/sara-duterte-impeachment-numbers-update-house-may-7-2026/",
+              "category": "legal",
+              "description": "Two-thirds of the 318-member House confirmed votes in favor; Duterte camp sought Supreme Court intervention; no order was issued. Final vote set May 11."
             }
           ]
         },
