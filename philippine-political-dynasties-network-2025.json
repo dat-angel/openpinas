@@ -229,6 +229,16 @@
               "date": "2026-02-20",
               "title": "ICC Grants Duterte Request to Skip Confirmation of Charges Hearing",
               "role": "mentioned"
+            },
+            {
+              "date": "2026-04-30",
+              "title": "Balikatan Drills Put Five Navies in WPS as China Patrols Scarborough",
+              "role": "primary_actor"
+            },
+            {
+              "date": "2026-05-01",
+              "title": "Labor Day Protests Center Wage Demands Amid Soaring Prices",
+              "role": "primary_actor"
             }
           ],
           "2025_rumors_headlines": [
@@ -368,6 +378,16 @@
               "date": "2026-02-20",
               "title": "ICC Grants Duterte Request to Skip Confirmation of Charges Hearing",
               "role": "primary_actor"
+            },
+            {
+              "date": "2026-04-29",
+              "title": "House Panel Finds Probable Cause to Impeach Sara Duterte",
+              "role": "primary_actor"
+            },
+            {
+              "date": "2026-04-30",
+              "title": "ICC Trial Chamber Sets May 27 Duterte Status Conference",
+              "role": "primary_actor"
             }
           ],
           "key_members": [
@@ -387,7 +407,7 @@
                 "Torture",
                 "Rape"
               ],
-              "icc_trial_status": "Initial appearance March 14, 2025; confirmation of charges hearing postponed from September 23; medical fitness testing ongoing",
+              "icc_trial_status": "Charges confirmed April 23, 2026; Trial Chamber III scheduled status conference for May 27, 2026",
               "2025_events": [
                 "Arrested March 11 at NAIA under ICC warrant",
                 "Transferred to The Hague",
@@ -400,7 +420,7 @@
               "name": "Sara Duterte",
               "position": "Vice President",
               "term_start": 2022,
-              "status": "impeachment_blocked_by_supreme_court",
+              "status": "impeachment_probable_cause_found_by_house_panel",
               "gender": "F",
               "wikipedia": "https://en.wikipedia.org/wiki/Sara_Duterte",
               "impeachment_date": "2025-02-05",
@@ -4023,7 +4043,7 @@
           {
             "case": "Duterte ICC Detention",
             "dynasty": "DUTERTE_FAMILY",
-            "status": "trial_fitness_determination",
+            "status": "trial_chamber_status_conference_scheduled",
             "arrest_date": "2025-03-11",
             "location": "The Hague, Netherlands",
             "charges": [
@@ -4036,7 +4056,7 @@
           {
             "case": "VP Duterte Impeachment",
             "dynasty": "DUTERTE_FAMILY",
-            "status": "supreme_court_blocked",
+            "status": "house_probable_cause_found",
             "ruling_date": "2025-07-25",
             "blocked_until": "2026-02-06"
           }

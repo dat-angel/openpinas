@@ -1,0 +1,216 @@
+{
+  "version": 1,
+  "weekEnding": "2026-05-02",
+  "weekLabel": "April 26 – May 2, 2026",
+  "title": "OpenPinas: Weekly News Review",
+  "lastUpdated": "May 2, 2026",
+  "prevWeekEnding": "2026-04-25",
+  "stats": [
+    { "number": "8", "label": "Stories" },
+    { "number": "106", "label": "Impeachment Votes" },
+    { "number": "₱61.567", "label": "Peso Low" },
+    { "number": "3.8 km", "label": "Mayon Lava Flow" }
+  ],
+  "eventSections": [
+    {
+      "title": "Legal",
+      "articles": [
+        {
+          "timeDatetime": "2026-04-29",
+          "timeDisplay": "April 29-May 2, 2026",
+          "category": "Legal",
+          "categoryClass": "legal",
+          "borderColor": "#1e3a5f",
+          "headline": "Sara Duterte’s Impeachment Cleared Probable Cause and Moved Toward a Vote Count",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-04-29&search=Sara+Duterte+probable+cause+106+votes",
+          "descriptionHtml": "<p>The House justice committee unanimously found probable cause to impeach Vice President Sara Duterte after four hearings on confidential funds, alleged unexplained wealth, and threats against President Ferdinand Marcos Jr. The panel cited a record that now includes testimony about <strong>₱125 million</strong> allegedly moved within 24 hours, COA disallowances, AMLC-linked transactions, and civil-registry questions around named fund recipients. The committee is expected to approve its report on May 4, with possible plenary action around May 11 and <strong>106 votes</strong> needed to send the Articles of Impeachment to the Senate.</p><p>The week’s shift is that impeachment is no longer just a hearing-room narrative. It has become a live arithmetic problem for the House and a direct test of whether the Duterte brand can be forced into a Senate trial.</p>",
+          "dynastyLinks": [
+            { "label": "Duterte", "href": "/dynasties-network-visualization.html#dynasty-DUTERTE_FAMILY" },
+            { "label": "Marcos-Romualdez", "href": "/dynasties-network-visualization.html#dynasty-MARCOS_ROMUALDEZ" }
+          ],
+          "diasporaImpact": "For Filipinos abroad, the probable-cause vote is a high-stakes signal about whether constitutional accountability can still reach a sitting vice president.",
+          "sourceLinks": [
+            { "label": "GMA: House panel finds probable cause", "href": "https://www.gmanetwork.com/news/topstories/nation/985781/sara-duterte-impeachment-house-justice-committee-probable-cause/story/" },
+            { "label": "ABS-CBN: impeachment now up to plenary", "href": "https://www.abs-cbn.com/news/nation/2026/4/29/house-finds-probable-cause-duterte-impeachment-now-up-to-plenary-1618" },
+            { "label": "GMA: House prepares for plenary vote", "href": "https://www.gmanetwork.com/news/topstories/nation/985955/house-prepares-for-plenary-vote-on-vp-sara-impeachment-articles/story/" },
+            { "label": "GMA: 106 votes seen within reach", "href": "https://www.gmanetwork.com/news/topstories/nation/986151/sara-duterte-impeachment-house-panel-votes/story/" }
+          ]
+        },
+        {
+          "timeDatetime": "2026-04-30",
+          "timeDisplay": "April 28-May 2, 2026",
+          "category": "Legal",
+          "categoryClass": "legal",
+          "borderColor": "#1e3a5f",
+          "headline": "Rodrigo Duterte’s ICC Case Entered Trial-Management Mode",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-04-30&search=Duterte+ICC+status+conference+May+27",
+          "descriptionHtml": "<p>The ICC’s Trial Chamber III scheduled a <strong>May 27</strong> status conference in the crimes against humanity case against former President Rodrigo Duterte, with parties ordered to submit trial-management information by May 15. The court asked for updates on trial timing, anticipated evidence, agreed facts, translations, outstanding disclosures, possible motions, trial briefs, opening statements, and victim participation. Coming after the April 23 confirmation of charges and assignment of trial judges, the order moved the case from pre-trial confirmation into the practical machinery of trial preparation.</p><p>The significance is procedural but not minor. The question is no longer only whether the ICC case survives; it is how quickly evidence, witnesses, victims, and defense motions can be organized into a trial calendar.</p>",
+          "dynastyLinks": [
+            { "label": "Duterte", "href": "/dynasties-network-visualization.html#dynasty-DUTERTE_FAMILY" }
+          ],
+          "diasporaImpact": "The May 27 conference gives overseas Filipinos a concrete next date in a case that continues to divide families and diaspora communities over drug-war accountability.",
+          "sourceLinks": [
+            { "label": "GMA: status conference set", "href": "https://www.gmanetwork.com/news/topstories/nation/985970/status-conference-duterte-case-icc-trial-chamber/story/" },
+            { "label": "GMA: ICC assigns trial judges", "href": "https://www.gmanetwork.com/news/topstories/nation/985636/icc-sets-up-court-judges-for-rodrigo-duterte-trial/story/" },
+            { "label": "Philstar: May 27 conference", "href": "https://www.philstar.com/headlines/2026/05/02/2525014/status-conference-dutertes-icc-trial-set-may-27" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "International Relations",
+      "articles": [
+        {
+          "timeDatetime": "2026-04-30",
+          "timeDisplay": "April 30-May 2, 2026",
+          "category": "International Relations",
+          "categoryClass": "international",
+          "borderColor": "#0d7377",
+          "headline": "Balikatan Stretched From Five-Navy Drills to Scarborough Pushback",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-04-30&search=Balikatan+Scarborough+NMESIS+Batanes",
+          "descriptionHtml": "<p>Balikatan 2026 moved from opening-week scale into practical deterrence work. Eleven warships from the Philippines, United States, Japan, Australia, and Canada held maritime drills in the West Philippine Sea, covering communications, anti-submarine warfare, gunnery, air defense, deck landing, search and rescue, maritime cooperation, and replenishment. China answered with naval and air patrol claims near Scarborough Shoal, while Philippine officials called Beijing’s messaging information operations; by May 2, Philippine and US forces were also testing NMESIS sea-denial capability in Batanes.</p><p>The importance of the week is that alliance signaling became more operational and more geographically pointed. Manila’s deterrence posture now links West Philippine Sea presence, northern Luzon readiness, and civilian missions into one security picture.</p>",
+          "dynastyLinks": [
+            { "label": "Marcos-Romualdez", "href": "/dynasties-network-visualization.html#dynasty-MARCOS_ROMUALDEZ" }
+          ],
+          "diasporaImpact": "For families tied to coastal communities, northern Luzon, or maritime work, the week showed how territorial defense and shipping risk now sit inside ordinary homeland-security concerns.",
+          "sourceLinks": [
+            { "label": "GMA: five navies drill in WPS", "href": "https://www.gmanetwork.com/news/topstories/nation/985929/balikatan-west-philippine-sea-naval-exercise/story/" },
+            { "label": "GMA: China patrols near Scarborough", "href": "https://www.gmanetwork.com/news/topstories/nation/985977/china-holds-naval-air-patrols-near-scarborough-shoal-amid-ph-us-balikatan/story/" },
+            { "label": "ABS-CBN: NMESIS in Batanes", "href": "https://www.abs-cbn.com/news/nation/2026/5/2/ph-us-test-sea-denial-capability-with-nmesis-deployment-in-batanes-1421" },
+            { "label": "GMA: Atin Ito reaches Pag-asa", "href": "https://www.gmanetwork.com/news/topstories/nation/986077/pag-asa-island-wps-west-philippine-sea-atin-ito/story/" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Economic",
+      "articles": [
+        {
+          "timeDatetime": "2026-04-29",
+          "timeDisplay": "April 27-30, 2026",
+          "category": "Economic",
+          "categoryClass": "economic",
+          "borderColor": "#0b6e4f",
+          "headline": "Fuel Relief Arrived but the Peso Still Fell to a Record Low",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-04-29&search=peso+record+low+fuel+rollback+gas+stations",
+          "descriptionHtml": "<p>The fuel shock became easier and harder at the same time. Diesel and kerosene got large April 28 rollbacks, but gasoline still rose, hundreds of gasoline stations remained closed after inspection sweeps, and police reported cases tied to hoarding and profiteering. Then the peso closed at a new record low of <strong>₱61.567</strong> to the dollar as importer hedging, dollar demand, high oil prices, and Middle East risk kept pressure on the currency.</p><p>The week’s economic message is that relief at the pump does not mean the shock has passed. The crisis is now moving through enforcement, import bills, currency weakness, airfares, and inflation expectations at once.</p>",
+          "diasporaImpact": "Remittances convert into more pesos on paper, but the same exchange-rate weakness can raise imported food, fuel, travel, and household costs.",
+          "sourceLinks": [
+            { "label": "GMA: April 28 fuel adjustment", "href": "https://www.gmanetwork.com/news/money/companies/985460/oil-price-adjustment-april-28-2026/story/" },
+            { "label": "GMA: 294 gas stations closed", "href": "https://www.gmanetwork.com/news/money/economy/985764/pnp-294-gas-stations-closed-amid-fuel-monitoring-operations/story/" },
+            { "label": "GMA: peso hits record low", "href": "https://www.gmanetwork.com/news/money/economy/985798/philippine-peso-record-low-us-dollar/story/" },
+            { "label": "ABS-CBN: peso breaches record", "href": "https://www.abs-cbn.com/news/business/2026/4/29/peso-hits-new-low-a-day-after-breaching-p61-to-dollar-level-1609" }
+          ]
+        },
+        {
+          "timeDatetime": "2026-05-01",
+          "timeDisplay": "May 1, 2026",
+          "category": "Economic",
+          "categoryClass": "economic",
+          "borderColor": "#0b6e4f",
+          "headline": "Labor Day Turned Cost-of-Living Pressure Into Street Politics",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-05-01&search=Labor+Day+wage+hike+jobs",
+          "descriptionHtml": "<p>Workers’ groups used Labor Day to press for a living wage, job security, benefits, and regularization while rallying against soaring prices. The PNP placed units nationwide on full alert and deployed more than <strong>106,000</strong> personnel as protests gathered around Welcome Rotonda, España Boulevard, Mendiola, and other sites. The administration answered with job-fair messaging and roughly <strong>278,000</strong> vacancies, but the center of gravity was clear: workers were measuring economic management against wages, food, fuel, and job quality.</p><p>The significance is that the energy and inflation story became a mass-labor story. Relief programs matter, but organized workers were arguing that the basic wage bargain no longer fits the price environment.</p>",
+          "dynastyLinks": [
+            { "label": "Marcos-Romualdez", "href": "/dynasties-network-visualization.html#dynasty-MARCOS_ROMUALDEZ" }
+          ],
+          "diasporaImpact": "When domestic pay falls behind prices, overseas relatives often become the informal stabilizer for food, rent, transport, and school expenses.",
+          "sourceLinks": [
+            { "label": "GMA: Labor Day protests", "href": "https://www.gmanetwork.com/news/topstories/nation/986012/workers-groups-gather-for-nationwide-labor-day-2026-protests/story/" },
+            { "label": "ABS-CBN: protesters demand wage hike", "href": "https://www.abs-cbn.com/news/nation/2026/5/1/protesters-demand-wage-hike-cheaper-commodities-on-labor-day-0917" },
+            { "label": "ABS-CBN: 278,000 jobs offered", "href": "https://www.abs-cbn.com/news/business/2026/5/1/278-000-jobs-offered-at-labor-day-job-fairs-1752" },
+            { "label": "ABS-CBN: Marcos Labor Day message", "href": "https://www.abs-cbn.com/news/nation/2026/5/1/marcos-says-workers-backbone-of-our-republic-0911" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "OFW & Diaspora",
+      "articles": [
+        {
+          "timeDatetime": "2026-05-01",
+          "timeDisplay": "May 1-2, 2026",
+          "category": "OFW/Diaspora",
+          "categoryClass": "diaspora",
+          "borderColor": "#8a5a44",
+          "headline": "Repatriates Went Back to the Overseas Job Market as Hormuz Risk Continued",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-05-01&search=DMW+job+fair+repatriates+Hormuz",
+          "descriptionHtml": "<p>The DMW’s Labor Day job fair offered <strong>3,400 overseas jobs</strong> through 12 licensed recruitment and manning agencies, drawing more than a thousand applicants by midday and thousands of pre-registrants. Some applicants were Middle East repatriates still seeking work abroad, which echoed earlier findings that many returning OFWs wanted to redeploy despite recent danger. By May 2, officials also said around <strong>1,300 Filipino seafarers</strong> had safely crossed the Strait of Hormuz, while additional financial-assistance slots opened for affected OFWs in Dubai and the Northern Emirates.</p><p>The significance is that evacuation did not break overseas-labor dependence. It exposed how quickly displaced workers are pushed back toward foreign jobs because local alternatives are still thin.</p>",
+          "diasporaImpact": "For OFW families, safe return and safe redeployment now sit uncomfortably close together: the income model still depends on going back out.",
+          "sourceLinks": [
+            { "label": "GMA: DMW Labor Day OFW job fair", "href": "https://www.gmanetwork.com/news/pinoyabroad/dispatch/986085/dmw-labor-day-job-fair-ofw/story/" },
+            { "label": "ABS-CBN: repatriates seek overseas jobs", "href": "https://www.abs-cbn.com/news/nation/2026/5/1/repatriates-seek-overseas-jobs-at-dmw-labor-day-fair-1407" },
+            { "label": "ABS-CBN: 1,300 seafarers cross Hormuz", "href": "https://www.abs-cbn.com/news/nation/2026/5/2/around-1-300-filipino-seafarers-have-safely-crossed-hormuz-strait-cacdac-1219" },
+            { "label": "GMA: aid slots in Dubai", "href": "https://www.gmanetwork.com/news/pinoyabroad/dispatch/986080/dmw-opens-more-financial-aid-slots-for-ofws-in-dubai-amid-high-demand/story/" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Natural Disasters",
+      "articles": [
+        {
+          "timeDatetime": "2026-05-02",
+          "timeDisplay": "April 26-May 2, 2026",
+          "category": "Natural Disasters",
+          "categoryClass": "disaster",
+          "borderColor": "#c77d10",
+          "headline": "Mayon Ashfall and Danger-Level Heat Kept Disaster Risk Close to Daily Life",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-05-02&search=Mayon+ashfall+heat+index",
+          "descriptionHtml": "<p>Mayon’s unrest escalated again as lava flows reached up to <strong>3.8 kilometers</strong>, PHIVOLCS logged 39 volcanic earthquakes and 376 rockfall events, and a lava-flow-collapse-fed pyroclastic density current sent ashfall into parts of Camalig and Guinobatan. Residents were urged to stay indoors, avoid danger zones, and protect food and water from contamination. At the same time, PAGASA kept heat risk high, with 13 areas forecast at danger-level heat index on May 2 after another 13 areas hit danger readings on April 26.</p><p>The week closed with overlapping environmental stress rather than one isolated disaster. Volcanic ash, lava-collapse hazards, and heat risk now demand household planning that covers health, cleanup, evacuation, water, and electricity all at once.</p>",
+          "diasporaImpact": "Families with ties to Albay and other heat-stressed provinces may need to prepare for medical, evacuation, crop, utility, and cleanup costs.",
+          "sourceLinks": [
+            { "label": "GMA: Mayon lava reaches 3.8 km", "href": "https://www.gmanetwork.com/news/topstories/regions/986134/mayon-volcano-lava-flow-reached-up-to-3-8-km-phivolcs-says/story/" },
+            { "label": "GMA: ashfall in Albay", "href": "https://www.gmanetwork.com/news/topstories/regions/986173/ashfall-hits-parts-of-albay-due-to-mayon-s-increased-volcanic-activity/story/" },
+            { "label": "GMA: May 2 danger heat index", "href": "https://www.gmanetwork.com/news/weather/content/986110/13-areas-to-have-danger-level-heat-index-on-saturday-may-2-2026/story/" },
+            { "label": "GMA: April 26 danger heat index", "href": "https://www.gmanetwork.com/news/weather/content/985389/pagasa-13-areas-under-danger-heat-index-on-sunday/story/" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Cultural",
+      "articles": [
+        {
+          "timeDatetime": "2026-05-01",
+          "timeDisplay": "May 1-2, 2026",
+          "category": "Cultural",
+          "categoryClass": "cultural",
+          "borderColor": "#b23a48",
+          "headline": "Heritage Month and Pageant Night Put Identity Work in the Public Square",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-05-01&search=National+Heritage+Month+Miss+Universe+Philippines",
+          "descriptionHtml": "<p>National Heritage Month opened under the theme <strong>“Roots and Horizons: Our Shared Heritage, Our Collective Future”</strong>, with the NCCA framing heritage as both memory and nation-building guidance. Coverage highlighted heritage sites including UST, PICC, Teus Mansion, Bahay Ugnayan, and Goldenberg Mansion, while officials emphasized that preservation depends on community stewardship as much as national agencies. In the same public-culture lane, Miss Universe Philippines 2026 prepared for its May 2 coronation night at Mall of Asia Arena with 31 candidates and Marina Summers as host.</p><p>After weeks dominated by fuel, impeachment, and security risk, the cultural signal mattered because identity work did not disappear under crisis. Public memory, representation, and national soft power remained part of how the country understood itself.</p>",
+          "diasporaImpact": "For Filipinos abroad, Heritage Month gives families a concrete way to connect children and communities to local history, built heritage, language, and public culture.",
+          "sourceLinks": [
+            { "label": "GMA: National Heritage Month", "href": "https://www.gmanetwork.com/news/lifestyle/artandculture/986045/national-heritage-month-bridges-the-filipino-past-and-future-roots-horizons/story/" },
+            { "label": "GMA: Miss Universe Philippines guide", "href": "https://www.gmanetwork.com/news/lifestyle/content/985662/miss-universe-philippines-2026-everything-you-need-to-know-about-coronation-night/story/" },
+            { "label": "GMA: Marina Summers to host", "href": "https://www.gmanetwork.com/news/lifestyle/content/985393/marina-summers-to-host-miss-universe-philippines-2026-coronation/story/" }
+          ]
+        }
+      ]
+    }
+  ],
+  "dynastyHighlights": {
+    "title": "Dynasty Watch",
+    "items": [
+      {
+        "title": "Duterte",
+        "titleHref": "/dynasties-network-visualization.html#dynasty-DUTERTE_FAMILY",
+        "bodyHtml": "<p>The Duterte family absorbed two legal escalations in the same week: Sara Duterte’s impeachment reached probable cause in the House justice committee, while Rodrigo Duterte’s ICC case received a May 27 status conference. The combination tightened pressure from both domestic constitutional accountability and international criminal procedure.</p>",
+        "bullets": [
+          { "text": "House panel finds probable cause against Sara Duterte", "href": "/interactive-timeline/index.html?date=2026-04-29" },
+          { "text": "ICC schedules Rodrigo Duterte status conference", "href": "/interactive-timeline/index.html?date=2026-04-30" }
+        ]
+      },
+      {
+        "title": "Marcos-Romualdez",
+        "titleHref": "/dynasties-network-visualization.html#dynasty-MARCOS_ROMUALDEZ",
+        "bodyHtml": "<p>The administration’s week split between external deterrence and domestic pressure. Balikatan gave Marcos a stronger alliance-security frame, while Labor Day protests and the peso’s record low kept the cost-of-living question aimed directly at governing competence.</p>",
+        "bullets": [
+          { "text": "Balikatan expands WPS and Batanes posture", "href": "/interactive-timeline/index.html?date=2026-04-30" },
+          { "text": "Labor Day protests press wage and price demands", "href": "/interactive-timeline/index.html?date=2026-05-01" }
+        ]
+      }
+    ]
+  }
+}
