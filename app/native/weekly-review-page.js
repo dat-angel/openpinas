@@ -1,4 +1,6 @@
 import { notFound } from "next/navigation";
+import WhatsNewPanel from "@/app/components/WhatsNewPanel";
+import { getWeekChanges } from "@/app/lib/week-changes";
 import { readWeeklyManifest, readWeeklyReviewByDate } from "@/app/lib/weekly-reviews";
 
 const T = {
@@ -21,6 +23,7 @@ export default function WeeklyReviewPage({ weekEnding }) {
   const manifest = readWeeklyManifest();
   const currentMeta = manifest.find((r) => r.weekEnding === weekEnding);
   const previous = currentMeta?.prevWeekEnding ?? null;
+  const weekChanges = getWeekChanges(weekEnding, previous);
 
   return (
     <main style={{ maxWidth: 1100, margin: "0 auto", padding: "40px 24px 64px" }}>
@@ -37,6 +40,8 @@ export default function WeeklyReviewPage({ weekEnding }) {
         <a href="/weekly-reviews/index.html" style={{ color: T.ink }}>All Reviews</a>
         {previous ? <a href={`/weekly-reviews/weekly-review-${previous}.html`} style={{ color: T.muted }}>← Previous Week</a> : null}
       </div>
+
+      <WhatsNewPanel changes={weekChanges} />
 
       {(review.stats ?? []).length > 0 && (
         <section style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(150px, 1fr))", gap: 1, background: T.subtle, marginBottom: 28, border: `1px solid ${T.subtle}` }}>

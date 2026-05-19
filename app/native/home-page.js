@@ -1,3 +1,5 @@
+import WhatsNewPanel from "@/app/components/WhatsNewPanel";
+import { getWeekChanges } from "@/app/lib/week-changes";
 import { getNowDeveloping } from "@/lib/get-now-developing";
 import { FEATURED_VISUAL_IDS, getVisualizationsByIds } from "@/app/lib/visualizations";
 
@@ -57,6 +59,7 @@ export default function HomePageNative() {
   const { label, updated, items, weeklyReviewHref } = getNowDeveloping();
   const dateLine = formatStripDate(updated);
   const visualStack = getVisualizationsByIds(FEATURED_VISUAL_IDS);
+  const weekChanges = /^\d{4}-\d{2}-\d{2}$/.test(updated) ? getWeekChanges(updated) : null;
 
   return (
     <main style={{ minHeight: "100vh", margin: 0, fontFamily: T.font, color: T.ink, background: T.bg }}>
@@ -146,6 +149,10 @@ export default function HomePageNative() {
           </div>
         ))}
       </section>
+
+      {weekChanges ? (
+        <WhatsNewPanel changes={weekChanges} compact />
+      ) : null}
 
       {/* Now developing strip */}
       <section
