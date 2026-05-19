@@ -247,6 +247,26 @@
             {
               "event_id": "2026-05-06-asean-summit-cebu-marcos",
               "role": "primary_actor"
+            },
+            {
+              "date": "2026-05-11",
+              "title": "House Impeaches VP Sara Duterte for Second Time — 257–25–9 Vote",
+              "role": "mentioned"
+            },
+            {
+              "date": "2026-05-11",
+              "title": "Alan Cayetano Ousts Tito Sotto as Senate President on Impeachment Day",
+              "role": "mentioned"
+            },
+            {
+              "date": "2026-05-13",
+              "title": "Gunshots at Senate as NBI Attempts to Arrest Bato dela Rosa on ICC Warrant",
+              "role": "primary_actor"
+            },
+            {
+              "date": "2026-05-13",
+              "title": "Luzon and Visayas Power Grids on Red Alert; Rotating Brownouts for Three Days",
+              "role": "mentioned"
             }
           ],
           "2025_rumors_headlines": [
@@ -315,6 +335,22 @@
               "url": "https://mb.com.ph/2026/05/08/marcos-opens-asean-summit-urges-united-response-to-middle-east-crisis",
               "category": "alliance",
               "description": "Philippines hosted 48th ASEAN Summit (May 6-8) in Lapu-Lapu City, Cebu. Marcos anchored agenda on energy security and food supply; PH approved to host ASEAN Maritime Centre; secured Vietnam rice deal (1.5M MT at $450/MT)."
+            },
+            {
+              "date": "2026-05-13",
+              "headline": "Marcos Denies Executive Order to Arrest Bato dela Rosa Amid Senate Standoff",
+              "source": "Rappler, May 2026",
+              "url": "https://www.rappler.com/philippines/ferdinand-marcos-jr-statement-senate-gunshots-may-13-2026/",
+              "category": "legal",
+              "description": "President said government did not swarm Senate; NBI attempted ICC warrant service on drug-war senator anyway."
+            },
+            {
+              "date": "2026-05-13",
+              "headline": "Luzon-Visayas Red Alert Brownouts Expose Grid Fragility During GDP Slump",
+              "source": "Philstar, GMA News, May 2026",
+              "url": "https://www.philstar.com/nation/2026/05/16/2528210/luzon-visayas-suffer-rotational-blackouts",
+              "category": "scandal",
+              "description": "Three days of rotating brownouts with 4,160 MW offline follow Q1 GDP growth of only 2.8%."
             }
           ]
         },
@@ -420,6 +456,26 @@
             {
               "event_id": "2026-05-08-house-duterte-215-votes",
               "role": "primary_actor"
+            },
+            {
+              "date": "2026-05-11",
+              "title": "House Impeaches VP Sara Duterte for Second Time — 257–25–9 Vote",
+              "role": "primary_actor"
+            },
+            {
+              "date": "2026-05-11",
+              "title": "Alan Cayetano Ousts Tito Sotto as Senate President on Impeachment Day",
+              "role": "mentioned"
+            },
+            {
+              "date": "2026-05-13",
+              "title": "Gunshots at Senate as NBI Attempts to Arrest Bato dela Rosa on ICC Warrant",
+              "role": "mentioned"
+            },
+            {
+              "date": "2026-05-14",
+              "title": "Bato dela Rosa Leaves Senate; Ombudsman Suspends Sergeant-at-Arms Over Warning Shots",
+              "role": "mentioned"
             }
           ],
           "key_members": [
@@ -582,6 +638,30 @@
               "url": "https://www.rappler.com/philippines/sara-duterte-impeachment-numbers-update-house-may-7-2026/",
               "category": "legal",
               "description": "Two-thirds of the 318-member House confirmed votes in favor; Duterte camp sought Supreme Court intervention; no order was issued. Final vote set May 11."
+            },
+            {
+              "date": "2026-05-11",
+              "headline": "House Impeaches Sara Duterte 257–25–9; First Official Impeached Twice",
+              "source": "Rappler, BBC, Al Jazeera, May 2026",
+              "url": "https://www.rappler.com/philippines/house-impeaches-vice-president-sara-duterte-may-2026/",
+              "category": "legal",
+              "description": "Plenary vote transmitted articles to Senate; charges include confidential funds misuse, bribery, unexplained wealth, and threats vs. Marcos family."
+            },
+            {
+              "date": "2026-05-11",
+              "headline": "Cayetano Elected Senate President Before Impeachment Vote; Will Preside Over Trial",
+              "source": "Rappler, Tribune, May 2026",
+              "url": "https://www.rappler.com/philippines/tito-sotto-ousted-alan-cayetano-new-senate-president-may-11-2026/",
+              "category": "alliance",
+              "description": "13 senators ousted Tito Sotto; Duterte-aligned bloc gains procedural control of Senate impeachment court."
+            },
+            {
+              "date": "2026-05-14",
+              "headline": "Bato dela Rosa Leaves Senate After ICC Warrant Standoff",
+              "source": "Rappler, Philstar, May 2026",
+              "url": "https://www.rappler.com/philippines/bato-dela-rosa-left-senate-evades-icc-arrest-may-14-2026/",
+              "category": "legal",
+              "description": "Senator evaded NBI service of ICC warrant after May 13 gunshots at Senate; Ombudsman suspended sergeant-at-arms."
             }
           ]
         },
