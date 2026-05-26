@@ -2,6 +2,12 @@
   "version": 1,
   "reviews": [
     {
+      "weekEnding": "2026-05-23",
+      "weekLabel": "May 16 – May 23, 2026",
+      "eventCount": 6,
+      "prevWeekEnding": "2026-05-16"
+    },
+    {
       "weekEnding": "2026-05-16",
       "weekLabel": "May 9 – May 16, 2026",
       "eventCount": 6,

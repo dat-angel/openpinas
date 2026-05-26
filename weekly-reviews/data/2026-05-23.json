@@ -1,0 +1,136 @@
+{
+  "version": 1,
+  "weekEnding": "2026-05-23",
+  "weekLabel": "May 16 – May 23, 2026",
+  "title": "OpenPinas: Weekly News Review",
+  "lastUpdated": "May 23, 2026",
+  "prevWeekEnding": "2026-05-16",
+  "stats": [
+    { "number": "6", "label": "Stories" },
+    { "number": "23", "label": "Senator-Judges Sworn" },
+    { "number": "$7.41B", "label": "BoP Deficit (Jan–Apr)" },
+    { "number": "July 6", "label": "Impeachment Trial Start" }
+  ],
+  "eventSections": [
+    {
+      "title": "Political",
+      "articles": [
+        {
+          "timeDatetime": "2026-05-18",
+          "timeDisplay": "May 18, 2026",
+          "category": "Political",
+          "categoryClass": "political",
+          "borderColor": "#3a0ca3",
+          "headline": "Senate Opens Impeachment Court for VP Sara Duterte; Trial Set for July 6",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-05-18&search=Senate+impeachment+court+Sara+Duterte+July+6",
+          "descriptionHtml": "<p>The Senate formally convened as an impeachment court on May 18, with <strong>23 of 24</strong> senators donning red robes and taking oath as senator-judges under presiding officer Alan Peter Cayetano. The court issued a writ of summons giving Vice President Sara Duterte <strong>10 calendar days</strong> to answer the House articles and scheduled the trial proper for <strong>July 6, 2026</strong>. Senator Ronald dela Rosa was absent. Unlike last year’s remanded proceedings, the chamber moved quickly from referral to convening after the House’s 257–25–9 impeachment vote. The July date compresses the political calendar: Sara remains in office while the prosecution and defense fight over pre-trial evidence, and the Duterte-aligned Senate leadership that installed Cayetano on May 11 now controls the rules of the court that will judge her.</p>",
+          "diasporaImpact": "Overseas voters who participate in national elections now have a fixed Senate trial date that could remove the leading 2028 opposition figure before the midterm cycle fully heats up.",
+          "dynastyLinks": [
+            { "label": "Duterte", "href": "/dynasties-network-visualization.html#dynasty-DUTERTE_FAMILY" },
+            { "label": "Marcos-Romualdez", "href": "/dynasties-network-visualization.html#dynasty-MARCOS_ROMUALDEZ" }
+          ],
+          "sourceLinks": [
+            { "label": "Philstar", "href": "https://www.philstar.com/headlines/2026/05/18/2528845/senators-don-robes-sara-duterte-impeachment-trial-opens" },
+            { "label": "Rappler", "href": "https://www.rappler.com/philippines/senate-convenes-court-what-next-sara-duterte-impeachment/" },
+            { "label": "The Diplomat", "href": "https://thediplomat.com/2026/05/philippine-senate-kicks-off-impeachment-trial-of-vice-president-sara-duterte/" },
+            { "label": "Inquirer", "href": "https://cebudailynews.inquirer.net/729307/sara-duterte-impeachment-senate-becomes-court-bids-vp-to-answer-charges" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Legal",
+      "articles": [
+        {
+          "timeDatetime": "2026-05-20",
+          "timeDisplay": "May 20–23, 2026",
+          "category": "Legal",
+          "categoryClass": "legal",
+          "borderColor": "#1e3a5f",
+          "headline": "SC Clears Bato Arrest Path; DOJ Manhunt Begins as Senator Stays Missing",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-05-21&search=Bato+dela+Rosa+DOJ+manhunt+ICC+TRO+denied",
+          "descriptionHtml": "<p>The Supreme Court voted <strong>9–5–1</strong> on May 20 to deny Senator Ronald “Bato” dela Rosa’s temporary restraining order against an ICC arrest warrant, ruling only on interim relief while merits remain pending. Acting Justice Secretary Fredderick Vida ordered the PNP and NBI on May 21 to arrest dela Rosa as a <strong>fugitive from justice</strong> after he left Senate custody on May 14. Tracker teams deployed, but by May 23 he remained at large; PNP officials said he was still inside the country. NBI Director Melvin Matibag warned that <strong>additional ICC warrants</strong> against other drug-war co-perpetrators could follow within days, naming no individuals but citing bureau intelligence. The week turned the May 13 Senate gunshots from a standoff into an open enforcement test: courts say the warrant is valid, the executive says it will comply, and Duterte allies still cannot produce the senator.</p>",
+          "diasporaImpact": "International coverage of Bato’s escape makes Philippine ICC cooperation a diaspora credibility issue—each day he evades arrest reinforces skepticism that domestic institutions will finish what The Hague started.",
+          "dynastyLinks": [
+            { "label": "Duterte", "href": "/dynasties-network-visualization.html#dynasty-DUTERTE_FAMILY" }
+          ],
+          "sourceLinks": [
+            { "label": "The Diplomat", "href": "https://thediplomat.com/2026/05/philippine-supreme-court-rejects-fugitive-senators-challenge-to-icc-arrest-warrant/" },
+            { "label": "Inquirer", "href": "https://newsinfo.inquirer.net/2231931/sc-junks-bato-dela-rosa-petition-for-tro-vs-icc-arrest" },
+            { "label": "Rappler", "href": "https://www.rappler.com/philippines/doj-order-bato-dela-rosa-arrest-icc-case/" },
+            { "label": "Philstar", "href": "https://www.philstar.com/headlines/2026/05/23/2529991/additional-icc-warrants-expected-soon-amid-search-bato-nbi" },
+            { "label": "BusinessWorld", "href": "https://www.bworldonline.com/the-nation/2026/05/21/751383/philippines-moves-to-enforce-icc-warrant-of-arrest-on-senator-bato/" }
+          ]
+        },
+        {
+          "timeDatetime": "2026-05-22",
+          "timeDisplay": "May 22, 2026",
+          "category": "Legal",
+          "categoryClass": "legal",
+          "borderColor": "#1e3a5f",
+          "headline": "ICC Keeps Rodrigo Duterte in The Hague; Flight Risk Cited After Charges Confirmed",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-05-22&search=Rodrigo+Duterte+ICC+detention+The+Hague",
+          "descriptionHtml": "<p>ICC Trial Chamber III ruled on May 22 that former President Rodrigo Duterte <strong>shall continue to be detained</strong>, denying conditional release after charges were confirmed on April 23. Judges said confirmation increased absconding and obstruction risks given Duterte’s resources, family contacts, and refusal to recognize ICC jurisdiction; court-appointed medical experts found no basis to modify detention on health grounds. A status conference was set for May 27, with Duterte permitted to waive appearance. The decision closes another release avenue while his daughter faces impeachment and his former police chief evades arrest at home—parallel accountability tracks that diaspora observers have watched since the March 2025 NAIA arrest.</p>",
+          "diasporaImpact": "Confirms the elder Duterte will not return during the impeachment trial; families abroad tracking both Hague and Manila proceedings see the drug-war case advancing without domestic political shelter.",
+          "dynastyLinks": [
+            { "label": "Duterte", "href": "/dynasties-network-visualization.html#dynasty-DUTERTE_FAMILY" }
+          ],
+          "sourceLinks": [
+            { "label": "Rappler", "href": "https://www.rappler.com/philippines/rodrigo-duterte-icc-decision-continue-detention-the-hague-may-2026/" },
+            { "label": "Manila Bulletin", "href": "https://mb.com.ph/2026/05/23/icc-rejects-duterte-bid-for-release-cites-flight-risk-possible-obstruction-of-justice" },
+            { "label": "Philstar", "href": "https://www.philstar.com/headlines/2026/05/24/2530135/icc-duterte-stay-detained" },
+            { "label": "Inquirer", "href": "https://globalnation.inquirer.net/324155/subject-icc-trial-court-orders-du30-to-stay-in-detention-due-to-heightened-risk-of-flight" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Economic",
+      "articles": [
+        {
+          "timeDatetime": "2026-05-20",
+          "timeDisplay": "May 20, 2026",
+          "category": "Economic",
+          "categoryClass": "economic",
+          "borderColor": "#3a0ca3",
+          "headline": "BoP Deficit Hits $7.41 Billion Through April as Peso Pressure Builds",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-05-20&search=BoP+deficit+7.41+billion+2026",
+          "descriptionHtml": "<p>Bangko Sentral ng Pilipinas data released May 20 showed a cumulative balance of payments deficit of <strong>$7.411 billion</strong> for January–April 2026, up 34.2% from the same period in 2025. April’s monthly gap narrowed to <strong>$2.124 billion</strong>—the smallest since January—but marked a sixth straight monthly shortfall. BSP projects a full-year BoP deficit of <strong>$7.8 billion</strong> (1.5% of GDP); Deutsche Bank later cut growth forecasts and warned the gap could exceed that outlook as import demand and oil prices strain the peso. The external squeeze lands on top of last week’s Luzon–Visayas brownouts and ongoing political crisis, tightening household budgets even when remittance dollars convert at weaker rates.</p>",
+          "diasporaImpact": "Higher nominal remittances do not automatically mean more purchasing power at home when import inflation and logistics costs rise alongside peso weakness.",
+          "dynastyLinks": [
+            { "label": "Marcos-Romualdez", "href": "/dynasties-network-visualization.html#dynasty-MARCOS_ROMUALDEZ" }
+          ],
+          "sourceLinks": [
+            { "label": "Philstar", "href": "https://www.philstar.com/business/2026/05/20/2529118/bop-gap-narrows-april" },
+            { "label": "BusinessWorld", "href": "https://www.bworldonline.com/top-stories/2026/05/20/750740/bop-deficit-narrows-to-2-1b-in-april/" },
+            { "label": "Manila Bulletin", "href": "https://mb.com.ph/2026/05/25/deutsche-bank-cuts-philippine-growth-forecast-sees-stronger-bsp-tightening" }
+          ]
+        }
+      ]
+    }
+  ],
+  "dynastyHighlights": {
+    "title": "Dynasty Watch",
+    "items": [
+      {
+        "title": "Duterte",
+        "titleHref": "/dynasties-network-visualization.html#dynasty-DUTERTE_FAMILY",
+        "bodyHtml": "<p>The family fought on two fronts: Sara’s impeachment court opened with a July 6 trial date while Rodrigo stayed in ICC detention after a May 22 denial of release. Bato dela Rosa—the drug-war enforcer linked to the dynasty’s security bloc—became a fugitive after the Supreme Court cleared his arrest and the DOJ ordered a manhunt, with Matibag warning more ICC warrants may name co-perpetrators including allies in the Senate.</p>",
+        "bullets": [
+          { "text": "Senate impeachment court convenes; trial July 6", "href": "/interactive-timeline/index.html?date=2026-05-18" },
+          { "text": "ICC keeps Rodrigo Duterte detained at The Hague", "href": "/interactive-timeline/index.html?date=2026-05-22" },
+          { "text": "Bato manhunt after SC denies TRO", "href": "/interactive-timeline/index.html?date=2026-05-21" }
+        ]
+      },
+      {
+        "title": "Marcos-Romualdez",
+        "titleHref": "/dynasties-network-visualization.html#dynasty-MARCOS_ROMUALDEZ",
+        "bodyHtml": "<p>The administration secured institutional momentum on impeachment and ICC enforcement rhetoric—Malacañang called warrants valid and the DOJ ordered Bato’s arrest—while external-sector data showed widening BoP stress that complicates the economic story Marcos needs before 2028 positioning.</p>",
+        "bullets": [
+          { "text": "BoP deficit $7.41B Jan–Apr", "href": "/interactive-timeline/index.html?date=2026-05-20" },
+          { "text": "Palace: future ICC warrants to be enforced", "href": "/interactive-timeline/index.html?date=2026-05-23" }
+        ]
+      }
+    ]
+  }
+}

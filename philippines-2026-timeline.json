@@ -4,9 +4,9 @@
   "prepared_for": "Filipino Diaspora Communities Worldwide",
   "metadata": {
     "purpose": "Comprehensive timeline of major Philippine events in 2026 to help overseas Filipinos understand developments affecting families, remittances, investments, and homeland governance",
-    "last_updated": "May 16, 2026",
+    "last_updated": "May 23, 2026",
     "aggregation_note": "This timeline is aggregated by month as events unfold. Weekly reviews provide more detailed coverage.",
-    "total_events": 161,
+    "total_events": 167,
     "categories": [
       "Political",
       "Cultural",
@@ -3265,6 +3265,138 @@
         ]
       },
       "weekly_review": "weekly-reviews/weekly-review-2026-05-16.html"
+    },
+    {
+      "date": "2026-05-18",
+      "month": "May",
+      "title": "Senate Convenes as Impeachment Court; VP Sara Duterte Summoned, Trial Set for July 6",
+      "category": "Political",
+      "description": "The Philippine Senate formally convened as an impeachment court on May 18, 2026, opening proceedings against Vice President Sara Duterte after the House transmitted articles on May 14. Twenty-three of 24 senators donned red robes, took oath as senator-judges, and heard Senate President Alan Peter Cayetano declare the trial open; Senator Ronald dela Rosa was absent. The court issued a writ of summons giving Duterte 10 calendar days to file an answer and directing her to appear before the Senate upon notice; the House prosecution may reply within five days after her response. Senators agreed the trial proper would begin on July 6, 2026, following pre-trial procedures. Articles allege plunder and graft over misuse of confidential funds, unexplained wealth, and conspiracy to commit murder tied to her public threat to have President Ferdinand Marcos Jr., the First Lady, and then-Speaker Martin Romualdez killed.",
+      "significance": "First fully convened impeachment court for Duterte after the 2025 proceedings were remanded; July 6 start date sets the political calendar through midterm positioning for 2028.",
+      "diaspora_impact": "Overseas voters tracking governance see whether the Senate under Cayetano will run a substantive trial or procedural delay; conviction would remove the leading 2028 opposition figure.",
+      "mentioned_dynasties": [
+        "DUTERTE_FAMILY",
+        "MARCOS_ROMUALDEZ"
+      ],
+      "sources": {
+        "international": [
+          "https://thediplomat.com/2026/05/philippine-senate-kicks-off-impeachment-trial-of-vice-president-sara-duterte/"
+        ],
+        "local": [
+          "https://www.philstar.com/headlines/2026/05/18/2528845/senators-don-robes-sara-duterte-impeachment-trial-opens",
+          "https://www.rappler.com/philippines/senate-convenes-court-what-next-sara-duterte-impeachment/",
+          "https://cebudailynews.inquirer.net/729307/sara-duterte-impeachment-senate-becomes-court-bids-vp-to-answer-charges"
+        ]
+      },
+      "weekly_review": "weekly-reviews/weekly-review-2026-05-23.html"
+    },
+    {
+      "date": "2026-05-20",
+      "month": "May",
+      "title": "Supreme Court Denies Bato dela Rosa TRO Against ICC Arrest Warrant — 9–5–1",
+      "category": "Legal",
+      "description": "The Supreme Court voted 9–5–1 on May 20, 2026 to deny Senator Ronald 'Bato' dela Rosa's prayer for a temporary restraining order and status quo ante order blocking enforcement of an International Criminal Court arrest warrant. The ruling addressed only interim relief; merits of whether the Philippines must cooperate with the ICC remain pending. The warrant, originally issued under seal in November 2025 and unsealed May 11, charges dela Rosa with crimes against humanity of murder linked to at least 32 killings during the 2016–2018 drug war when he led the Philippine National Police. Malacañang spokesperson Claire Castro said the warrant is valid; the Office of the Solicitor General welcomed the denial as clearing legal impediments to arrest. The Court said it would release its full resolution and separate opinions on May 25.",
+      "significance": "Removes the main judicial barrier cited by dela Rosa's camp after he fled Senate custody on May 14; tests whether executive agencies will enforce ICC cooperation.",
+      "diaspora_impact": "Drug-war accountability is a diaspora flashpoint; the ruling signals courts may allow arrest but enforcement still depends on PNP/NBI action while dela Rosa remains at large.",
+      "mentioned_dynasties": [
+        "DUTERTE_FAMILY"
+      ],
+      "sources": {
+        "international": [
+          "https://thediplomat.com/2026/05/philippine-supreme-court-rejects-fugitive-senators-challenge-to-icc-arrest-warrant/"
+        ],
+        "local": [
+          "https://newsinfo.inquirer.net/2231931/sc-junks-bato-dela-rosa-petition-for-tro-vs-icc-arrest",
+          "https://www.philstar.com/headlines/2026/05/21/2529523/solgen-no-legal-impediment-enforce-icc-warrant-vs-bato"
+        ]
+      },
+      "weekly_review": "weekly-reviews/weekly-review-2026-05-23.html"
+    },
+    {
+      "date": "2026-05-20",
+      "month": "May",
+      "title": "Philippines BoP Deficit Widens to $7.41 Billion in First Four Months of 2026",
+      "category": "Economic",
+      "description": "Bangko Sentral ng Pilipinas data released May 20, 2026 showed the Philippines posted a cumulative balance of payments deficit of $7.411 billion for January–April 2026, up 34.2 percent from $5.516 billion in the same period of 2025. April's gap narrowed to $2.124 billion from $2.637 billion in March—the narrowest monthly shortfall since January—but marked a sixth consecutive monthly deficit. BSP attributed pressure to trade imbalances, strong import demand, and global uncertainty; the central bank projects a full-year BoP deficit of $7.8 billion or 1.5 percent of GDP. Deutsche Bank subsequently cut Philippine growth forecasts and flagged risk the external gap could exceed BSP's outlook, with peso weakness and oil prices cited as spillovers.",
+      "significance": "External sector stress compounds political crisis and post-brownout energy costs; widened deficit outlook pressures BSP tightening and household budgets.",
+      "diaspora_impact": "Remittance inflows help but do not fully offset import-driven peso pressure; OFW families see eroding purchasing power when the peso weakens despite higher dollar remittances on paper.",
+      "mentioned_dynasties": [
+        "MARCOS_ROMUALDEZ"
+      ],
+      "sources": {
+        "international": [],
+        "local": [
+          "https://www.philstar.com/business/2026/05/20/2529118/bop-gap-narrows-april",
+          "https://www.bworldonline.com/top-stories/2026/05/20/750740/bop-deficit-narrows-to-2-1b-in-april/",
+          "https://mb.com.ph/2026/05/25/deutsche-bank-cuts-philippine-growth-forecast-sees-stronger-bsp-tightening"
+        ]
+      },
+      "weekly_review": "weekly-reviews/weekly-review-2026-05-23.html"
+    },
+    {
+      "date": "2026-05-21",
+      "month": "May",
+      "title": "DOJ Orders PNP and NBI to Arrest Bato dela Rosa as ICC Fugitive",
+      "category": "Legal",
+      "description": "Acting Justice Secretary Fredderick Vida announced on May 21, 2026 that the Philippine National Police and National Bureau of Investigation are ordered to arrest Senator Ronald 'Bato' dela Rosa and facilitate transfer to the International Criminal Court. Vida called dela Rosa a 'fugitive from justice' who should face charges at The Hague after leaving Senate premises on May 14. The directive followed the Supreme Court's denial of his TRO request. NBI Director Melvin Matibag said his bureau would implement the warrant; the Solicitor General said no legal impediment remains. Authorities deployed tracker teams, but dela Rosa's whereabouts were still unknown by week's end, with Senator Robin Padilla's remark that he 'just asked for a ride' drawing widespread criticism. Legal analysts noted the Philippines may surrender suspects under Republic Act No. 9851 even without Interpol assistance.",
+      "significance": "First formal executive order to hunt a sitting senator for ICC transfer since Rodrigo Duterte's March 2025 arrest; enforcement credibility hinges on whether dela Rosa is captured.",
+      "diaspora_impact": "International media coverage puts Manila's ICC cooperation under diaspora scrutiny; failure to arrest would echo skepticism after dela Rosa's Senate escape.",
+      "mentioned_dynasties": [
+        "DUTERTE_FAMILY"
+      ],
+      "sources": {
+        "international": [
+          "https://www.bworldonline.com/the-nation/2026/05/21/751383/philippines-moves-to-enforce-icc-warrant-of-arrest-on-senator-bato/"
+        ],
+        "local": [
+          "https://www.rappler.com/philippines/doj-order-bato-dela-rosa-arrest-icc-case/",
+          "https://www.philstar.com/headlines/2026/05/21/2529523/solgen-no-legal-impediment-enforce-icc-warrant-vs-bato"
+        ]
+      },
+      "weekly_review": "weekly-reviews/weekly-review-2026-05-23.html"
+    },
+    {
+      "date": "2026-05-22",
+      "month": "May",
+      "title": "ICC Orders Rodrigo Duterte to Remain Detained at The Hague",
+      "category": "International Relations",
+      "description": "ICC Trial Chamber III ruled on May 22, 2026 that former President Rodrigo Duterte shall continue to be detained at The Hague, denying his latest bid for conditional release. Judges found no change in circumstances warranting liberty and said confirmation of charges on April 23, 2026 increased flight and obstruction risks given Duterte's resources, family contacts, and refusal to recognize ICC jurisdiction. The eight-page decision rejected health-based release arguments, citing court-appointed medical experts who found no basis to modify detention. Duterte was surrendered to the ICC on March 12, 2025; a status conference before Trial Chamber III was scheduled for May 27, with Duterte permitted to waive physical appearance via a signed waiver submitted May 25.",
+      "significance": "Closes another release avenue for the former president as Sara Duterte's impeachment and Bato dela Rosa's manhunt unfold at home; trial timeline advances.",
+      "diaspora_impact": "Confirms the elder Duterte will not return to the Philippines during the impeachment trial; diaspora following both ICC and domestic proceedings see parallel accountability tracks.",
+      "mentioned_dynasties": [
+        "DUTERTE_FAMILY"
+      ],
+      "sources": {
+        "international": [
+          "https://www.rappler.com/philippines/rodrigo-duterte-icc-decision-continue-detention-the-hague-may-2026/",
+          "https://globalnation.inquirer.net/324155/subject-icc-trial-court-orders-du30-to-stay-in-detention-due-to-heightened-risk-of-flight"
+        ],
+        "local": [
+          "https://mb.com.ph/2026/05/23/icc-rejects-duterte-bid-for-release-cites-flight-risk-possible-obstruction-of-justice",
+          "https://www.philstar.com/headlines/2026/05/24/2530135/icc-duterte-stay-detained"
+        ]
+      },
+      "weekly_review": "weekly-reviews/weekly-review-2026-05-23.html"
+    },
+    {
+      "date": "2026-05-23",
+      "month": "May",
+      "title": "NBI Director Warns More ICC Arrest Warrants Expected Beyond Bato dela Rosa",
+      "category": "Legal",
+      "description": "NBI Director Melvin Matibag said on May 23, 2026 that additional International Criminal Court arrest warrants are expected in the coming days against individuals beyond Senator Ronald 'Bato' dela Rosa. The statement widened anticipation that drug-war accountability could reach more sitting officials and allies while dela Rosa remained at large despite DOJ orders to arrest him. Matibag reaffirmed the NBI would enforce valid ICC warrants after the Supreme Court denied dela Rosa's TRO. International outlets continued covering the Senate fugitive story as a test of Philippine cooperation with The Hague.",
+      "significance": "Signals ICC enforcement may expand beyond dela Rosa, raising stakes for Duterte-aligned officials during Sara Duterte's impeachment proceedings.",
+      "diaspora_impact": "Overseas communities watching rule-of-law indicators face a volatile week if new warrants name figures with national followings or legislative immunity.",
+      "mentioned_dynasties": [
+        "DUTERTE_FAMILY"
+      ],
+      "sources": {
+        "international": [],
+        "local": [
+          "https://www.philstar.com/headlines/2026/05/23/2529991/additional-icc-warrants-expected-soon-amid-search-bato-nbi",
+          "https://globalnation.inquirer.net/324221/nbi-chief-several-personalities-to-be-issued-arrest-warrants-from-icc"
+        ]
+      },
+      "weekly_review": "weekly-reviews/weekly-review-2026-05-23.html"
     }
   ],
   "ofw_highlights": {
@@ -3391,12 +3523,12 @@
     ]
   },
   "summary": {
-    "total_events": 69,
-    "political_events": 10,
+    "total_events": 75,
+    "political_events": 11,
     "natural_disasters": 12,
-    "economic_events": 8,
-    "international_relations": 12,
-    "legal_events": 8,
+    "economic_events": 9,
+    "international_relations": 13,
+    "legal_events": 11,
     "religious_events": 1,
     "ofw_diaspora": 1,
     "cultural_events": 3,

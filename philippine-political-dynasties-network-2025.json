@@ -476,6 +476,26 @@
               "date": "2026-05-14",
               "title": "Bato dela Rosa Leaves Senate; Ombudsman Suspends Sergeant-at-Arms Over Warning Shots",
               "role": "mentioned"
+            },
+            {
+              "date": "2026-05-18",
+              "title": "Senate Convenes as Impeachment Court; VP Sara Duterte Summoned, Trial Set for July 6",
+              "role": "primary_actor"
+            },
+            {
+              "date": "2026-05-20",
+              "title": "Supreme Court Denies Bato dela Rosa TRO Against ICC Arrest Warrant — 9–5–1",
+              "role": "mentioned"
+            },
+            {
+              "date": "2026-05-21",
+              "title": "DOJ Orders PNP and NBI to Arrest Bato dela Rosa as ICC Fugitive",
+              "role": "mentioned"
+            },
+            {
+              "date": "2026-05-22",
+              "title": "ICC Orders Rodrigo Duterte to Remain Detained at The Hague",
+              "role": "primary_actor"
             }
           ],
           "key_members": [
@@ -495,7 +515,7 @@
                 "Torture",
                 "Rape"
               ],
-              "icc_trial_status": "Charges confirmed April 23, 2026; Trial Chamber III scheduled status conference for May 27, 2026",
+              "icc_trial_status": "Charges confirmed April 23, 2026; Trial Chamber III denied release May 22, 2026; status conference May 27, 2026",
               "2025_events": [
                 "Arrested March 11 at NAIA under ICC warrant",
                 "Transferred to The Hague",
@@ -662,6 +682,30 @@
               "url": "https://www.rappler.com/philippines/bato-dela-rosa-left-senate-evades-icc-arrest-may-14-2026/",
               "category": "legal",
               "description": "Senator evaded NBI service of ICC warrant after May 13 gunshots at Senate; Ombudsman suspended sergeant-at-arms."
+            },
+            {
+              "date": "2026-05-18",
+              "headline": "Senate Impeachment Court Opens; Sara Duterte Summoned, Trial July 6",
+              "source": "Rappler, Philstar, The Diplomat, May 2026",
+              "url": "https://www.rappler.com/philippines/senate-convenes-court-what-next-sara-duterte-impeachment/",
+              "category": "legal",
+              "description": "23 senators sworn as judges; writ of summons issued; Cayetano presides over second impeachment trial."
+            },
+            {
+              "date": "2026-05-20",
+              "headline": "Supreme Court Denies Bato TRO; DOJ Orders ICC Arrest",
+              "source": "Inquirer, Rappler, May 2026",
+              "url": "https://www.rappler.com/philippines/doj-order-bato-dela-rosa-arrest-icc-case/",
+              "category": "legal",
+              "description": "9-5-1 vote clears path for manhunt; dela Rosa remains fugitive by May 23."
+            },
+            {
+              "date": "2026-05-22",
+              "headline": "ICC Keeps Rodrigo Duterte in The Hague Detention",
+              "source": "Rappler, Philstar, May 2026",
+              "url": "https://www.rappler.com/philippines/rodrigo-duterte-icc-decision-continue-detention-the-hague-may-2026/",
+              "category": "legal",
+              "description": "Trial Chamber III cites flight risk after charges confirmed; no conditional release."
             }
           ]
         },
