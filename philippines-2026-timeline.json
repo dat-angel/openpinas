@@ -4,9 +4,9 @@
   "prepared_for": "Filipino Diaspora Communities Worldwide",
   "metadata": {
     "purpose": "Comprehensive timeline of major Philippine events in 2026 to help overseas Filipinos understand developments affecting families, remittances, investments, and homeland governance",
-    "last_updated": "May 23, 2026",
+    "last_updated": "May 30, 2026",
     "aggregation_note": "This timeline is aggregated by month as events unfold. Weekly reviews provide more detailed coverage.",
-    "total_events": 167,
+    "total_events": 172,
     "categories": [
       "Political",
       "Cultural",
@@ -3397,6 +3397,115 @@
         ]
       },
       "weekly_review": "weekly-reviews/weekly-review-2026-05-23.html"
+    },
+    {
+      "date": "2026-05-25",
+      "month": "May",
+      "title": "Supreme Court Releases Full Resolution Denying Bato dela Rosa TRO Against ICC Warrant",
+      "category": "Legal",
+      "description": "The Supreme Court released its eight-page resolution and separate opinions on May 25, 2026, detailing the 9–5–1 vote that denied Senator Ronald 'Bato' dela Rosa's prayer for a temporary restraining order and status quo ante order against an International Criminal Court arrest warrant. The tribunal ruled dela Rosa had no 'right in esse' warranting interim relief, said his claimed invasion of rights was 'more imagined than real' while Senate protective custody and Malacañang statements had not directed his arrest, and left merits on ICC enforceability pending. Concurring opinions cited Pangilinan v. Cayetano and Republic Act No. 9851 as bases for possible cooperation with international courts; five justices dissented.",
+      "significance": "Publishes the legal reasoning behind interim denial and signals majority willingness to allow enforcement while dela Rosa remained a fugitive.",
+      "diaspora_impact": "Overseas observers tracking drug-war accountability get a clearer map of which justices may ultimately uphold ICC cooperation.",
+      "mentioned_dynasties": [
+        "DUTERTE_FAMILY"
+      ],
+      "sources": {
+        "international": [
+          "https://gulfnews.com/world/asia/philippines/more-imagined-than-real-philippine-supreme-court-junks-bato-dela-rosas-plea-to-block-icc-arrest-1.500553229"
+        ],
+        "local": [
+          "https://www.rappler.com/philippines/bato-dela-rosa-supreme-court-justices-voting-denied-tro-icc-warrant/",
+          "https://abogado.com.ph/bato-dela-rosa-tro-denied-supreme-court/",
+          "https://newsinfo.inquirer.net/2231931/sc-junks-bato-dela-rosa-petition-for-tro-vs-icc-arrest"
+        ]
+      },
+      "weekly_review": "weekly-reviews/weekly-review-2026-05-30.html"
+    },
+    {
+      "date": "2026-05-27",
+      "month": "May",
+      "title": "ICC Holds First Status Conference; Proposes November 30 Trial Start for Rodrigo Duterte",
+      "category": "International Relations",
+      "description": "ICC Trial Chamber III held the first status conference on May 27, 2026 in Prosecutor v. Rodrigo Roa Duterte. The prosecution proposed opening trial on November 30, 2026; Presiding Judge Joanna Korner said the chamber was prepared to accede but deferred final scheduling until fresh medical examinations ordered that day. Duterte waived appearance; British lawyer Peter Haynes now leads defense. Korner set further status conferences for June 23 and July 14 and discussed interpreter needs for Filipino-language witnesses.",
+      "significance": "Moves the Hague case from confirmation to trial logistics while Sara Duterte's impeachment and Bato dela Rosa's manhunt proceed in Manila.",
+      "diaspora_impact": "Sets a public trial horizon for families following both domestic and international accountability tracks.",
+      "mentioned_dynasties": [
+        "DUTERTE_FAMILY"
+      ],
+      "sources": {
+        "international": [
+          "https://www.icc-cpi.int/"
+        ],
+        "local": [
+          "https://www.philstar.com/headlines/2026/05/27/2530939/icc-sets-duterte-trial-open-november-30",
+          "https://mb.com.ph/2026/05/27/icc-postpones-setting-schedule-of-dutertes-trial-until-hes-re-examined-by-medical-experts",
+          "https://globalnation.inquirer.net/324892/icc-orders-new-medical-exams-for-duterte-delays-trial-date",
+          "https://www.rappler.com/philippines/rodrigo-duterte-icc-decision-continue-detention-the-hague-may-2026/"
+        ]
+      },
+      "weekly_review": "weekly-reviews/weekly-review-2026-05-30.html"
+    },
+    {
+      "date": "2026-05-27",
+      "month": "May",
+      "title": "CIDG and NBI Raid Four Properties Seeking Bato dela Rosa — Senator Still at Large",
+      "category": "Legal",
+      "description": "On May 27, 2026, the CIDG and NBI conducted simultaneous raids on four residential properties in Pampanga, Metro Manila, and Bulacan seeking Senator Ronald 'Bato' dela Rosa, who remained a fugitive after the DOJ's May 21 arrest order. Authorities did not locate him. The operation followed the Supreme Court's denial of his TRO and came days before CIDG publicly linked his May 14 Senate escape to the May 13 shooting incident inside the chamber.",
+      "significance": "Shows executive agencies acting on the warrant while enforcement credibility still hinges on capture.",
+      "diaspora_impact": "Each failed raid reinforces diaspora skepticism about whether Philippine institutions will finish ICC cooperation started with Rodrigo Duterte's 2025 surrender.",
+      "mentioned_dynasties": [
+        "DUTERTE_FAMILY"
+      ],
+      "sources": {
+        "international": [],
+        "local": [
+          "https://www.sunstar.com.ph/manila/cidg-senate-shooting-related-to-bato-dela-rosas-escape",
+          "https://www.rappler.com/philippines/doj-order-bato-dela-rosa-arrest-icc-case/"
+        ]
+      },
+      "weekly_review": "weekly-reviews/weekly-review-2026-05-30.html"
+    },
+    {
+      "date": "2026-05-28",
+      "month": "May",
+      "title": "CIDG Says Senate Shooting and Bato dela Rosa Escape Were Related; Padilla Faces Obstruction Rap",
+      "category": "Legal",
+      "description": "CIDG Director Robert Alexander Morico II said on May 28, 2026 that the May 13 gunfire inside the Senate and Senator Ronald 'Bato' dela Rosa's departure hours later were related incidents, with the escape described as a coordinated, pre-planned maneuver. Investigators attributed the shooting start to Senate Sergeant-at-Arms Mao Aplasca after NBI personnel were sighted near the chamber; findings were turned over to a DOJ prosecutor panel. Morico said the PNP referred obstruction-of-justice charges against at least six people including Senator Robin Padilla, whose cooperation he called indispensable. Cayetano's possible liability was left to the DOJ.",
+      "significance": "Connects the leadership coup week to a criminal narrative beyond ICC warrants alone.",
+      "diaspora_impact": "International coverage of the Senate standoff shifts from political theater to alleged obstruction of international justice.",
+      "mentioned_dynasties": [
+        "DUTERTE_FAMILY"
+      ],
+      "sources": {
+        "international": [],
+        "local": [
+          "https://www.sunstar.com.ph/manila/cidg-senate-shooting-related-to-bato-dela-rosas-escape",
+          "https://www.rappler.com/philippines/bato-dela-rosa-left-senate-evades-icc-arrest-may-14-2026/"
+        ]
+      },
+      "weekly_review": "weekly-reviews/weekly-review-2026-05-30.html"
+    },
+    {
+      "date": "2026-05-30",
+      "month": "May",
+      "title": "House Impeachment Prosecution Lines Up 25 Witnesses Including Hostile DepEd and OVP Officials",
+      "category": "Political",
+      "description": "Lead House prosecutor Rep. Gerville Luistro said on May 30, 2026 that the prosecution will present 25 witnesses at Vice President Sara Duterte's Senate impeachment trial, including hostile witnesses from the Department of Education and Office of the Vice President still loyal to Duterte. The panel will seek subpoenas for bank officials and documents not introduced in House hearings, citing impeachment exceptions to bank secrecy after AMLC testimony flagged billions in covered and suspicious transactions for Duterte and her husband while SALNs declared no cash on hand from 2019–2024. Duterte has until June 1 to file her answer to the Senate summons.",
+      "significance": "Signals a document-heavy trial phase that could surface financial evidence before the July 6 start date.",
+      "diaspora_impact": "Bank-account disclosure in a Senate trial would be unprecedented public scrutiny of a sitting VP's wealth—relevant to overseas voters weighing 2028 alignment.",
+      "mentioned_dynasties": [
+        "DUTERTE_FAMILY",
+        "MARCOS_ROMUALDEZ"
+      ],
+      "sources": {
+        "international": [],
+        "local": [
+          "https://www.philstar.com/headlines/2026/05/30/2531525/house-impeach-prosecution-lines-25-witnesses",
+          "https://www.philstar.com/headlines/2026/05/21/2529435/sara-has-until-june-1-answer-impeach-summons",
+          "https://www.gmanetwork.com/news/topstories/nation/988356/senate-june-deadline-sara-duterte-impeachment-summons-response/story/"
+        ]
+      },
+      "weekly_review": "weekly-reviews/weekly-review-2026-05-30.html"
     }
   ],
   "ofw_highlights": {

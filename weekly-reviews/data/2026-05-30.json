@@ -1,0 +1,164 @@
+{
+  "version": 1,
+  "weekEnding": "2026-05-30",
+  "weekLabel": "May 23 – May 30, 2026",
+  "title": "OpenPinas: Weekly News Review",
+  "lastUpdated": "May 30, 2026",
+  "prevWeekEnding": "2026-05-23",
+  "stats": [
+    { "number": "5", "label": "Stories" },
+    { "number": "25", "label": "Trial Witnesses" },
+    { "number": "Nov 30", "label": "ICC Trial Target" },
+    { "number": "₱61.48", "label": "Peso Close (May 30)" }
+  ],
+  "exchangeRate": {
+    "title": "PHP:USD Exchange Rate",
+    "currentRate": "₱61.485",
+    "trend": "▼ Record-low band; BSP hands-off as reserves hit 12-year low",
+    "contextHtml": "<p>The peso ended May near <strong>₱61.48–₱61.75</strong>, repeatedly testing record lows after mid-month breaches. BSP Governor Eli Remolona reiterated a market-determined, hands-off stance while data showed gross international reserves falling to a <strong>12-year low</strong> of about <strong>$469 million</strong> in April intervention flows. OCBC warned another rate hike alone may not stop further weakness ahead of the June 5 inflation print.</p>",
+    "sourceNote": "Source: BSP / Philstar / Tribune / OCBC"
+  },
+  "eventSections": [
+    {
+      "title": "Political",
+      "articles": [
+        {
+          "timeDatetime": "2026-05-30",
+          "timeDisplay": "May 30, 2026",
+          "category": "Political",
+          "categoryClass": "political",
+          "borderColor": "#3a0ca3",
+          "headline": "House Prosecution Names 25 Witnesses and Will Seek Bank Subpoenas Before July 6 Trial",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-05-30&search=impeachment+25+witnesses+bank+subpoena",
+          "descriptionHtml": "<p>Lead House prosecutor <strong>Rep. Gerville Luistro</strong> said on May 30 the panel will call <strong>25 witnesses</strong> at Vice President Sara Duterte’s Senate trial, including <strong>hostile witnesses</strong> from DepEd and the OVP still aligned with Duterte. Prosecutors will move to subpoena bank officials and records—a route not taken in House hearings because of bank-secrecy caution, but available in impeachment proceedings after AMLC testimony flagged <strong>₱6.7 billion</strong> in covered and suspicious transactions for Duterte and her husband while SALNs showed no cash on hand from 2019–2024. The Senate set her answer deadline for <strong>Monday, June 1</strong> after the 10-day summons period would have ended on Saturday, May 30. The week shifted impeachment from institutional opening to evidence strategy ahead of the <strong>July 6</strong> trial start.</p>",
+          "diasporaImpact": "First Senate trial phase could make unexplained wealth a public record issue for overseas voters weighing 2028 candidates.",
+          "dynastyLinks": [
+            { "label": "Duterte", "href": "/dynasties-network-visualization.html#dynasty-DUTERTE_FAMILY" },
+            { "label": "Marcos-Romualdez", "href": "/dynasties-network-visualization.html#dynasty-MARCOS_ROMUALDEZ" }
+          ],
+          "sourceLinks": [
+            { "label": "Philstar", "href": "https://www.philstar.com/headlines/2026/05/30/2531525/house-impeach-prosecution-lines-25-witnesses" },
+            { "label": "Philstar (June 1 deadline)", "href": "https://www.philstar.com/headlines/2026/05/21/2529435/sara-has-until-june-1-answer-impeach-summons" },
+            { "label": "GMA News", "href": "https://www.gmanetwork.com/news/topstories/nation/988356/senate-june-deadline-sara-duterte-impeachment-summons-response/story/" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Legal",
+      "articles": [
+        {
+          "timeDatetime": "2026-05-25",
+          "timeDisplay": "May 25–27, 2026",
+          "category": "Legal",
+          "categoryClass": "legal",
+          "borderColor": "#1e3a5f",
+          "headline": "SC Publishes Full TRO Denial as Raids Fail to Find Fugitive Senator Bato",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-05-25&search=Bato+SC+resolution+TRO+raids",
+          "descriptionHtml": "<p>On May 25 the Supreme Court released its <strong>eight-page resolution</strong> and separate opinions behind the <strong>9–5–1</strong> vote denying Senator Ronald “Bato” dela Rosa’s TRO against an ICC arrest warrant, ruling he had no “right in esse” and that threats to his liberty were <strong>“more imagined than real”</strong> while Senate custody and Malacañang had not ordered his arrest. Concurring justices cited <strong>RA No. 9851</strong> and <em>Pangilinan v. Cayetano</em> on possible ICC cooperation; five dissented. On May 27, CIDG and NBI teams raided <strong>four properties</strong> in Pampanga, Metro Manila, and Bulacan but did not locate him. Legal analysts debated whether Marcoleta’s push for virtual impeachment participation could let an unsworn senator-judge vote from hiding—the Senate has no precedent for remote impeachment judges.</p>",
+          "diasporaImpact": "Published reasoning makes it harder for allies to claim courts blocked enforcement; failed raids keep ICC credibility on the line for overseas observers.",
+          "dynastyLinks": [
+            { "label": "Duterte", "href": "/dynasties-network-visualization.html#dynasty-DUTERTE_FAMILY" }
+          ],
+          "sourceLinks": [
+            { "label": "Rappler", "href": "https://www.rappler.com/philippines/bato-dela-rosa-supreme-court-justices-voting-denied-tro-icc-warrant/" },
+            { "label": "Abogado.com", "href": "https://abogado.com.ph/bato-dela-rosa-tro-denied-supreme-court/" },
+            { "label": "Gulf News", "href": "https://gulfnews.com/world/asia/philippines/more-imagined-than-real-philippine-supreme-court-junks-bato-dela-rosas-plea-to-block-icc-arrest-1.500553229" },
+            { "label": "Rappler (virtual vote debate)", "href": "https://www.rappler.com/philippines/bato-dela-rosa-sara-duterte-impeachment-trial-online-vote-participation/" },
+            { "label": "SunStar (raids)", "href": "https://www.sunstar.com.ph/manila/cidg-senate-shooting-related-to-bato-dela-rosas-escape" }
+          ]
+        },
+        {
+          "timeDatetime": "2026-05-28",
+          "timeDisplay": "May 28, 2026",
+          "category": "Legal",
+          "categoryClass": "legal",
+          "borderColor": "#1e3a5f",
+          "headline": "CIDG Links May 13 Senate Shooting to Bato Escape; Padilla Faces Obstruction Charges",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-05-28&search=CIDG+Senate+shooting+Bato+escape+Padilla",
+          "descriptionHtml": "<p>CIDG Director <strong>Robert Alexander Morico II</strong> said on May 28 the May 13 gunfire inside the Senate and dela Rosa’s departure hours later were <strong>related</strong>, with the escape a coordinated, pre-planned maneuver. Investigators said Senate Sergeant-at-Arms <strong>Mao Aplasca</strong> fired after spotting NBI personnel near the chamber; findings went to a DOJ prosecutor panel reviewing the leadership-coup week that installed Alan Peter Cayetano. The PNP referred <strong>obstruction-of-justice</strong> charges against at least six people including Senator <strong>Robin Padilla</strong>, whose cooperation Morico called indispensable. Cayetano’s liability over the vehicle used to bring Bato back on May 11 was left to the DOJ. The narrative reframes the standoff from political chaos to an alleged obstruction of ICC enforcement.</p>",
+          "dynastyLinks": [
+            { "label": "Duterte", "href": "/dynasties-network-visualization.html#dynasty-DUTERTE_FAMILY" }
+          ],
+          "sourceLinks": [
+            { "label": "SunStar", "href": "https://www.sunstar.com.ph/manila/cidg-senate-shooting-related-to-bato-dela-rosas-escape" },
+            { "label": "Rappler", "href": "https://www.rappler.com/philippines/bato-dela-rosa-left-senate-evades-icc-arrest-may-14-2026/" },
+            { "label": "CIDG / Senate context", "href": "https://www.philstar.com/headlines/2026/05/16/2528241/senate-security-chief-suspended-over-shooting" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "International Relations",
+      "articles": [
+        {
+          "timeDatetime": "2026-05-27",
+          "timeDisplay": "May 27, 2026",
+          "category": "International Relations",
+          "categoryClass": "international",
+          "borderColor": "#0d7377",
+          "headline": "ICC Status Conference Sets November 30 Trial Target; Orders Fresh Medical Exams for Duterte",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-05-27&search=ICC+status+conference+Duterte+November+30",
+          "descriptionHtml": "<p>Trial Chamber III held the <strong>first status conference</strong> on May 27 for <em>Prosecutor v. Rodrigo Roa Duterte</em>. The prosecution proposed opening trial on <strong>November 30, 2026</strong>; Presiding Judge <strong>Joanna Korner</strong> said the chamber was prepared to accede but deferred final scheduling until new medical examinations ordered that day. Duterte <strong>waived appearance</strong>; British counsel <strong>Peter Haynes</strong> now leads defense. Further conferences were set for <strong>June 23</strong> and <strong>July 14</strong>. The hearing advanced Hague logistics—interpreter needs, witness protection, evidence disclosure—while Manila pursued Sara’s impeachment and Bato’s manhunt, keeping the Duterte accountability story on parallel tracks.</p>",
+          "diasporaImpact": "A public November trial date gives overseas families a concrete Hague timeline separate from the Senate’s July impeachment calendar.",
+          "dynastyLinks": [
+            { "label": "Duterte", "href": "/dynasties-network-visualization.html#dynasty-DUTERTE_FAMILY" }
+          ],
+          "sourceLinks": [
+            { "label": "Philstar", "href": "https://www.philstar.com/headlines/2026/05/27/2530939/icc-sets-duterte-trial-open-november-30" },
+            { "label": "Manila Bulletin", "href": "https://mb.com.ph/2026/05/27/icc-postpones-setting-schedule-of-dutertes-trial-until-hes-re-examined-by-medical-experts" },
+            { "label": "Inquirer", "href": "https://globalnation.inquirer.net/324892/icc-orders-new-medical-exams-for-duterte-delays-trial-date" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Economic",
+      "articles": [
+        {
+          "timeDatetime": "2026-05-29",
+          "timeDisplay": "May 25–30, 2026",
+          "category": "Economic",
+          "categoryClass": "economic",
+          "borderColor": "#0b6e4f",
+          "headline": "Peso Closes May Near Record Lows as BSP Stays Hands-Off and Reserves Slide",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-05-29&search=peso+record+low+BSP+reserves",
+          "descriptionHtml": "<p>The peso spent the final week of May in the <strong>₱61.46–₱61.75</strong> band after repeated record lows earlier in the month, with markets closed May 27 for <strong>Eid al-Adha</strong>. BSP Governor <strong>Eli Remolona</strong> reiterated a hands-off, volatility-smoothing stance even as gross international reserves reportedly fell to about <strong>$469 million</strong> in April—the lowest monthly intervention tally in roughly <strong>12 years</strong>. <strong>OCBC</strong> said another BSP hike might not break the slide before the June 5 inflation release, citing oil, a strong dollar, and weak risk appetite. The external squeeze continues to offset nominal remittance gains for households still absorbing April’s <strong>7.2%</strong> headline inflation.</p>",
+          "diasporaImpact": "Dollar remittances buy more pesos on paper but import and transport inflation still erode what families can afford at home.",
+          "dynastyLinks": [
+            { "label": "Marcos-Romualdez", "href": "/dynasties-network-visualization.html#dynasty-MARCOS_ROMUALDEZ" }
+          ],
+          "sourceLinks": [
+            { "label": "Tribune", "href": "https://tribune.net.ph/2026/05/25/bsp-reiterates-hands-off-stance-on-peso-despite-record-lows" },
+            { "label": "Manila Bulletin", "href": "https://mb.com.ph/2026/05/29/peso-risks-slumping-to-record-low-as-rate-hikes-lose-punch" },
+            { "label": "Radar.ph", "href": "https://radar.ph/peso-ends-may-2026-trading-in-narrow-range-after-repeated-record-lows/" }
+          ]
+        }
+      ]
+    }
+  ],
+  "dynastyHighlights": {
+    "title": "Dynasty Watch",
+    "items": [
+      {
+        "title": "Duterte",
+        "titleHref": "/dynasties-network-visualization.html#dynasty-DUTERTE_FAMILY",
+        "bodyHtml": "<p>The clan entered a pre-trial sprint: Sara faces <strong>25 House witnesses</strong> and looming bank subpoenas with her answer due June 1; Rodrigo’s Hague case got a <strong>November 30</strong> trial target after the May 27 status conference; Bato remained missing as the SC published its TRO denial and CIDG tied his escape to the Senate shooting, with Padilla in the obstruction frame.</p>",
+        "bullets": [
+          { "text": "House prosecution: 25 witnesses, bank subpoenas", "href": "/interactive-timeline/index.html?date=2026-05-30" },
+          { "text": "ICC status conference — Nov 30 trial proposed", "href": "/interactive-timeline/index.html?date=2026-05-27" },
+          { "text": "CIDG: shooting and Bato escape related", "href": "/interactive-timeline/index.html?date=2026-05-28" }
+        ]
+      },
+      {
+        "title": "Marcos-Romualdez",
+        "titleHref": "/dynasties-network-visualization.html#dynasty-MARCOS_ROMUALDEZ",
+        "bodyHtml": "<p>The administration’s impeachment and ICC-enforcement narrative held while economic stress persisted: the peso finished May near record lows and BSP reserves slid, complicating the growth story Marcos needs as the House prosecution prepares a document-heavy case against his former ally Sara Duterte.</p>",
+        "bullets": [
+          { "text": "Peso near ₱61.5; BSP hands-off", "href": "/interactive-timeline/index.html?date=2026-05-29" },
+          { "text": "Impeachment evidence phase begins", "href": "/interactive-timeline/index.html?date=2026-05-30" }
+        ]
+      }
+    ]
+  }
+}
