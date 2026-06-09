@@ -1,0 +1,140 @@
+{
+  "version": 1,
+  "weekEnding": "2026-06-06",
+  "weekLabel": "May 30 – June 6, 2026",
+  "title": "OpenPinas: Weekly News Review",
+  "lastUpdated": "June 6, 2026",
+  "prevWeekEnding": "2026-05-30",
+  "stats": [
+    { "number": "4", "label": "Stories" },
+    { "number": "6.8%", "label": "May Inflation" },
+    { "number": "4.1M", "label": "SSS Pensioners" },
+    { "number": "June 1", "label": "VP Answer Filed" }
+  ],
+  "exchangeRate": {
+    "title": "PHP:USD Exchange Rate",
+    "currentRate": "₱61.40–₱61.55",
+    "trend": "▬ Narrow band; inflation relief did not lift the peso",
+    "contextHtml": "<p>The peso held in a <strong>₱61.40–₱61.55</strong> range through the first week of June as markets looked past the softer May inflation print toward Middle East oil risk and a still-weak reserve position. BSP had signaled a hands-off stance in late May; the June 5 <strong>6.8%</strong> headline rate landed inside its forecast band but remained more than three points above the 2–4% target.</p>",
+    "sourceNote": "Source: BSP / Philstar / Tribune"
+  },
+  "eventSections": [
+    {
+      "title": "Political",
+      "articles": [
+        {
+          "timeDatetime": "2026-06-01",
+          "timeDisplay": "June 1, 2026",
+          "category": "Political",
+          "categoryClass": "political",
+          "borderColor": "#3a0ca3",
+          "headline": "Sara Duterte Files Senate Answer and Moves to Dismiss Impeachment Before July 6 Trial",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-06-01&search=Sara+Duterte+impeachment+answer+dismiss",
+          "descriptionHtml": "<p>Vice President <strong>Sara Duterte</strong> met the Senate’s <strong>June 1</strong> deadline with a <strong>50-page answer</strong> that asked the impeachment court to <strong>dismiss</strong> the articles outright, arguing they are “constitutionally infirm, procedurally defective, and substantively deficient.” Lead defense counsel <strong>Michael Poa</strong> said the House never attached evidence to the original complaints and that committee-gathered material came only after the VP had already filed with the justice panel. House lead prosecutor <strong>Gerville Luistro</strong> said the prosecution will file only a <strong>manifestation</strong>—not a full reply—and will oppose any dismissal motion, noting Senate impeachment rules provide for trial and conviction or acquittal, not early junking. The week shifted the Sara Duterte case from summons logistics to a pre-trial fight over whether the Senate will hear evidence at all before the <strong>July 6</strong> start date.</p>",
+          "diasporaImpact": "A dismissal fight before trial makes overseas voters’ 2028 calculus hinge on whether financial and governance charges ever reach open Senate testimony.",
+          "dynastyLinks": [
+            { "label": "Duterte", "href": "/dynasties-network-visualization.html#dynasty-DUTERTE_FAMILY" },
+            { "label": "Marcos-Romualdez", "href": "/dynasties-network-visualization.html#dynasty-MARCOS_ROMUALDEZ" }
+          ],
+          "sourceLinks": [
+            { "label": "Rappler", "href": "https://www.rappler.com/philippines/sara-duterte-response-articles-of-impeachment-senate/" },
+            { "label": "ABS-CBN", "href": "https://www.abs-cbn.com/news/nation/2026/6/1/sara-duterte-files-impeachment-reply-1646" },
+            { "label": "Inquirer", "href": "https://newsinfo.inquirer.net/2238316/sara-duterte-to-senate-junk-impeachment-raps" },
+            { "label": "Tribune", "href": "https://tribune.net.ph/2026/06/01/dismiss-infirm-impeach-raps-sara-asks-senate" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Economic",
+      "articles": [
+        {
+          "timeDatetime": "2026-06-05",
+          "timeDisplay": "June 1–5, 2026",
+          "category": "Economic",
+          "categoryClass": "economic",
+          "borderColor": "#0b6e4f",
+          "headline": "Inflation Cools to 6.8% as SSS Advances Pension Hike to 4.1 Million Beneficiaries",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-06-05&search=inflation+6.8+SSS+pension",
+          "descriptionHtml": "<p>Headline inflation slowed to <strong>6.8%</strong> in May from <strong>7.2%</strong> in April, the PSA said on June 5, landing inside the BSP’s <strong>7.1–7.9%</strong> forecast band. Transport inflation eased to <strong>16.2%</strong> from <strong>21.4%</strong> after fuel rollbacks and accounted for roughly <strong>70%</strong> of the monthly deceleration; food inflation also cooled to <strong>5.7%</strong>, though rice prices still accelerated to <strong>15.6%</strong>. The same week the SSS began an <strong>early June rollout</strong> of the second Pension Reform Program tranche—about <strong>₱6 billion</strong> through August—for <strong>4.1 million</strong> pensioners, advancing a scheduled September increase after President Marcos ordered faster relief. Retirement and disability pensions rise <strong>10%</strong>; death and survivor pensions <strong>5%</strong>. The pairing shows government trying to cushion households while inflation remains more than three points above target.</p>",
+          "diasporaImpact": "OFW families still feel rice and utility pressure at home even as dollar remittances convert at record-weak peso levels.",
+          "dynastyLinks": [
+            { "label": "Marcos-Romualdez", "href": "/dynasties-network-visualization.html#dynasty-MARCOS_ROMUALDEZ" }
+          ],
+          "sourceLinks": [
+            { "label": "Philstar (inflation)", "href": "https://www.philstar.com/business/2026/06/05/2533026/inflation-slows-68-may-2026-amid-easing-transport-food-costs" },
+            { "label": "Philstar (June 6 recap)", "href": "https://www.philstar.com/business/2026/06/06/2533071/inflation-cools-68-percent-may" },
+            { "label": "SSS", "href": "https://www.sss.gov.ph/news-and-updates/sss-begins-early-june-rollout-of-2026-pension-hike-citing-need-for-early-relief-for-pensioners/" },
+            { "label": "PIA", "href": "https://pia.gov.ph/news/inflation-relief-sss-releases-p6-b-advance-pension-hike/" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "International Relations",
+      "articles": [
+        {
+          "timeDatetime": "2026-06-04",
+          "timeDisplay": "May 30 – June 4, 2026",
+          "category": "International Relations",
+          "categoryClass": "international",
+          "borderColor": "#0d7377",
+          "headline": "Satellite Imagery Flags New Object and Barrier at Bajo de Masinloc Lagoon Entrance",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-06-04&search=Bajo+de+Masinloc+SeaLight+structure",
+          "descriptionHtml": "<p>Defense Secretary <strong>Gilberto Teodoro Jr.</strong> said on <strong>May 30</strong> that Manila was validating “raw information” about alleged new Chinese structures at <strong>Bajo de Masinloc</strong> (Scarborough Shoal). Maritime monitor <strong>SeaLight</strong> then released commercial satellite imagery from <strong>May 27–28</strong> showing a small reflective object on the reef flat near the lagoon entrance and a curved linear feature consistent with a <strong>floating barrier</strong> spanning the entrance. AFP WPS spokesperson Rear Adm. <strong>Roy Vincent Trinidad</strong> said on June 2 that interagency verification was still underway before any NTF-WPS statement. SeaLight director <strong>Ray Powell</strong> warned a confirmed fixed installation would test the 2002 DOC pledge against altering disputed features. The week reopened a flashpoint that had been quiet since early-2026 harassment counts rose—without yet confirming who placed the object.</p>",
+          "diasporaImpact": "Filipino seafarers and fishing families with ties to Zambales and western Luzon watched another shoal escalation that could affect patrol routes and catch access.",
+          "dynastyLinks": [
+            { "label": "Marcos-Romualdez", "href": "/dynasties-network-visualization.html#dynasty-MARCOS_ROMUALDEZ" }
+          ],
+          "sourceLinks": [
+            { "label": "GMA News", "href": "https://www.gmanetwork.com/news/topstories/nation/989898/look-china-allegedly-building-structure-at-bajo-de-masinloc/story/" },
+            { "label": "Manila Times (June 4)", "href": "https://www.manilatimes.net/2026/06/04/news/new-satellite-image-corroborates-object-possible-barrier-at-bajo-de-masinloc-entrance/2358393" },
+            { "label": "Newsweek", "href": "https://www.newsweek.com/satellite-image-shows-possible-chinese-structure-disputed-reef-12019748" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Legal",
+      "articles": [
+        {
+          "timeDatetime": "2026-06-02",
+          "timeDisplay": "June 2, 2026",
+          "category": "Legal",
+          "categoryClass": "legal",
+          "borderColor": "#1e3a5f",
+          "headline": "PNP Forensics Confirms 1,400 Human Bones Recovered from Taal Lake",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-06-02&search=Taal+Lake+bones+sabungeros",
+          "descriptionHtml": "<p>PNP Forensics Group Director <strong>Pierre Paul Carpio</strong> said on June 2 that <strong>1,400</strong> of roughly <strong>2,000</strong> bone and artifact pieces pulled from <strong>Taal Lake</strong> since July 2025 are confirmed human remains, part of the long-running probe into missing cockfight enthusiasts believed dumped in the lake. Eight rotating dive teams have worked four quadrants of the lake bed; Carpio said experts repeatedly test long bones because DNA extraction from skeletal material is slow and costly, and <strong>no positive DNA matches</strong> have been announced yet. The confirmation advances a case that has haunted Batangas families for years and keeps pressure on authorities to identify victims tied to the broader sabungero disappearance scandal.</p>",
+          "diasporaImpact": "Overseas Batangueños following the sabungero cases now have forensic confirmation of mass disposal even as identification—and accountability—remains unfinished.",
+          "sourceLinks": [
+            { "label": "ABS-CBN", "href": "https://www.abs-cbn.com/news/regions/2026/6/2/1-400-bones-recovered-from-taal-lake-confirmed-human-says-pnp-forensics-1049" }
+          ]
+        }
+      ]
+    }
+  ],
+  "dynastyHighlights": {
+    "title": "Dynasty Watch",
+    "items": [
+      {
+        "title": "Duterte",
+        "titleHref": "/dynasties-network-visualization.html#dynasty-DUTERTE_FAMILY",
+        "bodyHtml": "<p>Sara pivoted from boycott to a <strong>dismissal-first</strong> Senate strategy on June 1, keeping the impeachment clock running toward July 6 while avoiding a point-by-point rebuttal of House evidence. The clan’s legal posture now bets on procedural defects rather than factual denial on the floor.</p>",
+        "bullets": [
+          { "text": "50-page answer seeks dismissal", "href": "/interactive-timeline/index.html?date=2026-06-01" },
+          { "text": "House prosecution to oppose", "href": "/interactive-timeline/index.html?date=2026-06-01" }
+        ]
+      },
+      {
+        "title": "Marcos-Romualdez",
+        "titleHref": "/dynasties-network-visualization.html#dynasty-MARCOS_ROMUALDEZ",
+        "bodyHtml": "<p>The administration paired <strong>inflation messaging</strong> with an early SSS pension rollout and kept WPS verification in the defense lane as Teodoro and SeaLight imagery put Bajo de Masinloc back on the maritime agenda—without yet ordering a kinetic response.</p>",
+        "bullets": [
+          { "text": "May inflation 6.8%", "href": "/interactive-timeline/index.html?date=2026-06-05" },
+          { "text": "Bajo de Masinloc structure probe", "href": "/interactive-timeline/index.html?date=2026-06-04" }
+        ]
+      }
+    ]
+  }
+}

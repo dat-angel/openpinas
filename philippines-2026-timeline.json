@@ -4,9 +4,9 @@
   "prepared_for": "Filipino Diaspora Communities Worldwide",
   "metadata": {
     "purpose": "Comprehensive timeline of major Philippine events in 2026 to help overseas Filipinos understand developments affecting families, remittances, investments, and homeland governance",
-    "last_updated": "May 30, 2026",
+    "last_updated": "June 9, 2026",
     "aggregation_note": "This timeline is aggregated by month as events unfold. Weekly reviews provide more detailed coverage.",
-    "total_events": 172,
+    "total_events": 178,
     "categories": [
       "Political",
       "Cultural",
@@ -3506,6 +3506,134 @@
         ]
       },
       "weekly_review": "weekly-reviews/weekly-review-2026-05-30.html"
+    },
+    {
+      "date": "2026-06-01",
+      "month": "June",
+      "title": "Sara Duterte Files Senate Answer Seeking Dismissal of Impeachment Articles",
+      "category": "Political",
+      "description": "Vice President Sara Duterte filed a 50-page answer with the Senate impeachment court on June 1, 2026, the deadline set by the chamber, asking that the articles of impeachment be dismissed as constitutionally infirm, procedurally defective, and substantively deficient. Lead defense counsel Michael Poa said the House never attached evidence to the original complaints and that committee-gathered material came only after Duterte had filed with the justice panel. House lead prosecutor Gerville Luistro said the prosecution would file only a manifestation—not a full reply—and would oppose any dismissal motion, noting Senate impeachment rules provide for trial and conviction or acquittal. The Senate impeachment trial remains scheduled to begin July 6, 2026.",
+      "significance": "Shifts the Sara Duterte case from summons logistics to a pre-trial fight over whether the Senate will hear evidence at all.",
+      "diaspora_impact": "Overseas voters weighing 2028 alignment face a dismissal fight before any open Senate testimony on financial and governance charges.",
+      "mentioned_dynasties": [
+        "DUTERTE_FAMILY",
+        "MARCOS_ROMUALDEZ"
+      ],
+      "sources": {
+        "international": [],
+        "local": [
+          "https://www.rappler.com/philippines/sara-duterte-response-articles-of-impeachment-senate/",
+          "https://www.abs-cbn.com/news/nation/2026/6/1/sara-duterte-files-impeachment-reply-1646",
+          "https://newsinfo.inquirer.net/2238316/sara-duterte-to-senate-junk-impeachment-raps",
+          "https://tribune.net.ph/2026/06/01/dismiss-infirm-impeach-raps-sara-asks-senate"
+        ]
+      },
+      "weekly_review": "weekly-reviews/weekly-review-2026-06-06.html"
+    },
+    {
+      "date": "2026-06-02",
+      "month": "June",
+      "title": "SSS Begins Early June Rollout of 2026 Pension Hike for 4.1 Million Beneficiaries",
+      "category": "Economic",
+      "description": "The Social Security System began an early rollout on June 1, 2026 of the second tranche of its Pension Reform Program, advancing a scheduled September increase to provide relief to about 4.1 million pensioners. Finance Secretary Frederick Go and SSS President Robert Joseph de Claro said roughly 6 billion pesos in additional benefits would be released from June through August 2026. Pensioners registered as of May 31, 2026 began receiving the hike on June 1; those whose contingencies fall between June 1 and August 31 will receive adjusted pensions starting September 1. Retirement and disability pensions rise 10 percent; death and survivor pensions rise 5 percent.",
+      "significance": "First multi-year SSS pension program advances relief ahead of schedule as inflation remains above target.",
+      "diaspora_impact": "Families relying on parental SSS pensions get earlier cushion, though rice and utility inflation still pressure household budgets.",
+      "mentioned_dynasties": [
+        "MARCOS_ROMUALDEZ"
+      ],
+      "sources": {
+        "international": [],
+        "local": [
+          "https://www.sss.gov.ph/news-and-updates/sss-begins-early-june-rollout-of-2026-pension-hike-citing-need-for-early-relief-for-pensioners/",
+          "https://pia.gov.ph/news/inflation-relief-sss-releases-p6-b-advance-pension-hike/"
+        ]
+      },
+      "weekly_review": "weekly-reviews/weekly-review-2026-06-06.html"
+    },
+    {
+      "date": "2026-06-02",
+      "month": "June",
+      "title": "PNP Forensics Confirms 1,400 Human Bones from Taal Lake Recovery",
+      "category": "Legal",
+      "description": "PNP Forensics Group Director Pierre Paul Carpio said on June 2, 2026 that 1,400 of roughly 2,000 bone and artifact pieces recovered from Taal Lake since July 2025 are confirmed human remains, part of the investigation into missing cockfight enthusiasts believed dumped in the lake. Eight rotating dive teams have worked four quadrants of the lake bed since July 10, 2025. Carpio said DNA extraction from skeletal material is slow and costly and that no positive DNA matches have been announced yet.",
+      "significance": "Forensic confirmation advances a years-long sabungero disappearance case without yet identifying victims.",
+      "diaspora_impact": "Batangas-linked diaspora communities have confirmation of mass disposal even as accountability remains unfinished.",
+      "mentioned_dynasties": [],
+      "sources": {
+        "international": [],
+        "local": [
+          "https://www.abs-cbn.com/news/regions/2026/6/2/1-400-bones-recovered-from-taal-lake-confirmed-human-says-pnp-forensics-1049"
+        ]
+      },
+      "weekly_review": "weekly-reviews/weekly-review-2026-06-06.html"
+    },
+    {
+      "date": "2026-06-04",
+      "month": "June",
+      "title": "SeaLight Satellite Imagery Shows Object and Barrier at Bajo de Masinloc Lagoon Entrance",
+      "category": "International Relations",
+      "description": "Maritime monitor SeaLight released commercial satellite imagery from May 27-28, 2026 showing a small reflective object on the reef flat near the lagoon entrance of Bajo de Masinloc (Scarborough Shoal) and a curved linear feature consistent with a floating barrier spanning the entrance. Defense Secretary Gilberto Teodoro Jr. said on May 30 that Manila was validating raw information about alleged new structures. AFP WPS spokesperson Rear Adm. Roy Vincent Trinidad said on June 2 that interagency verification was still underway. SeaLight director Ray Powell warned a confirmed fixed installation would test the 2002 Declaration on the Conduct of Parties in the South China Sea.",
+      "significance": "Reopens a major WPS flashpoint with satellite evidence of a persistent object and possible access barrier at Scarborough Shoal.",
+      "diaspora_impact": "Filipino fishing and seafaring families with ties to western Luzon watched another shoal escalation that could affect patrol routes and catch access.",
+      "mentioned_dynasties": [
+        "MARCOS_ROMUALDEZ"
+      ],
+      "sources": {
+        "international": [
+          "https://www.newsweek.com/satellite-image-shows-possible-chinese-structure-disputed-reef-12019748"
+        ],
+        "local": [
+          "https://www.gmanetwork.com/news/topstories/nation/989898/look-china-allegedly-building-structure-at-bajo-de-masinloc/story/",
+          "https://www.manilatimes.net/2026/06/04/news/new-satellite-image-corroborates-object-possible-barrier-at-bajo-de-masinloc-entrance/2358393"
+        ]
+      },
+      "weekly_review": "weekly-reviews/weekly-review-2026-06-06.html"
+    },
+    {
+      "date": "2026-06-05",
+      "month": "June",
+      "title": "May 2026 Inflation Slows to 6.8% on Easing Transport and Food Prices",
+      "category": "Economic",
+      "description": "Headline inflation slowed to 6.8 percent in May 2026 from 7.2 percent in April, the Philippine Statistics Authority said on June 5, landing inside the Bangko Sentral ng Pilipinas forecast range of 7.1 to 7.9 percent. Transport inflation eased to 16.2 percent from 21.4 percent after fuel rollbacks and accounted for roughly 70 percent of the monthly deceleration. Food inflation cooled to 5.7 percent, though rice prices accelerated to 15.6 percent from 13.7 percent. Inflation remained more than three percentage points above the government's 2 to 4 percent target.",
+      "significance": "First meaningful inflation deceleration in months, but price level stays near multi-year highs.",
+      "diaspora_impact": "OFW families still face rice and utility pressure even as dollar remittances convert at record-weak peso levels.",
+      "mentioned_dynasties": [
+        "MARCOS_ROMUALDEZ"
+      ],
+      "sources": {
+        "international": [],
+        "local": [
+          "https://www.philstar.com/business/2026/06/05/2533026/inflation-slows-68-may-2026-amid-easing-transport-food-costs",
+          "https://www.philstar.com/business/2026/06/06/2533071/inflation-cools-68-percent-may"
+        ]
+      },
+      "weekly_review": "weekly-reviews/weekly-review-2026-06-06.html"
+    },
+    {
+      "date": "2026-06-08",
+      "month": "June",
+      "title": "Magnitude 7.8 Earthquake Strikes Off Sarangani, Mindanao; Tsunami Warning Issued",
+      "category": "Natural Disasters",
+      "description": "A magnitude 7.8 earthquake struck at 7:37 a.m. on June 8, 2026 off the coast of Sarangani province, about 32 kilometers southwest of Maasim at a depth of 33 kilometers. PHIVOLCS initially reported magnitude 7.0 before upgrading the event. The tremor was generated by movement along the Cotabato Trench, the same structure behind the devastating August 1976 Moro Gulf earthquake and tsunami. Instrumental intensity reached VIII in Malapatan, Sarangani; observed intensity hit VII (destructive) in General Santos City. PHIVOLCS issued tsunami warnings for nine coastal provinces. By June 9 the NDRRMC confirmed 37 deaths and 479 injuries, with disaster officials reporting the toll could exceed 41 as searches continued; the PNP monitored more than 22,900 evacuees. General Santos Airport suspended operations and canceled 63 domestic flights; widespread power outages hit Sarangani. The quake struck on the first day of public-school classes nationwide. DepEd reported 267 public schools damaged across 14 provinces, including 199 destroyed classrooms, and allocated 235.1 million pesos for 130 Starlink-equipped learning continuity spaces. President Marcos suspended classes in affected Mindanao areas and directed DSWD, DPWH, and DOH crisis response.",
+      "significance": "Strongest Philippine earthquake in decades; tests disaster response in Soccsksargen and compounds Mindanao's 2025-2026 seismic stress.",
+      "diaspora_impact": "Mindanao's large OFW population faces emergency remittance needs, airport disruption, and school-calendar shock as families verify safety after flag-ceremony injuries.",
+      "mentioned_dynasties": [
+        "MARCOS_ROMUALDEZ",
+        "DUTERTE_FAMILY"
+      ],
+      "sources": {
+        "international": [
+          "https://abcnews.com/International/wireStory/20000-people-displaced-philippine-earthquake-killed-37-133702358",
+          "https://ahacentre.org/flash-update/flash-update-no-1-m7-8-earthquake-in-sarangani-8-june-2026/"
+        ],
+        "local": [
+          "https://www.rappler.com/philippines/mindanao/sarangani-earthquake-tsunami-warning-june-8-2026/",
+          "https://www.philstar.com/headlines/2026/06/08/2533717/buildings-collapse-gensan-airport-shuts-after-78-magnitude-quake",
+          "https://www.rappler.com/philippines/mindanao/department-education-schools-earthquake-damage-assessment-june-9-2026/",
+          "https://www.inquirer.net/477209/live-updates-mindanao-earthquake-june-9-2026/"
+        ]
+      },
+      "weekly_review": "weekly-reviews/weekly-review-2026-06-08.html"
     }
   ],
   "ofw_highlights": {

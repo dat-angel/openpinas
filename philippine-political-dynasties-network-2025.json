@@ -267,6 +267,11 @@
               "date": "2026-05-13",
               "title": "Luzon and Visayas Power Grids on Red Alert; Rotating Brownouts for Three Days",
               "role": "mentioned"
+            },
+            {
+              "date": "2026-06-08",
+              "title": "Magnitude 7.8 Earthquake Strikes Off Sarangani, Mindanao; Tsunami Warning Issued",
+              "role": "primary_actor"
             }
           ],
           "2025_rumors_headlines": [
@@ -496,6 +501,11 @@
               "date": "2026-05-22",
               "title": "ICC Orders Rodrigo Duterte to Remain Detained at The Hague",
               "role": "primary_actor"
+            },
+            {
+              "date": "2026-06-08",
+              "title": "Magnitude 7.8 Earthquake Strikes Off Sarangani, Mindanao; Tsunami Warning Issued",
+              "role": "mentioned"
             }
           ],
           "key_members": [
