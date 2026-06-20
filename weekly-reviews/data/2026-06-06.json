@@ -3,10 +3,10 @@
   "weekEnding": "2026-06-06",
   "weekLabel": "May 30 – June 6, 2026",
   "title": "OpenPinas: Weekly News Review",
-  "lastUpdated": "June 6, 2026",
+  "lastUpdated": "June 9, 2026",
   "prevWeekEnding": "2026-05-30",
   "stats": [
-    { "number": "4", "label": "Stories" },
+    { "number": "5", "label": "Stories" },
     { "number": "6.8%", "label": "May Inflation" },
     { "number": "4.1M", "label": "SSS Pensioners" },
     { "number": "June 1", "label": "VP Answer Filed" }
@@ -41,6 +41,29 @@
             { "label": "ABS-CBN", "href": "https://www.abs-cbn.com/news/nation/2026/6/1/sara-duterte-files-impeachment-reply-1646" },
             { "label": "Inquirer", "href": "https://newsinfo.inquirer.net/2238316/sara-duterte-to-senate-junk-impeachment-raps" },
             { "label": "Tribune", "href": "https://tribune.net.ph/2026/06/01/dismiss-infirm-impeach-raps-sara-asks-senate" }
+          ]
+        },
+        {
+          "timeDatetime": "2026-06-03",
+          "timeDisplay": "June 3–6, 2026",
+          "category": "Political",
+          "categoryClass": "political",
+          "borderColor": "#3a0ca3",
+          "headline": "Gatchalian Takes Acting Senate Presidency as Cayetano Bloc Holds Contested Marines Hearing",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-06-03&search=Gatchalian+Senate+coup+Marines+hearing",
+          "descriptionHtml": "<p>On <strong>June 3</strong>, a surprise appearance by <strong>Francis Escudero</strong> let <strong>12 senators</strong> reach quorum under the <strong>Avelino v. Cuenco</strong> doctrine, declare leadership vacant, and elect <strong>Sherwin Gatchalian</strong> Senate president pro tempore and acting Senate president—one vote short of the 13 needed to claim the full presidency outright. <strong>Erwin Tulfo</strong> replaced <strong>Pia Cayetano</strong> as Blue Ribbon chair. <strong>Alan Peter Cayetano</strong> rejected the session as illegal, insisting 13 of 24 elected senators are required. On <strong>June 4</strong>, Cayetano allies pushed through a contested Blue Ribbon hearing featuring <strong>18 men claiming to be former Marines</strong> alleging cash deliveries to lawmakers; the Gatchalian bloc called it bogus and unauthorized. By <strong>June 5</strong>, the <strong>IBP</strong> and former Senate presidents <strong>Franklin Drilon</strong> and <strong>Aquilino Pimentel III</strong> backed the June 3 quorum as lawful, counting only 22 “available” senators with <strong>Jinggoy Estrada</strong> detained and <strong>Bato dela Rosa</strong> in hiding. The standoff directly threatens July 6 impeachment logistics: Gatchalian signed Sara Duterte’s pre-trial notice on June 9 while Cayetano still claimed the chamber.</p>",
+          "diasporaImpact": "Who legitimately runs the Senate determines whether Sara Duterte’s trial proceeds on schedule—a procedural fight with higher stakes than any single impeachment article.",
+          "dynastyLinks": [
+            { "label": "Cayetano (Taguig)", "href": "/dynasties-network-visualization.html#dynasty-CAYETANO_TAGUIG" },
+            { "label": "Gatchalian (Valenzuela)", "href": "/dynasties-network-visualization.html#dynasty-GATCHALIAN_VALENZUELA" },
+            { "label": "Estrada", "href": "/dynasties-network-visualization.html#dynasty-ESTRADA_FAMILY" },
+            { "label": "Duterte", "href": "/dynasties-network-visualization.html#dynasty-DUTERTE_FAMILY" }
+          ],
+          "sourceLinks": [
+            { "label": "Rappler (explainer)", "href": "https://www.rappler.com/philippines/senate-coups-gunshots-standoff-2026-mess/" },
+            { "label": "GMA News (Marines hearing)", "href": "https://www.gmanetwork.com/news/topstories/nation/990322/was-the-recent-senate-flood-control-hearing-valid-lawyers-weigh-in/story/" },
+            { "label": "Inquirer (IBP)", "href": "https://newsinfo.inquirer.net/2240481/ibp-says-june-3-senate-quorum-lawful-valid" },
+            { "label": "OneNews", "href": "https://www.onenews.ph/articles/commotion-confusion-at-senate-as-cayetano-led-senators-push-through-with-marines-hearing" }
           ]
         }
       ]
@@ -120,7 +143,7 @@
       {
         "title": "Duterte",
         "titleHref": "/dynasties-network-visualization.html#dynasty-DUTERTE_FAMILY",
-        "bodyHtml": "<p>Sara pivoted from boycott to a <strong>dismissal-first</strong> Senate strategy on June 1, keeping the impeachment clock running toward July 6 while avoiding a point-by-point rebuttal of House evidence. The clan’s legal posture now bets on procedural defects rather than factual denial on the floor.</p>",
+        "bodyHtml": "<p>Sara pivoted from boycott to a <strong>dismissal-first</strong> Senate strategy on June 1 while the chamber itself split over who presides. The clan’s legal posture bets on procedural defects—and on Cayetano allies contesting Gatchalian’s authority to run the impeachment court.</p>",
         "bullets": [
           { "text": "50-page answer seeks dismissal", "href": "/interactive-timeline/index.html?date=2026-06-01" },
           { "text": "House prosecution to oppose", "href": "/interactive-timeline/index.html?date=2026-06-01" }

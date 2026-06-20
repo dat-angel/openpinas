@@ -2,6 +2,18 @@
   "version": 1,
   "reviews": [
     {
+      "weekEnding": "2026-06-20",
+      "weekLabel": "June 14 – June 20, 2026",
+      "eventCount": 4,
+      "prevWeekEnding": "2026-06-13"
+    },
+    {
+      "weekEnding": "2026-06-13",
+      "weekLabel": "June 7 – June 13, 2026",
+      "eventCount": 4,
+      "prevWeekEnding": "2026-06-06"
+    },
+    {
       "weekEnding": "2026-06-08",
       "weekLabel": "Special — June 8, 2026 Mindanao Earthquake",
       "eventCount": 5,
@@ -11,7 +23,7 @@
     {
       "weekEnding": "2026-06-06",
       "weekLabel": "May 30 – June 6, 2026",
-      "eventCount": 4,
+      "eventCount": 5,
       "prevWeekEnding": "2026-05-30"
     },
     {

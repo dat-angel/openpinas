@@ -1,0 +1,140 @@
+{
+  "version": 1,
+  "weekEnding": "2026-06-20",
+  "weekLabel": "June 14 – June 20, 2026",
+  "title": "OpenPinas: Weekly News Review",
+  "lastUpdated": "June 20, 2026",
+  "prevWeekEnding": "2026-06-13",
+  "stats": [
+    { "number": "4", "label": "Stories" },
+    { "number": "13", "label": "Senate Votes" },
+    { "number": "78", "label": "Quake Dead (June 18)" },
+    { "number": "July 6", "label": "Impeach Trial" }
+  ],
+  "exchangeRate": {
+    "title": "PHP:USD Exchange Rate",
+    "currentRate": "₱61.20–₱61.45",
+    "trend": "▬ Holding; disaster and session politics in focus",
+    "contextHtml": "<p>The peso stayed in the low-<strong>₱61</strong> range through June 20 as Congress returned for a Marcos-called special session and Mindanao reconstruction costs climbed past <strong>₱1.35 billion</strong> in reported infrastructure damage.</p>",
+    "sourceNote": "Source: BSP / NDRRMC context"
+  },
+  "eventSections": [
+    {
+      "title": "Political",
+      "articles": [
+        {
+          "timeDatetime": "2026-06-17",
+          "timeDisplay": "June 17, 2026",
+          "category": "Political",
+          "categoryClass": "political",
+          "borderColor": "#3a0ca3",
+          "headline": "Gatchalian Elected Senate President as Villanueva Delivers 13th Vote; Cayetano Concedes",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-06-17&search=Gatchalian+elected+Senate+President",
+          "descriptionHtml": "<p>During a <strong>June 17 special session</strong> called by President Marcos, <strong>Sherwin Gatchalian</strong> was formally elected Senate president with all <strong>13 senators</strong> present voting for him after <strong>Joel Villanueva</strong> joined the majority—supplying the constitutional threshold Cayetano’s bloc had denied since the June 3 quorum of 12. The Cayetano-led minority skipped the morning session; <strong>Alan Peter Cayetano</strong> conceded defeat shortly before the vote. The session also convened the Commission on Appointments to confirm <strong>85 ambassadors</strong> and <strong>5 generals</strong>. Cayetano had filed a Supreme Court petition June 16 seeking to void the June 3 reorganization, but the chamber moved on. Gatchalian inherits a divided Senate weeks before Vice President Sara Duterte’s <strong>July 6</strong> impeachment trial—ending a monthlong leadership crisis that began with Cayetano’s May 11 takeover and Bato dela Rosa’s May 13 Senate standoff.</p>",
+          "diasporaImpact": "A settled Senate presidency clears the path for impeachment logistics; overseas observers can finally track one official calendar for Sara Duterte’s trial.",
+          "dynastyLinks": [
+            { "label": "Gatchalian (Valenzuela)", "href": "/dynasties-network-visualization.html#dynasty-GATCHALIAN_VALENZUELA" },
+            { "label": "Cayetano (Taguig)", "href": "/dynasties-network-visualization.html#dynasty-CAYETANO_TAGUIG" },
+            { "label": "Marcos-Romualdez", "href": "/dynasties-network-visualization.html#dynasty-MARCOS_ROMUALDEZ" }
+          ],
+          "sourceLinks": [
+            { "label": "Rappler", "href": "https://www.rappler.com/philippines/win-gatchalian-elected-senate-president/" },
+            { "label": "Inquirer", "href": "https://newsinfo.inquirer.net/2248388/senate-row-ends-gatchalian-takes-helm-cayetano-yields" },
+            { "label": "AP News", "href": "https://apnews.com/article/philippines-senate-gatchalian-cayetano-sara-duterte-9009564039b51b54e0dc6b8e30d0139d" },
+            { "label": "Malaya", "href": "https://malaya.com.ph/news/national-news/gatchalian-elected-senate-president-amid-rift/" }
+          ]
+        },
+        {
+          "timeDatetime": "2026-06-18",
+          "timeDisplay": "June 15–18, 2026",
+          "category": "Political",
+          "categoryClass": "political",
+          "borderColor": "#3a0ca3",
+          "headline": "Marcos Special Session Targets Anti-Dynasty Bill; Sara Pre-Trial Opens With Presiding Officer Still Unsettled",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-06-18&search=special+session+anti-dynasty+pre-trial",
+          "descriptionHtml": "<p>President Marcos issued <strong>Proclamation No. 1318</strong> on June 15 calling Congress to special session June 17, listing eight priority measures including an <strong>anti-political dynasty bill</strong>, tertiary-education reforms, and expanded AICS cash aid. The session became the venue for resolving Senate leadership rather than passing the dynasty measure, which Cayetano noted remained at interpellation stage. On <strong>June 18</strong> the Sara Duterte impeachment <strong>pre-trial conference</strong> opened; Gatchalian said he would preside for now while the majority floated <strong>Francis Escudero</strong> as trial presiding officer—a role senators amended rules to allow in non-presidential impeachments. Gatchalian also said <strong>Jinggoy Estrada’s</strong> Sandiganbayan preventive suspension bars him from sitting as an impeachment judge during the 90-day window. Both panels agreed to expedite proceedings; document marking resumes Monday. The week bridged Marcos’s governance agenda and the impeachment clock.</p>",
+          "diasporaImpact": "Anti-dynasty legislation matters to overseas voters tracking whether dynastic concentration ever faces a statutory cap; pre-trial rules determine if unexplained-wealth evidence reaches open Senate testimony.",
+          "dynastyLinks": [
+            { "label": "Marcos-Romualdez", "href": "/dynasties-network-visualization.html#dynasty-MARCOS_ROMUALDEZ" },
+            { "label": "Duterte", "href": "/dynasties-network-visualization.html#dynasty-DUTERTE_FAMILY" },
+            { "label": "Estrada", "href": "/dynasties-network-visualization.html#dynasty-ESTRADA_FAMILY" }
+          ],
+          "sourceLinks": [
+            { "label": "OneNews (special session)", "href": "https://www.onenews.ph/articles/marcos-calls-for-congress-special-session-on-june-17" },
+            { "label": "Philstar (pre-trial)", "href": "https://www.philstar.com/headlines/2026/06/19/2536257/vp-impeach-pre-trial-starts-no-decision-yet-chiz" },
+            { "label": "ABS-CBN (Escudero)", "href": "https://www.abs-cbn.com/news/nation/2026/6/18/gatchalian-senate-to-still-discuss-presiding-officer-of-vp-duterte-trial-1113" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "International Relations",
+      "articles": [
+        {
+          "timeDatetime": "2026-06-19",
+          "timeDisplay": "June 14–19, 2026",
+          "category": "International Relations",
+          "categoryClass": "international",
+          "borderColor": "#0d7377",
+          "headline": "PH-US Fourth Maritime Drill Completes Near Bajo de Masinloc as China Removes Floating Platform",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-06-17&search=MCA+West+Philippine+Sea+platform+removed",
+          "descriptionHtml": "<p>Philippine and U.S. forces completed their <strong>fourth bilateral maritime cooperative activity</strong> of 2026 from <strong>June 14–19</strong>, involving the Navy frigate <strong>BRP Diego Silang</strong>, PCG vessels, FA-50s, and US Coast Guard cutters near <strong>Bajo de Masinloc</strong> despite PLA Navy and China Coast Guard presence. Exercises included search-and-rescue, VBSS drills, and division tactics. Separately, NTF-WPS confirmed on <strong>June 17</strong> that the Chinese floating platform monitored inside the shoal lagoon since late May was <strong>removed</strong> after Manila’s diplomatic protest. Beijing’s embassy later called it a completed “research mission.” Manila said removal does not concede Chinese rights and vowed continued patrols. The twin developments—allied presence plus platform withdrawal—mark a tactical WPS win without resolving underlying Scarborough control since the 2012 standoff.</p>",
+          "diasporaImpact": "Allied drills near Panatag reassure diaspora communities watching China’s lagoon installations; removal is relief, not resolution, for fishers blocked from traditional grounds.",
+          "dynastyLinks": [
+            { "label": "Marcos-Romualdez", "href": "/dynasties-network-visualization.html#dynasty-MARCOS_ROMUALDEZ" }
+          ],
+          "sourceLinks": [
+            { "label": "Philstar (MCA)", "href": "https://www.philstar.com/headlines/2026/06/20/2536578/ph-us-forces-complete-4th-maritime-drill-west-philippine-sea-2026" },
+            { "label": "ABS-CBN (MCA)", "href": "https://www.abs-cbn.com/news/nation/2026/6/19/navy-pcg-train-with-us-coast-guard-in-west-philippine-sea-1110" },
+            { "label": "Philstar (platform removed)", "href": "https://www.philstar.com/headlines/2026/06/17/2535894/mission-completed-chinese-floating-platform-gone-scarborough-shoal" },
+            { "label": "Inquirer", "href": "https://www.inquirer.net/478011/ph-says-chinese-platform-removed-from-panatag-shoal/" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Natural Disasters",
+      "articles": [
+        {
+          "timeDatetime": "2026-06-18",
+          "timeDisplay": "June 14–18, 2026",
+          "category": "Natural Disasters",
+          "categoryClass": "disaster",
+          "borderColor": "#b91c1c",
+          "headline": "Mindanao Earthquake Toll Climbs to 78; 1.4 Million Affected and ₱1.35B Infrastructure Damage",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-06-18&search=Mindanao+earthquake+78+NDRRMC",
+          "descriptionHtml": "<p>Ten days after the <strong>June 8</strong> quake, NDRRMC Situation Report No. 10 recorded <strong>78 deaths</strong>, <strong>1,339 injured</strong>, and <strong>30 missing</strong>, affecting <strong>346,413 families</strong> or roughly <strong>1.41 million people</strong> across Regions IX, XI, XII, and BARMM. Damaged houses totaled <strong>74,657</strong> (13,681 destroyed); infrastructure damage reached about <strong>₱1.35 billion</strong>. <strong>81,855</strong> people remained displaced; power outages persisted in <strong>34 areas</strong> and water disruptions in <strong>15</strong>. PHIVOLCS logged thousands of aftershocks including a <strong>magnitude 6.4</strong> event. Government assistance exceeded <strong>₱176 million</strong>. Fourteen LGUs stayed under state-of-calamity declarations. Recovery competed for national attention with the Senate special session—testing whether disaster response stays funded as impeachment politics accelerates.</p>",
+          "diasporaImpact": "Rising casualty and displacement counts mean remittance spikes and housing rebuild costs will persist for months in Soccsksargen and Davao Occidental hometowns.",
+          "sourceLinks": [
+            { "label": "GMA News", "href": "https://www.gmanetwork.com/news/topstories/regions/991858/death-toll-from-mindanao-earthquake-reaches-78-over-1-4m-affected/story/" },
+            { "label": "Manila Bulletin", "href": "https://mb.com.ph/2026/06/18/mindanao-quake-death-toll-now-78-power-outage-water-supply-woes-affect-49-areas" },
+            { "label": "SunStar", "href": "https://www.sunstar.com.ph/amp/story/manila/sarangani-quake-death-toll-rises-to-78" }
+          ]
+        }
+      ]
+    }
+  ],
+  "dynastyHighlights": {
+    "title": "Dynasty Watch",
+    "items": [
+      {
+        "title": "Gatchalian (Valenzuela)",
+        "titleHref": "/dynasties-network-visualization.html#dynasty-GATCHALIAN_VALENZUELA",
+        "bodyHtml": "<p>Win Gatchalian went from acting president to constitutionally elected Senate president in one special session—now presiding over both chamber business and Sara Duterte’s pre-trial while Escudero’s trial-judge role remains unsettled.</p>",
+        "bullets": [
+          { "text": "13–0 election June 17", "href": "/interactive-timeline/index.html?date=2026-06-17" },
+          { "text": "Pre-trial opened June 18", "href": "/interactive-timeline/index.html?date=2026-06-18" }
+        ]
+      },
+      {
+        "title": "Marcos-Romualdez",
+        "titleHref": "/dynasties-network-visualization.html#dynasty-MARCOS_ROMUALDEZ",
+        "bodyHtml": "<p>Marcos used Proclamation 1318 to force Congress back to work—getting a Senate president ally and WPS platform removal in the same week, even as the anti-dynasty bill he listed as priority remained stuck in debate.</p>",
+        "bullets": [
+          { "text": "June 17 special session", "href": "/interactive-timeline/index.html?date=2026-06-17" },
+          { "text": "WPS platform removed", "href": "/interactive-timeline/index.html?date=2026-06-17" }
+        ]
+      }
+    ]
+  }
+}

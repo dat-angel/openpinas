@@ -272,6 +272,16 @@
               "date": "2026-06-08",
               "title": "Magnitude 7.8 Earthquake Strikes Off Sarangani, Mindanao; Tsunami Warning Issued",
               "role": "primary_actor"
+            },
+            {
+              "date": "2026-06-17",
+              "title": "Sherwin Gatchalian Elected Senate President; Alan Cayetano Concedes",
+              "role": "mentioned"
+            },
+            {
+              "date": "2026-06-18",
+              "title": "Sara Duterte Impeachment Pre-Trial Conference Opens; NDRRMC Reports 78 Quake Deaths",
+              "role": "mentioned"
             }
           ],
           "2025_rumors_headlines": [
@@ -506,6 +516,16 @@
               "date": "2026-06-08",
               "title": "Magnitude 7.8 Earthquake Strikes Off Sarangani, Mindanao; Tsunami Warning Issued",
               "role": "mentioned"
+            },
+            {
+              "date": "2026-06-17",
+              "title": "Sherwin Gatchalian Elected Senate President; Alan Cayetano Concedes",
+              "role": "mentioned"
+            },
+            {
+              "date": "2026-06-18",
+              "title": "Sara Duterte Impeachment Pre-Trial Conference Opens; NDRRMC Reports 78 Quake Deaths",
+              "role": "primary_actor"
             }
           ],
           "key_members": [
@@ -2600,7 +2620,24 @@
               "wikipedia": "https://en.wikipedia.org/wiki/Lani_Cayetano"
             }
           ],
-          "historical_notes": "Prominent political family in Taguig City. Multiple family members have served as senators, with strong local control in Taguig."
+          "historical_notes": "Prominent political family in Taguig City. Multiple family members have served as senators, with strong local control in Taguig.",
+          "timeline_events": [
+            {
+              "date": "2026-05-11",
+              "title": "Alan Cayetano Ousts Tito Sotto as Senate President on Impeachment Day",
+              "role": "primary_actor"
+            },
+            {
+              "date": "2026-06-03",
+              "title": "Senate Reaches Quorum of 12; Gatchalian Elected Acting Senate President",
+              "role": "primary_actor"
+            },
+            {
+              "date": "2026-06-17",
+              "title": "Sherwin Gatchalian Elected Senate President; Alan Cayetano Concedes",
+              "role": "primary_actor"
+            }
+          ]
         },
         {
           "id": "BELMONTE_QUEZON_CITY",
@@ -3440,7 +3477,19 @@
               "wikipedia": "https://en.wikipedia.org/wiki/Sherwin_Gatchalian"
             }
           ],
-          "historical_notes": "Prominent political family in Valenzuela City. Multiple family members have served as mayor and senator, establishing strong local and national presence."
+          "historical_notes": "Prominent political family in Valenzuela City. Multiple family members have served as mayor and senator, establishing strong local and national presence.",
+          "timeline_events": [
+            {
+              "date": "2026-06-03",
+              "title": "Senate Reaches Quorum of 12; Gatchalian Elected Acting Senate President",
+              "role": "primary_actor"
+            },
+            {
+              "date": "2026-06-17",
+              "title": "Sherwin Gatchalian Elected Senate President; Alan Cayetano Concedes",
+              "role": "primary_actor"
+            }
+          ]
         },
         {
           "id": "COJUANGCO_TARLAC",

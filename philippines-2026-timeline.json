@@ -4,9 +4,9 @@
   "prepared_for": "Filipino Diaspora Communities Worldwide",
   "metadata": {
     "purpose": "Comprehensive timeline of major Philippine events in 2026 to help overseas Filipinos understand developments affecting families, remittances, investments, and homeland governance",
-    "last_updated": "June 9, 2026",
+    "last_updated": "June 20, 2026",
     "aggregation_note": "This timeline is aggregated by month as events unfold. Weekly reviews provide more detailed coverage.",
-    "total_events": 178,
+    "total_events": 184,
     "categories": [
       "Political",
       "Cultural",
@@ -3568,6 +3568,30 @@
       "weekly_review": "weekly-reviews/weekly-review-2026-06-06.html"
     },
     {
+      "date": "2026-06-03",
+      "month": "June",
+      "title": "Senate Reaches Quorum of 12; Gatchalian Elected Acting Senate President",
+      "category": "Political",
+      "description": "On June 3, 2026, twelve senators reached quorum under the Avelino v. Cuenco doctrine, declared Senate leadership vacant, and elected Sherwin Gatchalian as Senate president pro tempore and acting Senate president after Francis Escudero joined the session. Erwin Tulfo replaced Pia Cayetano as Blue Ribbon committee chair. Alan Peter Cayetano rejected the session as unconstitutional, insisting thirteen of twenty-four elected senators are required to elect a Senate president. On June 4, Cayetano allies held a contested Blue Ribbon hearing featuring eighteen men claiming to be former Marines alleging cash deliveries to lawmakers; the Gatchalian bloc called it unauthorized. The Integrated Bar of the Philippines and former Senate presidents Franklin Drilon and Aquilino Pimentel III later backed the June 3 quorum as lawful, counting twenty-two available senators with Jinggoy Estrada detained and Ronald dela Rosa in hiding.",
+      "significance": "Triggers monthlong Senate leadership crisis directly affecting Sara Duterte impeachment trial logistics.",
+      "diaspora_impact": "Overseas observers face conflicting claims over who legitimately presides over the impeachment court before July 6.",
+      "mentioned_dynasties": [
+        "CAYETANO_TAGUIG",
+        "GATCHALIAN_VALENZUELA",
+        "ESTRADA_FAMILY",
+        "DUTERTE_FAMILY"
+      ],
+      "sources": {
+        "international": [],
+        "local": [
+          "https://www.rappler.com/philippines/senate-coups-gunshots-standoff-2026-mess/",
+          "https://newsinfo.inquirer.net/2240481/ibp-says-june-3-senate-quorum-lawful-valid",
+          "https://www.gmanetwork.com/news/topstories/nation/990322/was-the-recent-senate-flood-control-hearing-valid-lawyers-weigh-in/story/"
+        ]
+      },
+      "weekly_review": "weekly-reviews/weekly-review-2026-06-06.html"
+    },
+    {
       "date": "2026-06-04",
       "month": "June",
       "title": "SeaLight Satellite Imagery Shows Object and Barrier at Bajo de Masinloc Lagoon Entrance",
@@ -3634,6 +3658,113 @@
         ]
       },
       "weekly_review": "weekly-reviews/weekly-review-2026-06-08.html"
+    },
+    {
+      "date": "2026-06-10",
+      "month": "June",
+      "title": "PCG Releases Evidence of Chinese Floating Platform at Bajo de Masinloc",
+      "category": "International Relations",
+      "description": "On June 10, 2026 Philippine authorities released surveillance photos of a six-by-six-meter movable floating platform with an apparent antenna inside Bajo de Masinloc (Scarborough Shoal). The PCG said the structure was monitored from late May, with Chinese research vessels nearby and six personnel observed on the platform on May 30. The Department of Foreign Affairs filed diplomatic protests demanding withdrawal. The AFP pledged continued patrols.",
+      "significance": "Escalates May satellite imagery into documented on-site evidence of a lagoon installation at a major WPS flashpoint.",
+      "diaspora_impact": "Filipino fishers and crews in western Luzon face renewed access pressure if China normalizes structures at Panatag.",
+      "mentioned_dynasties": [
+        "MARCOS_ROMUALDEZ"
+      ],
+      "sources": {
+        "international": [],
+        "local": [
+          "https://www.gmanetwork.com/news/topstories/nation/990926/look-alleged-chinese-floating-structure-spotted-in-bajo-de-masinloc/story/"
+        ]
+      },
+      "weekly_review": "weekly-reviews/weekly-review-2026-06-13.html"
+    },
+    {
+      "date": "2026-06-13",
+      "month": "June",
+      "title": "Mindanao Earthquake Death Toll Reaches 61 One Week After M7.8 Shock",
+      "category": "Natural Disasters",
+      "description": "One week after the June 8 magnitude 7.8 Sarangani earthquake, the Office of Civil Defense reported 61 confirmed deaths as of June 13, with 1,221 injured and 33 missing. Most fatalities came from landslides in Jose Abad Santos and Glan, Sarangani, and falling debris in General Santos City. PHIVOLCS recorded more than 2,000 aftershocks. General Santos Airport remained closed to commercial flights while Mindanao power was expected to normalize within the week.",
+      "significance": "First validated weekly casualty milestone in the Sarangani earthquake recovery.",
+      "diaspora_impact": "OFW families face prolonged airport disruption and shelter needs in Soccsksargen and Davao Occidental.",
+      "mentioned_dynasties": [
+        "MARCOS_ROMUALDEZ",
+        "DUTERTE_FAMILY"
+      ],
+      "sources": {
+        "international": [],
+        "local": [
+          "https://www.gmanetwork.com/news/topstories/regions/991306/reported-death-toll-in-magnitude-7-8-mindanao-earthquake-climbs-to-61/story/",
+          "https://www.gmanetwork.com/news/topstories/nation/990902/live-updates-magnitude-7-8-mindanao-earthquake-effects-june-10-2026/story/"
+        ]
+      },
+      "weekly_review": "weekly-reviews/weekly-review-2026-06-13.html"
+    },
+    {
+      "date": "2026-06-17",
+      "month": "June",
+      "title": "Sherwin Gatchalian Elected Senate President; Alan Cayetano Concedes",
+      "category": "Political",
+      "description": "During a June 17, 2026 special session called by President Ferdinand Marcos Jr., Senator Sherwin Gatchalian was formally elected Senate president with all thirteen senators present voting for him after Senator Joel Villanueva joined the majority, providing the constitutional threshold. Alan Peter Cayetano conceded defeat; his bloc had skipped the session. The special session also convened the Commission on Appointments to confirm eighty-five ambassadors and five generals. Cayetano had filed a Supreme Court petition seeking to void the June 3 reorganization.",
+      "significance": "Ends monthlong Senate leadership crisis ahead of Sara Duterte's July 6 impeachment trial.",
+      "diaspora_impact": "Settles who runs the impeachment court calendar for overseas observers tracking Sara Duterte accountability.",
+      "mentioned_dynasties": [
+        "GATCHALIAN_VALENZUELA",
+        "CAYETANO_TAGUIG",
+        "MARCOS_ROMUALDEZ"
+      ],
+      "sources": {
+        "international": [
+          "https://apnews.com/article/philippines-senate-gatchalian-cayetano-sara-duterte-9009564039b51b54e0dc6b8e30d0139d"
+        ],
+        "local": [
+          "https://www.rappler.com/philippines/win-gatchalian-elected-senate-president/",
+          "https://newsinfo.inquirer.net/2248388/senate-row-ends-gatchalian-takes-helm-cayetano-yields"
+        ]
+      },
+      "weekly_review": "weekly-reviews/weekly-review-2026-06-20.html"
+    },
+    {
+      "date": "2026-06-17",
+      "month": "June",
+      "title": "Chinese Floating Platform Removed from Bajo de Masinloc After Philippine Protest",
+      "category": "International Relations",
+      "description": "On June 17, 2026 the National Task Force for the West Philippine Sea confirmed through maritime patrols that the Chinese floating platform monitored inside Bajo de Masinloc lagoon since late May had been removed. Manila had filed formal diplomatic protests demanding withdrawal. Beijing's embassy later described it as a completed research mission. Philippine authorities vowed continued patrols and reiterated that only the Philippines may conduct activities at the shoal.",
+      "significance": "Tactical WPS win after documented platform presence; does not resolve underlying Scarborough control since 2012.",
+      "diaspora_impact": "Temporary relief for fishers blocked from traditional Panatag grounds, but effective Chinese control persists.",
+      "mentioned_dynasties": [
+        "MARCOS_ROMUALDEZ"
+      ],
+      "sources": {
+        "international": [],
+        "local": [
+          "https://www.philstar.com/headlines/2026/06/17/2535894/mission-completed-chinese-floating-platform-gone-scarborough-shoal",
+          "https://www.inquirer.net/478011/ph-says-chinese-platform-removed-from-panatag-shoal/"
+        ]
+      },
+      "weekly_review": "weekly-reviews/weekly-review-2026-06-20.html"
+    },
+    {
+      "date": "2026-06-18",
+      "month": "June",
+      "title": "Sara Duterte Impeachment Pre-Trial Conference Opens; NDRRMC Reports 78 Quake Deaths",
+      "category": "Political",
+      "description": "The Senate impeachment court held the pre-trial conference for Vice President Sara Duterte on June 18, 2026. Senate President Sherwin Gatchalian said he would preside for now while the majority discussed naming Francis Escudero as trial presiding officer. Gatchalian said Senator Jinggoy Estrada's Sandiganbayan preventive suspension bars him from sitting as an impeachment judge during the suspension period. Both prosecution and defense agreed to expedite proceedings. The same week NDRRMC Situation Report No. 10 recorded 78 deaths, 1,339 injured, and roughly 1.41 million people affected by the June 8 Mindanao earthquake, with infrastructure damage estimated at about 1.35 billion pesos.",
+      "significance": "Impeachment trial logistics advance as Mindanao disaster toll continues climbing in parallel.",
+      "diaspora_impact": "Pre-trial rules determine whether House financial evidence enters the Senate record; quake displacement drives remittance needs in Mindanao.",
+      "mentioned_dynasties": [
+        "DUTERTE_FAMILY",
+        "GATCHALIAN_VALENZUELA",
+        "ESTRADA_FAMILY",
+        "MARCOS_ROMUALDEZ"
+      ],
+      "sources": {
+        "international": [],
+        "local": [
+          "https://www.philstar.com/headlines/2026/06/19/2536257/vp-impeach-pre-trial-starts-no-decision-yet-chiz",
+          "https://www.gmanetwork.com/news/topstories/regions/991858/death-toll-from-mindanao-earthquake-reaches-78-over-1-4m-affected/story/"
+        ]
+      },
+      "weekly_review": "weekly-reviews/weekly-review-2026-06-20.html"
     }
   ],
   "ofw_highlights": {

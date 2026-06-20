@@ -1,0 +1,133 @@
+{
+  "version": 1,
+  "weekEnding": "2026-06-13",
+  "weekLabel": "June 7 – June 13, 2026",
+  "title": "OpenPinas: Weekly News Review",
+  "lastUpdated": "June 13, 2026",
+  "prevWeekEnding": "2026-06-06",
+  "stats": [
+    { "number": "4", "label": "Stories" },
+    { "number": "61", "label": "Quake Dead (June 13)" },
+    { "number": "2,000+", "label": "Aftershocks" },
+    { "number": "June 18", "label": "Impeach Pre-Trial" }
+  ],
+  "exchangeRate": {
+    "title": "PHP:USD Exchange Rate",
+    "currentRate": "₱61.35–₱61.60",
+    "trend": "▬ Stable band; quake response dominates policy bandwidth",
+    "contextHtml": "<p>The peso held near the <strong>₱61.35–₱61.60</strong> band through mid-June as markets weighed Mindanao disaster spending against still-elevated inflation. Disaster response and Senate leadership fights consumed political bandwidth ahead of the June 18 impeachment pre-trial.</p>",
+    "sourceNote": "Source: BSP / Philstar"
+  },
+  "eventSections": [
+    {
+      "title": "Natural Disasters",
+      "articles": [
+        {
+          "timeDatetime": "2026-06-13",
+          "timeDisplay": "June 8–13, 2026",
+          "category": "Natural Disasters",
+          "categoryClass": "disaster",
+          "borderColor": "#b91c1c",
+          "headline": "Mindanao Quake Week One: Death Toll Reaches 61, GenSan Airport Still Closed, Power Recovering",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-06-08&search=Mindanao+earthquake+recovery+June+13",
+          "descriptionHtml": "<p>One week after the <strong>June 8 magnitude 7.8</strong> Sarangani earthquake, the Office of Civil Defense reported <strong>61 confirmed dead</strong> as of June 13—with bodies accounted for but names still being validated—plus <strong>1,221 injured</strong> and <strong>33 missing</strong>. Most fatalities came from landslides in <strong>Jose Abad Santos</strong> and <strong>Glan</strong>, Sarangani, and falling debris in <strong>General Santos</strong>. Rescue teams focused on Sarangani Island, Balut Island, and isolated Davao Occidental barangays. PHIVOLCS recorded more than <strong>2,000 aftershocks</strong> by June 10. Energy Secretary <strong>Sharon Garin</strong> said Mindanao power should normalize within the week; <strong>General Santos Airport</strong> remained closed to commercial flights. President Marcos pledged <strong>₱50,000</strong> aid per fatality family. Alabel, Glan, and GenSan were under states of calamity as responders pushed water, food, and shelter materials to zero-casualty targets in cut-off areas.</p>",
+          "diasporaImpact": "Families abroad should expect delayed airport connections through GenSan and verify whether relatives moved from coastal zones after tsunami warnings rather than assuming they returned home.",
+          "sourceLinks": [
+            { "label": "GMA News (June 13 toll)", "href": "https://www.gmanetwork.com/news/topstories/regions/991306/reported-death-toll-in-magnitude-7-8-mindanao-earthquake-climbs-to-61/story/" },
+            { "label": "GMA News (June 10 live)", "href": "https://www.gmanetwork.com/news/topstories/nation/990902/live-updates-magnitude-7-8-mindanao-earthquake-effects-june-10-2026/story/" },
+            { "label": "Rappler (June 8 special)", "href": "https://www.rappler.com/philippines/mindanao/sarangani-earthquake-tsunami-warning-june-8-2026/" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "International Relations",
+      "articles": [
+        {
+          "timeDatetime": "2026-06-10",
+          "timeDisplay": "June 10, 2026",
+          "category": "International Relations",
+          "categoryClass": "international",
+          "borderColor": "#0d7377",
+          "headline": "PCG Releases Photos of Chinese Floating Platform; DFA Demands Removal from Bajo de Masinloc",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-06-10&search=Bajo+de+Masinloc+PCG+platform+June",
+          "descriptionHtml": "<p>On June 10 Philippine authorities released surveillance photos of a <strong>6×6-meter movable floating platform</strong> with an apparent antenna inside <strong>Bajo de Masinloc</strong> (Scarborough Shoal). PCG spokesperson for WPS <strong>Jay Tarriela</strong> said the structure was first monitored in late May, with Chinese research vessels nearby May 21–25 and six personnel observed on the platform May 30 amid reported aerial harassment. The platform reportedly moved deeper into the lagoon May 31. The <strong>DFA</strong> filed diplomatic protests demanding withdrawal, citing violations of Philippine sovereignty, UNCLOS, and the 2016 arbitral award. The AFP pledged continued patrols. Beijing had not publicly commented at release time, though Manila framed the object as an illegal installation that could precede permanent construction—escalating the May satellite-imagery story into documented on-site evidence.</p>",
+          "diasporaImpact": "Filipino fishers and crews transiting western Luzon waters face another access squeeze if China normalizes lagoon structures at Panatag.",
+          "dynastyLinks": [
+            { "label": "Marcos-Romualdez", "href": "/dynasties-network-visualization.html#dynasty-MARCOS_ROMUALDEZ" }
+          ],
+          "sourceLinks": [
+            { "label": "GMA News", "href": "https://www.gmanetwork.com/news/topstories/nation/990926/look-alleged-chinese-floating-structure-spotted-in-bajo-de-masinloc/story/" },
+            { "label": "Manila Times (June 4 satellite)", "href": "https://www.manilatimes.net/2026/06/04/news/new-satellite-image-corroborates-object-possible-barrier-at-bajo-de-masinloc-entrance/2358393" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Political",
+      "articles": [
+        {
+          "timeDatetime": "2026-06-09",
+          "timeDisplay": "June 9, 2026",
+          "category": "Political",
+          "categoryClass": "political",
+          "borderColor": "#3a0ca3",
+          "headline": "Gatchalian Schedules Sara Duterte Impeachment Pre-Trial for June 18",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-06-09&search=impeachment+pre-trial+June+18",
+          "descriptionHtml": "<p>Acting Senate President <strong>Sherwin Gatchalian</strong> signed a notice on June 9 setting Vice President <strong>Sara Duterte’s</strong> impeachment <strong>pre-trial conference for June 18</strong> at 9 a.m. in the Recto Room. Both defense and House prosecution must submit pre-trial briefs by <strong>June 15</strong>, listing witnesses, documentary evidence, and proposed stipulations; failure to appear or file may waive rights to introduce evidence. Lead prosecutor <strong>Gerville Luistro</strong> said June 18 would be the first time the prosecution sees what evidence the defense will present. The notice landed amid the unresolved Senate leadership fight: Cayetano still contested Gatchalian’s June 3 election while Malacañang and the House recognized Gatchalian as acting president. The July 6 trial proper still requires a functioning impeachment court—and a decision on who presides.</p>",
+          "diasporaImpact": "Pre-trial rules determine whether financial evidence surfaced in House hearings can enter the Senate record; overseas observers should watch for witness lists, not just headlines.",
+          "dynastyLinks": [
+            { "label": "Duterte", "href": "/dynasties-network-visualization.html#dynasty-DUTERTE_FAMILY" },
+            { "label": "Gatchalian (Valenzuela)", "href": "/dynasties-network-visualization.html#dynasty-GATCHALIAN_VALENZUELA" }
+          ],
+          "sourceLinks": [
+            { "label": "Rappler", "href": "https://www.rappler.com/philippines/gatchalian-senate-sets-impeachment-pre-trial-sara-duterte-june-18-2026/" },
+            { "label": "GMA News", "href": "https://www.gmanetwork.com/news/topstories/nation/990959/sara-duterte-impeachment-pretrial-june-18-house-prosecution/story/" }
+          ]
+        },
+        {
+          "timeDatetime": "2026-06-05",
+          "timeDisplay": "June 3–10, 2026",
+          "category": "Political",
+          "categoryClass": "political",
+          "borderColor": "#3a0ca3",
+          "headline": "IBP and Former Senate Leaders Back June 3 Quorum as Legal Fight Moves Toward SC",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-06-05&search=IBP+Senate+quorum+Avelino",
+          "descriptionHtml": "<p>The <strong>Integrated Bar of the Philippines</strong> said on June 5 the Senate’s <strong>June 3</strong> session was “lawful and valid” under the <strong>Avelino doctrine</strong>, counting only <strong>22 available senators</strong> with <strong>Jinggoy Estrada</strong> detained and <strong>Bato dela Rosa</strong> in hiding—making 12 a majority of those present. Former Senate presidents <strong>Franklin Drilon</strong> and <strong>Aquilino Pimentel III</strong> backed the reorganization. A high school teacher filed a Supreme Court petition June 5 to uphold the quorum; Cayetano insisted he remained the legitimate Senate president and that electing a leader requires <strong>13 of 24</strong> votes. The legal standoff kept the Cayetano bloc boycotting Gatchalian-led sessions while impeachment deadlines ticked forward—setting up a special-session showdown the following week.</p>",
+          "dynastyLinks": [
+            { "label": "Cayetano (Taguig)", "href": "/dynasties-network-visualization.html#dynasty-CAYETANO_TAGUIG" },
+            { "label": "Gatchalian (Valenzuela)", "href": "/dynasties-network-visualization.html#dynasty-GATCHALIAN_VALENZUELA" },
+            { "label": "Estrada", "href": "/dynasties-network-visualization.html#dynasty-ESTRADA_FAMILY" }
+          ],
+          "sourceLinks": [
+            { "label": "Inquirer (IBP)", "href": "https://newsinfo.inquirer.net/2240481/ibp-says-june-3-senate-quorum-lawful-valid" },
+            { "label": "Philstar", "href": "https://www.philstar.com/headlines/2026/06/05/2532963/ibp-june-3-senate-quorum-lawful-valid" },
+            { "label": "Rappler (SC petition)", "href": "https://www.rappler.com/philippines/supreme-court-petition-uphold-senate-quorum-june-3-session-legality/" }
+          ]
+        }
+      ]
+    }
+  ],
+  "dynastyHighlights": {
+    "title": "Dynasty Watch",
+    "items": [
+      {
+        "title": "Gatchalian (Valenzuela)",
+        "titleHref": "/dynasties-network-visualization.html#dynasty-GATCHALIAN_VALENZUELA",
+        "bodyHtml": "<p>Win Gatchalian moved from acting Senate president to impeachment court clerk—signing the June 18 pre-trial notice—while still needing a 13th vote to seal full chamber leadership.</p>",
+        "bullets": [
+          { "text": "June 18 pre-trial scheduled", "href": "/interactive-timeline/index.html?date=2026-06-09" },
+          { "text": "IBP backs June 3 quorum", "href": "/interactive-timeline/index.html?date=2026-06-05" }
+        ]
+      },
+      {
+        "title": "Cayetano (Taguig)",
+        "titleHref": "/dynasties-network-visualization.html#dynasty-CAYETANO_TAGUIG",
+        "bodyHtml": "<p>Alan and Pia Cayetano kept contesting the June 3 coup and the June 4 Marines hearing legitimacy, betting the Supreme Court would restore pre-coup leadership before Sara Duterte’s trial calendar hardened.</p>",
+        "bullets": [
+          { "text": "Contested Blue Ribbon hearing", "href": "/interactive-timeline/index.html?date=2026-06-04" }
+        ]
+      }
+    ]
+  }
+}
