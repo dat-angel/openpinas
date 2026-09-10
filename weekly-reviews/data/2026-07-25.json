@@ -1,0 +1,159 @@
+{
+  "version": 1,
+  "weekEnding": "2026-07-25",
+  "weekLabel": "July 19 – July 25, 2026",
+  "title": "OpenPinas: Weekly News Review",
+  "lastUpdated": "September 10, 2026",
+  "stats": [
+    {
+      "number": "5",
+      "label": "Stories"
+    }
+  ],
+  "eventSections": [
+    {
+      "title": "International Relations",
+      "articles": [
+        {
+          "timeDatetime": "2026-07-21",
+          "timeDisplay": "July 21, 2026",
+          "category": "International Relations",
+          "categoryClass": "international",
+          "borderColor": "#0d7377",
+          "headline": "Manila hosts ASEAN talks amid shipping and regional security tensions",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-07-21&search=Manila%20hosts%20ASEAN%20talks%20amid%20shipping%20and%20regional%20security%20tensions",
+          "descriptionHtml": "<p>ASEAN foreign ministers met in Manila during the Philippines’ chairmanship, with July 21 talks addressing regional security and renewed Middle East fighting. Their statement called for a halt to hostilities and safe reopening of the Strait of Hormuz. The diplomatic agenda connected regional cooperation with energy costs and risks faced by seafarers.</p>",
+          "sourceLinks": [
+            {
+              "label": "AP",
+              "href": "https://apnews.com/article/788ceac7b1a80b74881bd5c69e334558"
+            },
+            {
+              "label": "PCO",
+              "href": "https://pco.gov.ph/news_releases/philippines-hosts-59th-asean-foreign-ministers-meeting-advances-chairship-priorities/"
+            },
+            {
+              "label": "PNA / DFA",
+              "href": "https://www.pna.gov.ph/articles/1279081"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Economic",
+      "articles": [
+        {
+          "timeDatetime": "2026-07-24",
+          "timeDisplay": "July 24, 2026",
+          "category": "Economic",
+          "categoryClass": "economic",
+          "borderColor": "#3a0ca3",
+          "headline": "New US tariff raises uncertainty for Philippine exporters",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-07-24&search=New%20US%20tariff%20raises%20uncertainty%20for%20Philippine%20exporters",
+          "descriptionHtml": "<p>USTR announced a 12.5% tariff on Philippine products under its forced-labor-related trade action, reported in Manila on July 24. Malacañang said the Philippines would continue discussions with Washington on tariffs and labor issues. The change created a new cost concern for exporters and workers tied to US demand, without establishing that every Philippine export involved forced labor.</p>",
+          "sourceLinks": [
+            {
+              "label": "Philstar",
+              "href": "https://www.philstar.com/business/2026/07/24/2544367/us-hits-philippine-exports-125-tariff"
+            },
+            {
+              "label": "PNA",
+              "href": "https://www.pna.gov.ph/articles/1280278"
+            },
+            {
+              "label": "AP",
+              "href": "https://apnews.com/article/b178ead12f022009817c60010ac07eb3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Natural Disasters",
+      "articles": [
+        {
+          "timeDatetime": "2026-07-25",
+          "timeDisplay": "July 25, 2026",
+          "category": "Natural Disasters",
+          "categoryClass": "disaster",
+          "borderColor": "#7b4f12",
+          "headline": "Kiyapo exits PAR but monsoon warnings continue",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-07-25&search=Kiyapo%20exits%20PAR%20but%20monsoon%20warnings%20continue",
+          "descriptionHtml": "<p>Typhoon Kiyapo left the Philippine Area of Responsibility by July 25, but PAGASA maintained warnings as the cyclone and enhanced monsoon continued to affect weather. Cordillera disaster officials had heightened readiness for rain-triggered hazards the preceding day. Leaving the monitoring boundary therefore did not signal an all-clear for communities facing heavy rain and disrupted travel.</p>",
+          "sourceLinks": [
+            {
+              "label": "Manila Bulletin / PAGASA",
+              "href": "https://mb.com.ph/2026/07/25/kiyapo-exits-par-signal-no-1-stays-as-habagat-brings-heavy-rainspagasa"
+            },
+            {
+              "label": "PIA / Cordillera RDRRMC",
+              "href": "https://pia.gov.ph/news/cordillera-rdrrmc-on-heightened-alert-as-tc-kiyapo-enters-par-advises-public-on-rain-induced-hazards/"
+            },
+            {
+              "label": "GMA News",
+              "href": "https://www.gmanetwork.com/news/weather/content/996117/typhoon-kiyapo-trough-to-bring-rains-over-extreme-northern-luzon-habagat-to-affect-rest-of-ph/story/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Political",
+      "articles": [
+        {
+          "timeDatetime": "2026-07-22",
+          "timeDisplay": "July 22, 2026",
+          "category": "Political",
+          "categoryClass": "political",
+          "borderColor": "#3a0ca3",
+          "headline": "Prosecutors finish presentation on impeachment’s threats article",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-07-22&search=Prosecutors%20finish%20presentation%20on%20impeachment%E2%80%99s%20threats%20article",
+          "descriptionHtml": "<p>House prosecutors concluded their presentation under Article 4 of Sara Duterte’s impeachment case on July 22, with NBI Director Melvin Matibag as the final witness. The article concerns her alleged threats against the president and others. Completing that presentation advanced the trial’s sequence but left the Senate to assess the evidence and hear the remaining case.</p>",
+          "sourceLinks": [
+            {
+              "label": "PNA",
+              "href": "https://www.pna.gov.ph/index.php/articles/1280071"
+            },
+            {
+              "label": "GMA News",
+              "href": "https://www.gmanetwork.com/news/topstories/nation/995712/live-updates-sara-duterte-impeachment-trial-july-22-2026/story/"
+            }
+          ],
+          "dynastyLinks": [
+            {
+              "label": "Duterte Dynasty",
+              "href": "/dynasties-network-visualization.html#dynasty-DUTERTE_FAMILY"
+            },
+            {
+              "label": "Marcos-Romualdez Dynasty",
+              "href": "/dynasties-network-visualization.html#dynasty-MARCOS_ROMUALDEZ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "OFW/Diaspora",
+      "articles": [
+        {
+          "timeDatetime": "2026-07-24",
+          "timeDisplay": "July 24, 2026",
+          "category": "OFW/Diaspora",
+          "categoryClass": "ofw",
+          "borderColor": "#0b6e4f",
+          "headline": "DOST reports returning-expert contribution to Philippine research",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-07-24&search=DOST%20reports%20returning-expert%20contribution%20to%20Philippine%20research",
+          "descriptionHtml": "<p>DOST’s July 24 first-half report said the Balik Scientist Program engaged 23 Filipino experts from January through June. The program connects expertise developed overseas with research and technical work in the Philippines. Its reported activity illustrates a diaspora contribution beyond remittances, while the announcement itself does not establish downstream economic results.</p>",
+          "sourceLinks": [
+            {
+              "label": "PNA / DOST",
+              "href": "https://www.pna.gov.ph/articles/1280265"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "prevWeekEnding": "2026-07-18"
+}

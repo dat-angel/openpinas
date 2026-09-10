@@ -1,0 +1,152 @@
+{
+  "version": 1,
+  "weekEnding": "2026-06-27",
+  "weekLabel": "June 21 – June 27, 2026",
+  "title": "OpenPinas: Weekly News Review",
+  "lastUpdated": "September 10, 2026",
+  "stats": [
+    {
+      "number": "5",
+      "label": "Stories"
+    }
+  ],
+  "eventSections": [
+    {
+      "title": "Political",
+      "articles": [
+        {
+          "timeDatetime": "2026-06-25",
+          "timeDisplay": "June 25, 2026",
+          "category": "Political",
+          "categoryClass": "political",
+          "borderColor": "#3a0ca3",
+          "headline": "Impeachment pre-trial ends with July 6 opening still on schedule",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-06-25&search=Impeachment%20pre-trial%20ends%20with%20July%206%20opening%20still%20on%20schedule",
+          "descriptionHtml": "<p>The Senate completed pre-trial proceedings in Sara Duterte’s impeachment case on June 25 after five working sessions. House prosecutors said exhibit marking and witness identification had been completed ahead of the scheduled July 6 trial opening. The procedural milestone set up public examination of the evidence; it did not establish the allegations as proven.</p>",
+          "sourceLinks": [
+            {
+              "label": "House of Representatives",
+              "href": "https://www.congress.gov.ph/media/press-releases/9856"
+            },
+            {
+              "label": "PNA",
+              "href": "https://www.pna.gov.ph/articles/1278109"
+            }
+          ],
+          "dynastyLinks": [
+            {
+              "label": "Duterte Dynasty",
+              "href": "/dynasties-network-visualization.html#dynasty-DUTERTE_FAMILY"
+            }
+          ]
+        },
+        {
+          "timeDatetime": "2026-06-26",
+          "timeDisplay": "June 26, 2026",
+          "category": "Political",
+          "categoryClass": "political",
+          "borderColor": "#3a0ca3",
+          "headline": "Tacloban school shooting prompts nationwide security review",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-06-26&search=Tacloban%20school%20shooting%20prompts%20nationwide%20security%20review",
+          "descriptionHtml": "<p>Following the June 22 shooting at San Jose National High School in Tacloban, DepEd announced stronger campus security and anti-bullying measures. Its June 26 response included safety audits, handheld metal detectors and psychosocial support, with coordination across police and social-service agencies. The response put the protection of students and support for affected families at the center of the education agenda.</p>",
+          "sourceLinks": [
+            {
+              "label": "GMA News",
+              "href": "https://www.gmanetwork.com/news/topstories/regions/992423/tacloban-shooting-premeditated-scare-minor/story/"
+            },
+            {
+              "label": "PNA / DepEd",
+              "href": "https://www.pna.gov.ph/articles/1278143"
+            },
+            {
+              "label": "PIA / DepEd Caraga",
+              "href": "https://pia.gov.ph/news/deped-caraga-bats-for-stronger-school-security-after-tacloban-tragedy/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Natural Disasters",
+      "articles": [
+        {
+          "timeDatetime": "2026-06-23",
+          "timeDisplay": "June 23, 2026",
+          "category": "Natural Disasters",
+          "categoryClass": "disaster",
+          "borderColor": "#7b4f12",
+          "headline": "Offshore Francisco brings warnings for northern communities",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-06-23&search=Offshore%20Francisco%20brings%20warnings%20for%20northern%20communities",
+          "descriptionHtml": "<p>Authorities warned on June 23 of flooding, landslides and rough seas in northern Philippine provinces as Typhoon Francisco, internationally Mekkhala, passed offshore. PAGASA also warned that the cyclone could strengthen the southwest monsoon beyond its immediate track. For northern communities and relatives arranging travel, a storm staying offshore still meant potential disruption.</p>",
+          "sourceLinks": [
+            {
+              "label": "AP",
+              "href": "https://apnews.com/article/a3bd43e775d304907bf4e4082f87a5c8"
+            },
+            {
+              "label": "Manila Bulletin / PAGASA",
+              "href": "https://mb.com.ph/2026/06/22/francisco-may-bring-heavy-rains-to-extreme-northern-luzon-enhanced-habagat-to-drench-other-areas-pagasa"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Economic",
+      "articles": [
+        {
+          "timeDatetime": "2026-06-24",
+          "timeDisplay": "June 24, 2026",
+          "category": "Economic",
+          "categoryClass": "economic",
+          "borderColor": "#3a0ca3",
+          "headline": "US development agency approves Philippine power-sector reform program",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-06-24&search=US%20development%20agency%20approves%20Philippine%20power-sector%20reform%20program",
+          "descriptionHtml": "<p>The Millennium Challenge Corporation board approved a Philippine Threshold Program at its June 24 meeting, announced the following day. The program aims to address expensive and unreliable electricity by improving energy-sector governance and enabling investment. Approval opened a reform pathway, rather than delivering an immediate reduction in household power bills.</p>",
+          "sourceLinks": [
+            {
+              "label": "MCC",
+              "href": "https://www.mcc.gov/news-and-events/release/release-062526-mcc-board-approves-philippines-threshold-program/"
+            },
+            {
+              "label": "Journal News",
+              "href": "https://journalnews.com.ph/us-agency-approves-energy-grant-for-ph/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "OFW/Diaspora",
+      "articles": [
+        {
+          "timeDatetime": "2026-06-25",
+          "timeDisplay": "June 25, 2026",
+          "category": "OFW/Diaspora",
+          "categoryClass": "ofw",
+          "borderColor": "#0b6e4f",
+          "headline": "Seafarer observance highlights protection amid conflict risks",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-06-25&search=Seafarer%20observance%20highlights%20protection%20amid%20conflict%20risks",
+          "descriptionHtml": "<p>On the June 25 Day of the Seafarer, Marcos recognized Filipino mariners’ role in global trade and the risks they face along conflict-affected shipping routes. Migrante International used the observance to press demands over working conditions, discrimination and protection for seafarers. The contrasting messages made worker safety and access to assistance central concerns for maritime families.</p>",
+          "sourceLinks": [
+            {
+              "label": "PNA",
+              "href": "https://www.pna.gov.ph/articles/1278012"
+            },
+            {
+              "label": "Migrante International statement",
+              "href": "https://migranteinternational.org/filipino-seafarers-raise-demands-to-end-exploitation-discrimination-and-war-on-international-day-of-the-seafarers/"
+            }
+          ],
+          "dynastyLinks": [
+            {
+              "label": "Marcos-Romualdez Dynasty",
+              "href": "/dynasties-network-visualization.html#dynasty-MARCOS_ROMUALDEZ"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "prevWeekEnding": "2026-06-20"
+}

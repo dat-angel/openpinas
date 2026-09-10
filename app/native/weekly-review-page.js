@@ -33,6 +33,9 @@ export default function WeeklyReviewPage({ weekEnding }) {
       <p style={{ marginTop: 0, marginBottom: 20, color: T.muted, fontSize: 17, fontWeight: 500 }}>
         Week of {review.weekLabel}
       </p>
+      {review.lastUpdated ? (
+        <p style={{ color: T.muted, fontSize: 12 }}>Last updated: {review.lastUpdated}</p>
+      ) : null}
 
       <div style={{ display: "flex", gap: 16, flexWrap: "wrap", margin: "0 0 28px", fontSize: 13, fontWeight: 600 }}>
         <a href="/interactive-timeline/index.html" style={{ color: T.ink }}>Timeline</a>
@@ -92,6 +95,17 @@ export default function WeeklyReviewPage({ weekEnding }) {
                     <span key={src.href + src.label}>
                       {idx > 0 ? ", " : null}
                       <a href={src.href} target="_blank" rel="noopener noreferrer" style={{ color: T.accent }}>{src.label}</a>
+                    </span>
+                  ))}
+                </p>
+              ) : null}
+              {article.dynastyLinks?.length ? (
+                <p style={{ marginBottom: 0, fontSize: 13 }}>
+                  <strong>Related dynasties:</strong>{" "}
+                  {article.dynastyLinks.map((link, index) => (
+                    <span key={link.href}>
+                      {index > 0 ? ", " : null}
+                      <a href={link.href} style={{ color: T.accent }}>{link.label}</a>
                     </span>
                   ))}
                 </p>

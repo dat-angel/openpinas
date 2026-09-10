@@ -1,0 +1,151 @@
+{
+  "version": 1,
+  "weekEnding": "2026-08-29",
+  "weekLabel": "August 23 – August 29, 2026",
+  "title": "OpenPinas: Weekly News Review",
+  "lastUpdated": "September 10, 2026",
+  "stats": [
+    {
+      "number": "5",
+      "label": "Stories"
+    }
+  ],
+  "eventSections": [
+    {
+      "title": "Economic",
+      "articles": [
+        {
+          "timeDatetime": "2026-08-27",
+          "timeDisplay": "August 27, 2026",
+          "category": "Economic",
+          "categoryClass": "economic",
+          "borderColor": "#3a0ca3",
+          "headline": "BSP raises policy rate to 5%",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-08-27&search=BSP%20raises%20policy%20rate%20to%205%25",
+          "descriptionHtml": "<p>The BSP raised its policy rate by 25 basis points to 5% on August 27 as it continued responding to inflation risks. The move came despite weak first-half economic growth. It placed renewed attention on borrowing costs for businesses and households while policymakers sought to contain price pressures.</p>",
+          "sourceLinks": [
+            {
+              "label": "PNA / BSP",
+              "href": "https://www.pna.gov.ph/articles/1282815"
+            },
+            {
+              "label": "Philstar",
+              "href": "https://www.philstar.com/business/2026/08/27/2552202/bsp-hikes-policy-rate-25-basis-points-5-august"
+            },
+            {
+              "label": "Reuters via Interaksyon",
+              "href": "https://interaksyon.philstar.com/sports/2026/08/27/318360/bsp-raises-policy-rate-as-expected/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Natural Disasters",
+      "articles": [
+        {
+          "timeDatetime": "2026-08-28",
+          "timeDisplay": "August 28, 2026",
+          "category": "Natural Disasters",
+          "categoryClass": "disaster",
+          "borderColor": "#7b4f12",
+          "headline": "Habagat prompts afternoon closures across NCR and 16 provinces",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-08-28&search=Habagat%20prompts%20afternoon%20closures%20across%20NCR%20and%2016%20provinces",
+          "descriptionHtml": "<p>Malacañang suspended government work and classes in public and private schools from 1 p.m. on August 28 in Metro Manila and 16 provinces. The order followed warnings that a low-pressure area would strengthen the southwest monsoon. Essential public services continued, while private employers retained discretion over work arrangements.</p>",
+          "sourceLinks": [
+            {
+              "label": "PCO",
+              "href": "https://pco.gov.ph/news_releases/government-work-classes-suspended-in-ncr-16-provinces-due-to-habagat/"
+            },
+            {
+              "label": "GMA News",
+              "href": "https://www.gmanetwork.com/news/topstories/nation/1000192/malaca-ang-suspends-gov-t-work-classes-starting-1-p-m-aug-28/story/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Legal",
+      "articles": [
+        {
+          "timeDatetime": "2026-08-28",
+          "timeDisplay": "August 28, 2026",
+          "category": "Legal",
+          "categoryClass": "legal",
+          "borderColor": "#1e3a5f",
+          "headline": "Ombudsman cites 42 witnesses as Romualdez camp disputes evidence",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-08-28&search=Ombudsman%20cites%2042%20witnesses%20as%20Romualdez%20camp%20disputes%20evidence",
+          "descriptionHtml": "<p>The Ombudsman said on August 28 that it had 42 witnesses in its flood-control complaints involving Martin Romualdez. His legal team argued that witness recantations had weakened the allegations, while investigators continued examining the competing accounts. The dispute concerned the quality and reliability of evidence; witness numbers alone did not resolve the case.</p>",
+          "sourceLinks": [
+            {
+              "label": "Inquirer",
+              "href": "https://newsinfo.inquirer.net/2294306/ombudsman-now-has-42-witnesses-vs-romualdez"
+            },
+            {
+              "label": "Balita",
+              "href": "https://balita.mb.com.ph/2026/08/28/mga-testigo-ng-ombudsman-laban-kay-rep-romualdez-umabot-na-sa-42/"
+            },
+            {
+              "label": "ABS-CBN",
+              "href": "https://www.abs-cbn.com/news/nation/2026/8/28/ombudsman-42-witnesses-in-romualdez-case-1706"
+            }
+          ],
+          "dynastyLinks": [
+            {
+              "label": "Marcos-Romualdez Dynasty",
+              "href": "/dynasties-network-visualization.html#dynasty-MARCOS_ROMUALDEZ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "OFW/Diaspora",
+      "articles": [
+        {
+          "timeDatetime": "2026-08-26",
+          "timeDisplay": "August 26, 2026",
+          "category": "OFW/Diaspora",
+          "categoryClass": "ofw",
+          "borderColor": "#0b6e4f",
+          "headline": "Washington embassy points Filipinos to qualified immigration assistance",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-08-26&search=Washington%20embassy%20points%20Filipinos%20to%20qualified%20immigration%20assistance",
+          "descriptionHtml": "<p>The Philippine embassy in Washington issued an August 26 advisory addressing reports of US immigration and visa developments. It encouraged Filipinos concerned about their status to consult a qualified US immigration attorney or accredited legal service provider for advice suited to their circumstances. Philippine reporting later that week carried the advisory as uncertainty grew among affected families.</p>",
+          "sourceLinks": [
+            {
+              "label": "Philippine Embassy, Washington",
+              "href": "https://philippineembassy-dc.org/u-s-immigration-and-visa-developments/"
+            },
+            {
+              "label": "Philstar",
+              "href": "https://www.philstar.com/headlines/2026/08/28/2552316/pinoys-us-must-seek-immigration-legal-aid/amp/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Cultural",
+      "articles": [
+        {
+          "timeDatetime": "2026-08-24",
+          "timeDisplay": "August 24, 2026",
+          "category": "Cultural",
+          "categoryClass": "cultural",
+          "borderColor": "#b23a48",
+          "headline": "Film Industry Month program puts restored classics in the spotlight",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-08-24&search=Film%20Industry%20Month%20program%20puts%20restored%20classics%20in%20the%20spotlight",
+          "descriptionHtml": "<p>FDCP announced its September Philippine Film Industry Month program on August 24, focusing on the second golden age of Philippine cinema. Planned screenings included restored classics such as Tinimbang Ka Ngunit Kulang and Sister Stella L, alongside short-film programs. The announcement offered audiences a route back to films central to Philippine cultural memory; the September screenings were still forthcoming.</p>",
+          "sourceLinks": [
+            {
+              "label": "FDCP",
+              "href": "https://fdcp.ph/news/pfim2026"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "prevWeekEnding": "2026-08-22"
+}

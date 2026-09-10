@@ -1,0 +1,151 @@
+{
+  "version": 1,
+  "weekEnding": "2026-08-22",
+  "weekLabel": "August 16 – August 22, 2026",
+  "title": "OpenPinas: Weekly News Review",
+  "lastUpdated": "September 10, 2026",
+  "stats": [
+    {
+      "number": "5",
+      "label": "Stories"
+    }
+  ],
+  "eventSections": [
+    {
+      "title": "OFW/Diaspora",
+      "articles": [
+        {
+          "timeDatetime": "2026-08-17",
+          "timeDisplay": "August 17, 2026",
+          "category": "OFW/Diaspora",
+          "categoryClass": "ofw",
+          "borderColor": "#0b6e4f",
+          "headline": "June cash remittances reach $3.04 billion",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-08-17&search=June%20cash%20remittances%20reach%20%243.04%20billion",
+          "descriptionHtml": "<p>BSP data released August 17 showed cash remittances rising 1.7% year on year to $3.04 billion in June. First-half inflows reached $17.15 billion, up 2.4%. The bank-channel figures document continued support from overseas workers for households at home, without measuring how far each transfer went after local price increases.</p>",
+          "sourceLinks": [
+            {
+              "label": "BSP via PIA",
+              "href": "https://pia.gov.ph/press-release/cash-remittances-reach-us3-04b-in-june-2026/"
+            },
+            {
+              "label": "Reuters via Interaksyon",
+              "href": "https://interaksyon.philstar.com/business/2026/08/17/317877/philippines-cash-remittances-up-1-7-in-june/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Economic",
+      "articles": [
+        {
+          "timeDatetime": "2026-08-21",
+          "timeDisplay": "August 21, 2026",
+          "category": "Economic",
+          "categoryClass": "economic",
+          "borderColor": "#3a0ca3",
+          "headline": "R&I affirms Philippine A-minus credit rating",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-08-21&search=R%26I%20affirms%20Philippine%20A-minus%20credit%20rating",
+          "descriptionHtml": "<p>Japan’s Rating and Investment Information affirmed the Philippines’ A-minus sovereign credit rating with a stable outlook, the Department of Finance reported August 21. The assessment cited fiscal improvement and the economy’s capacity to grow despite near-term pressures. A sovereign rating concerns government creditworthiness; it does not erase the week’s household cost pressures or guarantee investment returns.</p>",
+          "sourceLinks": [
+            {
+              "label": "DOF",
+              "href": "https://www.dof.gov.ph/japan-credit-rating-agency-affirms-phs-a-rating-reinforcing-investor-confidence/"
+            },
+            {
+              "label": "Bilyonaryo",
+              "href": "https://bnc.bilyonaryo.com/ph-retains-a-rating-as-ri-cites-fiscal-improvement-resilient-growth/business/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Natural Disasters",
+      "articles": [
+        {
+          "timeDatetime": "2026-08-19",
+          "timeDisplay": "August 19, 2026",
+          "category": "Natural Disasters",
+          "categoryClass": "disaster",
+          "borderColor": "#7b4f12",
+          "headline": "DOH raises readiness as flooding brings leptospirosis concerns",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-08-19&search=DOH%20raises%20readiness%20as%20flooding%20brings%20leptospirosis%20concerns",
+          "descriptionHtml": "<p>The Department of Health monitored a possible rise in leptospirosis after widespread flooding and placed its response under Code White alert. Officials described preparations for additional patients as rains affected Metro Manila and other areas. This was an escalation in hospital readiness following the previous week’s fast-lane directive, rather than a confirmed final disease tally.</p>",
+          "sourceLinks": [
+            {
+              "label": "PCO",
+              "href": "https://pco.gov.ph/news_releases/doh-monitors-possible-rise-in-leptospirosis-cases-amid-widespread-flooding/"
+            },
+            {
+              "label": "Radyo Pilipinas",
+              "href": "https://radyopilipinas.ph/2026/08/20/doh-itinaas-ang-code-white-alert-dahil-sa-bantang-pagtaas-ng-kaso-ng-leptospirosis-kasunod-ng-mga-pagbaha/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Political",
+      "articles": [
+        {
+          "timeDatetime": "2026-08-19",
+          "timeDisplay": "August 19, 2026",
+          "category": "Political",
+          "categoryClass": "political",
+          "borderColor": "#3a0ca3",
+          "headline": "Rain cancellations prompt proposals to extend impeachment hearings",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-08-19&search=Rain%20cancellations%20prompt%20proposals%20to%20extend%20impeachment%20hearings",
+          "descriptionHtml": "<p>Heavy rain and flooding led to cancellation of Sara Duterte’s impeachment hearings on August 18 and 19. Prosecutors proposed afternoon starts and Friday sessions to recover time, while court officials considered schedule adjustments. As of the reports, these remained proposals rather than a settled replacement timetable.</p>",
+          "sourceLinks": [
+            {
+              "label": "GMA News",
+              "href": "https://www.gmanetwork.com/news/topstories/nation/999111/sara-duterte-impeachment-prosecution-3pm-friday-trial-schedule/story/"
+            },
+            {
+              "label": "Radyo Pilipinas",
+              "href": "https://radyopilipinas.ph/2026/08/19/impeachment-trial-ni-vp-sara-bahagyang-delayed-na-make-up-days-at-extended-hours-pinag-aaralan-na/"
+            }
+          ],
+          "dynastyLinks": [
+            {
+              "label": "Duterte Dynasty",
+              "href": "/dynasties-network-visualization.html#dynasty-DUTERTE_FAMILY"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Cultural",
+      "articles": [
+        {
+          "timeDatetime": "2026-08-17",
+          "timeDisplay": "August 17, 2026",
+          "category": "Cultural",
+          "categoryClass": "cultural",
+          "borderColor": "#b23a48",
+          "headline": "Mag-iina wins Cinemalaya as best-actress honors are shared",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-08-17&search=Mag-iina%20wins%20Cinemalaya%20as%20best-actress%20honors%20are%20shared",
+          "descriptionHtml": "<p>Mag-iina won best film at Cinemalaya’s August 17 awards ceremony. Ruby Ruiz and Marietta “Pokwang” Subong shared the best-actress award in a festival result that included multiple ties. The awards brought the competition’s independent films and performances to wider attention before the festival’s scheduled close.</p>",
+          "sourceLinks": [
+            {
+              "label": "CCP",
+              "href": "https://culturalcenter.gov.ph/press-release/cinemalaya-22-hails-psychological-horror-mag-iina-for-best-film-ruby-ruiz-and-marietta-pokwang-subong-tied-for-best-actress-award/"
+            },
+            {
+              "label": "Philstar",
+              "href": "https://www.philstar.com/entertainment/2026/08/18/2550100/pokwang-ruby-ruiz-share-best-actress-2-ties-highlight-cinemalaya-2026-winners"
+            },
+            {
+              "label": "Manila Bulletin",
+              "href": "https://mb.com.ph/2026/08/17/mag-iina-tayo-lang-ang-nakakaalam-lead-cinemalaya-22-winners"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "prevWeekEnding": "2026-08-15"
+}

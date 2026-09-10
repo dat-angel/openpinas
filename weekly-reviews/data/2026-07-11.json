@@ -1,0 +1,167 @@
+{
+  "version": 1,
+  "weekEnding": "2026-07-11",
+  "weekLabel": "July 5 – July 11, 2026",
+  "title": "OpenPinas: Weekly News Review",
+  "lastUpdated": "September 10, 2026",
+  "stats": [
+    {
+      "number": "5",
+      "label": "Stories"
+    }
+  ],
+  "eventSections": [
+    {
+      "title": "Political",
+      "articles": [
+        {
+          "timeDatetime": "2026-07-06",
+          "timeDisplay": "July 6, 2026",
+          "category": "Political",
+          "categoryClass": "political",
+          "borderColor": "#3a0ca3",
+          "headline": "Sara Duterte’s impeachment trial opens in the Senate",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-07-06&search=Sara%20Duterte%E2%80%99s%20impeachment%20trial%20opens%20in%20the%20Senate",
+          "descriptionHtml": "<p>The Senate opened Sara Duterte’s impeachment trial on July 6, with the vice president represented by lawyers. Prosecutors began presenting a case involving alleged misuse of funds, unexplained wealth and threats against the president; she denies wrongdoing. The opening moved the political confrontation into public evidentiary proceedings that overseas Filipinos could follow directly.</p>",
+          "sourceLinks": [
+            {
+              "label": "AP",
+              "href": "https://apnews.com/article/6052d854b78881b742e48732b9305509"
+            },
+            {
+              "label": "GMA News",
+              "href": "https://www.gmanetwork.com/news/topstories/nation/993865/sara-duterte-impeachment-trial-begins/story/"
+            }
+          ],
+          "dynastyLinks": [
+            {
+              "label": "Duterte Dynasty",
+              "href": "/dynasties-network-visualization.html#dynasty-DUTERTE_FAMILY"
+            },
+            {
+              "label": "Marcos-Romualdez Dynasty",
+              "href": "/dynasties-network-visualization.html#dynasty-MARCOS_ROMUALDEZ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Legal",
+      "articles": [
+        {
+          "timeDatetime": "2026-07-06",
+          "timeDisplay": "July 6, 2026",
+          "category": "Legal",
+          "categoryClass": "legal",
+          "borderColor": "#1e3a5f",
+          "headline": "Marcoleta surrenders after court issues arrest warrant",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-07-06&search=Marcoleta%20surrenders%20after%20court%20issues%20arrest%20warrant",
+          "descriptionHtml": "<p>Senator Rodante Marcoleta surrendered on July 6 and was taken into police custody following a Sandiganbayan arrest warrant in the ₱75 million plunder case. He denies wrongdoing and had gone to court with his lawyers to contest the proceedings. The arrest was a new step after the prior week’s filing, not a conviction.</p>",
+          "sourceLinks": [
+            {
+              "label": "AP",
+              "href": "https://apnews.com/article/a448facaeaa308e237e78803367fd812"
+            },
+            {
+              "label": "GMA News",
+              "href": "https://www.gmanetwork.com/news/topstories/nation/993859/rodante-marcoleta-surrenders-brought-to-camp-crame/story/"
+            },
+            {
+              "label": "PNA",
+              "href": "https://www.pna.gov.ph/articles/1278763"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Economic",
+      "articles": [
+        {
+          "timeDatetime": "2026-07-07",
+          "timeDisplay": "July 7, 2026",
+          "category": "Economic",
+          "categoryClass": "economic",
+          "borderColor": "#3a0ca3",
+          "headline": "June inflation slows to 6.4%, but first-half average stays elevated",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-07-07&search=June%20inflation%20slows%20to%206.4%25%2C%20but%20first-half%20average%20stays%20elevated",
+          "descriptionHtml": "<p>PSA reported on July 7 that inflation eased to 6.4% in June from 6.8% in May. The first-half average stood at 4.8%, above the BSP’s 2–4% tolerance range. Remittance-supported households therefore still faced broad price increases despite the improvement in the latest monthly reading.</p>",
+          "sourceLinks": [
+            {
+              "label": "PSA",
+              "href": "https://psa.gov.ph/content/summary-inflation-report-consumer-price-index-2018100-june-2026"
+            },
+            {
+              "label": "PNA",
+              "href": "https://www.pna.gov.ph/index.php/articles/1278837"
+            },
+            {
+              "label": "PIA / BSP",
+              "href": "https://pia.gov.ph/press-release/inflation-drops-further-to-6-4-percent-in-june/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Natural Disasters",
+      "articles": [
+        {
+          "timeDatetime": "2026-07-10",
+          "timeDisplay": "July 10, 2026",
+          "category": "Natural Disasters",
+          "categoryClass": "disaster",
+          "borderColor": "#7b4f12",
+          "headline": "Inday and enhanced monsoon strand passengers and put northern responders on alert",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-07-10&search=Inday%20and%20enhanced%20monsoon%20strand%20passengers%20and%20put%20northern%20responders%20on%20alert",
+          "descriptionHtml": "<p>The Coast Guard reported more than 600 people stranded in ports on July 10 as Typhoon Inday affected sea travel. Its enhanced monsoon brought rain to Pangasinan and La Union, where disaster-response teams were on standby. The disruption connected coastal weather risk with practical problems for travelers and families awaiting deliveries.</p>",
+          "sourceLinks": [
+            {
+              "label": "GMA News / PCG",
+              "href": "https://www.gmanetwork.com/news/topstories/nation/994389/pcg-stranded-passengers-typhoon-inday/story/"
+            },
+            {
+              "label": "PNA",
+              "href": "https://www.pna.gov.ph/articles/1279139"
+            },
+            {
+              "label": "PNA / PAGASA",
+              "href": "https://www.pna.gov.ph/articles/1279133"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Cultural",
+      "articles": [
+        {
+          "timeDatetime": "2026-07-10",
+          "timeDisplay": "July 10, 2026",
+          "category": "Cultural",
+          "categoryClass": "cultural",
+          "borderColor": "#b23a48",
+          "headline": "Cebu launch gives women’s basketball an international stage",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-07-10&search=Cebu%20launch%20gives%20women%E2%80%99s%20basketball%20an%20international%20stage",
+          "descriptionHtml": "<p>Organizers unveiled the 2027 FIBA Women’s Asia Cup branding in Cebu on July 8, and FIBA announced the tournament schedule on July 10. The competition was set for Cebu in July 2027, giving the national women’s program a major home event to prepare for. The launch offered fans at home and overseas a concrete focal point for following women’s basketball.</p>",
+          "sourceLinks": [
+            {
+              "label": "FIBA brand launch",
+              "href": "https://www.fiba.basketball/en/news/fiba-womens-asia-cup-2027-brand-revealed"
+            },
+            {
+              "label": "FIBA schedule",
+              "href": "https://www.fiba.basketball/en/news/fiba-womens-asia-cup-2027-schedule-announced"
+            },
+            {
+              "label": "PNA",
+              "href": "https://www.pna.gov.ph/index.php/articles/1279128"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "prevWeekEnding": "2026-07-04"
+}

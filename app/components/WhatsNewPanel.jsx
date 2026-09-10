@@ -151,7 +151,8 @@ export default function WhatsNewPanel({ changes, compact = false }) {
   const hiddenCount =
     (compact ? timelineNew.length - displayTimeline.length : 0) +
     (compact ? dynastyUpdates.length - displayDynasty.length : 0) +
-    (compact ? storiesNew.length - displayStories.length : 0);
+    // Review rows are omitted when the timeline already represents the same count.
+    (compact && counts.storiesNew !== counts.timelineNew ? storiesNew.length : 0);
 
   return (
     <section

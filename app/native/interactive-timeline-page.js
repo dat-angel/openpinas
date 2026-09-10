@@ -120,6 +120,21 @@ export default function InteractiveTimelinePage() {
   const [sortAscending, setSortAscending] = useState(true);
 
   useEffect(() => {
+    const applyLocation = () => {
+      const params = new URLSearchParams(window.location.search);
+      const eventDate = params.get("date") ?? "";
+      const requestedYear = eventDate.slice(0, 4);
+      if (/^\d{4}-\d{2}-\d{2}$/.test(eventDate) && TIMELINE_FILES[requestedYear]) {
+        setYear(requestedYear);
+      }
+      setQuery(params.get("search") || eventDate);
+    };
+    applyLocation();
+    window.addEventListener("popstate", applyLocation);
+    return () => window.removeEventListener("popstate", applyLocation);
+  }, []);
+
+  useEffect(() => {
     const id = "openpinas-interactive-timeline-styles";
     if (document.getElementById(id)) return;
     const link = document.createElement("link");
@@ -291,12 +306,11 @@ export default function InteractiveTimelinePage() {
                     <div className="dynasties">
                       <strong>Mentioned Dynasties:</strong>{" "}
                       {row.entry.mentioned_dynasties.map((d, i) => {
-                        const slug = d.toLowerCase().replace(/_/g, "-");
                         const label = d.replace(/_/g, " ");
                         return (
                           <span key={d}>
                             {i > 0 ? ", " : null}
-                            <a href={`/dynasties/${slug}.html`} className="dynasty-link">
+                            <a href={`/dynasties-network-visualization.html#dynasty-${d}`} className="dynasty-link">
                               {label}
                             </a>
                           </span>

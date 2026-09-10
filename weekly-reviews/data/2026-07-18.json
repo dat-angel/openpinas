@@ -1,0 +1,147 @@
+{
+  "version": 1,
+  "weekEnding": "2026-07-18",
+  "weekLabel": "July 12 – July 18, 2026",
+  "title": "OpenPinas: Weekly News Review",
+  "lastUpdated": "September 10, 2026",
+  "stats": [
+    {
+      "number": "5",
+      "label": "Stories"
+    }
+  ],
+  "eventSections": [
+    {
+      "title": "Legal",
+      "articles": [
+        {
+          "timeDatetime": "2026-07-17",
+          "timeDisplay": "July 17, 2026",
+          "category": "Legal",
+          "categoryClass": "legal",
+          "borderColor": "#1e3a5f",
+          "headline": "Ombudsman says Romualdez inquiry is nearing its next stage",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-07-17&search=Ombudsman%20says%20Romualdez%20inquiry%20is%20nearing%20its%20next%20stage",
+          "descriptionHtml": "<p>The Ombudsman said on July 17 that fact-finding into former Speaker Martin Romualdez’s alleged role in the flood-control scandal was nearing completion. Reports described a possible plunder case, with prosecutors still preparing the evidence. The announcement raised the stakes for accountability without amounting to a filed court case or a finding of guilt.</p>",
+          "sourceLinks": [
+            {
+              "label": "GMA News",
+              "href": "https://www.gmanetwork.com/news/topstories/nation/995220/ombudsman-very-close-to-finishing-fact-finding-vs-romualdez-remulla/story/"
+            },
+            {
+              "label": "Inquirer",
+              "href": "https://newsinfo.inquirer.net/2265688/gardiola-raps-under-review-romualdez-plunder-case-near-filing"
+            }
+          ],
+          "dynastyLinks": [
+            {
+              "label": "Marcos-Romualdez Dynasty",
+              "href": "/dynasties-network-visualization.html#dynasty-MARCOS_ROMUALDEZ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "OFW/Diaspora",
+      "articles": [
+        {
+          "timeDatetime": "2026-07-15",
+          "timeDisplay": "July 15, 2026",
+          "category": "OFW/Diaspora",
+          "categoryClass": "ofw",
+          "borderColor": "#0b6e4f",
+          "headline": "May remittance release shows continued inflows but little monthly momentum",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-07-15&search=May%20remittance%20release%20shows%20continued%20inflows%20but%20little%20monthly%20momentum",
+          "descriptionHtml": "<p>BSP data released July 15 put May cash remittances at about $2.7 billion. GMA reported personal remittances of $3.033 billion, slightly below April but above May 2025. The figures show continuing support from overseas Filipinos while distinguishing bank-channel cash transfers from the broader personal-remittance measure.</p>",
+          "sourceLinks": [
+            {
+              "label": "PNA / BSP",
+              "href": "https://www.pna.gov.ph/articles/1279460"
+            },
+            {
+              "label": "GMA News",
+              "href": "https://www.gmanetwork.com/news/money/economy/994911/remittances-overseas-filipinos-may-2026/story/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Natural Disasters",
+      "articles": [
+        {
+          "timeDatetime": "2026-07-14",
+          "timeDisplay": "July 14, 2026",
+          "category": "Natural Disasters",
+          "categoryClass": "disaster",
+          "borderColor": "#7b4f12",
+          "headline": "Josie enters monitoring area while monsoon hazards persist",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-07-14&search=Josie%20enters%20monitoring%20area%20while%20monsoon%20hazards%20persist",
+          "descriptionHtml": "<p>Tropical Storm Josie entered the Philippine Area of Responsibility on July 14, with PAGASA initially forecasting a short stay and little direct effect on the country. The bureau nevertheless warned of southwest-monsoon gusts in parts of Luzon. The distinction mattered for communities tracking local hazards even when the cyclone itself remained distant.</p>",
+          "sourceLinks": [
+            {
+              "label": "GMA News / PAGASA",
+              "href": "https://www.gmanetwork.com/news/weather/content/994755/josie-northwestward-exit-par-on-tuesday-pagasa/story/"
+            },
+            {
+              "label": "News5",
+              "href": "https://news.tv5.com.ph/weather/read/tropical-storm-josie-enters-par"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "International Relations",
+      "articles": [
+        {
+          "timeDatetime": "2026-07-12",
+          "timeDisplay": "July 12, 2026",
+          "category": "International Relations",
+          "categoryClass": "international",
+          "borderColor": "#0d7377",
+          "headline": "Arbitral-award anniversary keeps maritime rights in public view",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-07-12&search=Arbitral-award%20anniversary%20keeps%20maritime%20rights%20in%20public%20view",
+          "descriptionHtml": "<p>A peace walk in Manila on July 12 marked ten years since the South China Sea arbitral award. Philippine government statements emphasized international law and peaceful dispute settlement as the basis for asserting maritime rights. The anniversary offered overseas communities a reference point for a dispute that continues to affect fishing livelihoods and regional diplomacy.</p>",
+          "sourceLinks": [
+            {
+              "label": "PNA",
+              "href": "https://www.pna.gov.ph/articles/1279315"
+            },
+            {
+              "label": "PIA",
+              "href": "https://pia.gov.ph/news/a-decade-of-principle-the-arbitral-award-and-the-filipino-story/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Cultural",
+      "articles": [
+        {
+          "timeDatetime": "2026-07-17",
+          "timeDisplay": "July 17, 2026",
+          "category": "Cultural",
+          "categoryClass": "cultural",
+          "borderColor": "#b23a48",
+          "headline": "Cinemalaya announces opening and closing films",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-07-17&search=Cinemalaya%20announces%20opening%20and%20closing%20films",
+          "descriptionHtml": "<p>Cinemalaya announced on July 17 that Enjoy Your Stay, by Honeylyn Joy Alipio and Dominik Locher, would open its 22nd festival, with Rafael Manuel’s Filipiñana closing it. FDCP’s announcement highlighted the opening film’s international festival exposure and planned Philippine premiere. The selections connected independent Filipino cinema with audiences following it both locally and abroad.</p>",
+          "sourceLinks": [
+            {
+              "label": "Cinemalaya",
+              "href": "https://www.cinemalaya.org/cinemalaya-22-enjoy-your-stay-to-open-filipinana-to-close/"
+            },
+            {
+              "label": "FDCP",
+              "href": "https://fdcp.ph/index.php/news/enjoyyourstay-cinemalaya2026"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "prevWeekEnding": "2026-07-11"
+}

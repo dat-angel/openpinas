@@ -43,14 +43,14 @@ function collectReviewArticles(review) {
   );
 }
 
-function collectDynastyHeadlinesAfter(prevWeekEnding, weekEnding) {
-  if (!prevWeekEnding || !weekEnding) return [];
+function collectDynastyHeadlinesInWindow(weekStart, weekEnding) {
+  if (!weekStart || !weekEnding) return [];
   const items = [];
   for (const dynasty of DYNASTIES) {
     const headlines = dynasty?.["2026_rumors_headlines"] ?? [];
     for (const h of headlines) {
       const d = h.date;
-      if (!d || d <= prevWeekEnding || d > weekEnding) continue;
+      if (!d || d < weekStart || d > weekEnding) continue;
       items.push({
         date: d,
         dynastyId: dynasty.id,
@@ -96,7 +96,11 @@ export function getWeekChanges(weekEnding, prevWeekEnding = null) {
   const prevStoryTitles = new Set(collectReviewArticles(prevReview).map((s) => s.title));
   const storiesNew = stories.filter((s) => !prevStoryTitles.has(s.title));
 
-  const dynastyUpdates = collectDynastyHeadlinesAfter(prev, weekEnding);
+  // Navigation may skip missing editions; the coverage window must not.
+  // Special editions cover their own date rather than a regular seven-day week.
+  const start = new Date(`${weekEnding}T00:00:00Z`);
+  if (meta?.editionType !== "special") start.setUTCDate(start.getUTCDate() - 6);
+  const dynastyUpdates = collectDynastyHeadlinesInWindow(start.toISOString().slice(0, 10), weekEnding);
 
   const categoryCounts = {};
   for (const e of timelineNew) {
