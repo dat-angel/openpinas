@@ -4,9 +4,9 @@
   "prepared_for": "Filipino Diaspora Communities Worldwide",
   "metadata": {
     "purpose": "Comprehensive timeline of major Philippine events in 2026 to help overseas Filipinos understand developments affecting families, remittances, investments, and homeland governance",
-    "last_updated": "September 10, 2026",
+    "last_updated": "October 1, 2026",
     "aggregation_note": "This timeline is aggregated by month as events unfold. Weekly reviews provide more detailed coverage.",
-    "total_events": 240,
+    "total_events": 255,
     "categories": [
       "Political",
       "Cultural",
@@ -4717,6 +4717,271 @@
         ]
       },
       "weekly_review": "weekly-reviews/weekly-review-2026-09-05.html"
+    },
+    {
+      "date": "2026-09-07",
+      "month": "September",
+      "title": "Ombudsman files plunder case as Romualdez is arrested in hospital",
+      "category": "Legal",
+      "description": "The Ombudsman on September 7 filed a non-bailable plunder case accusing former House Speaker Martin Romualdez and co-accused, including Zaldy Co, of receiving at least ₱7.4 billion tied to flood-control and other projects funded from 2022 to 2025. Sandiganbayan sheriffs served the warrant that evening at Cardinal Santos Medical Center, where Romualdez was confined, and he remained in hospital under custody. The filing moves the flood-control investigation into court; the amounts are accusations, not a finding that the money was received.",
+      "mentioned_dynasties": [
+        "MARCOS_ROMUALDEZ"
+      ],
+      "sources": {
+        "international": [],
+        "local": [
+          "https://www.philstar.com/headlines/2026/09/07/2554656/romualdez-arrested-p744-b-flood-control-plunder-case",
+          "https://www.gmanetwork.com/news/topstories/nation/1001410/ombudsman-files-plunder-charges-vs-martin-romualdez-over-flood-control-projects/story/",
+          "https://www.pna.gov.ph/articles/1283516"
+        ]
+      },
+      "weekly_review": "weekly-reviews/weekly-review-2026-09-12.html"
+    },
+    {
+      "date": "2026-09-08",
+      "month": "September",
+      "title": "Prosecution closes its confidential-funds case and turns to Sara Duterte's wealth",
+      "category": "Political",
+      "description": "On September 8 the House prosecution ended its evidence on the confidential-funds article, dropping 15 remaining witnesses in the allegation that Vice President Sara Duterte misused ₱612.5 million. It advanced the unexplained-wealth article instead, and the impeachment court gave the defense a non-extendable 15 days to answer 104 requests for admission. The court scheduled September 23 to argue how many Senate votes are required to convict, so the week closed with the first article resting and that arithmetic still unresolved.",
+      "mentioned_dynasties": [
+        "DUTERTE_FAMILY"
+      ],
+      "sources": {
+        "international": [],
+        "local": [
+          "https://www.philstar.com/headlines/2026/09/08/2554857/sara-duterte-trial-recap-sept-8-article-i-winds-down-conviction-math",
+          "https://www.rappler.com/philippines/prosecution-moves-up-presentation-unexplained-wealth-case-sara-duterte-impeachment/",
+          "https://www.pna.gov.ph/articles/1283436"
+        ]
+      },
+      "weekly_review": "weekly-reviews/weekly-review-2026-09-12.html"
+    },
+    {
+      "date": "2026-09-10",
+      "month": "September",
+      "title": "United States and the Philippines sign a $60 million energy grant",
+      "category": "Economic",
+      "description": "Finance Secretary Frederick Go and U.S. Ambassador Lee Lipton signed a $60 million Millennium Challenge Corporation threshold-program grant on September 10 at the Luzon Economic Corridor Investment Forum in Manila. The Department of Finance put the grant at about ₱3.68 billion over four years and nine months, for energy permitting, electric-cooperative digitalization, and preparing projects for private investment. The signing starts a program the MCC board approved in June; it does not by itself lower electricity bills.",
+      "mentioned_dynasties": [],
+      "sources": {
+        "international": [
+          "https://www.mcc.gov/news-and-events/release/release-091026-mcc-signs-philippines-energy-grant/"
+        ],
+        "local": [
+          "https://www.dof.gov.ph/ph-granted-us60-million-to-reform-energy-sector-for-more-affordable-reliable-power/"
+        ]
+      },
+      "weekly_review": "weekly-reviews/weekly-review-2026-09-12.html"
+    },
+    {
+      "date": "2026-09-11",
+      "month": "September",
+      "title": "Manila demands China leave two reefs after flares hit a Coast Guard flight",
+      "category": "International Relations",
+      "description": "The Philippine Coast Guard said Chinese forces fired flares on September 7 at an unarmed patrol plane over the Kalayaan Island Group, first near Zamora (Subi) Reef and again near Panganiban (Mischief) Reef, before the aircraft landed on Pag-asa Island. On September 11 the Department of Foreign Affairs called on China to stop what Manila called the illegal occupation of both features and to abide by the 2016 arbitral award. The exchange put flight safety and the status of two occupied reefs back into the public argument over the West Philippine Sea.",
+      "mentioned_dynasties": [],
+      "sources": {
+        "international": [],
+        "local": [
+          "https://www.gmanetwork.com/news/topstories/nation/1001865/china-fires-flares-at-unarmed-ph-aircraft-over-kalayaan-island-group/story/",
+          "https://www.philstar.com/headlines/2026/09/11/2555591/philippines-tells-china-end-illegal-occupation-panganiban-zamora-reefs",
+          "https://www.inquirer.net/488159/west-ph-sea-china-fires-flares-at-unarmed-philippine-aircraft/"
+        ]
+      },
+      "weekly_review": "weekly-reviews/weekly-review-2026-09-12.html"
+    },
+    {
+      "date": "2026-09-12",
+      "month": "September",
+      "title": "Metro Manila wage board publishes a ₱60 increase effective September 26",
+      "category": "Economic",
+      "description": "DOLE said on September 12 that Wage Order No. NCR-28, published the day before after the Metro Manila wage board approved it on September 7, grants a ₱60 daily increase effective September 26. The order raises the non-agricultural minimum from ₱695 to ₱755 and the rate for agriculture and listed small establishments from ₱658 to ₱718, covering about 1.1 million daily wage earners. Publication fixed the rates workers were told to expect; paychecks did not change during this week.",
+      "mentioned_dynasties": [],
+      "sources": {
+        "international": [],
+        "local": [
+          "https://www.pna.gov.ph/articles/1283906",
+          "https://www.pna.gov.ph/articles/1283706"
+        ]
+      },
+      "weekly_review": "weekly-reviews/weekly-review-2026-09-12.html"
+    },
+    {
+      "date": "2026-09-14",
+      "month": "September",
+      "title": "Marcos says he cannot promise inflation relief while in India for BRICS",
+      "category": "International Relations",
+      "description": "Speaking in New Delhi on September 14 after the BRICS summit, President Ferdinand Marcos Jr. said the government could not promise a significant easing of inflation this year because fuel and food prices still tracked the Middle East conflict. He described core inflation as lower than the headline rate and said adequate food supply was the lever Manila could pull directly. The remarks connected household prices to oil near $100 a barrel without turning that figure, or a late-year improvement, into a guarantee.",
+      "mentioned_dynasties": [
+        "MARCOS_ROMUALDEZ"
+      ],
+      "sources": {
+        "international": [],
+        "local": [
+          "https://tribune.net.ph/2026/09/14/marcos-says-inflation-remains-uncertain-hopes-for-improvement-by-year-end",
+          "https://www.pna.gov.ph/articles/1283945"
+        ]
+      },
+      "weekly_review": "weekly-reviews/weekly-review-2026-09-19.html"
+    },
+    {
+      "date": "2026-09-15",
+      "month": "September",
+      "title": "July cash remittances reach a seven-month high of $3.24 billion",
+      "category": "OFW/Diaspora",
+      "description": "Bangko Sentral ng Pilipinas data released September 15 showed cash remittances in July at $3.24 billion, up 1.9% from $3.18 billion a year earlier and the highest monthly inflow since December 2025. The United States remained the largest source. The release shows transfers were still growing; it does not show whether those dollars bought more after local price increases.",
+      "mentioned_dynasties": [],
+      "sources": {
+        "international": [],
+        "local": [
+          "https://www.pna.gov.ph/articles/1284076",
+          "https://tribune.net.ph/2026/09/15/bsp-ofw-remittances-reach-2039-billion-in-first-seven-months"
+        ]
+      },
+      "weekly_review": "weekly-reviews/weekly-review-2026-09-19.html"
+    },
+    {
+      "date": "2026-09-16",
+      "month": "September",
+      "title": "ICC keeps Rodrigo Duterte detained after his first in-person hearing",
+      "category": "Legal",
+      "description": "Former president Rodrigo Duterte appeared in person on September 16 at the ICC’s third status conference in The Hague, his first time in that courtroom since his arrest in March 2025. Trial Chamber III then ordered him kept in detention, finding no change that would justify release and citing a risk he could abscond or interfere with witnesses. A separate assessment of his fitness to stand trial was still pending, so the hearing did not decide the charges.",
+      "mentioned_dynasties": [
+        "DUTERTE_FAMILY"
+      ],
+      "sources": {
+        "international": [],
+        "local": [
+          "https://www.rappler.com/philippines/icc-order-rodrigo-duterte-continued-detention-september-16-2026/",
+          "https://www.gmanetwork.com/news/topstories/nation/1002644/rodrigo-duterte-to-remain-detained-icc-trial-chamber/story/",
+          "https://www.pna.gov.ph/articles/1284218"
+        ]
+      },
+      "weekly_review": "weekly-reviews/weekly-review-2026-09-19.html"
+    },
+    {
+      "date": "2026-09-16",
+      "month": "September",
+      "title": "Storm and monsoon damage since August is put at ₱18.68 billion",
+      "category": "Natural Disasters",
+      "description": "The NDRRMC said on September 16 that combined agriculture and infrastructure damage from tropical cyclones and the southwest monsoon since August had reached about ₱18.68 billion, of which about ₱4.37 billion was agricultural. That cumulative count listed 98,836 affected farmers and fisherfolk, and said fatalities remained at 44, with 18 injured and five missing. The same day the Department of Agriculture started a small calamity-loan payout in Pampanga, a recovery step rather than a new storm.",
+      "mentioned_dynasties": [],
+      "sources": {
+        "international": [],
+        "local": [
+          "https://www.pna.gov.ph/articles/1284141",
+          "https://context.ph/2026/09/16/govt-delivers-swift-aid-and-support-for-weather-hit-farmers/"
+        ]
+      },
+      "weekly_review": "weekly-reviews/weekly-review-2026-09-19.html"
+    },
+    {
+      "date": "2026-09-17",
+      "month": "September",
+      "title": "Fuel prices jump as the Cabinet reviews excise relief and supply",
+      "category": "Economic",
+      "description": "Pump prices for September 15–21 rose by as much as ₱5.70 a liter for gasoline and ₱4.31 for diesel. Malacañang said the budget committee was finalizing a possible fuel-excise recommendation after Dubai crude averaged $99.41 a barrel from August 13 to September 11, above the statutory $80 trigger. On September 17, on President Ferdinand Marcos Jr.’s instruction, Executive Secretary Ralph Recto convened the UPLIFT committee, which reported 57.2 days of gasoline, 60.8 days of diesel, and 39.3 days of LPG in inventory as of September 14. The week produced higher prices and a review of relief tools, not a completed tax cut.",
+      "mentioned_dynasties": [
+        "MARCOS_ROMUALDEZ"
+      ],
+      "sources": {
+        "international": [],
+        "local": [
+          "https://www.pna.gov.ph/articles/1284247",
+          "https://www.pna.gov.ph/articles/1284365",
+          "https://bandera.inquirer.net/455134/recto-pinulong-uplift-heads-dahil-sa-middle-east-tension-oil-price-hikes"
+        ]
+      },
+      "weekly_review": "weekly-reviews/weekly-review-2026-09-19.html"
+    },
+    {
+      "date": "2026-09-22",
+      "month": "September",
+      "title": "Sine Kabataan awards regional short films during Film Industry Month",
+      "category": "Cultural",
+      "description": "The Film Development Council of the Philippines presented the ninth Sine Kabataan short-film festival, with nine regionally made shorts premiering September 18–20 in Mandaluyong in several Philippine languages. Bato'ng Bunga, directed by Elj Seth Tababa, received best short film, best director, and best cinematography. The FDCP posted the awards on September 22 as part of Philippine Film Industry Month.",
+      "mentioned_dynasties": [],
+      "sources": {
+        "international": [],
+        "local": [
+          "https://fdcp.ph/news/sinekabataan2026"
+        ]
+      },
+      "weekly_review": "weekly-reviews/weekly-review-2026-09-26.html"
+    },
+    {
+      "date": "2026-09-23",
+      "month": "September",
+      "title": "Senate court drops the fixed 16-vote bar in Sara Duterte's impeachment",
+      "category": "Political",
+      "description": "On September 23 the Senate impeachment court voted 13–1, with six senators not participating, to grant Senator Erwin Tulfo’s motion and drop the fixed 16-vote conviction threshold set on July 6. Two-thirds will instead be computed from senators legally and factually able to take part, a formula addressed to absences that include detained senator Jinggoy Estrada; reporting on the ruling said it would require 14 votes if 20 senators remain in the count. The vote changes the arithmetic of Vice President Sara Duterte’s trial. It is not a verdict, and her camp said it would challenge the ruling.",
+      "mentioned_dynasties": [
+        "DUTERTE_FAMILY",
+        "TULFO_FAMILY",
+        "ESTRADA_FAMILY"
+      ],
+      "sources": {
+        "international": [],
+        "local": [
+          "https://www.gmanetwork.com/news/topstories/nation/1003477/sara-duterte-impeachment-trial-day-29-court-overturns-initial-16-conviction-threshold-in-vp-trial/story/",
+          "https://www.rappler.com/philippines/senate-court-lowers-conviction-voting-threshold-duterte-impeachment-trial/",
+          "https://www.philstar.com/headlines/2026/09/24/2558555/senators-junk-chizs-ruling-fixed-16-votes-convict"
+        ]
+      },
+      "weekly_review": "weekly-reviews/weekly-review-2026-09-26.html"
+    },
+    {
+      "date": "2026-09-23",
+      "month": "September",
+      "title": "ADB cuts the 2026 growth forecast to 3.3% as S&P goes lower",
+      "category": "Economic",
+      "description": "At a September 23 briefing on its September outlook, the Asian Development Bank cut its Philippine growth forecast for 2026 to 3.3% from 3.8% in July, and its 2027 forecast to 5.1% from 5.3%, citing the Middle East conflict and weaker investment. S&P Global Ratings, in reporting the same week, lowered its 2026 projection to 2.9% from 4.1%. The revisions are forecasts of a slower economy, not a new official GDP print.",
+      "mentioned_dynasties": [],
+      "sources": {
+        "international": [
+          "https://www.adb.org/sites/default/files/2026-09/ado-sep-2026-presentation.pdf"
+        ],
+        "local": [
+          "https://www.pna.gov.ph/articles/1284661",
+          "https://www.philstar.com/business/2026/09/24/2558445/adb-sp-cut-philippines-growth-forecasts"
+        ]
+      },
+      "weekly_review": "weekly-reviews/weekly-review-2026-09-26.html"
+    },
+    {
+      "date": "2026-09-25",
+      "month": "September",
+      "title": "Duterte's ICC defense asks to cap the evidence record at 10,000 items",
+      "category": "Legal",
+      "description": "On September 25 former president Rodrigo Duterte’s lawyers asked ICC Trial Chamber III to order prosecutors to cut the disclosed evidence record from 62,130 items to at most 10,000 by October 7. The defense said the set had grown from 5,275 items at the confirmation stage and included more than 320,000 pages, leaving too little time to prepare for a November 30 trial. The filing asks to narrow the record; it is not a ruling on the charges or on his detention.",
+      "mentioned_dynasties": [
+        "DUTERTE_FAMILY"
+      ],
+      "sources": {
+        "international": [],
+        "local": [
+          "https://www.gmanetwork.com/news/topstories/nation/1003765/rodrigo-duterte-defense-team-decries-huge-evidence-asks-icc-to-order-a-cap/story/",
+          "https://www.philstar.com/headlines/2026/09/26/2559078/duterte-camp-flags-62000-plus-evidence-ahead-icc-trial-seeks-10000-cap",
+          "https://verafiles.org/articles/duterte-defense-asks-icc-to-cut-62130-evidence-items-to-10000"
+        ]
+      },
+      "weekly_review": "weekly-reviews/weekly-review-2026-09-26.html"
+    },
+    {
+      "date": "2026-09-26",
+      "month": "September",
+      "title": "Metro Manila's ₱60 minimum-wage increase takes effect",
+      "category": "Economic",
+      "description": "Wage Order No. NCR-28 took effect on September 26, and DOLE said about 1.1 million minimum-wage earners in Metro Manila would receive ₱60 more a day. The non-agricultural floor rose from ₱695 to ₱755, and the rate for agriculture and listed small establishments rose from ₱658 to ₱718. The increase is the pay change set out when the order was published on September 11; the announcement does not record whether every employer complied.",
+      "mentioned_dynasties": [],
+      "sources": {
+        "international": [],
+        "local": [
+          "https://www.gmanetwork.com/news/money/economy/1003769/dole-p60-wage-hike-in-ncr-takes-effect-sept-26/story/",
+          "https://www.pna.gov.ph/articles/1284905"
+        ]
+      },
+      "weekly_review": "weekly-reviews/weekly-review-2026-09-26.html"
     }
   ],
   "ofw_highlights": {

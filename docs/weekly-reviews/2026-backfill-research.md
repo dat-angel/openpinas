@@ -26,6 +26,15 @@ Delivery: September 5 first; June 27 / July 4 / July 11; July 18 / July 25 / Aug
 - [x] Homepage remains on September 5 after every backfill. Its compact preview now correctly displays three of five timeline entries and “+2 more,” without double-counting the matching review stories.
 - [x] `git diff --check` passed. No commit, push or deployment performed.
 
+## Coverage through September 26, 2026 — prepared October 1, 2026
+
+Three regular Sunday–Saturday editions after September 5. Each uses information available by that Saturday. Later court action on the September 23 voting rule is excluded. Conflicting year-to-date remittance totals were omitted; the July cash figure is the number on which the cited reports agree. Sine Kabataan rests on the FDCP’s own September 22 announcement. The September 2 verification exception above is unchanged and still excluded from review copy.
+
+- [x] **2026-09-12** — impeachment Article I closed; Romualdez plunder filing and hospital arrest; West Philippine Sea flares and the September 11 DFA statement; MCC energy-grant signing; NCR-28 published, not yet in paychecks.
+- [x] **2026-09-19** — Marcos in New Delhi on inflation and food supply; July cash remittances; Rodrigo Duterte’s ICC appearance and continued detention; cumulative storm damage; fuel-price jump, excise review, and the UPLIFT meeting.
+- [x] **2026-09-26** — Senate conviction-threshold vote; ADB and S&P growth revisions; ICC evidence-cap request; Sine Kabataan awards; NCR-28 takes effect.
+- [x] Homepage moved to September 26 with this newer completed edition.
+
 The September 2 verification exception above remains the only unresolved claim set carried forward from the original working tree. It is excluded from all new review copy. Minor program and cultural announcements with a single original source are identified in the event notes below.
 
 ## August 30 – September 5, 2026 — edition 2026-09-05

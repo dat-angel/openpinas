@@ -1,0 +1,164 @@
+{
+  "version": 1,
+  "weekEnding": "2026-09-26",
+  "weekLabel": "September 20 – September 26, 2026",
+  "title": "OpenPinas: Weekly News Review",
+  "lastUpdated": "October 1, 2026",
+  "stats": [
+    {
+      "number": "5",
+      "label": "Stories"
+    }
+  ],
+  "eventSections": [
+    {
+      "title": "Political",
+      "articles": [
+        {
+          "timeDatetime": "2026-09-23",
+          "timeDisplay": "September 23, 2026",
+          "category": "Political",
+          "categoryClass": "political",
+          "borderColor": "#3a0ca3",
+          "headline": "Senate court drops the fixed 16-vote bar in Sara Duterte's impeachment",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-09-23&search=Senate%20court%20drops%20the%20fixed%2016-vote%20bar%20in%20Sara%20Duterte%27s%20impeachment",
+          "descriptionHtml": "<p>On September 23 the Senate impeachment court voted 13–1, with six senators not participating, to grant Senator Erwin Tulfo’s motion and drop the fixed 16-vote conviction threshold set on July 6. Two-thirds will instead be computed from senators legally and factually able to take part, a formula addressed to absences that include detained senator Jinggoy Estrada; reporting on the ruling said it would require 14 votes if 20 senators remain in the count. The vote changes the arithmetic of Vice President Sara Duterte’s trial. It is not a verdict, and her camp said it would challenge the ruling.</p>",
+          "sourceLinks": [
+            {
+              "label": "GMA News",
+              "href": "https://www.gmanetwork.com/news/topstories/nation/1003477/sara-duterte-impeachment-trial-day-29-court-overturns-initial-16-conviction-threshold-in-vp-trial/story/"
+            },
+            {
+              "label": "Rappler",
+              "href": "https://www.rappler.com/philippines/senate-court-lowers-conviction-voting-threshold-duterte-impeachment-trial/"
+            },
+            {
+              "label": "Philippine Star",
+              "href": "https://www.philstar.com/headlines/2026/09/24/2558555/senators-junk-chizs-ruling-fixed-16-votes-convict"
+            }
+          ],
+          "dynastyLinks": [
+            {
+              "label": "Duterte Dynasty",
+              "href": "/dynasties-network-visualization.html#dynasty-DUTERTE_FAMILY"
+            },
+            {
+              "label": "Tulfo Dynasty",
+              "href": "/dynasties-network-visualization.html#dynasty-TULFO_FAMILY"
+            },
+            {
+              "label": "Estrada Dynasty",
+              "href": "/dynasties-network-visualization.html#dynasty-ESTRADA_FAMILY"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Economic",
+      "articles": [
+        {
+          "timeDatetime": "2026-09-23",
+          "timeDisplay": "September 23, 2026",
+          "category": "Economic",
+          "categoryClass": "economic",
+          "borderColor": "#3a0ca3",
+          "headline": "ADB cuts the 2026 growth forecast to 3.3% as S&P goes lower",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-09-23&search=ADB%20cuts%20the%202026%20growth%20forecast%20to%203.3%25%20as%20S%26P%20goes%20lower",
+          "descriptionHtml": "<p>At a September 23 briefing on its September outlook, the Asian Development Bank cut its Philippine growth forecast for 2026 to 3.3% from 3.8% in July, and its 2027 forecast to 5.1% from 5.3%, citing the Middle East conflict and weaker investment. S&amp;P Global Ratings, in reporting the same week, lowered its 2026 projection to 2.9% from 4.1%. The revisions are forecasts of a slower economy, not a new official GDP print.</p>",
+          "sourceLinks": [
+            {
+              "label": "PNA / ADB",
+              "href": "https://www.pna.gov.ph/articles/1284661"
+            },
+            {
+              "label": "Philippine Star",
+              "href": "https://www.philstar.com/business/2026/09/24/2558445/adb-sp-cut-philippines-growth-forecasts"
+            },
+            {
+              "label": "ADB",
+              "href": "https://www.adb.org/sites/default/files/2026-09/ado-sep-2026-presentation.pdf"
+            }
+          ]
+        },
+        {
+          "timeDatetime": "2026-09-26",
+          "timeDisplay": "September 26, 2026",
+          "category": "Economic",
+          "categoryClass": "economic",
+          "borderColor": "#3a0ca3",
+          "headline": "Metro Manila's ₱60 minimum-wage increase takes effect",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-09-26&search=Metro%20Manila%27s%20%E2%82%B160%20minimum-wage%20increase%20takes%20effect",
+          "descriptionHtml": "<p>Wage Order No. NCR-28 took effect on September 26, and DOLE said about 1.1 million minimum-wage earners in Metro Manila would receive ₱60 more a day. The non-agricultural floor rose from ₱695 to ₱755, and the rate for agriculture and listed small establishments rose from ₱658 to ₱718. The increase is the pay change set out when the order was published on September 11; the announcement does not record whether every employer complied.</p>",
+          "sourceLinks": [
+            {
+              "label": "GMA News",
+              "href": "https://www.gmanetwork.com/news/money/economy/1003769/dole-p60-wage-hike-in-ncr-takes-effect-sept-26/story/"
+            },
+            {
+              "label": "PNA / DOLE",
+              "href": "https://www.pna.gov.ph/articles/1284905"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Legal",
+      "articles": [
+        {
+          "timeDatetime": "2026-09-25",
+          "timeDisplay": "September 25, 2026",
+          "category": "Legal",
+          "categoryClass": "legal",
+          "borderColor": "#1e3a5f",
+          "headline": "Duterte's ICC defense asks to cap the evidence record at 10,000 items",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-09-25&search=Duterte%27s%20ICC%20defense%20asks%20to%20cap%20the%20evidence%20record%20at%2010%2C000%20items",
+          "descriptionHtml": "<p>On September 25 former president Rodrigo Duterte’s lawyers asked ICC Trial Chamber III to order prosecutors to cut the disclosed evidence record from 62,130 items to at most 10,000 by October 7. The defense said the set had grown from 5,275 items at the confirmation stage and included more than 320,000 pages, leaving too little time to prepare for a November 30 trial. The filing asks to narrow the record; it is not a ruling on the charges or on his detention.</p>",
+          "sourceLinks": [
+            {
+              "label": "GMA News",
+              "href": "https://www.gmanetwork.com/news/topstories/nation/1003765/rodrigo-duterte-defense-team-decries-huge-evidence-asks-icc-to-order-a-cap/story/"
+            },
+            {
+              "label": "Philippine Star",
+              "href": "https://www.philstar.com/headlines/2026/09/26/2559078/duterte-camp-flags-62000-plus-evidence-ahead-icc-trial-seeks-10000-cap"
+            },
+            {
+              "label": "VERA Files",
+              "href": "https://verafiles.org/articles/duterte-defense-asks-icc-to-cut-62130-evidence-items-to-10000"
+            }
+          ],
+          "dynastyLinks": [
+            {
+              "label": "Duterte Dynasty",
+              "href": "/dynasties-network-visualization.html#dynasty-DUTERTE_FAMILY"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Cultural",
+      "articles": [
+        {
+          "timeDatetime": "2026-09-22",
+          "timeDisplay": "September 22, 2026",
+          "category": "Cultural",
+          "categoryClass": "cultural",
+          "borderColor": "#b23a48",
+          "headline": "Sine Kabataan awards regional short films during Film Industry Month",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-09-22&search=Sine%20Kabataan%20awards%20regional%20short%20films%20during%20Film%20Industry%20Month",
+          "descriptionHtml": "<p>The Film Development Council of the Philippines presented the ninth Sine Kabataan short-film festival, with nine regionally made shorts premiering September 18–20 in Mandaluyong in several Philippine languages. Bato'ng Bunga, directed by Elj Seth Tababa, received best short film, best director, and best cinematography. The FDCP posted the awards on September 22 as part of Philippine Film Industry Month.</p>",
+          "sourceLinks": [
+            {
+              "label": "FDCP",
+              "href": "https://fdcp.ph/news/sinekabataan2026"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "prevWeekEnding": "2026-09-19"
+}

@@ -63,7 +63,7 @@ node scripts/validate-weekly-coverage.mjs 2026-06-27 2026-09-05
 
 Weekly, non-overlapping Sunday–Saturday windows. Source data from `philippines-2026-timeline.json`, verified against dated reporting and original releases. `lastUpdated` is the actual preparation date, including for historical backfills.
 
-Link each regular edition to the nearest available earlier regular edition; repair those links when filling gaps. Keep special editions in the archive without inserting them into the regular weekly chain. Update `content/now-developing.json` only when adding a newer completed edition, so historical backfills do not move the homepage backward. The September 6–12, 2026 edition is due after September 12 closes.
+Link each regular edition to the nearest available earlier regular edition; repair those links when filling gaps. Keep special editions in the archive without inserting them into the regular weekly chain. Update `content/now-developing.json` only when adding a newer completed edition, so historical backfills do not move the homepage backward. Coverage runs through the September 26, 2026 edition. The September 27–October 3 edition is due after October 3 closes.
 
 ## Related Skills
 
