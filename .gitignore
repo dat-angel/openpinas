@@ -23,6 +23,7 @@ Thumbs.db
 node_modules/
 .next/
 out/
+preview-check-artifacts/
 public/dynasty-map/
 
 # Private documentation (if accidentally copied)

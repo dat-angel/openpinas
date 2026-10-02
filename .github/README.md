@@ -18,6 +18,11 @@ This directory contains GitHub-specific configuration files for the OpenPinas pr
   - Validates JSON syntax
   - Checks data integrity
   - Verifies file structure
+- `preview-check.yml` - After a Vercel preview deployment
+  - Fetches the preview
+  - Checks links and desktop/mobile layout
+  - Resolves that branch's toolbar threads when the check passes
+  - Updates one pull-request comment with the report
 
 ### Other Files
 - `pull_request_template.md` - Template for pull requests

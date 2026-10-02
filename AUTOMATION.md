@@ -23,6 +23,28 @@ To reduce moving parts, you can add a small Vercel project (this repo or a sibli
 
 **No auto-commit** unless you add a GitHub App and PR flow separately ([CONTEXT.md](./CONTEXT.md) stays the contract for JSON shape).
 
+## Preview check after a pull request
+
+`.github/workflows/preview-check.yml` runs when Vercel reports a successful preview deployment.
+
+1. Fetches the homepage, archive, latest review, previous review, and one timeline entry.
+2. Checks same-origin links from those pages, and the source links on the two newest editions. A host that answers 401, 403, or 429 is recorded as blocked, not as a broken link.
+3. Checks visuals in Chromium at 1440px and 390px: the pages load, and the document does not scroll sideways. Screenshots are uploaded as the `preview-check` artifact.
+4. Resolves unresolved Vercel toolbar threads on that branch after the check passes, and replaces a single pull-request comment (`<!-- openpinas-preview-check -->`) with the report.
+
+Repository secrets, all optional except the bypass secret when Deployment Protection is on:
+
+- `VERCEL_AUTOMATION_BYPASS_SECRET` — sent as `x-vercel-protection-bypass`
+- `VERCEL_TOKEN`, `VERCEL_TEAM_ID`, `VERCEL_PROJECT_ID` — required to resolve toolbar threads
+
+Locally, against a running app:
+
+```bash
+npm run check:preview -- --url http://127.0.0.1:3000
+npx playwright install chromium
+npm run check:preview -- --url http://127.0.0.1:3000 --visual
+```
+
 ## Environment variable
 
 - **`OPENPINAS_ROOT`** — Local path to this repo (e.g. `/Users/bzadr/bzg/openpinas`). Used in skills and docs.
