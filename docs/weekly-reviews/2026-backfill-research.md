@@ -34,6 +34,7 @@ Three regular Sunday–Saturday editions after September 5. Each uses informatio
 - [x] **2026-09-19** — Marcos in New Delhi on inflation and food supply; July cash remittances; Rodrigo Duterte’s ICC appearance and continued detention; cumulative storm damage; fuel-price jump, excise review, and the UPLIFT meeting.
 - [x] **2026-09-26** — Senate conviction-threshold vote; ADB and S&P growth revisions; ICC evidence-cap request; Sine Kabataan awards; NCR-28 takes effect.
 - [x] Homepage moved to September 26 with this newer completed edition.
+- [x] October 2 check: review prose matches the timeline, and the S&P 2.9% figure is attributed to the Philippine Star. PNA, Inquirer, DOF, and Bandera links answer in a browser; this environment’s plain requests receive 403 from those hosts.
 
 The September 2 verification exception above remains the only unresolved claim set carried forward from the original working tree. It is excluded from all new review copy. Minor program and cultural announcements with a single original source are identified in the event notes below.
 
