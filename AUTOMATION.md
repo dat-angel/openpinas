@@ -25,7 +25,7 @@ To reduce moving parts, you can add a small Vercel project (this repo or a sibli
 
 ## Preview check after a pull request
 
-`.github/workflows/preview-check.yml` runs when Vercel reports a successful preview deployment.
+`.github/workflows/preview-check.yml` runs on pull requests, and again when Vercel reports a successful preview deployment. On a pull request it waits for that commit's preview URL.
 
 1. Fetches the homepage, archive, latest review, previous review, and one timeline entry.
 2. Checks same-origin links from those pages, and the source links on the two newest editions. A host that answers 401, 403, or 429 is recorded as blocked, not as a broken link.
