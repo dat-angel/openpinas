@@ -111,6 +111,7 @@ const pages = [
 
 const htmlByLabel = new Map();
 const internal = new Set();
+let protectedPreview = false;
 for (const page of pages) {
   let result;
   try {
@@ -120,6 +121,11 @@ for (const page of pages) {
     continue;
   }
   if (result.status !== 200) fail(`${page.label} returned ${result.status} (${result.url})`);
+  if (/Authentication Required|vercel\.com\/sso-api|Deployment Protection/i.test(result.html)) {
+    protectedPreview = true;
+    fail(`${page.label} is behind Vercel Deployment Protection. Set the VERCEL_AUTOMATION_BYPASS_SECRET repository secret.`);
+    continue;
+  }
   const heading = cheerio.load(result.html)("h1").first().text();
   if (/could not be found|application error/i.test(heading)) fail(`${page.label} rendered an error page`);
   htmlByLabel.set(page.label, result.html);
@@ -140,6 +146,7 @@ for (const page of pages) {
 }
 
 const home = htmlByLabel.get("homepage") ?? "";
+if (!protectedPreview) {
 mustContain("homepage", home, latest.weekLabel);
 for (const item of now.items) mustContain("homepage", home, item);
 const reviewHtml = htmlByLabel.get("latest review") ?? "";
@@ -149,6 +156,7 @@ for (const headline of headlines) mustContain("latest review", reviewHtml, headl
 mustContain("archive", htmlByLabel.get("archive") ?? "", latest.weekEnding);
 mustContain("previous review", htmlByLabel.get("previous review") ?? "", previous.weekLabel);
 mustContain("timeline entry", htmlByLabel.get("timeline entry") ?? "", headlines[0]);
+}
 
 let internalOk = 0;
 for (const url of internal) {
