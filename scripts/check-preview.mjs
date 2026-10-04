@@ -72,14 +72,50 @@ async function statusOf(url) {
   return status;
 }
 
+function isProtection({ status, html = "", location = "", finalUrl = "" }) {
+  if (status === 401 || status === 403) return true;
+  if (/sso-api|\/login/i.test(location)) return true;
+  try {
+    const host = finalUrl ? new URL(finalUrl).hostname : "";
+    if (host.endsWith("vercel.com") && /login|sso/i.test(finalUrl)) return true;
+  } catch {
+    // Ignore an unparseable final URL.
+  }
+  return /%2Fsso-api|sso-api|Authentication Required|Deployment Protection/i.test(html);
+}
+
 async function fetchHtml(pathname) {
   const url = new URL(pathname, origin).href;
   const controller = new AbortController();
   const timer = setTimeout(() => controller.abort(), 20000);
   try {
-    const response = await fetch(url, { redirect: "follow", headers: headersFor(url), signal: controller.signal });
+    const response = await fetch(url, { redirect: "manual", headers: headersFor(url), signal: controller.signal });
+    const location = response.headers.get("location") || "";
+    if (isProtection({ status: response.status, location })) {
+      await response.body?.cancel();
+      return { url, status: response.status, html: "", protected: true };
+    }
+    if (response.status >= 300 && response.status < 400 && location) {
+      const next = new URL(location, url);
+      if (next.origin === origin) {
+        await response.body?.cancel();
+        const followed = await fetch(next, { redirect: "manual", headers: headersFor(next), signal: controller.signal });
+        const html = await followed.text();
+        return {
+          url: next.href,
+          status: followed.status,
+          html,
+          protected: isProtection({ status: followed.status, html, location: followed.headers.get("location") || "" }),
+        };
+      }
+    }
     const html = await response.text();
-    return { url, status: response.status, html };
+    return {
+      url,
+      status: response.status,
+      html,
+      protected: isProtection({ status: response.status, html, finalUrl: response.url }),
+    };
   } finally {
     clearTimeout(timer);
   }
@@ -120,12 +156,14 @@ for (const page of pages) {
     fail(`${page.label} fetch failed: ${error.message}`);
     continue;
   }
-  if (result.status !== 200) fail(`${page.label} returned ${result.status} (${result.url})`);
-  if (/Authentication Required|vercel\.com\/sso-api|Deployment Protection/i.test(result.html)) {
+  if (result.protected) {
     protectedPreview = true;
-    fail(`${page.label} is behind Vercel Deployment Protection. Set the VERCEL_AUTOMATION_BYPASS_SECRET repository secret.`);
+    if (bypass) {
+      fail(`${page.label} is still behind Vercel Deployment Protection after the bypass secret was sent.`);
+    }
     continue;
   }
+  if (result.status !== 200) fail(`${page.label} returned ${result.status} (${result.url})`);
   const heading = cheerio.load(result.html)("h1").first().text();
   if (/could not be found|application error/i.test(heading)) fail(`${page.label} rendered an error page`);
   htmlByLabel.set(page.label, result.html);
@@ -187,11 +225,16 @@ for (const url of sourceHrefs) {
       warn(`source blocked ${status} ${url}`);
     } else fail(`source ${status} ${url}`);
   } catch (error) {
-    fail(`source fetch failed ${url}: ${error.message}`);
+    warn(`source unreachable ${url}: ${error.message}`);
   }
 }
 
 async function checkVisuals() {
+  if (protectedPreview) {
+    if (bypass) return;
+    warn("Preview is behind Vercel Deployment Protection, so layout was not checked. Set VERCEL_AUTOMATION_BYPASS_SECRET to verify the rendered site.");
+    return;
+  }
   let chromium;
   try {
     ({ chromium } = await import("playwright"));

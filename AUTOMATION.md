@@ -34,7 +34,7 @@ To reduce moving parts, you can add a small Vercel project (this repo or a sibli
 
 Repository secrets, all optional except the bypass secret when Deployment Protection is on:
 
-- `VERCEL_AUTOMATION_BYPASS_SECRET` — sent as `x-vercel-protection-bypass`
+- `VERCEL_AUTOMATION_BYPASS_SECRET` — sent as `x-vercel-protection-bypass`. Without it, a protected preview is reported and the content check is skipped instead of treating Vercel’s login page as the site.
 - `VERCEL_TOKEN`, `VERCEL_TEAM_ID`, `VERCEL_PROJECT_ID` — required to resolve toolbar threads
 
 Locally, against a running app:
