@@ -1,0 +1,148 @@
+name: Preview check
+
+# Runs after Vercel reports a successful preview deployment for a pull request.
+# Fetches the preview, checks links and layout, then resolves that branch's
+# open toolbar threads when the check passes.
+
+on:
+  pull_request:
+    branches: [main, develop]
+  deployment_status:
+  workflow_dispatch:
+    inputs:
+      url:
+        description: Preview or local base URL
+        required: true
+        type: string
+      branch:
+        description: Git branch whose toolbar threads should be resolved
+        required: false
+        type: string
+
+jobs:
+  check:
+    if: >
+      github.event_name == 'pull_request' ||
+      github.event_name == 'workflow_dispatch' ||
+      (github.event.deployment_status.state == 'success' &&
+       (github.event.deployment.transient_environment == true ||
+        contains(github.event.deployment.environment, 'Preview')))
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pull-requests: write
+      deployments: read
+    steps:
+      - name: Checkout the deployed commit
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.deployment.sha || github.sha }}
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Resolve the preview URL
+        id: preview
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          INPUT_URL: ${{ inputs.url }}
+          STATUS_URL: ${{ github.event.deployment_status.environment_url || github.event.deployment_status.target_url }}
+          HEAD_SHA: ${{ github.event.pull_request.head.sha || github.event.deployment.sha || github.sha }}
+        run: |
+          if [ -n "$INPUT_URL" ]; then
+            echo "url=$INPUT_URL" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          if [ -n "$STATUS_URL" ]; then
+            echo "url=$STATUS_URL" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          for attempt in $(seq 1 36); do
+            url=$(gh api --paginate "repos/${{ github.repository }}/deployments?sha=$HEAD_SHA&per_page=10" --jq '
+              .[] | .id' | while read -r id; do
+              gh api "repos/${{ github.repository }}/deployments/$id/statuses" --jq '
+                [.[] | select(.state == "success") | (.environment_url // .target_url)] | map(select(. != null and . != "")) | .[0] // empty'
+            done | head -n 1)
+            if [ -n "$url" ]; then
+              echo "url=$url" >> "$GITHUB_OUTPUT"
+              exit 0
+            fi
+            echo "Waiting for the Vercel preview ($attempt/36)"
+            sleep 10
+          done
+          echo "No successful preview URL for $HEAD_SHA" >&2
+          exit 1
+
+      - name: Fetch preview, check links and visuals, resolve toolbar threads
+        env:
+          PREVIEW_URL: ${{ steps.preview.outputs.url }}
+          PREVIEW_BRANCH: ${{ inputs.branch || github.event.pull_request.head.ref || github.event.deployment.ref }}
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+          VERCEL_TEAM_ID: ${{ secrets.VERCEL_TEAM_ID }}
+          VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
+          VERCEL_AUTOMATION_BYPASS_SECRET: ${{ secrets.VERCEL_AUTOMATION_BYPASS_SECRET }}
+        run: |
+          npm install --no-save --no-package-lock playwright@1.55.0
+          npx playwright install --with-deps chromium
+          node scripts/check-preview.mjs --url "$PREVIEW_URL" --branch "$PREVIEW_BRANCH" --visual --resolve --summary preview-check-artifacts/summary.md
+
+      - name: Upload visual check
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: preview-check
+          path: preview-check-artifacts/
+          if-no-files-found: ignore
+
+      - name: Squash the report into one pull request comment
+        if: always()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require("fs");
+            const summaryPath = "preview-check-artifacts/summary.md";
+            const summary = fs.existsSync(summaryPath) ? fs.readFileSync(summaryPath, "utf8") : "Preview check did not write a summary.";
+            const marker = "<!-- openpinas-preview-check -->";
+            const body = `${marker}\n${summary}`;
+            let pullNumber = context.payload.pull_request?.number;
+            if (!pullNumber) {
+              const sha = context.payload.deployment?.sha || context.sha;
+              const pulls = await github.rest.repos.listPullRequestsAssociatedWithCommit({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                commit_sha: sha,
+              });
+              const pull = pulls.data.find((item) => item.state === "open") ?? pulls.data[0];
+              pullNumber = pull?.number;
+            }
+            if (!pullNumber) {
+              core.info("No pull request for this deployment.");
+              return;
+            }
+            const comments = await github.rest.issues.listComments({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: pullNumber,
+            });
+            const existing = comments.data.find((comment) => (comment.body || "").includes(marker));
+            if (existing) {
+              await github.rest.issues.updateComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                comment_id: existing.id,
+                body,
+              });
+            } else {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: pullNumber,
+                body,
+              });
+            }

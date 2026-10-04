@@ -2,6 +2,30 @@
   "version": 1,
   "reviews": [
     {
+      "weekEnding": "2026-10-03",
+      "weekLabel": "September 27 – October 3, 2026",
+      "eventCount": 5,
+      "prevWeekEnding": "2026-09-26"
+    },
+    {
+      "weekEnding": "2026-09-26",
+      "weekLabel": "September 20 – September 26, 2026",
+      "eventCount": 5,
+      "prevWeekEnding": "2026-09-19"
+    },
+    {
+      "weekEnding": "2026-09-19",
+      "weekLabel": "September 13 – September 19, 2026",
+      "eventCount": 5,
+      "prevWeekEnding": "2026-09-12"
+    },
+    {
+      "weekEnding": "2026-09-12",
+      "weekLabel": "September 6 – September 12, 2026",
+      "eventCount": 5,
+      "prevWeekEnding": "2026-09-05"
+    },
+    {
       "weekEnding": "2026-09-05",
       "weekLabel": "August 30 – September 5, 2026",
       "eventCount": 5,
