@@ -36,6 +36,16 @@ Three regular Sunday–Saturday editions after September 5. Each uses informatio
 - [x] Homepage moved to September 26 with this newer completed edition.
 - [x] October 2 check: review prose matches the timeline, and the S&P 2.9% figure is attributed to the Philippine Star. PNA, Inquirer, DOF, and Bandera links answer in a browser; this environment’s plain requests receive 403 from those hosts.
 
+## September 27 – October 3, 2026 — edition 2026-10-03
+
+Prepared October 3, 2026, after the Saturday close. The official September inflation print was not used. The Supreme Court dismissal is recorded as procedural. The ICC witness ruling stays conditional on appearance and consent.
+
+- [x] **2026-09-29 — Baste Duterte testifies.** [Philippine Star](https://www.philstar.com/headlines/2026/09/29/2559791/sara-duterte-trial-recap-sept-29-baste-duterte-stand); [Rappler](https://www.rappler.com/philippines/baste-duterte-sara-not-ask-favor-gencorp-intervene-procurement-impeachment/); [Cebu Daily News](https://cebudailynews.inquirer.net/771090/under-oath-baste-duterte-says-no-business-talks-with-vp-sara). Contract count from Philstar. A conflicting peso total was omitted.
+- [x] **2026-09-30 — Supreme Court dismissal.** [Supreme Court](https://sc.judiciary.gov.ph/press-briefer-september-30-2026/); [GMA News](https://www.gmanetwork.com/news/topstories/nation/1004276/sc-junks-petitions-challenging-sara-duterte-impeachment-voting-threshold/story/); [Inquirer](https://newsinfo.inquirer.net/2314742/sc-junks-3-petitions-vs-impeach-court-2-3-ruling). No merits holding.
+- [x] **2026-09-28 — Fare increase and strike.** [PNA](https://www.pna.gov.ph/articles/1285005); [Rappler](https://www.rappler.com/philippines/fare-hikes-guide-jeepney-bus-taxi-uv-express-september-28-2026/); [GMA News](https://www.gmanetwork.com/news/topstories/nation/1003934/transport-strike-starts-as-fare-hike-takes-effect/story/).
+- [x] **2026-10-01 — BSP forecast range.** [Philippine Star](https://www.philstar.com/business/2026/10/01/2560070/inflation-seen-highest-level-over-three-years); [BusinessMirror](https://businessmirror.com.ph/2026/10/01/september-inflation-could-mark-3-year-high-bsp/).
+- [x] **2026-10-02 — ICC witness statement.** [Philippine Star](https://www.philstar.com/headlines/2026/10/03/2560688/icc-allows-prior-testimony-witness-rodrigo-duterte-case); [ABS-CBN](https://www.abs-cbn.com/news/nation/2026/10/3/icc-admits-duterte-witness-testimony-cuts-prosecution-questioning-0836); [Philippine Star, September 30](https://www.philstar.com/headlines/2026/09/30/2559986/icc-rejects-duterte-bid-expert-verification-evidence).
+
 The September 2 verification exception above remains the only unresolved claim set carried forward from the original working tree. It is excluded from all new review copy. Minor program and cultural announcements with a single original source are identified in the event notes below.
 
 ## August 30 – September 5, 2026 — edition 2026-09-05
