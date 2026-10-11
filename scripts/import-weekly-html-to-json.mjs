@@ -125,7 +125,8 @@ function extractArticles($, $section) {
       category: textOrEmpty($badge),
       categoryClass: ($badge.attr("class") || "").replace("category-badge", "").trim(),
       borderColor,
-      headline: textOrEmpty($h2a),
+      // Older pages print the headline as plain <h2> text with no anchor.
+      headline: textOrEmpty($h2a) || textOrEmpty($a.find("h2").first()),
       headlineHref: rewriteHref($h2a.attr("href") || ""),
       descriptionHtml: $a.find("p.description").html()?.trim() ?? "",
       significance: textOrEmpty($a.find(".significance")).replace(/^Significance:\s*/i, ""),
