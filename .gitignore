@@ -26,6 +26,14 @@ out/
 preview-check-artifacts/
 public/dynasty-map/
 
+# Data copied into public/ by scripts/sync-openpinas-public.cjs
+public/business-connections-2025.json
+public/elite-schools-influence-2025.json
+public/philippine-political-dynasties-network-2025.json
+public/philippine-startup-ecosystem-2025.json
+public/pogo-corruption-cases-2025.json
+public/regional-data.json
+
 # Private documentation (if accidentally copied)
 CONTEXT.md
 BLOG_POST.md

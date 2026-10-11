@@ -17,6 +17,19 @@ function copy(srcRel, destRel) {
 copy("interactive-timeline/styles.css", "public/interactive-timeline/styles.css");
 copy("corruption-tracker/css/styles.css", "public/corruption-tracker/css/styles.css");
 
+// Legacy visualizations fetch these by root-relative path at runtime, and the
+// visualization shells link to them as downloadable data.
+for (const file of [
+  "business-connections-2025.json",
+  "elite-schools-influence-2025.json",
+  "philippine-political-dynasties-network-2025.json",
+  "philippine-startup-ecosystem-2025.json",
+  "pogo-corruption-cases-2025.json",
+  "regional-data.json",
+]) {
+  copy(file, path.join("public", file));
+}
+
 const dynastyDestDir = path.join(root, "public/dynasty-map");
 fs.mkdirSync(dynastyDestDir, { recursive: true });
 

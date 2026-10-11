@@ -3,23 +3,23 @@
   "weekEnding": "2026-01-16",
   "weekLabel": "January 10-16, 2026",
   "title": "OpenPinas: Weekly News Review",
-  "lastUpdated": "January 16, 2026",
+  "lastUpdated": "October 11, 2026",
   "prevWeekFile": null,
   "stats": [
     {
-      "number": "0",
-      "label": "Total Events"
+      "number": "8",
+      "label": "Stories"
     },
     {
-      "number": "0",
+      "number": "1",
       "label": "Political"
     },
     {
-      "number": "0",
+      "number": "2",
       "label": "Disasters"
     },
     {
-      "number": "0",
+      "number": "2",
       "label": "Dynasties"
     }
   ],
@@ -103,7 +103,260 @@
     "contextHtml": "<strong>YTD:</strong> Peso hit record low of ₱59.37 on Jan 7 after BSP signaled rate cut. Down 1.58% over past 12 months.",
     "sourceNote": "Source: BSP / Bloomberg"
   },
-  "eventSections": [],
+  "eventSections": [
+    {
+      "title": "Natural Disasters",
+      "articles": [
+        {
+          "timeDatetime": "2026-01-12",
+          "timeDisplay": "January 12, 2026",
+          "category": "Natural Disasters",
+          "categoryClass": "natural-disasters",
+          "borderColor": "#c77d10",
+          "headline": "Mayon Volcano Evacuations Expand - Over 4,000 Displaced",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-01-12&search=Mayon%20Volcano%20Evacuations%20Expand%20-%20Over%204%2C000%20Displaced",
+          "descriptionHtml": "<p>Alert Level 3 held as 4,092 people from 1,116 families moved into 14 shelters, with 48 more staying with relatives. PHIVOLCS logged 150 rockfalls and 90 pyroclastic density currents in one 24-hour stretch and warned that rising seismic energy could mean new magma. Pilots were told to stay clear of the summit; residents inside 8 km remained on standby for a possible Level 4.</p>",
+          "sourceLinks": [
+            {
+              "label": "rappler.com",
+              "href": "https://bworldonline.com/the-nation/2026/01/08/723097/over-3000-affected-by-mayon-volcanos-unrest-says-ndrrmc/"
+            },
+            {
+              "label": "newsinfo.inquirer.net",
+              "href": "https://newsinfo.inquirer.net/2166303/mayon-volcano-activity-for-past-24-hours"
+            },
+            {
+              "label": "newsinfo.inquirer.net",
+              "href": "https://newsinfo.inquirer.net/2166738/phivolcs-records-increased-seismic-energy-release-in-mayon-volcano"
+            },
+            {
+              "label": "philstar.com",
+              "href": "https://www.philstar.com/headlines/2026/01/11/2500226/live-updatesmayon-volcano-restiveness"
+            }
+          ],
+          "dynastyLinks": []
+        },
+        {
+          "timeDatetime": "2026-01-15",
+          "timeDisplay": "January 15, 2026",
+          "category": "Natural Disasters",
+          "categoryClass": "natural-disasters",
+          "borderColor": "#c77d10",
+          "headline": "Tropical Storm Ada - First Storm of 2026 Threatens Eastern Visayas",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-01-15&search=Tropical%20Storm%20Ada%20-%20First%20Storm%20of%202026%20Threatens%20Eastern%20Visayas",
+          "descriptionHtml": "<p>Tropical Storm Ada (Nokaen) became the first cyclone of 2026 inside the PAR, with Signal No. 1 over 14 areas in Bicol, Eastern Visayas, and Caraga. PAGASA expected landfall in Eastern Visayas on January 16–17. DSWD had already extended ₱13.9 million to more than 100,000 families hit by the associated rains.</p>",
+          "sourceLinks": [
+            {
+              "label": "philstar.com",
+              "href": "https://www.philstar.com/headlines/2026/01/15/2501052/ada-first-storm-2026-enters-philippines"
+            },
+            {
+              "label": "abs-cbn.com",
+              "href": "https://www.abs-cbn.com/news/weather-traffic/2026/1/16/14-areas-under-signal-1-as-ada-moves-closer-to-eastern-visayas-1236"
+            },
+            {
+              "label": "rappler.com",
+              "href": "https://www.rappler.com/philippines/weather/tropical-depression-ada-update-pagasa-forecast-january-14-2026-5pm/"
+            }
+          ],
+          "dynastyLinks": []
+        }
+      ]
+    },
+    {
+      "title": "Economic",
+      "articles": [
+        {
+          "timeDatetime": "2026-01-13",
+          "timeDisplay": "January 13, 2026",
+          "category": "Economic",
+          "categoryClass": "economic",
+          "borderColor": "#0b6e4f",
+          "headline": "Philippines-UAE Sign Historic Free Trade Agreement (CEPA)",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-01-13&search=Philippines-UAE%20Sign%20Historic%20Free%20Trade%20Agreement%20%28CEPA%29",
+          "descriptionHtml": "<p>President Marcos and UAE officials signed the first free-trade deal between the Philippines and a Middle Eastern country during Abu Dhabi Sustainability Week. The CEPA targets at least 90 percent tariff liberalization and deeper GCC market access for a country that still sends one of its largest OFW cohorts to the Emirates.</p>",
+          "sourceLinks": [
+            {
+              "label": "philstar.com",
+              "href": "https://www.philstar.com/business/2026/01/15/2500973/ten-points-phl-uae-partnership"
+            },
+            {
+              "label": "gmanetwork.com",
+              "href": "https://www.gmanetwork.com/news/money/economy/972666/ph-uae-ink-historic-free-trade-deal/story/"
+            }
+          ],
+          "dynastyLinks": [
+            {
+              "label": "Marcos-Romualdez",
+              "href": "/dynasties-network-visualization.html#dynasty-MARCOS_ROMUALDEZ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Legal",
+      "articles": [
+        {
+          "timeDatetime": "2026-01-13",
+          "timeDisplay": "January 13, 2026",
+          "category": "Legal",
+          "categoryClass": "legal",
+          "borderColor": "#1e3a5f",
+          "headline": "Nationwide Manhunt for Gaming Tycoon Atong Ang - ₱10M Reward Offered",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-01-13&search=Nationwide%20Manhunt%20for%20Gaming%20Tycoon%20Atong%20Ang%20-%20%E2%82%B110M%20Reward%20Offered",
+          "descriptionHtml": "<p>Laguna RTC Branch 26 issued arrest warrants for kidnapping with homicide against Charlie \"Atong\" Ang in the missing-sabungeros case. DILG Secretary Jonvic Remulla posted a ₱10 million reward and called Ang the country's most wanted; by mid-week 17 co-accused, including 10 police officers, were in custody while Ang remained free. A second Lipa RTC warrant on January 15 added six non-bailable counts.</p>",
+          "sourceLinks": [
+            {
+              "label": "rappler.com",
+              "href": "https://www.rappler.com/philippines/millions-reward-atong-ang-arrest/"
+            },
+            {
+              "label": "gmanetwork.com",
+              "href": "https://www.gmanetwork.com/news/topstories/regions/972765/arrest-warrant-issued-vs-atong-ang-17-others-for-kidnapping-with-homicide-no-bail-set/story/"
+            },
+            {
+              "label": "philstar.com",
+              "href": "https://www.philstar.com/headlines/2026/01/16/2501298/p10-million-reward-offered-arrest-atong-ang"
+            }
+          ],
+          "dynastyLinks": []
+        },
+        {
+          "timeDatetime": "2026-01-14",
+          "timeDisplay": "January 14, 2026",
+          "category": "Legal",
+          "categoryClass": "legal",
+          "borderColor": "#1e3a5f",
+          "headline": "Billionaire Enrique Razon Files ₱110M Cyber Libel Suit Against Rep. Barzaga",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-01-14&search=Billionaire%20Enrique%20Razon%20Files%20%E2%82%B1110M%20Cyber%20Libel%20Suit%20Against%20Rep.%20Barzaga",
+          "descriptionHtml": "<p>Port and casino tycoon Enrique Razon Jr. filed two cyber-libel counts against suspended Cavite Rep. Francisco \"Kiko\" Barzaga over a January 9 Facebook post alleging bribes at Solaire for then-Speaker Martin Romualdez. Razon seeks ₱110 million in damages; Barzaga said he would produce evidence when his House suspension ends.</p>",
+          "sourceLinks": [
+            {
+              "label": "philstar.com",
+              "href": "https://www.philstar.com/nation/2026/01/15/2501124/razon-sues-barzaga-cyber-libel"
+            },
+            {
+              "label": "newsinfo.inquirer.net",
+              "href": "https://newsinfo.inquirer.net/2168143/razon-sues-barzaga-for-p110m-over-fb-post"
+            },
+            {
+              "label": "manilatimes.net",
+              "href": "https://www.manilatimes.net/2026/01/14/news/razon-files-cyber-libel-complaint-vs-barzaga/2258741"
+            }
+          ],
+          "dynastyLinks": [
+            {
+              "label": "Marcos-Romualdez",
+              "href": "/dynasties-network-visualization.html#dynasty-MARCOS_ROMUALDEZ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "International Relations",
+      "articles": [
+        {
+          "timeDatetime": "2026-01-14",
+          "timeDisplay": "January 14, 2026",
+          "category": "International Relations",
+          "categoryClass": "international-relations",
+          "borderColor": "#0d7377",
+          "headline": "Chinese Vessels Double in West Philippine Sea - 41 Ships Monitored",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-01-14&search=Chinese%20Vessels%20Double%20in%20West%20Philippine%20Sea%20-%2041%20Ships%20Monitored",
+          "descriptionHtml": "<p>The Philippine Navy counted 41 Chinese vessels in the West Philippine Sea in early January, up from 20 in December, including PLA Navy, coast-guard, and militia ships around Scarborough and Ayungin. Manila rejected Beijing's \"provocations\" line and cited the 2016 arbitral ruling; the AFP said it would increase patrols during the ASEAN chair year.</p>",
+          "sourceLinks": [
+            {
+              "label": "philstar.com",
+              "href": "https://www.philstar.com/headlines/2026/01/14/2500809/china-ships-increase-west-philippine-sea-2026"
+            },
+            {
+              "label": "gmanetwork.com",
+              "href": "https://www.gmanetwork.com/news/topstories/nation/972640/ph-navy-chinese-vessels-in-wps-increased-to-41-in-january/story/"
+            },
+            {
+              "label": "pna.gov.ph",
+              "href": "https://www.pna.gov.ph/articles/1266721"
+            }
+          ],
+          "dynastyLinks": []
+        },
+        {
+          "timeDatetime": "2026-01-15",
+          "timeDisplay": "January 15, 2026",
+          "category": "International Relations",
+          "categoryClass": "international-relations",
+          "borderColor": "#0d7377",
+          "headline": "Japan-Philippines Sign ACSA Defense Pact Amid China Tensions",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-01-15&search=Japan-Philippines%20Sign%20ACSA%20Defense%20Pact%20Amid%20China%20Tensions",
+          "descriptionHtml": "<p>Foreign Minister Toshimitsu Motegi and Secretary Theresa Lazaro signed an Acquisition and Cross-Servicing Agreement allowing tax-free fuel, ammunition, and supplies during joint exercises, building on the 2024 Reciprocal Access Agreement. Japan added ¥2.53 billion in security and Mindanao connectivity aid. The pact is the second major Japan-Philippines defense instrument in two years.</p>",
+          "sourceLinks": [
+            {
+              "label": "cnn.com",
+              "href": "https://www.cnn.com/2026/01/15/asia/japan-philippines-pact-intl-hnk"
+            },
+            {
+              "label": "bloomberg.com",
+              "href": "https://www.bloomberg.com/news/articles/2026-01-15/japan-philippines-sign-military-logistics-pact-amid-china-row"
+            },
+            {
+              "label": "aljazeera.com",
+              "href": "https://www.aljazeera.com/news/2026/1/15/japan-philippines-sign-new-defence-pacts-amid-surging-china-tensions"
+            },
+            {
+              "label": "manilatimes.net",
+              "href": "https://www.manilatimes.net/2026/01/16/news/national/philippines-japan-sign-new-defense-pact/2259814"
+            }
+          ],
+          "dynastyLinks": []
+        }
+      ]
+    },
+    {
+      "title": "Political",
+      "articles": [
+        {
+          "timeDatetime": "2026-01-16",
+          "timeDisplay": "January 16, 2026",
+          "category": "Political",
+          "categoryClass": "political",
+          "borderColor": "#3a0ca3",
+          "headline": "Rep. Leandro Leviste Claims 'Cabral Files' on DPWH Corruption",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-01-16&search=Rep.%20Leandro%20Leviste%20Claims%20%27Cabral%20Files%27%20on%20DPWH%20Corruption",
+          "descriptionHtml": "<p>Batangas Rep. Leandro Leviste said he holds the \"Cabral Files\" — documents he links to the late DPWH Undersecretary Maria Catalina Cabral listing 2025 infrastructure allocations. He asked to meet Senate President Pro Tempore Ping Lacson as DOE separately fined his Solar Philippines firm ₱24 billion for undelivered capacity; Leviste called the fine a gag and sued presidential spokesperson Claire Castro. A Pulse Asia reading the same week found only 59 percent still expect flood-control culprits to be jailed, down 12 points from September.</p>",
+          "sourceLinks": [
+            {
+              "label": "philnews.ph",
+              "href": "https://philnews.ph/2026/01/16/leandro-leviste-confirms-request-meet-ping-lacson-over-cabral-files"
+            },
+            {
+              "label": "newsinfo.inquirer.net",
+              "href": "https://newsinfo.inquirer.net/2168120/leviste-sees-move-to-gag-him-garin-cites-his-firms-2-output"
+            },
+            {
+              "label": "rappler.com",
+              "href": "https://www.rappler.com/voices/thought-leaders/vantage-point-consumers-pay-department-energy-delayed-action-leviste-solar-philippines/"
+            },
+            {
+              "label": "newsinfo.inquirer.net",
+              "href": "https://newsinfo.inquirer.net/2166880/fwd-most-filipinos-still-believe-flood-control-scandal-culprits-will-go-to-jail-poll"
+            },
+            {
+              "label": "scmp.com",
+              "href": "https://www.scmp.com/week-asia/economics/article/3335414/probe-links-philippines-flood-corruption-pogo-crypto-schemes"
+            }
+          ],
+          "dynastyLinks": [
+            {
+              "label": "Lacson",
+              "href": "/dynasties-network-visualization.html#dynasty-LACSON_FAMILY"
+            }
+          ]
+        }
+      ]
+    }
+  ],
   "ofwSection": {
     "title": "OFW & Diaspora News",
     "stats": [
@@ -160,25 +413,6 @@
   },
   "dynastyHighlights": {
     "title": "Dynasty Highlights",
-    "items": [
-      {
-        "title": "",
-        "titleHref": "",
-        "bodyHtml": "",
-        "bullets": []
-      },
-      {
-        "title": "",
-        "titleHref": "",
-        "bodyHtml": "",
-        "bullets": []
-      },
-      {
-        "title": "",
-        "titleHref": "",
-        "bodyHtml": "",
-        "bullets": []
-      }
-    ]
+    "items": []
   }
 }

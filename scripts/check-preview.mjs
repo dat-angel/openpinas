@@ -223,6 +223,11 @@ for (const url of sourceHrefs) {
     else if (status === 401 || status === 403 || status === 429) {
       externalBlocked += 1;
       warn(`source blocked ${status} ${url}`);
+    } else if (status >= 500) {
+      // The publisher's own server is failing. A refused connection is already
+      // only a warning below, so an upstream 5xx should not block a merge either.
+      externalBlocked += 1;
+      warn(`source server error ${status} ${url}`);
     } else fail(`source ${status} ${url}`);
   } catch (error) {
     warn(`source unreachable ${url}: ${error.message}`);

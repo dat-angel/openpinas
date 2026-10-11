@@ -3,11 +3,11 @@
   "weekEnding": "2026-02-15",
   "weekLabel": "February 9-15, 2026",
   "title": "OpenPinas: Weekly News Review",
-  "lastUpdated": "February 15, 2026",
+  "lastUpdated": "October 11, 2026",
   "prevWeekFile": null,
   "stats": [
     {
-      "number": "4",
+      "number": "6",
       "label": "Total Events"
     },
     {
@@ -171,6 +171,38 @@
               "href": "https://www.rappler.com/newsbreak/iq/rodrigo-duterte-international-criminal-court-key-dates/"
             }
           ]
+        },
+        {
+          "timeDatetime": "2026-02-13",
+          "timeDisplay": "February 13, 2026",
+          "category": "Legal",
+          "categoryClass": "legal",
+          "borderColor": "",
+          "headline": "Atong Ang Bounty Doubled to P20 Million as Manhunt Intensifies",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-02-13&search=Atong%20Ang%20Bounty%20Doubled%20to%20P20%20Million%20as%20Manhunt%20Intensifies",
+          "descriptionHtml": "The Department of the Interior and Local Government doubled the bounty on fugitive businessman Charlie 'Atong' Ang from P10 million to P20 million, as authorities intensified their manhunt for the alleged mastermind behind the disappearance of at least 34 cockfighting enthusiasts (sabungeros) between 2021 and 2022. Whistleblower Julie Patidongan identified Ang as the mastermind, claiming the missing sabungeros were killed and their bodies dumped in Taal Lake. Despite 10 raids on known properties across Metro Manila, Central Luzon, Calabarzon, and Bicol, authorities failed to locate Ang. The Cambodian government issued a statement denying Ang was in their country, while the Bureau of Immigration confirmed no record of him departing the Philippines. Interior Secretary Jonvic Remulla maintained that Ang remains in the country. The DOJ reiterated there are no formal records of Ang leaving the Philippines.",
+          "significance": "One of the Philippines' most high-profile manhunts, linked to the Duterte-era online sabong (e-sabong) industry that generated billions but was connected to kidnappings and killings",
+          "diasporaImpact": "The case underscores ongoing concerns about rule of law and impunity in the Philippines. The e-sabong industry affected overseas Filipino communities who also participated in online cockfighting. The manhunt tests law enforcement credibility.",
+          "dynastyLinks": [
+            {
+              "label": "Duterte",
+              "href": "/dynasties-network-visualization.html#dynasty-DUTERTE_FAMILY"
+            }
+          ],
+          "sourceLinks": [
+            {
+              "label": "philstar.com",
+              "href": "https://www.philstar.com/headlines/2026/02/13/2507639/dilg-doubles-bounty-atong-ang-p20-milion"
+            },
+            {
+              "label": "newsinfo.inquirer.net",
+              "href": "https://newsinfo.inquirer.net/2183234/atong-ang-manhunt-10-raids-in-past-week-fail-to-find-him-remulla"
+            },
+            {
+              "label": "manilatimes.net",
+              "href": "https://www.manilatimes.net/2026/02/17/news/atong-ang-nowhere-to-be-found-after-10-raids-on-known-sites-remulla/2279240"
+            }
+          ]
         }
       ]
     },
@@ -195,6 +227,38 @@
               "href": "https://www.rappler.com/video/top-5-news-this-week/february-14-2026/"
             }
           ]
+        },
+        {
+          "timeDatetime": "2026-02-14",
+          "timeDisplay": "February 14, 2026",
+          "category": "International Relations",
+          "categoryClass": "international-relations",
+          "borderColor": "",
+          "headline": "Philippines Signs Defense Pacts with Italy and Estonia at Munich Security Conference",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-02-14&search=Philippines%20Signs%20Defense%20Pacts%20with%20Italy%20and%20Estonia%20at%20Munich%20Security%20Conference",
+          "descriptionHtml": "Foreign Affairs Secretary Theresa Lazaro signed two bilateral agreements at the Munich Security Conference in Germany. The Philippines and Italy sealed a renewed defense cooperation agreement with Italian Defense Minister Guido Crosetto, replacing an expired memorandum of understanding. The new pact expands potential for defense co-production, technology partnerships, and procurement cooperation, with a focus on boosting maritime security. Lazaro also signed a Memorandum of Understanding on Digital Cooperation with Estonia, covering cybersecurity and capacity building. Estonian Foreign Minister Margus Tsahkna expressed readiness to deepen cybersecurity cooperation with the Philippines. The agreements reflect the Philippines' strategy of diversifying defense partnerships beyond the United States amid ongoing South China Sea tensions with Beijing.",
+          "significance": "Expands the Philippines' defense network to European partners, signaling a more diversified security posture beyond traditional US alliance",
+          "diasporaImpact": "Defense modernization and international partnerships improve national security, directly affecting the safety of families in the Philippines. The Estonia cybersecurity deal could strengthen digital infrastructure protecting OFW remittance systems and government services.",
+          "dynastyLinks": [
+            {
+              "label": "Marcos-Romualdez",
+              "href": "/dynasties-network-visualization.html#dynasty-MARCOS_ROMUALDEZ"
+            }
+          ],
+          "sourceLinks": [
+            {
+              "label": "manilastandard.net",
+              "href": "https://manilastandard.net/news/314704129/philippines-signs-pacts-with-estonia-italy-at-munich-security-conference.html"
+            },
+            {
+              "label": "pna.gov.ph",
+              "href": "https://www.pna.gov.ph/articles/1269057"
+            },
+            {
+              "label": "mb.com.ph",
+              "href": "https://mb.com.ph/2026/02/17/dnd-phs-renewed-defense-pact-with-italy-to-boost-maritime-security"
+            }
+          ]
         }
       ]
     },
@@ -208,7 +272,7 @@
           "categoryClass": "cultural",
           "borderColor": "",
           "headline": "Philippines Celebrates First Valentine's Day with Michelin-Recognized Restaurants",
-          "headlineHref": "/interactive-timeline/index.html?date=2026-02-14&search=Philippines%20Celebrates%20First%20Valentine's%20Day%20with%20Michelin-Recognized%20Restaurants",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-02-14&search=Philippines%20Celebrates%20First%20Valentine%27s%20Day%20with%20Michelin-Recognized%20Restaurants",
           "descriptionHtml": "The Philippines celebrates its first Valentine's Day since receiving Michelin Guide recognition, with newly-starred and Bib Gourmand restaurants offering special Valentine's set menus ranging from PHP 2,500 to PHP 15,000 per couple. The milestone represents a significant achievement for Philippine culinary tourism, with restaurants like Gallery by Chele, Toyo Eatery, and Hapag showcasing Filipino cuisine's world-class caliber. The occasion boosts national pride and positions Manila as a sophisticated dining destination in Asia.",
           "significance": "Milestone celebration marking the Philippines' entry into Michelin Guide recognition, boosting culinary tourism and national pride",
           "diasporaImpact": "The Michelin recognition and Valentine's celebrations represent cultural pride for Filipino diaspora communities, demonstrating the Philippines' world-class culinary scene. This milestone may encourage diaspora visits home and boosts the country's image as a sophisticated destination, countering stereotypes. For overseas Filipinos in the food industry, it validates Filipino cuisine's international caliber.",
@@ -296,6 +360,10 @@
           {
             "text": "Clergy Files Third Impeachment Complaint Against VP Sara Duterte",
             "href": "/interactive-timeline/index.html?date=2026-02-09"
+          },
+          {
+            "text": "Atong Ang Bounty Doubled to P20 Million as Manhunt Intensifies",
+            "href": "/interactive-timeline/index.html?date=2026-02-13"
           }
         ]
       },
@@ -307,6 +375,10 @@
           {
             "text": "Clergy Files Third Impeachment Complaint Against VP Sara Duterte",
             "href": "/interactive-timeline/index.html?date=2026-02-09"
+          },
+          {
+            "text": "Philippines Signs Defense Pacts with Italy and Estonia at Munich Security Conference",
+            "href": "/interactive-timeline/index.html?date=2026-02-14"
           }
         ]
       }

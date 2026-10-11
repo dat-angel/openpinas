@@ -248,5 +248,21 @@ sortButton.addEventListener("click", () => {
 checkboxes.forEach((box) => box.addEventListener("change", applyFilters));
 searchInput.addEventListener("input", applyFilters);
 
+function yearForDateQuery(eventDate) {
+  const params = new URLSearchParams(window.location.search);
+  const yearHint = params.get("year");
+  if (yearHint === "2025" || yearHint === "2026") return yearHint;
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(eventDate || "")) return currentYear;
+  return eventDate.startsWith("2025-12-") ? "2026" : eventDate.slice(0, 4);
+}
+
+const bootParams = new URLSearchParams(window.location.search);
+const bootDate = bootParams.get("date") ?? "";
+currentYear = yearForDateQuery(bootDate);
+yearTabs.forEach((tab) => tab.classList.toggle("active", tab.dataset.year === currentYear));
+if (bootParams.get("search") || bootDate) {
+  searchInput.value = bootParams.get("search") || bootDate;
+}
+
 // Initialize on load
 loadTimelineData(currentYear);

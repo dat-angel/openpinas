@@ -3,23 +3,23 @@
   "weekEnding": "2026-01-09",
   "weekLabel": "January 3-9, 2026",
   "title": "OpenPinas: Weekly News Review",
-  "lastUpdated": "",
+  "lastUpdated": "October 11, 2026",
   "prevWeekFile": null,
   "stats": [
     {
-      "number": "0",
-      "label": "Total Events"
+      "number": "7",
+      "label": "Stories"
     },
     {
-      "number": "0",
+      "number": "1",
       "label": "Political"
     },
     {
-      "number": "0",
+      "number": "3",
       "label": "Disasters"
     },
     {
-      "number": "0",
+      "number": "3",
       "label": "Dynasties"
     }
   ],
@@ -103,7 +103,212 @@
     "contextHtml": "<strong>2026:</strong> ₱58.75–₱59.05 | Up 0.20% from week start",
     "sourceNote": "Source: BSP / Bloomberg"
   },
-  "eventSections": [],
+  "eventSections": [
+    {
+      "title": "Political",
+      "articles": [
+        {
+          "timeDatetime": "2026-01-05",
+          "timeDisplay": "January 5, 2026",
+          "category": "Political",
+          "categoryClass": "political",
+          "borderColor": "#3a0ca3",
+          "headline": "Retired General Romeo Poquiz Arrested for Sedition",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-01-05&search=Retired%20General%20Romeo%20Poquiz%20Arrested%20for%20Sedition",
+          "descriptionHtml": "<p>Retired Air Force general Romeo Poquiz, convenor of the United People's Initiative, was arrested at NAIA on an inciting-to-sedition warrant after a Facebook post critical of President Marcos. He posted ₱48,000 bail the same day and denied calling for the president's ouster, calling the case harassment of anti-corruption protesters. The arrest is the week's sharpest test of how far the administration will go against retired officers who have joined the street campaign.</p>",
+          "sourceLinks": [
+            {
+              "label": "newsinfo.inquirer.net",
+              "href": "https://newsinfo.inquirer.net/2163031/retired-gen-poquiz-arrested-over-inciting-to-sedition"
+            },
+            {
+              "label": "rappler.com",
+              "href": "https://www.rappler.com/philippines/retired-general-romeo-poquiz-arrested-inciting-sedition/"
+            },
+            {
+              "label": "philstar.com",
+              "href": "https://www.philstar.com/headlines/2026/01/05/2498917/ex-air-force-general-nabbed-over-sedition-charge"
+            }
+          ],
+          "dynastyLinks": [
+            {
+              "label": "Marcos-Romualdez",
+              "href": "/dynasties-network-visualization.html#dynasty-MARCOS_ROMUALDEZ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Economic",
+      "articles": [
+        {
+          "timeDatetime": "2026-01-05",
+          "timeDisplay": "January 5, 2026",
+          "category": "Economic",
+          "categoryClass": "economic",
+          "borderColor": "#0b6e4f",
+          "headline": "Marcos Signs P6.793 Trillion Budget with Anti-Corruption Veto",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-01-05&search=Marcos%20Signs%20P6.793%20Trillion%20Budget%20with%20Anti-Corruption%20Veto",
+          "descriptionHtml": "<p>President Marcos signed the ₱6.793-trillion 2026 General Appropriations Act and vetoed ₱92.5 billion in Unprogrammed Appropriations, closing a release channel that critics tied to the flood-control scandal. The budget carries no new locally funded flood-control projects. The veto is the first appropriations act of the year to treat unprogrammed funds as a graft risk rather than a reserve.</p>",
+          "sourceLinks": [
+            {
+              "label": "bloomberg.com",
+              "href": "https://www.bloomberg.com/news/articles/2026-01-05/philippines-marcos-slashes-backdoor-for-graft-in-2026-budget-after-scandal"
+            },
+            {
+              "label": "philstar.com",
+              "href": "https://www.philstar.com/headlines/2026/01/05/2498913/marcos-signs-p6793-trillion-budget-2026"
+            }
+          ],
+          "dynastyLinks": [
+            {
+              "label": "Marcos-Romualdez",
+              "href": "/dynasties-network-visualization.html#dynasty-MARCOS_ROMUALDEZ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Natural Disasters",
+      "articles": [
+        {
+          "timeDatetime": "2026-01-06",
+          "timeDisplay": "January 6, 2026",
+          "category": "Natural Disasters",
+          "categoryClass": "natural-disasters",
+          "borderColor": "#c77d10",
+          "headline": "Mayon Volcano Alert Level Raised to 3 - Magmatic Eruption Underway",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-01-06&search=Mayon%20Volcano%20Alert%20Level%20Raised%20to%203%20-%20Magmatic%20Eruption%20Underway",
+          "descriptionHtml": "<p>PHIVOLCS raised Mayon to Alert Level 3 less than a week after Level 2, confirming slow extrusion of degassed magma and a summit lava dome. The agency warned of lava flows, pyroclastic density currents, and possible explosive activity within days or weeks, and recorded 364 rockfalls since New Year's Day. Residents were told to stay out of the 6-kilometer permanent danger zone.</p>",
+          "sourceLinks": [
+            {
+              "label": "rappler.com",
+              "href": "https://www.rappler.com/philippines/luzon/phivolcs-mayon-volcano-alert-level-january-6-2026/"
+            }
+          ],
+          "dynastyLinks": []
+        },
+        {
+          "timeDatetime": "2026-01-07",
+          "timeDisplay": "January 7, 2026",
+          "category": "Natural Disasters",
+          "categoryClass": "natural-disasters",
+          "borderColor": "#c77d10",
+          "headline": "Magnitude 6.4 Earthquake Strikes Davao Oriental",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-01-07&search=Magnitude%206.4%20Earthquake%20Strikes%20Davao%20Oriental",
+          "descriptionHtml": "<p>A magnitude 6.4 earthquake struck 28 km northeast of Manay, Davao Oriental, at 11:02 a.m., an aftershock of the November 28, 2025 magnitude 7.5 quake. PHIVOLCS said more than 11.7 million people felt it, with intensity VI in the nearest towns. DSWD began monitoring damage in a province still recovering from last year's shock.</p>",
+          "sourceLinks": [
+            {
+              "label": "volcanodiscovery.com",
+              "href": "https://www.volcanodiscovery.com/earthquakes/quake-info/22585867/quake-felt-Jan-7-2026-Near-General-Santos-Soccsksargen-Philippines.html"
+            },
+            {
+              "label": "earthquake.phivolcs.dost.gov.ph",
+              "href": "https://earthquake.phivolcs.dost.gov.ph/2026_Earthquake_Information/January/2026_0107_1638_B1F.html"
+            }
+          ],
+          "dynastyLinks": []
+        },
+        {
+          "timeDatetime": "2026-01-08",
+          "timeDisplay": "January 8, 2026",
+          "category": "Natural Disasters",
+          "categoryClass": "natural-disasters",
+          "borderColor": "#c77d10",
+          "headline": "Binaliw Landfill Collapse Kills 28 in Cebu City - State of Calamity Declared",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-01-08&search=Binaliw%20Landfill%20Collapse%20Kills%2028%20in%20Cebu%20City%20-%20State%20of%20Calamity%20Declared",
+          "descriptionHtml": "<p>A roughly 35-meter garbage slope collapsed at 4:17 p.m. onto Cebu City's Binaliw sanitary landfill, burying sanitation workers at the materials-recovery facility. Early counts put fatalities in the high 20s before the final toll later reached 36; DENR issued a cease-and-desist order on operator Prime Integrated Waste Solutions. The collapse shut Metro Cebu's main dump and opened a workplace-safety investigation under RA 9003.</p>",
+          "sourceLinks": [
+            {
+              "label": "cnn.com",
+              "href": "https://www.cnn.com/2026/01/09/asia/landfill-collapse-philippines-intl-hnk"
+            },
+            {
+              "label": "cebudailynews.inquirer.net",
+              "href": "https://cebudailynews.inquirer.net/686219/binaliw-landfill-collapse-how-the-disaster-unfolded"
+            },
+            {
+              "label": "nbcnews.com",
+              "href": "https://www.nbcnews.com/world/asia/mound-garbage-collapses-philippine-landfill-burying-trapping-38-people-rcna253166"
+            },
+            {
+              "label": "cebudailynews.inquirer.net",
+              "href": "https://cebudailynews.inquirer.net/686177/binaliw-landfill-collapse-in-cebu-city-live-updates"
+            },
+            {
+              "label": "rappler.com",
+              "href": "https://www.rappler.com/philippines/visayas/state-calamity-cebu-landfill-landslide-january-13-2026/"
+            },
+            {
+              "label": "manilatimes.net",
+              "href": "https://www.manilatimes.net/2026/01/16/regions/cebu-city-landfill-collapse-death-toll-rises-to-22-mourning-day-declared/2259521"
+            }
+          ],
+          "dynastyLinks": [
+            {
+              "label": "Marcos-Romualdez",
+              "href": "/dynasties-network-visualization.html#dynasty-MARCOS_ROMUALDEZ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Religious",
+      "articles": [
+        {
+          "timeDatetime": "2026-01-09",
+          "timeDisplay": "January 9, 2026",
+          "category": "Religious",
+          "categoryClass": "religious",
+          "borderColor": "#d4a017",
+          "headline": "Black Nazarene Traslacion - Record 9.6 Million Devotees, Longest Procession Ever",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-01-09&search=Black%20Nazarene%20Traslacion%20-%20Record%209.6%20Million%20Devotees%2C%20Longest%20Procession%20Ever",
+          "descriptionHtml": "<p>The Traslacion from Quirino Grandstand to Quiapo Church lasted 30 hours, 50 minutes — the longest on record — as 9.6 million devotees joined the nine-day novena. Four deaths were reported. Bishop Rufino Sescon used the feast to urge humility amid the flood-control scandal, and President Marcos declared January 9 a special non-working day in Manila.</p>",
+          "sourceLinks": [
+            {
+              "label": "ncregister.com",
+              "href": "https://www.ncregister.com/cna/manila-s-feast-of-the-black-nazarene-draws-9-6-million-devotees"
+            },
+            {
+              "label": "philstar.com",
+              "href": "https://www.philstar.com/headlines/2026/01/10/2500030/black-nazarene-arrives-quiapo-church-after-30-hour-traslacion"
+            }
+          ],
+          "dynastyLinks": [
+            {
+              "label": "Marcos-Romualdez",
+              "href": "/dynasties-network-visualization.html#dynasty-MARCOS_ROMUALDEZ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Legal",
+      "articles": [
+        {
+          "timeDatetime": "2026-01-09",
+          "timeDisplay": "January 9, 2026",
+          "category": "Legal",
+          "categoryClass": "legal",
+          "borderColor": "#1e3a5f",
+          "headline": "5,594 Pass 2025 Bar Examinations with 48.98% Passing Rate",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-01-09&search=5%2C594%20Pass%202025%20Bar%20Examinations%20with%2048.98%25%20Passing%20Rate",
+          "descriptionHtml": "<p>The Supreme Court announced that 5,594 examinees passed the 2025 Bar Examinations, a 48.98 percent passing rate. The result is the first large professional-licensing milestone of 2026 for the next cohort of Filipino lawyers.</p>",
+          "sourceLinks": [
+            {
+              "label": "en.wikipedia.org",
+              "href": "https://en.wikipedia.org/wiki/2026_in_the_Philippines"
+            }
+          ],
+          "dynastyLinks": []
+        }
+      ]
+    }
+  ],
   "ofwSection": {
     "title": "OFW & Diaspora News",
     "stats": [

@@ -123,9 +123,17 @@ export default function InteractiveTimelinePage() {
     const applyLocation = () => {
       const params = new URLSearchParams(window.location.search);
       const eventDate = params.get("date") ?? "";
-      const requestedYear = eventDate.slice(0, 4);
-      if (/^\d{4}-\d{2}-\d{2}$/.test(eventDate) && TIMELINE_FILES[requestedYear]) {
-        setYear(requestedYear);
+      const yearHint = params.get("year");
+      if (yearHint && TIMELINE_FILES[yearHint]) {
+        setYear(yearHint);
+      } else if (/^\d{4}-\d{2}-\d{2}$/.test(eventDate)) {
+        const in2026 = (data2026.timeline || []).some((event) => event.date === eventDate);
+        const in2025 = (data2025.timeline || []).some((event) => event.date === eventDate);
+        if (in2026 && !in2025) {
+          setYear("2026");
+        } else if (TIMELINE_FILES[eventDate.slice(0, 4)]) {
+          setYear(eventDate.slice(0, 4));
+        }
       }
       setQuery(params.get("search") || eventDate);
     };
