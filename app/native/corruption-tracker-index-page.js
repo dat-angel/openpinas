@@ -52,7 +52,7 @@ export default function CorruptionTrackerIndexPage() {
 
       <main id="main-content">
         <div className="cards">
-          <a href="/corruption-tracker/cases/" className="card">
+          <a href="/corruption-tracker/cases/index.html" className="card">
             <h2>All Cases</h2>
             <p>
               See what cases are open, who&apos;s been convicted, and what&apos;s still under investigation. Filter by type
