@@ -15,14 +15,14 @@ Nine Sunday–Saturday weeks have no edition keyed to their Saturday. Eight of t
 | 2025-12-28 .. 2026-01-03 | covered by the `2026-01-02` edition (Friday key) |
 | 2026-01-04 .. 2026-01-10 | covered by `2026-01-09` (Friday key) |
 | 2026-01-11 .. 2026-01-17 | covered by `2026-01-16` (Friday key) |
-| **2026-02-01 .. 2026-02-07** | **no edition, and 2026-02-01 is covered by no edition's label** |
+| **2026-02-01 .. 2026-02-07** | filled by new Saturday-ending `2026-02-07` (see follow-up) |
 | 2026-02-08 .. 2026-02-14 | covered by `2026-02-08` / `2026-02-15` (Sunday keys) |
 | 2026-02-15 .. 2026-02-21 | covered by `2026-02-22` (Sunday key) |
 | 2026-03-22 .. 2026-03-28 | covered by `2026-03-29` (Sunday key) |
 | 2026-04-05 .. 2026-04-11 | covered by `2026-04-12` (Sunday key) |
 | 2026-04-12 .. 2026-04-18 | covered by `2026-04-19` (Sunday key) |
 
-Five editions exist but contain no articles, so their pages render an empty body: `2026-01-09`, `2026-01-16`, `2026-01-24`, `2026-01-31`, `2026-02-08`.
+Five editions existed with no articles at audit time — `2026-01-09`, `2026-01-16`, `2026-01-24`, `2026-01-31`, `2026-02-08` — and are now filled (see follow-up).
 
 From `2026-04-25` onward every Saturday through `2026-10-10` has an edition, with one deliberate exception: the `2026-06-08` Mindanao earthquake special, which sits in the archive outside the regular chain by design.
 
@@ -90,3 +90,27 @@ Anchors: 17 distinct `#dynasty-` fragments are referenced and 16 resolve. `#dyna
 Replacing these means finding another report of the same facts, so they are listed rather than substituted. The eight ABC News entries are expired AP wire URLs and the PHIVOLCS bulletin is a rotated-off daily bulletin; both patterns will keep recurring.
 
 Eight `www.bworldonline.com` links redirect to the apex `bworldonline.com`. That is the publisher's own canonical redirect and needs no change.
+
+## Follow-up — October 11, 2026 (same branch)
+
+All 13 confirmed-dead URLs were replaced in the reviews and timelines that cited them. None were left unresolved.
+
+| Old (404) | New (live) |
+|---|---|
+| `abcnews.com/.../20000-people-displaced-philippine-earthquake-killed-37-133702358` | `https://apnews.com/article/philippines-earthquake-2907e17ea68fca76cb4c6fde3e15f139` |
+| `abcnews.go.com/.../icc-judges-find-former-philippine-president-rodrigo-duterte-129556516` | `https://www.icc-cpi.int/news/situation-philippines-rodrigo-roa-duterte-fit-take-part-pre-trial-proceedings-confirmation` |
+| `abcnews.go.com/.../mound-garbage-collapses-philippine-landfill-burying-38-people-129038874` | `https://cebudailynews.inquirer.net/686219/binaliw-landfill-collapse-how-the-disaster-unfolded` |
+| `abcnews.go.com/.../philippine-court-convicts-journalist-terror-financing-charge-ruling-129445362` | `https://apnews.com/article/philippines-convicted-journalist-frenchie-mae-cumpio-57be4ce81346539ece2913f67460e5e9` |
+| `abcnews.go.com/.../philippine-lawmakers-find-bid-impeach-marcos-insufficient-substance-129842292` | `https://www.gmanetwork.com/news/topstories/nation/976061/house-representatives-impeachment-complaints-president-marcos/story/` |
+| `abcnews.go.com/.../philippine-vice-president-faces-2-new-impeachment-bids-129775355` | `https://www.gmanetwork.com/news/topstories/nation/975010/impeachment-complaint-filed-anew-vs-sara-duterte/story/` |
+| `abcnews.go.com/.../philippines-tells-beijing-alarmed-escalating-verbal-tussle-south-129557051` | `https://apnews.com/article/philippines-beijing-south-china-sea-disputes-dac69e3e7159dc3672879feeee87de5d` |
+| `abcnews.go.com/.../philippines-evacuates-3000-people-after-activity-increases-mayon-129000629` | `https://bworldonline.com/the-nation/2026/01/08/723097/over-3000-affected-by-mayon-volcanos-unrest-says-ndrrmc/` |
+| `gmanetwork.com/.../984649/balikatan-exercise-officially-opens/story/` | `https://mb.com.ph/2026/04/20/brawner-declares-largest-balikatan-open-highlights-alliance-strength-amid-regional-tensions` |
+| `gmanetwork.com/.../984842/afp-contingencies-for-possible-conflict-between-china-taiwan-in-place/story/` | `https://www.gmanetwork.com/news/topstories/nation/984760/afp-readies-contingencies-for-china-s-possible-actions-following-2026-balikatan/story/` |
+| `manilatimes.net/2026/02/21/news/duterte-to-skip-pre-trial-hearing/2281809` | `https://www.philstar.com/headlines/2026/02/21/2509417/icc-allows-duterte-skip-confirmation-hearings` |
+| `phivolcs.dost.gov.ph/.../21358-kanlaon-volcano-bulletin-25-april-2026-8-00-a-m` | `https://www.gmanetwork.com/news/topstories/regions/985288/watch-kanlaon-volcano-emits-ash-anew-alert-level-2-remains/story/` |
+| `rappler.com/nation/weather/typhoon-kalmaegi-death-toll-2025/` | `https://www.gmanetwork.com/news/topstories/nation/966407/269-dead-523-injured-due-to-typhoon-tino-ocd/story/` |
+
+January–February editions `2026-01-09`, `01-16`, `01-24`, `01-31`, and `02-08` now have 6–8 grouped stories drawn from existing timeline events. A new Saturday-ending `2026-02-07` edition covers the February 1–7 hole and holds the February 1 PBA championship. The February 13 Atong Ang bounty and February 14 Italy/Estonia defense pacts moved from `2026-02-22` to `2026-02-15`.
+
+The Bong Go highlight on `2026-02-28` no longer uses `#dynasty-GO_FAMILY` (no such node exists). The two `2025-12-29` events stay in the 2026 timeline; the timeline page now loads 2026 when a date exists only there, and the January 2 headlines pass `year=2026`.

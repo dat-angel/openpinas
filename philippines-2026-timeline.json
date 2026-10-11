@@ -238,7 +238,7 @@
       "sources": {
         "international": [
           "https://www.cnn.com/2026/01/09/asia/landfill-collapse-philippines-intl-hnk",
-          "https://abcnews.go.com/International/wireStory/mound-garbage-collapses-philippine-landfill-burying-38-people-129038874",
+          "https://cebudailynews.inquirer.net/686219/binaliw-landfill-collapse-how-the-disaster-unfolded",
           "https://www.nbcnews.com/world/asia/mound-garbage-collapses-philippine-landfill-burying-trapping-38-people-rcna253166"
         ],
         "local": [
@@ -297,7 +297,7 @@
       "mentioned_dynasties": [],
       "sources": {
         "international": [
-          "https://abcnews.go.com/Technology/wireStory/philippines-evacuates-3000-people-after-activity-increases-mayon-129000629"
+          "https://bworldonline.com/the-nation/2026/01/08/723097/over-3000-affected-by-mayon-volcanos-unrest-says-ndrrmc/"
         ],
         "local": [
           "https://newsinfo.inquirer.net/2166303/mayon-volcano-activity-for-past-24-hours",
@@ -460,11 +460,14 @@
         "LACSON_FAMILY"
       ],
       "sources": {
-        "international": [],
+        "international": [
+          "https://www.scmp.com/week-asia/economics/article/3335414/probe-links-philippines-flood-corruption-pogo-crypto-schemes"
+        ],
         "local": [
           "https://philnews.ph/2026/01/16/leandro-leviste-confirms-request-meet-ping-lacson-over-cabral-files",
           "https://newsinfo.inquirer.net/2168120/leviste-sees-move-to-gag-him-garin-cites-his-firms-2-output",
-          "https://www.rappler.com/voices/thought-leaders/vantage-point-consumers-pay-department-energy-delayed-action-leviste-solar-philippines/"
+          "https://www.rappler.com/voices/thought-leaders/vantage-point-consumers-pay-department-energy-delayed-action-leviste-solar-philippines/",
+          "https://newsinfo.inquirer.net/2166880/fwd-most-filipinos-still-believe-flood-control-scandal-culprits-will-go-to-jail-poll"
         ]
       },
       "weekly_review": "weekly-reviews/weekly-review-2026-01-16.html"
@@ -564,7 +567,9 @@
         ],
         "local": [
           "https://www.rappler.com/philippines/impeachment-complaint-filed-vs-president-ferdinand-marcos-jr-january-2026/",
-          "https://www.philstar.com/headlines/2026/01/19/2502019/marcos-faces-first-impeachment-complaint-filed-house"
+          "https://www.philstar.com/headlines/2026/01/19/2502019/marcos-faces-first-impeachment-complaint-filed-house",
+          "https://www.rappler.com/philippines/marcos-jr-second-impeachment-complaint-january-22-2026/",
+          "https://newsinfo.inquirer.net/2169804/house-eyes-revisions-to-impeach-rules-vs-vp-sara-duterte"
         ]
       },
       "weekly_review": "weekly-reviews/weekly-review-2026-01-24.html"
@@ -600,7 +605,7 @@
         "international": [],
         "local": [
           "https://www.rappler.com/philippines/weather/tropical-storm-ada-update-pagasa-forecast-january-18-2026-11pm/",
-          "https://newsinfo.inquirer.net"
+          "https://www.rappler.com/philippines/weather/tropical-depression-ada-lpa-update-pagasa-forecast-january-21-2026-5pm/"
         ]
       },
       "weekly_review": "weekly-reviews/weekly-review-2026-01-24.html"
@@ -746,7 +751,7 @@
       "sources": {
         "international": [
           "https://www.democracynow.org/2026/1/23/headlines/filipino_radio_journalist_sentenced_to_up_to_18_years_in_prison",
-          "https://abcnews.go.com/International/wireStory/philippine-court-convicts-journalist-terror-financing-charge-ruling-129445362",
+          "https://apnews.com/article/philippines-convicted-journalist-frenchie-mae-cumpio-57be4ce81346539ece2913f67460e5e9",
           "https://www.washingtonpost.com/video/politics/philippine-journalist-sentenced-to-over-a-decade-in-prison/2026/01/23/b4703007-ccca-431f-ac41-2c1419920147_video.html"
         ],
         "local": [
@@ -853,7 +858,7 @@
       "sources": {
         "international": [
           "https://www.aljazeera.com/news/2026/1/26/icc-judges-find-former-philippine-president-duterte-fit-to-stand-trial",
-          "https://abcnews.go.com/International/wireStory/icc-judges-find-former-philippine-president-rodrigo-duterte-129556516",
+          "https://www.icc-cpi.int/news/situation-philippines-rodrigo-roa-duterte-fit-take-part-pre-trial-proceedings-confirmation",
           "https://www.pbs.org/newshour/world/icc-judges-say-former-philippine-president-rodrigo-duterte-is-fit-to-stand-trial"
         ],
         "local": [
@@ -873,7 +878,7 @@
       "mentioned_dynasties": [],
       "sources": {
         "international": [
-          "https://abcnews.go.com/International/wireStory/philippines-tells-beijing-alarmed-escalating-verbal-tussle-south-129557051"
+          "https://apnews.com/article/philippines-beijing-south-china-sea-disputes-dac69e3e7159dc3672879feeee87de5d"
         ],
         "local": [
           "https://www.philstar.com/headlines/2026/01/05/2498804/philippines-stands-its-ground-against-more-assertive-china-west-philippine-sea"
@@ -934,11 +939,12 @@
       "sources": {
         "international": [],
         "local": [
-          "https://www.pba.ph/news",
-          "https://www.spin.ph/basketball/pba/"
+          "https://www.pba.ph/news/beermen-repeat-as-philippine-cup-champs",
+          "https://www.gmanetwork.com/news/sports/basketball/974978/pba-50-philippine-cup-san-miguel-vs-tnt-finals-g6-february-1-2026/story/",
+          "https://www.philstar.com/sports/2026/02/01/2505126/beermen-take-tropang-5g-out-game-6-repeat-philippine-cup-champs"
         ]
       },
-      "weekly_review": "weekly-reviews/weekly-review-2026-02-08.html"
+      "weekly_review": "weekly-reviews/weekly-review-2026-02-07.html"
     },
     {
       "date": "2026-02-02",
@@ -954,7 +960,7 @@
       ],
       "sources": {
         "international": [
-          "https://abcnews.go.com/International/wireStory/philippine-vice-president-faces-2-new-impeachment-bids-129775355",
+          "https://www.gmanetwork.com/news/topstories/nation/975010/impeachment-complaint-filed-anew-vs-sara-duterte/story/",
           "https://www.bloomberg.com/news/articles/2026-02-02/impeachment-complaint-filed-against-philippines-vp-sara-duterte",
           "https://asia.nikkei.com/politics/philippine-vice-president-sara-duterte-faces-fresh-impeachment-complaints"
         ],
@@ -996,7 +1002,7 @@
       ],
       "sources": {
         "international": [
-          "https://abcnews.go.com/International/wireStory/philippine-lawmakers-find-bid-impeach-marcos-insufficient-substance-129842292",
+          "https://www.gmanetwork.com/news/topstories/nation/976061/house-representatives-impeachment-complaints-president-marcos/story/",
           "https://asia.nikkei.com/politics/philippine-house-committee-rejects-marcos-impeachment-complaints"
         ],
         "local": [
@@ -1276,7 +1282,7 @@
           "https://www.manilatimes.net/2026/02/17/news/atong-ang-nowhere-to-be-found-after-10-raids-on-known-sites-remulla/2279240"
         ]
       },
-      "weekly_review": "weekly-reviews/weekly-review-2026-02-22.html"
+      "weekly_review": "weekly-reviews/weekly-review-2026-02-15.html"
     },
     {
       "date": "2026-02-14",
@@ -1316,7 +1322,7 @@
           "https://mb.com.ph/2026/02/17/dnd-phs-renewed-defense-pact-with-italy-to-boost-maritime-security"
         ]
       },
-      "weekly_review": "weekly-reviews/weekly-review-2026-02-22.html"
+      "weekly_review": "weekly-reviews/weekly-review-2026-02-15.html"
     },
     {
       "date": "2026-02-15",
@@ -1508,7 +1514,7 @@
         ],
         "local": [
           "https://www.rappler.com/philippines/duterte-waives-appearance-icc-confirmation-charges-february-2026/",
-          "https://www.manilatimes.net/2026/02/21/news/duterte-to-skip-pre-trial-hearing/2281809"
+          "https://www.philstar.com/headlines/2026/02/21/2509417/icc-allows-duterte-skip-confirmation-hearings"
         ]
       },
       "weekly_review": "weekly-reviews/weekly-review-2026-02-22.html"
@@ -2659,9 +2665,9 @@
       "sources": {
         "international": [],
         "local": [
-          "https://www.gmanetwork.com/news/topstories/nation/984649/balikatan-exercise-officially-opens/story/",
+          "https://mb.com.ph/2026/04/20/brawner-declares-largest-balikatan-open-highlights-alliance-strength-amid-regional-tensions",
           "https://www.abs-cbn.com/news/nation/2026/4/20/17-000-ph-us-troops-launch-balikatan-2026-1040",
-          "https://www.gmanetwork.com/news/topstories/nation/984842/afp-contingencies-for-possible-conflict-between-china-taiwan-in-place/story/"
+          "https://www.gmanetwork.com/news/topstories/nation/984760/afp-readies-contingencies-for-china-s-possible-actions-following-2026-balikatan/story/"
         ]
       },
       "weekly_review": "weekly-reviews/weekly-review-2026-04-25.html"
@@ -2775,7 +2781,7 @@
         "international": [],
         "local": [
           "https://www.gmanetwork.com/news/topstories/regions/985396/kanlaon-emits-grayish-ash-plume-on-friday-morning/story/",
-          "https://www.phivolcs.dost.gov.ph/index.php/kanlaon-volcano-bulletin-menu/kanlaon-volcano-bulletin/21358-kanlaon-volcano-bulletin-25-april-2026-8-00-a-m"
+          "https://www.gmanetwork.com/news/topstories/regions/985288/watch-kanlaon-volcano-emits-ash-anew-alert-level-2-remains/story/"
         ]
       },
       "weekly_review": "weekly-reviews/weekly-review-2026-04-25.html"
@@ -3647,7 +3653,7 @@
       ],
       "sources": {
         "international": [
-          "https://abcnews.com/International/wireStory/20000-people-displaced-philippine-earthquake-killed-37-133702358",
+          "https://apnews.com/article/philippines-earthquake-2907e17ea68fca76cb4c6fde3e15f139",
           "https://ahacentre.org/flash-update/flash-update-no-1-m7-8-earthquake-in-sarangani-8-june-2026/"
         ],
         "local": [

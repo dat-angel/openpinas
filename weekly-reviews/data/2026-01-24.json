@@ -3,23 +3,23 @@
   "weekEnding": "2026-01-24",
   "weekLabel": "January 17-24, 2026",
   "title": "OpenPinas: Weekly News Review",
-  "lastUpdated": "[DATE]",
+  "lastUpdated": "October 11, 2026",
   "prevWeekFile": null,
   "stats": [
     {
-      "number": "0",
-      "label": "Total Events"
+      "number": "8",
+      "label": "Stories"
     },
     {
-      "number": "0",
+      "number": "1",
       "label": "Political"
     },
     {
-      "number": "0",
+      "number": "3",
       "label": "Disasters"
     },
     {
-      "number": "0",
+      "number": "2",
       "label": "Dynasties"
     }
   ],
@@ -103,7 +103,271 @@
     "contextHtml": "<strong>YTD:</strong> Peso weakened 1.34% over past 12 months. Trading around 59 per dollar after BSP rate cut signaled end of easing cycle.",
     "sourceNote": "Source: BSP / Bloomberg"
   },
-  "eventSections": [],
+  "eventSections": [
+    {
+      "title": "Political",
+      "articles": [
+        {
+          "timeDatetime": "2026-01-19",
+          "timeDisplay": "January 19, 2026",
+          "category": "Political",
+          "categoryClass": "political",
+          "borderColor": "#3a0ca3",
+          "headline": "First Impeachment Complaint Filed Against President Marcos",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-01-19&search=First%20Impeachment%20Complaint%20Filed%20Against%20President%20Marcos",
+          "descriptionHtml": "<p>Lawyer Andre de Jesus filed the first impeachment complaint against President Marcos, endorsed by Pusong Pinoy Rep. Jett Nisay, citing the ICC arrest of Rodrigo Duterte, alleged drug use, and the flood-control scandal. A second leftist complaint on January 22 alleged the House blocked receipt. Legal observers noted that a dismissed complaint would give Marcos a one-year impeachment bar just as the House rewrote rules for a new case against Vice President Sara Duterte.</p>",
+          "sourceLinks": [
+            {
+              "label": "bloomberg.com",
+              "href": "https://www.bloomberg.com/news/articles/2026-01-19/impeachment-complaint-filed-against-philippines-marcos-gma"
+            },
+            {
+              "label": "asia.nikkei.com",
+              "href": "https://asia.nikkei.com/politics/philippines-marcos-faces-first-impeachment-complaint"
+            },
+            {
+              "label": "japantimes.co.jp",
+              "href": "https://www.japantimes.co.jp/news/2026/01/19/asia-pacific/politics/philippines-marcos-impeachment-house/"
+            },
+            {
+              "label": "rappler.com",
+              "href": "https://www.rappler.com/philippines/impeachment-complaint-filed-vs-president-ferdinand-marcos-jr-january-2026/"
+            },
+            {
+              "label": "philstar.com",
+              "href": "https://www.philstar.com/headlines/2026/01/19/2502019/marcos-faces-first-impeachment-complaint-filed-house"
+            },
+            {
+              "label": "rappler.com",
+              "href": "https://www.rappler.com/philippines/marcos-jr-second-impeachment-complaint-january-22-2026/"
+            },
+            {
+              "label": "newsinfo.inquirer.net",
+              "href": "https://newsinfo.inquirer.net/2169804/house-eyes-revisions-to-impeach-rules-vs-vp-sara-duterte"
+            }
+          ],
+          "dynastyLinks": [
+            {
+              "label": "Marcos-Romualdez",
+              "href": "/dynasties-network-visualization.html#dynasty-MARCOS_ROMUALDEZ"
+            },
+            {
+              "label": "Duterte",
+              "href": "/dynasties-network-visualization.html#dynasty-DUTERTE_FAMILY"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Legal",
+      "articles": [
+        {
+          "timeDatetime": "2026-01-17",
+          "timeDisplay": "January 17, 2026",
+          "category": "Legal",
+          "categoryClass": "legal",
+          "borderColor": "#1e3a5f",
+          "headline": "Second Arrest Warrant Issued vs Atong Ang - Interpol Red Notice Requested",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-01-17&search=Second%20Arrest%20Warrant%20Issued%20vs%20Atong%20Ang%20-%20Interpol%20Red%20Notice%20Requested",
+          "descriptionHtml": "<p>Lipa City RTC issued a second warrant against Ang and 20 others for six kidnapping-with-homicide counts, and CIDG asked Interpol for a red notice. Seventeen of 18 first-warrant co-accused were already arrested; PNP revoked Ang's firearms licenses. Remulla called him armed and dangerous, with immigration records still showing no departure.</p>",
+          "sourceLinks": [
+            {
+              "label": "philstar.com",
+              "href": "https://www.philstar.com/headlines/2026/01/17/2501488/another-arrest-warrant-out-vs-atong-ang-20-others"
+            },
+            {
+              "label": "globalnation.inquirer.net",
+              "href": "https://globalnation.inquirer.net/305726/interpol-red-notice-requested-for-atong-ang-cidg"
+            },
+            {
+              "label": "pna.gov.ph",
+              "href": "https://www.pna.gov.ph/articles/1267075"
+            }
+          ],
+          "dynastyLinks": []
+        },
+        {
+          "timeDatetime": "2026-01-22",
+          "timeDisplay": "January 22, 2026",
+          "category": "Legal",
+          "categoryClass": "legal",
+          "borderColor": "#1e3a5f",
+          "headline": "Journalist Frenchie Mae Cumpio Convicted of Terror Financing - Up to 18 Years",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-01-22&search=Journalist%20Frenchie%20Mae%20Cumpio%20Convicted%20of%20Terror%20Financing%20-%20Up%20to%2018%20Years",
+          "descriptionHtml": "<p>Tacloban RTC Branch 45 convicted journalist Frenchie Mae Cumpio, 26, and lay worker Marielle Domequil, 28, of terrorism financing and acquitted them of firearms and explosives charges. Both have been detained since February 2020. CPJ and RSF called the verdict a failure of press-freedom pledges; the defense said it would seek bail pending appeal.</p>",
+          "sourceLinks": [
+            {
+              "label": "democracynow.org",
+              "href": "https://www.democracynow.org/2026/1/23/headlines/filipino_radio_journalist_sentenced_to_up_to_18_years_in_prison"
+            },
+            {
+              "label": "apnews.com",
+              "href": "https://apnews.com/article/philippines-convicted-journalist-frenchie-mae-cumpio-57be4ce81346539ece2913f67460e5e9"
+            },
+            {
+              "label": "washingtonpost.com",
+              "href": "https://www.washingtonpost.com/video/politics/philippine-journalist-sentenced-to-over-a-decade-in-prison/2026/01/23/b4703007-ccca-431f-ac41-2c1419920147_video.html"
+            },
+            {
+              "label": "rappler.com",
+              "href": "https://www.rappler.com/philippines/visayas/frenchie-mae-cumpio-convicted-terror-financing-january-2026/"
+            },
+            {
+              "label": "gmanetwork.com",
+              "href": "https://www.gmanetwork.com/regionaltv/news/112543/journo-1-other-convicted-in-tacloban-city-for-terror-financing/story/"
+            }
+          ],
+          "dynastyLinks": [
+            {
+              "label": "Marcos-Romualdez",
+              "href": "/dynasties-network-visualization.html#dynasty-MARCOS_ROMUALDEZ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Natural Disasters",
+      "articles": [
+        {
+          "timeDatetime": "2026-01-18",
+          "timeDisplay": "January 18, 2026",
+          "category": "Natural Disasters",
+          "categoryClass": "natural-disasters",
+          "borderColor": "#c77d10",
+          "headline": "Binaliw Landfill Recovery Concludes - Final Death Toll 36",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-01-18&search=Binaliw%20Landfill%20Recovery%20Concludes%20-%20Final%20Death%20Toll%2036",
+          "descriptionHtml": "<p>Retrieval at Binaliw ended with 36 workers dead and 18 injured. Mines and Geosciences Bureau cited oversaturated waste, slope instability, and poor drainage at a site found to be violating the Ecological Solid Waste Management Act. Metro Cebu remained without its primary dump under the DENR cease-and-desist order.</p>",
+          "sourceLinks": [
+            {
+              "label": "wsws.org",
+              "href": "https://www.wsws.org/en/articles/2026/01/20/kpam-j20.html"
+            },
+            {
+              "label": "en.wikipedia.org",
+              "href": "https://en.wikipedia.org/wiki/2026_Binaliw_landslide"
+            },
+            {
+              "label": "cebudailynews.inquirer.net",
+              "href": "https://cebudailynews.inquirer.net/686177/binaliw-landfill-collapse-in-cebu-city-live-updates"
+            }
+          ],
+          "dynastyLinks": []
+        },
+        {
+          "timeDatetime": "2026-01-19",
+          "timeDisplay": "January 19, 2026",
+          "category": "Natural Disasters",
+          "categoryClass": "natural-disasters",
+          "borderColor": "#c77d10",
+          "headline": "Tropical Storm Ada Kills 2 in Bicol - Landslides and Flooding Hit Visayas",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-01-19&search=Tropical%20Storm%20Ada%20Kills%202%20in%20Bicol%20-%20Landslides%20and%20Flooding%20Hit%20Visayas",
+          "descriptionHtml": "<p>Ada killed at least two people in Matnog, Sorsogon, when a landslide destroyed a house, flooded Albay towns, and sent lahar down Mayon toward Legazpi. More than 5,000 passengers were stranded at Matnog port. The storm weakened to a low-pressure area on January 21 after flooding Caraga, Eastern Visayas, and Bicol.</p>",
+          "sourceLinks": [
+            {
+              "label": "rappler.com",
+              "href": "https://www.rappler.com/philippines/weather/tropical-storm-ada-update-pagasa-forecast-january-18-2026-11pm/"
+            },
+            {
+              "label": "rappler.com",
+              "href": "https://www.rappler.com/philippines/weather/tropical-depression-ada-lpa-update-pagasa-forecast-january-21-2026-5pm/"
+            }
+          ],
+          "dynastyLinks": []
+        },
+        {
+          "timeDatetime": "2026-01-20",
+          "timeDisplay": "January 20, 2026",
+          "category": "Natural Disasters",
+          "categoryClass": "natural-disasters",
+          "borderColor": "#c77d10",
+          "headline": "Mayon Volcano Eruption Continues - Lahar Warnings Issued",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-01-20&search=Mayon%20Volcano%20Eruption%20Continues%20-%20Lahar%20Warnings%20Issued",
+          "descriptionHtml": "<p>PHIVOLCS kept Alert Level 3 and counted 50 pyroclastic density currents in 24 hours as Ada's rain raised lahar risk in channels around Mayon. More than 4,000 residents remained in 14 shelters. Director Teresito Bacolcol said a jump to Level 4 was still unlikely.</p>",
+          "sourceLinks": [
+            {
+              "label": "volcanodiscovery.com",
+              "href": "https://www.volcanodiscovery.com/mayon/news/292522/Mayon-Volcano-Philippines-activity-update-Jan-20-2026-Continuing-eruption.html"
+            },
+            {
+              "label": "pna.gov.ph",
+              "href": "https://www.pna.gov.ph/articles/1267101"
+            }
+          ],
+          "dynastyLinks": []
+        }
+      ]
+    },
+    {
+      "title": "International Relations",
+      "articles": [
+        {
+          "timeDatetime": "2026-01-23",
+          "timeDisplay": "January 23, 2026",
+          "category": "International Relations",
+          "categoryClass": "international-relations",
+          "borderColor": "#0d7377",
+          "headline": "Cargo Ship MV Devon Bay Sinks in South China Sea - 2 Filipino Sailors Dead, 4 Missing",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-01-23&search=Cargo%20Ship%20MV%20Devon%20Bay%20Sinks%20in%20South%20China%20Sea%20-%202%20Filipino%20Sailors%20Dead%2C%204%20Missing",
+          "descriptionHtml": "<p>The Singapore-flagged MV Devon Bay, crewed by 21 Filipinos and carrying iron ore, capsized about 55 nautical miles from Scarborough Shoal. Two sailors died, four were missing, and 15 were rescued after Chinese coast-guard ships reached the scene first and the Philippine Coast Guard launched vessels and aircraft. Singapore's Maritime and Port Authority opened an investigation in disputed waters.</p>",
+          "sourceLinks": [
+            {
+              "label": "aljazeera.com",
+              "href": "https://www.aljazeera.com/news/2026/1/23/cargo-ship-capsizes-in-disputed-area-of-south-china-sea"
+            },
+            {
+              "label": "nbcnews.com",
+              "href": "https://www.nbcnews.com/world/asia/china-says-2-people-are-dead-cargo-ship-capsizes-scarborough-shoal-rcna255553"
+            },
+            {
+              "label": "washingtonpost.com",
+              "href": "https://www.washingtonpost.com/world/2026/01/23/philippines-boat-capsized-rescue-south-china-sea/c70bb77c-f822-11f0-9ceb-4c268b6e1369_story.html"
+            },
+            {
+              "label": "rappler.com",
+              "href": "https://www.rappler.com/philippines/filipinos-dead-search-rescue-operation-cargo-ship-west-sea/"
+            },
+            {
+              "label": "gmanetwork.com",
+              "href": "https://www.gmanetwork.com/news/topstories/nation/973895/china-coast-guard-rescues-13-filipinos-from-capsized-cargo-vessel-embassy/story/"
+            }
+          ],
+          "dynastyLinks": []
+        }
+      ]
+    },
+    {
+      "title": "Economic",
+      "articles": [
+        {
+          "timeDatetime": "2026-01-22",
+          "timeDisplay": "January 22, 2026",
+          "category": "Economic",
+          "categoryClass": "economic",
+          "borderColor": "#0b6e4f",
+          "headline": "AMRO Projects 5.3% GDP Growth for Philippines in 2026",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-01-22&search=AMRO%20Projects%205.3%25%20GDP%20Growth%20for%20Philippines%20in%202026",
+          "descriptionHtml": "<p>The ASEAN+3 Macroeconomic Research Office projected 5.3 percent Philippine growth in 2026, second in Southeast Asia after Vietnam, even after Manila cut its official target to 5–6 percent following the flood-control scandal. Capital Economics was more cautious at 4.5 percent. Inflation was seen at 3.2 percent, with a 25-basis-point BSP cut still expected in the first quarter.</p>",
+          "sourceLinks": [
+            {
+              "label": "bloomberg.com",
+              "href": "https://www.bloomberg.com/news/articles/2026-01-05/philippines-cuts-2026-gdp-growth-target-as-graft-pain-persists"
+            },
+            {
+              "label": "bworldonline.com",
+              "href": "https://www.bworldonline.com/top-stories/2026/01/22/725685/philippine-economy-likely-to-expand-by-5-3-in-2026-amro/"
+            },
+            {
+              "label": "business.inquirer.net",
+              "href": "https://business.inquirer.net/567025/philippine-economy-faces-make-or-break-year-in-2026"
+            }
+          ],
+          "dynastyLinks": []
+        }
+      ]
+    }
+  ],
   "ofwSection": {
     "title": "OFW & Diaspora News",
     "stats": [
@@ -139,14 +403,6 @@
         "details": {
           "label": "US corridor - 40.4% of total remittances",
           "href": "https://www.philstar.com/business/2026/01/11/2500056/philippines-emerges-battleground-faster-cheaper-digital-remittances"
-        }
-      },
-      {
-        "title": "ASEAN Para Games - Filipino Athletes Receive Bonuses",
-        "bodyHtml": "Filipino para athletes and coaches received ₱6,000 bonuses from the Philippine Sports Commission for the 2026 ASEAN Para Games in Thailand (January 20-26). The Philippines sent 216 athletes to the competition.",
-        "details": {
-          "label": "Thailand - Sports",
-          "href": "https://newsinfo.inquirer.net"
         }
       }
     ],

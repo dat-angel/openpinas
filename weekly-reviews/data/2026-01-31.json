@@ -3,23 +3,23 @@
   "weekEnding": "2026-01-31",
   "weekLabel": "January 25-31, 2026",
   "title": "OpenPinas: Weekly News Review",
-  "lastUpdated": "[DATE]",
+  "lastUpdated": "October 11, 2026",
   "prevWeekFile": null,
   "stats": [
     {
-      "number": "0",
-      "label": "Total Events"
+      "number": "6",
+      "label": "Stories"
     },
     {
-      "number": "0",
+      "number": "1",
       "label": "Political"
     },
     {
-      "number": "0",
+      "number": "1",
       "label": "Disasters"
     },
     {
-      "number": "0",
+      "number": "2",
       "label": "Dynasties"
     }
   ],
@@ -27,53 +27,53 @@
     "title": "Metro Manila Weather",
     "days": [
       {
-        "dateLabel": "Jan 18",
-        "name": "Sat",
-        "icon": "⛅",
-        "high": "30°",
-        "low": "25°"
-      },
-      {
-        "dateLabel": "Jan 19",
+        "dateLabel": "Jan 25",
         "name": "Sun",
         "icon": "⛅",
         "high": "30°",
-        "low": "25°"
-      },
-      {
-        "dateLabel": "Jan 20",
-        "name": "Mon",
-        "icon": "⛅",
-        "high": "30°",
-        "low": "25°"
-      },
-      {
-        "dateLabel": "Jan 21",
-        "name": "Tue",
-        "icon": "☁️",
-        "high": "28°",
         "low": "24°"
       },
       {
-        "dateLabel": "Jan 22",
+        "dateLabel": "Jan 26",
+        "name": "Mon",
+        "icon": "⛅",
+        "high": "30°",
+        "low": "24°"
+      },
+      {
+        "dateLabel": "Jan 27",
+        "name": "Tue",
+        "icon": "☁️",
+        "high": "29°",
+        "low": "24°"
+      },
+      {
+        "dateLabel": "Jan 28",
         "name": "Wed",
         "icon": "☁️",
         "high": "29°",
         "low": "24°"
       },
       {
-        "dateLabel": "Jan 23",
+        "dateLabel": "Jan 29",
         "name": "Thu",
         "icon": "⛅",
-        "high": "28°",
+        "high": "30°",
         "low": "24°"
       },
       {
-        "dateLabel": "Jan 24",
+        "dateLabel": "Jan 30",
         "name": "Fri",
         "icon": "⛅",
-        "high": "26°",
+        "high": "30°",
         "low": "24°"
+      },
+      {
+        "dateLabel": "Jan 31",
+        "name": "Sat",
+        "icon": "☀️",
+        "high": "31°",
+        "low": "25°"
       }
     ],
     "sourceNote": "Source: PAGASA"
@@ -103,7 +103,201 @@
     "contextHtml": "<strong>YTD:</strong> Peso weakened 1.34% over past 12 months. Trading around 59 per dollar after BSP rate cut signaled end of easing cycle.",
     "sourceNote": "Source: BSP / Bloomberg"
   },
-  "eventSections": [],
+  "eventSections": [
+    {
+      "title": "International Relations",
+      "articles": [
+        {
+          "timeDatetime": "2026-01-25",
+          "timeDisplay": "January 25, 2026",
+          "category": "International Relations",
+          "categoryClass": "international-relations",
+          "borderColor": "#0d7377",
+          "headline": "US-Philippines Joint Sail at Scarborough Shoal - 11th Maritime Cooperative Activity",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-01-25&search=US-Philippines%20Joint%20Sail%20at%20Scarborough%20Shoal%20-%2011th%20Maritime%20Cooperative%20Activity",
+          "descriptionHtml": "<p>AFP and US Indo-Pacific Command held their first 2026 maritime cooperative activity near Scarborough Shoal, the 11th since November 2023. The Philippines sent BRP Antonio Luna, a coast-guard OPV, and aircraft; the US sent USS John Finn and an MH-60R. The sail ran as ASEAN foreign ministers met in Cebu and Code of Conduct talks with China continued.</p>",
+          "sourceLinks": [
+            {
+              "label": "bloomberg.com",
+              "href": "https://www.bloomberg.com/news/articles/2026-01-27/us-philippines-stage-drills-at-disputed-shoal-claimed-by-china"
+            },
+            {
+              "label": "gmanetwork.com",
+              "href": "https://www.gmanetwork.com/news/topstories/nation/974306/philippines-us-hold-joint-sail-in-disputed-south-china-sea-shoal/story/"
+            },
+            {
+              "label": "bworldonline.com",
+              "href": "https://www.bworldonline.com/the-nation/2026/01/27/726671/philippines-us-hold-joint-sail-in-disputed-south-china-sea-shoal/"
+            }
+          ],
+          "dynastyLinks": [
+            {
+              "label": "Marcos-Romualdez",
+              "href": "/dynasties-network-visualization.html#dynasty-MARCOS_ROMUALDEZ"
+            }
+          ]
+        },
+        {
+          "timeDatetime": "2026-01-26",
+          "timeDisplay": "January 26, 2026",
+          "category": "International Relations",
+          "categoryClass": "international-relations",
+          "borderColor": "#0d7377",
+          "headline": "Philippines Protests China Over Escalating Diplomatic Tensions",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-01-26&search=Philippines%20Protests%20China%20Over%20Escalating%20Diplomatic%20Tensions",
+          "descriptionHtml": "<p>DFA made \"firm representations\" to the Chinese ambassador over public attacks on Philippine officials, including Coast Guard spokesperson Jay Tarriela, warning the exchanges could derail maritime diplomacy. Beijing had summoned Ambassador Jaime FlorCruz over Tarriela's remarks. Manila said protecting Filipino fishermen remains a lawful duty under the 2016 ruling.</p>",
+          "sourceLinks": [
+            {
+              "label": "apnews.com",
+              "href": "https://apnews.com/article/philippines-beijing-south-china-sea-disputes-dac69e3e7159dc3672879feeee87de5d"
+            },
+            {
+              "label": "philstar.com",
+              "href": "https://www.philstar.com/headlines/2026/01/05/2498804/philippines-stands-its-ground-against-more-assertive-china-west-philippine-sea"
+            }
+          ],
+          "dynastyLinks": []
+        }
+      ]
+    },
+    {
+      "title": "Natural Disasters",
+      "articles": [
+        {
+          "timeDatetime": "2026-01-26",
+          "timeDisplay": "January 26, 2026",
+          "category": "Natural Disasters",
+          "categoryClass": "natural-disasters",
+          "borderColor": "#c77d10",
+          "headline": "MV Trisha Kerstin 3 Ferry Sinks Off Basilan - At Least 31 Dead",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-01-26&search=MV%20Trisha%20Kerstin%203%20Ferry%20Sinks%20Off%20Basilan%20-%20At%20Least%2031%20Dead",
+          "descriptionHtml": "<p>The triple-decker ferry capsized about one nautical mile from Baluk-baluk Island shortly after midnight on the Zamboanga City–Jolo run, with 332 passengers and 27 crew aboard. At least 31 died and 10 were missing; 316 people were rescued. DOTR grounded Aleson Shipping's passenger fleet pending a nationwide safety audit.</p>",
+          "sourceLinks": [
+            {
+              "label": "aljazeera.com",
+              "href": "https://www.aljazeera.com/news/2026/1/26/ferry-carrying-over-350-people-sinks-in-philippines-killing-at-least-seven"
+            },
+            {
+              "label": "cbc.ca",
+              "href": "https://www.cbc.ca/news/world/philippines-ferry-sinks-9.7060761"
+            },
+            {
+              "label": "edition.cnn.com",
+              "href": "https://edition.cnn.com/2026/01/25/asia/ferry-sinking-philippines-basilan-intl-hnk"
+            },
+            {
+              "label": "rappler.com",
+              "href": "https://www.rappler.com/philippines/mindanao/basilan-ferry-sinking-deaths-updates-january-26-2026/"
+            },
+            {
+              "label": "en.wikipedia.org",
+              "href": "https://en.wikipedia.org/wiki/Sinking_of_MV_Trisha_Kerstin_3"
+            }
+          ],
+          "dynastyLinks": []
+        }
+      ]
+    },
+    {
+      "title": "Legal",
+      "articles": [
+        {
+          "timeDatetime": "2026-01-26",
+          "timeDisplay": "January 26, 2026",
+          "category": "Legal",
+          "categoryClass": "legal",
+          "borderColor": "#1e3a5f",
+          "headline": "ICC Rules Former President Duterte Fit to Stand Trial",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-01-26&search=ICC%20Rules%20Former%20President%20Duterte%20Fit%20to%20Stand%20Trial",
+          "descriptionHtml": "<p>ICC Pre-Trial Chamber I found Rodrigo Duterte fit to take part in pre-trial proceedings after a three-expert medical panel, rejecting an indefinite adjournment. The confirmation-of-charges hearing was set for February 23. Prosecutors allege he created and armed death squads that killed thousands during the drug war.</p>",
+          "sourceLinks": [
+            {
+              "label": "aljazeera.com",
+              "href": "https://www.aljazeera.com/news/2026/1/26/icc-judges-find-former-philippine-president-duterte-fit-to-stand-trial"
+            },
+            {
+              "label": "icc-cpi.int",
+              "href": "https://www.icc-cpi.int/news/situation-philippines-rodrigo-roa-duterte-fit-take-part-pre-trial-proceedings-confirmation"
+            },
+            {
+              "label": "pbs.org",
+              "href": "https://www.pbs.org/newshour/world/icc-judges-say-former-philippine-president-rodrigo-duterte-is-fit-to-stand-trial"
+            },
+            {
+              "label": "philstar.com",
+              "href": "https://www.philstar.com/headlines/2026/01/02/2498175/facing-crimes-against-humanity-duterte-turned-over-icc"
+            }
+          ],
+          "dynastyLinks": [
+            {
+              "label": "Duterte",
+              "href": "/dynasties-network-visualization.html#dynasty-DUTERTE_FAMILY"
+            }
+          ]
+        },
+        {
+          "timeDatetime": "2026-01-29",
+          "timeDisplay": "January 29, 2026",
+          "category": "Legal",
+          "categoryClass": "legal",
+          "borderColor": "#1e3a5f",
+          "headline": "Supreme Court Affirms Barring of VP Sara Duterte Impeachment",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-01-29&search=Supreme%20Court%20Affirms%20Barring%20of%20VP%20Sara%20Duterte%20Impeachment",
+          "descriptionHtml": "<p>The Court en banc unanimously denied reconsideration of its ruling that the 2025 impeachment of Vice President Sara Duterte violated the one-year bar. Spokesperson Camille Sue Mae Ting said any new complaint could be filed only from February 6. Separate plunder and graft complaints over ₱650 million in confidential funds had been filed on January 21.</p>",
+          "sourceLinks": [
+            {
+              "label": "rappler.com",
+              "href": "https://www.rappler.com/philippines/supreme-court-decision-affirms-appeal-sara-duterte-impeachment-unconstitutional/"
+            },
+            {
+              "label": "rappler.com",
+              "href": "https://www.rappler.com/philippines/sara-duterte-plunder-graft-complaint-confidential-funds-2026/"
+            }
+          ],
+          "dynastyLinks": [
+            {
+              "label": "Duterte",
+              "href": "/dynasties-network-visualization.html#dynasty-DUTERTE_FAMILY"
+            },
+            {
+              "label": "Marcos-Romualdez",
+              "href": "/dynasties-network-visualization.html#dynasty-MARCOS_ROMUALDEZ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Political",
+      "articles": [
+        {
+          "timeDatetime": "2026-01-28",
+          "timeDisplay": "January 28, 2026",
+          "category": "Political",
+          "categoryClass": "political",
+          "borderColor": "#3a0ca3",
+          "headline": "COMELEC Defers Bangsamoro Elections - Third Postponement",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-01-28&search=COMELEC%20Defers%20Bangsamoro%20Elections%20-%20Third%20Postponement",
+          "descriptionHtml": "<p>COMELEC deferred the March 30 Bangsamoro parliamentary elections, the third postponement since BARMM's 2019 creation, saying the calendar was no longer feasible. The new districting law, BAA 86, ran into the 120-day precinct-freeze rule. Congress must now set another date.</p>",
+          "sourceLinks": [
+            {
+              "label": "aa.com.tr",
+              "href": "https://www.aa.com.tr/en/asia-pacific/philippines-postpones-elections-in-bangsamoro-for-3rd-time/3704063"
+            },
+            {
+              "label": "rappler.com",
+              "href": "https://www.rappler.com/philippines/mindanao/comelec-defers-barmm-polls-march-2026/"
+            },
+            {
+              "label": "rappler.com",
+              "href": "https://www.rappler.com/philippines/mindanao/barmm-districting-law-risks-election-postponement-2026/"
+            }
+          ],
+          "dynastyLinks": []
+        }
+      ]
+    }
+  ],
   "ofwSection": {
     "title": "OFW & Diaspora News",
     "stats": [
@@ -126,27 +320,19 @@
     ],
     "stories": [
       {
-        "title": "MV Devon Bay Sinks in South China Sea - 2 Filipino Sailors Dead",
-        "bodyHtml": "A Singapore-flagged cargo ship with 21 Filipino crew members capsized near Scarborough Shoal. Chinese Coast Guard rescued 15 survivors; 2 died and 4 remain missing. The incident highlights risks faced by Filipino seafarers in disputed waters.",
+        "title": "Basilan Ferry Disaster Hits Island Families Dependent on Sea Travel",
+        "bodyHtml": "The sinking of MV Trisha Kerstin 3 off Basilan killed at least 31 people among 332 passengers and 27 crew on the Zamboanga–Jolo run. DOTR grounded Aleson Shipping's passenger fleet and ordered a nationwide maritime safety audit after the company's second major incident since 2023.",
         "details": {
-          "label": "Maritime sector - South China Sea",
-          "href": "https://www.aljazeera.com/news/2026/1/23/cargo-ship-capsizes-in-disputed-area-of-south-china-sea"
+          "label": "Mindanao ferry routes",
+          "href": "https://www.rappler.com/philippines/mindanao/basilan-ferry-sinking-deaths-updates-january-26-2026/"
         }
       },
       {
-        "title": "Digital Remittances Growing Rapidly in Philippines",
-        "bodyHtml": "J.P. Morgan sees the Philippines at the center of Asia's cross-border remittance growth, driven by digital wallets and instant payment schemes. The 1% US remittance tax that took effect January 1 may accelerate shift to digital platforms with lower fees.",
+        "title": "ICC Rules Rodrigo Duterte Fit for Pre-Trial — Diaspora Rights Groups Watch February Hearing",
+        "bodyHtml": "ICC judges found the former president able to exercise his procedural rights and set the confirmation-of-charges hearing for February 23. Overseas Filipino human-rights groups that have followed the drug-war case treated the fitness ruling as the last procedural gate before evidence is tested.",
         "details": {
-          "label": "US corridor - 40.4% of total remittances",
-          "href": "https://www.philstar.com/business/2026/01/11/2500056/philippines-emerges-battleground-faster-cheaper-digital-remittances"
-        }
-      },
-      {
-        "title": "ASEAN Para Games - Filipino Athletes Receive Bonuses",
-        "bodyHtml": "Filipino para athletes and coaches received ₱6,000 bonuses from the Philippine Sports Commission for the 2026 ASEAN Para Games in Thailand (January 20-26). The Philippines sent 216 athletes to the competition.",
-        "details": {
-          "label": "Thailand - Sports",
-          "href": "https://newsinfo.inquirer.net"
+          "label": "International Criminal Court",
+          "href": "https://www.icc-cpi.int/news/situation-philippines-rodrigo-roa-duterte-fit-take-part-pre-trial-proceedings-confirmation"
         }
       }
     ],
