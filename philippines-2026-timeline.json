@@ -4,9 +4,9 @@
   "prepared_for": "Filipino Diaspora Communities Worldwide",
   "metadata": {
     "purpose": "Comprehensive timeline of major Philippine events in 2026 to help overseas Filipinos understand developments affecting families, remittances, investments, and homeland governance",
-    "last_updated": "October 3, 2026",
+    "last_updated": "October 11, 2026",
     "aggregation_note": "This timeline is aggregated by month as events unfold. Weekly reviews provide more detailed coverage.",
-    "total_events": 260,
+    "total_events": 267,
     "categories": [
       "Political",
       "Cultural",
@@ -5074,6 +5074,145 @@
         ]
       },
       "weekly_review": "weekly-reviews/weekly-review-2026-10-03.html"
+    },
+    {
+      "date": "2026-10-06",
+      "month": "October",
+      "title": "Anti-dynasty campaigners turn to a people's initiative as Congress stalls",
+      "category": "Political",
+      "description": "Three weeks after the Supreme Court's August 26 decision — released on September 16 — held that Congress's 39-year failure to pass an anti-political-dynasty law was grave abuse of discretion, the pressure moved outside the legislature. Organizers of the D1L people's initiative asked voters in Northern Mindanao on October 5 to sign an online petition limiting a political family to one national and one local post, barring relatives within the fourth degree from holding office simultaneously, prohibiting position-switching and imposing a one-term cooling-off period; they need signatures from 10% of registered voters nationwide, about 7.5 million, including 3% in every legislative district, by January 31, 2027. On October 6 the Catholic Educational Association of the Philippines cited research linking strong dynastic presence to poverty, inequality, weaker human development and political violence, and Caloocan Rep. Edgar Erice pressed colleagues to pass a genuine law rather than the narrower second-degree rules in House Bill 8389. The Court set no deadline, so the question this week became whether a signature drive can outpace a Congress whose own members are the law's subjects.",
+      "mentioned_dynasties": [],
+      "sources": {
+        "international": [],
+        "local": [
+          "https://www.philstar.com/headlines/2026/10/06/2561209/dynasties-stronger-poverty-stricken-areas-ceap",
+          "https://newsinfo.inquirer.net/2317191/northern-mindanao-public-urged-to-back-anti-dynasty-bill-via-pi",
+          "https://remate.ph/erice-challenges-congress-to-pass-true-anti-political-dynasty-law/",
+          "https://tribune.net.ph/2026/09/16/sc-orders-congress-to-enact-anti-political-dynasty-law"
+        ]
+      },
+      "weekly_review": "weekly-reviews/weekly-review-2026-10-10.html"
+    },
+    {
+      "date": "2026-10-06",
+      "month": "October",
+      "title": "Inflation returns to a three-year high of 7.2% as pump prices split",
+      "category": "Economic",
+      "description": "The Philippine Statistics Authority reported on October 6 that September headline inflation accelerated to 7.2% from 6.1% in August and 1.7% a year earlier, matching April's rate and the fastest since the 7.6% of March 2023, as food, utilities and transport costs rose faster. Core inflation quickened to 4.7% from 4.1%, and the January-to-September average reached 5.4%, leaving the headline rate above the Bangko Sentral ng Pilipinas's 3% target for a seventh straight month. The print sat inside the BSP's 6.4% to 7.4% forecast but above the 6.8% median of economists polled by the Inquirer, and pump prices moved in opposite directions the same day: gasoline rose ₱1.90 to ₱1.93 a liter and kerosene ₱3.30, while diesel fell ₱1.30. Bank of the Philippine Islands lead economist Emilio Neri Jr. expects a 25-basis-point increase at the BSP's October 22 meeting and another in December, so the official response to September's prices will reach households through borrowing costs rather than through the prices themselves.",
+      "mentioned_dynasties": [],
+      "sources": {
+        "international": [],
+        "local": [
+          "https://www.gmanetwork.com/news/money/economy/1004884/inflation-snaps-four-month-easing-accelerates-to-7-2-in-september-2026/story/",
+          "https://bworldonline.com/top-stories/2026/10/06/784925/philippine-inflation-heats-up-to-3-year-high/",
+          "https://business.inquirer.net/614566/ph-inflation-surged-to-3-yr-high-of-7-2-in-september",
+          "https://doe.gov.ph/liquid-fuels-and-lpg-price-adjustments-for-6-13-october-2026",
+          "https://www.rappler.com/business/fuel-prices-adjustments-october-6-2026/"
+        ]
+      },
+      "weekly_review": "weekly-reviews/weekly-review-2026-10-10.html"
+    },
+    {
+      "date": "2026-10-07",
+      "month": "October",
+      "title": "House passes the ₱7.2-trillion 2027 budget with ₱116 billion realigned",
+      "category": "Political",
+      "description": "The House of Representatives approved House Bill 10858, the ₱7.2-trillion 2027 General Appropriations Bill, on second reading by voice vote on October 7, about ₱407 billion or 6% above the 2026 budget. Lawmakers complained that more than ₱116 billion in realignments cleared by the chamber's Budget Amendments Review Subcommittee on October 1 — redirected to health, social welfare, agriculture, infrastructure and education — were not itemized for them; House leaders answered that deliberations were livestreamed and the amendments published. The chamber extended its plenary session to October 12 for the third and final vote, Malacañang said on October 5 that it would not promise enactment within the year, and the Senate has postponed budget work for the impeachment trial. With flood-control cases still moving through the Sandiganbayan, the fight over unexplained realignments is the first test of whether the 2027 budget draws closer scrutiny than the last one.",
+      "mentioned_dynasties": [
+        "MARCOS_ROMUALDEZ"
+      ],
+      "sources": {
+        "international": [],
+        "local": [
+          "https://bworldonline.com/the-nation/2026/10/07/785292/house-oks-p7-2-t-2027-budget-on-second-reading/",
+          "https://businessmirror.com.ph/2026/10/07/house-oks-p7-2-t-2027-budget-on-second-reading/",
+          "https://www.gmanetwork.com/news/topstories/nation/1005284/house-passes-p7-2-trillion-national-budget-on-2nd-reading/story/",
+          "https://businessmirror.com.ph/2026/10/05/palace-expects-delays-in-congress-ok-of-27-budget/",
+          "https://bworldonline.com/the-nation/2026/10/11/786032/rushed-2027-budget-poses-bigger-economic-risk-than-delays-analysts/"
+        ]
+      },
+      "weekly_review": "weekly-reviews/weekly-review-2026-10-10.html"
+    },
+    {
+      "date": "2026-10-08",
+      "month": "October",
+      "title": "ICC finds Duterte fit to stand trial and declines to narrow the charges",
+      "category": "Legal",
+      "description": "Trial Chamber III made public on October 8 its September 28 decision that Rodrigo Duterte is fit to stand trial, relying on an expert panel that unanimously found he can understand the charges and the evidence, follow the proceedings and instruct counsel; the chamber rejected defense requests for a further medical examination, for questioning of the panel and for an oral hearing. A second decision published October 9 refused a defense bid to make prosecutors recast the charges as a closed list of killings, holding that only the prosecutor may seek to change confirmed charges and only with the Pre-Trial Chamber's leave. The judges admitted Incidents 50 to 55 under Count 3 and Incident 56 under Count 2, bringing the case to 56 incidents, but struck Incident 57 as falling outside Count 2's July 2016 to July 2017 period, and ordered the prosecution to update its trial brief, witness list and evidence list by October 16. With the trial opening November 30, the two rulings remove the procedural grounds the defense had used to argue for delay.",
+      "mentioned_dynasties": [
+        "DUTERTE_FAMILY"
+      ],
+      "sources": {
+        "international": [
+          "https://www.icc-cpi.int/news/situation-philippines-rodrigo-roa-duterte-fit-stand-trial",
+          "https://www.icc-cpi.int/sites/default/files/CourtRecords/0902ebd180fa5cd6.pdf"
+        ],
+        "local": [
+          "https://www.gmanetwork.com/news/topstories/nation/1005416/icc-trial-chamber-iii-orders-prosecution-to-remove-incident-57-from-duterte-trial-brief/story/",
+          "https://www.philstar.com/headlines/2026/10/10/2562253/icc-allows-seven-more-drug-war-incidents-duterte-case"
+        ]
+      },
+      "weekly_review": "weekly-reviews/weekly-review-2026-10-10.html"
+    },
+    {
+      "date": "2026-10-09",
+      "month": "October",
+      "title": "Prosecution drops the bribery article and ends with the unexplained-wealth case",
+      "category": "Political",
+      "description": "House prosecutors told the Senate impeachment court in an October 6 manifestation that they would present no evidence on Article III, the allegation that Vice President Sara Duterte bribed Department of Education officials; prosecutor Jonathan Keith Flores confirmed the filing on October 9 and said the decision turned on the panel's timetable rather than the strength of the case. On the trial's 37th day, forensic financial analyst Alexander Cabrera estimated that Duterte and her husband, lawyer Manases Carpio, held ₱817.88 million in undeclared assets and unexplained wealth from 2022 to 2025, and the prosecution named him its final witness on Article II; the court also ordered the livestream taken down that day after a Bureau of Internal Revenue official objected to revenue officers' names appearing on screen. Earlier in the week the Anti-Money Laundering Council's Ronel Buenaventura testified to 666 covered and 55 suspicious transaction reports involving the couple worth about ₱4.4 billion from 2007 to 2025, while a BIR official put their combined after-tax income over the same period at ₱85.34 million against a declared 2025 net worth of ₱98.66 million. Cabrera's total is a prosecution expert's estimate rather than a judicial finding, and the defense begins cross-examining him on October 12.",
+      "mentioned_dynasties": [
+        "DUTERTE_FAMILY"
+      ],
+      "sources": {
+        "international": [],
+        "local": [
+          "https://newsinfo.inquirer.net/2321676/icymi-sara-duterte-impeachment-trial-week-14-highlights",
+          "https://verafiles.org/articles/week-14-impeachment-trial-sara-dutertes-alleged-p818m-undeclared-assets-and-unexplained-wealth",
+          "https://www.rappler.com/philippines/prosecution-drops-bribery-case-vice-president-sara-duterte-impeachment-trial/",
+          "https://www.gmanetwork.com/news/topstories/nation/1005314/icymi-live-updates-sara-duterte-impeachment-trial-october-9-2026/story/",
+          "https://newsinfo.inquirer.net/2320567/flores-confirms-prosec-manifested-dropping-bribery-article-vs-duterte",
+          "https://www.rappler.com/philippines/vice-president-sara-duterte-impeachment-trial-updates-videos/"
+        ]
+      },
+      "weekly_review": "weekly-reviews/weekly-review-2026-10-10.html"
+    },
+    {
+      "date": "2026-10-09",
+      "month": "October",
+      "title": "Sandiganbayan lets a jailed Romualdez sign his pre-trial order and appear by video",
+      "category": "Legal",
+      "description": "The Sandiganbayan Third Division resolved on October 9 that former Speaker Martin Romualdez may sign the court's pre-trial order on October 12 inside the New Quezon City Jail in Payatas, where he is detained, and may attend hearings by videoconference once he files an informed written waiver under the Supreme Court's videoconferencing guidelines. The court said it may still require him to appear in person. Romualdez, former Ako Bicol Rep. Zaldy Co, now a fugitive, and two others face plunder over roughly ₱7.4 billion in alleged kickbacks from government projects between 2022 and 2025; he has pleaded not guilty, and hearings on his bail petition open October 12. The arrangement keeps the highest-profile flood-control case moving without producing the former Speaker in open court.",
+      "mentioned_dynasties": [
+        "MARCOS_ROMUALDEZ"
+      ],
+      "sources": {
+        "international": [],
+        "local": [
+          "https://newsinfo.inquirer.net/2321043/sandiganbayan-grants-romualdezs-motion-to-sign-pre-trial-order-at-qc-jail",
+          "https://tribune.net.ph/2026/10/10/court-allows-romualdez-remote-hearings",
+          "https://www.philstar.com/headlines/2026/10/11/2562354/romualdez-allowed-sign-court-order-jail",
+          "https://www.gmanetwork.com/news/topstories/nation/1005421/sandiganbayan-allows-romualdez-to-sign-pre-trial-order-at-qc-payatas-jail-on-oct-12/story/"
+        ]
+      },
+      "weekly_review": "weekly-reviews/weekly-review-2026-10-10.html"
+    },
+    {
+      "date": "2026-10-09",
+      "month": "October",
+      "title": "A Chinese militia mothership returns to Kota Island after 11 days",
+      "category": "International Relations",
+      "description": "Coast guard personnel stationed on Kota Island in the Kalayaan Island Group sighted Chinese Maritime Militia Vessel 9622 and 22 sampans about 0.55 nautical miles northwest of the island at 3 p.m. on October 9, the nearest boat roughly 250 meters from the shoreline and well inside the island's 12-nautical-mile territorial sea; the Philippine Coast Guard said the boats were fishing without authority and dumping waste at sea. Two rubber boats carrying coast guard, Marine Corps and Navy personnel went out half an hour later, and PCG West Philippine Sea spokesman Rear Admiral Jay Tarriela said the Chinese mothership circled them while its master claimed the area as Chinese territory and ordered the Filipinos to leave; by 5:30 p.m. all the Chinese vessels had been pushed about 3.5 nautical miles out and left to the northwest, with no injuries reported. The same vessel had deployed 24 sampans off Kota on September 28, and the National Task Force for the West Philippine Sea condemned the return on October 10 as a breach of the Philippine Maritime Zones Act and the Fisheries Code. Two intrusions by one mothership in eleven days shifts the question from a single incident to whether a coordinated Chinese presence inside a Philippine territorial sea becomes routine.",
+      "mentioned_dynasties": [],
+      "sources": {
+        "international": [],
+        "local": [
+          "https://www.gmanetwork.com/news/topstories/nation/1005407/pcg-repels-chinese-militia-vessel-22-fishing-boats-from-kota-island-waters/story/",
+          "https://www.philstar.com/headlines/2026/10/11/2562464/chinese-militia-vessel-22-sampans-intrude-palawan-waters",
+          "https://www.inquirer.net/492513/same-chinese-militia-vessel-returns-to-kota-island-after-11-days-2/",
+          "https://www.dzrh.com.ph/post/pcg-navy-marines-drive-away-chinese-militia-vessel-22-sampans-from-kota-island"
+        ]
+      },
+      "weekly_review": "weekly-reviews/weekly-review-2026-10-10.html"
     }
   ],
   "ofw_highlights": {
