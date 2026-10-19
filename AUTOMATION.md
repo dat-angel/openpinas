@@ -37,7 +37,7 @@ Repository secrets, all optional except the bypass secret when Deployment Protec
 - `VERCEL_AUTOMATION_BYPASS_SECRET` — sent as `x-vercel-protection-bypass`. Without it, a protected preview is reported and the content check is skipped instead of treating Vercel’s login page as the site.
 - `VERCEL_TOKEN`, `VERCEL_TEAM_ID`, `VERCEL_PROJECT_ID` — required to resolve toolbar threads
 
-Locally, against a running app:
+Locally, against a running app (`playwright@1.55.0` is installed by `npm ci`):
 
 ```bash
 npm run check:preview -- --url http://127.0.0.1:3000

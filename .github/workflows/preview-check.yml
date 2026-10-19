@@ -46,6 +46,8 @@ jobs:
 
       - name: Install dependencies
         run: npm ci
+        env:
+          PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD: "1"
 
       - name: Resolve the preview URL
         id: preview
@@ -88,7 +90,6 @@ jobs:
           VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
           VERCEL_AUTOMATION_BYPASS_SECRET: ${{ secrets.VERCEL_AUTOMATION_BYPASS_SECRET }}
         run: |
-          npm install --no-save --no-package-lock playwright@1.55.0
           npx playwright install --with-deps chromium
           node scripts/check-preview.mjs --url "$PREVIEW_URL" --branch "$PREVIEW_BRANCH" --visual --resolve --summary preview-check-artifacts/summary.md
 
