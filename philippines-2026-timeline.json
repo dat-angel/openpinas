@@ -4,9 +4,9 @@
   "prepared_for": "Filipino Diaspora Communities Worldwide",
   "metadata": {
     "purpose": "Comprehensive timeline of major Philippine events in 2026 to help overseas Filipinos understand developments affecting families, remittances, investments, and homeland governance",
-    "last_updated": "October 11, 2026",
+    "last_updated": "October 19, 2026",
     "aggregation_note": "This timeline is aggregated by month as events unfold. Weekly reviews provide more detailed coverage.",
-    "total_events": 267,
+    "total_events": 274,
     "categories": [
       "Political",
       "Cultural",
@@ -5219,6 +5219,140 @@
         ]
       },
       "weekly_review": "weekly-reviews/weekly-review-2026-10-10.html"
+    },
+    {
+      "date": "2026-10-11",
+      "month": "October",
+      "title": "Marcos calls the Ayungin water-cannon medevac a new phase of escalation",
+      "category": "International Relations",
+      "description": "President Ferdinand Marcos Jr. said in Singapore on October 11 that China's obstruction of an October 8 medical evacuation at Ayungin (Second Thomas) Shoal appeared to mark a \"new phase\" of escalation in the West Philippine Sea, and that the episode would enter talks on the 2024 provisional understanding and the ASEAN-China Code of Conduct. The Philippine Coast Guard said China Coast Guard vessel 5306 switched on its water cannon about 17 kilometers north of the shoal and closed from about 2.4 kilometers to roughly 366 meters on BRP Cabra, delaying the pickup of a sick Navy sailor from the BRP Sierra Madre by nearly ten hours; the sailor was later flown to Puerto Princesa. Marcos rejected any requirement to seek Chinese permission in Philippine waters and said even wartime practice lets the Red Cross through. Beijing has denied the accusations, so the week's shift is the president naming a new phase rather than a new location.",
+      "mentioned_dynasties": [
+        "MARCOS_ROMUALDEZ"
+      ],
+      "sources": {
+        "international": [],
+        "local": [
+          "https://www.inquirer.net/492591/marcos-sees-new-phase-of-escalation-in-west-philippine-sea/",
+          "https://www.philstar.com/headlines/2026/10/12/2562551/president-marcos-admits-escalation-tensions-ayungin",
+          "https://tribune.net.ph/2026/10/11/marcos-ayungin-incident-may-affect-asean-china-coc-talks"
+        ]
+      },
+      "weekly_review": "weekly-reviews/weekly-review-2026-10-17.html"
+    },
+    {
+      "date": "2026-10-12",
+      "month": "October",
+      "title": "House sends the ₱7.2-trillion 2027 budget to the Senate on a 281-13 vote",
+      "category": "Political",
+      "description": "The House of Representatives on October 12 approved House Bill 10858, the ₱7.2-trillion 2027 General Appropriations Bill, on third and final reading by 281 votes to 13 with one abstention, about ₱407 billion or 6% above this year's ₱6.793-trillion plan. The chamber's Budget Amendments Review Subcommittee had identified ₱116.32 billion in reallocations, including crisis assistance, medical aid, farm support and a new ₱1-billion fuel-subsidy line; minority lawmakers said the shifts favored discretionary aid and local projects over classrooms, immunization and disaster response. Senate President Sherwin Gatchalian has said plenary budget work is targeted for November 9. The vote moves the fight over unexplained realignments to a Senate that postponed budget hearings for the impeachment trial.",
+      "mentioned_dynasties": [
+        "MARCOS_ROMUALDEZ"
+      ],
+      "sources": {
+        "international": [],
+        "local": [
+          "https://www.gmanetwork.com/news/topstories/nation/1005658/house-approves-p7-2-trillion-2027-budget-on-final-reading/story/",
+          "https://bworldonline.com/the-nation/2026/10/12/786373/house-oks-p7-2-t-budget-amid-criticism-of-spending-changes/",
+          "https://www.philstar.com/headlines/2026/10/13/2562859/house-votes-281-13-pass-2027-budget"
+        ]
+      },
+      "weekly_review": "weekly-reviews/weekly-review-2026-10-17.html"
+    },
+    {
+      "date": "2026-10-12",
+      "month": "October",
+      "title": "A Riyadh airport attack strands OFWs and leaves four Filipinos hurt",
+      "category": "OFW/Diaspora",
+      "description": "After an October 10 attack on King Khalid International Airport in Riyadh, the Department of Migrant Workers said on October 12 that four Filipinos were hurt, three of them in intensive care, and that no Filipino deaths had been reported. OWWA Administrator Patricia Yvonne Caunan counted 30 Filipinos stranded in Riyadh — 20 in government-sponsored hotels — while Secretary Hans Cacdac said the department was assisting 94 workers whose flights had been diverted to Jeddah and 37 in Manila whose Riyadh flights were cancelled; he imposed no deployment ban. By October 17 the department said it would fly an initial 200 stranded OFWs home at government expense after Philippine Airlines suspended Riyadh service through November 29 and Cebu Pacific through October 31. The attack is a Saudi security event, but the week made it a Philippine labor-migration crisis.",
+      "mentioned_dynasties": [],
+      "sources": {
+        "international": [],
+        "local": [
+          "https://www.gmanetwork.com/news/pinoyabroad/dispatch/1005607/30-filipinos-stranded-in-riyadh-after-airport-attack/story/",
+          "https://www.philstar.com/headlines/2026/10/12/2562640/4-filipinos-hurt-riyadh-airport-attack-3-icu",
+          "https://globalnation.inquirer.net/341693/dmw-owwa-assist-94-ofws-diverted-from-riyadh-to-jeddah",
+          "https://www.gmanetwork.com/news/pinoyabroad/dispatch/1006215/dmw-200-ofws-stranded-in-riyadh-saudi-arabia-to-be-brought-home-to-ph/story/"
+        ]
+      },
+      "weekly_review": "weekly-reviews/weekly-review-2026-10-17.html"
+    },
+    {
+      "date": "2026-10-13",
+      "month": "October",
+      "title": "Prosecutors drop three impeachment articles and leave only unexplained wealth",
+      "category": "Political",
+      "description": "After defense counsel on October 12 pressed forensic analyst Alexander Cabrera over a report he said used only prosecution-supplied records, the Senate impeachment court on October 13 accepted the House prosecution's withdrawal of Articles I, III and IV — confidential funds, bribery, and grave threats — leaving Vice President Sara Duterte to face only Article II, unexplained wealth. Presiding officer Francis Escudero said Articles I and IV cannot be revived or refiled this term on the same facts, that the bribery article was dropped before any evidence was presented, and that the defense need not answer the withdrawn charges; he also lifted the sub judice rule on those articles, a step lead counsel Sheila Sison called completely unfair. Prosecutors must file their formal offer of evidence by October 23, and the defense begins on November 9. Outside court Duterte said she will never resign and will run for president in 2028, so the trial now turns on a single charge with that race already in view.",
+      "mentioned_dynasties": [
+        "DUTERTE_FAMILY"
+      ],
+      "sources": {
+        "international": [],
+        "local": [
+          "https://www.gmanetwork.com/news/topstories/nation/1005756/senate-court-allows-prosecution-to-drop-3-impeachment-articles-vs-sara-duterte/story/",
+          "https://www.philstar.com/headlines/2026/10/13/2562940/impeach-court-grants-prosecution-bid-drop-3-4-charges-vs-vp-sara",
+          "https://www.philstar.com/headlines/2026/10/14/2563117/vp-sara-i-will-not-resign-i-will-never-resign",
+          "https://www.gmanetwork.com/news/topstories/nation/1005761/sara-duterte-stresses-plan-to-run-for-president-in-2028-warns-of-fraud/story/",
+          "https://www.gmanetwork.com/news/topstories/nation/1005610/cabrera-says-report-not-based-on-sara-duterte-mans-carpio-financial-documents/story/"
+        ]
+      },
+      "weekly_review": "weekly-reviews/weekly-review-2026-10-17.html"
+    },
+    {
+      "date": "2026-10-13",
+      "month": "October",
+      "title": "Fact-checks kill a fake December 14 BSKE date as RA 12326 stays in force",
+      "category": "Political",
+      "description": "VERA Files and Rappler this week fact-checked a circulating graphic that set the next barangay and Sangguniang Kabataan elections for December 14, 2026; the Commission on Elections had already flagged the image as fake on October 10 and said Republic Act 12326 remains in force because the Supreme Court has issued no temporary restraining order. Signed on September 24, the law moved the polls from November 2, 2026, to November 13, 2028, and stretched incumbent terms from four years to five. Election lawyer Romulo Macalintal's September 28 petition and an October 5 youth petition still sit at the Court; a separate viral claim that the Court had already junked the postponement was also false. Until the Court acts, the postponed village elections keep thousands of incumbent barangay and SK officials in place.",
+      "mentioned_dynasties": [],
+      "sources": {
+        "international": [],
+        "local": [
+          "https://verafiles.org/articles/fact-check-no-barangay-sk-polls-on-dec-14",
+          "https://verafiles.org/articles/fact-check-sc-did-not-junk-law-resetting-bske-to-2028",
+          "https://www.rappler.com/newsbreak/fact-check/comelec-no-barangay-sangguniang-kabataan-elections-december-14-2026/",
+          "https://newsinfo.inquirer.net/2321047/no-bske-in-december-2026-polls-set-for-november-2028"
+        ]
+      },
+      "weekly_review": "weekly-reviews/weekly-review-2026-10-17.html"
+    },
+    {
+      "date": "2026-10-13",
+      "month": "October",
+      "title": "Drug-war victims file their ICC trial brief as hearings near",
+      "category": "Legal",
+      "description": "The common legal representatives of 539 participating victims submitted a 108-page trial brief dated October 13 describing what they called the dehumanization of people targeted in Rodrigo Duterte's drug war, including reward-and-quota systems, the labeling of the dead as nanlaban, and harm that they said continues while support for the campaign's architects remains significant. Filipino lawyers Joel Butuyan and Gilbert Andres, with Paolina Massidda of the ICC's Office of Public Counsel for Victims, wrote that most of the dead were household breadwinners from dense urban-poor areas. The same day Trial Chamber III held its fourth status conference in The Hague, and counsel Kristina Conti said the first trial week is set for four hours of sittings a day. The brief puts the victims' account on the record before the November 30 opening, separate from the prosecutor's case.",
+      "mentioned_dynasties": [
+        "DUTERTE_FAMILY"
+      ],
+      "sources": {
+        "international": [
+          "https://www.icc-cpi.int/sites/default/files/CourtRecords/0902ebd180faa827.pdf"
+        ],
+        "local": [
+          "https://www.philstar.com/headlines/2026/10/16/2563578/dutertes-drug-war-dehumanized-people",
+          "https://www.gmanetwork.com/news/topstories/nation/1005821/conti-drug-war-victims-prepare-mentally-for-icc-proceedings/story/"
+        ]
+      },
+      "weekly_review": "weekly-reviews/weekly-review-2026-10-17.html"
+    },
+    {
+      "date": "2026-10-15",
+      "month": "October",
+      "title": "A witness tells the Sandiganbayan ₱1 billion in cash went to Romualdez",
+      "category": "Legal",
+      "description": "Rodante Orbillo, a former aide of fugitive ex-representative Zaldy Co, told the Sandiganbayan Third Division on October 15 that about 100 suitcases holding some ₱1 billion in cash were delivered in 2023 and 2024 to former Speaker Martin Romualdez's Forbes Park house and three other properties, and that he took part in more than ten of the trips. He said the money was counted at Co's residences first, that he identified the Makati house by Romualdez's driver, and that he turned down an offer of ₱15 million to ₱20 million to recant; the prosecution also showed a black durabox he said was used before the suitcases. Romualdez, detained in the New Quezon City Jail on a roughly ₱7.4-billion plunder case, has pleaded not guilty, and the testimony is an allegation in a bail hearing, not a finding. The week's evidence puts a specific cash trail in front of the court that will decide whether the former Speaker stays in jail.",
+      "mentioned_dynasties": [
+        "MARCOS_ROMUALDEZ"
+      ],
+      "sources": {
+        "international": [],
+        "local": [
+          "https://www.gmanetwork.com/news/topstories/nation/1006001/zaldy-co-aide-i-turned-down-p15-m-offer-to-recant-allegations-vs-romualdez/story/",
+          "https://www.philstar.com/headlines/2026/10/16/2563595/ex-co-aide-p1-billion-brought-romualdezs-house",
+          "https://newsinfo.inquirer.net/2324384/before-maleta-durabox-used-to-haul-alleged-kickbacks-sandiganbayan-told"
+        ]
+      },
+      "weekly_review": "weekly-reviews/weekly-review-2026-10-17.html"
     }
   ],
   "ofw_highlights": {
