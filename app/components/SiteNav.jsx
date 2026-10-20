@@ -35,6 +35,7 @@ const LINKS = [
   { href: "/weekly-reviews/index.html", label: "Reviews" },
   { href: "/dynasties-network-visualization.html", label: "Map" },
   { href: "/interactive-timeline/index.html", label: "Timeline" },
+  { href: "/sources-and-related-projects.html", label: "Sources" },
   { href: "https://github.com/dat-angel/openpinas", label: "GitHub", external: true },
 ];
 

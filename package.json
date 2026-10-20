@@ -6,9 +6,10 @@
     "node": ">=20.9.0"
   },
   "scripts": {
-    "predev": "node scripts/sync-openpinas-public.cjs",
+    "source-counts": "node scripts/source-counts.mjs",
+    "predev": "node scripts/source-counts.mjs && node scripts/sync-openpinas-public.cjs",
     "dev": "next dev",
-    "prebuild": "node scripts/sync-openpinas-public.cjs",
+    "prebuild": "node scripts/source-counts.mjs && node scripts/sync-openpinas-public.cjs",
     "build": "next build",
     "postbuild": "node scripts/ensure-out-routes-manifest.cjs",
     "start": "next start",
