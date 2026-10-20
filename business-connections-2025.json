@@ -6,7 +6,14 @@
     "last_updated": "2026-01-03",
     "data_scope": "initial_collection_phase_1_expanded",
     "status": "data_structure_expanded",
-    "notes": "Initial data collection complete. Additional conglomerates added (JG Summit, LT Group, Aboitiz, GT Capital). Data structures created for government contracts, campaign financing, and PBA history. Ready for data collection phase."
+    "notes": "Initial data collection complete. Additional conglomerates added (JG Summit, LT Group, Aboitiz, GT Capital). Data structures created for government contracts, campaign financing, and PBA history. Ready for data collection phase.",
+    "sources": [
+      {
+        "name": "Unsourced — provenance unknown",
+        "url": "",
+        "used_for": "No publication is cited for these records. File notes say ownership structures still need SEC verification. Do not treat the connections as independently verified."
+      }
+    ]
   },
   "sports": {
     "pba_teams": [
