@@ -1,7 +1,7 @@
 import path from 'node:path';
 import { promises as fs } from 'node:fs';
 
-const IGNORE_DIRS = new Set(['.git', 'node_modules', '.next', 'out']);
+const IGNORE_DIRS = new Set(['.git', 'node_modules', '.next', 'out', 'drafts']);
 
 export async function collectHtmlFiles(rootDir) {
   const out = [];
