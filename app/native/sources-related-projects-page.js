@@ -13,7 +13,17 @@ const DATASETS = [
   {
     file: "philippine-political-dynasties-network-2025.json",
     sources:
-      "PCIJ for the December 2024 governors figure; Ateneo Policy Center / Mendoza et al. (2019) for the House, mayor, and 2004–2019 concentration shares stored under power_metrics. Node-level family records have no per-entry citations.",
+      "PCIJ for the December 2024 governors count; Ateneo Policy Center / Mendoza et al. (2019) for House and mayor shares. Node-level records have no citations.",
+    sourceHrefs: [
+      {
+        href: "https://pcij.org/2024/12/08/governors-political-dynasties-philippines-provinces-elections/",
+        label: "PCIJ, Dec 2024",
+      },
+      {
+        href: "https://www.rappler.com/philippines/240037-study-local-posts-occupied-by-political-dynasties/",
+        label: "Rappler on Ateneo 2019",
+      },
+    ],
     lastUpdated: "2026-01-01",
     gaps:
       "71 dynasties and 148 key members, not a census of all political families. Geographic labels cover 63 areas (provinces and cities), not all 82 provinces. Classification and power_level are internal labels without a published codebook.",
@@ -89,57 +99,55 @@ const DATASETS = [
 const HEADLINE_NUMBERS = [
   {
     claim: "At least 71 of 82 provincial governments (87%), as of Dec 2024 (PCIJ)",
-    citation: {
+    note: "PCIJ count from December 2024; it predates the May 2025 election.",
+    source: {
       href: "https://pcij.org/2024/12/08/governors-political-dynasties-philippines-provinces-elections/",
       label: "PCIJ, 8 December 2024",
     },
-    note: "PCIJ’s wording. This count predates the May 2025 election even though it is stored under national_statistics_2025. It is a PCIJ count, not an OpenPinas census.",
   },
   {
     claim: "67% of House seats dynastic; 53% of mayors; rise since 2004 (governors 57%→80%, House 48%→67%, mayors 40%→53%)",
-    citation: {
+    note: "2019 fat-dynasty shares, not 2025 election results.",
+    source: {
       href: "https://www.rappler.com/philippines/240037-study-local-posts-occupied-by-political-dynasties/",
-      label: "Ateneo Policy Center / Mendoza et al., reported by Rappler (2019)",
+      label: "Rappler on Ateneo / Mendoza et al. (2019)",
     },
-    note: "These are 2019 “fat dynasty” shares stored in the file under national_statistics_2025. They are not 2025 election results.",
   },
   {
     claim: "2025 midterm turnout 82.20%",
-    citation: {
+    note: "Comelec’s official turnout is 82.20%; the article’s raw counts divide to 82.31%.",
+    source: {
       href: "https://www.inquirer.net/444077/its-final-comelec-logs-highest-voter-turnout-for-midterm-polls-at-82-20/",
-      label: "COMELEC via Inquirer",
+      label: "Inquirer, 16 May 2025",
     },
-    note: "Inquirer reports Comelec’s official figure as 82.20%. The same article’s raw counts divide to 82.31%. OpenPinas keeps the source percentage.",
   },
   {
     claim: "71 dynasties tracked",
-    citation: null,
-    note: "Counted from philippine-political-dynasties-network-2025.json (metadata.total_dynasties = 71). The homepage still says “50+”.",
+    note: "Counted from the published dynasty file (71 nodes). The homepage still says “50+”.",
   },
   {
     claim: "450+ members tracked",
-    citation: "unsourced",
-    note: "The published network file has 148 key members. The homepage and README figure is outdated.",
+    note: "Unsourced, under review. The published file has 148 key members.",
   },
   {
     claim: "80% of provincial board seats dynastic",
-    citation: "unsourced",
-    note: "Unsourced, under review. Ateneo’s 2019 series puts fat-dynasty provincial board members near 45%, and 80% on governors. This field is likely a mislabel.",
+    note: "Unsourced, under review. Ateneo’s 2019 series puts fat-dynasty board members near 45%.",
+    source: {
+      href: "https://www.rappler.com/philippines/240037-study-local-posts-occupied-by-political-dynasties/",
+      label: "Rappler on Ateneo / Mendoza et al. (2019)",
+    },
   },
   {
     claim: "12.5% senatorial dynastic relatives",
-    citation: "unsourced",
     note: "Unsourced, under review.",
   },
   {
     claim: "4.5% unopposed dynastic candidates (800 of 18,000 positions)",
-    citation: "unsourced",
     note: "Unsourced, under review.",
   },
   {
     claim: "2025 midterm dynasty wins and notable Senate wins/losses listed in power_metrics",
-    citation: "unsourced",
-    note: "Unsourced, under review. The list is stored without URLs.",
+    note: "Unsourced, under review.",
   },
 ];
 
@@ -292,12 +300,31 @@ export default function SourcesRelatedProjectsPage() {
           publish its own formal codebook. In practice a “dynasty” here is a political family
           with more than one member in, or recently in, elected or high appointive office,
           grouped under one node in{" "}
-          <code>philippine-political-dynasties-network-2025.json</code>. That is close to two
-          common research definitions, which we cite but do not re-implement: PCIJ treats a
+          <code>philippine-political-dynasties-network-2025.json</code>.
+        </p>
+        <p style={body}>
+          We cite two research definitions and do not re-implement them. PCIJ treats a
           politician as dynastic when a relative up to the third degree also holds or seeks
-          office; the Ateneo Policy Center tracks clans as elected officials who have family
-          members in office before or during their term, usually by shared family name within a
-          province.
+          office.{" "}
+          <a
+            href="https://pcij.org/2024/12/08/governors-political-dynasties-philippines-provinces-elections/"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={linkStyle}
+          >
+            PCIJ, 8 December 2024
+          </a>
+          . Ateneo Policy Center tracks clans as elected officials who have family members in
+          office before or during their term, usually by shared family name within a province.{" "}
+          <a
+            href="https://www.rappler.com/philippines/240037-study-local-posts-occupied-by-political-dynasties/"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={linkStyle}
+          >
+            Rappler on Ateneo / Mendoza et al. (2019)
+          </a>
+          .
         </p>
         <p style={body}>
           <strong style={{ color: T.ink }}>Classification.</strong> Each node has an internal
@@ -422,25 +449,23 @@ export default function SourcesRelatedProjectsPage() {
       <section style={{ marginBottom: 48 }}>
         <h2 style={sectionTitle}>Headline numbers</h2>
         <p style={body}>
-          Homepage, README, and <code>power_metrics.national_statistics_2025</code> figures, with
-          a citation or an explicit unsourced flag.
+          Homepage, README, and <code>power_metrics.national_statistics_2025</code> figures.
         </p>
         <div style={{ display: "grid", gap: 12 }}>
           {HEADLINE_NUMBERS.map((item) => (
             <div key={item.claim} style={{ background: T.surface, border: `1px solid ${T.subtle}`, padding: 16 }}>
               <p style={{ margin: "0 0 6px", fontWeight: 700, color: T.ink }}>{item.claim}</p>
-              <p style={{ margin: "0 0 6px", fontSize: 14 }}>
-                {item.citation === "unsourced" ? (
-                  <span style={{ color: "#9a4d00", fontWeight: 600 }}>Unsourced, under review</span>
-                ) : item.citation ? (
-                  <a href={item.citation.href} target="_blank" rel="noopener noreferrer" style={linkStyle}>
-                    {item.citation.label}
-                  </a>
-                ) : (
-                  <span style={{ color: T.ink, fontWeight: 600 }}>Counted from the published JSON</span>
-                )}
+              <p style={{ margin: 0, color: T.muted, fontSize: 14, lineHeight: 1.55 }}>
+                {item.note}
+                {item.source ? (
+                  <>
+                    {" "}
+                    <a href={item.source.href} target="_blank" rel="noopener noreferrer" style={linkStyle}>
+                      {item.source.label}
+                    </a>
+                  </>
+                ) : null}
               </p>
-              <p style={{ margin: 0, color: T.muted, fontSize: 14, lineHeight: 1.55 }}>{item.note}</p>
             </div>
           ))}
         </div>
