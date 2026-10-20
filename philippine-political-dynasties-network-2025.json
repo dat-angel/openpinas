@@ -33,7 +33,7 @@
         {
           "name": "Philippine Center for Investigative Journalism",
           "url": "https://pcij.org/2024/12/08/governors-political-dynasties-philippines-provinces-elections/",
-          "used_for": "power_metrics.national_statistics_2025.governors_from_dynasties (71 of 82). Not a source for individual dynasty nodes."
+          "used_for": "power_metrics.national_statistics_2025.governors_from_dynasties. PCIJ wording: at least 71 of 82 provincial governments (87%), as of December 2024. Not a source for individual dynasty nodes."
         },
         {
           "name": "Ateneo Policy Center / Mendoza et al., via Rappler",
@@ -4240,11 +4240,13 @@
         "dynherf": "Herfindahl index measuring power concentration"
       },
       "national_statistics_2025": {
-        "governors_from_dynasties": "71 of 82 provinces (86.6%)",
+        "governors_from_dynasties": "at least 71 of 82 provincial governments (87%), as of Dec 2024 (PCIJ)",
+        "governors_from_dynasties_note": "PCIJ count from December 2024. It predates the May 2025 election even though it is stored under national_statistics_2025.",
         "governors_from_dynasties_source": {
           "name": "Philippine Center for Investigative Journalism",
           "url": "https://pcij.org/2024/12/08/governors-political-dynasties-philippines-provinces-elections/",
-          "used_for": "71 of 82 governors as of December 2024. PCIJ reports 87%; 71÷82 is 86.6%."
+          "used_for": "At least 71 of 82 provincial governments (87%), as of December 2024.",
+          "note": "This count predates the May 2025 election even though it is stored under national_statistics_2025."
         },
         "congressional_dynastic_representation": "67%",
         "congressional_dynastic_representation_source": {
@@ -4275,11 +4277,13 @@
           "used_for": "2004–2019 fat-dynasty increases. These are not 2025 measurements."
         },
         "midterm_election_2025": {
-          "turnout": "82.2% (highest in Philippine history)",
+          "turnout": "82.20% (highest in Philippine midterm history)",
+          "turnout_note": "Inquirer reports Comelec's official figure as 82.20%. The same article's raw counts (57,350,968 of 69,673,653) divide to 82.31%. OpenPinas keeps the source percentage.",
           "turnout_source": {
             "name": "COMELEC via Inquirer",
             "url": "https://www.inquirer.net/444077/its-final-comelec-logs-highest-voter-turnout-for-midterm-polls-at-82-20/",
-            "used_for": "Official 82.20% turnout for the 12 May 2025 midterms, reported by Inquirer from COMELEC/NBOC."
+            "used_for": "Comelec's official 82.20% turnout for the 12 May 2025 midterms, as reported by Inquirer.",
+            "note": "Inquirer also prints 57,350,968 of 69,673,653 registered voters. Those counts divide to 82.31%. The published percentage is 82.20%."
           },
           "dynasty_wins": "Maintained strong control despite some losses",
           "dynasty_wins_unsourced": true,

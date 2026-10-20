@@ -13,7 +13,7 @@ const DATASETS = [
   {
     file: "philippine-political-dynasties-network-2025.json",
     sources:
-      "PCIJ for the 71/82 governors figure; Ateneo Policy Center / Mendoza et al. (2019) for the House, mayor, and 2004–2019 concentration shares stored under power_metrics. Node-level family records have no per-entry citations.",
+      "PCIJ for the December 2024 governors figure; Ateneo Policy Center / Mendoza et al. (2019) for the House, mayor, and 2004–2019 concentration shares stored under power_metrics. Node-level family records have no per-entry citations.",
     lastUpdated: "2026-01-01",
     gaps:
       "71 dynasties and 148 key members, not a census of all political families. Geographic labels cover 63 areas (provinces and cities), not all 82 provinces. Classification and power_level are internal labels without a published codebook.",
@@ -22,13 +22,13 @@ const DATASETS = [
     file: "philippines-2026-timeline.json",
     sources: "Per-event local and international news URLs, mostly Philippine outlets.",
     lastUpdated: "2026-10-19",
-    gaps: "Coverage follows the weekly news skill, not every story published in the Philippines.",
+    gaps: "Coverage is a curated weekly scan of major events, not every story published in the Philippines.",
   },
   {
     file: "weekly-reviews/data/*.json",
-    sources: "sourceLinks on each article, drawn from the same news tiers as the timeline.",
+    sources: "Each article lists its news links, drawn from the same outlet tiers as the timeline.",
     lastUpdated: "2026-10-19",
-    gaps: "Special editions and older HTML-only pages may not match the JSON archive one-for-one.",
+    gaps: "Some older weekly pages may not match the current archive exactly.",
   },
   {
     file: "business-connections-2025.json",
@@ -42,7 +42,7 @@ const DATASETS = [
     sources: "None recorded.",
     lastUpdated: "unspecified",
     gaps:
-      "metadata.note says this is placeholder data for layout, interaction, and narrative testing. Scores and stories are not sourced.",
+      "Labeled as placeholder data for layout and narrative testing. Scores and stories are not sourced.",
   },
   {
     file: "regional-data.json",
@@ -61,7 +61,7 @@ const DATASETS = [
     file: "philippine-startup-ecosystem-2025.json",
     sources: "Some startups cite Wikipedia or other URLs; many sources arrays are empty.",
     lastUpdated: "2026-01-16",
-    gaps: "metadata.status is in_progress. Ecosystem ranking figures are not tied to a named index in the file.",
+    gaps: "This dataset is still being collected. Ecosystem ranking figures are not tied to a named index.",
   },
   {
     file: "data/php-usd-weekly-2025.json",
@@ -88,12 +88,12 @@ const DATASETS = [
 
 const HEADLINE_NUMBERS = [
   {
-    claim: "71 of 82 governors from dynasties (86.6%)",
+    claim: "At least 71 of 82 provincial governments (87%), as of Dec 2024 (PCIJ)",
     citation: {
       href: "https://pcij.org/2024/12/08/governors-political-dynasties-philippines-provinces-elections/",
       label: "PCIJ, 8 December 2024",
     },
-    note: "PCIJ reports 87%. 71÷82 is 86.6%. This is a PCIJ count, not an OpenPinas census and not a figure published on the Ateneo Inclusive Democracy page.",
+    note: "PCIJ’s wording. This count predates the May 2025 election even though it is stored under national_statistics_2025. It is a PCIJ count, not an OpenPinas census.",
   },
   {
     claim: "67% of House seats dynastic; 53% of mayors; rise since 2004 (governors 57%→80%, House 48%→67%, mayors 40%→53%)",
@@ -104,12 +104,12 @@ const HEADLINE_NUMBERS = [
     note: "These are 2019 “fat dynasty” shares stored in the file under national_statistics_2025. They are not 2025 election results.",
   },
   {
-    claim: "2025 midterm turnout 82.2%",
+    claim: "2025 midterm turnout 82.20%",
     citation: {
       href: "https://www.inquirer.net/444077/its-final-comelec-logs-highest-voter-turnout-for-midterm-polls-at-82-20/",
       label: "COMELEC via Inquirer",
     },
-    note: "COMELEC’s official 82.20% (57,350,968 of 69,673,653). Cited here through Inquirer because the PNA article URL currently 404s for automated fetches.",
+    note: "Inquirer reports Comelec’s official figure as 82.20%. The same article’s raw counts divide to 82.31%. OpenPinas keeps the source percentage.",
   },
   {
     claim: "71 dynasties tracked",
@@ -129,7 +129,7 @@ const HEADLINE_NUMBERS = [
   {
     claim: "12.5% senatorial dynastic relatives",
     citation: "unsourced",
-    note: "Unsourced, under review. No matching citation found in the repo or in the PCIJ/Ateneo pages checked for this work.",
+    note: "Unsourced, under review.",
   },
   {
     claim: "4.5% unopposed dynastic candidates (800 of 18,000 positions)",
@@ -302,7 +302,7 @@ export default function SourcesRelatedProjectsPage() {
         <p style={body}>
           <strong style={{ color: T.ink }}>Classification.</strong> Each node has an internal
           label: imperial (8), dominant (1), major (48), established (9), rising (2), minor (2),
-          or new (1). The map colors those labels. There is no written rule in the repo for
+          or new (1).           The map colors those labels. OpenPinas has not published a rule for
           promoting a family from major to imperial.
         </p>
         <p style={body}>
@@ -381,10 +381,9 @@ export default function SourcesRelatedProjectsPage() {
       <section style={{ marginBottom: 48 }}>
         <h2 style={sectionTitle}>How we choose sources</h2>
         <p style={body}>
-          Timeline and weekly-review updates follow the publishable parts of{" "}
-          <code>Skills/ph-news-refresher/SKILL.md</code>. Outlets are grouped by tier. Major
-          events need at least two sources, at least one Philippine outlet, working URLs, and
-          neutral wording.
+          Timeline and weekly-review updates use a fixed set of news tiers. Major events need
+          at least two sources, at least one Philippine outlet, working URLs, and neutral
+          wording.
         </p>
         {TIER_SOURCES.map((group) => (
           <div key={group.tier} style={{ marginBottom: 20 }}>
@@ -407,16 +406,15 @@ export default function SourcesRelatedProjectsPage() {
           <li>International source preferred when the event has global significance</li>
           <li>Working URLs only (verify before including)</li>
           <li>Stick to verifiable facts; avoid editorializing; label analysis as analysis</li>
-          <li>Politiko (politiko.com.ph) is in the skill’s Tier 4 list but is not linked here; the site returned HTTP 500 when checked.</li>
         </ul>
       </section>
 
       <section style={{ marginBottom: 48 }}>
         <h2 style={sectionTitle}>Which outlets we cite</h2>
         <p style={body}>
-          Counts are generated at build time from the published JSON files (2026 timeline, 2025
-          timeline, weekly reviews, dynasty network, and the other datasets in the table above).
-          They are not hand-typed.
+          Counts come from the published JSON files (2026 timeline, 2025 timeline, weekly
+          reviews, dynasty network, and the other datasets in the table above). They are
+          regenerated whenever the site is updated.
         </p>
         <SourceCountsChart counts={sourceCounts} />
       </section>
@@ -452,8 +450,8 @@ export default function SourcesRelatedProjectsPage() {
         <h2 style={sectionTitle}>Known limits</h2>
         <ul style={{ margin: 0, paddingLeft: 20, color: T.muted, fontSize: 15, lineHeight: 1.7 }}>
           <li>
-            The dynasty network maps 63 named areas (provinces and cities), not 15 of 82 and not
-            a complete 82-province census. <code>regional-data.json</code> has 45 entries.
+            The dynasty network covers 63 named areas across the Philippines&apos; 82 provinces
+            plus NCR. <code>regional-data.json</code> has 45 entries.
           </li>
           <li>
             <code>business-connections-2025.json</code>,{" "}
@@ -485,7 +483,7 @@ export default function SourcesRelatedProjectsPage() {
             rel="noopener noreferrer"
             style={linkStyle}
           >
-            .github/ISSUE_TEMPLATE/data_update.md
+            Report a data correction on GitHub
           </a>
           .
         </p>
