@@ -186,6 +186,45 @@ function validateCorruptionRootCopy() {
   }
 }
 
+function metadataAt(data, keys) {
+  let current = data;
+  for (const key of keys) {
+    current = current?.[key];
+  }
+  return current;
+}
+
+const PUBLISHED_DATASETS = [
+  {
+    file: "philippine-political-dynasties-network-2025.json",
+    metadataPath: ["philippine_political_dynasties_network", "metadata"],
+  },
+  { file: "business-connections-2025.json", metadataPath: ["metadata"] },
+  { file: "elite-schools-influence-2025.json", metadataPath: ["metadata"] },
+  { file: "regional-data.json", metadataPath: ["metadata"] },
+];
+
+function validatePublishedSources() {
+  for (const { file, metadataPath } of PUBLISHED_DATASETS) {
+    if (!fs.existsSync(path.join(ROOT, file))) {
+      errors.push(`Published dataset missing: ${file}`);
+      continue;
+    }
+    try {
+      const data = readJson(file);
+      const metadata = metadataAt(data, metadataPath);
+      const sources = metadata?.sources;
+      if (!Array.isArray(sources) || sources.length === 0) {
+        errors.push(`${file}: metadata.sources must be a non-empty array`);
+        continue;
+      }
+      console.log(`✓ ${file}: ${sources.length} metadata source(s)`);
+    } catch (e) {
+      errors.push(`${file}: ${e.message}`);
+    }
+  }
+}
+
 function validateRegionalOptional() {
   const p = "regional-data.json";
   if (!fs.existsSync(path.join(ROOT, p))) return;
@@ -258,6 +297,7 @@ function main() {
   validateCorruptionTracker();
   validateCorruptionRootCopy();
   validateRegionalOptional();
+  validatePublishedSources();
   validateWeeklyReviews();
 
   console.log("");
