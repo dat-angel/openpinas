@@ -1,19 +1,56 @@
 <!--
-This repo is public. Do not include internal notes, AI-agent instructions or acceptance checklists, editorial/owner-decision lists, private file references (e.g. CONTEXT.md), deployment secrets or protection details, dashboard links, or personal information. Keep those in internal notes outside GitHub.
+This repo is public. Do not include internal notes, AI-agent instructions or acceptance checklists, editorial/owner-decision lists, private file references, deployment secrets or protection details, dashboard links, or personal information. Keep those in internal notes outside GitHub.
 -->
 
-## Summary
+## Description
+Brief description of what this PR does.
 
-What changed, in plain words.
+## Type of Change
+- [ ] Data addition (new dynasty, event, or case)
+- [ ] Data correction
+- [ ] Bug fix
+- [ ] New feature
+- [ ] Documentation update
+- [ ] Code refactoring
+- [ ] Other: [describe]
 
-## Sources
+## Changes Made
+- 
+- 
+- 
 
-For news or data changes, list the public source links.
+## Files Changed
+- 
 
--
+## Data Sources (if applicable)
+If this PR adds or modifies data, please list your sources:
+- [Source 1](URL)
+- [Source 2](URL)
 
 ## Testing
+- [ ] I have tested this locally
+- [ ] I have validated JSON syntax
+- [ ] I have run the validation script
+- [ ] I have checked the browser console for errors
+- [ ] I have tested on multiple browsers (if UI changes)
 
-Commands run and their results (for example `npm run validate`, `npm run build`, CI).
+## Screenshots (if applicable)
+Add screenshots for UI changes.
 
--
+## Related Issues
+Closes #[issue number]
+
+## Checklist
+- [ ] My code follows the project's style guidelines
+- [ ] I have commented my code where necessary
+- [ ] I have updated the documentation accordingly
+- [ ] My changes generate no new warnings or errors
+- [ ] I have added tests if applicable
+- [ ] All existing tests pass (if applicable)
+- [ ] I have validated all JSON files
+- [ ] I have checked that metadata counts match actual data
+
+## Additional Notes
+Any additional information that reviewers should know.
+
+Keep this public-facing; internal notes stay outside GitHub.
