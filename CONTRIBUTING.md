@@ -225,9 +225,13 @@ npm run validate
 
 7. **Open a Pull Request:**
    - Use a clear title
+   - Follow `.github/pull_request_template.md` (Summary, Sources, Testing)
    - Describe what you changed and why
    - Reference any related issues
    - Include screenshots if applicable
+
+This repo is public. Keep PR descriptions public-facing: do not include internal notes, AI-agent instructions or acceptance checklists, editorial/owner-decision lists, private file references (e.g. CONTEXT.md), deployment secrets or protection details, dashboard links, or personal information.
+
 
 ### PR Title Format
 

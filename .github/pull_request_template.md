@@ -1,51 +1,19 @@
-## Description
-Brief description of what this PR does.
+<!--
+This repo is public. Do not include internal notes, AI-agent instructions or acceptance checklists, editorial/owner-decision lists, private file references (e.g. CONTEXT.md), deployment secrets or protection details, dashboard links, or personal information. Keep those in internal notes outside GitHub.
+-->
 
-## Type of Change
-- [ ] Data addition (new dynasty, event, or case)
-- [ ] Data correction
-- [ ] Bug fix
-- [ ] New feature
-- [ ] Documentation update
-- [ ] Code refactoring
-- [ ] Other: [describe]
+## Summary
 
-## Changes Made
-- 
-- 
-- 
+What changed, in plain words.
 
-## Files Changed
-- 
+## Sources
 
-## Data Sources (if applicable)
-If this PR adds or modifies data, please list your sources:
-- [Source 1](URL)
-- [Source 2](URL)
+For news or data changes, list the public source links.
+
+-
 
 ## Testing
-- [ ] I have tested this locally
-- [ ] I have validated JSON syntax
-- [ ] I have run the validation script
-- [ ] I have checked the browser console for errors
-- [ ] I have tested on multiple browsers (if UI changes)
 
-## Screenshots (if applicable)
-Add screenshots for UI changes.
+Commands run and their results (for example `npm run validate`, `npm run build`, CI).
 
-## Related Issues
-Closes #[issue number]
-
-## Checklist
-- [ ] My code follows the project's style guidelines
-- [ ] I have commented my code where necessary
-- [ ] I have updated the documentation accordingly
-- [ ] My changes generate no new warnings or errors
-- [ ] I have added tests if applicable
-- [ ] All existing tests pass (if applicable)
-- [ ] I have validated all JSON files
-- [ ] I have checked that metadata counts match actual data
-
-## Additional Notes
-Any additional information that reviewers should know.
-
+-

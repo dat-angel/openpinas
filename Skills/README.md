@@ -2,6 +2,8 @@
 
 **Single place to edit** Philippines news and weekly-review playbooks for this project. Commit changes here and push to [github.com/dat-angel/openpinas](https://github.com/dat-angel/openpinas).
 
+This repo is public. Keep PR descriptions public-facing: do not include internal notes, AI-agent instructions or acceptance checklists, editorial/owner-decision lists, private file references (e.g. CONTEXT.md), deployment secrets or protection details, dashboard links, or personal information.
+
 | Skill | File | Role |
 |-------|------|------|
 | **ph-news-refresher** | [ph-news-refresher/SKILL.md](./ph-news-refresher/SKILL.md) | News scan; timeline/dynasty JSON in this repo; optional az vault markdown |
