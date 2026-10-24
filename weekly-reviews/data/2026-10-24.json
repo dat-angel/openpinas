@@ -1,0 +1,279 @@
+{
+  "version": 1,
+  "weekEnding": "2026-10-24",
+  "weekLabel": "October 18 – October 24, 2026",
+  "title": "OpenPinas: Weekly News Review",
+  "lastUpdated": "October 24, 2026",
+  "stats": [
+    {
+      "number": "7",
+      "label": "Stories"
+    }
+  ],
+  "eventSections": [
+    {
+      "title": "Political",
+      "articles": [
+        {
+          "timeDatetime": "2026-10-20",
+          "timeDisplay": "October 20, 2026",
+          "category": "Political",
+          "categoryClass": "political",
+          "borderColor": "#3a0ca3",
+          "headline": "House prosecutors file their unexplained-wealth evidence ahead of the deadline",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-10-20&search=House%20prosecutors%20file%20their%20unexplained-wealth%20evidence%20ahead%20of%20the%20deadline",
+          "descriptionHtml": "<p>House prosecutors submitted their formal offer of evidence on Tuesday evening, October 20, two days before the Senate impeachment court's October 23 deadline, staking the case on Article II — unexplained wealth — with bank, tax, corporate and net-worth records after they had already dropped confidential funds, bribery and grave threats. Private prosecutor Lorna Kapunan said the early filing was meant to give the defense its ten days to comment and the court time to rule on admissibility before hearings resume November 9; forensic analyst Alexander Cabrera had earlier put hidden assets since 2022 at least ₱817 million. Ombudsman Jesus Crispin Remulla said on October 22 his office will review whatever the House turns over from the withdrawn articles, and defense spokesman Michael Poa said the camp is ready to ask the Supreme Court to settle the conviction-vote threshold, probably within two weeks. The trial now sits on a single charge, a parallel criminal track, and a coming fight over how many senator-judges it takes to convict.</p>",
+          "sourceLinks": [
+            {
+              "label": "Inquirer",
+              "href": "https://newsinfo.inquirer.net/2327498/prosecutors-file-formal-offer-of-evidence-in-sara-duterte-impeachment-trial"
+            },
+            {
+              "label": "Inquirer",
+              "href": "https://newsinfo.inquirer.net/2327892/kapunan-evidence-filed-early-to-prevent-delays-in-nov-9-vp-trial"
+            },
+            {
+              "label": "GMA News",
+              "href": "https://www.gmanetwork.com/news/topstories/nation/1006862/ombudsman-to-review-impeachment-prosecutors-evidence-vs-vp-sara/story/"
+            },
+            {
+              "label": "Philippine Star",
+              "href": "https://www.philstar.com/headlines/2026/10/23/2565107/sara-challenge-moving-vote-conviction"
+            },
+            {
+              "label": "ABS-CBN",
+              "href": "https://www.abs-cbn.com/news/nation/2026/10/24/house-prosecution-submits-evidence-2-days-before-deadline-in-vp-sara-impeach-trial-1608"
+            },
+            {
+              "label": "GMA News",
+              "href": "https://www.gmanetwork.com/news/topstories/nation/1007038/house-prosecution-submitted-formal-offer-of-evidence-vs-sara-duterte-barbers/story/"
+            }
+          ],
+          "dynastyLinks": [
+            {
+              "label": "Duterte Dynasty",
+              "href": "/dynasties-network-visualization.html#dynasty-DUTERTE_FAMILY"
+            }
+          ]
+        },
+        {
+          "timeDatetime": "2026-10-23",
+          "timeDisplay": "October 23, 2026",
+          "category": "Political",
+          "categoryClass": "political",
+          "borderColor": "#3a0ca3",
+          "headline": "DILG posts a ₱50-million bounty and gives Bato dela Rosa a week to surrender",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-10-23&search=DILG%20posts%20a%20%E2%82%B150-million%20bounty%20and%20gives%20Bato%20dela%20Rosa%20a%20week%20to%20surrender",
+          "descriptionHtml": "<p>Interior Secretary Jonvic Remulla told a Camp Crame briefing on October 23 that Senator Ronald \"Bato\" dela Rosa is now \"armed and dangerous,\" posted a ₱50-million bounty for his capture, and gave him a week to surrender on an International Criminal Court warrant naming him a co-perpetrator in Rodrigo Duterte's drug-war killings. Remulla said a task force under PNP deputy chief Lt. Gen. Wilson Joseph Lopez is hunting the senator, that courtesy had been mistaken for weakness, and that an earlier estimate put a forced arrest at risk of 10,000 deaths; PNP chief Gen. Jose Melencio Nartatez Jr. said the force is ready for a peaceful or armed confrontation. Dela Rosa has been in hiding since leaving the Senate on May 14; his counsel later asked for the Philippine warrant, case number and DILG circular behind the reward, arguing an ICC paper is not a domestic arrest order. The week turned a year-old Hague warrant into an open bounty on a sitting senator.</p>",
+          "sourceLinks": [
+            {
+              "label": "GMA News",
+              "href": "https://www.gmanetwork.com/news/topstories/nation/1006921/dilg-offers-p50-m-reward-for-arrest-of-armed-and-dangerous-bato-dela-rosa/story/"
+            },
+            {
+              "label": "Rappler",
+              "href": "https://www.rappler.com/philippines/pnp-dilg-bato-dela-rosa-week-surrender-millions-reward-icc-warrant/"
+            },
+            {
+              "label": "Inquirer",
+              "href": "https://newsinfo.inquirer.net/2328961/p50-m-bounty-for-capture-of-armed-and-dangerous-bato-dela-rosa-dilg"
+            },
+            {
+              "label": "Philippine Star",
+              "href": "https://www.philstar.com/headlines/2026/10/24/2565380/p50-million-bounty-batos-capture"
+            },
+            {
+              "label": "ABS-CBN",
+              "href": "https://www.abs-cbn.com/news/nation/2026/10/24/counsel-questions-legal-basis-of-reward-vs-bato-senate-minority-urges-peaceful-resolution-1524"
+            }
+          ],
+          "dynastyLinks": [
+            {
+              "label": "Duterte Dynasty",
+              "href": "/dynasties-network-visualization.html#dynasty-DUTERTE_FAMILY"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Legal",
+      "articles": [
+        {
+          "timeDatetime": "2026-10-20",
+          "timeDisplay": "October 20, 2026",
+          "category": "Legal",
+          "categoryClass": "legal",
+          "borderColor": "#1e3a5f",
+          "headline": "The Supreme Court voids the 2024 and 2025 budgets as the Senate keeps the 2027 bill",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-10-20&search=The%20Supreme%20Court%20voids%20the%202024%20and%202025%20budgets%20as%20the%20Senate%20keeps%20the%202027%20bill",
+          "descriptionHtml": "<p>The Supreme Court En Banc, in a decision penned by Senior Associate Justice Marvic Leonen and announced on October 20, declared the 2024 General Appropriations Act unconstitutional after Congress raised unprogrammed appropriations by ₱449.5 billion and voided the 2025 GAA over a ₱17.99-billion increase in the DPWH Special Road Fund; it also struck Special Provisions 1(a) and (b) of the 2026 GAA that triggered unprogrammed releases and said a ₱12.75-billion lift in special accounts exceeded the President's proposal. The Court held that unprogrammed funds are not illegal in themselves but become infirm without standards, applied the operative-fact doctrine to irreversible 2024–2025 spending, and permanently enjoined the 2026 triggers. Senate President Sherwin Gatchalian said on October 23 a House recall of the ₱7.2-trillion 2027 bill is unnecessary because the Senate will make the corrections in consolidation and will not exceed the President's ceiling; Senator Panfilo Lacson warned that sending the bill back risks a reenacted lump-sum budget. The ruling lands just as the Senate prepares November 9 plenary work, so the 2027 fight is now about writing a budget the Court will not strike.</p>",
+          "sourceLinks": [
+            {
+              "label": "GMA News",
+              "href": "https://www.gmanetwork.com/news/topstories/nation/1006575/sc-strikes-down-2024-2025-budgets-sets-limits-for-unprogrammed-appropriations/story/"
+            },
+            {
+              "label": "Philippine Star",
+              "href": "https://www.philstar.com/headlines/2026/10/21/2564572/sc-declares-provisions-2024-2025-2026-national-budgets-unconstitutional"
+            },
+            {
+              "label": "GMA News",
+              "href": "https://www.gmanetwork.com/news/topstories/nation/1006913/sherwin-gatchalian-recalling-2027-budget-unnecessary-senate-to-do-corrections/story/"
+            },
+            {
+              "label": "Philippine Star",
+              "href": "https://www.philstar.com/headlines/2026/10/24/2565376/sherwin-recall-house-budget-bill-unnecessary"
+            },
+            {
+              "label": "ABS-CBN",
+              "href": "https://www.abs-cbn.com/news/nation/2026/10/23/house-urged-to-recall-2027-budget-from-senate-over-unconstitutional-provisions-1055"
+            },
+            {
+              "label": "Rappler",
+              "href": "https://www.rappler.com/philippines/senators-reaction-proposal-recall-house-approved-budget-bill-2027/"
+            }
+          ]
+        },
+        {
+          "timeDatetime": "2026-10-19",
+          "timeDisplay": "October 19, 2026",
+          "category": "Legal",
+          "categoryClass": "legal",
+          "borderColor": "#1e3a5f",
+          "headline": "Romualdez bail witnesses say they saw suitcases, not the cash",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-10-19&search=Romualdez%20bail%20witnesses%20say%20they%20saw%20suitcases%2C%20not%20the%20cash",
+          "descriptionHtml": "<p>On October 19, the fourth day of Martin Romualdez's Sandiganbayan bail hearing on a roughly ₱7.4-billion plunder case, former Zaldy Co security aides Police Maj. Alvin Nuguid and Chief M/Sgt. Larry Bellen testified that they saw dozens of suitcases at Co's Horizon Homes units in Bonifacio Global City but had no personal knowledge that the bags held cash. Nuguid said he saw about 50 to 60 suitcases from 2024 to 2025, heard jokes that \"there is money in the trash,\" and once saw Romualdez visit for about two hours; Bellen said he helped move 10 to 12 loads, overheard Co's wife say Romualdez had urged Co to run for Ako Bicol, and saw bags lined up under a jet in a Pasay hangar. Defense counsel Via Valdepeñas objected that the suitcase and recruitment claims were hearsay, and both officers told the justices they never saw money inside. Last week's cash-trail testimony now sits beside two witnesses who can describe bags, not contents.</p>",
+          "sourceLinks": [
+            {
+              "label": "GMA News",
+              "href": "https://www.gmanetwork.com/news/topstories/nation/1006368/witness-on-romualdez-plunder-case-i-saw-suitcase-deliveries-not-the-money/story/"
+            },
+            {
+              "label": "Philippine Star",
+              "href": "https://www.philstar.com/headlines/2026/10/20/2564432/60-suitcases-seen-zaldys-units-ex-aides"
+            },
+            {
+              "label": "ABS-CBN",
+              "href": "https://www.abs-cbn.com/news/nation/2026/10/19/romualdez-urged-co-to-run-for-house-seat-ex-security-aide-1252"
+            },
+            {
+              "label": "Inquirer",
+              "href": "https://newsinfo.inquirer.net/2326679/witness-i-saw-maleta-in-cos-office-when-he-was-not-yet-solon"
+            }
+          ],
+          "dynastyLinks": [
+            {
+              "label": "Marcos-Romualdez Dynasty",
+              "href": "/dynasties-network-visualization.html#dynasty-MARCOS_ROMUALDEZ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "International Relations",
+      "articles": [
+        {
+          "timeDatetime": "2026-10-21",
+          "timeDisplay": "October 21, 2026",
+          "category": "International Relations",
+          "categoryClass": "international",
+          "borderColor": "#0d7377",
+          "headline": "Manila completes an Ayungin resupply and rejects China's permission claim",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-10-21&search=Manila%20completes%20an%20Ayungin%20resupply%20and%20rejects%20China%27s%20permission%20claim",
+          "descriptionHtml": "<p>The Armed Forces said a rotation-and-resupply run to the BRP Sierra Madre at Ayungin (Second Thomas) Shoal on October 21 was completed without incident, after a September attempt was called off. China Coast Guard spokesman Jiang Lue claimed the delivery happened \"with China's permission\" and that CCG personnel questioned the Philippine vessel and monitored the process; AFP West Philippine Sea spokesperson Rear Adm. Roy Vincent Trinidad said Manila need not seek any foreign power's clearance, and PCG Commodore Jay Tarriela called the mission a sovereign act 105 nautical miles from Palawan and more than 500 from China's nearest coast. The Navy also counted 31 Chinese coast guard and navy ships around four West Philippine Sea features from October 13 to 19, four more than the week before. The week's shift is not a new shoal but a completed run and a public rejection of Beijing's permission story.</p>",
+          "sourceLinks": [
+            {
+              "label": "ABS-CBN",
+              "href": "https://www.abs-cbn.com/news/nation/2026/10/22/afp-says-ayungin-shoal-resupply-mission-successfully-conducted-1529"
+            },
+            {
+              "label": "GMA News",
+              "href": "https://www.gmanetwork.com/news/topstories/nation/1006941/pcg-no-permission-needed-for-brp-sierra-madre-resupply-missions/story/"
+            },
+            {
+              "label": "Inquirer",
+              "href": "https://www.inquirer.net/493630/no-permission-needed-afp-denies-china-claim-on-brp-sierra-madre-resupply/"
+            },
+            {
+              "label": "Inquirer",
+              "href": "https://www.inquirer.net/493525/afp-monitors-31-chinese-vessels-in-west-philippine-sea/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "OFW/Diaspora",
+      "articles": [
+        {
+          "timeDatetime": "2026-10-19",
+          "timeDisplay": "October 19, 2026",
+          "category": "OFW/Diaspora",
+          "categoryClass": "ofw",
+          "borderColor": "#0b6e4f",
+          "headline": "The first Saudi-stranded OFWs come home as a Filipino is reported killed near Shaybah",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-10-19&search=The%20first%20Saudi-stranded%20OFWs%20come%20home%20as%20a%20Filipino%20is%20reported%20killed%20near%20Shaybah",
+          "descriptionHtml": "<p>The first 34 overseas Filipino workers stranded after the October 10 attack on Riyadh's King Khalid International Airport landed at NAIA Terminal 3 on October 19 on a Qatar Airways flight from Doha after traveling overland from Al Qassim; the Department of Migrant Workers and OWWA said they were assisting nearly 400 workers, with confirmed bookings for 299 including that first group. By October 20 OWWA counted 99 returnees, including 50 who arrived that morning and 15 who had gone by land to Dammam. Reuters, quoting Saudi Arabia's energy ministry, reported on October 22 that a Filipino and a Nepali died from falling debris when air defenses intercepted a drone near the Shaybah oilfield; OWWA Administrator Patricia Yvonne Caunan said the agency was still awaiting a formal report. Last week's airport-injury story is now a repatriation airlift with a death the Philippine government has not yet confirmed.</p>",
+          "sourceLinks": [
+            {
+              "label": "GMA News",
+              "href": "https://www.gmanetwork.com/news/pinoyabroad/dispatch/1006366/34-ofws-in-saudi-arabia-return-to-ph-65-more-expected-tuesday/story/"
+            },
+            {
+              "label": "Philippine News Agency",
+              "href": "https://www.pna.gov.ph/article/34-ofws-return-from-saudi-arabia-over-300-others-with-confirmed-flights-to-follow"
+            },
+            {
+              "label": "Philippine Star",
+              "href": "https://www.philstar.com/nation/2026/10/21/2564674/99-ofws-repatriated-riyadh"
+            },
+            {
+              "label": "GMA News",
+              "href": "https://www.gmanetwork.com/news/pinoyabroad/dispatch/1006787/filipino-killed-in-intercepted-drone-attack-near-saudi-oilfield/story/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Natural Disasters",
+      "articles": [
+        {
+          "timeDatetime": "2026-10-20",
+          "timeDisplay": "October 20, 2026",
+          "category": "Natural Disasters",
+          "categoryClass": "natural-disasters",
+          "borderColor": "#c77d10",
+          "headline": "Super Typhoon Rosal crosses the PAR and leaves without a landfall",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-10-20&search=Super%20Typhoon%20Rosal%20crosses%20the%20PAR%20and%20leaves%20without%20a%20landfall",
+          "descriptionHtml": "<p>Super Typhoon Champi entered the Philippine Area of Responsibility at 10:40 a.m. on October 20, took the local name Rosal, and became the year's 18th cyclone, with 185-kph winds and 230-kph gusts about 1,385 kilometers east of Central Luzon. PAGASA raised Signal No. 1 over Batanes, the eastern Babuyan Islands, eastern mainland Cagayan, northeastern Isabela and northeastern Catanduanes and said the storm was unlikely to make landfall but could still raise Signal No. 2 or 3. Rosal left the PAR on the morning of October 24 as a typhoon 525 kilometers north-northeast of Itbayat, Batanes, packing 120-kph winds, with no Philippine landfall. A super typhoon crossed the country's weather map and exited in four days without coming ashore.</p>",
+          "sourceLinks": [
+            {
+              "label": "GMA News",
+              "href": "https://www.gmanetwork.com/news/weather/content/1006510/rosal-to-bring-rains-in-central-luzon-ncr/story/"
+            },
+            {
+              "label": "Philippine Star",
+              "href": "https://www.philstar.com/headlines/weather/2026/10/20/2564530/signal-no-1-5-luzon-areas-super-typhoon-rosal-enters-par"
+            },
+            {
+              "label": "Rappler",
+              "href": "https://www.rappler.com/philippines/weather/super-typhoon-rosal-itcz-update-pagasa-forecast-october-20-2026-11am/"
+            },
+            {
+              "label": "Inquirer",
+              "href": "https://newsinfo.inquirer.net/2326871/super-typhoon-rosal-enters-par-signal-no-1-in-5-luzon-areas"
+            },
+            {
+              "label": "GMA News",
+              "href": "https://www.gmanetwork.com/news/weather/content/1007001/typhoon-rosal-exits-par-pagasa/story/"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "prevWeekEnding": "2026-10-17"
+}

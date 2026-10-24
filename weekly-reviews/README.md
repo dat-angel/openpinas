@@ -63,7 +63,7 @@ node scripts/validate-weekly-coverage.mjs 2026-06-27 2026-09-05
 
 Weekly, non-overlapping Sunday–Saturday windows. Source data from `philippines-2026-timeline.json`, verified against dated reporting and original releases. `lastUpdated` is the actual preparation date, including for historical backfills.
 
-Link each regular edition to the nearest available earlier regular edition; repair those links when filling gaps. Keep special editions in the archive without inserting them into the regular weekly chain. Update `content/now-developing.json` only when adding a newer completed edition, so historical backfills do not move the homepage backward. The January and early-February editions through `2026-02-08` are now filled from existing timeline events; `2026-02-07` covers the former February 1–7 hole, including the February 1 PBA championship. Coverage runs through the October 17, 2026 edition. The October 18–24 edition is due after October 24 closes.
+Link each regular edition to the nearest available earlier regular edition; repair those links when filling gaps. Keep special editions in the archive without inserting them into the regular weekly chain. Update `content/now-developing.json` only when adding a newer completed edition, so historical backfills do not move the homepage backward. The January and early-February editions through `2026-02-08` are now filled from existing timeline events; `2026-02-07` covers the former February 1–7 hole, including the February 1 PBA championship. Coverage runs through the October 24, 2026 edition. The October 25–31 edition is due after October 31 closes.
 
 ## Related Skills
 
