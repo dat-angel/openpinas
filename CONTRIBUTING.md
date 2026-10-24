@@ -229,6 +229,8 @@ npm run validate
    - Reference any related issues
    - Include screenshots if applicable
 
+This repo is public. Keep PR descriptions public-facing: do not include internal notes, AI-agent instructions or acceptance checklists, editorial/owner-decision lists, private file references, deployment secrets or protection details, dashboard links, or personal information.
+
 ### PR Title Format
 
 - `[DATA] Add Example Dynasty`
