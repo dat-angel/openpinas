@@ -159,7 +159,7 @@ for (const page of pages) {
   if (result.protected) {
     protectedPreview = true;
     if (bypass) {
-      fail(`${page.label} is still behind Vercel Deployment Protection after the bypass secret was sent.`);
+      fail(`${page.label} could not be checked: the preview deployment requires authentication.`);
     }
     continue;
   }
@@ -237,7 +237,7 @@ for (const url of sourceHrefs) {
 async function checkVisuals() {
   if (protectedPreview) {
     if (bypass) return;
-    warn("Preview is behind Vercel Deployment Protection, so layout was not checked. Set VERCEL_AUTOMATION_BYPASS_SECRET to verify the rendered site.");
+    warn("Preview check skipped: the preview deployment requires authentication.");
     return;
   }
   let chromium;
@@ -317,7 +317,7 @@ async function vercelApi(pathname, { method = "GET", body, query = {} } = {}) {
 async function resolveThreads() {
   if (!wantResolve) return "not requested";
   if (!process.env.VERCEL_TOKEN || !process.env.VERCEL_TEAM_ID || !process.env.VERCEL_PROJECT_ID) {
-    warn("toolbar resolve skipped: set VERCEL_TOKEN, VERCEL_TEAM_ID, and VERCEL_PROJECT_ID");
+    warn("toolbar resolve skipped.");
     return "skipped";
   }
   if (!branch) {
@@ -349,7 +349,7 @@ async function resolveThreads() {
         body: { markdown: message },
       });
     } catch (error) {
-      warn(`could not reply on ${id}: ${error.message}`);
+      warn("could not reply on a review thread.");
     }
     await vercelApi(`/toolbar/threads/${encodeURIComponent(id)}`, {
       method: "PATCH",
@@ -363,7 +363,7 @@ let resolveResult = "not run";
 try {
   resolveResult = await resolveThreads();
 } catch (error) {
-  fail(`toolbar resolve failed: ${error.message}`);
+  fail("toolbar resolve failed.");
   resolveResult = "failed";
 }
 
@@ -386,7 +386,7 @@ if (warnings.length) {
 if (failures.length) {
   lines.push(`## Failures`, ``, ...failures.map((item) => `- ${item}`), ``);
 } else {
-  lines.push(`Passed.`);
+  lines.push(`Preview check passed.`);
 }
 fs.mkdirSync(path.dirname(summaryPath), { recursive: true });
 fs.writeFileSync(summaryPath, `${lines.join("\n")}\n`);
