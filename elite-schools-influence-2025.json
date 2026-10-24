@@ -2,7 +2,14 @@
   "metadata": {
     "title": "Elite Schools Influence Map",
     "year": 2025,
-    "note": "Placeholder data for layout, interaction, and narrative testing."
+    "note": "Placeholder data for layout, interaction, and narrative testing.",
+    "sources": [
+      {
+        "name": "Unsourced — placeholder data",
+        "url": "",
+        "used_for": "metadata.note states this is placeholder data for layout, interaction, and narrative testing. No publication or dataset is cited."
+      }
+    ]
   },
   "schools": [
     {

@@ -8,6 +8,7 @@
     '<a href="/weekly-reviews/index.html" class="op-nav-hide-mobile">Reviews</a>' +
     '<a href="/dynasties-network-visualization.html" class="op-nav-hide-mobile">Map</a>' +
     '<a href="/interactive-timeline/index.html" class="op-nav-hide-mobile">Timeline</a>' +
+    '<a href="/sources-and-related-projects.html" class="op-nav-hide-mobile">Sources</a>' +
     '<a href="https://github.com/dat-angel/openpinas" target="_blank" rel="noopener noreferrer">GitHub</a>' +
     "</div>";
   document.body.insertBefore(nav, document.body.firstChild);

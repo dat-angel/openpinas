@@ -65,7 +65,6 @@ Open [http://localhost:3000/](http://localhost:3000/) in your browser.
 - `weekly-reviews/` — Weekly review template and archive
 
 **Documentation:**
-- `CONTEXT.md` — Data rules and agent workflow
 - `Skills/` — Canonical agent skills (`ph-news-refresher`, `ph-weekly-review`)
 - `API.md` — JSON structures and fetch examples
 - `DEPLOYMENT.md` — Vercel + GitHub Pages
@@ -109,7 +108,7 @@ Understanding these power structures helps:
 
 ## Related Work
 
-- Sources and related projects: [openpinas.dev/sources-and-related-projects.html](https://openpinas.dev/sources-and-related-projects.html)
+- Sources and methodology: [openpinas.dev/sources-and-related-projects.html](https://openpinas.dev/sources-and-related-projects.html)
 - Ateneo Policy Center Political Dynasties Dataset: https://www.inclusivedemocracy.ph/data-and-infographics
 - PCIJ Political Dynasties Database: https://pcij.org/political-dynasties/
 - BetterGov Dynasty Tracker: https://dynasty-tracker.bettergov.ph

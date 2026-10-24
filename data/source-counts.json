@@ -1,0 +1,791 @@
+{
+  "generated_date": "2026-10-19",
+  "generated_date_note": "Latest last_updated/lastUpdated date among scanned JSON files. Not a build timestamp.",
+  "counting_rule": "Every external http(s) URL occurrence is counted. A URL repeated across files or within a file counts each time. Relative paths and OpenPinas/GitHub self-links are excluded.",
+  "total_links": 1987,
+  "outlet_count": 165,
+  "files_scanned": [
+    "philippines-2026-timeline.json",
+    "philippines-2025-timeline.json",
+    "philippine-political-dynasties-network-2025.json",
+    "business-connections-2025.json",
+    "elite-schools-influence-2025.json",
+    "regional-data.json",
+    "pogo-corruption-cases-2025.json",
+    "philippine-startup-ecosystem-2025.json",
+    "data/php-usd-weekly-2025.json",
+    "data/airport-passenger-summary.json",
+    "weekly-reviews/data/2026-01-02.json",
+    "weekly-reviews/data/2026-01-09.json",
+    "weekly-reviews/data/2026-01-16.json",
+    "weekly-reviews/data/2026-01-24.json",
+    "weekly-reviews/data/2026-01-31.json",
+    "weekly-reviews/data/2026-02-07.json",
+    "weekly-reviews/data/2026-02-08.json",
+    "weekly-reviews/data/2026-02-15.json",
+    "weekly-reviews/data/2026-02-22.json",
+    "weekly-reviews/data/2026-02-28.json",
+    "weekly-reviews/data/2026-03-07.json",
+    "weekly-reviews/data/2026-03-14.json",
+    "weekly-reviews/data/2026-03-21.json",
+    "weekly-reviews/data/2026-03-29.json",
+    "weekly-reviews/data/2026-04-04.json",
+    "weekly-reviews/data/2026-04-12.json",
+    "weekly-reviews/data/2026-04-19.json",
+    "weekly-reviews/data/2026-04-25.json",
+    "weekly-reviews/data/2026-05-02.json",
+    "weekly-reviews/data/2026-05-09.json",
+    "weekly-reviews/data/2026-05-16.json",
+    "weekly-reviews/data/2026-05-23.json",
+    "weekly-reviews/data/2026-05-30.json",
+    "weekly-reviews/data/2026-06-06.json",
+    "weekly-reviews/data/2026-06-08.json",
+    "weekly-reviews/data/2026-06-13.json",
+    "weekly-reviews/data/2026-06-20.json",
+    "weekly-reviews/data/2026-06-27.json",
+    "weekly-reviews/data/2026-07-04.json",
+    "weekly-reviews/data/2026-07-11.json",
+    "weekly-reviews/data/2026-07-18.json",
+    "weekly-reviews/data/2026-07-25.json",
+    "weekly-reviews/data/2026-08-01.json",
+    "weekly-reviews/data/2026-08-08.json",
+    "weekly-reviews/data/2026-08-15.json",
+    "weekly-reviews/data/2026-08-22.json",
+    "weekly-reviews/data/2026-08-29.json",
+    "weekly-reviews/data/2026-09-05.json",
+    "weekly-reviews/data/2026-09-12.json",
+    "weekly-reviews/data/2026-09-19.json",
+    "weekly-reviews/data/2026-09-26.json",
+    "weekly-reviews/data/2026-10-03.json",
+    "weekly-reviews/data/2026-10-10.json",
+    "weekly-reviews/data/2026-10-17.json"
+  ],
+  "chart": [
+    {
+      "name": "GMA",
+      "count": 310
+    },
+    {
+      "name": "Philstar",
+      "count": 274
+    },
+    {
+      "name": "Rappler",
+      "count": 240
+    },
+    {
+      "name": "Wikipedia",
+      "count": 153
+    },
+    {
+      "name": "Inquirer",
+      "count": 152
+    },
+    {
+      "name": "PNA",
+      "count": 98
+    },
+    {
+      "name": "Manila Bulletin",
+      "count": 71
+    },
+    {
+      "name": "ABS-CBN",
+      "count": 58
+    },
+    {
+      "name": "AP",
+      "count": 39
+    },
+    {
+      "name": "Tribune",
+      "count": 36
+    },
+    {
+      "name": "Manila Times",
+      "count": 34
+    },
+    {
+      "name": "BusinessWorld",
+      "count": 26
+    },
+    {
+      "name": "Bilyonaryo",
+      "count": 25
+    },
+    {
+      "name": "Al Jazeera",
+      "count": 23
+    },
+    {
+      "name": "PIA",
+      "count": 23
+    },
+    {
+      "name": "Other",
+      "count": 425
+    }
+  ],
+  "outlets": [
+    {
+      "name": "GMA",
+      "count": 310
+    },
+    {
+      "name": "Philstar",
+      "count": 274
+    },
+    {
+      "name": "Rappler",
+      "count": 240
+    },
+    {
+      "name": "Wikipedia",
+      "count": 153
+    },
+    {
+      "name": "Inquirer",
+      "count": 152
+    },
+    {
+      "name": "PNA",
+      "count": 98
+    },
+    {
+      "name": "Manila Bulletin",
+      "count": 71
+    },
+    {
+      "name": "ABS-CBN",
+      "count": 58
+    },
+    {
+      "name": "AP",
+      "count": 39
+    },
+    {
+      "name": "Tribune",
+      "count": 36
+    },
+    {
+      "name": "Manila Times",
+      "count": 34
+    },
+    {
+      "name": "BusinessWorld",
+      "count": 26
+    },
+    {
+      "name": "Bilyonaryo",
+      "count": 25
+    },
+    {
+      "name": "Al Jazeera",
+      "count": 23
+    },
+    {
+      "name": "PIA",
+      "count": 23
+    },
+    {
+      "name": "icc-cpi.int",
+      "count": 19
+    },
+    {
+      "name": "PCO",
+      "count": 18
+    },
+    {
+      "name": "Bloomberg",
+      "count": 17
+    },
+    {
+      "name": "thediplomat.com",
+      "count": 13
+    },
+    {
+      "name": "volcanodiscovery.com",
+      "count": 13
+    },
+    {
+      "name": "fdcp.ph",
+      "count": 10
+    },
+    {
+      "name": "sunstar.com.ph",
+      "count": 10
+    },
+    {
+      "name": "House of Representatives",
+      "count": 9
+    },
+    {
+      "name": "SCMP",
+      "count": 9
+    },
+    {
+      "name": "Time",
+      "count": 9
+    },
+    {
+      "name": "BusinessMirror",
+      "count": 8
+    },
+    {
+      "name": "cnn.com",
+      "count": 8
+    },
+    {
+      "name": "nikkei.com",
+      "count": 8
+    },
+    {
+      "name": "psa.gov.ph",
+      "count": 8
+    },
+    {
+      "name": "Vera Files",
+      "count": 8
+    },
+    {
+      "name": "washingtonpost.com",
+      "count": 8
+    },
+    {
+      "name": "gulfnews.com",
+      "count": 7
+    },
+    {
+      "name": "hrw.org",
+      "count": 7
+    },
+    {
+      "name": "culturalcenter.gov.ph",
+      "count": 6
+    },
+    {
+      "name": "radyopilipinas.ph",
+      "count": 6
+    },
+    {
+      "name": "ahacentre.org",
+      "count": 5
+    },
+    {
+      "name": "dole.gov.ph",
+      "count": 5
+    },
+    {
+      "name": "dost.gov.ph",
+      "count": 5
+    },
+    {
+      "name": "nbcnews.com",
+      "count": 5
+    },
+    {
+      "name": "dof.gov.ph",
+      "count": 4
+    },
+    {
+      "name": "fiba.basketball",
+      "count": 4
+    },
+    {
+      "name": "mcc.gov",
+      "count": 4
+    },
+    {
+      "name": "newsweek.com",
+      "count": 4
+    },
+    {
+      "name": "onenews.ph",
+      "count": 4
+    },
+    {
+      "name": "co.jp",
+      "count": 3
+    },
+    {
+      "name": "jurist.org",
+      "count": 3
+    },
+    {
+      "name": "manilastandard.net",
+      "count": 3
+    },
+    {
+      "name": "pep.ph",
+      "count": 3
+    },
+    {
+      "name": "philnews.ph",
+      "count": 3
+    },
+    {
+      "name": "stripes.com",
+      "count": 3
+    },
+    {
+      "name": "The Guardian",
+      "count": 3
+    },
+    {
+      "name": "thefilipinochronicle.com",
+      "count": 3
+    },
+    {
+      "name": "abogado.com.ph",
+      "count": 2
+    },
+    {
+      "name": "adb.org",
+      "count": 2
+    },
+    {
+      "name": "armyrecognition.com",
+      "count": 2
+    },
+    {
+      "name": "asiatimes.com",
+      "count": 2
+    },
+    {
+      "name": "bagongpilipinasmediahub.ph",
+      "count": 2
+    },
+    {
+      "name": "bbc.com",
+      "count": 2
+    },
+    {
+      "name": "bir.gov.ph",
+      "count": 2
+    },
+    {
+      "name": "bomboradyo.com",
+      "count": 2
+    },
+    {
+      "name": "bsp.gov.ph",
+      "count": 2
+    },
+    {
+      "name": "cbc.ca",
+      "count": 2
+    },
+    {
+      "name": "cgtn.com",
+      "count": 2
+    },
+    {
+      "name": "chathamhouse.org",
+      "count": 2
+    },
+    {
+      "name": "cinemalaya.org",
+      "count": 2
+    },
+    {
+      "name": "com.tr",
+      "count": 2
+    },
+    {
+      "name": "context.ph",
+      "count": 2
+    },
+    {
+      "name": "democracynow.org",
+      "count": 2
+    },
+    {
+      "name": "doe.gov.ph",
+      "count": 2
+    },
+    {
+      "name": "dti.gov.ph",
+      "count": 2
+    },
+    {
+      "name": "dzrh.com.ph",
+      "count": 2
+    },
+    {
+      "name": "gc.ca",
+      "count": 2
+    },
+    {
+      "name": "hongkongfp.com",
+      "count": 2
+    },
+    {
+      "name": "journalnews.com.ph",
+      "count": 2
+    },
+    {
+      "name": "judiciary.gov.ph",
+      "count": 2
+    },
+    {
+      "name": "migranteinternational.org",
+      "count": 2
+    },
+    {
+      "name": "mongabay.com",
+      "count": 2
+    },
+    {
+      "name": "ncregister.com",
+      "count": 2
+    },
+    {
+      "name": "ovovtec.org",
+      "count": 2
+    },
+    {
+      "name": "pba.ph",
+      "count": 2
+    },
+    {
+      "name": "pbs.org",
+      "count": 2
+    },
+    {
+      "name": "PCIJ",
+      "count": 2
+    },
+    {
+      "name": "philippineembassy-dc.org",
+      "count": 2
+    },
+    {
+      "name": "Politiko",
+      "count": 2
+    },
+    {
+      "name": "ptvnews.ph",
+      "count": 2
+    },
+    {
+      "name": "remate.ph",
+      "count": 2
+    },
+    {
+      "name": "rmaward.asia",
+      "count": 2
+    },
+    {
+      "name": "Senate of the Philippines",
+      "count": 2
+    },
+    {
+      "name": "sss.gov.ph",
+      "count": 2
+    },
+    {
+      "name": "tennis.com",
+      "count": 2
+    },
+    {
+      "name": "tennishead.net",
+      "count": 2
+    },
+    {
+      "name": "thetraveler.org",
+      "count": 2
+    },
+    {
+      "name": "timesofisrael.com",
+      "count": 2
+    },
+    {
+      "name": "tv5.com.ph",
+      "count": 2
+    },
+    {
+      "name": "up.edu.ph",
+      "count": 2
+    },
+    {
+      "name": "usembassy.gov",
+      "count": 2
+    },
+    {
+      "name": "worldbank.org",
+      "count": 2
+    },
+    {
+      "name": "worlddata.info",
+      "count": 2
+    },
+    {
+      "name": "wsws.org",
+      "count": 2
+    },
+    {
+      "name": "500.co",
+      "count": 1
+    },
+    {
+      "name": "917ventures.com",
+      "count": 1
+    },
+    {
+      "name": "americares.org",
+      "count": 1
+    },
+    {
+      "name": "amnesty.ca",
+      "count": 1
+    },
+    {
+      "name": "angkas.com",
+      "count": 1
+    },
+    {
+      "name": "asiasentinel.com",
+      "count": 1
+    },
+    {
+      "name": "ateneo.edu",
+      "count": 1
+    },
+    {
+      "name": "axios.com",
+      "count": 1
+    },
+    {
+      "name": "boi.gov.ph",
+      "count": 1
+    },
+    {
+      "name": "cbcponline.net",
+      "count": 1
+    },
+    {
+      "name": "cbsnews.com",
+      "count": 1
+    },
+    {
+      "name": "cnbc.com",
+      "count": 1
+    },
+    {
+      "name": "coins.ph",
+      "count": 1
+    },
+    {
+      "name": "csis.org",
+      "count": 1
+    },
+    {
+      "name": "csmonitor.com",
+      "count": 1
+    },
+    {
+      "name": "da.gov.ph",
+      "count": 1
+    },
+    {
+      "name": "davaocatholicherald.com",
+      "count": 1
+    },
+    {
+      "name": "davaotoday.com",
+      "count": 1
+    },
+    {
+      "name": "dlsu.edu.ph",
+      "count": 1
+    },
+    {
+      "name": "dmw.gov.ph",
+      "count": 1
+    },
+    {
+      "name": "dswd.gov.ph",
+      "count": 1
+    },
+    {
+      "name": "edukasyon.ph",
+      "count": 1
+    },
+    {
+      "name": "evrimagaci.org",
+      "count": 1
+    },
+    {
+      "name": "filipinotimes.net",
+      "count": 1
+    },
+    {
+      "name": "focus-economics.com",
+      "count": 1
+    },
+    {
+      "name": "fortune.com",
+      "count": 1
+    },
+    {
+      "name": "foxmontcapital.com",
+      "count": 1
+    },
+    {
+      "name": "gcash.com",
+      "count": 1
+    },
+    {
+      "name": "generalatlantic.com",
+      "count": 1
+    },
+    {
+      "name": "gobipartners.com",
+      "count": 1
+    },
+    {
+      "name": "healthnow.ph",
+      "count": 1
+    },
+    {
+      "name": "ideaspacefoundation.org",
+      "count": 1
+    },
+    {
+      "name": "impacthub.ph",
+      "count": 1
+    },
+    {
+      "name": "ing.com",
+      "count": 1
+    },
+    {
+      "name": "intellinews.com",
+      "count": 1
+    },
+    {
+      "name": "investagrams.com",
+      "count": 1
+    },
+    {
+      "name": "kalibrr.com",
+      "count": 1
+    },
+    {
+      "name": "kayafounders.com",
+      "count": 1
+    },
+    {
+      "name": "khaleejtimes.com",
+      "count": 1
+    },
+    {
+      "name": "kickstart.ph",
+      "count": 1
+    },
+    {
+      "name": "kumu.ph",
+      "count": 1
+    },
+    {
+      "name": "ltfrb.gov.ph",
+      "count": 1
+    },
+    {
+      "name": "malaya.com.ph",
+      "count": 1
+    },
+    {
+      "name": "mapua.edu.ph",
+      "count": 1
+    },
+    {
+      "name": "maya.ph",
+      "count": 1
+    },
+    {
+      "name": "mayani.ph",
+      "count": 1
+    },
+    {
+      "name": "metromart.com",
+      "count": 1
+    },
+    {
+      "name": "nasa.gov",
+      "count": 1
+    },
+    {
+      "name": "newyorkpcg.org",
+      "count": 1
+    },
+    {
+      "name": "oecd.org",
+      "count": 1
+    },
+    {
+      "name": "omidyar.com",
+      "count": 1
+    },
+    {
+      "name": "openspace.vc",
+      "count": 1
+    },
+    {
+      "name": "pasajob.com",
+      "count": 1
+    },
+    {
+      "name": "privacy.gov.ph",
+      "count": 1
+    },
+    {
+      "name": "qbo.com.ph",
+      "count": 1
+    },
+    {
+      "name": "radar.ph",
+      "count": 1
+    },
+    {
+      "name": "rcam.org",
+      "count": 1
+    },
+    {
+      "name": "reliefweb.int",
+      "count": 1
+    },
+    {
+      "name": "sec.gov.ph",
+      "count": 1
+    },
+    {
+      "name": "sequoiacap.com",
+      "count": 1
+    },
+    {
+      "name": "sukigrocer.com",
+      "count": 1
+    },
+    {
+      "name": "thechronicle.com.ph",
+      "count": 1
+    },
+    {
+      "name": "tradingeconomics.com",
+      "count": 1
+    },
+    {
+      "name": "vaticannews.va",
+      "count": 1
+    },
+    {
+      "name": "watchers.news",
+      "count": 1
+    },
+    {
+      "name": "wavemaker.vc",
+      "count": 1
+    }
+  ]
+}
