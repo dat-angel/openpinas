@@ -1,0 +1,164 @@
+{
+  "version": 1,
+  "weekEnding": "2026-07-04",
+  "weekLabel": "June 28 – July 4, 2026",
+  "title": "OpenPinas: Weekly News Review",
+  "lastUpdated": "September 10, 2026",
+  "stats": [
+    {
+      "number": "5",
+      "label": "Stories"
+    }
+  ],
+  "eventSections": [
+    {
+      "title": "Economic",
+      "articles": [
+        {
+          "timeDatetime": "2026-06-30",
+          "timeDisplay": "June 30, 2026",
+          "category": "Economic",
+          "categoryClass": "economic",
+          "borderColor": "#3a0ca3",
+          "headline": "Metro Manila wage board approves ₱85 increase in stages",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-06-30&search=Metro%20Manila%20wage%20board%20approves%20%E2%82%B185%20increase%20in%20stages",
+          "descriptionHtml": "<p>DOLE announced an ₱85 daily minimum-wage increase for Metro Manila workers on June 30, to be delivered in two tranches. Contemporary reporting described an initial ₱60 adjustment followed by another ₱25 in January 2027. The staged increase promised relief for eligible workers, but households could not count on receiving the entire increase immediately.</p>",
+          "sourceLinks": [
+            {
+              "label": "Manila Bulletin",
+              "href": "https://mb.com.ph/2026/06/30/dole-announces-historic-p85-wage-increase-for-metro-manila-workers"
+            },
+            {
+              "label": "PNA / DOLE",
+              "href": "https://www.pna.gov.ph/index.php/articles/1278559"
+            }
+          ]
+        },
+        {
+          "timeDatetime": "2026-07-01",
+          "timeDisplay": "July 1, 2026",
+          "category": "Economic",
+          "categoryClass": "economic",
+          "borderColor": "#3a0ca3",
+          "headline": "Philippines enters World Bank’s upper-middle-income group",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-07-01&search=Philippines%20enters%20World%20Bank%E2%80%99s%20upper-middle-income%20group",
+          "descriptionHtml": "<p>The World Bank’s annual classification moved the Philippines into the upper-middle-income group, with the government welcoming the change on July 2. The classification reflects national income per person, rather than a guarantee that individual households have become middle class. The milestone sharpened the question of how economic gains translate into jobs and family purchasing power.</p>",
+          "sourceLinks": [
+            {
+              "label": "World Bank classifications",
+              "href": "https://datahelpdesk.worldbank.org/knowledgebase/articles/906519-world-bank-country-and-lending-groups"
+            },
+            {
+              "label": "PCO",
+              "href": "https://pco.gov.ph/news_releases/pbbm-welcomes-world-bank-assessment-giving-ph-upper-middle-income-status/"
+            },
+            {
+              "label": "PNA",
+              "href": "https://www.pna.gov.ph/articles/1278543"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "International Relations",
+      "articles": [
+        {
+          "timeDatetime": "2026-07-02",
+          "timeDisplay": "July 2, 2026",
+          "category": "International Relations",
+          "categoryClass": "international",
+          "borderColor": "#0d7377",
+          "headline": "Marcos and Carney elevate Canada ties to strategic partnership",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-07-02&search=Marcos%20and%20Carney%20elevate%20Canada%20ties%20to%20strategic%20partnership",
+          "descriptionHtml": "<p>Marcos and Canadian Prime Minister Mark Carney met in Vancouver on July 2 and agreed to elevate relations to a strategic partnership. They prioritized cooperation in trade, energy and security and sought to conclude a bilateral free-trade agreement. The visit placed the large Filipino Canadian community within a broader diplomatic agenda, while trade negotiations remained unfinished.</p>",
+          "sourceLinks": [
+            {
+              "label": "Prime Minister of Canada",
+              "href": "https://www.pm.gc.ca/en/news/readouts/2026/07/02/prime-minister-carney-meets-president-philippines-ferdinand-marcos-jr"
+            },
+            {
+              "label": "PNA",
+              "href": "https://www.pna.gov.ph/articles/1278595"
+            },
+            {
+              "label": "PCO joint statement",
+              "href": "https://pco.gov.ph/news_releases/joint-statement-by-the-president-of-the-republic-of-the-philippines-and-the-prime-minister-of-canada/"
+            }
+          ],
+          "dynastyLinks": [
+            {
+              "label": "Marcos-Romualdez Dynasty",
+              "href": "/dynasties-network-visualization.html#dynasty-MARCOS_ROMUALDEZ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Legal",
+      "articles": [
+        {
+          "timeDatetime": "2026-07-03",
+          "timeDisplay": "July 3, 2026",
+          "category": "Legal",
+          "categoryClass": "legal",
+          "borderColor": "#1e3a5f",
+          "headline": "Marcoleta faces plunder charges over campaign donations",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-07-03&search=Marcoleta%20faces%20plunder%20charges%20over%20campaign%20donations",
+          "descriptionHtml": "<p>The Ombudsman filed plunder and related charges against Senator Rodante Marcoleta on July 3 over ₱75 million in allegedly undeclared campaign contributions. Marcoleta disputed the accusations; prosecutors’ filing placed the allegations before the Sandiganbayan. The case brought campaign-finance disclosure and official accountability into focus ahead of the Senate’s impeachment proceedings.</p>",
+          "sourceLinks": [
+            {
+              "label": "GMA News",
+              "href": "https://www.gmanetwork.com/news/topstories/nation/993578/ombudsman-p75m-charges-marcoleta-sandiganbayan/story/"
+            },
+            {
+              "label": "PNA",
+              "href": "https://www.pna.gov.ph/articles/1278645"
+            },
+            {
+              "label": "Bombo Radyo",
+              "href": "https://legazpi.bomboradyo.com/ombudsman-isinampa-na-ang-plunder-case-laban-kay-sen-marcoleta/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Political",
+      "articles": [
+        {
+          "timeDatetime": "2026-07-02",
+          "timeDisplay": "July 2, 2026",
+          "category": "Political",
+          "categoryClass": "political",
+          "borderColor": "#3a0ca3",
+          "headline": "Senate formally notifies Sara Duterte of trial opening",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-07-02&search=Senate%20formally%20notifies%20Sara%20Duterte%20of%20trial%20opening",
+          "descriptionHtml": "<p>The Senate impeachment court issued a July 2 notice directing Sara Duterte to appear in person or through counsel for the July 6 opening. The notice followed completion of pre-trial preparations and specified a 2 p.m. start. For viewers overseas, the development supplied a formal date to follow while leaving the merits of the case to the hearings.</p>",
+          "sourceLinks": [
+            {
+              "label": "Philstar",
+              "href": "https://www.philstar.com/headlines/2026/07/03/2539569/sara-duterte-told-face-impeachment-court-july-6-person-or-counsel"
+            },
+            {
+              "label": "House pre-trial confirmation",
+              "href": "https://www.congress.gov.ph/media/press-releases/9856"
+            },
+            {
+              "label": "SunStar",
+              "href": "https://www.sunstar.com.ph/manila/sara-duterte-ordered-to-appear-as-impeachment-trial-opens-july-6"
+            }
+          ],
+          "dynastyLinks": [
+            {
+              "label": "Duterte Dynasty",
+              "href": "/dynasties-network-visualization.html#dynasty-DUTERTE_FAMILY"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "prevWeekEnding": "2026-06-27"
+}

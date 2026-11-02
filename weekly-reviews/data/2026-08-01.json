@@ -1,0 +1,138 @@
+{
+  "version": 1,
+  "weekEnding": "2026-08-01",
+  "weekLabel": "July 26 – August 1, 2026",
+  "title": "OpenPinas: Weekly News Review",
+  "lastUpdated": "September 10, 2026",
+  "stats": [
+    {
+      "number": "5",
+      "label": "Stories"
+    }
+  ],
+  "eventSections": [
+    {
+      "title": "Political",
+      "articles": [
+        {
+          "timeDatetime": "2026-07-27",
+          "timeDisplay": "July 27, 2026",
+          "category": "Political",
+          "categoryClass": "political",
+          "borderColor": "#3a0ca3",
+          "headline": "Marcos’s fifth SONA pairs reform pledges with maritime-rights defense",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-07-27&search=Marcos%E2%80%99s%20fifth%20SONA%20pairs%20reform%20pledges%20with%20maritime-rights%20defense",
+          "descriptionHtml": "<p>Marcos delivered his fifth State of the Nation Address on July 27, setting out priorities for the remaining two years of his term. He reaffirmed the 2016 arbitral award and said charges were expected against former Speaker Martin Romualdez in the flood-control scandal. The speech put accountability and sovereignty at the center of his agenda, while implementation and legal findings remained separate tests.</p>",
+          "sourceLinks": [
+            {
+              "label": "PCO",
+              "href": "https://pco.gov.ph/news_releases/sona-2026-marcos-vows-to-finish-reforms-as-term-enters-final-stretch/"
+            },
+            {
+              "label": "ABS-CBN full speech",
+              "href": "https://www.abs-cbn.com/news/nation/2026/7/27/full-text-2026-sona-of-president-ferdinand-marcos-jr-1837"
+            },
+            {
+              "label": "AP",
+              "href": "https://apnews.com/article/8556820a6c0b75656b1da62ed971c9c3"
+            }
+          ],
+          "dynastyLinks": [
+            {
+              "label": "Marcos-Romualdez Dynasty",
+              "href": "/dynasties-network-visualization.html#dynasty-MARCOS_ROMUALDEZ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Legal",
+      "articles": [
+        {
+          "timeDatetime": "2026-07-30",
+          "timeDisplay": "July 30, 2026",
+          "category": "Legal",
+          "categoryClass": "legal",
+          "borderColor": "#1e3a5f",
+          "headline": "Court temporarily restrains Metro Manila wage increase",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-07-30&search=Court%20temporarily%20restrains%20Metro%20Manila%20wage%20increase",
+          "descriptionHtml": "<p>A Pasig court issued a temporary restraining order on July 30 against implementation of NCR Wage Order No. 27, the order providing an ₱85 minimum-wage increase in stages. DOLE reaffirmed its commitment to workers’ welfare while the wage order faced a legal challenge. The intervention introduced uncertainty for payrolls and household budgets after the first tranche had begun.</p>",
+          "sourceLinks": [
+            {
+              "label": "GMA News",
+              "href": "https://www.gmanetwork.com/news/money/economy/996798/pasig-court-issues-tro-on-p85-metro-manila-minimum-wage-hike/story/"
+            },
+            {
+              "label": "DOLE",
+              "href": "https://dole.gov.ph/news/dole-reaffirms-commitment-to-workers-welfare-amid-ncr-wage-hike-tro/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Economic",
+      "articles": [
+        {
+          "timeDatetime": "2026-07-31",
+          "timeDisplay": "July 31, 2026",
+          "category": "Economic",
+          "categoryClass": "economic",
+          "borderColor": "#3a0ca3",
+          "headline": "Business survey returns to neutral as firms weigh energy costs",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-07-31&search=Business%20survey%20returns%20to%20neutral%20as%20firms%20weigh%20energy%20costs",
+          "descriptionHtml": "<p>BSP’s business survey release on July 31 reported that sentiment returned to neutral in June. Firms expected lower oil and energy costs, along with school reopening, to support activity and consumer demand. These were survey expectations rather than measured growth, a useful distinction for diaspora families assessing prospects for businesses at home.</p>",
+          "sourceLinks": [
+            {
+              "label": "BSP via PIA",
+              "href": "https://pia.gov.ph/press-release/business-confidence-returns-to-neutral-territory/"
+            },
+            {
+              "label": "PNA",
+              "href": "https://www.pna.gov.ph/articles/1280813"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Cultural",
+      "articles": [
+        {
+          "timeDatetime": "2026-07-29",
+          "timeDisplay": "July 29, 2026",
+          "category": "Cultural",
+          "categoryClass": "cultural",
+          "borderColor": "#b23a48",
+          "headline": "Film incentive applications reopen for international collaborations",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-07-29&search=Film%20incentive%20applications%20reopen%20for%20international%20collaborations",
+          "descriptionHtml": "<p>FDCP opened the second 2026 application cycle of Film Philippines Incentives on July 29. The call covers eligible local production companies and animation studios working with foreign partners through location and co-production programs. It creates a funding opportunity for cross-border filmmaking, rather than announcing grants already awarded.</p>",
+          "sourceLinks": [
+            {
+              "label": "FDCP",
+              "href": "https://fdcp.ph/news/fpi2026-c2-call"
+            }
+          ]
+        },
+        {
+          "timeDatetime": "2026-07-31",
+          "timeDisplay": "July 31, 2026",
+          "category": "Cultural",
+          "categoryClass": "cultural",
+          "borderColor": "#b23a48",
+          "headline": "Legazpi launches Ibalong stamp as festival preparations advance",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-07-31&search=Legazpi%20launches%20Ibalong%20stamp%20as%20festival%20preparations%20advance",
+          "descriptionHtml": "<p>Legazpi officials and the Philippine Postal Corporation unveiled a commemorative stamp for the 35th Ibalong Festival on July 31. City officials presented tourism ambitions alongside the cultural celebration and its Bicol heritage. The launch gave families with ties to Legazpi a new marker of the festival season; visitor targets remained projections.</p>",
+          "sourceLinks": [
+            {
+              "label": "PNA",
+              "href": "https://www.pna.gov.ph/articles/1280804"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "prevWeekEnding": "2026-07-25"
+}

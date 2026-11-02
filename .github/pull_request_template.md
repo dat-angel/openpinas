@@ -1,3 +1,7 @@
+<!--
+This repo is public. Do not include internal notes, AI-agent instructions or acceptance checklists, editorial/owner-decision lists, private file references, deployment secrets or protection details, dashboard links, or personal information. Keep those in internal notes outside GitHub.
+-->
+
 ## Description
 Brief description of what this PR does.
 
@@ -49,3 +53,4 @@ Closes #[issue number]
 ## Additional Notes
 Any additional information that reviewers should know.
 
+Keep this public-facing; internal notes stay outside GitHub.

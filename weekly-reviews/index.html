@@ -3,13 +3,14 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script defer src="/_vercel/insights/script.js"></script>
     <title>Weekly Reviews – OpenPinas</title>
     <meta name="description" content="Weekly digests of Philippine news and political events for the diaspora." />
     <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;500;600;700&family=Source+Serif+Pro:wght@400;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
     <style>
@@ -206,6 +207,7 @@
       }
     </style>
       <script defer src="https://cdn.vercel-insights.com/v1/script.js"></script>
+      <link rel="stylesheet" href="/openpinas-theme.css" />
   </head>
   <body>
     <header>
@@ -267,9 +269,68 @@
     </footer>
 
     <script>
-      // This would be populated with actual review files
-      // For now, it's a placeholder that can be updated manually or via automation
-      const reviews = [
+      // Keep a fallback list for static/offline rendering, then refresh from data/manifest.json.
+      const fallbackReviews = [
+        {
+          date: "2026-05-30",
+          weekRange: "May 23 – May 30, 2026",
+          filename: "weekly-review-2026-05-30.html",
+          eventCount: 5
+        },
+        {
+          date: "2026-05-23",
+          weekRange: "May 16 – May 23, 2026",
+          filename: "weekly-review-2026-05-23.html",
+          eventCount: 6
+        },
+        {
+          date: "2026-05-16",
+          weekRange: "May 9 – May 16, 2026",
+          filename: "weekly-review-2026-05-16.html",
+          eventCount: 6
+        },
+        {
+          date: "2026-05-09",
+          weekRange: "May 2 – May 9, 2026",
+          filename: "weekly-review-2026-05-09.html",
+          eventCount: 7
+        },
+        {
+          date: "2026-05-02",
+          weekRange: "April 26 – May 2, 2026",
+          filename: "weekly-review-2026-05-02.html",
+          eventCount: 8
+        },
+        {
+          date: "2026-04-25",
+          weekRange: "April 18 – April 25, 2026",
+          filename: "weekly-review-2026-04-25.html",
+          eventCount: 8
+        },
+        {
+          date: "2026-04-19",
+          weekRange: "April 12 – April 19, 2026",
+          filename: "weekly-review-2026-04-19.html",
+          eventCount: 6
+        },
+        {
+          date: "2026-04-12",
+          weekRange: "April 5 – April 12, 2026",
+          filename: "weekly-review-2026-04-12.html",
+          eventCount: 5
+        },
+        {
+          date: "2026-04-04",
+          weekRange: "March 29 – April 4, 2026",
+          filename: "weekly-review-2026-04-04.html",
+          eventCount: 6
+        },
+        {
+          date: "2026-03-29",
+          weekRange: "March 22-29, 2026",
+          filename: "weekly-review-2026-03-29.html",
+          eventCount: 11
+        },
         {
           date: "2026-03-21",
           weekRange: "March 15-21, 2026",
@@ -292,7 +353,7 @@
           date: "2026-02-28",
           weekRange: "February 22-28, 2026",
           filename: "weekly-review-2026-02-28.html",
-          eventCount: 16
+          eventCount: 14
         },
         {
           date: "2026-02-22",
@@ -310,31 +371,31 @@
           date: "2026-02-08",
           weekRange: "February 2-8, 2026",
           filename: "weekly-review-2026-02-08.html",
-          eventCount: 11
+          eventCount: 0
         },
         {
           date: "2026-01-31",
           weekRange: "January 25-31, 2026",
           filename: "weekly-review-2026-01-31.html",
-          eventCount: 6
+          eventCount: 0
         },
         {
           date: "2026-01-24",
           weekRange: "January 17-24, 2026",
           filename: "weekly-review-2026-01-24.html",
-          eventCount: 15
+          eventCount: 0
         },
         {
           date: "2026-01-16",
           weekRange: "January 10-16, 2026",
           filename: "weekly-review-2026-01-16.html",
-          eventCount: 9
+          eventCount: 0
         },
         {
           date: "2026-01-09",
           weekRange: "January 3-9, 2026",
           filename: "weekly-review-2026-01-09.html",
-          eventCount: 7
+          eventCount: 0
         },
         {
           date: "2026-01-02",
@@ -343,6 +404,7 @@
           eventCount: 7
         }
       ];
+      let reviews = [...fallbackReviews];
 
       function formatDate(dateString) {
         // Parse YYYY-MM-DD format properly
@@ -385,16 +447,39 @@
         `).join("");
       }
 
+      async function refreshReviewsFromManifest() {
+        try {
+          const response = await fetch("data/manifest.json", { cache: "no-cache" });
+          if (!response.ok) return;
+          const manifest = await response.json();
+          if (!Array.isArray(manifest.reviews) || manifest.reviews.length === 0) return;
+          reviews = manifest.reviews.map(review => ({
+            date: review.weekEnding,
+            weekRange: review.weekLabel || review.weekEnding,
+            filename: `weekly-review-${review.weekEnding}.html`,
+            eventCount: Number.isFinite(review.eventCount) ? review.eventCount : 0
+          }));
+          renderReviews();
+        } catch (error) {
+          console.error("Unable to load weekly review manifest:", error);
+        }
+      }
+
+      function initializeReviews() {
+        renderReviews();
+        refreshReviewsFromManifest();
+      }
+
       // Run when DOM is ready
       if (document.readyState === 'loading') {
-        document.addEventListener('DOMContentLoaded', renderReviews);
+        document.addEventListener('DOMContentLoaded', initializeReviews);
       } else {
-        renderReviews();
+        initializeReviews();
       }
       
       // Also try rendering after a short delay to ensure DOM is ready
       setTimeout(renderReviews, 100);
     </script>
-  </body>
+    <script src="/openpinas-nav.js" defer></script>
+</body>
 </html>
-

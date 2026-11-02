@@ -29,6 +29,18 @@
         "Corruption network analysis",
         "2025 crisis impact assessment"
       ],
+      "sources": [
+        {
+          "name": "Philippine Center for Investigative Journalism",
+          "url": "https://pcij.org/2024/12/08/governors-political-dynasties-philippines-provinces-elections/",
+          "used_for": "power_metrics.national_statistics_2025.governors_from_dynasties. PCIJ wording: at least 71 of 82 provincial governments (87%), as of December 2024. Not a source for individual dynasty nodes."
+        },
+        {
+          "name": "Ateneo Policy Center / Mendoza et al., via Rappler",
+          "url": "https://www.rappler.com/philippines/240037-study-local-posts-occupied-by-political-dynasties/",
+          "used_for": "2019 fat-dynasty shares stored under national_statistics_2025 (67% House, 53% mayors, and the 2004–2019 increase figures). The Inclusive Democracy page describes this dataset; it does not publish the 71/82 governors count."
+        }
+      ],
       "key_2025_updates": [
         "Duterte ICC detention and trial",
         "VP Duterte impeachment proceedings (blocked by Supreme Court)",
@@ -229,6 +241,59 @@
               "date": "2026-02-20",
               "title": "ICC Grants Duterte Request to Skip Confirmation of Charges Hearing",
               "role": "mentioned"
+            },
+            {
+              "date": "2026-04-30",
+              "title": "Balikatan Drills Put Five Navies in WPS as China Patrols Scarborough",
+              "role": "primary_actor"
+            },
+            {
+              "date": "2026-05-01",
+              "title": "Labor Day Protests Center Wage Demands Amid Soaring Prices",
+              "role": "primary_actor"
+            },
+            {
+              "event_id": "2026-05-05-mabanta-arrest-romualdez",
+              "role": "primary_actor"
+            },
+            {
+              "event_id": "2026-05-06-asean-summit-cebu-marcos",
+              "role": "primary_actor"
+            },
+            {
+              "date": "2026-05-11",
+              "title": "House Impeaches VP Sara Duterte for Second Time — 257–25–9 Vote",
+              "role": "mentioned"
+            },
+            {
+              "date": "2026-05-11",
+              "title": "Alan Cayetano Ousts Tito Sotto as Senate President on Impeachment Day",
+              "role": "mentioned"
+            },
+            {
+              "date": "2026-05-13",
+              "title": "Gunshots at Senate as NBI Attempts to Arrest Bato dela Rosa on ICC Warrant",
+              "role": "primary_actor"
+            },
+            {
+              "date": "2026-05-13",
+              "title": "Luzon and Visayas Power Grids on Red Alert; Rotating Brownouts for Three Days",
+              "role": "mentioned"
+            },
+            {
+              "date": "2026-06-08",
+              "title": "Magnitude 7.8 Earthquake Strikes Off Sarangani, Mindanao; Tsunami Warning Issued",
+              "role": "primary_actor"
+            },
+            {
+              "date": "2026-06-17",
+              "title": "Sherwin Gatchalian Elected Senate President; Alan Cayetano Concedes",
+              "role": "mentioned"
+            },
+            {
+              "date": "2026-06-18",
+              "title": "Sara Duterte Impeachment Pre-Trial Conference Opens; NDRRMC Reports 78 Quake Deaths",
+              "role": "mentioned"
             }
           ],
           "2025_rumors_headlines": [
@@ -281,6 +346,38 @@
               "source": "Multiple sources, February 2026",
               "url": "https://newsinfo.inquirer.net/2183578/vice-president-sara-duterte-announces-2028-presidential-bid",
               "description": "Malacañang called Sara Duterte's early presidential announcement irrelevant, signaling the Marcos-Duterte political war will define the 2028 election cycle."
+            },
+            {
+              "date": "2026-05-05",
+              "headline": "NBI Arrests PGMN Founder Mabanta for Alleged P300M Extortion vs. Speaker Romualdez",
+              "source": "Rappler, Philstar, GMA News, May 2026",
+              "url": "https://www.gmanetwork.com/news/topstories/nation/986578/nbi-arrests-media-personality-in-alleged-extort-try-on-martin-romualdez/story/",
+              "category": "legal",
+              "description": "Social media personality Franco Mabanta arrested via entrapment for allegedly demanding P300M in exchange for withholding corruption content about the Speaker. Mabanta claims politically motivated setup."
+            },
+            {
+              "date": "2026-05-06",
+              "headline": "Marcos Chairs 48th ASEAN Summit in Cebu; 'Lead, Sail, Rise' Framework Adopted",
+              "source": "Rappler, Manila Bulletin, Philstar, May 2026",
+              "url": "https://mb.com.ph/2026/05/08/marcos-opens-asean-summit-urges-united-response-to-middle-east-crisis",
+              "category": "alliance",
+              "description": "Philippines hosted 48th ASEAN Summit (May 6-8) in Lapu-Lapu City, Cebu. Marcos anchored agenda on energy security and food supply; PH approved to host ASEAN Maritime Centre; secured Vietnam rice deal (1.5M MT at $450/MT)."
+            },
+            {
+              "date": "2026-05-13",
+              "headline": "Marcos Denies Executive Order to Arrest Bato dela Rosa Amid Senate Standoff",
+              "source": "Rappler, May 2026",
+              "url": "https://www.rappler.com/philippines/ferdinand-marcos-jr-statement-senate-gunshots-may-13-2026/",
+              "category": "legal",
+              "description": "President said government did not swarm Senate; NBI attempted ICC warrant service on drug-war senator anyway."
+            },
+            {
+              "date": "2026-05-13",
+              "headline": "Luzon-Visayas Red Alert Brownouts Expose Grid Fragility During GDP Slump",
+              "source": "Philstar, GMA News, May 2026",
+              "url": "https://www.philstar.com/nation/2026/05/16/2528210/luzon-visayas-suffer-rotational-blackouts",
+              "category": "scandal",
+              "description": "Three days of rotating brownouts with 4,160 MW offline follow Q1 GDP growth of only 2.8%."
             }
           ]
         },
@@ -368,6 +465,79 @@
               "date": "2026-02-20",
               "title": "ICC Grants Duterte Request to Skip Confirmation of Charges Hearing",
               "role": "primary_actor"
+            },
+            {
+              "date": "2026-04-29",
+              "title": "House Panel Finds Probable Cause to Impeach Sara Duterte",
+              "role": "primary_actor"
+            },
+            {
+              "date": "2026-04-30",
+              "title": "ICC Trial Chamber Sets May 27 Duterte Status Conference",
+              "role": "primary_actor"
+            },
+            {
+              "event_id": "2026-05-05-house-duterte-impeachment-panel",
+              "role": "primary_actor"
+            },
+            {
+              "event_id": "2026-05-08-house-duterte-215-votes",
+              "role": "primary_actor"
+            },
+            {
+              "date": "2026-05-11",
+              "title": "House Impeaches VP Sara Duterte for Second Time — 257–25–9 Vote",
+              "role": "primary_actor"
+            },
+            {
+              "date": "2026-05-11",
+              "title": "Alan Cayetano Ousts Tito Sotto as Senate President on Impeachment Day",
+              "role": "mentioned"
+            },
+            {
+              "date": "2026-05-13",
+              "title": "Gunshots at Senate as NBI Attempts to Arrest Bato dela Rosa on ICC Warrant",
+              "role": "mentioned"
+            },
+            {
+              "date": "2026-05-14",
+              "title": "Bato dela Rosa Leaves Senate; Ombudsman Suspends Sergeant-at-Arms Over Warning Shots",
+              "role": "mentioned"
+            },
+            {
+              "date": "2026-05-18",
+              "title": "Senate Convenes as Impeachment Court; VP Sara Duterte Summoned, Trial Set for July 6",
+              "role": "primary_actor"
+            },
+            {
+              "date": "2026-05-20",
+              "title": "Supreme Court Denies Bato dela Rosa TRO Against ICC Arrest Warrant — 9–5–1",
+              "role": "mentioned"
+            },
+            {
+              "date": "2026-05-21",
+              "title": "DOJ Orders PNP and NBI to Arrest Bato dela Rosa as ICC Fugitive",
+              "role": "mentioned"
+            },
+            {
+              "date": "2026-05-22",
+              "title": "ICC Orders Rodrigo Duterte to Remain Detained at The Hague",
+              "role": "primary_actor"
+            },
+            {
+              "date": "2026-06-08",
+              "title": "Magnitude 7.8 Earthquake Strikes Off Sarangani, Mindanao; Tsunami Warning Issued",
+              "role": "mentioned"
+            },
+            {
+              "date": "2026-06-17",
+              "title": "Sherwin Gatchalian Elected Senate President; Alan Cayetano Concedes",
+              "role": "mentioned"
+            },
+            {
+              "date": "2026-06-18",
+              "title": "Sara Duterte Impeachment Pre-Trial Conference Opens; NDRRMC Reports 78 Quake Deaths",
+              "role": "primary_actor"
             }
           ],
           "key_members": [
@@ -387,7 +557,7 @@
                 "Torture",
                 "Rape"
               ],
-              "icc_trial_status": "Initial appearance March 14, 2025; confirmation of charges hearing postponed from September 23; medical fitness testing ongoing",
+              "icc_trial_status": "Charges confirmed April 23, 2026; Trial Chamber III denied release May 22, 2026; status conference May 27, 2026",
               "2025_events": [
                 "Arrested March 11 at NAIA under ICC warrant",
                 "Transferred to The Hague",
@@ -400,7 +570,7 @@
               "name": "Sara Duterte",
               "position": "Vice President",
               "term_start": 2022,
-              "status": "impeachment_blocked_by_supreme_court",
+              "status": "impeachment_probable_cause_found_by_house_panel",
               "gender": "F",
               "wikipedia": "https://en.wikipedia.org/wiki/Sara_Duterte",
               "impeachment_date": "2025-02-05",
@@ -514,6 +684,70 @@
               "source": "Rappler, The Diplomat, February 2026",
               "url": "https://www.rappler.com/philippines/sara-duterte-slapped-fourth-impeachment-complaint-february-18-2026/",
               "description": "Renewed impeachment push after one-year bar expired: Makabayan bloc (Feb 2), Tindig Pilipinas/Akbayan (Feb 2), clergy groups (Feb 9), and lawyer Nathaniel Cabrera (Feb 18)."
+            },
+            {
+              "date": "2026-05-05",
+              "headline": "House Justice Panel Approves Sara Duterte Second Impeachment for Plenary Vote",
+              "source": "Rappler, Philstar, GMA News, May 2026",
+              "url": "https://www.gmanetwork.com/news/topstories/nation/986309/house-justice-panel-vp-sara-duterte-impeachment/story/",
+              "category": "legal",
+              "description": "Committee on Justice found probable cause on four articles: confidential funds misuse, bribery, death threats vs. Marcos, unexplained wealth. 215+ votes confirmed as of May 7."
+            },
+            {
+              "date": "2026-05-08",
+              "headline": "House Confirms 215+ Votes to Impeach Sara Duterte Ahead of May 11 Plenary",
+              "source": "Rappler, Manila Bulletin, May 2026",
+              "url": "https://www.rappler.com/philippines/sara-duterte-impeachment-numbers-update-house-may-7-2026/",
+              "category": "legal",
+              "description": "Two-thirds of the 318-member House confirmed votes in favor; Duterte camp sought Supreme Court intervention; no order was issued. Final vote set May 11."
+            },
+            {
+              "date": "2026-05-11",
+              "headline": "House Impeaches Sara Duterte 257–25–9; First Official Impeached Twice",
+              "source": "Rappler, BBC, Al Jazeera, May 2026",
+              "url": "https://www.rappler.com/philippines/house-impeaches-vice-president-sara-duterte-may-2026/",
+              "category": "legal",
+              "description": "Plenary vote transmitted articles to Senate; charges include confidential funds misuse, bribery, unexplained wealth, and threats vs. Marcos family."
+            },
+            {
+              "date": "2026-05-11",
+              "headline": "Cayetano Elected Senate President Before Impeachment Vote; Will Preside Over Trial",
+              "source": "Rappler, Tribune, May 2026",
+              "url": "https://www.rappler.com/philippines/tito-sotto-ousted-alan-cayetano-new-senate-president-may-11-2026/",
+              "category": "alliance",
+              "description": "13 senators ousted Tito Sotto; Duterte-aligned bloc gains procedural control of Senate impeachment court."
+            },
+            {
+              "date": "2026-05-14",
+              "headline": "Bato dela Rosa Leaves Senate After ICC Warrant Standoff",
+              "source": "Rappler, Philstar, May 2026",
+              "url": "https://www.rappler.com/philippines/bato-dela-rosa-left-senate-evades-icc-arrest-may-14-2026/",
+              "category": "legal",
+              "description": "Senator evaded NBI service of ICC warrant after May 13 gunshots at Senate; Ombudsman suspended sergeant-at-arms."
+            },
+            {
+              "date": "2026-05-18",
+              "headline": "Senate Impeachment Court Opens; Sara Duterte Summoned, Trial July 6",
+              "source": "Rappler, Philstar, The Diplomat, May 2026",
+              "url": "https://www.rappler.com/philippines/senate-convenes-court-what-next-sara-duterte-impeachment/",
+              "category": "legal",
+              "description": "23 senators sworn as judges; writ of summons issued; Cayetano presides over second impeachment trial."
+            },
+            {
+              "date": "2026-05-20",
+              "headline": "Supreme Court Denies Bato TRO; DOJ Orders ICC Arrest",
+              "source": "Inquirer, Rappler, May 2026",
+              "url": "https://www.rappler.com/philippines/doj-order-bato-dela-rosa-arrest-icc-case/",
+              "category": "legal",
+              "description": "9-5-1 vote clears path for manhunt; dela Rosa remains fugitive by May 23."
+            },
+            {
+              "date": "2026-05-22",
+              "headline": "ICC Keeps Rodrigo Duterte in The Hague Detention",
+              "source": "Rappler, Philstar, May 2026",
+              "url": "https://www.rappler.com/philippines/rodrigo-duterte-icc-decision-continue-detention-the-hague-may-2026/",
+              "category": "legal",
+              "description": "Trial Chamber III cites flight risk after charges confirmed; no conditional release."
             }
           ]
         },
@@ -2398,7 +2632,24 @@
               "wikipedia": "https://en.wikipedia.org/wiki/Lani_Cayetano"
             }
           ],
-          "historical_notes": "Prominent political family in Taguig City. Multiple family members have served as senators, with strong local control in Taguig."
+          "historical_notes": "Prominent political family in Taguig City. Multiple family members have served as senators, with strong local control in Taguig.",
+          "timeline_events": [
+            {
+              "date": "2026-05-11",
+              "title": "Alan Cayetano Ousts Tito Sotto as Senate President on Impeachment Day",
+              "role": "primary_actor"
+            },
+            {
+              "date": "2026-06-03",
+              "title": "Senate Reaches Quorum of 12; Gatchalian Elected Acting Senate President",
+              "role": "primary_actor"
+            },
+            {
+              "date": "2026-06-17",
+              "title": "Sherwin Gatchalian Elected Senate President; Alan Cayetano Concedes",
+              "role": "primary_actor"
+            }
+          ]
         },
         {
           "id": "BELMONTE_QUEZON_CITY",
@@ -3238,7 +3489,19 @@
               "wikipedia": "https://en.wikipedia.org/wiki/Sherwin_Gatchalian"
             }
           ],
-          "historical_notes": "Prominent political family in Valenzuela City. Multiple family members have served as mayor and senator, establishing strong local and national presence."
+          "historical_notes": "Prominent political family in Valenzuela City. Multiple family members have served as mayor and senator, establishing strong local and national presence.",
+          "timeline_events": [
+            {
+              "date": "2026-06-03",
+              "title": "Senate Reaches Quorum of 12; Gatchalian Elected Acting Senate President",
+              "role": "primary_actor"
+            },
+            {
+              "date": "2026-06-17",
+              "title": "Sherwin Gatchalian Elected Senate President; Alan Cayetano Concedes",
+              "role": "primary_actor"
+            }
+          ]
         },
         {
           "id": "COJUANGCO_TARLAC",
@@ -3977,20 +4240,53 @@
         "dynherf": "Herfindahl index measuring power concentration"
       },
       "national_statistics_2025": {
-        "governors_from_dynasties": "71 of 82 provinces (86.6%)",
+        "governors_from_dynasties": "at least 71 of 82 provincial governments (87%), as of Dec 2024 (PCIJ)",
+        "governors_from_dynasties_note": "PCIJ count from December 2024. It predates the May 2025 election even though it is stored under national_statistics_2025.",
+        "governors_from_dynasties_source": {
+          "name": "Philippine Center for Investigative Journalism",
+          "url": "https://pcij.org/2024/12/08/governors-political-dynasties-philippines-provinces-elections/",
+          "used_for": "At least 71 of 82 provincial governments (87%), as of December 2024.",
+          "note": "This count predates the May 2025 election even though it is stored under national_statistics_2025."
+        },
         "congressional_dynastic_representation": "67%",
+        "congressional_dynastic_representation_source": {
+          "name": "Ateneo Policy Center / Mendoza et al. (2019)",
+          "url": "https://www.rappler.com/philippines/240037-study-local-posts-occupied-by-political-dynasties/",
+          "used_for": "2019 fat-dynasty House share, stored here under a 2025 label."
+        },
         "mayoral_positions_dynastic": "53%",
+        "mayoral_positions_dynastic_source": {
+          "name": "Ateneo Policy Center / Mendoza et al. (2019)",
+          "url": "https://www.rappler.com/philippines/240037-study-local-posts-occupied-by-political-dynasties/",
+          "used_for": "2019 fat-dynasty mayoral share, stored here under a 2025 label."
+        },
         "provincial_board_dynastic": "80%",
+        "provincial_board_dynastic_unsourced": true,
         "senatorial_dynastic_relatives": "12.5%",
+        "senatorial_dynastic_relatives_unsourced": true,
         "unopposed_dynastic_candidates": "4.5% (800 of 18,000 positions)",
+        "unopposed_dynastic_candidates_unsourced": true,
         "increase_since_2004": {
           "governors": "from 57% to 80%",
           "house_representatives": "from 48% to 67%",
           "mayors": "from 40% to 53%"
         },
+        "increase_since_2004_source": {
+          "name": "Ateneo Policy Center / Mendoza et al. (2019)",
+          "url": "https://www.rappler.com/philippines/240037-study-local-posts-occupied-by-political-dynasties/",
+          "used_for": "2004–2019 fat-dynasty increases. These are not 2025 measurements."
+        },
         "midterm_election_2025": {
-          "turnout": "82.2% (highest in Philippine history)",
+          "turnout": "82.20% (highest in Philippine midterm history)",
+          "turnout_note": "Inquirer reports Comelec's official figure as 82.20%. The same article's raw counts (57,350,968 of 69,673,653) divide to 82.31%. OpenPinas keeps the source percentage.",
+          "turnout_source": {
+            "name": "COMELEC via Inquirer",
+            "url": "https://www.inquirer.net/444077/its-final-comelec-logs-highest-voter-turnout-for-midterm-polls-at-82-20/",
+            "used_for": "Comelec's official 82.20% turnout for the 12 May 2025 midterms, as reported by Inquirer.",
+            "note": "Inquirer also prints 57,350,968 of 69,673,653 registered voters. Those counts divide to 82.31%. The published percentage is 82.20%."
+          },
           "dynasty_wins": "Maintained strong control despite some losses",
+          "dynasty_wins_unsourced": true,
           "notable_losses": [
             "Cynthia Villar (Senate)",
             "Bong Revilla (Senate)",
@@ -3999,12 +4295,14 @@
             "Jinggoy Estrada (Senate)",
             "JV Ejercito (Senate)"
           ],
+          "notable_losses_unsourced": true,
           "notable_wins": [
             "Erwin Tulfo (Senate)",
             "Ping Lacson (Senate)",
             "Bam Aquino (Senate)",
             "Kiko Pangilinan (Senate)"
-          ]
+          ],
+          "notable_wins_unsourced": true
         }
       },
       "crisis_indicators": {
@@ -4023,7 +4321,7 @@
           {
             "case": "Duterte ICC Detention",
             "dynasty": "DUTERTE_FAMILY",
-            "status": "trial_fitness_determination",
+            "status": "trial_chamber_status_conference_scheduled",
             "arrest_date": "2025-03-11",
             "location": "The Hague, Netherlands",
             "charges": [
@@ -4036,7 +4334,7 @@
           {
             "case": "VP Duterte Impeachment",
             "dynasty": "DUTERTE_FAMILY",
-            "status": "supreme_court_blocked",
+            "status": "house_probable_cause_found",
             "ruling_date": "2025-07-25",
             "blocked_until": "2026-02-06"
           }

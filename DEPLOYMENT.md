@@ -1,22 +1,36 @@
 # OpenPinas deployment
 
-## Canonical hosting: Vercel
+## Canonical URL: openpinas.dev
 
-This repo is configured for **static deployment on Vercel** ([`vercel.json`](./vercel.json): no install/build, `outputDirectory` is the repo root).
+The live site is **[openpinas.dev](https://openpinas.dev)**, hosted on Vercel.
 
-1. Import [github.com/dat-angel/openpinas](https://github.com/dat-angel/openpinas) in the Vercel dashboard (or `vercel link` from a local clone).
-2. Use the **production URL** Vercel assigns (e.g. `https://openpinas-<team>.vercel.app`) or attach a custom domain.
-3. Treat that URL as **canonical** for links in blog posts, README, and API examples once it is live.
+## Vercel (primary)
 
-## GitHub Pages (mirror)
-
-[GitHub Pages](https://dat-angel.github.io/openpinas/) can remain enabled as a **backward-compatible mirror** until all references are updated. Prefer Vercel for new integrations (previews per branch, headers, faster rollouts).
-
-## Local preview
+This repo is configured for **Next.js static export on Vercel**.
 
 ```bash
-python3 -m http.server 8000
-# open http://localhost:8000/
+npm install
+npm run build   # runs next build, output to out/
+```
+
+Vercel serves `out/` — `vercel.json` sets `outputDirectory` to `out`.
+
+1. Import [github.com/dat-angel/openpinas](https://github.com/dat-angel/openpinas) in the Vercel dashboard (or `vercel link` from a local clone).
+2. Attach the custom domain `openpinas.dev` in the Vercel project settings.
+3. URL paths from the legacy `.html` files are preserved (e.g. `/weekly-reviews/weekly-review-2026-03-21.html`).
+
+## GitHub Pages (data endpoint)
+
+[dat-angel.github.io/openpinas](https://dat-angel.github.io/openpinas/) stays enabled — not as a site mirror, but as a **stable CDN endpoint for the raw JSON data files**. Because the JSON files live in the repo root, GitHub Pages serves them automatically with no build step required.
+
+Use `https://dat-angel.github.io/openpinas/<file>.json` in scripts, notebooks, and third-party apps. No action needed to keep this working.
+
+## Local development
+
+```bash
+npm install
+npm run dev
+# open http://localhost:3000/
 ```
 
 ## Related docs

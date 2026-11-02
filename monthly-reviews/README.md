@@ -84,7 +84,7 @@ const reviews = [
 ## Related Skills
 
 - **ph-news-refresher**: Scan news sources and update timeline/dynasty JSON files
-- **ph-weekly-review**: Generate weekly review HTML pages
+- **ph-weekly-review**: Generate weekly review JSON (`weekly-reviews/data/`)
 - **ph-monthly-review**: Generate monthly review HTML pages (this system)
 
 ## Notes

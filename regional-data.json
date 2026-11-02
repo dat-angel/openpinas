@@ -1,4 +1,15 @@
 {
+  "metadata": {
+    "title": "Regional dynasty and corruption counts",
+    "description": "Province-level counts of tracked dynasties and corruption cases.",
+    "sources": [
+      {
+        "name": "Unsourced — provenance unknown",
+        "url": "",
+        "used_for": "No source is recorded. Counts appear to summarize dynasty-network coverage rather than an independent survey or official census."
+      }
+    ]
+  },
   "regions": {
     "Luzon": {
       "Ilocos Norte": {

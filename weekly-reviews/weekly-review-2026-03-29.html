@@ -1,0 +1,1083 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script defer src="/_vercel/insights/script.js"></script>
+    <title>OpenPinas: Weekly News Review - Week of March 22-29, 2026</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --ink: #1a1a1a;
+        --muted: #5e5e5e;
+        --paper: #f8f5f0;
+        --accent: #124559;
+        --accent-2: #c44900;
+        --weather: #0b6e4f;
+        --politics: #3a0ca3;
+        --culture: #b23a48;
+        --economic: #3a0ca3;
+        --legal: #1e3a5f;
+        --international: #0d7377;
+        --religious: #d4a017;
+        --card: #ffffff;
+        --line: #d6cbbd;
+        --shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: "Source Serif Pro", Georgia, serif;
+        color: var(--ink);
+        background: radial-gradient(1200px 600px at 80% -10%, #f0e7d7 0%, transparent 60%),
+          radial-gradient(800px 500px at 10% 10%, #e6efe7 0%, transparent 55%),
+          var(--paper);
+        line-height: 1.6;
+      }
+
+      header {
+        padding: 32px 24px 20px;
+        max-width: 1100px;
+        margin: 0 auto;
+      }
+
+      h1 {
+        font-size: clamp(28px, 4vw, 44px);
+        margin: 0 0 8px;
+        letter-spacing: 0.3px;
+      }
+
+      .week-range {
+        font-size: 18px;
+        color: var(--muted);
+        margin: 0 0 20px;
+        font-weight: 500;
+      }
+
+      .nav-links {
+        display: flex;
+        gap: 16px;
+        flex-wrap: wrap;
+        margin: 20px 0;
+        padding: 12px 16px;
+        background: rgba(255, 255, 255, 0.75);
+        border: 1px solid #eadfce;
+        border-radius: 14px;
+        box-shadow: var(--shadow);
+      }
+
+      .nav-links a {
+        color: var(--accent);
+        text-decoration: none;
+        font-family: "Source Sans Pro", Arial, sans-serif;
+        font-weight: 500;
+        padding: 6px 12px;
+        border-radius: 8px;
+        transition: background 0.2s;
+      }
+
+      .nav-links a:hover {
+        background: rgba(18, 69, 89, 0.1);
+        text-decoration: none;
+      }
+
+      main {
+        max-width: 1100px;
+        margin: 16px auto 60px;
+        padding: 0 24px;
+      }
+
+      /* Two-column sidebar layout */
+      .sidebar-row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        margin: 24px 0 32px;
+      }
+
+      @media (max-width: 800px) {
+        .sidebar-row {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      .left-sidebar {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+      }
+
+      .summary-stats {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        align-content: start;
+      }
+
+      /* Weather Widget */
+      .weather-widget {
+        background: linear-gradient(135deg, #0b6e4f 0%, #1a936f 100%);
+        border-radius: 12px;
+        padding: 14px;
+        color: #fff;
+        box-shadow: var(--shadow);
+      }
+
+      .weather-widget h3 {
+        margin: 0 0 10px;
+        font-size: 12px;
+        font-weight: 600;
+        color: #fff;
+        font-family: "Source Sans Pro", sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        opacity: 0.9;
+      }
+
+      .weather-forecast {
+        display: flex;
+        gap: 4px;
+        justify-content: space-between;
+      }
+
+      .weather-day {
+        text-align: center;
+        flex: 1;
+        padding: 6px 2px;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 6px;
+      }
+
+      .weather-day .day-date {
+        font-size: 8px;
+        opacity: 0.7;
+        display: block;
+        margin-bottom: 2px;
+        font-family: "Source Sans Pro", sans-serif;
+      }
+
+      .weather-day .day-name {
+        font-size: 9px;
+        font-weight: 600;
+        text-transform: uppercase;
+        opacity: 0.9;
+        display: block;
+        margin-bottom: 4px;
+        font-family: "Source Sans Pro", sans-serif;
+      }
+
+      .weather-day .weather-icon {
+        font-size: 16px;
+        display: block;
+        margin: 2px 0;
+      }
+
+      .weather-day .temps {
+        font-size: 10px;
+        display: block;
+        font-family: "Source Sans Pro", sans-serif;
+      }
+
+      .weather-day .temps .high { font-weight: 600; }
+      .weather-day .temps .low { opacity: 0.7; }
+
+      .weather-source {
+        margin: 8px 0 0;
+        font-size: 9px;
+        opacity: 0.6;
+        font-family: "Source Sans Pro", sans-serif;
+        text-align: right;
+      }
+
+      .stat-card {
+        background: var(--card);
+        padding: 14px 12px;
+        border-radius: 10px;
+        box-shadow: var(--shadow);
+        text-align: center;
+      }
+
+      .stat-card .number {
+        font-size: 26px;
+        font-weight: 700;
+        color: var(--accent);
+        margin: 0;
+        line-height: 1.1;
+      }
+
+      .stat-card .label {
+        font-size: 11px;
+        color: var(--muted);
+        margin: 4px 0 0;
+        text-transform: uppercase;
+        letter-spacing: 0.3px;
+      }
+
+      .section {
+        margin: 40px 0;
+      }
+
+      .section-title {
+        font-size: 24px;
+        margin: 0 0 20px;
+        padding-bottom: 12px;
+        border-bottom: 2px solid var(--line);
+        color: var(--ink);
+      }
+
+      .event {
+        background: var(--card);
+        border-radius: 16px;
+        padding: 20px 24px;
+        margin-bottom: 20px;
+        box-shadow: var(--shadow);
+        border-left: 4px solid var(--accent);
+        transition: transform 0.2s, box-shadow 0.2s;
+      }
+
+      .event:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 16px 40px rgba(0, 0, 0, 0.12);
+      }
+
+      .event-header {
+        display: flex;
+        gap: 12px;
+        align-items: center;
+        margin-bottom: 12px;
+        flex-wrap: wrap;
+      }
+
+      .event time {
+        font-family: "Source Sans Pro", Arial, sans-serif;
+        font-size: 14px;
+        color: var(--muted);
+        font-weight: 500;
+      }
+
+      .category-badge {
+        padding: 4px 12px;
+        border-radius: 999px;
+        font-size: 11px;
+        text-transform: uppercase;
+        letter-spacing: 0.6px;
+        color: #fff;
+        font-family: "Source Sans Pro", Arial, sans-serif;
+        font-weight: 600;
+      }
+
+      .category-badge.political {
+        background: var(--politics);
+      }
+
+      .category-badge.cultural {
+        background: var(--culture);
+      }
+
+      .category-badge.natural-disasters {
+        background: #c44900;
+      }
+
+      .category-badge.economic {
+        background: #0b6e4f;
+      }
+
+      .category-badge.legal {
+        background: var(--legal);
+      }
+
+      .category-badge.international-relations {
+        background: var(--international);
+      }
+
+      .category-badge.religious {
+        background: var(--religious);
+      }
+
+      .category-badge.ofw {
+        background: #2563eb;
+      }
+
+      /* Exchange Rate Box - Compact for sidebar */
+      .exchange-rate-box {
+        background: linear-gradient(135deg, #1e3a5f 0%, #124559 100%);
+        border-radius: 12px;
+        padding: 16px;
+        color: #fff;
+        box-shadow: var(--shadow);
+      }
+
+      .exchange-rate-box h3 {
+        margin: 0 0 10px;
+        font-size: 13px;
+        font-weight: 600;
+        color: #fff;
+        font-family: "Source Sans Pro", sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        opacity: 0.9;
+      }
+
+      .rate-display {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      .current-rate {
+        text-align: center;
+        padding-bottom: 10px;
+        border-bottom: 1px solid rgba(255,255,255,0.15);
+      }
+
+      .rate-value {
+        font-size: 32px;
+        font-weight: 700;
+        display: block;
+        line-height: 1.1;
+      }
+
+      .rate-trend {
+        font-size: 13px;
+        padding: 3px 8px;
+        border-radius: 4px;
+        display: inline-block;
+        margin-top: 6px;
+        font-family: "Source Sans Pro", sans-serif;
+        font-weight: 600;
+      }
+
+      .rate-trend.up { background: rgba(34, 197, 94, 0.2); color: #4ade80; }
+      .rate-trend.down { background: rgba(239, 68, 68, 0.2); color: #fca5a5; }
+
+      .rate-details {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px;
+      }
+
+      .rate-item {
+        background: rgba(255, 255, 255, 0.1);
+        padding: 8px 6px;
+        border-radius: 6px;
+        text-align: center;
+      }
+
+      .rate-item .label {
+        font-size: 9px;
+        text-transform: uppercase;
+        letter-spacing: 0.3px;
+        opacity: 0.8;
+        display: block;
+        margin-bottom: 2px;
+        font-family: "Source Sans Pro", sans-serif;
+      }
+
+      .rate-item .value { font-size: 14px; font-weight: 600; }
+      .rate-context { margin: 8px 0 4px; font-size: 11px; opacity: 0.85; line-height: 1.4; }
+      .rate-source { font-size: 10px; opacity: 0.6; margin: 0; font-family: "Source Sans Pro", sans-serif; }
+
+      /* OFW Section */
+      .ofw-section {
+        background: var(--card);
+        border-radius: 16px;
+        padding: 24px;
+        margin: 32px 0;
+        box-shadow: var(--shadow);
+        border-left: 4px solid #2563eb;
+      }
+
+      .ofw-section h2 { margin: 0 0 20px; color: #2563eb; font-size: 22px; }
+
+      .ofw-stats {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 16px;
+        margin-bottom: 24px;
+      }
+
+      .ofw-stat {
+        background: rgba(37, 99, 235, 0.05);
+        padding: 16px;
+        border-radius: 10px;
+        text-align: center;
+        border: 1px solid rgba(37, 99, 235, 0.1);
+      }
+
+      .ofw-stat .number { font-size: 28px; font-weight: 700; color: #2563eb; display: block; }
+      .ofw-stat .label { font-size: 12px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.3px; }
+
+      .ofw-story {
+        padding: 16px;
+        margin: 12px 0;
+        background: rgba(37, 99, 235, 0.03);
+        border-radius: 10px;
+        border-left: 3px solid #2563eb;
+      }
+
+      .ofw-story h3 { margin: 0 0 8px; font-size: 16px; color: var(--ink); }
+      .ofw-story p { margin: 0 0 10px; font-size: 14px; line-height: 1.6; }
+
+      .ofw-details {
+        display: flex;
+        gap: 16px;
+        flex-wrap: wrap;
+        font-size: 12px;
+        color: var(--muted);
+      }
+
+      .ofw-details a { color: #2563eb; text-decoration: none; }
+      .ofw-details a:hover { text-decoration: underline; }
+
+      .travel-advisory {
+        margin-top: 20px;
+        padding: 16px;
+        background: rgba(239, 68, 68, 0.05);
+        border-radius: 10px;
+        border-left: 3px solid #ef4444;
+      }
+
+      .travel-advisory h4 { margin: 0 0 10px; font-size: 14px; color: #ef4444; }
+      .travel-advisory ul { margin: 0; padding-left: 20px; font-size: 13px; }
+      .travel-advisory li { margin: 4px 0; }
+
+      .event h2 {
+        margin: 0 0 12px;
+        font-size: 20px;
+      }
+
+      .event h2 a {
+        color: var(--ink);
+        text-decoration: none;
+      }
+
+      .event h2 a:hover {
+        color: var(--accent-2);
+        text-decoration: underline;
+      }
+
+      .event .description {
+        font-size: 15px;
+        color: var(--ink);
+        margin: 12px 0;
+        line-height: 1.7;
+      }
+
+      .event-details {
+        margin-top: 16px;
+        padding-top: 16px;
+        border-top: 1px solid var(--line);
+      }
+
+      .event-details p {
+        margin: 10px 0;
+        font-size: 14px;
+        line-height: 1.6;
+      }
+
+      .event-details strong {
+        color: var(--ink);
+        font-weight: 600;
+      }
+
+      .significance {
+        padding: 10px 14px;
+        background: rgba(18, 69, 89, 0.05);
+        border-left: 3px solid var(--accent);
+        border-radius: 6px;
+        margin: 12px 0;
+      }
+
+      .diaspora-impact {
+        padding: 10px 14px;
+        background: rgba(196, 73, 0, 0.05);
+        border-left: 3px solid var(--accent-2);
+        border-radius: 6px;
+        margin: 12px 0;
+      }
+
+      .dynasties {
+        margin: 12px 0;
+        padding: 12px;
+        background: rgba(58, 12, 163, 0.05);
+        border-left: 3px solid var(--politics);
+        border-radius: 6px;
+        font-size: 14px;
+      }
+
+      .dynasties a {
+        color: var(--politics);
+        text-decoration: none;
+        font-weight: 500;
+        margin: 0 4px;
+      }
+
+      .dynasties a:hover {
+        text-decoration: underline;
+      }
+
+      .sources {
+        margin: 12px 0;
+        font-size: 14px;
+      }
+
+      .sources a {
+        color: var(--accent-2);
+        text-decoration: none;
+        margin: 0 8px 0 0;
+      }
+
+      .sources a:hover {
+        text-decoration: underline;
+      }
+
+      .dynasty-highlights {
+        background: var(--card);
+        border-radius: 16px;
+        padding: 24px;
+        margin: 32px 0;
+        box-shadow: var(--shadow);
+        border-left: 4px solid var(--politics);
+      }
+
+      .dynasty-highlights h3 {
+        margin: 0 0 16px;
+        color: var(--politics);
+      }
+
+      .dynasty-item {
+        padding: 12px;
+        margin: 8px 0;
+        background: rgba(58, 12, 163, 0.05);
+        border-radius: 8px;
+        border-left: 3px solid var(--politics);
+      }
+
+      .dynasty-item a {
+        color: var(--politics);
+        text-decoration: none;
+        font-weight: 600;
+      }
+
+      .dynasty-item a:hover {
+        text-decoration: underline;
+      }
+
+      footer {
+        max-width: 1100px;
+        margin: 60px auto 40px;
+        padding: 24px;
+        text-align: center;
+        color: var(--muted);
+        font-size: 14px;
+        border-top: 1px solid var(--line);
+      }
+
+      footer a {
+        color: var(--accent);
+        text-decoration: none;
+      }
+
+      footer a:hover {
+        text-decoration: underline;
+      }
+
+      @media (max-width: 720px) {
+        header {
+          padding: 24px 18px 16px;
+        }
+
+        main {
+          padding: 0 18px;
+        }
+
+        .event {
+          padding: 16px 18px;
+        }
+
+        .summary-stats {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+      <link rel="stylesheet" href="/openpinas-theme.css" />
+  </head>
+  <body>
+    <header>
+      <nav style="font-size: 0.875rem; margin-bottom: 16px; font-family: 'Source Sans Pro', sans-serif;">
+        <a href="../" style="color: var(--muted); text-decoration: none;">&larr; OpenPinas</a>
+      </nav>
+      <h1>OpenPinas: Weekly News Review</h1>
+      <p class="week-range">Week of March 22-29, 2026</p>
+      <nav class="nav-links">
+        <a href="../interactive-timeline/">&#x1F4C5; Full Timeline</a>
+        <a href="../dynasties-network-visualization.html">&#x1F5FA;&#xFE0F; Dynasty Map</a>
+        <a href="index.html">&#x1F4DA; All Reviews</a>
+        <a href="weekly-review-2026-03-21.html">&larr; Previous Week</a>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Two-column layout: Stats + Weather | Exchange Rate side by side -->
+      <div class="sidebar-row">
+        <div class="left-sidebar">
+          <section class="summary-stats">
+            <div class="stat-card">
+              <p class="number">11</p>
+              <p class="label">Total Events</p>
+            </div>
+            <div class="stat-card">
+              <p class="number">4</p>
+              <p class="label">Economic</p>
+            </div>
+            <div class="stat-card">
+              <p class="number">2</p>
+              <p class="label">Legal</p>
+            </div>
+            <div class="stat-card">
+              <p class="number">3</p>
+              <p class="label">Dynasties</p>
+            </div>
+          </section>
+
+          <!-- Metro Manila Weather - March 22-29, 2026 -->
+          <section class="weather-widget">
+            <h3>Metro Manila Weather</h3>
+            <div class="weather-forecast">
+              <div class="weather-day">
+                <span class="day-date">Mar 22</span>
+                <span class="day-name">Sun</span>
+                <span class="weather-icon">&#x2600;&#xFE0F;</span>
+                <span class="temps"><span class="high">34&deg;</span> <span class="low">27&deg;</span></span>
+              </div>
+              <div class="weather-day">
+                <span class="day-date">Mar 23</span>
+                <span class="day-name">Mon</span>
+                <span class="weather-icon">&#x26C5;</span>
+                <span class="temps"><span class="high">35&deg;</span> <span class="low">27&deg;</span></span>
+              </div>
+              <div class="weather-day">
+                <span class="day-date">Mar 24</span>
+                <span class="day-name">Tue</span>
+                <span class="weather-icon">&#x2600;&#xFE0F;</span>
+                <span class="temps"><span class="high">35&deg;</span> <span class="low">28&deg;</span></span>
+              </div>
+              <div class="weather-day">
+                <span class="day-date">Mar 25</span>
+                <span class="day-name">Wed</span>
+                <span class="weather-icon">&#x26C5;</span>
+                <span class="temps"><span class="high">34&deg;</span> <span class="low">27&deg;</span></span>
+              </div>
+              <div class="weather-day">
+                <span class="day-date">Mar 26</span>
+                <span class="day-name">Thu</span>
+                <span class="weather-icon">&#x2600;&#xFE0F;</span>
+                <span class="temps"><span class="high">35&deg;</span> <span class="low">27&deg;</span></span>
+              </div>
+              <div class="weather-day">
+                <span class="day-date">Mar 27</span>
+                <span class="day-name">Fri</span>
+                <span class="weather-icon">&#x26C5;</span>
+                <span class="temps"><span class="high">34&deg;</span> <span class="low">27&deg;</span></span>
+              </div>
+              <div class="weather-day">
+                <span class="day-date">Mar 28</span>
+                <span class="day-name">Sat</span>
+                <span class="weather-icon">&#x2600;&#xFE0F;</span>
+                <span class="temps"><span class="high">35&deg;</span> <span class="low">28&deg;</span></span>
+              </div>
+              <div class="weather-day">
+                <span class="day-date">Mar 29</span>
+                <span class="day-name">Sun</span>
+                <span class="weather-icon">&#x26C5;</span>
+                <span class="temps"><span class="high">34&deg;</span> <span class="low">27&deg;</span></span>
+              </div>
+            </div>
+            <p class="weather-source">Source: PAGASA pattern &mdash; hot dry season; isolated afternoon convection possible</p>
+          </section>
+        </div>
+
+        <!-- PHP:USD Exchange Rate Box - March 22-29, 2026 -->
+        <section class="exchange-rate-box">
+          <h3>PHP:USD Exchange Rate</h3>
+          <div class="rate-display">
+            <div class="current-rate">
+              <span class="rate-value">&#x20B1;60.34</span>
+              <span class="rate-trend down">&#9660; Peso among Asia&rsquo;s weakest in March on oil + Fed</span>
+            </div>
+            <div class="rate-details">
+              <div class="rate-item">
+                <span class="label">Context</span>
+                <span class="value">&#x20B1;60.03+</span>
+              </div>
+              <div class="rate-item">
+                <span class="label">Week high</span>
+                <span class="value">&#x20B1;60.34</span>
+              </div>
+              <div class="rate-item">
+                <span class="label">Driver</span>
+                <span class="value">Oil &gt;$100</span>
+              </div>
+              <div class="rate-item">
+                <span class="label">BSP</span>
+                <span class="value">Smoothing</span>
+              </div>
+            </div>
+            <p class="rate-context">
+              <strong>Week in FX:</strong> After breaking P60, the peso stayed under pressure &mdash; trading near <strong>&#x20B1;60.03</strong> (Mar 20) and weakening further to about <strong>&#x20B1;60.34/USD</strong> by mid-week as Middle East risk and hawkish Fed expectations fed import costs. BSP intervened to moderate sharp swings rather than defend a floor. Gold volatility added secondary noise for savers.
+            </p>
+            <p class="rate-source">Source: BSP daily FX / Trading Economics / scan week 2026-03-22&ndash;29</p>
+          </div>
+        </section>
+      </div>
+
+      <!-- ===== EVENTS ===== -->
+
+      <!-- ECONOMIC -->
+      <section class="section">
+        <h2 class="section-title">Economic</h2>
+
+        <article class="event" style="border-left-color: #0b6e4f;">
+          <div class="event-header">
+            <time datetime="2026-03-24">March 24-28, 2026</time>
+            <span class="category-badge economic">Economic</span>
+          </div>
+          <h2><a href="../interactive-timeline/?date=2026-03-24&search=DSWD%20TNVS%20cash%20aid">DSWD Rolls Out &#x20B1;5,000 Cash Aid to 34,000+ Metro Manila Transport Workers</a></h2>
+          <p class="description">The Department of Social Welfare and Development opened a rolling payout under AICS: TNVS drivers on <strong>March 24</strong>, jeepney drivers <strong>March 25</strong>, delivery riders <strong>March 26-27</strong>, and motorcycle taxi riders <strong>March 28</strong>. President Marcos highlighted related distributions to Metro Manila drivers as emergency response to the Middle East&ndash;driven fuel shock (crude quoted above <strong>$100/bbl</strong>; peso near <strong>&#x20B1;60.03</strong>).</p>
+          <div class="event-details">
+            <p class="significance"><strong>Significance:</strong> Formalizes crisis cash relief beyond fare/toll measures &mdash; a political and welfare signal that transport livelihoods are under sustained pressure.</p>
+            <p class="diaspora-impact"><strong>Diaspora Impact:</strong> Families with TNVS, rider, or jeepney income may see short-term relief; one-off &#x20B1;5K is thin against volatile pump prices.</p>
+            <div class="dynasties"><strong>Dynasties:</strong>
+              <a href="../dynasties-network-visualization.html#dynasty-MARCOS_ROMUALDEZ">Marcos-Romualdez</a>
+            </div>
+            <div class="sources"><strong>Sources:</strong>
+              <a href="https://www.philstar.com/nation/2026/03/22/2515993/dswd-payout-puv-drivers-begins-tuesday" target="_blank" rel="noopener">philstar.com</a>,
+              <a href="https://mb.com.ph/2026/03/21/dswd-cash-aid-for-tnvs-and-other-puv-drivers-starts-march-24" target="_blank" rel="noopener">mb.com.ph</a>,
+              <a href="https://tribune.net.ph/2026/03/21/metro-manila-tnvs-drivers-next-for-p5k-cash-aid" target="_blank" rel="noopener">tribune.net.ph</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="event" style="border-left-color: #0b6e4f;">
+          <div class="event-header">
+            <time datetime="2026-03-22">March 20-23, 2026</time>
+            <span class="category-badge economic">Economic</span>
+          </div>
+          <h2><a href="../interactive-timeline/?date=2026-03-23&search=Peso%2060.34">Peso Weakness Persists Past &#x20B1;60 &mdash; Among Asia&rsquo;s Worst March Performers</a></h2>
+          <p class="description">After breaking <strong>&#x20B1;60</strong>, the peso slid to about <strong>&#x20B1;60.03/USD</strong> (Mar 20 context) and media reported a fresh low near <strong>&#x20B1;60.34</strong> by <strong>March 23</strong>. Drivers include expensive crude, Middle East risk, and hawkish Fed expectations. BSP steered toward smoothing sharp moves rather than defending a floor; the currency weakened more than <strong>4%</strong> in March, hurting import purchasing power even as remittances convert at weaker rates.</p>
+          <div class="event-details">
+            <p class="significance"><strong>Significance:</strong> Sustained FX stress keeps macro policy and social assistance in the spotlight as election-cycle politics heat up.</p>
+            <p class="diaspora-impact"><strong>Diaspora Impact:</strong> More pesos per dollar helps on paper; food, fuel, and logistics inflation eats into real household budgets back home.</p>
+            <div class="sources"><strong>Sources:</strong>
+              <a href="https://www.bsp.gov.ph/statistics/external/day99.aspx" target="_blank" rel="noopener">bsp.gov.ph</a>,
+              <a href="https://tradingeconomics.com/philippines/currency" target="_blank" rel="noopener">tradingeconomics.com</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="event" style="border-left-color: #0b6e4f;">
+          <div class="event-header">
+            <time datetime="2026-03-23">March 23-28, 2026</time>
+            <span class="category-badge economic">Economic</span>
+          </div>
+          <h2><a href="../interactive-timeline/?date=2026-03-23&search=toll%20discount%20fuel">Fuel Volatility, Toll Discounts for PUVs, and Growing Calls for Fuel-Tax Relief</a></h2>
+          <p class="description">Throughout the week, reporting framed energy as <strong>ongoing volatility</strong> rather than a one-day oil print: toll-fee <strong>discounts</strong> for PUVs, buses, and freight began <strong>March 23</strong> on major expressways; lawmakers renewed pushes for <strong>fuel-tax suspension</strong> and targeted aid (e.g. DZRH, Mar 27). Agencies kept contingency talking points&mdash;anti-profiteering, subsidies, possible excise relief&mdash;as CAB maintained an elevated <strong>fuel surcharge</strong> tier for aviation, keeping ticket prices sensitive to energy swings.</p>
+          <div class="event-details">
+            <p class="significance"><strong>Significance:</strong> The story is governance credibility under cost-of-living stress, not whether any single trading session was &ldquo;up&rdquo; or &ldquo;down.&rdquo;</p>
+            <p class="diaspora-impact"><strong>Diaspora Impact:</strong> Balikbayan flights, shipping, and pasalubong logistics stay price-fragile; families feel sticker shock before headline CPI fully reflects it.</p>
+            <div class="sources"><strong>Sources:</strong>
+              <a href="https://newsinfo.inquirer.net" target="_blank" rel="noopener">inquirer.net (Oil Price Watch)</a>,
+              <a href="https://www.pna.gov.ph" target="_blank" rel="noopener">pna.gov.ph</a>,
+              <a href="https://www.gmanetwork.com/news/" target="_blank" rel="noopener">gmanetwork.com</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="event" style="border-left-color: #0b6e4f;">
+          <div class="event-header">
+            <time datetime="2026-03-29">March 29, 2026</time>
+            <span class="category-badge economic">Economic</span>
+          </div>
+          <h2><a href="../interactive-timeline/?date=2026-03-29&search=pump%20price%20adjustment">Pump-Price Math Remains Brutal for Households</a></h2>
+          <p class="description">Explainers in circulation (e.g. GMA, early March context recycled in late-March scans) underline how DOE-tracked adjustments can move gasoline, diesel, and kerosene by large peso amounts per liter when global benchmarks swing&mdash;reinforcing why DSWD transport aid and tax-relief debates stayed central through month-end.</p>
+          <div class="event-details">
+            <p class="significance"><strong>Significance:</strong> Deregulated pricing means political tolerance for pain at the pump is a real regime risk for any administration.</p>
+            <p class="diaspora-impact"><strong>Diaspora Impact:</strong> Remitters may need to top up support when provincial neighbors and urban relatives face synchronized fuel-and-food shocks.</p>
+            <div class="sources"><strong>Sources:</strong>
+              <a href="https://www.gmanetwork.com/news/" target="_blank" rel="noopener">gmanetwork.com</a>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <!-- LEGAL -->
+      <section class="section">
+        <h2 class="section-title">Legal</h2>
+
+        <article class="event" style="border-left-color: var(--legal);">
+          <div class="event-header">
+            <time datetime="2026-03-25">March 22-29, 2026</time>
+            <span class="category-badge legal">Legal</span>
+          </div>
+          <h2><a href="../interactive-timeline/?date=2026-03-25&search=Sara%20Duterte%20impeachment%20mini%20trial">VP Sara Duterte Impeachment &mdash; March 25 &ldquo;Mini-Trial,&rdquo; Answer Filed, Senate Dismissal Bid</a></h2>
+          <p class="description">Ahead of <strong>March 25</strong>, the House Committee on Justice framed a rules-based &ldquo;mini-trial&rdquo;: Chair <strong>Gerville Luistro</strong> urged the Vice President to appear and answer charges (confidential funds, alleged fraudulent liquidation, DepEd-era conduct, and reported threats against President Marcos and family); Rep. <strong>Terry Ridon</strong> argued procedure would survive Supreme Court review. <strong>March 23</strong> reporting emphasized complaints sufficient in form and substance, with Duterte&rsquo;s <strong>March 16</strong> answer criticized for not engaging the merits&mdash;while she accused the House of double standards vs. a prior Marcos impeachment bid. Later in the week, her camp also sought Senate dismissal of the complaint as defective, keeping the Marcos&ndash;Duterte rupture inside institutions.</p>
+          <div class="event-details">
+            <p class="significance"><strong>Significance:</strong> Probable-cause dynamics and attendance choices this week can accelerate transmission to a Senate trial&mdash;or trigger sharper legal confrontations.</p>
+            <p class="diaspora-impact"><strong>Diaspora Impact:</strong> 2028 coalition math and stability of civilian-military-business confidence ride on how this process is perceived abroad.</p>
+            <div class="dynasties"><strong>Dynasties:</strong>
+              <a href="../dynasties-network-visualization.html#dynasty-DUTERTE_FAMILY">Duterte</a>,
+              <a href="../dynasties-network-visualization.html#dynasty-MARCOS_ROMUALDEZ">Marcos-Romualdez</a>
+            </div>
+            <div class="sources"><strong>Sources:</strong>
+              <a href="https://www.philstar.com/headlines/2026/03/22/2516103/unrebutted-evidence-may-shape-sara-impeachment-says-house-panel" target="_blank" rel="noopener">philstar.com</a>,
+              <a href="https://mb.com.ph/2026/03/22/bring-it-on-justice-panel-ready-for-sc-challenge-to-vp-duterte-impeachment-case" target="_blank" rel="noopener">mb.com.ph</a>,
+              <a href="https://www.rappler.com/philippines/" target="_blank" rel="noopener">rappler.com</a>,
+              <a href="https://thediplomat.com/2026/03/the-prospect-of-impeaching-philippine-vice-president-sara-duterte/" target="_blank" rel="noopener">thediplomat.com</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="event" style="border-left-color: var(--legal);">
+          <div class="event-header">
+            <time datetime="2026-03-22">February 27 &ndash; March 22, 2026</time>
+            <span class="category-badge legal">Legal</span>
+          </div>
+          <h2><a href="../interactive-timeline/?date=2026-03-22&search=ICC%20Duterte%20confirmation">ICC Duterte Case &mdash; Confirmation Hearing Done; Decision Due Within ~60 Days</a></h2>
+          <p class="description">The ICC announced conclusion of the <strong>confirmation of charges</strong> hearing for former President <strong>Rodrigo Duterte</strong> after <strong>February 27, 2026</strong>, starting a clock for a Pre-Trial Chamber decision (typically within about <strong>60 days</strong>&mdash;watch <strong>late April</strong>). Separately, on <strong>March 6</strong>, the Appeals Chamber <strong>rejected</strong> his detention appeal, leaving him in The Hague custody as Philippine domestic politics and the VP impeachment track run in parallel.</p>
+          <div class="event-details">
+            <p class="significance"><strong>Significance:</strong> A confirmed case would move Duterte toward a full Trial Chamber&mdash;a landmark for Southeast Asia and for accountability politics at home.</p>
+            <p class="diaspora-impact"><strong>Diaspora Impact:</strong> Human-rights networks overseas have pushed ICC engagement for years; the ruling will echo in coalition politics ahead of 2028.</p>
+            <div class="dynasties"><strong>Dynasties:</strong>
+              <a href="../dynasties-network-visualization.html#dynasty-DUTERTE_FAMILY">Duterte</a>
+            </div>
+            <div class="sources"><strong>Sources:</strong>
+              <a href="https://www.icc-cpi.int/news/icc-concludes-confirmation-charges-hearing-duterte-case" target="_blank" rel="noopener">icc-cpi.int</a>,
+              <a href="https://www.icc-cpi.int/news/icc-appeals-chamber-confirms-decision-review-mr-dutertes-detention" target="_blank" rel="noopener">icc-cpi.int</a>,
+              <a href="https://www.philstar.com/headlines/2026/03/17/2514751/turning-point-icc-hearings-raise-hopes-duterte-trial" target="_blank" rel="noopener">philstar.com</a>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <!-- INTERNATIONAL RELATIONS -->
+      <section class="section">
+        <h2 class="section-title">International Relations</h2>
+
+        <article class="event" style="border-left-color: var(--international);">
+          <div class="event-header">
+            <time datetime="2026-03-22">March 7 &amp; 22, 2026</time>
+            <span class="category-badge international-relations">International Relations</span>
+          </div>
+          <h2><a href="../interactive-timeline/?date=2026-03-22&search=fire%20control%20radar%20Malvar">West Philippine Sea &mdash; Fire-Control Radar on BRP <em>Miguel Malvar</em>; PCG Denies Secret China Deal</a></h2>
+          <p class="description">Manila confirmed a PLA Navy unit (<strong>bow 622</strong>) trained <strong>fire-control radar</strong> on the BRP <em>Miguel Malvar</em> near <strong>Sabina Shoal</strong> on <strong>March 7</strong>, publicized around <strong>March 21-22</strong>. Officials condemned the lock-on as dangerous escalation. The <strong>Philippine Coast Guard</strong> separately denied reports of a clandestine maritime cooperation pact with Beijing as lawmakers pressed for scrutiny of Chinese interference, including alleged <strong>jamming</strong> over WPS patrol lanes.</p>
+          <div class="event-details">
+            <p class="significance"><strong>Significance:</strong> Radar paints are treated as near-hostile acts; they test alliance signaling with Washington and domestic resolve on fishery and energy security.</p>
+            <p class="diaspora-impact"><strong>Diaspora Impact:</strong> Coastal provinces and seafaring OFWs face higher strategic risk; diaspora advocacy on maritime rights remains active in US and EU capitals.</p>
+            <div class="dynasties"><strong>Dynasties:</strong>
+              <a href="../dynasties-network-visualization.html#dynasty-MARCOS_ROMUALDEZ">Marcos-Romualdez</a>
+            </div>
+            <div class="sources"><strong>Sources:</strong>
+              <a href="https://www.philstar.com/headlines/2026/03/21/2515877/philippines-slams-chinas-radar-targeting-navy-ship-west-philippine-sea" target="_blank" rel="noopener">philstar.com</a>,
+              <a href="https://www.philstar.com/headlines/2026/03/22/2515997/pcg-denies-deal-china-maritime-cooperation" target="_blank" rel="noopener">philstar.com</a>,
+              <a href="https://mb.com.ph/2026/03/20/afp-chinese-warship-locks-fire-control-radar-on-ph-frigate-near-sabina-shoal" target="_blank" rel="noopener">mb.com.ph</a>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <!-- NATURAL DISASTERS -->
+      <section class="section">
+        <h2 class="section-title">Natural Disasters</h2>
+
+        <article class="event" style="border-left-color: #c44900;">
+          <div class="event-header">
+            <time datetime="2026-03-22">March 22, 2026</time>
+            <span class="category-badge natural-disasters">Natural Disasters</span>
+          </div>
+          <h2><a href="../interactive-timeline/?date=2026-03-22&search=Kanlaon">Kanlaon Unrest Still on Watchlists</a></h2>
+          <p class="description">After March&rsquo;s earlier eruptive episodes, monitors flagged <strong>Mt. Kanlaon</strong> as still meriting vigilance entering the week of <strong>March 22</strong>&mdash;with PHIVOLCS continuing assessments and communities in Negros advised to heed ash and lahar protocols.</p>
+          <div class="event-details">
+            <p class="significance"><strong>Significance:</strong> Repeated 2026 activity keeps disaster resilience spending and farm-sector stability in focus.</p>
+            <p class="diaspora-impact"><strong>Diaspora Impact:</strong> Negrense families abroad often bankroll evacuation, medical, and farm recovery costs during volcanic upticks.</p>
+            <div class="sources"><strong>Sources:</strong>
+              <a href="https://www.phivolcs.dost.gov.ph" target="_blank" rel="noopener">phivolcs.dost.gov.ph</a>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <!-- POLITICAL -->
+      <section class="section">
+        <h2 class="section-title">Political</h2>
+
+        <article class="event" style="border-left-color: var(--politics);">
+          <div class="event-header">
+            <time datetime="2026-03-23">March 23, 2026</time>
+            <span class="category-badge political">Political</span>
+          </div>
+          <h2><a href="../interactive-timeline/?date=2026-03-23&search=Marcos%20approval%20Sara">President Marcos Narrows Approval Gap with Vice President Duterte</a></h2>
+          <p class="description">Survey reporting summarized <strong>March 23</strong> showed President <strong>Bongbong Marcos</strong> closing an approval gap against Vice President <strong>Sara Duterte</strong> as impeachment narratives and administration messaging gained traction, reshaping an earlier lead for the VP.</p>
+          <div class="event-details">
+            <p class="significance"><strong>Significance:</strong> Public opinion now interacts directly with House timing on impeachment and with 2028 horse-race speculation.</p>
+            <p class="diaspora-impact"><strong>Diaspora Impact:</strong> OFW chatter and influencer takes on the Marcos&ndash;Duterte split increasingly feed into remittance households&rsquo; political cues.</p>
+            <div class="dynasties"><strong>Dynasties:</strong>
+              <a href="../dynasties-network-visualization.html#dynasty-MARCOS_ROMUALDEZ">Marcos-Romualdez</a>,
+              <a href="../dynasties-network-visualization.html#dynasty-DUTERTE_FAMILY">Duterte</a>
+            </div>
+            <div class="sources"><strong>Sources:</strong>
+              <a href="https://www.rappler.com/philippines/" target="_blank" rel="noopener">rappler.com</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="event" style="border-left-color: var(--politics);">
+          <div class="event-header">
+            <time datetime="2026-03-23">March 23, 2026</time>
+            <span class="category-badge political">Political</span>
+          </div>
+          <h2><a href="../interactive-timeline/?date=2026-03-23&search=DOH%20141%20million">DOH Undersecretary Tie and &#x20B1;141M in Infrastructure Contracts Draw Scrutiny</a></h2>
+          <p class="description">Watchdog attention focused on a Department of Health undersecretary&rsquo;s relative winning roughly <strong>&#x20B1;141 million</strong> in infrastructure contracts, sparking conflict-of-interest questions and opposition calls for legislative inquiry even before formal cases are filed.</p>
+          <div class="event-details">
+            <p class="significance"><strong>Significance:</strong> Health-sector procurement integrity matters acutely when pandemic-era infrastructure and rural hospital upgrades remain politically salient.</p>
+            <p class="diaspora-impact"><strong>Diaspora Impact:</strong> Families financing care back home lose confidence when hospital projects look captured by insiders.</p>
+            <div class="sources"><strong>Sources:</strong>
+              <a href="https://www.rappler.com/philippines/" target="_blank" rel="noopener">rappler.com</a>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <!-- RELIGIOUS -->
+      <section class="section">
+        <h2 class="section-title">Religious</h2>
+
+        <article class="event" style="border-left-color: var(--religious);">
+          <div class="event-header">
+            <time datetime="2026-03-29">March 29, 2026</time>
+            <span class="category-badge religious">Religious</span>
+          </div>
+          <h2><a href="../interactive-timeline/?date=2026-03-29&search=Lent%202026">Lenten Observances Continue Toward Holy Week</a></h2>
+          <p class="description">Catholic-majority communities marked the latter Sundays of <strong>Lent</strong>, with parishes scheduling reflections, outreach, and charity drives that often double as aid channels during concurrent fuel and food-price stress.</p>
+          <div class="event-details">
+            <p class="significance"><strong>Significance:</strong> Religious civil society remains a parallel safety net when state cash aid cannot cover everyone.</p>
+            <p class="diaspora-impact"><strong>Diaspora Impact:</strong> Parish drives and family remittances often spike during Lenten charity seasons for communities abroad and at home.</p>
+            <div class="sources"><strong>Sources:</strong>
+              <a href="https://www.cbcponline.net" target="_blank" rel="noopener">cbcponline.net</a>
+            </div>
+          </div>
+        </article>
+      </section>
+      <!-- OFW & Diaspora News Section -->
+      <section class="ofw-section">
+        <h2>OFW &amp; Diaspora News</h2>
+
+        <div class="ofw-stats">
+          <div class="ofw-stat">
+            <span class="number">&#x20B1;60.34</span>
+            <span class="label">Peso Print (mid-week)</span>
+          </div>
+          <div class="ofw-stat">
+            <span class="number">34K+</span>
+            <span class="label">NCR TNVS Eligible (&#x20B1;5K AICS)</span>
+          </div>
+          <div class="ofw-stat">
+            <span class="number">Gulf</span>
+            <span class="label">Deployment / advisory watch</span>
+          </div>
+          <div class="ofw-stat">
+            <span class="number">WOA</span>
+            <span class="label">Prior DMW Gulf designations persist</span>
+          </div>
+        </div>
+
+        <article class="ofw-story">
+          <h3>Gulf Crisis Still Weighs on OFW Deployment Conversation</h3>
+          <p>Reporting March 23 noted Middle East conflict pressure on foreign-policy and labor channels, with DOLE and OWWA monitoring for any fresh deployment or repatriation moves while the peso touched roughly <strong>&#x20B1;60.34/USD</strong>. Families should keep passports, contracts, and OWWA registrations current.</p>
+          <div class="ofw-details">
+            <span>Policy watch</span>
+            <a href="https://www.dole.gov.ph" target="_blank" rel="noopener">dole.gov.ph</a>
+          </div>
+        </article>
+
+        <article class="ofw-story">
+          <h3>Transport Cash Aid Complements &mdash; Not Replaces &mdash; Remittances</h3>
+          <p>DSWD&rsquo;s &#x20B1;5,000 payouts for TNVS, jeepney, rider, and similar workers ease one slice of the oil shock; OFW remittances still anchor household budgets where recipients are not in formal target lists.</p>
+          <div class="ofw-details">
+            <span>DSWD AICS</span>
+            <a href="https://www.dswd.gov.ph" target="_blank" rel="noopener">dswd.gov.ph</a>
+          </div>
+        </article>
+
+        <!-- Travel Advisories -->
+        <div class="travel-advisory">
+          <h4>Active Travel Advisories &mdash; ELEVATED</h4>
+          <ul>
+            <li><strong>Deployment Suspended:</strong> Israel, Lebanon, Iran, Jordan &ndash; Active military conflict; airspace closures</li>
+            <li><strong>Heightened Alert:</strong> UAE, Bahrain, Saudi Arabia, Kuwait &ndash; Warlike Operations Area declared</li>
+            <li><strong>Exercise Caution:</strong> Myanmar, Cambodia, Laos &ndash; Scam hub operations targeting OFWs</li>
+            <li><strong>Monitoring:</strong> US, Europe &ndash; Stricter immigration enforcement under anti-migrant policies</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Dynasty Highlights -->
+      <section class="dynasty-highlights">
+        <h3>Dynasty Highlights</h3>
+        <div>
+          <div class="dynasty-item">
+            <strong>
+              <a href="../dynasties-network-visualization.html#dynasty-MARCOS_ROMUALDEZ">Marcos-Romualdez</a>
+            </strong>
+            <p style="margin: 8px 0 0; font-size: 14px;">DSWD &#x20B1;5K transport aid rollout; toll discounts for PUVs; survey momentum vs. VP Duterte as impeachment hearings proceed. WPS: condemned PLA fire-control radar targeting of BRP <em>Miguel Malvar</em>; PCG denied secret China deal reports.</p>
+            <ul style="margin: 8px 0 0 20px; padding: 0; font-size: 14px;">
+              <li><a href="../interactive-timeline/?date=2026-03-24">DSWD TNVS payout window opens (March 24)</a></li>
+              <li><a href="../interactive-timeline/?date=2026-03-22">PCG denies China maritime deal (March 22)</a></li>
+            </ul>
+          </div>
+
+          <div class="dynasty-item">
+            <strong>
+              <a href="../dynasties-network-visualization.html#dynasty-DUTERTE_FAMILY">Duterte</a>
+            </strong>
+            <p style="margin: 8px 0 0; font-size: 14px;">VP Sara faces March 25 House &ldquo;mini-trial&rdquo; phase; answer filed March 16 but House says merits unaddressed; late-week angles include Senate dismissal motions. Rodrigo Duterte: ICC confirmation decision expected ~late April; detention appeal lost March 6.</p>
+            <ul style="margin: 8px 0 0 20px; padding: 0; font-size: 14px;">
+              <li><a href="../interactive-timeline/?date=2026-03-25">Impeachment mini-trial date (March 25)</a></li>
+              <li><a href="../interactive-timeline/?date=2026-03-22">ICC 60-day confirmation clock (from Feb 27)</a></li>
+            </ul>
+          </div>
+
+          <div class="dynasty-item">
+            <strong>
+              <a href="../dynasties-network-visualization.html#dynasty-MARCOS_ROMUALDEZ">Marcos-Romualdez (economic)</a>
+            </strong>
+            <p style="margin: 8px 0 0; font-size: 14px;">Oil-driven inflation and a weak peso force layered responses &mdash; toll discounts, AICS cash transfers, and loud legislative debate on fuel taxes &mdash; defining governability during a twin external shock.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        Part of the
+        <a href="https://github.com/dat-angel/openpinas">OpenPinas</a>
+        project
+      </p>
+      <p>
+        <a href="https://github.com/dat-angel/openpinas">GitHub</a>
+      </p>
+      <p style="margin-top: 12px; font-size: 12px;">
+        Last updated: March 29, 2026
+      </p>
+    </footer>
+    <script src="/openpinas-nav.js" defer></script>
+</body>
+</html>

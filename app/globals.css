@@ -1,0 +1,38 @@
+/* OpenPinas Design System — global tokens for all Next.js pages */
+
+:root {
+  --ink: #0d0d0d;
+  --muted: #6b7280;
+  --paper: #ffffff;
+  --surface: #f7f7f5;
+  --accent: #2d2de8;
+  --accent-2: #c44900;
+  --card: #ffffff;
+  --subtle: #e5e5e3;
+  --font: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font);
+  color: var(--ink);
+  background: var(--paper);
+  line-height: 1.6;
+  padding-top: 56px; /* space for fixed nav */
+}
+
+h1, h2, h3, h4, h5, h6,
+p, a, li, button, input, select, textarea, span, label, td, th {
+  font-family: inherit;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
