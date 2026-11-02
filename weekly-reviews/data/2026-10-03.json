@@ -1,0 +1,171 @@
+{
+  "version": 1,
+  "weekEnding": "2026-10-03",
+  "weekLabel": "September 27 – October 3, 2026",
+  "title": "OpenPinas: Weekly News Review",
+  "lastUpdated": "October 3, 2026",
+  "stats": [
+    {
+      "number": "5",
+      "label": "Stories"
+    }
+  ],
+  "eventSections": [
+    {
+      "title": "Political",
+      "articles": [
+        {
+          "timeDatetime": "2026-09-29",
+          "timeDisplay": "September 29, 2026",
+          "category": "Political",
+          "categoryClass": "political",
+          "borderColor": "#3a0ca3",
+          "headline": "Baste Duterte testifies he did not know of Sara's GenCorp contracts",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-09-29&search=Baste%20Duterte%20testifies%20he%20did%20not%20know%20of%20Sara%27s%20GenCorp%20contracts",
+          "descriptionHtml": "<p>Davao City Mayor Sebastian Duterte testified on September 29 as a hostile witness in his sister's impeachment trial and said he had no personal knowledge of GenCorp Industries, a firm Vice President Sara Duterte listed as a business interest. He confirmed that Davao City awarded the company 19 food and catering contracts from 2022 to 2026, 15 of them by small-value procurement, and said he would not have allowed the awards had he known she was a stockholder. The same day the court ruled she does not have to answer 104 prosecution requests about bank and tax records, citing the right against self-incrimination. The testimony and the ruling limit what the court will force the Duterte siblings to admit; they are not a finding on the unexplained-wealth article.</p>",
+          "sourceLinks": [
+            {
+              "label": "Philippine Star",
+              "href": "https://www.philstar.com/headlines/2026/09/29/2559791/sara-duterte-trial-recap-sept-29-baste-duterte-stand"
+            },
+            {
+              "label": "Rappler",
+              "href": "https://www.rappler.com/philippines/baste-duterte-sara-not-ask-favor-gencorp-intervene-procurement-impeachment/"
+            },
+            {
+              "label": "Cebu Daily News",
+              "href": "https://cebudailynews.inquirer.net/771090/under-oath-baste-duterte-says-no-business-talks-with-vp-sara"
+            }
+          ],
+          "dynastyLinks": [
+            {
+              "label": "Duterte Dynasty",
+              "href": "/dynasties-network-visualization.html#dynasty-DUTERTE_FAMILY"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Legal",
+      "articles": [
+        {
+          "timeDatetime": "2026-09-30",
+          "timeDisplay": "September 30, 2026",
+          "category": "Legal",
+          "categoryClass": "legal",
+          "borderColor": "#1e3a5f",
+          "headline": "Supreme Court dismisses challenges to the impeachment vote rule",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-09-30&search=Supreme%20Court%20dismisses%20challenges%20to%20the%20impeachment%20vote%20rule",
+          "descriptionHtml": "<p>On September 30 the Supreme Court dismissed three petitions challenging the Senate impeachment court's September 23 reading of the two-thirds vote needed to convict Vice President Sara Duterte. The Court said the petitioners lacked standing and that the cases were premature. It did not decide whether \"all the Members of the Senate\" means all 24 senators or only those legally and factually able to take part, so the Senate rule remains without a ruling on its constitutional merits.</p>",
+          "sourceLinks": [
+            {
+              "label": "Supreme Court",
+              "href": "https://sc.judiciary.gov.ph/press-briefer-september-30-2026/"
+            },
+            {
+              "label": "GMA News",
+              "href": "https://www.gmanetwork.com/news/topstories/nation/1004276/sc-junks-petitions-challenging-sara-duterte-impeachment-voting-threshold/story/"
+            },
+            {
+              "label": "Inquirer",
+              "href": "https://newsinfo.inquirer.net/2314742/sc-junks-3-petitions-vs-impeach-court-2-3-ruling"
+            }
+          ],
+          "dynastyLinks": [
+            {
+              "label": "Duterte Dynasty",
+              "href": "/dynasties-network-visualization.html#dynasty-DUTERTE_FAMILY"
+            }
+          ]
+        },
+        {
+          "timeDatetime": "2026-10-02",
+          "timeDisplay": "October 2, 2026",
+          "category": "Legal",
+          "categoryClass": "legal",
+          "borderColor": "#1e3a5f",
+          "headline": "ICC lets prosecutors use a witness statement, with limits",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-10-02&search=ICC%20lets%20prosecutors%20use%20a%20witness%20statement%2C%20with%20limits",
+          "descriptionHtml": "<p>Trial Chamber III, in a decision dated October 2, allowed prosecutors to introduce the prior written statement of witness P-1100 if he appears and consents, and said the defense can still question him. The chamber limited the prosecution's examination of that witness to one hour and rejected four related materials. Earlier in the week it refused a defense request to require expert verification of open-source evidence, warning that the extra step could delay the November 30 trial. Neither decision is a finding on the charges or on Rodrigo Duterte's detention.</p>",
+          "sourceLinks": [
+            {
+              "label": "Philippine Star",
+              "href": "https://www.philstar.com/headlines/2026/10/03/2560688/icc-allows-prior-testimony-witness-rodrigo-duterte-case"
+            },
+            {
+              "label": "ABS-CBN",
+              "href": "https://www.abs-cbn.com/news/nation/2026/10/3/icc-admits-duterte-witness-testimony-cuts-prosecution-questioning-0836"
+            },
+            {
+              "label": "Philippine Star",
+              "href": "https://www.philstar.com/headlines/2026/09/30/2559986/icc-rejects-duterte-bid-expert-verification-evidence"
+            }
+          ],
+          "dynastyLinks": [
+            {
+              "label": "Duterte Dynasty",
+              "href": "/dynasties-network-visualization.html#dynasty-DUTERTE_FAMILY"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Economic",
+      "articles": [
+        {
+          "timeDatetime": "2026-09-28",
+          "timeDisplay": "September 28, 2026",
+          "category": "Economic",
+          "categoryClass": "economic",
+          "borderColor": "#3a0ca3",
+          "headline": "Jeepney fares rise as a transport strike begins",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-09-28&search=Jeepney%20fares%20rise%20as%20a%20transport%20strike%20begins",
+          "descriptionHtml": "<p>Traditional jeepney minimum fares rose from ₱13 to ₱14 on September 28, and modern jeepney minimum fares from ₱15 to ₱17, after the Department of Transportation lifted a suspension President Ferdinand Marcos Jr. had imposed in March. The LTFRB told operators a downloadable fare guide was enough until official matrices are issued in January 2027. Manibela began a strike the same morning and said it expected 20,000 to 25,000 Metro Manila jeepney drivers to join. The new rates are in effect; that participation figure is the group's estimate, not an official count of stopped vehicles.</p>",
+          "sourceLinks": [
+            {
+              "label": "PNA / LTFRB",
+              "href": "https://www.pna.gov.ph/articles/1285005"
+            },
+            {
+              "label": "Rappler",
+              "href": "https://www.rappler.com/philippines/fare-hikes-guide-jeepney-bus-taxi-uv-express-september-28-2026/"
+            },
+            {
+              "label": "GMA News",
+              "href": "https://www.gmanetwork.com/news/topstories/nation/1003934/transport-strike-starts-as-fare-hike-takes-effect/story/"
+            }
+          ],
+          "dynastyLinks": [
+            {
+              "label": "Marcos-Romualdez Dynasty",
+              "href": "/dynasties-network-visualization.html#dynasty-MARCOS_ROMUALDEZ"
+            }
+          ]
+        },
+        {
+          "timeDatetime": "2026-10-01",
+          "timeDisplay": "October 1, 2026",
+          "category": "Economic",
+          "categoryClass": "economic",
+          "borderColor": "#3a0ca3",
+          "headline": "BSP says September inflation may have reached as high as 7.4%",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-10-01&search=BSP%20says%20September%20inflation%20may%20have%20reached%20as%20high%20as%207.4%25",
+          "descriptionHtml": "<p>The Bangko Sentral ng Pilipinas said on October 1 that September inflation likely settled between 6.4% and 7.4%, faster than August's 6.1%, with weather-related food prices, higher fuel, and a weaker peso as the main pressures. The central bank said the upper end would be the fastest pace since March 2023. The range is a forecast, not the official consumer-price release.</p>",
+          "sourceLinks": [
+            {
+              "label": "Philippine Star",
+              "href": "https://www.philstar.com/business/2026/10/01/2560070/inflation-seen-highest-level-over-three-years"
+            },
+            {
+              "label": "BusinessMirror",
+              "href": "https://businessmirror.com.ph/2026/10/01/september-inflation-could-mark-3-year-high-bsp/"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "prevWeekEnding": "2026-09-26"
+}

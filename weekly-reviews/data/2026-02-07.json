@@ -1,0 +1,385 @@
+{
+  "version": 1,
+  "weekEnding": "2026-02-07",
+  "weekLabel": "February 1-7, 2026",
+  "title": "OpenPinas: Weekly News Review",
+  "lastUpdated": "October 11, 2026",
+  "prevWeekFile": null,
+  "stats": [
+    {
+      "number": "7",
+      "label": "Stories"
+    },
+    {
+      "number": "2",
+      "label": "Political"
+    },
+    {
+      "number": "2",
+      "label": "Disasters"
+    },
+    {
+      "number": "2",
+      "label": "Dynasties"
+    }
+  ],
+  "weather": {
+    "title": "Metro Manila Weather",
+    "days": [
+      {
+        "dateLabel": "Feb 1",
+        "name": "Sun",
+        "icon": "☀️",
+        "high": "32°",
+        "low": "25°"
+      },
+      {
+        "dateLabel": "Feb 2",
+        "name": "Mon",
+        "icon": "⛅",
+        "high": "31°",
+        "low": "25°"
+      },
+      {
+        "dateLabel": "Feb 3",
+        "name": "Tue",
+        "icon": "☁️",
+        "high": "30°",
+        "low": "24°"
+      },
+      {
+        "dateLabel": "Feb 4",
+        "name": "Wed",
+        "icon": "🌧️",
+        "high": "29°",
+        "low": "24°"
+      },
+      {
+        "dateLabel": "Feb 5",
+        "name": "Thu",
+        "icon": "🌧️",
+        "high": "28°",
+        "low": "24°"
+      },
+      {
+        "dateLabel": "Feb 6",
+        "name": "Fri",
+        "icon": "⛅",
+        "high": "30°",
+        "low": "25°"
+      },
+      {
+        "dateLabel": "Feb 7",
+        "name": "Sat",
+        "icon": "⛅",
+        "high": "31°",
+        "low": "25°"
+      }
+    ],
+    "sourceNote": "Source: PAGASA"
+  },
+  "exchangeRate": {
+    "title": "PHP:USD Exchange Rate",
+    "currentRate": "₱58.65",
+    "trend": "▲ 0.31% this week",
+    "details": [
+      {
+        "label": "Open",
+        "value": "₱58.83"
+      },
+      {
+        "label": "High",
+        "value": "₱58.95"
+      },
+      {
+        "label": "Low",
+        "value": "₱58.50"
+      },
+      {
+        "label": "Close",
+        "value": "₱58.65"
+      }
+    ],
+    "contextHtml": "<strong>YTD:</strong> Peso strengthening slightly; BSP expected to cut rates 25bps in Q1 2026",
+    "sourceNote": "Source: BSP / Bloomberg"
+  },
+  "eventSections": [
+    {
+      "title": "Cultural",
+      "articles": [
+        {
+          "timeDatetime": "2026-02-01",
+          "timeDisplay": "February 1, 2026",
+          "category": "Cultural",
+          "categoryClass": "cultural",
+          "borderColor": "#b23a48",
+          "headline": "San Miguel Beermen Win Back-to-Back PBA Philippine Cup Championships",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-02-01&search=San%20Miguel%20Beermen%20Win%20Back-to-Back%20PBA%20Philippine%20Cup%20Championships",
+          "descriptionHtml": "<p>San Miguel closed out TNT 92–77 in Game 6 at MOA Arena for a second straight Philippine Cup, the franchise's 12th All-Filipino and 31st title. June Mar Fajardo had 29 points and 23 rebounds and won Finals MVP, the first Ramon Fernandez Trophy. Sunday, February 1, had sat in no edition's window; this Saturday-ending review is the first to carry it.</p>",
+          "sourceLinks": [
+            {
+              "label": "pba.ph",
+              "href": "https://www.pba.ph/news/beermen-repeat-as-philippine-cup-champs"
+            },
+            {
+              "label": "gmanetwork.com",
+              "href": "https://www.gmanetwork.com/news/sports/basketball/974978/pba-50-philippine-cup-san-miguel-vs-tnt-finals-g6-february-1-2026/story/"
+            },
+            {
+              "label": "philstar.com",
+              "href": "https://www.philstar.com/sports/2026/02/01/2505126/beermen-take-tropang-5g-out-game-6-repeat-philippine-cup-champs"
+            }
+          ],
+          "dynastyLinks": []
+        }
+      ]
+    },
+    {
+      "title": "Political",
+      "articles": [
+        {
+          "timeDatetime": "2026-02-02",
+          "timeDisplay": "February 2, 2026",
+          "category": "Political",
+          "categoryClass": "political",
+          "borderColor": "#3a0ca3",
+          "headline": "Two Impeachment Complaints Filed Against VP Sara Duterte",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-02-02&search=Two%20Impeachment%20Complaints%20Filed%20Against%20VP%20Sara%20Duterte",
+          "descriptionHtml": "<p>On the first day new complaints could be filed after the one-year bar, Makabayan and a Tindig Pilipinas–church coalition lodged two impeachment cases against Vice President Sara Duterte. Articles include confidential-fund misuse, bribery, unexplained wealth, and alleged tolerance of extrajudicial killings. House Secretary General Cheloy Garafil later confirmed both were transmitted to Speaker Bojie Dy.</p>",
+          "sourceLinks": [
+            {
+              "label": "gmanetwork.com",
+              "href": "https://www.gmanetwork.com/news/topstories/nation/975010/impeachment-complaint-filed-anew-vs-sara-duterte/story/"
+            },
+            {
+              "label": "bloomberg.com",
+              "href": "https://www.bloomberg.com/news/articles/2026-02-02/impeachment-complaint-filed-against-philippines-vp-sara-duterte"
+            },
+            {
+              "label": "asia.nikkei.com",
+              "href": "https://asia.nikkei.com/politics/philippine-vice-president-sara-duterte-faces-fresh-impeachment-complaints"
+            },
+            {
+              "label": "rappler.com",
+              "href": "https://www.rappler.com/philippines/new-impeachment-complaint-filed-vice-president-sara-duterte-february-2-2026/"
+            },
+            {
+              "label": "newsinfo.inquirer.net",
+              "href": "https://newsinfo.inquirer.net/2176079/fwd-embargo-first-in-second-set-of-impeachment-complaints-vs-vp-sara-filed"
+            }
+          ],
+          "dynastyLinks": [
+            {
+              "label": "Duterte",
+              "href": "/dynasties-network-visualization.html#dynasty-DUTERTE_FAMILY"
+            },
+            {
+              "label": "Marcos-Romualdez",
+              "href": "/dynasties-network-visualization.html#dynasty-MARCOS_ROMUALDEZ"
+            }
+          ]
+        },
+        {
+          "timeDatetime": "2026-02-04",
+          "timeDisplay": "February 4, 2026",
+          "category": "Political",
+          "categoryClass": "political",
+          "borderColor": "#3a0ca3",
+          "headline": "House Panel Dismisses Marcos Impeachment - President Gains One-Year Immunity",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-02-04&search=House%20Panel%20Dismisses%20Marcos%20Impeachment%20-%20President%20Gains%20One-Year%20Immunity",
+          "descriptionHtml": "<p>The House Committee on Justice voted the de Jesus complaint insufficient in substance 42–1–3 and rejected the Makabayan complaint 39–7. Dismissal starts a one-year constitutional bar unless the plenary reverses with one-third. Critics said the speed may preview how the same committee will treat the new cases against the vice president.</p>",
+          "sourceLinks": [
+            {
+              "label": "gmanetwork.com",
+              "href": "https://www.gmanetwork.com/news/topstories/nation/976061/house-representatives-impeachment-complaints-president-marcos/story/"
+            },
+            {
+              "label": "asia.nikkei.com",
+              "href": "https://asia.nikkei.com/politics/philippine-house-committee-rejects-marcos-impeachment-complaints"
+            },
+            {
+              "label": "philstar.com",
+              "href": "https://www.philstar.com/headlines/2026/02/04/2505714/marcos-survives-first-impeachment-attempt-justice-panel-kills-complaints"
+            },
+            {
+              "label": "congress.gov.ph",
+              "href": "https://www.congress.gov.ph/media/press-releases/view/?content=9603"
+            }
+          ],
+          "dynastyLinks": [
+            {
+              "label": "Marcos-Romualdez",
+              "href": "/dynasties-network-visualization.html#dynasty-MARCOS_ROMUALDEZ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Natural Disasters",
+      "articles": [
+        {
+          "timeDatetime": "2026-02-05",
+          "timeDisplay": "February 5, 2026",
+          "category": "Natural Disasters",
+          "categoryClass": "natural-disasters",
+          "borderColor": "#c77d10",
+          "headline": "MV Trisha Kerstin 3 Death Toll Rises to 45 - Wreckage Located",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-02-05&search=MV%20Trisha%20Kerstin%203%20Death%20Toll%20Rises%20to%2045%20-%20Wreckage%20Located",
+          "descriptionHtml": "<p>Coast Guard divers found the ferry about 1.8 nautical miles off Baluk-Baluk Island as the confirmed death toll rose to 45, with 316 survivors. Investigators said Aleson Shipping is linked to at least 31 other maritime incidents. The company's operations stayed suspended under the national safety audit ordered after the January 26 sinking.</p>",
+          "sourceLinks": [
+            {
+              "label": "philstar.com",
+              "href": "https://www.philstar.com/headlines/2026/02/04/2505706/mv-trisha-kerstin-3-death-toll-rises-45"
+            },
+            {
+              "label": "pna.gov.ph",
+              "href": "https://www.pna.gov.ph/articles/1268323"
+            },
+            {
+              "label": "manilatimes.net",
+              "href": "https://www.manilatimes.net/2026/02/05/news/national/pcg-finds-sunken-ferry-as-death-toll-rises-to-45/2271258"
+            }
+          ],
+          "dynastyLinks": []
+        },
+        {
+          "timeDatetime": "2026-02-05",
+          "timeDisplay": "February 5, 2026",
+          "category": "Natural Disasters",
+          "categoryClass": "natural-disasters",
+          "borderColor": "#c77d10",
+          "headline": "Tropical Storm Basyang Makes Landfall in Surigao del Sur",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-02-05&search=Tropical%20Storm%20Basyang%20Makes%20Landfall%20in%20Surigao%20del%20Sur",
+          "descriptionHtml": "<p>Basyang (Penha) made landfall in Bayabas, Surigao del Sur, at 11:50 p.m. on February 5 and completed five landfalls across Mindanao and the Visayas before weakening over the Sulu Sea on February 7. Nearly a dozen provinces saw 50–100 mm of rain. It was the year's second cyclone, arriving while Mayon remained at Alert Level 3.</p>",
+          "sourceLinks": [
+            {
+              "label": "ahacentre.org",
+              "href": "https://ahacentre.org/flash-update/flash-update-no-1-tropical-cyclone-penha-5-feb-2026/"
+            },
+            {
+              "label": "rappler.com",
+              "href": "https://www.rappler.com/philippines/weather/tropical-storm-basyang-update-pagasa-forecast-february-6-2026-2am/"
+            },
+            {
+              "label": "philstar.com",
+              "href": "https://www.philstar.com/headlines/weather/2026/02/05/2505986/14-areas-under-signal-no-2-basyang-maintains-strength"
+            }
+          ],
+          "dynastyLinks": []
+        }
+      ]
+    },
+    {
+      "title": "International Relations",
+      "articles": [
+        {
+          "timeDatetime": "2026-02-06",
+          "timeDisplay": "February 6, 2026",
+          "category": "International Relations",
+          "categoryClass": "international-relations",
+          "borderColor": "#0d7377",
+          "headline": "China Warship Challenges Philippine Aircraft 28 Times Over Panatag Shoal",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-02-06&search=China%20Warship%20Challenges%20Philippine%20Aircraft%2028%20Times%20Over%20Panatag%20Shoal",
+          "descriptionHtml": "<p>PLA Navy hull 553 issued 28 radio challenges to a Philippine patrol aircraft on a morning maritime-awareness flight over Scarborough Shoal. Chinese vessels in the WPS had already doubled to 41 in January. Malacañang said the Philippines will keep asserting its rights and rejected calls to give up the Kalayaan Island Group.</p>",
+          "sourceLinks": [
+            {
+              "label": "inquirer.net",
+              "href": "https://www.inquirer.net/466940/china-warship-challenges-philippine-patrol-aircraft-28-times-over-panatag/"
+            },
+            {
+              "label": "gmanetwork.com",
+              "href": "https://www.gmanetwork.com/news/topstories/nation/975625/ph-to-assert-rights-in-wps-amid-call-to-give-up-kalayaan-group-of-islands-palace/story/"
+            }
+          ],
+          "dynastyLinks": [
+            {
+              "label": "Marcos-Romualdez",
+              "href": "/dynasties-network-visualization.html#dynasty-MARCOS_ROMUALDEZ"
+            }
+          ]
+        },
+        {
+          "timeDatetime": "2026-02-07",
+          "timeDisplay": "February 7, 2026",
+          "category": "International Relations",
+          "categoryClass": "international-relations",
+          "borderColor": "#0d7377",
+          "headline": "Philippines-US Commemorate 80 Years of Diplomatic Relations",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-02-07&search=Philippines-US%20Commemorate%2080%20Years%20of%20Diplomatic%20Relations",
+          "descriptionHtml": "<p>Speaker Martin Romualdez and US Embassy Chargé Robert Ewing opened the 80th-anniversary year in Manila as the allies keep the Mutual Defense Treaty and more than 500 joint activities a year. The ceremony landed in the same week Trump invited Marcos onto a Gaza Board of Peace and a Chinese warship challenged a Philippine patrol aircraft 28 times.</p>",
+          "sourceLinks": [
+            {
+              "label": "ph.usembassy.gov",
+              "href": "https://ph.usembassy.gov/united-states-philippines-celebrate-80th-anniversary-of-diplomatic-ties-in-2026/"
+            },
+            {
+              "label": "philstar.com",
+              "href": "https://www.philstar.com/headlines/2026/02/07/2506278/philippines-united-states-commemorate-80-years-diplomatic-relations"
+            }
+          ],
+          "dynastyLinks": [
+            {
+              "label": "Marcos-Romualdez",
+              "href": "/dynasties-network-visualization.html#dynasty-MARCOS_ROMUALDEZ"
+            },
+            {
+              "label": "Romualdez",
+              "href": "/dynasties-network-visualization.html#dynasty-ROMUALDEZ_FAMILY"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "ofwSection": {
+    "title": "OFW & Diaspora News",
+    "stats": [
+      {
+        "number": "2.57M",
+        "label": "OFWs deployed (2025)"
+      },
+      {
+        "number": "$38.4B",
+        "label": "Remittances (2024)"
+      },
+      {
+        "number": "72",
+        "label": "Labor Agreements"
+      },
+      {
+        "number": "₱2.18B",
+        "label": "Aksyon Fund Aid"
+      }
+    ],
+    "stories": [
+      {
+        "title": "Trump Invites Philippines onto Gaza 'Board of Peace' — Workers, Not a $1B Fee",
+        "bodyHtml": "US Ambassador MaryKay Carlson said Manila cannot pay the $1 billion voluntary Board of Peace fee but may send construction and health workers to Gaza reconstruction. Makabayan urged rejection of what it called a mechanism to legitimize occupation outside the UN.",
+        "details": {
+          "label": "Middle East reconstruction",
+          "href": "https://www.gmanetwork.com/news/topstories/nation/975547/trump-philippines-board-peace/story/"
+        }
+      },
+      {
+        "title": "Philippines and US Mark 80 Years of Diplomatic Ties",
+        "bodyHtml": "Speaker Martin Romualdez and US Embassy Chargé Robert Ewing unveiled the anniversary logo as the allies keep a Mutual Defense Treaty and more than 500 annual military activities. The milestone matters for the more than four million Filipino Americans who depend on the visa and people-to-people channel.",
+        "details": {
+          "label": "United States",
+          "href": "https://www.philstar.com/headlines/2026/02/07/2506278/philippines-united-states-commemorate-80-years-diplomatic-relations"
+        }
+      }
+    ],
+    "travelAdvisories": {
+      "title": "Active Travel Advisories",
+      "items": [
+        "Deployment Suspended: Israel, Lebanon, Iran, Jordan – Ongoing conflicts",
+        "Exercise Caution: Myanmar, Southeast Asia – Scam hub operations targeting OFWs"
+      ]
+    }
+  },
+  "dynastyHighlights": {
+    "title": "Dynasty Highlights",
+    "items": []
+  }
+}

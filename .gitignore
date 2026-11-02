@@ -19,6 +19,21 @@ Thumbs.db
 *.log
 *.cache
 
+# Next.js build artifacts
+node_modules/
+.next/
+out/
+preview-check-artifacts/
+public/dynasty-map/
+
+# Data copied into public/ by scripts/sync-openpinas-public.cjs
+public/business-connections-2025.json
+public/elite-schools-influence-2025.json
+public/philippine-political-dynasties-network-2025.json
+public/philippine-startup-ecosystem-2025.json
+public/pogo-corruption-cases-2025.json
+public/regional-data.json
+
 # Private documentation (if accidentally copied)
 CONTEXT.md
 BLOG_POST.md
@@ -27,14 +42,24 @@ GITHUB_PAGES_SETUP.md
 Power-Map-Dynasties.md
 Timeline-2025.md
 
+# Internal development documentation (contains hardcoded paths)
+SKILLS_*.md
+SKILLS_INTEGRATION_GUIDE.md
+SKILLS_UPDATE_COMPLETE.md
+SKILLS_UPDATE_REQUIRED.md
+SKILLS_SCHEDULE_GUIDE.md
+
 # Weekly review internal docs
 # weekly-reviews/README.md  # Now public - helpful documentation for users
 
-# Individual weekly review files (generated from template)
-# Keep template and index, but ignore generated reviews
-weekly-reviews/weekly-review-*.html
-!weekly-reviews/weekly-review-template.html
-!weekly-reviews/index.html
+# Individual weekly review files - now included for GitHub Pages
+# weekly-reviews/weekly-review-*.html  # Removed - reviews should be published
+# !weekly-reviews/weekly-review-template.html
+# !weekly-reviews/index.html
 
 TEST_LINKS.md
 CHECKLIST.md
+
+# Business connections internal documentation
+docs/business-connections/INTEGRATION.md
+docs/business-connections/STATUS.md

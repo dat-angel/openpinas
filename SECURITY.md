@@ -15,9 +15,8 @@ If you discover a security vulnerability in OpenPinas, please **do not** open a 
 
 Instead, please report it via one of the following methods:
 
-1. **Email**: [Your email address] (if you have one set up)
-2. **Private Security Advisory**: Create a [private security advisory](https://github.com/dat-angel/openpinas/security/advisories/new) on GitHub
-3. **Direct Message**: Contact [@dat-angel](https://github.com/dat-angel) on GitHub
+1. **Private Security Advisory**: Create a [private security advisory](https://github.com/dat-angel/openpinas/security/advisories/new) on GitHub (preferred)
+2. **Direct Message**: Contact [@dat-angel](https://github.com/dat-angel) on GitHub
 
 ### What to Include
 

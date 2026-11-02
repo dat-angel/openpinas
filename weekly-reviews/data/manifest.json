@@ -1,0 +1,282 @@
+{
+  "version": 1,
+  "reviews": [
+    {
+      "weekEnding": "2026-10-31",
+      "weekLabel": "October 25 – October 31, 2026",
+      "eventCount": 7,
+      "prevWeekEnding": "2026-10-24"
+    },
+    {
+      "weekEnding": "2026-10-24",
+      "weekLabel": "October 18 – October 24, 2026",
+      "eventCount": 7,
+      "prevWeekEnding": "2026-10-17"
+    },
+    {
+      "weekEnding": "2026-10-17",
+      "weekLabel": "October 11 – October 17, 2026",
+      "eventCount": 7,
+      "prevWeekEnding": "2026-10-10"
+    },
+    {
+      "weekEnding": "2026-10-10",
+      "weekLabel": "October 4 – October 10, 2026",
+      "eventCount": 7,
+      "prevWeekEnding": "2026-10-03"
+    },
+    {
+      "weekEnding": "2026-10-03",
+      "weekLabel": "September 27 – October 3, 2026",
+      "eventCount": 5,
+      "prevWeekEnding": "2026-09-26"
+    },
+    {
+      "weekEnding": "2026-09-26",
+      "weekLabel": "September 20 – September 26, 2026",
+      "eventCount": 5,
+      "prevWeekEnding": "2026-09-19"
+    },
+    {
+      "weekEnding": "2026-09-19",
+      "weekLabel": "September 13 – September 19, 2026",
+      "eventCount": 5,
+      "prevWeekEnding": "2026-09-12"
+    },
+    {
+      "weekEnding": "2026-09-12",
+      "weekLabel": "September 6 – September 12, 2026",
+      "eventCount": 5,
+      "prevWeekEnding": "2026-09-05"
+    },
+    {
+      "weekEnding": "2026-09-05",
+      "weekLabel": "August 30 – September 5, 2026",
+      "eventCount": 5,
+      "prevWeekEnding": "2026-08-29"
+    },
+    {
+      "weekEnding": "2026-08-29",
+      "weekLabel": "August 23 – August 29, 2026",
+      "eventCount": 5,
+      "prevWeekEnding": "2026-08-22"
+    },
+    {
+      "weekEnding": "2026-08-22",
+      "weekLabel": "August 16 – August 22, 2026",
+      "eventCount": 5,
+      "prevWeekEnding": "2026-08-15"
+    },
+    {
+      "weekEnding": "2026-08-15",
+      "weekLabel": "August 9 – August 15, 2026",
+      "eventCount": 5,
+      "prevWeekEnding": "2026-08-08"
+    },
+    {
+      "weekEnding": "2026-08-08",
+      "weekLabel": "August 2 – August 8, 2026",
+      "eventCount": 5,
+      "prevWeekEnding": "2026-08-01"
+    },
+    {
+      "weekEnding": "2026-08-01",
+      "weekLabel": "July 26 – August 1, 2026",
+      "eventCount": 5,
+      "prevWeekEnding": "2026-07-25"
+    },
+    {
+      "weekEnding": "2026-07-25",
+      "weekLabel": "July 19 – July 25, 2026",
+      "eventCount": 5,
+      "prevWeekEnding": "2026-07-18"
+    },
+    {
+      "weekEnding": "2026-07-18",
+      "weekLabel": "July 12 – July 18, 2026",
+      "eventCount": 5,
+      "prevWeekEnding": "2026-07-11"
+    },
+    {
+      "weekEnding": "2026-07-11",
+      "weekLabel": "July 5 – July 11, 2026",
+      "eventCount": 5,
+      "prevWeekEnding": "2026-07-04"
+    },
+    {
+      "weekEnding": "2026-07-04",
+      "weekLabel": "June 28 – July 4, 2026",
+      "eventCount": 5,
+      "prevWeekEnding": "2026-06-27"
+    },
+    {
+      "weekEnding": "2026-06-27",
+      "weekLabel": "June 21 – June 27, 2026",
+      "eventCount": 5,
+      "prevWeekEnding": "2026-06-20"
+    },
+    {
+      "weekEnding": "2026-06-20",
+      "weekLabel": "June 14 – June 20, 2026",
+      "eventCount": 4,
+      "prevWeekEnding": "2026-06-13"
+    },
+    {
+      "weekEnding": "2026-06-13",
+      "weekLabel": "June 7 – June 13, 2026",
+      "eventCount": 4,
+      "prevWeekEnding": "2026-06-06"
+    },
+    {
+      "weekEnding": "2026-06-08",
+      "weekLabel": "Special — June 8, 2026 Mindanao Earthquake",
+      "eventCount": 5,
+      "prevWeekEnding": "2026-06-06",
+      "editionType": "special"
+    },
+    {
+      "weekEnding": "2026-06-06",
+      "weekLabel": "May 30 – June 6, 2026",
+      "eventCount": 5,
+      "prevWeekEnding": "2026-05-30"
+    },
+    {
+      "weekEnding": "2026-05-30",
+      "weekLabel": "May 23 – May 30, 2026",
+      "eventCount": 5,
+      "prevWeekEnding": "2026-05-23"
+    },
+    {
+      "weekEnding": "2026-05-23",
+      "weekLabel": "May 16 – May 23, 2026",
+      "eventCount": 4,
+      "prevWeekEnding": "2026-05-16"
+    },
+    {
+      "weekEnding": "2026-05-16",
+      "weekLabel": "May 9 – May 16, 2026",
+      "eventCount": 6,
+      "prevWeekEnding": "2026-05-09"
+    },
+    {
+      "weekEnding": "2026-05-09",
+      "weekLabel": "May 2 – May 9, 2026",
+      "eventCount": 6,
+      "prevWeekEnding": "2026-05-02"
+    },
+    {
+      "weekEnding": "2026-05-02",
+      "weekLabel": "April 26 – May 2, 2026",
+      "eventCount": 8,
+      "prevWeekEnding": "2026-04-25"
+    },
+    {
+      "weekEnding": "2026-04-25",
+      "weekLabel": "April 18 – April 25, 2026",
+      "eventCount": 8,
+      "prevWeekEnding": "2026-04-19"
+    },
+    {
+      "weekEnding": "2026-04-19",
+      "weekLabel": "April 12 – April 19, 2026",
+      "eventCount": 6,
+      "prevWeekEnding": "2026-04-12"
+    },
+    {
+      "weekEnding": "2026-04-12",
+      "weekLabel": "April 5 – April 12, 2026",
+      "eventCount": 5,
+      "prevWeekEnding": "2026-04-04"
+    },
+    {
+      "weekEnding": "2026-04-04",
+      "weekLabel": "March 29 – April 4, 2026",
+      "eventCount": 6,
+      "prevWeekEnding": "2026-03-29"
+    },
+    {
+      "weekEnding": "2026-03-29",
+      "weekLabel": "March 22-29, 2026",
+      "eventCount": 11,
+      "prevWeekEnding": "2026-03-21"
+    },
+    {
+      "weekEnding": "2026-03-21",
+      "weekLabel": "March 15-21, 2026",
+      "eventCount": 11,
+      "prevWeekEnding": "2026-03-14"
+    },
+    {
+      "weekEnding": "2026-03-14",
+      "weekLabel": "March 8-14, 2026",
+      "eventCount": 8,
+      "prevWeekEnding": "2026-03-07"
+    },
+    {
+      "weekEnding": "2026-03-07",
+      "weekLabel": "March 1-7, 2026",
+      "eventCount": 12,
+      "prevWeekEnding": "2026-02-28"
+    },
+    {
+      "weekEnding": "2026-02-28",
+      "weekLabel": "February 22-28, 2026",
+      "eventCount": 16,
+      "prevWeekEnding": "2026-02-22"
+    },
+    {
+      "weekEnding": "2026-02-22",
+      "weekLabel": "February 15-22, 2026",
+      "eventCount": 10,
+      "prevWeekEnding": "2026-02-15"
+    },
+    {
+      "weekEnding": "2026-02-15",
+      "weekLabel": "February 9-15, 2026",
+      "eventCount": 6,
+      "prevWeekEnding": "2026-02-08"
+    },
+    {
+      "weekEnding": "2026-02-08",
+      "weekLabel": "February 2-8, 2026",
+      "eventCount": 8,
+      "prevWeekEnding": "2026-02-07"
+    },
+    {
+      "weekEnding": "2026-02-07",
+      "weekLabel": "February 1-7, 2026",
+      "eventCount": 7,
+      "prevWeekEnding": "2026-01-31"
+    },
+    {
+      "weekEnding": "2026-01-31",
+      "weekLabel": "January 25-31, 2026",
+      "eventCount": 6,
+      "prevWeekEnding": "2026-01-24"
+    },
+    {
+      "weekEnding": "2026-01-24",
+      "weekLabel": "January 17-24, 2026",
+      "eventCount": 8,
+      "prevWeekEnding": "2026-01-16"
+    },
+    {
+      "weekEnding": "2026-01-16",
+      "weekLabel": "January 10-16, 2026",
+      "eventCount": 8,
+      "prevWeekEnding": "2026-01-09"
+    },
+    {
+      "weekEnding": "2026-01-09",
+      "weekLabel": "January 3-9, 2026",
+      "eventCount": 7,
+      "prevWeekEnding": "2026-01-02"
+    },
+    {
+      "weekEnding": "2026-01-02",
+      "weekLabel": "December 27, 2025 - January 2, 2026",
+      "eventCount": 8,
+      "prevWeekEnding": null
+    }
+  ]
+}

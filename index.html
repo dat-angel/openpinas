@@ -3,243 +3,504 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>OpenPinas – Philippine Political Dynasties</title>
-    <meta name="description" content="Track 71 political dynasties, corruption cases, and 2025 events in the Philippines. Open data for the diaspora." />
-    <meta property="og:title" content="OpenPinas – Philippine Political Dynasties" />
-    <meta property="og:description" content="Track 71 political dynasties, corruption cases, and 2025 events in the Philippines. Open data for the diaspora." />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://dat-angel.github.io/openpinas/" />
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="OpenPinas" />
-    <meta name="twitter:description" content="Track Philippine political dynasties, corruption cases, and 2025 events." />
-    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <script defer src="/_vercel/insights/script.js"></script>
+    <title>OpenPinas: Open Data Platform for Philippine Power Structures</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Spectral:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
     <style>
-      * { box-sizing: border-box; margin: 0; padding: 0; }
+      :root {
+        --ink: #1a1a1a;
+        --muted: #5e5e5e;
+        --paper: #f8f5f0;
+        --accent: #124559;
+        --accent-2: #c44900;
+        --card: #ffffff;
+        --shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
 
       body {
-        font-family: "Spectral", Georgia, serif;
-        color: #222;
-        background: #fdfcfb;
+        margin: 0;
+        font-family: "Source Serif Pro", Georgia, serif;
+        color: var(--ink);
+        background: radial-gradient(1200px 600px at 80% -10%, #f0e7d7 0%, transparent 60%),
+          radial-gradient(800px 500px at 10% 10%, #e6efe7 0%, transparent 55%),
+          var(--paper);
         line-height: 1.6;
         min-height: 100vh;
+        display: flex;
+        flex-direction: column;
       }
 
       header {
-        padding: 3rem 1.5rem 1.5rem;
-        max-width: 640px;
+        padding: 48px 24px 32px;
+        max-width: 900px;
         margin: 0 auto;
+        text-align: center;
       }
 
       h1 {
-        font-size: 2rem;
-        font-weight: 600;
-        margin-bottom: 0.5rem;
+        font-size: clamp(32px, 5vw, 48px);
+        margin: 0 0 16px;
+        letter-spacing: 0.3px;
+        color: var(--ink);
       }
 
-      .intro {
-        color: #444;
-        font-size: 1.125rem;
-        margin-bottom: 1.5rem;
-      }
-
-      .intro strong { color: #222; }
-
-      .context {
-        font-size: 0.9375rem;
-        color: #555;
-        padding: 1rem 1.25rem;
-        background: #fff;
-        border: 1px solid #e5e5e5;
-        line-height: 1.7;
+      .subtitle {
+        font-size: 18px;
+        color: var(--muted);
+        margin: 0 0 24px;
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
       }
 
       main {
-        max-width: 640px;
+        flex: 1;
+        max-width: 900px;
         margin: 0 auto;
-        padding: 0 1.5rem 4rem;
+        padding: 0 24px 60px;
       }
 
-      .links {
-        margin: 2rem 0;
-        border-top: 1px solid #e5e5e5;
+      .cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 24px;
+        margin: 32px 0;
       }
 
-      .links a {
-        display: block;
-        padding: 1rem 0;
-        border-bottom: 1px solid #e5e5e5;
+      .card {
+        background: var(--card);
+        border-radius: 16px;
+        padding: 32px;
+        box-shadow: var(--shadow);
+        border-left: 4px solid var(--accent);
+        transition: transform 0.2s, box-shadow 0.2s;
         text-decoration: none;
         color: inherit;
+        display: block;
       }
 
-      .links a:hover .title {
+      .card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 16px 40px rgba(0, 0, 0, 0.12);
+        text-decoration: none;
+      }
+
+      .card h2 {
+        margin: 0 0 12px;
+        font-size: 24px;
+        color: var(--accent);
+      }
+
+      .card p {
+        margin: 0;
+        color: var(--muted);
+        font-size: 15px;
+        line-height: 1.6;
+      }
+
+      .card .last-updated {
+        margin-top: 12px;
+        font-size: 11px;
+        color: #999;
+        font-weight: 400;
+      }
+
+      .stats {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 16px;
+        margin: 40px 0;
+      }
+
+      .context {
+        background: var(--card);
+        border-radius: 16px;
+        padding: 28px;
+        box-shadow: var(--shadow);
+        margin: 32px 0 10px;
+      }
+
+      .context h2 {
+        margin: 0 0 10px;
+        font-size: 22px;
+        color: var(--accent);
+      }
+
+      .context p {
+        margin: 0 0 12px;
+        color: var(--muted);
+        font-size: 15px;
+      }
+
+      .context ul {
+        margin: 0 0 16px 18px;
+        color: var(--muted);
+        font-size: 14px;
+      }
+
+      .context .links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+
+      .context .link-pill {
+        padding: 6px 12px;
+        border-radius: 999px;
+        background: #f1f6f3;
+        border: 1px solid rgba(18, 69, 89, 0.15);
+        font-size: 13px;
+        color: var(--accent);
+        text-decoration: none;
+      }
+
+      .context .link-pill:hover {
         text-decoration: underline;
       }
 
-      .links .title {
-        font-family: "IBM Plex Sans", -apple-system, sans-serif;
-        font-weight: 600;
-        font-size: 1rem;
-        color: #222;
-        margin-bottom: 0.25rem;
+      .stat {
+        text-align: center;
+        padding: 20px;
+        background: var(--card);
+        border-radius: 12px;
+        box-shadow: var(--shadow);
       }
 
-      .links .desc {
-        font-size: 0.875rem;
-        color: #666;
-        line-height: 1.5;
+      .stat .number {
+        font-size: 32px;
+        font-weight: 700;
+        color: var(--accent);
+        margin: 0;
       }
 
-      .numbers {
-        font-family: "IBM Plex Sans", -apple-system, sans-serif;
-        font-size: 0.8125rem;
-        color: #888;
-        margin: 1.5rem 0 2.5rem;
-      }
-
-      .numbers span {
-        display: inline-block;
-        margin-right: 1.25rem;
-      }
-
-      .numbers strong {
-        color: #222;
-      }
-
-      section.about {
-        margin-top: 2rem;
-        padding-top: 2rem;
-        border-top: 1px solid #e5e5e5;
-      }
-
-      section.about h2 {
-        font-family: "IBM Plex Sans", -apple-system, sans-serif;
-        font-size: 0.75rem;
-        font-weight: 600;
+      .stat .label {
+        font-size: 13px;
+        color: var(--muted);
+        margin: 4px 0 0;
         text-transform: uppercase;
-        letter-spacing: 0.05em;
-        color: #888;
-        margin-bottom: 1rem;
-      }
-
-      section.about p {
-        font-size: 0.9375rem;
-        color: #444;
-        margin-bottom: 1rem;
-        line-height: 1.7;
-      }
-
-      section.about a {
-        color: #222;
-        text-decoration: underline;
-        text-underline-offset: 2px;
-      }
-
-      section.about a:hover {
-        color: #000;
+        letter-spacing: 0.5px;
       }
 
       footer {
-        max-width: 640px;
-        margin: 0 auto;
-        padding: 2rem 1.5rem;
-        font-family: "IBM Plex Sans", -apple-system, sans-serif;
-        font-size: 0.75rem;
-        color: #888;
-        border-top: 1px solid #e5e5e5;
+        text-align: center;
+        padding: 32px 24px;
+        color: var(--muted);
+        font-size: 14px;
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+        margin-top: 60px;
       }
 
       footer a {
-        color: #666;
+        color: var(--accent);
         text-decoration: none;
       }
 
-      footer a:hover { text-decoration: underline; }
+      footer a:hover {
+        text-decoration: underline;
+      }
 
-      @media (max-width: 640px) {
-        header, main, footer {
-          padding-left: 1.25rem;
-          padding-right: 1.25rem;
+      @media (max-width: 720px) {
+        header {
+          padding: 32px 18px 24px;
+        }
+
+        main {
+          padding: 0 18px 40px;
+        }
+
+        .cards {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      /* Accessibility */
+      .sr-only {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+      }
+
+      .skip-link {
+        position: absolute;
+        top: -40px;
+        left: 0;
+        background: var(--ink);
+        color: #fff;
+        padding: 8px 16px;
+        z-index: 1000;
+        text-decoration: none;
+        font-family: "Source Sans Pro", Arial, sans-serif;
+      }
+
+      .skip-link:focus {
+        top: 0;
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        *,
+        *::before,
+        *::after {
+          animation-duration: 0.01ms !important;
+          animation-iteration-count: 1 !important;
+          transition-duration: 0.01ms !important;
+          scroll-behavior: auto !important;
         }
       }
     </style>
+      <link rel="stylesheet" href="/openpinas-theme.css" />
   </head>
   <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
     <header>
       <h1>OpenPinas</h1>
-      <p class="intro">
-        <strong>71 political dynasties</strong> run the Philippines. This is my attempt to keep track of them.
+      <p class="subtitle">
+        Open datasets and visualizations tracking Philippine political power, business connections, and major events
       </p>
-      <div class="context">
-        2025 was wild. The flood control scandal took down the House Speaker, got the Senate President ousted,
-        and exposed ₱118 billion in stolen funds. Half of Congress is implicated. I couldn't keep up with
-        who's related to whom anymore, so I made this.
-      </div>
     </header>
 
-    <main>
-      <div class="links">
-        <a href="dynasties-network-visualization.html">
-          <div class="title">Dynasty Network Map</div>
-          <div class="desc">The Marcoses married into the Romualdezes. The Dutertes broke with both.
-          Who's allied with whom? Who's under investigation? It's all here.</div>
-        </a>
-
-        <a href="interactive-timeline/">
-          <div class="title">2025 Timeline</div>
-          <div class="desc">Romualdez out in September. Escudero ousted. Arrests by Christmas. 49 events, sourced.</div>
-        </a>
-
-        <a href="weekly-reviews/">
-          <div class="title">Weekly Digests</div>
-          <div class="desc">For when you've been busy and need to catch up.</div>
-        </a>
-
-        <a href="corruption-tracker/">
-          <div class="title">Corruption Tracker</div>
-          <div class="desc">POGO cases, the Alice Guo mess, flood control kickbacks. Who got arrested, who's still free.</div>
-        </a>
-
-        <a href="regional-visualization.html">
-          <div class="title">Regional Analysis</div>
-          <div class="desc">Dynasties and corruption cases by province. See which regions have the most political families and where corruption cases are concentrated.</div>
-        </a>
-      </div>
-
-      <div class="numbers">
-        <span><strong>71</strong> dynasties</span>
-        <span><strong>148+</strong> key politicians</span>
-        <span><strong>71</strong> provinces</span>
-      </div>
-
-      <section class="about">
-        <h2>Background</h2>
+    <main id="main-content">
+      <section class="context" style="margin-bottom: 24px;">
+        <h2>This week</h2>
         <p>
-          I live abroad. Every visit home, the political landscape has shifted—new alliances,
-          new scandals, someone's cousin is now governor. The family Viber group doesn't help.
+          <strong><a href="weekly-reviews/weekly-review-2026-05-30.html" style="color: var(--accent);">Week of May 23–30, 2026</a></strong> — House prosecutors named 25 impeachment witnesses and plan bank subpoenas (Sara’s answer due June 1); SC published its full Bato TRO denial as CIDG linked the Senate shooting to his escape; ICC status conference proposed a November 30 trial for Rodrigo Duterte; peso closed May near record lows.
         </p>
-        <p>
-          So I started tracking it. Dynasty names, who married whom, which provinces they control,
-          what they're accused of. Data from Rappler, Inquirer, PCIJ, Wikipedia, and way too many
-          hours reading Senate hearing transcripts.
-        </p>
-        <p>
-          It's incomplete. It's probably got errors. But it's
-          <a href="https://github.com/dat-angel/openpinas">on GitHub</a>
-          if you want to fix something or add data.
+        <p style="margin-top: 8px;">
+          <a class="link-pill" href="weekly-reviews/weekly-review-2026-05-30.html">Read weekly review</a>
+          <a class="link-pill" href="weekly-reviews/">All reviews</a>
         </p>
       </section>
+
+      <div class="cards">
+        <a href="weekly-reviews/" class="card">
+          <h2>📰 Weekly Reviews</h2>
+          <p>
+            Weekly news digests summarizing significant events, organized by category. Includes weather, exchange rates, OFW news, and dynasty highlights.
+          </p>
+          <div class="last-updated" id="weekly-reviews-last-updated">Last updated: May 30, 2026</div>
+        </a>
+
+        <a href="dynasties-network-visualization.html" class="card">
+          <h2>🗺️ Dynasty Network Map</h2>
+          <p>
+            Interactive network graph showing how 50+ political dynasties connect through alliances, rivalries, and corruption networks. Includes geographic control map of 71 provinces.
+          </p>
+          <div class="last-updated">Last updated: May 23, 2026</div>
+        </a>
+
+        <a href="interactive-timeline/" class="card">
+          <h2>📅 Timeline</h2>
+          <p>
+            Chronological view of major Philippine events in 2025 and 2026. Filter by category, see which dynasties were involved, and understand how events connect.
+          </p>
+          <div class="last-updated">Last updated: May 23, 2026</div>
+        </a>
+
+        <a href="corruption-tracker/" class="card">
+          <h2>🔍 Corruption Tracker</h2>
+          <p>
+            Track POGO cases, corruption investigations, and who's been arrested. Includes Alice Guo case, flood control scandal (₱118B), and ongoing investigations.
+          </p>
+          <div class="last-updated">Last updated: February 21, 2026</div>
+        </a>
+
+        <a href="business-connections-network-visualization.html" class="card">
+          <h2>💼 Business Connections Network</h2>
+          <p>
+            Interactive network visualization showing connections between businesses, PBA teams, media outlets, and political dynasties.
+          </p>
+          <div class="last-updated">Last updated: January 3, 2026</div>
+        </a>
+
+        <a href="elite-schools-influence-visualization.html" class="card">
+          <h2>🎓 Elite Schools Influence Map</h2>
+          <p>
+            Schools as nodes, alumni pipelines as connectors, and provinces as shared impact zones. Explore community loops, mobility paths, and talent retention.
+          </p>
+          <div class="last-updated">Last updated: 2025</div>
+        </a>
+
+        <a href="when-to-go-manila.html" class="card">
+          <h2>🧭 When to Go to the Philippines?</h2>
+          <p>
+            Weekly PHP:USD exchange rate tracking alongside airport passenger traffic data to identify optimal travel windows and currency exchange opportunities.
+          </p>
+          <div class="last-updated">Last updated: 2025</div>
+        </a>
+
+        <a href="startup-ecosystem-visualization.html" class="card">
+          <h2>🚀 Startup Ecosystem</h2>
+          <p>
+            Philippine startups, founders, investors, and funding. Track connections to power structures, business networks, and elite schools. Manila ecosystem valued at $6.4B.
+          </p>
+          <div class="last-updated">Last updated: January 9, 2026</div>
+        </a>
+      </div>
+
+      <section class="context">
+        <h2>Open Data Platform</h2>
+        <p>
+          OpenPinas provides open, structured datasets and visualizations tracking Philippine political power, business connections, and major events. All data is available as JSON files you can verify, remix, or extend.
+        </p>
+        <ul>
+          <li><strong>Political Dynasties:</strong> 50+ dynasties, 450+ members, 71 provinces tracked with network relationships</li>
+          <li><strong>Business Connections:</strong> PBA teams, major conglomerates, media ownership, and political links</li>
+          <li><strong>Startup Ecosystem:</strong> Startups, founders, investors, funding, and connections to power structures</li>
+          <li><strong>Timeline Data:</strong> Major events from 2025 and 2026 with dynasty connections and impact analysis</li>
+          <li><strong>Weekly Reviews:</strong> Curated news digests with weather, exchange rates, and OFW updates</li>
+          <li><strong>Economic Data:</strong> PHP:USD exchange rates, airport passenger traffic, travel patterns</li>
+        </ul>
+        <div class="links">
+          <a class="link-pill" href="sources-and-related-projects.html">Sources and related projects</a>
+          <a class="link-pill" href="https://www.inclusivedemocracy.ph/data-and-infographics" target="_blank" rel="noopener">Ateneo Policy Center</a>
+          <a class="link-pill" href="https://pcij.org/political-dynasties/" target="_blank" rel="noopener">PCIJ Dynasties</a>
+          <a class="link-pill" href="https://dynasty-tracker.bettergov.ph" target="_blank" rel="noopener">BetterGov Dynasty Tracker</a>
+          <a class="link-pill" href="docs/business-connections/">Business Connections Docs</a>
+        </div>
+      </section>
+
+      <section class="context" style="margin-top: 40px;">
+        <h2>Available Datasets</h2>
+        <p>
+          All OpenPinas data is available as open JSON files. Download, verify, remix, or extend any dataset.
+        </p>
+        <ul style="margin: 16px 0;">
+          <li><strong><a href="philippine-political-dynasties-network-2025.json" style="color: var(--accent);">Political Dynasties</a>:</strong> 50+ dynasties with relationships, geographic control, and business connections</li>
+          <li><strong><a href="business-connections-2025.json" style="color: var(--accent);">Business Connections</a>:</strong> PBA teams, conglomerates, media ownership, and political links</li>
+          <li><strong><a href="philippines-2025-timeline.json" style="color: var(--accent);">2025 Timeline</a>:</strong> Major events with dynasty connections and impact analysis</li>
+          <li><strong><a href="philippines-2026-timeline.json" style="color: var(--accent);">2026 Timeline</a>:</strong> Ongoing events tracking (updated weekly)</li>
+          <li><strong><a href="elite-schools-influence-2025.json" style="color: var(--accent);">Elite Schools</a>:</strong> Educational institutions and their influence networks</li>
+          <li><strong><a href="corruption-tracker/data/pogo-corruption-cases-2025.json" style="color: var(--accent);">POGO Corruption Cases</a>:</strong> Documented corruption cases related to Philippine Offshore Gaming Operators</li>
+          <li><strong><a href="data/php-usd-weekly-2025.json" style="color: var(--accent);">Exchange Rates</a>:</strong> Weekly PHP:USD exchange rate data</li>
+          <li><strong><a href="data/airport-passenger-summary.json" style="color: var(--accent);">Airport Data</a>:</strong> Passenger traffic patterns for major Philippine airports</li>
+        </ul>
+        <p style="margin-top: 16px; font-size: 14px; color: var(--muted);">
+          All datasets are licensed under <a href="LICENSE-DATA" style="color: var(--accent);">CC BY 4.0</a>. Use freely with attribution.
+        </p>
+      </section>
+
+      <div class="stats">
+        <div class="stat">
+          <p class="number">50+</p>
+          <p class="label">Dynasties</p>
+        </div>
+        <div class="stat">
+          <p class="number">450+</p>
+          <p class="label">Members</p>
+        </div>
+        <div class="stat">
+          <p class="number">8</p>
+          <p class="label">Datasets</p>
+        </div>
+        <div class="stat">
+          <p class="number">71</p>
+          <p class="label">Provinces</p>
+        </div>
+      </div>
     </main>
 
     <footer>
-      <a href="https://github.com/dat-angel/openpinas">Source</a> ·
-      Data: CC BY 4.0 ·
-      <a href="https://ko-fi.com/beatrizd">Support</a> ·
-      Last updated January 2026
+      <p>
+        Part of the
+        <a href="https://github.com/dat-angel/openpinas"
+          >OpenPinas</a
+        >
+        open data project
+      </p>
+      <p>
+        <a href="https://github.com/dat-angel/openpinas">GitHub</a> |
+        <a href="https://dat-angel.github.io/openpinas/">Live Site</a>
+      </p>
     </footer>
-  </body>
-</html>
 
+    <script>
+      // Update Weekly Reviews last updated date from the reviews index
+      async function updateWeeklyReviewsDate() {
+        try {
+          // Try to fetch the timeline JSON first (more reliable)
+          const timelineResponse = await fetch('philippines-2026-timeline.json');
+          if (timelineResponse.ok) {
+            const timelineData = await timelineResponse.json();
+            if (timelineData.metadata && timelineData.metadata.last_updated) {
+              const lastUpdated = timelineData.metadata.last_updated;
+              const element = document.getElementById('weekly-reviews-last-updated');
+              if (element) {
+                // Parse the date string (format: "January 16, 2026")
+                element.textContent = `Last updated: ${lastUpdated}`;
+                return;
+              }
+            }
+          }
+          
+          // Fallback: Try to read from weekly-reviews index
+          const response = await fetch('weekly-reviews/index.html');
+          if (!response.ok) throw new Error('Failed to fetch');
+          
+          const html = await response.text();
+          // Extract the latest review date from the reviews array
+          const reviewsMatch = html.match(/const reviews = (\[[\s\S]*?\]);/);
+          if (reviewsMatch) {
+            // Safely parse JSON from the array string
+            const reviewsText = reviewsMatch[1];
+            const reviews = JSON.parse(reviewsText);
+            
+            if (reviews && reviews.length > 0) {
+              // Get the latest review (first in sorted array, which is newest)
+              const latestReview = reviews[0];
+              const latestDate = new Date(latestReview.date);
+              
+              // Format date
+              const formattedDate = latestDate.toLocaleDateString("en-US", {
+                year: "numeric",
+                month: "long",
+                day: "numeric"
+              });
+              
+              // Update the homepage card
+              const element = document.getElementById('weekly-reviews-last-updated');
+              if (element) {
+                element.textContent = `Last updated: ${formattedDate}`;
+                return;
+              }
+            }
+          }
+        } catch (error) {
+          console.error('Error updating weekly reviews date:', error);
+        }
+        
+        // If all else fails, show current date
+        const element = document.getElementById('weekly-reviews-last-updated');
+        if (element && element.textContent === 'Last updated: Loading...') {
+          const today = new Date().toLocaleDateString("en-US", {
+            year: "numeric",
+            month: "long",
+            day: "numeric"
+          });
+          element.textContent = `Last updated: ${today}`;
+        }
+      }
+      
+      // Run on page load
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', updateWeeklyReviewsDate);
+      } else {
+        updateWeeklyReviewsDate();
+      }
+    </script>
+    <script src="/openpinas-nav.js" defer></script>
+</body>
+</html>

@@ -2,10 +2,35 @@
 let allCases = [];
 let filteredCases = [];
 
+// Status icons for accessibility (color + icon)
+const statusIcons = {
+  ongoing: '⏳',
+  convicted: '⚖️',
+  dismissed: '✕',
+  filed: '📋'
+};
+
 async function loadCases() {
   try {
-    const response = await fetch('../data/pogo-corruption-cases-2025.json');
+    const dataPath =
+      typeof getOpenpinasCorruptionDataPath === "function"
+        ? getOpenpinasCorruptionDataPath()
+        : "corruption-tracker/data/pogo-corruption-cases-2025.json";
+
+    console.log("Loading cases from:", dataPath, "Current path:", window.location.pathname);
+    const response = await fetch(dataPath);
+    
+    if (!response.ok) {
+      throw new Error(`Failed to fetch data: ${response.status} ${response.statusText} from ${dataPath}`);
+    }
+    
     const data = await response.json();
+    
+    if (!data || !data.cases) {
+      throw new Error('Invalid data structure: missing cases array');
+    }
+    
+    console.log('Loaded', data.cases.length, 'cases');
     allCases = data.cases || [];
     filteredCases = [...allCases];
     
@@ -14,10 +39,29 @@ async function loadCases() {
     
     renderCaseList();
     renderStatistics(data.statistics);
+    initializeFilters();
   } catch (error) {
     console.error('Error loading cases:', error);
-    document.querySelector('.case-list').innerHTML = 
-      '<div class="empty">Error loading case data. Please check the console for details.</div>';
+    console.error('Error details:', {
+      message: error.message,
+      stack: error.stack,
+      url: window.location.href,
+      pathname: window.location.pathname
+    });
+    
+    const container = document.querySelector('.case-list');
+    if (container) {
+      container.innerHTML = 
+        `<div class="empty">
+          <p><strong>Error loading case data:</strong> ${error.message}</p>
+          <p style="margin-top: 12px; font-size: 14px;">Please check the browser console for more details.</p>
+        </div>`;
+    }
+    
+    const resultCount = document.getElementById('resultCount');
+    if (resultCount) {
+      resultCount.textContent = 'Error loading cases';
+    }
   }
 }
 
@@ -27,6 +71,7 @@ function loadFiltersFromURL() {
   const category = params.get('category');
   const status = params.get('status');
   const year = params.get('year');
+  const dynasty = params.get('dynasty');
   
   if (search) {
     const searchInput = document.getElementById('search');
@@ -44,16 +89,21 @@ function loadFiltersFromURL() {
     const yearFilter = document.getElementById('yearFilter');
     if (yearFilter) yearFilter.value = year;
   }
+  if (dynasty) {
+    const dynastyFilter = document.getElementById('dynastyFilter');
+    if (dynastyFilter) dynastyFilter.value = dynasty;
+  }
 }
 
 function updateURL() {
-  const { searchQuery, categoryFilter, statusFilter, yearFilter } = getFilters();
+  const { searchQuery, categoryFilter, statusFilter, yearFilter, dynastyFilter } = getFilters();
   const params = new URLSearchParams();
   
   if (searchQuery) params.set('search', searchQuery);
   if (categoryFilter !== 'all') params.set('category', categoryFilter);
   if (statusFilter !== 'all') params.set('status', statusFilter);
   if (yearFilter !== 'all') params.set('year', yearFilter);
+  if (dynastyFilter !== 'all') params.set('dynasty', dynastyFilter);
   
   const newURL = params.toString() 
     ? `${window.location.pathname}?${params.toString()}`
@@ -67,12 +117,13 @@ function getFilters() {
   const categoryFilter = document.getElementById('categoryFilter')?.value || 'all';
   const statusFilter = document.getElementById('statusFilter')?.value || 'all';
   const yearFilter = document.getElementById('yearFilter')?.value || 'all';
+  const dynastyFilter = document.getElementById('dynastyFilter')?.value || 'all';
   
-  return { searchQuery, categoryFilter, statusFilter, yearFilter };
+  return { searchQuery, categoryFilter, statusFilter, yearFilter, dynastyFilter };
 }
 
 function applyFilters() {
-  const { searchQuery, categoryFilter, statusFilter, yearFilter } = getFilters();
+  const { searchQuery, categoryFilter, statusFilter, yearFilter, dynastyFilter } = getFilters();
   
   filteredCases = allCases.filter(caseItem => {
     // Search filter
@@ -113,6 +164,17 @@ function applyFilters() {
       }
     }
     
+    // Dynasty filter
+    if (dynastyFilter !== 'all') {
+      const caseDynasties = [
+        ...(caseItem.dynasty_connections || []),
+        ...(caseItem.accused?.map(a => a.dynasty_connection).filter(Boolean) || [])
+      ];
+      if (!caseDynasties.includes(dynastyFilter)) {
+        return false;
+      }
+    }
+    
     return true;
   });
   
@@ -124,18 +186,25 @@ function renderCaseList() {
   const container = document.querySelector('.case-list');
   if (!container) return;
   
+  // Sort cases by filing date (newest first)
+  const sortedCases = [...filteredCases].sort((a, b) => {
+    const dateA = new Date(a.filing_date || 0);
+    const dateB = new Date(b.filing_date || 0);
+    return dateB - dateA; // Newest first
+  });
+  
   // Show result count
   const resultCount = document.getElementById('resultCount');
   if (resultCount) {
-    resultCount.textContent = `${filteredCases.length} ${filteredCases.length === 1 ? 'case' : 'cases'}`;
+    resultCount.textContent = `${sortedCases.length} ${sortedCases.length === 1 ? 'case' : 'cases'}`;
   }
   
-  if (filteredCases.length === 0) {
+  if (sortedCases.length === 0) {
     container.innerHTML = '<div class="empty">No cases match your filters. Try adjusting your search or filters.</div>';
     return;
   }
   
-  container.innerHTML = filteredCases.map(caseItem => {
+  container.innerHTML = sortedCases.map(caseItem => {
     const statusClass = getStatusClass(caseItem.status);
     const statusLabel = formatStatus(caseItem.status);
     const filingDate = formatDate(caseItem.filing_date);
@@ -163,7 +232,7 @@ function renderCaseList() {
           ${caseItem.priority === 'high' ? '<span class="priority-badge">High Priority</span>' : ''}
         </div>
         <div class="case-meta">
-          <span class="status-badge ${statusClass}">${statusLabel}</span>
+          <span class="status-badge ${statusClass}"><span class="status-icon" aria-hidden="true">${statusIcons[statusClass] || ''}</span>${statusLabel}</span>
           <span class="category-tag">${escapeHtml(caseItem.category)}</span>
           <span>${filingDate}</span>
           ${caseItem.location ? `<span>📍 ${escapeHtml(caseItem.location.municipality || caseItem.location.province || '')}</span>` : ''}
@@ -279,12 +348,14 @@ function formatAmount(amount) {
 }
 
 function getCaseUrl(caseId) {
-  // Map case IDs to URLs
-  if (caseId === 'ALICE_GUO_2024') {
-    return 'alice-guo.html';
-  }
-  // For other cases, create a generic detail page
-  return `case-${caseId.toLowerCase().replace(/_/g, '-')}.html`;
+  // Map case IDs to existing detail pages
+  const caseUrlMap = {
+    'ALICE_GUO_2024': 'alice-guo.html',
+    'FLOOD_CONTROL_2025': 'flood-control.html',
+    'POGO_TAX_2023': 'pogo-tax.html',
+    'POGO_TRAFFICKING_2024': 'pogo-trafficking.html'
+  };
+  return caseUrlMap[caseId] || `case-${caseId.toLowerCase().replace(/_/g, '-')}.html`;
 }
 
 function escapeHtml(text) {
@@ -364,13 +435,48 @@ function initializeFilters() {
     yearFilter.addEventListener('change', applyFilters);
   }
   
+  const dynastyFilter = document.getElementById('dynastyFilter');
+  if (dynastyFilter) {
+    dynastyFilter.addEventListener('change', applyFilters);
+  }
+  
   // Populate year filter
   if (yearFilter && allCases.length > 0) {
     const years = [...new Set(allCases.map(c => new Date(c.filing_date).getFullYear()))].sort((a, b) => b - a);
-    yearFilter.innerHTML = '<option value="all">All Years</option>' + 
+    yearFilter.innerHTML = '<option value="all">All Years</option>' +
       years.map(year => {
         const count = allCases.filter(c => new Date(c.filing_date).getFullYear() === year).length;
         return `<option value="${year}">${year} (${count})</option>`;
+      }).join('');
+  }
+
+  // Populate dynasty filter (reuse dynastyFilter from above)
+  if (dynastyFilter && allCases.length > 0) {
+    const dynasties = new Set();
+    allCases.forEach(c => {
+      if (c.dynasty_connections) {
+        c.dynasty_connections.forEach(d => dynasties.add(d));
+      }
+      if (c.accused) {
+        c.accused.forEach(a => {
+          if (a.dynasty_connection) {
+            dynasties.add(a.dynasty_connection);
+          }
+        });
+      }
+    });
+    const sortedDynasties = Array.from(dynasties).sort();
+    dynastyFilter.innerHTML = '<option value="all">All Dynasties</option>' +
+      sortedDynasties.map(dynasty => {
+        const displayName = dynasty.replace(/_FAMILY|_/g, ' ').trim();
+        const count = allCases.filter(c => {
+          const caseDynasties = [
+            ...(c.dynasty_connections || []),
+            ...(c.accused?.map(a => a.dynasty_connection).filter(Boolean) || [])
+          ];
+          return caseDynasties.includes(dynasty);
+        }).length;
+        return `<option value="${dynasty}">${displayName} (${count})</option>`;
       }).join('');
   }
   
@@ -381,11 +487,9 @@ function initializeFilters() {
 // Load cases when page loads
 if (document.readyState === 'loading') {
   document.addEventListener('DOMContentLoaded', () => {
-    loadCases();
-    initializeFilters();
+    loadCases(); // initializeFilters() is now called inside loadCases()
   });
 } else {
-  loadCases();
-  initializeFilters();
+  loadCases(); // initializeFilters() is now called inside loadCases()
 }
 

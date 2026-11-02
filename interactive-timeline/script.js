@@ -1,9 +1,53 @@
 let entries = [];
+let currentYear = "2025";
 
-async function loadTimelineData() {
+// Category icons for accessibility (color + icon)
+const categoryIcons = {
+  'Political': '🏛️',
+  'Cultural': '🎭',
+  'Natural Disasters': '🌀',
+  'Economic': '📊',
+  'International Relations': '🌐',
+  'Legal': '⚖️',
+  'Religious': '✝️',
+  'OFW/Diaspora': '✈️'
+};
+
+const timelineFiles = {
+  "2025": "../philippines-2025-timeline.json",
+  "2026": "../philippines-2026-timeline.json"
+};
+
+async function loadTimelineData(year) {
   try {
-    const response = await fetch("../philippines-2025-timeline.json");
+    const response = await fetch(timelineFiles[year]);
     const data = await response.json();
+
+    // Update year info display
+    const yearInfoEl = document.querySelector("#year-info");
+    const lastUpdatedEl = document.querySelector("#lastUpdated");
+    if (data.metadata) {
+      const totalEvents = data.metadata.total_events || data.timeline.length;
+      const lastUpdated = data.metadata.last_updated || "Unknown";
+      yearInfoEl.textContent = `${totalEvents} events | Last updated: ${lastUpdated}`;
+      if (lastUpdatedEl) {
+        lastUpdatedEl.textContent = `Last updated: ${lastUpdated}`;
+      }
+    } else {
+      yearInfoEl.textContent = `${data.timeline.length} events`;
+      if (lastUpdatedEl) {
+        lastUpdatedEl.textContent = `Last updated: Unknown`;
+      }
+    }
+
+    // Show/hide aggregation note for 2026
+    const aggregationNote = document.querySelector("#aggregation-note");
+    if (year === "2026") {
+      aggregationNote.classList.add("visible");
+    } else {
+      aggregationNote.classList.remove("visible");
+    }
+
     entries = data.timeline.map((event) => {
       // Map categories to filter values
       const categoryMap = {
@@ -13,25 +57,28 @@ async function loadTimelineData() {
         "Economic": "politics",
         "International Relations": "politics",
         "Legal": "politics",
-        "Religious": "culture"
+        "Religious": "culture",
+        "OFW/Diaspora": "politics"
       };
       return {
         date: event.date,
         title: event.title,
         theme: categoryMap[event.category] || event.category.toLowerCase(),
         category: event.category, // Keep original for display
+        categoryIcon: categoryIcons[event.category] || '📌',
         description: event.description,
         significance: event.significance,
         diaspora_impact: event.diaspora_impact,
         mentioned_dynasties: event.mentioned_dynasties || [],
-        sources: event.sources || {}
+        sources: event.sources || {},
+        weekly_review: event.weekly_review || null
       };
     });
     applyFilters();
   } catch (error) {
     console.error("Error loading timeline data:", error);
     timelineEl.innerHTML =
-      '<div class="empty">Error loading timeline data. Please check philippines-2025-timeline.json.</div>';
+      `<div class="empty">Error loading timeline data for ${year}. Please check philippines-${year}-timeline.json.</div>`;
   }
 }
 
@@ -40,6 +87,7 @@ const searchInput = document.querySelector("#search");
 const sortButton = document.querySelector("#sortOrder");
 const checkboxes = Array.from(document.querySelectorAll(".filter input[type=checkbox]"));
 const countEl = document.querySelector("#count");
+const yearTabs = document.querySelectorAll(".year-tab");
 
 let sortAscending = true;
 
@@ -63,7 +111,7 @@ const getFilters = () => {
 
 const applyFilters = () => {
   if (entries.length === 0) return;
-  
+
   const { active, query } = getFilters();
   let filtered = entries.filter((entry) => active.has(entry.theme));
 
@@ -112,7 +160,7 @@ const renderTimeline = (items) => {
     const card = document.createElement("article");
     card.className = "card";
     card.style.borderLeftColor = `var(--${entry.theme})`;
-    
+
     let sourcesHTML = "";
     if (entry.sources) {
       const allSources = [];
@@ -136,36 +184,60 @@ const renderTimeline = (items) => {
       }
       sourcesHTML = allSources.join(" | ");
     }
-    
+
     let dynastiesHTML = "";
     if (entry.mentioned_dynasties && entry.mentioned_dynasties.length > 0) {
       dynastiesHTML = `<div class="dynasties">
-        <strong>Mentioned Dynasties:</strong> 
-        ${entry.mentioned_dynasties.map(d => 
-          `<a href="../dynasties-network-visualization.html#${d}" class="dynasty-link">${d.replace(/_/g, ' ')}</a>`
+        <strong>Mentioned Dynasties:</strong>
+        ${entry.mentioned_dynasties.map(d =>
+          `<a href="../dynasties/${d.toLowerCase().replace(/_/g, '-')}.html" class="dynasty-link">${d.replace(/_/g, ' ')}</a>`
         ).join(', ')}
       </div>`;
     }
-    
+
+    let weeklyReviewHTML = "";
+    if (entry.weekly_review) {
+      weeklyReviewHTML = `<div class="weekly-review-link">
+        <a href="../${entry.weekly_review}">📰 View Weekly Review</a>
+      </div>`;
+    }
+
     let descriptionHTML = entry.description ? `<p class="description">${entry.description}</p>` : '';
     let significanceHTML = entry.significance ? `<p class="significance"><strong>Significance:</strong> ${entry.significance}</p>` : '';
     let diasporaHTML = entry.diaspora_impact ? `<p class="diaspora"><strong>Diaspora Impact:</strong> ${entry.diaspora_impact}</p>` : '';
-    
+
     card.innerHTML = `
       <h3>${entry.title}</h3>
       <div class="meta">
         <span>${formatDate(entry.date)}</span>
-        <span class="tag ${entry.theme}">${entry.category || entry.theme}</span>
+        <span class="tag ${entry.theme}"><span class="tag-icon" aria-hidden="true">${entry.categoryIcon}</span>${entry.category || entry.theme}</span>
         ${sourcesHTML ? `<span>${sourcesHTML}</span>` : ''}
       </div>
       ${descriptionHTML}
       ${significanceHTML}
       ${diasporaHTML}
       ${dynastiesHTML}
+      ${weeklyReviewHTML}
     `;
     timelineEl.appendChild(card);
   });
 };
+
+// Year tab switching
+yearTabs.forEach(tab => {
+  tab.addEventListener("click", () => {
+    const year = tab.dataset.year;
+    if (year === currentYear) return;
+
+    // Update active tab
+    yearTabs.forEach(t => t.classList.remove("active"));
+    tab.classList.add("active");
+
+    // Load new year data
+    currentYear = year;
+    loadTimelineData(year);
+  });
+});
 
 sortButton.addEventListener("click", () => {
   sortAscending = !sortAscending;
@@ -176,15 +248,21 @@ sortButton.addEventListener("click", () => {
 checkboxes.forEach((box) => box.addEventListener("change", applyFilters));
 searchInput.addEventListener("input", applyFilters);
 
-// Check for URL parameters (for linking from other pages)
-function handleUrlParams() {
+function yearForDateQuery(eventDate) {
   const params = new URLSearchParams(window.location.search);
-  const searchQuery = params.get("search");
-  if (searchQuery) {
-    searchInput.value = searchQuery;
-  }
+  const yearHint = params.get("year");
+  if (yearHint === "2025" || yearHint === "2026") return yearHint;
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(eventDate || "")) return currentYear;
+  return eventDate.startsWith("2025-12-") ? "2026" : eventDate.slice(0, 4);
+}
+
+const bootParams = new URLSearchParams(window.location.search);
+const bootDate = bootParams.get("date") ?? "";
+currentYear = yearForDateQuery(bootDate);
+yearTabs.forEach((tab) => tab.classList.toggle("active", tab.dataset.year === currentYear));
+if (bootParams.get("search") || bootDate) {
+  searchInput.value = bootParams.get("search") || bootDate;
 }
 
 // Initialize on load
-handleUrlParams();
-loadTimelineData();
+loadTimelineData(currentYear);

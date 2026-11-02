@@ -53,9 +53,23 @@ function getStatusColor(status) {
   return '#666';
 }
 
+// Status icons for map markers (accessibility)
+function getStatusIcon(status) {
+  const s = status.toLowerCase();
+  if (s.includes('ongoing') || s.includes('investigation')) return '⏳';
+  if (s.includes('convicted')) return '✓';
+  if (s.includes('dismissed') || s.includes('acquitted')) return '✕';
+  if (s.includes('filed') || s.includes('trial')) return '📋';
+  return '•';
+}
+
 async function loadData() {
   try {
-    const response = await fetch('data/pogo-corruption-cases-2025.json');
+    const url =
+      typeof getOpenpinasCorruptionDataPath === "function"
+        ? getOpenpinasCorruptionDataPath()
+        : "data/pogo-corruption-cases-2025.json";
+    const response = await fetch(url);
     casesData = await response.json();
     initializeMap();
   } catch (error) {
@@ -108,19 +122,26 @@ function updateMap() {
     const coords = getCoordinates(caseItem.location);
     const color = getStatusColor(caseItem.status);
     
-    // Create custom icon
+    // Create custom icon with status symbol for accessibility
+    const statusIcon = getStatusIcon(caseItem.status);
     const icon = L.divIcon({
       className: 'case-marker',
       html: `<div style="
-        width: 24px;
-        height: 24px;
+        width: 28px;
+        height: 28px;
         background: ${color};
         border: 3px solid white;
         border-radius: 50%;
         box-shadow: 0 2px 8px rgba(0,0,0,0.3);
-      "></div>`,
-      iconSize: [24, 24],
-      iconAnchor: [12, 12]
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 12px;
+        color: white;
+        text-shadow: 0 1px 2px rgba(0,0,0,0.5);
+      ">${statusIcon}</div>`,
+      iconSize: [28, 28],
+      iconAnchor: [14, 14]
     });
     
     // Create popup content

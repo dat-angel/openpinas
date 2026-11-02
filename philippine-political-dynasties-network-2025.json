@@ -29,6 +29,18 @@
         "Corruption network analysis",
         "2025 crisis impact assessment"
       ],
+      "sources": [
+        {
+          "name": "Philippine Center for Investigative Journalism",
+          "url": "https://pcij.org/2024/12/08/governors-political-dynasties-philippines-provinces-elections/",
+          "used_for": "power_metrics.national_statistics_2025.governors_from_dynasties. PCIJ wording: at least 71 of 82 provincial governments (87%), as of December 2024. Not a source for individual dynasty nodes."
+        },
+        {
+          "name": "Ateneo Policy Center / Mendoza et al., via Rappler",
+          "url": "https://www.rappler.com/philippines/240037-study-local-posts-occupied-by-political-dynasties/",
+          "used_for": "2019 fat-dynasty shares stored under national_statistics_2025 (67% House, 53% mayors, and the 2004–2019 increase figures). The Inclusive Democracy page describes this dataset; it does not publish the 71/82 governors count."
+        }
+      ],
       "key_2025_updates": [
         "Duterte ICC detention and trial",
         "VP Duterte impeachment proceedings (blocked by Supreme Court)",
@@ -58,8 +70,14 @@
             "Leyte"
           ],
           "geographic_coordinates": {
-            "Ilocos Norte": {"lat": 18.1667, "lng": 120.5833},
-            "Leyte": {"lat": 11.1667, "lng": 124.8333}
+            "Ilocos Norte": {
+              "lat": 18.1667,
+              "lng": 120.5833
+            },
+            "Leyte": {
+              "lat": 11.1667,
+              "lng": 124.8333
+            }
           },
           "historical_span": {
             "established": 1925,
@@ -124,7 +142,9 @@
             "AQUINO_FAMILY"
           ],
           "2025_alliance_changes": {
-            "broken": ["DUTERTE_FAMILY"],
+            "broken": [
+              "DUTERTE_FAMILY"
+            ],
             "description": "UniTeam alliance completely dissolved; impeachment proceedings against VP Duterte; Executive Order 81 removed VP from National Security Council"
           },
           "business_interests": [
@@ -186,6 +206,94 @@
               "date": "2025-12-25",
               "title": "Powerful Politicians Jailed for Corruption Scandal",
               "role": "primary_actor"
+            },
+            {
+              "date": "2026-02-09",
+              "title": "Senate Approves Resolution Condemning Chinese Embassy",
+              "role": "mentioned"
+            },
+            {
+              "date": "2026-02-14",
+              "title": "Philippines Signs Defense Pacts with Italy and Estonia at Munich Security Conference",
+              "role": "primary_actor"
+            },
+            {
+              "date": "2026-02-15",
+              "title": "US-Australia-Philippines Trilateral Naval Drills in South China Sea",
+              "role": "primary_actor"
+            },
+            {
+              "date": "2026-02-17",
+              "title": "DFA Condemns Chinese Embassy's 'Job Loss' Warning; Senate Passes Condemnation Resolution",
+              "role": "primary_actor"
+            },
+            {
+              "date": "2026-02-18",
+              "title": "VP Sara Duterte Announces 2028 Presidential Bid Amid Impeachment Efforts",
+              "role": "mentioned"
+            },
+            {
+              "date": "2026-02-19",
+              "title": "Third Trillion Peso March Confirmed for EDSA@40 Anniversary on February 25",
+              "role": "mentioned"
+            },
+            {
+              "date": "2026-02-20",
+              "title": "ICC Grants Duterte Request to Skip Confirmation of Charges Hearing",
+              "role": "mentioned"
+            },
+            {
+              "date": "2026-04-30",
+              "title": "Balikatan Drills Put Five Navies in WPS as China Patrols Scarborough",
+              "role": "primary_actor"
+            },
+            {
+              "date": "2026-05-01",
+              "title": "Labor Day Protests Center Wage Demands Amid Soaring Prices",
+              "role": "primary_actor"
+            },
+            {
+              "event_id": "2026-05-05-mabanta-arrest-romualdez",
+              "role": "primary_actor"
+            },
+            {
+              "event_id": "2026-05-06-asean-summit-cebu-marcos",
+              "role": "primary_actor"
+            },
+            {
+              "date": "2026-05-11",
+              "title": "House Impeaches VP Sara Duterte for Second Time — 257–25–9 Vote",
+              "role": "mentioned"
+            },
+            {
+              "date": "2026-05-11",
+              "title": "Alan Cayetano Ousts Tito Sotto as Senate President on Impeachment Day",
+              "role": "mentioned"
+            },
+            {
+              "date": "2026-05-13",
+              "title": "Gunshots at Senate as NBI Attempts to Arrest Bato dela Rosa on ICC Warrant",
+              "role": "primary_actor"
+            },
+            {
+              "date": "2026-05-13",
+              "title": "Luzon and Visayas Power Grids on Red Alert; Rotating Brownouts for Three Days",
+              "role": "mentioned"
+            },
+            {
+              "date": "2026-06-08",
+              "title": "Magnitude 7.8 Earthquake Strikes Off Sarangani, Mindanao; Tsunami Warning Issued",
+              "role": "primary_actor"
+            },
+            {
+              "date": "2026-06-17",
+              "title": "Sherwin Gatchalian Elected Senate President; Alan Cayetano Concedes",
+              "role": "mentioned"
+            },
+            {
+              "date": "2026-06-18",
+              "title": "Sara Duterte Impeachment Pre-Trial Conference Opens; NDRRMC Reports 78 Quake Deaths",
+              "role": "mentioned"
             }
           ],
           "2025_rumors_headlines": [
@@ -212,6 +320,64 @@
               "source": "Rappler, October 2025",
               "url": "https://www.rappler.com/nation/",
               "description": "Allegations of undisclosed assets and properties linked to family members; investigations reportedly blocked or delayed"
+            }
+          ],
+          "2026_rumors_headlines": [
+            {
+              "headline": "Marcos Administration Diversifies Defense Ties with Italy and Estonia Pacts",
+              "source": "Manila Standard, PNA, February 2026",
+              "url": "https://manilastandard.net/news/314704129/philippines-signs-pacts-with-estonia-italy-at-munich-security-conference.html",
+              "description": "Philippines signed renewed defense cooperation agreement with Italy and cybersecurity MOU with Estonia at Munich Security Conference, expanding partnerships beyond the US."
+            },
+            {
+              "headline": "Senate Formally Condemns Chinese Embassy Over 'Job Loss' Threats",
+              "source": "Al Jazeera, Rappler, February 2026",
+              "url": "https://www.aljazeera.com/news/2026/2/17/philippines-rebukes-china-embassy-over-coercive-warning-of-job",
+              "description": "Rare Senate condemnation after Chinese Embassy warned deteriorating relations could cost 'millions of jobs.' Some senators called for expelling Chinese diplomats."
+            },
+            {
+              "headline": "Third Trillion Peso March Targets Marcos Administration on EDSA@40",
+              "source": "Philstar, GMA News, February 2026",
+              "url": "https://www.philstar.com/headlines/2026/02/11/2507330/trillion-peso-march-part-3-set-people-power-anniversary",
+              "description": "Anti-corruption movement's third march set for Feb 25, the 40th EDSA anniversary, demanding Anti-Dynasty Law and prosecution of flood control scandal perpetrators."
+            },
+            {
+              "headline": "Palace Dismisses Sara Duterte's 2028 Presidential Bid as 'Irrelevant'",
+              "source": "Multiple sources, February 2026",
+              "url": "https://newsinfo.inquirer.net/2183578/vice-president-sara-duterte-announces-2028-presidential-bid",
+              "description": "Malacañang called Sara Duterte's early presidential announcement irrelevant, signaling the Marcos-Duterte political war will define the 2028 election cycle."
+            },
+            {
+              "date": "2026-05-05",
+              "headline": "NBI Arrests PGMN Founder Mabanta for Alleged P300M Extortion vs. Speaker Romualdez",
+              "source": "Rappler, Philstar, GMA News, May 2026",
+              "url": "https://www.gmanetwork.com/news/topstories/nation/986578/nbi-arrests-media-personality-in-alleged-extort-try-on-martin-romualdez/story/",
+              "category": "legal",
+              "description": "Social media personality Franco Mabanta arrested via entrapment for allegedly demanding P300M in exchange for withholding corruption content about the Speaker. Mabanta claims politically motivated setup."
+            },
+            {
+              "date": "2026-05-06",
+              "headline": "Marcos Chairs 48th ASEAN Summit in Cebu; 'Lead, Sail, Rise' Framework Adopted",
+              "source": "Rappler, Manila Bulletin, Philstar, May 2026",
+              "url": "https://mb.com.ph/2026/05/08/marcos-opens-asean-summit-urges-united-response-to-middle-east-crisis",
+              "category": "alliance",
+              "description": "Philippines hosted 48th ASEAN Summit (May 6-8) in Lapu-Lapu City, Cebu. Marcos anchored agenda on energy security and food supply; PH approved to host ASEAN Maritime Centre; secured Vietnam rice deal (1.5M MT at $450/MT)."
+            },
+            {
+              "date": "2026-05-13",
+              "headline": "Marcos Denies Executive Order to Arrest Bato dela Rosa Amid Senate Standoff",
+              "source": "Rappler, May 2026",
+              "url": "https://www.rappler.com/philippines/ferdinand-marcos-jr-statement-senate-gunshots-may-13-2026/",
+              "category": "legal",
+              "description": "President said government did not swarm Senate; NBI attempted ICC warrant service on drug-war senator anyway."
+            },
+            {
+              "date": "2026-05-13",
+              "headline": "Luzon-Visayas Red Alert Brownouts Expose Grid Fragility During GDP Slump",
+              "source": "Philstar, GMA News, May 2026",
+              "url": "https://www.philstar.com/nation/2026/05/16/2528210/luzon-visayas-suffer-rotational-blackouts",
+              "category": "scandal",
+              "description": "Three days of rotating brownouts with 4,160 MW offline follow Q1 GDP growth of only 2.8%."
             }
           ]
         },
@@ -264,6 +430,114 @@
               "date": "2025-07-25",
               "title": "Supreme Court Rules Duterte Impeachment Unconstitutional",
               "role": "primary_actor"
+            },
+            {
+              "date": "2026-02-07",
+              "title": "Duterte Defense Seeks to Add 78 Evidence Items Before ICC Hearing",
+              "role": "primary_actor"
+            },
+            {
+              "date": "2026-02-09",
+              "title": "Duterte Defense Team Accused of ICC Delaying Tactics",
+              "role": "primary_actor"
+            },
+            {
+              "date": "2026-02-09",
+              "title": "Clergy Files Third Impeachment Complaint Against VP Sara Duterte",
+              "role": "primary_actor"
+            },
+            {
+              "date": "2026-02-13",
+              "title": "Atong Ang Bounty Doubled to P20 Million as Manhunt Intensifies",
+              "role": "mentioned"
+            },
+            {
+              "date": "2026-02-18",
+              "title": "VP Sara Duterte Announces 2028 Presidential Bid Amid Impeachment Efforts",
+              "role": "primary_actor"
+            },
+            {
+              "date": "2026-02-18",
+              "title": "Fourth Impeachment Complaint Filed Against VP Sara Duterte",
+              "role": "primary_actor"
+            },
+            {
+              "date": "2026-02-20",
+              "title": "ICC Grants Duterte Request to Skip Confirmation of Charges Hearing",
+              "role": "primary_actor"
+            },
+            {
+              "date": "2026-04-29",
+              "title": "House Panel Finds Probable Cause to Impeach Sara Duterte",
+              "role": "primary_actor"
+            },
+            {
+              "date": "2026-04-30",
+              "title": "ICC Trial Chamber Sets May 27 Duterte Status Conference",
+              "role": "primary_actor"
+            },
+            {
+              "event_id": "2026-05-05-house-duterte-impeachment-panel",
+              "role": "primary_actor"
+            },
+            {
+              "event_id": "2026-05-08-house-duterte-215-votes",
+              "role": "primary_actor"
+            },
+            {
+              "date": "2026-05-11",
+              "title": "House Impeaches VP Sara Duterte for Second Time — 257–25–9 Vote",
+              "role": "primary_actor"
+            },
+            {
+              "date": "2026-05-11",
+              "title": "Alan Cayetano Ousts Tito Sotto as Senate President on Impeachment Day",
+              "role": "mentioned"
+            },
+            {
+              "date": "2026-05-13",
+              "title": "Gunshots at Senate as NBI Attempts to Arrest Bato dela Rosa on ICC Warrant",
+              "role": "mentioned"
+            },
+            {
+              "date": "2026-05-14",
+              "title": "Bato dela Rosa Leaves Senate; Ombudsman Suspends Sergeant-at-Arms Over Warning Shots",
+              "role": "mentioned"
+            },
+            {
+              "date": "2026-05-18",
+              "title": "Senate Convenes as Impeachment Court; VP Sara Duterte Summoned, Trial Set for July 6",
+              "role": "primary_actor"
+            },
+            {
+              "date": "2026-05-20",
+              "title": "Supreme Court Denies Bato dela Rosa TRO Against ICC Arrest Warrant — 9–5–1",
+              "role": "mentioned"
+            },
+            {
+              "date": "2026-05-21",
+              "title": "DOJ Orders PNP and NBI to Arrest Bato dela Rosa as ICC Fugitive",
+              "role": "mentioned"
+            },
+            {
+              "date": "2026-05-22",
+              "title": "ICC Orders Rodrigo Duterte to Remain Detained at The Hague",
+              "role": "primary_actor"
+            },
+            {
+              "date": "2026-06-08",
+              "title": "Magnitude 7.8 Earthquake Strikes Off Sarangani, Mindanao; Tsunami Warning Issued",
+              "role": "mentioned"
+            },
+            {
+              "date": "2026-06-17",
+              "title": "Sherwin Gatchalian Elected Senate President; Alan Cayetano Concedes",
+              "role": "mentioned"
+            },
+            {
+              "date": "2026-06-18",
+              "title": "Sara Duterte Impeachment Pre-Trial Conference Opens; NDRRMC Reports 78 Quake Deaths",
+              "role": "primary_actor"
             }
           ],
           "key_members": [
@@ -283,7 +557,7 @@
                 "Torture",
                 "Rape"
               ],
-              "icc_trial_status": "Initial appearance March 14, 2025; confirmation of charges hearing postponed from September 23; medical fitness testing ongoing",
+              "icc_trial_status": "Charges confirmed April 23, 2026; Trial Chamber III denied release May 22, 2026; status conference May 27, 2026",
               "2025_events": [
                 "Arrested March 11 at NAIA under ICC warrant",
                 "Transferred to The Hague",
@@ -296,7 +570,7 @@
               "name": "Sara Duterte",
               "position": "Vice President",
               "term_start": 2022,
-              "status": "impeachment_blocked_by_supreme_court",
+              "status": "impeachment_probable_cause_found_by_house_panel",
               "gender": "F",
               "wikipedia": "https://en.wikipedia.org/wiki/Sara_Duterte",
               "impeachment_date": "2025-02-05",
@@ -337,7 +611,9 @@
             "AQUINO_FAMILY"
           ],
           "2025_alliance_changes": {
-            "broken": ["MARCOS_ROMUALDEZ"],
+            "broken": [
+              "MARCOS_ROMUALDEZ"
+            ],
             "description": "Complete breakdown of UniTeam alliance; VP removed from NSC; impeachment proceedings; competing power bases"
           },
           "business_interests": [
@@ -388,6 +664,90 @@
               "source": "Rappler, February 2025",
               "url": "https://www.rappler.com/nation/politics/",
               "description": "Allegations of massive misuse of confidential and intelligence funds during VP Duterte's tenure as Education Secretary"
+            }
+          ],
+          "2026_rumors_headlines": [
+            {
+              "headline": "Sara Duterte Declares 2028 Presidential Bid Despite Impeachment Barrage",
+              "source": "Al Jazeera, Washington Post, Bloomberg, February 2026",
+              "url": "https://www.aljazeera.com/news/2026/2/18/philippine-vp-sara-duterte-announces-run-for-president-in-2028",
+              "description": "VP Sara Duterte formally declared her 2028 presidential candidacy on Feb 18, framing it as a response to political persecution. Announcement came hours before a fourth impeachment complaint was filed."
+            },
+            {
+              "headline": "Rodrigo Duterte to Skip ICC Confirmation Hearing: 'Old, Tired, and Frail'",
+              "source": "Rappler, Manila Times, February 2026",
+              "url": "https://www.rappler.com/philippines/duterte-waives-appearance-icc-confirmation-charges-february-2026/",
+              "description": "ICC granted Duterte's request to waive appearance at Feb 23-27 confirmation of charges hearing. Judges have 60 days after to decide whether to proceed to trial for crimes against humanity."
+            },
+            {
+              "headline": "Four Impeachment Complaints Filed Against VP Sara Duterte in 16 Days",
+              "source": "Rappler, The Diplomat, February 2026",
+              "url": "https://www.rappler.com/philippines/sara-duterte-slapped-fourth-impeachment-complaint-february-18-2026/",
+              "description": "Renewed impeachment push after one-year bar expired: Makabayan bloc (Feb 2), Tindig Pilipinas/Akbayan (Feb 2), clergy groups (Feb 9), and lawyer Nathaniel Cabrera (Feb 18)."
+            },
+            {
+              "date": "2026-05-05",
+              "headline": "House Justice Panel Approves Sara Duterte Second Impeachment for Plenary Vote",
+              "source": "Rappler, Philstar, GMA News, May 2026",
+              "url": "https://www.gmanetwork.com/news/topstories/nation/986309/house-justice-panel-vp-sara-duterte-impeachment/story/",
+              "category": "legal",
+              "description": "Committee on Justice found probable cause on four articles: confidential funds misuse, bribery, death threats vs. Marcos, unexplained wealth. 215+ votes confirmed as of May 7."
+            },
+            {
+              "date": "2026-05-08",
+              "headline": "House Confirms 215+ Votes to Impeach Sara Duterte Ahead of May 11 Plenary",
+              "source": "Rappler, Manila Bulletin, May 2026",
+              "url": "https://www.rappler.com/philippines/sara-duterte-impeachment-numbers-update-house-may-7-2026/",
+              "category": "legal",
+              "description": "Two-thirds of the 318-member House confirmed votes in favor; Duterte camp sought Supreme Court intervention; no order was issued. Final vote set May 11."
+            },
+            {
+              "date": "2026-05-11",
+              "headline": "House Impeaches Sara Duterte 257–25–9; First Official Impeached Twice",
+              "source": "Rappler, BBC, Al Jazeera, May 2026",
+              "url": "https://www.rappler.com/philippines/house-impeaches-vice-president-sara-duterte-may-2026/",
+              "category": "legal",
+              "description": "Plenary vote transmitted articles to Senate; charges include confidential funds misuse, bribery, unexplained wealth, and threats vs. Marcos family."
+            },
+            {
+              "date": "2026-05-11",
+              "headline": "Cayetano Elected Senate President Before Impeachment Vote; Will Preside Over Trial",
+              "source": "Rappler, Tribune, May 2026",
+              "url": "https://www.rappler.com/philippines/tito-sotto-ousted-alan-cayetano-new-senate-president-may-11-2026/",
+              "category": "alliance",
+              "description": "13 senators ousted Tito Sotto; Duterte-aligned bloc gains procedural control of Senate impeachment court."
+            },
+            {
+              "date": "2026-05-14",
+              "headline": "Bato dela Rosa Leaves Senate After ICC Warrant Standoff",
+              "source": "Rappler, Philstar, May 2026",
+              "url": "https://www.rappler.com/philippines/bato-dela-rosa-left-senate-evades-icc-arrest-may-14-2026/",
+              "category": "legal",
+              "description": "Senator evaded NBI service of ICC warrant after May 13 gunshots at Senate; Ombudsman suspended sergeant-at-arms."
+            },
+            {
+              "date": "2026-05-18",
+              "headline": "Senate Impeachment Court Opens; Sara Duterte Summoned, Trial July 6",
+              "source": "Rappler, Philstar, The Diplomat, May 2026",
+              "url": "https://www.rappler.com/philippines/senate-convenes-court-what-next-sara-duterte-impeachment/",
+              "category": "legal",
+              "description": "23 senators sworn as judges; writ of summons issued; Cayetano presides over second impeachment trial."
+            },
+            {
+              "date": "2026-05-20",
+              "headline": "Supreme Court Denies Bato TRO; DOJ Orders ICC Arrest",
+              "source": "Inquirer, Rappler, May 2026",
+              "url": "https://www.rappler.com/philippines/doj-order-bato-dela-rosa-arrest-icc-case/",
+              "category": "legal",
+              "description": "9-5-1 vote clears path for manhunt; dela Rosa remains fugitive by May 23."
+            },
+            {
+              "date": "2026-05-22",
+              "headline": "ICC Keeps Rodrigo Duterte in The Hague Detention",
+              "source": "Rappler, Philstar, May 2026",
+              "url": "https://www.rappler.com/philippines/rodrigo-duterte-icc-decision-continue-detention-the-hague-may-2026/",
+              "category": "legal",
+              "description": "Trial Chamber III cites flight risk after charges confirmed; no conditional release."
             }
           ]
         },
@@ -455,6 +815,20 @@
             "Real Estate",
             "Telecommunications"
           ],
+          "business_connections": {
+            "corporations": [
+              {
+                "company_id": "SAN_MIGUEL_CORP",
+                "name": "San Miguel Corporation",
+                "connection_type": "marriage_connection",
+                "notes": "Cojuangco-Aquino marriage connections link to San Miguel Corporation. Historical business connections through Cojuangco family.",
+                "verification_status": "partially_verified"
+              }
+            ],
+            "media": [],
+            "sports": [],
+            "notes": "Marriage connections to Cojuangco family, which had historical control of San Miguel Corporation."
+          },
           "wealth_level": "very_high",
           "historical_notes": "Once dominated national politics; 2025 midterm elections marked significant comeback after years of decline; positioned as opposition force against Marcos-Duterte factions",
           "2025_rumors_headlines": [
@@ -538,6 +912,24 @@
             "Retail",
             "Banking"
           ],
+          "business_connections": {
+            "corporations": [
+              {
+                "company_id": "VILLAR_GROUP",
+                "name": "Villar Group",
+                "connection_type": "direct_ownership",
+                "businesses": [
+                  "Real Estate (Camarines Sur, Las Piñas)",
+                  "Retail (AllHome, AllDay)",
+                  "Agriculture"
+                ],
+                "verification_status": "verified"
+              }
+            ],
+            "media": [],
+            "sports": [],
+            "notes": "Direct political-business integration. Family members hold political positions and control business empire. Mark Villar was DPWH Secretary (2016-2021), now Senator."
+          },
           "wealth_level": "ultra_high",
           "corruption_allegations": [
             "Villarland valuation fraud (2025)",
@@ -1034,7 +1426,9 @@
               "2025_role": "Reported $2 billion lost to flood control corruption September 2"
             }
           ],
-          "allied_dynasties": ["MARCOS_ROMUALDEZ"],
+          "allied_dynasties": [
+            "MARCOS_ROMUALDEZ"
+          ],
           "historical_notes": "Ralph Recto as Finance Secretary played key role in exposing flood control corruption scale"
         },
         {
@@ -1147,9 +1541,21 @@
           "crisis_level": "high",
           "allied_to": "MARCOS_ROMUALDEZ",
           "timeline_events": [
-            {"date": "2025-09-08", "title": "Martin Romualdez Named in Flood Control Kickback Testimony", "role": "primary_actor"},
-            {"date": "2025-09-17", "title": "Martin Romualdez Resigns as House Speaker", "role": "primary_actor"},
-            {"date": "2025-12-18", "title": "DPWH Recommends Charges Against Romualdez and 86 Others", "role": "primary_actor"}
+            {
+              "date": "2025-09-08",
+              "title": "Martin Romualdez Named in Flood Control Kickback Testimony",
+              "role": "primary_actor"
+            },
+            {
+              "date": "2025-09-17",
+              "title": "Martin Romualdez Resigns as House Speaker",
+              "role": "primary_actor"
+            },
+            {
+              "date": "2025-12-18",
+              "title": "DPWH Recommends Charges Against Romualdez and 86 Others",
+              "role": "primary_actor"
+            }
           ],
           "key_members": [
             {
@@ -1232,7 +1638,9 @@
               "wikipedia": "https://en.wikipedia.org/wiki/Abeng_Remulla"
             }
           ],
-          "allied_dynasties": ["MARCOS_ROMUALDEZ"],
+          "allied_dynasties": [
+            "MARCOS_ROMUALDEZ"
+          ],
           "historical_notes": "Strong regional control in Cavite; multiple family members in key national positions"
         },
         {
@@ -1296,7 +1704,9 @@
               "wikipedia": "https://en.wikipedia.org/wiki/Pax_Ali_Mangudadatu"
             }
           ],
-          "rival_dynasties": ["AMPATUAN_FAMILY"]
+          "rival_dynasties": [
+            "AMPATUAN_FAMILY"
+          ]
         },
         {
           "id": "HATAMAN_SALLIMAN",
@@ -1446,7 +1856,9 @@
               "wikipedia": "https://en.wikipedia.org/wiki/Panfilo_Lacson"
             }
           ],
-          "allied_dynasties": ["MARCOS_ROMUALDEZ"],
+          "allied_dynasties": [
+            "MARCOS_ROMUALDEZ"
+          ],
           "historical_notes": "2025: Played crucial role in exposing flood control corruption; disclosed that flood control funds ended up in politicians' pockets",
           "2025_rumors_headlines": [
             {
@@ -1508,8 +1920,15 @@
           "established": 1995,
           "classification": "major_dynasty",
           "power_level": "regional",
-          "primary_regions": ["Cebu"],
-          "geographic_coordinates": {"Cebu": {"lat": 10.3157, "lng": 123.8854}},
+          "primary_regions": [
+            "Cebu"
+          ],
+          "geographic_coordinates": {
+            "Cebu": {
+              "lat": 10.3157,
+              "lng": 123.8854
+            }
+          },
           "current_positions_held": 0,
           "2025_status": "dynasty_collapse",
           "crisis_level": "critical",
@@ -1520,14 +1939,20 @@
               "status": "defeated_2025",
               "gender": "F",
               "wikipedia": "https://en.wikipedia.org/wiki/Gwendolyn_Garcia",
-              "2025_events": ["Lost gubernatorial race to Pamela Baricuatro by 300,000 votes", "First electoral defeat in political career", "End of Garcia dynasty's three-decade grip on Cebu"]
+              "2025_events": [
+                "Lost gubernatorial race to Pamela Baricuatro by 300,000 votes",
+                "First electoral defeat in political career",
+                "End of Garcia dynasty's three-decade grip on Cebu"
+              ]
             },
             {
               "name": "Raymond Alvin Garcia",
               "position": "Former Mayor of Cebu City",
               "status": "defeated_2025",
               "gender": "M",
-              "2025_events": ["Lost mayoral reelection to Nestor Archival"]
+              "2025_events": [
+                "Lost mayoral reelection to Nestor Archival"
+              ]
             },
             {
               "name": "Pablo Garcia",
@@ -1538,7 +1963,9 @@
               "historical": true
             }
           ],
-          "rival_dynasties": ["OSMENA_FAMILY"],
+          "rival_dynasties": [
+            "OSMENA_FAMILY"
+          ],
           "historical_notes": "The Garcia dynasty dominated Cebu politics for three decades. Gwen Garcia served as governor from 2004-2013 and 2019-2025. The 2025 defeat to political newcomer Pamela Baricuatro marked a stunning end to their reign.",
           "2025_rumors_headlines": [
             {
@@ -1556,8 +1983,15 @@
           "established": 1949,
           "classification": "imperial_dynasty",
           "power_level": "regional",
-          "primary_regions": ["Lanao del Norte"],
-          "geographic_coordinates": {"Lanao del Norte": {"lat": 8.0730, "lng": 124.2873}},
+          "primary_regions": [
+            "Lanao del Norte"
+          ],
+          "geographic_coordinates": {
+            "Lanao del Norte": {
+              "lat": 8.073,
+              "lng": 124.2873
+            }
+          },
           "duration_years": 76,
           "current_positions_held": 4,
           "2025_status": "dominant_regional_control",
@@ -1576,14 +2010,19 @@
               "position": "Representative, Lanao del Norte 1st District",
               "elected": "2025-05-12",
               "gender": "F",
-              "2025_events": ["Won congressional seat with 111,639 votes", "Traded positions with son Khalid"]
+              "2025_events": [
+                "Won congressional seat with 111,639 votes",
+                "Traded positions with son Khalid"
+              ]
             },
             {
               "name": "Khalid Dimaporo",
               "position": "Governor of Lanao del Norte",
               "elected": "2025-05-12",
               "gender": "M",
-              "2025_events": ["Won governorship with 258,853 votes"]
+              "2025_events": [
+                "Won governorship with 258,853 votes"
+              ]
             },
             {
               "name": "Aminah Dimaporo",
@@ -1592,7 +2031,9 @@
               "gender": "F"
             }
           ],
-          "allied_dynasties": ["MARCOS_ROMUALDEZ"],
+          "allied_dynasties": [
+            "MARCOS_ROMUALDEZ"
+          ],
           "historical_notes": "The Dimaporos have controlled Lanao del Norte since 1949 - 76 years. The family practices 'position trading' to circumvent term limits.",
           "2025_rumors_headlines": [
             {
@@ -1610,8 +2051,15 @@
           "established": 2007,
           "classification": "major_dynasty",
           "power_level": "regional",
-          "primary_regions": ["Lanao del Sur"],
-          "geographic_coordinates": {"Lanao del Sur": {"lat": 7.8232, "lng": 124.4357}},
+          "primary_regions": [
+            "Lanao del Sur"
+          ],
+          "geographic_coordinates": {
+            "Lanao del Sur": {
+              "lat": 7.8232,
+              "lng": 124.4357
+            }
+          },
           "current_positions_held": 5,
           "2025_status": "consolidated_control",
           "key_members": [
@@ -1636,7 +2084,9 @@
               "note": "Former congressman; brother of Mamintal"
             }
           ],
-          "rival_dynasties": ["DIMAPORO_FAMILY"],
+          "rival_dynasties": [
+            "DIMAPORO_FAMILY"
+          ],
           "historical_notes": "The Alonto-Adiong clan has deepened their hold on Lanao del Sur since 2007. Their established influence drove the Dimaporos to Lanao del Norte."
         },
         {
@@ -1646,14 +2096,29 @@
           "established": 1969,
           "classification": "major_dynasty",
           "power_level": "national",
-          "primary_regions": ["Sorsogon"],
-          "geographic_coordinates": {"Sorsogon": {"lat": 12.9742, "lng": 124.0058}},
+          "primary_regions": [
+            "Sorsogon"
+          ],
+          "geographic_coordinates": {
+            "Sorsogon": {
+              "lat": 12.9742,
+              "lng": 124.0058
+            }
+          },
           "current_positions_held": 1,
           "2025_status": "corruption_crisis",
           "crisis_level": "high",
           "timeline_events": [
-            {"date": "2025-08-12", "title": "Escudero Admits P30M Campaign Donation from Contractor", "role": "primary_actor"},
-            {"date": "2025-09-25", "title": "Former DPWH Official Names Escudero in Flood Control Kickbacks", "role": "primary_actor"}
+            {
+              "date": "2025-08-12",
+              "title": "Escudero Admits P30M Campaign Donation from Contractor",
+              "role": "primary_actor"
+            },
+            {
+              "date": "2025-09-25",
+              "title": "Former DPWH Official Names Escudero in Flood Control Kickbacks",
+              "role": "primary_actor"
+            }
           ],
           "key_members": [
             {
@@ -1662,7 +2127,12 @@
               "status": "ousted_corruption_scandal",
               "gender": "M",
               "wikipedia": "https://en.wikipedia.org/wiki/Chiz_Escudero",
-              "2025_events": ["Admitted receiving P30M donation from flagged contractor", "Named as recipient of P160M kickback", "Ousted as Senate President", "Under Ombudsman investigation"]
+              "2025_events": [
+                "Admitted receiving P30M donation from flagged contractor",
+                "Named as recipient of P160M kickback",
+                "Ousted as Senate President",
+                "Under Ombudsman investigation"
+              ]
             },
             {
               "name": "Heart Evangelista",
@@ -1671,7 +2141,11 @@
               "note": "Wife of Chiz Escudero; international fashion influencer"
             }
           ],
-          "corruption_allegations": ["Flood control kickbacks - P160M allegedly delivered through intermediary", "Campaign donation from flagged contractor - P30M", "Under Ombudsman investigation for plunder"],
+          "corruption_allegations": [
+            "Flood control kickbacks - P160M allegedly delivered through intermediary",
+            "Campaign donation from flagged contractor - P30M",
+            "Under Ombudsman investigation for plunder"
+          ],
           "historical_notes": "The 2025 flood control scandal severely damaged Chiz Escudero's reputation, leading to his ouster as Senate President.",
           "2025_rumors_headlines": [
             {
@@ -1689,13 +2163,30 @@
           "established": 1998,
           "classification": "major_dynasty",
           "power_level": "regional",
-          "primary_regions": ["Palawan"],
-          "geographic_coordinates": {"Palawan": {"lat": 9.8349, "lng": 118.7384}},
+          "primary_regions": [
+            "Palawan"
+          ],
+          "geographic_coordinates": {
+            "Palawan": {
+              "lat": 9.8349,
+              "lng": 118.7384
+            }
+          },
           "current_positions_held": 3,
           "2025_status": "returned_to_power",
           "key_members": [
-            {"name": "Jose Alvarez", "position": "Representative, Palawan", "gender": "M"},
-            {"name": "Amy Alvarez", "position": "Governor of Palawan", "elected": "2025-05-12", "gender": "F", "note": "Daughter of Jose Alvarez"}
+            {
+              "name": "Jose Alvarez",
+              "position": "Representative, Palawan",
+              "gender": "M"
+            },
+            {
+              "name": "Amy Alvarez",
+              "position": "Governor of Palawan",
+              "elected": "2025-05-12",
+              "gender": "F",
+              "note": "Daughter of Jose Alvarez"
+            }
           ],
           "historical_notes": "The Alvarezes returned to Palawan's Capitol in 2025 after Amy Alvarez won as governor."
         },
@@ -1706,8 +2197,15 @@
           "established": 1906,
           "classification": "imperial_dynasty",
           "power_level": "regional",
-          "primary_regions": ["Cebu"],
-          "geographic_coordinates": {"Cebu": {"lat": 10.3157, "lng": 123.8854}},
+          "primary_regions": [
+            "Cebu"
+          ],
+          "geographic_coordinates": {
+            "Cebu": {
+              "lat": 10.3157,
+              "lng": 123.8854
+            }
+          },
           "duration_years": 119,
           "current_positions_held": 2,
           "2025_status": "resurgence",
@@ -1725,10 +2223,14 @@
               "position": "Former Mayor of Cebu City",
               "gender": "M",
               "wikipedia": "https://en.wikipedia.org/wiki/Tom%C3%A1s_Osme%C3%B1a",
-              "2025_events": ["Backed Nestor Archival who defeated Garcia nephew"]
+              "2025_events": [
+                "Backed Nestor Archival who defeated Garcia nephew"
+              ]
             }
           ],
-          "rival_dynasties": ["GARCIA_CEBU"],
+          "rival_dynasties": [
+            "GARCIA_CEBU"
+          ],
           "historical_notes": "One of oldest Philippine political dynasties (1906). The 2025 election saw an Osmeña-backed candidate defeat the Garcia nephew for Cebu City mayor."
         },
         {
@@ -1738,11 +2240,24 @@
           "established": 1986,
           "classification": "major_dynasty",
           "power_level": "regional",
-          "primary_regions": ["Tawi-Tawi"],
-          "geographic_coordinates": {"Tawi-Tawi": {"lat": 5.1339, "lng": 119.9503}},
+          "primary_regions": [
+            "Tawi-Tawi"
+          ],
+          "geographic_coordinates": {
+            "Tawi-Tawi": {
+              "lat": 5.1339,
+              "lng": 119.9503
+            }
+          },
           "current_positions_held": 4,
           "2025_status": "entrenched_control",
-          "key_members": [{"name": "Yshmael Sali", "position": "Governor of Tawi-Tawi", "gender": "M"}],
+          "key_members": [
+            {
+              "name": "Yshmael Sali",
+              "position": "Governor of Tawi-Tawi",
+              "gender": "M"
+            }
+          ],
           "historical_notes": "The Sali clan remains firmly entrenched in Tawi-Tawi in the BARMM region."
         },
         {
@@ -1752,11 +2267,26 @@
           "established": 2019,
           "classification": "rising_dynasty",
           "power_level": "regional",
-          "primary_regions": ["Aklan"],
-          "geographic_coordinates": {"Aklan": {"lat": 11.8166, "lng": 122.0942}},
+          "primary_regions": [
+            "Aklan"
+          ],
+          "geographic_coordinates": {
+            "Aklan": {
+              "lat": 11.8166,
+              "lng": 122.0942
+            }
+          },
           "current_positions_held": 2,
           "2025_status": "consolidating",
-          "key_members": [{"name": "Jose Enrique Miraflores", "position": "Governor of Aklan", "elected": "2025-05-12", "gender": "M", "note": "Second term"}],
+          "key_members": [
+            {
+              "name": "Jose Enrique Miraflores",
+              "position": "Governor of Aklan",
+              "elected": "2025-05-12",
+              "gender": "M",
+              "note": "Second term"
+            }
+          ],
           "historical_notes": "Governor Miraflores secured his second term in 2025, consolidating family control over Aklan."
         },
         {
@@ -1771,8 +2301,14 @@
             "Bacolod"
           ],
           "geographic_coordinates": {
-            "Negros Occidental": {"lat": 10.6667, "lng": 123.0000},
-            "Bacolod": {"lat": 10.6761, "lng": 122.9503}
+            "Negros Occidental": {
+              "lat": 10.6667,
+              "lng": 123.0
+            },
+            "Bacolod": {
+              "lat": 10.6761,
+              "lng": 122.9503
+            }
           },
           "current_positions_held": 3,
           "2025_status": "established_regional_control",
@@ -1806,7 +2342,10 @@
             "Negros Occidental"
           ],
           "geographic_coordinates": {
-            "Negros Occidental": {"lat": 10.6667, "lng": 123.0000}
+            "Negros Occidental": {
+              "lat": 10.6667,
+              "lng": 123.0
+            }
           },
           "current_positions_held": 4,
           "2025_status": "dominant_regional_control",
@@ -1838,8 +2377,14 @@
             "Kabankalan"
           ],
           "geographic_coordinates": {
-            "Negros Occidental": {"lat": 10.6667, "lng": 123.0000},
-            "Kabankalan": {"lat": 9.9889, "lng": 122.8122}
+            "Negros Occidental": {
+              "lat": 10.6667,
+              "lng": 123.0
+            },
+            "Kabankalan": {
+              "lat": 9.9889,
+              "lng": 122.8122
+            }
           },
           "current_positions_held": 2,
           "2025_status": "maintained_regional_control",
@@ -1866,8 +2411,14 @@
             "Bacolod"
           ],
           "geographic_coordinates": {
-            "Negros Occidental": {"lat": 10.6667, "lng": 123.0000},
-            "Bacolod": {"lat": 10.6761, "lng": 122.9503}
+            "Negros Occidental": {
+              "lat": 10.6667,
+              "lng": 123.0
+            },
+            "Bacolod": {
+              "lat": 10.6761,
+              "lng": 122.9503
+            }
           },
           "current_positions_held": 3,
           "2025_status": "active_regional_control",
@@ -1891,7 +2442,10 @@
             "Pangasinan"
           ],
           "geographic_coordinates": {
-            "Pangasinan": {"lat": 16.0000, "lng": 120.3333}
+            "Pangasinan": {
+              "lat": 16.0,
+              "lng": 120.3333
+            }
           },
           "current_positions_held": 5,
           "2025_status": "dominant_regional_control",
@@ -1925,8 +2479,14 @@
             "Albay"
           ],
           "geographic_coordinates": {
-            "Camarines Sur": {"lat": 13.5833, "lng": 123.1667},
-            "Albay": {"lat": 13.1333, "lng": 123.5833}
+            "Camarines Sur": {
+              "lat": 13.5833,
+              "lng": 123.1667
+            },
+            "Albay": {
+              "lat": 13.1333,
+              "lng": 123.5833
+            }
           },
           "current_positions_held": 6,
           "2025_status": "dominant_regional_control",
@@ -1961,7 +2521,10 @@
             "Zamboanga City"
           ],
           "geographic_coordinates": {
-            "Zamboanga City": {"lat": 6.9214, "lng": 122.0790}
+            "Zamboanga City": {
+              "lat": 6.9214,
+              "lng": 122.079
+            }
           },
           "current_positions_held": 3,
           "2025_status": "established_regional_control",
@@ -1998,7 +2561,10 @@
             "Zamboanga del Norte"
           ],
           "geographic_coordinates": {
-            "Zamboanga del Norte": {"lat": 8.1667, "lng": 123.0000}
+            "Zamboanga del Norte": {
+              "lat": 8.1667,
+              "lng": 123.0
+            }
           },
           "current_positions_held": 4,
           "2025_status": "dominant_regional_control",
@@ -2032,8 +2598,14 @@
             "Metro Manila"
           ],
           "geographic_coordinates": {
-            "Taguig": {"lat": 14.5167, "lng": 121.0500},
-            "Metro Manila": {"lat": 14.6042, "lng": 121.0000}
+            "Taguig": {
+              "lat": 14.5167,
+              "lng": 121.05
+            },
+            "Metro Manila": {
+              "lat": 14.6042,
+              "lng": 121.0
+            }
           },
           "current_positions_held": 4,
           "2025_status": "active_regional_control",
@@ -2060,7 +2632,24 @@
               "wikipedia": "https://en.wikipedia.org/wiki/Lani_Cayetano"
             }
           ],
-          "historical_notes": "Prominent political family in Taguig City. Multiple family members have served as senators, with strong local control in Taguig."
+          "historical_notes": "Prominent political family in Taguig City. Multiple family members have served as senators, with strong local control in Taguig.",
+          "timeline_events": [
+            {
+              "date": "2026-05-11",
+              "title": "Alan Cayetano Ousts Tito Sotto as Senate President on Impeachment Day",
+              "role": "primary_actor"
+            },
+            {
+              "date": "2026-06-03",
+              "title": "Senate Reaches Quorum of 12; Gatchalian Elected Acting Senate President",
+              "role": "primary_actor"
+            },
+            {
+              "date": "2026-06-17",
+              "title": "Sherwin Gatchalian Elected Senate President; Alan Cayetano Concedes",
+              "role": "primary_actor"
+            }
+          ]
         },
         {
           "id": "BELMONTE_QUEZON_CITY",
@@ -2074,8 +2663,14 @@
             "Metro Manila"
           ],
           "geographic_coordinates": {
-            "Quezon City": {"lat": 14.6500, "lng": 121.0333},
-            "Metro Manila": {"lat": 14.6042, "lng": 121.0000}
+            "Quezon City": {
+              "lat": 14.65,
+              "lng": 121.0333
+            },
+            "Metro Manila": {
+              "lat": 14.6042,
+              "lng": 121.0
+            }
           },
           "current_positions_held": 3,
           "2025_status": "established_regional_control",
@@ -2097,6 +2692,21 @@
               "wikipedia": "https://en.wikipedia.org/wiki/Joy_Belmonte"
             }
           ],
+          "business_connections": {
+            "media": [
+              {
+                "media_id": "PHILIPPINE_STAR",
+                "name": "Philippine Star",
+                "connection_type": "partial_ownership",
+                "ownership_stake": "21%",
+                "notes": "Belmonte family owns 21% stake. MediaQuest Holdings (MVP Group) owns 51%. Feliciano Belmonte Jr. was Speaker of the House (2010-2016) and Quezon City Mayor.",
+                "verification_status": "verified"
+              }
+            ],
+            "corporations": [],
+            "sports": [],
+            "notes": "Media ownership connection. Family has direct political dynasty and media ownership, showing information control connection."
+          },
           "historical_notes": "Dominant political family in Quezon City. Feliciano Belmonte Jr. served as mayor and Speaker of the House, with daughter Joy continuing the legacy."
         },
         {
@@ -2111,8 +2721,14 @@
             "Metro Manila"
           ],
           "geographic_coordinates": {
-            "San Juan": {"lat": 14.6000, "lng": 121.0333},
-            "Metro Manila": {"lat": 14.6042, "lng": 121.0000}
+            "San Juan": {
+              "lat": 14.6,
+              "lng": 121.0333
+            },
+            "Metro Manila": {
+              "lat": 14.6042,
+              "lng": 121.0
+            }
           },
           "current_positions_held": 2,
           "2025_status": "active_regional_control",
@@ -2146,8 +2762,14 @@
             "Sipalay"
           ],
           "geographic_coordinates": {
-            "Negros Occidental": {"lat": 10.6667, "lng": 123.0000},
-            "Sipalay": {"lat": 9.7500, "lng": 122.4000}
+            "Negros Occidental": {
+              "lat": 10.6667,
+              "lng": 123.0
+            },
+            "Sipalay": {
+              "lat": 9.75,
+              "lng": 122.4
+            }
           },
           "current_positions_held": 2,
           "2025_status": "maintained_regional_control",
@@ -2176,7 +2798,10 @@
             "Negros Occidental"
           ],
           "geographic_coordinates": {
-            "Negros Occidental": {"lat": 10.6667, "lng": 123.0000}
+            "Negros Occidental": {
+              "lat": 10.6667,
+              "lng": 123.0
+            }
           },
           "current_positions_held": 3,
           "2025_status": "active_regional_control",
@@ -2200,7 +2825,10 @@
             "Negros Occidental"
           ],
           "geographic_coordinates": {
-            "Negros Occidental": {"lat": 10.6667, "lng": 123.0000}
+            "Negros Occidental": {
+              "lat": 10.6667,
+              "lng": 123.0
+            }
           },
           "current_positions_held": 2,
           "2025_status": "active_regional_control",
@@ -2224,7 +2852,10 @@
             "Iloilo"
           ],
           "geographic_coordinates": {
-            "Iloilo": {"lat": 10.7202, "lng": 122.5621}
+            "Iloilo": {
+              "lat": 10.7202,
+              "lng": 122.5621
+            }
           },
           "current_positions_held": 5,
           "2025_status": "dominant_regional_control",
@@ -2258,7 +2889,10 @@
             "Iloilo City"
           ],
           "geographic_coordinates": {
-            "Iloilo City": {"lat": 10.7202, "lng": 122.5621}
+            "Iloilo City": {
+              "lat": 10.7202,
+              "lng": 122.5621
+            }
           },
           "current_positions_held": 3,
           "2025_status": "established_regional_control",
@@ -2286,8 +2920,14 @@
             "Metro Manila"
           ],
           "geographic_coordinates": {
-            "Pasig": {"lat": 14.5750, "lng": 121.0833},
-            "Metro Manila": {"lat": 14.6042, "lng": 121.0000}
+            "Pasig": {
+              "lat": 14.575,
+              "lng": 121.0833
+            },
+            "Metro Manila": {
+              "lat": 14.6042,
+              "lng": 121.0
+            }
           },
           "current_positions_held": 3,
           "2025_status": "active_regional_control",
@@ -2323,8 +2963,14 @@
             "Metro Manila"
           ],
           "geographic_coordinates": {
-            "Caloocan": {"lat": 14.6500, "lng": 120.9667},
-            "Metro Manila": {"lat": 14.6042, "lng": 121.0000}
+            "Caloocan": {
+              "lat": 14.65,
+              "lng": 120.9667
+            },
+            "Metro Manila": {
+              "lat": 14.6042,
+              "lng": 121.0
+            }
           },
           "current_positions_held": 2,
           "2025_status": "active_regional_control",
@@ -2351,7 +2997,10 @@
             "Zamboanga del Sur"
           ],
           "geographic_coordinates": {
-            "Zamboanga del Sur": {"lat": 7.8333, "lng": 123.4167}
+            "Zamboanga del Sur": {
+              "lat": 7.8333,
+              "lng": 123.4167
+            }
           },
           "current_positions_held": 4,
           "2025_status": "expanding_regional_control",
@@ -2382,7 +3031,10 @@
             "Camarines Norte"
           ],
           "geographic_coordinates": {
-            "Camarines Norte": {"lat": 14.1667, "lng": 122.9167}
+            "Camarines Norte": {
+              "lat": 14.1667,
+              "lng": 122.9167
+            }
           },
           "current_positions_held": 3,
           "2025_status": "established_regional_control",
@@ -2413,7 +3065,10 @@
             "Surigao del Norte"
           ],
           "geographic_coordinates": {
-            "Surigao del Norte": {"lat": 9.7833, "lng": 125.4833}
+            "Surigao del Norte": {
+              "lat": 9.7833,
+              "lng": 125.4833
+            }
           },
           "current_positions_held": 3,
           "2025_status": "established_regional_control",
@@ -2449,7 +3104,10 @@
             "Sorsogon"
           ],
           "geographic_coordinates": {
-            "Sorsogon": {"lat": 12.9742, "lng": 124.0058}
+            "Sorsogon": {
+              "lat": 12.9742,
+              "lng": 124.0058
+            }
           },
           "current_positions_held": 2,
           "2025_status": "corruption_crisis",
@@ -2484,7 +3142,10 @@
             "Albay"
           ],
           "geographic_coordinates": {
-            "Albay": {"lat": 13.1333, "lng": 123.5833}
+            "Albay": {
+              "lat": 13.1333,
+              "lng": 123.5833
+            }
           },
           "current_positions_held": 3,
           "2025_status": "established_regional_control",
@@ -2510,7 +3171,10 @@
             "Bohol"
           ],
           "geographic_coordinates": {
-            "Bohol": {"lat": 9.8333, "lng": 124.1667}
+            "Bohol": {
+              "lat": 9.8333,
+              "lng": 124.1667
+            }
           },
           "current_positions_held": 4,
           "2025_status": "dominant_regional_control",
@@ -2537,7 +3201,10 @@
             "Bohol"
           ],
           "geographic_coordinates": {
-            "Bohol": {"lat": 9.8333, "lng": 124.1667}
+            "Bohol": {
+              "lat": 9.8333,
+              "lng": 124.1667
+            }
           },
           "current_positions_held": 3,
           "2025_status": "active_regional_control",
@@ -2564,7 +3231,10 @@
             "Bulacan"
           ],
           "geographic_coordinates": {
-            "Bulacan": {"lat": 14.8000, "lng": 121.0667}
+            "Bulacan": {
+              "lat": 14.8,
+              "lng": 121.0667
+            }
           },
           "current_positions_held": 4,
           "2025_status": "established_regional_control",
@@ -2590,7 +3260,10 @@
             "Pampanga"
           ],
           "geographic_coordinates": {
-            "Pampanga": {"lat": 15.0667, "lng": 120.6667}
+            "Pampanga": {
+              "lat": 15.0667,
+              "lng": 120.6667
+            }
           },
           "current_positions_held": 2,
           "2025_status": "active_regional_control",
@@ -2617,7 +3290,10 @@
             "Tarlac"
           ],
           "geographic_coordinates": {
-            "Tarlac": {"lat": 15.4833, "lng": 120.5833}
+            "Tarlac": {
+              "lat": 15.4833,
+              "lng": 120.5833
+            }
           },
           "current_positions_held": 3,
           "2025_status": "established_regional_control",
@@ -2644,8 +3320,14 @@
             "North Cotabato"
           ],
           "geographic_coordinates": {
-            "Cotabato": {"lat": 7.2167, "lng": 124.2500},
-            "North Cotabato": {"lat": 7.2167, "lng": 124.2500}
+            "Cotabato": {
+              "lat": 7.2167,
+              "lng": 124.25
+            },
+            "North Cotabato": {
+              "lat": 7.2167,
+              "lng": 124.25
+            }
           },
           "current_positions_held": 4,
           "2025_status": "dominant_regional_control",
@@ -2672,7 +3354,10 @@
             "Davao del Norte"
           ],
           "geographic_coordinates": {
-            "Davao del Norte": {"lat": 7.4500, "lng": 125.8167}
+            "Davao del Norte": {
+              "lat": 7.45,
+              "lng": 125.8167
+            }
           },
           "current_positions_held": 3,
           "2025_status": "active_regional_control",
@@ -2698,8 +3383,14 @@
             "Metro Manila"
           ],
           "geographic_coordinates": {
-            "Mandaluyong": {"lat": 14.5833, "lng": 121.0333},
-            "Metro Manila": {"lat": 14.6042, "lng": 121.0000}
+            "Mandaluyong": {
+              "lat": 14.5833,
+              "lng": 121.0333
+            },
+            "Metro Manila": {
+              "lat": 14.6042,
+              "lng": 121.0
+            }
           },
           "current_positions_held": 3,
           "2025_status": "established_regional_control",
@@ -2736,8 +3427,14 @@
             "Metro Manila"
           ],
           "geographic_coordinates": {
-            "Pasig": {"lat": 14.5750, "lng": 121.0833},
-            "Metro Manila": {"lat": 14.6042, "lng": 121.0000}
+            "Pasig": {
+              "lat": 14.575,
+              "lng": 121.0833
+            },
+            "Metro Manila": {
+              "lat": 14.6042,
+              "lng": 121.0
+            }
           },
           "current_positions_held": 2,
           "2025_status": "active_regional_control",
@@ -2764,8 +3461,14 @@
             "Metro Manila"
           ],
           "geographic_coordinates": {
-            "Valenzuela": {"lat": 14.7000, "lng": 120.9833},
-            "Metro Manila": {"lat": 14.6042, "lng": 121.0000}
+            "Valenzuela": {
+              "lat": 14.7,
+              "lng": 120.9833
+            },
+            "Metro Manila": {
+              "lat": 14.6042,
+              "lng": 121.0
+            }
           },
           "current_positions_held": 4,
           "2025_status": "established_regional_control",
@@ -2786,7 +3489,19 @@
               "wikipedia": "https://en.wikipedia.org/wiki/Sherwin_Gatchalian"
             }
           ],
-          "historical_notes": "Prominent political family in Valenzuela City. Multiple family members have served as mayor and senator, establishing strong local and national presence."
+          "historical_notes": "Prominent political family in Valenzuela City. Multiple family members have served as mayor and senator, establishing strong local and national presence.",
+          "timeline_events": [
+            {
+              "date": "2026-06-03",
+              "title": "Senate Reaches Quorum of 12; Gatchalian Elected Acting Senate President",
+              "role": "primary_actor"
+            },
+            {
+              "date": "2026-06-17",
+              "title": "Sherwin Gatchalian Elected Senate President; Alan Cayetano Concedes",
+              "role": "primary_actor"
+            }
+          ]
         },
         {
           "id": "COJUANGCO_TARLAC",
@@ -2799,7 +3514,10 @@
             "Tarlac"
           ],
           "geographic_coordinates": {
-            "Tarlac": {"lat": 15.4833, "lng": 120.5833}
+            "Tarlac": {
+              "lat": 15.4833,
+              "lng": 120.5833
+            }
           },
           "current_positions_held": 3,
           "2025_status": "historical_influence",
@@ -2814,7 +3532,45 @@
               "note": "Patriarch; business tycoon, political kingmaker"
             }
           ],
-          "allied_dynasties": ["AQUINO_FAMILY"],
+          "allied_dynasties": [
+            "AQUINO_FAMILY"
+          ],
+          "business_connections": {
+            "corporations": [
+              {
+                "company_id": "SAN_MIGUEL_CORP",
+                "name": "San Miguel Corporation",
+                "connection_type": "historical_control",
+                "notes": "Cojuangco family had historical control of San Miguel Corporation. Current ownership structure needs SEC verification. One of Philippines' largest conglomerates.",
+                "verification_status": "partially_verified"
+              }
+            ],
+            "sports": [
+              {
+                "team_id": "SAN_MIGUEL_BEERMEN",
+                "name": "San Miguel Beermen",
+                "connection_type": "indirect_ownership",
+                "notes": "Via San Miguel Corporation ownership. San Miguel Corporation owns 3 PBA teams.",
+                "verification_status": "verified"
+              },
+              {
+                "team_id": "BARANGAY_GINEBRA",
+                "name": "Barangay Ginebra San Miguel",
+                "connection_type": "indirect_ownership",
+                "notes": "Via San Miguel Corporation ownership.",
+                "verification_status": "verified"
+              },
+              {
+                "team_id": "MAGNOLIA_HOTSHOTS",
+                "name": "Magnolia Hotshots",
+                "connection_type": "indirect_ownership",
+                "notes": "Via San Miguel Corporation ownership.",
+                "verification_status": "verified"
+              }
+            ],
+            "media": [],
+            "notes": "Historical control of San Miguel Corporation. Cojuangco-Aquino marriage connections. Sports as soft power - controls 3 PBA teams through San Miguel Corporation."
+          },
           "historical_notes": "One of the most powerful political families in Philippine history. Eduardo Cojuangco was a business tycoon and political kingmaker, with deep connections to the Aquino family. Family maintains historical influence in Tarlac."
         },
         {
@@ -2828,7 +3584,10 @@
             "Capiz"
           ],
           "geographic_coordinates": {
-            "Capiz": {"lat": 11.5833, "lng": 122.7500}
+            "Capiz": {
+              "lat": 11.5833,
+              "lng": 122.75
+            }
           },
           "current_positions_held": 2,
           "2025_status": "historical_influence",
@@ -2842,7 +3601,9 @@
               "note": "Patriarch; 5th President of Philippines"
             }
           ],
-          "allied_dynasties": ["AQUINO_FAMILY"],
+          "allied_dynasties": [
+            "AQUINO_FAMILY"
+          ],
           "historical_notes": "One of the oldest and most historically significant political families. Manuel Roxas was the 5th President of the Philippines. Family maintains historical influence and connections to the Aquino family."
         },
         {
@@ -2856,7 +3617,10 @@
             "Iloilo"
           ],
           "geographic_coordinates": {
-            "Iloilo": {"lat": 10.7202, "lng": 122.5621}
+            "Iloilo": {
+              "lat": 10.7202,
+              "lng": 122.5621
+            }
           },
           "current_positions_held": 2,
           "2025_status": "business_influence",
@@ -2884,6 +3648,23 @@
             "Utilities",
             "Real Estate"
           ],
+          "business_connections": {
+            "media": [
+              {
+                "media_id": "ABS_CBN",
+                "name": "ABS-CBN Corporation",
+                "connection_type": "direct_ownership",
+                "ownership_stake": "88.49%",
+                "ownership_details": "Lopez Holdings Corporation (56.28%), ABS-CBN Holdings Corporation (32.21%)",
+                "notes": "Lopez family controls ABS-CBN. Franchise renewal denied 2020, widely seen as politically motivated. Historical political dynasty with longstanding political connections.",
+                "verification_status": "verified",
+                "franchise_status": "expired_2020"
+              }
+            ],
+            "corporations": [],
+            "sports": [],
+            "notes": "Historical political dynasty with media ownership. ABS-CBN franchise denial (2020) shows how political power affects media. Family has longstanding history in Philippine politics and business."
+          },
           "wealth_level": "ultra_high",
           "historical_notes": "One of the most powerful business and political families. Fernando López served as Vice President, and the family controls major media and utility companies. Maintains significant influence through business empire."
         },
@@ -2899,8 +3680,14 @@
             "Zambales"
           ],
           "geographic_coordinates": {
-            "Olongapo": {"lat": 14.8333, "lng": 120.2833},
-            "Zambales": {"lat": 15.1667, "lng": 120.0000}
+            "Olongapo": {
+              "lat": 14.8333,
+              "lng": 120.2833
+            },
+            "Zambales": {
+              "lat": 15.1667,
+              "lng": 120.0
+            }
           },
           "current_positions_held": 3,
           "2025_status": "established_regional_control",
@@ -2936,7 +3723,10 @@
             "Aurora"
           ],
           "geographic_coordinates": {
-            "Aurora": {"lat": 15.7500, "lng": 121.5000}
+            "Aurora": {
+              "lat": 15.75,
+              "lng": 121.5
+            }
           },
           "current_positions_held": 4,
           "2025_status": "dominant_regional_control",
@@ -2971,7 +3761,10 @@
             "Cagayan"
           ],
           "geographic_coordinates": {
-            "Cagayan": {"lat": 17.6167, "lng": 121.7167}
+            "Cagayan": {
+              "lat": 17.6167,
+              "lng": 121.7167
+            }
           },
           "current_positions_held": 2,
           "2025_status": "historical_influence",
@@ -3005,7 +3798,10 @@
             "Davao del Norte"
           ],
           "geographic_coordinates": {
-            "Davao del Norte": {"lat": 7.4500, "lng": 125.8167}
+            "Davao del Norte": {
+              "lat": 7.45,
+              "lng": 125.8167
+            }
           },
           "current_positions_held": 3,
           "2025_status": "active_regional_control",
@@ -3444,20 +4240,53 @@
         "dynherf": "Herfindahl index measuring power concentration"
       },
       "national_statistics_2025": {
-        "governors_from_dynasties": "71 of 82 provinces (86.6%)",
+        "governors_from_dynasties": "at least 71 of 82 provincial governments (87%), as of Dec 2024 (PCIJ)",
+        "governors_from_dynasties_note": "PCIJ count from December 2024. It predates the May 2025 election even though it is stored under national_statistics_2025.",
+        "governors_from_dynasties_source": {
+          "name": "Philippine Center for Investigative Journalism",
+          "url": "https://pcij.org/2024/12/08/governors-political-dynasties-philippines-provinces-elections/",
+          "used_for": "At least 71 of 82 provincial governments (87%), as of December 2024.",
+          "note": "This count predates the May 2025 election even though it is stored under national_statistics_2025."
+        },
         "congressional_dynastic_representation": "67%",
+        "congressional_dynastic_representation_source": {
+          "name": "Ateneo Policy Center / Mendoza et al. (2019)",
+          "url": "https://www.rappler.com/philippines/240037-study-local-posts-occupied-by-political-dynasties/",
+          "used_for": "2019 fat-dynasty House share, stored here under a 2025 label."
+        },
         "mayoral_positions_dynastic": "53%",
+        "mayoral_positions_dynastic_source": {
+          "name": "Ateneo Policy Center / Mendoza et al. (2019)",
+          "url": "https://www.rappler.com/philippines/240037-study-local-posts-occupied-by-political-dynasties/",
+          "used_for": "2019 fat-dynasty mayoral share, stored here under a 2025 label."
+        },
         "provincial_board_dynastic": "80%",
+        "provincial_board_dynastic_unsourced": true,
         "senatorial_dynastic_relatives": "12.5%",
+        "senatorial_dynastic_relatives_unsourced": true,
         "unopposed_dynastic_candidates": "4.5% (800 of 18,000 positions)",
+        "unopposed_dynastic_candidates_unsourced": true,
         "increase_since_2004": {
           "governors": "from 57% to 80%",
           "house_representatives": "from 48% to 67%",
           "mayors": "from 40% to 53%"
         },
+        "increase_since_2004_source": {
+          "name": "Ateneo Policy Center / Mendoza et al. (2019)",
+          "url": "https://www.rappler.com/philippines/240037-study-local-posts-occupied-by-political-dynasties/",
+          "used_for": "2004–2019 fat-dynasty increases. These are not 2025 measurements."
+        },
         "midterm_election_2025": {
-          "turnout": "82.2% (highest in Philippine history)",
+          "turnout": "82.20% (highest in Philippine midterm history)",
+          "turnout_note": "Inquirer reports Comelec's official figure as 82.20%. The same article's raw counts (57,350,968 of 69,673,653) divide to 82.31%. OpenPinas keeps the source percentage.",
+          "turnout_source": {
+            "name": "COMELEC via Inquirer",
+            "url": "https://www.inquirer.net/444077/its-final-comelec-logs-highest-voter-turnout-for-midterm-polls-at-82-20/",
+            "used_for": "Comelec's official 82.20% turnout for the 12 May 2025 midterms, as reported by Inquirer.",
+            "note": "Inquirer also prints 57,350,968 of 69,673,653 registered voters. Those counts divide to 82.31%. The published percentage is 82.20%."
+          },
           "dynasty_wins": "Maintained strong control despite some losses",
+          "dynasty_wins_unsourced": true,
           "notable_losses": [
             "Cynthia Villar (Senate)",
             "Bong Revilla (Senate)",
@@ -3466,12 +4295,14 @@
             "Jinggoy Estrada (Senate)",
             "JV Ejercito (Senate)"
           ],
+          "notable_losses_unsourced": true,
           "notable_wins": [
             "Erwin Tulfo (Senate)",
             "Ping Lacson (Senate)",
             "Bam Aquino (Senate)",
             "Kiko Pangilinan (Senate)"
-          ]
+          ],
+          "notable_wins_unsourced": true
         }
       },
       "crisis_indicators": {
@@ -3490,15 +4321,20 @@
           {
             "case": "Duterte ICC Detention",
             "dynasty": "DUTERTE_FAMILY",
-            "status": "trial_fitness_determination",
+            "status": "trial_chamber_status_conference_scheduled",
             "arrest_date": "2025-03-11",
             "location": "The Hague, Netherlands",
-            "charges": ["Crimes against humanity", "Murder", "Torture", "Rape"]
+            "charges": [
+              "Crimes against humanity",
+              "Murder",
+              "Torture",
+              "Rape"
+            ]
           },
           {
             "case": "VP Duterte Impeachment",
             "dynasty": "DUTERTE_FAMILY",
-            "status": "supreme_court_blocked",
+            "status": "house_probable_cause_found",
             "ruling_date": "2025-07-25",
             "blocked_until": "2026-02-06"
           }
@@ -3544,7 +4380,7 @@
       "filtering_options": [
         "By geographic region",
         "By power level (national/regional)",
-            "By classification (imperial/dominant/major/established/minor/rising/new)",
+        "By classification (imperial/dominant/major/established/minor/rising/new)",
         "By crisis status",
         "By corruption allegations",
         "By 2025 election results",
@@ -3580,4 +4416,3 @@
     }
   }
 }
-

@@ -1,0 +1,146 @@
+{
+  "version": 1,
+  "weekEnding": "2026-08-08",
+  "weekLabel": "August 2 – August 8, 2026",
+  "title": "OpenPinas: Weekly News Review",
+  "lastUpdated": "September 10, 2026",
+  "stats": [
+    {
+      "number": "5",
+      "label": "Stories"
+    }
+  ],
+  "eventSections": [
+    {
+      "title": "Economic",
+      "articles": [
+        {
+          "timeDatetime": "2026-08-07",
+          "timeDisplay": "August 7, 2026",
+          "category": "Economic",
+          "categoryClass": "economic",
+          "borderColor": "#3a0ca3",
+          "headline": "Second-quarter growth slows to 2.3%",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-08-07&search=Second-quarter%20growth%20slows%20to%202.3%25",
+          "descriptionHtml": "<p>The Philippine Statistics Authority reported on August 7 that the economy grew 2.3% year on year in the second quarter, slower than the first quarter. The release underlined the weak pace of expansion even as the country reached a new income classification earlier in July. For households and businesses, the growth figure offered a more immediate measure of economic momentum than that classification.</p>",
+          "sourceLinks": [
+            {
+              "label": "PSA",
+              "href": "https://psa.gov.ph/content/gdp-grows-23-percent-second-quarter-2026"
+            },
+            {
+              "label": "GMA News",
+              "href": "https://www.gmanetwork.com/news/money/economy/997671/ph-economy-grows-slower-at-2-3-in-q2-2026/story/"
+            }
+          ]
+        },
+        {
+          "timeDatetime": "2026-08-05",
+          "timeDisplay": "August 5, 2026",
+          "category": "Economic",
+          "categoryClass": "economic",
+          "borderColor": "#3a0ca3",
+          "headline": "July inflation eases to 6.2%",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-08-05&search=July%20inflation%20eases%20to%206.2%25",
+          "descriptionHtml": "<p>July inflation slowed to 6.2% from June’s 6.4%, according to the August 5 release. Prices were still rising compared with a year earlier, despite the easing pace. The distinction matters for families budgeting for food, transport and other recurring expenses.</p>",
+          "sourceLinks": [
+            {
+              "label": "PSA",
+              "href": "https://psa.gov.ph/content/summary-inflation-report-consumer-price-index-2018100-july-2026"
+            },
+            {
+              "label": "GMA News",
+              "href": "https://www.gmanetwork.com/news/money/economy/997403/inflation-cools-down-further-to-6-2-in-july-2026/story/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Political",
+      "articles": [
+        {
+          "timeDatetime": "2026-08-04",
+          "timeDisplay": "August 4, 2026",
+          "category": "Political",
+          "categoryClass": "political",
+          "borderColor": "#3a0ca3",
+          "headline": "Impeachment testimony examines confidential-fund documentation",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-08-04&search=Impeachment%20testimony%20examines%20confidential-fund%20documentation",
+          "descriptionHtml": "<p>Former COA auditor Gloria Wamil testified about missing supporting documents for confidential expenditures at the Office of the Vice President and the Department of Education. The week’s hearings also examined receipts and purchases questioned by prosecutors. These were evidence and arguments presented during Sara Duterte’s impeachment trial, with their significance still for the Senate to decide.</p>",
+          "sourceLinks": [
+            {
+              "label": "GMA News",
+              "href": "https://www.gmanetwork.com/news/topstories/nation/997373/sara-duterte-impeachment-trial-day-12-ex-coa-auditor-says-p200m-in-confidential-funds-lacked-documents/story/"
+            },
+            {
+              "label": "Philstar",
+              "href": "https://www.philstar.com/headlines/2026/08/03/2546717/sara-duterte-trial-recap-aug-3-confidential-furniture-purchases-late-dated-receipts/amp/"
+            }
+          ],
+          "dynastyLinks": [
+            {
+              "label": "Duterte Dynasty",
+              "href": "/dynasties-network-visualization.html#dynasty-DUTERTE_FAMILY"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Natural Disasters",
+      "articles": [
+        {
+          "timeDatetime": "2026-08-07",
+          "timeDisplay": "August 7, 2026",
+          "category": "Natural Disasters",
+          "categoryClass": "disaster",
+          "borderColor": "#7b4f12",
+          "headline": "Mindoro earthquake is revised to magnitude 5.4",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-08-07&search=Mindoro%20earthquake%20is%20revised%20to%20magnitude%205.4",
+          "descriptionHtml": "<p>An earthquake struck southwest of Mamburao, Occidental Mindoro, on August 7, with shaking felt in nearby provinces and parts of Metro Manila. PHIVOLCS revised its initial magnitude estimate of 5.8 to 5.4 that morning. The agency said aftershocks were possible and did not expect damage from the quake.</p>",
+          "sourceLinks": [
+            {
+              "label": "PNA / PHIVOLCS",
+              "href": "https://www.pna.gov.ph/index.php/articles/1281312"
+            },
+            {
+              "label": "Philstar",
+              "href": "https://www.philstar.com/nation/2026/08/07/2547653/magnitude-54-mindoro-offshore-quake-felt-metro-manila"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Cultural",
+      "articles": [
+        {
+          "timeDatetime": "2026-08-06",
+          "timeDisplay": "August 6, 2026",
+          "category": "Cultural",
+          "categoryClass": "cultural",
+          "borderColor": "#b23a48",
+          "headline": "Cinemalaya brings independent films to August audiences",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-08-06&search=Cinemalaya%20brings%20independent%20films%20to%20August%20audiences",
+          "descriptionHtml": "<p>Cinemalaya’s 22nd festival entered its scheduled August 6–18 run under the theme Reel Reflections. Its program featured nine full-length and ten short films exploring Filipino lives and experiences. Coverage of Iza Calzado’s role in Hand of God offered one view of the work behind this year’s competition, ahead of any awards.</p>",
+          "sourceLinks": [
+            {
+              "label": "CCP program",
+              "href": "https://culturalcenter.gov.ph/press-release/cinemalaya-22-press-kit/"
+            },
+            {
+              "label": "CCP calendar",
+              "href": "https://culturalcenter.gov.ph/event/cinemalaya-22-philippine-independent-film-festival-2026/"
+            },
+            {
+              "label": "GMA Entertainment",
+              "href": "https://www.gmanetwork.com/entertainment/showbiznews/iza-calzado-emosyonal-sa-naging-karanasan-niya-sa-cinemalaya-film-na-hand-of-god/136787/"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "prevWeekEnding": "2026-08-01"
+}
