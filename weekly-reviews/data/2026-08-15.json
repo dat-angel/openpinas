@@ -1,0 +1,143 @@
+{
+  "version": 1,
+  "weekEnding": "2026-08-15",
+  "weekLabel": "August 9 – August 15, 2026",
+  "title": "OpenPinas: Weekly News Review",
+  "lastUpdated": "September 10, 2026",
+  "stats": [
+    {
+      "number": "5",
+      "label": "Stories"
+    }
+  ],
+  "eventSections": [
+    {
+      "title": "Economic",
+      "articles": [
+        {
+          "timeDatetime": "2026-08-14",
+          "timeDisplay": "August 14, 2026",
+          "category": "Economic",
+          "categoryClass": "economic",
+          "borderColor": "#3a0ca3",
+          "headline": "Marcos promises spending catch-up after weak growth",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-08-14&search=Marcos%20promises%20spending%20catch-up%20after%20weak%20growth",
+          "descriptionHtml": "<p>Speaking to foreign correspondents on August 14, Marcos said public spending should exceed the previous year’s level by the fourth quarter. Economic managers outlined a 5–6% growth ambition for the administration’s remaining two years. Both statements described intended recovery following weak first-half performance, rather than growth already achieved.</p>",
+          "sourceLinks": [
+            {
+              "label": "PCO",
+              "href": "https://pco.gov.ph/news_releases/pbbm-confident-public-spending-to-exceed-year-on-year-level-by-q4/"
+            },
+            {
+              "label": "GMA News",
+              "href": "https://www.gmanetwork.com/news/money/economy/998584/economic-managers-eye-5-to-6-growth-in-marcos-admin-s-last-two-years/story/"
+            }
+          ],
+          "dynastyLinks": [
+            {
+              "label": "Marcos-Romualdez Dynasty",
+              "href": "/dynasties-network-visualization.html#dynasty-MARCOS_ROMUALDEZ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "OFW/Diaspora",
+      "articles": [
+        {
+          "timeDatetime": "2026-08-13",
+          "timeDisplay": "August 13, 2026",
+          "category": "OFW/Diaspora",
+          "categoryClass": "ofw",
+          "borderColor": "#0b6e4f",
+          "headline": "DFA seeks details and consular protection after reported arrests in China",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-08-13&search=DFA%20seeks%20details%20and%20consular%20protection%20after%20reported%20arrests%20in%20China",
+          "descriptionHtml": "<p>The Department of Foreign Affairs sought information from China after reports that around 100 Filipinos had been arrested. It urged Chinese authorities to safeguard their welfare and observe due process while Philippine officials sought notification and consular access. The exact number and alleged violations were still being verified, so the reported arrests did not establish individual wrongdoing.</p>",
+          "sourceLinks": [
+            {
+              "label": "GMA News",
+              "href": "https://www.gmanetwork.com/news/topstories/nation/998495/ph-urges-china-to-safeguard-the-welfare-of-arrested-filipinos/story/"
+            },
+            {
+              "label": "Tempo",
+              "href": "https://tempo.mb.com.ph/2026/08/14/dfa-probes-reported-arrest-of-100-pinoys-in-china/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Legal",
+      "articles": [
+        {
+          "timeDatetime": "2026-08-13",
+          "timeDisplay": "August 13, 2026",
+          "category": "Legal",
+          "categoryClass": "legal",
+          "borderColor": "#1e3a5f",
+          "headline": "Injunction extends pause on Metro Manila wage order",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-08-13&search=Injunction%20extends%20pause%20on%20Metro%20Manila%20wage%20order",
+          "descriptionHtml": "<p>A Pasig court issued a preliminary injunction on August 13 extending the suspension of the NCR wage order that provided an ₱85 increase in stages. The National Wages and Productivity Commission responded the next day to the order affecting implementation. The injunction prolonged the uncertainty created by the July temporary restraining order while the legal challenge continued.</p>",
+          "sourceLinks": [
+            {
+              "label": "Philstar",
+              "href": "https://www.philstar.com/headlines/2026/08/14/2549240/pasig-court-extends-suspension-p85-metro-manila-wage-hike/amp/"
+            },
+            {
+              "label": "NWPC",
+              "href": "https://nwpc.dole.gov.ph/nwpcs-official-statement-on-the-injunction-order-issued-by-the-pasig-city-regional-trial-court/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Natural Disasters",
+      "articles": [
+        {
+          "timeDatetime": "2026-08-10",
+          "timeDisplay": "August 10, 2026",
+          "category": "Natural Disasters",
+          "categoryClass": "disaster",
+          "borderColor": "#7b4f12",
+          "headline": "Government orders hospital fast lanes for rainy-season illnesses",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-08-10&search=Government%20orders%20hospital%20fast%20lanes%20for%20rainy-season%20illnesses",
+          "descriptionHtml": "<p>Marcos directed the Department of Health to activate fast lanes for dengue and leptospirosis patients as bad weather continued. Palace officials called for proactive hospital preparation and monitoring of illness associated with the rainy season. The August 10 announcement concerned the health-system response, without establishing that services were already available at every facility.</p>",
+          "sourceLinks": [
+            {
+              "label": "PCO",
+              "href": "https://pco.gov.ph/news_releases/pbbm-orders-doh-to-activate-fast-lanes-for-dengue-leptospirosis-amid-bad-weather/"
+            },
+            {
+              "label": "PTV",
+              "href": "https://ptvnews.ph/palace-urges-vigilance-vs-leptospirosis-orders-doh-to-be-proactive/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Cultural",
+      "articles": [
+        {
+          "timeDatetime": "2026-08-12",
+          "timeDisplay": "August 12, 2026",
+          "category": "Cultural",
+          "categoryClass": "cultural",
+          "borderColor": "#b23a48",
+          "headline": "CreatePHFilms expands support for local filmmaking",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-08-12&search=CreatePHFilms%20expands%20support%20for%20local%20filmmaking",
+          "descriptionHtml": "<p>FDCP’s August 12 announcement described expanded support in the second CreatePHFilms cycle, including documentary and animation projects in additional grant categories. It raised the project-development grant ceiling from ₱300,000 to ₱500,000. The program offers nonrecoupable support while filmmakers retain ownership, distinguishing it from the separate incentives for international productions.</p>",
+          "sourceLinks": [
+            {
+              "label": "FDCP",
+              "href": "https://fdcp.ph/news/createphfilms-continues-cycle-2-support-local-filmmakers"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "prevWeekEnding": "2026-08-08"
+}

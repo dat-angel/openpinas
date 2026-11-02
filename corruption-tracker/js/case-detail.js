@@ -3,26 +3,61 @@ let caseData = null;
 
 async function loadCaseDetail() {
   try {
-    const response = await fetch('../data/pogo-corruption-cases-2025.json');
+    // Determine the correct path based on current location
+    const dataPath =
+      (typeof getOpenpinasCorruptionDataPath === "function"
+        ? getOpenpinasCorruptionDataPath()
+        : "corruption-tracker/data/pogo-corruption-cases-2025.json") + "?v=20260219";
+    
+    const response = await fetch(dataPath);
+    
+    if (!response.ok) {
+      throw new Error(`Failed to fetch data: ${response.status} ${response.statusText} from ${dataPath}`);
+    }
+    
     const data = await response.json();
+    
+    if (!data || !data.cases) {
+      throw new Error('Invalid data structure: missing cases array');
+    }
     
     // Get case ID from URL or default to Alice Guo
     const urlParams = new URLSearchParams(window.location.search);
-    const caseId = urlParams.get('id') || 'ALICE_GUO_2024';
+    const caseId = urlParams.get('id') || (window.CASE_ID || 'ALICE_GUO_2024');
+    
+    console.log('Loading case:', caseId);
+    console.log('Available cases:', data.cases.map(c => c.case_id));
     
     caseData = data.cases.find(c => c.case_id === caseId);
     
     if (!caseData) {
+      console.error('Case not found:', caseId);
+      const availableCases = data.cases.map(c => c.case_id).join(', ');
       document.querySelector('main').innerHTML = 
-        '<div class="empty">Case not found.</div>';
+        `<div class="empty">
+          <p><strong>Case not found:</strong> ${caseId}</p>
+          <p style="margin-top: 12px; font-size: 14px;">Available cases: ${availableCases}</p>
+        </div>`;
       return;
     }
     
     renderCaseDetail();
   } catch (error) {
     console.error('Error loading case detail:', error);
+    console.error('Error details:', {
+      message: error.message,
+      stack: error.stack,
+      url: window.location.href,
+      pathname: window.location.pathname,
+      caseId: window.CASE_ID || new URLSearchParams(window.location.search).get('id')
+    });
+    
+    const errorMessage = error.message || 'Unknown error';
     document.querySelector('main').innerHTML = 
-      '<div class="empty">Error loading case data. Please check the console for details.</div>';
+      `<div class="empty">
+        <p><strong>Error loading case data:</strong> ${errorMessage}</p>
+        <p style="margin-top: 12px; font-size: 14px;">Please check the browser console for more details.</p>
+      </div>`;
   }
 }
 
@@ -30,9 +65,12 @@ function renderCaseDetail() {
   if (!caseData) return;
   
   // Header
-  document.getElementById('caseTitle').textContent = caseData.title;
+  document.getElementById('caseTitle').textContent = `OpenPinas: ${caseData.title}`;
   document.getElementById('caseSubtitle').textContent = 
     `${caseData.category} • ${formatStatus(caseData.status)}`;
+  
+  // Update page title
+  document.title = `OpenPinas: ${caseData.title} - Corruption Tracker`;
   
   // Case header with status badge
   const statusClass = getStatusClass(caseData.status);
@@ -52,7 +90,7 @@ function renderCaseDetail() {
       ${caseData.last_updated ? `<span><strong>Last Updated:</strong> ${formatDate(caseData.last_updated)}</span>` : ''}
     </div>
     <div style="margin-top: 16px; font-size: 14px;">
-      <a href="${timelineSearchUrl}" style="color: #0038A8; text-decoration: underline; text-underline-offset: 2px;">View related events in 2025 Timeline →</a>
+      <a href="${timelineSearchUrl}" style="color: #0038A8; text-decoration: underline; text-underline-offset: 2px;">View related events in Timeline →</a>
     </div>
   `;
   
@@ -108,7 +146,8 @@ function renderCaseDetail() {
       </div>
     `).join('');
   } else {
-    document.getElementById('accusedSection').style.display = 'none';
+    const el = document.getElementById('accusedSection');
+    if (el) el.style.display = 'none';
   }
   
   // POGO connections
@@ -127,7 +166,8 @@ function renderCaseDetail() {
       </div>
     `).join('');
   } else {
-    document.getElementById('pogoSection').style.display = 'none';
+    const el = document.getElementById('pogoSection');
+    if (el) el.style.display = 'none';
   }
   
   // Charges
@@ -138,7 +178,8 @@ function renderCaseDetail() {
       </ul>
     `;
   } else {
-    document.getElementById('chargesSection').style.display = 'none';
+    const el = document.getElementById('chargesSection');
+    if (el) el.style.display = 'none';
   }
   
   // Political connections
@@ -159,7 +200,8 @@ function renderCaseDetail() {
       `;
     }).join('');
   } else {
-    document.getElementById('politicalSection').style.display = 'none';
+    const el = document.getElementById('politicalSection');
+    if (el) el.style.display = 'none';
   }
   
   // Significance
@@ -173,7 +215,8 @@ function renderCaseDetail() {
     }
     document.getElementById('significanceContent').innerHTML = html;
   } else {
-    document.getElementById('significanceSection').style.display = 'none';
+    const el = document.getElementById('significanceSection');
+    if (el) el.style.display = 'none';
   }
   
   // Related cases
@@ -234,7 +277,8 @@ function renderCaseDetail() {
     }
     document.getElementById('sourcesContent').innerHTML = sourcesHtml || '<p>No sources available.</p>';
   } else {
-    document.getElementById('sourcesSection').style.display = 'none';
+    const el = document.getElementById('sourcesSection');
+    if (el) el.style.display = 'none';
   }
 }
 
@@ -242,7 +286,17 @@ function renderCaseDetail() {
 let allCases = [];
 async function loadAllCases() {
   try {
-    const response = await fetch('../data/pogo-corruption-cases-2025.json');
+    // Use same path detection as loadCaseDetail
+    const dataPath =
+      (typeof getOpenpinasCorruptionDataPath === "function"
+        ? getOpenpinasCorruptionDataPath()
+        : "corruption-tracker/data/pogo-corruption-cases-2025.json") + "?v=20260219";
+    
+    const response = await fetch(dataPath);
+    if (!response.ok) {
+      console.warn('Failed to load all cases for related cases lookup');
+      return;
+    }
     const data = await response.json();
     allCases = data.cases || [];
   } catch (error) {
@@ -251,10 +305,13 @@ async function loadAllCases() {
 }
 
 function getCaseUrl(caseId) {
-  if (caseId === 'ALICE_GUO_2024') {
-    return 'alice-guo.html';
-  }
-  return `case-${caseId.toLowerCase().replace(/_/g, '-')}.html`;
+  const caseUrlMap = {
+    'ALICE_GUO_2024': 'alice-guo.html',
+    'FLOOD_CONTROL_2025': 'flood-control.html',
+    'POGO_TAX_2023': 'pogo-tax.html',
+    'POGO_TRAFFICKING_2024': 'pogo-trafficking.html'
+  };
+  return caseUrlMap[caseId] || `case-${caseId.toLowerCase().replace(/_/g, '-')}.html`;
 }
 
 function getStatusClass(status) {

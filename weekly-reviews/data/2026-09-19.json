@@ -1,0 +1,167 @@
+{
+  "version": 1,
+  "weekEnding": "2026-09-19",
+  "weekLabel": "September 13 – September 19, 2026",
+  "title": "OpenPinas: Weekly News Review",
+  "lastUpdated": "October 1, 2026",
+  "stats": [
+    {
+      "number": "5",
+      "label": "Stories"
+    }
+  ],
+  "eventSections": [
+    {
+      "title": "International Relations",
+      "articles": [
+        {
+          "timeDatetime": "2026-09-14",
+          "timeDisplay": "September 14, 2026",
+          "category": "International Relations",
+          "categoryClass": "international",
+          "borderColor": "#0d7377",
+          "headline": "Marcos says he cannot promise inflation relief while in India for BRICS",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-09-14&search=Marcos%20says%20he%20cannot%20promise%20inflation%20relief%20while%20in%20India%20for%20BRICS",
+          "descriptionHtml": "<p>Speaking in New Delhi on September 14 after the BRICS summit, President Ferdinand Marcos Jr. said the government could not promise a significant easing of inflation this year because fuel and food prices still tracked the Middle East conflict. He described core inflation as lower than the headline rate and said adequate food supply was the lever Manila could pull directly. The remarks connected household prices to oil near $100 a barrel without turning that figure, or a late-year improvement, into a guarantee.</p>",
+          "sourceLinks": [
+            {
+              "label": "Daily Tribune",
+              "href": "https://tribune.net.ph/2026/09/14/marcos-says-inflation-remains-uncertain-hopes-for-improvement-by-year-end"
+            },
+            {
+              "label": "PNA",
+              "href": "https://www.pna.gov.ph/articles/1283945"
+            }
+          ],
+          "dynastyLinks": [
+            {
+              "label": "Marcos-Romualdez Dynasty",
+              "href": "/dynasties-network-visualization.html#dynasty-MARCOS_ROMUALDEZ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "OFW/Diaspora",
+      "articles": [
+        {
+          "timeDatetime": "2026-09-15",
+          "timeDisplay": "September 15, 2026",
+          "category": "OFW/Diaspora",
+          "categoryClass": "ofw",
+          "borderColor": "#0b6e4f",
+          "headline": "July cash remittances reach a seven-month high of $3.24 billion",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-09-15&search=July%20cash%20remittances%20reach%20a%20seven-month%20high%20of%20%243.24%20billion",
+          "descriptionHtml": "<p>Bangko Sentral ng Pilipinas data released September 15 showed cash remittances in July at $3.24 billion, up 1.9% from $3.18 billion a year earlier and the highest monthly inflow since December 2025. The United States remained the largest source. The release shows transfers were still growing; it does not show whether those dollars bought more after local price increases.</p>",
+          "sourceLinks": [
+            {
+              "label": "PNA / BSP",
+              "href": "https://www.pna.gov.ph/articles/1284076"
+            },
+            {
+              "label": "Daily Tribune",
+              "href": "https://tribune.net.ph/2026/09/15/bsp-ofw-remittances-reach-2039-billion-in-first-seven-months"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Legal",
+      "articles": [
+        {
+          "timeDatetime": "2026-09-16",
+          "timeDisplay": "September 16, 2026",
+          "category": "Legal",
+          "categoryClass": "legal",
+          "borderColor": "#1e3a5f",
+          "headline": "ICC keeps Rodrigo Duterte detained after his first in-person hearing",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-09-16&search=ICC%20keeps%20Rodrigo%20Duterte%20detained%20after%20his%20first%20in-person%20hearing",
+          "descriptionHtml": "<p>Former president Rodrigo Duterte appeared in person on September 16 at the ICC’s third status conference in The Hague, his first time in that courtroom since his arrest in March 2025. Trial Chamber III then ordered him kept in detention, finding no change that would justify release and citing a risk he could abscond or interfere with witnesses. A separate assessment of his fitness to stand trial was still pending, so the hearing did not decide the charges.</p>",
+          "sourceLinks": [
+            {
+              "label": "Rappler",
+              "href": "https://www.rappler.com/philippines/icc-order-rodrigo-duterte-continued-detention-september-16-2026/"
+            },
+            {
+              "label": "GMA News",
+              "href": "https://www.gmanetwork.com/news/topstories/nation/1002644/rodrigo-duterte-to-remain-detained-icc-trial-chamber/story/"
+            },
+            {
+              "label": "PNA",
+              "href": "https://www.pna.gov.ph/articles/1284218"
+            }
+          ],
+          "dynastyLinks": [
+            {
+              "label": "Duterte Dynasty",
+              "href": "/dynasties-network-visualization.html#dynasty-DUTERTE_FAMILY"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Natural Disasters",
+      "articles": [
+        {
+          "timeDatetime": "2026-09-16",
+          "timeDisplay": "September 16, 2026",
+          "category": "Natural Disasters",
+          "categoryClass": "disaster",
+          "borderColor": "#7b4f12",
+          "headline": "Storm and monsoon damage since August is put at ₱18.68 billion",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-09-16&search=Storm%20and%20monsoon%20damage%20since%20August%20is%20put%20at%20%E2%82%B118.68%20billion",
+          "descriptionHtml": "<p>The NDRRMC said on September 16 that combined agriculture and infrastructure damage from tropical cyclones and the southwest monsoon since August had reached about ₱18.68 billion, of which about ₱4.37 billion was agricultural. That cumulative count listed 98,836 affected farmers and fisherfolk, and said fatalities remained at 44, with 18 injured and five missing. The same day the Department of Agriculture started a small calamity-loan payout in Pampanga, a recovery step rather than a new storm.</p>",
+          "sourceLinks": [
+            {
+              "label": "PNA / NDRRMC",
+              "href": "https://www.pna.gov.ph/articles/1284141"
+            },
+            {
+              "label": "Context.ph / DA",
+              "href": "https://context.ph/2026/09/16/govt-delivers-swift-aid-and-support-for-weather-hit-farmers/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Economic",
+      "articles": [
+        {
+          "timeDatetime": "2026-09-17",
+          "timeDisplay": "September 17, 2026",
+          "category": "Economic",
+          "categoryClass": "economic",
+          "borderColor": "#3a0ca3",
+          "headline": "Fuel prices jump as the Cabinet reviews excise relief and supply",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-09-17&search=Fuel%20prices%20jump%20as%20the%20Cabinet%20reviews%20excise%20relief%20and%20supply",
+          "descriptionHtml": "<p>Pump prices for September 15–21 rose by as much as ₱5.70 a liter for gasoline and ₱4.31 for diesel. Malacañang said the budget committee was finalizing a possible fuel-excise recommendation after Dubai crude averaged $99.41 a barrel from August 13 to September 11, above the statutory $80 trigger. On September 17, on President Ferdinand Marcos Jr.’s instruction, Executive Secretary Ralph Recto convened the UPLIFT committee, which reported 57.2 days of gasoline, 60.8 days of diesel, and 39.3 days of LPG in inventory as of September 14. The week produced higher prices and a review of relief tools, not a completed tax cut.</p>",
+          "sourceLinks": [
+            {
+              "label": "PNA / DBCC",
+              "href": "https://www.pna.gov.ph/articles/1284247"
+            },
+            {
+              "label": "PNA / UPLIFT",
+              "href": "https://www.pna.gov.ph/articles/1284365"
+            },
+            {
+              "label": "Bandera",
+              "href": "https://bandera.inquirer.net/455134/recto-pinulong-uplift-heads-dahil-sa-middle-east-tension-oil-price-hikes"
+            }
+          ],
+          "dynastyLinks": [
+            {
+              "label": "Marcos-Romualdez Dynasty",
+              "href": "/dynasties-network-visualization.html#dynasty-MARCOS_ROMUALDEZ"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "prevWeekEnding": "2026-09-12"
+}

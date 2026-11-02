@@ -1,0 +1,184 @@
+{
+  "version": 1,
+  "weekEnding": "2026-05-16",
+  "weekLabel": "May 9 – May 16, 2026",
+  "title": "OpenPinas: Weekly News Review",
+  "lastUpdated": "May 16, 2026",
+  "prevWeekEnding": "2026-05-09",
+  "stats": [
+    { "number": "6", "label": "Stories" },
+    { "number": "257", "label": "Impeachment Votes" },
+    { "number": "13", "label": "Senators for Cayetano" },
+    { "number": "4,160", "label": "MW Offline" }
+  ],
+  "eventSections": [
+    {
+      "title": "Political",
+      "articles": [
+        {
+          "timeDatetime": "2026-05-11",
+          "timeDisplay": "May 11, 2026",
+          "category": "Political",
+          "categoryClass": "political",
+          "borderColor": "#3a0ca3",
+          "headline": "House Impeaches VP Sara Duterte for Second Time — 257–25–9 Vote",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-05-11&search=Sara+Duterte+impeached+House+257",
+          "descriptionHtml": "<p>The House of Representatives voted <strong>257–25–9</strong> on May 11 to impeach Vice President Sara Duterte for a second time, making her the first Philippine official impeached twice. The tally far exceeded the one-third constitutional threshold of 106 votes and surpassed the 215 votes from her first impeachment in 2025 (later blocked by the Supreme Court on procedural grounds). Articles allege misuse of confidential funds, bribery, unexplained wealth including private transactions exceeding <strong>$110 million</strong> flagged by anti-money laundering agencies, and threats against President Ferdinand Marcos Jr., the First Lady, and former Speaker Martin Romualdez. Duterte was not in Manila when the vote occurred. The House transmitted the articles to the Senate, which must convict with 16 of 24 senators to remove her and permanently bar her from public office—including a 2028 presidential run where she had led early polls.</p>",
+          "significance": "Historic first double impeachment in Philippine history; Senate trial outcome will determine whether the Duterte camp retains a national executive foothold before 2028.",
+          "diasporaImpact": "Removes short-term uncertainty about whether impeachment would proceed; a Senate conviction would reshape the 2028 field that overseas voters help decide and signal how durable the Marcos supermajority is.",
+          "dynastyLinks": [
+            { "label": "Duterte", "href": "/dynasties-network-visualization.html#dynasty-DUTERTE_FAMILY" },
+            { "label": "Marcos-Romualdez", "href": "/dynasties-network-visualization.html#dynasty-MARCOS_ROMUALDEZ" }
+          ],
+          "sourceLinks": [
+            { "label": "Rappler", "href": "https://www.rappler.com/philippines/house-impeaches-vice-president-sara-duterte-may-2026/" },
+            { "label": "BBC", "href": "https://www.bbc.com/news/articles/cqlp21q4yq4o" },
+            { "label": "Al Jazeera", "href": "https://www.aljazeera.com/news/2026/5/11/philippine-congress-poised-to-impeach-vice-president-sara-duterte" },
+            { "label": "Philstar", "href": "https://interaksyon.philstar.com/politics-issues/2026/05/11/313215/sara-duterte-impeached-awaits-senate-trial/" }
+          ]
+        },
+        {
+          "timeDatetime": "2026-05-11",
+          "timeDisplay": "May 11, 2026",
+          "category": "Political",
+          "categoryClass": "political",
+          "borderColor": "#3a0ca3",
+          "headline": "Alan Cayetano Ousts Tito Sotto as Senate President on Impeachment Day",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-05-11&search=Cayetano+Senate+President+Sotto+ousted",
+          "descriptionHtml": "<p>Hours before the House impeachment vote, <strong>13 senators</strong> installed Alan Peter Cayetano as Senate president, ousting Tito Sotto (<strong>13–9–2</strong>). Senator Imee Marcos moved the leadership change; backers included Francis Escudero, Bong Go, Ronald dela Rosa, Robin Padilla, and Camille Villar. Cayetano—a 2016 Duterte running mate—will preside over Sara Duterte’s impeachment trial as Senate president. Loren Legarda was elected president pro tempore. Cayetano denied the coup was tied to impeachment, citing Middle East conflict, AI, and hunger instead, but the timing positioned a Duterte-aligned bloc to control the upper chamber’s agenda just as articles arrived from the House.</p>",
+          "significance": "Senate leadership flip gives Duterte allies procedural control over impeachment trial timing and rules before the chamber convenes as an impeachment court.",
+          "diasporaImpact": "Signals that the Senate trial may be more favorable to Duterte than the House vote suggested—overseas observers tracking governance quality should watch whether conviction remains politically feasible.",
+          "dynastyLinks": [
+            { "label": "Duterte", "href": "/dynasties-network-visualization.html#dynasty-DUTERTE_FAMILY" },
+            { "label": "Marcos-Romualdez", "href": "/dynasties-network-visualization.html#dynasty-MARCOS_ROMUALDEZ" }
+          ],
+          "sourceLinks": [
+            { "label": "Rappler", "href": "https://www.rappler.com/philippines/tito-sotto-ousted-alan-cayetano-new-senate-president-may-11-2026/" },
+            { "label": "Rappler", "href": "https://www.rappler.com/philippines/alan-peter-cayetano-senate-president-supporters-ties/" },
+            { "label": "Tribune", "href": "https://tribune.net.ph/2026/05/12/13-senators-back-cayetano-for-senate-presidency" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Legal",
+      "articles": [
+        {
+          "timeDatetime": "2026-05-13",
+          "timeDisplay": "May 13, 2026",
+          "category": "Legal",
+          "categoryClass": "legal",
+          "borderColor": "#1e3a5f",
+          "headline": "Gunshots at Senate as NBI Moves on Bato dela Rosa Over ICC Warrant",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-05-13&search=Bato+dela+Rosa+Senate+NBI+ICC+shooting",
+          "descriptionHtml": "<p>National Bureau of Investigation agents attempted to serve an International Criminal Court arrest warrant on Senator Ronald “Bato” dela Rosa at the Senate on May 13, triggering a chaotic standoff. Senate Sergeant-at-Arms Mao Aplasca fired warning shots; more than <strong>100 supporters</strong> gathered outside overnight. The ICC warrant cites alleged crimes against humanity linked to <strong>32 killings</strong> during the 2016–2018 drug war when dela Rosa led the Philippine National Police. Several senators claimed the warrant was invalid, but Rappler and the ICC affirmed its validity; the Supreme Court had not granted dela Rosa immediate relief on his petition to block arrest. President Marcos said there were no executive orders to arrest dela Rosa and denied the government “swarmed” the Senate.</p>",
+          "significance": "First live confrontation between ICC enforcement efforts and Duterte-allied senators holding national office; tests whether domestic institutions will cooperate with The Hague.",
+          "diasporaImpact": "Revives diaspora debates over drug-war accountability and rule of law; families abroad watching ICC proceedings see whether allies of the former president can still evade arrest from inside Congress.",
+          "dynastyLinks": [
+            { "label": "Duterte", "href": "/dynasties-network-visualization.html#dynasty-DUTERTE_FAMILY" },
+            { "label": "Marcos-Romualdez", "href": "/dynasties-network-visualization.html#dynasty-MARCOS_ROMUALDEZ" }
+          ],
+          "sourceLinks": [
+            { "label": "Rappler", "href": "https://www.rappler.com/philippines/ferdinand-marcos-jr-statement-senate-gunshots-may-13-2026/" },
+            { "label": "Rappler", "href": "https://www.rappler.com/philippines/why-wrong-senators-claim-icc-warrant-invalid-bato-dela-rosa/" },
+            { "label": "CNN", "href": "https://www.cnn.com/2026/05/13/asia/philippines-dela-rosa-icc-arrest-warrant-intl-hnk" },
+            { "label": "Rappler", "href": "https://www.rappler.com/philippines/kiko-barzaga-false-claims-multiple-deaths-assassination-attempts-senate-shooting-may-13-2026/" }
+          ]
+        },
+        {
+          "timeDatetime": "2026-05-14",
+          "timeDisplay": "May 14–16, 2026",
+          "category": "Legal",
+          "categoryClass": "legal",
+          "borderColor": "#1e3a5f",
+          "headline": "Bato Leaves Senate; Ombudsman Suspends Sergeant-at-Arms Over Warning Shots",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-05-14&search=Bato+left+Senate+Aplasca+suspended",
+          "descriptionHtml": "<p>Senate President Cayetano confirmed on May 14 that dela Rosa had <strong>left the Senate premises</strong>, ending his protective stay inside the building. Senator Robin Padilla was reported to have accompanied him out; the NBI later tagged Padilla and Aplasca as persons of interest, and Representative Leila de Lima said Padilla could face obstruction charges. On May 14 the Ombudsman placed Aplasca under <strong>six-month preventive suspension</strong> for discharging firearms during the May 13 incident, with investigators pledging to subpoena CCTV footage. Cayetano challenged the Ombudsman to suspend NBI Director Melvin Matibag instead. The Makabayan bloc called dela Rosa’s exit a “monumental blunder” for the administration.</p>",
+          "significance": "Dela Rosa’s departure from Senate custody marks a major setback for ICC enforcement but deepens institutional conflict between the executive, Ombudsman, and an increasingly autonomous Senate bloc.",
+          "diasporaImpact": "Overseas Filipinos following drug-war justice see another cycle of near-arrest followed by political escape—reinforcing skepticism about whether domestic courts or international tribunals will deliver accountability.",
+          "dynastyLinks": [
+            { "label": "Duterte", "href": "/dynasties-network-visualization.html#dynasty-DUTERTE_FAMILY" }
+          ],
+          "sourceLinks": [
+            { "label": "Rappler", "href": "https://www.rappler.com/philippines/bato-dela-rosa-left-senate-evades-icc-arrest-may-14-2026/" },
+            { "label": "Philstar", "href": "https://www.philstar.com/headlines/2026/05/16/2528241/senate-security-chief-suspended-over-shooting" },
+            { "label": "Philstar", "href": "https://www.philstar.com/the-freeman/cebu-news/2026/05/16/2528369/over-batos-exit-senate-padilla-aplasca-may-face-raps" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Economic",
+      "articles": [
+        {
+          "timeDatetime": "2026-05-13",
+          "timeDisplay": "May 13–16, 2026",
+          "category": "Economic",
+          "categoryClass": "economic",
+          "borderColor": "#3a0ca3",
+          "headline": "Luzon and Visayas Grids Hit Red Alert for Three Days; Rotating Brownouts",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-05-13&search=Luzon+Visayas+red+alert+brownouts+NGCP",
+          "descriptionHtml": "<p>The National Grid Corporation of the Philippines placed Luzon and the Visayas under <strong>red alert</strong> on May 13–15 as available capacity fell short of peak demand—Luzon faced a <strong>373 MW</strong> deficit (13,508 MW available vs. 13,881 MW demand) and the Visayas a <strong>220 MW</strong> shortfall. NGCP implemented manual load dropping (rotating brownouts) across Metro Manila, Batangas, Pampanga, Quezon, Isabela, Cebu, and other areas. At least <strong>16 plants</strong> were forced offline and <strong>14</strong> derated, with roughly <strong>4,160 MW</strong> unavailable; transmission failures on the Tayabas–Ilijan and Dasmariñas–Ilijan 500-kV lines compounded the crisis. The grid returned to normal operations on May 16. Energy analysts warned the outages exposed over-reliance on a few large plants and critical corridors.</p>",
+          "significance": "Third straight day of red alerts during Q1’s 2.8% GDP slump shows energy infrastructure fragility amplifying economic and household stress.",
+          "diasporaImpact": "Families at home face higher bills, lost productivity, and spoiled goods during brownouts; OFWs sending remittances may need to budget extra for generators, backup power, and delayed household purchases.",
+          "dynastyLinks": [
+            { "label": "Marcos-Romualdez", "href": "/dynasties-network-visualization.html#dynasty-MARCOS_ROMUALDEZ" }
+          ],
+          "sourceLinks": [
+            { "label": "Philstar", "href": "https://www.philstar.com/nation/2026/05/16/2528210/luzon-visayas-suffer-rotational-blackouts" },
+            { "label": "Philstar", "href": "https://www.philstar.com/headlines/2026/05/15/2528133/luzon-visayas-back-red-alert-third-straight-day" },
+            { "label": "GMA News", "href": "https://www.gmanetwork.com/news/money/economy/987493/ngcp-brownouts-alerts-luzon-grid/story/" },
+            { "label": "Philstar", "href": "https://www.philstar.com/headlines/2026/05/16/2528389/luzon-grid-returns-normal-after-days-power-alerts" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Natural Disasters",
+      "articles": [
+        {
+          "timeDatetime": "2026-05-13",
+          "timeDisplay": "May 13–14, 2026",
+          "category": "Natural Disasters",
+          "categoryClass": "natural-disasters",
+          "borderColor": "#7b4f12",
+          "headline": "Mayon Lava Collapse Sends 4,000m Ash Plume; 70,000+ Families Affected",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-05-13&search=Mayon+lava+collapse+pyroclastic+Alert+Level+3",
+          "descriptionHtml": "<p>Mayon Volcano remained at <strong>Alert Level 3</strong> with effusive eruption exceeding <strong>130 consecutive days</strong> by mid-May. On May 13 a lava-collapse pyroclastic density current at 11:22 a.m. produced a plume rising <strong>4,000 meters</strong>, drifting southwest with ashfall in Camalig, Legazpi, and Sto. Domingo. PHIVOLCS recorded continued rockfalls, lava flows up to 3.8 km along the Basud Gully, and minor strombolian activity on May 14. The Office of Civil Defense reported up to <strong>70,150 families</strong> affected; the Office of the Vice President conducted relief distributions of food packs and hygiene kits. PHIVOLCS Director Teresito Bacolcol said unrest could persist for weeks, comparing the pattern to Mayon’s 2023 eruption that lasted about six months at Alert Level 3.</p>",
+          "significance": "Sustained volcanic crisis with new PDC events keeps Albay on prolonged emergency footing; escalation to Alert Level 4 remains possible if simultaneous criteria are met.",
+          "diasporaImpact": "Bicol OFW communities continue supporting relatives facing crop loss, school closures, and evacuation; prolonged Alert Level 3 means remittances may be diverted to recovery for months.",
+          "dynastyLinks": [],
+          "sourceLinks": [
+            { "label": "Philstar", "href": "https://www.philstar.com/nation/2026/05/14/2527854/mayon-emits-pyroclastic-materials-anew" },
+            { "label": "GMA News", "href": "https://www.gmanetwork.com/news/topstories/regions/987451/mayon-volcano-logs-lava-collapse-pyroclastic-density-current-phivolcs/story/" },
+            { "label": "GMA News", "href": "https://www.gmanetwork.com/news/topstories/regions/987562/minor-strombolian-acitivity-mayon-volcano-phivolcs/story/" }
+          ]
+        }
+      ]
+    }
+  ],
+  "dynastyHighlights": {
+    "title": "Dynasty Watch",
+    "items": [
+      {
+        "title": "Duterte",
+        "titleHref": "/dynasties-network-visualization.html#dynasty-DUTERTE_FAMILY",
+        "bodyHtml": "<p>The week delivered a one-two punch and a partial reprieve: Sara Duterte was impeached again with 257 House votes, while Alan Cayetano’s Senate presidency gives Duterte allies control of the impeachment court. Senator Bato dela Rosa—closely tied to Rodrigo Duterte’s drug war—evaded ICC arrest after a Senate standoff, then left the building on May 14.</p>",
+        "bullets": [
+          { "text": "House impeaches Sara Duterte 257–25–9", "href": "/interactive-timeline/index.html?date=2026-05-11" },
+          { "text": "Cayetano elected Senate president before impeachment vote", "href": "/interactive-timeline/index.html?date=2026-05-11&search=Cayetano+Senate+President" },
+          { "text": "Bato dela Rosa leaves Senate amid ICC warrant standoff", "href": "/interactive-timeline/index.html?date=2026-05-14" }
+        ]
+      },
+      {
+        "title": "Marcos-Romualdez",
+        "titleHref": "/dynasties-network-visualization.html#dynasty-MARCOS_ROMUALDEZ",
+        "bodyHtml": "<p>The administration secured its House impeachment win but faced a chaotic Senate week: Marcos denied ordering dela Rosa’s arrest while the NBI attempted service of an ICC warrant, and power-grid failures underscored economic vulnerability after Q1’s 2.8% GDP print. Senator Imee Marcos backed Cayetano’s leadership change, splitting Marcos-family Senate alignment.</p>",
+        "bullets": [
+          { "text": "Marcos denies executive order to arrest Bato", "href": "/interactive-timeline/index.html?date=2026-05-13" },
+          { "text": "Imee Marcos moves Cayetano for Senate presidency", "href": "/interactive-timeline/index.html?date=2026-05-11&search=Cayetano+Senate+President" }
+        ]
+      }
+    ]
+  }
+}

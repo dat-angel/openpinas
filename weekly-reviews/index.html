@@ -3,20 +3,21 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script defer src="/_vercel/insights/script.js"></script>
     <title>Weekly Reviews – OpenPinas</title>
     <meta name="description" content="Weekly digests of Philippine news and political events for the diaspora." />
     <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Spectral:wght@400;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
     <style>
       * { box-sizing: border-box; margin: 0; padding: 0; }
 
       body {
-        font-family: "Spectral", Georgia, serif;
+        font-family: "Source Serif Pro", Georgia, serif;
         color: #222;
         background: #fdfcfb;
         line-height: 1.6;
@@ -31,7 +32,7 @@
 
       .header-nav {
         font-size: 0.8125rem;
-        font-family: "IBM Plex Sans", -apple-system, sans-serif;
+        font-family: "Source Sans Pro", -apple-system, sans-serif;
         margin-bottom: 1.5rem;
       }
 
@@ -56,12 +57,21 @@
         margin: 0 0 1.5rem;
       }
 
+      .description {
+        font-size: 0.9375rem;
+        color: #555;
+        line-height: 1.7;
+        margin-bottom: 2rem;
+        max-width: 640px;
+      }
+
       .nav-links {
         display: flex;
         gap: 1.5rem;
         flex-wrap: wrap;
-        font-family: "IBM Plex Sans", -apple-system, sans-serif;
+        font-family: "Source Sans Pro", -apple-system, sans-serif;
         font-size: 0.875rem;
+        margin-bottom: 2rem;
       }
 
       .nav-links a {
@@ -72,6 +82,56 @@
 
       .nav-links a:hover {
         color: #000;
+      }
+
+      .related-datasets {
+        margin: 3rem 0 2rem;
+        padding: 1.5rem;
+        background: #f9f9f9;
+        border-left: 3px solid #124559;
+        border-radius: 4px;
+      }
+
+      .related-datasets h2 {
+        font-size: 1.125rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
+        color: #222;
+        font-family: "Source Sans Pro", -apple-system, sans-serif;
+      }
+
+      .related-datasets ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      .related-datasets li {
+        margin-bottom: 1rem;
+        font-size: 0.875rem;
+        line-height: 1.6;
+      }
+
+      .related-datasets li strong {
+        display: block;
+        margin-bottom: 0.25rem;
+        color: #222;
+        font-family: "Source Sans Pro", -apple-system, sans-serif;
+      }
+
+      .related-datasets li a {
+        color: #0038A8;
+        text-decoration: underline;
+        font-weight: 500;
+      }
+
+      .related-datasets li a:hover {
+        opacity: 0.8;
+      }
+
+      .related-datasets .dataset-desc {
+        color: #666;
+        margin-top: 0.25rem;
       }
 
       main {
@@ -108,7 +168,7 @@
       .review-meta {
         font-size: 0.75rem;
         color: #888;
-        font-family: "IBM Plex Sans", -apple-system, sans-serif;
+        font-family: "Source Sans Pro", -apple-system, sans-serif;
       }
 
       .empty-state {
@@ -127,7 +187,7 @@
         color: #888;
         font-size: 0.75rem;
         border-top: 1px solid #e5e5e5;
-        font-family: "IBM Plex Sans", -apple-system, sans-serif;
+        font-family: "Source Sans Pro", -apple-system, sans-serif;
       }
 
       footer a {
@@ -146,12 +206,16 @@
         }
       }
     </style>
+      <link rel="stylesheet" href="/openpinas-theme.css" />
   </head>
   <body>
     <header>
       <nav class="header-nav"><a href="../">← OpenPinas</a></nav>
       <h1>Weekly Reviews</h1>
       <p class="subtitle">2026</p>
+      <p class="description">
+        Weekly news digests summarizing significant events, organized by category. Includes weather, exchange rates, OFW news, and dynasty highlights.
+      </p>
       <nav class="nav-links">
         <a href="../interactive-timeline/">Full Timeline</a>
         <a href="../dynasties-network-visualization.html">Dynasty Map</a>
@@ -160,9 +224,37 @@
 
     <main>
       <section class="reviews-list" id="reviews-container">
-        <div class="empty-state">
-          <p>No reviews yet. Check back later.</p>
-        </div>
+        <!-- Reviews will be loaded here by JavaScript -->
+      </section>
+
+      <section class="related-datasets">
+        <h2>Related Datasets & Visualizations</h2>
+        <ul>
+          <li>
+            <strong><a href="../monthly-reviews/">📊 Monthly Reviews</a></strong>
+            <div class="dataset-desc">Comprehensive monthly summaries aggregating weekly reviews with statistics, top stories, dynasty activity, and economic indicators.</div>
+          </li>
+          <li>
+            <strong><a href="../interactive-timeline/">📅 Timeline</a></strong>
+            <div class="dataset-desc">Chronological view of major Philippine events in 2025 and 2026. Filter by category, see which dynasties were involved, and understand how events connect.</div>
+          </li>
+          <li>
+            <strong><a href="../dynasties-network-visualization.html">🗺️ Dynasty Network Map</a></strong>
+            <div class="dataset-desc">Interactive network graph showing how 50+ political dynasties connect through alliances, rivalries, and corruption networks. Includes geographic control map of 71 provinces.</div>
+          </li>
+          <li>
+            <strong><a href="../business-connections-network-visualization.html">💼 Business Connections Network</a></strong>
+            <div class="dataset-desc">Interactive network visualization showing connections between businesses, PBA teams, media outlets, and political dynasties.</div>
+          </li>
+          <li>
+            <strong><a href="../elite-schools-influence-visualization.html">🎓 Elite Schools Influence Map</a></strong>
+            <div class="dataset-desc">Schools as nodes, alumni pipelines as connectors, and provinces as shared impact zones. Explore community loops, mobility paths, and talent retention.</div>
+          </li>
+          <li>
+            <strong><a href="../when-to-go-manila.html">🧭 When to Go to the Philippines?</a></strong>
+            <div class="dataset-desc">Weekly PHP:USD exchange rate tracking alongside airport passenger traffic data to identify optimal travel windows and currency exchange opportunities.</div>
+          </li>
+        </ul>
       </section>
     </main>
 
@@ -176,20 +268,161 @@
     </footer>
 
     <script>
-      // This would be populated with actual review files
-      // For now, it's a placeholder that can be updated manually or via automation
-      const reviews = [
-        // Example structure:
-        // {
-        //   date: "2026-01-11",
-        //   weekRange: "January 5-11, 2026",
-        //   filename: "weekly-review-2026-01-11.html",
-        //   eventCount: 5
-        // }
+      // Keep a fallback list for static/offline rendering, then refresh from data/manifest.json.
+      const fallbackReviews = [
+        {
+          date: "2026-05-30",
+          weekRange: "May 23 – May 30, 2026",
+          filename: "weekly-review-2026-05-30.html",
+          eventCount: 5
+        },
+        {
+          date: "2026-05-23",
+          weekRange: "May 16 – May 23, 2026",
+          filename: "weekly-review-2026-05-23.html",
+          eventCount: 6
+        },
+        {
+          date: "2026-05-16",
+          weekRange: "May 9 – May 16, 2026",
+          filename: "weekly-review-2026-05-16.html",
+          eventCount: 6
+        },
+        {
+          date: "2026-05-09",
+          weekRange: "May 2 – May 9, 2026",
+          filename: "weekly-review-2026-05-09.html",
+          eventCount: 7
+        },
+        {
+          date: "2026-05-02",
+          weekRange: "April 26 – May 2, 2026",
+          filename: "weekly-review-2026-05-02.html",
+          eventCount: 8
+        },
+        {
+          date: "2026-04-25",
+          weekRange: "April 18 – April 25, 2026",
+          filename: "weekly-review-2026-04-25.html",
+          eventCount: 8
+        },
+        {
+          date: "2026-04-19",
+          weekRange: "April 12 – April 19, 2026",
+          filename: "weekly-review-2026-04-19.html",
+          eventCount: 6
+        },
+        {
+          date: "2026-04-12",
+          weekRange: "April 5 – April 12, 2026",
+          filename: "weekly-review-2026-04-12.html",
+          eventCount: 5
+        },
+        {
+          date: "2026-04-04",
+          weekRange: "March 29 – April 4, 2026",
+          filename: "weekly-review-2026-04-04.html",
+          eventCount: 6
+        },
+        {
+          date: "2026-03-29",
+          weekRange: "March 22-29, 2026",
+          filename: "weekly-review-2026-03-29.html",
+          eventCount: 11
+        },
+        {
+          date: "2026-03-21",
+          weekRange: "March 15-21, 2026",
+          filename: "weekly-review-2026-03-21.html",
+          eventCount: 12
+        },
+        {
+          date: "2026-03-14",
+          weekRange: "March 8-14, 2026",
+          filename: "weekly-review-2026-03-14.html",
+          eventCount: 8
+        },
+        {
+          date: "2026-03-07",
+          weekRange: "March 1-7, 2026",
+          filename: "weekly-review-2026-03-07.html",
+          eventCount: 12
+        },
+        {
+          date: "2026-02-28",
+          weekRange: "February 22-28, 2026",
+          filename: "weekly-review-2026-02-28.html",
+          eventCount: 14
+        },
+        {
+          date: "2026-02-22",
+          weekRange: "February 15-22, 2026",
+          filename: "weekly-review-2026-02-22.html",
+          eventCount: 12
+        },
+        {
+          date: "2026-02-15",
+          weekRange: "February 9-15, 2026",
+          filename: "weekly-review-2026-02-15.html",
+          eventCount: 4
+        },
+        {
+          date: "2026-02-08",
+          weekRange: "February 2-8, 2026",
+          filename: "weekly-review-2026-02-08.html",
+          eventCount: 0
+        },
+        {
+          date: "2026-01-31",
+          weekRange: "January 25-31, 2026",
+          filename: "weekly-review-2026-01-31.html",
+          eventCount: 0
+        },
+        {
+          date: "2026-01-24",
+          weekRange: "January 17-24, 2026",
+          filename: "weekly-review-2026-01-24.html",
+          eventCount: 0
+        },
+        {
+          date: "2026-01-16",
+          weekRange: "January 10-16, 2026",
+          filename: "weekly-review-2026-01-16.html",
+          eventCount: 0
+        },
+        {
+          date: "2026-01-09",
+          weekRange: "January 3-9, 2026",
+          filename: "weekly-review-2026-01-09.html",
+          eventCount: 0
+        },
+        {
+          date: "2026-01-02",
+          weekRange: "December 27, 2025 - January 2, 2026",
+          filename: "weekly-review-2026-01-02.html",
+          eventCount: 7
+        }
       ];
+      let reviews = [...fallbackReviews];
+
+      function formatDate(dateString) {
+        // Parse YYYY-MM-DD format properly
+        const [year, month, day] = dateString.split('-');
+        const date = new Date(parseInt(year), parseInt(month) - 1, parseInt(day));
+        return date.toLocaleDateString("en-US", { 
+          year: "numeric", 
+          month: "long", 
+          day: "numeric" 
+        });
+      }
 
       function renderReviews() {
         const container = document.getElementById("reviews-container");
+        
+        if (!container) {
+          console.error("Reviews container not found");
+          return;
+        }
         
         if (reviews.length === 0) {
           container.innerHTML = `
@@ -207,18 +440,45 @@
           <div class="review-card">
             <h2><a href="${review.filename}">Week of ${review.weekRange}</a></h2>
             <div class="review-meta">
-              ${review.eventCount} events | Published ${new Date(review.date).toLocaleDateString("en-US", { 
-                year: "numeric", 
-                month: "long", 
-                day: "numeric" 
-              })}
+              ${review.eventCount} events | Published ${formatDate(review.date)}
             </div>
           </div>
         `).join("");
       }
 
-      renderReviews();
-    </script>
-  </body>
-</html>
+      async function refreshReviewsFromManifest() {
+        try {
+          const response = await fetch("data/manifest.json", { cache: "no-cache" });
+          if (!response.ok) return;
+          const manifest = await response.json();
+          if (!Array.isArray(manifest.reviews) || manifest.reviews.length === 0) return;
+          reviews = manifest.reviews.map(review => ({
+            date: review.weekEnding,
+            weekRange: review.weekLabel || review.weekEnding,
+            filename: `weekly-review-${review.weekEnding}.html`,
+            eventCount: Number.isFinite(review.eventCount) ? review.eventCount : 0
+          }));
+          renderReviews();
+        } catch (error) {
+          console.error("Unable to load weekly review manifest:", error);
+        }
+      }
 
+      function initializeReviews() {
+        renderReviews();
+        refreshReviewsFromManifest();
+      }
+
+      // Run when DOM is ready
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initializeReviews);
+      } else {
+        initializeReviews();
+      }
+      
+      // Also try rendering after a short delay to ensure DOM is ready
+      setTimeout(renderReviews, 100);
+    </script>
+    <script src="/openpinas-nav.js" defer></script>
+</body>
+</html>

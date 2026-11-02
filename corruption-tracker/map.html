@@ -3,13 +3,14 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Cases Map - Case Tracker</title>
+    <script defer src="/_vercel/insights/script.js"></script>
+    <title>OpenPinas: Corruption Cases Map - Corruption Tracker</title>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Spectral:wght@400;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/styles.css" />
@@ -31,7 +32,7 @@
         gap: 1rem;
         flex-wrap: wrap;
         align-items: center;
-        font-family: "IBM Plex Sans", -apple-system, sans-serif;
+        font-family: "Source Sans Pro", -apple-system, sans-serif;
       }
 
       .map-controls label {
@@ -52,7 +53,7 @@
         font-size: 0.75rem;
         z-index: 1000;
         max-width: 180px;
-        font-family: "IBM Plex Sans", -apple-system, sans-serif;
+        font-family: "Source Sans Pro", -apple-system, sans-serif;
       }
 
       .map-legend h4 {
@@ -91,24 +92,50 @@
           height: 500px;
         }
       }
+
+      /* Accessibility */
+      .skip-link {
+        position: absolute;
+        top: -40px;
+        left: 0;
+        background: #222;
+        color: #fff;
+        padding: 8px 16px;
+        z-index: 1001;
+        text-decoration: none;
+        font-family: "Source Sans Pro", -apple-system, sans-serif;
+      }
+
+      .skip-link:focus {
+        top: 0;
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        * {
+          animation-duration: 0.01ms !important;
+          transition-duration: 0.01ms !important;
+        }
+      }
     </style>
+      <link rel="stylesheet" href="/openpinas-theme.css" />
   </head>
   <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
     <header>
       <nav class="header-nav"><a href="../">← OpenPinas</a> · <a href="./">Corruption Tracker</a></nav>
-      <h1>Cases Map</h1>
+      <h1>OpenPinas: Corruption Cases Map</h1>
       <p class="subtitle">
         See where corruption cases are happening across the Philippines
       </p>
     </header>
 
-    <main>
+    <main id="main-content">
       <div class="map-controls">
         <label>
-          <input type="checkbox" id="showOngoing" checked> Ongoing Cases
+          <input type="checkbox" id="showOngoing" checked> <span aria-hidden="true">⏳</span> Ongoing Cases
         </label>
         <label>
-          <input type="checkbox" id="showConvicted" checked> Convicted
+          <input type="checkbox" id="showConvicted" checked> <span aria-hidden="true">✓</span> Convicted
         </label>
         <label>
           <input type="checkbox" id="showPOGO" checked> POGO Cases
@@ -123,20 +150,20 @@
       <div class="map-legend">
         <h4>Case Status</h4>
         <div class="map-legend-item">
-          <div class="map-legend-marker" style="background: #f77f00;"></div>
-          <span>Ongoing</span>
+          <div class="map-legend-marker" style="background: #f77f00; display: flex; align-items: center; justify-content: center; color: white; font-size: 8px;">⏳</div>
+          <span>Ongoing (⏳)</span>
         </div>
         <div class="map-legend-item">
-          <div class="map-legend-marker" style="background: #0b6e4f;"></div>
-          <span>Convicted</span>
+          <div class="map-legend-marker" style="background: #0b6e4f; display: flex; align-items: center; justify-content: center; color: white; font-size: 8px;">✓</div>
+          <span>Convicted (✓)</span>
         </div>
         <div class="map-legend-item">
-          <div class="map-legend-marker" style="background: #124559;"></div>
-          <span>Filed</span>
+          <div class="map-legend-marker" style="background: #124559; display: flex; align-items: center; justify-content: center; color: white; font-size: 8px;">📋</div>
+          <span>Filed (📋)</span>
         </div>
         <div class="map-legend-item">
-          <div class="map-legend-marker" style="background: #b23a48;"></div>
-          <span>Dismissed</span>
+          <div class="map-legend-marker" style="background: #b23a48; display: flex; align-items: center; justify-content: center; color: white; font-size: 8px;">✕</div>
+          <span>Dismissed (✕)</span>
         </div>
       </div>
     </main>
@@ -148,7 +175,9 @@
       </p>
     </footer>
 
+    <script src="js/data-path.js"></script>
     <script src="js/map.js"></script>
-  </body>
+    <script src="/openpinas-nav.js" defer></script>
+</body>
 </html>
 

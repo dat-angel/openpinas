@@ -4,9 +4,9 @@
 
 body {
   margin: 0;
-  font-family: "Spectral", Georgia, serif;
-  color: #222;
-  background: #fdfcfb;
+  font-family: Inter, system-ui, -apple-system, sans-serif;
+  color: #0d0d0d;
+  background: #ffffff;
   line-height: 1.6;
   min-height: 100vh;
   display: flex;
@@ -23,7 +23,7 @@ header {
 .header-nav {
   text-align: left;
   font-size: 0.8125rem;
-  font-family: "IBM Plex Sans", -apple-system, sans-serif;
+  font-family: Inter, system-ui, -apple-system, sans-serif;
   margin-bottom: 1.5rem;
 }
 
@@ -40,7 +40,7 @@ h1 {
   font-size: 1.75rem;
   font-weight: 600;
   margin: 0 0 0.5rem;
-  color: #222;
+  color: #0d0d0d;
 }
 
 .subtitle {
@@ -74,14 +74,14 @@ main {
 }
 
 .card:hover {
-  border-color: #222;
+  border-color: #0d0d0d;
 }
 
 .card h2 {
   margin: 0 0 0.5rem;
   font-size: 1rem;
   font-weight: 600;
-  color: #222;
+  color: #0d0d0d;
 }
 
 .card p {
@@ -108,9 +108,9 @@ main {
 .stat .number {
   font-size: 1.5rem;
   font-weight: 600;
-  color: #222;
+  color: #0d0d0d;
   margin: 0;
-  font-family: "IBM Plex Sans", -apple-system, sans-serif;
+  font-family: Inter, system-ui, -apple-system, sans-serif;
 }
 
 .stat .label {
@@ -119,7 +119,7 @@ main {
   margin: 0.25rem 0 0;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  font-family: "IBM Plex Sans", -apple-system, sans-serif;
+  font-family: Inter, system-ui, -apple-system, sans-serif;
 }
 
 .info-section {
@@ -130,7 +130,7 @@ main {
 }
 
 .info-section h2 {
-  font-family: "IBM Plex Sans", -apple-system, sans-serif;
+  font-family: Inter, system-ui, -apple-system, sans-serif;
   font-size: 0.75rem;
   font-weight: 600;
   text-transform: uppercase;
@@ -157,7 +157,7 @@ footer {
   font-size: 0.75rem;
   border-top: 1px solid #e5e5e5;
   margin-top: auto;
-  font-family: "IBM Plex Sans", -apple-system, sans-serif;
+  font-family: Inter, system-ui, -apple-system, sans-serif;
 }
 
 footer a {
@@ -179,7 +179,7 @@ footer a:hover {
   gap: 0.75rem;
   flex-wrap: wrap;
   align-items: center;
-  font-family: "IBM Plex Sans", -apple-system, sans-serif;
+  font-family: Inter, system-ui, -apple-system, sans-serif;
 }
 
 .controls label {
@@ -206,7 +206,7 @@ footer a:hover {
 .controls input[type="search"]:focus,
 .controls select:focus {
   outline: none;
-  border-color: #222;
+  border-color: #0d0d0d;
 }
 
 .controls select {
@@ -230,7 +230,7 @@ footer a:hover {
 }
 
 .case-card:hover {
-  border-color: #222;
+  border-color: #0d0d0d;
 }
 
 .case-card-header {
@@ -257,7 +257,7 @@ footer a:hover {
   text-transform: uppercase;
   letter-spacing: 0.05em;
   white-space: nowrap;
-  font-family: "IBM Plex Sans", -apple-system, sans-serif;
+  font-family: Inter, system-ui, -apple-system, sans-serif;
 }
 
 .case-insights {
@@ -272,7 +272,7 @@ footer a:hover {
   color: #444;
   padding: 0.25rem 0.5rem;
   font-size: 0.6875rem;
-  font-family: "IBM Plex Sans", -apple-system, sans-serif;
+  font-family: Inter, system-ui, -apple-system, sans-serif;
   border: 1px solid #e5e5e5;
 }
 
@@ -296,16 +296,23 @@ footer a:hover {
   margin: 0.75rem 0;
   font-size: 0.75rem;
   color: #888;
-  font-family: "IBM Plex Sans", -apple-system, sans-serif;
+  font-family: Inter, system-ui, -apple-system, sans-serif;
 }
 
 .status-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
   padding: 0.125rem 0.5rem;
   font-size: 0.625rem;
   text-transform: uppercase;
   letter-spacing: 0.05em;
   font-weight: 600;
   border: 1px solid;
+}
+
+.status-icon {
+  font-size: 0.7rem;
 }
 
 .status-badge.ongoing {
@@ -385,13 +392,13 @@ footer a:hover {
   letter-spacing: 0.05em;
   color: #888;
   margin-bottom: 0.25rem;
-  font-family: "IBM Plex Sans", -apple-system, sans-serif;
+  font-family: Inter, system-ui, -apple-system, sans-serif;
 }
 
 .fact-box .value {
   font-size: 1rem;
   font-weight: 600;
-  color: #222;
+  color: #0d0d0d;
 }
 
 .section {
@@ -402,7 +409,7 @@ footer a:hover {
 }
 
 .section h2 {
-  font-family: "IBM Plex Sans", -apple-system, sans-serif;
+  font-family: Inter, system-ui, -apple-system, sans-serif;
   font-size: 0.75rem;
   font-weight: 600;
   text-transform: uppercase;
@@ -431,7 +438,7 @@ footer a:hover {
 }
 
 .source-link {
-  color: #222;
+  color: #0d0d0d;
   text-decoration: underline;
   text-underline-offset: 2px;
   font-size: 0.875rem;
@@ -486,5 +493,46 @@ footer a:hover {
   .controls select {
     width: 100%;
     min-width: auto;
+  }
+}
+
+/* Accessibility utilities */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: #222;
+  color: #fff;
+  padding: 8px 16px;
+  z-index: 1000;
+  text-decoration: none;
+  font-family: Inter, system-ui, -apple-system, sans-serif;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
   }
 }

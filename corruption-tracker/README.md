@@ -133,7 +133,7 @@ See LICENSE file in parent directory.
 
 ## Notes
 
-- This is a private development project
+- This is an open source project for transparency and accountability
 - Data is sourced from news articles, government reports, and investigations
 - Cases are tracked for transparency and accountability purposes
 - Designed for Filipino diaspora communities and transparency advocates

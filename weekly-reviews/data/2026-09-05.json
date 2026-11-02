@@ -1,0 +1,167 @@
+{
+  "version": 1,
+  "weekEnding": "2026-09-05",
+  "weekLabel": "August 30 – September 5, 2026",
+  "title": "OpenPinas: Weekly News Review",
+  "lastUpdated": "September 10, 2026",
+  "stats": [
+    {
+      "number": "5",
+      "label": "Stories"
+    }
+  ],
+  "eventSections": [
+    {
+      "title": "Legal",
+      "articles": [
+        {
+          "timeDatetime": "2026-09-05",
+          "timeDisplay": "September 5, 2026",
+          "category": "Legal",
+          "categoryClass": "legal",
+          "borderColor": "#1e3a5f",
+          "headline": "Sara Duterte posts bail as grave-threats case advances alongside impeachment",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-09-05&search=Sara%20Duterte%20posts%20bail%20as%20grave-threats%20case%20advances%20alongside%20impeachment",
+          "descriptionHtml": "<p>Vice President Sara Duterte posted bail on September 5, a day after a Quezon City court ordered her arrest over alleged threats against President Ferdinand Marcos Jr. and two others. The court lifted the warrant after her appearance; Duterte denies the allegations. The criminal case proceeds separately from the Senate impeachment trial, so bail does not decide either her guilt or her fitness to remain in office.</p>",
+          "sourceLinks": [
+            {
+              "label": "AP",
+              "href": "https://apnews.com/article/253a1caa41ef2b831d307fbe2b0489df"
+            },
+            {
+              "label": "GMA News",
+              "href": "https://www.gmanetwork.com/news/topstories/nation/1001151/live-updates-arrest-warrant-vs-sara-duterte-september-4-2026/story/?order=1&top_picks="
+            },
+            {
+              "label": "PNA / DOJ",
+              "href": "https://www.pna.gov.ph/articles/1283368"
+            }
+          ],
+          "dynastyLinks": [
+            {
+              "label": "Duterte Dynasty",
+              "href": "/dynasties-network-visualization.html#dynasty-DUTERTE_FAMILY"
+            },
+            {
+              "label": "Marcos-Romualdez Dynasty",
+              "href": "/dynasties-network-visualization.html#dynasty-MARCOS_ROMUALDEZ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Economic",
+      "articles": [
+        {
+          "timeDatetime": "2026-09-04",
+          "timeDisplay": "September 4, 2026",
+          "category": "Economic",
+          "categoryClass": "economic",
+          "borderColor": "#3a0ca3",
+          "headline": "Inflation eases to 6.1%, leaving household prices under pressure",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-09-04&search=Inflation%20eases%20to%206.1%25%2C%20leaving%20household%20prices%20under%20pressure",
+          "descriptionHtml": "<p>The Philippine Statistics Authority reported on September 4 that annual inflation slowed to 6.1% in August from 6.2% in July. Slower increases in food and non-alcoholic beverage prices helped bring the rate down. For families supported by remittances, slower inflation means prices are rising less quickly, rather than returning to earlier levels.</p>",
+          "sourceLinks": [
+            {
+              "label": "PSA",
+              "href": "https://psa.gov.ph/price-indices/cpi-ir"
+            },
+            {
+              "label": "PNA",
+              "href": "https://www.pna.gov.ph/articles/1283319"
+            },
+            {
+              "label": "ABS-CBN",
+              "href": "https://www.abs-cbn.com/news/business/2026/9/4/inflation-slows-to-6-1-pct-in-august-0907"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Natural Disasters",
+      "articles": [
+        {
+          "timeDatetime": "2026-09-05",
+          "timeDisplay": "September 5, 2026",
+          "category": "Natural Disasters",
+          "categoryClass": "disaster",
+          "borderColor": "#7b4f12",
+          "headline": "Flood cleanup expands while Habagat disrupts sea travel",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-09-05&search=Flood%20cleanup%20expands%20while%20Habagat%20disrupts%20sea%20travel",
+          "descriptionHtml": "<p>DOLE reported on September 5 that more than 11,000 TUPAD workers were mobilized for flood cleanup in Metro Manila and the Ilocos Region. The temporary work includes clearing debris and drainage channels while giving affected households some income. Sea-trip cancellations continued amid Habagat conditions, making transport availability and recovery needs immediate concerns for families coordinating travel or support from abroad.</p>",
+          "sourceLinks": [
+            {
+              "label": "PNA / DOLE",
+              "href": "https://www.pna.gov.ph/articles/1283394"
+            },
+            {
+              "label": "Radyo Pilipinas",
+              "href": "https://radyopilipinas.ph/2026/09/05/mahigit-11000-tupad-workers-tumulong-sa-paglilinis-ng-mga-lugar-na-binaha-sa-ncr-at-ilocos/"
+            },
+            {
+              "label": "GMA News",
+              "href": "https://www.gmanetwork.com/news/serbisyopubliko/transportation/1001242/list-canceled-sea-trips-on-sept-5-2026-due-to-habagat/story/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "International Relations",
+      "articles": [
+        {
+          "timeDatetime": "2026-09-04",
+          "timeDisplay": "September 4, 2026",
+          "category": "International Relations",
+          "categoryClass": "international",
+          "borderColor": "#0d7377",
+          "headline": "Indonesian fire haze adds to school and household disruption",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-09-04&search=Indonesian%20fire%20haze%20adds%20to%20school%20and%20household%20disruption",
+          "descriptionHtml": "<p>DENR’s Environmental Management Bureau linked haze in parts of Luzon and the Visayas to smoke carried from fires in Kalimantan by the southwest monsoon. The government directed alternative learning arrangements in Metro Manila and listed provinces for September 4 amid heavy rain and poor air quality. The cross-border pollution added another source of disruption for households already managing the monsoon.</p>",
+          "sourceLinks": [
+            {
+              "label": "GMA News",
+              "href": "https://www.gmanetwork.com/news/topstories/content/1000714/haze-in-ph-caused-by-habagat-bringing-smoke-from-indonesia-says-denr-emb/story/"
+            },
+            {
+              "label": "PIA / DENR-EMB",
+              "href": "https://pia.gov.ph/news/denr-emb-warns-of-unhealthy-effects-of-indonesia-haze-smoke/"
+            },
+            {
+              "label": "Presidential News Desk",
+              "href": "https://bagongpilipinasmediahub.ph/text/pbbm-iniutos-ang-learning-continuity-measures-sa-gitna-ng-ulan-haze/?post_id=20221"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Cultural",
+      "articles": [
+        {
+          "timeDatetime": "2026-08-31",
+          "timeDisplay": "August 31, 2026",
+          "category": "Cultural",
+          "categoryClass": "cultural",
+          "borderColor": "#b23a48",
+          "headline": "Magsaysay awards recognize humanitarian work, diplomacy and prisoner advocacy",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-08-31&search=Magsaysay%20awards%20recognize%20humanitarian%20work%2C%20diplomacy%20and%20prisoner%20advocacy",
+          "descriptionHtml": "<p>The Ramon Magsaysay Award Foundation announced Runa Khan of Bangladesh, Tommy Koh of Singapore and Bo Kyi of Myanmar as its 2026 awardees on August 31. Their work spans services for remote communities, international cooperation and support for political prisoners. The Manila-based award places regional public service alongside the week’s domestic political news.</p>",
+          "sourceLinks": [
+            {
+              "label": "Ramon Magsaysay Award Foundation",
+              "href": "https://rmaward.asia/"
+            },
+            {
+              "label": "Philippine Star",
+              "href": "https://www.philstar.com/headlines/2026/09/01/2553182/3-humanitarians-named-2026-magsaysay-awardees"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "prevWeekEnding": "2026-08-29"
+}

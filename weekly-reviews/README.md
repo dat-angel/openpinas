@@ -1,85 +1,77 @@
 # Weekly Philippine News Reviews
 
-This directory contains weekly review pages that summarize significant Philippine events for each week of 2026.
+Canonical format as of April 2026. JSON-first, compact editorial voice.
 
-## Files
+- Canonical content: `weekly-reviews/data/YYYY-MM-DD.json`
+- Canonical archive: `weekly-reviews/data/manifest.json`
+- Public route: `/weekly-reviews/weekly-review-YYYY-MM-DD.html` (React-rendered from JSON)
+- Legacy HTML files in this directory: compatibility only, not updated
 
-- **`weekly-review-template.html`** - Template file for generating new weekly reviews
-- **`index.html`** - Archive listing of all weekly reviews
-- **`weekly-review-YYYY-MM-DD.html`** - Individual weekly review pages (generated from template)
+---
 
-## How to Generate a Weekly Review
+## Editorial Standard (April 2026 onward)
 
-### Option 1: Using the AI Skill (Recommended)
+### Story count
+**5–8 articles total per review.** Not one article per timeline event — one article per *story*. Related events are grouped.
 
-1. Run the `ph-weekly-review` skill with the week date range
-2. The skill will generate the HTML file automatically
-3. Save it as `weekly-review-YYYY-MM-DD.html` (use the end date of the week)
+### Grouping rule
+If two or more events share an underlying theme, they become one article with multiple source links. Ask: *is this a new story, or more detail on a story already in this review?* If the latter, add sources to the existing article.
 
-### Option 2: Manual Generation
+Example: fuel prices + peso weakness + DSWD transport relief + toll discounts = one article (*Cost-of-living pressure on transport workers*), four source links.
 
-1. Copy `weekly-review-template.html` to `weekly-review-YYYY-MM-DD.html`
-2. Update the `WEEK_CONFIG` object in the JavaScript section:
-   ```javascript
-   const WEEK_CONFIG = {
-     startDate: "2026-01-05",  // Start of week (Monday)
-     endDate: "2026-01-11",    // End of week (Sunday)
-     timelineFile: "../philippines-2026-timeline.json",
-     weekLabel: "January 5-11, 2026"
-   };
-   ```
-3. Save the file
-4. The page will automatically load and display events from the timeline JSON
+### Article structure
+| Field | Rule |
+|---|---|
+| `headline` | Frame the week's *development*, not just the event. What shifted? |
+| `descriptionHtml` | 2–4 sentences. Key facts + significance in the final sentence. |
+| `diasporaImpact` | Optional. One sentence. Omit if it restates the description. |
+| `sourceLinks[]` | All articles drawn from for this grouped story. Often 3–6 links. |
+| `dynastyLinks[]` | Optional. |
+| `significance` | **Do not use.** Fold into `descriptionHtml`. |
 
-## Features
+---
 
-- **Statistics Dashboard**: Shows total events, political events, disasters, and dynasty mentions
-- **Categorized Events**: Events organized by category (Political, Natural Disasters, Cultural, etc.)
-- **Dynasty Highlights**: Special section highlighting dynasty-related news
-- **Links to Visualizations**:
-  - Each event links to the full timeline
-  - Dynasty mentions link to the network map
-  - Navigation to all project pages
-- **Responsive Design**: Works on desktop and mobile devices
+## How To Generate A Weekly Review
 
-## File Naming Convention
+### Step 1: Run ph-news-refresher (if not already done)
+Updates `philippines-2026-timeline.json` with the week's events.
 
-- Format: `weekly-review-YYYY-MM-DD.html`
-- Use the **end date** of the week (Sunday)
-- Example: `weekly-review-2026-01-11.html` for the week ending January 11, 2026
-
-## Integration
-
-The weekly reviews integrate with:
-- **Timeline**: `../interactive-timeline/` - Links to specific events
-- **Dynasty Map**: `../dynasties-network-visualization.html` - Links to dynasty profiles
-- **Timeline JSON**: `../philippines-2026-timeline.json` - Source data
-
-## Updating the Archive
-
-To add a new review to the archive listing (`index.html`), update the `reviews` array in the JavaScript:
-
-```javascript
-const reviews = [
-  {
-    date: "2026-01-11",
-    weekRange: "January 5-11, 2026",
-    filename: "weekly-review-2026-01-11.html",
-    eventCount: 5
-  },
-  // Add more reviews...
-];
+### Step 2: Run ph-weekly-review skill
 ```
+/ph-weekly-review
+```
+Confirm week start/end date when prompted. The skill outputs:
+- `weekly-reviews/data/YYYY-MM-DD.json`
+- `weekly-reviews/data/manifest.json` (updated)
+
+### Step 3: Validate
+```bash
+npm run validate
+# For a restored range of Saturday editions:
+node scripts/validate-weekly-coverage.mjs 2026-06-27 2026-09-05
+```
+
+---
+
+## File Naming
+
+- Week key: `YYYY-MM-DD` (week **ending** date, Saturday)
+- JSON: `weekly-reviews/data/YYYY-MM-DD.json`
+- Public route: `/weekly-reviews/weekly-review-YYYY-MM-DD.html`
+
+## 2026 Schedule
+
+Weekly, non-overlapping Sunday–Saturday windows. Source data from `philippines-2026-timeline.json`, verified against dated reporting and original releases. `lastUpdated` is the actual preparation date, including for historical backfills.
+
+Link each regular edition to the nearest available earlier regular edition; repair those links when filling gaps. Keep special editions in the archive without inserting them into the regular weekly chain. Update `content/now-developing.json` only when adding a newer completed edition, so historical backfills do not move the homepage backward. The January and early-February editions through `2026-02-08` are now filled from existing timeline events; `2026-02-07` covers the former February 1–7 hole, including the February 1 PBA championship. Coverage runs through the October 31, 2026 edition. The November 1–7 edition is due after November 7 closes.
 
 ## Related Skills
 
-- **ph-news-refresher**: Scan news sources and update timeline/dynasty JSON files
-- **ph-weekly-review**: Generate weekly review HTML pages (this system)
+- `ph-news-refresher` — scans news, updates timeline and dynasty source data
+- `ph-weekly-review` — generates weekly JSON + manifest from timeline data
 
-## Notes
+## Integration
 
-- The template requires the timeline JSON file to exist
-- Events are automatically filtered by date range
-- All links are relative paths, suitable for local development and GitHub Pages
-- The design matches the existing project aesthetic
-
+- Timeline: `/interactive-timeline/index.html`
+- Dynasty map: `/dynasties-network-visualization.html`
+- Source data: `philippines-2026-timeline.json`

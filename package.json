@@ -1,0 +1,33 @@
+{
+  "name": "openpinas",
+  "private": true,
+  "version": "0.1.0",
+  "engines": {
+    "node": ">=20.9.0"
+  },
+  "scripts": {
+    "source-counts": "node scripts/source-counts.mjs",
+    "predev": "node scripts/source-counts.mjs && node scripts/sync-openpinas-public.cjs",
+    "dev": "next dev",
+    "prebuild": "node scripts/source-counts.mjs && node scripts/sync-openpinas-public.cjs",
+    "build": "next build",
+    "postbuild": "node scripts/ensure-out-routes-manifest.cjs",
+    "start": "next start",
+    "lint": "next lint",
+    "validate": "node scripts/validate-openpinas.mjs",
+    "check:preview": "node scripts/check-preview.mjs",
+    "import:weekly-json": "node scripts/import-weekly-html-to-json.mjs"
+  },
+  "dependencies": {
+    "@vercel/analytics": "latest",
+    "leaflet": "^1.9.4",
+    "next": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "vis-network": "^10.0.2"
+  },
+  "devDependencies": {
+    "cheerio": "^1.0.0-rc.12",
+    "playwright": "1.55.0"
+  }
+}

@@ -8,12 +8,20 @@ let dynastiesData = null;
 async function loadData() {
   try {
     // Load cases data
-    const casesResponse = await fetch('data/pogo-corruption-cases-2025.json');
+    const casesUrl =
+      typeof getOpenpinasCorruptionDataPath === "function"
+        ? getOpenpinasCorruptionDataPath()
+        : "data/pogo-corruption-cases-2025.json";
+    const casesResponse = await fetch(casesUrl);
     casesData = await casesResponse.json();
     
     // Try to load dynasty data from OpenPinas
     try {
-      const dynastiesResponse = await fetch('../philippine-political-dynasties-network-2025.json');
+      const dynUrl =
+        typeof getOpenpinasPhilippineDynastiesJsonPath === "function"
+          ? getOpenpinasPhilippineDynastiesJsonPath()
+          : "../philippine-political-dynasties-network-2025.json";
+      const dynastiesResponse = await fetch(dynUrl);
       dynastiesData = await dynastiesResponse.json();
     } catch (e) {
       console.log('Dynasty data not available, continuing without it');
@@ -41,13 +49,13 @@ function buildNetwork() {
       label: caseItem.title.length > 30 ? caseItem.title.substring(0, 30) + '...' : caseItem.title,
       title: `${caseItem.title}\nStatus: ${caseItem.status}\nCategory: ${caseItem.category}`,
       color: {
-        background: '#124559',
-        border: '#0d3547',
-        highlight: { background: '#1a5a73', border: '#0d3547' }
+        background: '#E3F2FD',
+        border: '#1976D2',
+        highlight: { background: '#BBDEFB', border: '#1565C0' }
       },
       size: 25,
       shape: 'box',
-      font: { size: 14, face: 'IBM Plex Sans' },
+      font: { size: 15, face: 'Source Sans Pro', bold: true, color: '#0D47A1', strokeWidth: 0 },
       data: { type: 'case', case: caseItem }
     });
     
@@ -68,7 +76,7 @@ function buildNetwork() {
             },
             size: 20,
             shape: 'dot',
-            font: { size: 12, face: 'IBM Plex Sans' },
+            font: { size: 13, face: 'Source Sans Pro', bold: true, color: '#FFFFFF', strokeWidth: 2, strokeColor: '#000000' },
             data: { type: 'accused', accused: accused }
           });
         }
@@ -78,7 +86,7 @@ function buildNetwork() {
           id: `edge_${nodeId}_${accusedId}`,
           from: nodeId,
           to: accusedId,
-          color: { color: '#124559', highlight: '#1a5a73' },
+          color: { color: '#1976D2', highlight: '#1565C0' },
           width: 2,
           title: 'Accused in case'
         });
@@ -102,7 +110,7 @@ function buildNetwork() {
             },
             size: 18,
             shape: 'triangle',
-            font: { size: 11, face: 'IBM Plex Sans' },
+            font: { size: 12, face: 'Source Sans Pro', bold: true, color: '#FFFFFF', strokeWidth: 2, strokeColor: '#000000' },
             data: { type: 'pogo', pogo: pogo }
           });
         }
@@ -139,7 +147,7 @@ function buildNetwork() {
             },
             size: 22,
             shape: 'diamond',
-            font: { size: 12, face: 'IBM Plex Sans' },
+            font: { size: 12, face: 'Source Sans Pro', bold: true, color: '#FFFFFF', strokeWidth: 2, strokeColor: '#000000' },
             data: { type: 'dynasty', dynasty: dynasty }
           });
         }
@@ -193,8 +201,8 @@ function updateNetwork() {
   const data = { nodes: nodes, edges: edges };
   const options = {
     nodes: {
-      font: { size: 12, face: 'IBM Plex Sans' },
-      borderWidth: 2,
+      font: { size: 13, face: 'Source Sans Pro', bold: true, color: '#FFFFFF', strokeWidth: 2, strokeColor: '#000000' },
+      borderWidth: 3,
       shadow: true
     },
     edges: {

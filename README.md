@@ -1,70 +1,82 @@
-# Philippine Political Dynasties: News Source & Data Project
+# OpenPinas
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](LICENSE-DATA)
-[![Contributors Welcome](https://img.shields.io/badge/contributors-welcome-brightgreen.svg)](CONTRIBUTING.md)
-[![Code of Conduct](https://img.shields.io/badge/code%20of%20conduct-Contributor%20Covenant-blue.svg)](CODE_OF_CONDUCT.md)
 
-Tracking major political dynasties, their relationships, and major events for the Filipino diaspora. Currently tracking 71 dynasties (national and major regional), with ongoing expansion. Interactive visualizations showing how political families maintain control across 71 provinces.
+Open data platform tracking Philippine political power structures, business connections, and major events. Interactive visualizations showing how political families maintain control across 71 provinces.
 
-**Live Demo**: [dat-angel.github.io/openpinas](https://dat-angel.github.io/openpinas/)
+**Live site:** [openpinas.dev](https://openpinas.dev)
+
+**Data endpoint:** `https://dat-angel.github.io/openpinas/<file>.json` — GitHub Pages serves the raw JSON files directly. Use this in scripts and notebooks when you want a stable, CDN-backed URL without hitting the Vercel app. See [API.md](./API.md) for examples.
+
+---
+
+## Migration: HTML → Next.js
+
+This project is being migrated from standalone HTML files to a **Next.js (JavaScript) application**. Here's what that means:
+
+| | Before | Now |
+|---|---|---|
+| **Tech** | Static HTML/CSS/JS files | Next.js (React, static export) |
+| **Hosting** | GitHub Pages | Vercel → `openpinas.dev` |
+| **Pages** | `.html` files in repo root | `app/` directory (React components) |
+| **URL format** | `/dynasties-network-visualization.html` | Same paths preserved — no broken links |
+
+**Status:** Core pages (home, dynasties index, corruption tracker, weekly reviews) are running as Next.js components. Visualization pages (network map, timeline, interactive charts) are still HTML-based and served as static assets via the `[...slug]` route while they are being ported.
+
+---
 
 ## What's Here
 
-- 📰 **Weekly News Digests** - Significant events organized by category
-- 🗺️ **Interactive Network Map** - Dynasty relationships and geographic control
-- 📅 **Timeline** - Chronological view of major events with dynasty connections
-- 📊 **Regional Analysis** - Dynasties and corruption cases by province across Luzon, Visayas, and Mindanao
-- 📊 **Datasets** - 71 dynasties, 148+ key members, 71 provinces tracked
-- ⚖️ **Corruption Case Tracker** - POGO-related cases, corruption tracking, and accountability
+- **Weekly News Digests** — Significant events organized by category
+- **Interactive Network Map** — Dynasty relationships and geographic control
+- **Timeline** — Chronological view of major events with dynasty connections
+- **Datasets** — 50+ dynasties, 450+ members, 71 provinces tracked
 
 ## Quick Start
-
-You need a local web server to run the visualizations (browser security restrictions):
 
 ```bash
 git clone https://github.com/dat-angel/openpinas.git
 cd openpinas
-python3 -m http.server 8000
+npm install
+npm run dev
 ```
 
-Then open http://localhost:8000/ in your browser
+Open [http://localhost:3000/](http://localhost:3000/) in your browser.
 
 ## Files
 
+**App (Next.js):**
+- `app/` — Next.js app directory (layouts, pages, components)
+- `app/globals.css` — Design tokens and global styles
+- `app/layout.js` — Root layout with sticky nav
+- `app/page.js` — Homepage
+- `app/native/` — Page components (home, dynasties, corruption tracker, weekly reviews)
+
 **Data:**
-- `philippine-political-dynasties-network-2025.json` - Dynasty data, relationships, geographic control
-- `philippines-2025-timeline.json` - Timeline of major events
+- `philippine-political-dynasties-network-2025.json` — Dynasty data, relationships, geographic control
+- `philippines-2025-timeline.json` — Timeline of major events
+- `philippines-2026-timeline.json` — Timeline of major events (2026)
+- `business-connections-2025.json` — Business-political connections
 
-**Visualizations:**
-- `dynasties-network-visualization.html` - Interactive network and map
-- `interactive-timeline/` - Timeline visualization
-- `regional-visualization.html` - Regional analysis by province (Luzon, Visayas, Mindanao)
-- `weekly-reviews/` - Weekly review template and archive
+**Visualizations (HTML, being ported):**
+- `dynasties-network-visualization.html` — Interactive network and map
+- `interactive-timeline/` — Timeline visualization
+- `weekly-reviews/` — Weekly review template and archive
 
-**Projects:**
-- `corruption-tracker/` - Corruption & POGO case tracker (MVP complete)
-  - Case list with filtering and search
-  - Detailed case pages with timelines
-  - Statistics dashboard
+**Documentation:**
+- `Skills/` — Canonical agent skills (`ph-news-refresher`, `ph-weekly-review`)
+- `API.md` — JSON structures and fetch examples
+- `DEPLOYMENT.md` — Vercel + GitHub Pages
+- `AUTOMATION.md` — News pipeline
 
 ## Key Stats (2025)
 
-**Current Dataset Scope:**
-- 71 major dynasties tracked (curated subset of ~250 total political families)
-- Focus: National power dynasties and high-profile regional dynasties
-- Coverage includes: Negros Occidental, Pangasinan, Bicol, Zamboanga, Metro Manila cities, Iloilo, Bohol, Bulacan, Pampanga, Tarlac, Cotabato, and more
-- 148+ key members tracked
-- 45+ provinces/regions with detailed geographic mapping
-- Regional breakdown: 37 dynasties in Luzon, 17 in Visayas, 18 in Mindanao
-
-**Philippine Political Reality:**
+- 50+ dynasties tracked
+- 450+ members tracked
 - 71 of 82 provinces (86.6%) controlled by dynasties
 - 67% of congressional seats held by dynastic families
-- ~250 political families across all levels of government
 - Longest-running: Ortega family (157 years, La Union)
-
-*Note: This dataset prioritizes dynasties with national reach, 2025 events, corruption connections, or significant media coverage. Many regional and local dynasties are not yet included.*
 
 ## Features
 
@@ -72,18 +84,12 @@ Then open http://localhost:8000/ in your browser
 - Interactive force-directed graph showing dynasty connections
 - Filter by power level, crisis status, or region
 - Switch between network and map views
-- Click any dynasty for detailed info (members, control, alliances, timeline events)
+- Click any dynasty for detailed info
 
 **Timeline Visualization:**
-- Chronological view of 49 major 2025 events
+- Chronological view of major 2025–2026 events
 - Filter by category (Political, Cultural, Natural Disasters, etc.)
 - Each event shows involved dynasties with links to network map
-
-**Regional Analysis:**
-- Interactive charts showing dynasties and corruption cases by province
-- Filter by region (Luzon, Visayas, Mindanao)
-- Sortable table with province-level statistics
-- Visual breakdown of political power concentration across regions
 
 **Weekly Reviews:**
 - Summaries of significant weekly events
@@ -94,19 +100,26 @@ Then open http://localhost:8000/ in your browser
 
 Political dynasties have been a defining feature of Philippine politics since independence. Despite a constitutional mandate against political dynasties, no Anti-Political Dynasty Law has been passed in over 35 years.
 
-For the 10+ million Filipinos living abroad, understanding these power structures helps us:
-- Make sense of news from back home
-- Understand how governance affects our families
+Understanding these power structures helps:
+- Make sense of political news and events
 - See connections between corruption scandals and political families
 - Track which regions have stable leadership vs. ongoing crises
+- Understand how business and political power intersect
+
+## Related Work
+
+- Sources and methodology: [openpinas.dev/sources-and-related-projects.html](https://openpinas.dev/sources-and-related-projects.html)
+- Ateneo Policy Center Political Dynasties Dataset: https://www.inclusivedemocracy.ph/data-and-infographics
+- PCIJ Political Dynasties Database: https://pcij.org/political-dynasties/
+- BetterGov Dynasty Tracker: https://dynasty-tracker.bettergov.ph
 
 ## Data Structure
 
 The timeline and dynasty datasets are **complementary but standalone**:
 
-- **Timeline → Dynasties**: Each event includes `mentioned_dynasties` array
-- **Dynasties → Timeline**: Each dynasty includes `timeline_events` array
-- Both JSON files work independently (cross-references are optional)
+- **Timeline → Dynasties**: Each event includes a `mentioned_dynasties` array
+- **Dynasties → Timeline**: Each dynasty includes a `timeline_events` array
+- Both JSON files work independently
 
 ## Data Sources
 
@@ -120,49 +133,22 @@ The timeline and dynasty datasets are **complementary but standalone**:
 
 ## Contributing
 
-We welcome contributions! Whether you're fixing data, adding new information, improving code, or enhancing documentation, your help makes this project better.
+Found a new event or dynasty connection? Update the JSON files, validate the syntax, and open a Pull Request.
 
-**Quick Start:**
-- 🐛 Found a bug? [Report it](https://github.com/dat-angel/openpinas/issues/new?template=bug_report.md)
-- 📊 Have data to add or correct? [Submit an update](https://github.com/dat-angel/openpinas/issues/new?template=data_update.md)
-- 💡 Have a feature idea? [Suggest it](https://github.com/dat-angel/openpinas/issues/new?template=feature_request.md)
-- 📝 Want to contribute code? See [CONTRIBUTING.md](CONTRIBUTING.md)
-
-For major changes, open an issue first so we can discuss the approach.
+For major changes, open an issue first.
 
 ## License
 
-- **Code** (HTML, CSS, JavaScript): [MIT License](LICENSE)
+- **Code** (JavaScript/React/CSS): [MIT License](LICENSE)
 - **Data** (JSON files): [CC BY 4.0](LICENSE-DATA)
 
-Use the code however you want. Use the data too, just give attribution. This is for educational and research purposes.
-
-## Project Status & Roadmap
-
-See [ROADMAP.md](ROADMAP.md) for planned features and improvements.
-
-## Contributing
-
-See [CONTRIBUTING.md](CONTRIBUTING.md) for detailed contribution guidelines.
-
-## Code of Conduct
-
-This project follows a [Code of Conduct](CODE_OF_CONDUCT.md). Please read it before participating.
-
-## Support
-
-Like it? Help me buy my next cup of coffee exploring Philippine coffee shops ☕
-
-[![ko-fi](https://img.shields.io/badge/Ko--fi-F16061?style=for-the-badge&logo=ko-fi&logoColor=white)](https://ko-fi.com/beatrizd)
-
-[Support on Ko-fi](https://ko-fi.com/beatrizd) · Every contribution helps keep this project updated and maintained.
+Use the code however you want. Use the data too, just give attribution.
 
 ## Contact
 
 - **Website**: [beatriz.page](https://beatriz.page)
 - **GitHub**: [@dat-angel](https://github.com/dat-angel)
-- **Issues**: [GitHub Issues](https://github.com/dat-angel/openpinas/issues)
 
 ---
 
-If you find this useful, please star it on GitHub or share it with others. Together, we can make political power structures more transparent and understandable.
+If you find this useful, please star it on GitHub or share it with others.
