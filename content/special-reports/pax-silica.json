@@ -11,63 +11,103 @@
     "dates": "Nov 16–18, 2026"
   },
   "feature": {
-    "show_from": "2026-11-03",
-    "show_until": "2026-11-20",
+    "active": true,
+    "planned_end": "2026-11-20",
     "nav_label": "Pax Silica",
     "band_title": "Pax Silica: what's signed, what's promised, and what's going viral",
     "band_dek": "A US-backed AI hub is planned for Tarlac. Trump lands in Manila Nov 16.",
     "band_cta": "Read the special report"
   },
   "sections": [
-    { "id": "signed", "label": "Signed vs. planned" },
-    { "id": "numbers", "label": "The numbers" },
-    { "id": "sides", "label": "Every side" },
-    { "id": "viral", "label": "Viral vs. record" },
-    { "id": "social", "label": "Social vs. press" },
-    { "id": "map", "label": "Map" },
-    { "id": "sources", "label": "Sources" }
+    {
+      "id": "signed",
+      "label": "Signed vs. planned"
+    },
+    {
+      "id": "numbers",
+      "label": "The numbers"
+    },
+    {
+      "id": "sides",
+      "label": "Every side"
+    },
+    {
+      "id": "viral",
+      "label": "Viral vs. record"
+    },
+    {
+      "id": "social",
+      "label": "Social vs. press"
+    },
+    {
+      "id": "map",
+      "label": "Map"
+    },
+    {
+      "id": "sources",
+      "label": "Sources"
+    }
   ],
   "signed_vs_planned": [
     {
       "state": "done",
       "pill": "Done",
       "text": "Philippines joins Pax Silica as its 13th signatory, April 2026",
-      "sources": ["state-apr", "bworld-trump"],
+      "sources": [
+        "state-apr",
+        "diplomat-may",
+        "mb-sep29"
+      ],
       "verified": false
     },
     {
       "state": "done",
       "pill": "Done",
       "text": "1,620-hectare site named at New Clark City, Capas, Tarlac (about 4,000 acres)",
-      "sources": ["pco-hub", "state-apr"],
+      "sources": [
+        "pco-hub",
+        "state-apr"
+      ],
       "verified": false
     },
     {
       "state": "pending",
       "pill": "Pending",
-      "text": "US–PH framework agreement for the hub. Officials said in July it could be signed by November.",
-      "sources": ["philstar-jul"],
+      "text": "US–PH framework agreement for the hub. A draft was finalized in July; officials have targeted a November signing.",
+      "sources": [
+        "bworld-jul16",
+        "philstar-jul",
+        "bworld-jul7"
+      ],
       "verified": false
     },
     {
       "state": "pending",
       "pill": "Unconfirmed",
       "text": "A signing during Trump's visit. The Palace declined to say.",
-      "sources": ["inq-deal-visit", "inq-trump-asean"],
+      "sources": [
+        "inq-deal-visit",
+        "inq-trump-asean"
+      ],
       "verified": false
     },
     {
       "state": "pending",
       "pill": "3–5 yrs",
       "text": "Site development begins on about 500 of the 1,620 hectares",
-      "sources": ["inq-3to5", "pna-3to5"],
+      "sources": [
+        "inq-3to5",
+        "pna-3to5"
+      ],
       "verified": false
     },
     {
       "state": "pending",
       "pill": "10–15 yrs",
       "text": "Full build-out, per BCDA",
-      "sources": ["inq-jobs"],
+      "sources": [
+        "inq-jobs"
+      ],
       "verified": false
     }
   ],
@@ -80,7 +120,9 @@
       "who": "BCDA · Marcos",
       "check": "Projection",
       "tone": "pending",
-      "sources": ["inq-jobs"],
+      "sources": [
+        "inq-jobs"
+      ],
       "verified": false
     },
     {
@@ -89,7 +131,9 @@
       "who": "BCDA",
       "check": "At full build-out",
       "tone": "pending",
-      "sources": ["inq-jobs"],
+      "sources": [
+        "inq-jobs"
+      ],
       "verified": false
     },
     {
@@ -98,16 +142,21 @@
       "who": "Reported",
       "check": "Peso figure misprinted in one source",
       "tone": "flag",
-      "sources": ["inq-deal-visit"],
+      "sources": [
+        "inq-deal-visit"
+      ],
       "verified": false
     },
     {
-      "figure": "Power",
-      "claim": "About 3 GW, roughly 16% of Luzon's current grid capacity",
+      "figure": "Power and water",
+      "claim": "About 3 GW, roughly 16% of Luzon's current grid capacity, and about 130 million liters of water a day",
       "who": "Analysis",
       "check": "BCDA says major data centers sit outside the site",
       "tone": "pending",
-      "sources": ["inq-cost"],
+      "sources": [
+        "inq-cost",
+        "mt-cities"
+      ],
       "verified": false
     },
     {
@@ -116,90 +165,348 @@
       "who": "BCDA · ILPS · DAR",
       "check": "Disputed",
       "tone": "pending",
-      "sources": ["tribune-oct23", "toc-oct21", "pbi-kmp"],
+      "sources": [
+        "tribune-oct23",
+        "toc-oct21",
+        "pbi-kmp"
+      ],
       "verified": false
     }
   ],
-  "land_bar": { "part_ha": 1620, "whole_ha": 35300, "part_label": "Hub site", "whole_label": "Clark Freeport and Special Economic Zone" },
+  "land_bar": {
+    "part_ha": 1620,
+    "whole_ha": 35300,
+    "part_label": "Hub site",
+    "whole_label": "Clark Freeport and Special Economic Zone"
+  },
   "sides": [
     {
       "side": "PH government",
-      "line": "Jobs, revenue, and a place in the global supply chain for chips and AI.",
-      "who": "BCDA · PCO · DTI",
-      "sources": ["pco-hub", "inq-jobs"]
+      "line": "Jobs, revenue, and a climb up the global technology value chain. The ambassador in Washington warns the Philippines could lose the project if it \"drops the ball.\"",
+      "who": "BCDA · PCO · DFA · Amb. Romualdez",
+      "sources": [
+        "pco-hub",
+        "inq-jobs",
+        "mb-sep29",
+        "inq-romualdez"
+      ]
     },
     {
       "side": "United States",
       "line": "A secure supply chain for semiconductors, AI, and critical minerals.",
       "who": "State Department",
-      "sources": ["state-apr"]
+      "sources": [
+        "state-apr"
+      ]
     },
     {
       "side": "Farmers and Aeta communities",
       "line": "\"Land for farmers, not Pax Silica.\" Groups warn of land conversion and threats to food security.",
       "who": "KMP · UMA · ILPS",
-      "sources": ["pbi-kmp", "inq-uma", "mb-lakbayan"]
+      "sources": [
+        "pbi-kmp",
+        "inq-uma",
+        "mb-lakbayan"
+      ]
     },
     {
       "side": "Opposition",
       "line": "Calls for scrutiny of the project before it moves ahead.",
       "who": "Sen. Kiko Pangilinan",
-      "sources": ["inq-kiko"]
+      "sources": [
+        "inq-kiko"
+      ]
     },
     {
       "side": "Analysts",
       "line": "Grid strain from power demand, and the risk of economic pressure from China.",
       "who": "RFA · Inquirer",
-      "sources": ["rfa-aug", "inq-cost"]
+      "sources": [
+        "rfa-aug",
+        "inq-cost"
+      ]
+    },
+    {
+      "side": "China (state media)",
+      "line": "Calls the Philippines a \"sacrificial pawn\" in US strategy, and says the costs for ordinary Filipinos are far from settled. No Foreign Ministry statement on Pax Silica itself was found.",
+      "who": "Global Times",
+      "sources": [
+        "gt-jul",
+        "gt-sep"
+      ]
     }
   ],
-  "sides_pending": "China's response is still being sourced. It will be added only when it can be quoted from a named outlet or official.",
+  "sides_pending": "Global Times is a Chinese state-affiliated outlet. The Foreign Ministry's October remarks were about the Chinese ambassador's row with Manila, not Pax Silica, so they are not used here.",
   "viral": [
     {
       "claim": "\"Trump is coming to Manila to sign Pax Silica.\"",
       "label": "Not confirmed",
       "record": "Trump's attendance at the ASEAN Summit (Nov 16–18) is confirmed. A Pax Silica signing during the visit is not; the Palace declined to say. The link was made by a labor leader quoted in Bilyonaryo and by groups opposing the hub.",
-      "sources": ["philstar-trump", "inq-deal-visit", "bily-labor", "toc-oct21"]
+      "sources": [
+        "philstar-trump",
+        "inq-deal-visit",
+        "bily-labor",
+        "toc-oct21"
+      ]
     }
   ],
   "events": [
-    { "date": "2026-04", "text": "Philippines joins Pax Silica; State Dept announces the hub plan", "sources": ["state-apr"] },
-    { "date": "2026-07-13", "text": "Farmers' groups reject the hub", "sources": ["tribune-jul"] },
-    { "date": "2026-07-19", "text": "BCDA: framework could be signed by November", "sources": ["philstar-jul"] },
-    { "date": "2026-08-18", "text": "RFA: possible Chinese economic pressure", "sources": ["rfa-aug"] },
-    { "date": "2026-10-15", "text": "Palace confirms Trump for the ASEAN Summit", "sources": ["philstar-trump"] },
-    { "date": "2026-10-21", "text": "About 1,000 march to Mendiola against Pax Silica and land grabs", "sources": ["mb-lakbayan"] },
-    { "date": "2026-11-16", "text": "ASEAN Summit opens in Manila", "sources": ["philstar-trump"] }
+    {
+      "date": "2026-04",
+      "text": "Philippines joins Pax Silica; State Dept announces the hub plan",
+      "sources": [
+        "state-apr"
+      ]
+    },
+    {
+      "date": "2026-07-13",
+      "text": "Farmers' groups reject the hub",
+      "sources": [
+        "tribune-jul"
+      ]
+    },
+    {
+      "date": "2026-07-14",
+      "text": "Global Times: Philippines a \"sacrificial pawn\"",
+      "sources": [
+        "gt-jul"
+      ]
+    },
+    {
+      "date": "2026-07-16",
+      "text": "Draft framework agreement finalized",
+      "sources": [
+        "bworld-jul16"
+      ]
+    },
+    {
+      "date": "2026-07-19",
+      "text": "BCDA: framework could be signed by November",
+      "sources": [
+        "philstar-jul"
+      ]
+    },
+    {
+      "date": "2026-08-18",
+      "text": "RFA: possible Chinese economic pressure",
+      "sources": [
+        "rfa-aug"
+      ]
+    },
+    {
+      "date": "2026-10-15",
+      "text": "Palace confirms Trump for the ASEAN Summit",
+      "sources": [
+        "philstar-trump"
+      ]
+    },
+    {
+      "date": "2026-10-21",
+      "text": "About 1,000 march to Mendiola against Pax Silica and land grabs",
+      "sources": [
+        "mb-lakbayan"
+      ]
+    },
+    {
+      "date": "2026-11-16",
+      "text": "ASEAN Summit opens in Manila",
+      "sources": [
+        "philstar-trump"
+      ]
+    }
   ],
   "pending_sections": {
     "social": "Weekly news coverage vs. social mentions, April to November, with the events above marked. Being collected.",
     "map": "Hub footprint against contested land at New Clark City. Being drawn from public site maps."
   },
   "share_cards": {
-    "signed": ["signed-ig.png", "signed-tiktok.png"],
-    "numbers": ["numbers-ig.png", "numbers-tiktok.png"],
-    "viral": ["viral-ig.png", "viral-tiktok.png"]
+    "signed": [
+      "signed-ig.png",
+      "signed-tiktok.png"
+    ],
+    "numbers": [
+      "numbers-ig.png",
+      "numbers-tiktok.png"
+    ],
+    "viral": [
+      "viral-ig.png",
+      "viral-tiktok.png"
+    ]
   },
   "sources": {
-    "state-apr": { "outlet": "US State Department", "title": "US and Philippines launch plans for 4,000-acre economic security zone", "url": "https://www.state.gov/releases/office-of-the-spokesperson/2026/04/the-united-states-and-the-philippines-launch-plans-for-4000-acre-economic-security-zone-to-shore-up-supply-chains-first-ai-native-industrial-acceleration-hub-under-pax-silica", "type": "primary" },
-    "pco-hub": { "outlet": "Presidential Communications Office", "title": "Pax Silica hub to boost PH role in global AI value chain", "url": "https://pco.gov.ph/news_releases/pax-silica-hub-to-boost-ph-role-in-global-ai-value-chain/", "type": "government" },
-    "philstar-jul": { "outlet": "Philstar", "title": "Philippines, US may ink Pax Silica AI hub framework by November", "url": "https://www.philstar.com/business/2026/07/19/2543025/philippines-us-may-ink-pax-silica-ai-hub-framework-november", "type": "news" },
-    "inq-deal-visit": { "outlet": "Inquirer", "title": "Pax Silica deal eyed before potential Trump visit", "url": "https://business.inquirer.net/600597/pax-silica-deal-eyed-before-potential-trump-visit", "type": "news" },
-    "inq-trump-asean": { "outlet": "Inquirer", "title": "Trump in PH next month for Asean summit", "url": "https://globalnation.inquirer.net/342080/trump-in-ph-next-month-for-asean-summit-palace", "type": "news" },
-    "inq-3to5": { "outlet": "Inquirer", "title": "Pax Silica site development eyed in 3 to 5 years", "url": "https://business.inquirer.net/604771/pax-silica-site-development-eyed-in-3-to-5-years", "type": "news" },
-    "pna-3to5": { "outlet": "Philippine News Agency", "title": "Pax Silica AI hub to start development in 3-5 years", "url": "https://www.pna.gov.ph/articles/1281392", "type": "government" },
-    "inq-jobs": { "outlet": "Inquirer", "title": "Pax Silica hub to bring P180B in gov't income, 190,000 jobs — BCDA", "url": "https://newsinfo.inquirer.net/2269242/pax-silica-hub-to-bring-p180-billion-in-govt-income-190000-jobs-bcda", "type": "news" },
-    "inq-cost": { "outlet": "Inquirer", "title": "Pax Silica brings promise, but at what cost?", "url": "https://newsinfo.inquirer.net/2274123/pax-silica-brings-promise-but-at-what-cost", "type": "analysis" },
-    "inq-uma": { "outlet": "Inquirer", "title": "Agri workers' group warn Pax Silica could worsen land, labor issues", "url": "https://newsinfo.inquirer.net/2270862/agri-workers-group-warn-pax-silica-could-worsen-land-labor-issues", "type": "news" },
-    "inq-kiko": { "outlet": "Inquirer", "title": "Pangilinan calls for 'scrutiny' of Pax Silica project", "url": "https://newsinfo.inquirer.net/2279308/kiko-calls-for-scrutiny-of-pax-silica-project", "type": "news" },
-    "philstar-trump": { "outlet": "Philstar", "title": "Trump visiting Manila for ASEAN Summit in November", "url": "https://www.philstar.com/headlines/2026/10/15/2563326/trump-visiting-manila-asean-summit-november", "type": "news" },
-    "bworld-trump": { "outlet": "BusinessWorld", "title": "Trump to visit Manila for ASEAN summit in November", "url": "https://bworldonline.com/the-nation/2026/10/14/786923/voluptio-igent-soluptasper-trump-to-visit-manila-for-asean-summit-in-november/", "type": "news" },
-    "bily-labor": { "outlet": "Bilyonaryo", "title": "Trump's Manila visit aimed at advancing Pax Silica — labor leader", "url": "https://bnc.bilyonaryo.com/trumps-manila-visit-aimed-at-advancing-pax-silica-labor-leader/news/", "type": "news" },
-    "rfa-aug": { "outlet": "Radio Free Asia", "title": "Proposed US-led tech hub in the Philippines will secure supply chains, create jobs", "url": "https://www.rfa.org/english/southchinasea/2026/08/18/pax-silica-philippines-us-clark/", "type": "news" },
-    "mb-lakbayan": { "outlet": "Manila Bulletin", "title": "'Lakbayan' protest: 1,000 farmers, groups march to Mendiola vs Pax Silica, land grabs", "url": "https://mb.com.ph/2026/10/21/1000-protesters-join-lakbayan-rally-in-mendiola-for-peasant-month", "type": "news" },
-    "tribune-jul": { "outlet": "Daily Tribune", "title": "Farmers reject Pax Silica and land displacement by U.S.", "url": "https://tribune.net.ph/2026/07/13/farmers-rejects-pax-silica-and-land-displacement-by-us", "type": "news" },
-    "tribune-oct23": { "outlet": "Daily Tribune", "title": "Whose land, whose future? Farmers challenge Marcos policies, Pax Silica", "url": "https://tribune.net.ph/2026/10/23/whose-land-whose-future-farmers-challenge-marcos-policies-pax-silica", "type": "news" },
-    "toc-oct21": { "outlet": "The Online Citizen", "title": "Groups vow to fight Pax Silica hub in the Philippines ahead of Trump's Manila visit", "url": "https://news.theonlinecitizen.com/2026/10/21/groups-vow-to-fight-pax-silica-hub-in-the-philippines-ahead-of-trump-s-manila-visit", "type": "news" },
-    "pbi-kmp": { "outlet": "PBI Canada", "title": "KMP's Danilo Ramos: \"land for farmers, not Pax Silica\"", "url": "https://pbicanada.org/2026/10/20/kmp-chairperson-danilo-ramos-says-land-for-farmers-not-pax-silica-at-kampuhan-protest-camp-in-quezon-city/", "type": "advocacy" }
+    "state-apr": {
+      "outlet": "US State Department",
+      "title": "US and Philippines launch plans for 4,000-acre economic security zone",
+      "url": "https://www.state.gov/releases/office-of-the-spokesperson/2026/04/the-united-states-and-the-philippines-launch-plans-for-4000-acre-economic-security-zone-to-shore-up-supply-chains-first-ai-native-industrial-acceleration-hub-under-pax-silica",
+      "type": "government"
+    },
+    "pco-hub": {
+      "outlet": "Presidential Communications Office",
+      "title": "Pax Silica hub to boost PH role in global AI value chain",
+      "url": "https://pco.gov.ph/news_releases/pax-silica-hub-to-boost-ph-role-in-global-ai-value-chain/",
+      "type": "government"
+    },
+    "philstar-jul": {
+      "outlet": "Philstar",
+      "title": "Philippines, US may ink Pax Silica AI hub framework by November",
+      "url": "https://www.philstar.com/business/2026/07/19/2543025/philippines-us-may-ink-pax-silica-ai-hub-framework-november",
+      "type": "news"
+    },
+    "inq-deal-visit": {
+      "outlet": "Inquirer",
+      "title": "Pax Silica deal eyed before potential Trump visit",
+      "url": "https://business.inquirer.net/600597/pax-silica-deal-eyed-before-potential-trump-visit",
+      "type": "news"
+    },
+    "inq-trump-asean": {
+      "outlet": "Inquirer",
+      "title": "Trump in PH next month for Asean summit",
+      "url": "https://globalnation.inquirer.net/342080/trump-in-ph-next-month-for-asean-summit-palace",
+      "type": "news"
+    },
+    "inq-3to5": {
+      "outlet": "Inquirer",
+      "title": "Pax Silica site development eyed in 3 to 5 years",
+      "url": "https://business.inquirer.net/604771/pax-silica-site-development-eyed-in-3-to-5-years",
+      "type": "news"
+    },
+    "pna-3to5": {
+      "outlet": "Philippine News Agency",
+      "title": "Pax Silica AI hub to start development in 3-5 years",
+      "url": "https://www.pna.gov.ph/articles/1281392",
+      "type": "government"
+    },
+    "inq-jobs": {
+      "outlet": "Inquirer",
+      "title": "Pax Silica hub to bring P180B in gov't income, 190,000 jobs — BCDA",
+      "url": "https://newsinfo.inquirer.net/2269242/pax-silica-hub-to-bring-p180-billion-in-govt-income-190000-jobs-bcda",
+      "type": "news"
+    },
+    "inq-cost": {
+      "outlet": "Inquirer",
+      "title": "Pax Silica brings promise, but at what cost?",
+      "url": "https://newsinfo.inquirer.net/2274123/pax-silica-brings-promise-but-at-what-cost",
+      "type": "analysis"
+    },
+    "inq-uma": {
+      "outlet": "Inquirer",
+      "title": "Agri workers' group warn Pax Silica could worsen land, labor issues",
+      "url": "https://newsinfo.inquirer.net/2270862/agri-workers-group-warn-pax-silica-could-worsen-land-labor-issues",
+      "type": "news"
+    },
+    "inq-kiko": {
+      "outlet": "Inquirer",
+      "title": "Pangilinan calls for 'scrutiny' of Pax Silica project",
+      "url": "https://newsinfo.inquirer.net/2279308/kiko-calls-for-scrutiny-of-pax-silica-project",
+      "type": "news"
+    },
+    "philstar-trump": {
+      "outlet": "Philstar",
+      "title": "Trump visiting Manila for ASEAN Summit in November",
+      "url": "https://www.philstar.com/headlines/2026/10/15/2563326/trump-visiting-manila-asean-summit-november",
+      "type": "news"
+    },
+    "bworld-trump": {
+      "outlet": "BusinessWorld",
+      "title": "Trump to visit Manila for ASEAN summit in November",
+      "url": "https://bworldonline.com/the-nation/2026/10/14/786923/voluptio-igent-soluptasper-trump-to-visit-manila-for-asean-summit-in-november/",
+      "type": "news"
+    },
+    "bily-labor": {
+      "outlet": "Bilyonaryo",
+      "title": "Trump's Manila visit aimed at advancing Pax Silica — labor leader",
+      "url": "https://bnc.bilyonaryo.com/trumps-manila-visit-aimed-at-advancing-pax-silica-labor-leader/news/",
+      "type": "news"
+    },
+    "rfa-aug": {
+      "outlet": "Radio Free Asia",
+      "title": "Proposed US-led tech hub in the Philippines will secure supply chains, create jobs",
+      "url": "https://www.rfa.org/english/southchinasea/2026/08/18/pax-silica-philippines-us-clark/",
+      "type": "news"
+    },
+    "mb-lakbayan": {
+      "outlet": "Manila Bulletin",
+      "title": "'Lakbayan' protest: 1,000 farmers, groups march to Mendiola vs Pax Silica, land grabs",
+      "url": "https://mb.com.ph/2026/10/21/1000-protesters-join-lakbayan-rally-in-mendiola-for-peasant-month",
+      "type": "news"
+    },
+    "tribune-jul": {
+      "outlet": "Daily Tribune",
+      "title": "Farmers reject Pax Silica and land displacement by U.S.",
+      "url": "https://tribune.net.ph/2026/07/13/farmers-rejects-pax-silica-and-land-displacement-by-us",
+      "type": "news"
+    },
+    "tribune-oct23": {
+      "outlet": "Daily Tribune",
+      "title": "Whose land, whose future? Farmers challenge Marcos policies, Pax Silica",
+      "url": "https://tribune.net.ph/2026/10/23/whose-land-whose-future-farmers-challenge-marcos-policies-pax-silica",
+      "type": "news"
+    },
+    "toc-oct21": {
+      "outlet": "The Online Citizen",
+      "title": "Groups vow to fight Pax Silica hub in the Philippines ahead of Trump's Manila visit",
+      "url": "https://news.theonlinecitizen.com/2026/10/21/groups-vow-to-fight-pax-silica-hub-in-the-philippines-ahead-of-trump-s-manila-visit",
+      "type": "news"
+    },
+    "pbi-kmp": {
+      "outlet": "PBI Canada",
+      "title": "KMP's Danilo Ramos: \"land for farmers, not Pax Silica\"",
+      "url": "https://pbicanada.org/2026/10/20/kmp-chairperson-danilo-ramos-says-land-for-farmers-not-pax-silica-at-kampuhan-protest-camp-in-quezon-city/",
+      "type": "advocacy"
+    },
+    "bworld-jul7": {
+      "outlet": "BusinessWorld",
+      "title": "Philippines aims to sign Pax Silica deal with United States within this year",
+      "url": "https://bworldonline.com/top-stories/2026/07/07/761634/philippines-aims-to-sign-pax-silica-deal-with-united-states-within-this-year/",
+      "type": "news"
+    },
+    "bworld-jul16": {
+      "outlet": "BusinessWorld",
+      "title": "PHL, US finalize draft for Pax Silica AI hub framework",
+      "url": "https://bworldonline.com/corporate/2026/07/16/763745/phl-us-finalize-draft-for-pax-silica-ai-hub-framework/",
+      "type": "news"
+    },
+    "diplomat-may": {
+      "outlet": "The Diplomat",
+      "title": "The Philippines Joins Washington's Pax Silica",
+      "url": "https://thediplomat.com/2026/05/the-philippines-joins-washingtons-pax-silica/",
+      "type": "analysis"
+    },
+    "mb-sep29": {
+      "outlet": "Manila Bulletin",
+      "title": "Pax Silica: What US seeks, what Philippines may offer, and where interests converge",
+      "url": "https://mb.com.ph/2026/09/29/pax-silica-what-us-seeks-what-philippines-may-offer-and-where-interests-converge",
+      "type": "analysis"
+    },
+    "inq-romualdez": {
+      "outlet": "Inquirer",
+      "title": "Envoy: PH could lose Pax Silica if it 'drops the ball'",
+      "url": "https://globalnation.inquirer.net/334295/envoy-ph-could-lose-pax-silica-if-it-drops-the-ball",
+      "type": "news"
+    },
+    "mt-cities": {
+      "outlet": "Manila Times",
+      "title": "Pax Silica: What's in it for Philippine cities?",
+      "url": "https://www.manilatimes.net/2026/08/19/opinion/columns/pax-silica-whats-in-it-for-philippine-cities/2407746",
+      "type": "opinion"
+    },
+    "gma-explainer": {
+      "outlet": "GMA News",
+      "title": "EXPLAINER: What is Pax Silica and why are people worried?",
+      "url": "https://www.gmanetwork.com/news/money/economy/995814/explainer-pax-silica-why-are-people-worried/story/",
+      "type": "news"
+    },
+    "gt-jul": {
+      "outlet": "Global Times",
+      "title": "Pax Silica only makes the Philippines a sacrificial pawn in US Asia-Pacific designs",
+      "url": "https://www.globaltimes.cn/page/202607/1365956.shtml",
+      "type": "state media"
+    },
+    "gt-sep": {
+      "outlet": "Global Times",
+      "title": "The bill for Manila's Pax Silica 'development' is far from settled",
+      "url": "https://www.globaltimes.cn/page/202609/1371062.shtml",
+      "type": "state media"
+    }
   }
 }
