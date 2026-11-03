@@ -39,7 +39,18 @@ const LINKS = [
   { href: "https://github.com/dat-angel/openpinas", label: "GitHub", external: true },
 ];
 
-export default function SiteNav() {
+const featuredStyle = {
+  fontSize: 12,
+  fontWeight: 700,
+  color: "#fff",
+  background: "#0d0d0d",
+  padding: "6px 10px",
+  borderRadius: 5,
+  textDecoration: "none",
+  whiteSpace: "nowrap",
+};
+
+export default function SiteNav({ featured = null }) {
   const [open, setOpen] = useState(false);
 
   return (
@@ -51,6 +62,14 @@ export default function SiteNav() {
         >
           OpenPinas
         </a>
+
+        <div style={{ display: "flex", alignItems: "center", gap: 16 }}>
+        {/* Featured special report: visible on mobile and desktop */}
+        {featured ? (
+          <a href={featured.href} style={featuredStyle}>
+            ★ {featured.nav_label}
+          </a>
+        ) : null}
 
         {/* Desktop links */}
         <div
@@ -100,6 +119,7 @@ export default function SiteNav() {
             </svg>
           )}
         </button>
+        </div>
       </div>
 
       {/* Mobile menu */}
