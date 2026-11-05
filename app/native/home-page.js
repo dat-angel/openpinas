@@ -1,6 +1,7 @@
 import WhatsNewPanel from "@/app/components/WhatsNewPanel";
 import { getWeekChanges } from "@/app/lib/week-changes";
 import { getNowDeveloping } from "@/lib/get-now-developing";
+import { getFeaturedSpecialReport } from "@/lib/get-special-report";
 import { FEATURED_VISUAL_IDS, getVisualizationsByIds } from "@/app/lib/visualizations";
 
 const DESK_LINKS = [
@@ -59,6 +60,7 @@ export default function HomePageNative() {
   const { label, updated, items, weeklyReviewHref } = getNowDeveloping();
   const dateLine = formatStripDate(updated);
   const visualStack = getVisualizationsByIds(FEATURED_VISUAL_IDS);
+  const featured = getFeaturedSpecialReport();
   const weekChanges = /^\d{4}-\d{2}-\d{2}$/.test(updated) ? getWeekChanges(updated) : null;
 
   return (
@@ -126,6 +128,39 @@ export default function HomePageNative() {
           Read this week&apos;s review →
         </a>
       </header>
+
+      {/* Special report band: shown only inside the report's feature window */}
+      {featured ? (
+        <section
+          aria-label="Special report"
+          style={{
+            background: T.accent,
+            color: "#fff",
+            padding: `24px ${edgePad}`,
+            display: "flex",
+            flexWrap: "wrap",
+            gap: "14px 32px",
+            alignItems: "center",
+            justifyContent: "space-between",
+          }}
+        >
+          <div style={{ maxWidth: 640 }}>
+            <p style={{ margin: "0 0 6px", fontSize: 11, fontWeight: 600, letterSpacing: "0.1em", textTransform: "uppercase", color: "#b9b9ff" }}>
+              Special report
+            </p>
+            <h2 style={{ margin: "0 0 6px", fontSize: "clamp(20px, 3vw, 26px)", fontWeight: 700, letterSpacing: "-0.02em", lineHeight: 1.2 }}>
+              {featured.band_title}
+            </h2>
+            <p style={{ margin: 0, color: "#d8d8ff", fontSize: 15, lineHeight: 1.5 }}>{featured.band_dek}</p>
+          </div>
+          <a
+            href={featured.href}
+            style={{ background: "#fff", color: T.accent, padding: "11px 18px", borderRadius: 6, fontWeight: 700, fontSize: 14, textDecoration: "none", whiteSpace: "nowrap" }}
+          >
+            {featured.band_cta} →
+          </a>
+        </section>
+      ) : null}
 
       {/* Stats band */}
       <section

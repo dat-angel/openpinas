@@ -1,6 +1,7 @@
 import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 import SiteNav from "./components/SiteNav";
+import { getFeaturedSpecialReport } from "@/lib/get-special-report";
 
 export const metadata = {
   title: "OpenPinas",
@@ -16,7 +17,7 @@ export default function RootLayout({ children }) {
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
       </head>
       <body>
-        <SiteNav />
+        <SiteNav featured={getFeaturedSpecialReport()} />
         {children}
         <Analytics />
       </body>
