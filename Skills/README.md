@@ -8,6 +8,7 @@ This repo is public. Keep PR descriptions public-facing: do not include internal
 |-------|------|------|
 | **ph-news-refresher** | [ph-news-refresher/SKILL.md](./ph-news-refresher/SKILL.md) | News scan; timeline/dynasty JSON in this repo; optional az vault markdown |
 | **ph-weekly-review** | [ph-weekly-review/SKILL.md](./ph-weekly-review/SKILL.md) | Weekly JSON under `weekly-reviews/data/` |
+| **fact-check-audit** | [fact-check-audit/SKILL.md](./fact-check-audit/SKILL.md) | Quote-backed audit of report claims before `verified` flags or draft status change |
 
 The **Purple Docs `az`** repo contains **pointers** at `Skills/ph-news-refresher/SKILL.md` and `Skills/ph-weekly-review/SKILL.md` so morning-news tooling still resolves the skill name — those files tell the agent to load **this** directory.
 

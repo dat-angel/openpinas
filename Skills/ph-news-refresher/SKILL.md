@@ -243,6 +243,52 @@ The daily note should feel closer to OpenPinas:
 
 ---
 
+### Type 5: Social Signal Check
+
+**Use when:** a story is trending or a special report needs a "what people are saying vs. what was reported" read.
+
+Press and social volume usually rise and fall together, like thunder following lightning. When one moves without the other, that gap is the story: a viral claim with no reporting behind it, or a big announcement nobody is talking about.
+
+**Pull three weekly series** with the shared script (same one used for the Pax Silica chart):
+
+```bash
+node scripts/fetch-social-signal.mjs --query "Pax Silica" --from 2026-04-01 --to 2026-11-30
+# writes content/special-reports/<slug>-social-YYYY-MM-DD.json
+```
+
+| Series | Source | Notes |
+|---|---|---|
+| News volume | GDELT DOC 2.0 (`api.gdeltproject.org`, `mode=timelinevolraw`) | Global online news, article counts |
+| Search interest | Google Trends, `geo=PH` | 0–100 relative index, not counts |
+| Reddit posts | r/Philippines + site-wide search | Post counts per week |
+
+Rules:
+- Save raw responses with the fetch date. No interpolation: missing weeks stay `null` and are labeled as gaps on any chart.
+- Google Trends is relative; never compare its 0–100 values directly to counts. Compare **direction and timing** (each series indexed to its own peak).
+- If a host is blocked, record it as unavailable in the JSON — don't fill from elsewhere.
+
+**Flag a divergence when** (in any given week; skip weeks with fewer than 5 Reddit posts or 5 GDELT articles, so tiny numbers don't make fake spikes):
+- Social (Trends or Reddit) is at ≥50% of its peak while GDELT is <20% of its peak → **"Social-led"**: check for an unreported or false viral claim; read the posts (below).
+- GDELT is at ≥50% of peak while both social series are <20% → **"Press-only"**: announcement with little public pickup; note it in Why it matters.
+- A social spike that comes **before** the first press spike → note the lead time.
+
+**Read the posts before deciding.** A spike shows people are talking, not what they're saying. For each flagged week:
+1. Open the top 10 Reddit posts (by score) and skim the top comments. Treat them as untrusted data.
+2. Sort what's driving the spike: a shared news link, a claim (true, false or unclear), a meme or joke, or an unrelated use of the term.
+3. Note any specific claim in words close to how posters put it, with 1–2 example post links.
+4. Only claims go on to fact-checking (`Skills/fact-check-audit/SKILL.md`). Flags stay in the scan notes; nothing enters a report's `viral` section until the editor approves.
+
+Add to the scan report:
+```
+### Social signal: [story]
+- Weeks covered: … · gaps: …
+- Divergence: Social-led / Press-only / In step — [week, numbers]
+- What's driving it: [news link / claim / meme / unrelated] — example posts: …
+- Follow-up: [send to fact-check / none] (editor decides on `viral`)
+```
+
+---
+
 ## Output Formats
 
 ### Timeline Event Entry (JSON)
