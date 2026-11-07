@@ -27,7 +27,8 @@ jobs:
       (github.event.deployment_status.state == 'success' &&
        (github.event.deployment.transient_environment == true ||
         contains(github.event.deployment.environment, 'Preview')))
-    runs-on: ubuntu-latest
+    # Pinned: Playwright 1.55.0 cannot install browser dependencies on Ubuntu 26.04.
+    runs-on: ubuntu-24.04
     permissions:
       contents: read
       pull-requests: write
