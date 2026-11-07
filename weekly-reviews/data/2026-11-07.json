@@ -1,0 +1,301 @@
+{
+  "version": 1,
+  "weekEnding": "2026-11-07",
+  "weekLabel": "November 1 – November 7, 2026",
+  "title": "OpenPinas: Weekly News Review",
+  "lastUpdated": "November 7, 2026",
+  "stats": [
+    {
+      "number": "7",
+      "label": "Stories"
+    }
+  ],
+  "eventSections": [
+    {
+      "title": "Political",
+      "articles": [
+        {
+          "timeDatetime": "2026-11-02",
+          "timeDisplay": "November 2, 2026",
+          "category": "Political",
+          "categoryClass": "political",
+          "borderColor": "#3a0ca3",
+          "headline": "Senators vow to strip the 2027 budget as the House adds ₱5 billion to itself",
+          "descriptionHtml": "<p>The budget fight moved to the Senate, where the majority bloc vowed on November 2 to remove 'corruption-prone' items and Malacañang warned Marcos may veto insertions without documents. Rappler then found the House added ₱5 billion to its own 2027 budget, and that 28 of 36 members who did not back Sara Duterte's impeachment face district public-works funds of no more than ₱300 million. Where roads get built now tracks how members voted.</p>",
+          "sourceLinks": [
+            {
+              "label": "Rappler",
+              "href": "https://www.rappler.com/philippines/senate-majority-remove-corruption-prone-items-2027-budget/"
+            },
+            {
+              "label": "Rappler",
+              "href": "https://www.rappler.com/philippines/house-adds-billions-budget-what-got-bigger-national-expenditure-program/"
+            },
+            {
+              "label": "Rappler",
+              "href": "https://www.rappler.com/philippines/congress-not-support-sara-impeachment-smaller-public-works-budget-proposal-2027/"
+            },
+            {
+              "label": "BusinessWorld",
+              "href": "https://bworldonline.com/the-nation/2026/11/03/791212/malacanang-warns-versus-dubious-budget-insertions/"
+            },
+            {
+              "label": "GMA News",
+              "href": "https://www.gmanetwork.com/news/topstories/nation/1008100/budget-watchdogs-urged-to-report-red-flags-to-palace/story/"
+            },
+            {
+              "label": "Inquirer",
+              "href": "https://newsinfo.inquirer.net/2335713/palace-budget-red-flags-can-lead-again-to-marcos-veto"
+            }
+          ],
+          "dynastyLinks": [
+            {
+              "label": "Marcos-Romualdez Dynasty",
+              "href": "/dynasties-network-visualization.html#dynasty-MARCOS_ROMUALDEZ"
+            },
+            {
+              "label": "Duterte Dynasty",
+              "href": "/dynasties-network-visualization.html#dynasty-DUTERTE_FAMILY"
+            }
+          ],
+          "headlineHref": "/interactive-timeline/index.html?date=2026-11-02&search=Senators%20vow%20to%20strip%20the%202027%20budget%20as%20the%20House%20adds%20%E2%82%B15%20billion%20to%20itself"
+        },
+        {
+          "timeDatetime": "2026-11-06",
+          "timeDisplay": "November 6, 2026",
+          "category": "Political",
+          "categoryClass": "political",
+          "borderColor": "#3a0ca3",
+          "headline": "The impeachment court admits the prosecution's SALN and AMLC records",
+          "descriptionHtml": "<p>The Senate impeachment court, in a November 5 ruling released on November 6, admitted most of the prosecution's documents, including Sara Duterte's SALNs and Anti-Money Laundering Council reports, while excluding two companies' corporate records. Prosecutors put the alleged unexplained wealth at about ₱818 million for 2022 to 2025. With one article left, the defense opens on November 9 against evidence the court has already let in.</p>",
+          "sourceLinks": [
+            {
+              "label": "Rappler",
+              "href": "https://www.rappler.com/philippines/senate-court-admits-prosecution-evidence-sara-duterte-impeachment-trial/"
+            },
+            {
+              "label": "ABS-CBN",
+              "href": "https://www.abs-cbn.com/news/nation/2026/11/6/sara-duterte-impeachment-trial-bank-amlc-documents-admitted-as-prosecution-evidence-1023"
+            },
+            {
+              "label": "Inquirer",
+              "href": "https://newsinfo.inquirer.net/2337656/prosecution-answer-sara-dutertes-alleged-%E2%82%B1818-m-unexplained-wealth"
+            },
+            {
+              "label": "Inquirer",
+              "href": "https://newsinfo.inquirer.net/2337652/sara-duterte-defense-lacks-counter-witness-on-p817m-asset-gap-kapunan"
+            }
+          ],
+          "dynastyLinks": [
+            {
+              "label": "Duterte Dynasty",
+              "href": "/dynasties-network-visualization.html#dynasty-DUTERTE_FAMILY"
+            }
+          ],
+          "headlineHref": "/interactive-timeline/index.html?date=2026-11-06&search=The%20impeachment%20court%20admits%20the%20prosecution's%20SALN%20and%20AMLC%20records"
+        }
+      ]
+    },
+    {
+      "title": "Legal",
+      "articles": [
+        {
+          "timeDatetime": "2026-11-06",
+          "timeDisplay": "November 6, 2026",
+          "category": "Legal",
+          "categoryClass": "legal",
+          "borderColor": "#1e3a5f",
+          "headline": "The Supreme Court upholds five-year barangay terms and moves the next polls to 2028",
+          "descriptionHtml": "<p>The Supreme Court made public on November 6 a ruling upholding Republic Act 12326, which sets five-year terms for barangay and Sangguniang Kabataan officials and moves the next barangay and SK elections from November 2026 to November 2028. It was penned by Rodil Zalameda, whom Marcos had named chief justice a day earlier. Incumbent barangay leaders now hold over for two more years.</p>",
+          "sourceLinks": [
+            {
+              "label": "Rappler",
+              "href": "https://www.rappler.com/philippines/supreme-court-upholds-law-extending-terms-barangay-sk-officials/"
+            },
+            {
+              "label": "GMA News",
+              "href": "https://www.gmanetwork.com/news/topstories/nation/1008567/sc-upholds-constitutionality-of-law-extending-barangay-sk-officials-terms/story/"
+            },
+            {
+              "label": "ABS-CBN",
+              "href": "https://www.abs-cbn.com/news/nation/2026/11/6/supreme-court-upholds-5-year-term-for-barangay-sk-officials-1920"
+            },
+            {
+              "label": "Inquirer",
+              "href": "https://newsinfo.inquirer.net/2337234/sc-affirms-5-year-term-for-barangay-sk-execs-next-polls-in-nov-2028"
+            },
+            {
+              "label": "Philippine Star",
+              "href": "https://www.philstar.com/headlines/2026/11/05/2568074/marcos-appoints-zalameda-chief-justice"
+            },
+            {
+              "label": "PNA",
+              "href": "https://www.pna.gov.ph/article/pbbm-selects-sc-justice-zalameda-as-next-chief-justice"
+            }
+          ],
+          "dynastyLinks": [
+            {
+              "label": "Marcos-Romualdez Dynasty",
+              "href": "/dynasties-network-visualization.html#dynasty-MARCOS_ROMUALDEZ"
+            }
+          ],
+          "headlineHref": "/interactive-timeline/index.html?date=2026-11-06&search=The%20Supreme%20Court%20upholds%20five-year%20barangay%20terms%20and%20moves%20the%20next%20polls%20to%202028"
+        },
+        {
+          "timeDatetime": "2026-11-04",
+          "timeDisplay": "November 4, 2026",
+          "category": "Legal",
+          "categoryClass": "legal",
+          "borderColor": "#1e3a5f",
+          "headline": "The Supreme Court junks Romualdez's petition as auditors flag ₱532 billion at DPWH",
+          "descriptionHtml": "<p>The Supreme Court on November 4 junked Martin Romualdez's petition against the Ombudsman's plunder investigation as moot, since he has already been arraigned before the Sandiganbayan. State auditors reported 9,061 DPWH projects worth ₱531.79 billion were implemented inefficiently in 2025, with bidders of questionable financial capacity winning thousands of contracts. On November 7 the Ombudsman demanded answers over a personal aide inside Romualdez's cell. The scandal is now an audit problem and a jail-rules problem.</p>",
+          "sourceLinks": [
+            {
+              "label": "Rappler",
+              "href": "https://www.rappler.com/philippines/supreme-court-resolution-junk-martin-romualdez-petition-plunder-case/"
+            },
+            {
+              "label": "BusinessWorld",
+              "href": "https://bworldonline.com/the-nation/2026/11/03/791211/state-auditors-flag-p532-billion-in-delayed-inefficient-dpwh-projects/"
+            },
+            {
+              "label": "ABS-CBN",
+              "href": "https://www.abs-cbn.com/news/nation/2026/11/4/coa-deficiencies-affect-implementation-of-p531-b-dpwh-projects-1747"
+            },
+            {
+              "label": "Rappler",
+              "href": "https://www.rappler.com/philippines/companies-questionable-financial-capacity-bagged-dpwh-contracts-coa-report/"
+            },
+            {
+              "label": "GMA News",
+              "href": "https://www.gmanetwork.com/news/topstories/nation/1008625/ombudsman-calls-out-bjmp-for-allowing-romualdez-aid-while-in-detention/story/"
+            },
+            {
+              "label": "Philippine Star",
+              "href": "https://www.philstar.com/headlines/2026/11/07/2568543/bjmp-told-justify-romualdezs-personal-aide-inside-cell"
+            },
+            {
+              "label": "Philippine Star",
+              "href": "https://www.philstar.com/headlines/2026/11/07/2568413/palace-wants-deeper-probe-romualdezs-jail-assistant"
+            }
+          ],
+          "dynastyLinks": [
+            {
+              "label": "Marcos-Romualdez Dynasty",
+              "href": "/dynasties-network-visualization.html#dynasty-MARCOS_ROMUALDEZ"
+            }
+          ],
+          "headlineHref": "/interactive-timeline/index.html?date=2026-11-04&search=The%20Supreme%20Court%20junks%20Romualdez's%20petition%20as%20auditors%20flag%20%E2%82%B1532%20billion%20at%20DPWH"
+        }
+      ]
+    },
+    {
+      "title": "Economic",
+      "articles": [
+        {
+          "timeDatetime": "2026-11-05",
+          "timeDisplay": "November 5, 2026",
+          "category": "Economic",
+          "categoryClass": "economic",
+          "borderColor": "#3a0ca3",
+          "headline": "Inflation hits 7.8% in October, the fastest in nearly four years",
+          "descriptionHtml": "<p>Inflation accelerated to 7.8% in October from 7.2% in September, the Philippine Statistics Authority said on November 5, the fastest since February 2023. Transport inflation hit 20.1% as the late-September fare hike fed through, gasoline ran at 51.1% and diesel at 62.4%, and rice at 20.7%. Deutsche Bank lifted its 2026 forecast to 5.9%. Money sent home now buys visibly less.</p>",
+          "sourceLinks": [
+            {
+              "label": "Rappler",
+              "href": "https://www.rappler.com/business/inflation-rate-philippines-october-2026/"
+            },
+            {
+              "label": "BusinessWorld",
+              "href": "https://bworldonline.com/top-stories/2026/11/05/791815/inflation-surges-to-near-4-year-high-in-october/"
+            },
+            {
+              "label": "Philippine Star",
+              "href": "https://www.philstar.com/business/2026/11/05/2568051/fuel-transport-costs-push-inflation-78-october-2026"
+            },
+            {
+              "label": "Inquirer",
+              "href": "https://business.inquirer.net/619871/deutsche-bank-raises-2026-ph-inflation-forecast-to-5-9"
+            },
+            {
+              "label": "Manila Times",
+              "href": "https://www.manilatimes.net/2026/11/07/business/top-business/bsps-jumbo-rate-cut-enough-for-now-says-deutsche-bank/2464354"
+            }
+          ],
+          "headlineHref": "/interactive-timeline/index.html?date=2026-11-05&search=Inflation%20hits%207.8%25%20in%20October%2C%20the%20fastest%20in%20nearly%20four%20years"
+        }
+      ]
+    },
+    {
+      "title": "International Relations",
+      "articles": [
+        {
+          "timeDatetime": "2026-11-07",
+          "timeDisplay": "November 7, 2026",
+          "category": "International Relations",
+          "categoryClass": "international",
+          "borderColor": "#0d7377",
+          "headline": "Washington says no Pax Silica deal at the ASEAN Summit",
+          "descriptionHtml": "<p>US Ambassador Lee Lipton said on November 7 that no Pax Silica announcement was ever planned for the ASEAN Summit in Manila, after the BCDA floated a signing there. Earlier in the week Malacañang promised relocation housing and financial aid to residents and Indigenous peoples displaced by the Tarlac hub, and the Energy department said a nuclear reactor is one option for its 3,000-megawatt load. The terms are still not public.</p>",
+          "sourceLinks": [
+            {
+              "label": "Rappler",
+              "href": "https://www.rappler.com/philippines/no-pax-silica-deal-us-ambassador-lee-lipton-statement-asean-summit-2026/"
+            },
+            {
+              "label": "GMA News",
+              "href": "https://www.gmanetwork.com/news/topstories/nation/1008632/no-pax-silica-announcement-during-asean-us-envoy-says/story/"
+            },
+            {
+              "label": "ABS-CBN",
+              "href": "https://www.abs-cbn.com/news/nation/2026/11/7/no-announcement-on-pax-silica-during-asean-summit-us-envoy-1905"
+            },
+            {
+              "label": "BusinessWorld",
+              "href": "https://bworldonline.com/the-nation/2026/11/04/791476/residents-ips-displaced-by-pax-silica-to-get-housing-financial-aid/"
+            },
+            {
+              "label": "GMA News",
+              "href": "https://www.gmanetwork.com/news/topstories/regions/1008239/palace-assures-farmers-ips-won-t-be-neglected-in-pax-silica-project/story/"
+            },
+            {
+              "label": "Rappler",
+              "href": "https://www.rappler.com/newsbreak/inside-track/nuclear-energy-pax-silica/"
+            }
+          ],
+          "headlineHref": "/interactive-timeline/index.html?date=2026-11-07&search=Washington%20says%20no%20Pax%20Silica%20deal%20at%20the%20ASEAN%20Summit"
+        }
+      ]
+    },
+    {
+      "title": "OFW/Diaspora",
+      "articles": [
+        {
+          "timeDatetime": "2026-11-03",
+          "timeDisplay": "November 3, 2026",
+          "category": "OFW/Diaspora",
+          "categoryClass": "ofw",
+          "borderColor": "#0b6e4f",
+          "headline": "Fil-Am candidates add seats across the US midterms",
+          "descriptionHtml": "<p>Filipino American candidates picked up wins in the November 3 US midterms. Rob Bonta won another term as California attorney general, Virginia's Bobby Scott took an 18th term in Congress, and state legislators Erica Mosca in Nevada, Maria Cervania in North Carolina and Justin Jones in Tennessee were reelected. Several California local races were still being counted. The Fil-Am bench in US politics keeps widening.</p>",
+          "sourceLinks": [
+            {
+              "label": "GMA News",
+              "href": "https://www.gmanetwork.com/news/pinoyabroad/dispatch/1008365/fil-am-candidates-win-seats-as-more-us-midterm-election-results-roll-in/story/"
+            },
+            {
+              "label": "Asian Journal",
+              "href": "https://asianjournal.com/usa/filipino-american-candidates-win-across-u-s/"
+            },
+            {
+              "label": "Inquirer",
+              "href": "https://usa.inquirer.net/215224/fil-am-candidates-notch-wins-lead-key-races-in-us-midterms"
+            }
+          ],
+          "headlineHref": "/interactive-timeline/index.html?date=2026-11-03&search=Fil-Am%20candidates%20add%20seats%20across%20the%20US%20midterms"
+        }
+      ]
+    }
+  ],
+  "prevWeekEnding": "2026-10-31"
+}

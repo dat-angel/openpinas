@@ -65,7 +65,9 @@ async function request(url, method) {
 
 async function statusOf(url) {
   let status = await request(url, "HEAD");
-  if (status === 405 || status === 403 || status === 401 || status === 429) {
+  // Some publishers answer HEAD with 404 or 403 on pages that GET serves fine,
+  // so confirm every non-OK HEAD before treating the link as broken.
+  if (status < 200 || status >= 400) {
     const getStatus = await request(url, "GET");
     if (getStatus) status = getStatus;
   }
