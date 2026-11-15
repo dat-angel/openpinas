@@ -4,7 +4,7 @@
       "title": "Philippine Political Dynasties Network Map - Historical & Contemporary",
       "description": "Comprehensive network visualization of Philippine political dynasties throughout history, their relationships, alliances, territorial control, and geographic distribution. Includes historical data from establishment dates through 2025, with detailed geographic mapping of regional control.",
       "version": "4.0",
-      "last_updated": "2026-01-01",
+    "last_updated": "2026-11-15",
       "data_scope": "historical_and_contemporary",
       "earliest_dynasty": 1868,
       "latest_update": 2025,
@@ -538,6 +538,11 @@
               "date": "2026-06-18",
               "title": "Sara Duterte Impeachment Pre-Trial Conference Opens; NDRRMC Reports 78 Quake Deaths",
               "role": "primary_actor"
+    },
+    {
+      "date": "2026-11-09",
+      "title": "Sara Duterte's Impeachment Defense Begins Presenting Evidence",
+      "role": "primary_actor"
             }
           ],
           "key_members": [
