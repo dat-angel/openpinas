@@ -1,0 +1,248 @@
+{
+  "version": 1,
+  "weekEnding": "2026-11-14",
+  "weekLabel": "November 8 – November 14, 2026",
+  "title": "OpenPinas: Weekly News Review",
+  "lastUpdated": "November 15, 2026",
+  "stats": [
+    {
+      "number": "8",
+      "label": "Stories"
+    }
+  ],
+  "eventSections": [
+    {
+      "title": "Political",
+      "articles": [
+        {
+          "timeDatetime": "2026-11-09",
+          "timeDisplay": "November 9, 2026",
+          "category": "Political",
+          "categoryClass": "political",
+          "borderColor": "#3a0ca3",
+          "headline": "Sara Duterte's defense starts its case on the remaining impeachment charge",
+          "descriptionHtml": "<p>The Senate impeachment court resumed the Vice President's trial after a month-long recess, beginning the defense case on the remaining article alleging unexplained wealth. Davao City assessor Jaime Adalin testified about a Matina property and its valuation in Duterte's 2024 SALN; senator-judges also questioned him about a China trip. The next phase now tests how the defense answers the court's questions and the admitted financial records.</p>",
+          "sourceLinks": [
+            {
+              "label": "GMA News: November 9 trial updates",
+              "href": "https://www.gmanetwork.com/news/topstories/nation/1008771/live-updates-sara-duterte-impeachment-trial-november-9-2026/story/"
+            },
+            {
+              "label": "GMA News: Trial resumes",
+              "href": "https://www.gmanetwork.com/news/topstories/nation/1008588/sara-duterte-impeachment-trial-day-40-what-to-expect/story/"
+            }
+          ],
+          "dynastyLinks": [
+            {
+              "label": "Duterte Dynasty",
+              "href": "/dynasties-network-visualization.html#dynasty-DUTERTE_FAMILY"
+            }
+          ],
+          "diasporaImpact": "The trial may affect confidence in national institutions and the political stability facing families at home.",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-11-09&search=Sara%20Duterte%27s%20defense%20starts%20its%20case%20on%20the%20remaining%20impeachment%20charge"
+        }
+      ]
+    },
+    {
+      "title": "Economic",
+      "articles": [
+        {
+          "timeDatetime": "2026-11-09",
+          "timeDisplay": "November 9, 2026",
+          "category": "Economic",
+          "categoryClass": "economic",
+          "borderColor": "#3a0ca3",
+          "headline": "Growth slows to 2.1% as a major fuel rollback offers short-term relief",
+          "descriptionHtml": "<p>The Philippine Statistics Authority reported third-quarter growth of 2.1%, down from a revised 2.4% in the previous quarter and 4% a year earlier; growth for January through September averaged 2.5%. The following day, gasoline prices fell ₱16.80 per liter, diesel ₱4.10 and kerosene ₱3.70, while the peso rebounded to ₱62.91 per US dollar. The rollback eases immediate pressure at the pump, but the weak growth figure and exposure to global oil swings leave household budgets vulnerable.</p>",
+          "sourceLinks": [
+            {
+              "label": "Philippine Statistics Authority: Q3 GDP",
+              "href": "https://psa.gov.ph/system/files/nap/Press%20Release%20Q3%202026%20NAP.pdf"
+            },
+            {
+              "label": "GMA News: Q3 growth",
+              "href": "https://www.gmanetwork.com/news/money/economy/1008794/ph-economic-growth-slows-to-2-1-in-q3-2026/story/"
+            },
+            {
+              "label": "GMA News: Fuel rollback",
+              "href": "https://www.gmanetwork.com/news/money/companies/1008830/oil-price-rollback-for-gasoline-diesel-and-kerosene-effective-tuesday-nov-9/story/"
+            },
+            {
+              "label": "Philippine Star: Growth and household costs",
+              "href": "https://www.philstar.com/business/2026/11/10/2569030/economic-growth-slows-21-q3"
+            }
+          ],
+          "diasporaImpact": "Lower fuel prices may ease transport costs for families, while weak growth and currency swings continue to affect purchasing power.",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-11-09&search=Growth%20slows%20to%202.1%25%20as%20a%20major%20fuel%20rollback%20offers%20short-term%20relief"
+        },
+        {
+          "timeDatetime": "2026-11-14",
+          "timeDisplay": "November 14, 2026",
+          "category": "Economic",
+          "categoryClass": "economic",
+          "borderColor": "#3a0ca3",
+          "headline": "ASEAN signs a region-wide digital economy pact in Manila",
+          "descriptionHtml": "<p>ASEAN members signed the Digital Economy Framework Agreement in Manila on November 14, covering digital trade, data flows, electronic payments, cybersecurity and online consumer protection. Philippine Trade Secretary Cristina Roque signed for the country as ASEAN chair. A shared framework could lower friction for cross-border digital business, but its practical value will depend on national implementation and whether workers and smaller firms can participate.</p>",
+          "sourceLinks": [
+            {
+              "label": "GMA News",
+              "href": "https://www.gmanetwork.com/news/money/economy/1009509/asean-ministers-sign-landmark-region-wide-digital-economy-agreement/story/"
+            },
+            {
+              "label": "Singapore Ministry of Trade and Industry",
+              "href": "https://www.meti.gov.sg/newsroom/asean-signs-landmark-asean-digital-economy-framework-agreement-14nov26/"
+            },
+            {
+              "label": "CNA",
+              "href": "https://www.channelnewsasia.com/singapore/asean-digital-economy-framework-agreement-6551526"
+            }
+          ],
+          "diasporaImpact": "Common rules for digital payments and services could make regional commerce easier for Filipino families and small businesses.",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-11-14&search=ASEAN%20signs%20a%20region-wide%20digital%20economy%20pact%20in%20Manila"
+        }
+      ]
+    },
+    {
+      "title": "Natural Disasters",
+      "articles": [
+        {
+          "timeDatetime": "2026-11-08",
+          "timeDisplay": "November 8, 2026",
+          "category": "Natural Disasters",
+          "categoryClass": "disaster",
+          "borderColor": "#d00000",
+          "headline": "Drought response reaches farmers as El Niño threatens crops and income",
+          "descriptionHtml": "<p>DSWD said it had begun emergency cash transfers to farmers affected by El Niño, including rice and corn growers in Isabela and Cagayan and households in Bicol. By November 10, the department reported more than ₱894 million in assistance for farmers across affected provinces; PAGASA expected below-normal rainfall across much of the country. The payments address urgent losses, while the scale of drought risk puts water access, food production and rural income under pressure.</p>",
+          "sourceLinks": [
+            {
+              "label": "GMA News",
+              "href": "https://www.gmanetwork.com/news/topstories/regions/1008701/emergency-cash-transfer-assistance-provided-to-el-ni-o-hit-farmers/story/"
+            },
+            {
+              "label": "DSWD",
+              "href": "https://www.dswd.gov.ph/dswds-uplift-assistance-helps-keep-1-22m-pinoys-out-of-poverty-amid-rising-inflation/"
+            },
+            {
+              "label": "Daily Tribune",
+              "href": "https://tribune.net.ph/2026/11/08/dswd-distributes-p31-million-in-aid-to-drought-hit-camarines-norte-farmers"
+            },
+            {
+              "label": "PAGASA",
+              "href": "https://pubfiles.pagasa.dost.gov.ph/pagasaweb/files/piias/press_release/6aebbae579e54_Pressrelase_ENSO%20Advisory.pdf"
+            }
+          ],
+          "diasporaImpact": "Relatives in farming areas may need additional help as drought reduces harvests and household income.",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-11-08&search=Drought%20response%20reaches%20farmers%20as%20El%20Ni%C3%B1o%20threatens%20crops%20and%20income"
+        },
+        {
+          "timeDatetime": "2026-11-09",
+          "timeDisplay": "November 9, 2026",
+          "category": "Natural Disasters",
+          "categoryClass": "disaster",
+          "borderColor": "#d00000",
+          "headline": "Typhoon Samuel crosses the Philippine monitoring area without a direct threat",
+          "descriptionHtml": "<p>Cempaka entered the Philippine Area of Responsibility and was named Samuel on November 9, then exited the same day while moving northeast over the Pacific. PAGASA said the system was not expected to directly affect the country's weather, although the northeast monsoon continued to bring gusty conditions in parts of Luzon and the Visayas. It was a monitoring event rather than a landfall disaster, during a week when drought risk was also rising.</p>",
+          "sourceLinks": [
+            {
+              "label": "PAGASA",
+              "href": "https://www.pagasa.dost.gov.ph/tropical-cyclone/severe-weather-bulletin"
+            },
+            {
+              "label": "ABS-CBN News",
+              "href": "https://www.abs-cbn.com/news/weather-traffic/2026/11/9/typhoon-samuel-enters-par-won-t-affect-the-country-s-weather-0955"
+            },
+            {
+              "label": "GMA News",
+              "href": "https://www.gmanetwork.com/news/weather/content/1008702/severe-tropical-storm-cempaka-keeps-strength-as-it-nears-par/story/"
+            }
+          ],
+          "headlineHref": "/interactive-timeline/index.html?date=2026-11-09&search=Typhoon%20Samuel%20crosses%20the%20Philippine%20monitoring%20area%20without%20a%20direct%20threat"
+        }
+      ]
+    },
+    {
+      "title": "International Relations",
+      "articles": [
+        {
+          "timeDatetime": "2026-11-09",
+          "timeDisplay": "November 9, 2026",
+          "category": "International Relations",
+          "categoryClass": "international",
+          "borderColor": "#0d7377",
+          "headline": "Japan funds coastal radar and surveillance drones for Philippine forces",
+          "descriptionHtml": "<p>Japan and the Philippines signed a ¥4.3-billion (about US$27 million) security grant that will provide a coastal radar system to the Philippine Navy and unmanned surveillance aircraft to the Air Force. Tokyo described it as the first transfer of finished defense equipment through its Official Security Assistance program. The grant gives Manila new maritime monitoring capacity amid South China Sea tensions, while deepening the two countries' defense relationship.</p>",
+          "sourceLinks": [
+            {
+              "label": "Philippine News Agency",
+              "href": "https://www.pna.gov.ph/article/japan-to-provide-ph-coastal-radar-drones-under-p172-b-security-grant"
+            },
+            {
+              "label": "Associated Press",
+              "href": "https://apnews.com/article/fe32ef6b4c11bb348bb4d5df253a8378"
+            },
+            {
+              "label": "Philippine Star",
+              "href": "https://www.philstar.com/headlines/2026/11/09/2569010/first-japans-security-aid-philippines-includes-defense-equipment"
+            }
+          ],
+          "headlineHref": "/interactive-timeline/index.html?date=2026-11-09&search=Japan%20funds%20coastal%20radar%20and%20surveillance%20drones%20for%20Philippine%20forces"
+        },
+        {
+          "timeDatetime": "2026-11-11",
+          "timeDisplay": "November 11, 2026",
+          "category": "International Relations",
+          "categoryClass": "international",
+          "borderColor": "#0d7377",
+          "headline": "South China Sea code talks advance but miss the year-end deadline",
+          "descriptionHtml": "<p>Regional diplomats told the Associated Press that ASEAN and China had made progress on a proposed South China Sea Code of Conduct but would not finish talks by the end of 2026 as planned. Philippine officials said about 80% of the text was complete, with major issues still unresolved. The Philippines has made the code a priority during its ASEAN chair year, but the summit week opened without a completed framework for managing maritime disputes.</p>",
+          "sourceLinks": [
+            {
+              "label": "Associated Press",
+              "href": "https://apnews.com/article/8ef757e6ed486a5632e4c2299ee00064"
+            },
+            {
+              "label": "GMA News: Negotiations continue",
+              "href": "https://www.gmanetwork.com/news/topstories/nation/1009360/ph-expects-continued-south-china-sea-code-of-conduct-talks-during-2026-asean-summit/story/"
+            },
+            {
+              "label": "GMA News: DFA says 80% complete",
+              "href": "https://www.gmanetwork.com/news/topstories/nation/1009521/dfa-80-of-south-china-sea-code-of-conduct-completed-salient-issues-remain/story/"
+            }
+          ],
+          "headlineHref": "/interactive-timeline/index.html?date=2026-11-11&search=South%20China%20Sea%20code%20talks%20advance%20but%20miss%20the%20year-end%20deadline"
+        }
+      ]
+    },
+    {
+      "title": "Travel / Mobility",
+      "articles": [
+        {
+          "timeDatetime": "2026-11-10",
+          "timeDisplay": "November 10, 2026",
+          "category": "Travel / Mobility",
+          "categoryClass": "travel",
+          "borderColor": "#0b6e4f",
+          "headline": "ASEAN security preparations put more than 300 flights on altered schedules",
+          "descriptionHtml": "<p>More than 300 flights were set to be canceled or rescheduled from November 13 through 19 as Manila hosted ASEAN leaders and delegations. The Department of Transportation said affected travelers could choose fee-free rebooking, a full refund or travel credits; authorities urged passengers to check airline updates and allow extra time. Summit security reached beyond the convention venues into ordinary airport and family travel plans.</p>",
+          "sourceLinks": [
+            {
+              "label": "GMA News",
+              "href": "https://www.gmanetwork.com/news/money/companies/1008927/over-300-flights-to-be-affected-by-asean-summit/story/"
+            },
+            {
+              "label": "Philippine Star",
+              "href": "https://www.philstar.com/headlines/2026/11/11/2569221/list-over-300-flights-affected-asean-summit-manila-nov-1319"
+            },
+            {
+              "label": "Philippine Information Agency",
+              "href": "https://pia.gov.ph/news/marcos-jr-admin-assures-passenger-protection-amid-asean-summit-flight-adjustments/"
+            }
+          ],
+          "diasporaImpact": "Balikbayan passengers and families connecting through Manila may need to rebook, seek refunds or allow more time.",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-11-10&search=ASEAN%20security%20preparations%20put%20more%20than%20300%20flights%20on%20altered%20schedules"
+        }
+      ]
+    }
+  ],
+  "prevWeekEnding": "2026-11-07"
+}

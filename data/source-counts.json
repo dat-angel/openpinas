@@ -1,9 +1,9 @@
 {
-  "generated_date": "2026-10-19",
+  "generated_date": "2026-11-15",
   "generated_date_note": "Latest last_updated/lastUpdated date among scanned JSON files. Not a build timestamp.",
   "counting_rule": "Every external http(s) URL occurrence is counted. A URL repeated across files or within a file counts each time. Relative paths and OpenPinas/GitHub self-links are excluded.",
-  "total_links": 1987,
-  "outlet_count": 165,
+  "total_links": 2260,
+  "outlet_count": 169,
   "files_scanned": [
     "philippines-2026-timeline.json",
     "philippines-2025-timeline.json",
@@ -58,59 +58,67 @@
     "weekly-reviews/data/2026-09-26.json",
     "weekly-reviews/data/2026-10-03.json",
     "weekly-reviews/data/2026-10-10.json",
-    "weekly-reviews/data/2026-10-17.json"
+    "weekly-reviews/data/2026-10-17.json",
+    "weekly-reviews/data/2026-10-24.json",
+    "weekly-reviews/data/2026-10-31.json",
+    "weekly-reviews/data/2026-11-07.json",
+    "weekly-reviews/data/2026-11-14.json"
   ],
   "chart": [
     {
       "name": "GMA",
-      "count": 310
+      "count": 395
     },
     {
       "name": "Philstar",
-      "count": 274
+      "count": 314
     },
     {
       "name": "Rappler",
-      "count": 240
+      "count": 272
+    },
+    {
+      "name": "Inquirer",
+      "count": 180
     },
     {
       "name": "Wikipedia",
       "count": 153
     },
     {
-      "name": "Inquirer",
-      "count": 152
+      "name": "PNA",
+      "count": 104
     },
     {
-      "name": "PNA",
-      "count": 98
+      "name": "ABS-CBN",
+      "count": 92
     },
     {
       "name": "Manila Bulletin",
       "count": 71
     },
     {
-      "name": "ABS-CBN",
-      "count": 58
+      "name": "Tribune",
+      "count": 44
     },
     {
       "name": "AP",
-      "count": 39
-    },
-    {
-      "name": "Tribune",
-      "count": 36
-    },
-    {
-      "name": "Manila Times",
-      "count": 34
+      "count": 43
     },
     {
       "name": "BusinessWorld",
-      "count": 26
+      "count": 38
+    },
+    {
+      "name": "Manila Times",
+      "count": 38
     },
     {
       "name": "Bilyonaryo",
+      "count": 25
+    },
+    {
+      "name": "PIA",
       "count": 25
     },
     {
@@ -118,73 +126,69 @@
       "count": 23
     },
     {
-      "name": "PIA",
-      "count": 23
-    },
-    {
       "name": "Other",
-      "count": 425
+      "count": 443
     }
   ],
   "outlets": [
     {
       "name": "GMA",
-      "count": 310
+      "count": 395
     },
     {
       "name": "Philstar",
-      "count": 274
+      "count": 314
     },
     {
       "name": "Rappler",
-      "count": 240
+      "count": 272
+    },
+    {
+      "name": "Inquirer",
+      "count": 180
     },
     {
       "name": "Wikipedia",
       "count": 153
     },
     {
-      "name": "Inquirer",
-      "count": 152
+      "name": "PNA",
+      "count": 104
     },
     {
-      "name": "PNA",
-      "count": 98
+      "name": "ABS-CBN",
+      "count": 92
     },
     {
       "name": "Manila Bulletin",
       "count": 71
     },
     {
-      "name": "ABS-CBN",
-      "count": 58
+      "name": "Tribune",
+      "count": 44
     },
     {
       "name": "AP",
-      "count": 39
-    },
-    {
-      "name": "Tribune",
-      "count": 36
-    },
-    {
-      "name": "Manila Times",
-      "count": 34
+      "count": 43
     },
     {
       "name": "BusinessWorld",
-      "count": 26
+      "count": 38
+    },
+    {
+      "name": "Manila Times",
+      "count": 38
     },
     {
       "name": "Bilyonaryo",
       "count": 25
     },
     {
-      "name": "Al Jazeera",
-      "count": 23
+      "name": "PIA",
+      "count": 25
     },
     {
-      "name": "PIA",
+      "name": "Al Jazeera",
       "count": 23
     },
     {
@@ -212,8 +216,16 @@
       "count": 10
     },
     {
+      "name": "psa.gov.ph",
+      "count": 10
+    },
+    {
       "name": "sunstar.com.ph",
       "count": 10
+    },
+    {
+      "name": "dost.gov.ph",
+      "count": 9
     },
     {
       "name": "House of Representatives",
@@ -237,10 +249,6 @@
     },
     {
       "name": "nikkei.com",
-      "count": 8
-    },
-    {
-      "name": "psa.gov.ph",
       "count": 8
     },
     {
@@ -276,12 +284,12 @@
       "count": 5
     },
     {
-      "name": "dost.gov.ph",
+      "name": "nbcnews.com",
       "count": 5
     },
     {
-      "name": "nbcnews.com",
-      "count": 5
+      "name": "bomboradyo.com",
+      "count": 4
     },
     {
       "name": "dof.gov.ph",
@@ -305,6 +313,10 @@
     },
     {
       "name": "co.jp",
+      "count": 3
+    },
+    {
+      "name": "dswd.gov.ph",
       "count": 3
     },
     {
@@ -348,6 +360,10 @@
       "count": 2
     },
     {
+      "name": "asianjournal.com",
+      "count": 2
+    },
+    {
       "name": "asiatimes.com",
       "count": 2
     },
@@ -364,10 +380,6 @@
       "count": 2
     },
     {
-      "name": "bomboradyo.com",
-      "count": 2
-    },
-    {
       "name": "bsp.gov.ph",
       "count": 2
     },
@@ -377,6 +389,10 @@
     },
     {
       "name": "cgtn.com",
+      "count": 2
+    },
+    {
+      "name": "channelnewsasia.com",
       "count": 2
     },
     {
@@ -416,6 +432,10 @@
       "count": 2
     },
     {
+      "name": "gov.sg",
+      "count": 2
+    },
+    {
       "name": "hongkongfp.com",
       "count": 2
     },
@@ -437,6 +457,10 @@
     },
     {
       "name": "ncregister.com",
+      "count": 2
+    },
+    {
+      "name": "newsbytes.ph",
       "count": 2
     },
     {
@@ -601,10 +625,6 @@
     },
     {
       "name": "dmw.gov.ph",
-      "count": 1
-    },
-    {
-      "name": "dswd.gov.ph",
       "count": 1
     },
     {
