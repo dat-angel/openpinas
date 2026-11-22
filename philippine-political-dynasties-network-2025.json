@@ -4,7 +4,7 @@
       "title": "Philippine Political Dynasties Network Map - Historical & Contemporary",
       "description": "Comprehensive network visualization of Philippine political dynasties throughout history, their relationships, alliances, territorial control, and geographic distribution. Includes historical data from establishment dates through 2025, with detailed geographic mapping of regional control.",
       "version": "4.0",
-    "last_updated": "2026-11-15",
+      "last_updated": "2026-11-15",
       "data_scope": "historical_and_contemporary",
       "earliest_dynasty": 1868,
       "latest_update": 2025,
@@ -294,6 +294,16 @@
               "date": "2026-06-18",
               "title": "Sara Duterte Impeachment Pre-Trial Conference Opens; NDRRMC Reports 78 Quake Deaths",
               "role": "mentioned"
+            },
+            {
+              "date": "2026-11-17",
+              "title": "Philippines hands ASEAN chair to Singapore with sea-code talks unfinished",
+              "role": "primary_actor"
+            },
+            {
+              "date": "2026-11-18",
+              "title": "Trump claims major Philippines trade deal; Manila describes understanding",
+              "role": "primary_actor"
             }
           ],
           "2025_rumors_headlines": [
@@ -538,11 +548,16 @@
               "date": "2026-06-18",
               "title": "Sara Duterte Impeachment Pre-Trial Conference Opens; NDRRMC Reports 78 Quake Deaths",
               "role": "primary_actor"
-    },
-    {
-      "date": "2026-11-09",
-      "title": "Sara Duterte's Impeachment Defense Begins Presenting Evidence",
-      "role": "primary_actor"
+            },
+            {
+              "date": "2026-11-09",
+              "title": "Sara Duterte's Impeachment Defense Begins Presenting Evidence",
+              "role": "primary_actor"
+            },
+            {
+              "date": "2026-11-19",
+              "title": "Duterte impeachment defense contests financial findings in Senate",
+              "role": "primary_actor"
             }
           ],
           "key_members": [
@@ -2308,7 +2323,7 @@
           "geographic_coordinates": {
             "Negros Occidental": {
               "lat": 10.6667,
-              "lng": 123.0
+              "lng": 123
             },
             "Bacolod": {
               "lat": 10.6761,
@@ -2349,7 +2364,7 @@
           "geographic_coordinates": {
             "Negros Occidental": {
               "lat": 10.6667,
-              "lng": 123.0
+              "lng": 123
             }
           },
           "current_positions_held": 4,
@@ -2384,7 +2399,7 @@
           "geographic_coordinates": {
             "Negros Occidental": {
               "lat": 10.6667,
-              "lng": 123.0
+              "lng": 123
             },
             "Kabankalan": {
               "lat": 9.9889,
@@ -2418,7 +2433,7 @@
           "geographic_coordinates": {
             "Negros Occidental": {
               "lat": 10.6667,
-              "lng": 123.0
+              "lng": 123
             },
             "Bacolod": {
               "lat": 10.6761,
@@ -2448,7 +2463,7 @@
           ],
           "geographic_coordinates": {
             "Pangasinan": {
-              "lat": 16.0,
+              "lat": 16,
               "lng": 120.3333
             }
           },
@@ -2568,7 +2583,7 @@
           "geographic_coordinates": {
             "Zamboanga del Norte": {
               "lat": 8.1667,
-              "lng": 123.0
+              "lng": 123
             }
           },
           "current_positions_held": 4,
@@ -2609,7 +2624,7 @@
             },
             "Metro Manila": {
               "lat": 14.6042,
-              "lng": 121.0
+              "lng": 121
             }
           },
           "current_positions_held": 4,
@@ -2674,7 +2689,7 @@
             },
             "Metro Manila": {
               "lat": 14.6042,
-              "lng": 121.0
+              "lng": 121
             }
           },
           "current_positions_held": 3,
@@ -2732,7 +2747,7 @@
             },
             "Metro Manila": {
               "lat": 14.6042,
-              "lng": 121.0
+              "lng": 121
             }
           },
           "current_positions_held": 2,
@@ -2769,7 +2784,7 @@
           "geographic_coordinates": {
             "Negros Occidental": {
               "lat": 10.6667,
-              "lng": 123.0
+              "lng": 123
             },
             "Sipalay": {
               "lat": 9.75,
@@ -2805,7 +2820,7 @@
           "geographic_coordinates": {
             "Negros Occidental": {
               "lat": 10.6667,
-              "lng": 123.0
+              "lng": 123
             }
           },
           "current_positions_held": 3,
@@ -2832,7 +2847,7 @@
           "geographic_coordinates": {
             "Negros Occidental": {
               "lat": 10.6667,
-              "lng": 123.0
+              "lng": 123
             }
           },
           "current_positions_held": 2,
@@ -2931,7 +2946,7 @@
             },
             "Metro Manila": {
               "lat": 14.6042,
-              "lng": 121.0
+              "lng": 121
             }
           },
           "current_positions_held": 3,
@@ -2974,7 +2989,7 @@
             },
             "Metro Manila": {
               "lat": 14.6042,
-              "lng": 121.0
+              "lng": 121
             }
           },
           "current_positions_held": 2,
@@ -3394,7 +3409,7 @@
             },
             "Metro Manila": {
               "lat": 14.6042,
-              "lng": 121.0
+              "lng": 121
             }
           },
           "current_positions_held": 3,
@@ -3438,7 +3453,7 @@
             },
             "Metro Manila": {
               "lat": 14.6042,
-              "lng": 121.0
+              "lng": 121
             }
           },
           "current_positions_held": 2,
@@ -3472,7 +3487,7 @@
             },
             "Metro Manila": {
               "lat": 14.6042,
-              "lng": 121.0
+              "lng": 121
             }
           },
           "current_positions_held": 4,
@@ -3691,7 +3706,7 @@
             },
             "Zambales": {
               "lat": 15.1667,
-              "lng": 120.0
+              "lng": 120
             }
           },
           "current_positions_held": 3,
