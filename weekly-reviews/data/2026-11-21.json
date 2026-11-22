@@ -1,0 +1,260 @@
+{
+  "version": 1,
+  "weekEnding": "2026-11-21",
+  "weekLabel": "November 15 – November 21, 2026",
+  "title": "OpenPinas: Weekly News Review",
+  "lastUpdated": "November 22, 2026",
+  "stats": [
+    {
+      "number": "8",
+      "label": "Stories"
+    }
+  ],
+  "eventSections": [
+    {
+      "title": "Political",
+      "articles": [
+        {
+          "timeDatetime": "2026-11-19",
+          "timeDisplay": "November 19, 2026",
+          "category": "Political",
+          "categoryClass": "political",
+          "borderColor": "#3a0ca3",
+          "headline": "Duterte impeachment defense contests financial findings in Senate",
+          "descriptionHtml": "<p>Vice President Sara Duterte's defense called former Anti-Money Laundering Council investigator Rainer Dela Fuente, who challenged aspects of the prosecution's methodology for estimating alleged undeclared wealth. Prosecutors and senator-judges questioned the basis of his assessment and how bank flows should be interpreted. The court clarified that the remaining impeachment article concerns alleged unexplained wealth, not money laundering; no finding of guilt was made.</p>",
+          "sourceLinks": [
+            {
+              "label": "GMA News",
+              "href": "https://www.gmanetwork.com/news/topstories/nation/1010114/sara-duterte-s-financial-transactions-need-further-investigation-says-witness/story/"
+            },
+            {
+              "label": "ABS-CBN News",
+              "href": "https://www.abs-cbn.com/news/nation/2026/11/19/defense-challenges-report-alleging-duterte-s-p817-m-undeclared-wealth-1659"
+            },
+            {
+              "label": "Philippine News Agency",
+              "href": "https://www.pna.gov.ph/article/senate-court-backs-prosecution-no-money-laundering-charge-vs-vp-sara"
+            }
+          ],
+          "diasporaImpact": "The proceedings test national institutions and may shape political confidence among Filipinos abroad.",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-11-19&search=Duterte%20impeachment%20defense%20contests%20financial%20findings%20in%20Senate",
+          "dynastyLinks": [
+            {
+              "label": "Duterte Dynasty",
+              "href": "/dynasties-network-visualization.html#dynasty-DUTERTE_FAMILY"
+            }
+          ]
+        },
+        {
+          "timeDatetime": "2026-11-20",
+          "timeDisplay": "November 20, 2026",
+          "category": "Political",
+          "categoryClass": "political",
+          "borderColor": "#3a0ca3",
+          "headline": "Senate panel removes roughly ₱97.5 billion in DPWH projects",
+          "descriptionHtml": "<p>The Senate finance committee removed about ₱97.5 billion in proposed 2027 public-works projects it said lacked required technical documentation. Reductions included around ₱87 billion from the House-approved budget and further noncompliant projects from the executive proposal. Committee chair JV Ejercito cited safeguards such as geotagging and implementability evidence. These are proposed committee changes before legislative deliberation, not final budget cuts.</p>",
+          "sourceLinks": [
+            {
+              "label": "Philippine Star",
+              "href": "https://www.philstar.com/headlines/2026/11/21/2571545/senate-slashes-p975-billion-2027-dpwh-budget"
+            },
+            {
+              "label": "ABS-CBN News",
+              "href": "https://www.abs-cbn.com/news/nation/2026/11/20/senate-panel-guts-p97-b-worth-of-dpwh-projects-in-2027-budget-2304"
+            },
+            {
+              "label": "GMA News",
+              "href": "https://www.gmanetwork.com/news/topstories/nation/1010350/senate-cuts-p97b-in-dpwh-projects-over-non-compliance/story/"
+            }
+          ],
+          "diasporaImpact": "Better-verified public works affects transport, drainage and services used by relatives at home.",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-11-20&search=Senate%20panel%20removes%20roughly%20%E2%82%B197.5%20billion%20in%20DPWH%20projects"
+        }
+      ]
+    },
+    {
+      "title": "OFW/Diaspora",
+      "articles": [
+        {
+          "timeDatetime": "2026-11-15",
+          "timeDisplay": "November 15, 2026",
+          "category": "OFW/Diaspora",
+          "categoryClass": "ofw",
+          "borderColor": "#0b6e4f",
+          "headline": "ASEAN adopts fair-recruitment safeguards for migrant workers",
+          "descriptionHtml": "<p>ASEAN leaders adopted a Philippine-led declaration calling for fair and ethical migrant-worker recruitment. It seeks to curb trafficking, deceptive job offers, excessive fees and related abuses while promoting oversight of recruiters and access to remedies. The declaration is a regional commitment, not evidence of immediate enforcement changes.</p>",
+          "sourceLinks": [
+            {
+              "label": "Philippine News Agency",
+              "href": "https://www.pna.gov.ph/article/asean-adopts-declaration-to-beef-up-migrant-worker-protection"
+            },
+            {
+              "label": "Presidential Communications Office",
+              "href": "https://pco.gov.ph/news_releases/filipinos-working-abroad-get-stronger-safeguards-against-illegal-recruiters-under-ph-led-asean-declaration/"
+            },
+            {
+              "label": "Department of Labor and Employment",
+              "href": "https://dole.gov.ph/news/asean-leaders-adopt-declaration-on-labor-market-resilience-note-two-worker-protection-guidelines/"
+            }
+          ],
+          "diasporaImpact": "Filipinos seeking jobs abroad and their families may benefit from better recruitment safeguards.",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-11-15&search=ASEAN%20adopts%20fair-recruitment%20safeguards%20for%20migrant%20workers"
+        }
+      ]
+    },
+    {
+      "title": "Economic",
+      "articles": [
+        {
+          "timeDatetime": "2026-11-18",
+          "timeDisplay": "November 18, 2026",
+          "category": "Economic",
+          "categoryClass": "economic",
+          "borderColor": "#3a0ca3",
+          "headline": "Trump claims major Philippines trade deal; Manila describes understanding",
+          "descriptionHtml": "<p>During his Manila visit, US President Donald Trump announced a major bilateral trade deal without disclosing terms. Philippine officials instead described an understanding on economic cooperation, including possible food and energy supply diversification, while Ambassador Jose Manuel Romualdez said no agreement had been signed. The differing descriptions leave obligations and implementation uncertain.</p>",
+          "sourceLinks": [
+            {
+              "label": "Reuters",
+              "href": "https://www.investing.com/news/world-news/trump-says-us-has-concluded-very-big-trade-deal-with-philippines-5034780"
+            },
+            {
+              "label": "GMA News",
+              "href": "https://www.gmanetwork.com/news/topstories/nation/1009939/donald-trump-says-ph-us-clinch-big-trade-deal/story/"
+            },
+            {
+              "label": "ABS-CBN News",
+              "href": "https://www.abs-cbn.com/news/nation/2026/11/18/anc-no-pax-silica-signing-during-trump-visit-marcos-2258"
+            }
+          ],
+          "diasporaImpact": "Trade developments could affect jobs and prices, but household impact cannot be assessed without details.",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-11-18&search=Trump%20claims%20major%20Philippines%20trade%20deal%3B%20Manila%20describes%20understanding",
+          "dynastyLinks": [
+            {
+              "label": "Marcos-Romualdez Dynasty",
+              "href": "/dynasties-network-visualization.html#dynasty-MARCOS_ROMUALDEZ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "International Relations",
+      "articles": [
+        {
+          "timeDatetime": "2026-11-17",
+          "timeDisplay": "November 17, 2026",
+          "category": "International Relations",
+          "categoryClass": "international",
+          "borderColor": "#0d7377",
+          "headline": "Philippines hands ASEAN chair to Singapore with sea-code talks unfinished",
+          "descriptionHtml": "<p>The Manila summit closed as President Ferdinand Marcos Jr. handed ASEAN's rotating chairmanship to Singapore for 2027. Leaders advanced maritime cooperation but failed to finish the proposed South China Sea Code of Conduct. Marcos estimated the text was 85%-90% complete, with substantive definitions still unresolved. Singapore inherits the next phase of negotiations.</p>",
+          "sourceLinks": [
+            {
+              "label": "GMA: Chairship handover",
+              "href": "https://www.gmanetwork.com/news/topstories/nation/1009833/philippines-transfers-asean-chairship-to-singapore/story/"
+            },
+            {
+              "label": "GMA: Code negotiations",
+              "href": "https://www.gmanetwork.com/news/topstories/nation/1009840/marcos-asean-china-to-finalize-definition-of-terms-as-coc-reaches-85-90/story/"
+            },
+            {
+              "label": "Presidential Communications Office",
+              "href": "https://pco.gov.ph/news_releases/wins-for-filipinos-under-ph-chairship-carry-into-2027-as-pbbm-hands-asean-chair-to-singapore/"
+            }
+          ],
+          "diasporaImpact": "Families in coastal communities remain exposed to unresolved maritime security tensions.",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-11-17&search=Philippines%20hands%20ASEAN%20chair%20to%20Singapore%20with%20sea-code%20talks%20unfinished",
+          "dynastyLinks": [
+            {
+              "label": "Marcos-Romualdez Dynasty",
+              "href": "/dynasties-network-visualization.html#dynasty-MARCOS_ROMUALDEZ"
+            }
+          ]
+        },
+        {
+          "timeDatetime": "2026-11-17",
+          "timeDisplay": "November 17, 2026",
+          "category": "International Relations",
+          "categoryClass": "international",
+          "borderColor": "#0d7377",
+          "headline": "ASEAN and US agree on anti-scam principles at Manila summit",
+          "descriptionHtml": "<p>ASEAN and the United States adopted principles for combating online scams and public-private cooperation during their special summit in Manila, according to President Marcos. The announcement identifies cross-border fraud as a shared threat but does not itself create enforceable national laws or guarantee fewer losses.</p>",
+          "sourceLinks": [
+            {
+              "label": "GMA: Online scam principles",
+              "href": "https://www.gmanetwork.com/news/topstories/nation/1009864/trump-asean-adopt-principles-to-combat-online-scams-marcos/story/"
+            },
+            {
+              "label": "Associated Press",
+              "href": "https://apnews.com/article/c94386cd092482d94dca38fc8b8d51a7"
+            },
+            {
+              "label": "GMA: Summit updates",
+              "href": "https://www.gmanetwork.com/news/topstories/nation/1009740/live-updates-49th-asean-summit-and-related-summits-nov-17-2026/story/"
+            }
+          ],
+          "diasporaImpact": "Overseas Filipinos and their families face cross-border fraud and fake employment offers.",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-11-17&search=ASEAN%20and%20US%20agree%20on%20anti-scam%20principles%20at%20Manila%20summit"
+        }
+      ]
+    },
+    {
+      "title": "Travel / Mobility",
+      "articles": [
+        {
+          "timeDatetime": "2026-11-20",
+          "timeDisplay": "November 20, 2026",
+          "category": "Travel / Mobility",
+          "categoryClass": "travel",
+          "borderColor": "#0b6e4f",
+          "headline": "Transport agency outlines PPP plans for nine regional airports",
+          "descriptionHtml": "<p>Transportation Secretary Vince Dizon outlined public-private partnership proposals for nine regional airports, beginning with a Davao-Siargao-Bicol bundle potentially awarded in early 2027. Further plans include Iloilo, Bacolod, Puerto Princesa, Busuanga, General Santos and Tacloban, as well as rail operations. These are proposals and planned bids, not completed privatizations or confirmed service improvements.</p>",
+          "sourceLinks": [
+            {
+              "label": "GMA News",
+              "href": "https://www.gmanetwork.com/news/money/companies/1010190/dizon-nine-airports-to-be-privatized-before-marcos-term-ends/story/"
+            },
+            {
+              "label": "ABS-CBN News",
+              "href": "https://www.abs-cbn.com/news/business/2026/11/20/mrt-3-lrt-2-key-airports-to-be-upgraded-thru-public-private-partnership-1836"
+            }
+          ],
+          "diasporaImpact": "Returning residents and visitors may eventually see changes at regional airports, but no route changes are confirmed.",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-11-20&search=Transport%20agency%20outlines%20PPP%20plans%20for%20nine%20regional%20airports"
+        }
+      ]
+    },
+    {
+      "title": "Natural Disasters",
+      "articles": [
+        {
+          "timeDatetime": "2026-11-20",
+          "timeDisplay": "November 20, 2026",
+          "category": "Natural Disasters",
+          "categoryClass": "disaster",
+          "borderColor": "#d00000",
+          "headline": "Schools adjust classes as heat risk compounds El Niño drought",
+          "descriptionHtml": "<p>Several local governments and schools adjusted or suspended in-person classes for November 20, with some citing high-heat forecasts and others power interruptions or local events. PAGASA's November outlook warned that very strong El Niño conditions could persist into the first half of 2027, with below-normal rainfall and warmer temperatures across much of the country. Heat-related changes show practical disruption as drought risk continues.</p>",
+          "sourceLinks": [
+            {
+              "label": "GMA News",
+              "href": "https://www.gmanetwork.com/news/serbisyopubliko/walangpasok/1010110/walang-pasok-class-suspensions-on-friday-november-20-2026/story/"
+            },
+            {
+              "label": "PAGASA: Monthly outlook",
+              "href": "https://www.pagasa.dost.gov.ph/agri-weather/monthly-agroclimatic-review-and-outlook"
+            },
+            {
+              "label": "PAGASA: 11-20 November advisory",
+              "href": "https://www.pagasa.dost.gov.ph/ten-day-regional-agri-weather"
+            }
+          ],
+          "diasporaImpact": "Families abroad may need to monitor school, heat and water advisories for relatives.",
+          "headlineHref": "/interactive-timeline/index.html?date=2026-11-20&search=Schools%20adjust%20classes%20as%20heat%20risk%20compounds%20El%20Ni%C3%B1o%20drought"
+        }
+      ]
+    }
+  ],
+  "prevWeekEnding": "2026-11-14"
+}
