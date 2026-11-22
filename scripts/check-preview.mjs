@@ -234,6 +234,70 @@ for (const url of sourceHrefs) {
   }
 }
 
+async function checkWhatsNewControls(page, surface, device) {
+  const panel = page.getByRole("region", { name: "What's new this week" });
+  await panel.waitFor({ state: "visible", timeout: 15000 });
+
+  const timeline = panel.getByRole("button", { name: /Timeline events/i });
+  const stories = panel.getByRole("button", { name: /Review stories/i });
+  if (await timeline.count() !== 1 || await stories.count() !== 1) {
+    throw new Error("Missing timeline/review buttons");
+  }
+  if ((await timeline.getAttribute("aria-pressed")) !== "true") {
+    throw new Error("Timeline view is not selected by default");
+  }
+
+  await stories.click();
+  await page.waitForFunction(() => {
+    const p = document.querySelector('section[aria-label="What\'s new this week"]');
+    return p && [...p.querySelectorAll("button")].some(b => /review stories/i.test(b.textContent) && b.getAttribute("aria-pressed") === "true");
+  });
+  if (!(await panel.getByText(/Weekly review stories · \d+ results?/i).count())) {
+    throw new Error("Review stories button did not update the results");
+  }
+
+  await timeline.click();
+  const timelineEntries = readJson("philippines-2026-timeline.json").timeline.filter(
+    (event) => event.weekly_review?.endsWith(`weekly-review-${latest.weekEnding}.html`)
+  );
+  const first = timelineEntries[0];
+  if (!first) throw new Error("No timeline events to exercise");
+  const categoryButton = panel.locator("button.new-control").filter({ hasText: first.category });
+  if (await categoryButton.count() !== 1) throw new Error(`Missing category filter: ${first.category}`);
+  await categoryButton.click();
+  if ((await categoryButton.getAttribute("aria-pressed")) !== "true") {
+    throw new Error("Category chip did not become selected");
+  }
+  const dateButton = panel.getByRole("button", { name: `Filter to ${first.date}` });
+  if (await dateButton.count() !== 1) throw new Error("Missing date-dot control");
+  await dateButton.click();
+  if ((await dateButton.getAttribute("aria-pressed")) !== "true") {
+    throw new Error("Date dot did not become selected");
+  }
+  const expected = timelineEntries.filter((entry) => entry.date === first.date && entry.category === first.category).length;
+  const actual = await panel.locator("li").count();
+  if (actual !== expected) throw new Error(`Combined filters showed ${actual} events, expected ${expected}`);
+
+  const controls = [timeline, stories, categoryButton, dateButton];
+  for (const button of controls) {
+    const box = await button.boundingBox();
+    if (!box || box.height < 44 || box.width < 44) {
+      throw new Error(`Touch target too small on ${device}: ${await button.innerText()} (${box?.width}x${box?.height})`);
+    }
+  }
+  const reset = panel.getByRole("button", { name: "Clear filters" });
+  await reset.click();
+  if ((await timeline.getAttribute("aria-pressed")) !== "true" ||
+      (await categoryButton.getAttribute("aria-pressed")) !== "false" ||
+      (await dateButton.getAttribute("aria-pressed")) !== "false") {
+    throw new Error("Clear filters did not reset the selection");
+  }
+  if (!(await panel.locator('a[href^="/interactive-timeline/index.html?date="]').count())) {
+    throw new Error("Filtered timeline does not link to detailed event pages");
+  }
+  console.log(`✓ What's New controls: ${surface} ${device}: cards, category, date, combined filters, reset, links, touch targets`);
+}
+
 async function checkVisuals() {
   if (protectedPreview) {
     if (bypass) return;
@@ -274,6 +338,14 @@ async function checkVisuals() {
         const overflow = await page.evaluate(() => document.documentElement.scrollWidth - document.documentElement.clientWidth);
         if (overflow > 1) fail(`${target.name} overflows by ${overflow}px at ${viewport.width}px`);
         await page.screenshot({ path: path.join(shotDir, `${target.name}-${viewport.suffix}.png`), fullPage: false });
+        // Exercise the real React controls in both viewport sizes, not only the static HTML.
+        if (target.name === "home" || target.name === "review") {
+          try {
+            await checkWhatsNewControls(page, target.name, viewport.suffix);
+          } catch (error) {
+            fail(`What's New interaction ${target.name} ${viewport.suffix}: ${error.message}`);
+          }
+        }
       }
       await page.close();
     }
