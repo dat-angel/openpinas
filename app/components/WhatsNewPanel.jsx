@@ -162,7 +162,7 @@ export default function WhatsNewPanel({changes,compact=false}) {
       </div>
       <div style={{display:"flex",alignItems:"center",justifyContent:"space-between",gap:8,flexWrap:"wrap",marginBottom:8}}>
         <h3 style={{margin:0,fontSize:13,fontWeight:700,textTransform:"uppercase",letterSpacing:".05em",color:T.muted}}>
-          {kind} · {filtered.length} {filtered.length===1?"result":"results"}</h3>
+          <span role="status" aria-live="polite">{kind} · {filtered.length} {filtered.length===1?"result":"results"}</span></h3>
         {(date||category||view!=="timeline")&&<button type="button" onClick={reset} className="new-control"
           style={{cursor:"pointer",border:"none",background:"transparent",color:T.accent,
             textDecoration:"underline",fontSize:13,fontWeight:700,minHeight:44}}>Clear filters</button>}
