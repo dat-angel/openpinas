@@ -2,6 +2,12 @@
   "version": 1,
   "reviews": [
     {
+      "weekEnding": "2026-11-28",
+      "weekLabel": "November 22 – November 28, 2026",
+      "eventCount": 7,
+      "prevWeekEnding": "2026-11-21"
+    },
+    {
       "weekEnding": "2026-11-21",
       "weekLabel": "November 15 – November 21, 2026",
       "eventCount": 8,

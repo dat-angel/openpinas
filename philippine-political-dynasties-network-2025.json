@@ -4,7 +4,7 @@
       "title": "Philippine Political Dynasties Network Map - Historical & Contemporary",
       "description": "Comprehensive network visualization of Philippine political dynasties throughout history, their relationships, alliances, territorial control, and geographic distribution. Includes historical data from establishment dates through 2025, with detailed geographic mapping of regional control.",
       "version": "4.0",
-      "last_updated": "2026-11-15",
+      "last_updated": "2026-11-28",
       "data_scope": "historical_and_contemporary",
       "earliest_dynasty": 1868,
       "latest_update": 2025,
@@ -304,6 +304,11 @@
               "date": "2026-11-18",
               "title": "Trump claims major Philippines trade deal; Manila describes understanding",
               "role": "primary_actor"
+            },
+            {
+              "date": "2026-11-24",
+              "title": "Manila says no agreed terms on Trump's US-only import claim",
+              "role": "primary_actor"
             }
           ],
           "2025_rumors_headlines": [
@@ -557,6 +562,16 @@
             {
               "date": "2026-11-19",
               "title": "Duterte impeachment defense contests financial findings in Senate",
+              "role": "primary_actor"
+            },
+            {
+              "date": "2026-11-24",
+              "title": "Supreme Court dismisses Duterte arrest petitions as Hague trial looms",
+              "role": "primary_actor"
+            },
+            {
+              "date": "2026-11-26",
+              "title": "Impeachment court subpoenas Cale88 co-owner and customs official",
               "role": "primary_actor"
             }
           ],
