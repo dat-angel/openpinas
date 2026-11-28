@@ -4,9 +4,9 @@
   "prepared_for": "Filipino Diaspora Communities Worldwide",
   "metadata": {
     "purpose": "Comprehensive timeline of major Philippine events in 2026 to help overseas Filipinos understand developments affecting families, remittances, investments, and homeland governance",
-    "last_updated": "November 22, 2026",
+    "last_updated": "November 29, 2026",
     "aggregation_note": "This timeline is aggregated by month as events unfold. Weekly reviews provide more detailed coverage.",
-    "total_events": 311,
+    "total_events": 318,
     "categories": [
       "Political",
       "Cultural",
@@ -6099,6 +6099,149 @@
         ]
       },
       "weekly_review": "weekly-reviews/weekly-review-2026-11-21.html"
+    },
+    {
+      "date": "2026-11-23",
+      "month": "November",
+      "title": "Sandiganbayan denies Marcoleta's bail in ₱75 million plunder case",
+      "category": "Legal",
+      "description": "On November 23 the Sandiganbayan denied bail to Senator Rodante Marcoleta and three co-accused in a ₱75-million plunder case over undeclared campaign donations. The court cited strong evidence of guilt and donor’s-tax payments; Marcoleta and Mike Defensor remain jailed in Payatas.",
+      "significance": "A sitting senator stays jailed pending plunder trial after prosecutors block bail.",
+      "diaspora_impact": "Corruption cases against sitting lawmakers signal how accountability rules are applied at the top of Philippine politics.",
+      "mentioned_dynasties": [],
+      "sources": {
+        "international": [],
+        "local": [
+          "https://www.rappler.com/philippines/sandiganbayan-denies-rodante-marcoleta-bail-plunder-case/",
+          "https://www.gmanetwork.com/news/topstories/nation/1010475/sandiganbayan-denies-marcoleta-s-bid-for-bail/story/",
+          "https://www.abs-cbn.com/news/nation/2026/11/23/marcoleta-defensor-to-remain-in-payatas-jail-after-junked-bail-petitions-1256"
+        ]
+      },
+      "weekly_review": "weekly-reviews/weekly-review-2026-11-28.html"
+    },
+    {
+      "date": "2026-11-24",
+      "month": "November",
+      "title": "Supreme Court dismisses Duterte arrest petitions as Hague trial looms",
+      "category": "Legal",
+      "description": "On November 24 the Supreme Court dismissed habeas corpus petitions over Rodrigo Duterte’s arrest, saying Philippine courts cannot reach ICC custody in The Hague. The ICC confirmed his trial opens November 30, and the Truth Commission reported 8,320 drug-war killings it called state-organized.",
+      "significance": "Domestic legal challenges to Duterte’s arrest closed as Hague trial dates firm up alongside a new drug-war death count.",
+      "diaspora_impact": "Accountability for the drug war and ICC proceedings are closely watched by families who lost relatives or fear renewed violence.",
+      "mentioned_dynasties": [
+        "DUTERTE_FAMILY"
+      ],
+      "sources": {
+        "international": [
+          "https://www.icc-cpi.int/news/trial-case-prosecutor-v-rodrigo-roa-duterte-open-30-november"
+        ],
+        "local": [
+          "https://www.rappler.com/philippines/supreme-court-dismisses-petition-rodrigo-duterte-icc-arrest/",
+          "https://www.rappler.com/philippines/drug-war-state-sanctioned-killed-thousands-truth-commission-report/",
+          "https://www.abs-cbn.com/news/nation/2026/11/23/anc-truth-commission-documents-more-than-8-000-killings-linked-to-duterte-drug-war-2213"
+        ]
+      },
+      "weekly_review": "weekly-reviews/weekly-review-2026-11-28.html"
+    },
+    {
+      "date": "2026-11-24",
+      "month": "November",
+      "title": "Manila says no agreed terms on Trump's US-only import claim",
+      "category": "Economic",
+      "description": "After Trump said November 22 the Philippines would buy all farm and energy imports from the US by January 1, Malacañang said November 24 that Marcos had agreed to no terms or timeline. Officials said private firms would still choose suppliers and keep cheaper options open.",
+      "significance": "Trump’s public trade claims remain uncorroborated by signed Philippine commitments.",
+      "diaspora_impact": "Unsettled trade terms could eventually affect food and fuel prices for households, but no binding deal is in place yet.",
+      "mentioned_dynasties": [
+        "MARCOS_ROMUALDEZ"
+      ],
+      "sources": {
+        "international": [],
+        "local": [
+          "https://www.gmanetwork.com/news/topstories/nation/1010607/palace-no-agreed-terms-timeline-yet-for-ph-us-trade-deal/story/",
+          "https://www.gmanetwork.com/news/money/economy/1010363/marcos-clarifies-trump-claim-that-ph-agreed-us-is-only-source-for-agri-oil-supplies/story/",
+          "https://www.rappler.com/newsbreak/inside-track/trump-no-deal-offer-usa-philippine-trade-energy-agriculture/"
+        ]
+      },
+      "weekly_review": "weekly-reviews/weekly-review-2026-11-28.html"
+    },
+    {
+      "date": "2026-11-26",
+      "month": "November",
+      "title": "Impeachment court subpoenas Cale88 co-owner and customs official",
+      "category": "Political",
+      "description": "On November 26 the Senate impeachment court confirmed subpoenas for Cale88 co-owner Lourdes Tingson-Lebosada and Bureau of Customs deputy Agaton Teodoro Uvero for hearings December 1–4. The court finished serving both witnesses on company finances and export records tied to unexplained-wealth allegations.",
+      "significance": "The defense secured customs and company records witnesses for the unexplained-wealth article.",
+      "diaspora_impact": "The trial tests national institutions and may shape political confidence among Filipinos abroad.",
+      "mentioned_dynasties": [
+        "DUTERTE_FAMILY"
+      ],
+      "sources": {
+        "international": [],
+        "local": [
+          "https://www.rappler.com/philippines/former-cale88-co-owner-boc-official-testify-sara-duterte-impeachment-trial/",
+          "https://www.pna.gov.ph/article/senate-court-serves-subpoenas-on-cale88-witnesses",
+          "https://www.abs-cbn.com/news/nation/2026/11/26/senate-impeachment-court-serves-subpoenas-for-ex-cale88-owner-defense-witnesses-1927"
+        ]
+      },
+      "weekly_review": "weekly-reviews/weekly-review-2026-11-28.html"
+    },
+    {
+      "date": "2026-11-26",
+      "month": "November",
+      "title": "Nine provinces in drought as El Niño spread forecast widens",
+      "category": "Natural Disasters",
+      "description": "On November 26 PAGASA said nine provinces were in meteorological drought and projected 29, 47, and 68 provinces in drought by end-December, January, and February. The US pledged $4 million through the World Food Programme for about 38,000 families in Eastern Visayas and Bicol.",
+      "significance": "Drought projections show El Niño spreading nationwide despite overseas aid for hard-hit regions.",
+      "diaspora_impact": "Families abroad may need to track water, power, and farm advisories as drought expands across more provinces.",
+      "mentioned_dynasties": [],
+      "sources": {
+        "international": [],
+        "local": [
+          "https://www.abs-cbn.com/news/weather-traffic/2026/11/26/el-ni-o-watch-9-provinces-already-experiencing-drought-in-november-2026-1750",
+          "https://pubfiles.pagasa.dost.gov.ph/climps/climateforum/outlook.pdf",
+          "https://globalnation.inquirer.net/350030/us-aid-to-benefit-drought-hit-folk-in-eastern-visayas-bicol"
+        ]
+      },
+      "weekly_review": "weekly-reviews/weekly-review-2026-11-28.html"
+    },
+    {
+      "date": "2026-11-28",
+      "month": "November",
+      "title": "Senate concludes plenary debate on proposed ₱7.2 trillion 2027 budget",
+      "category": "Political",
+      "description": "The Senate finished plenary debate on the proposed ₱7.2-trillion 2027 budget early November 28, pausing Sara Duterte’s impeachment trial to make room. Senators realigned ₱19.8 billion from medical-assistance and crisis-aid lines to PhilHealth and passed the OVP and OP budgets in minutes earlier in the week. Bicameral amendments still lie ahead.",
+      "significance": "The chamber advanced the 2027 spending bill while trading floor time with the impeachment trial.",
+      "diaspora_impact": "Health subsidies and agency spending in the 2027 budget shape services and benefits many families at home rely on.",
+      "mentioned_dynasties": [
+        "DUTERTE_FAMILY"
+      ],
+      "sources": {
+        "international": [],
+        "local": [
+          "https://www.gmanetwork.com/news/topstories/nation/1011017/senate-concludes-p7-2t-proposed-2027-budget-deliberations/story/",
+          "https://www.philstar.com/headlines/2026/11/28/2573252/senate-concludes-marathon-debates-p72-trillion-2027-budget",
+          "https://www.rappler.com/philippines/senate-realigns-billions-from-map-aics-boost-philhealth/",
+          "https://www.rappler.com/philippines/senate-oks-ovp-2027-budget-one-minute/"
+        ]
+      },
+      "weekly_review": "weekly-reviews/weekly-review-2026-11-28.html"
+    },
+    {
+      "date": "2026-11-28",
+      "month": "November",
+      "title": "Philippines warns against recruitment scams sending workers to war zones",
+      "category": "OFW/Diaspora",
+      "description": "On November 28 the DND and DMW warned Filipinos against recruitment scams that send workers to conflict zones. Lawmakers cited about 30 workers allegedly duped into bunker work in Russian-occupied Ukraine; agencies are coordinating to locate them.",
+      "significance": "Officials linked deceptive overseas jobs to armed conflict zones as rescue efforts began.",
+      "diaspora_impact": "Overseas Filipinos and their families should verify recruiters and job orders before accepting high-risk offers abroad.",
+      "mentioned_dynasties": [],
+      "sources": {
+        "international": [],
+        "local": [
+          "https://www.gmanetwork.com/news/pinoyabroad/dispatch/1011066/dnd-dmw-warn-vs-illegal-recruitment-sending-filipinos-to-war-zones/story/",
+          "https://www.abs-cbn.com/news/nation/2026/11/28/dmw-dfa-locating-filipinos-abroad-who-allegedly-sought-help-in-video-villanueva-0742"
+        ]
+      },
+      "weekly_review": "weekly-reviews/weekly-review-2026-11-28.html"
     }
   ],
   "ofw_highlights": {
